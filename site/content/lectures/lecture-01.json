@@ -1,0 +1,448 @@
+{
+  "number": 1,
+  "objectives": [
+    "Greet someone, introduce yourself, and close a first exchange.",
+    "Recognise Swedish's nine vowel letters: a, e, i, o, u, y, å, ä, ö.",
+    "Hear a basic long/short stressed-vowel contrast."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-01-recall-1",
+      "prompt": "Which row contains all nine Swedish vowels?",
+      "answers": [
+        "a, e, i, o, u, y, å, ä, ö"
+      ],
+      "options": [
+        "a, e, i, o, u, y, å, ä, ö",
+        "a, b, c, d, e",
+        "å, ä, ö, j, k"
+      ],
+      "hint": "Count nine vowel letters.",
+      "explanation": "Swedish has nine vowel letters."
+    },
+    {
+      "id": "sv-01-recall-key",
+      "prompt": "Choose the Swedish line meaning “Hello! My name is Sam.”",
+      "answers": [
+        "Hej! Jag heter Sam."
+      ],
+      "options": [
+        "Hej! Jag heter Sam.",
+        "Hej! Jag heter Mira.",
+        "heta"
+      ],
+      "hint": "Match the full message.",
+      "explanation": "Hej! Jag heter Sam. means “Hello! My name is Sam.”"
+    },
+    {
+      "id": "sv-01-recall-sound",
+      "prompt": "Which word has the longer stressed vowel?",
+      "answers": [
+        "tak"
+      ],
+      "options": [
+        "tak",
+        "tack",
+        "och"
+      ],
+      "hint": "Say the options and apply the sound cue.",
+      "explanation": "Tak has a long a; tack has a short a."
+    }
+  ],
+  "sections": [
+    {
+      "title": "First greetings and Swedish sounds",
+      "kind": "scene",
+      "body": [
+        "Use whole chunks first: Hej! · Jag heter … · Trevligt att träffas. · Hej då!",
+        "Hej is neutral in most everyday meetings. Tjena is more casual.",
+        "At A0, understand the purpose in English, then repeat the Swedish aloud."
+      ],
+      "examples": [
+        {
+          "fi": "Hej! Jag heter Mira.",
+          "en": "Hello! My name is Mira."
+        },
+        {
+          "fi": "Hej! Jag heter Sam.",
+          "en": "Hello! My name is Sam."
+        },
+        {
+          "fi": "Trevligt att träffas.",
+          "en": "Nice to meet you."
+        },
+        {
+          "fi": "Detsamma. Hej då!",
+          "en": "Likewise. Goodbye!"
+        }
+      ]
+    },
+    {
+      "title": "Nine vowels and sound length",
+      "kind": "rule",
+      "body": [
+        "Swedish has nine vowel letters: a, e, i, o, u, y, å, ä and ö. Listen before using English sound approximations.",
+        "A stressed vowel is often long before one consonant, but short before two: tak (roof) versus tack (thanks).",
+        "Swedish stress is not always initial. Copy the model rhythm and aim for clear contrasts."
+      ],
+      "examples": [
+        {
+          "fi": "tak",
+          "en": "roof; long a"
+        },
+        {
+          "fi": "tack",
+          "en": "thanks; short a"
+        },
+        {
+          "fi": "Hej!",
+          "en": "Hello!"
+        },
+        {
+          "fi": "Tack, hej då!",
+          "en": "Thanks, goodbye!"
+        }
+      ],
+      "table": {
+        "headings": [
+          "Feature",
+          "Model",
+          "Cue"
+        ],
+        "rows": [
+          [
+            "vowels",
+            "a e i o u y å ä ö",
+            "Notice lip rounding."
+          ],
+          [
+            "long",
+            "tak",
+            "Hold the stressed a."
+          ],
+          [
+            "short",
+            "tack",
+            "Release before ck."
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-01-guided-meaning",
+      "prompt": "What does “Hej! Jag heter Sam.” mean?",
+      "answers": [
+        "Hello! My name is Sam."
+      ],
+      "options": [
+        "Hello! My name is Sam.",
+        "Hello! My name is Mira.",
+        "thanks"
+      ],
+      "hint": "Match the whole line.",
+      "explanation": "Hej! Jag heter Sam. means “Hello! My name is Sam.”"
+    },
+    {
+      "id": "sv-01-guided-form",
+      "prompt": "Complete: Jag ___ Sam.",
+      "answers": [
+        "heter"
+      ],
+      "options": [
+        "heter",
+        "hej",
+        "tack"
+      ],
+      "hint": "Use the rule section.",
+      "explanation": "Jag heter means “My name is”."
+    },
+    {
+      "id": "sv-01-guided-scene",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Trevligt att träffas."
+      ],
+      "options": [
+        "Trevligt att träffas.",
+        "Hej! Jag heter Mira.",
+        "Hej! Jag heter Sam."
+      ],
+      "hint": "Locate the exact line.",
+      "explanation": "The dialogue includes Trevligt att träffas."
+    },
+    {
+      "id": "sv-01-guided-listen",
+      "prompt": "What is the speaker's name?",
+      "answers": [
+        "Lina"
+      ],
+      "options": [
+        "Lina",
+        "Mira",
+        "Noor"
+      ],
+      "hint": "Listen for the requested detail.",
+      "explanation": "Jag heter Lina gives the name."
+    },
+    {
+      "id": "sv-01-guided-read",
+      "prompt": "What is this notice for?",
+      "answers": [
+        "A beginner Swedish class"
+      ],
+      "options": [
+        "A beginner Swedish class",
+        "A café",
+        "A delayed train"
+      ],
+      "hint": "Scan the practical text.",
+      "explanation": "Svenska för nybörjare means Swedish for beginners."
+    },
+    {
+      "id": "sv-01-guided-sound",
+      "prompt": "Which word has the longer stressed vowel?",
+      "answers": [
+        "tak"
+      ],
+      "options": [
+        "tak",
+        "tack",
+        "och"
+      ],
+      "hint": "Use spelling and audio.",
+      "explanation": "Tak has a long a; tack has a short a."
+    },
+    {
+      "id": "sv-01-guided-word",
+      "prompt": "Which item means “hello”?",
+      "answers": [
+        "hej"
+      ],
+      "options": [
+        "hej",
+        "heta",
+        "tack"
+      ],
+      "hint": "Use the vocabulary examples.",
+      "explanation": "hej means hello."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-01-check-key",
+      "prompt": "Produce: “Hello! My name is Sam.”",
+      "answers": [
+        "Hej! Jag heter Sam."
+      ],
+      "hint": "Say it first, then type it.",
+      "explanation": "Model: Hej! Jag heter Sam."
+    },
+    {
+      "id": "sv-01-check-form",
+      "prompt": "Complete: Jag ___ Sam.",
+      "answers": [
+        "heter"
+      ],
+      "options": [
+        "heter",
+        "hej",
+        "tack"
+      ],
+      "hint": "Apply the rule from memory.",
+      "explanation": "Jag heter means “My name is”."
+    },
+    {
+      "id": "sv-01-check-listen",
+      "prompt": "What is the speaker's name?",
+      "answers": [
+        "Lina"
+      ],
+      "options": [
+        "Lina",
+        "Mira",
+        "Noor"
+      ],
+      "hint": "Replay once.",
+      "explanation": "Jag heter Lina gives the name."
+    },
+    {
+      "id": "sv-01-check-transfer",
+      "prompt": "What best tests transfer?",
+      "answers": [
+        "Change one detail and rebuild the message"
+      ],
+      "options": [
+        "Change one detail and rebuild the message",
+        "Copy the model",
+        "Translate every word"
+      ],
+      "hint": "A changed situation tests the pattern.",
+      "explanation": "Rebuilding shows transferable learning."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 1 mission: First greetings and Swedish sounds",
+    "instructions": "LISTEN: Hear the audio twice and answer: What is the speaker's name?\n\nREAD: Read once for purpose and once for detail. Answer: What is this notice for?\n\nSPEAK: Greet a classmate, say your name, and close. Try once without the model, then repeat more clearly.\n\nWRITE: Write a two-line greeting and introduction. Check word order and spelling.\n\nTRANSFER: Use God morgon instead of Hej and choose another name.\n\nRETURN: Greet and introduce yourself from memory.",
+    "model": "Speaking: Hej! Jag heter Alex. Trevligt att träffas. Hej då!\nWriting: Hej!\nJag heter Alex."
+  },
+  "takeaways": [
+    "Use: Hej! Jag heter Sam.",
+    "Rule: Swedish has nine vowel letters: a, e, i, o, u, y, å, ä and ö. Listen before using English sound approximations.",
+    "Return: Greet and introduce yourself from memory."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Mira",
+      "fi": "Hej! Jag heter Mira.",
+      "en": "Hello! My name is Mira."
+    },
+    {
+      "speaker": "Sam",
+      "fi": "Hej! Jag heter Sam.",
+      "en": "Hello! My name is Sam."
+    },
+    {
+      "speaker": "Mira",
+      "fi": "Trevligt att träffas.",
+      "en": "Nice to meet you."
+    },
+    {
+      "speaker": "Sam",
+      "fi": "Detsamma. Hej då!",
+      "en": "Likewise. Goodbye!"
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-01-word-1",
+        "fi": "hej",
+        "en": "hello",
+        "example": "Hej, jag heter Noor.",
+        "translation": "Hello, my name is Noor.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-01-word-2",
+        "fi": "heta",
+        "en": "to be called",
+        "example": "Jag heter Leo.",
+        "translation": "My name is Leo.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-01-word-3",
+        "fi": "tack",
+        "en": "thanks",
+        "example": "Tack så mycket!",
+        "translation": "Thank you very much!",
+        "level": "A0"
+      },
+      {
+        "id": "sv-01-word-4",
+        "fi": "hej då",
+        "en": "goodbye",
+        "example": "Tack, hej då!",
+        "translation": "Thanks, goodbye!",
+        "level": "A0"
+      },
+      {
+        "id": "sv-01-word-5",
+        "fi": "trevligt",
+        "en": "nice",
+        "example": "Trevligt att träffas.",
+        "translation": "Nice to meet you.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-01-word-6",
+        "fi": "detsamma",
+        "en": "likewise",
+        "example": "Tack, detsamma!",
+        "translation": "Thanks, likewise!",
+        "level": "A0"
+      }
+    ],
+    "pronunciation": {
+      "text": "Hej. Jag heter Sam. Tak. Tack. Hej då.",
+      "tip": "Hold the a in tak longer than in tack. Keep å, ä and ö distinct."
+    },
+    "reading_passage": {
+      "text": "Välkommen!\nSvenska för nybörjare\nMåndag klockan 18",
+      "gist": {
+        "prompt": "What is the main purpose of this text?",
+        "options": [
+          "Announce a beginner Swedish class",
+          "Advertise a restaurant",
+          "Report a transport delay"
+        ],
+        "answer": 0,
+        "explanation": "The heading and schedule announce a Swedish course for beginners."
+      },
+      "detail": {
+        "prompt": "What is this notice for?",
+        "options": [
+          "A beginner Swedish class",
+          "A café",
+          "A delayed train"
+        ],
+        "answer": 0,
+        "explanation": "Svenska för nybörjare means Swedish for beginners."
+      }
+    },
+    "reading": {
+      "text": "Välkommen!\nSvenska för nybörjare\nMåndag klockan 18",
+      "question": "What is this notice for?",
+      "options": [
+        "A beginner Swedish class",
+        "A café",
+        "A delayed train"
+      ],
+      "answer": 0,
+      "explanation": "Svenska för nybörjare means Swedish for beginners."
+    },
+    "listening": {
+      "text": "Hej! Jag heter Lina. Trevligt att träffas. Hej då!",
+      "question": "What is the speaker's name?",
+      "options": [
+        "Lina",
+        "Mira",
+        "Noor"
+      ],
+      "answer": 0,
+      "explanation": "Jag heter Lina gives the name."
+    },
+    "speaking": {
+      "prompt": "Greet a classmate, say your name, and close.",
+      "help": "Use Hej! Jag heter … Trevligt att träffas. Hej då!",
+      "model": "Hej! Jag heter Alex. Trevligt att träffas. Hej då!"
+    },
+    "writing": {
+      "prompt": "Write a two-line greeting and introduction.",
+      "help": "Begin with Hej and use Jag heter + name.",
+      "model": "Hej!\nJag heter Alex."
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Say a greeting, your name, and a closing.",
+    "transferPrompt": "Use God morgon instead of Hej and choose another name.",
+    "returnPrompt": "Greet and introduce yourself from memory.",
+    "successChecks": [
+      "Use Hej and Jag heter.",
+      "Distinguish tak from tack.",
+      "Close with Hej då."
+    ],
+    "requiredSkills": [
+      "speaking"
+    ]
+  }
+}

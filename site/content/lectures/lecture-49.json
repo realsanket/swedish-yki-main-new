@@ -1,0 +1,459 @@
+{
+  "number": 49,
+  "legacyLessonId": "sv-finland-swedish-listening",
+  "objectives": [
+    "Understand the main message when everyday Finland-Swedish speech differs slightly from written standard Swedish.",
+    "Use and recognise: Jag hinner int i dag. · Jag hinner inte i dag. · Vi ses utanför stationen.",
+    "Complete an independent first attempt, review one specific feature, then transfer the language to a changed situation."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-e49-recall-1",
+      "prompt": "Warm up for listening variation: choose the Swedish line that best supports today's goal.",
+      "answers": [
+        "Jag hinner int i dag."
+      ],
+      "options": [
+        "Jag hinner int i dag.",
+        "Jag hinner inte i dag.",
+        "Vi ses utanför stationen."
+      ],
+      "hint": "Choose by communicative purpose, not by translating every word.",
+      "explanation": "Jag hinner int i dag. is the most direct starting point for this task."
+    },
+    {
+      "id": "sv-e49-recall-2",
+      "prompt": "Which strategy will help most in this listening variation task?",
+      "answers": [
+        "Listen through unfamiliar pronunciation for stressed nouns, verbs, numbers and place words."
+      ],
+      "options": [
+        "Listen through unfamiliar pronunciation for stressed nouns, verbs, numbers and place words.",
+        "Translate every word before deciding what to do.",
+        "Memorise the model and repeat it without changing details."
+      ],
+      "hint": "Choose the action that makes the input usable in a new situation.",
+      "explanation": "Listen through unfamiliar pronunciation for stressed nouns, verbs, numbers and place words."
+    },
+    {
+      "id": "sv-e49-recall-3",
+      "prompt": "Say or type this useful line from memory: “We will meet outside the station.”",
+      "answers": [
+        "Vi ses utanför stationen."
+      ],
+      "hint": "Try once before looking back at the phrase list.",
+      "explanation": "A clear answer is: Vi ses utanför stationen."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Situation, language and purpose",
+      "body": [
+        "Goal: Understand the main message when everyday Finland-Swedish speech differs slightly from written standard Swedish.",
+        "Core vocabulary: uttalsvariant, sammanhang, huvudbudskap. Key phrases: Jag hinner int i dag. · Jag hinner inte i dag. · Vi ses utanför stationen.",
+        "Meaning first: use the language to complete a real listening variation purpose, not to display isolated grammar.",
+        "Purposeful return: Notice one variant in authentic speech, then record its neutral written equivalent."
+      ],
+      "examples": [
+        {
+          "fi": "Jag hinner int i dag.",
+          "en": "I do not have time today. (Finland-Swedish speech)"
+        },
+        {
+          "fi": "Jag hinner inte i dag.",
+          "en": "I do not have time today. (written standard form)"
+        },
+        {
+          "fi": "Vi ses utanför stationen.",
+          "en": "We will meet outside the station."
+        }
+      ]
+    },
+    {
+      "title": "Register, strategy and transfer",
+      "body": [
+        "REGISTER · NEUTRAL SWEDISH: Jag hinner inte i dag. EVERYDAY SPEECH / CONTEXT: Jag hinner int i dag.",
+        "Practice move: Listen through unfamiliar pronunciation for stressed nouns, verbs, numbers and place words.",
+        "Make a first attempt without the model. Review one feature, then respond again after an important condition changes."
+      ],
+      "examples": [
+        {
+          "fi": "NEUTRAL SWEDISH: Jag hinner inte i dag.",
+          "en": "A clear production model for neutral or formal use."
+        },
+        {
+          "fi": "EVERYDAY / CONTEXTUAL FORM: Jag hinner int i dag.",
+          "en": "Useful recognition or familiar-language model.",
+          "note": "Int is common in Finland-Swedish speech. Use inte in neutral and formal writing."
+        }
+      ],
+      "table": {
+        "headings": [
+          "What you hear",
+          "Neutral written form",
+          "Strategy"
+        ],
+        "rows": [
+          [
+            "int",
+            "inte",
+            "restore the familiar negative word"
+          ],
+          [
+            "e for är",
+            "är",
+            "use sentence position and context"
+          ],
+          [
+            "reduced endings",
+            "full written endings",
+            "listen for stressed content words"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-e49-guided-meaning",
+      "prompt": "Choose the meaning of “Jag hinner int i dag.”.",
+      "answers": [
+        "I do not have time today. (Finland-Swedish speech)"
+      ],
+      "options": [
+        "I do not have time today. (Finland-Swedish speech)",
+        "I do not have time today. (written standard form)",
+        "We will meet outside the station."
+      ],
+      "hint": "Match the whole sentence to its communicative purpose.",
+      "explanation": "“Jag hinner int i dag.” means “I do not have time today. (Finland-Swedish speech)”"
+    },
+    {
+      "id": "sv-e49-guided-form",
+      "prompt": "Map the spoken form to standard writing: Jag hinner int i dag. → Jag hinner ___ i dag.",
+      "answers": [
+        "inte"
+      ],
+      "options": [
+        "inte",
+        "inget",
+        "ingen"
+      ],
+      "hint": "Read the whole sentence before choosing the form.",
+      "explanation": "The fitting form is inte."
+    },
+    {
+      "id": "sv-e49-guided-dialogue",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Jag hinner int i dag, men kanske i morgon."
+      ],
+      "options": [
+        "Jag hinner int i dag, men kanske i morgon.",
+        "Jag hinner inte i dag.",
+        "Vi ses utanför stationen."
+      ],
+      "hint": "Locate the exact line and identify what it accomplishes.",
+      "explanation": "The middle speaker uses this line in the situation."
+    },
+    {
+      "id": "sv-e49-guided-listening",
+      "prompt": "Why is the speaker late?",
+      "answers": [
+        "The bus did not arrive on time"
+      ],
+      "options": [
+        "The bus did not arrive on time",
+        "The train was cancelled",
+        "The speaker forgot the meeting"
+      ],
+      "hint": "Listen once for the situation and again for the requested detail.",
+      "explanation": "Bussen kom int när den skulle means the bus did not come when expected."
+    },
+    {
+      "id": "sv-e49-guided-reading",
+      "prompt": "Where should the reader not go?",
+      "answers": [
+        "The stop on the other side of the building"
+      ],
+      "options": [
+        "The stop on the other side of the building",
+        "The main entrance",
+        "The railway platform"
+      ],
+      "hint": "Find the exact phrase that proves the answer.",
+      "explanation": "Gå inte till hållplatsen på andra sidan huset."
+    },
+    {
+      "id": "sv-e49-guided-register",
+      "prompt": "Which neutral form preserves the meaning of “Jag hinner int i dag.”?",
+      "answers": [
+        "Jag hinner inte i dag."
+      ],
+      "options": [
+        "Jag hinner inte i dag.",
+        "Vi ses utanför stationen."
+      ],
+      "hint": "Keep the meaning while choosing a form suitable for clear production.",
+      "explanation": "Int is common in Finland-Swedish speech. Use inte in neutral and formal writing."
+    },
+    {
+      "id": "sv-e49-guided-vocabulary",
+      "prompt": "Which word belongs directly to today's listening variation task?",
+      "answers": [
+        "uttalsvariant"
+      ],
+      "options": [
+        "uttalsvariant",
+        "context",
+        "We will meet outside the station."
+      ],
+      "hint": "Choose the Swedish target word, not an English gloss or a full sentence.",
+      "explanation": "uttalsvariant means pronunciation variant."
+    },
+    {
+      "id": "sv-e49-guided-strategy",
+      "prompt": "Which action best improves an independent second attempt?",
+      "answers": [
+        "Listen through unfamiliar pronunciation for stressed nouns, verbs, numbers and place words."
+      ],
+      "options": [
+        "Listen through unfamiliar pronunciation for stressed nouns, verbs, numbers and place words.",
+        "Copy the model word for word.",
+        "Replace all precise details with general language."
+      ],
+      "hint": "The best strategy should transfer to fresh material.",
+      "explanation": "Listen through unfamiliar pronunciation for stressed nouns, verbs, numbers and place words."
+    },
+    {
+      "id": "sv-e49-guided-transfer",
+      "prompt": "Which changed condition should you respond to in the transfer attempt?",
+      "answers": [
+        "A different speaker uses a reduced form of är; identify the plan without transcribing every word."
+      ],
+      "options": [
+        "A different speaker uses a reduced form of är; identify the plan without transcribing every word.",
+        "Repeat the original scene without any change.",
+        "Give an English summary instead of completing the Swedish task."
+      ],
+      "hint": "Transfer requires a meaningful new condition.",
+      "explanation": "A different speaker uses a reduced form of är; identify the plan without transcribing every word."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-e49-check-core",
+      "prompt": "Choose the phrase that most directly supports today's main goal.",
+      "answers": [
+        "Jag hinner int i dag."
+      ],
+      "options": [
+        "Jag hinner int i dag.",
+        "Jag hinner inte i dag.",
+        "Vi ses utanför stationen."
+      ],
+      "hint": "Return to the goal and select the line that starts that action.",
+      "explanation": "Use Jag hinner int i dag."
+    },
+    {
+      "id": "sv-e49-check-listening",
+      "prompt": "Why is the speaker late?",
+      "answers": [
+        "The bus did not arrive on time"
+      ],
+      "options": [
+        "The bus did not arrive on time",
+        "The train was cancelled",
+        "The speaker forgot the meeting"
+      ],
+      "hint": "Answer from the audio first; inspect the script only afterwards.",
+      "explanation": "Bussen kom int när den skulle means the bus did not come when expected."
+    },
+    {
+      "id": "sv-e49-check-reading",
+      "prompt": "What should the reader do on arrival?",
+      "answers": [
+        "Call"
+      ],
+      "options": [
+        "Call",
+        "Buy another ticket",
+        "Wait inside the train"
+      ],
+      "hint": "Read for the required action and the detail that controls it.",
+      "explanation": "Ring när du är framme."
+    },
+    {
+      "id": "sv-e49-check-next",
+      "prompt": "What should you save for later review?",
+      "answers": [
+        "one skill-specific result, one useful phrase and one concrete improvement"
+      ],
+      "options": [
+        "one skill-specific result, one useful phrase and one concrete improvement",
+        "a single overall score with no skill detail",
+        "a copied model with no record of your own attempt"
+      ],
+      "hint": "Useful evidence tells you what to repeat and what to change.",
+      "explanation": "Separate evidence makes the next practice decision specific."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill practice, transfer and delayed return",
+    "instructions": "LISTEN: answer “Why is the speaker late?” from the recording before reading the script. Save the listening result separately.\n\nREAD: answer the gist and detail questions, and mark the exact phrase that proves each answer. Save the reading result separately.\n\nSPEAK: Respond to a delayed-arrival message in clear standard Swedish. Record an independent first attempt, then improve one feature.\n\nWRITE: Rewrite the informal voice message as a clear standard-Swedish text message. Draft without the model, then revise for reader, purpose, essential detail and next action.\n\nTRANSFER: A different speaker uses a reduced form of är; identify the plan without transcribing every word.\n\nBETWEEN LESSON · Optional, 5 minutes: Notice one variant in authentic speech, then record its neutral written equivalent.",
+    "model": "SPEAKING MODEL: Okej, jag förstår. Jag väntar utanför stationen. Ring när du är framme, så hittar vi varandra.\n\nWRITING MODEL: Hej! Jag blir lite sen eftersom bussen inte kom i tid. Den är troligen här om fem minuter. Vänta utanför stationen, så ringer jag när jag är framme."
+  },
+  "takeaways": [
+    "Use: Jag hinner int i dag.",
+    "Register: Jag hinner int i dag. → Jag hinner inte i dag.",
+    "Variation is listening knowledge, not a requirement to imitate a particular accent."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Sofia",
+      "fi": "Kommer du med på kaffe efter jobbet?",
+      "en": "Are you coming for coffee after work?"
+    },
+    {
+      "speaker": "Elias",
+      "fi": "Jag hinner int i dag, men kanske i morgon.",
+      "en": "I do not have time today, but perhaps tomorrow."
+    },
+    {
+      "speaker": "Sofia",
+      "fi": "Bra, vi hörs i morgon då.",
+      "en": "Good, we will be in touch tomorrow then."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-e49-v1",
+        "fi": "uttalsvariant",
+        "en": "pronunciation variant",
+        "example": "En uttalsvariant ändrar inte budskapet.",
+        "translation": "A pronunciation variant does not change the message.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e49-v2",
+        "fi": "sammanhang",
+        "en": "context",
+        "example": "Sammanhanget hjälper dig att förstå.",
+        "translation": "The context helps you understand.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e49-v3",
+        "fi": "huvudbudskap",
+        "en": "main message",
+        "example": "Lyssna först efter huvudbudskapet.",
+        "translation": "Listen for the main message first.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e49-p1",
+        "fi": "Jag hinner int i dag.",
+        "en": "I do not have time today. (Finland-Swedish speech)",
+        "example": "Jag hinner int i dag.",
+        "translation": "I do not have time today. (Finland-Swedish speech)",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e49-p2",
+        "fi": "Jag hinner inte i dag.",
+        "en": "I do not have time today. (written standard form)",
+        "example": "Jag hinner inte i dag.",
+        "translation": "I do not have time today. (written standard form)",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e49-p3",
+        "fi": "Vi ses utanför stationen.",
+        "en": "We will meet outside the station.",
+        "example": "Vi ses utanför stationen.",
+        "translation": "We will meet outside the station.",
+        "level": "B1"
+      }
+    ],
+    "pronunciation": {
+      "text": "inte → int i vardagligt finlandssvenskt tal; är → e i många talspråksvarianter",
+      "tip": "Recognition is the goal. Do not force a dialect in your own speech; clear standard Swedish is always an appropriate production choice."
+    },
+    "reading_passage": {
+      "text": "Meddelande: Bussen från centrum är ungefär tio minuter sen. Vi väntar utanför stationens huvudingång. Om du kommer med tåget, gå inte till hållplatsen på andra sidan huset. Ring när du är framme.",
+      "gist": {
+        "prompt": "What is the main message?",
+        "options": [
+          "The group is waiting at a specific entrance",
+          "The meeting has been cancelled",
+          "Everyone should take a taxi"
+        ],
+        "answer": 0,
+        "explanation": "The text explains the delay and exact meeting place."
+      },
+      "detail": {
+        "prompt": "Where should the reader not go?",
+        "options": [
+          "The stop on the other side of the building",
+          "The main entrance",
+          "The railway platform"
+        ],
+        "answer": 0,
+        "explanation": "Gå inte till hållplatsen på andra sidan huset."
+      }
+    },
+    "reading": {
+      "text": "Meddelande: Bussen från centrum är ungefär tio minuter sen. Vi väntar utanför stationens huvudingång. Om du kommer med tåget, gå inte till hållplatsen på andra sidan huset. Ring när du är framme.",
+      "question": "What should the reader do on arrival?",
+      "options": [
+        "Call",
+        "Buy another ticket",
+        "Wait inside the train"
+      ],
+      "answer": 0,
+      "explanation": "Ring när du är framme."
+    },
+    "listening": {
+      "text": "Hej, jag blir lite sen. Bussen kom int när den skulle, men den är nog här om fem minuter. Vänta utanför stationen, så ringer jag när jag är framme.",
+      "question": "Why is the speaker late?",
+      "options": [
+        "The bus did not arrive on time",
+        "The train was cancelled",
+        "The speaker forgot the meeting"
+      ],
+      "answer": 0,
+      "explanation": "Bussen kom int när den skulle means the bus did not come when expected."
+    },
+    "speaking": {
+      "prompt": "Respond to a delayed-arrival message in clear standard Swedish.",
+      "help": "Confirm that you understood, repeat the meeting point and say what you will do.",
+      "model": "Okej, jag förstår. Jag väntar utanför stationen. Ring när du är framme, så hittar vi varandra."
+    },
+    "writing": {
+      "prompt": "Rewrite the informal voice message as a clear standard-Swedish text message.",
+      "help": "Preserve meaning; write inte rather than the spoken int. Keep the time estimate and action.",
+      "model": "Hej! Jag blir lite sen eftersom bussen inte kom i tid. Den är troligen här om fem minuter. Vänta utanför stationen, så ringer jag när jag är framme."
+    }
+  },
+  "route": {
+    "primarySkill": "listening",
+    "expectedOutput": "Save a listening answer and the exact audio detail that supports it.",
+    "transferPrompt": "A different speaker uses a reduced form of är; identify the plan without transcribing every word.",
+    "returnPrompt": "Notice one variant in authentic speech, then record its neutral written equivalent.",
+    "successChecks": [
+      "You complete the communicative purpose without copying the model.",
+      "Essential facts, times and requested actions are understandable.",
+      "You preserve meaning when register or conditions change."
+    ],
+    "requiredSkills": [
+      "listening"
+    ]
+  }
+}

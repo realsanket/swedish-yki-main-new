@@ -1,0 +1,496 @@
+{
+  "number": 50,
+  "legacyLessonId": "sv-service-clinic",
+  "objectives": [
+    "Solve a multi-step service problem, evaluate an offer and escalate politely when necessary.",
+    "Use and recognise: Problemet är att jag har debiterats två gånger. · Jag har redan skickat kvittot. · Om det inte går att lösa, vill jag tala med en ansvarig.",
+    "Complete an independent first attempt, review one specific feature, then transfer the language to a changed situation."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-e50-recall-1",
+      "prompt": "Warm up for service problem-solving: choose the Swedish line that best supports today's goal.",
+      "answers": [
+        "Problemet är att jag har debiterats två gånger."
+      ],
+      "options": [
+        "Problemet är att jag har debiterats två gånger.",
+        "Jag har redan skickat kvittot.",
+        "Om det inte går att lösa, vill jag tala med en ansvarig."
+      ],
+      "hint": "Choose by communicative purpose, not by translating every word.",
+      "explanation": "Problemet är att jag har debiterats två gånger. is the most direct starting point for this task."
+    },
+    {
+      "id": "sv-e50-recall-2",
+      "prompt": "Which strategy will help most in this service problem-solving task?",
+      "answers": [
+        "Do not escalate automatically: first test whether the proposed solution actually meets your stated need."
+      ],
+      "options": [
+        "Do not escalate automatically: first test whether the proposed solution actually meets your stated need.",
+        "Translate every word before deciding what to do.",
+        "Memorise the model and repeat it without changing details."
+      ],
+      "hint": "Choose the action that makes the input usable in a new situation.",
+      "explanation": "Do not escalate automatically: first test whether the proposed solution actually meets your stated need."
+    },
+    {
+      "id": "sv-e50-recall-3",
+      "prompt": "Say or type this useful line from memory: “If it cannot be resolved, I would like to speak with a person in charge.”",
+      "answers": [
+        "Om det inte går att lösa, vill jag tala med en ansvarig."
+      ],
+      "hint": "Try once before looking back at the phrase list.",
+      "explanation": "A clear answer is: Om det inte går att lösa, vill jag tala med en ansvarig."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Situation, language and purpose",
+      "body": [
+        "Goal: Solve a multi-step service problem, evaluate an offer and escalate politely when necessary.",
+        "Core vocabulary: debitering, handläggare, lösningsförslag. Key phrases: Problemet är att jag har debiterats två gånger. · Jag har redan skickat kvittot. · Om det inte går att lösa, vill jag tala med en ansvarig.",
+        "Meaning first: use the language to complete a real service problem-solving purpose, not to display isolated grammar.",
+        "Purposeful return: Use fact, impact and request as a reusable problem-solving frame."
+      ],
+      "examples": [
+        {
+          "fi": "Problemet är att jag har debiterats två gånger.",
+          "en": "The problem is that I have been charged twice."
+        },
+        {
+          "fi": "Jag har redan skickat kvittot.",
+          "en": "I have already sent the receipt."
+        },
+        {
+          "fi": "Om det inte går att lösa, vill jag tala med en ansvarig.",
+          "en": "If it cannot be resolved, I would like to speak with a person in charge."
+        }
+      ]
+    },
+    {
+      "title": "Register, strategy and transfer",
+      "body": [
+        "REGISTER · NEUTRAL SWEDISH: Jag har debiterats två gånger för samma köp. EVERYDAY SPEECH / CONTEXT: Det drogs pengar två gånger.",
+        "Practice move: Do not escalate automatically: first test whether the proposed solution actually meets your stated need.",
+        "Make a first attempt without the model. Review one feature, then respond again after an important condition changes."
+      ],
+      "examples": [
+        {
+          "fi": "NEUTRAL SWEDISH: Jag har debiterats två gånger för samma köp.",
+          "en": "A clear production model for neutral or formal use."
+        },
+        {
+          "fi": "EVERYDAY / CONTEXTUAL FORM: Det drogs pengar två gånger.",
+          "en": "Useful recognition or familiar-language model.",
+          "note": "The second version is precise and useful in a written complaint or formal call."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Step",
+          "Your move",
+          "Success evidence"
+        ],
+        "rows": [
+          [
+            "diagnose",
+            "separate reservation from booked charge",
+            "name the exact transaction"
+          ],
+          [
+            "negotiate",
+            "assess whether the offer solves the problem",
+            "accept or counter with a reason"
+          ],
+          [
+            "close",
+            "confirm amount, timing and reference",
+            "save the case number"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Evidence by skill",
+      "body": [
+        "Complete each skill task independently before using the model or transcript.",
+        "Save listening, reading, speaking and writing results separately. A strength in one skill does not stand in for another.",
+        "The curriculum label is a learning target, not a certificate or an official YKI result."
+      ],
+      "examples": [],
+      "table": {
+        "headings": [
+          "Evidence",
+          "First attempt",
+          "Targeted retry"
+        ],
+        "rows": [
+          [
+            "Listening",
+            "answer from audio only",
+            "replay for one missed detail"
+          ],
+          [
+            "Reading",
+            "mark proof in the text",
+            "recheck purpose and action"
+          ],
+          [
+            "Speaking / writing",
+            "save separate outputs",
+            "improve one observable feature"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-e50-guided-meaning",
+      "prompt": "Choose the meaning of “Problemet är att jag har debiterats två gånger.”.",
+      "answers": [
+        "The problem is that I have been charged twice."
+      ],
+      "options": [
+        "The problem is that I have been charged twice.",
+        "I have already sent the receipt.",
+        "If it cannot be resolved, I would like to speak with a person in charge."
+      ],
+      "hint": "Match the whole sentence to its communicative purpose.",
+      "explanation": "“Problemet är att jag har debiterats två gånger.” means “The problem is that I have been charged twice.”"
+    },
+    {
+      "id": "sv-e50-guided-form",
+      "prompt": "Complete the problem statement: Jag har ___ två gånger.",
+      "answers": [
+        "debiterats"
+      ],
+      "options": [
+        "debiterats",
+        "bokat",
+        "levererats"
+      ],
+      "hint": "Read the whole sentence before choosing the form.",
+      "explanation": "The fitting form is debiterats."
+    },
+    {
+      "id": "sv-e50-guided-dialogue",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Vi kan dra av beloppet från nästa månads avgift."
+      ],
+      "options": [
+        "Vi kan dra av beloppet från nästa månads avgift.",
+        "Jag har redan skickat kvittot.",
+        "Om det inte går att lösa, vill jag tala med en ansvarig."
+      ],
+      "hint": "Locate the exact line and identify what it accomplishes.",
+      "explanation": "The middle speaker uses this line in the situation."
+    },
+    {
+      "id": "sv-e50-guided-listening",
+      "prompt": "When should the refund normally appear?",
+      "answers": [
+        "Within three to five banking days"
+      ],
+      "options": [
+        "Within three to five banking days",
+        "Immediately in cash",
+        "After seven weeks"
+      ],
+      "hint": "Listen once for the situation and again for the requested detail.",
+      "explanation": "The agent says inom tre till fem bankdagar."
+    },
+    {
+      "id": "sv-e50-guided-reading",
+      "prompt": "What should be hidden in the bank statement?",
+      "answers": [
+        "Other information"
+      ],
+      "options": [
+        "Other information",
+        "Both disputed amounts",
+        "The customer's name only"
+      ],
+      "hint": "Find the exact phrase that proves the answer.",
+      "explanation": "The instruction says där övriga uppgifter är dolda."
+    },
+    {
+      "id": "sv-e50-guided-register",
+      "prompt": "Which neutral form preserves the meaning of “Det drogs pengar två gånger.”?",
+      "answers": [
+        "Jag har debiterats två gånger för samma köp."
+      ],
+      "options": [
+        "Jag har debiterats två gånger för samma köp.",
+        "Jag har redan skickat kvittot.",
+        "Om det inte går att lösa, vill jag tala med en ansvarig."
+      ],
+      "hint": "Keep the meaning while choosing a form suitable for clear production.",
+      "explanation": "The second version is precise and useful in a written complaint or formal call."
+    },
+    {
+      "id": "sv-e50-guided-vocabulary",
+      "prompt": "Which word belongs directly to today's service problem-solving task?",
+      "answers": [
+        "debitering"
+      ],
+      "options": [
+        "debitering",
+        "case officer",
+        "If it cannot be resolved, I would like to speak with a person in charge."
+      ],
+      "hint": "Choose the Swedish target word, not an English gloss or a full sentence.",
+      "explanation": "debitering means charge."
+    },
+    {
+      "id": "sv-e50-guided-strategy",
+      "prompt": "Which action best improves an independent second attempt?",
+      "answers": [
+        "Do not escalate automatically: first test whether the proposed solution actually meets your stated need."
+      ],
+      "options": [
+        "Do not escalate automatically: first test whether the proposed solution actually meets your stated need.",
+        "Copy the model word for word.",
+        "Replace all precise details with general language."
+      ],
+      "hint": "The best strategy should transfer to fresh material.",
+      "explanation": "Do not escalate automatically: first test whether the proposed solution actually meets your stated need."
+    },
+    {
+      "id": "sv-e50-guided-transfer",
+      "prompt": "Which changed condition should you respond to in the transfer attempt?",
+      "answers": [
+        "The refund is delayed beyond the promised date; follow up with the case number and request a new deadline."
+      ],
+      "options": [
+        "The refund is delayed beyond the promised date; follow up with the case number and request a new deadline.",
+        "Repeat the original scene without any change.",
+        "Give an English summary instead of completing the Swedish task."
+      ],
+      "hint": "Transfer requires a meaningful new condition.",
+      "explanation": "The refund is delayed beyond the promised date; follow up with the case number and request a new deadline."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-e50-check-core",
+      "prompt": "Choose the phrase that most directly supports today's main goal.",
+      "answers": [
+        "Problemet är att jag har debiterats två gånger."
+      ],
+      "options": [
+        "Problemet är att jag har debiterats två gånger.",
+        "Jag har redan skickat kvittot.",
+        "Om det inte går att lösa, vill jag tala med en ansvarig."
+      ],
+      "hint": "Return to the goal and select the line that starts that action.",
+      "explanation": "Use Problemet är att jag har debiterats två gånger."
+    },
+    {
+      "id": "sv-e50-check-listening",
+      "prompt": "When should the refund normally appear?",
+      "answers": [
+        "Within three to five banking days"
+      ],
+      "options": [
+        "Within three to five banking days",
+        "Immediately in cash",
+        "After seven weeks"
+      ],
+      "hint": "Answer from the audio first; inspect the script only afterwards.",
+      "explanation": "The agent says inom tre till fem bankdagar."
+    },
+    {
+      "id": "sv-e50-check-reading",
+      "prompt": "When should the customer complete the form?",
+      "answers": [
+        "If both amounts have been booked"
+      ],
+      "options": [
+        "If both amounts have been booked",
+        "Immediately after any reservation",
+        "Only after seven weeks"
+      ],
+      "hint": "Read for the required action and the detail that controls it.",
+      "explanation": "The form is required when both charges are booked."
+    },
+    {
+      "id": "sv-e50-check-next",
+      "prompt": "What should you save for later review?",
+      "answers": [
+        "one skill-specific result, one useful phrase and one concrete improvement"
+      ],
+      "options": [
+        "one skill-specific result, one useful phrase and one concrete improvement",
+        "a single overall score with no skill detail",
+        "a copied model with no record of your own attempt"
+      ],
+      "hint": "Useful evidence tells you what to repeat and what to change.",
+      "explanation": "Separate evidence makes the next practice decision specific."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill practice, transfer and delayed return",
+    "instructions": "LISTEN: answer “When should the refund normally appear?” from the recording before reading the script. Save the listening result separately.\n\nREAD: answer the gist and detail questions, and mark the exact phrase that proves each answer. Save the reading result separately.\n\nSPEAK: Handle a duplicate-charge call from first explanation to final confirmation. Record an independent first attempt, then improve one feature.\n\nWRITE: Write a follow-up after a service problem has not been resolved. Draft without the model, then revise for reader, purpose, essential detail and next action.\n\nTRANSFER: The refund is delayed beyond the promised date; follow up with the case number and request a new deadline.\n\nBETWEEN LESSON · Optional, 5 minutes: Use fact, impact and request as a reusable problem-solving frame.",
+    "model": "SPEAKING MODEL: Problemet är att jag har debiterats två gånger för samma medlemskap. Jag har redan skickat kvittot. Jag vill gärna få det extra beloppet återbetalat. När syns pengarna, och får jag ett ärendenummer?\n\nWRITING MODEL: Hej! Jag kontaktade er den 4 juni om en dubbel debitering och skickade kvitto samma dag. Det extra beloppet har ännu inte återbetalats. Bekräfta när återbetalningen görs. Om ärendet inte kan lösas nu, vill jag att en ansvarig handläggare kontaktar mig."
+  },
+  "takeaways": [
+    "Use: Problemet är att jag har debiterats två gånger.",
+    "Register: Det drogs pengar två gånger. → Jag har debiterats två gånger för samma köp.",
+    "Effective escalation stays factual, names the missing outcome and asks for a responsible next step."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Kund",
+      "fi": "Problemet är att jag har debiterats två gånger för samma medlemskap.",
+      "en": "The problem is that I have been charged twice for the same membership."
+    },
+    {
+      "speaker": "Kundtjänst",
+      "fi": "Vi kan dra av beloppet från nästa månads avgift.",
+      "en": "We can deduct the amount from next month's fee."
+    },
+    {
+      "speaker": "Kund",
+      "fi": "Jag vill hellre få beloppet återbetalat. Kan en handläggare hjälpa mig?",
+      "en": "I would prefer to have the amount refunded. Can a case officer help me?"
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-e50-v1",
+        "fi": "debitering",
+        "en": "charge",
+        "example": "Det finns två debiteringar på kontot.",
+        "translation": "There are two charges on the account.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e50-v2",
+        "fi": "handläggare",
+        "en": "case officer",
+        "example": "En handläggare granskar ärendet.",
+        "translation": "A case officer reviews the matter.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e50-v3",
+        "fi": "lösningsförslag",
+        "en": "proposed solution",
+        "example": "Kundtjänsten gav ett lösningsförslag.",
+        "translation": "Customer service offered a solution.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e50-p1",
+        "fi": "Problemet är att jag har debiterats två gånger.",
+        "en": "The problem is that I have been charged twice.",
+        "example": "Problemet är att jag har debiterats två gånger.",
+        "translation": "The problem is that I have been charged twice.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e50-p2",
+        "fi": "Jag har redan skickat kvittot.",
+        "en": "I have already sent the receipt.",
+        "example": "Jag har redan skickat kvittot.",
+        "translation": "I have already sent the receipt.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e50-p3",
+        "fi": "Om det inte går att lösa, vill jag tala med en ansvarig.",
+        "en": "If it cannot be resolved, I would like to speak with a person in charge.",
+        "example": "Om det inte går att lösa, vill jag tala med en ansvarig.",
+        "translation": "If it cannot be resolved, I would like to speak with a person in charge.",
+        "level": "B1"
+      }
+    ],
+    "pronunciation": {
+      "text": "debitering – återbetala – handläggare – ärendenummer",
+      "tip": "Keep key financial terms and numbers slow and distinct. Ask the other person to repeat an amount if needed."
+    },
+    "reading_passage": {
+      "text": "Om du ser en felaktig debitering ska du först kontrollera att köpet inte bara är reserverat. En reservation försvinner normalt inom fem vardagar. Om båda beloppen har bokförts, fyll i formuläret och bifoga kvitto samt kontoutdrag där övriga uppgifter är dolda. Vi behandlar ärendet inom sju vardagar.",
+      "gist": {
+        "prompt": "What problem does the instruction address?",
+        "options": [
+          "A possible duplicate charge",
+          "A forgotten password",
+          "A delayed parcel"
+        ],
+        "answer": 0,
+        "explanation": "The text distinguishes a temporary reservation from two booked charges."
+      },
+      "detail": {
+        "prompt": "What should be hidden in the bank statement?",
+        "options": [
+          "Other information",
+          "Both disputed amounts",
+          "The customer's name only"
+        ],
+        "answer": 0,
+        "explanation": "The instruction says där övriga uppgifter är dolda."
+      }
+    },
+    "reading": {
+      "text": "Om du ser en felaktig debitering ska du först kontrollera att köpet inte bara är reserverat. En reservation försvinner normalt inom fem vardagar. Om båda beloppen har bokförts, fyll i formuläret och bifoga kvitto samt kontoutdrag där övriga uppgifter är dolda. Vi behandlar ärendet inom sju vardagar.",
+      "question": "When should the customer complete the form?",
+      "options": [
+        "If both amounts have been booked",
+        "Immediately after any reservation",
+        "Only after seven weeks"
+      ],
+      "answer": 0,
+      "explanation": "The form is required when both charges are booked."
+    },
+    "listening": {
+      "text": "Vi ser nu att betalningen har registrerats två gånger. Jag kan återbetala det extra beloppet i dag. Det syns normalt på ditt konto inom tre till fem bankdagar. Du får ett ärendenummer per e-post.",
+      "question": "When should the refund normally appear?",
+      "options": [
+        "Within three to five banking days",
+        "Immediately in cash",
+        "After seven weeks"
+      ],
+      "answer": 0,
+      "explanation": "The agent says inom tre till fem bankdagar."
+    },
+    "speaking": {
+      "prompt": "Handle a duplicate-charge call from first explanation to final confirmation.",
+      "help": "State facts, refer to evidence, evaluate the first offer, make a reasonable counterrequest and confirm time and case number.",
+      "model": "Problemet är att jag har debiterats två gånger för samma medlemskap. Jag har redan skickat kvittot. Jag vill gärna få det extra beloppet återbetalat. När syns pengarna, och får jag ett ärendenummer?"
+    },
+    "writing": {
+      "prompt": "Write a follow-up after a service problem has not been resolved.",
+      "help": "Refer to the earlier contact, summarise evidence, state the unresolved issue and request a deadline or escalation.",
+      "model": "Hej! Jag kontaktade er den 4 juni om en dubbel debitering och skickade kvitto samma dag. Det extra beloppet har ännu inte återbetalats. Bekräfta när återbetalningen görs. Om ärendet inte kan lösas nu, vill jag att en ansvarig handläggare kontaktar mig."
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Handle a duplicate-charge call from first explanation to final confirmation.",
+    "transferPrompt": "The refund is delayed beyond the promised date; follow up with the case number and request a new deadline.",
+    "returnPrompt": "Use fact, impact and request as a reusable problem-solving frame.",
+    "successChecks": [
+      "You complete the communicative purpose without copying the model.",
+      "Essential facts, times and requested actions are understandable.",
+      "You preserve meaning when register or conditions change."
+    ],
+    "requiredSkills": [
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ]
+  }
+}

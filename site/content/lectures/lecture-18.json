@@ -1,0 +1,448 @@
+{
+  "number": 18,
+  "objectives": [
+    "Place inte after the finite verb in a main clause.",
+    "Maintain V2 after a fronted time/place.",
+    "Correct a misunderstanding clearly."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-18-recall-1",
+      "prompt": "Retrieve a useful line from the preceding episode.",
+      "answers": [
+        "Jag kan inte komma."
+      ],
+      "options": [
+        "Jag kan inte komma.",
+        "Jag inte kan komma.",
+        "Jag kan komma inte."
+      ],
+      "hint": "Choose the grammatically complete line.",
+      "explanation": "This recycles earlier Swedish."
+    },
+    {
+      "id": "sv-18-recall-key",
+      "prompt": "Choose the Swedish line meaning “Today I cannot come, but tomorrow I am free.”",
+      "answers": [
+        "Idag kan jag inte komma, men imorgon är jag ledig."
+      ],
+      "options": [
+        "Idag kan jag inte komma, men imorgon är jag ledig.",
+        "Kan du komma tisdag klockan två?",
+        "utan"
+      ],
+      "hint": "Match the whole message.",
+      "explanation": "Idag kan jag inte komma, men imorgon är jag ledig. means “Today I cannot come, but tomorrow I am free.”"
+    },
+    {
+      "id": "sv-18-recall-sound",
+      "prompt": "Which word gets contrastive stress in “inte tisdag utan torsdag”?",
+      "answers": [
+        "torsdag"
+      ],
+      "options": [
+        "torsdag",
+        "utan",
+        "an ending"
+      ],
+      "hint": "Say the options and apply the cue.",
+      "explanation": "Stress highlights the correction."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Negation and main-clause order",
+      "kind": "scene",
+      "body": [
+        "Use Nej, inte … utan … to correct a detail.",
+        "Useful repairs are Jag vet inte, Jag förstår inte, Det fungerar inte.",
+        "Subordinate order comes later; focus now on main clauses."
+      ],
+      "examples": [
+        {
+          "fi": "Kan du komma tisdag klockan två?",
+          "en": "Can you come Tuesday at two?"
+        },
+        {
+          "fi": "Nej, på tisdag kan jag inte komma.",
+          "en": "No, I cannot come Tuesday."
+        },
+        {
+          "fi": "Passar onsdag klockan tre?",
+          "en": "Does Wednesday at three work?"
+        },
+        {
+          "fi": "Ja, då är jag ledig.",
+          "en": "Yes, then I am free."
+        }
+      ]
+    },
+    {
+      "title": "Finite verb second; inte after it",
+      "kind": "rule",
+      "body": [
+        "Neutral order is subject + finite verb + inte: Jag arbetar inte idag.",
+        "With a fronted element, keep verb second: Idag arbetar jag inte.",
+        "With a modal, inte follows the modal: Jag kan inte komma."
+      ],
+      "examples": [
+        {
+          "fi": "Jag bor inte i Helsingfors.",
+          "en": "I do not live in Helsinki."
+        },
+        {
+          "fi": "Idag arbetar jag inte.",
+          "en": "Today I do not work."
+        },
+        {
+          "fi": "Hon kan inte komma.",
+          "en": "She cannot come."
+        },
+        {
+          "fi": "Inte tisdag utan torsdag.",
+          "en": "Not Tuesday but Thursday."
+        }
+      ],
+      "table": {
+        "headings": [
+          "First",
+          "Verb",
+          "Rest"
+        ],
+        "rows": [
+          [
+            "Jag",
+            "arbetar",
+            "inte idag."
+          ],
+          [
+            "Idag",
+            "arbetar",
+            "jag inte."
+          ],
+          [
+            "På fredag",
+            "kan",
+            "vi inte komma."
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-18-guided-meaning",
+      "prompt": "What does “Idag kan jag inte komma, men imorgon är jag ledig.” mean?",
+      "answers": [
+        "Today I cannot come, but tomorrow I am free."
+      ],
+      "options": [
+        "Today I cannot come, but tomorrow I am free.",
+        "Can you come Tuesday at two?",
+        "free/off"
+      ],
+      "hint": "Match the whole line.",
+      "explanation": "Idag kan jag inte komma, men imorgon är jag ledig. means “Today I cannot come, but tomorrow I am free.”"
+    },
+    {
+      "id": "sv-18-guided-form",
+      "prompt": "Choose correct order.",
+      "answers": [
+        "På måndag arbetar jag inte."
+      ],
+      "options": [
+        "På måndag arbetar jag inte.",
+        "På måndag jag inte arbetar.",
+        "På måndag inte jag arbetar."
+      ],
+      "hint": "Use the rule.",
+      "explanation": "Verb second, then subject and inte."
+    },
+    {
+      "id": "sv-18-guided-scene",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Passar onsdag klockan tre?"
+      ],
+      "options": [
+        "Passar onsdag klockan tre?",
+        "Kan du komma tisdag klockan två?",
+        "Idag kan jag inte komma, men imorgon är jag ledig."
+      ],
+      "hint": "Locate the line.",
+      "explanation": "The dialogue includes Passar onsdag klockan tre?"
+    },
+    {
+      "id": "sv-18-guided-listen",
+      "prompt": "Where does the speaker work today?",
+      "answers": [
+        "At the office"
+      ],
+      "options": [
+        "At the office",
+        "At home",
+        "Nowhere"
+      ],
+      "hint": "Listen for the detail.",
+      "explanation": "På kontoret."
+    },
+    {
+      "id": "sv-18-guided-read",
+      "prompt": "What changed?",
+      "answers": [
+        "The day and time"
+      ],
+      "options": [
+        "The day and time",
+        "The room",
+        "The building"
+      ],
+      "hint": "Scan the text.",
+      "explanation": "The place stays the same."
+    },
+    {
+      "id": "sv-18-guided-sound",
+      "prompt": "Which word gets contrastive stress in “inte tisdag utan torsdag”?",
+      "answers": [
+        "torsdag"
+      ],
+      "options": [
+        "torsdag",
+        "utan",
+        "an ending"
+      ],
+      "hint": "Use spelling and audio.",
+      "explanation": "Stress highlights the correction."
+    },
+    {
+      "id": "sv-18-guided-word",
+      "prompt": "Which item means “not”?",
+      "answers": [
+        "inte"
+      ],
+      "options": [
+        "inte",
+        "utan",
+        "ledig"
+      ],
+      "hint": "Use the examples.",
+      "explanation": "inte means not."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-18-check-key",
+      "prompt": "Produce: “Today I cannot come, but tomorrow I am free.”",
+      "answers": [
+        "Idag kan jag inte komma, men imorgon är jag ledig."
+      ],
+      "hint": "Say, then type.",
+      "explanation": "Model: Idag kan jag inte komma, men imorgon är jag ledig."
+    },
+    {
+      "id": "sv-18-check-form",
+      "prompt": "Choose correct order.",
+      "answers": [
+        "På måndag arbetar jag inte."
+      ],
+      "options": [
+        "På måndag arbetar jag inte.",
+        "På måndag jag inte arbetar.",
+        "På måndag inte jag arbetar."
+      ],
+      "hint": "Apply from memory.",
+      "explanation": "Verb second, then subject and inte."
+    },
+    {
+      "id": "sv-18-check-listen",
+      "prompt": "Where does the speaker work today?",
+      "answers": [
+        "At the office"
+      ],
+      "options": [
+        "At the office",
+        "At home",
+        "Nowhere"
+      ],
+      "hint": "Replay once.",
+      "explanation": "På kontoret."
+    },
+    {
+      "id": "sv-18-check-transfer",
+      "prompt": "What best tests transfer?",
+      "answers": [
+        "Change one detail and rebuild the message"
+      ],
+      "options": [
+        "Change one detail and rebuild the message",
+        "Copy the model",
+        "Translate every word"
+      ],
+      "hint": "Change the situation.",
+      "explanation": "Rebuilding tests transfer."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 18 mission: Negation and main-clause order",
+    "instructions": "LISTEN: Hear twice and answer: Where does the speaker work today?\n\nREAD: Read for purpose and detail. Answer: What changed?\n\nSPEAK: Correct day, time, and place. Try once unaided, then improve one detail.\n\nWRITE: Write a rescheduling message with two negatives. Check word order, forms, and purpose.\n\nTRANSFER: Move a time phrase to front and repair order.\n\nRETURN: Rebuild Jag arbetar inte / Idag arbetar jag inte.",
+    "model": "Speaking: Inte tisdag utan torsdag. Inte klockan två utan tre. Vi ses på biblioteket.\nWriting: Idag kan jag inte komma. På fredag arbetar jag inte, så då är jag ledig."
+  },
+  "takeaways": [
+    "Use: Idag kan jag inte komma, men imorgon är jag ledig.",
+    "Rule: Neutral order is subject + finite verb + inte: Jag arbetar inte idag.",
+    "Return: Rebuild Jag arbetar inte / Idag arbetar jag inte."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Coordinator",
+      "fi": "Kan du komma tisdag klockan två?",
+      "en": "Can you come Tuesday at two?"
+    },
+    {
+      "speaker": "Li",
+      "fi": "Nej, på tisdag kan jag inte komma.",
+      "en": "No, I cannot come Tuesday."
+    },
+    {
+      "speaker": "Coordinator",
+      "fi": "Passar onsdag klockan tre?",
+      "en": "Does Wednesday at three work?"
+    },
+    {
+      "speaker": "Li",
+      "fi": "Ja, då är jag ledig.",
+      "en": "Yes, then I am free."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-18-word-1",
+        "fi": "inte",
+        "en": "not",
+        "example": "Jag arbetar inte idag.",
+        "translation": "I do not work today.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-18-word-2",
+        "fi": "utan",
+        "en": "but rather",
+        "example": "Inte tisdag utan torsdag.",
+        "translation": "Not Tuesday but Thursday.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-18-word-3",
+        "fi": "ledig",
+        "en": "free/off",
+        "example": "I morgon är jag ledig.",
+        "translation": "Tomorrow I am free.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-18-word-4",
+        "fi": "fungera",
+        "en": "to work/function",
+        "example": "Appen fungerar inte.",
+        "translation": "The app does not work.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-18-word-5",
+        "fi": "förstå",
+        "en": "to understand",
+        "example": "Jag förstår inte.",
+        "translation": "I do not understand.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-18-word-6",
+        "fi": "ofta",
+        "en": "often",
+        "example": "Hon tränar inte så ofta.",
+        "translation": "She does not train often.",
+        "level": "A1"
+      }
+    ],
+    "pronunciation": {
+      "text": "Inte tisdag, utan torsdag. Inte två, utan tre.",
+      "tip": "Pause and stress the corrected fact."
+    },
+    "reading_passage": {
+      "text": "Ändrad tid\nMötet är inte på tisdag. Ny tid: torsdag kl. 15.30. Samma plats: rum 8.",
+      "gist": {
+        "prompt": "Why was this notice written?",
+        "options": [
+          "To announce a changed meeting time",
+          "To invite people to a new course",
+          "To describe a past event"
+        ],
+        "answer": 0,
+        "explanation": "It corrects the old day and gives a new meeting time."
+      },
+      "detail": {
+        "prompt": "What changed?",
+        "options": [
+          "The day and time",
+          "The room",
+          "The building"
+        ],
+        "answer": 0,
+        "explanation": "The place stays the same."
+      }
+    },
+    "reading": {
+      "text": "Ändrad tid\nMötet är inte på tisdag. Ny tid: torsdag kl. 15.30. Samma plats: rum 8.",
+      "question": "What changed?",
+      "options": [
+        "The day and time",
+        "The room",
+        "The building"
+      ],
+      "answer": 0,
+      "explanation": "The place stays the same."
+    },
+    "listening": {
+      "text": "Jag arbetar inte hemma idag. Idag arbetar jag på kontoret. Imorgon är jag ledig.",
+      "question": "Where does the speaker work today?",
+      "options": [
+        "At the office",
+        "At home",
+        "Nowhere"
+      ],
+      "answer": 0,
+      "explanation": "På kontoret."
+    },
+    "speaking": {
+      "prompt": "Correct day, time, and place.",
+      "help": "Use Inte … utan …",
+      "model": "Inte tisdag utan torsdag. Inte klockan två utan tre. Vi ses på biblioteket."
+    },
+    "writing": {
+      "prompt": "Write a rescheduling message with two negatives.",
+      "help": "Check V2 after a time phrase.",
+      "model": "Idag kan jag inte komma. På fredag arbetar jag inte, så då är jag ledig."
+    }
+  },
+  "route": {
+    "primarySkill": "writing",
+    "expectedOutput": "Write a correction with accurate negation.",
+    "transferPrompt": "Move a time phrase to front and repair order.",
+    "returnPrompt": "Rebuild Jag arbetar inte / Idag arbetar jag inte.",
+    "successChecks": [
+      "Verb second.",
+      "Inte after finite verb.",
+      "Correction explicit."
+    ],
+    "requiredSkills": [
+      "writing"
+    ]
+  }
+}

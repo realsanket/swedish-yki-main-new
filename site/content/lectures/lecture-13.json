@@ -1,0 +1,448 @@
+{
+  "number": 13,
+  "objectives": [
+    "Describe rooms and furniture.",
+    "Recognise common indefinite and definite plurals.",
+    "Read a housing notice for practical details."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-13-recall-1",
+      "prompt": "Retrieve a useful line from the preceding episode.",
+      "answers": [
+        "en röd tröja"
+      ],
+      "options": [
+        "en röd tröja",
+        "ett röd tröja",
+        "röda tröja"
+      ],
+      "hint": "Choose the grammatically complete line.",
+      "explanation": "This recycles earlier Swedish."
+    },
+    {
+      "id": "sv-13-recall-key",
+      "prompt": "Choose the Swedish line meaning “The apartment has two rooms and large windows.”",
+      "answers": [
+        "Lägenheten har två rum och stora fönster."
+      ],
+      "options": [
+        "Lägenheten har två rum och stora fönster.",
+        "Jag ringer om lägenheten på Ågatan.",
+        "ett rum"
+      ],
+      "hint": "Match the whole message.",
+      "explanation": "Lägenheten har två rum och stora fönster. means “The apartment has two rooms and large windows.”"
+    },
+    {
+      "id": "sv-13-recall-sound",
+      "prompt": "Which word contains the ng sound?",
+      "answers": [
+        "lägenhet"
+      ],
+      "options": [
+        "lägenhet",
+        "stol",
+        "rum"
+      ],
+      "hint": "Say the options and apply the cue.",
+      "explanation": "The spelling sequence ng forms the nasal sound."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Home and noun plurals",
+      "kind": "scene",
+      "body": [
+        "Housing ads give rooms, area, rent, location, and availability.",
+        "Use Det finns … and Lägenheten har …",
+        "Ask Är lägenheten fortfarande ledig? in an inquiry."
+      ],
+      "examples": [
+        {
+          "fi": "Jag ringer om lägenheten på Ågatan.",
+          "en": "I'm calling about the apartment on Ågatan."
+        },
+        {
+          "fi": "Den är fortfarande ledig.",
+          "en": "It is still available."
+        },
+        {
+          "fi": "Hur många rum har den?",
+          "en": "How many rooms does it have?"
+        },
+        {
+          "fi": "Två rum och kök, plus balkong.",
+          "en": "Two rooms and kitchen, plus balcony."
+        }
+      ]
+    },
+    {
+      "title": "Learn plural families as sets",
+      "kind": "rule",
+      "body": [
+        "Swedish has several plural patterns: stol → stolar, lägenhet → lägenheter, rum → rum, fönster → fönster.",
+        "Definite plurals may add -na or -en: stolarna, lägenheterna, rummen, fönstren.",
+        "Record four forms together: en stol, stolen, stolar, stolarna."
+      ],
+      "examples": [
+        {
+          "fi": "en stol – stolen – stolar – stolarna",
+          "en": "chair forms"
+        },
+        {
+          "fi": "ett rum – rummet – rum – rummen",
+          "en": "room forms"
+        },
+        {
+          "fi": "ett fönster – fönstret – fönster – fönstren",
+          "en": "window forms"
+        },
+        {
+          "fi": "en lägenhet – lägenheten – lägenheter – lägenheterna",
+          "en": "apartment forms"
+        }
+      ],
+      "table": {
+        "headings": [
+          "Base",
+          "Plural",
+          "Definite plural"
+        ],
+        "rows": [
+          [
+            "en stol",
+            "stolar",
+            "stolarna"
+          ],
+          [
+            "ett rum",
+            "rum",
+            "rummen"
+          ],
+          [
+            "ett fönster",
+            "fönster",
+            "fönstren"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-13-guided-meaning",
+      "prompt": "What does “Lägenheten har två rum och stora fönster.” mean?",
+      "answers": [
+        "The apartment has two rooms and large windows."
+      ],
+      "options": [
+        "The apartment has two rooms and large windows.",
+        "I'm calling about the apartment on Ågatan.",
+        "a window"
+      ],
+      "hint": "Match the whole line.",
+      "explanation": "Lägenheten har två rum och stora fönster. means “The apartment has two rooms and large windows.”"
+    },
+    {
+      "id": "sv-13-guided-form",
+      "prompt": "Choose the definite plural of en stol.",
+      "answers": [
+        "stolarna"
+      ],
+      "options": [
+        "stolarna",
+        "stolen",
+        "stolet"
+      ],
+      "hint": "Use the rule.",
+      "explanation": "Stol → stolar → stolarna."
+    },
+    {
+      "id": "sv-13-guided-scene",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Hur många rum har den?"
+      ],
+      "options": [
+        "Hur många rum har den?",
+        "Jag ringer om lägenheten på Ågatan.",
+        "Lägenheten har två rum och stora fönster."
+      ],
+      "hint": "Locate the line.",
+      "explanation": "The dialogue includes Hur många rum har den?"
+    },
+    {
+      "id": "sv-13-guided-listen",
+      "prompt": "What is large?",
+      "answers": [
+        "The windows"
+      ],
+      "options": [
+        "The windows",
+        "The kitchen",
+        "The rent"
+      ],
+      "hint": "Listen for the detail.",
+      "explanation": "Fönstren är stora."
+    },
+    {
+      "id": "sv-13-guided-read",
+      "prompt": "When is it available?",
+      "answers": [
+        "From 1 November"
+      ],
+      "options": [
+        "From 1 November",
+        "Immediately",
+        "From 780 November"
+      ],
+      "hint": "Scan the text.",
+      "explanation": "Ledig från gives the date."
+    },
+    {
+      "id": "sv-13-guided-sound",
+      "prompt": "Which word contains the ng sound?",
+      "answers": [
+        "lägenhet"
+      ],
+      "options": [
+        "lägenhet",
+        "stol",
+        "rum"
+      ],
+      "hint": "Use spelling and audio.",
+      "explanation": "The spelling sequence ng forms the nasal sound."
+    },
+    {
+      "id": "sv-13-guided-word",
+      "prompt": "Which item means “an apartment”?",
+      "answers": [
+        "en lägenhet"
+      ],
+      "options": [
+        "en lägenhet",
+        "ett rum",
+        "ett fönster"
+      ],
+      "hint": "Use the examples.",
+      "explanation": "en lägenhet means an apartment."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-13-check-key",
+      "prompt": "Produce: “The apartment has two rooms and large windows.”",
+      "answers": [
+        "Lägenheten har två rum och stora fönster."
+      ],
+      "hint": "Say, then type.",
+      "explanation": "Model: Lägenheten har två rum och stora fönster."
+    },
+    {
+      "id": "sv-13-check-form",
+      "prompt": "Choose the definite plural of en stol.",
+      "answers": [
+        "stolarna"
+      ],
+      "options": [
+        "stolarna",
+        "stolen",
+        "stolet"
+      ],
+      "hint": "Apply from memory.",
+      "explanation": "Stol → stolar → stolarna."
+    },
+    {
+      "id": "sv-13-check-listen",
+      "prompt": "What is large?",
+      "answers": [
+        "The windows"
+      ],
+      "options": [
+        "The windows",
+        "The kitchen",
+        "The rent"
+      ],
+      "hint": "Replay once.",
+      "explanation": "Fönstren är stora."
+    },
+    {
+      "id": "sv-13-check-transfer",
+      "prompt": "What best tests transfer?",
+      "answers": [
+        "Change one detail and rebuild the message"
+      ],
+      "options": [
+        "Change one detail and rebuild the message",
+        "Copy the model",
+        "Translate every word"
+      ],
+      "hint": "Change the situation.",
+      "explanation": "Rebuilding tests transfer."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 13 mission: Home and noun plurals",
+    "instructions": "LISTEN: Hear twice and answer: What is large?\n\nREAD: Read for purpose and detail. Answer: When is it available?\n\nSPEAK: Describe a home with rooms, windows, and one feature. Try once unaided, then improve one detail.\n\nWRITE: Write a four-line housing inquiry. Check word order, forms, and purpose.\n\nTRANSFER: Change one room to three rooms.\n\nRETURN: Give plural sets for stol and rum.",
+    "model": "Speaking: Lägenheten har två rum och tre stora fönster. Det finns en balkong.\nWriting: Hej! Är lägenheten ledig? Hur många rum har den? Ingår vatten i hyran?"
+  },
+  "takeaways": [
+    "Use: Lägenheten har två rum och stora fönster.",
+    "Rule: Swedish has several plural patterns: stol → stolar, lägenhet → lägenheter, rum → rum, fönster → fönster.",
+    "Return: Give plural sets for stol and rum."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Renter",
+      "fi": "Jag ringer om lägenheten på Ågatan.",
+      "en": "I'm calling about the apartment on Ågatan."
+    },
+    {
+      "speaker": "Landlord",
+      "fi": "Den är fortfarande ledig.",
+      "en": "It is still available."
+    },
+    {
+      "speaker": "Renter",
+      "fi": "Hur många rum har den?",
+      "en": "How many rooms does it have?"
+    },
+    {
+      "speaker": "Landlord",
+      "fi": "Två rum och kök, plus balkong.",
+      "en": "Two rooms and kitchen, plus balcony."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-13-word-1",
+        "fi": "en lägenhet",
+        "en": "an apartment",
+        "example": "Lägenheten är ledig.",
+        "translation": "The apartment is available.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-13-word-2",
+        "fi": "ett rum",
+        "en": "a room",
+        "example": "Den har två rum.",
+        "translation": "It has two rooms.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-13-word-3",
+        "fi": "ett fönster",
+        "en": "a window",
+        "example": "Fönstren är stora.",
+        "translation": "The windows are large.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-13-word-4",
+        "fi": "en balkong",
+        "en": "a balcony",
+        "example": "Det finns en balkong.",
+        "translation": "There is a balcony.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-13-word-5",
+        "fi": "en hyra",
+        "en": "rent",
+        "example": "Hyran är 750 euro.",
+        "translation": "The rent is 750 euros.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-13-word-6",
+        "fi": "ledig",
+        "en": "available",
+        "example": "Är bostaden ledig?",
+        "translation": "Is the home available?",
+        "level": "A1"
+      }
+    ],
+    "pronunciation": {
+      "text": "lägenhet, säng, många, balkong",
+      "tip": "In ng, do not force a separate hard g."
+    },
+    "reading_passage": {
+      "text": "Uthyres: Två rum och kök, 52 m². Stor balkong. Hyra 780 €/månad. Ledig från 1 november.",
+      "gist": {
+        "prompt": "What is the purpose of this text?",
+        "options": [
+          "Advertise an apartment for rent",
+          "Announce a furniture sale",
+          "Explain a train route"
+        ],
+        "answer": 0,
+        "explanation": "It gives an apartment's size, rent, features, and availability."
+      },
+      "detail": {
+        "prompt": "When is it available?",
+        "options": [
+          "From 1 November",
+          "Immediately",
+          "From 780 November"
+        ],
+        "answer": 0,
+        "explanation": "Ledig från gives the date."
+      }
+    },
+    "reading": {
+      "text": "Uthyres: Två rum och kök, 52 m². Stor balkong. Hyra 780 €/månad. Ledig från 1 november.",
+      "question": "When is it available?",
+      "options": [
+        "From 1 November",
+        "Immediately",
+        "From 780 November"
+      ],
+      "answer": 0,
+      "explanation": "Ledig från gives the date."
+    },
+    "listening": {
+      "text": "Lägenheten har tre rum. Köket är litet men fönstren är stora. Hyran är niohundra euro.",
+      "question": "What is large?",
+      "options": [
+        "The windows",
+        "The kitchen",
+        "The rent"
+      ],
+      "answer": 0,
+      "explanation": "Fönstren är stora."
+    },
+    "speaking": {
+      "prompt": "Describe a home with rooms, windows, and one feature.",
+      "help": "Use a plural and Det finns.",
+      "model": "Lägenheten har två rum och tre stora fönster. Det finns en balkong."
+    },
+    "writing": {
+      "prompt": "Write a four-line housing inquiry.",
+      "help": "Ask availability, rooms, and water cost.",
+      "model": "Hej! Är lägenheten ledig? Hur många rum har den? Ingår vatten i hyran?"
+    }
+  },
+  "route": {
+    "primarySkill": "writing",
+    "expectedOutput": "Write a housing inquiry using three details extracted from an ad.",
+    "transferPrompt": "Change one room to three rooms.",
+    "returnPrompt": "Give plural sets for stol and rum.",
+    "successChecks": [
+      "Recognise plural patterns.",
+      "Find price, size, availability.",
+      "Ask focused questions."
+    ],
+    "requiredSkills": [
+      "writing"
+    ]
+  }
+}

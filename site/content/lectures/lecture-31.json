@@ -1,0 +1,461 @@
+{
+  "number": 31,
+  "legacyLessonId": "a2-experience",
+  "objectives": [
+    "Handle a short service encounter by stating a need, checking a detail and confirming the outcome.",
+    "Use and recognise: Jag skulle vilja ändra min bokning. · Jag undrar om det finns en senare tid. · Kan du bekräfta den nya tiden?",
+    "Complete a first attempt, inspect evidence or feedback, then repeat with a changed condition."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-31-recall-1",
+      "prompt": "Which opening makes a polite request?",
+      "answers": [
+        "Jag skulle vilja …"
+      ],
+      "options": [
+        "Jag skulle vilja …",
+        "Jag villde …",
+        "Ge mig bara …"
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “Jag skulle vilja …”."
+    },
+    {
+      "id": "sv-31-recall-2",
+      "prompt": "Complete the indirect question: Jag undrar ___ ni har öppet.",
+      "answers": [
+        "om"
+      ],
+      "options": [
+        "om",
+        "att om",
+        "vad att"
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “om”."
+    },
+    {
+      "id": "sv-31-recall-3",
+      "prompt": "Which phrase checks an agreed result?",
+      "answers": [
+        "Kan du bekräfta den nya tiden?"
+      ],
+      "options": [
+        "Kan du bekräfta den nya tiden?",
+        "Tycker du om en ny tid?",
+        "Tiden bekräftar mig?"
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “Kan du bekräfta den nya tiden?”."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Service dialogues: request, clarify, confirm: meaning and form",
+      "body": [
+        "Goal: Handle a short service encounter by stating a need, checking a detail and confirming the outcome.",
+        "Core vocabulary: kundtjänst, ett kvitto, bekräfta. Key phrases: Jag skulle vilja ändra min bokning. · Jag undrar om det finns en senare tid. · Kan du bekräfta den nya tiden?",
+        "Use Jag skulle vilja … for a polite request, Jag undrar om … for an indirect question and Menar du att …? to check understanding. An indirect yes/no question after om keeps statement order: Jag undrar om det finns en senare tid.",
+        "Say the examples aloud, notice the pattern, and then change one detail rather than memorising a fixed script."
+      ],
+      "examples": [
+        {
+          "fi": "Jag skulle vilja ändra min bokning.",
+          "en": "I would like to change my booking."
+        },
+        {
+          "fi": "Jag undrar om det finns en senare tid.",
+          "en": "I wonder whether there is a later appointment."
+        },
+        {
+          "fi": "Kan du bekräfta den nya tiden?",
+          "en": "Can you confirm the new time?"
+        }
+      ]
+    },
+    {
+      "title": "Register, evidence and independent use",
+      "body": [
+        "Register model: “Jag skulle vilja ändra min bokning.” is a polite service language way to express “I would like to change my booking.”.",
+        "For listening and reading, answer from a specific word or phrase. For speaking and writing, make the recipient, purpose and next action clear.",
+        "Attempt the task before using the model. Improve one high-impact feature, then perform it again with the transfer condition."
+      ],
+      "examples": [
+        {
+          "fi": "Jag skulle vilja ändra min bokning.",
+          "en": "I would like to change my booking.",
+          "note": "Use as a polite service language model, then adapt the details."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Communicative move",
+          "Useful Swedish",
+          "Check"
+        ],
+        "rows": [
+          [
+            "establish the episode function",
+            "Jag skulle vilja ändra min bokning.",
+            "Is the meaning clear?"
+          ],
+          [
+            "add or contrast information",
+            "Jag undrar om det finns en senare tid.",
+            "Does the form fit?"
+          ],
+          [
+            "complete the task",
+            "Kan du bekräfta den nya tiden?",
+            "Can the listener or reader act?"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-31-guided-1",
+      "prompt": "Choose the meaning of “Jag skulle vilja ändra min bokning.”.",
+      "answers": [
+        "I would like to change my booking."
+      ],
+      "options": [
+        "I would like to change my booking.",
+        "I wonder whether there is a later appointment.",
+        "Can you confirm the new time?"
+      ],
+      "hint": "Match the complete Swedish phrase to its communicative meaning.",
+      "explanation": "“Jag skulle vilja ändra min bokning.” means “I would like to change my booking.”."
+    },
+    {
+      "id": "sv-31-guided-2",
+      "prompt": "Jag undrar om det ___ en tid efter klockan fyra.",
+      "answers": [
+        "finns"
+      ],
+      "options": [
+        "finns",
+        "det finns",
+        "finns det"
+      ],
+      "hint": "Use the grammar pattern from the teaching section.",
+      "explanation": "The correct completion is “finns”."
+    },
+    {
+      "id": "sv-31-guided-3",
+      "prompt": "Which line is part of the episode dialogue?",
+      "answers": [
+        "Det finns en ledig tid på torsdag klockan 16.30."
+      ],
+      "options": [
+        "Det finns en ledig tid på torsdag klockan 16.30.",
+        "Kan du bekräfta den nya tiden?",
+        "Jag kaffe är."
+      ],
+      "hint": "Return to the dialogue and locate the exact line.",
+      "explanation": "The dialogue includes “Det finns en ledig tid på torsdag klockan 16.30.”."
+    },
+    {
+      "id": "sv-31-guided-4",
+      "prompt": "How will the customer receive confirmation?",
+      "answers": [
+        "by text message"
+      ],
+      "options": [
+        "by text message",
+        "by email",
+        "by post"
+      ],
+      "hint": "Listen first for the situation, then again for the requested detail.",
+      "explanation": "The relevant listening detail is “by text message”."
+    },
+    {
+      "id": "sv-31-guided-5",
+      "prompt": "When is changing the appointment free?",
+      "answers": [
+        "no later than 24 hours before the visit"
+      ],
+      "options": [
+        "no later than 24 hours before the visit",
+        "only after the visit",
+        "whenever the office is closed"
+      ],
+      "hint": "Locate the words that prove the answer; do not translate every sentence.",
+      "explanation": "The text shows that the answer is “no later than 24 hours before the visit”."
+    },
+    {
+      "id": "sv-31-guided-6",
+      "prompt": "Which request is polite and specific?",
+      "answers": [
+        "Jag skulle vilja ändra min bokning till nästa vecka."
+      ],
+      "options": [
+        "Jag skulle vilja ändra min bokning till nästa vecka.",
+        "Ändra min grej!",
+        "Jag bokning nästa kanske."
+      ],
+      "hint": "Consider the reader, relationship and purpose.",
+      "explanation": "The best fit is “Jag skulle vilja ändra min bokning till nästa vecka.”."
+    },
+    {
+      "id": "sv-31-guided-7",
+      "prompt": "Which item is a core vocabulary target in this episode?",
+      "answers": [
+        "ett kvitto"
+      ],
+      "options": [
+        "ett kvitto",
+        "Jag undrar om det finns en senare tid.",
+        "Jag kaffe är."
+      ],
+      "hint": "Choose the standalone word or phrase introduced in this episode.",
+      "explanation": "ett kvitto means “a receipt”."
+    },
+    {
+      "id": "sv-31-guided-8",
+      "prompt": "Which Swedish phrase best supports the goal “Handle a short service encounter by stating a need, checking a detail and confirming the outcome.”?",
+      "answers": [
+        "Kan du bekräfta den nya tiden?"
+      ],
+      "options": [
+        "Kan du bekräfta den nya tiden?",
+        "God natt!",
+        "Jag heter ett bord."
+      ],
+      "hint": "Choose the phrase that performs the target function.",
+      "explanation": "“Kan du bekräfta den nya tiden?” directly supports the episode goal."
+    },
+    {
+      "id": "sv-31-guided-9",
+      "prompt": "Which action demonstrates transfer rather than memorisation?",
+      "answers": [
+        "adapt the useful pattern to the changed situation"
+      ],
+      "options": [
+        "adapt the useful pattern to the changed situation",
+        "repeat the dialogue word for word",
+        "translate the English model only"
+      ],
+      "hint": "Transfer means keeping the function while changing important details.",
+      "explanation": "Independent transfer adapts language to a new condition."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-31-check-1",
+      "prompt": "Choose the sentence that best represents the episode's core language.",
+      "answers": [
+        "Jag skulle vilja ändra min bokning."
+      ],
+      "options": [
+        "Jag skulle vilja ändra min bokning.",
+        "Jag kaffe är.",
+        "God natt."
+      ],
+      "hint": "Choose the sentence tied directly to today's objective.",
+      "explanation": "Carry forward “Jag skulle vilja ändra min bokning.”."
+    },
+    {
+      "id": "sv-31-check-2",
+      "prompt": "How will the customer receive confirmation?",
+      "answers": [
+        "by text message"
+      ],
+      "options": [
+        "by text message",
+        "by email",
+        "by post"
+      ],
+      "hint": "Replay only after making a first evidence-based choice.",
+      "explanation": "The key detail is “by text message”."
+    },
+    {
+      "id": "sv-31-check-3",
+      "prompt": "When is changing the appointment free?",
+      "answers": [
+        "no later than 24 hours before the visit"
+      ],
+      "options": [
+        "no later than 24 hours before the visit",
+        "only after the visit",
+        "whenever the office is closed"
+      ],
+      "hint": "Use a phrase in the text as proof.",
+      "explanation": "The correct answer is “no later than 24 hours before the visit”."
+    },
+    {
+      "id": "sv-31-check-4",
+      "prompt": "What should you carry into the next episode?",
+      "answers": [
+        "one usable pattern, one comprehension strategy and one completed real task"
+      ],
+      "options": [
+        "one usable pattern, one comprehension strategy and one completed real task",
+        "a word-for-word memorised dialogue",
+        "only English grammar labels"
+      ],
+      "hint": "Keep a small set that you can retrieve and adapt.",
+      "explanation": "Durable learning combines retrieval, evidence and independent use."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill task and transfer",
+    "instructions": "LISTEN: First listen without a transcript. Answer: How will the customer receive confirmation? Replay once and identify the exact words that prove the answer.\n\nREAD: Read for purpose and evidence. Answer: When is changing the appointment free? Mark the shortest phrase that supports your choice.\n\nSPEAK: Role-play a service call: state what you need, ask about one alternative, check a detail you did not hear and confirm the result. Make a first attempt, check clarity and repeat once.\n\nWRITE: Write a follow-up message after a service call. Record the agreed time, the price or condition, and ask for confirmation. Check reader, purpose, required details and next action.\n\nTRANSFER: The preferred time is unavailable and the offered alternative conflicts with work; negotiate one more option.\n\nBETWEEN LESSON · Optional, 5 minutes: retrieve the three key phrases without looking, then use one in a new sentence.",
+    "model": "Jag skulle vilja ändra min bokning. Jag undrar om det finns en senare tid. Kan du bekräfta den nya tiden?"
+  },
+  "takeaways": [
+    "Use: Jag skulle vilja ändra min bokning.",
+    "Notice: Use Jag skulle vilja … for a polite request, Jag undrar om … for an indirect question and Menar du att …? to check understanding.",
+    "Transfer the pattern: The preferred time is unavailable and the offered alternative conflicts with work; negotiate one more option."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Kund",
+      "fi": "Hej, jag skulle vilja ändra min bokning.",
+      "en": "Hello, I would like to change my booking."
+    },
+    {
+      "speaker": "Medarbetare",
+      "fi": "Det finns en ledig tid på torsdag klockan 16.30.",
+      "en": "There is an available appointment on Thursday at 16.30."
+    },
+    {
+      "speaker": "Kund",
+      "fi": "Det passar. Kan du bekräfta tiden via e-post?",
+      "en": "That works. Can you confirm the time by email?"
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-31-word-1",
+        "fi": "kundtjänst",
+        "en": "customer service",
+        "example": "kundtjänst",
+        "translation": "customer service",
+        "level": "A2"
+      },
+      {
+        "id": "sv-31-word-2",
+        "fi": "ett kvitto",
+        "en": "a receipt",
+        "example": "ett kvitto",
+        "translation": "a receipt",
+        "level": "A2"
+      },
+      {
+        "id": "sv-31-word-3",
+        "fi": "bekräfta",
+        "en": "to confirm",
+        "example": "bekräfta",
+        "translation": "to confirm",
+        "level": "A2"
+      },
+      {
+        "id": "sv-31-phrase-1",
+        "fi": "Jag skulle vilja ändra min bokning.",
+        "en": "I would like to change my booking.",
+        "example": "Jag skulle vilja ändra min bokning.",
+        "translation": "I would like to change my booking.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-31-phrase-2",
+        "fi": "Jag undrar om det finns en senare tid.",
+        "en": "I wonder whether there is a later appointment.",
+        "example": "Jag undrar om det finns en senare tid.",
+        "translation": "I wonder whether there is a later appointment.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-31-phrase-3",
+        "fi": "Kan du bekräfta den nya tiden?",
+        "en": "Can you confirm the new time?",
+        "example": "Kan du bekräfta den nya tiden?",
+        "translation": "Can you confirm the new time?",
+        "level": "A2"
+      }
+    ],
+    "pronunciation": {
+      "text": "Jag undrar om det finns en senare tid.",
+      "tip": "Keep indirect-question intonation fairly level and stress senare tid rather than every small word."
+    },
+    "reading_passage": {
+      "text": "Bokningsvillkor: Du kan ändra tiden kostnadsfritt senast 24 timmar före besöket. Vid senare ändring debiteras 15 euro. Ändringar görs på Mina sidor eller per telefon.",
+      "gist": {
+        "prompt": "What is the main purpose of this text?",
+        "options": [
+          "to communicate practical information",
+          "to list unrelated grammar terms",
+          "to tell a fantasy story"
+        ],
+        "answer": 0,
+        "explanation": "The text gives information that supports an everyday decision or action."
+      },
+      "detail": {
+        "prompt": "When is changing the appointment free?",
+        "options": [
+          "no later than 24 hours before the visit",
+          "only after the visit",
+          "whenever the office is closed"
+        ],
+        "answer": 0,
+        "explanation": "The text supports “no later than 24 hours before the visit”."
+      }
+    },
+    "reading": {
+      "text": "Bokningsvillkor: Du kan ändra tiden kostnadsfritt senast 24 timmar före besöket. Vid senare ändring debiteras 15 euro. Ändringar görs på Mina sidor eller per telefon.",
+      "question": "When is changing the appointment free?",
+      "options": [
+        "no later than 24 hours before the visit",
+        "only after the visit",
+        "whenever the office is closed"
+      ],
+      "answer": 0,
+      "explanation": "Use the text as evidence for “no later than 24 hours before the visit”."
+    },
+    "listening": {
+      "text": "Din nya tid är torsdag den 18 februari klockan halv fem. Du får en bekräftelse via sms inom några minuter. Ta med legitimation till besöket.",
+      "question": "How will the customer receive confirmation?",
+      "options": [
+        "by text message",
+        "by email",
+        "by post"
+      ],
+      "answer": 0,
+      "explanation": "The spoken message identifies “by text message”."
+    },
+    "speaking": {
+      "prompt": "Role-play a service call: state what you need, ask about one alternative, check a detail you did not hear and confirm the result.",
+      "help": "Plan three chunks and reuse, without copying, one of these patterns: Jag skulle vilja ändra min bokning. · Jag undrar om det finns en senare tid. · Kan du bekräfta den nya tiden?",
+      "model": "Jag skulle vilja ändra min bokning. Jag undrar om det finns en senare tid. Kan du bekräfta den nya tiden?"
+    },
+    "writing": {
+      "prompt": "Write a follow-up message after a service call. Record the agreed time, the price or condition, and ask for confirmation.",
+      "help": "Identify the reader and purpose, include every requested detail, connect the ideas, and finish with a clear next action.",
+      "model": "Jag skulle vilja ändra min bokning. Jag undrar om det finns en senare tid. Kan du bekräfta den nya tiden?"
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Complete a service dialogue with a request, clarification and confirmed outcome.",
+    "transferPrompt": "The preferred time is unavailable and the offered alternative conflicts with work; negotiate one more option.",
+    "returnPrompt": "Within two days, retrieve “Jag skulle vilja ändra min bokning.” and use it in a different context.",
+    "successChecks": [
+      "The service need is stated early.",
+      "At least one detail is checked rather than guessed.",
+      "The final arrangement is repeated accurately."
+    ],
+    "requiredSkills": [
+      "speaking"
+    ]
+  }
+}

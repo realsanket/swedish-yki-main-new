@@ -1,0 +1,451 @@
+{
+  "number": 10,
+  "objectives": [
+    "Order food and drink and ask the price.",
+    "Learn singular nouns with en or ett.",
+    "Use jag vill ha and kan jag få."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-10-recall-1",
+      "prompt": "Recall the previous episode: choose the most useful familiar line.",
+      "answers": [
+        "Det finns ett apotek här."
+      ],
+      "options": [
+        "Det finns ett apotek här.",
+        "Apotek är finns.",
+        "Det har ett apotek."
+      ],
+      "hint": "Use the pattern from the preceding episode.",
+      "explanation": "This is a purposeful retrieval of earlier Swedish."
+    },
+    {
+      "id": "sv-10-recall-key",
+      "prompt": "Choose the Swedish line meaning “Can I have a coffee and a tea?”",
+      "answers": [
+        "Kan jag få en kaffe och ett te?"
+      ],
+      "options": [
+        "Kan jag få en kaffe och ett te?",
+        "Vad får det lov att vara?",
+        "ett te"
+      ],
+      "hint": "Match the full message.",
+      "explanation": "Kan jag få en kaffe och ett te? means “Can I have a coffee and a tea?”"
+    },
+    {
+      "id": "sv-10-recall-sound",
+      "prompt": "Which pair contrasts vowel length?",
+      "answers": [
+        "fika / ficka"
+      ],
+      "options": [
+        "fika / ficka",
+        "kaffe / te",
+        "en / ett"
+      ],
+      "hint": "Say the options and apply the sound cue.",
+      "explanation": "Fika has long i; ficka has short i."
+    }
+  ],
+  "sections": [
+    {
+      "title": "A café: en/ett and requests",
+      "kind": "scene",
+      "body": [
+        "Fika is a social coffee break and also a verb.",
+        "Add tack; Swedish does not use a direct equivalent of English please in every request.",
+        "Ask Innehåller den nötter? or Har ni något veganskt? when relevant."
+      ],
+      "examples": [
+        {
+          "fi": "Vad får det lov att vara?",
+          "en": "What would you like?"
+        },
+        {
+          "fi": "Kan jag få en smörgås och ett te?",
+          "en": "Can I have a sandwich and tea?"
+        },
+        {
+          "fi": "Vill du ha mjölk?",
+          "en": "Would you like milk?"
+        },
+        {
+          "fi": "Nej tack. Vad kostar det?",
+          "en": "No thanks. What does it cost?"
+        }
+      ]
+    },
+    {
+      "title": "Learn each noun with en or ett",
+      "kind": "rule",
+      "body": [
+        "Most nouns are en-words, but article choice is not fully predictable. Learn the article with the noun.",
+        "Use jag vill ha or kan jag få + noun phrase to order.",
+        "Ask Vad kostar …? or Hur mycket kostar …? Answer Det kostar … kronor."
+      ],
+      "examples": [
+        {
+          "fi": "Jag vill ha en kaffe.",
+          "en": "I would like a coffee."
+        },
+        {
+          "fi": "Kan jag få ett glas vatten?",
+          "en": "Can I have water?"
+        },
+        {
+          "fi": "Vad kostar smörgåsen?",
+          "en": "What does the sandwich cost?"
+        },
+        {
+          "fi": "Det kostar fyrtio kronor.",
+          "en": "It costs forty kronor."
+        }
+      ],
+      "table": {
+        "headings": [
+          "en-word",
+          "ett-word",
+          "Order"
+        ],
+        "rows": [
+          [
+            "en kaffe",
+            "ett te",
+            "En kaffe, tack."
+          ],
+          [
+            "en smörgås",
+            "ett glas",
+            "Ett glas vatten, tack."
+          ],
+          [
+            "en bulle",
+            "ett äpple",
+            "En bulle, tack."
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-10-guided-meaning",
+      "prompt": "What does “Kan jag få en kaffe och ett te?” mean?",
+      "answers": [
+        "Can I have a coffee and a tea?"
+      ],
+      "options": [
+        "Can I have a coffee and a tea?",
+        "What would you like?",
+        "a sandwich"
+      ],
+      "hint": "Match the whole line.",
+      "explanation": "Kan jag få en kaffe och ett te? means “Can I have a coffee and a tea?”"
+    },
+    {
+      "id": "sv-10-guided-form",
+      "prompt": "Choose: ___ glas vatten.",
+      "answers": [
+        "ett"
+      ],
+      "options": [
+        "ett",
+        "en",
+        "den"
+      ],
+      "hint": "Use the rule section.",
+      "explanation": "Glas is an ett-word."
+    },
+    {
+      "id": "sv-10-guided-scene",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Vill du ha mjölk?"
+      ],
+      "options": [
+        "Vill du ha mjölk?",
+        "Vad får det lov att vara?",
+        "Kan jag få en kaffe och ett te?"
+      ],
+      "hint": "Locate the exact line.",
+      "explanation": "The dialogue includes Vill du ha mjölk?"
+    },
+    {
+      "id": "sv-10-guided-listen",
+      "prompt": "What special request is made?",
+      "answers": [
+        "Tea without milk"
+      ],
+      "options": [
+        "Tea without milk",
+        "Coffee with milk",
+        "A vegan bun"
+      ],
+      "hint": "Listen for the requested detail.",
+      "explanation": "Utan mjölk."
+    },
+    {
+      "id": "sv-10-guided-read",
+      "prompt": "How much are tea and a bun together?",
+      "answers": [
+        "66 kr"
+      ],
+      "options": [
+        "66 kr",
+        "60 kr",
+        "83 kr"
+      ],
+      "hint": "Scan the practical text.",
+      "explanation": "28 + 38 = 66."
+    },
+    {
+      "id": "sv-10-guided-sound",
+      "prompt": "Which pair contrasts vowel length?",
+      "answers": [
+        "fika / ficka"
+      ],
+      "options": [
+        "fika / ficka",
+        "kaffe / te",
+        "en / ett"
+      ],
+      "hint": "Use spelling and audio.",
+      "explanation": "Fika has long i; ficka has short i."
+    },
+    {
+      "id": "sv-10-guided-word",
+      "prompt": "Which item means “a coffee”?",
+      "answers": [
+        "en kaffe"
+      ],
+      "options": [
+        "en kaffe",
+        "ett te",
+        "en smörgås"
+      ],
+      "hint": "Use the vocabulary examples.",
+      "explanation": "en kaffe means a coffee."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-10-check-key",
+      "prompt": "Produce: “Can I have a coffee and a tea?”",
+      "answers": [
+        "Kan jag få en kaffe och ett te?"
+      ],
+      "hint": "Say it first, then type it.",
+      "explanation": "Model: Kan jag få en kaffe och ett te?"
+    },
+    {
+      "id": "sv-10-check-form",
+      "prompt": "Choose: ___ glas vatten.",
+      "answers": [
+        "ett"
+      ],
+      "options": [
+        "ett",
+        "en",
+        "den"
+      ],
+      "hint": "Apply the rule from memory.",
+      "explanation": "Glas is an ett-word."
+    },
+    {
+      "id": "sv-10-check-listen",
+      "prompt": "What special request is made?",
+      "answers": [
+        "Tea without milk"
+      ],
+      "options": [
+        "Tea without milk",
+        "Coffee with milk",
+        "A vegan bun"
+      ],
+      "hint": "Replay once.",
+      "explanation": "Utan mjölk."
+    },
+    {
+      "id": "sv-10-check-transfer",
+      "prompt": "What best tests transfer?",
+      "answers": [
+        "Change one detail and rebuild the message"
+      ],
+      "options": [
+        "Change one detail and rebuild the message",
+        "Copy the model",
+        "Translate every word"
+      ],
+      "hint": "A changed situation tests the pattern.",
+      "explanation": "Rebuilding shows transferable learning."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 10 mission: A café: en/ett and requests",
+    "instructions": "LISTEN: Hear the audio twice and answer: What special request is made?\n\nREAD: Read once for purpose and once for detail. Answer: How much are tea and a bun together?\n\nSPEAK: Order a drink and food, then ask the price. Try once without the model, then repeat more clearly.\n\nWRITE: Write a café order with a dietary question. Check word order and spelling.\n\nTRANSFER: Change an en-item to an ett-item.\n\nRETURN: Order en kaffe and ett te.",
+    "model": "Speaking: Kan jag få en kaffe och en smörgås? Vad kostar det?\nWriting: Jag vill ha ett te och en bulle. Innehåller bullen nötter?"
+  },
+  "takeaways": [
+    "Use: Kan jag få en kaffe och ett te?",
+    "Rule: Most nouns are en-words, but article choice is not fully predictable. Learn the article with the noun.",
+    "Return: Order en kaffe and ett te."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Server",
+      "fi": "Vad får det lov att vara?",
+      "en": "What would you like?"
+    },
+    {
+      "speaker": "Customer",
+      "fi": "Kan jag få en smörgås och ett te?",
+      "en": "Can I have a sandwich and tea?"
+    },
+    {
+      "speaker": "Server",
+      "fi": "Vill du ha mjölk?",
+      "en": "Would you like milk?"
+    },
+    {
+      "speaker": "Customer",
+      "fi": "Nej tack. Vad kostar det?",
+      "en": "No thanks. What does it cost?"
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-10-word-1",
+        "fi": "en kaffe",
+        "en": "a coffee",
+        "example": "En kaffe, tack.",
+        "translation": "A coffee, please.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-10-word-2",
+        "fi": "ett te",
+        "en": "a tea",
+        "example": "Jag vill ha ett te.",
+        "translation": "I want a tea.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-10-word-3",
+        "fi": "en smörgås",
+        "en": "a sandwich",
+        "example": "Smörgåsen kostar femtio kronor.",
+        "translation": "The sandwich costs fifty kronor.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-10-word-4",
+        "fi": "ett glas",
+        "en": "a glass",
+        "example": "Ett glas vatten, tack.",
+        "translation": "A glass of water, please.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-10-word-5",
+        "fi": "en bulle",
+        "en": "a bun",
+        "example": "Vi delar en bulle.",
+        "translation": "We share a bun.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-10-word-6",
+        "fi": "kosta",
+        "en": "to cost",
+        "example": "Vad kostar det?",
+        "translation": "What does it cost?",
+        "level": "A1"
+      }
+    ],
+    "pronunciation": {
+      "text": "fika, ficka; glas, glass; en kaffe, ett te",
+      "tip": "Keep the vowel long in fika and glas, short before ck/ss."
+    },
+    "reading_passage": {
+      "text": "Kaffe 32 kr\nTe 28 kr\nSmörgås 55 kr\nKanelbulle 38 kr",
+      "gist": {
+        "prompt": "What is the purpose of this text?",
+        "options": [
+          "Show café items and prices",
+          "Describe a person's family",
+          "Announce a language class"
+        ],
+        "answer": 0,
+        "explanation": "It is a short café menu with prices."
+      },
+      "detail": {
+        "prompt": "How much are tea and a bun together?",
+        "options": [
+          "66 kr",
+          "60 kr",
+          "83 kr"
+        ],
+        "answer": 0,
+        "explanation": "28 + 38 = 66."
+      }
+    },
+    "reading": {
+      "text": "Kaffe 32 kr\nTe 28 kr\nSmörgås 55 kr\nKanelbulle 38 kr",
+      "question": "How much are tea and a bun together?",
+      "options": [
+        "66 kr",
+        "60 kr",
+        "83 kr"
+      ],
+      "answer": 0,
+      "explanation": "28 + 38 = 66."
+    },
+    "listening": {
+      "text": "Kan jag få ett te och en smörgås? Teet utan mjölk, tack.",
+      "question": "What special request is made?",
+      "options": [
+        "Tea without milk",
+        "Coffee with milk",
+        "A vegan bun"
+      ],
+      "answer": 0,
+      "explanation": "Utan mjölk."
+    },
+    "speaking": {
+      "prompt": "Order a drink and food, then ask the price.",
+      "help": "Kan jag få …? Vad kostar det?",
+      "model": "Kan jag få en kaffe och en smörgås? Vad kostar det?"
+    },
+    "writing": {
+      "prompt": "Write a café order with a dietary question.",
+      "help": "Use Innehåller den …?",
+      "model": "Jag vill ha ett te och en bulle. Innehåller bullen nötter?"
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Order two items and ask the price.",
+    "transferPrompt": "Change an en-item to an ett-item.",
+    "returnPrompt": "Order en kaffe and ett te.",
+    "successChecks": [
+      "Use correct article.",
+      "Use a request pattern.",
+      "Ask or understand price."
+    ],
+    "requiredSkills": [
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ]
+  }
+}

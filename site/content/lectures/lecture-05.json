@@ -1,0 +1,451 @@
+{
+  "number": 5,
+  "objectives": [
+    "Tell full, half, and quarter hours.",
+    "Understand weekdays and a simple schedule.",
+    "Write an appointment with day, time, and place."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-05-recall-1",
+      "prompt": "Recall the previous episode: choose the most useful familiar line.",
+      "answers": [
+        "Mitt nummer är noll fyra noll."
+      ],
+      "options": [
+        "Mitt nummer är noll fyra noll.",
+        "Min språk är svenska.",
+        "Jag nummer bor."
+      ],
+      "hint": "Use the pattern from the preceding episode.",
+      "explanation": "This is a purposeful retrieval of earlier Swedish."
+    },
+    {
+      "id": "sv-05-recall-key",
+      "prompt": "Choose the Swedish line meaning “See you on Tuesday at half past two.”",
+      "answers": [
+        "Vi ses på tisdag klockan halv tre."
+      ],
+      "options": [
+        "Vi ses på tisdag klockan halv tre.",
+        "När börjar svensklektionen?",
+        "tisdag"
+      ],
+      "hint": "Match the full message.",
+      "explanation": "Vi ses på tisdag klockan halv tre. means “See you on Tuesday at half past two.”"
+    },
+    {
+      "id": "sv-05-recall-sound",
+      "prompt": "Where is primary stress in måndag?",
+      "answers": [
+        "the first syllable"
+      ],
+      "options": [
+        "the first syllable",
+        "the final g",
+        "both equally"
+      ],
+      "hint": "Say the options and apply the sound cue.",
+      "explanation": "MÅN-dag has first-element stress."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Time, weekdays, and dates",
+      "kind": "scene",
+      "body": [
+        "Weekdays are måndag through söndag.",
+        "Schedules often use the 24-hour clock: 18.30 can be arton trettio or halv sju.",
+        "Ask När börjar …? and När slutar …?"
+      ],
+      "examples": [
+        {
+          "fi": "När börjar svensklektionen?",
+          "en": "When does Swedish class begin?"
+        },
+        {
+          "fi": "På tisdag klockan halv sex.",
+          "en": "On Tuesday at 5:30."
+        },
+        {
+          "fi": "När slutar den?",
+          "en": "When does it end?"
+        },
+        {
+          "fi": "Klockan sju.",
+          "en": "At seven."
+        }
+      ]
+    },
+    {
+      "title": "Time points toward the next hour",
+      "kind": "rule",
+      "body": [
+        "Ask Vad är klockan? and answer Klockan är två.",
+        "Halv tre means 2:30; kvart över två is 2:15; kvart i tre is 2:45.",
+        "Use på with weekdays: på måndag. Weekday names are lowercase."
+      ],
+      "examples": [
+        {
+          "fi": "Klockan är två.",
+          "en": "It is two o'clock."
+        },
+        {
+          "fi": "Klockan är halv tre.",
+          "en": "It is 2:30."
+        },
+        {
+          "fi": "Vi ses på onsdag.",
+          "en": "See you on Wednesday."
+        },
+        {
+          "fi": "Kursen börjar kl. 18.",
+          "en": "The course starts at 18:00."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Time",
+          "Swedish",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "14.15",
+            "kvart över två",
+            "quarter past two"
+          ],
+          [
+            "14.30",
+            "halv tre",
+            "half past two"
+          ],
+          [
+            "14.45",
+            "kvart i tre",
+            "quarter to three"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-05-guided-meaning",
+      "prompt": "What does “Vi ses på tisdag klockan halv tre.” mean?",
+      "answers": [
+        "See you on Tuesday at half past two."
+      ],
+      "options": [
+        "See you on Tuesday at half past two.",
+        "When does Swedish class begin?",
+        "to begin"
+      ],
+      "hint": "Match the whole line.",
+      "explanation": "Vi ses på tisdag klockan halv tre. means “See you on Tuesday at half past two.”"
+    },
+    {
+      "id": "sv-05-guided-form",
+      "prompt": "What time is halv tre?",
+      "answers": [
+        "2:30"
+      ],
+      "options": [
+        "2:30",
+        "3:30",
+        "3:00"
+      ],
+      "hint": "Use the rule section.",
+      "explanation": "Half hours point toward the next hour."
+    },
+    {
+      "id": "sv-05-guided-scene",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "När slutar den?"
+      ],
+      "options": [
+        "När slutar den?",
+        "När börjar svensklektionen?",
+        "Vi ses på tisdag klockan halv tre."
+      ],
+      "hint": "Locate the exact line.",
+      "explanation": "The dialogue includes När slutar den?"
+    },
+    {
+      "id": "sv-05-guided-listen",
+      "prompt": "When does the meeting start?",
+      "answers": [
+        "2:15"
+      ],
+      "options": [
+        "2:15",
+        "2:30",
+        "3:15"
+      ],
+      "hint": "Listen for the requested detail.",
+      "explanation": "Kvart över två is 2:15."
+    },
+    {
+      "id": "sv-05-guided-read",
+      "prompt": "When does class start?",
+      "answers": [
+        "17.30"
+      ],
+      "options": [
+        "17.30",
+        "19.00",
+        "20.04"
+      ],
+      "hint": "Scan the practical text.",
+      "explanation": "The first time is the start."
+    },
+    {
+      "id": "sv-05-guided-sound",
+      "prompt": "Where is primary stress in måndag?",
+      "answers": [
+        "the first syllable"
+      ],
+      "options": [
+        "the first syllable",
+        "the final g",
+        "both equally"
+      ],
+      "hint": "Use spelling and audio.",
+      "explanation": "MÅN-dag has first-element stress."
+    },
+    {
+      "id": "sv-05-guided-word",
+      "prompt": "Which item means “Monday”?",
+      "answers": [
+        "måndag"
+      ],
+      "options": [
+        "måndag",
+        "tisdag",
+        "börja"
+      ],
+      "hint": "Use the vocabulary examples.",
+      "explanation": "måndag means Monday."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-05-check-key",
+      "prompt": "Produce: “See you on Tuesday at half past two.”",
+      "answers": [
+        "Vi ses på tisdag klockan halv tre."
+      ],
+      "hint": "Say it first, then type it.",
+      "explanation": "Model: Vi ses på tisdag klockan halv tre."
+    },
+    {
+      "id": "sv-05-check-form",
+      "prompt": "What time is halv tre?",
+      "answers": [
+        "2:30"
+      ],
+      "options": [
+        "2:30",
+        "3:30",
+        "3:00"
+      ],
+      "hint": "Apply the rule from memory.",
+      "explanation": "Half hours point toward the next hour."
+    },
+    {
+      "id": "sv-05-check-listen",
+      "prompt": "When does the meeting start?",
+      "answers": [
+        "2:15"
+      ],
+      "options": [
+        "2:15",
+        "2:30",
+        "3:15"
+      ],
+      "hint": "Replay once.",
+      "explanation": "Kvart över två is 2:15."
+    },
+    {
+      "id": "sv-05-check-transfer",
+      "prompt": "What best tests transfer?",
+      "answers": [
+        "Change one detail and rebuild the message"
+      ],
+      "options": [
+        "Change one detail and rebuild the message",
+        "Copy the model",
+        "Translate every word"
+      ],
+      "hint": "A changed situation tests the pattern.",
+      "explanation": "Rebuilding shows transferable learning."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 5 mission: Time, weekdays, and dates",
+    "instructions": "LISTEN: Hear the audio twice and answer: When does the meeting start?\n\nREAD: Read once for purpose and once for detail. Answer: When does class start?\n\nSPEAK: Arrange to meet Thursday at 4:30. Try once without the model, then repeat more clearly.\n\nWRITE: Write an appointment with weekday, date, time, and place. Check word order and spelling.\n\nTRANSFER: Move it thirty minutes later and tell a partner.\n\nRETURN: Interpret halv tre and kvart i tre.",
+    "model": "Speaking: Vi ses på torsdag klockan halv fem.\nWriting: Möte: torsdag 8 oktober kl. 16.30, biblioteket."
+  },
+  "takeaways": [
+    "Use: Vi ses på tisdag klockan halv tre.",
+    "Rule: Ask Vad är klockan? and answer Klockan är två.",
+    "Return: Interpret halv tre and kvart i tre."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Lin",
+      "fi": "När börjar svensklektionen?",
+      "en": "When does Swedish class begin?"
+    },
+    {
+      "speaker": "Eva",
+      "fi": "På tisdag klockan halv sex.",
+      "en": "On Tuesday at 5:30."
+    },
+    {
+      "speaker": "Lin",
+      "fi": "När slutar den?",
+      "en": "When does it end?"
+    },
+    {
+      "speaker": "Eva",
+      "fi": "Klockan sju.",
+      "en": "At seven."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-05-word-1",
+        "fi": "måndag",
+        "en": "Monday",
+        "example": "Vi ses på måndag.",
+        "translation": "See you Monday.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-05-word-2",
+        "fi": "tisdag",
+        "en": "Tuesday",
+        "example": "Kursen är på tisdag.",
+        "translation": "The course is Tuesday.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-05-word-3",
+        "fi": "börja",
+        "en": "to begin",
+        "example": "När börjar mötet?",
+        "translation": "When does the meeting begin?",
+        "level": "A0"
+      },
+      {
+        "id": "sv-05-word-4",
+        "fi": "sluta",
+        "en": "to end",
+        "example": "Det slutar klockan sju.",
+        "translation": "It ends at seven.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-05-word-5",
+        "fi": "halv",
+        "en": "half",
+        "example": "Klockan är halv tre.",
+        "translation": "It is 2:30.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-05-word-6",
+        "fi": "idag",
+        "en": "today",
+        "example": "Idag är det fredag.",
+        "translation": "Today is Friday.",
+        "level": "A0"
+      }
+    ],
+    "pronunciation": {
+      "text": "måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag",
+      "tip": "The g in dag is often weak in speech; retain standard spelling."
+    },
+    "reading_passage": {
+      "text": "Svenska A1\nTisdag 6 oktober\nkl. 17.30–19.00\nRum 204",
+      "gist": {
+        "prompt": "What is the main purpose of this text?",
+        "options": [
+          "Give the time and room for a Swedish class",
+          "Describe a daily routine",
+          "Invite someone to a café"
+        ],
+        "answer": 0,
+        "explanation": "The text is a class schedule with date, time, and room."
+      },
+      "detail": {
+        "prompt": "When does class start?",
+        "options": [
+          "17.30",
+          "19.00",
+          "20.04"
+        ],
+        "answer": 0,
+        "explanation": "The first time is the start."
+      }
+    },
+    "reading": {
+      "text": "Svenska A1\nTisdag 6 oktober\nkl. 17.30–19.00\nRum 204",
+      "question": "When does class start?",
+      "options": [
+        "17.30",
+        "19.00",
+        "20.04"
+      ],
+      "answer": 0,
+      "explanation": "The first time is the start."
+    },
+    "listening": {
+      "text": "Mötet är på onsdag klockan kvart över två. Det slutar klockan tre.",
+      "question": "When does the meeting start?",
+      "options": [
+        "2:15",
+        "2:30",
+        "3:15"
+      ],
+      "answer": 0,
+      "explanation": "Kvart över två is 2:15."
+    },
+    "speaking": {
+      "prompt": "Arrange to meet Thursday at 4:30.",
+      "help": "Use Vi ses på … klockan …",
+      "model": "Vi ses på torsdag klockan halv fem."
+    },
+    "writing": {
+      "prompt": "Write an appointment with weekday, date, time, and place.",
+      "help": "Use Dag, Datum, Tid, Plats.",
+      "model": "Möte: torsdag 8 oktober kl. 16.30, biblioteket."
+    }
+  },
+  "route": {
+    "primarySkill": "writing",
+    "expectedOutput": "Write a usable appointment.",
+    "transferPrompt": "Move it thirty minutes later and tell a partner.",
+    "returnPrompt": "Interpret halv tre and kvart i tre.",
+    "successChecks": [
+      "Understand halv tre.",
+      "Use på before a weekday.",
+      "Include a place."
+    ],
+    "requiredSkills": [
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ]
+  }
+}

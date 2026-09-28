@@ -1,0 +1,33 @@
+# dependencies
+/node_modules
+
+# build output
+/.next/
+/.vinext/
+/dist/
+
+# wrangler / miniflare local state
+/.wrangler/
+
+# generated audio
+/public/audio/
+
+# env files
+.env*
+!.env.example
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+
+# debug logs
+npm-debug.log*
+
+# local editor/tool config
+/.claude/
+
+# local SQLite database
+/data/
+
+/.playwright-mcp/*

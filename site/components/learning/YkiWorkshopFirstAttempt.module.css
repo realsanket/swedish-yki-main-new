@@ -1,0 +1,16 @@
+.card { margin: 0 0 20px; padding: 22px; border: 1px solid #cfe0ce; border-radius: 15px; background: #f4faf1; }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #4f7658; font-size: 10px; font-weight: 800; letter-spacing: .09em; }
+.timer { display: inline-flex; align-items: center; gap: 6px; padding: 7px 9px; border-radius: 7px; background: #e7f0e4; color: #41694a; font: 700 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0; }
+.icon { display: block; margin: 18px 0 9px; color: #5d9064; }
+.card h3 { margin: 0 0 8px; color: #294f3b; font-size: 21px; }
+.card > p { max-width: 700px; margin: 0 0 15px; color: #5c7462; font-size: 14px; line-height: 1.65; }
+.audio { display: flex; flex-wrap: wrap; gap: 9px; margin: 14px 0; }
+.source { padding: 14px; border-radius: 10px; background: white; color: #30473a !important; white-space: pre-line; }
+.prompt { color: #315a46 !important; font-weight: 700; }
+.card label { display: grid; gap: 8px; margin-top: 13px; color: #41624c; font-size: 13px; font-weight: 700; }
+.card textarea { min-height: 120px; resize: vertical; }
+.card small { display: block; margin-top: 7px; color: #718176; font-size: 12px; }
+.timeUp { padding: 15px; border: 1px solid #e3c98c; border-radius: 10px; background: #fff9eb; color: #70592b; }
+.timeUp p { margin: 5px 0 13px; color: #705f3b; font-size: 13px; line-height: 1.55; }
+.resumeStatus { margin: 0; color: #5c7462; font-size: 13px; font-weight: 700; }
+@media (max-width: 600px) { .card { padding: 17px; } .header { align-items: flex-start; flex-direction: column; } }

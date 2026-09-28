@@ -1,0 +1,453 @@
+{
+  "number": 9,
+  "objectives": [
+    "Ask where a place is.",
+    "Use det finns for existence.",
+    "Use i, på, bredvid, framför, bakom and mellan."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-09-recall-1",
+      "prompt": "Recall the previous episode: choose the most useful familiar line.",
+      "answers": [
+        "Var bor du?"
+      ],
+      "options": [
+        "Var bor du?",
+        "När bor du?",
+        "Vem bor du?"
+      ],
+      "hint": "Use the pattern from the preceding episode.",
+      "explanation": "This is a purposeful retrieval of earlier Swedish."
+    },
+    {
+      "id": "sv-09-recall-key",
+      "prompt": "Choose the Swedish line meaning “There is a pharmacy next to the grocery store.”",
+      "answers": [
+        "Det finns ett apotek bredvid mataffären."
+      ],
+      "options": [
+        "Det finns ett apotek bredvid mataffären.",
+        "Finns det ett apotek här nära?",
+        "ett apotek"
+      ],
+      "hint": "Match the full message.",
+      "explanation": "Det finns ett apotek bredvid mataffären. means “There is a pharmacy next to the grocery store.”"
+    },
+    {
+      "id": "sv-09-recall-sound",
+      "prompt": "In which word is k normally soft?",
+      "answers": [
+        "kyrka"
+      ],
+      "options": [
+        "kyrka",
+        "karta",
+        "komma"
+      ],
+      "hint": "Say the options and apply the sound cue.",
+      "explanation": "K before y is often soft."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Places in town and location",
+      "kind": "scene",
+      "body": [
+        "Ask Finns det …? for existence and Var ligger …? for location.",
+        "Town words include bibliotek, apotek, bank, station, mataffär, torg.",
+        "K is often hard before a/o/u/å and soft before e/i/y/ä/ö; loans can differ."
+      ],
+      "examples": [
+        {
+          "fi": "Finns det ett apotek här nära?",
+          "en": "Is there a pharmacy nearby?"
+        },
+        {
+          "fi": "Ja, bredvid mataffären.",
+          "en": "Yes, next to the grocery store."
+        },
+        {
+          "fi": "Är det långt?",
+          "en": "Is it far?"
+        },
+        {
+          "fi": "Nej, bara två minuter.",
+          "en": "No, only two minutes."
+        }
+      ]
+    },
+    {
+      "title": "Det finns and prepositions",
+      "kind": "rule",
+      "body": [
+        "Use det finns + noun for existence: Det finns ett apotek här.",
+        "Use ligger for a place's location: Biblioteket ligger bredvid banken.",
+        "Learn prepositions in full phrases: framför stationen, bakom skolan, mellan husen."
+      ],
+      "examples": [
+        {
+          "fi": "Det finns en bank.",
+          "en": "There is a bank."
+        },
+        {
+          "fi": "Apoteket ligger bredvid banken.",
+          "en": "The pharmacy is next to the bank."
+        },
+        {
+          "fi": "Bussen stannar framför stationen.",
+          "en": "The bus stops in front of the station."
+        },
+        {
+          "fi": "Parken ligger bakom skolan.",
+          "en": "The park is behind the school."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Word",
+          "Meaning",
+          "Model"
+        ],
+        "rows": [
+          [
+            "bredvid",
+            "next to",
+            "bredvid banken"
+          ],
+          [
+            "framför",
+            "in front of",
+            "framför stationen"
+          ],
+          [
+            "bakom",
+            "behind",
+            "bakom skolan"
+          ],
+          [
+            "mellan",
+            "between",
+            "mellan två hus"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-09-guided-meaning",
+      "prompt": "What does “Det finns ett apotek bredvid mataffären.” mean?",
+      "answers": [
+        "There is a pharmacy next to the grocery store."
+      ],
+      "options": [
+        "There is a pharmacy next to the grocery store.",
+        "Is there a pharmacy nearby?",
+        "a station"
+      ],
+      "hint": "Match the whole line.",
+      "explanation": "Det finns ett apotek bredvid mataffären. means “There is a pharmacy next to the grocery store.”"
+    },
+    {
+      "id": "sv-09-guided-form",
+      "prompt": "Complete: Biblioteket ligger ___ banken och kaféet.",
+      "answers": [
+        "mellan"
+      ],
+      "options": [
+        "mellan",
+        "på",
+        "från"
+      ],
+      "hint": "Use the rule section.",
+      "explanation": "Mellan means between."
+    },
+    {
+      "id": "sv-09-guided-scene",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Är det långt?"
+      ],
+      "options": [
+        "Är det långt?",
+        "Finns det ett apotek här nära?",
+        "Det finns ett apotek bredvid mataffären."
+      ],
+      "hint": "Locate the exact line.",
+      "explanation": "The dialogue includes Är det långt?"
+    },
+    {
+      "id": "sv-09-guided-listen",
+      "prompt": "What is next to the pharmacy?",
+      "answers": [
+        "A grocery store"
+      ],
+      "options": [
+        "A grocery store",
+        "A library",
+        "A school"
+      ],
+      "hint": "Listen for the requested detail.",
+      "explanation": "Bredvid en mataffär."
+    },
+    {
+      "id": "sv-09-guided-read",
+      "prompt": "What is between the bank and café?",
+      "answers": [
+        "The library"
+      ],
+      "options": [
+        "The library",
+        "The stop",
+        "The pharmacy"
+      ],
+      "hint": "Scan the practical text.",
+      "explanation": "Biblioteket ligger mellan dem."
+    },
+    {
+      "id": "sv-09-guided-sound",
+      "prompt": "In which word is k normally soft?",
+      "answers": [
+        "kyrka"
+      ],
+      "options": [
+        "kyrka",
+        "karta",
+        "komma"
+      ],
+      "hint": "Use spelling and audio.",
+      "explanation": "K before y is often soft."
+    },
+    {
+      "id": "sv-09-guided-word",
+      "prompt": "Which item means “a library”?",
+      "answers": [
+        "ett bibliotek"
+      ],
+      "options": [
+        "ett bibliotek",
+        "ett apotek",
+        "en station"
+      ],
+      "hint": "Use the vocabulary examples.",
+      "explanation": "ett bibliotek means a library."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-09-check-key",
+      "prompt": "Produce: “There is a pharmacy next to the grocery store.”",
+      "answers": [
+        "Det finns ett apotek bredvid mataffären."
+      ],
+      "hint": "Say it first, then type it.",
+      "explanation": "Model: Det finns ett apotek bredvid mataffären."
+    },
+    {
+      "id": "sv-09-check-form",
+      "prompt": "Complete: Biblioteket ligger ___ banken och kaféet.",
+      "answers": [
+        "mellan"
+      ],
+      "options": [
+        "mellan",
+        "på",
+        "från"
+      ],
+      "hint": "Apply the rule from memory.",
+      "explanation": "Mellan means between."
+    },
+    {
+      "id": "sv-09-check-listen",
+      "prompt": "What is next to the pharmacy?",
+      "answers": [
+        "A grocery store"
+      ],
+      "options": [
+        "A grocery store",
+        "A library",
+        "A school"
+      ],
+      "hint": "Replay once.",
+      "explanation": "Bredvid en mataffär."
+    },
+    {
+      "id": "sv-09-check-transfer",
+      "prompt": "What best tests transfer?",
+      "answers": [
+        "Change one detail and rebuild the message"
+      ],
+      "options": [
+        "Change one detail and rebuild the message",
+        "Copy the model",
+        "Translate every word"
+      ],
+      "hint": "A changed situation tests the pattern.",
+      "explanation": "Rebuilding shows transferable learning."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 9 mission: Places in town and location",
+    "instructions": "LISTEN: Hear the audio twice and answer: What is next to the pharmacy?\n\nREAD: Read once for purpose and once for detail. Answer: What is between the bank and café?\n\nSPEAK: Ask for a library and describe its location. Try once without the model, then repeat more clearly.\n\nWRITE: Write three map descriptions. Check word order and spelling.\n\nTRANSFER: Move the place and replace bredvid.\n\nRETURN: Use det finns and ligger once each.",
+    "model": "Speaking: Finns det ett bibliotek här? Ja, det ligger bredvid stationen.\nWriting: Det finns en bank. Biblioteket ligger bredvid banken. Parken ligger bakom biblioteket."
+  },
+  "takeaways": [
+    "Use: Det finns ett apotek bredvid mataffären.",
+    "Rule: Use det finns + noun for existence: Det finns ett apotek här.",
+    "Return: Use det finns and ligger once each."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Visitor",
+      "fi": "Finns det ett apotek här nära?",
+      "en": "Is there a pharmacy nearby?"
+    },
+    {
+      "speaker": "Resident",
+      "fi": "Ja, bredvid mataffären.",
+      "en": "Yes, next to the grocery store."
+    },
+    {
+      "speaker": "Visitor",
+      "fi": "Är det långt?",
+      "en": "Is it far?"
+    },
+    {
+      "speaker": "Resident",
+      "fi": "Nej, bara två minuter.",
+      "en": "No, only two minutes."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-09-word-1",
+        "fi": "ett bibliotek",
+        "en": "a library",
+        "example": "Biblioteket ligger i centrum.",
+        "translation": "The library is downtown.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-2",
+        "fi": "ett apotek",
+        "en": "a pharmacy",
+        "example": "Det finns ett apotek här.",
+        "translation": "There is a pharmacy here.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-3",
+        "fi": "en station",
+        "en": "a station",
+        "example": "Vi ses vid stationen.",
+        "translation": "See you at the station.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-4",
+        "fi": "en mataffär",
+        "en": "a grocery store",
+        "example": "Mataffären är öppen.",
+        "translation": "The grocery store is open.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-5",
+        "fi": "bredvid",
+        "en": "next to",
+        "example": "Banken ligger bredvid kaféet.",
+        "translation": "The bank is next to the café.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-6",
+        "fi": "långt",
+        "en": "far",
+        "example": "Är det långt?",
+        "translation": "Is it far?",
+        "level": "A1"
+      }
+    ],
+    "pronunciation": {
+      "text": "karta, komma, kurs — kemi, kilo, kyrka, kär, kök",
+      "tip": "Hear hard k before a/o/u/å and soft k before e/i/y/ä/ö in many native words."
+    },
+    "reading_passage": {
+      "text": "I centrum finns ett bibliotek, en bank och ett kafé. Biblioteket ligger mellan banken och kaféet. Hållplatsen är framför banken.",
+      "gist": {
+        "prompt": "What does the text mainly describe?",
+        "options": [
+          "Where places are in a town centre",
+          "When a class begins",
+          "What a customer orders"
+        ],
+        "answer": 0,
+        "explanation": "It locates the library, bank, café, and bus stop."
+      },
+      "detail": {
+        "prompt": "What is between the bank and café?",
+        "options": [
+          "The library",
+          "The stop",
+          "The pharmacy"
+        ],
+        "answer": 0,
+        "explanation": "Biblioteket ligger mellan dem."
+      }
+    },
+    "reading": {
+      "text": "I centrum finns ett bibliotek, en bank och ett kafé. Biblioteket ligger mellan banken och kaféet. Hållplatsen är framför banken.",
+      "question": "What is between the bank and café?",
+      "options": [
+        "The library",
+        "The stop",
+        "The pharmacy"
+      ],
+      "answer": 0,
+      "explanation": "Biblioteket ligger mellan dem."
+    },
+    "listening": {
+      "text": "Apoteket ligger bakom stationen, bredvid en mataffär. Det är öppet till sex.",
+      "question": "What is next to the pharmacy?",
+      "options": [
+        "A grocery store",
+        "A library",
+        "A school"
+      ],
+      "answer": 0,
+      "explanation": "Bredvid en mataffär."
+    },
+    "speaking": {
+      "prompt": "Ask for a library and describe its location.",
+      "help": "Finns det …? Det ligger …",
+      "model": "Finns det ett bibliotek här? Ja, det ligger bredvid stationen."
+    },
+    "writing": {
+      "prompt": "Write three map descriptions.",
+      "help": "Use det finns and two prepositions.",
+      "model": "Det finns en bank. Biblioteket ligger bredvid banken. Parken ligger bakom biblioteket."
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Ask for and locate a place.",
+    "transferPrompt": "Move the place and replace bredvid.",
+    "returnPrompt": "Use det finns and ligger once each.",
+    "successChecks": [
+      "Distinguish Finns det? and Var ligger?",
+      "Use a preposition.",
+      "Recognise hard/soft k."
+    ],
+    "requiredSkills": [
+      "speaking"
+    ]
+  }
+}

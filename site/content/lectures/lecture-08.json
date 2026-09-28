@@ -1,0 +1,453 @@
+{
+  "number": 8,
+  "objectives": [
+    "Ask with vad, var, när, vem, hur and varför.",
+    "Form yes/no questions with verb before subject.",
+    "Answer with one useful detail."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-08-recall-1",
+      "prompt": "Recall the previous episode: choose the most useful familiar line.",
+      "answers": [
+        "På kvällen studerar jag."
+      ],
+      "options": [
+        "På kvällen studerar jag.",
+        "På kvällen jag studerar.",
+        "Kvällen att studera."
+      ],
+      "hint": "Use the pattern from the preceding episode.",
+      "explanation": "This is a purposeful retrieval of earlier Swedish."
+    },
+    {
+      "id": "sv-08-recall-key",
+      "prompt": "Choose the Swedish line meaning “Where do you work, and when do you start?”",
+      "answers": [
+        "Var arbetar du och när börjar du?"
+      ],
+      "options": [
+        "Var arbetar du och när börjar du?",
+        "Var bor du?",
+        "var"
+      ],
+      "hint": "Match the full message.",
+      "explanation": "Var arbetar du och när börjar du? means “Where do you work, and when do you start?”"
+    },
+    {
+      "id": "sv-08-recall-sound",
+      "prompt": "What may happen to intonation in a yes/no question?",
+      "answers": [
+        "It rises or stays open"
+      ],
+      "options": [
+        "It rises or stays open",
+        "It becomes a whisper",
+        "The last word disappears"
+      ],
+      "hint": "Say the options and apply the sound cue.",
+      "explanation": "Intonation signals that an answer is expected."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Questions and complete short answers",
+      "kind": "scene",
+      "body": [
+        "Hur asks about manner or condition: Hur mår du?",
+        "Answer Ja/Nej plus a detail, not only one word.",
+        "Ask Kan du upprepa frågan? when needed."
+      ],
+      "examples": [
+        {
+          "fi": "Var bor du?",
+          "en": "Where do you live?"
+        },
+        {
+          "fi": "Jag bor i Närpes.",
+          "en": "I live in Närpes."
+        },
+        {
+          "fi": "Arbetar du där också?",
+          "en": "Do you work there too?"
+        },
+        {
+          "fi": "Nej, jag arbetar i Vasa.",
+          "en": "No, I work in Vaasa."
+        }
+      ]
+    },
+    {
+      "title": "Question word or verb first",
+      "kind": "rule",
+      "body": [
+        "Information questions use question word + finite verb + subject: Var bor du?",
+        "Yes/no questions begin with the finite verb: Bor du här?",
+        "Varför asks for a reason; answer with för att + clause."
+      ],
+      "examples": [
+        {
+          "fi": "Vad gör du?",
+          "en": "What are you doing?"
+        },
+        {
+          "fi": "Var bor ni?",
+          "en": "Where do you live?"
+        },
+        {
+          "fi": "När börjar mötet?",
+          "en": "When does the meeting begin?"
+        },
+        {
+          "fi": "Arbetar du hemma?",
+          "en": "Do you work at home?"
+        }
+      ],
+      "table": {
+        "headings": [
+          "Purpose",
+          "Word",
+          "Model"
+        ],
+        "rows": [
+          [
+            "thing",
+            "vad",
+            "Vad läser du?"
+          ],
+          [
+            "place",
+            "var",
+            "Var arbetar hon?"
+          ],
+          [
+            "time",
+            "när",
+            "När kommer bussen?"
+          ],
+          [
+            "reason",
+            "varför",
+            "Varför studerar du?"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-08-guided-meaning",
+      "prompt": "What does “Var arbetar du och när börjar du?” mean?",
+      "answers": [
+        "Where do you work, and when do you start?"
+      ],
+      "options": [
+        "Where do you work, and when do you start?",
+        "Where do you live?",
+        "when"
+      ],
+      "hint": "Match the whole line.",
+      "explanation": "Var arbetar du och när börjar du? means “Where do you work, and when do you start?”"
+    },
+    {
+      "id": "sv-08-guided-form",
+      "prompt": "Turn Du bor i Vasa into a question.",
+      "answers": [
+        "Bor du i Vasa?"
+      ],
+      "options": [
+        "Bor du i Vasa?",
+        "Du bor i Vasa?",
+        "Var du bor i Vasa?"
+      ],
+      "hint": "Use the rule section.",
+      "explanation": "A neutral yes/no question starts with the verb."
+    },
+    {
+      "id": "sv-08-guided-scene",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Arbetar du där också?"
+      ],
+      "options": [
+        "Arbetar du där också?",
+        "Var bor du?",
+        "Var arbetar du och när börjar du?"
+      ],
+      "hint": "Locate the exact line.",
+      "explanation": "The dialogue includes Arbetar du där också?"
+    },
+    {
+      "id": "sv-08-guided-listen",
+      "prompt": "Where is the course?",
+      "answers": [
+        "At the library"
+      ],
+      "options": [
+        "At the library",
+        "At school",
+        "At home"
+      ],
+      "hint": "Listen for the requested detail.",
+      "explanation": "På biblioteket."
+    },
+    {
+      "id": "sv-08-guided-read",
+      "prompt": "Why does the person study Swedish?",
+      "answers": [
+        "Because they work in Finland"
+      ],
+      "options": [
+        "Because they work in Finland",
+        "Because they live in Sweden",
+        "Because class is Monday"
+      ],
+      "hint": "Scan the practical text.",
+      "explanation": "The för att answer gives the reason."
+    },
+    {
+      "id": "sv-08-guided-sound",
+      "prompt": "What may happen to intonation in a yes/no question?",
+      "answers": [
+        "It rises or stays open"
+      ],
+      "options": [
+        "It rises or stays open",
+        "It becomes a whisper",
+        "The last word disappears"
+      ],
+      "hint": "Use spelling and audio.",
+      "explanation": "Intonation signals that an answer is expected."
+    },
+    {
+      "id": "sv-08-guided-word",
+      "prompt": "Which item means “what”?",
+      "answers": [
+        "vad"
+      ],
+      "options": [
+        "vad",
+        "var",
+        "när"
+      ],
+      "hint": "Use the vocabulary examples.",
+      "explanation": "vad means what."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-08-check-key",
+      "prompt": "Produce: “Where do you work, and when do you start?”",
+      "answers": [
+        "Var arbetar du och när börjar du?"
+      ],
+      "hint": "Say it first, then type it.",
+      "explanation": "Model: Var arbetar du och när börjar du?"
+    },
+    {
+      "id": "sv-08-check-form",
+      "prompt": "Turn Du bor i Vasa into a question.",
+      "answers": [
+        "Bor du i Vasa?"
+      ],
+      "options": [
+        "Bor du i Vasa?",
+        "Du bor i Vasa?",
+        "Var du bor i Vasa?"
+      ],
+      "hint": "Apply the rule from memory.",
+      "explanation": "A neutral yes/no question starts with the verb."
+    },
+    {
+      "id": "sv-08-check-listen",
+      "prompt": "Where is the course?",
+      "answers": [
+        "At the library"
+      ],
+      "options": [
+        "At the library",
+        "At school",
+        "At home"
+      ],
+      "hint": "Replay once.",
+      "explanation": "På biblioteket."
+    },
+    {
+      "id": "sv-08-check-transfer",
+      "prompt": "What best tests transfer?",
+      "answers": [
+        "Change one detail and rebuild the message"
+      ],
+      "options": [
+        "Change one detail and rebuild the message",
+        "Copy the model",
+        "Translate every word"
+      ],
+      "hint": "A changed situation tests the pattern.",
+      "explanation": "Rebuilding shows transferable learning."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 8 mission: Questions and complete short answers",
+    "instructions": "LISTEN: Hear the audio twice and answer: Where is the course?\n\nREAD: Read once for purpose and once for detail. Answer: Why does the person study Swedish?\n\nSPEAK: Ask four questions about place, time, activity, and reason. Try once without the model, then repeat more clearly.\n\nWRITE: Write a three-question mini interview. Check word order and spelling.\n\nTRANSFER: Turn one answer into a yes/no follow-up.\n\nRETURN: Build one var-question and one yes/no question.",
+    "model": "Speaking: Var bor du? När arbetar du? Vad gör du på kvällen? Varför studerar du svenska?\nWriting: Var bor du? Jag bor i Vasa.\nArbetar du hemma? Ja.\nNär börjar du? Klockan åtta."
+  },
+  "takeaways": [
+    "Use: Var arbetar du och när börjar du?",
+    "Rule: Information questions use question word + finite verb + subject: Var bor du?",
+    "Return: Build one var-question and one yes/no question."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Teacher",
+      "fi": "Var bor du?",
+      "en": "Where do you live?"
+    },
+    {
+      "speaker": "Mika",
+      "fi": "Jag bor i Närpes.",
+      "en": "I live in Närpes."
+    },
+    {
+      "speaker": "Teacher",
+      "fi": "Arbetar du där också?",
+      "en": "Do you work there too?"
+    },
+    {
+      "speaker": "Mika",
+      "fi": "Nej, jag arbetar i Vasa.",
+      "en": "No, I work in Vaasa."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-08-word-1",
+        "fi": "vad",
+        "en": "what",
+        "example": "Vad gör du?",
+        "translation": "What are you doing?",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-2",
+        "fi": "var",
+        "en": "where",
+        "example": "Var bor du?",
+        "translation": "Where do you live?",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-3",
+        "fi": "när",
+        "en": "when",
+        "example": "När börjar kursen?",
+        "translation": "When does class begin?",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-4",
+        "fi": "vem",
+        "en": "who",
+        "example": "Vem är hon?",
+        "translation": "Who is she?",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-5",
+        "fi": "hur",
+        "en": "how",
+        "example": "Hur mår du?",
+        "translation": "How are you?",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-6",
+        "fi": "varför",
+        "en": "why",
+        "example": "Varför studerar du svenska?",
+        "translation": "Why do you study Swedish?",
+        "level": "A1"
+      }
+    ],
+    "pronunciation": {
+      "text": "Var bor du? Bor du här? När börjar kursen?",
+      "tip": "Keep the verb clear; question intonation should invite an answer."
+    },
+    "reading_passage": {
+      "text": "Var bor du? – I Jakobstad.\nVad gör du? – Jag studerar.\nVarför svenska? – För att jag arbetar i Finland.",
+      "gist": {
+        "prompt": "What type of text is this?",
+        "options": [
+          "A short personal interview",
+          "A shop notice",
+          "A route description"
+        ],
+        "answer": 0,
+        "explanation": "Questions and answers present personal information."
+      },
+      "detail": {
+        "prompt": "Why does the person study Swedish?",
+        "options": [
+          "Because they work in Finland",
+          "Because they live in Sweden",
+          "Because class is Monday"
+        ],
+        "answer": 0,
+        "explanation": "The för att answer gives the reason."
+      }
+    },
+    "reading": {
+      "text": "Var bor du? – I Jakobstad.\nVad gör du? – Jag studerar.\nVarför svenska? – För att jag arbetar i Finland.",
+      "question": "Why does the person study Swedish?",
+      "options": [
+        "Because they work in Finland",
+        "Because they live in Sweden",
+        "Because class is Monday"
+      ],
+      "answer": 0,
+      "explanation": "The för att answer gives the reason."
+    },
+    "listening": {
+      "text": "När börjar kursen? På tisdag klockan fem. Var är den? På biblioteket.",
+      "question": "Where is the course?",
+      "options": [
+        "At the library",
+        "At school",
+        "At home"
+      ],
+      "answer": 0,
+      "explanation": "På biblioteket."
+    },
+    "speaking": {
+      "prompt": "Ask four questions about place, time, activity, and reason.",
+      "help": "Use Var, När, Vad, Varför.",
+      "model": "Var bor du? När arbetar du? Vad gör du på kvällen? Varför studerar du svenska?"
+    },
+    "writing": {
+      "prompt": "Write a three-question mini interview.",
+      "help": "Include one yes/no question.",
+      "model": "Var bor du? Jag bor i Vasa.\nArbetar du hemma? Ja.\nNär börjar du? Klockan åtta."
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Conduct a four-question interview.",
+    "transferPrompt": "Turn one answer into a yes/no follow-up.",
+    "returnPrompt": "Build one var-question and one yes/no question.",
+    "successChecks": [
+      "Question word precedes verb and subject.",
+      "Yes/no starts with verb.",
+      "Answers add a detail."
+    ],
+    "requiredSkills": [
+      "speaking"
+    ]
+  }
+}

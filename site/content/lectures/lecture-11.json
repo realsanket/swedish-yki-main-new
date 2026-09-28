@@ -1,0 +1,448 @@
+{
+  "number": 11,
+  "objectives": [
+    "Ask for grocery items and quantities.",
+    "Recognise basic singular definite nouns.",
+    "Read labels and write a shopping list."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-11-recall-1",
+      "prompt": "Retrieve a useful line from the preceding episode.",
+      "answers": [
+        "Kan jag få en kaffe?"
+      ],
+      "options": [
+        "Kan jag få en kaffe?",
+        "Jag får kaffe kan?",
+        "Ett kaffe en?"
+      ],
+      "hint": "Choose the grammatically complete line.",
+      "explanation": "This recycles earlier Swedish."
+    },
+    {
+      "id": "sv-11-recall-key",
+      "prompt": "Choose the Swedish line meaning “Where are the bread and the milk?”",
+      "answers": [
+        "Var finns brödet och mjölken?"
+      ],
+      "options": [
+        "Var finns brödet och mjölken?",
+        "Ursäkta, var finns mjölken?",
+        "ett äpple"
+      ],
+      "hint": "Match the whole message.",
+      "explanation": "Var finns brödet och mjölken? means “Where are the bread and the milk?”"
+    },
+    {
+      "id": "sv-11-recall-sound",
+      "prompt": "Where is main prominence in the compound mataffär?",
+      "answers": [
+        "on the first part, with later secondary prominence"
+      ],
+      "options": [
+        "on the first part, with later secondary prominence",
+        "only on final r",
+        "nowhere"
+      ],
+      "hint": "Say the options and apply the cue.",
+      "explanation": "Compounds often begin strongly and have later secondary prominence."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Shopping and definite noun forms",
+      "kind": "scene",
+      "body": [
+        "Ask Var finns …? for a category and Har ni …? to check stock.",
+        "A shopping list may omit articles; full sentences normally need suitable forms.",
+        "Read the unit: /kg means per kilogram and st. means per item."
+      ],
+      "examples": [
+        {
+          "fi": "Ursäkta, var finns mjölken?",
+          "en": "Excuse me, where is the milk?"
+        },
+        {
+          "fi": "Längst in till höger.",
+          "en": "At the back on the right."
+        },
+        {
+          "fi": "Har ni glutenfritt bröd?",
+          "en": "Do you have gluten-free bread?"
+        },
+        {
+          "fi": "Ja, brödet ligger där.",
+          "en": "Yes, the bread is there."
+        }
+      ]
+    },
+    {
+      "title": "The article moves to the end",
+      "kind": "rule",
+      "body": [
+        "Indefinite articles stand before nouns: en banan, ett äpple. Basic definite forms attach an ending: bananen, äpplet.",
+        "Many en-words add -en/-n; many ett-words add -et/-t. Learn forms with each noun.",
+        "Use measures such as ett kilo äpplen, en liter mjölk and två paket ris."
+      ],
+      "examples": [
+        {
+          "fi": "en banan → bananen",
+          "en": "a banana → the banana"
+        },
+        {
+          "fi": "ett äpple → äpplet",
+          "en": "an apple → the apple"
+        },
+        {
+          "fi": "ett bröd → brödet",
+          "en": "bread → the bread"
+        },
+        {
+          "fi": "en liter mjölk",
+          "en": "a litre of milk"
+        }
+      ],
+      "table": {
+        "headings": [
+          "Indefinite",
+          "Definite",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "en banan",
+            "bananen",
+            "a/the banana"
+          ],
+          [
+            "ett äpple",
+            "äpplet",
+            "an/the apple"
+          ],
+          [
+            "ett bröd",
+            "brödet",
+            "bread/the bread"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-11-guided-meaning",
+      "prompt": "What does “Var finns brödet och mjölken?” mean?",
+      "answers": [
+        "Where are the bread and the milk?"
+      ],
+      "options": [
+        "Where are the bread and the milk?",
+        "Excuse me, where is the milk?",
+        "milk"
+      ],
+      "hint": "Match the whole line.",
+      "explanation": "Var finns brödet och mjölken? means “Where are the bread and the milk?”"
+    },
+    {
+      "id": "sv-11-guided-form",
+      "prompt": "Choose the definite form of en banan.",
+      "answers": [
+        "bananen"
+      ],
+      "options": [
+        "bananen",
+        "bananet",
+        "banan"
+      ],
+      "hint": "Use the rule.",
+      "explanation": "Many en-words add -en."
+    },
+    {
+      "id": "sv-11-guided-scene",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Har ni glutenfritt bröd?"
+      ],
+      "options": [
+        "Har ni glutenfritt bröd?",
+        "Ursäkta, var finns mjölken?",
+        "Var finns brödet och mjölken?"
+      ],
+      "hint": "Locate the line.",
+      "explanation": "The dialogue includes Har ni glutenfritt bröd?"
+    },
+    {
+      "id": "sv-11-guided-listen",
+      "prompt": "Which fruit is bought?",
+      "answers": [
+        "Apples"
+      ],
+      "options": [
+        "Apples",
+        "Bananas",
+        "Oranges"
+      ],
+      "hint": "Listen for the detail.",
+      "explanation": "Tre äpplen are bought."
+    },
+    {
+      "id": "sv-11-guided-read",
+      "prompt": "Which product is priced per item?",
+      "answers": [
+        "Rye bread"
+      ],
+      "options": [
+        "Rye bread",
+        "Milk",
+        "Apples"
+      ],
+      "hint": "Scan the text.",
+      "explanation": "€/st. marks a per-item price."
+    },
+    {
+      "id": "sv-11-guided-sound",
+      "prompt": "Where is main prominence in the compound mataffär?",
+      "answers": [
+        "on the first part, with later secondary prominence"
+      ],
+      "options": [
+        "on the first part, with later secondary prominence",
+        "only on final r",
+        "nowhere"
+      ],
+      "hint": "Use spelling and audio.",
+      "explanation": "Compounds often begin strongly and have later secondary prominence."
+    },
+    {
+      "id": "sv-11-guided-word",
+      "prompt": "Which item means “a banana”?",
+      "answers": [
+        "en banan"
+      ],
+      "options": [
+        "en banan",
+        "ett äpple",
+        "mjölk"
+      ],
+      "hint": "Use the examples.",
+      "explanation": "en banan means a banana."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-11-check-key",
+      "prompt": "Produce: “Where are the bread and the milk?”",
+      "answers": [
+        "Var finns brödet och mjölken?"
+      ],
+      "hint": "Say, then type.",
+      "explanation": "Model: Var finns brödet och mjölken?"
+    },
+    {
+      "id": "sv-11-check-form",
+      "prompt": "Choose the definite form of en banan.",
+      "answers": [
+        "bananen"
+      ],
+      "options": [
+        "bananen",
+        "bananet",
+        "banan"
+      ],
+      "hint": "Apply from memory.",
+      "explanation": "Many en-words add -en."
+    },
+    {
+      "id": "sv-11-check-listen",
+      "prompt": "Which fruit is bought?",
+      "answers": [
+        "Apples"
+      ],
+      "options": [
+        "Apples",
+        "Bananas",
+        "Oranges"
+      ],
+      "hint": "Replay once.",
+      "explanation": "Tre äpplen are bought."
+    },
+    {
+      "id": "sv-11-check-transfer",
+      "prompt": "What best tests transfer?",
+      "answers": [
+        "Change one detail and rebuild the message"
+      ],
+      "options": [
+        "Change one detail and rebuild the message",
+        "Copy the model",
+        "Translate every word"
+      ],
+      "hint": "Change the situation.",
+      "explanation": "Rebuilding tests transfer."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 11 mission: Shopping and definite noun forms",
+    "instructions": "LISTEN: Hear twice and answer: Which fruit is bought?\n\nREAD: Read for purpose and detail. Answer: Which product is priced per item?\n\nSPEAK: Ask where two items are and request a quantity. Try once unaided, then improve one detail.\n\nWRITE: Write five list items and one definite-noun sentence. Check word order, forms, and purpose.\n\nTRANSFER: Replace a per-kilo product with a per-item one.\n\nRETURN: Make banan and äpple definite.",
+    "model": "Speaking: Ursäkta, var finns brödet? Jag behöver också en liter mjölk.\nWriting: Mjölk, bröd, äpplen, ris, kaffe.\nMjölken finns längst in."
+  },
+  "takeaways": [
+    "Use: Var finns brödet och mjölken?",
+    "Rule: Indefinite articles stand before nouns: en banan, ett äpple. Basic definite forms attach an ending: bananen, äpplet.",
+    "Return: Make banan and äpple definite."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Customer",
+      "fi": "Ursäkta, var finns mjölken?",
+      "en": "Excuse me, where is the milk?"
+    },
+    {
+      "speaker": "Worker",
+      "fi": "Längst in till höger.",
+      "en": "At the back on the right."
+    },
+    {
+      "speaker": "Customer",
+      "fi": "Har ni glutenfritt bröd?",
+      "en": "Do you have gluten-free bread?"
+    },
+    {
+      "speaker": "Worker",
+      "fi": "Ja, brödet ligger där.",
+      "en": "Yes, the bread is there."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-11-word-1",
+        "fi": "en banan",
+        "en": "a banana",
+        "example": "Bananen kostar fem kronor.",
+        "translation": "The banana costs five kronor.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-11-word-2",
+        "fi": "ett äpple",
+        "en": "an apple",
+        "example": "Äpplet är rött.",
+        "translation": "The apple is red.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-11-word-3",
+        "fi": "mjölk",
+        "en": "milk",
+        "example": "Jag köper en liter mjölk.",
+        "translation": "I buy one litre of milk.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-11-word-4",
+        "fi": "bröd",
+        "en": "bread",
+        "example": "Var finns brödet?",
+        "translation": "Where is the bread?",
+        "level": "A1"
+      },
+      {
+        "id": "sv-11-word-5",
+        "fi": "ett paket",
+        "en": "a packet",
+        "example": "Jag behöver två paket ris.",
+        "translation": "I need two packets of rice.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-11-word-6",
+        "fi": "en hylla",
+        "en": "a shelf",
+        "example": "Varan ligger på hyllan.",
+        "translation": "The item is on the shelf.",
+        "level": "A1"
+      }
+    ],
+    "pronunciation": {
+      "text": "mataffär, mjölken, bananen, äpplet, brödet",
+      "tip": "Keep the first element of a compound clear and avoid extra vowels in clusters."
+    },
+    "reading_passage": {
+      "text": "Äpplen 2,49 €/kg\nMjölk 1,35 €/l\nRågbröd 3,80 €/st.\nBananer 1,99 €/kg",
+      "gist": {
+        "prompt": "What is the main purpose of this text?",
+        "options": [
+          "Compare grocery products, prices, and units",
+          "Give directions to a store",
+          "Describe yesterday's meal"
+        ],
+        "answer": 0,
+        "explanation": "The label lets a shopper compare prices per kilogram, litre, or item."
+      },
+      "detail": {
+        "prompt": "Which product is priced per item?",
+        "options": [
+          "Rye bread",
+          "Milk",
+          "Apples"
+        ],
+        "answer": 0,
+        "explanation": "€/st. marks a per-item price."
+      }
+    },
+    "reading": {
+      "text": "Äpplen 2,49 €/kg\nMjölk 1,35 €/l\nRågbröd 3,80 €/st.\nBananer 1,99 €/kg",
+      "question": "Which product is priced per item?",
+      "options": [
+        "Rye bread",
+        "Milk",
+        "Apples"
+      ],
+      "answer": 0,
+      "explanation": "€/st. marks a per-item price."
+    },
+    "listening": {
+      "text": "Jag behöver en liter mjölk, ett bröd och tre äpplen. Inte bananer idag.",
+      "question": "Which fruit is bought?",
+      "options": [
+        "Apples",
+        "Bananas",
+        "Oranges"
+      ],
+      "answer": 0,
+      "explanation": "Tre äpplen are bought."
+    },
+    "speaking": {
+      "prompt": "Ask where two items are and request a quantity.",
+      "help": "Var finns …? Jag behöver …",
+      "model": "Ursäkta, var finns brödet? Jag behöver också en liter mjölk."
+    },
+    "writing": {
+      "prompt": "Write five list items and one definite-noun sentence.",
+      "help": "Lists can omit articles; use mjölken or brödet in the sentence.",
+      "model": "Mjölk, bröd, äpplen, ris, kaffe.\nMjölken finns längst in."
+    }
+  },
+  "route": {
+    "primarySkill": "writing",
+    "expectedOutput": "Write a shopping list from a price label and ask where one item is.",
+    "transferPrompt": "Replace a per-kilo product with a per-item one.",
+    "returnPrompt": "Make banan and äpple definite.",
+    "successChecks": [
+      "Recognise -en/-et endings.",
+      "Read the price unit.",
+      "Ask Var finns …?"
+    ],
+    "requiredSkills": [
+      "writing"
+    ]
+  }
+}

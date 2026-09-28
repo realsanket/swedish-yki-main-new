@@ -1,0 +1,460 @@
+{
+  "number": 44,
+  "legacyLessonId": "sv-leisure-plans",
+  "objectives": [
+    "Invite someone to a leisure activity and update the plan when conditions change.",
+    "Use and recognise: Vill du följa med på vandringen? · Vi träffas vid stationen halv nio. · Om det regnar flyttar vi turen till söndag.",
+    "Complete an independent first attempt, review one specific feature, then transfer the language to a changed situation."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-e44-recall-1",
+      "prompt": "Warm up for leisure and hobbies: choose the Swedish line that best supports today's goal.",
+      "answers": [
+        "Vill du följa med på vandringen?"
+      ],
+      "options": [
+        "Vill du följa med på vandringen?",
+        "Vi träffas vid stationen halv nio.",
+        "Om det regnar flyttar vi turen till söndag."
+      ],
+      "hint": "Choose by communicative purpose, not by translating every word.",
+      "explanation": "Vill du följa med på vandringen? is the most direct starting point for this task."
+    },
+    {
+      "id": "sv-e44-recall-2",
+      "prompt": "Which strategy will help most in this leisure and hobbies task?",
+      "answers": [
+        "When a plan changes, state the changed detail before repeating what remains the same."
+      ],
+      "options": [
+        "When a plan changes, state the changed detail before repeating what remains the same.",
+        "Translate every word before deciding what to do.",
+        "Memorise the model and repeat it without changing details."
+      ],
+      "hint": "Choose the action that makes the input usable in a new situation.",
+      "explanation": "When a plan changes, state the changed detail before repeating what remains the same."
+    },
+    {
+      "id": "sv-e44-recall-3",
+      "prompt": "Say or type this useful line from memory: “If it rains, we will move the trip to Sunday.”",
+      "answers": [
+        "Om det regnar flyttar vi turen till söndag."
+      ],
+      "hint": "Try once before looking back at the phrase list.",
+      "explanation": "A clear answer is: Om det regnar flyttar vi turen till söndag."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Situation, language and purpose",
+      "body": [
+        "Goal: Invite someone to a leisure activity and update the plan when conditions change.",
+        "Core vocabulary: friluftsliv, utrustning, samlingsplats. Key phrases: Vill du följa med på vandringen? · Vi träffas vid stationen halv nio. · Om det regnar flyttar vi turen till söndag.",
+        "Meaning first: use the language to complete a real leisure and hobbies purpose, not to display isolated grammar.",
+        "Purposeful return: Bring the om-condition back when discussing a community plan."
+      ],
+      "examples": [
+        {
+          "fi": "Vill du följa med på vandringen?",
+          "en": "Would you like to join the hike?"
+        },
+        {
+          "fi": "Vi träffas vid stationen halv nio.",
+          "en": "We will meet at the station at half past eight."
+        },
+        {
+          "fi": "Om det regnar flyttar vi turen till söndag.",
+          "en": "If it rains, we will move the trip to Sunday."
+        }
+      ]
+    },
+    {
+      "title": "Register, strategy and transfer",
+      "body": [
+        "REGISTER · NEUTRAL SWEDISH: Vill du följa med på vandringen? EVERYDAY SPEECH / CONTEXT: Vill du hänga med på vandringen?",
+        "Practice move: When a plan changes, state the changed detail before repeating what remains the same.",
+        "Make a first attempt without the model. Review one feature, then respond again after an important condition changes."
+      ],
+      "examples": [
+        {
+          "fi": "NEUTRAL SWEDISH: Vill du följa med på vandringen?",
+          "en": "A clear production model for neutral or formal use."
+        },
+        {
+          "fi": "EVERYDAY / CONTEXTUAL FORM: Vill du hänga med på vandringen?",
+          "en": "Useful recognition or familiar-language model.",
+          "note": "Hänga med is informal and friendly. Följa med works in neutral speech and writing."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Plan detail",
+          "Question to answer",
+          "Example"
+        ],
+        "rows": [
+          [
+            "time",
+            "När träffas vi?",
+            "halv nio"
+          ],
+          [
+            "place",
+            "Var är samlingsplatsen?",
+            "vid stationen"
+          ],
+          [
+            "change",
+            "Vad gör vi om det regnar?",
+            "flyttar turen till söndag"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-e44-guided-meaning",
+      "prompt": "Choose the meaning of “Vill du följa med på vandringen?”.",
+      "answers": [
+        "Would you like to join the hike?"
+      ],
+      "options": [
+        "Would you like to join the hike?",
+        "We will meet at the station at half past eight.",
+        "If it rains, we will move the trip to Sunday."
+      ],
+      "hint": "Match the whole sentence to its communicative purpose.",
+      "explanation": "“Vill du följa med på vandringen?” means “Would you like to join the hike?”"
+    },
+    {
+      "id": "sv-e44-guided-form",
+      "prompt": "Complete the condition: ___ det regnar flyttar vi turen till söndag.",
+      "answers": [
+        "Om"
+      ],
+      "options": [
+        "Om",
+        "När",
+        "Fast"
+      ],
+      "hint": "Read the whole sentence before choosing the form.",
+      "explanation": "The fitting form is Om."
+    },
+    {
+      "id": "sv-e44-guided-dialogue",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Gärna. Var är samlingsplatsen?"
+      ],
+      "options": [
+        "Gärna. Var är samlingsplatsen?",
+        "Vi träffas vid stationen halv nio.",
+        "Om det regnar flyttar vi turen till söndag."
+      ],
+      "hint": "Locate the exact line and identify what it accomplishes.",
+      "explanation": "The middle speaker uses this line in the situation."
+    },
+    {
+      "id": "sv-e44-guided-listening",
+      "prompt": "Where is the training?",
+      "answers": [
+        "On the gravel pitch behind the school"
+      ],
+      "options": [
+        "On the gravel pitch behind the school",
+        "In the sports hall",
+        "At the bus station"
+      ],
+      "hint": "Listen once for the situation and again for the requested detail.",
+      "explanation": "The speaker says på grusplanen bakom skolan."
+    },
+    {
+      "id": "sv-e44-guided-reading",
+      "prompt": "What happens in heavy rain?",
+      "answers": [
+        "The walk moves to Sunday"
+      ],
+      "options": [
+        "The walk moves to Sunday",
+        "The route becomes longer",
+        "The fee is refunded"
+      ],
+      "hint": "Find the exact phrase that proves the answer.",
+      "explanation": "Vid hårt regn ordnas promenaden på söndag."
+    },
+    {
+      "id": "sv-e44-guided-register",
+      "prompt": "Which neutral form preserves the meaning of “Vill du hänga med på vandringen?”?",
+      "answers": [
+        "Vill du följa med på vandringen?"
+      ],
+      "options": [
+        "Vill du följa med på vandringen?",
+        "Vi träffas vid stationen halv nio.",
+        "Om det regnar flyttar vi turen till söndag."
+      ],
+      "hint": "Keep the meaning while choosing a form suitable for clear production.",
+      "explanation": "Hänga med is informal and friendly. Följa med works in neutral speech and writing."
+    },
+    {
+      "id": "sv-e44-guided-vocabulary",
+      "prompt": "Which word belongs directly to today's leisure and hobbies task?",
+      "answers": [
+        "friluftsliv"
+      ],
+      "options": [
+        "friluftsliv",
+        "equipment",
+        "If it rains, we will move the trip to Sunday."
+      ],
+      "hint": "Choose the Swedish target word, not an English gloss or a full sentence.",
+      "explanation": "friluftsliv means outdoor recreation."
+    },
+    {
+      "id": "sv-e44-guided-strategy",
+      "prompt": "Which action best improves an independent second attempt?",
+      "answers": [
+        "When a plan changes, state the changed detail before repeating what remains the same."
+      ],
+      "options": [
+        "When a plan changes, state the changed detail before repeating what remains the same.",
+        "Copy the model word for word.",
+        "Replace all precise details with general language."
+      ],
+      "hint": "The best strategy should transfer to fresh material.",
+      "explanation": "When a plan changes, state the changed detail before repeating what remains the same."
+    },
+    {
+      "id": "sv-e44-guided-transfer",
+      "prompt": "Which changed condition should you respond to in the transfer attempt?",
+      "answers": [
+        "The station entrance is closed; move the meeting point and make the route unambiguous."
+      ],
+      "options": [
+        "The station entrance is closed; move the meeting point and make the route unambiguous.",
+        "Repeat the original scene without any change.",
+        "Give an English summary instead of completing the Swedish task."
+      ],
+      "hint": "Transfer requires a meaningful new condition.",
+      "explanation": "The station entrance is closed; move the meeting point and make the route unambiguous."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-e44-check-core",
+      "prompt": "Choose the phrase that most directly supports today's main goal.",
+      "answers": [
+        "Vill du följa med på vandringen?"
+      ],
+      "options": [
+        "Vill du följa med på vandringen?",
+        "Vi träffas vid stationen halv nio.",
+        "Om det regnar flyttar vi turen till söndag."
+      ],
+      "hint": "Return to the goal and select the line that starts that action.",
+      "explanation": "Use Vill du följa med på vandringen?"
+    },
+    {
+      "id": "sv-e44-check-listening",
+      "prompt": "Where is the training?",
+      "answers": [
+        "On the gravel pitch behind the school"
+      ],
+      "options": [
+        "On the gravel pitch behind the school",
+        "In the sports hall",
+        "At the bus station"
+      ],
+      "hint": "Answer from the audio first; inspect the script only afterwards.",
+      "explanation": "The speaker says på grusplanen bakom skolan."
+    },
+    {
+      "id": "sv-e44-check-reading",
+      "prompt": "What must a participant do by Thursday evening?",
+      "answers": [
+        "Register"
+      ],
+      "options": [
+        "Register",
+        "Buy a bus ticket",
+        "Choose the route"
+      ],
+      "hint": "Read for the required action and the detail that controls it.",
+      "explanation": "Anmäl dig senast torsdag kväll."
+    },
+    {
+      "id": "sv-e44-check-next",
+      "prompt": "What should you save for later review?",
+      "answers": [
+        "one skill-specific result, one useful phrase and one concrete improvement"
+      ],
+      "options": [
+        "one skill-specific result, one useful phrase and one concrete improvement",
+        "a single overall score with no skill detail",
+        "a copied model with no record of your own attempt"
+      ],
+      "hint": "Useful evidence tells you what to repeat and what to change.",
+      "explanation": "Separate evidence makes the next practice decision specific."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill practice, transfer and delayed return",
+    "instructions": "LISTEN: answer “Where is the training?” from the recording before reading the script. Save the listening result separately.\n\nREAD: answer the gist and detail questions, and mark the exact phrase that proves each answer. Save the reading result separately.\n\nSPEAK: Invite a friend to an activity and explain the complete plan. Record an independent first attempt, then improve one feature.\n\nWRITE: Write an update to a hobby group after the place or time changes. Draft without the model, then revise for reader, purpose, essential detail and next action.\n\nTRANSFER: The station entrance is closed; move the meeting point and make the route unambiguous.\n\nBETWEEN LESSON · Optional, 5 minutes: Bring the om-condition back when discussing a community plan.",
+    "model": "SPEAKING MODEL: Vill du följa med på vandringen på lördag? Vi träffas vid stationen halv nio. Ta med vatten och regnjacka. Om det regnar mycket flyttar vi turen till söndag.\n\nWRITING MODEL: Hej! Kvällens träning börjar klockan halv sju och hålls på grusplanen bakom skolan. Ta med egen vattenflaska. Svara gärna om du inte kan komma."
+  },
+  "takeaways": [
+    "Use: Vill du följa med på vandringen?",
+    "Register: Vill du hänga med på vandringen? → Vill du följa med på vandringen?",
+    "A good invitation gives enough detail for the listener to decide and act."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Maja",
+      "fi": "Vill du följa med på vandringen på lördag?",
+      "en": "Would you like to join the hike on Saturday?"
+    },
+    {
+      "speaker": "Jonas",
+      "fi": "Gärna. Var är samlingsplatsen?",
+      "en": "Gladly. Where is the meeting point?"
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Vid stationen halv nio, men vi ändrar dagen om det regnar.",
+      "en": "By the station at half past eight, but we will change the day if it rains."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-e44-v1",
+        "fi": "friluftsliv",
+        "en": "outdoor recreation",
+        "example": "Jag tycker om friluftsliv.",
+        "translation": "I enjoy outdoor recreation.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-e44-v2",
+        "fi": "utrustning",
+        "en": "equipment",
+        "example": "Ta med lämplig utrustning.",
+        "translation": "Bring suitable equipment.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-e44-v3",
+        "fi": "samlingsplats",
+        "en": "meeting point",
+        "example": "Samlingsplatsen är vid stationen.",
+        "translation": "The meeting point is by the station.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-e44-p1",
+        "fi": "Vill du följa med på vandringen?",
+        "en": "Would you like to join the hike?",
+        "example": "Vill du följa med på vandringen?",
+        "translation": "Would you like to join the hike?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-e44-p2",
+        "fi": "Vi träffas vid stationen halv nio.",
+        "en": "We will meet at the station at half past eight.",
+        "example": "Vi träffas vid stationen halv nio.",
+        "translation": "We will meet at the station at half past eight.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-e44-p3",
+        "fi": "Om det regnar flyttar vi turen till söndag.",
+        "en": "If it rains, we will move the trip to Sunday.",
+        "example": "Om det regnar flyttar vi turen till söndag.",
+        "translation": "If it rains, we will move the trip to Sunday.",
+        "level": "A2"
+      }
+    ],
+    "pronunciation": {
+      "text": "friluftsliv – följa med – samlingsplats – halv nio",
+      "tip": "In följa, lj forms a soft sound. Halv nio means 8.30 in Swedish time expressions."
+    },
+    "reading_passage": {
+      "text": "Vårpromenad vid havet, lördag 11 maj. Samling vid busstationens norra ingång klockan 8.30. Turen är cirka åtta kilometer. Ta med vatten, matsäck och regnjacka. Vid hårt regn ordnas promenaden på söndag. Anmäl dig senast torsdag kväll.",
+      "gist": {
+        "prompt": "What is being organised?",
+        "options": [
+          "A group walk by the sea",
+          "An indoor concert",
+          "A language examination"
+        ],
+        "answer": 0,
+        "explanation": "The text announces Vårpromenad vid havet."
+      },
+      "detail": {
+        "prompt": "What happens in heavy rain?",
+        "options": [
+          "The walk moves to Sunday",
+          "The route becomes longer",
+          "The fee is refunded"
+        ],
+        "answer": 0,
+        "explanation": "Vid hårt regn ordnas promenaden på söndag."
+      }
+    },
+    "reading": {
+      "text": "Vårpromenad vid havet, lördag 11 maj. Samling vid busstationens norra ingång klockan 8.30. Turen är cirka åtta kilometer. Ta med vatten, matsäck och regnjacka. Vid hårt regn ordnas promenaden på söndag. Anmäl dig senast torsdag kväll.",
+      "question": "What must a participant do by Thursday evening?",
+      "options": [
+        "Register",
+        "Buy a bus ticket",
+        "Choose the route"
+      ],
+      "answer": 0,
+      "explanation": "Anmäl dig senast torsdag kväll."
+    },
+    "listening": {
+      "text": "Hej allihop! Fotbollsträningen börjar en halvtimme senare i kväll, alltså klockan halv sju. Vi är på grusplanen bakom skolan, inte i idrottshallen. Ta med egen vattenflaska.",
+      "question": "Where is the training?",
+      "options": [
+        "On the gravel pitch behind the school",
+        "In the sports hall",
+        "At the bus station"
+      ],
+      "answer": 0,
+      "explanation": "The speaker says på grusplanen bakom skolan."
+    },
+    "speaking": {
+      "prompt": "Invite a friend to an activity and explain the complete plan.",
+      "help": "Include activity, day, meeting point, necessary equipment and one weather alternative.",
+      "model": "Vill du följa med på vandringen på lördag? Vi träffas vid stationen halv nio. Ta med vatten och regnjacka. Om det regnar mycket flyttar vi turen till söndag."
+    },
+    "writing": {
+      "prompt": "Write an update to a hobby group after the place or time changes.",
+      "help": "Put the change first, then give the new plan and say what participants should do.",
+      "model": "Hej! Kvällens träning börjar klockan halv sju och hålls på grusplanen bakom skolan. Ta med egen vattenflaska. Svara gärna om du inte kan komma."
+    }
+  },
+  "route": {
+    "primarySkill": "writing",
+    "expectedOutput": "Write an update to a hobby group after the place or time changes.",
+    "transferPrompt": "The station entrance is closed; move the meeting point and make the route unambiguous.",
+    "returnPrompt": "Bring the om-condition back when discussing a community plan.",
+    "successChecks": [
+      "You complete the communicative purpose without copying the model.",
+      "Essential facts, times and requested actions are understandable.",
+      "You preserve meaning when register or conditions change."
+    ],
+    "requiredSkills": [
+      "writing"
+    ]
+  }
+}

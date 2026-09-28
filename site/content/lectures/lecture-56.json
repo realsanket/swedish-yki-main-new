@@ -1,0 +1,496 @@
+{
+  "number": 56,
+  "legacyLessonId": "sv-listening-instructions",
+  "objectives": [
+    "Interpret Swedish listening-task instructions and use a timed first-listen strategy on original material.",
+    "Use and recognise: Lyssna på meddelandet två gånger. · Välj det alternativ som bäst sammanfattar innehållet. · Anteckna bara de detaljer som frågan kräver.",
+    "Complete an independent first attempt, review one specific feature, then transfer the language to a changed situation."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-e56-recall-1",
+      "prompt": "Warm up for task-instruction literacy for listening: choose the Swedish line that best supports today's goal.",
+      "answers": [
+        "Lyssna på meddelandet två gånger."
+      ],
+      "options": [
+        "Lyssna på meddelandet två gånger.",
+        "Välj det alternativ som bäst sammanfattar innehållet.",
+        "Anteckna bara de detaljer som frågan kräver."
+      ],
+      "hint": "Choose by communicative purpose, not by translating every word.",
+      "explanation": "Lyssna på meddelandet två gånger. is the most direct starting point for this task."
+    },
+    {
+      "id": "sv-e56-recall-2",
+      "prompt": "Which strategy will help most in this task-instruction literacy for listening task?",
+      "answers": [
+        "Use the question to predict the needed detail, but let the audio determine the answer."
+      ],
+      "options": [
+        "Use the question to predict the needed detail, but let the audio determine the answer.",
+        "Translate every word before deciding what to do.",
+        "Memorise the model and repeat it without changing details."
+      ],
+      "hint": "Choose the action that makes the input usable in a new situation.",
+      "explanation": "Use the question to predict the needed detail, but let the audio determine the answer."
+    },
+    {
+      "id": "sv-e56-recall-3",
+      "prompt": "Say or type this useful line from memory: “Write down only the details required by the question.”",
+      "answers": [
+        "Anteckna bara de detaljer som frågan kräver."
+      ],
+      "hint": "Try once before looking back at the phrase list.",
+      "explanation": "A clear answer is: Anteckna bara de detaljer som frågan kräver."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Situation, language and purpose",
+      "body": [
+        "Goal: Interpret Swedish listening-task instructions and use a timed first-listen strategy on original material.",
+        "Core vocabulary: sammanfatta, alternativ, anteckna. Key phrases: Lyssna på meddelandet två gånger. · Välj det alternativ som bäst sammanfattar innehållet. · Anteckna bara de detaljer som frågan kräver.",
+        "Meaning first: use the language to complete a real task-instruction literacy for listening purpose, not to display isolated grammar.",
+        "Purposeful return: Repeat the task after a day with audio only and compare listening evidence, not memory of the transcript."
+      ],
+      "examples": [
+        {
+          "fi": "Lyssna på meddelandet två gånger.",
+          "en": "Listen to the message twice."
+        },
+        {
+          "fi": "Välj det alternativ som bäst sammanfattar innehållet.",
+          "en": "Choose the option that best summarises the content."
+        },
+        {
+          "fi": "Anteckna bara de detaljer som frågan kräver.",
+          "en": "Write down only the details required by the question."
+        }
+      ]
+    },
+    {
+      "title": "Register, strategy and transfer",
+      "body": [
+        "REGISTER · NEUTRAL SWEDISH: Lyssna på meddelandet och välj det alternativ som bäst sammanfattar innehållet. EVERYDAY SPEECH / CONTEXT: Lyssna och kryssa i bästa svaret.",
+        "Practice move: Use the question to predict the needed detail, but let the audio determine the answer.",
+        "Make a first attempt without the model. Review one feature, then respond again after an important condition changes."
+      ],
+      "examples": [
+        {
+          "fi": "NEUTRAL SWEDISH: Lyssna på meddelandet och välj det alternativ som bäst sammanfattar innehållet.",
+          "en": "A clear production model for neutral or formal use."
+        },
+        {
+          "fi": "EVERYDAY / CONTEXTUAL FORM: Lyssna och kryssa i bästa svaret.",
+          "en": "Useful recognition or familiar-language model.",
+          "note": "Short instructions are common in speech; the fuller form makes the criterion explicit."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Instruction verb",
+          "Required action",
+          "Not required"
+        ],
+        "rows": [
+          [
+            "lyssna",
+            "use audio evidence",
+            "read the transcript first"
+          ],
+          [
+            "välj",
+            "select the best supported option",
+            "prove every option false"
+          ],
+          [
+            "anteckna",
+            "capture requested details",
+            "transcribe every word"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Evidence by skill",
+      "body": [
+        "Complete each skill task independently before using the model or transcript.",
+        "Save listening, reading, speaking and writing results separately. A strength in one skill does not stand in for another.",
+        "The curriculum label and local timer are learning tools, not a certificate, an official YKI result or a promise of test performance."
+      ],
+      "examples": [],
+      "table": {
+        "headings": [
+          "Evidence",
+          "First attempt",
+          "Targeted retry"
+        ],
+        "rows": [
+          [
+            "Listening",
+            "answer from audio only",
+            "replay for one missed detail"
+          ],
+          [
+            "Reading",
+            "mark proof in the text",
+            "recheck purpose and action"
+          ],
+          [
+            "Speaking / writing",
+            "save separate outputs",
+            "improve one observable feature"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-e56-guided-meaning",
+      "prompt": "Choose the meaning of “Lyssna på meddelandet två gånger.”.",
+      "answers": [
+        "Listen to the message twice."
+      ],
+      "options": [
+        "Listen to the message twice.",
+        "Choose the option that best summarises the content.",
+        "Write down only the details required by the question."
+      ],
+      "hint": "Match the whole sentence to its communicative purpose.",
+      "explanation": "“Lyssna på meddelandet två gånger.” means “Listen to the message twice.”"
+    },
+    {
+      "id": "sv-e56-guided-form",
+      "prompt": "Complete the instruction: Välj det alternativ som bäst ___ innehållet.",
+      "answers": [
+        "sammanfattar"
+      ],
+      "options": [
+        "sammanfattar",
+        "förklarade",
+        "anteckning"
+      ],
+      "hint": "Read the whole sentence before choosing the form.",
+      "explanation": "The fitting form is sammanfattar."
+    },
+    {
+      "id": "sv-e56-guided-dialogue",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Ska jag skriva ner varje ord?"
+      ],
+      "options": [
+        "Ska jag skriva ner varje ord?",
+        "Välj det alternativ som bäst sammanfattar innehållet.",
+        "Anteckna bara de detaljer som frågan kräver."
+      ],
+      "hint": "Locate the exact line and identify what it accomplishes.",
+      "explanation": "The middle speaker uses this line in the situation."
+    },
+    {
+      "id": "sv-e56-guided-listening",
+      "prompt": "What happens to Friday morning's water aerobics?",
+      "answers": [
+        "It moves to Saturday at nine"
+      ],
+      "options": [
+        "It moves to Saturday at nine",
+        "It begins at twelve on Friday",
+        "It is cancelled without a replacement"
+      ],
+      "hint": "Listen once for the situation and again for the requested detail.",
+      "explanation": "Morgonens vattengymnastik flyttas till lördag klockan nio."
+    },
+    {
+      "id": "sv-e56-guided-reading",
+      "prompt": "When should the transcript be opened?",
+      "answers": [
+        "After answers have been saved"
+      ],
+      "options": [
+        "After answers have been saved",
+        "Before the first listen",
+        "During every question"
+      ],
+      "hint": "Find the exact phrase that proves the answer.",
+      "explanation": "The transcript is opened only after answers are saved."
+    },
+    {
+      "id": "sv-e56-guided-register",
+      "prompt": "Which neutral form preserves the meaning of “Lyssna och kryssa i bästa svaret.”?",
+      "answers": [
+        "Lyssna på meddelandet och välj det alternativ som bäst sammanfattar innehållet."
+      ],
+      "options": [
+        "Lyssna på meddelandet och välj det alternativ som bäst sammanfattar innehållet.",
+        "Välj det alternativ som bäst sammanfattar innehållet.",
+        "Anteckna bara de detaljer som frågan kräver."
+      ],
+      "hint": "Keep the meaning while choosing a form suitable for clear production.",
+      "explanation": "Short instructions are common in speech; the fuller form makes the criterion explicit."
+    },
+    {
+      "id": "sv-e56-guided-vocabulary",
+      "prompt": "Which word belongs directly to today's task-instruction literacy for listening task?",
+      "answers": [
+        "sammanfatta"
+      ],
+      "options": [
+        "sammanfatta",
+        "option",
+        "Write down only the details required by the question."
+      ],
+      "hint": "Choose the Swedish target word, not an English gloss or a full sentence.",
+      "explanation": "sammanfatta means summarise."
+    },
+    {
+      "id": "sv-e56-guided-strategy",
+      "prompt": "Which action best improves an independent second attempt?",
+      "answers": [
+        "Use the question to predict the needed detail, but let the audio determine the answer."
+      ],
+      "options": [
+        "Use the question to predict the needed detail, but let the audio determine the answer.",
+        "Copy the model word for word.",
+        "Replace all precise details with general language."
+      ],
+      "hint": "The best strategy should transfer to fresh material.",
+      "explanation": "Use the question to predict the needed detail, but let the audio determine the answer."
+    },
+    {
+      "id": "sv-e56-guided-transfer",
+      "prompt": "Which changed condition should you respond to in the transfer attempt?",
+      "answers": [
+        "A second original announcement changes two times; separate the main change from the supporting detail."
+      ],
+      "options": [
+        "A second original announcement changes two times; separate the main change from the supporting detail.",
+        "Repeat the original scene without any change.",
+        "Give an English summary instead of completing the Swedish task."
+      ],
+      "hint": "Transfer requires a meaningful new condition.",
+      "explanation": "A second original announcement changes two times; separate the main change from the supporting detail."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-e56-check-core",
+      "prompt": "Choose the phrase that most directly supports today's main goal.",
+      "answers": [
+        "Lyssna på meddelandet två gånger."
+      ],
+      "options": [
+        "Lyssna på meddelandet två gånger.",
+        "Välj det alternativ som bäst sammanfattar innehållet.",
+        "Anteckna bara de detaljer som frågan kräver."
+      ],
+      "hint": "Return to the goal and select the line that starts that action.",
+      "explanation": "Use Lyssna på meddelandet två gånger."
+    },
+    {
+      "id": "sv-e56-check-listening",
+      "prompt": "What happens to Friday morning's water aerobics?",
+      "answers": [
+        "It moves to Saturday at nine"
+      ],
+      "options": [
+        "It moves to Saturday at nine",
+        "It begins at twelve on Friday",
+        "It is cancelled without a replacement"
+      ],
+      "hint": "Answer from the audio first; inspect the script only afterwards.",
+      "explanation": "Morgonens vattengymnastik flyttas till lördag klockan nio."
+    },
+    {
+      "id": "sv-e56-check-reading",
+      "prompt": "What should the learner check on the second listen?",
+      "answers": [
+        "A required detail such as time, place or cause"
+      ],
+      "options": [
+        "A required detail such as time, place or cause",
+        "The spelling of every word",
+        "Only the speaker's accent"
+      ],
+      "hint": "Read for the required action and the detail that controls it.",
+      "explanation": "The instruction names time, place, cause and next step."
+    },
+    {
+      "id": "sv-e56-check-next",
+      "prompt": "What should you save for later review?",
+      "answers": [
+        "one skill-specific result, one useful phrase and one concrete improvement"
+      ],
+      "options": [
+        "one skill-specific result, one useful phrase and one concrete improvement",
+        "a single overall score with no skill detail",
+        "a copied model with no record of your own attempt"
+      ],
+      "hint": "Useful evidence tells you what to repeat and what to change.",
+      "explanation": "Separate evidence makes the next practice decision specific."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill practice, transfer and delayed return",
+    "instructions": "LISTEN: answer “What happens to Friday morning's water aerobics?” from the recording before reading the script. Save the listening result separately.\n\nREAD: answer the gist and detail questions, and mark the exact phrase that proves each answer. Save the reading result separately.\n\nSPEAK: Give a brief oral summary of the swimming-hall message without repeating every detail. Record an independent first attempt, then improve one feature.\n\nWRITE: Write structured listening notes and one complete answer from the audio. Draft without the model, then revise for reader, purpose, essential detail and next action.\n\nTRANSFER: A second original announcement changes two times; separate the main change from the supporting detail.\n\nBETWEEN LESSON · Optional, 5 minutes: Repeat the task after a day with audio only and compare listening evidence, not memory of the transcript.",
+    "model": "SPEAKING MODEL: Motionsbassängen öppnar senare på fredag på grund av underhåll. Vattengymnastiken flyttas till lördag klockan nio, och den gamla bokningen gäller automatiskt.\n\nWRITING MODEL: Ändring: motionsbassängen öppnar fredag klockan 12. Orsak: underhåll. Vattengymnastik: lördag klockan 9. Åtgärd: ingen ny bokning behövs."
+  },
+  "takeaways": [
+    "Use: Lyssna på meddelandet två gånger.",
+    "Register: Lyssna och kryssa i bästa svaret. → Lyssna på meddelandet och välj det alternativ som bäst sammanfattar innehållet.",
+    "These are local practice instructions; performance here is not an official YKI result or certificate."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Instruktör",
+      "fi": "Lyssna först efter huvudbudskapet.",
+      "en": "Listen first for the main message."
+    },
+    {
+      "speaker": "Deltagare",
+      "fi": "Ska jag skriva ner varje ord?",
+      "en": "Should I write down every word?"
+    },
+    {
+      "speaker": "Instruktör",
+      "fi": "Nej, anteckna bara de detaljer som frågan kräver.",
+      "en": "No, write down only the details required by the question."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-e56-v1",
+        "fi": "sammanfatta",
+        "en": "summarise",
+        "example": "Sammanfatta huvudbudskapet med en mening.",
+        "translation": "Summarise the main message in one sentence.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e56-v2",
+        "fi": "alternativ",
+        "en": "option",
+        "example": "Välj ett av tre alternativ.",
+        "translation": "Choose one of three options.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e56-v3",
+        "fi": "anteckna",
+        "en": "make notes",
+        "example": "Anteckna tid och plats.",
+        "translation": "Write down the time and place.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e56-p1",
+        "fi": "Lyssna på meddelandet två gånger.",
+        "en": "Listen to the message twice.",
+        "example": "Lyssna på meddelandet två gånger.",
+        "translation": "Listen to the message twice.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e56-p2",
+        "fi": "Välj det alternativ som bäst sammanfattar innehållet.",
+        "en": "Choose the option that best summarises the content.",
+        "example": "Välj det alternativ som bäst sammanfattar innehållet.",
+        "translation": "Choose the option that best summarises the content.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e56-p3",
+        "fi": "Anteckna bara de detaljer som frågan kräver.",
+        "en": "Write down only the details required by the question.",
+        "example": "Anteckna bara de detaljer som frågan kräver.",
+        "translation": "Write down only the details required by the question.",
+        "level": "B1"
+      }
+    ],
+    "pronunciation": {
+      "text": "lyssna – sammanfatta – alternativ – anteckna",
+      "tip": "Instruction verbs carry the task. Hear and pronounce the first stressed syllable clearly."
+    },
+    "reading_passage": {
+      "text": "Övningsinstruktion: Läs frågan innan ljudet startar. Vid första lyssningen väljer du huvudbudskap. Vid den andra kontrollerar du tid, plats, orsak eller nästa steg. Öppna utskriften först efter att du har sparat dina svar. Tiderna i den här workshopen är lokala övningsvillkor, inte uppgifter om ett officiellt prov.",
+      "gist": {
+        "prompt": "What is the main purpose of the instruction?",
+        "options": [
+          "To organise two purposeful listens",
+          "To teach word-for-word transcription",
+          "To state official exam timing"
+        ],
+        "answer": 0,
+        "explanation": "It gives a different focus for the first and second listen."
+      },
+      "detail": {
+        "prompt": "When should the transcript be opened?",
+        "options": [
+          "After answers have been saved",
+          "Before the first listen",
+          "During every question"
+        ],
+        "answer": 0,
+        "explanation": "The transcript is opened only after answers are saved."
+      }
+    },
+    "reading": {
+      "text": "Övningsinstruktion: Läs frågan innan ljudet startar. Vid första lyssningen väljer du huvudbudskap. Vid den andra kontrollerar du tid, plats, orsak eller nästa steg. Öppna utskriften först efter att du har sparat dina svar. Tiderna i den här workshopen är lokala övningsvillkor, inte uppgifter om ett officiellt prov.",
+      "question": "What should the learner check on the second listen?",
+      "options": [
+        "A required detail such as time, place or cause",
+        "The spelling of every word",
+        "Only the speaker's accent"
+      ],
+      "answer": 0,
+      "explanation": "The instruction names time, place, cause and next step."
+    },
+    "listening": {
+      "text": "Meddelande från simhallen: På fredag öppnar motionsbassängen först klockan tolv på grund av underhåll. Barnbassängen och gymmet öppnar som vanligt klockan sex. Morgonens vattengymnastik flyttas till lördag klockan nio. Bokningar gäller automatiskt på den nya tiden.",
+      "question": "What happens to Friday morning's water aerobics?",
+      "options": [
+        "It moves to Saturday at nine",
+        "It begins at twelve on Friday",
+        "It is cancelled without a replacement"
+      ],
+      "answer": 0,
+      "explanation": "Morgonens vattengymnastik flyttas till lördag klockan nio."
+    },
+    "speaking": {
+      "prompt": "Give a brief oral summary of the swimming-hall message without repeating every detail.",
+      "help": "State who is affected, what changes, when it changes and what action is required.",
+      "model": "Motionsbassängen öppnar senare på fredag på grund av underhåll. Vattengymnastiken flyttas till lördag klockan nio, och den gamla bokningen gäller automatiskt."
+    },
+    "writing": {
+      "prompt": "Write structured listening notes and one complete answer from the audio.",
+      "help": "Use headings for change, reason, time and action. Mark any uncertain detail instead of inventing it.",
+      "model": "Ändring: motionsbassängen öppnar fredag klockan 12. Orsak: underhåll. Vattengymnastik: lördag klockan 9. Åtgärd: ingen ny bokning behövs."
+    }
+  },
+  "route": {
+    "primarySkill": "listening",
+    "expectedOutput": "Save a listening answer and the exact audio detail that supports it.",
+    "transferPrompt": "A second original announcement changes two times; separate the main change from the supporting detail.",
+    "returnPrompt": "Repeat the task after a day with audio only and compare listening evidence, not memory of the transcript.",
+    "successChecks": [
+      "You complete the communicative purpose without copying the model.",
+      "Essential facts, reasons and requested actions are understandable.",
+      "You preserve meaning when register or conditions change."
+    ],
+    "requiredSkills": [
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ]
+  }
+}

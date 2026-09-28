@@ -1,0 +1,291 @@
+"use client";
+import { useState, useRef, useEffect } from "react";
+import {
+  Search,
+  Layers,
+  ArrowRight,
+  RotateCcw,
+  CheckCircle2,
+} from "lucide-react";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { lessons } from "@/lib/curriculum";
+import { courseWords as words, lectures } from "@/lib/course";
+import type { CourseProgressData } from "@/lib/course-progress";
+import type { ProgressData } from "@/lib/progress";
+import AudioButton from "./AudioButton";
+export default function WordBank({
+  data,
+  course,
+  onReview,
+}: {
+  data: ProgressData;
+  course?: CourseProgressData;
+  onReview: (
+    wordId: string,
+    rating: "again" | "hard" | "good" | "easy",
+    id: string,
+  ) => Promise<void>;
+}) {
+  const [query, setQuery] = useState(""),
+    [level, setLevel] = useState("all"),
+    [reviewing, setReviewing] = useState(false),
+    [revealed, setRevealed] = useState(false),
+    [session, setSession] = useState<string[]>([]),
+    [index, setIndex] = useState(0),
+    [busy, setBusy] = useState(false),
+    [error, setError] = useState("");
+  const [now, setNow] = useState(() => Date.now());
+  useEffect(() => { const timer = setInterval(() => setNow(Date.now()), 60000); return () => clearInterval(timer); }, []);
+  const requestId = useRef<string | null>(null);
+  const learned = new Set(
+    lessons
+      .filter((l) => data.completed.includes(l.id))
+      .flatMap((l) => l.words.map((w) => w.id)),
+  );
+  lectures
+    .filter((l) => course?.lectures[l.id]?.completedParts.includes("teach"))
+    .forEach((l) => l.words.forEach((w) => learned.add(w.id)));
+  const due = words.filter(
+    (w) =>
+      (learned.has(w.id) || data.reviews[w.id]) &&
+      (!data.reviews[w.id] || data.reviews[w.id].due <= now),
+  );
+  const filtered = words.filter(
+    (w) =>
+      (level === "all" || w.level === level) &&
+      [w.fi, w.en].some((x) => x.toLowerCase().includes(query.toLowerCase())),
+  );
+  const current = words.find((w) => w.id === session[index]);
+  function begin(ids: string[]) {
+    requestId.current = null;
+    setSession(ids);
+    setIndex(0);
+    setRevealed(false);
+    setReviewing(true);
+    setError("");
+  }
+  async function rate(rating: "again" | "hard" | "good" | "easy") {
+    if (!current) return;
+    setBusy(true);
+    setError("");
+    try {
+      requestId.current ??= crypto.randomUUID();
+      await onReview(current.id, rating, requestId.current);
+      requestId.current = null;
+      if (rating === "again") setSession((s) => [...s, current.id]);
+      setIndex((i) => i + 1);
+      setRevealed(false);
+    } catch (e) {
+      setError(
+        e instanceof Error ? e.message : "Could not save. Please try again.",
+      );
+    } finally {
+      setBusy(false);
+    }
+  }
+  return (
+    <div>
+      <div className="page-heading">
+        <div>
+          <p className="eyebrow">SANASTO · WORD BY WORD</p>
+          <h1>Make the words stay with you.</h1>
+          <p>
+            Recall first, reveal second. We’ll bring words back when they need
+            you.
+          </p>
+        </div>
+      </div>
+      {reviewing ? (
+        <section className="panel flashcard-panel">
+          <button className="text-button" onClick={() => setReviewing(false)}>
+            ← Back to word bank
+          </button>
+          {current ? (
+            <>
+              <div className="section-heading">
+                <span className="badge">{current.level}</span>
+                <span className="help-text">
+                  Card {index + 1} of {session.length}
+                </span>
+              </div>
+              <div className="flashcard">
+                <span className="small-label">WHAT DOES THIS MEAN?</span>
+                <h2 lang="sv">{current.fi}</h2>
+                <AudioButton text={current.fi} label="Listen to word" />
+                {revealed ? (
+                  <>
+                    <h3>{current.en}</h3>
+                    <p lang="sv">{current.example}</p>
+                    <span>{current.translation}</span>
+                  </>
+                ) : (
+                  <button
+                    className="secondary"
+                    onClick={() => setRevealed(true)}
+                  >
+                    Reveal meaning
+                  </button>
+                )}
+              </div>
+              {revealed && (
+                <>
+                  <p className="help-text centered">
+                    How easily did you remember?
+                  </p>
+                  <div className="review-ratings">
+                    {(["again", "hard", "good", "easy"] as const).map((r) => (
+                      <button
+                        key={r}
+                        className={r === "good" ? "primary" : "secondary"}
+                        disabled={busy}
+                        onClick={() => rate(r)}
+                      >
+                        {r === "again"
+                          ? "Again"
+                          : r === "hard"
+                            ? "With effort"
+                            : r === "good"
+                              ? "Got it"
+                              : "Easy"}
+                        <small>
+                          {r === "again"
+                            ? "Repeat now"
+                            : r === "hard"
+                              ? "Sooner"
+                              : r === "good"
+                                ? "Space it out"
+                                : "Later"}
+                        </small>
+                      </button>
+                    ))}
+                  </div>
+                </>
+              )}
+              {error && (
+                <p role="alert" className="error-message">
+                  {error}
+                </p>
+              )}
+            </>
+          ) : (
+            <div className="completion">
+              <CheckCircle2 size={46} />
+              <h2>All caught up. Bra!</h2>
+              <p>You gave those words another chance to stick.</p>
+              <button className="primary" onClick={() => setReviewing(false)}>
+                Back to my words
+              </button>
+            </div>
+          )}
+        </section>
+      ) : (
+        <>
+          <div className="review-banner">
+            <span className="section-symbol">
+              <Layers />
+            </span>
+            <div>
+              <h2>
+                {due.length
+                  ? `${due.length} words ready for a revisit`
+                  : "Your word collection starts here"}
+              </h2>
+              <p>
+                {due.length
+                  ? "A few minutes of recall will make a difference."
+                  : "Study a lecture or start with six beginner words."}
+              </p>
+            </div>
+            <button
+              className="primary"
+              onClick={() =>
+                begin(
+                  (due.length
+                    ? due
+                    : words.filter((w) => w.level === "A0").slice(0, 6)
+                  ).map((w) => w.id),
+                )
+              }
+            >
+              {due.length ? "Review due words" : "Learn first words"}
+              <ArrowRight size={17} />
+            </button>
+          </div>
+          <div className="filter-bar">
+            <Tabs value={level} onValueChange={setLevel}>
+              <TabsList>
+                {["all", "A0", "A1", "A2", "B1"].map((l) => (
+                  <TabsTrigger value={l} key={l}>
+                    {l === "all" ? "All words" : l}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </Tabs>
+            <label className="search-field">
+              <Search size={18} />
+              <input
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Find a Swedish or English word"
+                aria-label="Search vocabulary"
+              />
+            </label>
+          </div>
+          <p className="help-text result-count">
+            {filtered.length} words · {learned.size} introduced in your learning
+          </p>
+          <div className="word-list">
+            {filtered.map((w) => (
+              <article className="word-row" key={w.id}>
+                <div>
+                  <span className="badge">{w.level}</span>
+                  <button
+                    className="word-term"
+                    onClick={() => begin([w.id])}
+                    lang="sv"
+                  >
+                    {w.fi}
+                  </button>
+                  <p>{w.en}</p>
+                </div>
+                <div className="word-example">
+                  <p lang="sv">{w.example}</p>
+                  <small>{w.translation}</small>
+                </div>
+                <AudioButton
+                  text={w.fi}
+                  className="icon-button"
+                  label={"Listen to " + w.fi}
+                />
+                <button
+                  className="text-button"
+                  aria-label={"Practise " + w.fi}
+                  onClick={() => begin([w.id])}
+                >
+                  <RotateCcw size={16} />
+                  <span>Practise</span>
+                </button>
+              </article>
+            ))}
+          </div>
+          {!filtered.length && (
+            <div className="panel empty-state">
+              <Search size={30} />
+              <h2>No matching words</h2>
+              <p>Try another spelling or change the level filter.</p>
+              <button
+                className="secondary"
+                onClick={() => {
+                  setQuery("");
+                  setLevel("all");
+                }}
+              >
+                Clear filters
+              </button>
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  );
+}
