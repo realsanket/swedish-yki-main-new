@@ -42,19 +42,18 @@ export function FullCurriculum({
     >
       <header className="full-curriculum-heading">
         <div>
-          <p className="eyebrow">STIGEN · COMPLETE CURRICULUM</p>
-          <h2>One ordered story path, with the source material in its place.</h2>
+          <p className="eyebrow">STIGEN · LIVE LESSON 1 CURRICULUM</p>
+          <h2>One chapter and one lecture, developed carefully.</h2>
           <p>
-            {lectures.length} live episodes across {liveModules.length} story
-            chapters. The nine Suomen Mestari source chapters are optional
-            companions, opened only after the matching language has appeared
-            in the course.
+            {lectures.length} live lecture in {liveModules.length} story
+            chapter. Later course material is held outside the live app while
+            Lesson 1 is improved step by step.
           </p>
         </div>
         <dl className="curriculum-facts">
           <div>
             <dt>Live path</dt>
-            <dd>{lectures.length} episodes</dd>
+            <dd>{lectures.length} {lectures.length === 1 ? "lecture" : "lectures"}</dd>
           </div>
           <div>
             <dt>Story chapters</dt>
@@ -70,9 +69,9 @@ export function FullCurriculum({
       <div className="curriculum-principle">
         <BookOpen size={18} />
         <p>
-          <b>Use this order.</b> Every fifth episode is a clinic that combines
-          the four earlier episodes. A source chapter is a deeper reference,
-          never extra required work or a reason to leave the story path.
+          <b>Use only this live path.</b> Complete the six Lesson 1 steps in
+          order. Source documents support the teaching decisions, but they are
+          not extra required work.
         </p>
       </div>
 
@@ -82,7 +81,7 @@ export function FullCurriculum({
           className="curriculum-orientation"
           onClick={openOrientation}
         >
-          <span>BEFORE EPISODE 1 · OPTIONAL</span>
+          <span>BEFORE LECTURE 1 · OPTIONAL</span>
           <b>Meet the course, characters, and practice modes</b>
           <small>A four-minute visual introduction. Revisit it any time.</small>
           <ArrowRight size={17} />
@@ -119,7 +118,9 @@ export function FullCurriculum({
                 </span>
                 <div>
                   <p className="eyebrow">
-                    {module.level} · EPISODES {firstEpisode}–{lastEpisode}
+                    {firstEpisode === lastEpisode
+                      ? `${module.level} · LECTURE ${firstEpisode}`
+                      : `${module.level} · EPISODES ${firstEpisode}–${lastEpisode}`}
                   </p>
                   <span className="curriculum-story-title">
                     CHAPTER {module.number} · {chapter.title}
@@ -198,7 +199,7 @@ export function FullCurriculum({
                         <span>{String(lecture.number).padStart(2, "0")}</span>
                         <div>
                           <p className="eyebrow">
-                            EPISODE {lecture.number} · BROAD: {lecture.focusSkills.join(" · ")}
+                            LECTURE {lecture.number} · BROAD: {lecture.focusSkills.join(" · ")}
                           </p>
                           <small className="curriculum-core-task">
                             Core task: {lecture.route.requiredSkills.join(" + ")} · {lecture.route.expectedOutput}
@@ -332,32 +333,30 @@ export function FullCurriculum({
         })}
       </div>
 
-      <section className="curriculum-source-audit">
-        <header>
-          <p className="eyebrow">SOURCE CHAPTER AUDIT</p>
-          <h3>The original chapter order is not the teaching order.</h3>
-          <p>
-            These source chapters have been read as reference material and
-            placed by what they teach—not by their chapter number. Their full
-            readers stay optional and open in the current course view.
-          </p>
-        </header>
-        <div>
-          {bookReviews.map((review) => {
-            const content = (
-              <>
+      {bookReviews.length > 0 && (
+        <section className="curriculum-source-audit">
+          <header>
+            <p className="eyebrow">SOURCE CHAPTER AUDIT</p>
+            <h3>The original chapter order is not the teaching order.</h3>
+            <p>
+              Source chapters are placed by what they teach—not by chapter
+              number—and remain optional reference material.
+            </p>
+          </header>
+          <div>
+            {bookReviews.map((review) => (
+              <div key={review.number}>
                 <span>{String(review.number).padStart(2, "0")}</span>
                 <p>
                   <b>{review.title}</b>
                   <small>{review.focus}</small>
                   <em>Full companion after Episode {review.anchorEpisode}</em>
                 </p>
-              </>
-            );
-            return <div key={review.number}>{content}</div>;
-          })}
-        </div>
-      </section>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {plannedModules.map((module) => (
         <aside className="curriculum-planned" key={module.number}>

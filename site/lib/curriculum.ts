@@ -117,7 +117,7 @@ function toQuestion(question: RawCourseQuestion): Question {
 }
 
 /**
- * The compact Practice Studio is generated from the same 60 authored episodes
+ * The compact Practice Studio is generated from the same active lecture data
  * as the story path. This avoids a second, drifting copy of the curriculum.
  * The internal `fi` field name is retained for saved-data compatibility; its
  * values are Swedish.

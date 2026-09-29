@@ -110,7 +110,7 @@ export function CourseHome({
           <div className="cover-copy">
             <div className="story-episode-meta">
               <span>
-                YOUR NEXT EPISODE ·{" "}
+                YOUR NEXT LECTURE ·{" "}
                 {String(next?.number ?? 1).padStart(2, "0")}
               </span>
               {next && (
@@ -155,7 +155,7 @@ export function CourseHome({
                 ? "Revisit this episode"
                 : state?.revision
                   ? "Continue the story"
-                  : "Begin episode " + next?.number}
+                  : "Begin Lecture " + next?.number}
               <ArrowRight size={18} />
             </button>
             {newToCourse && next && (
@@ -164,7 +164,7 @@ export function CourseHome({
                 className="cover-skip-tour"
                 onClick={() => start(next)}
               >
-                Skip the introduction and begin Episode 1
+                Skip the introduction and begin Lecture 1
               </button>
             )}
             {state?.revision && !state.completedAt && (
@@ -187,11 +187,11 @@ export function CourseHome({
               {done}
               <small> / {lectures.length}</small>
             </b>
-            <span>episodes completed</span>
+            <span>{lectures.length === 1 ? "lesson completed" : "lessons completed"}</span>
           </div>
           <Progress
             value={completion}
-            aria-label={`${done} of ${lectures.length} course episodes completed`}
+            aria-label={`${done} of ${lectures.length} live lessons completed`}
           />
           <button
             type="button"
@@ -242,7 +242,7 @@ export function CourseHome({
                     if (profile.id === "checkpoint") return "SKILL CHECKPOINT";
                     if (profile.id === "yki-workshop") return "YKI-STYLE WORKSHOP";
                     if (profile.id === "yki-mock") return "TIMED YKI-STYLE PRACTICE";
-                    return "EPISODE " + l.number;
+                    return "LECTURE " + l.number;
                   })()}
                 </small>
                 <b>{l.title}</b>
@@ -276,10 +276,10 @@ export function CourseHome({
       <div className="course-note">
         <Target size={20} />
         <p>
-          Stigen builds toward more independent everyday Swedish and
-          intermediate YKI-style practice. Completing the path records what
-          you have practised; it does not certify a language level, predict a
-          YKI grade, or replace an official assessment.
+          This workshop develops one first Swedish conversation and its core
+          sound patterns. Completing it records what you have practised; it
+          does not certify a language level, predict a YKI grade, or replace
+          an official assessment.
         </p>
       </div>
     </div>
@@ -367,12 +367,12 @@ export function CourseSyllabus({
         <div>
           <p className="eyebrow">DIN BERÄTTELSESTIG · YOUR STORY PATH</p>
           <h1>
-            {availableCourseModules.length} chapters. One life taking shape.
+            One chapter. One lesson to improve carefully.
           </h1>
           <p>
-            {lectures.length} story-led episodes from first sounds toward more
-            independent everyday Swedish and B1-oriented practice. The level
-            labels describe the learning path, not a certified result.
+            Lecture 1 begins with a useful conversation and then teaches its
+            sound patterns in small steps. The level label describes the
+            starting point, not a certified result.
           </p>
         </div>
         <div className="syllabus-heading-actions">
@@ -392,30 +392,32 @@ export function CourseSyllabus({
           </a>
         </div>
       </div>
-      <div className="course-levels" aria-label="Filter course level">
-        {["all", "A0", "A1", "A2", "B1"].map((l) => (
-          <button
-            type="button"
-            className={level === l ? "chosen" : ""}
-            aria-pressed={level === l}
-            onClick={() => setLevel(l)}
-            key={l}
-          >
-            {l === "all"
-              ? "All chapters"
-              : l === "A0"
-                ? "A0 · Foundations"
-                : l}
-          </button>
-        ))}
-      </div>
+      {availableCourseModules.length > 1 && (
+        <div className="course-levels" aria-label="Filter course level">
+          {["all", "A0", "A1", "A2", "B1"].map((l) => (
+            <button
+              type="button"
+              className={level === l ? "chosen" : ""}
+              aria-pressed={level === l}
+              onClick={() => setLevel(l)}
+              key={l}
+            >
+              {l === "all"
+                ? "All chapters"
+                : l === "A0"
+                  ? "A0 · Foundations"
+                  : l}
+            </button>
+          ))}
+        </div>
+      )}
       <div className="course-note">
         <BookOpen size={20} />
         <p>
-          Follow the numbered order for the clearest progression. Every fifth
-          episode is a clinic: combine earlier ideas in all four skills. English
-          support stays available as more Swedish enters the tasks. A0 means our
-          complete-beginner starting point (Pre-A1).
+          Work through the six Lesson 1 steps in order. English support stays
+          available while you listen, notice, speak, and retrieve the four core
+          introduction lines. A0 means our complete-beginner starting point
+          (Pre-A1).
         </p>
       </div>
       <button
@@ -427,7 +429,7 @@ export function CourseSyllabus({
           <BookOpen size={22} />
         </span>
         <span>
-          <small>BEFORE EPISODE 1 · OPTIONAL</small>
+          <small>BEFORE LECTURE 1 · OPTIONAL</small>
           <b>Meet your course, characters, and practice modes</b>
           <span>A visual four-minute introduction. Revisit it anytime.</span>
         </span>
@@ -471,7 +473,9 @@ export function CourseSyllabus({
                 </span>
                 <div>
                   <p className="eyebrow">
-                    {m.level} · EPISODES {firstEpisode}–{lastEpisode}
+                    {firstEpisode === lastEpisode
+                      ? `${m.level} · LECTURE ${firstEpisode}`
+                      : `${m.level} · EPISODES ${firstEpisode}–${lastEpisode}`}
                   </p>
                   <span className="module-storyline">
                     CHAPTER {m.number} · {chapter.title}
@@ -484,13 +488,13 @@ export function CourseSyllabus({
                   <StoryCast names={chapter.cast} label="Story cast" compact />
                   {m.level === "A0" && (
                     <span className="module-feature">
-                      <AudioLines size={14} /> A0 sound coach in every episode
+                      <AudioLines size={14} /> A0 sound coach in this lesson
                     </span>
                   )}
                 </div>
                 <span
                   className="module-counter"
-                  aria-label={`${completedInModule} of ${moduleLectures.length} episodes completed`}
+                  aria-label={`${completedInModule} of ${moduleLectures.length} live lessons completed`}
                 >
                   {completedInModule}/{moduleLectures.length}
                 </span>

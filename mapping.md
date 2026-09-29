@@ -2,15 +2,15 @@
 
 This file is the curriculum handoff for humans and AI agents. It records what has actually been read, what has been verified, and what remains provisional.
 
-## Course plan
+## Active course scope
 
-- **Total:** 60 episodes.
-- **Structure:** 12 chapters, 5 episodes per chapter.
+- **Live total:** 1 lecture.
+- **Live structure:** Chapter 1 contains Lecture 1 only.
 - **Source spine:** 51 dated teacher lessons in `docs/Group 3.pdf`, supported first by `docs/text-book (1).pdf` and later by the YKI preparation book.
-- **Extra episodes:** clinics, four-skill bridges, workshops, and simulations used to consolidate the source progression without pretending to be official YKI tests.
-- **Review method:** improve one source lesson and its mapped episode at a time. Do not roll the pilot across later episodes until the user accepts it.
+- **Current method:** improve Lecture 1 one teaching step at a time. Do not activate a later lecture or chapter until the user explicitly changes the scope.
+- **Backup:** the former Lectures 2–60, 12-chapter plan, later story registry, and later artwork are in `backup/future-course-2026-09-29/`.
 
-The 60-episode structure remains stable because it already supports progress records, chapter navigation, and spaced returns. A teacher lesson does not have to equal exactly one episode: a dense lesson may introduce a topic in one episode and deepen it later, while every fifth episode is a consolidation clinic.
+The backup is reference material, not part of the live course. Its presence must not make later chapters appear in navigation, progress totals, the curriculum page, or the generated runtime index.
 
 ## Source-handling rules
 
@@ -19,7 +19,7 @@ The 60-episode structure remains stable because it already supports progress rec
 3. Locate the relevant textbook page and Classroom homework by topic and date.
 4. Record corrections, ambiguities, regional variation, and overlaps before editing learner content.
 5. Keep learner-facing dialogues and exercises original. Do not reproduce long copyrighted passages or proprietary exercises.
-6. Edit `site/content/lectures/lecture-XX.json`, regenerate `site/content/lectures/index.json`, and verify the running episode.
+6. Edit `site/content/lectures/lecture-01.json`, regenerate `site/content/lectures/index.json` from the active numbered lecture files, and verify the running lesson.
 
 ## Verified pilot: Lesson 1
 
@@ -81,17 +81,13 @@ There is **no verified Google Classroom homework directly attached to Lesson 1**
 
 Episode 1 therefore uses an original consolidation mission inside Stigen, clearly separated from teacher-assigned homework.
 
-## Chapter 1 rollout
+## Chapter 1 status
 
-| Episode | Current role | Source-alignment status |
+| Lecture | Live role | Source-alignment status |
 |---|---|---|
 | 1 | Introduce yourself and hear Swedish sounds | **Verified and revised from Lesson 1** |
-| 2 | Names, spelling, and pronouns | Pending Lesson 2 review; likely home of Personal pronouns homework |
-| 3 | Origin, home, and languages | Pending; overlaps Episode 1 and may become a deeper question/verb lesson |
-| 4 | Numbers and contact information | Pending its teacher-lesson review |
-| 5 | Clock-time clinic | Pending; keep as Chapter 1 consolidation unless later evidence changes it |
 
-Do not resolve the Episode 2–5 overlap by guessing. Read the next complete teacher lesson, compare it with the current episodes, then revise one episode at a time.
+The former Lectures 2–5 are not live Chapter 1 content. Their files are preserved with the rest of the future-course backup.
 
 ## Episode 1 implementation record
 
@@ -102,8 +98,8 @@ Do not resolve the Episode 2–5 overlap by guessing. Read the next complete tea
 - Replaced the short greeting-only task with a four-line personal introduction.
 - Added original listening, reading, speaking, writing, dialogue, pronunciation, checkpoint, and transfer work.
 - Preserved the app's internal `fi` field for compatibility; it contains Swedish text.
-- The runtime source is `site/content/lectures/index.json`; it must always be regenerated from all numbered lecture JSON files after an edit.
+- The editable source is `site/content/lectures/lecture-01.json`. The runtime source is `site/content/lectures/index.json`; regenerate it from the active numbered lecture JSON files after an edit.
 
 ## Next safe step
 
-Review only **Lektion 2** from its full page range, verify the April 15 Personal pronouns Form against it, compare that material with Episodes 2 and 3, and propose the next single-episode revision before changing later chapters.
+Improve only **Lektion 1 / Lecture 1**. Choose one visible teaching step, compare it with the verified teacher-note and textbook boundary above, improve it, and test it in the running UI. Do not restore Lecture 2 or any later chapter without an explicit user request.

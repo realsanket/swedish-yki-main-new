@@ -19,14 +19,14 @@ export function detailedCurriculumMarkdown() {
   const lines = [
     "# Stigen — Detailed Swedish Curriculum",
     "",
-    "> A complete, ordered teaching index for the live Stigen course.",
+    "> The ordered teaching index for the live Lesson 1 workshop.",
     "",
     `**${lectures.length} live episodes** across **${liveModules.length} story chapters**. The supplied classroom notes and books informed the sequence, but their pages are not embedded; every learner-facing task is original.`,
     "",
     "## How to use this curriculum",
     "",
-    "1. Follow episodes in number order. Every fifth core episode is a clinic that combines earlier language; the final YKI stage adds workshops and two original timed practice sets.",
-    "2. Use each chapter's teaching index to review the actual concepts, language patterns, examples, and takeaways.",
+    "1. Follow the six Lesson 1 steps in order: hear, learn, try, use, check, and carry forward.",
+    "2. Use the teaching index to review the actual concepts, language patterns, examples, and takeaways.",
     "",
   ];
 
@@ -42,7 +42,9 @@ export function detailedCurriculumMarkdown() {
       `## Chapter ${String(chapterModule.number).padStart(2, "0")} — ${chapterModule.title}`,
       "",
       `- **Level:** ${chapterModule.level}`,
-      `- **Episodes:** ${firstEpisode}–${lastEpisode}`,
+      firstEpisode === lastEpisode
+        ? `- **Lecture:** ${firstEpisode}`
+        : `- **Episodes:** ${firstEpisode}–${lastEpisode}`,
       `- **Story chapter:** ${chapter.title}`,
       `- **Setting:** ${chapter.setting}`,
       `- **Chapter outcome:** ${cleanInline(chapterModule.outcome)}`,
@@ -164,7 +166,7 @@ export function detailedCurriculumMarkdown() {
   lines.push(
     "## Assessment note",
     "",
-    "Curriculum labels are learning-path labels, not CEFR certificates. Checkpoints collect listening, reading, speaking and writing evidence separately. The final chapter includes original YKI-style workshops and two clearly labelled compressed four-skill practice sets; it does not reproduce official test timing or content.",
+    "Curriculum labels are learning-path labels, not CEFR certificates. Lecture 1 practice evidence does not predict an official YKI result.",
     "",
   );
 

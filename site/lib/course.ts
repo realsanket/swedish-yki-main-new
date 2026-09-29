@@ -154,9 +154,9 @@ function fallbackExpectedOutput(
 }
 
 /**
- * Lets old or externally-authored content participate in the new route before
- * it has been regenerated. The shipped 60 episodes all provide authored route
- * data, so this only protects existing saved/course content.
+ * Lets old or externally-authored content participate in the route before it
+ * has been regenerated. The live Lesson 1 provides authored route data, so
+ * this only protects existing saved/course content.
  */
 export function routeForLecture(lecture: LectureContent | CourseLecture): EpisodeRoute {
   if (lecture.route) return lecture.route;

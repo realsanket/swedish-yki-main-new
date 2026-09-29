@@ -97,10 +97,10 @@ export default function Resources() {
         <div>
           <b>How this course is designed</b>
           <p>
-            Follow {lectures.length} story-led episodes across {availableModules} chapters.
-            Each episode joins a practical explanation to guided practice, independent use,
-            a checkpoint, and a later return. Every fifth episode reconnects all four skills.
-            English support remains available while Swedish gradually takes more of the task.
+            Follow {lectures.length} focused lecture in {availableModules} live chapter.
+            The lesson joins a practical explanation to guided practice, independent use,
+            a checkpoint, and a short return. English support remains available while
+            Swedish takes more of the task.
             The sequence is informed by the supplied course notes and books, but all tasks in
             Stigen are newly written. Stigen is not affiliated with the Finnish National Agency
             for Education or an official YKI test centre, and completion is not a proficiency certificate.

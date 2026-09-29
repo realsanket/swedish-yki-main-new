@@ -404,12 +404,12 @@ function AppContent({ userId }: { userId: string }) {
               </span>
               <h3>{currentChapter.title}</h3>
               <p>
-                Episode {currentLecture.number} · {currentLecture.title}
+                Lecture {currentLecture.number} · {currentLecture.title}
               </p>
               <button type="button" onClick={() => start(currentLecture)}>
                 {course.data.lectures[currentLecture.id]?.revision
-                  ? "Resume this episode"
-                  : "Begin this episode"}
+                  ? "Resume this lesson"
+                  : "Begin this lesson"}
                 <ChevronRight size={15} />
               </button>
             </div>
@@ -450,20 +450,20 @@ function AppContent({ userId }: { userId: string }) {
               {chapterReview
                 ? `Chapter ${String(chapterReview.number).padStart(2, "0")} companion`
                 : lecture
-                  ? "Episode " + lecture.number
+                  ? "Lecture " + lecture.number
                   : currentViewLabel}
             </b>
           </div>
           <div>
             <span className="course-top-progress">
-              {done}/{lectures.length} episodes
+              {done}/{lectures.length} {lectures.length === 1 ? "lesson" : "lessons"}
             </span>
             <button
               type="button"
               className="level-pill"
               onClick={() => navigate("Course")}
             >
-              A0 → B1 · Story path
+              A0 · Lesson 1 workshop
             </button>
           </div>
         </header>
@@ -636,15 +636,15 @@ function AppContent({ userId }: { userId: string }) {
                     <p className="eyebrow">HARJOITELLAAN · LET’S PRACTISE</p>
                     <h1>A safe place to try your Swedish.</h1>
                     <p>
-                      Extra {currentLecture?.level ?? "B1"} practice that
-                      follows Episode {currentLecture?.number ?? 60}. Choose
+                      Extra {currentLecture?.level ?? "A0"} practice that
+                      follows Lecture {currentLecture?.number ?? 1}. Choose
                       a skill and a familiar situation.
                     </p>
                   </div>
                 </div>
                 <PracticeStudio
                   initialSkill={skill}
-                  level={currentLecture?.level ?? "B1"}
+                  level={currentLecture?.level ?? "A0"}
                   onComplete={savePractice}
                 />
               </>

@@ -110,7 +110,7 @@ export default function EpisodeBrief({
         <div className="episode-brief-meta">
           <span>CHAPTER {String(chapter.number).padStart(2, "0")}</span>
           <span>
-            EPISODE {String(lecture.number).padStart(2, "0")} OF 60 · {lecture.minutes} MIN
+            EPISODE {String(lecture.number).padStart(2, "0")} · {lecture.minutes} MIN
           </span>
         </div>
         <p className="eyebrow">{chapter.title}</p>

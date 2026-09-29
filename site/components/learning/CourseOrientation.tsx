@@ -12,7 +12,6 @@ import {
   Mic2,
   NotebookPen,
   PencilLine,
-  RefreshCw,
   Sparkles,
   Users,
 } from "lucide-react";
@@ -35,18 +34,6 @@ const characters = [
     role: "The teacher",
     image: "/images/onboarding/characters/sami.webp",
     copy: "Sami explains one useful pattern at a time and treats questions, pauses, and repairs as a normal part of learning.",
-  },
-  {
-    name: "Sara",
-    role: "The neighbour",
-    image: "/images/onboarding/characters/sara.webp",
-    copy: "Sara connects class Swedish to homes, services, work, and the small practical moments of community life.",
-  },
-  {
-    name: "Leo",
-    role: "The classmate",
-    image: "/images/onboarding/characters/leo.webp",
-    copy: "Leo’s plans, journeys, and opinions give the group useful reasons to compare, clarify, and keep a conversation moving.",
   },
 ] as const;
 
@@ -86,12 +73,6 @@ const modes = [
     image: "/images/onboarding/activity-modes/reading.webp",
     copy: "Find the purpose first, then locate the words that carry the answer.",
     icon: BookOpen,
-  },
-  {
-    name: "Clinic",
-    image: "/images/onboarding/activity-modes/review-clinic.webp",
-    copy: "Reconnect earlier skills in a changed situation. Every fifth episode is a cumulative clinic.",
-    icon: RefreshCw,
   },
 ] as const;
 
@@ -150,18 +131,18 @@ export default function CourseOrientation({
         {step === 0 && (
           <div className="orientation-path">
             <div className="orientation-copy">
-              <span className="orientation-kicker">A0 → B1 · YOUR OWN PACE</span>
-              <h2>From first sounds to everyday independence.</h2>
+              <span className="orientation-kicker">A0 · LESSON 1 · YOUR OWN PACE</span>
+              <h2>One first conversation, taught properly.</h2>
               <p>
-                Stigen begins before A1, with sound, survival phrases, and a
-                first short conversation. Each chapter returns to familiar
-                situations with more language and less support.
+                This workshop begins before A1, with one short conversation,
+                four useful introduction lines, and the sound patterns from
+                your teacher&apos;s first lesson.
               </p>
               <ul className="orientation-checks">
                 <li><Check /> Understand one useful pattern.</li>
                 <li><Check /> Hear it inside a human moment.</li>
                 <li><Check /> Try it with support, then independently.</li>
-                <li><Check /> Meet it again in a later clinic.</li>
+                <li><Check /> Return to it in the final Lesson 1 check.</li>
               </ul>
               <div className="orientation-trust-note">
                 Completing the course creates evidence of practice. It does not
@@ -182,8 +163,8 @@ export default function CourseOrientation({
           <div className="orientation-people">
             <div className="orientation-cast-visual">
               <Image
-                src="/images/onboarding/characters/stigen-cast.webp"
-                alt="Alex, Aino, Sami, Sara, and Leo learning together"
+                src="/images/story/chapters/chapter-01-first-class.webp"
+                alt="Alex arriving for the first Swedish class"
                 width={1536}
                 height={1024}
               />
@@ -192,9 +173,9 @@ export default function CourseOrientation({
               <span className="orientation-kicker">ONE CONNECTED STORY</span>
               <h2>Language arrives because someone needs it.</h2>
               <p>
-                The five recurring characters carry the course from the first
-                classroom meeting into homes, cafés, work, travel, services,
-                and community life.
+                Alex, Aino, and Sami keep the whole live lesson inside one
+                first classroom meeting, so the language stays connected to a
+                clear human situation.
               </p>
               <aside className="orientation-book-note">
                 <BookOpen size={18} aria-hidden="true" />
@@ -314,7 +295,7 @@ export default function CourseOrientation({
                 <ul>
                   <li><NotebookPen /> Save notes and follow-up writing in your notebook.</li>
                   <li><BookOpen /> Revisit words through spaced recall in the word bank.</li>
-                  <li><RefreshCw /> Use clinics to reconnect skills in a new situation.</li>
+                  <li><Check /> Use the final Lesson 1 check to retrieve the core phrases.</li>
                 </ul>
               </div>
               <Image
@@ -327,18 +308,17 @@ export default function CourseOrientation({
 
             <div className="orientation-setting-card">
               <Image
-                src="/images/onboarding/orientation/finland-setting.webp"
-                alt="Alex and Sara walking through an everyday Helsinki neighbourhood"
+                src="/images/story/chapters/chapter-01-first-class.webp"
+                alt="Alex arriving for the first Swedish class"
                 width={1672}
                 height={941}
               />
               <div>
-                <span className="orientation-kicker">A REAL EVERYDAY SETTING</span>
-                <h2>Finland is part of the story—not a list to memorise.</h2>
+                <span className="orientation-kicker">ONE CLEAR SETTING</span>
+                <h2>Your first Swedish class gives every phrase a purpose.</h2>
                 <p>
-                  Places, transport, weather, services, and local routines appear
-                  when the characters need them. Cultural context always serves a
-                  practical language goal.
+                  Alex and Aino meet in Finland, exchange introductions, and use
+                  the exact language that the lesson then teaches step by step.
                 </p>
               </div>
             </div>
@@ -354,7 +334,7 @@ export default function CourseOrientation({
                 className="primary lime"
                 onClick={onBegin}
               >
-                Begin Episode 1 <ArrowRight size={18} />
+                Begin Lecture 1 <ArrowRight size={18} />
               </button>
             </div>
           </div>
