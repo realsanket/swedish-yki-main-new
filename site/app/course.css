@@ -7597,9 +7597,54 @@
   font-size: 11px;
   text-overflow: ellipsis;
 }
+.azure-card-check {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #e3eae2;
+}
+.azure-card-check .text-button {
+  min-height: 38px;
+}
+.azure-check-result {
+  margin-top: 9px;
+  color: #2f6d50;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.azure-check-result.failed {
+  color: #9b493f;
+}
 
 .azure-voice-panel {
   padding: clamp(24px, 3vw, 34px);
+}
+.azure-voice-panel .azure-section-heading code {
+  color: inherit;
+  font-size: 0.94em;
+}
+.azure-accent-evidence {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 15px 17px;
+  border: 1px solid #cae0ca;
+  border-radius: 13px;
+  background: #f0f7eb;
+  color: #2f654c;
+}
+.azure-accent-evidence > svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+.azure-accent-evidence strong {
+  color: #245842;
+  font-size: 13px;
+}
+.azure-accent-evidence p {
+  margin-top: 3px;
+  font-size: 12px;
+  line-height: 1.55;
 }
 .azure-voice-grid {
   display: grid;
@@ -7676,6 +7721,13 @@
   min-height: 36px;
   padding: 0 11px;
   font-size: 11px;
+}
+.azure-live-test {
+  scroll-margin-top: 24px;
+  padding: clamp(24px, 3vw, 34px);
+}
+.azure-live-privacy {
+  margin-top: 13px;
 }
 .azure-security-note {
   display: flex;

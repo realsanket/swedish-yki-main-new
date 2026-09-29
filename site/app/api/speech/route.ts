@@ -58,7 +58,8 @@ function voiceElement(segment: SpeechSegment, slow: boolean) {
   const profile = characterVoiceProfiles[segment.speaker];
   const rate = slow ? profile.slowRate : profile.normalRate;
   const locale = speechLocales[segment.language];
-  return `<voice name="${profile.azureVoice}"><prosody rate="${rate}"><lang xml:lang="${locale}">${escapeSsml(segment.text)}</lang></prosody></voice>`;
+  const voice = profile.azureVoices[segment.language];
+  return `<voice name="${voice}"><prosody rate="${rate}"><lang xml:lang="${locale}">${escapeSsml(segment.text)}</lang></prosody></voice>`;
 }
 
 export function buildSpeechSsml(segments: SpeechSegment[], slow: boolean) {

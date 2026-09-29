@@ -17,6 +17,7 @@ import {
   Server,
 } from "lucide-react";
 import AudioButton from "./AudioButton";
+import LiveVoice from "./LiveVoice";
 import { characterVoiceProfiles, speechLocales } from "@/lib/character-voices";
 import type { CourseProgressData } from "@/lib/course-progress";
 import type { ProgressData } from "@/lib/progress";
@@ -65,6 +66,11 @@ const features = [
 ] as const;
 
 type CapabilityKey = (typeof features)[number]["key"];
+type CheckableCapability = Exclude<CapabilityKey, "liveVoice">;
+type AzureCheck = {
+  phase: "idle" | "running" | "passed" | "failed";
+  detail: string;
+};
 
 const azureServices: Array<{
   key: CapabilityKey;
@@ -123,6 +129,18 @@ const voiceChecks = {
   },
 } as const;
 
+const checkLabels: Record<CheckableCapability, string> = {
+  feedback: "Send Swedish test",
+  transcription: "Run Swedish loopback",
+  characterVoices: "Generate Swedish audio",
+};
+
+const initialAzureChecks: Record<CheckableCapability, AzureCheck> = {
+  feedback: { phase: "idle", detail: "" },
+  transcription: { phase: "idle", detail: "" },
+  characterVoices: { phase: "idle", detail: "" },
+};
+
 export default function SettingsView({
   data,
   course,
@@ -140,6 +158,7 @@ export default function SettingsView({
   const [settingsTab, setSettingsTab] = useState<"learning" | "azure">(
     "learning",
   );
+  const [azureChecks, setAzureChecks] = useState(initialAzureChecks);
 
   useEffect(() => {
     let active = true;
@@ -190,6 +209,46 @@ export default function SettingsView({
     setAi(null);
     setAiError(false);
     setConnectionCheck((value) => value + 1);
+  }
+
+  async function runAzureCheck(capability: CheckableCapability) {
+    setAzureChecks((current) => ({
+      ...current,
+      [capability]: { phase: "running", detail: "Contacting Azure…" },
+    }));
+    try {
+      const response = await fetch("/api/azure-check", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ capability }),
+      });
+      const result = (await response.json()) as {
+        ok?: boolean;
+        detail?: string;
+        error?: string;
+      };
+      if (!response.ok || !result.ok) {
+        throw new Error(result.error ?? "Azure did not pass the live check.");
+      }
+      setAzureChecks((current) => ({
+        ...current,
+        [capability]: {
+          phase: "passed",
+          detail: result.detail ?? "Azure completed the live check.",
+        },
+      }));
+    } catch (error) {
+      setAzureChecks((current) => ({
+        ...current,
+        [capability]: {
+          phase: "failed",
+          detail:
+            error instanceof Error
+              ? error.message
+              : "Azure did not pass the live check.",
+        },
+      }));
+    }
   }
 
   const providerName =
@@ -461,7 +520,7 @@ export default function SettingsView({
               ) : (
                 <>
                   <strong>
-                    {readyCount} of {features.length} ready
+                    {readyCount} of {features.length} configured
                   </strong>
                   <span>
                     {providerName
@@ -492,8 +551,8 @@ export default function SettingsView({
                 <h2 id="azure-services-heading">Every Azure connection</h2>
               </div>
               <p>
-                Each feature is enabled only when its complete server
-                configuration is present.
+                Configuration is checked first. Use each live test to confirm
+                that Azure actually accepts and returns Swedish data.
               </p>
             </div>
             <div className="azure-service-grid">
@@ -501,13 +560,22 @@ export default function SettingsView({
                 const feature = features.find((item) => item.key === key)!;
                 const ready = Boolean(ai?.capabilities?.[key]);
                 const Icon = feature.icon;
-                const stateLabel = aiError
-                  ? "Unknown"
-                  : ai === null
-                    ? "Checking"
-                    : ready
-                      ? "Ready"
-                      : "Not connected";
+                const liveCheck =
+                  key === "liveVoice" ? null : azureChecks[key];
+                const stateLabel = liveCheck?.phase === "passed"
+                  ? "Live verified"
+                  : liveCheck?.phase === "running"
+                    ? "Testing"
+                    : liveCheck?.phase === "failed"
+                      ? "Check failed"
+                      : aiError
+                        ? "Unknown"
+                        : ai === null
+                          ? "Checking"
+                          : ready
+                            ? "Configured"
+                            : "Not connected";
+                const stateReady = ready && liveCheck?.phase !== "failed";
                 return (
                   <article className="azure-service-card" key={key}>
                     <div className="azure-service-head">
@@ -515,9 +583,9 @@ export default function SettingsView({
                         <Icon size={20} aria-hidden="true" />
                       </span>
                       <span
-                        className={`azure-status-pill ${ready ? "ready" : "off"}`}
+                        className={`azure-status-pill ${stateReady ? "ready" : "off"}`}
                       >
-                        {ready ? (
+                        {stateReady ? (
                           <CheckCircle2 size={13} aria-hidden="true" />
                         ) : (
                           <Circle size={13} aria-hidden="true" />
@@ -537,6 +605,62 @@ export default function SettingsView({
                         <code key={variable}>{variable}</code>
                       ))}
                     </div>
+                    <div className="azure-card-check">
+                      {key === "liveVoice" ? (
+                        <button
+                          type="button"
+                          className="text-button"
+                          disabled={!ready}
+                          onClick={() =>
+                            document
+                              .getElementById("azure-live-voice-test")
+                              ?.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                              })
+                          }
+                        >
+                          <AudioLines size={15} aria-hidden="true" />
+                          Open live conversation test
+                        </button>
+                      ) : (
+                        <button
+                          type="button"
+                          className="text-button"
+                          disabled={!ready || liveCheck?.phase === "running"}
+                          onClick={() => void runAzureCheck(key)}
+                        >
+                          {liveCheck?.phase === "passed" ? (
+                            <CheckCircle2 size={15} aria-hidden="true" />
+                          ) : (
+                            <RefreshCw
+                              className={
+                                liveCheck?.phase === "running"
+                                  ? "azure-spin"
+                                  : ""
+                              }
+                              size={15}
+                              aria-hidden="true"
+                            />
+                          )}
+                          {liveCheck?.phase === "running"
+                            ? "Testing Azure…"
+                            : checkLabels[key]}
+                        </button>
+                      )}
+                      {liveCheck?.detail && (
+                        <p
+                          className={
+                            liveCheck.phase === "failed"
+                              ? "azure-check-result failed"
+                              : "azure-check-result"
+                          }
+                          role="status"
+                        >
+                          {liveCheck.detail}
+                        </p>
+                      )}
+                    </div>
                   </article>
                 );
               })}
@@ -553,9 +677,23 @@ export default function SettingsView({
                 <h2 id="voice-casting-heading">Character voice tests</h2>
               </div>
               <p>
-                The same multilingual voice follows each character in Swedish
-                and English. There is no browser or prerecorded fallback.
+                Each character has explicit Swedish and English casting.
+                Swedish playback always declares <code>sv-SE</code>; there is no browser
+                or prerecorded fallback.
               </p>
+            </div>
+            <div className="azure-accent-evidence">
+              <CheckCircle2 size={21} aria-hidden="true" />
+              <div>
+                <strong>Swedish pronunciation check passed</strong>
+                <p>
+                  Azure recognized every test line as Swedish. Alex and Aino
+                  scored 98/100 accuracy; Sami now uses native Swedish Mattias
+                  after it scored 96/100 with complete recognition. Swedish
+                  prosody scoring is not supported, so use the previews for the
+                  final listening check.
+                </p>
+              </div>
             </div>
             <div className="azure-voice-grid">
               {storyCharacterNames.map((name) => {
@@ -573,8 +711,12 @@ export default function SettingsView({
                     </div>
                     <dl>
                       <div>
-                        <dt>Azure voice</dt>
-                        <dd>{profile.azureVoice}</dd>
+                        <dt>Swedish voice</dt>
+                        <dd>{profile.azureVoices.sv}</dd>
+                      </div>
+                      <div>
+                        <dt>English voice</dt>
+                        <dd>{profile.azureVoices.en}</dd>
                       </div>
                       <div>
                         <dt>Locales</dt>
@@ -603,6 +745,34 @@ export default function SettingsView({
                 );
               })}
             </div>
+          </section>
+
+          <section
+            className="panel azure-live-test"
+            id="azure-live-voice-test"
+            aria-labelledby="azure-live-test-heading"
+          >
+            <div className="azure-section-heading">
+              <div>
+                <p className="eyebrow">FULL WEBRTC ROUND TRIP</p>
+                <h2 id="azure-live-test-heading">Test Swedish voice chat</h2>
+              </div>
+              <p>
+                This is the real GPT Live path—not a configuration simulation.
+                Start it, say “Hej! Jag heter …”, listen for the reply, and end
+                the conversation when you are finished.
+              </p>
+            </div>
+            <LiveVoice
+              taskId="lecture-01"
+              mode="conversation"
+              available={Boolean(ai?.capabilities.liveVoice)}
+              signedIn={Boolean(ai?.signedIn)}
+            />
+            <p className="help-text azure-live-privacy">
+              Starting this test asks for microphone permission and streams
+              microphone audio to Microsoft Azure until you end the session.
+            </p>
           </section>
 
           <section className="panel azure-security-note">

@@ -36,17 +36,42 @@ The custom-domain voice catalog uses:
 https://main-ai-foundry-3103.cognitiveservices.azure.com/tts/cognitiveservices/voices/list
 ```
 
-The live resource check returned 787 voices and confirmed the assigned Alex,
-Aino, and Sami multilingual voices. A Swedish synthesis request returned a
-valid 24 kHz MP3. The shorter custom-domain path `/cognitiveservices/v1`
-returned 404 and must not be used for this resource.
+The live resource check returned 787 voices. Alex and Aino retain their
+multilingual voices because Azure's Swedish pronunciation assessment recognized
+their sample lines completely with 98/100 word accuracy. Sami now uses native
+`sv-SE-MattiasNeural` for Swedish and keeps
+`en-US-AndrewMultilingualNeural` for English; Mattias achieved 96/100 word
+accuracy and complete recognition on Sami's Swedish sample. A Swedish synthesis
+request returned valid audio. The shorter custom-domain path
+`/cognitiveservices/v1` returned 404 and must not be used for this resource.
+
+These scores validate recognition and word accuracy, not human-perceived voice
+quality. Azure Speech does not currently support prosody assessment for Swedish,
+so the Settings voice previews remain the final listening check.
+
+## Configuration and live checks
+
+The Azure settings tab deliberately separates these states:
+
+- **Configured** means every required server variable is present.
+- **Live verified** means a user-triggered request completed against Azure.
+- The feedback check sends a small Swedish prompt to the configured Foundry
+  model.
+- The transcription check synthesizes Swedish with Azure Speech and sends that
+  WAV back through Azure Speech transcription.
+- The character voice check requests Swedish audio from the native Mattias
+  voice.
+- The live conversation test uses the real browser-to-Azure WebRTC flow. It is
+  user initiated because starting it asks for microphone permission and streams
+  microphone audio to Azure until the session ends.
 
 ## Best next services
 
 1. **Pronunciation Assessment** — highest teaching value. Swedish `sv-SE` is
-   supported, and this can add accuracy, fluency, prosody, and miscue feedback
+   supported, and this can add accuracy, fluency, completeness, and miscue feedback
    to the current record-and-review flow. Keep it formative and never present
-   the result as an official YKI grade.
+   the result as an official YKI grade. Prosody assessment is currently limited
+   to `en-US` and must not be presented for Swedish.
 2. **Content Understanding `prebuilt-layout` or `prebuilt-read`** — useful as an
    authoring tool for importing teacher worksheets, scanned homework, and new
    textbook references while preserving paragraphs and tables. It should not
@@ -75,6 +100,8 @@ returned 404 and must not be used for this resource.
 - [Text-to-speech quickstart](https://learn.microsoft.com/azure/ai-services/speech-service/get-started-text-to-speech)
 - [Speech language and voice support](https://learn.microsoft.com/azure/ai-services/speech-service/language-support)
 - [Language learning with Azure Speech](https://learn.microsoft.com/Azure/ai-services/speech-service/language-learning-overview)
+- [Pronunciation Assessment](https://learn.microsoft.com/azure/ai-services/speech-service/how-to-pronunciation-assessment)
+- [GPT Live with WebRTC](https://learn.microsoft.com/azure/foundry/openai/how-to/gpt-live-webrtc)
 - [Content Understanding prebuilt analyzers](https://learn.microsoft.com/azure/ai-services/content-understanding/concepts/prebuilt-analyzers)
 - [Azure Translator overview](https://learn.microsoft.com/azure/ai-services/translator/text-translation/overview)
 - [Text PII redaction](https://learn.microsoft.com/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii)
