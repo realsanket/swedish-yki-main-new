@@ -10,7 +10,7 @@ credentials server-only and do not add a `NEXT_PUBLIC_` key.
 | Writing and transcript feedback | Azure OpenAI / Microsoft Foundry | `AZURE_OPENAI_BASE_URL`, `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_FEEDBACK_MODEL` |
 | Recorded-speech transcription | Azure Speech fast transcription | `AZURE_SPEECH_ENDPOINT`, the shared resource key, `AZURE_SPEECH_API_VERSION` |
 | Chapter and character audio | Azure Speech text to speech | `AZURE_SPEECH_TTS_ENDPOINT`, the shared resource key |
-| Live speaking partner | Azure OpenAI Realtime over WebRTC | `AZURE_OPENAI_BASE_URL`, the shared resource key, `AZURE_OPENAI_VOICE_MODEL` |
+| Live speaking partner | Azure Speech Voice Live | `AZURE_VOICELIVE_ENDPOINT`, the shared resource key, `AZURE_VOICELIVE_MODEL`, `AZURE_VOICELIVE_VOICE` |
 
 All connected services use the `main-azure-backup-resource` Foundry resource.
 Its resource key is reused by Speech when `AZURE_SPEECH_API_KEY` is empty. Do
@@ -28,28 +28,34 @@ Runtime model calls use the resource endpoint rather than the project path:
 https://main-azure-backup-resource.openai.azure.com/openai/v1
 ```
 
-## Realtime endpoint decision
+## Voice Live endpoint decision
 
-The deployed server-to-server WebSocket address is:
-
-```text
-wss://main-azure-backup-resource.openai.azure.com/openai/v1/realtime?model=gpt-realtime-2.1-mini
-```
-
-Stigen is a browser application, so it uses the lower-latency GA WebRTC form on
-the same resource instead:
+Live conversation uses Azure Speech Voice Live at the resource root:
 
 ```text
-https://main-azure-backup-resource.openai.azure.com/openai/v1/realtime/calls
+https://main-azure-backup-resource.services.ai.azure.com
 ```
 
-The trusted `/api/live` route creates a short-lived Realtime client secret,
-keeps it server-side, and proxies the SDP negotiation. It also enables
-`webrtcfilter=on`, so the Azure key, ephemeral secret, lesson prompt, and
-unfiltered provider events do not reach the browser. Keep only the shared
-`/openai/v1` base URL and
-`AZURE_OPENAI_VOICE_MODEL=gpt-realtime-2.1-mini` in the environment; do not add
-a duplicate WebSocket URL variable.
+The browser opens Stigen's same-origin `/api/live/ws` WebSocket. The custom
+Next.js server then opens the Azure Voice Live session with the official
+JavaScript SDK. This keeps the long-lived resource key and trusted lesson
+prompt on the server while still carrying small 24 kHz PCM audio packets in
+both directions.
+
+The deployed voice session uses:
+
+- `gpt-realtime-2.1-mini` for the realtime conversation;
+- native `sv-SE-MattiasNeural` speech with Swedish preferred before English;
+- patient server VAD (1.1 seconds for conversation, 1.4 seconds for sound
+  practice) with response interruption and automatic truncation;
+- Azure deep noise suppression and server echo cancellation; and
+- Swedish Whisper transcription for the learner transcript.
+
+Azure's multilingual semantic VAD currently rejects `sv-SE` with this realtime
+model. Azure Speech transcription inside Voice Live also requires semantic VAD.
+Stigen therefore uses the accepted `server_vad` plus `whisper-1` combination for
+Swedish. This is an observed provider compatibility constraint, not a UI
+fallback.
 
 ## Text-to-speech endpoint decision
 
@@ -97,7 +103,7 @@ The Azure settings tab deliberately separates these states:
   WAV back through Azure Speech transcription.
 - The character voice check requests Swedish audio from the native Mattias
   voice.
-- The live conversation test uses the real browser-to-Azure WebRTC flow. It is
+- The live conversation test uses the real browser-to-Stigen-to-Azure Voice Live flow. It is
   user initiated because starting it asks for microphone permission and streams
   microphone audio to Azure until the session ends.
 
@@ -137,8 +143,8 @@ The Azure settings tab deliberately separates these states:
 - [Speech language and voice support](https://learn.microsoft.com/azure/ai-services/speech-service/language-support)
 - [Language learning with Azure Speech](https://learn.microsoft.com/Azure/ai-services/speech-service/language-learning-overview)
 - [Pronunciation Assessment](https://learn.microsoft.com/azure/ai-services/speech-service/how-to-pronunciation-assessment)
-- [Azure OpenAI Realtime with WebRTC](https://learn.microsoft.com/azure/foundry/openai/how-to/realtime-audio-webrtc)
-- [Azure OpenAI Realtime REST reference](https://learn.microsoft.com/rest/api/microsoft-foundry/azureopenai/realtime)
+- [Azure Speech Voice Live overview](https://learn.microsoft.com/azure/ai-services/speech-service/voice-live)
+- [Microsoft Voice Live JavaScript samples](https://github.com/microsoft-foundry/voicelive-samples/tree/main/javascript)
 - [Content Understanding prebuilt analyzers](https://learn.microsoft.com/azure/ai-services/content-understanding/concepts/prebuilt-analyzers)
 - [Azure Translator overview](https://learn.microsoft.com/azure/ai-services/translator/text-translation/overview)
 - [Text PII redaction](https://learn.microsoft.com/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii)

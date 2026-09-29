@@ -48,7 +48,14 @@ type AzureConfig = {
   baseUrl: string;
   key: string;
   feedbackModel: string;
-  voiceModel: string;
+};
+
+type VoiceLiveConfig = {
+  endpoint: string;
+  key: string;
+  model: string;
+  voice: string;
+  apiVersion: string;
 };
 
 function secureEndpoint(value: string | undefined, requiredPath = ""): string | null {
@@ -64,10 +71,9 @@ function secureEndpoint(value: string | undefined, requiredPath = ""): string | 
 /** Server-only credentials. Never serialize this configuration into an API response. */
 export function getAzureConfigs(env: Environment = process.env): AzureConfig[] {
   const feedbackModel = env.AZURE_OPENAI_FEEDBACK_MODEL?.trim() || "gpt-6-luna";
-  const voiceModel = env.AZURE_OPENAI_VOICE_MODEL?.trim() || "";
   const baseUrl = secureEndpoint(env.AZURE_OPENAI_BASE_URL, "/openai/v1");
   const key = env.AZURE_OPENAI_API_KEY?.trim();
-  return baseUrl && key ? [{ baseUrl, key, feedbackModel, voiceModel }] : [];
+  return baseUrl && key ? [{ baseUrl, key, feedbackModel }] : [];
 }
 
 export function getAzureConfig(env: Environment = process.env) {
@@ -106,6 +112,26 @@ export function getSpeechSynthesisConfig(env: Environment = process.env) {
   return { endpoint, key };
 }
 
+/** Configuration for the server-side Voice Live WebSocket proxy. */
+export function getVoiceLiveConfig(env: Environment = process.env): VoiceLiveConfig | null {
+  const endpoint = secureEndpoint(env.AZURE_VOICELIVE_ENDPOINT || env.AZURE_SPEECH_ENDPOINT);
+  const key = env.AZURE_VOICELIVE_API_KEY?.trim() || env.AZURE_SPEECH_API_KEY?.trim() || env.AZURE_OPENAI_API_KEY?.trim();
+  const model = env.AZURE_VOICELIVE_MODEL?.trim();
+  if (!endpoint || !key || !model) return null;
+  const url = new URL(endpoint);
+  if (
+    url.pathname.replace(/\/+$/, "") ||
+    !(url.hostname.endsWith(".services.ai.azure.com") || url.hostname.endsWith(".cognitiveservices.azure.com"))
+  ) return null;
+  return {
+    endpoint,
+    key,
+    model,
+    voice: env.AZURE_VOICELIVE_VOICE?.trim() || "sv-SE-MattiasNeural",
+    apiVersion: env.AZURE_VOICELIVE_API_VERSION?.trim() || "2026-01-01-preview",
+  };
+}
+
 export function aiProvider(env: Environment = process.env): "azure" | "openai" | null {
   if (getAzureConfig(env)) return "azure";
   return env.OPENAI_API_KEY?.trim() ? "openai" : null;
@@ -116,7 +142,7 @@ export function aiCapabilities(env: Environment = process.env) {
     lectureCoach: Boolean(aiProvider(env)),
     transcription: Boolean(getSpeechConfig(env) || aiProvider(env) === "openai"),
     characterVoices: Boolean(getSpeechSynthesisConfig(env)),
-    liveVoice: Boolean(getAzureConfig(env)?.voiceModel),
+    liveVoice: Boolean(getVoiceLiveConfig(env)),
   };
 }
 export function aiConfigured() { return aiCapabilities().feedback; }

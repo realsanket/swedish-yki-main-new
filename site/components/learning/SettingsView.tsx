@@ -105,11 +105,12 @@ const azureServices: Array<{
   },
   {
     key: "liveVoice",
-    service: "Azure OpenAI Realtime",
+    service: "Azure Speech Voice Live",
     variables: [
-      "AZURE_OPENAI_BASE_URL",
+      "AZURE_VOICELIVE_ENDPOINT",
       "AZURE_OPENAI_API_KEY",
-      "AZURE_OPENAI_VOICE_MODEL",
+      "AZURE_VOICELIVE_MODEL",
+      "AZURE_VOICELIVE_VOICE",
     ],
   },
 ];
@@ -754,11 +755,11 @@ export default function SettingsView({
           >
             <div className="azure-section-heading">
               <div>
-                <p className="eyebrow">FULL WEBRTC ROUND TRIP</p>
+                <p className="eyebrow">FULL VOICE LIVE ROUND TRIP</p>
                 <h2 id="azure-live-test-heading">Test Swedish voice chat</h2>
               </div>
               <p>
-                This is the real Azure OpenAI Realtime WebRTC path—not a configuration simulation.
+                This is the real Azure Speech Voice Live path—not a configuration simulation.
                 Start it, say “Hej! Jag heter …”, listen for the reply, and end
                 the conversation when you are finished.
               </p>

@@ -43,12 +43,12 @@ npm run build
 
 ## Optional AI features
 
-Copy `.env.example` to `.env` and add only the server-side credentials you use. Without AI configuration, all lessons, quizzes, model answers, browser text-to-speech, local recording, and self-review remain available.
+Copy `.env.example` to `.env` and add only the server-side credentials you use. Without AI configuration, lessons, quizzes, model answers, local recording, and self-review remain available; generated speech and live voice require Azure.
 
 - Text feedback and the inline lesson coach use an OpenAI-compatible Responses endpoint.
 - Fast Swedish transcription can use Azure Speech, with Swedish locales configured server-side.
 - All character, dialogue, vocabulary, and pronunciation playback uses server-side Azure Speech synthesis. There is no browser or static-audio fallback.
-- Live voice uses a server-created Azure OpenAI Realtime WebRTC session with `gpt-realtime-2.1-mini`. Long-lived API credentials and lesson instructions are never sent to the browser.
+- Live voice uses Azure Speech Voice Live with `gpt-realtime-2.1-mini` and native `sv-SE-MattiasNeural`. A same-origin server WebSocket proxy keeps the long-lived Azure key and trusted lesson instructions out of the browser.
 
 The AI coach is practice support, not an official YKI examiner. It does not assign official grades or guarantee a test result.
 
