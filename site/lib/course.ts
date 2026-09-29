@@ -4,6 +4,7 @@ import type {
   CourseModule,
   CoursePart,
   EpisodeRoute,
+  LectureRouteProfileId,
   LectureContent,
   Skill,
 } from "./course-types.ts";
@@ -22,12 +23,7 @@ const courseModules = modulesData.modules as CourseModule[];
 const lectureTitles = modulesData.titles as string[];
 export { courseModules };
 
-export type EpisodeRouteProfile =
-  | "standard"
-  | "clinic"
-  | "checkpoint"
-  | "yki-workshop"
-  | "yki-mock";
+export type EpisodeRouteProfile = LectureRouteProfileId;
 
 export type RouteStepProfile = {
   part: CoursePart;
@@ -110,13 +106,9 @@ export const routeProfiles: Record<EpisodeRouteProfile, RouteProfile> = {
 };
 
 export function routeProfileForLecture(
-  lecture: Pick<LectureContent | CourseLecture, "number">,
+  lecture: Pick<LectureContent | CourseLecture, "routeProfile">,
 ): RouteProfile {
-  if (lecture.number >= 59) return routeProfiles["yki-mock"];
-  if (lecture.number >= 56) return routeProfiles["yki-workshop"];
-  if (lecture.number === 25 || lecture.number === 45 || lecture.number === 55) return routeProfiles.checkpoint;
-  if (lecture.number % 5 === 0) return routeProfiles.clinic;
-  return routeProfiles.standard;
+  return routeProfiles[lecture.routeProfile ?? "standard"];
 }
 
 const allSkills: Skill[] = ["listening", "speaking", "reading", "writing"];
@@ -194,7 +186,7 @@ export const lectures: CourseLecture[] = (lectureData as LectureContent[])
       id: `lecture-${String(content.number).padStart(2, "0")}`,
       module: courseModule.number,
       level: courseModule.level,
-      kind: content.number % 5 === 0 ? "clinic" : "lesson",
+      kind: routeProfile.id === "clinic" ? "clinic" : "lesson",
       title: lectureTitles[content.number - 1],
       summary: content.objectives[0],
       previous: content.number > 1 ? [`lecture-${String(content.number - 1).padStart(2, "0")}`] : [],

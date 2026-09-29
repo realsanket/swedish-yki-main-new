@@ -25,6 +25,12 @@ export const COURSE_PARTS = [
   "assignment",
 ] as const;
 export type CoursePart = (typeof COURSE_PARTS)[number];
+export type LectureRouteProfileId =
+  | "standard"
+  | "clinic"
+  | "checkpoint"
+  | "yki-workshop"
+  | "yki-mock";
 export type CourseQuestion = {
   id: string;
   prompt: string;
@@ -32,6 +38,58 @@ export type CourseQuestion = {
   options?: string[];
   hint: string;
   explanation: string;
+};
+export type LecturePresentation = {
+  /**
+   * Selects a visual treatment, not a curriculum structure. A future lecture
+   * may use the neutral `standard` renderer, opt into `conversation-first`, or
+   * add a new template without changing existing lecture data.
+   */
+  template?: "standard" | "conversation-first";
+  /** Override only the learner-facing labels that this lecture needs. */
+  routeSteps?: Partial<
+    Record<CoursePart, { label: string; description: string }>
+  >;
+  /** Optional opening treatment. Dialogue can move without checking a lecture number. */
+  opening?: {
+    teacherNote?: { title: string; body: string };
+    questionIntro?: string;
+    dialogue?: {
+      part: "recall" | "teach";
+      eyebrow?: string;
+      title?: string;
+      instructions?: string;
+      initiallyOpen?: boolean;
+    };
+  };
+  /** Optional teaching-page behaviour; omitted fields use neutral defaults. */
+  teaching?: {
+    itemLabel?: string;
+    wordBank?: { mode: "open" | "collapsed"; title?: string };
+    resourceIntro?: { eyebrow: string; title: string; body: string };
+  };
+  /** Optional custom hero. Future template variants can be added beside this one. */
+  hero?: {
+    variant: "conversation";
+    meta: string[];
+    kicker: string;
+    title: string;
+    lede: string;
+    startLine: {
+      label: string;
+      fi: string;
+      en: string;
+      audioText?: string;
+    };
+    speakers: [
+      { name: string; fi: string },
+      { name: string; fi: string },
+    ];
+    connector?: string;
+    encounterLabel?: string;
+    chunks: { label: string; fi: string; en: string }[];
+    footerTags?: string[];
+  };
 };
 /**
  * The learner-facing task contract for one episode. It intentionally lives
@@ -43,6 +101,8 @@ export type EpisodeRoute = {
   primarySkill: Skill;
   /** Skills that must have an attempted task in this episode. */
   requiredSkills: Skill[];
+  /** Optional first-attempt mode for a workshop; defaults to `primarySkill`. */
+  firstAttemptSkill?: Skill;
   /** A concrete, visible description of what the learner will produce. */
   expectedOutput: string;
   /** A small changed condition for the second, transferable attempt. */
@@ -89,6 +149,10 @@ export type LecturePractice = Pick<
 export type LectureContent = {
   number: number;
   legacyLessonId?: string;
+  /** Explicit route choice. Future lecture numbers carry no implied format. */
+  routeProfile?: LectureRouteProfileId;
+  /** Presentation is optional so future lectures do not inherit Lesson 1. */
+  presentation?: LecturePresentation;
   objectives: string[];
   focusSkills: Skill[];
   /** Optional for legacy JSON; course.ts supplies a safe runtime fallback. */

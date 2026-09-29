@@ -5,17 +5,19 @@
 import { useEffect, useState } from "react";
 import { Clock3, Headphones, Mic, PenLine } from "lucide-react";
 import type { CourseLecture } from "@/lib/course";
+import type { Skill } from "@/lib/curriculum";
 import AudioButton from "./AudioButton";
 import styles from "./YkiWorkshopFirstAttempt.module.css";
 
 type Props = {
   lecture: CourseLecture;
+  skill: Skill;
   minutes: number;
   value: string;
   /**
-   * Episodes 56–57 previously stored the first attempt in the ordinary
-   * productive draft. The value is still valid learner evidence; this flag
-   * only explains why it is appearing in the newer receptive task slot.
+   * A revised workshop may move the first attempt to a different skill slot.
+   * The value is still valid learner evidence; this flag explains why earlier
+   * work is appearing in the new slot.
    */
   recoveredFromLegacySlot?: boolean;
   onChange: (value: string) => void;
@@ -64,8 +66,8 @@ function writeStoredTimer(key: string, value: StoredTimer) {
   }
 }
 
-function taskFor(lecture: CourseLecture) {
-  if (lecture.number === 56) {
+function taskFor(lecture: CourseLecture, skill: Skill) {
+  if (skill === "listening") {
     return {
       icon: Headphones,
       title: "Timed listening first attempt",
@@ -76,7 +78,7 @@ function taskFor(lecture: CourseLecture) {
       label: "What you heard (a few keywords are enough)",
     };
   }
-  if (lecture.number === 57) {
+  if (skill === "reading") {
     return {
       icon: PenLine,
       title: "Timed reading first attempt",
@@ -85,6 +87,16 @@ function taskFor(lecture: CourseLecture) {
       prompt: lecture.reading.question,
       text: lecture.reading.text,
       label: "Your short answer",
+    };
+  }
+  if (skill === "writing") {
+    return {
+      icon: PenLine,
+      title: "Timed writing first attempt",
+      instruction:
+        "Write from the task points without opening a model. Save your first version so you can compare it with the retry.",
+      prompt: lecture.writing.prompt,
+      label: "Your first written response",
     };
   }
   return {
@@ -99,12 +111,13 @@ function taskFor(lecture: CourseLecture) {
 
 export default function YkiWorkshopFirstAttempt({
   lecture,
+  skill,
   minutes,
   value,
   recoveredFromLegacySlot = false,
   onChange,
 }: Props) {
-  const task = taskFor(lecture);
+  const task = taskFor(lecture, skill);
   const Icon = task.icon;
   const duration = minutes * 60;
   const timerKey = `stigen:timed-workshop:first-attempt:${lecture.id}`;
@@ -120,9 +133,8 @@ export default function YkiWorkshopFirstAttempt({
   useEffect(() => {
     const stored = readStoredTimer(timerKey);
     if (!stored?.started) {
-      // Saved work may predate this timer (especially the old e56/e57 primary
-      // draft). Open it as an untimed review instead of hiding it behind a
-      // brand-new first-attempt clock.
+      // Saved work may predate this timer. Open it as an untimed review instead
+      // of hiding it behind a brand-new first-attempt clock.
       setStarted(hasSavedAttempt);
       setUntimed(hasSavedAttempt);
       setDeadline(null);

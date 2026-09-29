@@ -9,6 +9,7 @@ This file is the curriculum handoff for humans and AI agents. It records what ha
 - **Source spine:** 51 dated teacher lessons in `docs/Group 3.pdf`, supported first by `docs/text-book (1).pdf` and later by the YKI preparation book.
 - **Current method:** improve Lecture 1 one teaching step at a time. Do not activate a later lecture or chapter until the user explicitly changes the scope.
 - **Backup:** the former Lectures 2–60, 12-chapter plan, later story registry, and later artwork are in `backup/future-course-2026-09-29/`.
+- **Template rule:** Lecture 1 opts into its own content-defined presentation. Future lectures use the neutral default unless their verified material requires a different template; never branch on a lecture number.
 
 The backup is reference material, not part of the live course. Its presence must not make later chapters appear in navigation, progress totals, the curriculum page, or the generated runtime index.
 

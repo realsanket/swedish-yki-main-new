@@ -14,8 +14,11 @@ Source-to-lecture decisions are tracked in [`../mapping.md`](../mapping.md). Fol
 - `lib/story-world.ts` — the Chapter 1 story, cast, and artwork lookup.
 - `components/learning/LecturePlayer.tsx` — the teaching flow.
 - `app/course.css` — the visual system, including the dedicated Lesson 1 workspace.
+- `docs/lecture-template.md` — the contract for extending lectures without copying Lesson 1.
 
 Lectures 2–60, the former 12-chapter plan, later story mappings, and later artwork are preserved outside the runtime tree in [`../backup/future-course-2026-09-29`](../backup/future-course-2026-09-29). Do not restore them until the user explicitly expands the course scope.
+
+Lecture presentation is optional metadata. Lecture 1 opts into `conversation-first`; a future lecture defaults to a neutral renderer and must earn any custom layout from its own verified teaching material. Shared components must not branch on lecture numbers.
 
 ## Run locally
 

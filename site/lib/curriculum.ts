@@ -136,7 +136,7 @@ export const lessons: Lesson[] = rawLectures
       unit: courseModule.title,
       title: titles[lecture.number - 1] ?? `Episode ${lecture.number}`,
       subtitle: lecture.objectives[0] ?? "Use Swedish for a practical purpose.",
-      minutes: lecture.number % 5 === 0 ? 60 : 45,
+      minutes: 45,
       goal: lecture.objectives[0] ?? "Use Swedish for a practical purpose.",
       grammar: {
         title: teaching?.title ?? "Language in this situation",

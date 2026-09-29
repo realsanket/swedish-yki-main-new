@@ -26,77 +26,66 @@ export default function EpisodeBrief({
   const phraseCount = lecture.words.filter((word) => isPhrase(word.fi)).length;
   const ruleCount = lecture.sections.filter((section) => section.kind === "rule").length;
   const byTheEnd = lecture.route?.expectedOutput ?? lecture.takeaways[0];
+  const hero = lecture.presentation?.hero;
   const previouslyText = previousTitle
     ? `The last episode was “${previousTitle}.”`
-    : lecture.number === 1
-      ? "First lesson. Nothing to bring back yet — begin with four introduction chunks, then hear the sound patterns in familiar words."
-      : "Alex has arrived at the first community Swedish class.";
+    : "This is the first live lesson. Begin from its model before analysing the language.";
 
-  if (lecture.number === 1) {
-    const chunks = [
-      ["NAME", "Jag heter …", "My name is …"],
-      ["HOME NOW", "Jag bor i …", "I live in …"],
-      ["ORIGIN", "Jag kommer från …", "I come from …"],
-      ["LANGUAGES", "Jag talar …", "I speak …"],
-    ] as const;
-
+  if (hero?.variant === "conversation") {
+    const [firstSpeaker, secondSpeaker] = hero.speakers;
     return (
-      <section className="lesson-one-brief" aria-labelledby="episode-brief-title">
-        <div className="lesson-one-brief-main">
-          <div className="lesson-one-brief-copy">
-            <div className="lesson-one-brief-meta">
-              <span>LEKTION 1</span>
-              <span>13 APRIL 2026</span>
+      <section className="lecture-conversation-brief" aria-labelledby="episode-brief-title">
+        <div className="lecture-conversation-brief-main">
+          <div className="lecture-conversation-brief-copy">
+            <div className="lecture-conversation-brief-meta">
+              {hero.meta.map((item) => <span key={item}>{item}</span>)}
             </div>
-            <p className="lesson-one-kicker">YOUR FIRST SWEDISH CONVERSATION</p>
-            <h1 id="episode-brief-title">Hej! Vad heter du?</h1>
-            <p className="lesson-one-lede">
-              Hear it, understand it, then make it yours. Grammar names can wait.
-            </p>
-            <div className="lesson-one-start-line">
+            <p className="lecture-conversation-kicker">{hero.kicker}</p>
+            <h1 id="episode-brief-title">{hero.title}</h1>
+            <p className="lecture-conversation-lede">{hero.lede}</p>
+            <div className="lecture-conversation-start-line">
               <div>
-                <span>START WITH ONE LINE</span>
-                <p lang="sv">Hej! Jag heter Alex.</p>
-                <small>Hello! My name is Alex.</small>
+                <span>{hero.startLine.label}</span>
+                <p lang="sv">{hero.startLine.fi}</p>
+                <small>{hero.startLine.en}</small>
               </div>
               <AudioButton
-                text="Hej! Jag heter Alex. Vad heter du?"
+                text={hero.startLine.audioText ?? hero.startLine.fi}
                 label="Hear the first line"
                 className="icon-button"
               />
             </div>
           </div>
-          <div className="lesson-one-people" aria-label="Aino and Alex meet for the first time">
-            <div className="lesson-one-person lesson-one-person-aino">
-              <StoryAvatar name="Aino" size={96} />
-              <span>Aino</span>
-              <p lang="sv">Vad heter du?</p>
+          <div className="lecture-conversation-people" aria-label={hero.encounterLabel ?? "Two speakers meet"}>
+            <div className="lecture-conversation-person">
+              <StoryAvatar name={firstSpeaker.name} size={96} />
+              <span>{firstSpeaker.name}</span>
+              <p lang="sv">{firstSpeaker.fi}</p>
             </div>
-            <div className="lesson-one-meets" aria-hidden="true">
-              <span>HEJ!</span>
+            <div className="lecture-conversation-meets" aria-hidden="true">
+              <span>{hero.connector ?? "HEJ!"}</span>
               <ArrowRight size={22} />
             </div>
-            <div className="lesson-one-person lesson-one-person-alex">
-              <StoryAvatar name="Alex" size={96} />
-              <span>Alex</span>
-              <p lang="sv">Jag heter Alex.</p>
+            <div className="lecture-conversation-person">
+              <StoryAvatar name={secondSpeaker.name} size={96} />
+              <span>{secondSpeaker.name}</span>
+              <p lang="sv">{secondSpeaker.fi}</p>
             </div>
           </div>
         </div>
-        <div className="lesson-one-chunks" aria-label="Four lines to learn today">
-          {chunks.map(([label, swedish, english], index) => (
-            <div key={label}>
-              <span>{String(index + 1).padStart(2, "0")} · {label}</span>
-              <b lang="sv">{swedish}</b>
-              <small>{english}</small>
+        <div className="lecture-conversation-chunks" aria-label="Core lines for this lesson">
+          {hero.chunks.map((chunk, index) => (
+            <div key={`${chunk.label}-${chunk.fi}`}>
+              <span>{String(index + 1).padStart(2, "0")} · {chunk.label}</span>
+              <b lang="sv">{chunk.fi}</b>
+              <small>{chunk.en}</small>
             </div>
           ))}
         </div>
-        <footer className="lesson-one-brief-footer">
+        <footer className="lecture-conversation-brief-footer">
           <p><b>Today’s finish line:</b> {byTheEnd}</p>
           <div>
-            <span>Speak first</span>
-            <span>One sound at a time</span>
+            {hero.footerTags?.map((tag) => <span key={tag}>{tag}</span>)}
             <span>{lecture.minutes} min · pause anytime</span>
           </div>
         </footer>

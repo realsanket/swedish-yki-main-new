@@ -1,6 +1,7 @@
 [
   {
     "number": 1,
+    "routeProfile": "standard",
     "objectives": [
       "Hold a short first conversation using your name, home, origin, and languages.",
       "Shape and hear Swedish's nine vowel letters using simple mouth and memory cues.",
@@ -10,6 +11,99 @@
       "listening",
       "speaking"
     ],
+    "presentation": {
+      "template": "conversation-first",
+      "routeSteps": {
+        "recall": {
+          "label": "Hear the conversation",
+          "description": "Listen first, open the text, then answer two simple meaning checks."
+        },
+        "teach": {
+          "label": "Build it step by step",
+          "description": "One small card at a time: useful line, mouth cue, sound clue, quick try."
+        }
+      },
+      "opening": {
+        "teacherNote": {
+          "title": "First hear how the language is used",
+          "body": "Do not memorise a rule list yet. Listen once, reveal the Swedish and English only when you need them, then copy one line aloud."
+        },
+        "questionIntro": "Use the conversation you just heard. These two checks are about meaning, not pronunciation or grammar.",
+        "dialogue": {
+          "part": "recall",
+          "eyebrow": "START WITH THE STORY",
+          "title": "Meet Aino and Alex",
+          "instructions": "Listen once, follow the visible Swedish, and copy one line. Open English only when a line is unclear.",
+          "initiallyOpen": true
+        }
+      },
+      "teaching": {
+        "itemLabel": "card",
+        "wordBank": {
+          "mode": "collapsed",
+          "title": "Open the complete Lesson 1 word bank"
+        },
+        "resourceIntro": {
+          "eyebrow": "OPTIONAL PRONUNCIATION CHECK",
+          "title": "Compare a real speaker, then return",
+          "body": "Use an external recording for one word at a time. Listen, close the page, and repeat here from memory."
+        }
+      },
+      "hero": {
+        "variant": "conversation",
+        "meta": [
+          "LEKTION 1",
+          "13 APRIL 2026"
+        ],
+        "kicker": "YOUR FIRST SWEDISH CONVERSATION",
+        "title": "Hej! Vad heter du?",
+        "lede": "Hear it, understand it, then make it yours. Grammar names can wait.",
+        "startLine": {
+          "label": "START WITH ONE LINE",
+          "fi": "Hej! Jag heter Alex.",
+          "en": "Hello! My name is Alex.",
+          "audioText": "Hej! Jag heter Alex. Vad heter du?"
+        },
+        "speakers": [
+          {
+            "name": "Aino",
+            "fi": "Vad heter du?"
+          },
+          {
+            "name": "Alex",
+            "fi": "Jag heter Alex."
+          }
+        ],
+        "connector": "HEJ!",
+        "encounterLabel": "Aino and Alex meet for the first time",
+        "chunks": [
+          {
+            "label": "NAME",
+            "fi": "Jag heter …",
+            "en": "My name is …"
+          },
+          {
+            "label": "HOME NOW",
+            "fi": "Jag bor i …",
+            "en": "I live in …"
+          },
+          {
+            "label": "ORIGIN",
+            "fi": "Jag kommer från …",
+            "en": "I come from …"
+          },
+          {
+            "label": "LANGUAGES",
+            "fi": "Jag talar …",
+            "en": "I speak …"
+          }
+        ],
+        "footerTags": [
+          "Speak first",
+          "One sound at a time"
+        ]
+      }
+    },
     "recall": [
       {
         "id": "sv-01-notice-purpose",

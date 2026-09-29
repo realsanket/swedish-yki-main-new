@@ -183,20 +183,21 @@ export default function LecturePlayer({
   const chapter = storyChapterForModule(lecture.module);
   const routeProfile = routeProfileForLecture(lecture);
   const route = lecture.route;
+  const presentation = lecture.presentation;
+  const opening = presentation?.opening;
+  const dialoguePresentation = opening?.dialogue;
+  const dialoguePart = dialoguePresentation?.part ?? "teach";
+  const teachingPresentation = presentation?.teaching;
+  const teachingItemLabel = teachingPresentation?.itemLabel ?? "section";
+  const templateClass = `lecture-template-${presentation?.template ?? "standard"}`;
   const ykiMock = routeProfile.id === "yki-mock" ? getYkiMock(lecture.number) : undefined;
   const ykiWorkshop = routeProfile.id === "yki-workshop";
-  // The first workshop task is receptive in 56/57, then productive in 58.
-  // Store its evidence under the skill the learner actually used; otherwise a
-  // listening summary could accidentally become a speaking retry draft.
+  // A workshop chooses its first-attempt skill in content. Lecture numbers do
+  // not imply listening, reading, speaking, or writing behaviour.
   const workshopFirstAttemptSkill: Skill =
-    lecture.number === 56
-      ? "listening"
-      : lecture.number === 57
-        ? "reading"
-        : route.primarySkill;
-  // Before the workshop gained separate receptive first-attempt fields,
-  // episodes 56 and 57 used their ordinary productive primary-skill draft.
-  // Keep that work visible rather than treating it as a missing attempt.
+    route.firstAttemptSkill ?? route.primarySkill;
+  // Older saved work may live in the primary-skill slot. Keep it visible when
+  // a revised workshop moves its first attempt to a different skill.
   const legacyWorkshopFirstAttemptSkill =
     ykiWorkshop && workshopFirstAttemptSkill !== route.primarySkill
       ? route.primarySkill
@@ -520,21 +521,8 @@ export default function LecturePlayer({
     [flush, lecture.id, onPracticeSaved, save],
   );
   const lectureStep = (step: (typeof routeProfile.steps)[number]) => {
-    // Episode 1 begins with a model conversation, not a test of material the
-    // learner has never met. The two questions only check meaning afterwards.
-    if (lecture.number === 1 && step.part === "recall")
-      return {
-        ...step,
-        label: "Hear the conversation",
-        description: `Listen first, open the text, then answer ${lecture.recall.length} simple meaning checks.`,
-      };
-    if (lecture.number === 1 && step.part === "teach")
-      return {
-        ...step,
-        label: "Build it step by step",
-        description: "One small card at a time: useful line, mouth cue, sound clue, quick try.",
-      };
-    return step;
+    const override = presentation?.routeSteps?.[step.part];
+    return override ? { ...step, ...override } : step;
   };
   const activeStep = lectureStep(routeProfile.steps[partIndex]);
   const routeStepButtons = (mobile = false) =>
@@ -566,7 +554,7 @@ export default function LecturePlayer({
       );
     });
   return (
-    <div className={`course-space lecture-workspace ${lecture.number === 1 ? "lesson-one-workspace" : ""}`}>
+    <div className={`course-space lecture-workspace ${templateClass}`}>
       <div className="lecture-toolbar">
         <button
           type="button"
@@ -729,25 +717,22 @@ export default function LecturePlayer({
                 <Lightbulb size={22} />
                 <div>
                   <h3>
-                    {lecture.number === 1
-                      ? "First hear how the language is used"
-                      : "Before you look back…"}
+                    {opening?.teacherNote?.title ?? "Before you look back…"}
                   </h3>
                   <p>
-                    {lecture.number === 1
-                      ? "Do not memorise a rule list yet. Listen once, reveal the Swedish and English only when you need them, then copy one line aloud."
-                      : "Try remembering without opening your notes. If you get stuck, the hint and explanation will help. This warm-up is not graded."}
+                    {opening?.teacherNote?.body ??
+                      "Try remembering without opening your notes. If you get stuck, the hint and explanation will help. This warm-up is not graded."}
                   </p>
                 </div>
               </div>
-              {lecture.number === 1 && lecture.dialogue && (
+              {dialoguePart === "recall" && lecture.dialogue && (
                 <StoryScene
                   dialogue={lecture.dialogue}
                   chapter={chapter}
-                  eyebrow="START WITH THE STORY"
-                  title="Meet Aino and Alex"
-                  instructions="Listen once, follow the visible Swedish, and copy one line. Open English only when a line is unclear."
-                  initiallyOpen
+                  eyebrow={dialoguePresentation?.eyebrow}
+                  title={dialoguePresentation?.title}
+                  instructions={dialoguePresentation?.instructions}
+                  initiallyOpen={dialoguePresentation?.initiallyOpen}
                 />
               )}
               {ykiMock && (
@@ -770,9 +755,7 @@ export default function LecturePlayer({
               <div className="course-questions">
                 {questionAction.recall && (
                   <ActionRibbon>
-                    {lecture.number === 1
-                      ? "Use the conversation you just heard. These two checks are about meaning, not pronunciation or grammar."
-                      : questionAction.recall}
+                    {opening?.questionIntro ?? questionAction.recall}
                   </ActionRibbon>
                 )}
                 {questions.map((q, i) => (
@@ -860,12 +843,20 @@ export default function LecturePlayer({
                     queue({ assignment: value });
                   }}
                 />
-              ) : lecture.dialogue && lecture.number !== 1 && (
-                <StoryScene dialogue={lecture.dialogue} chapter={chapter} />
+              ) : lecture.dialogue && dialoguePart === "teach" && (
+                <StoryScene
+                  dialogue={lecture.dialogue}
+                  chapter={chapter}
+                  eyebrow={dialoguePresentation?.eyebrow}
+                  title={dialoguePresentation?.title}
+                  instructions={dialoguePresentation?.instructions}
+                  initiallyOpen={dialoguePresentation?.initiallyOpen}
+                />
               )}
               {ykiWorkshop && hydrated && (
                 <YkiWorkshopFirstAttempt
                   lecture={lecture}
+                  skill={workshopFirstAttemptSkill}
                   minutes={routeProfile.steps[1].minutes}
                   value={workshopFirstAttemptValue}
                   recoveredFromLegacySlot={workshopFirstAttemptUsesLegacy}
@@ -987,7 +978,7 @@ export default function LecturePlayer({
                         onClick={() => setSectionIdx(Math.max(0, sectionIdx - 1))}
                         disabled={sectionIdx === 0}
                       >
-                        &larr; {lecture.number === 1 ? "Previous card" : "Previous rule"}
+                        &larr; Previous {teachingItemLabel}
                       </button>
                       {!isLastPage && (
                         <button
@@ -995,7 +986,7 @@ export default function LecturePlayer({
                           className="primary"
                           onClick={() => setSectionIdx(Math.min(totalSections - 1, sectionIdx + 1))}
                         >
-                          {lecture.number === 1 ? "Next card" : "Next rule"} &rarr;
+                          Next {teachingItemLabel} &rarr;
                         </button>
                       )}
                     </div>
@@ -1013,9 +1004,16 @@ export default function LecturePlayer({
                         ))}
                         {!!lecture.resources?.length && (
                           <section className="lesson-resources" aria-labelledby={`episode-${lecture.number}-resources`}>
-                            <span className="eyebrow">OPTIONAL PRONUNCIATION CHECK</span>
-                            <h3 id={`episode-${lecture.number}-resources`}>Compare a real speaker, then return</h3>
-                            <p>Use an external recording for one word at a time. Listen, close the page, and repeat here from memory.</p>
+                            <span className="eyebrow">
+                              {teachingPresentation?.resourceIntro?.eyebrow ?? "OPTIONAL RESOURCES"}
+                            </span>
+                            <h3 id={`episode-${lecture.number}-resources`}>
+                              {teachingPresentation?.resourceIntro?.title ?? "Explore this lesson further"}
+                            </h3>
+                            <p>
+                              {teachingPresentation?.resourceIntro?.body ??
+                                "Open only the resource that supports your current task, then return to the lesson."}
+                            </p>
                             <div>
                               {lecture.resources.map((resource) => (
                                 <a href={resource.url} target="_blank" rel="noreferrer" key={resource.url}>
@@ -1056,7 +1054,7 @@ export default function LecturePlayer({
                               {lexicon.length > 0 && (
                                 <>
                                   <h3 style={{ marginTop: phrases.length ? 26 : 0 }}>Vocabulary to recognise</h3>
-                                  <p className="section-sub">Individual words you will meet again. Learn to spot them; production comes with the next episodes.</p>
+                                  <p className="section-sub">Learn to spot these words; you do not need to produce all of them in this lesson.</p>
                                   <div className="lecture-word-grid">{lexicon.map(renderCard)}</div>
                                 </>
                               )}
@@ -1067,13 +1065,15 @@ export default function LecturePlayer({
                               </div>
                             </section>
                           );
-                          if (lecture.number === 1) {
+                          if (teachingPresentation?.wordBank?.mode === "collapsed") {
                             return (
-                              <details className="lesson-one-word-bank">
+                              <details className="lecture-collapsible-word-bank">
                                 <summary>
                                   <span>
-                                    <b>Open the complete Lesson 1 word bank</b>
-                                    <small>4 phrases · {lexicon.length} recognition words · one full sound drill</small>
+                                    <b>{teachingPresentation.wordBank.title ?? "Open this lesson’s word bank"}</b>
+                                    <small>
+                                      {phrases.length} {phrases.length === 1 ? "phrase" : "phrases"} · {lexicon.length} recognition words · one pronunciation drill
+                                    </small>
                                   </span>
                                   <ChevronDown size={17} aria-hidden="true" />
                                 </summary>
