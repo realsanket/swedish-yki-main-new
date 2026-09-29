@@ -82,8 +82,8 @@ export function FullCurriculum({
           onClick={openOrientation}
         >
           <span>BEFORE LECTURE 1 · OPTIONAL</span>
-          <b>Meet the course, characters, and practice modes</b>
-          <small>A four-minute visual introduction. Revisit it any time.</small>
+          <b>Preview the first conversation and practice loop</b>
+          <small>A focused two-minute introduction to Lecture 1. Revisit it any time.</small>
           <ArrowRight size={17} />
         </button>
       )}

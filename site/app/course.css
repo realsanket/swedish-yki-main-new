@@ -4818,3 +4818,357 @@
   .lecture-template-conversation-first .teaching-section { padding: 22px 17px; border-radius: 19px; }
   .lecture-template-conversation-first .teaching-table { margin-right: -5px; margin-left: -5px; }
 }
+
+/* Focused Lesson 1 orientation */
+.orientation-space {
+  max-width: 1180px;
+}
+.orientation-steps {
+  grid-template-columns: repeat(3, 1fr);
+}
+.orientation-stage {
+  min-height: 0;
+  border-color: #d9e4d7;
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(29, 78, 60, .055);
+}
+.orientation-lesson-map {
+  position: relative;
+  min-height: 660px;
+  overflow: hidden;
+  background: #f3eee1;
+}
+.orientation-lesson-map::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(255, 253, 246, .98) 0%, rgba(255, 253, 246, .95) 35%, rgba(255, 253, 246, .32) 62%, rgba(255, 253, 246, .04) 100%);
+  pointer-events: none;
+}
+.orientation-lesson-map > img {
+  object-fit: cover;
+  object-position: center;
+}
+.orientation-lesson-copy {
+  position: relative;
+  z-index: 2;
+  width: min(545px, 53%);
+  padding: 54px 52px 150px;
+}
+.orientation-lesson-copy h2 {
+  max-width: 470px;
+  color: #173f34;
+  font-size: 38px;
+}
+.orientation-lesson-copy > p {
+  max-width: 500px;
+  margin-top: 16px;
+  color: #557064;
+  font-size: 15px;
+  line-height: 1.72;
+}
+.orientation-model-card {
+  display: grid;
+  gap: 7px;
+  max-width: 405px;
+  margin-top: 25px;
+  padding: 18px 20px;
+  border: 1px solid rgba(58, 101, 77, .2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, .88);
+  box-shadow: 0 10px 25px rgba(36, 76, 56, .07);
+  backdrop-filter: blur(8px);
+}
+.orientation-model-card > span {
+  margin-bottom: 3px;
+  color: #6e875c;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+.orientation-model-card p {
+  color: #24513f;
+  font-size: 16px;
+  line-height: 1.35;
+}
+.orientation-model-card b {
+  color: #a76331;
+  font-weight: 650;
+  letter-spacing: .06em;
+}
+.orientation-lesson-sequence {
+  position: absolute;
+  right: 28px;
+  bottom: 26px;
+  left: 28px;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .72);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, .93);
+  box-shadow: 0 12px 28px rgba(35, 70, 50, .09);
+  backdrop-filter: blur(9px);
+}
+.orientation-lesson-sequence > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 11px;
+  align-items: center;
+  min-height: 84px;
+  padding: 16px 19px;
+  border-right: 1px solid #e0e8dc;
+}
+.orientation-lesson-sequence > div:last-child {
+  border-right: 0;
+}
+.orientation-lesson-sequence span {
+  color: #b06b38;
+  font: italic 24px/1 Georgia, serif;
+}
+.orientation-lesson-sequence p {
+  color: #667a70;
+  font-size: 11px;
+  line-height: 1.45;
+}
+.orientation-lesson-sequence b {
+  display: block;
+  margin-bottom: 2px;
+  color: #295744;
+  font-size: 13px;
+}
+.orientation-cast {
+  padding: 44px 46px 48px;
+  background: linear-gradient(180deg, #fbfcf8, #f2f6ee);
+}
+.orientation-cast > header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .64fr);
+  gap: 42px;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.orientation-cast > header h2 {
+  color: #1e4c3d;
+}
+.orientation-cast > header > div > p {
+  max-width: 600px;
+  margin-top: 12px;
+  color: #60776b;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.orientation-cast .orientation-book-note {
+  margin: 0;
+}
+.orientation-cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+.orientation-cast-grid article {
+  overflow: hidden;
+  border: 1px solid #d8e4d6;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 9px 22px rgba(32, 76, 56, .045);
+}
+.orientation-cast-grid img {
+  display: block;
+  width: 100%;
+  height: 235px;
+  border-bottom: 1px solid #e1e9df;
+  background: #eef3e9;
+  object-fit: contain;
+}
+.orientation-cast-grid article > div {
+  min-height: 188px;
+  padding: 21px 22px 23px;
+}
+.orientation-cast-grid span {
+  color: #708865;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.orientation-cast-grid h3 {
+  margin: 5px 0 8px;
+  color: #285440;
+  font: 25px/1.15 Georgia, serif;
+}
+.orientation-cast-grid p {
+  color: #607469;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.orientation-method .orientation-practice {
+  grid-template-columns: minmax(0, .92fr) minmax(390px, 1.08fr);
+  min-height: 550px;
+}
+.orientation-method .orientation-practice > .orientation-copy {
+  padding: 47px 44px;
+}
+.orientation-method .orientation-practice > .orientation-copy > p {
+  line-height: 1.7;
+}
+.orientation-loop-picker {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 25px 0 20px;
+}
+.orientation-loop-picker button {
+  justify-content: flex-start;
+  min-height: 46px;
+  border-radius: 11px;
+  font-size: 13px;
+}
+.orientation-loop-picker button > span {
+  color: #9a6b42;
+  font: italic 14px/1 Georgia, serif;
+}
+.orientation-loop-picker button.active > span {
+  color: #4f774a;
+}
+.orientation-sound-scope {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 14px 15px;
+  border: 1px solid #e4dbc4;
+  border-radius: 12px;
+  background: #fffaf0;
+  color: #70664f;
+}
+.orientation-sound-scope svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: #a66a39;
+}
+.orientation-sound-scope p {
+  font-size: 12px;
+  line-height: 1.55;
+}
+.orientation-method .mode-focus {
+  min-height: 550px;
+}
+.orientation-method .mode-focus > div {
+  border-color: rgba(218, 229, 214, .9);
+}
+.orientation-method .orientation-finish {
+  min-height: 118px;
+  background: linear-gradient(120deg, #24533f, #183f35);
+}
+.orientation-method .orientation-finish > svg {
+  flex: 0 0 auto;
+  padding: 7px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 50%;
+  color: #cce2b7;
+}
+
+@media (max-width: 900px) {
+  .orientation-lesson-copy {
+    width: min(590px, 70%);
+  }
+  .orientation-cast > header {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .orientation-cast-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .orientation-cast-grid article:last-child {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+  }
+  .orientation-cast-grid article:last-child img {
+    height: 100%;
+    border-right: 1px solid #e1e9df;
+    border-bottom: 0;
+  }
+  .orientation-method .orientation-practice {
+    grid-template-columns: 1fr;
+  }
+  .orientation-method .mode-focus {
+    min-height: 440px;
+    border-top: 1px solid #e2e8dd;
+    border-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .orientation-steps {
+    grid-template-columns: repeat(3, minmax(42px, 1fr));
+  }
+  .orientation-lesson-map {
+    min-height: 820px;
+  }
+  .orientation-lesson-map::after {
+    background: linear-gradient(180deg, rgba(255, 253, 246, .99) 0%, rgba(255, 253, 246, .92) 55%, rgba(255, 253, 246, .36) 100%);
+  }
+  .orientation-lesson-map > img {
+    object-position: 64% center;
+  }
+  .orientation-lesson-copy {
+    width: 100%;
+    padding: 32px 23px 270px;
+  }
+  .orientation-lesson-copy h2 {
+    font-size: 31px;
+  }
+  .orientation-lesson-sequence {
+    right: 17px;
+    bottom: 17px;
+    left: 17px;
+    grid-template-columns: 1fr;
+  }
+  .orientation-lesson-sequence > div {
+    min-height: 62px;
+    padding: 11px 15px;
+    border-right: 0;
+    border-bottom: 1px solid #e0e8dc;
+  }
+  .orientation-lesson-sequence > div:last-child {
+    border-bottom: 0;
+  }
+  .orientation-cast {
+    padding: 29px 20px 24px;
+  }
+  .orientation-cast-grid {
+    grid-template-columns: 1fr;
+  }
+  .orientation-cast-grid article,
+  .orientation-cast-grid article:last-child {
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: 120px 1fr;
+  }
+  .orientation-cast-grid img,
+  .orientation-cast-grid article:last-child img {
+    width: 120px;
+    height: 100%;
+    min-height: 190px;
+    border-right: 1px solid #e1e9df;
+    border-bottom: 0;
+  }
+  .orientation-cast-grid article > div {
+    min-height: 0;
+    padding: 18px;
+  }
+  .orientation-method .orientation-practice > .orientation-copy {
+    padding: 29px 22px;
+  }
+  .orientation-loop-picker {
+    grid-template-columns: 1fr;
+  }
+  .orientation-method .mode-focus {
+    min-height: 360px;
+  }
+  .orientation-method .orientation-finish > svg {
+    display: none;
+  }
+}

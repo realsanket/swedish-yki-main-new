@@ -20,6 +20,7 @@ The live Stigen application intentionally contains only **Chapter 1, Lecture 1**
 | Editable Lecture 1 source | [`site/content/lectures/lecture-01.json`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/content/lectures/lecture-01.json) |
 | Generated runtime lecture index | [`site/content/lectures/index.json`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/content/lectures/index.json) |
 | Chapter story, cast, and artwork mapping | [`site/lib/story-world.ts`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/lib/story-world.ts) |
+| Lesson 1 orientation | [`site/components/learning/CourseOrientation.tsx`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/components/learning/CourseOrientation.tsx) |
 | Lesson UI | [`site/components/learning/LecturePlayer.tsx`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/components/learning/LecturePlayer.tsx) |
 | Lesson-specific visual design | [`site/app/course.css`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/app/course.css) |
 | Template extension rules | [`site/docs/lecture-template.md`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/docs/lecture-template.md) |

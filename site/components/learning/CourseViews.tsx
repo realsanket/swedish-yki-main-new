@@ -430,8 +430,8 @@ export function CourseSyllabus({
         </span>
         <span>
           <small>BEFORE LECTURE 1 · OPTIONAL</small>
-          <b>Meet your course, characters, and practice modes</b>
-          <span>A visual four-minute introduction. Revisit it anytime.</span>
+          <b>Preview your first conversation and practice loop</b>
+          <span>A focused two-minute introduction to Lecture 1. Revisit it anytime.</span>
         </span>
         <ArrowRight size={18} />
       </button>

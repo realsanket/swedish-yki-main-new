@@ -12,6 +12,7 @@ Source-to-lecture decisions are tracked in [`../mapping.md`](../mapping.md). Fol
 - `content/lectures/lecture-01.json` — the editable Lesson 1 content.
 - `content/lectures/index.json` — the generated runtime index; currently contains only Lecture 1.
 - `lib/story-world.ts` — the Chapter 1 story, cast, and artwork lookup.
+- `components/learning/CourseOrientation.tsx` — the focused three-step entry into Lesson 1.
 - `components/learning/LecturePlayer.tsx` — the teaching flow.
 - `app/course.css` — the visual system, including the dedicated Lesson 1 workspace.
 - `docs/lecture-template.md` — the contract for extending lectures without copying Lesson 1.
