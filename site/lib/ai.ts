@@ -44,6 +44,13 @@ export const lectureCoachJsonSchema = {
 
 type Environment = Record<string, string | undefined>;
 
+type AzureConfig = {
+  baseUrl: string;
+  key: string;
+  feedbackModel: string;
+  voiceModel: string;
+};
+
 function secureEndpoint(value: string | undefined, requiredPath = ""): string | null {
   if (!value?.trim()) return null;
   try {
@@ -55,11 +62,32 @@ function secureEndpoint(value: string | undefined, requiredPath = ""): string | 
 }
 
 /** Server-only credentials. Never serialize this configuration into an API response. */
+export function getAzureConfigs(env: Environment = process.env): AzureConfig[] {
+  const feedbackModel = env.AZURE_OPENAI_FEEDBACK_MODEL?.trim() || "gpt-6-luna";
+  const voiceModel = env.AZURE_OPENAI_VOICE_MODEL?.trim() || "";
+  const candidates = [
+    {
+      baseUrl: secureEndpoint(env.AZURE_OPENAI_BASE_URL, "/openai/v1"),
+      key: env.AZURE_OPENAI_API_KEY?.trim(),
+    },
+    {
+      baseUrl: secureEndpoint(
+        env.AZURE_OPENAI_BACKUP_BASE_URL,
+        "/openai/v1",
+      ),
+      key: env.AZURE_OPENAI_BACKUP_API_KEY?.trim(),
+    },
+  ];
+  const seen = new Set<string>();
+  return candidates.flatMap(({ baseUrl, key }) => {
+    if (!baseUrl || !key || seen.has(baseUrl)) return [];
+    seen.add(baseUrl);
+    return [{ baseUrl, key, feedbackModel, voiceModel }];
+  });
+}
+
 export function getAzureConfig(env: Environment = process.env) {
-  const baseUrl = secureEndpoint(env.AZURE_OPENAI_BASE_URL, "/openai/v1");
-  const key = env.AZURE_OPENAI_API_KEY?.trim();
-  if (!baseUrl || !key) return null;
-  return { baseUrl, key, feedbackModel: env.AZURE_OPENAI_FEEDBACK_MODEL?.trim() || "gpt-5.6-luna", voiceModel: env.AZURE_OPENAI_VOICE_MODEL?.trim() || "" };
+  return getAzureConfigs(env)[0] ?? null;
 }
 
 export function getSpeechConfig(env: Environment = process.env) {
@@ -152,6 +180,13 @@ export async function readLimitedBody(request: Request, limit: number): Promise<
   return body;
 }
 
+class ProviderRequestError extends Error {
+  constructor(message: string, readonly retryable: boolean) {
+    super(message);
+    this.name = "ProviderRequestError";
+  }
+}
+
 async function providerRequest(url: string, headers: Record<string, string>, body: string | FormData): Promise<unknown> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 45_000);
@@ -161,19 +196,46 @@ async function providerRequest(url: string, headers: Record<string, string>, bod
       headers: { ...headers, ...(typeof body === "string" ? { "Content-Type": "application/json" } : {}) },
       body, signal: controller.signal,
     });
-    if (!response.ok) throw new Error(response.status === 429 ? "The AI service is busy or its quota is exhausted. Try again later; your draft is safe." : "The AI service could not complete this request. Your draft is safe. Try again later.");
+    if (!response.ok) {
+      await response.body?.cancel();
+      throw new ProviderRequestError(
+        response.status === 429
+          ? "The AI service is busy or its quota is exhausted. Try again later; your draft is safe."
+          : "The AI service could not complete this request. Your draft is safe. Try again later.",
+        response.status === 401 ||
+          response.status === 403 ||
+          response.status === 404 ||
+          response.status === 408 ||
+          response.status === 409 ||
+          response.status === 429 ||
+          response.status >= 500,
+      );
+    }
     return await response.json();
   } catch (error) {
-    if (error instanceof Error && error.name === "AbortError") throw new Error("AI feedback timed out. Your draft is safe. Please retry.");
+    if (error instanceof ProviderRequestError) throw error;
+    if (error instanceof Error && error.name === "AbortError") throw new ProviderRequestError("AI feedback timed out. Your draft is safe. Please retry.", true);
     if (error instanceof Error && error.message.startsWith("The AI service")) throw error;
-    throw new Error("The AI service could not be reached. Your draft is safe. Try again later.");
+    throw new ProviderRequestError("The AI service could not be reached. Your draft is safe. Try again later.", true);
   } finally { clearTimeout(timer); }
 }
 
 export async function callOpenAI(path: "responses" | "audio/transcriptions", body: string | FormData): Promise<unknown> {
-  const azure = getAzureConfig();
+  const azureConfigs = getAzureConfigs();
   // Recorded audio uses Azure Speech, not the unrelated GPT-Live deployment.
-  if (azure && path === "responses") return providerRequest(`${azure.baseUrl}/${path}`, { "api-key": azure.key }, body);
+  if (azureConfigs.length && path === "responses") {
+    let lastError: unknown;
+    for (const [index, azure] of azureConfigs.entries()) {
+      try {
+        return await providerRequest(`${azure.baseUrl}/${path}`, { "api-key": azure.key }, body);
+      } catch (error) {
+        lastError = error;
+        const hasFallback = index < azureConfigs.length - 1;
+        if (!(error instanceof ProviderRequestError) || !error.retryable || !hasFallback) throw error;
+      }
+    }
+    throw lastError;
+  }
   const key = process.env.OPENAI_API_KEY?.trim();
   if (!key) throw new Error("The AI service is not configured for this request.");
   return providerRequest(`https://api.openai.com/v1/${path}`, { Authorization: `Bearer ${key}` }, body);
@@ -184,7 +246,10 @@ export async function transcribeAudio(audio: File): Promise<string> {
   const form = new FormData();
   if (speech) {
     form.set("audio", audio, audio.name);
-    form.set("definition", JSON.stringify({ locales: ["sv-FI", "sv-SE"] }));
+    // This course teaches standard Swedish and its Azure voice casting uses
+    // sv-SE. Supplying an unsupported secondary locale makes the whole fast
+    // transcription request fail instead of falling back to sv-SE.
+    form.set("definition", JSON.stringify({ locales: ["sv-SE"] }));
     const result = await providerRequest(`${speech.endpoint}/speechtotext/transcriptions:transcribe?api-version=${encodeURIComponent(speech.apiVersion)}`, { "Ocp-Apim-Subscription-Key": speech.key }, form);
     const parsed = z.object({ combinedPhrases: z.array(z.object({ text: z.string() })).optional(), phrases: z.array(z.object({ text: z.string() })).optional() }).parse(result);
     const phrases = parsed.combinedPhrases?.length ? parsed.combinedPhrases : parsed.phrases ?? [];
