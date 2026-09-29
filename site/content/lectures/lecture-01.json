@@ -27,8 +27,11 @@
       "questionIntro": "Use the conversation you just heard. These two checks are about meaning, not pronunciation or grammar.",
       "sourcePractice": {
         "title": "Textbook page practice: Hej! Vad heter du?",
+        "tabLabel": "Page 4 · Hej! Vad heter du?",
+        "intro": "You already know this conversation from Elin and Alex. Now climb the same page in 5 short stages: hear it, understand it, notice its sounds, lose the text, then play a part.",
         "image": "/images/source/textbook-lesson-01.png",
         "imageAlt": "Textbook page Hej! Vad heter du? with Anna and Tomas introducing themselves, asking about origin, and noticing Swedish sound patterns",
+        "textRegion": {"top": 44, "height": 56},
         "pageLabel": "textbook physical page 4",
         "focus": ["Å, Ö, Ä", "G + Ö, Ä, Y, E, I", "SK + Ö, Ä, Y, E, I", "K + Ö, Ä, Y, E, I", "långa och korta vokaler"],
         "recallCues": [
@@ -58,15 +61,21 @@
           {"source": "Varifrån kommer du?", "natural": "Var kommer du ifrån?", "note": "Both are correct. Varifrån is the tidy written form; in everyday speech you will very often hear Var kommer du ifrån? Recognise both."}
         ],
         "backchain": {"line": 5, "chunks": ["nu", "i Finland nu", "jag bor i Finland nu", "men jag bor i Finland nu", "från USA men jag bor i Finland nu", "Jag kommer från USA men jag bor i Finland nu."]},
-        "soundSpots": [
-          {"word": "gillar", "mark": "g", "rule": "G + i, a front vowel: the Swedish j sound, so it starts like yillar."},
-          {"word": "skjorta", "mark": "skj", "rule": "Skj is always the sj sound, even before o."},
-          {"word": "skönt", "mark": "skö", "rule": "Sk + ö, a front vowel: the sj sound."},
-          {"word": "hår", "mark": "å", "rule": "Å is the real O: deep and round. A single r follows, so stretch it."},
-          {"word": "Varifrån", "mark": "å", "rule": "The same deep, round å as in från."},
-          {"word": "Kina", "mark": "K", "rule": "K + i, a front vowel: the soft tj sound."},
-          {"word": "från", "mark": "å", "rule": "Å followed by one n: a long, round å."}
-        ]
+        "hunt": {
+          "label": "Sound hunt",
+          "title": "Find the 7 words the page marks in red.",
+          "instructions": "The textbook colours the letters that change sound. Look at the page, then tap those words below. Each find reveals the Lesson 1 rule behind it.",
+          "missHint": "Look for g, k, sk, skj and å.",
+          "spots": [
+            {"word": "gillar", "mark": "g", "rule": "G + i, a front vowel: the Swedish j sound, so it starts like yillar."},
+            {"word": "skjorta", "mark": "skj", "rule": "Skj is always the sj sound, even before o."},
+            {"word": "skönt", "mark": "skö", "rule": "Sk + ö, a front vowel: the sj sound."},
+            {"word": "hår", "mark": "å", "rule": "Å is the real O: deep and round. A single r follows, so stretch it."},
+            {"word": "Varifrån", "mark": "å", "rule": "The same deep, round å as in från."},
+            {"word": "Kina", "mark": "K", "rule": "K + i, a front vowel: the soft tj sound."},
+            {"word": "från", "mark": "å", "rule": "Å followed by one n: a long, round å."}
+          ]
+        }
       },
       "dialogue": {
         "part": "recall",

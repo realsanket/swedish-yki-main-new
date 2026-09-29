@@ -42,12 +42,12 @@ export function FullCurriculum({
     >
       <header className="full-curriculum-heading">
         <div>
-          <p className="eyebrow">STIGEN · LIVE LESSON 1 CURRICULUM</p>
-          <h2>One chapter and one lecture, developed carefully.</h2>
+          <p className="eyebrow">STIGEN · LIVE CHAPTER 1 CURRICULUM</p>
+          <h2>One chapter, developed one lecture at a time.</h2>
           <p>
-            {lectures.length} live lecture in {liveModules.length} story
-            chapter. Later course material is held outside the live app while
-            Lesson 1 is improved step by step.
+            {lectures.length} live {lectures.length === 1 ? "lecture" : "lectures"} in {liveModules.length} story{" "}
+            {liveModules.length === 1 ? "chapter" : "chapters"}. Later course material is held outside the live app
+            until each lesson has been verified against its sources.
           </p>
         </div>
         <dl className="curriculum-facts">
@@ -69,7 +69,7 @@ export function FullCurriculum({
       <div className="curriculum-principle">
         <BookOpen size={18} />
         <p>
-          <b>Use only this live path.</b> Complete the six Lesson 1 steps in
+          <b>Use only this live path.</b> Complete each lecture’s six steps in
           order. Source documents support the teaching decisions, but they are
           not extra required work.
         </p>

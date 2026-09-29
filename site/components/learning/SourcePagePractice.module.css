@@ -356,7 +356,7 @@
   justify-items: center;
   gap: 6px;
   padding: 20px;
-  border-radius: 0 0 9px 9px;
+  border-radius: 8px;
   background: rgb(23, 63, 109);
   color: #fff;
   text-align: center;
@@ -365,4 +365,32 @@
   color: #d9e4f0;
   font-size: 12px;
   line-height: 1.5;
+}
+
+.setting {
+  margin: 0 0 14px;
+  padding: 8px 12px;
+  border-left: 3px solid #e2c36a;
+  background: #fffaf0;
+  color: #52665b;
+  font-size: 14px;
+}
+.setting small {
+  color: #6c7f73;
+}
+.pageSet {
+  margin: 26px auto 32px;
+  max-width: 1060px;
+}
+.pageSet > :global(.source-page-practice) {
+  margin-top: 12px;
+}
+.pageTabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.pageTabs > .eyebrow {
+  margin-right: 6px;
 }

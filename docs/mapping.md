@@ -4,11 +4,11 @@ This file is the curriculum handoff for humans and AI agents. It records what ha
 
 ## Active course scope
 
-- **Live total:** 1 lecture.
-- **Live structure:** Chapter 1 contains Lecture 1 only.
+- **Live total:** 2 lectures.
+- **Live structure:** Chapter 1 contains Lectures 1 and 2.
 - **Source spine:** 51 dated teacher lessons in `docs/Group 3.md`, supported first by `docs/text-book-images/text-book.pdf` and later by the YKI preparation book.
-- **Current method:** improve Lecture 1 one teaching step at a time. Do not activate a later lecture or chapter until the user explicitly changes the scope.
-- **Backup:** the former Lectures 2–60, 12-chapter plan, later story registry, and later artwork are in `backup/future-course-2026-09-29/`.
+- **Current method:** improve the live lectures one teaching step at a time. Do not activate Lecture 3 or a later chapter until the user explicitly changes the scope.
+- **Backup:** the former Lectures 2–60, 12-chapter plan, later story registry, and later artwork are in `backup/future-course-2026-09-29/`. The old backup Lecture 2 (names and spelling) did not match teacher Lesson 2 and was not restored; only its Episode 2 artwork was moved back.
 - **Template rule:** Lecture 1 opts into its own content-defined presentation. Future lectures use the neutral default unless their verified material requires a different template; never branch on a lecture number.
 
 The backup is reference material, not part of the live course. Its presence must not make later chapters appear in navigation, progress totals, the curriculum page, or the generated runtime index.
@@ -105,13 +105,46 @@ There is **no verified Google Classroom homework directly attached to Lesson 1**
 
 Episode 1 therefore uses an original consolidation mission inside Stigen, clearly separated from teacher-assigned homework.
 
+## Verified pilot: Lesson 2
+
+### Source boundary
+
+| Source | Verified scope | Role |
+|---|---|---|
+| `docs/Group 3.md` | The **Lektion 2 (April 15th 2026)** section: Greeting people, Personal pronouns, Relations, Question words and the closing word list ending in **Bättre**, stopping before the **Lektion 3** heading | Primary teacher notes |
+| `docs/text-book-images/text-book.pdf` | Physical page 5, **Hej! Jag har en pojkvän!** (pronouns, relationships, how are you) and physical page 6, **Jag har en fråga...** (question words in a shop) | Both pages are confirmed by the teacher's word list: vet, måste, göra slut (page 5); ursäkta, var ligger, smakar, samma som, nästa vecka, herregud, bättre (page 6) |
+| `docs/excercise` | Assignment 1, **Homework: Personal pronouns**, posted April 15 | Belongs to Lesson 2. Its items test subject-pronoun choice (including du vs ni and de); Episode 2 prepares for it with original sentences and does not copy the Form |
+
+### Lesson 2 concept map
+
+| Teacher-note content | Episode 2 implementation | Decision |
+|---|---|---|
+| Hur är det? / Hur mår du?; bra, toppen, okej, så där, trött, dåligt, ganska | Topic 1 with a mood-meter sort | The answer mirrors the question: är det → det är, mår du → jag mår. `Jag är bra` is recognised as casual |
+| jag, du, han, hon, hen, hän, vi, ni, de /dom/ | Topic 2 with a Who-is-who match | `hen` is taught as working like Finnish `hän` (one word for he or she); du = one person, ni = two or more |
+| vän, pojkvän, flickvän, sambo, särbo, mambo, gift, man, fru, make/maka, singel, bor ensam, barn, son, dotter, bror, syster, syskon, skild, göra slut | Topic 3 with a Build-the-word match | `bo` (live) links sambo/särbo/mambo back to Lesson 1's `bor i`; mambo is labelled a joke word; gift = married vs ett gift = poison kept as a memory hook |
+| vad, hur, var, varifrån, när, varför, (vem, vilken/vilket/vilka) | Topic 4 with an Answer-detective sort | Verb-second order taught explicitly; vilken/vilket/vilka recognised only |
+| De /dom/ | Topic 5, spoken forms | Extended to the common reductions dom, ja, e, de, va (recognition only; write full forms) |
+| Closing word list | Word bank and page 6 glossary | Words are taught where the source page uses them |
+
+### Accuracy decisions
+
+- The teacher's `Hän – in Finnish-Swedish` note is presented as a memory bridge: Swedish `hen` works like Finnish `hän`. Finland-Swedish does not use `hän` as a Swedish pronoun.
+- `Normal mjölk` on page 6 is recognised; `vanlig mjölk` is produced.
+- `Var ligger …?` is taught for the location of things.
+- Page 5's adult affair plot stays inside the textbook practice only. The learner-facing Episode 2 story is original: Elin and Alex at a class break, Alex's sister Priya and brother Rohan (off-screen), Elin's partner Mikko (off-screen), and Henrik greeting the class with `Hur mår ni?`. No new recurring character was added.
+
+### Homework decision
+
+**Homework: Personal pronouns** maps to Episode 2. The guided and checkpoint items practise the same choices (de for two others, ni for two listeners) with original sentences.
+
 ## Chapter 1 status
 
 | Lecture | Live role | Source-alignment status |
 |---|---|---|
 | 1 | Introduce yourself and hear Swedish sounds | **Verified and revised from Lesson 1** |
+| 2 | How are you? People and questions | **Verified and built from Lesson 2 and textbook pages 5–6** |
 
-The former Lectures 2–5 are not live Chapter 1 content. Their files are preserved with the rest of the future-course backup.
+The former Lectures 3–5 are not live Chapter 1 content. Their files are preserved with the rest of the future-course backup.
 
 ## Episode 1 implementation record
 
@@ -134,4 +167,4 @@ The former Lectures 2–5 are not live Chapter 1 content. Their files are preser
 
 ## Next safe step
 
-Improve only **Lektion 1 / Lecture 1**. Choose one visible teaching step, compare it with the verified teacher-note and textbook boundary above, improve it, and test it in the running UI. Do not restore Lecture 2 or any later chapter without an explicit user request.
+Improve Lecture 1 or 2 one visible teaching step at a time, comparing each change with its verified boundary above. Do not activate Lecture 3 or any later chapter without an explicit user request.

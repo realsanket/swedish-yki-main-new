@@ -367,11 +367,11 @@ export function CourseSyllabus({
         <div>
           <p className="eyebrow">DIN BERÄTTELSESTIG · YOUR STORY PATH</p>
           <h1>
-            One chapter. One lesson to improve carefully.
+            One chapter, built one lesson at a time.
           </h1>
           <p>
-            Lecture 1 begins with a useful conversation and then teaches its
-            sound patterns in small steps. The level label describes the
+            Each lecture begins with a useful conversation and then teaches
+            its patterns in small steps. The level label describes the
             starting point, not a certified result.
           </p>
         </div>
@@ -414,10 +414,9 @@ export function CourseSyllabus({
       <div className="course-note">
         <BookOpen size={20} />
         <p>
-          Work through the six Lesson 1 steps in order. English support stays
-          available while you listen, notice, speak, and retrieve the four core
-          introduction lines. A0 means our complete-beginner starting point
-          (Pre-A1).
+          Work through each lecture’s six steps in order. English support stays
+          available while you listen, notice, speak, and retrieve the core
+          lines. A0 means our complete-beginner starting point (Pre-A1).
         </p>
       </div>
       <button

@@ -46,7 +46,7 @@ import PracticeStudio from "./PracticeStudio";
 import QuestionCard from "./QuestionCard";
 import EpisodeBrief from "./EpisodeBrief";
 import IntroductionBuilder from "./IntroductionBuilder";
-import SourcePagePractice from "./SourcePagePractice";
+import { SourcePagePracticeSet } from "./SourcePagePractice";
 import TeachingActivity, { DEFAULT_ACTIVITY_LABEL } from "./activities/TeachingActivity";
 import StoryScene from "./StoryScene";
 import { StoryAvatar } from "./StoryAvatar";
@@ -225,7 +225,8 @@ export default function LecturePlayer({
   const presentation = lecture.presentation;
   const opening = presentation?.opening;
   const dialoguePresentation = opening?.dialogue;
-  const sourcePractice = opening?.sourcePractice;
+  const sourcePages =
+    opening?.sourcePractices ?? (opening?.sourcePractice ? [opening.sourcePractice] : []);
   const dialoguePart = dialoguePresentation?.part ?? "teach";
   const teachingPresentation = presentation?.teaching;
   const templateClass = `lecture-template-${presentation?.template ?? "standard"}`;
@@ -867,7 +868,7 @@ export default function LecturePlayer({
               )}
               {/* The verified source page follows the meaning checks so it never
                   interrupts the listen → check sequence of the adapted scene. */}
-              {sourcePractice && <SourcePagePractice practice={sourcePractice} />}
+              {sourcePages.length > 0 && <SourcePagePracticeSet pages={sourcePages} />}
             </>
           )}
           {part === "teach" && (

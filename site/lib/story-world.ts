@@ -46,7 +46,7 @@ export const storyChapters: Record<number, StoryChapter> = {
     title: "The first class",
     setting: "A community class and a first Swedish conversation",
     summary:
-      "Alex meets Elin and learns to share a name, home, origin, and languages before noticing the sounds inside those useful phrases.",
+      "Alex meets Elin and learns to share a name, home, origin, and languages before noticing the sounds inside those useful phrases. At the next class break they talk about how they feel and the people in their lives.",
     cast: ["Alex", "Elin", "Henrik"],
     art: "/images/story/chapters/chapter-01-first-class.webp",
   },
@@ -75,10 +75,12 @@ export function storyCharacterForSpeaker(speaker: string) {
 
 const episodeArtwork: Record<number, string> = {
   1: "episode-01-sound-workshop.webp",
+  2: "episode-02-names-at-break.webp",
 };
 
 const episodeObjects: Record<number, string> = {
   1: "sound cards",
+  2: "family photos on a phone",
 };
 
 export function storyArtForLecture(lectureNumber: number) {

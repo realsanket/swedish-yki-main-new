@@ -75,7 +75,7 @@ export default function SortActivity({ activity }: { activity: SortActivityData 
         ))}
       </div>
       <div className={styles.sortCard}>
-        <span className={styles.counter}>Word {position + 1} of {order.length}</span>
+        <span className={styles.counter}>Card {position + 1} of {order.length}</span>
         <p className={styles.sortWord}>
           <MarkedWord text={item.fi} mark={item.mark} className={styles.mark} />
         </p>
@@ -112,7 +112,7 @@ export default function SortActivity({ activity }: { activity: SortActivityData 
             <b>{choice === item.bucket ? "Yes." : `It is ${bucketLabel(item.bucket)}.`}</b> {item.why}
           </p>
           <button type="button" className="primary" onClick={() => setPosition((value) => value + 1)}>
-            {position + 1 < order.length ? "Next word →" : "See my result →"}
+            {position + 1 < order.length ? "Next card →" : "See my result →"}
           </button>
         </div>
       )}

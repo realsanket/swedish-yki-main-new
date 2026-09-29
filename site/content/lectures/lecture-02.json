@@ -1,0 +1,638 @@
+{
+  "number": 2,
+  "routeProfile": "standard",
+  "objectives": [
+    "Ask and answer how someone is, then send the question back with Och du?",
+    "Talk about the people in your life with jag, du, han, hon, hen, vi, ni and de.",
+    "Ask the next question with vad, hur, var, varifrån, när, varför and vem, keeping the verb second."
+  ],
+  "focusSkills": ["listening", "speaking"],
+  "presentation": {
+    "template": "conversation-first",
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen first, answer two meaning checks, then work through the two textbook pages."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "One small idea at a time: how you feel, pronouns, people in your life, questions, and spoken forms."
+      }
+    },
+    "opening": {
+      "teacherNote": {
+        "title": "Listen for feelings and people",
+        "body": "Do not translate every word. On the first listen, catch only two things: how Elin feels, and who the people on Alex's phone are."
+      },
+      "questionIntro": "Use the conversation you just heard. Both checks are about meaning.",
+      "dialogue": {
+        "part": "recall",
+        "eyebrow": "START WITH THE STORY",
+        "title": "A break in class",
+        "instructions": "Listen once without text. Then open the Swedish and copy one line that you could say today.",
+        "initiallyOpen": false
+      },
+      "sourcePractices": [
+        {
+          "title": "Textbook page practice: Hej! Jag har en pojkvän!",
+          "tabLabel": "Page 5 · Hej! Jag har en pojkvän!",
+          "intro": "A short drama with every pronoun from today. Follow who han, hon and de point to, and the story makes sense.",
+          "image": "/images/source/textbook-lesson-02-page-05.png",
+          "imageAlt": "Textbook page Hej! Jag har en pojkvän! where Nora and Maria talk about Nora's new boyfriend, with the personal pronouns marked in red",
+          "textRegion": {"top": 22, "height": 30},
+          "pageLabel": "textbook physical page 5",
+          "focus": ["jag", "du", "han, hon, hen", "vi", "ni", "de"],
+          "recallCues": [
+            "Nora greets Maria and asks how it is going.",
+            "Maria is fine and returns the question.",
+            "Nora feels great: she has a new boyfriend called Andreas.",
+            "Maria: he has a wife called Lena, and they have two children.",
+            "Nora asks how Maria knows that.",
+            "Maria: Lena is her friend.",
+            "Nora does not feel so good: they must break up."
+          ],
+          "lines": [
+            {"speaker": "Nora", "voice": "Elin", "fi": "Hej, Maria! Hur är det?", "en": "Hi, Maria! How's it going?", "glossary": [{"fi": "Hur är det?", "en": "How's it going?"}]},
+            {"speaker": "Maria", "voice": "Maja", "fi": "Hej, jag mår bra. Och du?", "en": "Hi, I'm fine. And you?", "glossary": [{"fi": "jag mår bra", "en": "I'm fine / I feel good"}]},
+            {"speaker": "Nora", "voice": "Elin", "fi": "Jag mår toppen! Jag har en ny pojkvän! Han heter Andreas!", "en": "I feel great! I have a new boyfriend! His name is Andreas!", "glossary": [{"fi": "toppen", "en": "great"}, {"fi": "ny", "en": "new"}, {"fi": "pojkvän", "en": "boyfriend (pojke + vän)"}, {"fi": "han", "en": "he"}]},
+            {"speaker": "Maria", "voice": "Maja", "fi": "Han har en fru... Hon heter Lena. De har två barn, Nils och Jonas.", "en": "He has a wife... Her name is Lena. They have two children, Nils and Jonas.", "glossary": [{"fi": "fru", "en": "wife"}, {"fi": "hon", "en": "she"}, {"fi": "de", "en": "they (said dom)"}, {"fi": "två barn", "en": "two children"}]},
+            {"speaker": "Nora", "voice": "Elin", "fi": "Hur vet du det?", "en": "How do you know that?", "glossary": [{"fi": "vet", "en": "know(s)"}, {"fi": "det", "en": "it; that"}]},
+            {"speaker": "Maria", "voice": "Maja", "fi": "Hon är min vän.", "en": "She is my friend.", "glossary": [{"fi": "min vän", "en": "my friend"}]},
+            {"speaker": "Nora", "voice": "Elin", "fi": "Jag mår inte så bra. Vi måste göra slut!", "en": "I don't feel so good. We have to break up!", "glossary": [{"fi": "inte så bra", "en": "not so good"}, {"fi": "vi", "en": "we"}, {"fi": "måste", "en": "must; have to"}, {"fi": "göra slut", "en": "break up (literally: do end)"}]}
+          ],
+          "listenQuestions": [
+            {"prompt": "How does Maria feel at the start?", "options": ["Fine", "Tired", "Bad"], "answer": 0, "explanation": "Maria says Jag mår bra: I'm fine."},
+            {"prompt": "Who is Andreas?", "options": ["Nora's new boyfriend", "Maria's brother", "Nora's husband"], "answer": 0, "explanation": "Jag har en ny pojkvän! Han heter Andreas!"},
+            {"prompt": "How does Maria know about Lena?", "options": ["Lena is her friend", "Lena is her sister", "She saw them in a café"], "answer": 0, "explanation": "Hon är min vän: hon points back to Lena."},
+            {"prompt": "How does Nora feel at the end?", "options": ["Not so good", "Great", "Tired"], "answer": 0, "explanation": "Jag mår inte så bra. Her mood goes from toppen to inte så bra."}
+          ],
+          "naturalNotes": [
+            {"source": "De har två barn.", "natural": "Dom har två barn.", "note": "This is how it sounds, not how to write it. Always write de; expect to hear dom."}
+          ],
+          "backchain": {"line": 3, "chunks": ["Nils och Jonas", "två barn, Nils och Jonas", "De har två barn, Nils och Jonas."]},
+          "hunt": {
+            "label": "Pronoun hunt",
+            "title": "Find the 6 pronouns the page marks in red.",
+            "instructions": "This page colours the pronouns. Tap each one below and see who it points to: that is the whole story.",
+            "missHint": "Look for small words that stand for people: jag, du, han, hon, vi, de.",
+            "spots": [
+              {"word": "jag", "mark": "jag", "rule": "Jag: the speaker. Maria talks about herself."},
+              {"word": "du", "mark": "du", "rule": "Du: one listener. Maria asks Nora back."},
+              {"word": "Han", "mark": "Han", "rule": "Han: he. It points to Andreas."},
+              {"word": "Hon", "mark": "Hon", "rule": "Hon: she. It points to Lena, both in Hon heter Lena and in Hon är min vän."},
+              {"word": "De", "mark": "De", "rule": "De (said dom): they. Andreas and Lena together."},
+              {"word": "Vi", "mark": "Vi", "rule": "Vi: we. Nora and Andreas, who must break up."}
+            ]
+          }
+        },
+        {
+          "title": "Textbook page practice: Jag har en fråga...",
+          "tabLabel": "Page 6 · Jag har en fråga...",
+          "intro": "Maria asks questions in a shop. Every question word from today appears once, and the seller has an answer for everything.",
+          "setting": {"fi": "Maria köper mat på en affär.", "en": "Maria is buying food in a shop."},
+          "image": "/images/source/textbook-lesson-02-page-06.png",
+          "imageAlt": "Textbook page Jag har en fråga... where Maria asks a shop seller about milk, with the question words marked in red",
+          "textRegion": {"top": 17, "height": 40},
+          "pageLabel": "textbook physical page 6",
+          "focus": ["vad?", "hur?", "var?", "när?", "varför?"],
+          "recallCues": [
+            "Maria says excuse me and asks where the fat-free milk is.",
+            "The seller: it is sold out, asks why she buys ordinary milk, and says vegan milk is better.",
+            "Maria asks how vegan milk tastes.",
+            "The seller: the same as ordinary milk; the seller is vegan and likes it.",
+            "Maria is not sure and asks when normal milk comes.",
+            "The seller: next week.",
+            "Maria: oh my goodness, what shall I do?"
+          ],
+          "lines": [
+            {"speaker": "Maria", "voice": "Maja", "fi": "Hej, ursäkta, var ligger mjölk utan fett?", "en": "Hi, excuse me, where is the milk without fat?", "glossary": [{"fi": "ursäkta", "en": "excuse me"}, {"fi": "var ligger …?", "en": "where is …? (for things)"}, {"fi": "mjölk", "en": "milk"}, {"fi": "utan fett", "en": "without fat"}]},
+            {"speaker": "Säljare", "voice": "Henrik", "fi": "Den är slut. Men varför köper du vanlig mjölk? Vegansk mjölk är bättre!", "en": "It's sold out. But why are you buying ordinary milk? Vegan milk is better!", "glossary": [{"fi": "säljare", "en": "seller; shop assistant"}, {"fi": "den är slut", "en": "it's sold out / all gone"}, {"fi": "vanlig", "en": "ordinary; regular"}, {"fi": "bättre", "en": "better"}]},
+            {"speaker": "Maria", "voice": "Maja", "fi": "Hur smakar vegansk mjölk?", "en": "How does vegan milk taste?", "glossary": [{"fi": "smakar", "en": "tastes"}]},
+            {"speaker": "Säljare", "voice": "Henrik", "fi": "Samma som vanlig mjölk. Jag är vegan och jag gillar den.", "en": "The same as ordinary milk. I'm vegan and I like it.", "glossary": [{"fi": "samma som", "en": "the same as"}, {"fi": "den", "en": "it (the milk)"}]},
+            {"speaker": "Maria", "voice": "Maja", "fi": "Jag vet inte... När kommer normal mjölk?", "en": "I don't know... When is normal milk coming?", "glossary": [{"fi": "jag vet inte", "en": "I don't know"}]},
+            {"speaker": "Säljare", "voice": "Henrik", "fi": "Nästa vecka.", "en": "Next week.", "glossary": [{"fi": "nästa vecka", "en": "next week"}]},
+            {"speaker": "Maria", "voice": "Maja", "fi": "Herregud! Vad ska jag göra?", "en": "Oh my goodness! What shall I do?", "glossary": [{"fi": "Herregud!", "en": "Oh my goodness!"}, {"fi": "Vad ska jag göra?", "en": "What shall I do?"}]}
+          ],
+          "listenQuestions": [
+            {"prompt": "Where is Maria?", "options": ["In a shop", "At home", "In a café"], "answer": 0, "explanation": "Maria köper mat på en affär: she is buying food in a shop."},
+            {"prompt": "What is Maria looking for?", "options": ["Milk without fat", "Vegan milk", "Coffee"], "answer": 0, "explanation": "Var ligger mjölk utan fett?"},
+            {"prompt": "What does the seller think?", "options": ["Vegan milk is better", "Ordinary milk is better", "All milk tastes bad"], "answer": 0, "explanation": "Vegansk mjölk är bättre!"},
+            {"prompt": "When does ordinary milk come back?", "options": ["Next week", "Today", "Never"], "answer": 0, "explanation": "Nästa vecka: next week."}
+          ],
+          "naturalNotes": [
+            {"source": "När kommer normal mjölk?", "natural": "När kommer vanlig mjölk?", "note": "Normal is understood, but vanlig (ordinary, regular) is the everyday word, and the seller has already used it."},
+            {"source": "Var ligger mjölk utan fett?", "natural": "Ursäkta, var ligger mjölken?", "note": "Var ligger …? asks where a thing is. It is polite with ursäkta first. The -en ending (the milk) comes in a later lesson; recognise it for now."}
+          ],
+          "backchain": {"line": 0, "chunks": ["utan fett", "mjölk utan fett", "var ligger mjölk utan fett?", "ursäkta, var ligger mjölk utan fett?", "Hej, ursäkta, var ligger mjölk utan fett?"]},
+          "hunt": {
+            "label": "Question hunt",
+            "title": "Find the 5 question words the page marks in red.",
+            "instructions": "Every question on this page starts with a question word, and the verb follows right after it. Tap each one and see what it asks for.",
+            "missHint": "Look at the first word of each question: they start with v or h.",
+            "spots": [
+              {"word": "var", "mark": "var", "rule": "Var: where. Var ligger …? asks where a thing is."},
+              {"word": "varför", "mark": "varför", "rule": "Varför: why. The seller asks for a reason."},
+              {"word": "Hur", "mark": "Hur", "rule": "Hur: how. Hur smakar …? asks how something tastes."},
+              {"word": "När", "mark": "När", "rule": "När: when. The answer is a time: nästa vecka."},
+              {"word": "Vad", "mark": "Vad", "rule": "Vad: what. Vad ska jag göra? What shall I do?"}
+            ]
+          }
+        }
+      ]
+    },
+    "teaching": {
+      "livePractice": [
+        {"sectionTitle": "How are you? Pick an honest answer", "mode": "conversation"},
+        {"sectionTitle": "People in your life: family and relationships", "mode": "conversation"},
+        {"sectionTitle": "Question words: ask the next question", "mode": "conversation"},
+        {"sectionTitle": "Hear it the way people say it", "mode": "pronunciation"}
+      ],
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the complete Lesson 2 word bank"
+      },
+      "resourceIntro": {
+        "eyebrow": "OPTIONAL WORD CHECK",
+        "title": "Check one word, then return",
+        "body": "Look up a single word from today, read its meaning, and come back to say it in one of your own sentences."
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": ["LEKTION 2", "15 APRIL 2026"],
+      "kicker": "HOW ARE YOU, AND WHO ARE THEY?",
+      "title": "Hur är det?",
+      "lede": "Say how you really are, talk about the people in your life, and ask the next question.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Hur mår du?",
+        "en": "How are you?",
+        "audioText": "Hej Alex! Hur är det? Det är bra, tack. Och du?"
+      },
+      "speakers": [
+        {"name": "Elin", "fi": "Hej Alex! Hur är det?"},
+        {"name": "Alex", "fi": "Det är bra, tack. Och du?"}
+      ],
+      "connector": "HUR?",
+      "encounterLabel": "Elin and Alex at the class break",
+      "chunks": [
+        {"label": "HOW YOU ARE", "fi": "Jag mår bra.", "en": "I'm fine."},
+        {"label": "PEOPLE", "fi": "Hon heter …", "en": "Her name is …"},
+        {"label": "RELATIONSHIPS", "fi": "Jag är sambo.", "en": "I live with my partner."},
+        {"label": "QUESTIONS", "fi": "Var? När? Varför?", "en": "Where? When? Why?"}
+      ],
+      "footerTags": ["Answer, then ask back", "Point with pronouns"]
+    }
+  },
+  "recall": [
+    {
+      "id": "sv-02-notice-feeling",
+      "prompt": "How does Elin feel?",
+      "answers": ["So-so: a little tired"],
+      "options": ["So-so: a little tired", "Great", "Very bad"],
+      "hint": "Listen for Så där.",
+      "explanation": "Elin says Så där. Jag är lite trött: so-so, I'm a little tired."
+    },
+    {
+      "id": "sv-02-notice-people",
+      "prompt": "Who are Priya and Rohan?",
+      "answers": ["Alex's sister and brother"],
+      "options": ["Alex's sister and brother", "Elin's children", "Two classmates"],
+      "hint": "Listen for syster and bror.",
+      "explanation": "Det är min syster. Hon heter Priya. Han är min bror, Rohan."
+    }
+  ],
+  "sections": [
+    {
+      "title": "How are you? Pick an honest answer",
+      "kind": "scene",
+      "body": [
+        "Two everyday ways to ask: Hur är det? (How's it going?) and Hur mår du? (How are you feeling?). Both are friendly and fine with anyone.",
+        "Answer with the verb you hear: Hur är det? → Det är bra. Hur mår du? → Jag mår bra. You will also hear Jag är bra in casual speech.",
+        "Then send the question back with Och du?, the same move you learned in Lesson 1."
+      ],
+      "examples": [
+        {"fi": "Hur är det? — Det är bra, tack.", "en": "How's it going? — It's good, thanks.", "note": "är det → det är: the answer mirrors the question."},
+        {"fi": "Hur mår du? — Jag mår toppen!", "en": "How are you? — I feel great!", "note": "Toppen means great, top."},
+        {"fi": "Så där. Jag är lite trött.", "en": "So-so. I'm a little tired.", "note": "Lite from Lesson 1 makes it softer."},
+        {"fi": "Jag mår ganska dåligt.", "en": "I feel pretty bad.", "note": "Ganska means pretty, rather."},
+        {"fi": "Jag mår inte så bra.", "en": "I don't feel so good.", "note": "Inte (not) comes right after mår."}
+      ],
+      "table": {
+        "headings": ["Feeling", "Swedish", "English"],
+        "rows": [
+          ["great", "Toppen! · Jag mår toppen.", "Great! · I feel great."],
+          ["good", "Jag mår bra. · Det är bra.", "I'm fine. · It's good."],
+          ["okay", "Jag mår okej. · Så där.", "I'm okay. · So-so."],
+          ["low", "Jag är trött. · Jag mår inte så bra.", "I'm tired. · I don't feel so good."],
+          ["bad", "Jag mår dåligt. · Jag mår ganska dåligt.", "I feel bad. · I feel pretty bad."]
+        ]
+      },
+      "memoryTip": "Mirror the question: är det → det är; mår du → jag mår. Then bounce it back: Och du?",
+      "tryIt": "Answer Hur mår du? three times: once how you really feel today, once great, once tired. End every answer with Och du?",
+      "activity": {
+        "type": "sort",
+        "label": "Mood meter",
+        "title": "Where does each answer sit on the mood meter?",
+        "instructions": "Read or hear each answer and place it on the meter. There is no wrong mood, only the right words for it.",
+        "buckets": [
+          {"id": "great", "label": "Great", "hint": "top of the meter"},
+          {"id": "good", "label": "Good", "hint": "fine, all right"},
+          {"id": "okay", "label": "Okay", "hint": "so-so, in the middle"},
+          {"id": "low", "label": "Not good", "hint": "tired, bad"}
+        ],
+        "items": [
+          {"fi": "Toppen!", "en": "Great!", "bucket": "great", "why": "Toppen is the top of the meter."},
+          {"fi": "Jag mår bra.", "en": "I'm fine.", "bucket": "good", "why": "Bra means good or fine."},
+          {"fi": "Det är bra.", "en": "It's good.", "bucket": "good", "why": "The answer to Hur är det? Same mood as Jag mår bra."},
+          {"fi": "Så där.", "en": "So-so.", "bucket": "okay", "why": "Så där is the middle: not good, not bad."},
+          {"fi": "Jag mår okej.", "en": "I'm okay.", "bucket": "okay", "why": "Okej is okay, the middle of the meter."},
+          {"fi": "Jag är trött.", "en": "I'm tired.", "bucket": "low", "why": "Trött means tired: lower on the meter."},
+          {"fi": "Jag mår dåligt.", "en": "I feel bad.", "bucket": "low", "why": "Dåligt means bad."},
+          {"fi": "Jag mår toppen.", "en": "I feel great.", "bucket": "great", "why": "Jag mår + toppen: great."},
+          {"fi": "Jag mår inte så bra.", "en": "I don't feel so good.", "bucket": "low", "why": "Inte så bra: not so good."},
+          {"fi": "Jag mår ganska dåligt.", "en": "I feel pretty bad.", "bucket": "low", "why": "Ganska dåligt: pretty bad."}
+        ],
+        "summary": "Pick the answer that is true, then ask back with Och du? Honest answers make better conversations than always saying bra."
+      }
+    },
+    {
+      "title": "Pronouns: point to people without names",
+      "kind": "rule",
+      "body": [
+        "Swedish subject pronouns: jag (I), du (you, one person), han (he), hon (she), hen (they, one person), vi (we), ni (you, two or more), de (they).",
+        "Count the people for you: du is one person, ni is two or more. Modern Swedish uses du with almost everyone, including teachers and shop staff.",
+        "Hen is one word for a person without saying he or she, just like Finnish hän. De is written de but said dom."
+      ],
+      "examples": [
+        {"fi": "Det är Priya. Hon är min syster.", "en": "That's Priya. She is my sister.", "note": "Hon points back to Priya."},
+        {"fi": "Det är Rohan. Han bor i Indien.", "en": "That's Rohan. He lives in India.", "note": "Han points back to Rohan."},
+        {"fi": "Kim är min vän. Hen talar svenska.", "en": "Kim is my friend. They speak Swedish.", "note": "Hen: one person, no he or she."},
+        {"fi": "Hej Alex och Elin! Hur mår ni?", "en": "Hi Alex and Elin! How are you (both)?", "note": "Two people, so ni."},
+        {"fi": "Priya och Rohan? De bor i Indien.", "en": "Priya and Rohan? They live in India.", "note": "Write de, say dom."}
+      ],
+      "table": {
+        "headings": ["Pronoun", "Who", "Memory bridge (Hindi · Marathi)"],
+        "rows": [
+          ["jag", "I", "मैं · मी"],
+          ["du", "you, one person", "तू / तुम · तू"],
+          ["han", "he", "वह · तो"],
+          ["hon", "she", "वह · ती"],
+          ["hen", "they, one person, no he/she", "like Finnish hän"],
+          ["vi", "we", "हम · आम्ही"],
+          ["ni", "you, two or more", "तुम लोग · तुम्ही"],
+          ["de (said dom)", "they, two or more", "वे · ते"]
+        ]
+      },
+      "memoryTip": "Ni is like Marathi तुम्ही: more than one person. Hen is like Finnish hän: one word for he or she.",
+      "tryIt": "Look at three photos on your phone. For each, say one pronoun sentence aloud: Hon heter … · Han bor i … · De bor i …",
+      "activity": {
+        "type": "match",
+        "label": "Who is who?",
+        "title": "Match each person or group to its pronoun",
+        "instructions": "Read who is meant on the left and choose the pronoun that points to them. Count the people for du and ni.",
+        "leftLabel": "Who is meant",
+        "rightLabel": "Pronoun",
+        "pairs": [
+          {"left": "Alex, talking about himself", "right": "jag"},
+          {"left": "Elin, when Alex talks to her", "right": "du"},
+          {"left": "Rohan, when Alex talks about him", "right": "han"},
+          {"left": "Priya, when Alex talks about her", "right": "hon"},
+          {"left": "Kim, who is neither he nor she", "right": "hen"},
+          {"left": "Alex and I", "right": "vi"},
+          {"left": "you and Elin, when Henrik asks", "right": "ni"},
+          {"left": "Priya and Rohan", "right": "de"}
+        ],
+        "pattern": "Jag, du, vi and ni include the speaker or the listener; han, hon, hen and de point to someone else. Du and ni both mean you, so count the people. Write de, say dom."
+      }
+    },
+    {
+      "title": "People in your life: family and relationships",
+      "kind": "scene",
+      "body": [
+        "Build family sentences with Jag har … (I have) and Jag är … (I am): Jag har en syster. Jag är gift.",
+        "Swedish glues words together: pojke + vän = pojkvän (boyfriend), flicka + vän = flickvän (girlfriend). Bo means live, as in Jag bor i: a sambo lives together with a partner, a särbo lives apart.",
+        "Useful status words: gift (married), sambo, singel, skild (divorced), and Jag bor ensam (I live alone). Barn means child or children; syskon means brothers and sisters together."
+      ],
+      "examples": [
+        {"fi": "Jag har en syster och en bror.", "en": "I have a sister and a brother.", "note": "En before one person: en syster, en bror."},
+        {"fi": "Jag är sambo. Han heter Mikko.", "en": "I live with my partner. His name is Mikko.", "note": "Sambo: partners who live together without being married. Very common in Finland and Sweden."},
+        {"fi": "Jag är gift. Jag har en fru.", "en": "I'm married. I have a wife.", "note": "Man = husband, fru = wife. Make and maka are formal words for spouse."},
+        {"fi": "Jag är singel och jag bor ensam.", "en": "I'm single and I live alone.", "note": "Ensam = alone."},
+        {"fi": "De har två barn, en son och en dotter.", "en": "They have two children, a son and a daughter.", "note": "Barn is both child and children."}
+      ],
+      "table": {
+        "headings": ["Swedish", "English", "Say it"],
+        "rows": [
+          ["vän", "friend", "Hon är min vän."],
+          ["pojkvän · flickvän", "boyfriend · girlfriend", "Jag har en flickvän."],
+          ["sambo", "partner you live with", "Jag är sambo med Mikko."],
+          ["särbo", "partner who lives apart", "Han är min särbo."],
+          ["gift · man · fru", "married · husband · wife", "Jag är gift. Jag har en man."],
+          ["singel · skild", "single · divorced", "Jag är singel."],
+          ["bror · syster · syskon", "brother · sister · siblings", "Har du syskon?"],
+          ["barn · son · dotter", "child(ren) · son · daughter", "Jag har en dotter."]
+        ]
+      },
+      "memoryTip": "Bo = live. Jag bor i … (Lesson 1) → sambo (live together) → särbo (live apart). And a classic joke: gift means married, but ett gift is poison.",
+      "tryIt": "Say three true sentences about people in your life: one with Jag har …, one with Jag är …, and one with Hon heter … or Han heter …",
+      "activity": {
+        "type": "match",
+        "label": "Build the word",
+        "title": "Glue the parts into one Swedish word",
+        "instructions": "Swedish builds new words by joining old ones. Match each pair of parts to the word it makes.",
+        "leftLabel": "Parts",
+        "rightLabel": "Swedish word",
+        "pairs": [
+          {"left": "pojke (boy) + vän", "right": "pojkvän", "note": "boyfriend"},
+          {"left": "flicka (girl) + vän", "right": "flickvän", "note": "girlfriend"},
+          {"left": "sam (together) + bo (live)", "right": "sambo", "note": "partner you live with"},
+          {"left": "sär (apart) + bo (live)", "right": "särbo", "note": "partner who lives apart"},
+          {"left": "mamma + bo (live)", "right": "mambo", "note": "a joke word: an adult who still lives with their parents"}
+        ],
+        "pattern": "Knowing just vän (friend) and bo (live) unlocks five relationship words. Notice that pojke and flicka lose their last letter when they join vän."
+      }
+    },
+    {
+      "title": "Question words: ask the next question",
+      "kind": "rule",
+      "body": [
+        "Vad = what, hur = how, var = where, varifrån = where from, när = when, varför = why, vem = who.",
+        "Word order: question word → verb → person. Var bor du? När kommer de? The verb always comes second.",
+        "A yes/no question starts with the verb itself: Är du gift? Har du syskon? Talar du svenska? Vilken, vilket and vilka (which) come in a later lesson."
+      ],
+      "examples": [
+        {"fi": "Vad gillar du?", "en": "What do you like?", "note": "Vad asks for a thing."},
+        {"fi": "Hur gammal är du?", "en": "How old are you?", "note": "Hur + a describing word: hur gammal."},
+        {"fi": "Var bor du?", "en": "Where do you live?", "note": "Var asks for a place."},
+        {"fi": "När börjar lektionen?", "en": "When does the class start?", "note": "När asks for a time."},
+        {"fi": "Varför pluggar ni svenska?", "en": "Why are you (all) studying Swedish?", "note": "Varför asks for a reason. Ni: more than one person."},
+        {"fi": "Vem är hon?", "en": "Who is she?", "note": "Vem asks for a person."}
+      ],
+      "table": {
+        "headings": ["Question word", "Asks for", "Example"],
+        "rows": [
+          ["vad", "a thing", "Vad heter du?"],
+          ["hur", "a manner or state", "Hur mår du?"],
+          ["var", "a place", "Var bor du?"],
+          ["varifrån", "an origin", "Varifrån kommer du?"],
+          ["när", "a time", "När kommer de?"],
+          ["varför", "a reason", "Varför pluggar du svenska?"],
+          ["vem", "a person", "Vem är han?"]
+        ]
+      },
+      "memoryTip": "Var and vad differ by one letter: var asks for a place, vad for a thing. Varför hides för: for what reason?",
+      "tryIt": "Ask yourself five questions aloud, each with a different question word, and keep the verb second: Var bor du? När kommer du? Varför pluggar du svenska?",
+      "activity": {
+        "type": "sort",
+        "label": "Answer detective",
+        "title": "Which question word does this answer belong to?",
+        "instructions": "Each card is an answer. Work backwards: is it a thing, a manner, a place, an origin, a time, a reason, or a person?",
+        "buckets": [
+          {"id": "vad", "label": "vad?", "hint": "a thing"},
+          {"id": "hur", "label": "hur?", "hint": "how"},
+          {"id": "var", "label": "var?", "hint": "a place"},
+          {"id": "varifran", "label": "varifrån?", "hint": "an origin"},
+          {"id": "nar", "label": "när?", "hint": "a time"},
+          {"id": "varfor", "label": "varför?", "hint": "a reason"},
+          {"id": "vem", "label": "vem?", "hint": "a person"}
+        ],
+        "items": [
+          {"fi": "Jag heter Priya.", "en": "My name is Priya.", "bucket": "vad", "why": "It answers Vad heter du? A name is a thing you ask for with vad."},
+          {"fi": "Jag mår bra, tack.", "en": "I'm fine, thanks.", "bucket": "hur", "why": "It answers Hur mår du?"},
+          {"fi": "I Helsingfors.", "en": "In Helsinki.", "bucket": "var", "why": "A place: Var bor du? — I Helsingfors."},
+          {"fi": "Från Indien.", "en": "From India.", "bucket": "varifran", "why": "Från signals an origin: Varifrån kommer du?"},
+          {"fi": "Nästa vecka.", "en": "Next week.", "bucket": "nar", "why": "A time: När kommer de? — Nästa vecka."},
+          {"fi": "Hon är min syster.", "en": "She is my sister.", "bucket": "vem", "why": "A person: Vem är hon?"},
+          {"fi": "För att jag bor i Finland.", "en": "Because I live in Finland.", "bucket": "varfor", "why": "För att (because) gives a reason: Varför pluggar du svenska?"},
+          {"fi": "Samma som vanlig mjölk.", "en": "The same as ordinary milk.", "bucket": "hur", "why": "It answers Hur smakar vegansk mjölk? from page 6."},
+          {"fi": "Jag gillar kaffe.", "en": "I like coffee.", "bucket": "vad", "why": "A thing: Vad gillar du?"}
+        ],
+        "summary": "Every answer fits one question word. When you can hear which question an answer belongs to, you can also ask the next question yourself: question word, then verb, then person."
+      }
+    },
+    {
+      "title": "Hear it the way people say it",
+      "kind": "rule",
+      "body": [
+        "Written and spoken Swedish differ a little. Recognise these short forms now, and keep writing the full forms.",
+        "De is said dom. Jag is often just ja. Är often shrinks to e, det to de, and vad to va.",
+        "So Hur är det? often sounds like hur e de?, and De mår bra sounds like dom mår bra."
+      ],
+      "examples": [
+        {"fi": "De bor i Indien.", "en": "They live in India.", "note": "Heard as: dom bor i Indien."},
+        {"fi": "Jag mår bra.", "en": "I'm fine.", "note": "Often heard as: ja mår bra."},
+        {"fi": "Hur är det?", "en": "How's it going?", "note": "Often heard as: hur e de?"},
+        {"fi": "Vad heter du?", "en": "What's your name?", "note": "Often heard as: va heter du?"}
+      ],
+      "memoryTip": "Write it full, hear it short. When fast Swedish sounds strange, try the full form in your head.",
+      "tryIt": "Play each example at normal speed, then slowly. Listen for dom, ja, e and va.",
+      "activity": {
+        "type": "match",
+        "label": "Written → spoken",
+        "title": "Match each written word to how it often sounds",
+        "instructions": "On the left is what you write. On the right is what you often hear in everyday speech.",
+        "leftLabel": "Written",
+        "rightLabel": "Often heard as",
+        "pairs": [
+          {"left": "de (they)", "right": "dom"},
+          {"left": "jag", "right": "ja"},
+          {"left": "är", "right": "e"},
+          {"left": "det", "right": "de"},
+          {"left": "vad", "right": "va"}
+        ],
+        "pattern": "Spoken Swedish drops or shortens small, frequent words. Write de, jag, är, det and vad in full; expect dom, ja, e, de and va when people talk fast."
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-02-guided-de",
+      "prompt": "Priya och Rohan bor i Indien. ___ kommer nästa vecka.",
+      "answers": ["De"],
+      "options": ["De", "Vi", "Ni"],
+      "hint": "Two other people.",
+      "explanation": "Two other people are de, said dom."
+    },
+    {
+      "id": "sv-02-guided-ni",
+      "prompt": "Henrik talks to Alex and Elin: Hur mår ___?",
+      "answers": ["ni"],
+      "options": ["ni", "du", "de"],
+      "hint": "Henrik is speaking to two people.",
+      "explanation": "You, two or more people, is ni. Du is only for one person."
+    },
+    {
+      "id": "sv-02-guided-answer",
+      "prompt": "Elin: Hur mår du? Choose Alex's best answer.",
+      "answers": ["Jag mår bra, tack. Och du?"],
+      "options": ["Jag mår bra, tack. Och du?", "Jag heter Alex.", "Jag bor i Finland."],
+      "hint": "Mirror the verb mår, then ask back.",
+      "explanation": "Hur mår du? → Jag mår bra, then Och du? sends the question back."
+    },
+    {
+      "id": "sv-02-guided-sambo",
+      "prompt": "Elin lives with Mikko, but they are not married. Elin är ___.",
+      "answers": ["sambo"],
+      "options": ["sambo", "gift", "singel"],
+      "hint": "Sam (together) + bo (live).",
+      "explanation": "A sambo lives together with a partner without being married."
+    },
+    {
+      "id": "sv-02-guided-var",
+      "prompt": "___ bor du? — I Helsingfors.",
+      "answers": ["Var"],
+      "options": ["Var", "Vad", "När"],
+      "hint": "The answer is a place.",
+      "explanation": "Var asks for a place. Vad asks for a thing; när for a time."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-02-check-greeting",
+      "prompt": "Produce: ‘How are you? — I'm fine, thanks. And you?’",
+      "answers": [
+        "Hur mår du? Jag mår bra, tack. Och du?",
+        "Hur mår du? Jag mår bra. Och du?",
+        "Hur är det? Det är bra, tack. Och du?",
+        "Hur är det? Det är bra. Och du?"
+      ],
+      "hint": "Ask with mår, answer with the same verb, then ask back.",
+      "explanation": "Model: Hur mår du? Jag mår bra, tack. Och du?"
+    },
+    {
+      "id": "sv-02-check-when",
+      "prompt": "Which question asks when?",
+      "answers": ["När kommer de?"],
+      "options": ["När kommer de?", "Var bor de?", "Varför kommer de?"],
+      "hint": "The answer would be a time.",
+      "explanation": "När asks for a time: När kommer de? — Nästa vecka."
+    },
+    {
+      "id": "sv-02-check-de",
+      "prompt": "Which sentence is written in standard Swedish?",
+      "answers": ["De bor i Indien."],
+      "options": ["De bor i Indien.", "Dom bor i Indien.", "Den bor i Indien."],
+      "hint": "Write it full, hear it short.",
+      "explanation": "Write de, say dom. Dom is common in speech and chat, but de is the standard written form. Den means it."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 2 mission: People in my life",
+    "instructions": "CORE: Answer Hur mår du? honestly and send it back with Och du? Then present two people in your life: who they are (Det är min …), their name (Hon heter … / Han heter …), and where they live.\n\nQUESTION LOOP: Ask three questions with different question words, for example Var bor du? När kommer du? Varför pluggar du svenska? Keep the verb second.\n\nRETURN: Without looking, say how you are and introduce one person in under 20 seconds.",
+    "model": "Jag mår bra, tack. Och du?\nDet är min syster. Hon heter Priya. Hon bor i Indien.\nDet är min vän. Hon heter Elin. Hon är sambo och hon bor i Helsingfors.\nVar bor du? När kommer du? Varför pluggar du svenska?"
+  },
+  "takeaways": [
+    "Mirror the question: Hur är det? → Det är bra. Hur mår du? → Jag mår bra. Then ask back: Och du?",
+    "Pronouns: jag, du, han, hon, hen, vi, ni, de. Count the people for du and ni; write de but say dom.",
+    "Question word → verb → person: Var bor du? När kommer de?"
+  ],
+  "dialogue": [
+    {"speaker": "Elin", "fi": "Hej Alex! Hur är det?", "en": "Hi Alex! How's it going?"},
+    {"speaker": "Alex", "fi": "Hej! Det är bra, tack. Och du?", "en": "Hi! It's good, thanks. And you?"},
+    {"speaker": "Elin", "fi": "Så där. Jag är lite trött.", "en": "So-so. I'm a little tired."},
+    {"speaker": "Alex", "fi": "Det är min syster. Hon heter Priya.", "en": "That's my sister. Her name is Priya."},
+    {"speaker": "Elin", "fi": "Vem är han?", "en": "Who is he?"},
+    {"speaker": "Alex", "fi": "Han är min bror, Rohan. De bor i Indien.", "en": "He is my brother, Rohan. They live in India."},
+    {"speaker": "Elin", "fi": "När kommer de till Finland?", "en": "When are they coming to Finland?"},
+    {"speaker": "Alex", "fi": "Nästa vecka! Är du gift, Elin?", "en": "Next week! Are you married, Elin?"},
+    {"speaker": "Elin", "fi": "Nej, jag är sambo. Han heter Mikko. Vi bor i Helsingfors.", "en": "No, I live with my partner. His name is Mikko. We live in Helsinki."},
+    {"speaker": "Henrik", "fi": "Hej allihop! Hur mår ni?", "en": "Hi everyone! How are you all?"},
+    {"speaker": "Alex", "fi": "Vi mår bra, men Elin är lite trött!", "en": "We're fine, but Elin is a little tired!"}
+  ],
+  "resources": [
+    {
+      "label": "Svenska Akademiens ordböcker (svenska.se)",
+      "url": "https://svenska.se/",
+      "description": "Look up one word from today, such as sambo or syskon, and read its Swedish definition."
+    }
+  ],
+  "practice": {
+    "words": [
+      {"id": "sv-02-word-1", "fi": "Hur är det?", "en": "How's it going?", "example": "Hej Elin! Hur är det?", "translation": "Hi Elin! How's it going?", "level": "A0"},
+      {"id": "sv-02-word-2", "fi": "Hur mår du?", "en": "How are you (feeling)?", "example": "Hej Alex, hur mår du?", "translation": "Hi Alex, how are you?", "level": "A0"},
+      {"id": "sv-02-word-3", "fi": "Jag mår bra.", "en": "I'm fine.", "example": "Jag mår bra, tack. Och du?", "translation": "I'm fine, thanks. And you?", "level": "A0"},
+      {"id": "sv-02-word-4", "fi": "toppen", "en": "great", "example": "Jag mår toppen!", "translation": "I feel great!", "level": "A0"},
+      {"id": "sv-02-word-5", "fi": "så där", "en": "so-so", "example": "Så där. Jag är trött.", "translation": "So-so. I'm tired.", "level": "A0"},
+      {"id": "sv-02-word-6", "fi": "trött", "en": "tired", "example": "Jag är lite trött.", "translation": "I'm a little tired.", "level": "A0"},
+      {"id": "sv-02-word-7", "fi": "dåligt", "en": "bad (how you feel)", "example": "Jag mår dåligt.", "translation": "I feel bad.", "level": "A0"},
+      {"id": "sv-02-word-8", "fi": "han", "en": "he", "example": "Han heter Rohan.", "translation": "His name is Rohan.", "level": "A0"},
+      {"id": "sv-02-word-9", "fi": "hon", "en": "she", "example": "Hon heter Priya.", "translation": "Her name is Priya.", "level": "A0"},
+      {"id": "sv-02-word-10", "fi": "hen", "en": "they (one person, no he or she)", "example": "Hen talar svenska.", "translation": "They speak Swedish.", "level": "A0"},
+      {"id": "sv-02-word-11", "fi": "vi", "en": "we", "example": "Vi bor i Helsingfors.", "translation": "We live in Helsinki.", "level": "A0"},
+      {"id": "sv-02-word-12", "fi": "ni", "en": "you (two or more)", "example": "Hur mår ni?", "translation": "How are you all?", "level": "A0"},
+      {"id": "sv-02-word-13", "fi": "de", "en": "they (said dom)", "example": "De bor i Indien.", "translation": "They live in India.", "level": "A0"},
+      {"id": "sv-02-word-14", "fi": "en vän", "en": "a friend", "example": "Hon är min vän.", "translation": "She is my friend.", "level": "A0"},
+      {"id": "sv-02-word-15", "fi": "sambo", "en": "partner you live with", "example": "Jag är sambo.", "translation": "I live with my partner.", "level": "A0"},
+      {"id": "sv-02-word-16", "fi": "gift", "en": "married", "example": "Är du gift?", "translation": "Are you married?", "level": "A0"},
+      {"id": "sv-02-word-17", "fi": "syskon", "en": "siblings", "example": "Har du syskon?", "translation": "Do you have siblings?", "level": "A0"},
+      {"id": "sv-02-word-18", "fi": "barn", "en": "child; children", "example": "De har två barn.", "translation": "They have two children.", "level": "A0"},
+      {"id": "sv-02-word-19", "fi": "ensam", "en": "alone", "example": "Jag bor ensam.", "translation": "I live alone.", "level": "A0"},
+      {"id": "sv-02-word-20", "fi": "vad", "en": "what", "example": "Vad gillar du?", "translation": "What do you like?", "level": "A0"},
+      {"id": "sv-02-word-21", "fi": "hur", "en": "how", "example": "Hur mår du?", "translation": "How are you?", "level": "A0"},
+      {"id": "sv-02-word-22", "fi": "var", "en": "where", "example": "Var bor du?", "translation": "Where do you live?", "level": "A0"},
+      {"id": "sv-02-word-23", "fi": "när", "en": "when", "example": "När kommer de?", "translation": "When are they coming?", "level": "A0"},
+      {"id": "sv-02-word-24", "fi": "varför", "en": "why", "example": "Varför pluggar du svenska?", "translation": "Why are you studying Swedish?", "level": "A0"},
+      {"id": "sv-02-word-25", "fi": "vem", "en": "who", "example": "Vem är hon?", "translation": "Who is she?", "level": "A0"},
+      {"id": "sv-02-word-26", "fi": "ursäkta", "en": "excuse me", "example": "Ursäkta, var bor Anna?", "translation": "Excuse me, where does Anna live?", "level": "A0"},
+      {"id": "sv-02-word-27", "fi": "nästa vecka", "en": "next week", "example": "De kommer nästa vecka.", "translation": "They are coming next week.", "level": "A0"},
+      {"id": "sv-02-word-28", "fi": "vet", "en": "know(s)", "example": "Jag vet inte.", "translation": "I don't know.", "level": "A0"},
+      {"id": "sv-02-word-29", "fi": "måste", "en": "must; have to", "example": "Vi måste plugga.", "translation": "We have to study.", "level": "A0"}
+    ],
+    "pronunciation": {
+      "text": "Hur är det? Hur mår du? Toppen! Så där. Trött. Jag, du, han, hon, hen, vi, ni, de. Vad, hur, var, när, varför, vem.",
+      "tip": "Choose one group. Hear the long, round å in mår and så, the open ä in är and när, and the ö in varför and trött. Say de as dom."
+    },
+    "reading_passage": {
+      "text": "Hej Priya!\nHur mår du? Jag mår bra, men jag är lite trött.\nJag har en ny vän. Hon heter Elin. Hon är sambo och hon bor i Helsingfors.\nNär kommer ni till Finland?\nAlex",
+      "gist": {
+        "prompt": "What is the main purpose of this message?",
+        "options": ["Say how he is and tell his sister about a new friend", "Ask for directions to a shop", "Order food"],
+        "answer": 0,
+        "explanation": "Alex says how he feels, tells Priya about Elin, and asks when they are coming."
+      },
+      "detail": {
+        "prompt": "How does Alex feel?",
+        "options": ["Fine, but a little tired", "Great", "Very bad"],
+        "answer": 0,
+        "explanation": "Jag mår bra, men jag är lite trött."
+      }
+    },
+    "reading": {
+      "text": "Hej Priya!\nHur mår du? Jag mår bra, men jag är lite trött.\nJag har en ny vän. Hon heter Elin. Hon är sambo och hon bor i Helsingfors.\nNär kommer ni till Finland?\nAlex",
+      "question": "Where does Elin live?",
+      "options": ["Helsinki", "India", "Turku"],
+      "answer": 0,
+      "explanation": "Hon bor i Helsingfors: she lives in Helsinki."
+    },
+    "listening": {
+      "text": "Hej! Jag heter Elin. Jag mår toppen! Jag är sambo. Han heter Mikko. Vi bor i Helsingfors. Mikko har en syster. Hon bor i Åbo.",
+      "question": "Where does Mikko's sister live?",
+      "options": ["Turku", "Helsinki", "India"],
+      "answer": 0,
+      "explanation": "Hon bor i Åbo. Åbo is the Swedish name for Turku."
+    },
+    "speaking": {
+      "prompt": "Answer Hur mår du?, ask back, and present two people in your life.",
+      "help": "Use: Jag mår … Och du? · Det är min … · Hon heter … / Han heter … · Hon bor i … / Han bor i … / De bor i …",
+      "model": "Jag mår bra, tack. Och du? Det är min syster. Hon heter Priya. Hon bor i Indien. Det är min vän. Hon heter Elin. Hon bor i Helsingfors."
+    },
+    "writing": {
+      "prompt": "Write a short message to a friend: ask how they are, say how you are, and tell them about one person in your life.",
+      "help": "Check Hur mår du?, mår or är, the pronoun that points to your person, and one question word with the verb second.",
+      "model": "Hej Sara!\nHur mår du? Jag mår toppen.\nJag har en bror. Han heter Rohan. Han bor i Indien.\nNär kommer du till Helsingfors?"
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Say how you are, ask back, and present two people in your life.",
+    "transferPrompt": "Present the same two people to a group, and ask them one question with ni.",
+    "returnPrompt": "Say how you are and introduce one person from memory in under 20 seconds.",
+    "successChecks": [
+      "Answer with mår or är, then ask Och du?",
+      "Use han, hon, or de for the people you present.",
+      "Ask at least one question with the verb second."
+    ],
+    "requiredSkills": ["speaking"]
+  }
+}

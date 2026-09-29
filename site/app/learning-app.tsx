@@ -463,7 +463,7 @@ function AppContent({ userId }: { userId: string }) {
               className="level-pill"
               onClick={() => navigate("Course")}
             >
-              A0 · Lesson 1 workshop
+              A0 · Chapter 1
             </button>
           </div>
         </header>

@@ -19,13 +19,13 @@ export function detailedCurriculumMarkdown() {
   const lines = [
     "# Stigen — Detailed Swedish Curriculum",
     "",
-    "> The ordered teaching index for the live Lesson 1 workshop.",
+    "> The ordered teaching index for the live Chapter 1 workshop.",
     "",
     `**${lectures.length} live episodes** across **${liveModules.length} story chapters**. The supplied classroom notes and books informed the sequence, but their pages are not embedded; every learner-facing task is original.`,
     "",
     "## How to use this curriculum",
     "",
-    "1. Follow the six Lesson 1 steps in order: hear, learn, try, use, check, and carry forward.",
+    "1. Follow each lecture’s six steps in order: hear, learn, try, use, check, and carry forward.",
     "2. Use the teaching index to review the actual concepts, language patterns, examples, and takeaways.",
     "",
   ];

@@ -41,8 +41,16 @@ export type CourseQuestion = {
 };
 export type SourcePagePractice = {
   title: string;
+  /** Short label for a page switcher when a lecture has several pages. */
+  tabLabel?: string;
+  /** Why this page follows the lecture's own story. Defaults to neutral guidance. */
+  intro?: string;
+  /** A narrator line that sets the scene before the first turn. */
+  setting?: { fi: string; en: string };
   image: string;
   imageAlt: string;
+  /** Where the dialogue text sits on the image, in percent, so gist listening can hide it. */
+  textRegion?: { top: number; height: number };
   /** Physical page reference shown under the image. */
   pageLabel?: string;
   note?: string;
@@ -68,8 +76,18 @@ export type SourcePagePractice = {
   naturalNotes?: { source: string; natural: string; note: string }[];
   /** A long line rebuilt from its end, chunk by chunk (backchaining). */
   backchain?: { line: number; chunks: string[] };
-  /** Words the page itself marks for pronunciation, each tied to a rule. */
-  soundSpots?: { word: string; mark: string; rule: string }[];
+  /**
+   * Words the page itself marks (in colour), each tied to the rule it shows.
+   * The labels are content-owned: one page marks sounds, another pronouns.
+   */
+  hunt?: {
+    label: string;
+    title: string;
+    instructions: string;
+    /** Shown when the learner taps a word the page does not mark. */
+    missHint: string;
+    spots: { word: string; mark: string; rule: string }[];
+  };
 };
 
 export type LecturePresentation = {
@@ -88,6 +106,8 @@ export type LecturePresentation = {
     teacherNote?: { title: string; body: string };
     questionIntro?: string;
     sourcePractice?: SourcePagePractice;
+    /** Several verified pages, practised one at a time behind a page switcher. */
+    sourcePractices?: SourcePagePractice[];
     dialogue?: {
       part: "recall" | "teach";
       eyebrow?: string;
