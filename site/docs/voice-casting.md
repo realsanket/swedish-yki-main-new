@@ -32,11 +32,15 @@ Set the server-only values described in `.env.example`:
 
 ```dotenv
 AZURE_SPEECH_ENDPOINT=https://YOUR_RESOURCE.services.ai.azure.com
-AZURE_SPEECH_API_KEY=YOUR_KEY
-AZURE_SPEECH_TTS_ENDPOINT=https://YOUR_REGION.tts.speech.microsoft.com/cognitiveservices/v1
+AZURE_SPEECH_API_KEY=
+AZURE_SPEECH_TTS_ENDPOINT=https://YOUR_RESOURCE.cognitiveservices.azure.com/
 ```
 
-The TTS endpoint must match the region of the Speech resource. Never expose the
+For a Foundry/Speech custom domain, Stigen appends
+`/tts/cognitiveservices/v1` for REST synthesis. A full regional endpoint such
+as `https://swedencentral.tts.speech.microsoft.com/cognitiveservices/v1` is
+also accepted. `AZURE_SPEECH_API_KEY` is optional when Speech belongs to the
+same Foundry resource: the server reuses `AZURE_OPENAI_API_KEY`. Never expose a
 key through a `NEXT_PUBLIC_` variable.
 
 Azure-only playback is intentional. Do not add `window.speechSynthesis`, an

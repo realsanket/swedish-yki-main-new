@@ -70,10 +70,24 @@ export function getSpeechConfig(env: Environment = process.env) {
 }
 
 export function getSpeechSynthesisConfig(env: Environment = process.env) {
-  const endpoint = secureEndpoint(
-    env.AZURE_SPEECH_TTS_ENDPOINT,
-    "/cognitiveservices/v1",
-  );
+  const configuredEndpoint = secureEndpoint(env.AZURE_SPEECH_TTS_ENDPOINT);
+  let endpoint: string | null = null;
+  if (configuredEndpoint) {
+    const url = new URL(configuredEndpoint);
+    const path = url.pathname.replace(/\/+$/, "");
+    if (!path) {
+      endpoint = `${url.origin}${
+        url.hostname.endsWith(".cognitiveservices.azure.com")
+          ? "/tts/cognitiveservices/v1"
+          : "/cognitiveservices/v1"
+      }`;
+    } else if (
+      path === "/tts/cognitiveservices/v1" ||
+      path === "/cognitiveservices/v1"
+    ) {
+      endpoint = `${url.origin}${path}`;
+    }
+  }
   const key =
     env.AZURE_SPEECH_API_KEY?.trim() || env.AZURE_OPENAI_API_KEY?.trim();
   if (!endpoint || !key) return null;

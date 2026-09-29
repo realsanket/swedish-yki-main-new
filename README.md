@@ -21,6 +21,7 @@ The live Stigen application intentionally contains only **Chapter 1, Lecture 1**
 | Generated runtime lecture index | [`site/content/lectures/index.json`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/content/lectures/index.json) |
 | Chapter story, cast, and artwork mapping | [`site/lib/story-world.ts`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/lib/story-world.ts) |
 | Swedish and English character voices | [`site/lib/character-voices.ts`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/lib/character-voices.ts) |
+| Azure endpoints, connected services, and next-service decisions | [`site/docs/azure-services.md`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/docs/azure-services.md) |
 | Lesson 1 orientation | [`site/components/learning/CourseOrientation.tsx`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/components/learning/CourseOrientation.tsx) |
 | Lesson UI | [`site/components/learning/LecturePlayer.tsx`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/components/learning/LecturePlayer.tsx) |
 | Lesson-specific visual design | [`site/app/course.css`](/Users/sanket.joshi/Desktop/personal/swedish-yki/site/app/course.css) |
