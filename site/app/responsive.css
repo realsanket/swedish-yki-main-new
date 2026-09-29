@@ -11,6 +11,12 @@
   .story-course-cover {
     grid-template-columns: minmax(0, 1fr);
   }
+  /* Below this width the step list lives inside the page ("All steps"), so
+     the desktop route panel is empty; the template's card styling would
+     otherwise leave a blank white strip. */
+  .lecture-workspace .lecture-outline.episode-route-panel {
+    display: none;
+  }
 }
 
 /* The grammar notes column only fits beside a topic on a wide screen. */
@@ -18,6 +24,7 @@
   .lecture-workspace .teach-with-notes {
     grid-template-columns: minmax(0, 1fr);
     gap: 14px;
+    margin-top: 12px;
   }
   /* On narrow screens the notes become a collapsible bar above the topic. */
   .lecture-workspace .teach-with-notes > aside {

@@ -2589,8 +2589,8 @@
   border: 1px solid #bcd7c1;
   background: #f2f9f2;
 }
-.lesson-memory-tip span,
-.lesson-try-it span {
+.lesson-memory-tip > span,
+.lesson-try-it > span {
   display: block;
   margin-bottom: 5px;
   color: #667b47;
@@ -7432,10 +7432,10 @@
   border-left: 5px solid var(--lesson-navy);
   background: #f0f6fb;
 }
-.lecture-template-conversation-first .lesson-memory-tip span {
+.lecture-template-conversation-first .lesson-memory-tip > span {
   color: #956b15;
 }
-.lecture-template-conversation-first .lesson-try-it span {
+.lecture-template-conversation-first .lesson-try-it > span {
   color: #527695;
 }
 .lecture-template-conversation-first .teach-pagination-controls {
@@ -8492,4 +8492,60 @@
   font-size: 12px;
   font-weight: 750;
   cursor: help;
+}
+
+/* Footer when an earlier step is unfinished: go back to it, or keep going. */
+.lecture-actions-pair {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.lecture-actions-pair > button {
+  flex: 1 1 160px;
+  justify-content: center;
+}
+
+/* Later steps fold the lecture overview into one line. */
+.lecture-compact-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid #ead8a4;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff8e5, #fffdf8);
+}
+.lecture-compact-title > span {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.lecture-compact-title small {
+  color: #8b6417;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+.lecture-compact-title b {
+  overflow: hidden;
+  color: #163e6d;
+  font: 700 20px/1.2 Georgia, serif;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.lecture-overview-toggle {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border: 1px solid #d8dfe6;
+  border-radius: 99px;
+  background: #fff;
+  color: #163e6d;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.lecture-title > .lecture-overview-toggle {
+  margin-top: 10px;
 }

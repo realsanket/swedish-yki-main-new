@@ -74,20 +74,6 @@ const questionAction: Partial<Record<CoursePart, string>> = {
   check: "Check the important pieces, then make one small change and try the message again.",
 };
 
-function actionLabel(part: CoursePart, profile: ReturnType<typeof routeProfileForLecture>) {
-  if (part === "recall") return profile.id === "clinic" ? "Save my first attempt" : "Check my warm-up";
-  if (part === "teach") return profile.id.includes("yki") ? "I completed the first attempt" : "I listened and noticed";
-  if (part === "guided") return "Check my built line";
-  if (part === "practice") return profile.id === "standard" ? "Save my response" : "Save this attempt";
-  if (part === "check")
-    return profile.id === "yki-mock"
-      ? "Save my next drill"
-      : profile.id === "standard"
-        ? "Keep my retry"
-        : "Save this check";
-  return "Save for later";
-}
-
 function outputLabel(skill: Skill) {
   return skill === "speaking" ? "Say" : skill === "writing" ? "Write" : skill === "listening" ? "Listen" : "Read";
 }
@@ -103,6 +89,15 @@ function stepAction(part: CoursePart, expectedOutput: string) {
   if (part === "check")
     return "Retry the message with one changed detail and notice what became clearer.";
   return "Keep one useful phrase and choose when you will return to it.";
+}
+
+/** What is still missing before a step can be saved, in the learner's words. */
+function blockedReason(part: CoursePart, primarySkill: Skill) {
+  if (part === "recall") return "Answer the questions above, then press Check to see the feedback.";
+  if (part === "teach") return "Finish the first attempt above to continue.";
+  if (part === "guided" || part === "check") return "Answer every question above, then press Check to see the feedback.";
+  if (part === "practice") return `Save one ${primarySkill} attempt in the task above to continue.`;
+  return "Finish this step's task above to continue.";
 }
 
 function skillLabel(skill: Skill | null) {
@@ -274,6 +269,14 @@ export default function LecturePlayer({
     [sectionIdx, setSectionIdx] = useState(0),
     [teachingBeatIdx, setTeachingBeatIdx] = useState(0);
   const pending = useRef<CourseDraftPatch>({});
+  const stepHeadingRef = useRef<HTMLDivElement>(null);
+  const stepDrawerRef = useRef<HTMLDetailsElement>(null);
+  const teachingCardRef = useRef<HTMLElement>(null);
+  const beatNavigated = useRef(false);
+  const [overviewOpen, setOverviewOpen] = useState(false);
+  const teachingFinished =
+    sectionIdx >= lecture.sections.length - 1 &&
+    teachingBeatIdx >= teachingBeatsFor(lecture.sections[lecture.sections.length - 1] ?? lecture.sections[0]).length - 1;
   const flyingPatch = useRef<CourseDraftPatch>({});
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const alive = useRef(true);
@@ -424,6 +427,16 @@ export default function LecturePlayer({
     },
     [backup, flush],
   );
+  useEffect(() => {
+    if (!beatNavigated.current) return;
+    beatNavigated.current = false;
+    const card = teachingCardRef.current;
+    if (!card) return;
+    const top = card.getBoundingClientRect().top;
+    // Only move when the start of the new beat is out of sight.
+    if (top < 70 || top > window.innerHeight * 0.45)
+      window.scrollTo({ top: top + window.scrollY - 84, behavior: "smooth" });
+  }, [sectionIdx, teachingBeatIdx]);
   const changeDraft = useCallback(
     (value: string) => changeDraftForSkill(skill, value),
     [changeDraftForSkill, skill],
@@ -434,7 +447,17 @@ export default function LecturePlayer({
     // progress.
     setPart(next);
     setChecked((c) => ({ ...c, [next]: false }));
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    // A chosen step closes the phone step list so the step itself is on screen.
+    if (stepDrawerRef.current) stepDrawerRef.current.open = false;
+    scrollToStep();
+  }
+  /** Land on the new step's heading, below the sticky top bar, not on the page top. */
+  function scrollToStep() {
+    requestAnimationFrame(() => {
+      const heading = stepHeadingRef.current;
+      if (!heading) return window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: heading.getBoundingClientRect().top + window.scrollY - 84, behavior: "smooth" });
+    });
   }
   async function leave(action: () => void) {
     setBusy(true);
@@ -463,7 +486,7 @@ export default function LecturePlayer({
           : {}),
       });
       setPart(result.lectures[lecture.id].part);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      scrollToStep();
     } catch (cause) {
       setError(
         cause instanceof Error ? cause.message : "Please try saving again.",
@@ -475,6 +498,9 @@ export default function LecturePlayer({
   const partIndex = COURSE_PARTS.indexOf(part);
   const earlierDone = COURSE_PARTS.slice(0, partIndex).every((p) =>
     state.completedParts.includes(p),
+  );
+  const firstUnfinished = COURSE_PARTS.slice(0, partIndex).find(
+    (p) => !state.completedParts.includes(p),
   );
   const questions =
     part === "recall"
@@ -573,6 +599,32 @@ export default function LecturePlayer({
     const override = presentation?.routeSteps?.[step.part];
     return override ? { ...step, ...override } : step;
   };
+  // One forward action everywhere: it saves the step when it can, and never
+  // leaves the learner stuck when an earlier step is still unfinished.
+  const isLastPart = partIndex === COURSE_PARTS.length - 1;
+  const partDone = state.completedParts.includes(part);
+  const nextPartStep = isLastPart ? null : lectureStep(routeProfile.steps[partIndex + 1]);
+  const forwardLabel = nextPartStep
+    ? `Next: ${nextPartStep.label}`
+    : partDone
+      ? "Back to the course"
+      : "Finish the lecture";
+  const forwardEnabled = partDone || !!firstUnfinished || canContinue;
+  const forwardNote = partDone
+    ? `Step ${partIndex + 1} is saved.`
+    : firstUnfinished
+      ? `Step ${COURSE_PARTS.indexOf(firstUnfinished) + 1} is not finished yet, so this step is not saved. You can keep going and finish it later.`
+      : canContinue
+        ? `Saves step ${partIndex + 1}.`
+        : blockedReason(part, route.primarySkill);
+  function goForward() {
+    if (firstUnfinished && !partDone) {
+      if (!isLastPart) preview(COURSE_PARTS[partIndex + 1]);
+      return;
+    }
+    if (partDone && isLastPart) return leave(onExit);
+    void complete();
+  }
   const activeStep = lectureStep(routeProfile.steps[partIndex]);
   const routeStepButtons = (mobile = false) =>
     routeProfile.steps.map((original, index) => {
@@ -639,11 +691,32 @@ export default function LecturePlayer({
         </span>
       </div>
       <header className="lecture-title story-episode-title">
-        <EpisodeBrief
-          lecture={lecture}
-          chapter={chapter}
-          previousTitle={previousLecture?.title}
-        />
+        {/* The full overview introduces step 1. Later steps fold it into one line
+            so each step starts near the top of the screen. */}
+        {partIndex === 0 || overviewOpen ? (
+          <>
+            <EpisodeBrief
+              lecture={lecture}
+              chapter={chapter}
+              previousTitle={previousLecture?.title}
+            />
+            {partIndex > 0 && (
+              <button type="button" className="lecture-overview-toggle" onClick={() => setOverviewOpen(false)}>
+                Hide lecture overview
+              </button>
+            )}
+          </>
+        ) : (
+          <div className="lecture-compact-title">
+            <span>
+              <small>{presentation?.hero?.meta?.[0] ?? `LECTURE ${lecture.number}`}</small>
+              <b>{presentation?.hero?.title ?? lecture.title}</b>
+            </span>
+            <button type="button" className="lecture-overview-toggle" onClick={() => setOverviewOpen(true)}>
+              Show overview
+            </button>
+          </div>
+        )}
         <div className="lecture-progress-line">
           <span className="episode-route-label">
             {routeProfile.label.toUpperCase()}
@@ -682,7 +755,7 @@ export default function LecturePlayer({
           <p className="help-text">Completed steps are safe to revisit. Your saved resume point stays where it is.</p>
         </aside>
         <div className="lecture-page">
-          <div className="part-heading">
+          <div className="part-heading" ref={stepHeadingRef}>
             <p className="eyebrow">
               STEP {partIndex + 1} OF {COURSE_PARTS.length} · ABOUT {activeStep.minutes} MINUTES
             </p>
@@ -693,7 +766,7 @@ export default function LecturePlayer({
               <p>{stepAction(part, route.expectedOutput)}</p>
             </div>
           </div>
-          <details className="mobile-route-drawer">
+          <details className="mobile-route-drawer" ref={stepDrawerRef}>
             <summary>
               <span>Step {partIndex + 1} of {COURSE_PARTS.length}</span>
               <small>{activeStep.minutes} min · All steps</small>
@@ -943,6 +1016,7 @@ export default function LecturePlayer({
                   (practice) => practice.sectionTitle === currentSection.title,
                 );
                 const previousBeat = () => {
+                  beatNavigated.current = true;
                   if (safeBeatIdx > 0) {
                     setTeachingBeatIdx(safeBeatIdx - 1);
                     return;
@@ -954,6 +1028,7 @@ export default function LecturePlayer({
                   setTeachingBeatIdx(Math.max(0, previousBeatCount - 1));
                 };
                 const nextBeat = () => {
+                  beatNavigated.current = true;
                   if (!isLastBeat) {
                     setTeachingBeatIdx(safeBeatIdx + 1);
                     return;
@@ -998,7 +1073,7 @@ export default function LecturePlayer({
                         ))}
                       </div>
                     </div>
-                    <section className={`teaching-section teaching-section-${sectionKind}`}>
+                    <section className={`teaching-section teaching-section-${sectionKind}`} ref={teachingCardRef}>
                       <div className="teaching-card-heading">
                         <div>
                           <span className={`teaching-kind teaching-kind-${sectionKind}`}>{kindMeta.pill}</span>
@@ -1013,7 +1088,10 @@ export default function LecturePlayer({
                             key={beat.id}
                             className={index === safeBeatIdx ? "active" : index < safeBeatIdx ? "visited" : ""}
                             aria-current={index === safeBeatIdx ? "step" : undefined}
-                            onClick={() => setTeachingBeatIdx(index)}
+                            onClick={() => {
+                              beatNavigated.current = true;
+                              setTeachingBeatIdx(index);
+                            }}
                           >
                             <span>{index + 1}</span>
                             {beat.label}
@@ -1170,13 +1248,22 @@ export default function LecturePlayer({
                       >
                         &larr; Back
                       </button>
-                      {!isFinalTeachingBeat && (
+                      {!isFinalTeachingBeat ? (
                         <button
                           type="button"
                           className="primary"
                           onClick={nextBeat}
                         >
                           {nextLabel} &rarr;
+                        </button>
+                      ) : (
+                        <button
+                          type="button"
+                          className="primary"
+                          disabled={!forwardEnabled || busy || saving}
+                          onClick={goForward}
+                        >
+                          {forwardLabel} &rarr;
                         </button>
                       )}
                     </div>
@@ -1634,22 +1721,31 @@ export default function LecturePlayer({
                 Previous step
               </button>
               <div>
-                {!earlierDone && (
-                  <p className="help-text">
-                    Finish the earlier parts to record completion here.
-                  </p>
-                )}
-                <button
-                  className="primary"
-                  disabled={!canContinue || busy || saving}
-                  onClick={complete}
-                >
-                  {busy ? <Loader2 className="animate-spin" size={18} /> : null}
-                  {state.completedParts.includes(part)
-                    ? "Continue"
-                    : actionLabel(part, routeProfile)}
-                  <ArrowRight size={18} />
-                </button>
+                <p className="help-text" aria-live="polite">{forwardNote}</p>
+                <div className="lecture-actions-pair">
+                  {firstUnfinished && !partDone && (
+                    <button
+                      type="button"
+                      className="secondary"
+                      disabled={busy}
+                      onClick={() => preview(firstUnfinished)}
+                    >
+                      Finish step {COURSE_PARTS.indexOf(firstUnfinished) + 1}
+                    </button>
+                  )}
+                  <button
+                    type="button"
+                    // While teaching beats remain, the beat's own Next button leads;
+                    // this one becomes a quieter shortcut past the rest of the step.
+                    className={part === "teach" && !teachingFinished ? "secondary" : "primary"}
+                    disabled={!forwardEnabled || busy || saving}
+                    onClick={goForward}
+                  >
+                    {busy ? <Loader2 className="animate-spin" size={18} /> : null}
+                    {part === "teach" && !teachingFinished && nextPartStep ? `Skip to ${nextPartStep.label}` : forwardLabel}
+                    <ArrowRight size={18} />
+                  </button>
+                </div>
               </div>
             </footer>
           )}
