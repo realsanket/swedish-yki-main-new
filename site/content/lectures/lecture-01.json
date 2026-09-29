@@ -1,448 +1,345 @@
 {
   "number": 1,
   "objectives": [
-    "Greet someone, introduce yourself, and close a first exchange.",
-    "Recognise Swedish's nine vowel letters: a, e, i, o, u, y, å, ä, ö.",
-    "Hear a basic long/short stressed-vowel contrast."
+    "Hold a short first conversation using your name, home, origin, and languages.",
+    "Shape and hear Swedish's nine vowel letters using simple mouth and memory cues.",
+    "Use the tak/tack length clue and recognise the common soft sounds of g, k, and sk."
   ],
-  "focusSkills": [
-    "listening",
-    "speaking",
-    "reading",
-    "writing"
-  ],
+  "focusSkills": ["listening", "speaking"],
   "recall": [
     {
-      "id": "sv-01-recall-1",
-      "prompt": "Which row contains all nine Swedish vowels?",
-      "answers": [
-        "a, e, i, o, u, y, å, ä, ö"
-      ],
+      "id": "sv-01-notice-purpose",
+      "prompt": "What are Aino and Alex mainly doing in the conversation?",
+      "answers": ["They are introducing themselves"],
       "options": [
-        "a, e, i, o, u, y, å, ä, ö",
-        "a, b, c, d, e",
-        "å, ä, ö, j, k"
+        "They are introducing themselves",
+        "They are ordering food",
+        "They are buying train tickets"
       ],
-      "hint": "Count nine vowel letters.",
-      "explanation": "Swedish has nine vowel letters."
+      "hint": "Listen for names and places.",
+      "explanation": "They exchange names, origin, home, and languages. You will build the same conversation next."
     },
     {
-      "id": "sv-01-recall-key",
-      "prompt": "Choose the Swedish line meaning “Hello! My name is Sam.”",
-      "answers": [
-        "Hej! Jag heter Sam."
-      ],
+      "id": "sv-01-notice-home",
+      "prompt": "Which line tells where Alex lives now?",
+      "answers": ["Jag bor i Finland."],
       "options": [
-        "Hej! Jag heter Sam.",
-        "Hej! Jag heter Mira.",
-        "heta"
+        "Jag bor i Finland.",
+        "Jag kommer från Indien.",
+        "Jag heter Alex."
       ],
-      "hint": "Match the full message.",
-      "explanation": "Hej! Jag heter Sam. means “Hello! My name is Sam.”"
-    },
-    {
-      "id": "sv-01-recall-sound",
-      "prompt": "Which word has the longer stressed vowel?",
-      "answers": [
-        "tak"
-      ],
-      "options": [
-        "tak",
-        "tack",
-        "och"
-      ],
-      "hint": "Say the options and apply the sound cue.",
-      "explanation": "Tak has a long a; tack has a short a."
+      "hint": "Bor i means lives in.",
+      "explanation": "Jag bor i Finland tells Alex's home now. Jag kommer från Indien tells his origin."
     }
   ],
   "sections": [
     {
-      "title": "First greetings and Swedish sounds",
+      "title": "Build your introduction from four lines",
       "kind": "scene",
       "body": [
-        "Use whole chunks first: Hej! · Jag heter … · Trevligt att träffas. · Hej då!",
-        "Hej is neutral in most everyday meetings. Tjena is more casual.",
-        "At A0, understand the purpose in English, then repeat the Swedish aloud."
+        "Copy whole chunks before studying grammar: Jag heter … · Jag bor i … · Jag kommer från … · Jag talar …",
+        "Jag bor i tells where you live now. Jag kommer från tells where you come from. The places can be different.",
+        "Use och before the last language. Put lite directly before a language you speak only a little."
       ],
       "examples": [
-        {
-          "fi": "Hej! Jag heter Mira.",
-          "en": "Hello! My name is Mira."
-        },
-        {
-          "fi": "Hej! Jag heter Sam.",
-          "en": "Hello! My name is Sam."
-        },
-        {
-          "fi": "Trevligt att träffas.",
-          "en": "Nice to meet you."
-        },
-        {
-          "fi": "Detsamma. Hej då!",
-          "en": "Likewise. Goodbye!"
-        }
-      ]
-    },
-    {
-      "title": "Nine vowels and sound length",
-      "kind": "rule",
-      "body": [
-        "Swedish has nine vowel letters: a, e, i, o, u, y, å, ä and ö. Listen before using English sound approximations.",
-        "A stressed vowel is often long before one consonant, but short before two: tak (roof) versus tack (thanks).",
-        "Swedish stress is not always initial. Copy the model rhythm and aim for clear contrasts."
-      ],
-      "examples": [
-        {
-          "fi": "tak",
-          "en": "roof; long a"
-        },
-        {
-          "fi": "tack",
-          "en": "thanks; short a"
-        },
-        {
-          "fi": "Hej!",
-          "en": "Hello!"
-        },
-        {
-          "fi": "Tack, hej då!",
-          "en": "Thanks, goodbye!"
-        }
+        {"fi": "Hej! Jag heter Noor.", "en": "Hello! My name is Noor.", "note": "Replace Noor with your own name."},
+        {"fi": "Jag bor i Finland.", "en": "I live in Finland.", "note": "This is your home now."},
+        {"fi": "Jag kommer från Pakistan.", "en": "I come from Pakistan.", "note": "This is your origin."},
+        {"fi": "Jag talar urdu, engelska och lite svenska.", "en": "I speak Urdu, English, and a little Swedish.", "note": "Use och before the last item."}
       ],
       "table": {
-        "headings": [
-          "Feature",
-          "Model",
-          "Cue"
-        ],
+        "headings": ["Purpose", "Pattern", "Example"],
         "rows": [
-          [
-            "vowels",
-            "a e i o u y å ä ö",
-            "Notice lip rounding."
-          ],
-          [
-            "long",
-            "tak",
-            "Hold the stressed a."
-          ],
-          [
-            "short",
-            "tack",
-            "Release before ck."
-          ]
+          ["name", "Jag heter …", "Jag heter Noor."],
+          ["home now", "Jag bor i …", "Jag bor i Finland."],
+          ["origin", "Jag kommer från …", "Jag kommer från Kina."],
+          ["languages", "Jag talar …", "Jag talar kinesiska och engelska."]
         ]
-      }
+      },
+      "memoryTip": "Home now and origin are two boxes: bor i = live in; kommer från = come from.",
+      "tryIt": "Say your four real lines once slowly. Then say them again without looking."
+    },
+    {
+      "title": "Nine vowels: copy the mouth first",
+      "kind": "rule",
+      "body": [
+        "Swedish has nine vowel letters: A, O, U, Y, I, E, Ö, Ä, Å. First copy the lip and tongue position; then copy the audio.",
+        "English, Hindi, and Marathi examples are memory bridges, not exact Swedish pronunciation. The Swedish recording is the final model.",
+        "Rounded lips: O, U, Y, Ö, Å. Front tongue: I, E, Y, Ä, Ö. Notice that Y and Ö belong to both groups."
+      ],
+      "examples": [
+        {"fi": "jag · ja · bok · bor", "en": "A and O lesson words", "note": "Open for A; round for O."},
+        {"fi": "dum · du · paraply · by", "en": "U and Y lesson words", "note": "Keep the lips rounded; move the tongue forward for Y."},
+        {"fi": "Indien · le · ö · bär · från", "en": "I, E, Ö, Ä, and Å lesson words", "note": "Compare the mouth shapes; do not force an English sound."}
+      ],
+      "table": {
+        "headings": ["Letter", "Mouth and memory bridge", "Lesson word"],
+        "rows": [
+          ["A", "Deep and open; आ is a starting bridge", "jag, ja"],
+          ["O", "Round lips; often near long oo in these words", "bok, bor"],
+          ["U", "Tight rounded lips; no exact English/Hindi match", "dum, du"],
+          ["Y", "Keep the I/ई tongue, then round the lips", "paraply, by"],
+          ["I", "Wide smile; ई is a starting bridge", "Indien"],
+          ["E", "Light smile; ए is a starting bridge", "le"],
+          ["Ö", "Keep the E tongue, then round the lips", "ö"],
+          ["Ä", "Relaxed open front sound; near e in bed", "bär"],
+          ["Å", "Deep rounded sound; ऑ/aw is a starting bridge", "från"]
+        ]
+      },
+      "memoryTip": "The script cue helps you find the mouth. It does not replace listening: Swedish audio wins.",
+      "tryIt": "Use a mirror: say I → Y without moving the tongue, only rounding the lips. Then say E → Ö the same way."
+    },
+    {
+      "title": "Long or short: stretch one part",
+      "kind": "rule",
+      "body": [
+        "In a stressed Swedish syllable, either the vowel is long or the consonant after it is long. Hear both parts, not only the vowel.",
+        "A common spelling clue is: one consonant letter after the stressed vowel often means a longer vowel; a doubled consonant often means a short vowel and longer consonant. It is a clue, not a rule without exceptions.",
+        "Use the routine: find the stressed vowel → look right → listen → copy the whole word."
+      ],
+      "examples": [
+        {"fi": "tak — tack", "en": "roof — thanks", "note": "Stretch the a in tak; stop it quickly and hold the k in tack."},
+        {"fi": "kafé — kaffe", "en": "café — coffee", "note": "Hear the stressed final é in kafé and the short a plus long f in kaffe."},
+        {"fi": "bor — mamma · pappa · pluggar", "en": "lives — mum · dad · studies", "note": "Bor has a long stressed vowel; the doubled consonants signal short stressed vowels in the other words."}
+      ],
+      "table": {
+        "headings": ["Look after the stressed vowel", "Usual clue", "Model"],
+        "rows": [
+          ["one consonant letter", "stretch the vowel", "tak, bor"],
+          ["double consonant letters", "cut the vowel; hold the consonant", "tack, kaffe, mamma"],
+          ["unsure or unfamiliar word", "listen and copy", "check a recording"]
+        ]
+      },
+      "memoryTip": "Single often means STRETCH. Double often means STOP the vowel quickly—but always check the stressed syllable and listen.",
+      "tryIt": "Say tak—tack three times. Make the contrast bigger than feels natural, then say the pair normally."
+    },
+    {
+      "title": "One vowel group, three soft sounds",
+      "kind": "rule",
+      "body": [
+        "The spelling group E, I, Y, Ä, Ö often softens the consonant immediately before it. These are front vowels because the tongue is forward; Y and Ö still use rounded lips.",
+        "G usually becomes the Swedish j sound, K usually becomes the tj sound /ɕ/, and SK usually becomes the sj sound /ɧ/ before this group.",
+        "TJ is not exactly English ch, and SJ is not exactly English sh. Use the shortcut to predict, then use audio to learn the actual sound. Some loanwords are exceptions."
+      ],
+      "examples": [
+        {"fi": "gäst · gissar · gillar", "en": "soft G → Swedish j", "note": "The first vowel is Ä or I."},
+        {"fi": "Kina · köper · kött · tjej · tjuv", "en": "soft K/TJ → /ɕ/", "note": "Make a narrow, light sound; do not add an English t + ch."},
+        {"fi": "skärm · skiner · sjuk · skjorta", "en": "SK/SJ/SKJ → sj sound /ɧ/", "note": "This sound varies by region and speaker."},
+        {"fi": "ska · skuld", "en": "hard sk before A and U", "note": "No front vowel follows sk."},
+        {"fi": "Jag köper kött i Kina.", "en": "I buy meat in China.", "note": "One short sentence for repeated K + front-vowel practice."}
+      ],
+      "table": {
+        "headings": ["Spelling cue", "Typical sound", "Examples"],
+        "rows": [
+          ["g + e, i, y, ä, ö", "Swedish j /j/", "gäst, gillar"],
+          ["k + e, i, y, ä, ö", "tj /ɕ/", "Kina, kött"],
+          ["sk + e, i, y, ä, ö", "sj /ɧ/", "skärm, skiner"],
+          ["sj, skj", "usually sj /ɧ/", "sjuk, skjorta"]
+        ]
+      },
+      "memoryTip": "Same five vowels, three different results: G → J, K → TJ, SK → SJ. Do not call all three ‘sh’.",
+      "tryIt": "Underline the first vowel in gillar, kött, and skärm. Predict the sound, listen, then repeat each word twice."
+    },
+    {
+      "title": "Recognise the remaining Lesson 1 spellings",
+      "kind": "rule",
+      "body": [
+        "Recognition only today: SJ and SKJ normally use the sj sound, as in sjuk and skjorta. Initial HJ and LJ normally begin with the Swedish j sound, as in hjälp and ljus.",
+        "Dialect matters in Finland: Sweden-Swedish often merges RS in kurs into a retroflex sound, while Finland-Swedish usually keeps R + S. Many Finland-Swedish speakers also keep a clear D in djur.",
+        "Och is /ɔk/ in careful speech and is often shorter in conversation. Skönt normally means pleasant or comfortable; say fint hår or snyggt hår for a natural compliment."
+      ],
+      "examples": [
+        {"fi": "sjuk · skjorta", "en": "sick · shirt", "note": "Two spellings for the sj sound."},
+        {"fi": "hjälp · ljus", "en": "help · light", "note": "Initial H or L is silent in these spellings; begin with Swedish j."},
+        {"fi": "djur", "en": "animal", "note": "You may hear j alone in Sweden or a retained d in Finland-Swedish."},
+        {"fi": "kurs · mars", "en": "course · March/Mars", "note": "Keep r + s separate for a Finland-Swedish target."},
+        {"fi": "Jag gillar din rosa skjorta. Du har fint hår.", "en": "I like your pink shirt. You have nice hair.", "note": "The textbook uses skönt hår; fint hår is the natural compliment to produce."}
+      ],
+      "memoryTip": "These are recognition words, not a second test. Your target is to notice the spelling and accept dialect variation.",
+      "tryIt": "Listen once to sjuk, skjorta, hjälp, ljus, djur, kurs, and mars. Copy the Finland-Swedish model you want to use; do not force every word into one accent."
     }
   ],
   "guided": [
     {
-      "id": "sv-01-guided-meaning",
-      "prompt": "What does “Hej! Jag heter Sam.” mean?",
-      "answers": [
-        "Hello! My name is Sam."
-      ],
-      "options": [
-        "Hello! My name is Sam.",
-        "Hello! My name is Mira.",
-        "thanks"
-      ],
-      "hint": "Match the whole line.",
-      "explanation": "Hej! Jag heter Sam. means “Hello! My name is Sam.”"
+      "id": "sv-01-guided-name",
+      "prompt": "Complete: Hej! Jag ___ Noor.",
+      "answers": ["heter"],
+      "options": ["heter", "bor", "talar"],
+      "hint": "Use the name pattern.",
+      "explanation": "Jag heter Noor means ‘My name is Noor.’"
     },
     {
-      "id": "sv-01-guided-form",
-      "prompt": "Complete: Jag ___ Sam.",
-      "answers": [
-        "heter"
-      ],
+      "id": "sv-01-guided-home-origin",
+      "prompt": "Which pair correctly separates home now from origin?",
+      "answers": ["Jag bor i Finland. Jag kommer från Pakistan."],
       "options": [
-        "heter",
-        "hej",
-        "tack"
+        "Jag bor i Finland. Jag kommer från Pakistan.",
+        "Jag kommer i Finland. Jag bor från Pakistan.",
+        "Jag talar Finland. Jag heter Pakistan."
       ],
-      "hint": "Use the rule section.",
-      "explanation": "Jag heter means “My name is”."
+      "hint": "Use bor i for home and kommer från for origin.",
+      "explanation": "Bor i gives the current home; kommer från gives origin."
     },
     {
-      "id": "sv-01-guided-scene",
-      "prompt": "Which line appears in the dialogue?",
-      "answers": [
-        "Trevligt att träffas."
-      ],
-      "options": [
-        "Trevligt att träffas.",
-        "Hej! Jag heter Mira.",
-        "Hej! Jag heter Sam."
-      ],
-      "hint": "Locate the exact line.",
-      "explanation": "The dialogue includes Trevligt att träffas."
+      "id": "sv-01-guided-language",
+      "prompt": "Complete: Jag talar engelska och lite ___.",
+      "answers": ["svenska"],
+      "options": ["svenska", "Sverige", "svensk"],
+      "hint": "Choose the language name.",
+      "explanation": "Svenska is the language Swedish."
     },
     {
-      "id": "sv-01-guided-listen",
-      "prompt": "What is the speaker's name?",
-      "answers": [
-        "Lina"
-      ],
-      "options": [
-        "Lina",
-        "Mira",
-        "Noor"
-      ],
-      "hint": "Listen for the requested detail.",
-      "explanation": "Jag heter Lina gives the name."
+      "id": "sv-01-guided-length",
+      "prompt": "Which word normally has the longer stressed vowel?",
+      "answers": ["tak"],
+      "options": ["tak", "tack", "pappa"],
+      "hint": "One following consonant often signals a long stressed vowel.",
+      "explanation": "Tak has a long a; tack and pappa have short stressed vowels."
     },
     {
-      "id": "sv-01-guided-read",
-      "prompt": "What is this notice for?",
-      "answers": [
-        "A beginner Swedish class"
-      ],
+      "id": "sv-01-guided-soft-group",
+      "prompt": "Which row maps the three common soft sounds correctly?",
+      "answers": ["gillar → j; kött → tj; skärm → sj"],
       "options": [
-        "A beginner Swedish class",
-        "A café",
-        "A delayed train"
+        "gillar → j; kött → tj; skärm → sj",
+        "gillar → sj; kött → j; skärm → tj",
+        "gillar → hard g; kött → hard k; skärm → hard sk"
       ],
-      "hint": "Scan the practical text.",
-      "explanation": "Svenska för nybörjare means Swedish for beginners."
-    },
-    {
-      "id": "sv-01-guided-sound",
-      "prompt": "Which word has the longer stressed vowel?",
-      "answers": [
-        "tak"
-      ],
-      "options": [
-        "tak",
-        "tack",
-        "och"
-      ],
-      "hint": "Use spelling and audio.",
-      "explanation": "Tak has a long a; tack has a short a."
-    },
-    {
-      "id": "sv-01-guided-word",
-      "prompt": "Which item means “hello”?",
-      "answers": [
-        "hej"
-      ],
-      "options": [
-        "hej",
-        "heta",
-        "tack"
-      ],
-      "hint": "Use the vocabulary examples.",
-      "explanation": "hej means hello."
+      "hint": "The front vowels are i in gillar, ö in kött, and ä in skärm.",
+      "explanation": "Before a front vowel, g, k, and sk usually become three different soft sounds: j, tj, and sj."
     }
   ],
   "checkpoint": [
     {
-      "id": "sv-01-check-key",
-      "prompt": "Produce: “Hello! My name is Sam.”",
-      "answers": [
-        "Hej! Jag heter Sam."
-      ],
-      "hint": "Say it first, then type it.",
-      "explanation": "Model: Hej! Jag heter Sam."
+      "id": "sv-01-check-intro",
+      "prompt": "Produce: ‘Hello! My name is Sara. I live in Finland. I come from India. I speak Hindi and English.’",
+      "answers": ["Hej! Jag heter Sara. Jag bor i Finland. Jag kommer från Indien. Jag talar hindi och engelska."],
+      "hint": "Use the four introduction chunks in order.",
+      "explanation": "Model: Hej! Jag heter Sara. Jag bor i Finland. Jag kommer från Indien. Jag talar hindi och engelska."
     },
     {
-      "id": "sv-01-check-form",
-      "prompt": "Complete: Jag ___ Sam.",
-      "answers": [
-        "heter"
-      ],
+      "id": "sv-01-check-sounds",
+      "prompt": "Which row groups the normal soft sounds correctly?",
+      "answers": ["gäst - j sound; kött - tj sound; skärm - sj sound"],
       "options": [
-        "heter",
-        "hej",
-        "tack"
+        "gäst - j sound; kött - tj sound; skärm - sj sound",
+        "gäst - hard g; kött - hard k; skärm - hard sk",
+        "gäst - sj sound; kött - j sound; skärm - tj sound"
       ],
-      "hint": "Apply the rule from memory.",
-      "explanation": "Jag heter means “My name is”."
+      "hint": "Front vowels often soften g, k, and sk.",
+      "explanation": "G, k, and sk have three different softened sounds in these words."
     },
     {
-      "id": "sv-01-check-listen",
-      "prompt": "What is the speaker's name?",
-      "answers": [
-        "Lina"
-      ],
+      "id": "sv-01-check-length",
+      "prompt": "Which instruction produces the tak/tack contrast?",
+      "answers": ["Stretch the a in tak; cut the a and hold the k in tack"],
       "options": [
-        "Lina",
-        "Mira",
-        "Noor"
+        "Stretch the a in tak; cut the a and hold the k in tack",
+        "Say both words with exactly the same timing",
+        "Stretch the a in tack and remove the k"
       ],
-      "hint": "Replay once.",
-      "explanation": "Jag heter Lina gives the name."
-    },
-    {
-      "id": "sv-01-check-transfer",
-      "prompt": "What best tests transfer?",
-      "answers": [
-        "Change one detail and rebuild the message"
-      ],
-      "options": [
-        "Change one detail and rebuild the message",
-        "Copy the model",
-        "Translate every word"
-      ],
-      "hint": "A changed situation tests the pattern.",
-      "explanation": "Rebuilding shows transferable learning."
+      "hint": "In the stressed syllable, either the vowel or the following consonant is long.",
+      "explanation": "Tak has a long vowel; tack has a short vowel followed by a longer k sound."
     }
   ],
   "assignment": {
-    "title": "Episode 1 mission: First greetings and Swedish sounds",
-    "instructions": "LISTEN: Hear the audio twice and answer: What is the speaker's name?\n\nREAD: Read once for purpose and once for detail. Answer: What is this notice for?\n\nSPEAK: Greet a classmate, say your name, and close. Try once without the model, then repeat more clearly.\n\nWRITE: Write a two-line greeting and introduction. Check word order and spelling.\n\nTRANSFER: Use God morgon instead of Hej and choose another name.\n\nRETURN: Greet and introduce yourself from memory.",
-    "model": "Speaking: Hej! Jag heter Alex. Trevligt att träffas. Hej då!\nWriting: Hej!\nJag heter Alex."
+    "title": "Episode 1 mission: Say who you are",
+    "instructions": "CORE: Say your real four-line introduction once slowly and once at normal speed: name, home now, origin, and languages.\n\nONE SOUND LOOP: Choose only one: tak/tack OR gillar/kött/skärm. Listen and repeat the small set three times.\n\nRETURN: Close the model and give your real introduction from memory in under 20 seconds.",
+    "model": "Hej! Jag heter Alex.\nJag bor i Helsingfors.\nJag kommer från Indien.\nJag talar hindi, engelska och lite svenska."
   },
   "takeaways": [
-    "Use: Hej! Jag heter Sam.",
-    "Rule: Swedish has nine vowel letters: a, e, i, o, u, y, å, ä and ö. Listen before using English sound approximations.",
-    "Return: Greet and introduce yourself from memory."
+    "Core: say Jag heter … · Jag bor i … · Jag kommer från … · Jag talar … as four complete chunks.",
+    "Mouth first, audio second: use the Hindi/Marathi/English bridge to find the shape, then copy the Swedish model.",
+    "Practise one contrast at a time: tak/tack or the g → j, k → tj, sk → sj pattern."
   ],
   "dialogue": [
+    {"speaker": "Aino", "fi": "Hej! Jag heter Aino. Vad heter du?", "en": "Hello! My name is Aino. What is your name?"},
+    {"speaker": "Alex", "fi": "Hej! Jag heter Alex.", "en": "Hello! My name is Alex."},
+    {"speaker": "Aino", "fi": "Varifrån kommer du?", "en": "Where do you come from?"},
+    {"speaker": "Alex", "fi": "Jag kommer från Indien, men jag bor i Finland nu.", "en": "I come from India, but I live in Finland now."},
+    {"speaker": "Aino", "fi": "Vilka språk talar du?", "en": "Which languages do you speak?"},
+    {"speaker": "Alex", "fi": "Jag talar hindi, engelska och lite svenska.", "en": "I speak Hindi, English, and a little Swedish."},
+    {"speaker": "Aino", "fi": "Jag gillar din rosa skjorta!", "en": "I like your pink shirt!"},
+    {"speaker": "Alex", "fi": "Tack! Du har fint hår.", "en": "Thanks! You have nice hair."}
+  ],
+  "resources": [
     {
-      "speaker": "Mira",
-      "fi": "Hej! Jag heter Mira.",
-      "en": "Hello! My name is Mira."
-    },
-    {
-      "speaker": "Sam",
-      "fi": "Hej! Jag heter Sam.",
-      "en": "Hello! My name is Sam."
-    },
-    {
-      "speaker": "Mira",
-      "fi": "Trevligt att träffas.",
-      "en": "Nice to meet you."
-    },
-    {
-      "speaker": "Sam",
-      "fi": "Detsamma. Hej då!",
-      "en": "Likewise. Goodbye!"
+      "label": "Forvo Swedish pronunciation dictionary",
+      "url": "https://forvo.com/languages/sv/",
+      "description": "Search one Lesson 1 word and compare recordings from Swedish speakers."
     }
   ],
   "practice": {
     "words": [
-      {
-        "id": "sv-01-word-1",
-        "fi": "hej",
-        "en": "hello",
-        "example": "Hej, jag heter Noor.",
-        "translation": "Hello, my name is Noor.",
-        "level": "A0"
-      },
-      {
-        "id": "sv-01-word-2",
-        "fi": "heta",
-        "en": "to be called",
-        "example": "Jag heter Leo.",
-        "translation": "My name is Leo.",
-        "level": "A0"
-      },
-      {
-        "id": "sv-01-word-3",
-        "fi": "tack",
-        "en": "thanks",
-        "example": "Tack så mycket!",
-        "translation": "Thank you very much!",
-        "level": "A0"
-      },
-      {
-        "id": "sv-01-word-4",
-        "fi": "hej då",
-        "en": "goodbye",
-        "example": "Tack, hej då!",
-        "translation": "Thanks, goodbye!",
-        "level": "A0"
-      },
-      {
-        "id": "sv-01-word-5",
-        "fi": "trevligt",
-        "en": "nice",
-        "example": "Trevligt att träffas.",
-        "translation": "Nice to meet you.",
-        "level": "A0"
-      },
-      {
-        "id": "sv-01-word-6",
-        "fi": "detsamma",
-        "en": "likewise",
-        "example": "Tack, detsamma!",
-        "translation": "Thanks, likewise!",
-        "level": "A0"
-      }
+      {"id": "sv-01-word-1", "fi": "hej", "en": "hello", "example": "Hej, jag heter Alex.", "translation": "Hello, my name is Alex.", "level": "A0"},
+      {"id": "sv-01-word-2", "fi": "Jag heter …", "en": "my name is …", "example": "Jag heter Alex.", "translation": "My name is Alex.", "level": "A0"},
+      {"id": "sv-01-word-3", "fi": "Jag bor i …", "en": "I live in …", "example": "Jag bor i Finland.", "translation": "I live in Finland.", "level": "A0"},
+      {"id": "sv-01-word-4", "fi": "Jag kommer från …", "en": "I come from …", "example": "Jag kommer från Indien.", "translation": "I come from India.", "level": "A0"},
+      {"id": "sv-01-word-5", "fi": "Jag talar …", "en": "I speak …", "example": "Jag talar svenska.", "translation": "I speak Swedish.", "level": "A0"},
+      {"id": "sv-01-word-6", "fi": "lite", "en": "a little", "example": "Jag talar lite svenska.", "translation": "I speak a little Swedish.", "level": "A0"},
+      {"id": "sv-01-word-7", "fi": "och", "en": "and", "example": "Jag talar engelska och svenska.", "translation": "I speak English and Swedish.", "level": "A0"},
+      {"id": "sv-01-word-8", "fi": "gilla", "en": "to like", "example": "Jag gillar rosa.", "translation": "I like pink.", "level": "A0"},
+      {"id": "sv-01-word-9", "fi": "rosa", "en": "pink", "example": "Det är en rosa skjorta.", "translation": "It is a pink shirt.", "level": "A0"},
+      {"id": "sv-01-word-10", "fi": "hår", "en": "hair", "example": "Du har fint hår.", "translation": "You have nice hair.", "level": "A0"},
+      {"id": "sv-01-word-11", "fi": "skönt", "en": "pleasant; comfortable", "example": "Det är skönt här.", "translation": "It is pleasant here.", "level": "A0"},
+      {"id": "sv-01-word-12", "fi": "tak", "en": "roof; ceiling", "example": "Huset har ett rött tak.", "translation": "The house has a red roof.", "level": "A0"},
+      {"id": "sv-01-word-13", "fi": "tack", "en": "thanks", "example": "Tack så mycket!", "translation": "Thank you very much!", "level": "A0"},
+      {"id": "sv-01-word-14", "fi": "kött", "en": "meat", "example": "Jag köper kött.", "translation": "I buy meat.", "level": "A0"}
     ],
     "pronunciation": {
-      "text": "Hej. Jag heter Sam. Tak. Tack. Hej då.",
-      "tip": "Hold the a in tak longer than in tack. Keep å, ä and ö distinct."
+      "text": "Jag. Ja. Bok. Bor. Du. Dum. By. Paraply. Le. Ö. Bär. Från. Tak. Tack. Gäst. Gillar. Kina. Kött. Skärm. Skiner. Sjuk. Skjorta. Kurs. Mars. Hjälp. Djur. Ljus.",
+      "tip": "Do not repeat the whole list at once. Choose one group: the nine vowel words, tak/tack, or gillar/kött/skärm. For kurs, mars, and djur, follow the Finland-Swedish variation explained above."
     },
     "reading_passage": {
-      "text": "Välkommen!\nSvenska för nybörjare\nMåndag klockan 18",
+      "text": "Hej! Jag heter Alex.\nJag bor i Helsingfors.\nJag kommer från Indien.\nJag talar hindi, engelska och lite svenska.",
       "gist": {
         "prompt": "What is the main purpose of this text?",
-        "options": [
-          "Announce a beginner Swedish class",
-          "Advertise a restaurant",
-          "Report a transport delay"
-        ],
+        "options": ["Give a short personal introduction", "Order food", "Explain a train delay"],
         "answer": 0,
-        "explanation": "The heading and schedule announce a Swedish course for beginners."
+        "explanation": "Alex gives a name, home, origin, and languages."
       },
       "detail": {
-        "prompt": "What is this notice for?",
-        "options": [
-          "A beginner Swedish class",
-          "A café",
-          "A delayed train"
-        ],
+        "prompt": "Which language does Alex speak only a little?",
+        "options": ["Swedish", "Hindi", "English"],
         "answer": 0,
-        "explanation": "Svenska för nybörjare means Swedish for beginners."
+        "explanation": "Alex writes lite svenska."
       }
     },
     "reading": {
-      "text": "Välkommen!\nSvenska för nybörjare\nMåndag klockan 18",
-      "question": "What is this notice for?",
-      "options": [
-        "A beginner Swedish class",
-        "A café",
-        "A delayed train"
-      ],
+      "text": "Hej! Jag heter Alex.\nJag bor i Helsingfors.\nJag kommer från Indien.\nJag talar hindi, engelska och lite svenska.",
+      "question": "Where does Alex live?",
+      "options": ["Helsinki", "India", "Stockholm"],
       "answer": 0,
-      "explanation": "Svenska för nybörjare means Swedish for beginners."
+      "explanation": "Jag bor i Helsingfors means ‘I live in Helsinki.’"
     },
     "listening": {
-      "text": "Hej! Jag heter Lina. Trevligt att träffas. Hej då!",
-      "question": "What is the speaker's name?",
-      "options": [
-        "Lina",
-        "Mira",
-        "Noor"
-      ],
+      "text": "Hej! Jag heter Alex. Jag kommer från Indien, men jag bor i Helsingfors. Jag talar hindi, engelska och lite svenska.",
+      "question": "Where does Alex live now?",
+      "options": ["Helsinki", "India", "Sweden"],
       "answer": 0,
-      "explanation": "Jag heter Lina gives the name."
+      "explanation": "Alex says Jag bor i Helsingfors."
     },
     "speaking": {
-      "prompt": "Greet a classmate, say your name, and close.",
-      "help": "Use Hej! Jag heter … Trevligt att träffas. Hej då!",
-      "model": "Hej! Jag heter Alex. Trevligt att träffas. Hej då!"
+      "prompt": "Give a four-line introduction with your name, current home, origin, and languages.",
+      "help": "Use: Hej! Jag heter … Jag bor i … Jag kommer från … Jag talar … och lite svenska.",
+      "model": "Hej! Jag heter Alex. Jag bor i Helsingfors. Jag kommer från Indien. Jag talar hindi, engelska och lite svenska."
     },
     "writing": {
-      "prompt": "Write a two-line greeting and introduction.",
-      "help": "Begin with Hej and use Jag heter + name.",
-      "model": "Hej!\nJag heter Alex."
+      "prompt": "Write a four-sentence introduction with your name, current home, origin, and languages.",
+      "help": "Check heter, bor i, kommer från, talar, och, and lite.",
+      "model": "Hej! Jag heter Alex.\nJag bor i Helsingfors.\nJag kommer från Indien.\nJag talar hindi, engelska och lite svenska."
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Say a greeting, your name, and a closing.",
-    "transferPrompt": "Use God morgon instead of Hej and choose another name.",
-    "returnPrompt": "Greet and introduce yourself from memory.",
+    "expectedOutput": "Give a clear four-line introduction with your real details.",
+    "transferPrompt": "Change one detail, then give the four-line introduction again.",
+    "returnPrompt": "Give your real introduction from memory in under 20 seconds.",
     "successChecks": [
-      "Use Hej and Jag heter.",
-      "Distinguish tak from tack.",
-      "Close with Hej då."
+      "Use Jag heter, Jag bor i, Jag kommer från, and Jag talar.",
+      "Keep home and origin separate.",
+      "Speak once with the model and once without looking."
     ],
-    "requiredSkills": [
-      "speaking"
-    ]
+    "requiredSkills": ["speaking"]
   }
 }

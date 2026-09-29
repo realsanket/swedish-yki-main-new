@@ -10,12 +10,20 @@ import { StoryAvatar } from "./StoryAvatar";
 export default function StoryScene({
   dialogue,
   chapter,
+  title = "Listen before you read",
+  eyebrow = "LISTEN & NOTICE",
+  instructions,
+  initiallyOpen = false,
 }: {
   dialogue: NonNullable<CourseLecture["dialogue"]>;
   chapter?: StoryChapter;
+  title?: string;
+  eyebrow?: string;
+  instructions?: string;
+  initiallyOpen?: boolean;
 }) {
   const titleId = useId();
-  const [showTextSupport, setShowTextSupport] = useState(false);
+  const [showTextSupport, setShowTextSupport] = useState(initiallyOpen);
 
   return (
     <section className="story-scene" aria-labelledby={titleId}>
@@ -24,12 +32,12 @@ export default function StoryScene({
           <MessageCircleMore size={22} />
         </span>
         <div>
-          <p className="eyebrow">LISTEN &amp; NOTICE</p>
-          <h3 id={titleId}>Listen before you read</h3>
+          <p className="eyebrow">{eyebrow}</p>
+          <h3 id={titleId}>{title}</h3>
           <p>
-            {chapter
+            {instructions ?? (chapter
               ? `${chapter.setting}. Predict the situation, listen once for the main idea, then listen again for one detail.`
-              : "Predict the situation, listen once for the main idea, then listen again for one detail."}
+              : "Predict the situation, listen once for the main idea, then listen again for one detail.")}
           </p>
         </div>
         <div className="story-scene-actions">

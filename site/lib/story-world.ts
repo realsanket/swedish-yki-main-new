@@ -43,7 +43,7 @@ export const storyChapters: Record<number, StoryChapter> = {
     title: "The first class",
     setting: "A community class and the first week",
     summary:
-      "Alex arrives, meets Aino and Sami, and learns to share a name, origin, number, and meeting time.",
+      "Alex arrives, meets Aino and Sami, and learns to share a name, home, origin, languages, contact details, and meeting time.",
     cast: ["Alex", "Aino", "Sami"],
     art: "/images/story/chapters/chapter-01-first-class.webp",
   },

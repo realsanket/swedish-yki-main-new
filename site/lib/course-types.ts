@@ -59,6 +59,15 @@ export type TeachingSection = {
   body: string[];
   examples: { fi: string; en: string; note?: string }[];
   table?: { headings: string[]; rows: string[][] };
+  /** A learner-friendly bridge to the idea. It is a memory cue, not a replacement for the audio model. */
+  memoryTip?: string;
+  /** One short action completed immediately after the explanation. */
+  tryIt?: string;
+};
+export type LearningResource = {
+  label: string;
+  url: string;
+  description: string;
 };
 export type BookConnection = {
   chapter: string;
@@ -91,6 +100,7 @@ export type LectureContent = {
   assignment: { title: string; instructions: string; model: string };
   takeaways: string[];
   dialogue?: { speaker: string; fi: string; en: string }[];
+  resources?: LearningResource[];
   bookConnection?: BookConnection;
   bookConnections?: BookConnection[];
   practice: LecturePractice;

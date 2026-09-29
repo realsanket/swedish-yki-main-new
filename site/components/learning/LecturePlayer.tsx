@@ -9,6 +9,7 @@ import {
   Check,
   CheckCircle2,
   ChevronDown,
+  ExternalLink,
   Lightbulb,
   Loader2,
   NotebookPen,
@@ -519,13 +520,19 @@ export default function LecturePlayer({
     [flush, lecture.id, onPracticeSaved, save],
   );
   const lectureStep = (step: (typeof routeProfile.steps)[number]) => {
-    // Ep 1 has no prior lesson to "warm up" from. Re-label its recall step
-    // so the learner is not asked to bring back something they never met.
+    // Episode 1 begins with a model conversation, not a test of material the
+    // learner has never met. The two questions only check meaning afterwards.
     if (lecture.number === 1 && step.part === "recall")
       return {
         ...step,
-        label: "Curiosity preview",
-        description: "Three preview items — reveal the answer any time. You do not know any Swedish yet, and that is the point.",
+        label: "Hear the conversation",
+        description: `Listen first, open the text, then answer ${lecture.recall.length} simple meaning checks.`,
+      };
+    if (lecture.number === 1 && step.part === "teach")
+      return {
+        ...step,
+        label: "Build it step by step",
+        description: "One small card at a time: useful line, mouth cue, sound clue, quick try.",
       };
     return step;
   };
@@ -559,7 +566,7 @@ export default function LecturePlayer({
       );
     });
   return (
-    <div className="course-space lecture-workspace">
+    <div className={`course-space lecture-workspace ${lecture.number === 1 ? "lesson-one-workspace" : ""}`}>
       <div className="lecture-toolbar">
         <button
           type="button"
@@ -723,16 +730,26 @@ export default function LecturePlayer({
                 <div>
                   <h3>
                     {lecture.number === 1
-                      ? "Start with curiosity"
+                      ? "First hear how the language is used"
                       : "Before you look back…"}
                   </h3>
                   <p>
                     {lecture.number === 1
-                      ? "You do not need any Swedish yet. Have a way to listen and somewhere to try speaking out loud. Begin with the teaching notes, and take as many short sessions as you need."
+                      ? "Do not memorise a rule list yet. Listen once, reveal the Swedish and English only when you need them, then copy one line aloud."
                       : "Try remembering without opening your notes. If you get stuck, the hint and explanation will help. This warm-up is not graded."}
                   </p>
                 </div>
               </div>
+              {lecture.number === 1 && lecture.dialogue && (
+                <StoryScene
+                  dialogue={lecture.dialogue}
+                  chapter={chapter}
+                  eyebrow="START WITH THE STORY"
+                  title="Meet Aino and Alex"
+                  instructions="Listen once, follow the visible Swedish, and copy one line. Open English only when a line is unclear."
+                  initiallyOpen
+                />
+              )}
               {ykiMock && (
                 <section className="mock-conditions-card">
                   <span className="eyebrow">SET CONDITIONS · {ykiMock.totalMinutes} MINUTES</span>
@@ -752,7 +769,11 @@ export default function LecturePlayer({
               )}
               <div className="course-questions">
                 {questionAction.recall && (
-                  <ActionRibbon>{questionAction.recall}</ActionRibbon>
+                  <ActionRibbon>
+                    {lecture.number === 1
+                      ? "Use the conversation you just heard. These two checks are about meaning, not pronunciation or grammar."
+                      : questionAction.recall}
+                  </ActionRibbon>
                 )}
                 {questions.map((q, i) => (
                   <QuestionCard
@@ -839,7 +860,7 @@ export default function LecturePlayer({
                     queue({ assignment: value });
                   }}
                 />
-              ) : lecture.dialogue && (
+              ) : lecture.dialogue && lecture.number !== 1 && (
                 <StoryScene dialogue={lecture.dialogue} chapter={chapter} />
               )}
               {ykiWorkshop && hydrated && (
@@ -942,6 +963,22 @@ export default function LecturePlayer({
                           </div>
                         ))}
                       </div>
+                      {(currentSection.memoryTip || currentSection.tryIt) && (
+                        <div className="lesson-coaching-pair">
+                          {currentSection.memoryTip && (
+                            <aside className="lesson-memory-tip">
+                              <span>MEMORY BRIDGE</span>
+                              <p>{currentSection.memoryTip}</p>
+                            </aside>
+                          )}
+                          {currentSection.tryIt && (
+                            <aside className="lesson-try-it">
+                              <span>DO IT NOW</span>
+                              <p>{currentSection.tryIt}</p>
+                            </aside>
+                          )}
+                        </div>
+                      )}
                     </section>
                     <div className="teach-pagination-controls">
                       <button
@@ -950,7 +987,7 @@ export default function LecturePlayer({
                         onClick={() => setSectionIdx(Math.max(0, sectionIdx - 1))}
                         disabled={sectionIdx === 0}
                       >
-                        &larr; Previous rule
+                        &larr; {lecture.number === 1 ? "Previous card" : "Previous rule"}
                       </button>
                       {!isLastPage && (
                         <button
@@ -958,7 +995,7 @@ export default function LecturePlayer({
                           className="primary"
                           onClick={() => setSectionIdx(Math.min(totalSections - 1, sectionIdx + 1))}
                         >
-                          Next rule &rarr;
+                          {lecture.number === 1 ? "Next card" : "Next rule"} &rarr;
                         </button>
                       )}
                     </div>
@@ -974,6 +1011,24 @@ export default function LecturePlayer({
                             onOpenChapterReview={onOpenChapterReview}
                           />
                         ))}
+                        {!!lecture.resources?.length && (
+                          <section className="lesson-resources" aria-labelledby={`episode-${lecture.number}-resources`}>
+                            <span className="eyebrow">OPTIONAL PRONUNCIATION CHECK</span>
+                            <h3 id={`episode-${lecture.number}-resources`}>Compare a real speaker, then return</h3>
+                            <p>Use an external recording for one word at a time. Listen, close the page, and repeat here from memory.</p>
+                            <div>
+                              {lecture.resources.map((resource) => (
+                                <a href={resource.url} target="_blank" rel="noreferrer" key={resource.url}>
+                                  <span>
+                                    <b>{resource.label}</b>
+                                    <small>{resource.description}</small>
+                                  </span>
+                                  <ExternalLink size={16} aria-hidden="true" />
+                                </a>
+                              ))}
+                            </div>
+                          </section>
+                        )}
                         {(() => {
                           const isPhrase = (fi: string) => /[\s!?.]/.test(fi);
                           const phrases = lecture.words.filter((w) => isPhrase(w.fi));
@@ -989,7 +1044,7 @@ export default function LecturePlayer({
                               <small>{w.translation}</small>
                             </div>
                           );
-                          return (
+                          const wordBank = (
                             <section className="teaching-section">
                               {phrases.length > 0 && (
                                 <>
@@ -1012,6 +1067,21 @@ export default function LecturePlayer({
                               </div>
                             </section>
                           );
+                          if (lecture.number === 1) {
+                            return (
+                              <details className="lesson-one-word-bank">
+                                <summary>
+                                  <span>
+                                    <b>Open the complete Lesson 1 word bank</b>
+                                    <small>4 phrases · {lexicon.length} recognition words · one full sound drill</small>
+                                  </span>
+                                  <ChevronDown size={17} aria-hidden="true" />
+                                </summary>
+                                {wordBank}
+                              </details>
+                            );
+                          }
+                          return wordBank;
                         })()}
                       </>
                     )}

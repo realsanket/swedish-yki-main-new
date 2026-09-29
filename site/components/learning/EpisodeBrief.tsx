@@ -1,12 +1,13 @@
 import Image from "next/image";
-import { MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, MapPin, Sparkles } from "lucide-react";
 import type { CourseLecture } from "@/lib/course";
 import {
   storyArtForLecture,
   storyObjectForLecture,
   type StoryChapter,
 } from "@/lib/story-world";
-import { StoryCast } from "./StoryAvatar";
+import AudioButton from "./AudioButton";
+import { StoryAvatar, StoryCast } from "./StoryAvatar";
 
 type Props = {
   lecture: CourseLecture;
@@ -28,8 +29,80 @@ export default function EpisodeBrief({
   const previouslyText = previousTitle
     ? `The last episode was “${previousTitle}.”`
     : lecture.number === 1
-      ? "First lesson. Nothing to bring back yet — you meet Swedish for the very first time, one sound rule and three useful phrases at a time."
+      ? "First lesson. Nothing to bring back yet — begin with four introduction chunks, then hear the sound patterns in familiar words."
       : "Alex has arrived at the first community Swedish class.";
+
+  if (lecture.number === 1) {
+    const chunks = [
+      ["NAME", "Jag heter …", "My name is …"],
+      ["HOME NOW", "Jag bor i …", "I live in …"],
+      ["ORIGIN", "Jag kommer från …", "I come from …"],
+      ["LANGUAGES", "Jag talar …", "I speak …"],
+    ] as const;
+
+    return (
+      <section className="lesson-one-brief" aria-labelledby="episode-brief-title">
+        <div className="lesson-one-brief-main">
+          <div className="lesson-one-brief-copy">
+            <div className="lesson-one-brief-meta">
+              <span>LEKTION 1</span>
+              <span>13 APRIL 2026</span>
+            </div>
+            <p className="lesson-one-kicker">YOUR FIRST SWEDISH CONVERSATION</p>
+            <h1 id="episode-brief-title">Hej! Vad heter du?</h1>
+            <p className="lesson-one-lede">
+              Hear it, understand it, then make it yours. Grammar names can wait.
+            </p>
+            <div className="lesson-one-start-line">
+              <div>
+                <span>START WITH ONE LINE</span>
+                <p lang="sv">Hej! Jag heter Alex.</p>
+                <small>Hello! My name is Alex.</small>
+              </div>
+              <AudioButton
+                text="Hej! Jag heter Alex. Vad heter du?"
+                label="Hear the first line"
+                className="icon-button"
+              />
+            </div>
+          </div>
+          <div className="lesson-one-people" aria-label="Aino and Alex meet for the first time">
+            <div className="lesson-one-person lesson-one-person-aino">
+              <StoryAvatar name="Aino" size={96} />
+              <span>Aino</span>
+              <p lang="sv">Vad heter du?</p>
+            </div>
+            <div className="lesson-one-meets" aria-hidden="true">
+              <span>HEJ!</span>
+              <ArrowRight size={22} />
+            </div>
+            <div className="lesson-one-person lesson-one-person-alex">
+              <StoryAvatar name="Alex" size={96} />
+              <span>Alex</span>
+              <p lang="sv">Jag heter Alex.</p>
+            </div>
+          </div>
+        </div>
+        <div className="lesson-one-chunks" aria-label="Four lines to learn today">
+          {chunks.map(([label, swedish, english], index) => (
+            <div key={label}>
+              <span>{String(index + 1).padStart(2, "0")} · {label}</span>
+              <b lang="sv">{swedish}</b>
+              <small>{english}</small>
+            </div>
+          ))}
+        </div>
+        <footer className="lesson-one-brief-footer">
+          <p><b>Today’s finish line:</b> {byTheEnd}</p>
+          <div>
+            <span>Speak first</span>
+            <span>One sound at a time</span>
+            <span>{lecture.minutes} min · pause anytime</span>
+          </div>
+        </footer>
+      </section>
+    );
+  }
 
   return (
     <section className="episode-brief" aria-labelledby="episode-brief-title">

@@ -4,6 +4,8 @@ Stigen is a local-first Swedish learning application for adult learners in Finla
 
 The supplied classroom notes and two books informed the course progression. Their pages and exercises are not republished in the app; learner-facing tasks are newly authored.
 
+Source-to-episode decisions are tracked in [`../mapping.md`](../mapping.md). Follow that file before revising curriculum content; the current detailed pilot covers Chapter 1, Episode 1 only.
+
 ## Run locally
 
 Requirements: Node.js 22.13 or newer.
