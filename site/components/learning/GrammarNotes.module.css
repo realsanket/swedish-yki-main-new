@@ -153,3 +153,62 @@
   font-size: 12px;
   cursor: pointer;
 }
+
+.collapsed {
+  padding: 0;
+}
+.expand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 52px;
+  padding: 10px 14px;
+  border: 0;
+  background: transparent;
+  color: #173858;
+  text-align: left;
+  cursor: pointer;
+}
+.expand > svg:first-child {
+  flex: 0 0 auto;
+  color: #8a6412;
+}
+.expand > span {
+  display: grid;
+  flex: 1;
+  gap: 2px;
+  min-width: 0;
+}
+.expand b {
+  font-size: 14px;
+}
+.expand small {
+  overflow: hidden;
+  color: #6c7f90;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.collapse {
+  margin-left: auto;
+  padding: 4px;
+  border: 0;
+  background: transparent;
+  color: #6c7f90;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .side {
+    position: static;
+    max-height: none;
+  }
+  .popover {
+    position: fixed;
+    top: auto;
+    right: 12px;
+    bottom: 16px;
+    left: 12px;
+    width: auto;
+  }
+}

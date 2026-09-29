@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./course.css";
+// Loaded last so phone rules win over layered desktop rules in course.css.
+import "./responsive.css";
 
 export const metadata: Metadata = {
   title: "Stigen · Swedish, one story at a time",

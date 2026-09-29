@@ -1,0 +1,115 @@
+/*
+ * Responsive layer. course.css grew in layers, and several later desktop
+ * redesign rules come after its own media queries, so they silently win on
+ * phones. This file is imported last (see app/layout.tsx) and holds the phone
+ * and tablet rules in one place. Keep desktop styling in course.css.
+ */
+
+/* Tablets and small laptops. */
+@media (max-width: 950px) {
+  .classroom-grid,
+  .story-course-cover {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* The grammar notes column only fits beside a topic on a wide screen. */
+@media (max-width: 900px) {
+  .lecture-workspace .teach-with-notes {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+  /* On narrow screens the notes become a collapsible bar above the topic. */
+  .lecture-workspace .teach-with-notes > aside {
+    order: -1;
+  }
+}
+
+/* Phones. */
+@media (max-width: 640px) {
+  .page-content {
+    overflow-x: clip;
+    padding-inline: 12px;
+  }
+
+  /* Cards sit inside cards; trim each layer so the lesson text keeps its width. */
+  .lecture-workspace .lecture-page {
+    padding-inline: 10px;
+  }
+  .lecture-workspace .teaching-section,
+  .lecture-workspace .part-heading {
+    padding-inline: 14px;
+  }
+
+  /* Teaching beats: two per row, with room for their labels. */
+  .lecture-workspace .teaching-beat-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+  .lecture-workspace .teaching-beat-nav button {
+    min-height: 44px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  /* Back stays small; the long "Next topic: …" label wraps instead of squeezing. */
+  .lecture-workspace .teach-pagination-controls {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .lecture-workspace .teach-pagination-controls > button {
+    min-height: 48px;
+    white-space: normal;
+  }
+  .lecture-workspace .teach-pagination-controls > .primary {
+    flex: 1;
+  }
+
+  /* Textbook page practice: stages scroll sideways as one row of chips. */
+  .source-page-practice > nav {
+    display: flex !important;
+    gap: 6px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+  .source-page-practice > nav button {
+    flex: 0 0 auto;
+    min-height: 44px;
+    white-space: nowrap;
+    scroll-snap-align: start;
+  }
+  .source-page-practice-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    min-height: 0;
+  }
+  .source-page-practice-layout > figure {
+    border-right: 0;
+    border-bottom: 1px solid #e6ddc6;
+  }
+  .source-page-practice-layout figure img,
+  .source-page-practice-layout figure > div {
+    max-width: 260px;
+    margin-inline: auto;
+  }
+  .source-page-practice > header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Comfortable touch targets for answer options everywhere. */
+  .question-options label {
+    min-height: 48px;
+  }
+}
+
+/* The "next scene" card in the menu only fits below the navigation on tall
+   screens. Elsewhere it was cut off mid-card, and the home screen already
+   shows the next lecture prominently, so it is hidden. The phone menu renders
+   outside .story-shell, so this rule is not scoped to it. */
+@media (max-width: 767px), (max-height: 960px) {
+  .sidebar-goal {
+    display: none !important;
+  }
+}
