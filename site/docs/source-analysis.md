@@ -2,7 +2,7 @@
 
 ## What the four supplied files are
 
-- `Group 3.docx` and `Group 3.pdf` are two formats of the same cumulative classroom notebook. Text comparison found a 97% match in 12-word shingles. The supplied PDF has 143 physical pages; use its page numbers when tracing references.
+- `docs/Group 3.md` is the canonical cumulative classroom notebook. It contains all 51 dated lessons, all ten native Word tables, and a Markdown transcription of the writing-style chart that existed only as an embedded image. A full audit against the former Word and PDF versions found every substantial Word paragraph present and 99.95% normalized PDF-text coverage; the unmatched PDF tokens were page or link artifacts. Trace references by lesson heading rather than legacy PDF page number. The retired originals remain recoverable in `backup/source-originals-2026-09-29/`.
 - `docs/text-book-images/text-book.pdf` is the beginner foundation. The classroom notebook follows it most closely in Lectures 1–22 (roughly notebook pages 2–64), covering early A1/A2 Swedish.
 - `e-kirja-Forbered-dig-for-allman-sprakexamen-QR-16.02.2025-yyyiif (1).pdf` is the later YKI-oriented source. Lecture 23 bridges into test structure and register; Lectures 24–45 follow its speaking and writing themes (roughly notebook pages 69–132).
 - Lectures 46–51 in the notebook are labelled older YKI tasks. They are classroom material, not verified current official specifications.

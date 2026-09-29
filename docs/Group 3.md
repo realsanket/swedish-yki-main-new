@@ -36,7 +36,6 @@ I will not be replying to emails regarding the correct answers to homework assig
 * Jag talar \_\_\_\_\_\_. \- I speak \_\_\_\_\_\_   
   * Jag talar engelska, svenska, lite (little) ryska och (and) lite portugisiska (Portugese) 
 
-#### 
 
 #### Vowels
 
@@ -126,7 +125,6 @@ Words
 * Jag är trött (tired)  
 * Jag mår ganska (pretty) dåligt (bad) 
 
-#### 
 
 #### Personal pronouns
 
@@ -230,7 +228,7 @@ Måste \- must, have to
 
 |  | Present tense | Command form | Infinitive (dictionary) |
 | :---- | :---- | :---- | :---- |
-| AR | Gilla**r**  Titta**r** (på) Tala**r** Grillar Jobbar dansar | Gilla\! Titta\! Tala\! Grilla\! Jobba\! dansa\! | \= command(*att* titta \- *to* watch)Jag kan titta på TV.  |
+| AR | Gilla**r**  Titta**r** (på) Tala**r** Grillar Jobbar dansar | Gilla\! Titta\! Tala\! Grilla\! Jobba\! dansa\! | \= command<br><br>(*att* titta \- *to* watch)<br>Jag kan titta på TV.  |
 | ER | Komm**er** Köp**er** (buy) Ring**er** (call) Läs**er** (read) Skriv**er** (write) | Kom\!\* Köp\! Ring\! Läs\! skriv\! | \+A komma Köpa Ringa Läsa skriva |
 | R | Bo**r** mår | Bo\! må\! | \= command |
 
@@ -369,7 +367,7 @@ Oroa mig/dig \- Worry \+ not (Oroa dig inte\!)
 * Negation / adverbial (alltid \- always, aldrig \- never, ofta \- often, kanske \- maybe)
 
 
-| Fundament(1st position) | Verb  | Subject  | Negation/ adverbials | Verb 2 (infinitive) | Object (what?) | Adverbs (place, time, company) |
+| Fundament<br>(1st position) | Verb  | Subject  | Negation/ adverbials | Verb 2 (infinitive) | Object (what?) | Adverbs (place, time, company) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | Jag  | kan | \- | inte | dansa | \- | ikväll (tonight). |
 | Anna | sjunger | \- | ofta. | \- | \- | \- |
@@ -631,7 +629,6 @@ En rolig film, ett roligt jobb
   * Förstå \- to understand
 
 
-##### 
 
 # Lektion 6 (April 27th 2026\)
 
@@ -681,7 +678,6 @@ Vilka fantastiska nyheter\! \- What fantastic news\!
 | R | Bor Mår  | Bo Må  | Bodde mådde |
 | ER/R | Kommer Dricker (drink) Äter (eat) Sover (sleep) Skriver (write) Säger (say) Tar (take) Vet (know) Får (get) Går (go) Ser (see) Gör (do) Ger (give) Är  Har (have) Vill (want) Kan (can) Blir (be,become) | Kom Drick Ät Sov Skriv Säg Ta \- Få  Gå Se Gör  Ge Var Ha \- \- bli | Kom Drack (drank) Åt (ate) Sov Skrev (wrote) sa(de) (said) Tog (took) Visste Fick (got) Gick /yick/ (went) Såg (saw) Gjorde (did) Gav (gave) Var (was) Hade Ville (wanted) Kunde (could) Blev (became) |
 
-##### 
 
 * I worked a lot yesterday.  
   * Jag jobbade mycket igår.  
@@ -836,7 +832,6 @@ En bil, två bilar
 
   
 
-# 
 
 # Lektion 8 (May 4th 2026\)
 
@@ -964,7 +959,6 @@ Det är viktigt att ha bra vänner \- It is important to have good friends
   * Jag började **(att)** skriva.  
 * ATT \+ noun \- that
 
-# 
 
 # Lektion 9 (May 8th 2026\)
 
@@ -1159,7 +1153,6 @@ Grönsaker \- vegetables
 * Grönsallat \- lettuce  
 * Ingefära \- ginger
 
-##### 
 
 ##### Numbers
 
@@ -1270,7 +1263,6 @@ Vad har ni för väder?
 * Det blåser lite \- a bit windy  
 * Det **kommer att** regna imorgon \- It is going to rain tomorrow
 
-# 
 
 # Lektion 11 (May 13 th 2026\)
 
@@ -1681,11 +1673,9 @@ Formal elements:
 * Ta rulltrappa \- take the escalator
 
 
-# 
 
 # Lektion 15 (May 22nd 2026\)
 
-# 
 
 ##### Possessive pronouns 
 
@@ -1774,7 +1764,6 @@ Din fru och hennes vän \- Your wife and her friend
 * Försova sig \- sleep in  
 * Beter sig \- behave
 
-##### 
 
 ##### Reflexive possessive pronouns
 
@@ -1871,7 +1860,6 @@ musik mitt i natten\!
 * Jag tänker renovera huset.  
 * Jag ska renovera huset nästa månad.  
 * Jag renoverar huset nästa månad.  
-*   
 * Jag jobbar inte imorgon. Jag ska sova lite längre. Jag tänker spela datorspel senare. Kanske kommer vi att ha gäster. 
 
 * Kanske kommer några vänner till oss.  
@@ -2145,7 +2133,6 @@ Practice
 * My friend speaks Finnish but I don’t understand.  
   * Min vän pratar finska **men** jag förstår inte.
 
-##### 
 
 ##### Skolan
 
@@ -2268,7 +2255,6 @@ Skolan \- page 50
   * Trots att jag pluggade mycket klarade jag inte YKI testet.  
     
 
-# 
 
 # Lektion 20 (June 3rd 2026\)
 
@@ -2350,7 +2336,6 @@ Balansen \- sidan 52
 * **Fördel** \- pro  
 * **Nackdel** \- con  
 * **Några fördelar med** att jobba \_\_\_\_ är / **Några nackdelar/en nackdel** är att \_\_\_\_\_  
-*   
 * Å ena sidan är man mindre stressad när man jobbar deltid. Å andra sidan tjänar man mindre pengar.
 
 ##### Restaurang
@@ -2415,7 +2400,6 @@ Practice
 * Even though I’ve lived in Finland for 8 years, I don’t like Finnish food.  
   * Trots att jag har bott i Finland i 8 år gillar jag inte finsk mat.
 
-##### 
 
 ##### Boende
 
@@ -2504,7 +2488,6 @@ Homework
 * [Vår lägenhet i Zadar](https://www.youtube.com/watch?v=GppRAmBS790)  
 * Speaking next class: talk about your ideal home
 
-# 
 
 # Lektion 22 (June 8th 2026\)
 
@@ -2553,7 +2536,6 @@ Speaking about your ideal home
 * Personligen **föredrar** jag staden **framför** landet men det är möjligt att jag kommer att flytta till landet när jag blir äldre.
 
 
-  # 
 
 # Lektion 23 (June 10th 2026\)
 
@@ -2618,7 +2600,6 @@ TYPE 1: INFORMAL TEXT
 * Hoppas du mår bra\! Jag ville bara skriva för att säga att jag saknar dig (miss you). Vi borde träffas snart. Kanske en fika nästa vecka? Jag har så mycket att berätta. Hoppas vi kan planera något roligt. Skriv tillbaka när du kan\!  
 * Kram,  
 * X  
-*   
 * **Example of a good text**
 
 
@@ -2645,9 +2626,17 @@ TYPE 1: INFORMAL TEXT
 * Vi ses snart\!  
 * Kram,  
 * X  
-* 
 
-* ![][image1]
+#### Informell och formell stil
+
+| Informell stil | Formell stil |
+| :---- | :---- |
+| **Ort och datum** | **Ord och datum** *(source wording; likely **Ort och datum**)*<br>**Till vem?**<br>Till Söderhamns kommun<br>Till Faxeholmen<br>Till Lidl i Söderhamn |
+| **Tjäna!** *(source wording; likely **Tjena!**)*<br>Hej Lena!<br>Hej min vän! | **Hej!** |
+| Presentationen är inte **viktigt** *(source wording; grammatically **viktig**)*, eftersom personen som får brevet känner dig. Det är viktigt med **återkopplingen**, till exempel:<br><br>*Vad roligt att höra att du har fått körkort!*<br>*Vad tråkigt att höra att du har svårt att skaffa nya vänner!* | **Kort presentation är viktigt** *(source wording; grammatically **viktig**)*. **Hela ditt förnamn och efternamn ska stå i presentationen!**<br>Välj bara de bitar som passar i den här situationen! |
+| **Varför skriver jag det här brevet?**<br><br>**Någon informell fråga** i slutet av brevet, till exempel:<br>*Hur går det för dina barn / den nya skolan?*<br><br>**Ett förslag att träffas**, till exempel:<br>*Har du lust att ses och äta middag nästa helg?*<br><br>Det är ok att använda pronomen **du**. | **Varför skriver jag det här brevet?**<br><br>Argumentera för din åsikt, motivera dina förslag med **en vänlig och respektfull ton!**<br><br>Använd pronomen **ni**! |
+| **Kram / Hälsning / Vi hörs! / Vi ses!** | **Med vänliga hälsningar** |
+| **Förnamn** | **Förnamn och efternamn**<br>**Kontaktuppgifter** |
 
 ##### TYPE 2: FORMAL EMAIL
 
@@ -2681,7 +2670,6 @@ TYPE 1: INFORMAL TEXT
 * Tack på förhand,  
 * XY
 
-# 
 
 # Lektion 24 (June 12th 2026\)
 
@@ -2965,7 +2953,6 @@ TYPICAL SOLUTIONS: drick mer vatten / te, meditera, promenera, **motionera (be p
 
 ERBJUDA HJÄLP: offer to do stuff together, invite to activities, offer contacts or info
 
-#### 
 
 #### Dialog 5 \- sidan 20
 
@@ -3002,7 +2989,6 @@ Din vän **ser** trött **ut**. Du är **orolig** för honom/henne. (hen)
   * Vi kan börja meditera eller prova en **lugnande (calming)** hobby.   
   * Jag brukar träna på morgonen, vill du **följa med (join)** imorgon? Det är roligare när man tränar tillsammans.
 
-#### 
 
 #### Dialog 8 \- sidan 26
 
@@ -3136,7 +3122,6 @@ Du organiserar en fest (du **bestämmer (decide)** vad som ska fira**s (to be ce
   * Tack för hjälpen. Vi ses snart\!  
   * Tack, ha det så bra\!
 
-#### 
 
 #### Dialog 11 \- sidan 32
 
@@ -3163,7 +3148,6 @@ Du organiserar en fest (du **bestämmer (decide)** vad som ska fira**s (to be ce
 * Okej, tack, det ska jag göra nästa gång.  
 * Ja, **javisst. (naturligtvis, självklart, såklart)**
 
-# 
 
 # Lektion 28 (June 22nd 2026\)
 
@@ -3242,7 +3226,6 @@ HOMEWORK
 
 - [ ]  3 words in each room, criteria: things that can be broken and fixed, renovated or returned to the store
 
-# 
 
 # Lektion 29 (June 24th 2026\)
 
@@ -3345,7 +3328,6 @@ Sidan 35
            Barndom \- childhood  
 	Vuxen \- adult
 
-# 
 
 # Lektion 30 (June 26th 2026\)
 
@@ -3451,7 +3433,6 @@ Din åsikt \- sidan 36
 * **Mat och dryck:** jag fick vänta länge, **kall, smaklös (tasteless, bland),** rutten / inte färsk mat, det var inte vad vi beställde, hittade ett hår / en insekt i maten, maten **innehåller (contains)** något jag är allergisk mot, bordet var **smutsigt (dirty)**  
 * **Jobb**: lågavlönad, jobba över för ofta, få pauser, inget kaffe i kaffemaskinen
 
-### 
 
 ### Vardagsliv \- sidan 39
 
@@ -3499,7 +3480,6 @@ Din åsikt \- sidan 36
   * Jag förstår\! Tack så mycket för bra servicen. Hej då\! Ha en trevlig dag\!  
   * Ja, jag förstår. Jag känner mig bra att vara här. **Vi ses en annan gång\! (See you another time\!)**
 
-# 
 
 # Lektion 32 (July 1st 2026\)
 
@@ -3911,7 +3891,6 @@ B Berätta om naturskydd.
 
 * För mig är det viktigaste att min boendemiljö är lugn och tyst. Jag trivs inte där det finns för mycket trafik. Dessutom vill jag bussförbindelser till centrum och mataffärer i närheten. 
 
-#### 
 
 #### Din åsikt \- sidan 63
 
@@ -4305,7 +4284,6 @@ C Hälsovården i Finland
 * Till slut…  
 * Till sist tycker jag att… \- Lastly, I think that…
 
-#### 
 
 #### Reagera \- sidan 87
 
@@ -4379,7 +4357,6 @@ C Hälsovården i Finland
 
 * Hej, jag behöver prata med dig om min situation. Jag har många arbetsuppgifter och jag börjar bli väldigt trött. Kan vi flytta uppgifter till nästa vecka? / Kan du utdela dem till andra kollegor. Det är för mycket för mog och jag kan inte **utföra (do, execute)** dem alla.
 
-# 
 
 # Lektion 40 (July 22nd 2026\)
 
@@ -4527,7 +4504,6 @@ Bada bastu \- use a sauna
 Åka släde \- ride a sleigh  
 Åka snowboard
 
-#### 
 
 #### Dialog 1 \- sidan 96
 
@@ -4545,7 +4521,6 @@ Bada bastu \- use a sauna
 * Hmmm... Jag måste undersöka detta lite mer. Jag ska kontrollera lånen för den dagen och ringa tillbaka. Kan jag ringa det här numret?  
   * Ja, det går jättebra. Tack så mycket för hjälpen. Ha en bra dag\!
 
-#### 
 
 #### Dialog 2 \- sidan 98
 
@@ -4561,7 +4536,6 @@ Bada bastu \- use a sauna
   * Nästa gång ska du titta noga på var du sätter taggen. **Det är inte meningen (I am not supposed to)** att jag ska ge dig dessa utan den.  
 * Jag förstår. Tack så mycket för din hjälp\!
 
-#### 
 
 #### Dialog 3 \- sidan 100
 
@@ -4634,7 +4608,6 @@ Bada bastu \- use a sauna
   * Jag använder internet mer.  
 * Tack så mycket. Ha en bra dag\!
 
-#### 
 
 #### Dialog 7 \- sidan 108
 
@@ -4755,7 +4728,6 @@ Johan Karlsson
 
 * Hej, min bil startar inte. Jag såg att du ska köra till samma ställe. Skulle du kunna ge mig en skjuts om du har plats. 
 
-#### 
 
 #### Berätta \- sidan 113
 
@@ -4984,7 +4956,6 @@ Enligt lagen \- according to the law
 * En lag \- law  
 * Ett lag \- (sports) team 
 
-#### 
 
 #### Dialog 2 \- sidan 121
 
@@ -5009,7 +4980,6 @@ Räkning \- house bills
 * Okej. Jag ska **anteckna (note)** det i kalendern. Vi ses då.  
   * Tack så mycket för din hjälp\! Hej då\!
 
-#### 
 
 #### Reagera \- sidan 123
 
@@ -5067,7 +5037,6 @@ beskattningen i ditt gamla hemland?
 * Avgift \- fee   
 * undervisning**s**avgift
 
-# 
 
 # Lektion 46 (August 10th 2026\)
 
@@ -5180,7 +5149,6 @@ Hur kan syskon påverka ens personlighet?
 
 * Jag ville alltid ha en syster men nu förstår jag att det är bättre att ha en bror.
 
-#### 
 
 #### Reagera 
 

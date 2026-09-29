@@ -6,7 +6,7 @@ This file is the curriculum handoff for humans and AI agents. It records what ha
 
 - **Live total:** 1 lecture.
 - **Live structure:** Chapter 1 contains Lecture 1 only.
-- **Source spine:** 51 dated teacher lessons in `docs/Group 3.pdf`, supported first by `docs/text-book-images/text-book.pdf` and later by the YKI preparation book.
+- **Source spine:** 51 dated teacher lessons in `docs/Group 3.md`, supported first by `docs/text-book-images/text-book.pdf` and later by the YKI preparation book.
 - **Current method:** improve Lecture 1 one teaching step at a time. Do not activate a later lecture or chapter until the user explicitly changes the scope.
 - **Backup:** the former Lectures 2–60, 12-chapter plan, later story registry, and later artwork are in `backup/future-course-2026-09-29/`.
 - **Template rule:** Lecture 1 opts into its own content-defined presentation. Future lectures use the neutral default unless their verified material requires a different template; never branch on a lecture number.
@@ -50,7 +50,7 @@ listed under the verified pilot below may shape live Lecture 1.
 
 | Source | Verified scope | Role |
 |---|---|---|
-| `docs/Group 3.pdf` | Physical pages 2–4, from **Lektion 1 (April 13th 2026)** through the word list ending in **Rosa**, stopping before **Lektion 2** | Primary teacher notes |
+| `docs/Group 3.md` | The **Lektion 1 (April 13th 2026)** section through the word list ending in **Rosa**, stopping before the **Lektion 2** heading | Primary teacher notes |
 | `docs/text-book-images/text-book.pdf` | Physical page 4, **Hej! Vad heter du?** | Beginner dialogue and pronunciation support |
 | `docs/excercise` | Assignment 1, **Homework: Personal pronouns**, posted April 15 | Checked for homework alignment; belongs after Lesson 2, not Lesson 1 |
 
