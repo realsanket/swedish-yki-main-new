@@ -39,9 +39,10 @@ across all four fields.
 - `routeSteps`: overrides only selected learner-facing step labels and descriptions.
 - `opening.teacherNote`: changes the opening guidance without changing shared logic.
 - `opening.questionIntro`: explains how the opening questions should be used.
-- `opening.sourcePractice`: attaches an explicitly verified source-page image, accessible dialogue, listening focus, and recall cues to the opening step. Never infer or reuse a later page.
+- `opening.sourcePractice`: attaches an explicitly verified source-page image and its dialogue to the opening step as a five-stage ladder: **Listen for gist** (`listenQuestions`, with the page text covered), **Understand** (per-line `glossary`, a `backchain` for one long line, and `naturalNotes` pairing source wording with what to produce), **Sound hunt** (`soundSpots`: the words the page itself marks, each with its rule; the stage is omitted when absent), **Vanishing text** (full → gaps → first letters → `recallCues`), and **Role-play** (the app plays the partner; the learner answers from the cue). Never infer or reuse a later page.
 - `opening.dialogue.part`: places dialogue in `recall` or `teach`.
 - `opening.dialogue`: controls the dialogue title, eyebrow, instructions, and initial text visibility.
+- `sections[].activity`: attaches one hands-on interaction to a teaching section, shown as its own beat after **Hear it**. The generic types are `sound-map` (explore sounds, light up shared features, rebuild two-part mouth recipes), `sort` (predict one item at a time into content-defined groups with a reason for each), and `match` (pair two columns, then say each pair in a content-defined sentence). Every learner-facing string lives in the JSON. Add a new type in `course-types.ts` plus a case in `components/learning/activities/TeachingActivity.tsx`; never branch on a lecture number.
 - `teaching.builder`: attaches a typed task-specific interaction to one explicitly named teaching section. Omit it unless that section genuinely requires the interaction.
 - `teaching.livePractice`: explicitly assigns `conversation` or `pronunciation` Voice Live practice to named teaching sections. Omit a section rather than guessing a mode from its position or kind.
 - `teaching.wordBank`: chooses an open or collapsed word bank and optionally supplies its title.

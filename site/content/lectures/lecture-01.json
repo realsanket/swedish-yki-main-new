@@ -29,23 +29,43 @@
         "title": "Textbook page practice: Hej! Vad heter du?",
         "image": "/images/source/textbook-lesson-01.png",
         "imageAlt": "Textbook page Hej! Vad heter du? with Anna and Tomas introducing themselves, asking about origin, and noticing Swedish sound patterns",
-        "note": "The source says skönt hår. Recognise that wording here; in your own conversation, produce fint hår or snyggt hår for a natural compliment.",
-        "focus": ["Å, Ö, Ä", "G before Ö, Ä, Y, E, I", "SK before Ö, Ä, Y, E, I", "K before Ö, Ä, Y, E, I", "long and short vowels"],
+        "pageLabel": "textbook physical page 4",
+        "focus": ["Å, Ö, Ä", "G + Ö, Ä, Y, E, I", "SK + Ö, Ä, Y, E, I", "K + Ö, Ä, Y, E, I", "långa och korta vokaler"],
         "recallCues": [
-          "Anna introduces herself and asks Tomas's name.",
-          "Tomas introduces himself and compliments Anna's pink shirt.",
-          "Anna replies to the compliment.",
+          "Anna says hello, gives her name, and asks Tomas's name.",
+          "Tomas gives his name and says he likes Anna's pink shirt.",
+          "Anna thanks him and compliments his hair.",
           "Tomas asks where Anna comes from.",
-          "Anna answers and returns the question with Och du?",
-          "Tomas gives his origin and where he lives now."
+          "Anna says China, then returns the question.",
+          "Tomas: from the USA, but he lives in Finland now."
         ],
         "lines": [
-          {"speaker": "Anna", "voice": "Elin", "fi": "Hej, jag heter Anna. Vad heter du?", "en": "Hello, my name is Anna. What is your name?"},
-          {"speaker": "Tomas", "voice": "Alex", "fi": "Hej, jag heter Tomas. Jag gillar din rosa skjorta!", "en": "Hello, my name is Tomas. I like your pink shirt!"},
-          {"speaker": "Anna", "voice": "Elin", "fi": "Tack! Du har skönt hår!", "en": "Thanks! You have nice hair!"},
-          {"speaker": "Tomas", "voice": "Alex", "fi": "Varifrån kommer du, Anna?", "en": "Where do you come from, Anna?"},
-          {"speaker": "Anna", "voice": "Elin", "fi": "Jag kommer från Kina. Och du?", "en": "I come from China. And you?"},
-          {"speaker": "Tomas", "voice": "Alex", "fi": "Jag kommer från USA men jag bor i Finland nu.", "en": "I come from the USA, but I live in Finland now."}
+          {"speaker": "Anna", "voice": "Elin", "fi": "Hej, jag heter Anna. Vad heter du?", "en": "Hello, my name is Anna. What is your name?", "glossary": [{"fi": "vad", "en": "what"}, {"fi": "du", "en": "you"}]},
+          {"speaker": "Tomas", "voice": "Alex", "fi": "Hej, jag heter Tomas. Jag gillar din rosa skjorta!", "en": "Hello, my name is Tomas. I like your pink shirt!", "glossary": [{"fi": "gillar", "en": "like(s)"}, {"fi": "din", "en": "your"}, {"fi": "rosa", "en": "pink"}, {"fi": "skjorta", "en": "shirt"}]},
+          {"speaker": "Anna", "voice": "Elin", "fi": "Tack! Du har skönt hår!", "en": "Thanks! You have nice hair!", "glossary": [{"fi": "tack", "en": "thanks"}, {"fi": "har", "en": "have / has"}, {"fi": "hår", "en": "hair"}, {"fi": "skönt", "en": "pleasant; comfortable (see the note below)"}]},
+          {"speaker": "Tomas", "voice": "Alex", "fi": "Varifrån kommer du, Anna?", "en": "Where do you come from, Anna?", "glossary": [{"fi": "varifrån", "en": "where … from"}]},
+          {"speaker": "Anna", "voice": "Elin", "fi": "Jag kommer från Kina. Och du?", "en": "I come from China. And you?", "glossary": [{"fi": "Kina", "en": "China"}, {"fi": "Och du?", "en": "And you? — returns the question"}]},
+          {"speaker": "Tomas", "voice": "Alex", "fi": "Jag kommer från USA men jag bor i Finland nu.", "en": "I come from the USA, but I live in Finland now.", "glossary": [{"fi": "men", "en": "but"}, {"fi": "nu", "en": "now"}, {"fi": "USA", "en": "said letter by letter: u-ess-a"}]}
+        ],
+        "listenQuestions": [
+          {"prompt": "Who speaks first?", "options": ["Anna", "Tomas"], "answer": 0, "explanation": "Anna opens: Hej, jag heter Anna."},
+          {"prompt": "What does Tomas like?", "options": ["Anna's pink shirt", "Anna's hair", "Anna's coffee"], "answer": 0, "explanation": "Jag gillar din rosa skjorta: I like your pink shirt."},
+          {"prompt": "Where does Anna come from?", "options": ["China", "the USA", "Finland"], "answer": 0, "explanation": "Jag kommer från Kina."},
+          {"prompt": "Where does Tomas live now?", "options": ["Finland", "the USA", "China"], "answer": 0, "explanation": "He comes from the USA, men jag bor i Finland nu: but he lives in Finland now."}
+        ],
+        "naturalNotes": [
+          {"source": "Du har skönt hår!", "natural": "Du har fint hår!", "note": "Skönt normally means pleasant or comfortable, as in Det är skönt här. For a compliment, say fint hår or snyggt hår."},
+          {"source": "Varifrån kommer du?", "natural": "Var kommer du ifrån?", "note": "Both are correct. Varifrån is the tidy written form; in everyday speech you will very often hear Var kommer du ifrån? Recognise both."}
+        ],
+        "backchain": {"line": 5, "chunks": ["nu", "i Finland nu", "jag bor i Finland nu", "men jag bor i Finland nu", "från USA men jag bor i Finland nu", "Jag kommer från USA men jag bor i Finland nu."]},
+        "soundSpots": [
+          {"word": "gillar", "mark": "g", "rule": "G + i, a front vowel: the Swedish j sound, so it starts like yillar."},
+          {"word": "skjorta", "mark": "skj", "rule": "Skj is always the sj sound, even before o."},
+          {"word": "skönt", "mark": "skö", "rule": "Sk + ö, a front vowel: the sj sound."},
+          {"word": "hår", "mark": "å", "rule": "Å is the real O: deep and round. A single r follows, so stretch it."},
+          {"word": "Varifrån", "mark": "å", "rule": "The same deep, round å as in från."},
+          {"word": "Kina", "mark": "K", "rule": "K + i, a front vowel: the soft tj sound."},
+          {"word": "från", "mark": "å", "rule": "Å followed by one n: a long, round å."}
         ]
       },
       "dialogue": {
@@ -156,7 +176,27 @@
         ]
       },
       "memoryTip": "Home now and origin are two boxes: bor i = live in; kommer från = come from.",
-      "tryIt": "Say your four real lines once slowly. Then say them again without looking."
+      "tryIt": "Say your four real lines once slowly. Then say them again without looking. If the language line trips you up, build it from the end: svenska → lite svenska → och lite svenska → Jag talar hindi, engelska och lite svenska.",
+      "activity": {
+        "type": "match",
+        "label": "Countries & languages",
+        "title": "Where people come from, what they speak",
+        "instructions": "Your origin line needs a country and your language line needs a language. Match each country from Lesson 1 to its language, then say the finished pair aloud.",
+        "leftLabel": "Jag kommer från …",
+        "rightLabel": "Jag talar …",
+        "pairs": [
+          {"left": "Finland", "right": "finska", "note": "Many people in Finland also speak svenska."},
+          {"left": "Sverige", "right": "svenska"},
+          {"left": "Ryssland", "right": "ryska"},
+          {"left": "Tyskland", "right": "tyska", "note": "Tyskland is Germany."},
+          {"left": "Turkiet", "right": "turkiska"},
+          {"left": "Kina", "right": "kinesiska"},
+          {"left": "Indien", "right": "hindi", "note": "One of many languages in India; add yours."},
+          {"left": "Pakistan", "right": "urdu"}
+        ],
+        "pattern": "Many language names end in -ska: finska, svenska, ryska, tyska, turkiska, kinesiska, engelska. Countries take a capital letter; languages do not. Hindi and urdu keep their own names, and the language is hindi, not hindu.",
+        "sentence": "Jag kommer från {left}. Jag talar {right}."
+      }
     },
     {
       "title": "Nine vowels: copy the mouth first",
@@ -186,7 +226,34 @@
         ]
       },
       "memoryTip": "The script cue helps you find the mouth. It does not replace listening: Swedish audio wins.",
-      "tryIt": "Use a mirror: say I → Y without moving the tongue, only rounding the lips. Then say E → Ö the same way."
+      "tryIt": "Use a mirror: say I → Y without moving the tongue, only rounding the lips. Then say E → Ö the same way.",
+      "activity": {
+        "type": "sound-map",
+        "label": "Mouth map",
+        "title": "Explore the nine vowels one mouth at a time",
+        "instructions": "Tap a vowel, copy the mouth cue, and hear its lesson words. Then light up a group to see which vowels share a mouth shape.",
+        "features": [
+          {"id": "rounded", "label": "Rounded lips", "note": "O, U, Y, Ö and Å push the lips forward into a circle. Check in a mirror."},
+          {"id": "front", "label": "Front vowels", "note": "E, I, Y, Ä and Ö keep the tongue forward. Remember this group: it softens g, k and sk in topic 4."}
+        ],
+        "sounds": [
+          {"symbol": "A", "cue": "Open wide and let the sound sit at the back of the mouth. आ is a starting bridge.", "words": [{"fi": "jag", "en": "I"}, {"fi": "ja", "en": "yes"}]},
+          {"symbol": "O", "cue": "Round the lips as in boots. In these words Swedish O sounds close to a long oo.", "features": ["rounded"], "words": [{"fi": "bok", "en": "book"}, {"fi": "bor", "en": "live"}]},
+          {"symbol": "U", "cue": "Tight rounded lips, as if drinking through a straw. Long u in du and short u in dum sound different: copy each one.", "features": ["rounded"], "words": [{"fi": "du", "en": "you"}, {"fi": "dum", "en": "stupid; dumb"}]},
+          {"symbol": "Y", "cue": "Say I, keep the tongue still, and round the lips as for U.", "features": ["rounded", "front"], "recipe": {"from": "U lips", "to": "I tongue"}, "words": [{"fi": "by", "en": "village"}, {"fi": "paraply", "en": "umbrella"}]},
+          {"symbol": "I", "cue": "Wide smile, tongue high and forward. ई is a starting bridge.", "features": ["front"], "words": [{"fi": "Kina", "en": "China"}, {"fi": "Indien", "en": "India"}]},
+          {"symbol": "E", "cue": "A lighter smile than I. ए is a starting bridge.", "features": ["front"], "words": [{"fi": "le", "en": "smile"}]},
+          {"symbol": "Ö", "cue": "Say E, keep the tongue still, and round the lips as for O.", "features": ["rounded", "front"], "recipe": {"from": "O lips", "to": "E tongue"}, "words": [{"fi": "ö", "en": "island"}, {"fi": "köper", "en": "buys"}]},
+          {"symbol": "Ä", "cue": "Drop the jaw as for A, but aim for E. Near the e in bed.", "features": ["front"], "recipe": {"from": "A jaw", "to": "E sound"}, "words": [{"fi": "bär", "en": "berry"}, {"fi": "gäst", "en": "guest"}]},
+          {"symbol": "Å", "cue": "The real O: deep and round. ऑ or English aw is a starting bridge.", "features": ["rounded"], "words": [{"fi": "från", "en": "from"}, {"fi": "hår", "en": "hair"}]}
+        ],
+        "contrasts": [
+          {"label": "I → Y", "audio": "i, y. i, y. Kina, by.", "cue": "Tongue stays still. Only the lips round."},
+          {"label": "E → Ö", "audio": "e, ö. e, ö. le, ö.", "cue": "Same trick: keep the E tongue, round the lips."},
+          {"label": "O → Å", "audio": "bok, bor. från, hår.", "cue": "Swedish O often sounds like oo. The O you know from English is usually written Å."}
+        ],
+        "quizPrompt": "RECIPE CHECK · WHICH VOWEL DO THESE MAKE?"
+      }
     },
     {
       "title": "Long or short: stretch one part",
@@ -210,7 +277,32 @@
         ]
       },
       "memoryTip": "Single often means STRETCH. Double often means STOP the vowel quickly—but always check the stressed syllable and listen.",
-      "tryIt": "Say tak—tack three times. Make the contrast bigger than feels natural, then say the pair normally."
+      "tryIt": "Say tak—tack three times. Make the contrast bigger than feels natural, then say the pair normally.",
+      "activity": {
+        "type": "sort",
+        "label": "Stretch or stop?",
+        "title": "Predict the length from the spelling, then check by ear",
+        "instructions": "Look at the highlighted stressed vowel and the letters after it. Choose stretch or stop, then play the word to confirm.",
+        "buckets": [
+          {"id": "long", "label": "Stretch", "hint": "long vowel · one consonant after it"},
+          {"id": "short", "label": "Stop", "hint": "short vowel · two consonants after it"}
+        ],
+        "items": [
+          {"fi": "tak", "en": "roof", "bucket": "long", "mark": "ak", "why": "One k after the a: stretch the a."},
+          {"fi": "tack", "en": "thanks", "bucket": "short", "mark": "ack", "why": "ck counts as a double consonant: cut the a and hold the k."},
+          {"fi": "bok", "en": "book", "bucket": "long", "mark": "ok", "why": "One k after the o: stretch it."},
+          {"fi": "kaffe", "en": "coffee", "bucket": "short", "mark": "aff", "why": "Double f: a short a and a long f."},
+          {"fi": "bor", "en": "live", "bucket": "long", "mark": "or", "why": "One r after the o: stretch it."},
+          {"fi": "mamma", "en": "mum", "bucket": "short", "mark": "amm", "why": "Double m: stop the a quickly and hold the m."},
+          {"fi": "by", "en": "village", "bucket": "long", "mark": "y", "why": "Nothing follows the stressed y, so it is long."},
+          {"fi": "pappa", "en": "dad", "bucket": "short", "mark": "app", "why": "Double p: short a, long p."},
+          {"fi": "från", "en": "from", "bucket": "long", "mark": "ån", "why": "One n after the å: stretch it."},
+          {"fi": "kött", "en": "meat", "bucket": "short", "mark": "ött", "why": "Double t: short ö, long t."},
+          {"fi": "gäst", "en": "guest", "bucket": "short", "mark": "äst", "why": "Two different consonants, s and t, also usually mean a short vowel."},
+          {"fi": "pluggar", "en": "study", "bucket": "short", "mark": "ugg", "why": "Double g after the stressed u: keep the u short."}
+        ],
+        "summary": "One consonant after the stressed vowel usually means stretch. Two consonants usually mean stop. It is a strong clue, not a law, so the recording always has the final say."
+      }
     },
     {
       "title": "One vowel group, three soft sounds",
@@ -222,8 +314,8 @@
       ],
       "examples": [
         {"fi": "gäst · gissar · gillar", "en": "soft G → Swedish j", "note": "The first vowel is Ä or I."},
-        {"fi": "Kina · köper · kött · tjej · tjuv", "en": "soft K/TJ → /ɕ/", "note": "Make a narrow, light sound; do not add an English t + ch."},
-        {"fi": "skärm · skiner · sjuk · skjorta", "en": "SK/SJ/SKJ → sj sound /ɧ/", "note": "This sound varies by region and speaker."},
+        {"fi": "Kina · köper · kött · tjej · tjuv", "en": "soft K/TJ → /ɕ/", "note": "Swedes call it the tjugo sound (tjugo = 20): a small, sharp hiss with the tongue forward. Do not add an English t + ch."},
+        {"fi": "skärm · skiner · sjuk · skjorta", "en": "SK/SJ/SKJ → sj sound /ɧ/", "note": "The sju sound (sju = 7): deeper and further back than tj. It varies by region and speaker."},
         {"fi": "ska · skuld", "en": "hard sk before A and U", "note": "No front vowel follows sk."},
         {"fi": "Jag köper kött i Kina.", "en": "I buy meat in China.", "note": "One short sentence for repeated K + front-vowel practice."}
       ],
@@ -236,8 +328,37 @@
           ["sj, skj", "usually sj /ɧ/", "sjuk, skjorta"]
         ]
       },
-      "memoryTip": "Same five vowels, three different results: G → J, K → TJ, SK → SJ. Do not call all three ‘sh’.",
-      "tryIt": "Underline the first vowel in gillar, kött, and skärm. Predict the sound, listen, then repeat each word twice."
+      "memoryTip": "Same five soft vowels, three different results: G → J, K → TJ, SK → SJ. Tjugo (20) is the small, sharp sound; sju (7) is the big, deep one. Do not call them both ‘sh’.",
+      "tryIt": "Underline the first vowel in gillar, kött, and skärm. Predict the sound, listen, then repeat each word twice.",
+      "activity": {
+        "type": "sort",
+        "label": "Sound detective",
+        "title": "Look at the letter after g, k, or sk, then predict the sound",
+        "instructions": "Swedish teachers call e, i, y, ä, ö the soft vowels (mjuka vokaler) and a, o, u, å the hard vowels (hårda vokaler). Soft vowel next? The consonant usually softens too. Hard vowel next? It stays hard. Choose, then listen.",
+        "buckets": [
+          {"id": "j", "label": "j sound", "hint": "as in ja · g + soft vowel"},
+          {"id": "tj", "label": "tj sound", "hint": "as in tjugo · k + soft vowel, or tj"},
+          {"id": "sj", "label": "sj sound", "hint": "as in sju · sk + soft vowel, sj, skj"},
+          {"id": "hard", "label": "No change", "hint": "a hard vowel (a, o, u, å) follows"}
+        ],
+        "items": [
+          {"fi": "gäst", "en": "guest", "bucket": "j", "mark": "gä", "why": "G + ä, a front vowel: it starts like Swedish j."},
+          {"fi": "Kina", "en": "China", "bucket": "tj", "mark": "Ki", "why": "K + i, a front vowel: the soft tj sound."},
+          {"fi": "ska", "en": "shall; should", "bucket": "hard", "mark": "ska", "why": "A is a back vowel, so sk stays hard: s + k."},
+          {"fi": "skärm", "en": "screen", "bucket": "sj", "mark": "skä", "why": "Sk + ä, a front vowel: the sj sound."},
+          {"fi": "gillar", "en": "like", "bucket": "j", "mark": "gi", "why": "G + i: the Swedish j sound."},
+          {"fi": "kaffe", "en": "coffee", "bucket": "hard", "mark": "ka", "why": "A is a back vowel, so k stays hard."},
+          {"fi": "köper", "en": "buy", "bucket": "tj", "mark": "kö", "why": "K + ö: Ö is rounded but still a front vowel, so k softens."},
+          {"fi": "sjuk", "en": "sick", "bucket": "sj", "mark": "sj", "why": "Sj is always the sj sound, whatever vowel follows."},
+          {"fi": "skuld", "en": "debt; guilt", "bucket": "hard", "mark": "sku", "why": "U is a back vowel, so sk stays hard."},
+          {"fi": "kött", "en": "meat", "bucket": "tj", "mark": "kö", "why": "K + ö, a front vowel: the tj sound."},
+          {"fi": "skjorta", "en": "shirt", "bucket": "sj", "mark": "skj", "why": "Skj is always the sj sound, even before o."},
+          {"fi": "gissar", "en": "guess", "bucket": "j", "mark": "gi", "why": "G + i: the Swedish j sound."},
+          {"fi": "tjej", "en": "girl", "bucket": "tj", "mark": "tj", "why": "Tj is always the tj sound."},
+          {"fi": "skiner", "en": "shines", "bucket": "sj", "mark": "ski", "why": "Sk + i: the sj sound, as in Solen skiner."}
+        ],
+        "summary": "One question does most of the work: which vowel comes next? Front vowels (e, i, y, ä, ö) soften g, k and sk into three different sounds; back vowels leave them hard. Sj, skj and tj keep their sound whatever follows. Some loanwords break the rule, so trust the recording."
+      }
     },
     {
       "title": "Recognise the remaining Lesson 1 spellings",
@@ -384,7 +505,11 @@
       {"id": "sv-01-word-12", "fi": "tak", "en": "roof; ceiling", "example": "Huset har ett rött tak.", "translation": "The house has a red roof.", "level": "A0"},
       {"id": "sv-01-word-13", "fi": "tack", "en": "thanks", "example": "Tack så mycket!", "translation": "Thank you very much!", "level": "A0"},
       {"id": "sv-01-word-14", "fi": "kött", "en": "meat", "example": "Jag köper kött.", "translation": "I buy meat.", "level": "A0"},
-      {"id": "sv-01-word-15", "fi": "Och du?", "en": "And you?", "example": "Jag kommer från Finland. Och du?", "translation": "I come from Finland. And you?", "level": "A0"}
+      {"id": "sv-01-word-15", "fi": "Och du?", "en": "And you?", "example": "Jag kommer från Finland. Och du?", "translation": "I come from Finland. And you?", "level": "A0"},
+      {"id": "sv-01-word-16", "fi": "men", "en": "but", "example": "Jag kommer från Indien, men jag bor i Finland.", "translation": "I come from India, but I live in Finland.", "level": "A0"},
+      {"id": "sv-01-word-17", "fi": "nu", "en": "now", "example": "Jag bor i Finland nu.", "translation": "I live in Finland now.", "level": "A0"},
+      {"id": "sv-01-word-18", "fi": "skjorta", "en": "shirt", "example": "Jag gillar din rosa skjorta.", "translation": "I like your pink shirt.", "level": "A0"},
+      {"id": "sv-01-word-19", "fi": "Var kommer du ifrån?", "en": "Where are you from? (everyday form of Varifrån kommer du?)", "example": "Var kommer du ifrån? Jag kommer från Kina.", "translation": "Where are you from? I come from China.", "level": "A0"}
     ],
     "pronunciation": {
       "text": "Jag. Ja. Bok. Bor. Du. Dum. By. Paraply. Le. Ö. Bär. Från. Tak. Tack. Gäst. Gillar. Kina. Kött. Skärm. Skiner. Sjuk. Skjorta. Kurs. Mars. Hjälp. Djur. Ljus.",

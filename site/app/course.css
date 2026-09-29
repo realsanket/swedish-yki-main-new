@@ -1148,6 +1148,13 @@
 .episode-route-panel nav > button.selected .route-step-copy small {
   color: #547966;
 }
+/* The legacy `.lecture-outline nav > button.selected > span` rule paints every
+   direct span as a status dot. The label is also a span, so reset it here. */
+.lecture-outline.episode-route-panel nav > button.selected > .route-step-copy {
+  border-color: transparent;
+  background: transparent;
+  color: inherit;
+}
 .episode-route-panel nav > button.locked {
   cursor: not-allowed;
   opacity: 0.47;
@@ -4860,7 +4867,7 @@
   justify-items: center;
   padding: 30px;
   border-radius: 9px;
-  background: rgba(23, 63, 109, 0.94);
+  background: rgb(23, 63, 109);
   color: #ffffff;
   text-align: center;
 }
@@ -7168,6 +7175,7 @@
   > .route-step-status {
   border-color: var(--lesson-navy);
   background: var(--lesson-navy);
+  color: #fff;
 }
 .lecture-template-conversation-first
   .lecture-outline.episode-route-panel
