@@ -191,8 +191,10 @@ function attachLiveSession(socket, request) {
         onResponseCreated: async (event) => send(socket, { type: "response.created", responseId: event.response?.id }),
         onResponseDone: async (event) => {
           const status = event.response?.status;
+          const statusDetails = event.response?.statusDetails;
+          const reason = typeof statusDetails?.reason === "string" ? statusDetails.reason : "";
           if (status === "failed") {
-            const providerError = event.response?.statusDetails?.error;
+            const providerError = statusDetails?.error;
             console.error(
               "Voice Live response failed:",
               typeof providerError?.message === "string" ? providerError.message : "Provider response failed",
@@ -200,7 +202,10 @@ function attachLiveSession(socket, request) {
             send(socket, { type: "error", error: { code: "provider_response_failed", message: "Azure could not create the coach response." } });
             return;
           }
-          send(socket, { type: "response.done", status });
+          if (status === "incomplete") {
+            console.warn("Voice Live response incomplete:", reason || "No provider reason");
+          }
+          send(socket, { type: "response.done", status, reason });
         },
         onResponseAudioDelta: async (event) => {
           if (event.delta?.byteLength) send(socket, { type: "response.audio.delta", delta: Buffer.from(event.delta).toString("base64") });
@@ -244,7 +249,10 @@ function attachLiveSession(socket, request) {
         },
         inputAudioNoiseReduction: { type: "azure_deep_noise_suppression" },
         inputAudioEchoCancellation: { type: "server_echo_cancellation", referenceSource: "server", channels: 1 },
-        maxResponseOutputTokens: mode === "pronunciation" ? 160 : 220,
+        // Voice Live counts generated speech against the response token limit.
+        // A very small limit can end the turn before the first audio delta.
+        // The prompt still bounds replies to one or two short sentences.
+        maxResponseOutputTokens: mode === "pronunciation" ? 640 : 1_024,
       });
       await ack;
       clearTimeout(ackTimer);

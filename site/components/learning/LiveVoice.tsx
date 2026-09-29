@@ -20,6 +20,8 @@ type LiveEvent = {
   delta?: string;
   transcript?: string;
   maxDurationSeconds?: number;
+  status?: string;
+  reason?: string;
   error?: { message?: string; code?: string };
 };
 
@@ -220,10 +222,16 @@ export default function LiveVoice({ taskId, available, signedIn, disabled = fals
         if (event.type === "response.created") {
           suppressPlayback.current = false;
           coachTurnStarted.current = false;
+          setError("");
           setNotice("Your coach is responding…");
           return;
         }
         if (event.type === "response.done") {
+          if (event.status === "incomplete") {
+            setNotice("Your coach is listening. Please try that sentence once more.");
+            setError("Azure ended the previous reply before speech arrived. The conversation is still connected.");
+            return;
+          }
           setNotice("Your coach is listening.");
           return;
         }
@@ -282,13 +290,14 @@ export default function LiveVoice({ taskId, available, signedIn, disabled = fals
     const next = !muted;
     audio.current?.setMuted(next);
     setMuted(next);
+    setNotice(next ? "Microphone muted. Unmute when you want to speak again." : "Your coach is listening.");
   }
 
   return <section className={styles.card} aria-label={pronunciationMode ? "Live Swedish pronunciation coach" : "Live Swedish conversation"}>
     <div className={styles.heading}><span className={styles.symbol}><AudioLines size={23} /></span><div><span className={styles.eyebrow}>LIVE VOICE COACH</span><h4>{pronunciationMode ? "Hear it. Say it. Notice one detail." : "A conversation, at your pace."}</h4></div><span className={`${styles.status} ${phase === "live" ? styles.connected : ""}`}>{phase === "live" ? <><i />{muted ? "Mic muted" : "Live"}</> : phase === "connecting" ? "Connecting" : phase === "closing" ? "Ending" : pronunciationMode ? "2 min" : "3 min"}</span></div>
     <p className={styles.description}>{pronunciationMode ? "A bilingual Azure Voice Live coach models one small Swedish sound group, leaves room for you to repeat, and can explain one detail in Indian English." : "Practise with a patient bilingual coach. Speak Swedish when you can, ask for help in English, and hear English explanations with an Indian accent."}</p>
     <div className={styles.controls}>
-      {active ? <><button className="secondary" onClick={() => finish(pronunciationMode ? "Sound coaching ended. Review the cue above and try again when you are ready." : "Conversation ended. Review your words below.")} disabled={phase === "closing"}><PhoneOff size={16} />{phase === "connecting" ? "Cancel connection" : phase === "closing" ? "Ending…" : pronunciationMode ? "End sound coaching" : "End conversation"}</button>{phase === "live" && <button className="secondary" onClick={toggleMute} aria-pressed={muted}>{muted ? <MicOff size={16} /> : <Mic size={16} />}{muted ? "Unmute" : "Mute microphone"}</button>}<span className={styles.timer}><Clock3 size={14} />{Math.floor(remaining / 60)}:{String(remaining % 60).padStart(2, "0")}</span></> : <button className="primary" disabled={!available || disabled} onClick={start}><Mic size={17} />{phase === "ended" ? pronunciationMode ? "Start sound coaching again" : "Start another conversation" : pronunciationMode ? "Start sound coaching" : "Start conversation"}</button>}
+      {active ? <><button className="secondary" onClick={() => finish(pronunciationMode ? "Sound coaching ended. Review the cue above and try again when you are ready." : "Conversation ended. Review your words below.")} disabled={phase === "closing"}><PhoneOff size={16} />{phase === "connecting" ? "Cancel connection" : phase === "closing" ? "Ending…" : pronunciationMode ? "End sound coaching" : "End conversation"}</button>{phase === "live" && <button className="secondary" onClick={toggleMute} aria-pressed={muted}>{muted ? <MicOff size={16} /> : <Mic size={16} />}{muted ? "Unmute microphone" : "Mute microphone"}</button>}<span className={styles.timer}><Clock3 size={14} />{Math.floor(remaining / 60)}:{String(remaining % 60).padStart(2, "0")}</span></> : <button className="primary" disabled={!available || disabled} onClick={start}><Mic size={17} />{phase === "ended" ? pronunciationMode ? "Start sound coaching again" : "Start another conversation" : pronunciationMode ? "Start sound coaching" : "Start conversation"}</button>}
       {needsPlayback && active && <button className="primary" onClick={enablePlayback}><Volume2 size={16} />Enable coach audio</button>}
     </div>
     {phase === "connecting" && <p className={styles.notice} role="status"><Loader2 size={15} className={styles.spinner} />Allow the microphone if your browser asks. Connecting securely…</p>}
