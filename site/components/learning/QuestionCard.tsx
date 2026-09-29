@@ -1,5 +1,6 @@
 "use client";
 import { Lightbulb } from "lucide-react";
+import { seededShuffle } from "./activities/shared";
 
 export type QuestionCardProps = {
   id: string;
@@ -46,7 +47,9 @@ export default function QuestionCard({
 
       {options ? (
         <div className="question-options">
-          {options.map((option) => (
+          {/* Content authors often list the answer first; a stable per-question
+              order stops learners from learning the position instead of the Swedish. */}
+          {seededShuffle(options, id).map((option) => (
             <label key={option}>
               <input
                 type="radio"

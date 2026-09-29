@@ -41,8 +41,16 @@ export type CourseQuestion = {
 };
 export type SourcePagePractice = {
   title: string;
+  /** Short label for a page switcher when a lecture has several pages. */
+  tabLabel?: string;
+  /** Why this page follows the lecture's own story. Defaults to neutral guidance. */
+  intro?: string;
+  /** A narrator line that sets the scene before the first turn. */
+  setting?: { fi: string; en: string };
   image: string;
   imageAlt: string;
+  /** Where the dialogue text sits on the image, in percent, so gist listening can hide it. */
+  textRegion?: { top: number; height: number };
   /** Physical page reference shown under the image. */
   pageLabel?: string;
   note?: string;
@@ -68,8 +76,18 @@ export type SourcePagePractice = {
   naturalNotes?: { source: string; natural: string; note: string }[];
   /** A long line rebuilt from its end, chunk by chunk (backchaining). */
   backchain?: { line: number; chunks: string[] };
-  /** Words the page itself marks for pronunciation, each tied to a rule. */
-  soundSpots?: { word: string; mark: string; rule: string }[];
+  /**
+   * Words the page itself marks (in colour), each tied to the rule it shows.
+   * The labels are content-owned: one page marks sounds, another pronouns.
+   */
+  hunt?: {
+    label: string;
+    title: string;
+    instructions: string;
+    /** Shown when the learner taps a word the page does not mark. */
+    missHint: string;
+    spots: { word: string; mark: string; rule: string }[];
+  };
 };
 
 export type LecturePresentation = {
@@ -88,6 +106,8 @@ export type LecturePresentation = {
     teacherNote?: { title: string; body: string };
     questionIntro?: string;
     sourcePractice?: SourcePagePractice;
+    /** Several verified pages, practised one at a time behind a page switcher. */
+    sourcePractices?: SourcePagePractice[];
     dialogue?: {
       part: "recall" | "teach";
       eyebrow?: string;
@@ -199,7 +219,28 @@ export type MatchActivity = TeachingActivityBase & {
   /** A speakable frame using {left} and {right}, offered for each finished pair. */
   sentence?: string;
 };
-export type TeachingActivity = SoundMapActivity | SortActivity | MatchActivity;
+/**
+ * An information gap: facts are hidden on a card and the learner reveals each
+ * one by choosing the question that would really get it. Wrong options can
+ * test the pronoun, the question word, or the word order.
+ */
+export type QuestionGapActivity = TeachingActivityBase & {
+  type: "question-gap";
+  card: { title: string; subtitle?: string };
+  /** Registered story character who answers aloud, for example Alex. */
+  answerer: string;
+  gaps: {
+    about: string;
+    field: string;
+    options: string[];
+    answer: string;
+    reply: { fi: string; en: string };
+    /** Why the correct question works; shown after a wrong choice. */
+    why: string;
+  }[];
+  summary?: string;
+};
+export type TeachingActivity = SoundMapActivity | SortActivity | MatchActivity | QuestionGapActivity;
 
 export type TeachingSection = {
   title: string;
@@ -214,6 +255,8 @@ export type TeachingSection = {
   tryIt?: string;
   /** Optional interactive practice shown as its own beat after the examples. */
   activity?: TeachingActivity;
+  /** Several activities, each shown as its own beat, in order. */
+  activities?: TeachingActivity[];
 };
 export type LearningResource = {
   label: string;
@@ -242,6 +285,11 @@ export type LectureContent = {
   legacyLessonId?: string;
   /** Explicit route choice. Future lecture numbers carry no implied format. */
   routeProfile?: LectureRouteProfileId;
+  /**
+   * Ids from content/grammar-terms.json that this lecture uses. They are
+   * underlined in teaching text and explained in plain English beside it.
+   */
+  grammarTerms?: string[];
   /** Presentation is optional so future lectures do not inherit Lesson 1. */
   presentation?: LecturePresentation;
   objectives: string[];

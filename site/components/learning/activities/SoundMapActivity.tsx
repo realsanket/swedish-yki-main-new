@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Check, RotateCcw, X } from "lucide-react";
 import type { SoundMapActivity as SoundMapActivityData } from "@/lib/course-types";
 import AudioButton from "../AudioButton";
+import { GlossText } from "../GrammarNotes";
 import styles from "./TeachingActivity.module.css";
 
 /**
@@ -39,7 +40,7 @@ export default function SoundMapActivity({ activity }: { activity: SoundMapActiv
           ))}
         </div>
       )}
-      {activeFeature && <p className={styles.featureNote}>{activeFeature.note}</p>}
+      {activeFeature && <p className={styles.featureNote}><GlossText text={activeFeature.note} /></p>}
 
       <div className={styles.soundGrid} role="group" aria-label="Sounds">
         {activity.sounds.map((item, index) => {

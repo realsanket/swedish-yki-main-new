@@ -2,6 +2,7 @@
 
 import type { TeachingActivity as TeachingActivityData } from "@/lib/course-types";
 import MatchActivity from "./MatchActivity";
+import QuestionGapActivity from "./QuestionGapActivity";
 import SortActivity from "./SortActivity";
 import SoundMapActivity from "./SoundMapActivity";
 import styles from "./TeachingActivity.module.css";
@@ -23,6 +24,7 @@ export default function TeachingActivity({ activity }: { activity: TeachingActiv
       {activity.type === "sound-map" && <SoundMapActivity activity={activity} />}
       {activity.type === "sort" && <SortActivity activity={activity} />}
       {activity.type === "match" && <MatchActivity activity={activity} />}
+      {activity.type === "question-gap" && <QuestionGapActivity activity={activity} />}
     </section>
   );
 }

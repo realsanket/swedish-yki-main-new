@@ -1,6 +1,6 @@
 # Stigen — Lesson 1 workshop
 
-Stigen is a local-first Swedish learning application for adult learners in Finland. The live curriculum is deliberately limited to **Chapter 1, Lecture 1** while its teaching flow and interface are improved step by step. Saved notes, progress evidence, browser speech, recording, and optional AI coaching remain available around that lesson.
+Stigen is a local-first Swedish learning application for adult learners in Finland. The live curriculum is deliberately limited to **Chapter 1, Lectures 1 and 2** while their teaching flow and interface are improved step by step. Saved notes, progress evidence, browser speech, recording, and optional AI coaching remain available around that lesson.
 
 The supplied classroom notes and two books informed the course progression. Their pages and exercises are not republished in the app; learner-facing tasks are newly authored.
 
@@ -10,7 +10,8 @@ Source-to-lecture decisions are tracked in [`../docs/mapping.md`](../docs/mappin
 
 - `content/modules.json` — the single live chapter definition.
 - `content/lectures/lecture-01.json` — the editable Lesson 1 content.
-- `content/lectures/index.json` — the generated runtime index; currently contains only Lecture 1.
+- `content/lectures/lecture-02.json` — the editable Lesson 2 content.
+- `content/lectures/index.json` — the generated runtime index; currently contains Lectures 1 and 2.
 - `lib/story-world.ts` — the Chapter 1 story, cast, and artwork lookup.
 - `lib/character-voices.ts` — the bilingual Azure voice casting for Alex, Elin, Henrik, and Maja.
 - `lib/azure-capabilities.ts` — the shared public capability map used by Settings and future learning surfaces.
@@ -23,7 +24,7 @@ Source-to-lecture decisions are tracked in [`../docs/mapping.md`](../docs/mappin
 - `docs/character-mapping.md` — the four stable viewpoints, minimal-cast rule, and introduction gate for any fifth character.
 - `docs/textbook-page-map.md` — the complete physical-page 4-55 reading record and four-character coverage evidence; it does not activate later lessons.
 
-Lectures 2–60, the former 12-chapter plan, later story mappings, and later artwork are preserved outside the runtime tree in [`../backup/future-course-2026-09-29`](../backup/future-course-2026-09-29). Do not restore them until the user explicitly expands the course scope.
+Lectures 3–60, the former 12-chapter plan, later story mappings, and later artwork are preserved outside the runtime tree in [`../backup/future-course-2026-09-29`](../backup/future-course-2026-09-29). Do not restore them until the user explicitly expands the course scope.
 
 Lecture presentation is optional metadata. Lecture 1 opts into `conversation-first`; a future lecture defaults to a neutral renderer and must earn any custom layout from its own verified teaching material. Shared components must not branch on lecture numbers.
 

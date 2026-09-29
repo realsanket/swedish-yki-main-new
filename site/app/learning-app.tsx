@@ -455,6 +455,12 @@ function AppContent({ userId }: { userId: string }) {
             </b>
           </div>
           <div>
+            {/* Vercel exposes its environment at build time; local runs never show this. */}
+            {process.env.NEXT_PUBLIC_VERCEL_ENV && (
+              <span className="preview-pill" title="Hosted preview: lessons and games work; Azure voice features are off and progress resets when the preview goes idle. Run it locally for everything.">
+                Preview · voice off
+              </span>
+            )}
             <span className="course-top-progress">
               {done}/{lectures.length} {lectures.length === 1 ? "lesson" : "lessons"}
             </span>
@@ -463,7 +469,7 @@ function AppContent({ userId }: { userId: string }) {
               className="level-pill"
               onClick={() => navigate("Course")}
             >
-              A0 · Lesson 1 workshop
+              A0 · Chapter 1
             </button>
           </div>
         </header>

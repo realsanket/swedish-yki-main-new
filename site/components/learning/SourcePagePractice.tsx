@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { BookOpenText, Check, EyeOff, Headphones, MessagesSquare, Search, Volume2, X } from "lucide-react";
-import { useState } from "react";
+import { useId, useState } from "react";
 import type { SourcePagePractice as SourcePagePracticeData } from "@/lib/course-types";
 import { storyCharacterForSpeaker, type StoryCharacterName } from "@/lib/story-world";
 import AudioButton from "./AudioButton";
-import { MarkedWord } from "./activities/shared";
+import { MarkedWord, seededShuffle } from "./activities/shared";
 import styles from "./SourcePagePractice.module.css";
 
 type PracticeMode = "listen" | "read" | "sounds" | "vanish" | "roleplay";
@@ -15,7 +15,7 @@ type Line = SourcePagePracticeData["lines"][number];
 const allModes: Array<{ id: PracticeMode; label: string; icon: typeof Headphones }> = [
   { id: "listen", label: "Listen for gist", icon: Headphones },
   { id: "read", label: "Understand", icon: BookOpenText },
-  { id: "sounds", label: "Sound hunt", icon: Search },
+  { id: "sounds", label: "Page marks", icon: Search },
   { id: "vanish", label: "Vanishing text", icon: EyeOff },
   { id: "roleplay", label: "Role-play", icon: MessagesSquare },
 ];
@@ -53,7 +53,11 @@ function maskLine(text: string, level: number) {
  * from lecture content; stages without content are omitted.
  */
 export default function SourcePagePractice({ practice }: { practice: SourcePagePracticeData }) {
-  const modes = allModes.filter((mode) => mode.id !== "sounds" || !!practice.soundSpots?.length);
+  const modes = allModes
+    .filter((mode) => mode.id !== "sounds" || !!practice.hunt?.spots.length)
+    .map((mode) => (mode.id === "sounds" && practice.hunt ? { ...mode, label: practice.hunt.label } : mode));
+  const stageOf = (id: PracticeMode) => modes.findIndex((item) => item.id === id) + 1;
+  const titleId = useId();
   const [mode, setMode] = useState<PracticeMode>("listen");
   const modeIndex = modes.findIndex((item) => item.id === mode);
   const nextMode = modes[modeIndex + 1];
@@ -62,14 +66,14 @@ export default function SourcePagePractice({ practice }: { practice: SourcePageP
   const pageCovered = mode === "vanish" || mode === "roleplay";
 
   return (
-    <section className="source-page-practice" aria-labelledby="source-page-practice-title">
+    <section className="source-page-practice" aria-labelledby={titleId}>
       <header>
         <div>
           <span>TEXTBOOK PAGE PRACTICE</span>
-          <h3 id="source-page-practice-title">{practice.title}</h3>
+          <h3 id={titleId}>{practice.title}</h3>
           <p>
-            You already know this conversation from Elin and Alex. Now climb the same page in {modes.length} short
-            stages: hear it, understand it, notice its sounds, lose the text, then play a part.
+            {practice.intro ??
+              `Climb this page in ${modes.length} short stages: hear it, understand it, notice what the page marks, lose the text, then play a part.`}
           </p>
         </div>
         <AudioButton text={fullText} segments={segments} label="Hear the textbook dialogue" className="secondary" />
@@ -99,7 +103,13 @@ export default function SourcePagePractice({ practice }: { practice: SourcePageP
           <div className={styles.pageFrame}>
             <Image src={practice.image} alt={practice.imageAlt} width={1067} height={1667} sizes="390px" />
             {mode === "listen" && (
-              <div className={styles.textCover}>
+              <div
+                className={styles.textCover}
+                style={{
+                  top: `${practice.textRegion?.top ?? 44}%`,
+                  bottom: `${Math.max(0, 100 - (practice.textRegion?.top ?? 44) - (practice.textRegion?.height ?? 56))}%`,
+                }}
+              >
                 <Headphones size={20} aria-hidden="true" />
                 <b>Text hidden for the first listen</b>
                 <span>Use the picture: who are they, and what are they doing?</span>
@@ -117,11 +127,11 @@ export default function SourcePagePractice({ practice }: { practice: SourcePageP
         </figure>
 
         <div className="source-page-practice-work">
-          {mode === "listen" && <ListenStage practice={practice} segments={segments} fullText={fullText} />}
-          {mode === "read" && <ReadStage practice={practice} />}
-          {mode === "sounds" && <SoundHuntStage practice={practice} />}
-          {mode === "vanish" && <VanishStage practice={practice} segments={segments} fullText={fullText} />}
-          {mode === "roleplay" && <RolePlayStage practice={practice} />}
+          {mode === "listen" && <ListenStage stage={stageOf("listen")} practice={practice} segments={segments} fullText={fullText} />}
+          {mode === "read" && <ReadStage stage={stageOf("read")} practice={practice} />}
+          {mode === "sounds" && practice.hunt && <HuntStage stage={stageOf("sounds")} practice={practice} hunt={practice.hunt} />}
+          {mode === "vanish" && <VanishStage stage={stageOf("vanish")} practice={practice} segments={segments} fullText={fullText} />}
+          {mode === "roleplay" && <RolePlayStage stage={stageOf("roleplay")} practice={practice} />}
 
           {nextMode && (
             <button type="button" className={`primary ${styles.nextStage}`} onClick={() => setMode(nextMode.id)}>
@@ -145,10 +155,12 @@ function StageIntro({ eyebrow, title, children }: { eyebrow: string; title: stri
 }
 
 function ListenStage({
+  stage,
   practice,
   segments,
   fullText,
 }: {
+  stage: number;
   practice: SourcePagePracticeData;
   segments: { text: string; speaker: StoryCharacterName; language: "sv" }[];
   fullText: string;
@@ -157,9 +169,10 @@ function ListenStage({
   const questions = practice.listenQuestions ?? [];
   return (
     <>
-      <StageIntro eyebrow="STAGE 1 · EARS ONLY" title="Listen without following every word.">
+      <StageIntro eyebrow={`STAGE ${stage} · EARS ONLY`} title="Listen without following every word.">
         Look at the picture, not the text. Play the dialogue once, answer, then play it again to check.
       </StageIntro>
+      {practice.setting && <p className={styles.setting}>Scene: {practice.setting.en}</p>}
       <div className={styles.audioRow}>
         <AudioButton text={fullText} segments={segments} label="Play the dialogue" className="secondary" />
         <AudioButton text={fullText} label="Play it slowly" slow className="secondary" />
@@ -171,7 +184,7 @@ function ListenStage({
             <li key={question.prompt}>
               <b>{question.prompt}</b>
               <div role="group" aria-label={question.prompt}>
-                {question.options.map((option, optionIndex) => {
+                {seededShuffle(question.options.map((option, optionIndex) => ({ option, optionIndex })), question.prompt).map(({ option, optionIndex }) => {
                   const state =
                     chosen === undefined
                       ? ""
@@ -207,15 +220,20 @@ function ListenStage({
   );
 }
 
-function ReadStage({ practice }: { practice: SourcePagePracticeData }) {
+function ReadStage({ stage, practice }: { stage: number; practice: SourcePagePracticeData }) {
   const [chainStep, setChainStep] = useState(0);
   const chain = practice.backchain;
   const chainLine = chain ? practice.lines[chain.line] : undefined;
   return (
     <>
-      <StageIntro eyebrow="STAGE 2 · MEANING" title="Now read each turn. Open only what you need.">
+      <StageIntro eyebrow={`STAGE ${stage} · MEANING`} title="Now read each turn. Open only what you need.">
         Say each line after the audio. New words sit under each line; English is one tap away.
       </StageIntro>
+      {practice.setting && (
+        <p className={styles.setting}>
+          <span lang="sv">{practice.setting.fi}</span> <small>{practice.setting.en}</small>
+        </p>
+      )}
       <div className="source-dialogue-lines">
         {practice.lines.map((line, index) => (
           <article key={`${line.speaker}-${index}`}>
@@ -297,8 +315,16 @@ function ReadStage({ practice }: { practice: SourcePagePracticeData }) {
   );
 }
 
-function SoundHuntStage({ practice }: { practice: SourcePagePracticeData }) {
-  const spots = practice.soundSpots ?? [];
+function HuntStage({
+  stage,
+  practice,
+  hunt,
+}: {
+  stage: number;
+  practice: SourcePagePracticeData;
+  hunt: NonNullable<SourcePagePracticeData["hunt"]>;
+}) {
+  const spots = hunt.spots;
   const [found, setFound] = useState<string[]>([]);
   const [message, setMessage] = useState<{ ok: boolean; text: string } | null>(null);
   const spotFor = (word: string) => spots.find((spot) => normalize(spot.word) === normalize(word));
@@ -307,7 +333,7 @@ function SoundHuntStage({ practice }: { practice: SourcePagePracticeData }) {
   function pick(word: string) {
     const spot = spotFor(word);
     if (!spot) {
-      setMessage({ ok: false, text: `${word} is not marked on the page. Look for g, k, sk, skj and å.` });
+      setMessage({ ok: false, text: `${word} is not marked on the page. ${hunt.missHint}` });
       return;
     }
     if (!found.includes(spot.word)) setFound((current) => [...current, spot.word]);
@@ -316,9 +342,8 @@ function SoundHuntStage({ practice }: { practice: SourcePagePracticeData }) {
 
   return (
     <>
-      <StageIntro eyebrow="STAGE 3 · YOUR EYES AND THE RULES" title={`Find the ${spots.length} words the page marks in red.`}>
-        The textbook colours the letters that change sound. Look at the page, then tap those words below. Each find
-        reveals the Lesson 1 rule behind it.
+      <StageIntro eyebrow={`STAGE ${stage} · YOUR EYES AND THE RULES`} title={hunt.title}>
+        {hunt.instructions}
       </StageIntro>
       {!!practice.focus.length && (
         <p className={styles.focus}>
@@ -378,10 +403,12 @@ function SoundHuntStage({ practice }: { practice: SourcePagePracticeData }) {
 }
 
 function VanishStage({
+  stage,
   practice,
   segments,
   fullText,
 }: {
+  stage: number;
   practice: SourcePagePracticeData;
   segments: { text: string; speaker: StoryCharacterName; language: "sv" }[];
   fullText: string;
@@ -389,7 +416,7 @@ function VanishStage({
   const [level, setLevel] = useState(0);
   return (
     <>
-      <StageIntro eyebrow="STAGE 4 · LET THE TEXT DISAPPEAR" title="Say the whole dialogue aloud at every level.">
+      <StageIntro eyebrow={`STAGE ${stage} · LET THE TEXT DISAPPEAR`} title="Say the whole dialogue aloud at every level.">
         Read it once with full text. Each time you manage the whole conversation, hide more. At the last level only
         the meaning is left.
       </StageIntro>
@@ -431,7 +458,7 @@ function VanishStage({
   );
 }
 
-function RolePlayStage({ practice }: { practice: SourcePagePracticeData }) {
+function RolePlayStage({ stage, practice }: { stage: number; practice: SourcePagePracticeData }) {
   const speakers = [...new Set(practice.lines.map((line) => line.speaker))];
   const [role, setRole] = useState(speakers[1] ?? speakers[0]);
   const [turn, setTurn] = useState(0);
@@ -448,7 +475,7 @@ function RolePlayStage({ practice }: { practice: SourcePagePracticeData }) {
 
   return (
     <>
-      <StageIntro eyebrow="STAGE 5 · PLAY A PART" title={`You are ${role}. ${partner ?? "Your partner"} starts the talk.`}>
+      <StageIntro eyebrow={`STAGE ${stage} · PLAY A PART`} title={`You are ${role}. ${partner ?? "Your partner"} starts the talk.`}>
         Play your partner&apos;s line, then say yours from the meaning cue before you reveal it. Swap roles afterwards.
       </StageIntro>
       <div className={styles.roles} role="group" aria-label="Choose your role">
@@ -514,5 +541,34 @@ function RolePlayStage({ practice }: { practice: SourcePagePracticeData }) {
         </button>
       )}
     </>
+  );
+}
+
+/**
+ * Several verified pages for one lecture. Only one page is open at a time so
+ * each ladder keeps its own focus; switching pages starts that page fresh.
+ */
+export function SourcePagePracticeSet({ pages }: { pages: SourcePagePracticeData[] }) {
+  const [index, setIndex] = useState(0);
+  if (pages.length === 1) return <SourcePagePractice practice={pages[0]} />;
+  return (
+    <div className={styles.pageSet}>
+      <div className={styles.pageTabs} role="group" aria-label="Textbook pages for this lesson">
+        <span className={styles.eyebrow}>TEXTBOOK PAGES FOR THIS LESSON</span>
+        {pages.map((page, pageIndex) => (
+          <button
+            type="button"
+            key={page.title}
+            aria-pressed={index === pageIndex}
+            className={`${styles.level} ${index === pageIndex ? styles.levelActive : ""}`}
+            onClick={() => setIndex(pageIndex)}
+          >
+            <span>{pageIndex + 1}</span>
+            {page.tabLabel ?? page.title}
+          </button>
+        ))}
+      </div>
+      <SourcePagePractice practice={pages[index]} key={pages[index].title} />
+    </div>
   );
 }

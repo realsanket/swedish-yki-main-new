@@ -1,8 +1,12 @@
 import Database from "better-sqlite3";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+// Local runs keep progress in site/data. A hosted preview (Vercel sets VERCEL=1)
+// has a read-only project folder, so it uses the temporary directory instead;
+// that progress is disposable and resets when the preview goes idle.
+const DATA_DIR = process.env.VERCEL ? path.join(os.tmpdir(), "stigen-data") : path.join(process.cwd(), "data");
 const DB_PATH = path.join(DATA_DIR, "progress.db");
 
 const SCHEMA_SQL = `

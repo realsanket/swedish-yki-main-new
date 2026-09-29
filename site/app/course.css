@@ -8466,3 +8466,30 @@
     font-size: 29px;
   }
 }
+
+/* A teaching topic with its plain-English grammar notes beside it. */
+.teach-with-notes {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  align-items: start;
+  gap: 22px;
+}
+.teach-with-notes-main {
+  min-width: 0;
+}
+/* Beside the notes column, rule cards read better stacked than in three narrow columns. */
+.lecture-workspace .teach-with-notes .teaching-section-rule .teaching-rules {
+  grid-template-columns: 1fr;
+}
+
+/* Shown only on a hosted preview deployment. */
+.topbar .preview-pill {
+  padding: 5px 11px;
+  border: 1px solid #e2c36a;
+  border-radius: 99px;
+  background: #fff4cf;
+  color: #7a5608;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: help;
+}
