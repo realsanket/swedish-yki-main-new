@@ -60,7 +60,7 @@ const features = [
   {
     key: "liveVoice",
     title: "Live voice conversation",
-    description: "Talk with an AI Swedish practice partner.",
+    description: "Talk in Swedish and ask for help in Indian English.",
     icon: AudioLines,
   },
 ] as const;
@@ -759,8 +759,8 @@ export default function SettingsView({
                 <h2 id="azure-live-test-heading">Test Swedish voice chat</h2>
               </div>
               <p>
-                This is the real Azure Speech Voice Live path—not a configuration simulation.
-                Start it, say “Hej! Jag heter …”, listen for the reply, and end
+                This is the real bilingual Azure Speech Voice Live path—not a configuration simulation.
+                Start in Swedish, ask a question in English, listen for both accents, and end
                 the conversation when you are finished.
               </p>
             </div>

@@ -45,11 +45,18 @@ both directions.
 The deployed voice session uses:
 
 - `gpt-realtime-2.1-mini` for the realtime conversation;
-- native `sv-SE-MattiasNeural` speech with Swedish preferred before English;
+- `sv-SE-MattiasNeural` with preferred output locales `sv-SE` and `en-IN`, so
+  Swedish remains Swedish and English explanations use an Indian-English accent;
 - patient server VAD (1.1 seconds for conversation, 1.4 seconds for sound
   practice) with response interruption and automatic truncation;
 - Azure deep noise suppression and server echo cancellation; and
-- Swedish Whisper transcription for the learner transcript.
+- multilingual Whisper transcription for Swedish practice and English questions.
+
+Voice Live automatically detects the language of generated text when no single
+output locale is enforced. Its `preferLocales` setting changes each language's
+accent without forcing the entire session into one language. Likewise, leaving
+the Whisper input language unset allows Swedish and English turns in the same
+conversation.
 
 Azure's multilingual semantic VAD currently rejects `sv-SE` with this realtime
 model. Azure Speech transcription inside Voice Live also requires semantic VAD.
