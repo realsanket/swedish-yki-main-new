@@ -92,9 +92,10 @@ Episode 1 follows the learner's preferred sequence instead of presenting the not
 1. **Hear a complete conversation first.** The learner sees why the language is useful before meeting terminology.
 2. **Copy whole chunks.** Name, home, origin, and languages are practised as complete lines.
 3. **Use a mouth or memory bridge.** English, Hindi, and Marathi cues help the learner find a starting position, but are explicitly marked as approximations.
-4. **Learn one sound idea per card.** Vowel shape, vowel/consonant length, common soft sounds, and recognition-only spellings are separated.
-5. **Act immediately.** Every card ends with one short “Do it now” speaking action.
-6. **Test only the core.** The final success condition is the four-line introduction; secondary pronunciation material is practised in one small self-chosen loop.
+4. **Learn one sound idea per topic.** Each topic progressively reveals Understand, optional See the pattern, Hear it, and Try it beats instead of showing the full reference sheet at once.
+5. **Act immediately.** The introduction topic builds and saves the learner's real four lines; each sound topic ends with a short retrieval action and optional Azure live coaching.
+6. **Use AI only for a clear learning job.** Azure Speech reads the complete conversation and individual models; Voice Live rehearses either the introduction or one selected sound; transcription and feedback return in the productive practice step.
+7. **Test only the core.** The final success condition is the four-line introduction; secondary pronunciation material is practised in one small self-chosen loop.
 
 This sequence is the Episode 1 pilot: model → notice → memory bridge → immediate production → small retrieval. Do not copy all Lesson 1 facts into every quiz.
 
@@ -115,8 +116,10 @@ The former Lectures 2–5 are not live Chapter 1 content. Their files are preser
 ## Episode 1 implementation record
 
 - Updated title: **Introduce yourself and hear Swedish sounds**.
-- Reworked into five small teaching cards: introduction; vowel mouth map; vowel/consonant length; g/k/sk changes; recognition-only regional spellings.
-- Moved the model conversation before the first questions and reduced the opening to two meaning checks.
+- Reworked into five teaching topics, each disclosed through short Understand / See the pattern / Hear it / Try it beats: introduction; vowel mouth map; vowel/consonant length; g/k/sk changes; recognition-only regional spellings.
+- Moved the model conversation before the first questions, kept its text closed for the first listen, restored the source's reciprocal `Och du?` turn, and reduced the opening to two meaning checks.
+- Added a personal four-line builder whose result carries into the speaking draft, Azure playback, and an optional live rehearsal.
+- Added an optional Azure pronunciation coach to each sound topic without turning pronunciation into an unsupported automatic score.
 - Added learner-authored Hindi/Marathi/English memory bridges plus a “Do it now” action to each card.
 - Replaced the short greeting-only task with a four-line personal introduction.
 - Added original listening, reading, speaking, writing, dialogue, pronunciation, checkpoint, and transfer work.

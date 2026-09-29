@@ -30,7 +30,7 @@
         "eyebrow": "START WITH THE STORY",
         "title": "Meet Elin and Alex",
         "instructions": "Listen once, follow the visible Swedish, and copy one line. Open English only when a line is unclear.",
-        "initiallyOpen": true
+        "initiallyOpen": false
       }
     },
     "teaching": {
@@ -38,6 +38,13 @@
         "type": "introduction",
         "sectionTitle": "Build your introduction from four lines"
       },
+      "livePractice": [
+        {"sectionTitle": "Build your introduction from four lines", "mode": "conversation"},
+        {"sectionTitle": "Nine vowels: copy the mouth first", "mode": "pronunciation"},
+        {"sectionTitle": "Long or short: stretch one part", "mode": "pronunciation"},
+        {"sectionTitle": "One vowel group, three soft sounds", "mode": "pronunciation"},
+        {"sectionTitle": "Recognise the remaining Lesson 1 spellings", "mode": "pronunciation"}
+      ],
       "wordBank": {
         "mode": "collapsed",
         "title": "Open the complete Lesson 1 word bank"
@@ -323,13 +330,13 @@
   ],
   "dialogue": [
     {"speaker": "Elin", "fi": "Hej! Jag heter Elin. Vad heter du?", "en": "Hello! My name is Elin. What is your name?"},
-    {"speaker": "Alex", "fi": "Hej! Jag heter Alex.", "en": "Hello! My name is Alex."},
-    {"speaker": "Elin", "fi": "Varifrån kommer du?", "en": "Where do you come from?"},
+    {"speaker": "Alex", "fi": "Hej! Jag heter Alex. Jag gillar din rosa skjorta!", "en": "Hello! My name is Alex. I like your pink shirt!"},
+    {"speaker": "Elin", "fi": "Tack! Du har fint hår.", "en": "Thanks! You have nice hair."},
+    {"speaker": "Alex", "fi": "Varifrån kommer du, Elin?", "en": "Where do you come from, Elin?"},
+    {"speaker": "Elin", "fi": "Jag kommer från Finland. Och du?", "en": "I come from Finland. And you?"},
     {"speaker": "Alex", "fi": "Jag kommer från Indien, men jag bor i Finland nu.", "en": "I come from India, but I live in Finland now."},
     {"speaker": "Elin", "fi": "Vilka språk talar du?", "en": "Which languages do you speak?"},
-    {"speaker": "Alex", "fi": "Jag talar hindi, engelska och lite svenska.", "en": "I speak Hindi, English, and a little Swedish."},
-    {"speaker": "Elin", "fi": "Jag gillar din rosa skjorta!", "en": "I like your pink shirt!"},
-    {"speaker": "Alex", "fi": "Tack! Du har fint hår.", "en": "Thanks! You have nice hair."}
+    {"speaker": "Alex", "fi": "Jag talar hindi, engelska och lite svenska.", "en": "I speak Hindi, English, and a little Swedish."}
   ],
   "resources": [
     {
@@ -353,7 +360,8 @@
       {"id": "sv-01-word-11", "fi": "skönt", "en": "pleasant; comfortable", "example": "Det är skönt här.", "translation": "It is pleasant here.", "level": "A0"},
       {"id": "sv-01-word-12", "fi": "tak", "en": "roof; ceiling", "example": "Huset har ett rött tak.", "translation": "The house has a red roof.", "level": "A0"},
       {"id": "sv-01-word-13", "fi": "tack", "en": "thanks", "example": "Tack så mycket!", "translation": "Thank you very much!", "level": "A0"},
-      {"id": "sv-01-word-14", "fi": "kött", "en": "meat", "example": "Jag köper kött.", "translation": "I buy meat.", "level": "A0"}
+      {"id": "sv-01-word-14", "fi": "kött", "en": "meat", "example": "Jag köper kött.", "translation": "I buy meat.", "level": "A0"},
+      {"id": "sv-01-word-15", "fi": "Och du?", "en": "And you?", "example": "Jag kommer från Finland. Och du?", "translation": "I come from Finland. And you?", "level": "A0"}
     ],
     "pronunciation": {
       "text": "Jag. Ja. Bok. Bor. Du. Dum. By. Paraply. Le. Ö. Bär. Från. Tak. Tack. Gäst. Gillar. Kina. Kött. Skärm. Skiner. Sjuk. Skjorta. Kurs. Mars. Hjälp. Djur. Ljus.",

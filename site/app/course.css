@@ -2142,6 +2142,51 @@
   font-size: 12px;
   line-height: 1.5;
 }
+.teaching-ai-drawer {
+  margin-top: 18px;
+  overflow: hidden;
+  border: 1px solid #ccdceb;
+  border-radius: 15px;
+  background: #f5f8fc;
+}
+.teaching-ai-drawer > summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 11px;
+  align-items: center;
+  min-height: 58px;
+  padding: 12px 15px;
+  color: #244c6c;
+  cursor: pointer;
+  list-style: none;
+}
+.teaching-ai-drawer > summary::-webkit-details-marker {
+  display: none;
+}
+.teaching-ai-drawer > summary > span {
+  display: grid;
+  gap: 2px;
+}
+.teaching-ai-drawer > summary b {
+  font-size: 13px;
+}
+.teaching-ai-drawer > summary small {
+  color: #607487;
+  font-size: 10px;
+}
+.teaching-ai-drawer[open] > summary {
+  border-bottom: 1px solid #d8e3ec;
+  background: #edf3f9;
+}
+.teaching-ai-drawer[open] > summary > svg:last-child {
+  transform: rotate(180deg);
+}
+.teaching-ai-drawer > .azure-voice-tools {
+  padding: 16px;
+}
+.teaching-ai-drawer .azure-voice-tool {
+  margin: 0;
+}
 
 .teaching-kind {
   display: inline-block;

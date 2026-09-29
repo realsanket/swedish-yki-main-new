@@ -66,6 +66,8 @@ export type LecturePresentation = {
   teaching?: {
     /** Optional task-specific interaction attached to one explicitly named teaching section. */
     builder?: { type: "introduction"; sectionTitle: string };
+    /** Optional live practice is explicit per section so future topics never inherit the wrong coach mode. */
+    livePractice?: Array<{ sectionTitle: string; mode: "conversation" | "pronunciation" }>;
     wordBank?: { mode: "open" | "collapsed"; title?: string };
     resourceIntro?: { eyebrow: string; title: string; body: string };
   };

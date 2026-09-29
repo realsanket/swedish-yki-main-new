@@ -42,6 +42,7 @@ across all four fields.
 - `opening.dialogue.part`: places dialogue in `recall` or `teach`.
 - `opening.dialogue`: controls the dialogue title, eyebrow, instructions, and initial text visibility.
 - `teaching.builder`: attaches a typed task-specific interaction to one explicitly named teaching section. Omit it unless that section genuinely requires the interaction.
+- `teaching.livePractice`: explicitly assigns `conversation` or `pronunciation` Voice Live practice to named teaching sections. Omit a section rather than guessing a mode from its position or kind.
 - `teaching.wordBank`: chooses an open or collapsed word bank and optionally supplies its title.
 - `teaching.resourceIntro`: supplies context appropriate to that lecture's resources.
 - `hero`: opts into a specialised hero and owns every learner-facing string inside it.

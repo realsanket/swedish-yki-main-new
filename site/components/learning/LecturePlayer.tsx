@@ -38,6 +38,7 @@ import { getYkiMock, parseYkiTargetedReturn } from "@/lib/yki-mocks";
 import type { SaveCourse } from "./useCourse";
 import AudioButton from "./AudioButton";
 import A0TeachingCompanion from "./A0TeachingCompanion";
+import AzureVoiceTools from "./AzureVoiceTools";
 import BookConnection from "./BookConnection";
 import BookReviewBridge from "./BookReviewBridge";
 import PracticeStudio from "./PracticeStudio";
@@ -911,6 +912,9 @@ export default function LecturePlayer({
                 const usesIntroductionBuilder =
                   teachingPresentation?.builder?.type === "introduction" &&
                   teachingPresentation.builder.sectionTitle === currentSection.title;
+                const livePractice = teachingPresentation?.livePractice?.find(
+                  (practice) => practice.sectionTitle === currentSection.title,
+                );
                 const previousBeat = () => {
                   if (safeBeatIdx > 0) {
                     setTeachingBeatIdx(safeBeatIdx - 1);
@@ -1060,6 +1064,8 @@ export default function LecturePlayer({
                         <IntroductionBuilder
                           modelText={currentSection.examples.map((example) => example.fi).join(" ")}
                           memoryTip={currentSection.memoryTip}
+                          initialText={drafts.speaking ?? ""}
+                          onChange={(value) => changeDraftForSkill("speaking", value)}
                         />
                       ) : activeBeat.id === "try" ? (
                         <div className="lesson-coaching-pair">
@@ -1077,6 +1083,39 @@ export default function LecturePlayer({
                           )}
                         </div>
                       ) : null}
+                      {activeBeat.id === "try" && livePractice && (
+                        <details className="teaching-ai-drawer">
+                          <summary>
+                            <AudioLines size={19} aria-hidden="true" />
+                            <span>
+                              <b>{livePractice.mode === "conversation" ? "Rehearse this introduction with Stigen" : "Practise this sound with Stigen"}</b>
+                              <small>{livePractice.mode === "conversation" ? "Optional live conversation · Swedish first · English help when needed" : "Optional two-minute Azure sound drill · one cue at a time"}</small>
+                            </span>
+                            <ChevronDown size={17} aria-hidden="true" />
+                          </summary>
+                          <AzureVoiceTools
+                            contextId={lecture.id}
+                            tools={[livePractice.mode]}
+                            copy={livePractice.mode === "conversation" ? {
+                              conversation: {
+                                eyebrow: "OPTIONAL LIVE REHEARSAL",
+                                title: "Use your four real lines in a conversation.",
+                                description: "Introduce yourself, answer one short follow-up, and ask Och du? when you are ready to return the question.",
+                              },
+                            } : {
+                              pronunciation: {
+                                eyebrow: "OPTIONAL LIVE SOUND COACH",
+                                title: "Say only the words in this teaching topic.",
+                                description: "Tell Stigen which words you are practising. Listen to one model, repeat, and use one concrete mouth or timing cue.",
+                              },
+                            }}
+                            onTranscript={livePractice.mode === "conversation" ? (text) => {
+                              changeDraftForSkill("speaking", text);
+                              return true;
+                            } : undefined}
+                          />
+                        </details>
+                      )}
                     </section>
                     <div className="teach-pagination-controls">
                       <button

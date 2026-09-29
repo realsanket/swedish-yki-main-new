@@ -19,23 +19,45 @@ const fields: Array<{
   { key: "languages", cue: "Languages", prefix: "Jag talar", english: "I speak", placeholder: "hindi, engelska och lite svenska" },
 ];
 
+function cleanDetail(value: string) {
+  return value.trim().replace(/[.!?]+$/, "");
+}
+
+function detailsFromText(text: string): Record<DetailKey, string> {
+  const patterns: Record<DetailKey, RegExp> = {
+    name: /Jag heter\s+([^.!?\n]+)/i,
+    home: /Jag bor i\s+([^.!?\n]+)/i,
+    origin: /Jag kommer från\s+([^.!?\n]+)/i,
+    languages: /Jag talar\s+([^.!?\n]+)/i,
+  };
+  return Object.fromEntries(
+    fields.map((field) => [field.key, cleanDetail(text.match(patterns[field.key])?.[1] ?? "")]),
+  ) as Record<DetailKey, string>;
+}
+
+function textFromDetails(details: Record<DetailKey, string>) {
+  return fields
+    .filter((field) => cleanDetail(details[field.key]))
+    .map((field) => `${field.prefix} ${cleanDetail(details[field.key])}.`)
+    .join("\n");
+}
+
 export default function IntroductionBuilder({
   modelText,
   memoryTip,
+  initialText = "",
+  onChange,
 }: {
   modelText: string;
   memoryTip?: string;
+  initialText?: string;
+  onChange?: (value: string) => void;
 }) {
-  const [details, setDetails] = useState<Record<DetailKey, string>>({
-    name: "",
-    home: "",
-    origin: "",
-    languages: "",
-  });
+  const [details, setDetails] = useState<Record<DetailKey, string>>(() => detailsFromText(initialText));
   const [hidden, setHidden] = useState(false);
   const complete = fields.every((field) => details[field.key].trim());
   const lines = useMemo(
-    () => fields.map((field) => `${field.prefix} ${details[field.key].trim()}.`),
+    () => fields.map((field) => `${field.prefix} ${cleanDetail(details[field.key])}.`),
     [details],
   );
 
@@ -70,7 +92,9 @@ export default function IntroductionBuilder({
                 <input
                   value={details[field.key]}
                   onChange={(event) => {
-                    setDetails((current) => ({ ...current, [field.key]: event.target.value }));
+                    const next = { ...details, [field.key]: event.target.value };
+                    setDetails(next);
+                    onChange?.(textFromDetails(next));
                     setHidden(false);
                   }}
                   placeholder={field.placeholder}
