@@ -43,7 +43,7 @@ Lecture 1 explicitly opts into `presentation.template: "conversation-first"` and
 ## Adding a future lecture
 
 1. Read and verify that teacher lesson first. Do not begin from the Lecture 1 layout.
-2. Check `docs/character-mapping.md`. Reuse Alex, Aino, or Sami when the role is natural; use an unnamed episodic role when continuity is unnecessary. Add a recurring character only after the introduction gate is satisfied.
+2. Check `docs/character-mapping.md`. Reuse Alex, Elin, or Henrik when the role is natural; use an unnamed episodic role when continuity is unnecessary. Add a recurring character only after the introduction gate is satisfied.
 3. Create the new numbered lecture JSON with its actual teaching content.
 4. Leave `presentation` absent until the content shows what the interface needs.
 5. Use existing optional fields only when they fit the teaching purpose.

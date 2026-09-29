@@ -64,11 +64,11 @@ const voiceChecks = {
     sv: "Hej! Jag heter Alex.",
     en: "Hello! My name is Alex.",
   },
-  Aino: {
+  Elin: {
     sv: "Hej Alex! Välkommen till Sverige.",
     en: "Hi Alex! Welcome to Sweden.",
   },
-  Sami: {
+  Henrik: {
     sv: "Lyssna först, och säg sedan meningen.",
     en: "Listen first, and then say the sentence.",
   },
@@ -626,8 +626,8 @@ export default function SettingsView({
               <div>
                 <strong>Swedish pronunciation check passed</strong>
                 <p>
-                  Azure recognized every test line as Swedish. Alex and Aino
-                  scored 98/100 accuracy; Sami now uses native Swedish Mattias
+                  Azure recognized every test line as Swedish. Alex and Elin
+                  scored 98/100 accuracy; Henrik now uses native Swedish Mattias
                   after it scored 96/100 with complete recognition. Swedish
                   prosody scoring is not supported, so use the previews for the
                   final listening check.

@@ -19,25 +19,25 @@ import AudioButton from "./AudioButton";
 const characters = [
   {
     name: "Alex",
-    role: "The learner",
+    role: "The newcomer",
     image: "/images/onboarding/characters/alex.webp",
-    copy: "Alex makes the first attempt: greeting someone and building four simple lines about himself.",
+    copy: "Alex is building a life in Finland through Swedish. He makes the first attempt, asks practical questions, and shows that mistakes are part of learning.",
     sv: "Hej! Jag heter Alex.",
     en: "Hello! My name is Alex.",
   },
   {
-    name: "Aino",
-    role: "The conversation partner",
-    image: "/images/onboarding/characters/aino.webp",
-    copy: "Aino gives the language a purpose. She listens, replies naturally, and keeps the first conversation moving.",
+    name: "Elin",
+    role: "The local friend",
+    image: "/images/onboarding/characters/elin.webp",
+    copy: "Elin is Alex’s Swedish-speaking friend. She creates real reasons to talk: meeting people, making plans, shopping, sharing opinions, and solving everyday problems.",
     sv: "Hej Alex! Vad heter du?",
     en: "Hello Alex! What is your name?",
   },
   {
-    name: "Sami",
-    role: "The teacher",
-    image: "/images/onboarding/characters/sami.webp",
-    copy: "Sami slows down one sound idea at a time, then sends the language straight back into the conversation.",
+    name: "Henrik",
+    role: "The language coach",
+    image: "/images/onboarding/characters/henrik.webp",
+    copy: "Henrik steps in only when teaching helps. He makes pronunciation and grammar clear, then sends the language straight back into use.",
     sv: "Lyssna först. Försök sedan själv.",
     en: "Listen first. Then try it yourself.",
   },
@@ -100,8 +100,8 @@ export default function CourseOrientation({
           <p className="eyebrow">INNAN DU BÖRJAR · BEFORE YOU BEGIN</p>
           <h1>Your first Swedish lesson has one clear destination.</h1>
           <p>
-            Meet the opening conversation, the three people around it, and the
-            simple practice loop used throughout Lecture 1.
+            Meet the opening conversation, the three people who carry it, and
+            the simple practice loop used throughout Lecture 1.
           </p>
         </div>
         <span className="orientation-not-lesson">
@@ -129,7 +129,7 @@ export default function CourseOrientation({
           <div className="orientation-lesson-map">
             <Image
               src="/images/story/chapters/chapter-01-first-class.webp"
-              alt="Alex arriving for his first Swedish class with Aino and Sami"
+              alt="Alex arriving for his first Swedish class with Elin and Henrik"
               fill
               sizes="(max-width: 1180px) 100vw, 1180px"
               priority
@@ -164,18 +164,21 @@ export default function CourseOrientation({
           <div className="orientation-cast">
             <header>
               <div>
-                <span className="orientation-kicker">A SMALL, USEFUL CAST</span>
-                <h2>Each person has one teaching job.</h2>
+                <span className="orientation-kicker">A SWEDISH STORY CAST</span>
+                <h2>Three stable viewpoints—not three fixed exercises.</h2>
                 <p>
-                  The same three people keep the opening scene easy to follow:
-                  one learner, one conversation partner, and one teacher.
+                  Alex experiences Swedish as a newcomer, Elin brings everyday
+                  life into the conversation, and Henrik coaches only when an
+                  explanation is useful. Their roles can grow without changing
+                  who they are.
                 </p>
               </div>
               <aside className="orientation-book-note">
                 <BookOpen size={18} aria-hidden="true" />
                 <p>
-                  The source dialogue defines the language focus. Stigen uses
-                  an original cast and newly written practice around it.
+                  A student viewpoint is reserved for later school, friendship,
+                  hobby, and future-study lessons. That character will join only
+                  when verified teacher notes make the role necessary.
                 </p>
               </aside>
             </header>

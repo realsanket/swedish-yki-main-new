@@ -28,7 +28,7 @@
       "dialogue": {
         "part": "recall",
         "eyebrow": "START WITH THE STORY",
-        "title": "Meet Aino and Alex",
+        "title": "Meet Elin and Alex",
         "instructions": "Listen once, follow the visible Swedish, and copy one line. Open English only when a line is unclear.",
         "initiallyOpen": true
       }
@@ -58,11 +58,11 @@
         "audioText": "Hej! Jag heter Alex. Vad heter du?"
       },
       "speakers": [
-        {"name": "Aino", "fi": "Vad heter du?"},
+        {"name": "Elin", "fi": "Vad heter du?"},
         {"name": "Alex", "fi": "Jag heter Alex."}
       ],
       "connector": "HEJ!",
-      "encounterLabel": "Aino and Alex meet for the first time",
+      "encounterLabel": "Elin and Alex meet for the first time",
       "chunks": [
         {"label": "NAME", "fi": "Jag heter …", "en": "My name is …"},
         {"label": "HOME NOW", "fi": "Jag bor i …", "en": "I live in …"},
@@ -75,7 +75,7 @@
   "recall": [
     {
       "id": "sv-01-notice-purpose",
-      "prompt": "What are Aino and Alex mainly doing in the conversation?",
+      "prompt": "What are Elin and Alex mainly doing in the conversation?",
       "answers": ["They are introducing themselves"],
       "options": [
         "They are introducing themselves",
@@ -319,13 +319,13 @@
     "Practise one contrast at a time: tak/tack or the g → j, k → tj, sk → sj pattern."
   ],
   "dialogue": [
-    {"speaker": "Aino", "fi": "Hej! Jag heter Aino. Vad heter du?", "en": "Hello! My name is Aino. What is your name?"},
+    {"speaker": "Elin", "fi": "Hej! Jag heter Elin. Vad heter du?", "en": "Hello! My name is Elin. What is your name?"},
     {"speaker": "Alex", "fi": "Hej! Jag heter Alex.", "en": "Hello! My name is Alex."},
-    {"speaker": "Aino", "fi": "Varifrån kommer du?", "en": "Where do you come from?"},
+    {"speaker": "Elin", "fi": "Varifrån kommer du?", "en": "Where do you come from?"},
     {"speaker": "Alex", "fi": "Jag kommer från Indien, men jag bor i Finland nu.", "en": "I come from India, but I live in Finland now."},
-    {"speaker": "Aino", "fi": "Vilka språk talar du?", "en": "Which languages do you speak?"},
+    {"speaker": "Elin", "fi": "Vilka språk talar du?", "en": "Which languages do you speak?"},
     {"speaker": "Alex", "fi": "Jag talar hindi, engelska och lite svenska.", "en": "I speak Hindi, English, and a little Swedish."},
-    {"speaker": "Aino", "fi": "Jag gillar din rosa skjorta!", "en": "I like your pink shirt!"},
+    {"speaker": "Elin", "fi": "Jag gillar din rosa skjorta!", "en": "I like your pink shirt!"},
     {"speaker": "Alex", "fi": "Tack! Du har fint hår.", "en": "Thanks! You have nice hair."}
   ],
   "resources": [

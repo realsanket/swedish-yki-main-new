@@ -32,7 +32,7 @@
         "dialogue": {
           "part": "recall",
           "eyebrow": "START WITH THE STORY",
-          "title": "Meet Aino and Alex",
+          "title": "Meet Elin and Alex",
           "instructions": "Listen once, follow the visible Swedish, and copy one line. Open English only when a line is unclear.",
           "initiallyOpen": true
         }
@@ -66,7 +66,7 @@
         },
         "speakers": [
           {
-            "name": "Aino",
+            "name": "Elin",
             "fi": "Vad heter du?"
           },
           {
@@ -75,7 +75,7 @@
           }
         ],
         "connector": "HEJ!",
-        "encounterLabel": "Aino and Alex meet for the first time",
+        "encounterLabel": "Elin and Alex meet for the first time",
         "chunks": [
           {
             "label": "NAME",
@@ -107,7 +107,7 @@
     "recall": [
       {
         "id": "sv-01-notice-purpose",
-        "prompt": "What are Aino and Alex mainly doing in the conversation?",
+        "prompt": "What are Elin and Alex mainly doing in the conversation?",
         "answers": [
           "They are introducing themselves"
         ],
@@ -560,9 +560,9 @@
     ],
     "dialogue": [
       {
-        "speaker": "Aino",
-        "fi": "Hej! Jag heter Aino. Vad heter du?",
-        "en": "Hello! My name is Aino. What is your name?"
+        "speaker": "Elin",
+        "fi": "Hej! Jag heter Elin. Vad heter du?",
+        "en": "Hello! My name is Elin. What is your name?"
       },
       {
         "speaker": "Alex",
@@ -570,7 +570,7 @@
         "en": "Hello! My name is Alex."
       },
       {
-        "speaker": "Aino",
+        "speaker": "Elin",
         "fi": "Varifrån kommer du?",
         "en": "Where do you come from?"
       },
@@ -580,7 +580,7 @@
         "en": "I come from India, but I live in Finland now."
       },
       {
-        "speaker": "Aino",
+        "speaker": "Elin",
         "fi": "Vilka språk talar du?",
         "en": "Which languages do you speak?"
       },
@@ -590,7 +590,7 @@
         "en": "I speak Hindi, English, and a little Swedish."
       },
       {
-        "speaker": "Aino",
+        "speaker": "Elin",
         "fi": "Jag gillar din rosa skjorta!",
         "en": "I like your pink shirt!"
       },

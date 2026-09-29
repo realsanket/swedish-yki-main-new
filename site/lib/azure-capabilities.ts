@@ -35,7 +35,7 @@ export const azureCapabilities = [
     service: "Azure Speech text to speech",
     title: "Character voices",
     description:
-      "Alex, Aino, and Sami keep their own voice in Swedish and English.",
+      "Alex, Elin, and Henrik keep their own voice in Swedish and English.",
     variables: [
       "AZURE_SPEECH_TTS_ENDPOINT",
       "AZURE_SPEECH_API_KEY or AZURE_OPENAI_API_KEY",

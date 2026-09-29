@@ -22,25 +22,25 @@ export const characterVoiceProfiles = {
     },
     normalRate: "0%",
     slowRate: "-24%",
-    description: "Open and conversational learner voice",
+    description: "Open newcomer voice for first attempts and everyday tasks",
   },
-  Aino: {
+  Elin: {
     azureVoices: {
       sv: "en-US-AvaMultilingualNeural",
       en: "en-US-AvaMultilingualNeural",
     },
     normalRate: "+2%",
     slowRate: "-22%",
-    description: "Warm and responsive conversation-partner voice",
+    description: "Warm local-friend voice for natural everyday conversation",
   },
-  Sami: {
+  Henrik: {
     azureVoices: {
       sv: "sv-SE-MattiasNeural",
       en: "en-US-AndrewMultilingualNeural",
     },
     normalRate: "-6%",
     slowRate: "-28%",
-    description: "Calm teacher voice with a native Swedish model",
+    description: "Calm language-coach voice with a native Swedish model",
   },
 } satisfies Record<StoryCharacterName, CharacterVoiceProfile>;
 

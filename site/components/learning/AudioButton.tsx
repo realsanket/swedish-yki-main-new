@@ -29,7 +29,7 @@ export default function AudioButton({
   slow = false,
   className = "secondary",
   language = "sv",
-  speaker = "Sami",
+  speaker = "Henrik",
   segments,
 }: AudioButtonProps) {
   const [speaking, setSpeaking] = useState(false);

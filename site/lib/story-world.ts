@@ -1,6 +1,6 @@
 // Keep this list limited to characters that have passed the introduction gate
 // in docs/character-mapping.md. Source-book names are not runtime characters.
-export const storyCharacterNames = ["Alex", "Aino", "Sami"] as const;
+export const storyCharacterNames = ["Alex", "Elin", "Henrik"] as const;
 
 export type StoryCharacterName = (typeof storyCharacterNames)[number];
 
@@ -11,18 +11,18 @@ export const storyCharacters: Record<StoryCharacterName, {
 }> = {
   Alex: {
     name: "Alex",
-    role: "the learner",
+    role: "the newcomer",
     image: "/images/onboarding/characters/alex.webp",
   },
-  Aino: {
-    name: "Aino",
-    role: "the friend",
-    image: "/images/onboarding/characters/aino.webp",
+  Elin: {
+    name: "Elin",
+    role: "the local friend",
+    image: "/images/onboarding/characters/elin.webp",
   },
-  Sami: {
-    name: "Sami",
-    role: "the teacher",
-    image: "/images/onboarding/characters/sami.webp",
+  Henrik: {
+    name: "Henrik",
+    role: "the language coach",
+    image: "/images/onboarding/characters/henrik.webp",
   },
 };
 
@@ -41,8 +41,8 @@ export const storyChapters: Record<number, StoryChapter> = {
     title: "The first class",
     setting: "A community class and a first Swedish conversation",
     summary:
-      "Alex meets Aino and learns to share a name, home, origin, and languages before noticing the sounds inside those useful phrases.",
-    cast: ["Alex", "Aino", "Sami"],
+      "Alex meets Elin and learns to share a name, home, origin, and languages before noticing the sounds inside those useful phrases.",
+    cast: ["Alex", "Elin", "Henrik"],
     art: "/images/story/chapters/chapter-01-first-class.webp",
   },
 };
@@ -53,7 +53,7 @@ const fallbackStoryChapter: StoryChapter = {
   setting: "A community class and a first Swedish conversation",
   summary:
     "Begin with one useful conversation and build the sounds one step at a time.",
-  cast: ["Alex", "Aino", "Sami"],
+  cast: ["Alex", "Elin", "Henrik"],
   art: "/images/story/chapters/chapter-01-first-class.webp",
 };
 

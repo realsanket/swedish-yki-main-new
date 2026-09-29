@@ -87,11 +87,11 @@ https://main-azure-backup-resource.cognitiveservices.azure.com/tts/cognitiveserv
 
 The consolidated resource returned valid Swedish audio, and its speech service
 recognized the complete loopback sentence “Hej, jag heter Alex och jag bor i
-Finland.” Alex and Aino retain their multilingual voices because earlier Azure
+Finland.” Alex and Elin retain their multilingual voices because earlier Azure
 pronunciation checks recognized their sample lines completely with 98/100 word
-accuracy. Sami uses native `sv-SE-MattiasNeural` for Swedish and keeps
+accuracy. Henrik uses native `sv-SE-MattiasNeural` for Swedish and keeps
 `en-US-AndrewMultilingualNeural` for English; Mattias achieved 96/100 word
-accuracy and complete recognition on Sami's Swedish sample. The Settings voice
+accuracy and complete recognition on Henrik's Swedish sample. The Settings voice
 previews remain the source of truth for the currently configured resource.
 
 These scores validate recognition and word accuracy, not human-perceived voice

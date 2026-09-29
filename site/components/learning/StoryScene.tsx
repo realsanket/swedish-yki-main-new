@@ -45,7 +45,7 @@ export default function StoryScene({
             text={dialogue.map((line) => line.fi).join(" ")}
             segments={dialogue.map((line) => ({
               text: line.fi,
-              speaker: storyCharacterForSpeaker(line.speaker)?.name ?? "Sami",
+              speaker: storyCharacterForSpeaker(line.speaker)?.name ?? "Henrik",
               language: "sv",
             }))}
             label="Listen once"
@@ -75,7 +75,7 @@ export default function StoryScene({
                     <p>{line.en}</p>
                     <AudioButton
                       text={line.en}
-                      speaker={storyCharacterForSpeaker(line.speaker)?.name ?? "Sami"}
+                      speaker={storyCharacterForSpeaker(line.speaker)?.name ?? "Henrik"}
                       language="en"
                       label={`Hear ${line.speaker} in English`}
                       className="icon-button"
@@ -85,7 +85,7 @@ export default function StoryScene({
               </div>
               <AudioButton
                 text={line.fi}
-                speaker={storyCharacterForSpeaker(line.speaker)?.name ?? "Sami"}
+                speaker={storyCharacterForSpeaker(line.speaker)?.name ?? "Henrik"}
                 language="sv"
                 label={`Hear ${line.speaker}'s line`}
                 className="icon-button"

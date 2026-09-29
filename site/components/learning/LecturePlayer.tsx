@@ -880,7 +880,7 @@ export default function LecturePlayer({
                 return (
                   <>
                     <div className="teacher-note teacher-note-sami">
-                      <StoryAvatar name="Sami" size={58} />
+                      <StoryAvatar name="Henrik" size={58} />
                       <div>
                         <span className="teacher-note-label">SAMI &middot; YOUR TEACHER</span>
                         <h3>{kindMeta.note}: {currentSection.title}</h3>

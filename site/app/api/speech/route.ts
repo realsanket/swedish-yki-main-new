@@ -22,7 +22,7 @@ const segmentSchema = z.object({
 const speechRequestSchema = z
   .object({
     text: z.string().trim().min(1).max(4_000).optional(),
-    speaker: z.enum(storyCharacterNames).default("Sami"),
+    speaker: z.enum(storyCharacterNames).default("Henrik"),
     language: z.enum(["sv", "en"]).default("sv"),
     segments: z.array(segmentSchema).min(1).max(24).optional(),
     slow: z.boolean().default(false),
