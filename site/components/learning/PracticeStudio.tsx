@@ -575,7 +575,6 @@ function Exercise({
       stream.current?.getTracks().forEach((track) => track.stop());
       if (recordingTimer.current) clearInterval(recordingTimer.current);
       if (url.current) URL.revokeObjectURL(url.current);
-      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
     };
   }, [draftKey]);
 

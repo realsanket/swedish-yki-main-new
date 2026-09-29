@@ -22,8 +22,9 @@ one documented multilingual profile there before they appear in voiced scenes.
 - Individual Swedish lines use the speaker's `sv-SE` voice.
 - Expanded English support uses the same speaker with `en-GB` pronunciation.
 - Non-character vocabulary and explanation audio defaults to Sami.
-- If Azure synthesis is unavailable, the existing browser speech fallback is
-  used. The fallback preserves the language but cannot guarantee the persona.
+- If Azure synthesis is unavailable, playback stays unavailable and the control
+  shows a clear error. Stigen never substitutes a browser, operating-system,
+  static, or downloaded voice.
 
 ## Configuration
 
@@ -37,3 +38,6 @@ AZURE_SPEECH_TTS_ENDPOINT=https://YOUR_REGION.tts.speech.microsoft.com/cognitive
 
 The TTS endpoint must match the region of the Speech resource. Never expose the
 key through a `NEXT_PUBLIC_` variable.
+
+Azure-only playback is intentional. Do not add `window.speechSynthesis`, an
+audio manifest, bundled recordings, or downloaded chapter audio as a fallback.

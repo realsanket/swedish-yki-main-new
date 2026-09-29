@@ -101,7 +101,7 @@ export async function POST(request: Request) {
   }
   const config = getSpeechSynthesisConfig();
   if (!config) {
-    return apiError("Azure character voices are not connected yet.", 503);
+    return apiError("Azure lesson voices are not connected yet.", 503);
   }
   if (!allowSpeechRequest("local")) {
     return apiError("Please wait a moment before playing more generated audio.", 429);
@@ -139,7 +139,7 @@ export async function POST(request: Request) {
         if (response.status === 429) {
           return apiError("Azure Speech is busy. Device audio is still available.", 429);
         }
-        return apiError("Azure character audio could not be generated.", 502);
+        return apiError("Azure lesson audio could not be generated.", 502);
       }
       const audio = await response.arrayBuffer();
       if (!audio.byteLength || audio.byteLength > 8_000_000) {
@@ -162,6 +162,6 @@ export async function POST(request: Request) {
     if (error instanceof Error && error.name === "AbortError") {
       return apiError("Azure character audio timed out.", 504);
     }
-    return apiError("Azure character audio could not be generated.", 502);
+    return apiError("Azure lesson audio could not be generated.", 502);
   }
 }

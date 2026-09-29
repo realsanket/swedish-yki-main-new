@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Square, Volume2 } from "lucide-react";
-import { audioManifest } from "@/lib/audio-manifest";
 import type { SpeechLanguage } from "@/lib/character-voices";
 import type { StoryCharacterName } from "@/lib/story-world";
 
@@ -35,17 +34,16 @@ export default function AudioButton({
 }: AudioButtonProps) {
   const [speaking, setSpeaking] = useState(false);
   const [error, setError] = useState("");
-  const utterance = useRef<SpeechSynthesisUtterance | null>(null);
   const audio = useRef<HTMLAudioElement | null>(null);
   const request = useRef<AbortController | null>(null);
   const objectUrl = useRef<string | null>(null);
   const mounted = useRef(true);
   const playToken = useRef(0);
-  const resolvedLabel = label ?? (language === "sv" ? "Listen in Swedish" : "Listen in English");
+  const resolvedLabel = label ??
+    (language === "sv" ? "Listen in Swedish" : "Listen in English");
 
   useEffect(() => {
     mounted.current = true;
-    if ("speechSynthesis" in window) window.speechSynthesis.getVoices();
     function stop() {
       playToken.current += 1;
       request.current?.abort();
@@ -59,12 +57,6 @@ export default function AudioButton({
       if (objectUrl.current) {
         URL.revokeObjectURL(objectUrl.current);
         objectUrl.current = null;
-      }
-      if (utterance.current && "speechSynthesis" in window) {
-        utterance.current.onend = null;
-        utterance.current.onerror = null;
-        utterance.current = null;
-        window.speechSynthesis.cancel();
       }
       if (mounted.current) setSpeaking(false);
     }
@@ -82,95 +74,10 @@ export default function AudioButton({
     window.dispatchEvent(new Event(STOP_AUDIO_EVENT));
     if (wasPlaying) return;
     const token = ++playToken.current;
-
-    function browserSpeech() {
-      if (!mounted.current || token !== playToken.current) return;
-      if (!("speechSynthesis" in window)) {
-        setSpeaking(false);
-        setError("Audio could not play in this browser. Use the visible text instead.");
-        return;
-      }
-      const locale = language === "sv" ? "sv-SE" : "en-GB";
-      const voices = window.speechSynthesis.getVoices();
-      const voice =
-        voices.find((item) => item.lang.toLowerCase() === locale.toLowerCase()) ??
-        voices.find((item) => item.lang.toLowerCase().startsWith(language));
-      if (!voice) {
-        setSpeaking(false);
-        setError(
-          `Azure audio is unavailable, and no ${language === "sv" ? "Swedish" : "English"} voice is installed on this device. Use the visible text or retry when connected.`,
-        );
-        return;
-      }
-      window.speechSynthesis.cancel();
-      const speech = new SpeechSynthesisUtterance(text);
-      speech.lang = voice.lang || locale;
-      speech.voice = voice;
-      speech.rate = slow ? 0.7 : 0.9;
-      speech.onstart = () => {
-        if (mounted.current && token === playToken.current) setSpeaking(true);
-      };
-      speech.onend = () => {
-        utterance.current = null;
-        if (mounted.current && token === playToken.current) setSpeaking(false);
-      };
-      speech.onerror = (event) => {
-        utterance.current = null;
-        if (mounted.current && token === playToken.current) {
-          setSpeaking(false);
-          if (event.error !== "canceled" && event.error !== "interrupted") {
-            setError("Audio could not play. Please try again or use the visible text.");
-          }
-        }
-      };
-      utterance.current = speech;
-      window.speechSynthesis.speak(speech);
-    }
-
-    function playAudio(source: string, revokeAfter = false) {
-      if (!mounted.current || token !== playToken.current) {
-        if (revokeAfter) URL.revokeObjectURL(source);
-        return;
-      }
-      const nativeAudio = new Audio(source);
-      nativeAudio.playbackRate = slow && !revokeAfter ? 0.78 : 1;
-      audio.current = nativeAudio;
-      if (revokeAfter) objectUrl.current = source;
-      let failed = false;
-      function cleanup() {
-        audio.current = null;
-        if (revokeAfter && objectUrl.current) {
-          URL.revokeObjectURL(objectUrl.current);
-          objectUrl.current = null;
-        }
-      }
-      function fallback() {
-        if (failed || token !== playToken.current || !mounted.current) return;
-        failed = true;
-        nativeAudio.onerror = null;
-        nativeAudio.pause();
-        cleanup();
-        setSpeaking(false);
-        browserSpeech();
-      }
-      nativeAudio.onended = () => {
-        if (mounted.current && token === playToken.current) setSpeaking(false);
-        cleanup();
-      };
-      nativeAudio.onerror = fallback;
-      setSpeaking(true);
-      void nativeAudio.play().catch(fallback);
-    }
-
-    const source = audioManifest[text];
-    if (source) {
-      playAudio(source);
-      return;
-    }
-
     const controller = new AbortController();
     request.current = controller;
     setSpeaking(true);
+
     void fetch("/api/speech", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -188,13 +95,51 @@ export default function AudioButton({
       signal: controller.signal,
     })
       .then(async (response) => {
-        if (!response.ok) throw new Error("Azure speech unavailable");
+        if (!response.ok) {
+          const result = (await response.json().catch(() => null)) as
+            | { error?: string }
+            | null;
+          throw new Error(
+            result?.error ?? "Azure lesson audio could not be generated.",
+          );
+        }
         return response.blob();
       })
       .then((blob) => {
         if (!mounted.current || token !== playToken.current) return;
         request.current = null;
-        playAudio(URL.createObjectURL(blob), true);
+        const source = URL.createObjectURL(blob);
+        const nativeAudio = new Audio(source);
+        objectUrl.current = source;
+        audio.current = nativeAudio;
+
+        function cleanup() {
+          audio.current = null;
+          if (objectUrl.current) {
+            URL.revokeObjectURL(objectUrl.current);
+            objectUrl.current = null;
+          }
+        }
+
+        nativeAudio.onended = () => {
+          cleanup();
+          if (mounted.current && token === playToken.current) setSpeaking(false);
+        };
+        nativeAudio.onerror = () => {
+          cleanup();
+          if (mounted.current && token === playToken.current) {
+            setSpeaking(false);
+            setError("Azure audio could not play. Please try again.");
+          }
+        };
+        void nativeAudio.play().catch(() => {
+          nativeAudio.onerror = null;
+          cleanup();
+          if (mounted.current && token === playToken.current) {
+            setSpeaking(false);
+            setError("Azure audio could not play. Please try again.");
+          }
+        });
       })
       .catch((reason: unknown) => {
         request.current = null;
@@ -204,7 +149,11 @@ export default function AudioButton({
           !(reason instanceof DOMException && reason.name === "AbortError")
         ) {
           setSpeaking(false);
-          browserSpeech();
+          setError(
+            reason instanceof Error
+              ? reason.message
+              : "Azure lesson audio could not be generated.",
+          );
         }
       });
   }
@@ -223,7 +172,7 @@ export default function AudioButton({
         type="button"
         className={className}
         onClick={play}
-        aria-label={speaking ? "Stop audio" : resolvedLabel}
+        aria-label={speaking ? "Stop Azure audio" : resolvedLabel}
       >
         {speaking ? <Square size={17} /> : <Volume2 size={18} />}
         {speaking ? "Stop audio" : resolvedLabel}

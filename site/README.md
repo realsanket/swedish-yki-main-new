@@ -47,7 +47,7 @@ Copy `.env.example` to `.env` and add only the server-side credentials you use. 
 
 - Text feedback and the inline lesson coach use an OpenAI-compatible Responses endpoint.
 - Fast Swedish transcription can use Azure Speech, with Swedish locales configured server-side.
-- Character playback uses server-side Azure Speech synthesis when `AZURE_SPEECH_TTS_ENDPOINT` is set; browser voices remain the offline fallback.
+- All character, dialogue, vocabulary, and pronunciation playback uses server-side Azure Speech synthesis. There is no browser or static-audio fallback.
 - Live voice uses a server-created Azure GPT-Live WebRTC session. Long-lived API credentials are never sent to the browser.
 
 The AI coach is practice support, not an official YKI examiner. It does not assign official grades or guarantee a test result.
