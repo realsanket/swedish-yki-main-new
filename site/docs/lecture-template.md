@@ -42,6 +42,7 @@ across all four fields.
 - `opening.sourcePractice`: attaches an explicitly verified source-page image, accessible dialogue, listening focus, and recall cues to the opening step. Never infer or reuse a later page.
 - `opening.dialogue.part`: places dialogue in `recall` or `teach`.
 - `opening.dialogue`: controls the dialogue title, eyebrow, instructions, and initial text visibility.
+- `sections[].activity`: attaches one hands-on interaction to a teaching section, shown as its own beat after **Hear it**. The generic types are `sound-map` (explore sounds, light up shared features, rebuild two-part mouth recipes), `sort` (predict one item at a time into content-defined groups with a reason for each), and `match` (pair two columns, then say each pair in a content-defined sentence). Every learner-facing string lives in the JSON. Add a new type in `course-types.ts` plus a case in `components/learning/activities/TeachingActivity.tsx`; never branch on a lecture number.
 - `teaching.builder`: attaches a typed task-specific interaction to one explicitly named teaching section. Omit it unless that section genuinely requires the interaction.
 - `teaching.livePractice`: explicitly assigns `conversation` or `pronunciation` Voice Live practice to named teaching sections. Omit a section rather than guessing a mode from its position or kind.
 - `teaching.wordBank`: chooses an open or collapsed word bank and optionally supplies its title.

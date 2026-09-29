@@ -32,6 +32,7 @@ import {
   type CourseLectureState,
 } from "@/lib/course-progress";
 import { bookReviewsForAnchorEpisode } from "@/lib/book-reviews";
+import type { TeachingSection } from "@/lib/course-types";
 import type { Skill } from "@/lib/curriculum";
 import { storyChapterForModule } from "@/lib/story-world";
 import { getYkiMock, parseYkiTargetedReturn } from "@/lib/yki-mocks";
@@ -46,6 +47,7 @@ import QuestionCard from "./QuestionCard";
 import EpisodeBrief from "./EpisodeBrief";
 import IntroductionBuilder from "./IntroductionBuilder";
 import SourcePagePractice from "./SourcePagePractice";
+import TeachingActivity, { DEFAULT_ACTIVITY_LABEL } from "./activities/TeachingActivity";
 import StoryScene from "./StoryScene";
 import { StoryAvatar } from "./StoryAvatar";
 import YkiMockFlow from "./YkiMockFlow";
@@ -183,6 +185,27 @@ function mergePatch(
       : {}),
     ...(a.drafts || b.drafts ? { drafts: { ...a.drafts, ...b.drafts } } : {}),
   };
+}
+/**
+ * The progressive-disclosure beats of one teaching section. Every beat except
+ * Understand is opt-in by content, so sections never show empty steps.
+ */
+function teachingBeatsFor(section: TeachingSection) {
+  return [
+    { id: "understand", label: "Understand", description: "Meet one useful idea without the reference material." },
+    ...(section.table
+      ? [{ id: "pattern", label: "See the pattern", description: "Compare the forms together only when the pattern helps." }]
+      : []),
+    ...(section.examples.length
+      ? [{ id: "examples", label: "Hear it", description: "Listen to a few complete examples before producing your own." }]
+      : []),
+    ...(section.activity
+      ? [{ id: "activity", label: section.activity.label ?? DEFAULT_ACTIVITY_LABEL, description: section.activity.instructions }]
+      : []),
+    ...(section.memoryTip || section.tryIt
+      ? [{ id: "try", label: "Try it", description: "Use the idea now, then remove support and retrieve it." }]
+      : []),
+  ];
 }
 export default function LecturePlayer({
   lecture,
@@ -752,7 +775,6 @@ export default function LecturePlayer({
                   initiallyOpen={dialoguePresentation?.initiallyOpen}
                 />
               )}
-              {sourcePractice && <SourcePagePractice practice={sourcePractice} />}
               {ykiMock && (
                 <section className="mock-conditions-card">
                   <span className="eyebrow">SET CONDITIONS · {ykiMock.totalMinutes} MINUTES</span>
@@ -843,6 +865,9 @@ export default function LecturePlayer({
                   Check my warm-up
                 </button>
               )}
+              {/* The verified source page follows the meaning checks so it never
+                  interrupts the listen → check sequence of the adapted scene. */}
+              {sourcePractice && <SourcePagePractice practice={sourcePractice} />}
             </>
           )}
           {part === "teach" && (
@@ -895,18 +920,7 @@ export default function LecturePlayer({
                   scene: { pill: "SCENE", note: "Notice one useful pattern" },
                 }[sectionKind];
                 const ruleBody = currentSection.body;
-                const teachingBeats = [
-                  { id: "understand", label: "Understand", description: "Meet one useful idea without the reference material." },
-                  ...(currentSection.table
-                    ? [{ id: "pattern", label: "See the pattern", description: "Compare the forms together only when the pattern helps." }]
-                    : []),
-                  ...(currentSection.examples.length
-                    ? [{ id: "examples", label: "Hear it", description: "Listen to a few complete examples before producing your own." }]
-                    : []),
-                  ...(currentSection.memoryTip || currentSection.tryIt
-                    ? [{ id: "try", label: "Try it", description: "Use the idea now, then remove support and retrieve it." }]
-                    : []),
-                ];
+                const teachingBeats = teachingBeatsFor(currentSection);
                 const safeBeatIdx = Math.min(teachingBeatIdx, teachingBeats.length - 1);
                 const activeBeat = teachingBeats[safeBeatIdx];
                 const isFirstTeachingBeat = sectionIdx === 0 && safeBeatIdx === 0;
@@ -925,7 +939,7 @@ export default function LecturePlayer({
                   }
                   const previousTopic = Math.max(0, sectionIdx - 1);
                   const previousSection = lecture.sections[previousTopic];
-                  const previousBeatCount = 1 + (previousSection?.table ? 1 : 0) + (previousSection?.examples.length ? 1 : 0) + (previousSection?.memoryTip || previousSection?.tryIt ? 1 : 0);
+                  const previousBeatCount = previousSection ? teachingBeatsFor(previousSection).length : 1;
                   setSectionIdx(previousTopic);
                   setTeachingBeatIdx(Math.max(0, previousBeatCount - 1));
                 };
@@ -1061,6 +1075,10 @@ export default function LecturePlayer({
                             </div>
                           ))}
                         </div>
+                      )}
+
+                      {activeBeat.id === "activity" && currentSection.activity && (
+                        <TeachingActivity activity={currentSection.activity} key={currentSection.title} />
                       )}
 
                       {activeBeat.id === "try" && usesIntroductionBuilder ? (

@@ -126,6 +126,58 @@ export type EpisodeRoute = {
   /** Observable, task-first checks for useful feedback. */
   successChecks: string[];
 };
+/**
+ * Optional hands-on practice attached to one teaching section. Each type is a
+ * generic interaction; the lecture JSON supplies every learner-facing string,
+ * so a future lecture can reuse a type with its own material or add a new one.
+ */
+type TeachingActivityBase = {
+  /** Beat label in the teaching navigation. Defaults to "Play with it". */
+  label?: string;
+  title: string;
+  instructions: string;
+};
+export type SoundMapActivity = TeachingActivityBase & {
+  type: "sound-map";
+  /** Shared properties a learner can highlight across the map, e.g. rounded lips. */
+  features?: { id: string; label: string; note: string }[];
+  sounds: {
+    symbol: string;
+    cue: string;
+    features?: string[];
+    /** A two-part mouth recipe. Sounds with a recipe become quiz items. */
+    recipe?: { from: string; to: string };
+    words: { fi: string; en: string }[];
+  }[];
+  /** Short audio contrasts, e.g. I → Y with the tongue kept still. */
+  contrasts?: { label: string; audio: string; cue: string }[];
+  quizPrompt?: string;
+};
+export type SortActivity = TeachingActivityBase & {
+  type: "sort";
+  buckets: { id: string; label: string; hint?: string }[];
+  items: {
+    fi: string;
+    en?: string;
+    bucket: string;
+    /** Letters to highlight inside `fi`, e.g. the stressed vowel and what follows it. */
+    mark?: string;
+    why: string;
+  }[];
+  summary?: string;
+};
+export type MatchActivity = TeachingActivityBase & {
+  type: "match";
+  leftLabel: string;
+  rightLabel: string;
+  pairs: { left: string; right: string; note?: string }[];
+  /** The pattern revealed once every pair is matched. */
+  pattern?: string;
+  /** A speakable frame using {left} and {right}, offered for each finished pair. */
+  sentence?: string;
+};
+export type TeachingActivity = SoundMapActivity | SortActivity | MatchActivity;
+
 export type TeachingSection = {
   title: string;
   /** `rule` = grammar/sound rule (formal card). `scene` = story/context. `register` = usage split. Optional; renderer defaults to `scene`. */
@@ -137,6 +189,8 @@ export type TeachingSection = {
   memoryTip?: string;
   /** One short action completed immediately after the explanation. */
   tryIt?: string;
+  /** Optional interactive practice shown as its own beat after the examples. */
+  activity?: TeachingActivity;
 };
 export type LearningResource = {
   label: string;
