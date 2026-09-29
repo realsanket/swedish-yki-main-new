@@ -91,8 +91,11 @@ Finland.” Alex and Elin retain their multilingual voices because earlier Azure
 pronunciation checks recognized their sample lines completely with 98/100 word
 accuracy. Henrik uses native `sv-SE-MattiasNeural` for Swedish and keeps
 `en-US-AndrewMultilingualNeural` for English; Mattias achieved 96/100 word
-accuracy and complete recognition on Henrik's Swedish sample. The Settings voice
-previews remain the source of truth for the currently configured resource.
+accuracy and complete recognition on Henrik's Swedish sample. Maja uses
+`sv-SE-SofieNeural` for Swedish and `en-US-EmmaMultilingualNeural` for English;
+both preview requests returned valid 24 kHz mono MP3 audio on September 29,
+2026. The Settings voice previews remain the source of truth for the currently
+configured resource.
 
 These scores validate recognition and word accuracy, not human-perceived voice
 quality. Azure Speech does not currently support prosody assessment for Swedish,

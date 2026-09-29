@@ -24,14 +24,15 @@ The backup is reference material, not part of the live course. Its presence must
 
 ## Character mapping rule
 
-The live cast remains **Alex, Elin, and Henrik** for Lecture 1. Anna and Tomas's
-opening textbook function is already covered by Elin and Alex, while Henrik owns
-the explicit teaching and pronunciation role. Do not add Anna, Tomas, or any of
-the recurring textbook family cast to the runtime merely because they appear in
-the source.
+The live Lecture 1 cast remains **Alex, Elin, and Henrik**. The registered
+wider-course cast also includes **Maja**, a student viewpoint who enters only
+with a verified school or youth-life lesson. Anna and Tomas's opening textbook
+function is already covered by Elin and Alex, while Henrik owns the explicit
+teaching and pronunciation role. Do not add Anna, Tomas, or the recurring
+textbook family cast merely because they appear in the source.
 
-The complete source-role mapping, evidence, five-character ceiling, and
-introduction gate are recorded in
+The complete four-role coverage, source evidence, five-character ceiling, and
+introduction gate for any fifth character are recorded in
 [`site/docs/character-mapping.md`](site/docs/character-mapping.md). Apply that
 gate before adding a name to `site/lib/story-world.ts`. Mapping a source
 character means preserving the **language function or relationship needed by a

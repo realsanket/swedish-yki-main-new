@@ -72,6 +72,10 @@ const voiceChecks = {
     sv: "Lyssna först, och säg sedan meningen.",
     en: "Listen first, and then say the sentence.",
   },
+  Maja: {
+    sv: "Jag går på gymnasiet och jag gillar musik.",
+    en: "I attend upper secondary school and I like music.",
+  },
 } as const;
 
 const initialAzureChecks: Record<CheckableAzureCapability, AzureCheck> = {
@@ -626,11 +630,12 @@ export default function SettingsView({
               <div>
                 <strong>Swedish pronunciation check passed</strong>
                 <p>
-                  Azure recognized every test line as Swedish. Alex and Elin
-                  scored 98/100 accuracy; Henrik now uses native Swedish Mattias
-                  after it scored 96/100 with complete recognition. Swedish
-                  prosody scoring is not supported, so use the previews for the
-                  final listening check.
+                  Azure recognized the established test lines as Swedish. Alex
+                  and Elin scored 98/100 accuracy; Henrik’s native Swedish voice
+                  scored 96/100 with complete recognition. Maja has her own
+                  Swedish and English casting below. Swedish prosody scoring is
+                  not supported, so use the previews for the final listening
+                  check.
                 </p>
               </div>
             </div>

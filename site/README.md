@@ -4,7 +4,7 @@ Stigen is a local-first Swedish learning application for adult learners in Finla
 
 The supplied classroom notes and two books informed the course progression. Their pages and exercises are not republished in the app; learner-facing tasks are newly authored.
 
-Source-to-lecture decisions are tracked in [`../mapping.md`](../mapping.md). Follow that file before revising curriculum content.
+Source-to-lecture decisions are tracked in [`../docs/mapping.md`](../docs/mapping.md). Follow that file before revising curriculum content.
 
 ## Active chapter files
 
@@ -12,7 +12,7 @@ Source-to-lecture decisions are tracked in [`../mapping.md`](../mapping.md). Fol
 - `content/lectures/lecture-01.json` — the editable Lesson 1 content.
 - `content/lectures/index.json` — the generated runtime index; currently contains only Lecture 1.
 - `lib/story-world.ts` — the Chapter 1 story, cast, and artwork lookup.
-- `lib/character-voices.ts` — the bilingual Azure voice casting for Alex, Elin, and Henrik.
+- `lib/character-voices.ts` — the bilingual Azure voice casting for Alex, Elin, Henrik, and Maja.
 - `lib/azure-capabilities.ts` — the shared public capability map used by Settings and future learning surfaces.
 - `lib/voice-live-context.mjs` — the server-only resolver that turns safe episode or module IDs into bounded Voice Live teaching context.
 - `components/learning/CourseOrientation.tsx` — the focused three-step entry into Lesson 1.
@@ -20,8 +20,8 @@ Source-to-lecture decisions are tracked in [`../mapping.md`](../mapping.md). Fol
 - `components/learning/AzureVoiceTools.tsx` — the reusable conversation and pronunciation tools for episodes and modules.
 - `app/course.css` — the visual system, including the dedicated Lesson 1 workspace.
 - `docs/lecture-template.md` — the contract for extending lectures without copying Lesson 1.
-- `docs/character-mapping.md` — the minimal-cast rule and source-role mapping for deciding when a future character is actually needed.
-- `docs/textbook-page-map.md` — the complete physical-page 4-55 reading record and future cast evidence; it does not activate later lessons.
+- `docs/character-mapping.md` — the four stable viewpoints, minimal-cast rule, and introduction gate for any fifth character.
+- `docs/textbook-page-map.md` — the complete physical-page 4-55 reading record and four-character coverage evidence; it does not activate later lessons.
 
 Lectures 2–60, the former 12-chapter plan, later story mappings, and later artwork are preserved outside the runtime tree in [`../backup/future-course-2026-09-29`](../backup/future-course-2026-09-29). Do not restore them until the user explicitly expands the course scope.
 

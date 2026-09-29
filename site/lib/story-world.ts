@@ -1,6 +1,6 @@
 // Keep this list limited to characters that have passed the introduction gate
 // in docs/character-mapping.md. Source-book names are not runtime characters.
-export const storyCharacterNames = ["Alex", "Elin", "Henrik"] as const;
+export const storyCharacterNames = ["Alex", "Elin", "Henrik", "Maja"] as const;
 
 export type StoryCharacterName = (typeof storyCharacterNames)[number];
 
@@ -23,6 +23,11 @@ export const storyCharacters: Record<StoryCharacterName, {
     name: "Henrik",
     role: "the language coach",
     image: "/images/onboarding/characters/henrik.webp",
+  },
+  Maja: {
+    name: "Maja",
+    role: "the student viewpoint",
+    image: "/images/onboarding/characters/maja.webp",
   },
 };
 

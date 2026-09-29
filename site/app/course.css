@@ -7134,7 +7134,7 @@
 }
 .orientation-cast-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 15px;
 }
 .orientation-cast-grid article {
@@ -7275,16 +7275,6 @@
   }
   .orientation-cast-grid {
     grid-template-columns: 1fr 1fr;
-  }
-  .orientation-cast-grid article:last-child {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 220px 1fr;
-  }
-  .orientation-cast-grid article:last-child img {
-    height: 100%;
-    border-right: 1px solid #e1e9df;
-    border-bottom: 0;
   }
   .orientation-method .orientation-practice {
     grid-template-columns: 1fr;

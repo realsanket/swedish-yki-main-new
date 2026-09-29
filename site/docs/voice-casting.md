@@ -10,6 +10,11 @@ live pronunciation check found clearer, complete recognition.
 | Alex | Learner making the first attempt | `en-US-BrianMultilingualNeural` with `sv-SE` | `en-US-BrianMultilingualNeural` | `0%` | `-24%` |
 | Elin | Warm conversation partner | `en-US-AvaMultilingualNeural` with `sv-SE` | `en-US-AvaMultilingualNeural` | `+2%` | `-22%` |
 | Henrik | Calm teacher and default narrator | `sv-SE-MattiasNeural` | `en-US-AndrewMultilingualNeural` | `-6%` | `-28%` |
+| Maja | Student viewpoint for school and youth life | `sv-SE-SofieNeural` | `en-US-EmmaMultilingualNeural` | `+2%` | `-22%` |
+
+Both Maja previews returned valid 24 kHz mono MP3 audio from the configured
+Azure resource on September 29, 2026. Her first voiced story scene remains tied
+to the first verified school or youth-life lesson rather than Lecture 1.
 
 The canonical mapping lives in `lib/character-voices.ts`. Do not assign voices
 inside individual lessons or components. New recurring characters must receive

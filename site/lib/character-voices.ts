@@ -42,6 +42,15 @@ export const characterVoiceProfiles = {
     slowRate: "-28%",
     description: "Calm language-coach voice with a native Swedish model",
   },
+  Maja: {
+    azureVoices: {
+      sv: "sv-SE-SofieNeural",
+      en: "en-US-EmmaMultilingualNeural",
+    },
+    normalRate: "+2%",
+    slowRate: "-22%",
+    description: "Young student voice for school, friends, plans, and opinions",
+  },
 } satisfies Record<StoryCharacterName, CharacterVoiceProfile>;
 
 export const speechLocales: Record<SpeechLanguage, string> = {

@@ -41,6 +41,14 @@ const characters = [
     sv: "Lyssna först. Försök sedan själv.",
     en: "Listen first. Then try it yourself.",
   },
+  {
+    name: "Maja",
+    role: "The student viewpoint · joins later",
+    image: "/images/onboarding/characters/maja.webp",
+    copy: "Maja joins when the course reaches school and youth life. She brings exams, friends, hobbies, parties, family rules, future studies, and environmental choices into the story.",
+    sv: "Jag går på gymnasiet och jag gillar musik.",
+    en: "I attend upper secondary school and I like music.",
+  },
 ] as const;
 
 const practiceLoop = [
@@ -100,8 +108,8 @@ export default function CourseOrientation({
           <p className="eyebrow">INNAN DU BÖRJAR · BEFORE YOU BEGIN</p>
           <h1>Your first Swedish lesson has one clear destination.</h1>
           <p>
-            Meet the opening conversation, the three people who carry it, and
-            the simple practice loop used throughout Lecture 1.
+            Meet the three people who carry the opening conversation, the
+            student who joins later, and Lecture 1’s simple practice loop.
           </p>
         </div>
         <span className="orientation-not-lesson">
@@ -165,20 +173,20 @@ export default function CourseOrientation({
             <header>
               <div>
                 <span className="orientation-kicker">A SWEDISH STORY CAST</span>
-                <h2>Three stable viewpoints—not three fixed exercises.</h2>
+                <h2>Four stable viewpoints. Three begin now.</h2>
                 <p>
                   Alex experiences Swedish as a newcomer, Elin brings everyday
                   life into the conversation, and Henrik coaches only when an
-                  explanation is useful. Their roles can grow without changing
-                  who they are.
+                  explanation is useful. Maja joins later for school and youth
+                  life. Their roles can grow without changing who they are.
                 </p>
               </div>
               <aside className="orientation-book-note">
                 <BookOpen size={18} aria-hidden="true" />
                 <p>
-                  A student viewpoint is reserved for later school, friendship,
-                  hobby, and future-study lessons. That character will join only
-                  when verified teacher notes make the role necessary.
+                  Lecture 1 still uses only Alex, Elin, and Henrik. Maja is part
+                  of the wider course cast, but she enters only when a verified
+                  school, friendship, or future-study lesson needs her.
                 </p>
               </aside>
             </header>
