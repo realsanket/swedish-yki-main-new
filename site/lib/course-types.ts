@@ -64,7 +64,8 @@ export type LecturePresentation = {
   };
   /** Optional teaching-page behaviour; omitted fields use neutral defaults. */
   teaching?: {
-    itemLabel?: string;
+    /** Optional task-specific interaction attached to one explicitly named teaching section. */
+    builder?: { type: "introduction"; sectionTitle: string };
     wordBank?: { mode: "open" | "collapsed"; title?: string };
     resourceIntro?: { eyebrow: string; title: string; body: string };
   };

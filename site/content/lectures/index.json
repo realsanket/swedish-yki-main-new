@@ -38,7 +38,10 @@
         }
       },
       "teaching": {
-        "itemLabel": "card",
+        "builder": {
+          "type": "introduction",
+          "sectionTitle": "Build your introduction from four lines"
+        },
         "wordBank": {
           "mode": "collapsed",
           "title": "Open the complete Lesson 1 word bank"
@@ -67,7 +70,7 @@
         "speakers": [
           {
             "name": "Elin",
-            "fi": "Vad heter du?"
+            "fi": "Jag heter Elin. Vad heter du?"
           },
           {
             "name": "Alex",
@@ -145,9 +148,9 @@
         ],
         "examples": [
           {
-            "fi": "Hej! Jag heter Noor.",
-            "en": "Hello! My name is Noor.",
-            "note": "Replace Noor with your own name."
+            "fi": "Hej! Jag heter Alex.",
+            "en": "Hello! My name is Alex.",
+            "note": "Replace Alex with your own name."
           },
           {
             "fi": "Jag bor i Finland.",
@@ -155,13 +158,13 @@
             "note": "This is your home now."
           },
           {
-            "fi": "Jag kommer från Pakistan.",
-            "en": "I come from Pakistan.",
+            "fi": "Jag kommer från Indien.",
+            "en": "I come from India.",
             "note": "This is your origin."
           },
           {
-            "fi": "Jag talar urdu, engelska och lite svenska.",
-            "en": "I speak Urdu, English, and a little Swedish.",
+            "fi": "Jag talar hindi, engelska och lite svenska.",
+            "en": "I speak Hindi, English, and a little Swedish.",
             "note": "Use och before the last item."
           }
         ],
@@ -175,7 +178,7 @@
             [
               "name",
               "Jag heter …",
-              "Jag heter Noor."
+              "Jag heter Alex."
             ],
             [
               "home now",
@@ -185,12 +188,12 @@
             [
               "origin",
               "Jag kommer från …",
-              "Jag kommer från Kina."
+              "Jag kommer från Indien."
             ],
             [
               "languages",
               "Jag talar …",
-              "Jag talar kinesiska och engelska."
+              "Jag talar hindi, engelska och lite svenska."
             ]
           ]
         },

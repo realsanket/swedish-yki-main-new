@@ -25,7 +25,13 @@ A future lecture can omit `presentation` completely. It then receives:
 
 `routeProfile` is also explicit. A future lecture number does not automatically become a clinic, checkpoint, workshop, or mock. Omit the field for `standard`, or choose another profile only after the verified content requires it.
 
-Lecture 1 explicitly opts into `presentation.template: "conversation-first"` and supplies its own hero, opening sequence, two route-label overrides, card label, resource introduction, and collapsed word bank.
+Lecture 1 explicitly opts into `presentation.template: "conversation-first"` and supplies its own hero, opening sequence, two route-label overrides, introduction builder, resource introduction, and collapsed word bank.
+
+Every teaching section is progressively disclosed as **Understand**, optional
+**See the pattern**, **Hear it**, and **Try it** beats. Put explanation in
+`body`, comparison material in `table`, complete spoken models in `examples`,
+and immediate retrieval in `memoryTip`/`tryIt`; do not repeat the same content
+across all four fields.
 
 ## Presentation extension points
 
@@ -35,7 +41,7 @@ Lecture 1 explicitly opts into `presentation.template: "conversation-first"` and
 - `opening.questionIntro`: explains how the opening questions should be used.
 - `opening.dialogue.part`: places dialogue in `recall` or `teach`.
 - `opening.dialogue`: controls the dialogue title, eyebrow, instructions, and initial text visibility.
-- `teaching.itemLabel`: names a paginated teaching item, such as `card`, `rule`, or `example`.
+- `teaching.builder`: attaches a typed task-specific interaction to one explicitly named teaching section. Omit it unless that section genuinely requires the interaction.
 - `teaching.wordBank`: chooses an open or collapsed word bank and optionally supplies its title.
 - `teaching.resourceIntro`: supplies context appropriate to that lecture's resources.
 - `hero`: opts into a specialised hero and owns every learner-facing string inside it.

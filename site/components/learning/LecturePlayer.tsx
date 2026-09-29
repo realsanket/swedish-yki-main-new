@@ -43,6 +43,7 @@ import BookReviewBridge from "./BookReviewBridge";
 import PracticeStudio from "./PracticeStudio";
 import QuestionCard from "./QuestionCard";
 import EpisodeBrief from "./EpisodeBrief";
+import IntroductionBuilder from "./IntroductionBuilder";
 import StoryScene from "./StoryScene";
 import { StoryAvatar } from "./StoryAvatar";
 import YkiMockFlow from "./YkiMockFlow";
@@ -83,6 +84,19 @@ function actionLabel(part: CoursePart, profile: ReturnType<typeof routeProfileFo
 
 function outputLabel(skill: Skill) {
   return skill === "speaking" ? "Say" : skill === "writing" ? "Write" : skill === "listening" ? "Listen" : "Read";
+}
+
+function stepAction(part: CoursePart, expectedOutput: string) {
+  if (part === "recall")
+    return "Listen once before opening English. Then answer the two meaning checks.";
+  if (part === "teach")
+    return "Take one teaching card at a time. Say its example aloud before continuing.";
+  if (part === "guided")
+    return "Build each phrase with support, check it, and then change one detail.";
+  if (part === "practice") return expectedOutput;
+  if (part === "check")
+    return "Retry the message with one changed detail and notice what became clearer.";
+  return "Keep one useful phrase and choose when you will return to it.";
 }
 
 function skillLabel(skill: Skill | null) {
@@ -188,7 +202,6 @@ export default function LecturePlayer({
   const dialoguePresentation = opening?.dialogue;
   const dialoguePart = dialoguePresentation?.part ?? "teach";
   const teachingPresentation = presentation?.teaching;
-  const teachingItemLabel = teachingPresentation?.itemLabel ?? "section";
   const templateClass = `lecture-template-${presentation?.template ?? "standard"}`;
   const ykiMock = routeProfile.id === "yki-mock" ? getYkiMock(lecture.number) : undefined;
   const ykiWorkshop = routeProfile.id === "yki-workshop";
@@ -223,7 +236,8 @@ export default function LecturePlayer({
     [dirty, setDirty] = useState(false),
     [recovered, setRecovered] = useState(false),
     [hydrated, setHydrated] = useState(false),
-    [sectionIdx, setSectionIdx] = useState(0);
+    [sectionIdx, setSectionIdx] = useState(0),
+    [teachingBeatIdx, setTeachingBeatIdx] = useState(0);
   const pending = useRef<CourseDraftPatch>({});
   const flyingPatch = useRef<CourseDraftPatch>({});
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -640,7 +654,7 @@ export default function LecturePlayer({
             <p>{activeStep.description}</p>
             <div className="step-contract">
               <span>YOUR ACTION</span>
-              <p>{part === "practice" ? route.expectedOutput : activeStep.description}</p>
+              <p>{stepAction(part, route.expectedOutput)}</p>
             </div>
           </div>
           <details className="mobile-route-drawer">
@@ -869,7 +883,7 @@ export default function LecturePlayer({
                 const totalSections = lecture.sections.length;
                 const currentSection = lecture.sections[Math.min(sectionIdx, totalSections - 1)] ?? lecture.sections[0];
                 if (!currentSection) return null;
-                const isLastPage = sectionIdx >= totalSections - 1;
+                const isLastTopic = sectionIdx >= totalSections - 1;
                 const sectionKind = currentSection.kind ?? "scene";
                 const kindMeta = {
                   rule: { pill: "RULE", note: "Today's rule" },
@@ -877,120 +891,213 @@ export default function LecturePlayer({
                   scene: { pill: "SCENE", note: "Notice one useful pattern" },
                 }[sectionKind];
                 const ruleBody = currentSection.body;
+                const teachingBeats = [
+                  { id: "understand", label: "Understand", description: "Meet one useful idea without the reference material." },
+                  ...(currentSection.table
+                    ? [{ id: "pattern", label: "See the pattern", description: "Compare the forms together only when the pattern helps." }]
+                    : []),
+                  ...(currentSection.examples.length
+                    ? [{ id: "examples", label: "Hear it", description: "Listen to a few complete examples before producing your own." }]
+                    : []),
+                  ...(currentSection.memoryTip || currentSection.tryIt
+                    ? [{ id: "try", label: "Try it", description: "Use the idea now, then remove support and retrieve it." }]
+                    : []),
+                ];
+                const safeBeatIdx = Math.min(teachingBeatIdx, teachingBeats.length - 1);
+                const activeBeat = teachingBeats[safeBeatIdx];
+                const isFirstTeachingBeat = sectionIdx === 0 && safeBeatIdx === 0;
+                const isLastBeat = safeBeatIdx === teachingBeats.length - 1;
+                const isFinalTeachingBeat = isLastTopic && isLastBeat;
+                const usesIntroductionBuilder =
+                  teachingPresentation?.builder?.type === "introduction" &&
+                  teachingPresentation.builder.sectionTitle === currentSection.title;
+                const previousBeat = () => {
+                  if (safeBeatIdx > 0) {
+                    setTeachingBeatIdx(safeBeatIdx - 1);
+                    return;
+                  }
+                  const previousTopic = Math.max(0, sectionIdx - 1);
+                  const previousSection = lecture.sections[previousTopic];
+                  const previousBeatCount = 1 + (previousSection?.table ? 1 : 0) + (previousSection?.examples.length ? 1 : 0) + (previousSection?.memoryTip || previousSection?.tryIt ? 1 : 0);
+                  setSectionIdx(previousTopic);
+                  setTeachingBeatIdx(Math.max(0, previousBeatCount - 1));
+                };
+                const nextBeat = () => {
+                  if (!isLastBeat) {
+                    setTeachingBeatIdx(safeBeatIdx + 1);
+                    return;
+                  }
+                  if (!isLastTopic) {
+                    setSectionIdx(sectionIdx + 1);
+                    setTeachingBeatIdx(0);
+                  }
+                };
+                const nextLabel = !isLastBeat
+                  ? `Next: ${teachingBeats[safeBeatIdx + 1]?.label}`
+                  : !isLastTopic
+                    ? `Next topic: ${lecture.sections[sectionIdx + 1]?.title}`
+                    : "Teaching complete";
                 return (
                   <>
-                    <div className="teacher-note teacher-note-sami">
+                    <div className="teacher-note teacher-note-coach">
                       <StoryAvatar name="Henrik" size={58} />
                       <div>
-                        <span className="teacher-note-label">SAMI &middot; YOUR TEACHER</span>
+                        <span className="teacher-note-label">HENRIK &middot; SWEDISH COACH</span>
                         <h3>{kindMeta.note}: {currentSection.title}</h3>
                         <p>{ruleBody[0]}</p>
                       </div>
                     </div>
                     <div className="teach-pagination-header">
-                      <span className="eyebrow">STEP {sectionIdx + 1} OF {totalSections}</span>
-                      <div className="teach-pagination-bar" role="progressbar" aria-valuemin={1} aria-valuemax={totalSections} aria-valuenow={sectionIdx + 1}>
+                      <span className="eyebrow">TEACHING TOPIC {sectionIdx + 1} OF {totalSections}</span>
+                      <div className="teach-pagination-bar" role="progressbar" aria-valuemin={1} aria-valuemax={totalSections} aria-valuenow={sectionIdx + 1} aria-valuetext={`Teaching topic ${sectionIdx + 1} of ${totalSections}: ${currentSection.title}`}>
                         {lecture.sections.map((_, i) => (
                           <span key={i} className={i <= sectionIdx ? "filled" : ""} />
                         ))}
                       </div>
                     </div>
                     <section className={`teaching-section teaching-section-${sectionKind}`}>
-                      <span className={`teaching-kind teaching-kind-${sectionKind}`}>{kindMeta.pill}</span>
-                      <h3>{currentSection.title}</h3>
-                      {sectionKind === "rule" ? (
-                        <ol className="teaching-rules">
-                          {ruleBody.map((rule, j) => (
-                            <li key={j}>{rule}</li>
-                          ))}
-                        </ol>
-                      ) : (
-                        <>
-                          <div className="teaching-story-lead">
-                            <span>{sectionKind === "register" ? "THE SPLIT" : "THE MOMENT"}</span>
-                            <p>{ruleBody[0]}</p>
-                          </div>
-                          {ruleBody.slice(1).map((p, j) => (
-                            <p key={j + 1}>{p}</p>
-                          ))}
-                        </>
-                      )}
-                      {currentSection.table && (
-                        <div className="teaching-table">
-                          <table>
-                            <caption className="sr-only">{currentSection.title}</caption>
-                            <thead>
-                              <tr>
-                                {currentSection.table.headings.map((h, j) => (
-                                  <th scope="col" key={j}>{h}</th>
+                      <div className="teaching-card-heading">
+                        <div>
+                          <span className={`teaching-kind teaching-kind-${sectionKind}`}>{kindMeta.pill}</span>
+                          <h3>{currentSection.title}</h3>
+                        </div>
+                        <span className="teaching-beat-count">{safeBeatIdx + 1} OF {teachingBeats.length} · {activeBeat.label.toUpperCase()}</span>
+                      </div>
+                      <nav className="teaching-beat-nav" aria-label={`Parts of ${currentSection.title}`}>
+                        {teachingBeats.map((beat, index) => (
+                          <button
+                            type="button"
+                            key={beat.id}
+                            className={index === safeBeatIdx ? "active" : index < safeBeatIdx ? "visited" : ""}
+                            aria-current={index === safeBeatIdx ? "step" : undefined}
+                            onClick={() => setTeachingBeatIdx(index)}
+                          >
+                            <span>{index + 1}</span>
+                            {beat.label}
+                          </button>
+                        ))}
+                      </nav>
+                      <div className="teaching-beat-intro">
+                        <b>{activeBeat.label}</b>
+                        <p>{activeBeat.description}</p>
+                      </div>
+
+                      {activeBeat.id === "understand" && (
+                        sectionKind === "rule" ? (
+                          <ol className="teaching-rules">
+                            {ruleBody.map((rule, j) => (
+                              <li key={j}>{rule}</li>
+                            ))}
+                          </ol>
+                        ) : (
+                          <div className="teaching-understand">
+                            <div className="teaching-story-lead">
+                              <span>{sectionKind === "register" ? "THE SPLIT" : "START HERE"}</span>
+                              <p>{ruleBody[0]}</p>
+                            </div>
+                            {ruleBody.length > 1 && (
+                              <div className="teaching-notices">
+                                {ruleBody.slice(1).map((paragraph, index) => (
+                                  <div key={paragraph}>
+                                    <span>{index + 1}</span>
+                                    <p>{paragraph}</p>
+                                  </div>
                                 ))}
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {currentSection.table.rows.map((r, j) => (
-                                <tr key={j}>
-                                  {r.map((c, k) => (
-                                    <td key={k}>{c}</td>
+                              </div>
+                            )}
+                          </div>
+                        )
+                      )}
+
+                      {activeBeat.id === "pattern" && currentSection.table && (
+                        <>
+                          <p className="teaching-scroll-hint">The complete pattern is here for comparison. On a small screen, scroll the table sideways.</p>
+                          <div className="teaching-table" tabIndex={0} aria-label={`${currentSection.title} pattern table`}>
+                            <table>
+                              <caption className="sr-only">{currentSection.title}</caption>
+                              <thead>
+                                <tr>
+                                  {currentSection.table.headings.map((heading, index) => (
+                                    <th scope="col" key={index}>{heading}</th>
                                   ))}
                                 </tr>
-                              ))}
-                            </tbody>
-                          </table>
+                              </thead>
+                              <tbody>
+                                {currentSection.table.rows.map((row, rowIndex) => (
+                                  <tr key={rowIndex}>
+                                    {row.map((cell, cellIndex) => (
+                                      <td key={cellIndex}>{cell}</td>
+                                    ))}
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        </>
+                      )}
+
+                      {activeBeat.id === "examples" && (
+                        <div className="worked-examples">
+                          {currentSection.examples.map((example, index) => (
+                            <div key={example.fi}>
+                              <span className="worked-example-number">{index + 1}</span>
+                              <div>
+                                <p lang="sv">{example.fi}</p>
+                                <p>{example.en}</p>
+                                {example.note && <small>{example.note}</small>}
+                              </div>
+                              <AudioButton
+                                text={example.fi}
+                                label={`Hear: ${example.fi}`}
+                                className="icon-button"
+                              />
+                            </div>
+                          ))}
                         </div>
                       )}
-                      <div className="worked-examples">
-                        {currentSection.examples.map((example, j) => (
-                          <div key={j}>
-                            <div>
-                              <p lang="sv">{example.fi}</p>
-                              <p>{example.en}</p>
-                              {example.note && <small>{example.note}</small>}
-                            </div>
-                            <AudioButton
-                              text={example.fi}
-                              label="Hear example"
-                              className="icon-button"
-                            />
-                          </div>
-                        ))}
-                      </div>
-                      {(currentSection.memoryTip || currentSection.tryIt) && (
+
+                      {activeBeat.id === "try" && usesIntroductionBuilder ? (
+                        <IntroductionBuilder
+                          modelText={currentSection.examples.map((example) => example.fi).join(" ")}
+                          memoryTip={currentSection.memoryTip}
+                        />
+                      ) : activeBeat.id === "try" ? (
                         <div className="lesson-coaching-pair">
-                          {currentSection.memoryTip && (
-                            <aside className="lesson-memory-tip">
-                              <span>MEMORY BRIDGE</span>
-                              <p>{currentSection.memoryTip}</p>
-                            </aside>
-                          )}
                           {currentSection.tryIt && (
                             <aside className="lesson-try-it">
                               <span>DO IT NOW</span>
                               <p>{currentSection.tryIt}</p>
                             </aside>
                           )}
+                          {currentSection.memoryTip && (
+                            <aside className="lesson-memory-tip">
+                              <span>MEMORY BRIDGE</span>
+                              <p>{currentSection.memoryTip}</p>
+                            </aside>
+                          )}
                         </div>
-                      )}
+                      ) : null}
                     </section>
                     <div className="teach-pagination-controls">
                       <button
                         type="button"
                         className="secondary"
-                        onClick={() => setSectionIdx(Math.max(0, sectionIdx - 1))}
-                        disabled={sectionIdx === 0}
+                        onClick={previousBeat}
+                        disabled={isFirstTeachingBeat}
                       >
-                        &larr; Previous {teachingItemLabel}
+                        &larr; Back
                       </button>
-                      {!isLastPage && (
+                      {!isFinalTeachingBeat && (
                         <button
                           type="button"
                           className="primary"
-                          onClick={() => setSectionIdx(Math.min(totalSections - 1, sectionIdx + 1))}
+                          onClick={nextBeat}
                         >
-                          Next {teachingItemLabel} &rarr;
+                          {nextLabel} &rarr;
                         </button>
                       )}
                     </div>
-                    {isLastPage && (
+                    {isFinalTeachingBeat && (
                       <>
                         {[
                           ...(lecture.bookConnection ? [lecture.bookConnection] : []),

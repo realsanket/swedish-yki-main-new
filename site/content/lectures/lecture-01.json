@@ -34,7 +34,10 @@
       }
     },
     "teaching": {
-      "itemLabel": "card",
+      "builder": {
+        "type": "introduction",
+        "sectionTitle": "Build your introduction from four lines"
+      },
       "wordBank": {
         "mode": "collapsed",
         "title": "Open the complete Lesson 1 word bank"
@@ -58,7 +61,7 @@
         "audioText": "Hej! Jag heter Alex. Vad heter du?"
       },
       "speakers": [
-        {"name": "Elin", "fi": "Vad heter du?"},
+        {"name": "Elin", "fi": "Jag heter Elin. Vad heter du?"},
         {"name": "Alex", "fi": "Jag heter Alex."}
       ],
       "connector": "HEJ!",
@@ -108,18 +111,18 @@
         "Use och before the last language. Put lite directly before a language you speak only a little."
       ],
       "examples": [
-        {"fi": "Hej! Jag heter Noor.", "en": "Hello! My name is Noor.", "note": "Replace Noor with your own name."},
+        {"fi": "Hej! Jag heter Alex.", "en": "Hello! My name is Alex.", "note": "Replace Alex with your own name."},
         {"fi": "Jag bor i Finland.", "en": "I live in Finland.", "note": "This is your home now."},
-        {"fi": "Jag kommer från Pakistan.", "en": "I come from Pakistan.", "note": "This is your origin."},
-        {"fi": "Jag talar urdu, engelska och lite svenska.", "en": "I speak Urdu, English, and a little Swedish.", "note": "Use och before the last item."}
+        {"fi": "Jag kommer från Indien.", "en": "I come from India.", "note": "This is your origin."},
+        {"fi": "Jag talar hindi, engelska och lite svenska.", "en": "I speak Hindi, English, and a little Swedish.", "note": "Use och before the last item."}
       ],
       "table": {
         "headings": ["Purpose", "Pattern", "Example"],
         "rows": [
-          ["name", "Jag heter …", "Jag heter Noor."],
+          ["name", "Jag heter …", "Jag heter Alex."],
           ["home now", "Jag bor i …", "Jag bor i Finland."],
-          ["origin", "Jag kommer från …", "Jag kommer från Kina."],
-          ["languages", "Jag talar …", "Jag talar kinesiska och engelska."]
+          ["origin", "Jag kommer från …", "Jag kommer från Indien."],
+          ["languages", "Jag talar …", "Jag talar hindi, engelska och lite svenska."]
         ]
       },
       "memoryTip": "Home now and origin are two boxes: bor i = live in; kommer från = come from.",
