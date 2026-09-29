@@ -133,6 +133,13 @@ Episode 1 therefore uses an original consolidation mission inside Stigen, clearl
 - `Var ligger …?` is taught for the location of things.
 - Page 5's adult affair plot stays inside the textbook practice only. The learner-facing Episode 2 story is original: Elin and Alex at a class break, Alex's sister Priya and brother Rohan (off-screen), Elin's partner Mikko (off-screen), and Henrik greeting the class with `Hur mår ni?`. No new recurring character was added.
 
+### Research-backed revisions
+
+- **Greeting register:** `Hur är det?` / `Hur är det med dig?` is taught as the everyday check-in; `Hur mår du?` as the more personal "how are you feeling" (also natural after illness: `Mår du bättre nu?`); `Läget?` / `Hur är läget?` as very casual. Short answers `Bara bra` and `Jättebra` were added. A new register topic, **Greet: choose the right question**, practises this with a situation sort.
+- **Finland-Swedish greetings:** `Hej` is the dominant greeting in Finland in every context; `Hej hej` (hello and goodbye) is typical of Finland-Swedish; `Morjens` is informal and mostly southern Finland. Taught for recognition and friendly use.
+- **Hen:** taught with both of its dictionary uses: when gender is unknown or unimportant, and for people who are neither he nor she.
+- **Question word order:** verb-second order is a documented difficulty for learners, so the question topic now opens with an information-gap **Family card**: the learner reveals Alex's family facts by choosing the question that works, with distractors that test the question word, the pronoun, and the word order. Yes/no questions start with the verb.
+
 ### Homework decision
 
 **Homework: Personal pronouns** maps to Episode 2. The guided and checkpoint items practise the same choices (de for two others, ni for two listeners) with original sentences.

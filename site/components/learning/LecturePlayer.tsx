@@ -186,6 +186,9 @@ function mergePatch(
     ...(a.drafts || b.drafts ? { drafts: { ...a.drafts, ...b.drafts } } : {}),
   };
 }
+function sectionActivities(section: TeachingSection) {
+  return [...(section.activity ? [section.activity] : []), ...(section.activities ?? [])];
+}
 /**
  * The progressive-disclosure beats of one teaching section. Every beat except
  * Understand is opt-in by content, so sections never show empty steps.
@@ -199,9 +202,11 @@ function teachingBeatsFor(section: TeachingSection) {
     ...(section.examples.length
       ? [{ id: "examples", label: "Hear it", description: "Listen to a few complete examples before producing your own." }]
       : []),
-    ...(section.activity
-      ? [{ id: "activity", label: section.activity.label ?? DEFAULT_ACTIVITY_LABEL, description: section.activity.instructions }]
-      : []),
+    ...sectionActivities(section).map((activity, index) => ({
+      id: `activity-${index}`,
+      label: activity.label ?? DEFAULT_ACTIVITY_LABEL,
+      description: activity.instructions,
+    })),
     ...(section.memoryTip || section.tryIt
       ? [{ id: "try", label: "Try it", description: "Use the idea now, then remove support and retrieve it." }]
       : []),
@@ -1078,9 +1083,10 @@ export default function LecturePlayer({
                         </div>
                       )}
 
-                      {activeBeat.id === "activity" && currentSection.activity && (
-                        <TeachingActivity activity={currentSection.activity} key={currentSection.title} />
-                      )}
+                      {activeBeat.id.startsWith("activity-") && (() => {
+                        const activity = sectionActivities(currentSection)[Number(activeBeat.id.slice("activity-".length))];
+                        return activity ? <TeachingActivity activity={activity} key={`${currentSection.title}-${activeBeat.id}`} /> : null;
+                      })()}
 
                       {activeBeat.id === "try" && usesIntroductionBuilder ? (
                         <IntroductionBuilder

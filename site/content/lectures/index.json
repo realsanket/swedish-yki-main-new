@@ -1610,7 +1610,7 @@
         },
         "teach": {
           "label": "Build it step by step",
-          "description": "One small idea at a time: how you feel, pronouns, people in your life, questions, and spoken forms."
+          "description": "One small idea at a time: greetings, how you feel, pronouns, people in your life, questions, and spoken forms."
         }
       },
       "opening": {
@@ -2129,6 +2129,10 @@
       "teaching": {
         "livePractice": [
           {
+            "sectionTitle": "Greet: choose the right question",
+            "mode": "conversation"
+          },
+          {
             "sectionTitle": "How are you? Pick an honest answer",
             "mode": "conversation"
           },
@@ -2166,8 +2170,8 @@
         "lede": "Say how you really are, talk about the people in your life, and ask the next question.",
         "startLine": {
           "label": "START WITH ONE LINE",
-          "fi": "Hur mår du?",
-          "en": "How are you?",
+          "fi": "Hej! Hur är det med dig?",
+          "en": "Hi! How are things with you?",
           "audioText": "Hej Alex! Hur är det? Det är bra, tack. Och du?"
         },
         "speakers": [
@@ -2242,11 +2246,153 @@
     ],
     "sections": [
       {
+        "title": "Greet: choose the right question",
+        "kind": "register",
+        "body": [
+          "In Finland, Hej is the everyday greeting everywhere: in shops, at work, and with friends. Finland-Swedish speakers often say Hej hej, and in southern Finland you will also hear the informal Morjens.",
+          "The everyday check-in is Hur är det? or Hur är det med dig? (How are things with you?). Very casual friends say Läget? or Hur är läget? (What's up?).",
+          "Hur mår du? asks more personally how someone feels. Friends use it too, and it is the natural question when someone has been ill or tired: Mår du bättre nu?"
+        ],
+        "examples": [
+          {
+            "fi": "Hej! Hur är det med dig?",
+            "en": "Hi! How are things with you?",
+            "note": "A safe everyday check-in with anyone."
+          },
+          {
+            "fi": "Hej hej! Hur är det?",
+            "en": "Hi! How's it going?",
+            "note": "Hej hej is very common in Finland-Swedish, as a greeting and as goodbye."
+          },
+          {
+            "fi": "Morjens! Läget?",
+            "en": "Hey! What's up?",
+            "note": "Very casual. Recognise it; use it with friends."
+          },
+          {
+            "fi": "Hur mår du? Mår du bättre nu?",
+            "en": "How are you feeling? Are you feeling better now?",
+            "note": "A real question about how someone feels."
+          }
+        ],
+        "table": {
+          "headings": [
+            "Question",
+            "Feels like",
+            "Use it with"
+          ],
+          "rows": [
+            [
+              "Hur är det? · Hur är det med dig?",
+              "How's it going?",
+              "anyone, every day"
+            ],
+            [
+              "Hur mår du?",
+              "How are you feeling?",
+              "friends, or when someone has been ill"
+            ],
+            [
+              "Läget? · Hur är läget?",
+              "What's up?",
+              "close friends, very casual"
+            ],
+            [
+              "Hej · Hej hej · Morjens",
+              "Hi",
+              "Hej with anyone; Morjens with friends"
+            ]
+          ]
+        },
+        "memoryTip": "Everyday: Hur är det? Personal: Hur mår du? Casual: Läget? When in doubt in Finland, Hej! and Hur är det? always work.",
+        "tryIt": "Greet three imagined people aloud with the right question: a shop assistant, a close friend, and a classmate who was ill last week.",
+        "activity": {
+          "type": "sort",
+          "label": "Which greeting fits?",
+          "title": "Match each greeting to the situation",
+          "instructions": "Decide who you could say it to. Several greetings are safe with anyone; some are only for friends, and one asks how someone really feels.",
+          "buckets": [
+            {
+              "id": "anyone",
+              "label": "Anyone, every day",
+              "hint": "shop, class, work"
+            },
+            {
+              "id": "casual",
+              "label": "Friends, casual",
+              "hint": "relaxed, informal"
+            },
+            {
+              "id": "checkin",
+              "label": "A real check-in",
+              "hint": "how someone feels"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Hej!",
+              "en": "Hi!",
+              "bucket": "anyone",
+              "why": "Hej works with everyone in Finland, from shops to friends."
+            },
+            {
+              "fi": "Hur är det?",
+              "en": "How's it going?",
+              "bucket": "anyone",
+              "why": "The everyday check-in: friendly and neutral."
+            },
+            {
+              "fi": "Läget?",
+              "en": "What's up?",
+              "bucket": "casual",
+              "why": "Short for Hur är läget? Very casual, for friends."
+            },
+            {
+              "fi": "Mår du bättre nu?",
+              "en": "Are you feeling better now?",
+              "bucket": "checkin",
+              "why": "You ask this when someone has been ill: a real question about how they feel."
+            },
+            {
+              "fi": "Hur är det med dig?",
+              "en": "How are things with you?",
+              "bucket": "anyone",
+              "why": "A slightly warmer everyday check-in. Safe with anyone."
+            },
+            {
+              "fi": "Morjens!",
+              "en": "Hey!",
+              "bucket": "casual",
+              "why": "An informal Finland-Swedish greeting, mostly in southern Finland."
+            },
+            {
+              "fi": "Hur mår du?",
+              "en": "How are you feeling?",
+              "bucket": "checkin",
+              "why": "More personal than Hur är det? It asks how someone really feels."
+            },
+            {
+              "fi": "Hej hej!",
+              "en": "Hi! (typical in Finland)",
+              "bucket": "anyone",
+              "why": "Very common in Finland-Swedish, both as hello and as goodbye."
+            },
+            {
+              "fi": "Hur är läget?",
+              "en": "How's things?",
+              "bucket": "casual",
+              "why": "Relaxed and informal: friends and colleagues you know well."
+            }
+          ],
+          "summary": "Hej and Hur är det? are always safe in Finland. Save Läget? and Morjens for friends, and use Hur mår du? when you really want to know how someone feels."
+        }
+      },
+      {
         "title": "How are you? Pick an honest answer",
         "kind": "scene",
         "body": [
-          "Two everyday ways to ask: Hur är det? (How's it going?) and Hur mår du? (How are you feeling?). Both are friendly and fine with anyone.",
-          "Answer with the verb you hear: Hur är det? → Det är bra. Hur mår du? → Jag mår bra. You will also hear Jag är bra in casual speech.",
+          "Whichever question you hear, a short answer is enough: Bra, tack. Och du? You do not need to tell your whole day to someone you barely know.",
+          "Answer with the verb you hear: Hur är det? → Det är bra. Hur mår du? → Jag mår bra. You will also hear Jag är bra in casual speech, and Bara bra (just fine).",
           "Then send the question back with Och du?, the same move you learned in Lesson 1."
         ],
         "examples": [
@@ -2254,6 +2400,16 @@
             "fi": "Hur är det? — Det är bra, tack.",
             "en": "How's it going? — It's good, thanks.",
             "note": "är det → det är: the answer mirrors the question."
+          },
+          {
+            "fi": "Bara bra, tack! Och du?",
+            "en": "Just fine, thanks! And you?",
+            "note": "Bara bra is a very common short answer."
+          },
+          {
+            "fi": "Jättebra!",
+            "en": "Really good!",
+            "note": "Jätte- makes it stronger. It works in any situation."
           },
           {
             "fi": "Hur mår du? — Jag mår toppen!",
@@ -2285,13 +2441,13 @@
           "rows": [
             [
               "great",
-              "Toppen! · Jag mår toppen.",
-              "Great! · I feel great."
+              "Toppen! · Jättebra!",
+              "Great! · Really good!"
             ],
             [
               "good",
-              "Jag mår bra. · Det är bra.",
-              "I'm fine. · It's good."
+              "Jag mår bra. · Det är bra. · Bara bra.",
+              "I'm fine. · It's good. · Just fine."
             ],
             [
               "okay",
@@ -2359,6 +2515,12 @@
               "why": "The answer to Hur är det? Same mood as Jag mår bra."
             },
             {
+              "fi": "Bara bra.",
+              "en": "Just fine.",
+              "bucket": "good",
+              "why": "Bara bra: just fine. A very common short answer."
+            },
+            {
               "fi": "Så där.",
               "en": "So-so.",
               "bucket": "okay",
@@ -2369,6 +2531,12 @@
               "en": "I'm okay.",
               "bucket": "okay",
               "why": "Okej is okay, the middle of the meter."
+            },
+            {
+              "fi": "Jättebra!",
+              "en": "Really good!",
+              "bucket": "great",
+              "why": "Jätte- makes bra stronger: really good."
             },
             {
               "fi": "Jag är trött.",
@@ -2410,7 +2578,7 @@
         "body": [
           "Swedish subject pronouns: jag (I), du (you, one person), han (he), hon (she), hen (they, one person), vi (we), ni (you, two or more), de (they).",
           "Count the people for you: du is one person, ni is two or more. Modern Swedish uses du with almost everyone, including teachers and shop staff.",
-          "Hen is one word for a person without saying he or she, just like Finnish hän. De is written de but said dom."
+          "Hen means one person without saying he or she. Use it when you do not know or it does not matter (En ny elev kommer. Hen heter Kim.), and for people who are neither he nor she. It works like Finnish hän. De is written de but said dom."
         ],
         "examples": [
           {
@@ -2424,9 +2592,9 @@
             "note": "Han points back to Rohan."
           },
           {
-            "fi": "Kim är min vän. Hen talar svenska.",
-            "en": "Kim is my friend. They speak Swedish.",
-            "note": "Hen: one person, no he or she."
+            "fi": "En ny elev kommer i morgon. Hen heter Kim.",
+            "en": "A new student is coming tomorrow. Their name is Kim.",
+            "note": "You do not know if Kim is he or she, so hen."
           },
           {
             "fi": "Hej Alex och Elin! Hur mår ni?",
@@ -2488,7 +2656,7 @@
             ]
           ]
         },
-        "memoryTip": "Ni is like Marathi तुम्ही: more than one person. Hen is like Finnish hän: one word for he or she.",
+        "memoryTip": "Ni is like Marathi तुम्ही: more than one person. Hen is like Finnish hän: one word when he or she is unknown, unimportant, or not right for the person.",
         "tryIt": "Look at three photos on your phone. For each, say one pronoun sentence aloud: Hon heter … · Han bor i … · De bor i …",
         "activity": {
           "type": "match",
@@ -2515,7 +2683,7 @@
               "right": "hon"
             },
             {
-              "left": "Kim, who is neither he nor she",
+              "left": "a new student you have not met yet",
               "right": "hen"
             },
             {
@@ -2743,106 +2911,212 @@
         },
         "memoryTip": "Var and vad differ by one letter: var asks for a place, vad for a thing. Varför hides för: for what reason?",
         "tryIt": "Ask yourself five questions aloud, each with a different question word, and keep the verb second: Var bor du? När kommer du? Varför pluggar du svenska?",
-        "activity": {
-          "type": "sort",
-          "label": "Answer detective",
-          "title": "Which question word does this answer belong to?",
-          "instructions": "Each card is an answer. Work backwards: is it a thing, a manner, a place, an origin, a time, a reason, or a person?",
-          "buckets": [
-            {
-              "id": "vad",
-              "label": "vad?",
-              "hint": "a thing"
+        "activities": [
+          {
+            "type": "question-gap",
+            "label": "Family card",
+            "title": "Ask Alex the right question to fill his family card",
+            "instructions": "Each fact is hidden. Choose the question that would really get it: the right question word, the right pronoun, and the verb in second place. Alex answers aloud.",
+            "card": {
+              "title": "Alex's family",
+              "subtitle": "Sister Priya and brother Rohan live in India."
             },
-            {
-              "id": "hur",
-              "label": "hur?",
-              "hint": "how"
-            },
-            {
-              "id": "var",
-              "label": "var?",
-              "hint": "a place"
-            },
-            {
-              "id": "varifran",
-              "label": "varifrån?",
-              "hint": "an origin"
-            },
-            {
-              "id": "nar",
-              "label": "när?",
-              "hint": "a time"
-            },
-            {
-              "id": "varfor",
-              "label": "varför?",
-              "hint": "a reason"
-            },
-            {
-              "id": "vem",
-              "label": "vem?",
-              "hint": "a person"
-            }
-          ],
-          "items": [
-            {
-              "fi": "Jag heter Priya.",
-              "en": "My name is Priya.",
-              "bucket": "vad",
-              "why": "It answers Vad heter du? A name is a thing you ask for with vad."
-            },
-            {
-              "fi": "Jag mår bra, tack.",
-              "en": "I'm fine, thanks.",
-              "bucket": "hur",
-              "why": "It answers Hur mår du?"
-            },
-            {
-              "fi": "I Helsingfors.",
-              "en": "In Helsinki.",
-              "bucket": "var",
-              "why": "A place: Var bor du? — I Helsingfors."
-            },
-            {
-              "fi": "Från Indien.",
-              "en": "From India.",
-              "bucket": "varifran",
-              "why": "Från signals an origin: Varifrån kommer du?"
-            },
-            {
-              "fi": "Nästa vecka.",
-              "en": "Next week.",
-              "bucket": "nar",
-              "why": "A time: När kommer de? — Nästa vecka."
-            },
-            {
-              "fi": "Hon är min syster.",
-              "en": "She is my sister.",
-              "bucket": "vem",
-              "why": "A person: Vem är hon?"
-            },
-            {
-              "fi": "För att jag bor i Finland.",
-              "en": "Because I live in Finland.",
-              "bucket": "varfor",
-              "why": "För att (because) gives a reason: Varför pluggar du svenska?"
-            },
-            {
-              "fi": "Samma som vanlig mjölk.",
-              "en": "The same as ordinary milk.",
-              "bucket": "hur",
-              "why": "It answers Hur smakar vegansk mjölk? from page 6."
-            },
-            {
-              "fi": "Jag gillar kaffe.",
-              "en": "I like coffee.",
-              "bucket": "vad",
-              "why": "A thing: Vad gillar du?"
-            }
-          ],
-          "summary": "Every answer fits one question word. When you can hear which question an answer belongs to, you can also ask the next question yourself: question word, then verb, then person."
-        }
+            "answerer": "Alex",
+            "gaps": [
+              {
+                "about": "Priya",
+                "field": "Where she lives",
+                "options": [
+                  "Var bor hon?",
+                  "Var bor han?",
+                  "Var hon bor?"
+                ],
+                "answer": "Var bor hon?",
+                "reply": {
+                  "fi": "Hon bor i Pune.",
+                  "en": "She lives in Pune."
+                },
+                "why": "Priya is hon, and the verb comes right after the question word: Var bor hon?"
+              },
+              {
+                "about": "Priya",
+                "field": "Her age",
+                "options": [
+                  "Hur gammal är hon?",
+                  "Vad gammal är hon?",
+                  "Hur gammal hon är?"
+                ],
+                "answer": "Hur gammal är hon?",
+                "reply": {
+                  "fi": "Hon är tjugofem.",
+                  "en": "She is twenty-five."
+                },
+                "why": "Age uses hur: hur gammal (how old), then the verb är."
+              },
+              {
+                "about": "Rohan",
+                "field": "What he likes",
+                "options": [
+                  "Vad gillar han?",
+                  "Vad gillar hon?",
+                  "Vem gillar han?"
+                ],
+                "answer": "Vad gillar han?",
+                "reply": {
+                  "fi": "Han gillar kaffe.",
+                  "en": "He likes coffee."
+                },
+                "why": "Rohan is han, and a thing is asked with vad."
+              },
+              {
+                "about": "Rohan",
+                "field": "Married or not",
+                "options": [
+                  "Är han gift?",
+                  "Han är gift?",
+                  "Är hon gift?"
+                ],
+                "answer": "Är han gift?",
+                "reply": {
+                  "fi": "Nej, han är singel.",
+                  "en": "No, he's single."
+                },
+                "why": "A yes/no question starts with the verb: Är han gift?"
+              },
+              {
+                "about": "Priya and Rohan",
+                "field": "When they come",
+                "options": [
+                  "När kommer de?",
+                  "När de kommer?",
+                  "Var kommer de?"
+                ],
+                "answer": "När kommer de?",
+                "reply": {
+                  "fi": "De kommer nästa vecka.",
+                  "en": "They are coming next week."
+                },
+                "why": "A time is asked with när, and the verb kommer comes second."
+              },
+              {
+                "about": "Priya and Rohan",
+                "field": "Why they come",
+                "options": [
+                  "Varför kommer de?",
+                  "Varför de kommer?",
+                  "Vad kommer de?"
+                ],
+                "answer": "Varför kommer de?",
+                "reply": {
+                  "fi": "För att jag bor här!",
+                  "en": "Because I live here!"
+                },
+                "why": "A reason is asked with varför, and the verb still comes second."
+              }
+            ],
+            "summary": "Three choices make a working question: the question word (what you want to know), the pronoun (who it is about), and the order (verb second, or verb first for yes/no)."
+          },
+          {
+            "type": "sort",
+            "label": "Answer detective",
+            "title": "Which question word does this answer belong to?",
+            "instructions": "Each card is an answer. Work backwards: is it a thing, a manner, a place, an origin, a time, a reason, or a person?",
+            "buckets": [
+              {
+                "id": "vad",
+                "label": "vad?",
+                "hint": "a thing"
+              },
+              {
+                "id": "hur",
+                "label": "hur?",
+                "hint": "how"
+              },
+              {
+                "id": "var",
+                "label": "var?",
+                "hint": "a place"
+              },
+              {
+                "id": "varifran",
+                "label": "varifrån?",
+                "hint": "an origin"
+              },
+              {
+                "id": "nar",
+                "label": "när?",
+                "hint": "a time"
+              },
+              {
+                "id": "varfor",
+                "label": "varför?",
+                "hint": "a reason"
+              },
+              {
+                "id": "vem",
+                "label": "vem?",
+                "hint": "a person"
+              }
+            ],
+            "items": [
+              {
+                "fi": "Jag heter Priya.",
+                "en": "My name is Priya.",
+                "bucket": "vad",
+                "why": "It answers Vad heter du? A name is a thing you ask for with vad."
+              },
+              {
+                "fi": "Jag mår bra, tack.",
+                "en": "I'm fine, thanks.",
+                "bucket": "hur",
+                "why": "It answers Hur mår du?"
+              },
+              {
+                "fi": "I Helsingfors.",
+                "en": "In Helsinki.",
+                "bucket": "var",
+                "why": "A place: Var bor du? — I Helsingfors."
+              },
+              {
+                "fi": "Från Indien.",
+                "en": "From India.",
+                "bucket": "varifran",
+                "why": "Från signals an origin: Varifrån kommer du?"
+              },
+              {
+                "fi": "Nästa vecka.",
+                "en": "Next week.",
+                "bucket": "nar",
+                "why": "A time: När kommer de? — Nästa vecka."
+              },
+              {
+                "fi": "Hon är min syster.",
+                "en": "She is my sister.",
+                "bucket": "vem",
+                "why": "A person: Vem är hon?"
+              },
+              {
+                "fi": "För att jag bor i Finland.",
+                "en": "Because I live in Finland.",
+                "bucket": "varfor",
+                "why": "För att (because) gives a reason: Varför pluggar du svenska?"
+              },
+              {
+                "fi": "Samma som vanlig mjölk.",
+                "en": "The same as ordinary milk.",
+                "bucket": "hur",
+                "why": "It answers Hur smakar vegansk mjölk? from page 6."
+              },
+              {
+                "fi": "Jag gillar kaffe.",
+                "en": "I like coffee.",
+                "bucket": "vad",
+                "why": "A thing: Vad gillar du?"
+              }
+            ],
+            "summary": "Every answer fits one question word. When you can hear which question an answer belongs to, you can also ask the next question yourself: question word, then verb, then person."
+          }
+        ]
       },
       {
         "title": "Hear it the way people say it",
@@ -2923,6 +3197,20 @@
         ],
         "hint": "Two other people.",
         "explanation": "Two other people are de, said dom."
+      },
+      {
+        "id": "sv-02-guided-register",
+        "prompt": "Your classmate was ill last week. Which question fits best?",
+        "answers": [
+          "Mår du bättre nu?"
+        ],
+        "options": [
+          "Mår du bättre nu?",
+          "Läget?",
+          "Vad heter du?"
+        ],
+        "hint": "You want to know how they really feel.",
+        "explanation": "Mår du bättre nu? asks how someone feels after being ill. Läget? is a casual what's up."
       },
       {
         "id": "sv-02-guided-ni",
@@ -3029,7 +3317,7 @@
       "model": "Jag mår bra, tack. Och du?\nDet är min syster. Hon heter Priya. Hon bor i Indien.\nDet är min vän. Hon heter Elin. Hon är sambo och hon bor i Helsingfors.\nVar bor du? När kommer du? Varför pluggar du svenska?"
     },
     "takeaways": [
-      "Mirror the question: Hur är det? → Det är bra. Hur mår du? → Jag mår bra. Then ask back: Och du?",
+      "Greet with Hej and Hur är det?, keep Hur mår du? for how someone really feels, then answer short and ask back: Bra, tack. Och du?",
       "Pronouns: jag, du, han, hon, hen, vi, ni, de. Count the people for du and ni; write de but say dom.",
       "Question word → verb → person: Var bor du? När kommer de?"
     ],
@@ -3329,6 +3617,46 @@
           "en": "must; have to",
           "example": "Vi måste plugga.",
           "translation": "We have to study.",
+          "level": "A0"
+        },
+        {
+          "id": "sv-02-word-30",
+          "fi": "Hur är det med dig?",
+          "en": "How are things with you?",
+          "example": "Hej Elin! Hur är det med dig?",
+          "translation": "Hi Elin! How are things with you?",
+          "level": "A0"
+        },
+        {
+          "id": "sv-02-word-31",
+          "fi": "bara bra",
+          "en": "just fine",
+          "example": "Bara bra, tack. Och du?",
+          "translation": "Just fine, thanks. And you?",
+          "level": "A0"
+        },
+        {
+          "id": "sv-02-word-32",
+          "fi": "jättebra",
+          "en": "really good",
+          "example": "Det är jättebra!",
+          "translation": "That's really good!",
+          "level": "A0"
+        },
+        {
+          "id": "sv-02-word-33",
+          "fi": "Läget?",
+          "en": "What's up? (very casual)",
+          "example": "Morjens! Läget?",
+          "translation": "Hey! What's up?",
+          "level": "A0"
+        },
+        {
+          "id": "sv-02-word-34",
+          "fi": "hej hej",
+          "en": "hi; bye (common in Finland-Swedish)",
+          "example": "Hej hej, Elin!",
+          "translation": "Hi, Elin!",
           "level": "A0"
         }
       ],

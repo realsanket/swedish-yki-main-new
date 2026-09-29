@@ -219,7 +219,28 @@ export type MatchActivity = TeachingActivityBase & {
   /** A speakable frame using {left} and {right}, offered for each finished pair. */
   sentence?: string;
 };
-export type TeachingActivity = SoundMapActivity | SortActivity | MatchActivity;
+/**
+ * An information gap: facts are hidden on a card and the learner reveals each
+ * one by choosing the question that would really get it. Wrong options can
+ * test the pronoun, the question word, or the word order.
+ */
+export type QuestionGapActivity = TeachingActivityBase & {
+  type: "question-gap";
+  card: { title: string; subtitle?: string };
+  /** Registered story character who answers aloud, for example Alex. */
+  answerer: string;
+  gaps: {
+    about: string;
+    field: string;
+    options: string[];
+    answer: string;
+    reply: { fi: string; en: string };
+    /** Why the correct question works; shown after a wrong choice. */
+    why: string;
+  }[];
+  summary?: string;
+};
+export type TeachingActivity = SoundMapActivity | SortActivity | MatchActivity | QuestionGapActivity;
 
 export type TeachingSection = {
   title: string;
@@ -234,6 +255,8 @@ export type TeachingSection = {
   tryIt?: string;
   /** Optional interactive practice shown as its own beat after the examples. */
   activity?: TeachingActivity;
+  /** Several activities, each shown as its own beat, in order. */
+  activities?: TeachingActivity[];
 };
 export type LearningResource = {
   label: string;
