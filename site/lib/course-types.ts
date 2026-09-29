@@ -43,10 +43,33 @@ export type SourcePagePractice = {
   title: string;
   image: string;
   imageAlt: string;
+  /** Physical page reference shown under the image. */
+  pageLabel?: string;
   note?: string;
   focus: string[];
+  /** One meaning cue per line, used when the dialogue has fully vanished. */
   recallCues: string[];
-  lines: Array<{ speaker: string; voice: string; fi: string; en: string }>;
+  lines: Array<{
+    speaker: string;
+    voice: string;
+    fi: string;
+    en: string;
+    /** New words in this line, revealed on demand while reading. */
+    glossary?: { fi: string; en: string }[];
+  }>;
+  /** Gist questions answered after the first listen. */
+  listenQuestions?: {
+    prompt: string;
+    options: string[];
+    answer: number;
+    explanation: string;
+  }[];
+  /** Source wording the learner should recognise, and what to produce instead. */
+  naturalNotes?: { source: string; natural: string; note: string }[];
+  /** A long line rebuilt from its end, chunk by chunk (backchaining). */
+  backchain?: { line: number; chunks: string[] };
+  /** Words the page itself marks for pronunciation, each tied to a rule. */
+  soundSpots?: { word: string; mark: string; rule: string }[];
 };
 
 export type LecturePresentation = {

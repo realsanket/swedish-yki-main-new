@@ -1,0 +1,368 @@
+.stageIntro span,
+.eyebrow {
+  color: #8b6417;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+}
+.stageIntro h4 {
+  margin: 6px 0 6px;
+  color: #173f6d;
+  font:
+    700 21px/1.25 Georgia,
+    serif;
+}
+.stageIntro p {
+  margin: 0 0 16px;
+  color: #586b61;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.audioRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 0;
+}
+.nextStage {
+  margin-top: 22px;
+}
+.right {
+  border-color: #2d7658 !important;
+  background: #e5f2e3 !important;
+  color: #1d5c45 !important;
+}
+.wrong {
+  border-color: #b4442f !important;
+  background: #fbe9e4 !important;
+  color: #8c2f1f !important;
+}
+.dim {
+  opacity: 0.45;
+}
+.mark {
+  padding: 0 2px;
+  border-radius: 4px;
+  background: #ffd6cc;
+  color: #b3261e;
+}
+
+/* Stage 1 */
+.questions {
+  display: grid;
+  gap: 16px;
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+.questions li > b {
+  display: block;
+  margin-bottom: 8px;
+  color: #173858;
+}
+.questions li > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.option {
+  padding: 8px 14px;
+  border: 1px solid #dfe5ea;
+  border-radius: 10px;
+  background: #fff;
+  color: #173858;
+  font-size: 14px;
+  cursor: pointer;
+}
+.option:disabled {
+  cursor: default;
+}
+.option:disabled:not(.dim) {
+  opacity: 1;
+}
+.explanation {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 0;
+  color: #52665b;
+  font-size: 13px;
+}
+
+/* Stage 2 */
+.glossary summary,
+.glossary + details summary {
+  cursor: pointer;
+}
+.glossary > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+.glossary > div > span {
+  padding: 3px 10px;
+  border: 1px solid #eadfbf;
+  border-radius: 99px;
+  background: #fff8e5;
+  font-size: 12px;
+}
+.backchain,
+.naturalNotes {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #e6dcc0;
+  border-radius: 16px;
+  background: #fffaf0;
+}
+.backchain p {
+  margin: 0;
+  color: #586b61;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.backchain ol {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 22px;
+}
+.backchain li {
+  color: #6c7f73;
+}
+.backchain li > span {
+  margin-right: 8px;
+}
+.currentChunk {
+  color: #173f6d !important;
+  font-size: 17px;
+  font-weight: 800;
+}
+.backchain > button {
+  justify-self: start;
+}
+.naturalNotes > div p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+.naturalNotes small {
+  color: #5c6f65;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.onPage {
+  padding: 2px 9px;
+  border: 1px dashed #d8c9a3;
+  border-radius: 8px;
+  color: #6f5d45;
+}
+.focus {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 14px;
+  font-size: 13px;
+}
+.focus span {
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: #fff1c8;
+  color: #6b4b0d;
+  font-weight: 700;
+}
+
+/* Stage 3 */
+.huntLines {
+  display: grid;
+  gap: 8px;
+}
+.huntLines p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.9;
+}
+.huntWord {
+  padding: 0 1px;
+  border: 0;
+  border-bottom: 2px dotted #c9d2da;
+  border-radius: 4px;
+  background: transparent;
+  color: #173858;
+  font: inherit;
+  cursor: pointer;
+}
+.huntWord:hover {
+  background: #fff1c8;
+}
+.huntFound {
+  border-bottom-color: #b3261e;
+  background: #fff4f1;
+}
+.huntMessage {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border: 1px solid #e3e8ec;
+  border-radius: 12px;
+  font-size: 14px;
+}
+.spotList {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.spotList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+.spotList small {
+  flex: 1;
+  color: #586b61;
+  font-weight: 400;
+}
+
+/* Stages 4 and 5 */
+.levels,
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.level {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  border: 1px solid #e1e4d9;
+  border-radius: 99px;
+  background: #fafbf8;
+  color: #52685d;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.level > span {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e8eee2;
+  font-size: 10px;
+}
+.levelActive {
+  border-color: #274f72;
+  background: #edf3f9;
+  color: #173f6d;
+}
+.levelActive > span {
+  background: #173f6d;
+  color: #fff;
+}
+.vanishLines {
+  display: grid;
+  gap: 10px;
+  padding: 16px 18px;
+  border: 1px solid #e6dcc0;
+  border-radius: 16px;
+  background: #fffdf7;
+}
+.vanishLines p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.vanishLines em {
+  color: #5c6f65;
+  font-size: 15px;
+}
+.gap {
+  color: #8a97a3;
+  letter-spacing: 0.06em;
+}
+.done {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #1d5c45;
+  font-weight: 700;
+}
+.chat {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.bubble {
+  display: grid;
+  justify-items: start;
+  gap: 4px;
+  max-width: 78%;
+  padding: 10px 14px;
+  border: 1px solid #e3e8ec;
+  border-radius: 16px 16px 16px 4px;
+  background: #fff;
+}
+.bubble b {
+  color: #8b6417;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.bubble p {
+  margin: 0;
+  font-size: 16px;
+}
+.mine {
+  justify-self: end;
+  border-color: #c9d8ea;
+  border-radius: 16px 16px 4px 16px;
+  background: #edf3f9;
+}
+.cue {
+  color: #52665b;
+}
+
+.pageFrame {
+  position: relative;
+}
+.pageFrame > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d7d3c9;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 9px 24px rgba(43, 48, 54, 0.12);
+}
+/* Covers the dialogue half of the page while the illustration stays visible. */
+.textCover {
+  position: absolute;
+  top: 44%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 6px;
+  padding: 20px;
+  border-radius: 0 0 9px 9px;
+  background: rgb(23, 63, 109);
+  color: #fff;
+  text-align: center;
+}
+.textCover span {
+  color: #d9e4f0;
+  font-size: 12px;
+  line-height: 1.5;
+}

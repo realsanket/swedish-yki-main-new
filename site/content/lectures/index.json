@@ -33,58 +33,235 @@
           "title": "Textbook page practice: Hej! Vad heter du?",
           "image": "/images/source/textbook-lesson-01.png",
           "imageAlt": "Textbook page Hej! Vad heter du? with Anna and Tomas introducing themselves, asking about origin, and noticing Swedish sound patterns",
-          "note": "The source says skönt hår. Recognise that wording here; in your own conversation, produce fint hår or snyggt hår for a natural compliment.",
+          "pageLabel": "textbook physical page 4",
           "focus": [
             "Å, Ö, Ä",
-            "G before Ö, Ä, Y, E, I",
-            "SK before Ö, Ä, Y, E, I",
-            "K before Ö, Ä, Y, E, I",
-            "long and short vowels"
+            "G + Ö, Ä, Y, E, I",
+            "SK + Ö, Ä, Y, E, I",
+            "K + Ö, Ä, Y, E, I",
+            "långa och korta vokaler"
           ],
           "recallCues": [
-            "Anna introduces herself and asks Tomas's name.",
-            "Tomas introduces himself and compliments Anna's pink shirt.",
-            "Anna replies to the compliment.",
+            "Anna says hello, gives her name, and asks Tomas's name.",
+            "Tomas gives his name and says he likes Anna's pink shirt.",
+            "Anna thanks him and compliments his hair.",
             "Tomas asks where Anna comes from.",
-            "Anna answers and returns the question with Och du?",
-            "Tomas gives his origin and where he lives now."
+            "Anna says China, then returns the question.",
+            "Tomas: from the USA, but he lives in Finland now."
           ],
           "lines": [
             {
               "speaker": "Anna",
               "voice": "Elin",
               "fi": "Hej, jag heter Anna. Vad heter du?",
-              "en": "Hello, my name is Anna. What is your name?"
+              "en": "Hello, my name is Anna. What is your name?",
+              "glossary": [
+                {
+                  "fi": "vad",
+                  "en": "what"
+                },
+                {
+                  "fi": "du",
+                  "en": "you"
+                }
+              ]
             },
             {
               "speaker": "Tomas",
               "voice": "Alex",
               "fi": "Hej, jag heter Tomas. Jag gillar din rosa skjorta!",
-              "en": "Hello, my name is Tomas. I like your pink shirt!"
+              "en": "Hello, my name is Tomas. I like your pink shirt!",
+              "glossary": [
+                {
+                  "fi": "gillar",
+                  "en": "like(s)"
+                },
+                {
+                  "fi": "din",
+                  "en": "your"
+                },
+                {
+                  "fi": "rosa",
+                  "en": "pink"
+                },
+                {
+                  "fi": "skjorta",
+                  "en": "shirt"
+                }
+              ]
             },
             {
               "speaker": "Anna",
               "voice": "Elin",
               "fi": "Tack! Du har skönt hår!",
-              "en": "Thanks! You have nice hair!"
+              "en": "Thanks! You have nice hair!",
+              "glossary": [
+                {
+                  "fi": "tack",
+                  "en": "thanks"
+                },
+                {
+                  "fi": "har",
+                  "en": "have / has"
+                },
+                {
+                  "fi": "hår",
+                  "en": "hair"
+                },
+                {
+                  "fi": "skönt",
+                  "en": "pleasant; comfortable (see the note below)"
+                }
+              ]
             },
             {
               "speaker": "Tomas",
               "voice": "Alex",
               "fi": "Varifrån kommer du, Anna?",
-              "en": "Where do you come from, Anna?"
+              "en": "Where do you come from, Anna?",
+              "glossary": [
+                {
+                  "fi": "varifrån",
+                  "en": "where … from"
+                }
+              ]
             },
             {
               "speaker": "Anna",
               "voice": "Elin",
               "fi": "Jag kommer från Kina. Och du?",
-              "en": "I come from China. And you?"
+              "en": "I come from China. And you?",
+              "glossary": [
+                {
+                  "fi": "Kina",
+                  "en": "China"
+                },
+                {
+                  "fi": "Och du?",
+                  "en": "And you? — returns the question"
+                }
+              ]
             },
             {
               "speaker": "Tomas",
               "voice": "Alex",
               "fi": "Jag kommer från USA men jag bor i Finland nu.",
-              "en": "I come from the USA, but I live in Finland now."
+              "en": "I come from the USA, but I live in Finland now.",
+              "glossary": [
+                {
+                  "fi": "men",
+                  "en": "but"
+                },
+                {
+                  "fi": "nu",
+                  "en": "now"
+                },
+                {
+                  "fi": "USA",
+                  "en": "said letter by letter: u-ess-a"
+                }
+              ]
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "Who speaks first?",
+              "options": [
+                "Anna",
+                "Tomas"
+              ],
+              "answer": 0,
+              "explanation": "Anna opens: Hej, jag heter Anna."
+            },
+            {
+              "prompt": "What does Tomas like?",
+              "options": [
+                "Anna's pink shirt",
+                "Anna's hair",
+                "Anna's coffee"
+              ],
+              "answer": 0,
+              "explanation": "Jag gillar din rosa skjorta: I like your pink shirt."
+            },
+            {
+              "prompt": "Where does Anna come from?",
+              "options": [
+                "China",
+                "the USA",
+                "Finland"
+              ],
+              "answer": 0,
+              "explanation": "Jag kommer från Kina."
+            },
+            {
+              "prompt": "Where does Tomas live now?",
+              "options": [
+                "Finland",
+                "the USA",
+                "China"
+              ],
+              "answer": 0,
+              "explanation": "He comes from the USA, men jag bor i Finland nu: but he lives in Finland now."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "Du har skönt hår!",
+              "natural": "Du har fint hår!",
+              "note": "Skönt normally means pleasant or comfortable, as in Det är skönt här. For a compliment, say fint hår or snyggt hår."
+            },
+            {
+              "source": "Varifrån kommer du?",
+              "natural": "Var kommer du ifrån?",
+              "note": "Both are correct. Varifrån is the tidy written form; in everyday speech you will very often hear Var kommer du ifrån? Recognise both."
+            }
+          ],
+          "backchain": {
+            "line": 5,
+            "chunks": [
+              "nu",
+              "i Finland nu",
+              "jag bor i Finland nu",
+              "men jag bor i Finland nu",
+              "från USA men jag bor i Finland nu",
+              "Jag kommer från USA men jag bor i Finland nu."
+            ]
+          },
+          "soundSpots": [
+            {
+              "word": "gillar",
+              "mark": "g",
+              "rule": "G + i, a front vowel: the Swedish j sound, so it starts like yillar."
+            },
+            {
+              "word": "skjorta",
+              "mark": "skj",
+              "rule": "Skj is always the sj sound, even before o."
+            },
+            {
+              "word": "skönt",
+              "mark": "skö",
+              "rule": "Sk + ö, a front vowel: the sj sound."
+            },
+            {
+              "word": "hår",
+              "mark": "å",
+              "rule": "Å is the real O: deep and round. A single r follows, so stretch it."
+            },
+            {
+              "word": "Varifrån",
+              "mark": "å",
+              "rule": "The same deep, round å as in från."
+            },
+            {
+              "word": "Kina",
+              "mark": "K",
+              "rule": "K + i, a front vowel: the soft tj sound."
+            },
+            {
+              "word": "från",
+              "mark": "å",
+              "rule": "Å followed by one n: a long, round å."
             }
           ]
         },
@@ -279,7 +456,7 @@
           ]
         },
         "memoryTip": "Home now and origin are two boxes: bor i = live in; kommer från = come from.",
-        "tryIt": "Say your four real lines once slowly. Then say them again without looking.",
+        "tryIt": "Say your four real lines once slowly. Then say them again without looking. If the language line trips you up, build it from the end: svenska → lite svenska → och lite svenska → Jag talar hindi, engelska och lite svenska.",
         "activity": {
           "type": "match",
           "label": "Countries & languages",
@@ -782,12 +959,12 @@
           {
             "fi": "Kina · köper · kött · tjej · tjuv",
             "en": "soft K/TJ → /ɕ/",
-            "note": "Make a narrow, light sound; do not add an English t + ch."
+            "note": "Swedes call it the tjugo sound (tjugo = 20): a small, sharp hiss with the tongue forward. Do not add an English t + ch."
           },
           {
             "fi": "skärm · skiner · sjuk · skjorta",
             "en": "SK/SJ/SKJ → sj sound /ɧ/",
-            "note": "This sound varies by region and speaker."
+            "note": "The sju sound (sju = 7): deeper and further back than tj. It varies by region and speaker."
           },
           {
             "fi": "ska · skuld",
@@ -829,33 +1006,33 @@
             ]
           ]
         },
-        "memoryTip": "Same five vowels, three different results: G → J, K → TJ, SK → SJ. Do not call all three ‘sh’.",
+        "memoryTip": "Same five soft vowels, three different results: G → J, K → TJ, SK → SJ. Tjugo (20) is the small, sharp sound; sju (7) is the big, deep one. Do not call them both ‘sh’.",
         "tryIt": "Underline the first vowel in gillar, kött, and skärm. Predict the sound, listen, then repeat each word twice.",
         "activity": {
           "type": "sort",
           "label": "Sound detective",
           "title": "Look at the letter after g, k, or sk, then predict the sound",
-          "instructions": "Front vowel (e, i, y, ä, ö) next? The sound usually softens. Back vowel (a, o, u, å)? It stays hard. Choose, then listen.",
+          "instructions": "Swedish teachers call e, i, y, ä, ö the soft vowels (mjuka vokaler) and a, o, u, å the hard vowels (hårda vokaler). Soft vowel next? The consonant usually softens too. Hard vowel next? It stays hard. Choose, then listen.",
           "buckets": [
             {
               "id": "j",
               "label": "j sound",
-              "hint": "g + front vowel"
+              "hint": "as in ja · g + soft vowel"
             },
             {
               "id": "tj",
               "label": "tj sound",
-              "hint": "k + front vowel, or tj"
+              "hint": "as in tjugo · k + soft vowel, or tj"
             },
             {
               "id": "sj",
               "label": "sj sound",
-              "hint": "sk + front vowel, sj, skj"
+              "hint": "as in sju · sk + soft vowel, sj, skj"
             },
             {
               "id": "hard",
               "label": "No change",
-              "hint": "back vowel follows"
+              "hint": "a hard vowel (a, o, u, å) follows"
             }
           ],
           "items": [
@@ -1290,6 +1467,38 @@
           "en": "And you?",
           "example": "Jag kommer från Finland. Och du?",
           "translation": "I come from Finland. And you?",
+          "level": "A0"
+        },
+        {
+          "id": "sv-01-word-16",
+          "fi": "men",
+          "en": "but",
+          "example": "Jag kommer från Indien, men jag bor i Finland.",
+          "translation": "I come from India, but I live in Finland.",
+          "level": "A0"
+        },
+        {
+          "id": "sv-01-word-17",
+          "fi": "nu",
+          "en": "now",
+          "example": "Jag bor i Finland nu.",
+          "translation": "I live in Finland now.",
+          "level": "A0"
+        },
+        {
+          "id": "sv-01-word-18",
+          "fi": "skjorta",
+          "en": "shirt",
+          "example": "Jag gillar din rosa skjorta.",
+          "translation": "I like your pink shirt.",
+          "level": "A0"
+        },
+        {
+          "id": "sv-01-word-19",
+          "fi": "Var kommer du ifrån?",
+          "en": "Where are you from? (everyday form of Varifrån kommer du?)",
+          "example": "Var kommer du ifrån? Jag kommer från Kina.",
+          "translation": "Where are you from? I come from China.",
           "level": "A0"
         }
       ],
