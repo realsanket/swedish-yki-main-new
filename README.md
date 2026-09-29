@@ -12,6 +12,10 @@ The relationship between the classroom notebook and the two books is documented 
 
 The live Stigen application intentionally contains only **Chapter 1, Lectures 1 and 2**. All later course material was moved—not deleted—to [backup/future-course-2026-09-29](/Users/sanket.joshi/Desktop/personal/swedish-yki/backup/future-course-2026-09-29).
 
+## Local app and hosted preview
+
+Run locally for every feature (Azure voice, live coach, saved progress). A free Vercel preview shows each pushed change visually, with voice features off and temporary progress. Setup and the comparison are in [`site/DEPLOY.md`](site/DEPLOY.md).
+
 ## Where the chapter lives
 
 | Purpose | Active location |
