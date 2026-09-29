@@ -6,12 +6,14 @@ import { base64ToBytes, bytesToBase64, VoiceLiveAudio } from "./voice-live-audio
 import styles from "./LiveVoice.module.css";
 
 type Phase = "idle" | "connecting" | "live" | "closing" | "ended";
-type Props = {
-  taskId: string;
+export type LiveVoiceMode = "conversation" | "pronunciation";
+export type LiveVoiceProps = {
+  /** Stable server-resolved curriculum ID, for example lecture-01 or module-01. */
+  contextId: string;
   available: boolean;
   signedIn: boolean;
   disabled?: boolean;
-  mode?: "conversation" | "pronunciation";
+  mode?: LiveVoiceMode;
   onTranscript?: (text: string) => boolean;
   onActiveChange?: (active: boolean) => void;
 };
@@ -30,7 +32,7 @@ const MAX_TRANSCRIPT = 20_000;
 const noOp = () => {};
 
 /** Secure browser client for the server-proxied Azure Speech Voice Live session. */
-export default function LiveVoice({ taskId, available, signedIn, disabled = false, mode = "conversation", onTranscript, onActiveChange = noOp }: Props) {
+export default function LiveVoice({ contextId, available, signedIn, disabled = false, mode = "conversation", onTranscript, onActiveChange = noOp }: LiveVoiceProps) {
   const [phase, setPhase] = useState<Phase>("idle");
   const [muted, setMuted] = useState(false);
   const [remaining, setRemaining] = useState(MAX_SECONDS);
@@ -184,7 +186,7 @@ export default function LiveVoice({ taskId, available, signedIn, disabled = fals
       socket.current = liveSocket;
       liveSocket.onopen = () => {
         if (!current() || closing.current) return;
-        liveSocket.send(JSON.stringify({ type: "client.start", taskId, mode }));
+        liveSocket.send(JSON.stringify({ type: "client.start", contextId, mode }));
       };
       liveSocket.onmessage = ({ data }) => {
         if (!current() || typeof data !== "string" || data.length > 100_000) return;

@@ -18,6 +18,11 @@ import {
 } from "lucide-react";
 import AudioButton from "./AudioButton";
 import LiveVoice from "./LiveVoice";
+import {
+  azureCapabilities,
+  type AzureCapabilityKey,
+  type CheckableAzureCapability,
+} from "@/lib/azure-capabilities";
 import { characterVoiceProfiles, speechLocales } from "@/lib/character-voices";
 import type { CourseProgressData } from "@/lib/course-progress";
 import type { ProgressData } from "@/lib/progress";
@@ -37,83 +42,22 @@ type AIStatus = {
   };
 };
 
-const features = [
-  {
-    key: "feedback",
-    title: "Writing & speaking feedback",
-    description: "Coaching on submitted text and speaking transcripts.",
-    icon: MessageSquare,
-  },
-  {
-    key: "transcription",
-    title: "Recording transcription",
-    description: "Turn a Swedish recording into editable text.",
-    icon: Mic,
-  },
-  {
-    key: "characterVoices",
-    title: "Character voices",
-    description:
-      "Alex, Aino, and Sami keep their own voice in Swedish and English.",
-    icon: Volume2,
-  },
-  {
-    key: "liveVoice",
-    title: "Live voice conversation",
-    description: "Talk in Swedish and ask for help in Indian English.",
-    icon: AudioLines,
-  },
-] as const;
+const featureIcons: Record<AzureCapabilityKey, typeof MessageSquare> = {
+  feedback: MessageSquare,
+  transcription: Mic,
+  characterVoices: Volume2,
+  liveVoice: AudioLines,
+};
 
-type CapabilityKey = (typeof features)[number]["key"];
-type CheckableCapability = Exclude<CapabilityKey, "liveVoice">;
+const features = azureCapabilities.map((feature) => ({
+  ...feature,
+  icon: featureIcons[feature.key],
+}));
+
 type AzureCheck = {
   phase: "idle" | "running" | "passed" | "failed";
   detail: string;
 };
-
-const azureServices: Array<{
-  key: CapabilityKey;
-  service: string;
-  variables: readonly string[];
-}> = [
-  {
-    key: "feedback",
-    service: "Azure OpenAI / Microsoft Foundry",
-    variables: [
-      "AZURE_OPENAI_BASE_URL",
-      "AZURE_OPENAI_API_KEY",
-      "AZURE_OPENAI_FEEDBACK_MODEL",
-    ],
-  },
-  {
-    key: "transcription",
-    service: "Azure Speech transcription",
-    variables: [
-      "AZURE_SPEECH_ENDPOINT",
-      "AZURE_SPEECH_API_KEY or AZURE_OPENAI_API_KEY",
-      "AZURE_SPEECH_API_VERSION",
-    ],
-  },
-  {
-    key: "characterVoices",
-    service: "Azure Speech text to speech",
-    variables: [
-      "AZURE_SPEECH_TTS_ENDPOINT",
-      "AZURE_SPEECH_API_KEY or AZURE_OPENAI_API_KEY",
-    ],
-  },
-  {
-    key: "liveVoice",
-    service: "Azure Speech Voice Live",
-    variables: [
-      "AZURE_VOICELIVE_ENDPOINT",
-      "AZURE_OPENAI_API_KEY",
-      "AZURE_VOICELIVE_MODEL",
-      "AZURE_VOICELIVE_VOICE",
-    ],
-  },
-];
 
 const voiceChecks = {
   Alex: {
@@ -130,13 +74,7 @@ const voiceChecks = {
   },
 } as const;
 
-const checkLabels: Record<CheckableCapability, string> = {
-  feedback: "Send Swedish test",
-  transcription: "Run Swedish loopback",
-  characterVoices: "Generate Swedish audio",
-};
-
-const initialAzureChecks: Record<CheckableCapability, AzureCheck> = {
+const initialAzureChecks: Record<CheckableAzureCapability, AzureCheck> = {
   feedback: { phase: "idle", detail: "" },
   transcription: { phase: "idle", detail: "" },
   characterVoices: { phase: "idle", detail: "" },
@@ -212,7 +150,7 @@ export default function SettingsView({
     setConnectionCheck((value) => value + 1);
   }
 
-  async function runAzureCheck(capability: CheckableCapability) {
+  async function runAzureCheck(capability: CheckableAzureCapability) {
     setAzureChecks((current) => ({
       ...current,
       [capability]: { phase: "running", detail: "Contacting Azure…" },
@@ -557,10 +495,10 @@ export default function SettingsView({
               </p>
             </div>
             <div className="azure-service-grid">
-              {azureServices.map(({ key, service, variables }) => {
-                const feature = features.find((item) => item.key === key)!;
+              {azureCapabilities.map((feature) => {
+                const { key, service, variables } = feature;
                 const ready = Boolean(ai?.capabilities?.[key]);
-                const Icon = feature.icon;
+                const Icon = featureIcons[key];
                 const liveCheck =
                   key === "liveVoice" ? null : azureChecks[key];
                 const stateLabel = liveCheck?.phase === "passed"
@@ -646,7 +584,7 @@ export default function SettingsView({
                           )}
                           {liveCheck?.phase === "running"
                             ? "Testing Azure…"
-                            : checkLabels[key]}
+                            : feature.testLabel}
                         </button>
                       )}
                       {liveCheck?.detail && (
@@ -765,7 +703,7 @@ export default function SettingsView({
               </p>
             </div>
             <LiveVoice
-              taskId="lecture-01"
+              contextId="module-01"
               mode="conversation"
               available={Boolean(ai?.capabilities.liveVoice)}
               signedIn={Boolean(ai?.signedIn)}

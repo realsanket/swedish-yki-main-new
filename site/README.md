@@ -13,8 +13,11 @@ Source-to-lecture decisions are tracked in [`../mapping.md`](../mapping.md). Fol
 - `content/lectures/index.json` — the generated runtime index; currently contains only Lecture 1.
 - `lib/story-world.ts` — the Chapter 1 story, cast, and artwork lookup.
 - `lib/character-voices.ts` — the bilingual Azure voice casting for Alex, Aino, and Sami.
+- `lib/azure-capabilities.ts` — the shared public capability map used by Settings and future learning surfaces.
+- `lib/voice-live-context.mjs` — the server-only resolver that turns safe episode or module IDs into bounded Voice Live teaching context.
 - `components/learning/CourseOrientation.tsx` — the focused three-step entry into Lesson 1.
 - `components/learning/LecturePlayer.tsx` — the teaching flow.
+- `components/learning/AzureVoiceTools.tsx` — the reusable conversation and pronunciation tools for episodes and modules.
 - `app/course.css` — the visual system, including the dedicated Lesson 1 workspace.
 - `docs/lecture-template.md` — the contract for extending lectures without copying Lesson 1.
 
@@ -51,6 +54,33 @@ Copy `.env.example` to `.env` and add only the server-side credentials you use. 
 - Live voice uses Azure Speech Voice Live with `gpt-realtime-2.1-mini` and native `sv-SE-MattiasNeural`. A same-origin server WebSocket proxy keeps the long-lived Azure key and trusted lesson instructions out of the browser.
 
 The AI coach is practice support, not an official YKI examiner. It does not assign official grades or guarantee a test result.
+
+### Reuse Azure voice in an episode or module
+
+Use the shared component instead of rebuilding capability checks, microphone UI,
+or provider calls in each lesson:
+
+```tsx
+import AzureVoiceTools from "@/components/learning/AzureVoiceTools";
+
+// Both conversation and pronunciation for one episode.
+<AzureVoiceTools contextId="lecture-01" />
+
+// Conversation only, using all currently available material in a module.
+<AzureVoiceTools contextId="module-01" tools={["conversation"]} />
+```
+
+`episode-01` is also accepted as an alias for `lecture-01`. The component sends
+only this stable ID and the selected mode. The server resolves objectives,
+phrases, dialogue, speaking help, and pronunciation notes from the canonical
+JSON files. Never send a prompt, filesystem path, Azure endpoint, or key from a
+lesson component.
+
+To add a future episode, add its canonical `content/lectures/lecture-XX.json`
+file and include its number in a range in `content/modules.json`. Any module
+range automatically aggregates the lecture files that currently exist inside
+that range. Shared Azure labels, required variable names, and test labels belong
+in `lib/azure-capabilities.ts`, not in individual screens.
 
 ## Learning and exam scope
 

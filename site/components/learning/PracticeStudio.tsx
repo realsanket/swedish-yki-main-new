@@ -1166,7 +1166,7 @@ function Exercise({
             )}
             {skill === "speaking" && !isTimed && (
               <LiveVoice
-                taskId={task.id}
+                contextId={task.id}
                 available={canLiveVoice}
                 signedIn={Boolean(ai?.signedIn)}
                 disabled={

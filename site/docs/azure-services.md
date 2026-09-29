@@ -114,6 +114,33 @@ The Azure settings tab deliberately separates these states:
   user initiated because starting it asks for microphone permission and streams
   microphone audio to Azure until the session ends.
 
+## Reusable episode and module integration
+
+The reusable UI entry point is `components/learning/AzureVoiceTools.tsx`. It
+checks live capability availability once and can render conversation,
+pronunciation, or both:
+
+```tsx
+<AzureVoiceTools contextId="lecture-01" />
+<AzureVoiceTools contextId="module-01" tools={["conversation"]} />
+```
+
+The lower-level `LiveVoice` component accepts the same `contextId` when a
+practice screen already owns its AI capability state or needs transcript
+callbacks. Accepted IDs are `lecture-XX`, its `episode-XX` alias, and
+`module-XX`.
+
+`lib/voice-live-context.mjs` resolves those IDs against server-owned curriculum
+files and places strict limits on aggregated objectives, phrases, dialogue, and
+pronunciation material. The browser cannot supply raw instructions or a file
+path. This keeps future episode and module reuse convenient without moving the
+Azure key or trusted system prompt into client code.
+
+The public, non-secret capability descriptions live in
+`lib/azure-capabilities.ts`. Settings and future modules should import that
+registry rather than duplicating service names, environment-variable names, or
+test labels.
+
 ## Best next services
 
 1. **Pronunciation Assessment** — highest teaching value. Swedish `sv-SE` is
