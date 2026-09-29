@@ -5,6 +5,7 @@ import { Check, HelpCircle, RotateCcw, X } from "lucide-react";
 import type { QuestionGapActivity as QuestionGapActivityData } from "@/lib/course-types";
 import { storyCharacterForSpeaker } from "@/lib/story-world";
 import AudioButton from "../AudioButton";
+import { GlossText } from "../GrammarNotes";
 import { seededShuffle } from "./shared";
 import styles from "./TeachingActivity.module.css";
 
@@ -65,7 +66,7 @@ export default function QuestionGapActivity({ activity }: { activity: QuestionGa
       {complete ? (
         <div className={styles.sortResult} aria-live="polite">
           <b>Card complete: {firstTry} of {activity.gaps.length} questions right on the first try</b>
-          {activity.summary && <p>{activity.summary}</p>}
+          {activity.summary && <p><GlossText text={activity.summary} /></p>}
           <button
             type="button"
             className="secondary"
@@ -104,7 +105,7 @@ export default function QuestionGapActivity({ activity }: { activity: QuestionGa
           {!!misses[active]?.length && (
             <div className={`${styles.feedback} ${styles.wrong}`} aria-live="polite">
               <X size={17} aria-hidden="true" />
-              <p>{activity.answerer} does not understand that question yet. {gap.why}</p>
+              <p>{activity.answerer} does not understand that question yet. <GlossText text={gap.why} /></p>
             </div>
           )}
           {solved.length > 0 && !misses[active]?.length && (

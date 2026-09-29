@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { Check, RotateCcw, X } from "lucide-react";
 import type { SortActivity as SortActivityData } from "@/lib/course-types";
 import AudioButton from "../AudioButton";
+import { GlossText } from "../GrammarNotes";
 import { MarkedWord, seededShuffle } from "./shared";
 import styles from "./TeachingActivity.module.css";
 
@@ -34,7 +35,7 @@ export default function SortActivity({ activity }: { activity: SortActivityData 
     return (
       <div className={styles.sortResult} aria-live="polite">
         <b>{correctCount} of {order.length} on the first try</b>
-        {activity.summary && <p>{activity.summary}</p>}
+        {activity.summary && <p><GlossText text={activity.summary} /></p>}
         {missed.length > 0 && (
           <ul>
             {missed.map((index) => {
@@ -43,7 +44,7 @@ export default function SortActivity({ activity }: { activity: SortActivityData 
                 <li key={missedItem.fi}>
                   <MarkedWord text={missedItem.fi} mark={missedItem.mark} className={styles.mark} />
                   <span>→ {bucketLabel(missedItem.bucket)}</span>
-                  <small>{missedItem.why}</small>
+                  <small><GlossText text={missedItem.why} /></small>
                 </li>
               );
             })}
@@ -109,7 +110,7 @@ export default function SortActivity({ activity }: { activity: SortActivityData 
         <div className={`${styles.feedback} ${choice === item.bucket ? styles.right : styles.wrong}`} aria-live="polite">
           {choice === item.bucket ? <Check size={17} aria-hidden="true" /> : <X size={17} aria-hidden="true" />}
           <p>
-            <b>{choice === item.bucket ? "Yes." : `It is ${bucketLabel(item.bucket)}.`}</b> {item.why}
+            <b>{choice === item.bucket ? "Yes." : `It is ${bucketLabel(item.bucket)}.`}</b> <GlossText text={item.why} />
           </p>
           <button type="button" className="primary" onClick={() => setPosition((value) => value + 1)}>
             {position + 1 < order.length ? "Next card →" : "See my result →"}

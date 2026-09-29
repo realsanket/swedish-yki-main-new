@@ -285,6 +285,11 @@ export type LectureContent = {
   legacyLessonId?: string;
   /** Explicit route choice. Future lecture numbers carry no implied format. */
   routeProfile?: LectureRouteProfileId;
+  /**
+   * Ids from content/grammar-terms.json that this lecture uses. They are
+   * underlined in teaching text and explained in plain English beside it.
+   */
+  grammarTerms?: string[];
   /** Presentation is optional so future lectures do not inherit Lesson 1. */
   presentation?: LecturePresentation;
   objectives: string[];

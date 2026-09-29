@@ -144,6 +144,10 @@ Episode 1 therefore uses an original consolidation mission inside Stigen, clearl
 
 **Homework: Personal pronouns** maps to Episode 2. The guided and checkpoint items practise the same choices (de for two others, ni for two listeners) with original sentences.
 
+## Grammar side notes
+
+The learner speaks English but is new to grammar terminology. Both lectures list the grammar words they use (`grammarTerms`), defined once in `site/content/grammar-terms.json`. Lecture 1: chunk, vowel, consonant, front vowel (soft vowel), back vowel (hard vowel), syllable, stress, dialect, loanword. Lecture 2: verb, subject, pronoun, singular and plural, noun, compound word, adjective, question word, word order, verb second (V2), yes/no question, formal and informal, spoken form. Lecture 2's wording now names the terms it teaches (singular/plural for du/ni, nouns for family words, compound words, and "question word → verb → subject").
+
 ## Chapter 1 status
 
 | Lecture | Live role | Source-alignment status |

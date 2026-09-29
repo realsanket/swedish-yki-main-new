@@ -50,6 +50,10 @@ across all four fields.
 - `teaching.resourceIntro`: supplies context appropriate to that lecture's resources.
 - `hero`: opts into a specialised hero and owns every learner-facing string inside it.
 
+## Grammar words in plain English
+
+The learner speaks English but has not studied grammar, so words like *verb*, *subject*, or *front vowel* need explaining. Every definition lives once in `content/grammar-terms.json` (plain explanation, a familiar English example, a Swedish example, and an optional tip). A lecture lists the ids it uses in `grammarTerms`. The teaching step then underlines those words wherever they appear in section text, example notes, and activity feedback; tapping one opens a short note and highlights it in a side column that shows only the words the current topic uses. When a new lecture needs a new grammar word, add it to the glossary with its aliases (longer aliases win, so "front vowel" beats "vowel") and list its id in the lecture.
+
 ## Adding a future lecture
 
 1. Read and verify that teacher lesson first. Do not begin from the Lecture 1 layout.

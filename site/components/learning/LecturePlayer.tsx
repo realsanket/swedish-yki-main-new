@@ -48,6 +48,8 @@ import EpisodeBrief from "./EpisodeBrief";
 import IntroductionBuilder from "./IntroductionBuilder";
 import { SourcePagePracticeSet } from "./SourcePagePractice";
 import TeachingActivity, { DEFAULT_ACTIVITY_LABEL } from "./activities/TeachingActivity";
+import { GlossaryProvider, GlossText, GrammarSideNotes } from "./GrammarNotes";
+import { grammarTermsFor, termsInText } from "@/lib/grammar-terms";
 import StoryScene from "./StoryScene";
 import { StoryAvatar } from "./StoryAvatar";
 import YkiMockFlow from "./YkiMockFlow";
@@ -235,6 +237,7 @@ export default function LecturePlayer({
   const dialoguePart = dialoguePresentation?.part ?? "teach";
   const teachingPresentation = presentation?.teaching;
   const templateClass = `lecture-template-${presentation?.template ?? "standard"}`;
+  const lectureGrammarTerms = grammarTermsFor(lecture.grammarTerms);
   const ykiMock = routeProfile.id === "yki-mock" ? getYkiMock(lecture.number) : undefined;
   const ykiWorkshop = routeProfile.id === "yki-workshop";
   // A workshop chooses its first-attempt skill in content. Lecture numbers do
@@ -600,6 +603,7 @@ export default function LecturePlayer({
       );
     });
   return (
+    <GlossaryProvider terms={lectureGrammarTerms}>
     <div className={`course-space lecture-workspace ${templateClass}`}>
       <div className="lecture-toolbar">
         <button
@@ -964,14 +968,26 @@ export default function LecturePlayer({
                   : !isLastTopic
                     ? `Next topic: ${lecture.sections[sectionIdx + 1]?.title}`
                     : "Teaching complete";
+                const topicGrammarTerms = termsInText(
+                  [
+                    ...currentSection.body,
+                    currentSection.memoryTip ?? "",
+                    currentSection.tryIt ?? "",
+                    ...currentSection.examples.map((example) => example.note ?? ""),
+                    ...sectionActivities(currentSection).map((activity) => JSON.stringify(activity)),
+                  ],
+                  lectureGrammarTerms,
+                );
                 return (
                   <>
+                    <div className={lectureGrammarTerms.length ? "teach-with-notes" : undefined}>
+                    <div className="teach-with-notes-main">
                     <div className="teacher-note teacher-note-coach">
                       <StoryAvatar name="Henrik" size={58} />
                       <div>
                         <span className="teacher-note-label">HENRIK &middot; SWEDISH COACH</span>
                         <h3>{kindMeta.note}: {currentSection.title}</h3>
-                        <p>{ruleBody[0]}</p>
+                        <p><GlossText text={ruleBody[0]} /></p>
                       </div>
                     </div>
                     <div className="teach-pagination-header">
@@ -1006,28 +1022,28 @@ export default function LecturePlayer({
                       </nav>
                       <div className="teaching-beat-intro">
                         <b>{activeBeat.label}</b>
-                        <p>{activeBeat.description}</p>
+                        <p><GlossText text={activeBeat.description} /></p>
                       </div>
 
                       {activeBeat.id === "understand" && (
                         sectionKind === "rule" ? (
                           <ol className="teaching-rules">
                             {ruleBody.map((rule, j) => (
-                              <li key={j}>{rule}</li>
+                              <li key={j}><GlossText text={rule} /></li>
                             ))}
                           </ol>
                         ) : (
                           <div className="teaching-understand">
                             <div className="teaching-story-lead">
                               <span>{sectionKind === "register" ? "THE SPLIT" : "START HERE"}</span>
-                              <p>{ruleBody[0]}</p>
+                              <p><GlossText text={ruleBody[0]} /></p>
                             </div>
                             {ruleBody.length > 1 && (
                               <div className="teaching-notices">
                                 {ruleBody.slice(1).map((paragraph, index) => (
                                   <div key={paragraph}>
                                     <span>{index + 1}</span>
-                                    <p>{paragraph}</p>
+                                    <p><GlossText text={paragraph} /></p>
                                   </div>
                                 ))}
                               </div>
@@ -1071,7 +1087,7 @@ export default function LecturePlayer({
                               <div>
                                 <p lang="sv">{example.fi}</p>
                                 <p>{example.en}</p>
-                                {example.note && <small>{example.note}</small>}
+                                {example.note && <small><GlossText text={example.note} /></small>}
                               </div>
                               <AudioButton
                                 text={example.fi}
@@ -1100,13 +1116,13 @@ export default function LecturePlayer({
                           {currentSection.tryIt && (
                             <aside className="lesson-try-it">
                               <span>DO IT NOW</span>
-                              <p>{currentSection.tryIt}</p>
+                              <p><GlossText text={currentSection.tryIt} /></p>
                             </aside>
                           )}
                           {currentSection.memoryTip && (
                             <aside className="lesson-memory-tip">
                               <span>MEMORY BRIDGE</span>
-                              <p>{currentSection.memoryTip}</p>
+                              <p><GlossText text={currentSection.memoryTip} /></p>
                             </aside>
                           )}
                         </div>
@@ -1163,6 +1179,9 @@ export default function LecturePlayer({
                           {nextLabel} &rarr;
                         </button>
                       )}
+                    </div>
+                    </div>
+                    {lectureGrammarTerms.length > 0 && <GrammarSideNotes terms={topicGrammarTerms} />}
                     </div>
                     {isFinalTeachingBeat && (
                       <>
@@ -1637,5 +1656,6 @@ export default function LecturePlayer({
         </div>
       </div>
     </div>
+    </GlossaryProvider>
   );
 }

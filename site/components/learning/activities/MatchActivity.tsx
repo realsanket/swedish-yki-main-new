@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { Check, RotateCcw } from "lucide-react";
 import type { MatchActivity as MatchActivityData } from "@/lib/course-types";
 import AudioButton from "../AudioButton";
+import { GlossText } from "../GrammarNotes";
 import { seededShuffle } from "./shared";
 import styles from "./TeachingActivity.module.css";
 
@@ -92,7 +93,7 @@ export default function MatchActivity({ activity }: { activity: MatchActivityDat
       )}
       {complete && (
         <div className={styles.sortResult}>
-          {activity.pattern && <p><b>The pattern:</b> {activity.pattern}</p>}
+          {activity.pattern && <p><b>The pattern:</b> <GlossText text={activity.pattern} /></p>}
           <button
             type="button"
             className="secondary"
