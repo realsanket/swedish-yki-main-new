@@ -1,4 +1,12 @@
-export const storyCharacters = {
+export const storyCharacterNames = ["Alex", "Aino", "Sami"] as const;
+
+export type StoryCharacterName = (typeof storyCharacterNames)[number];
+
+export const storyCharacters: Record<StoryCharacterName, {
+  name: StoryCharacterName;
+  role: string;
+  image: string;
+}> = {
   Alex: {
     name: "Alex",
     role: "the learner",
@@ -14,9 +22,7 @@ export const storyCharacters = {
     role: "the teacher",
     image: "/images/onboarding/characters/sami.webp",
   },
-} as const;
-
-export type StoryCharacterName = keyof typeof storyCharacters;
+};
 
 export type StoryChapter = {
   number: number;

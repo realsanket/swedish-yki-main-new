@@ -14,6 +14,7 @@ import {
   Sparkles,
   Users,
 } from "lucide-react";
+import AudioButton from "./AudioButton";
 
 const characters = [
   {
@@ -21,18 +22,24 @@ const characters = [
     role: "The learner",
     image: "/images/onboarding/characters/alex.webp",
     copy: "Alex makes the first attempt: greeting someone and building four simple lines about himself.",
+    sv: "Hej! Jag heter Alex.",
+    en: "Hello! My name is Alex.",
   },
   {
     name: "Aino",
     role: "The conversation partner",
     image: "/images/onboarding/characters/aino.webp",
     copy: "Aino gives the language a purpose. She listens, replies naturally, and keeps the first conversation moving.",
+    sv: "Hej Alex! Vad heter du?",
+    en: "Hello Alex! What is your name?",
   },
   {
     name: "Sami",
     role: "The teacher",
     image: "/images/onboarding/characters/sami.webp",
     copy: "Sami slows down one sound idea at a time, then sends the language straight back into the conversation.",
+    sv: "Lyssna först. Försök sedan själv.",
+    en: "Listen first. Then try it yourself.",
   },
 ] as const;
 
@@ -185,6 +192,22 @@ export default function CourseOrientation({
                     <span>{item.role}</span>
                     <h3>{item.name}</h3>
                     <p>{item.copy}</p>
+                    <div className="orientation-character-voices" aria-label={`${item.name} voice previews`}>
+                      <AudioButton
+                        text={item.sv}
+                        speaker={item.name}
+                        language="sv"
+                        label="Svenska"
+                        className="orientation-voice-button"
+                      />
+                      <AudioButton
+                        text={item.en}
+                        speaker={item.name}
+                        language="en"
+                        label="English"
+                        className="orientation-voice-button"
+                      />
+                    </div>
                   </div>
                 </article>
               ))}

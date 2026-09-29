@@ -9,6 +9,7 @@ import {
   MessageSquare,
   Mic,
   AudioLines,
+  Volume2,
   Circle,
   RefreshCw,
   ArrowRight,
@@ -25,6 +26,7 @@ type AIStatus = {
   capabilities: {
     feedback: boolean;
     transcription: boolean;
+    characterVoices: boolean;
     liveVoice: boolean;
   };
 };
@@ -41,6 +43,12 @@ const features = [
     title: "Recording transcription",
     description: "Turn a Swedish recording into editable text.",
     icon: Mic,
+  },
+  {
+    key: "characterVoices",
+    title: "Character voices",
+    description: "Alex, Aino, and Sami keep their own voice in Swedish and English.",
+    icon: Volume2,
   },
   {
     key: "liveVoice",
@@ -188,6 +196,7 @@ export default function SettingsView({
                       ? `${providerName} is connected for the available AI practice features.`
                       : ai.signedIn &&
                           !ai.capabilities?.transcription &&
+                          !ai.capabilities?.characterVoices &&
                           !ai.capabilities?.liveVoice
                         ? "AI is not configured yet. Model answers and self-review are available."
                         : "Each AI practice feature is checked separately."}

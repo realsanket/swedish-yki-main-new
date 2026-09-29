@@ -3,7 +3,7 @@
 import { MessageCircleMore, Volume2 } from "lucide-react";
 import { useId, useState } from "react";
 import type { CourseLecture } from "@/lib/course";
-import type { StoryChapter } from "@/lib/story-world";
+import { storyCharacterForSpeaker, type StoryChapter } from "@/lib/story-world";
 import AudioButton from "./AudioButton";
 import { StoryAvatar } from "./StoryAvatar";
 
@@ -43,6 +43,11 @@ export default function StoryScene({
         <div className="story-scene-actions">
           <AudioButton
             text={dialogue.map((line) => line.fi).join(" ")}
+            segments={dialogue.map((line) => ({
+              text: line.fi,
+              speaker: storyCharacterForSpeaker(line.speaker)?.name ?? "Sami",
+              language: "sv",
+            }))}
             label="Listen once"
             className="story-scene-play"
           />
@@ -66,11 +71,22 @@ export default function StoryScene({
                 <p lang="sv">{line.fi}</p>
                 <details>
                   <summary>English support</summary>
-                  <p>{line.en}</p>
+                  <div className="story-line-translation">
+                    <p>{line.en}</p>
+                    <AudioButton
+                      text={line.en}
+                      speaker={storyCharacterForSpeaker(line.speaker)?.name ?? "Sami"}
+                      language="en"
+                      label={`Hear ${line.speaker} in English`}
+                      className="icon-button"
+                    />
+                  </div>
                 </details>
               </div>
               <AudioButton
                 text={line.fi}
+                speaker={storyCharacterForSpeaker(line.speaker)?.name ?? "Sami"}
+                language="sv"
                 label={`Hear ${line.speaker}'s line`}
                 className="icon-button"
               />

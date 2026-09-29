@@ -69,6 +69,17 @@ export function getSpeechConfig(env: Environment = process.env) {
   return { endpoint, key, apiVersion: env.AZURE_SPEECH_API_VERSION?.trim() || "2025-10-15" };
 }
 
+export function getSpeechSynthesisConfig(env: Environment = process.env) {
+  const endpoint = secureEndpoint(
+    env.AZURE_SPEECH_TTS_ENDPOINT,
+    "/cognitiveservices/v1",
+  );
+  const key =
+    env.AZURE_SPEECH_API_KEY?.trim() || env.AZURE_OPENAI_API_KEY?.trim();
+  if (!endpoint || !key) return null;
+  return { endpoint, key };
+}
+
 export function aiProvider(env: Environment = process.env): "azure" | "openai" | null {
   if (getAzureConfig(env)) return "azure";
   return env.OPENAI_API_KEY?.trim() ? "openai" : null;
@@ -78,6 +89,7 @@ export function aiCapabilities(env: Environment = process.env) {
     feedback: Boolean(aiProvider(env)),
     lectureCoach: Boolean(aiProvider(env)),
     transcription: Boolean(getSpeechConfig(env) || aiProvider(env) === "openai"),
+    characterVoices: Boolean(getSpeechSynthesisConfig(env)),
     liveVoice: Boolean(getAzureConfig(env)?.voiceModel),
   };
 }
