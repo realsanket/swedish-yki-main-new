@@ -14,12 +14,12 @@ type Props = {
   onTranscript?: (text: string) => boolean;
   onActiveChange?: (active: boolean) => void;
 };
-type LiveEvent = { type?: unknown; delta?: unknown; reason?: unknown; error?: { message?: unknown; code?: unknown } };
+type LiveEvent = { type?: unknown; delta?: unknown; transcript?: unknown; reason?: unknown; error?: { message?: unknown; code?: unknown } };
 const MAX_SECONDS = 180;
 const MAX_TRANSCRIPT = 20000;
 const noOp = () => {};
 
-/** GPT-Live uses session.* events; it is a different protocol from Realtime. */
+/** Azure OpenAI Realtime GA sends media over WebRTC and events here. */
 export default function LiveVoice({ taskId, available, signedIn, disabled = false, mode = "conversation", onTranscript, onActiveChange = noOp }: Props) {
   const [phase, setPhase] = useState<Phase>("idle");
   const [muted, setMuted] = useState(false);
@@ -42,7 +42,6 @@ export default function LiveVoice({ taskId, available, signedIn, disabled = fals
   const disconnectTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const durationTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const durationTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const closingTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const closing = useRef(false);
   const transcripts = useRef({ learner: "", coach: "" });
   const active = phase === "connecting" || phase === "live" || phase === "closing";
@@ -56,8 +55,7 @@ export default function LiveVoice({ taskId, available, signedIn, disabled = fals
     if (disconnectTimer.current) clearTimeout(disconnectTimer.current);
     if (durationTimer.current) clearInterval(durationTimer.current);
     if (durationTimeout.current) clearTimeout(durationTimeout.current);
-    if (closingTimer.current) clearTimeout(closingTimer.current);
-    startupTimer.current = disconnectTimer.current = durationTimeout.current = closingTimer.current = null;
+    startupTimer.current = disconnectTimer.current = durationTimeout.current = null;
     durationTimer.current = null;
     microphone.current?.getTracks().forEach(track => { track.onended = null; track.stop(); }); microphone.current = null;
     if (speaker.current) { speaker.current.pause(); speaker.current.srcObject = null; speaker.current = null; }
@@ -81,18 +79,12 @@ export default function LiveVoice({ taskId, available, signedIn, disabled = fals
     if (startupTimer.current) clearTimeout(startupTimer.current);
     if (disconnectTimer.current) clearTimeout(disconnectTimer.current);
     if (mounted.current) { setNotice(message); setError(failure); setPhase("closing"); }
-    if (channel.current?.readyState === "open") {
-      try { channel.current.send(JSON.stringify({ type: "session.close" })); } catch { finalize(); return; }
-      // Stop the microphone immediately; briefly keep the event stream open for
-      // session.closed, then always release transport resources.
-      closingTimer.current = setTimeout(finalize, 1000);
-    } else finalize();
+    finalize();
   }, [finalize]);
 
   useEffect(() => {
     mounted.current = true;
     function leavePage() {
-      if (channel.current?.readyState === "open") { try { channel.current.send(JSON.stringify({ type: "session.close" })); } catch { /* Close transports regardless. */ } }
       release();
       if (mounted.current) { setPhase("ended"); setNotice("The conversation ended when you left this page."); onActiveChange(false); }
     }
@@ -159,14 +151,14 @@ export default function LiveVoice({ taskId, available, signedIn, disabled = fals
         let event: LiveEvent;
         try { event = JSON.parse(data) as LiveEvent; } catch { return; }
         if (!event || typeof event !== "object") return;
-        if (event.type === "session.closed") {
-          if (!closing.current) setNotice(event.reason === "expired" ? "The voice session expired. Your transcript is still below." : "The conversation ended. Review your words below.");
-          finalize(); return;
-        }
-        if (event.type === "session.input_transcript.delta" || event.type === "session.output_transcript.delta") {
-          if (typeof event.delta !== "string") return;
-          const role = event.type === "session.input_transcript.delta" ? "learner" : "coach";
-          const next = transcripts.current[role] + event.delta;
+        const learnerTranscript = event.type === "conversation.item.input_audio_transcription.completed" || event.type === "conversation.item.audio_transcription.completed";
+        const coachTranscript = event.type === "response.output_audio_transcript.delta" || event.type === "response.output_text.delta";
+        if (learnerTranscript || coachTranscript) {
+          const fragment = learnerTranscript ? event.transcript : event.delta;
+          if (typeof fragment !== "string" || !fragment) return;
+          const role = learnerTranscript ? "learner" : "coach";
+          const separator = learnerTranscript && transcripts.current[role] ? " " : "";
+          const next = transcripts.current[role] + separator + fragment;
           if (next.length > MAX_TRANSCRIPT) { finish("The transcript limit was reached. Review this conversation before starting another."); return; }
           transcripts.current[role] = next;
           if (role === "learner") setLearnerText(next); else setCoachText(next);
@@ -183,7 +175,7 @@ export default function LiveVoice({ taskId, available, signedIn, disabled = fals
       if (!current()) return;
       const controller = new AbortController(); networkRequest.current = controller;
       const response = await fetch("/api/live", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ sdp: pc.localDescription?.sdp ?? offer.sdp, taskId, exam: false, mode }), signal: controller.signal });
-      const result = await response.json() as { sdp?: string; sessionId?: string; maxDurationSeconds?: number; error?: string };
+      const result = await response.json() as { sdp?: string; maxDurationSeconds?: number; error?: string };
       if (!current()) return;
       if (!response.ok) throw new Error(result.error || "The live voice service is not available right now. Try again shortly.");
       if (typeof result.sdp !== "string" || !result.sdp.startsWith("v=0")) throw new Error("The voice service returned an incomplete connection response. Please try again.");
@@ -206,13 +198,12 @@ export default function LiveVoice({ taskId, available, signedIn, disabled = fals
   function toggleMute() {
     const next = !muted;
     microphone.current?.getAudioTracks().forEach(track => { track.enabled = !next; });
-    if (channel.current?.readyState === "open") { try { channel.current.send(JSON.stringify({ type: next ? "session.input_audio.mute" : "session.input_audio.unmute" })); } catch { finish("The voice connection ended.", "Start again to reconnect your microphone."); return; } }
     setMuted(next);
   }
 
   return <section className={styles.card} aria-label={pronunciationMode ? "Live Swedish pronunciation coach" : "Live Swedish conversation"}>
     <div className={styles.heading}><span className={styles.symbol}><AudioLines size={23} /></span><div><span className={styles.eyebrow}>LIVE VOICE COACH</span><h4>{pronunciationMode ? "Hear it. Say it. Notice one detail." : "A conversation, at your pace."}</h4></div><span className={`${styles.status} ${phase === "live" ? styles.connected : ""}`}>{phase === "live" ? <><i />{muted ? "Mic muted" : "Live"}</> : phase === "connecting" ? "Connecting" : phase === "closing" ? "Ending" : pronunciationMode ? "2 min" : "3 min"}</span></div>
-    <p className={styles.description}>{pronunciationMode ? "A responsive Azure GPT-Live coach models this lesson’s sound focus, leaves room for you to repeat, and gives one gentle cue. You can speak English whenever you need help." : "Practise this lesson with a patient Swedish coach. Speak naturally, ask for help in English, and try your next sentence together."}</p>
+    <p className={styles.description}>{pronunciationMode ? "A responsive Azure Realtime coach models this lesson’s sound focus, leaves room for you to repeat, and gives one gentle cue. You can speak English whenever you need help." : "Practise this lesson with a patient Swedish coach. Speak naturally, ask for help in English, and try your next sentence together."}</p>
     <div className={styles.controls}>
       {active ? <><button className="secondary" onClick={() => finish(pronunciationMode ? "Sound coaching ended. Review the cue above and try again when you are ready." : "Conversation ended. Review your words below.")} disabled={phase === "closing"}><PhoneOff size={16} />{phase === "connecting" ? "Cancel connection" : phase === "closing" ? "Ending…" : pronunciationMode ? "End sound coaching" : "End conversation"}</button>{phase === "live" && <button className="secondary" onClick={toggleMute} aria-pressed={muted}>{muted ? <MicOff size={16} /> : <Mic size={16} />}{muted ? "Unmute" : "Mute microphone"}</button>}<span className={styles.timer}><Clock3 size={14} />{Math.floor(remaining / 60)}:{String(remaining % 60).padStart(2, "0")}</span></> : <button className="primary" disabled={!available || disabled} onClick={start}><Mic size={17} />{phase === "ended" ? pronunciationMode ? "Start sound coaching again" : "Start another conversation" : pronunciationMode ? "Start sound coaching" : "Start conversation"}</button>}
       {needsPlayback && active && <button className="primary" onClick={enablePlayback}><Volume2 size={16} />Enable coach audio</button>}

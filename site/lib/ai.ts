@@ -65,25 +65,9 @@ function secureEndpoint(value: string | undefined, requiredPath = ""): string | 
 export function getAzureConfigs(env: Environment = process.env): AzureConfig[] {
   const feedbackModel = env.AZURE_OPENAI_FEEDBACK_MODEL?.trim() || "gpt-6-luna";
   const voiceModel = env.AZURE_OPENAI_VOICE_MODEL?.trim() || "";
-  const candidates = [
-    {
-      baseUrl: secureEndpoint(env.AZURE_OPENAI_BASE_URL, "/openai/v1"),
-      key: env.AZURE_OPENAI_API_KEY?.trim(),
-    },
-    {
-      baseUrl: secureEndpoint(
-        env.AZURE_OPENAI_BACKUP_BASE_URL,
-        "/openai/v1",
-      ),
-      key: env.AZURE_OPENAI_BACKUP_API_KEY?.trim(),
-    },
-  ];
-  const seen = new Set<string>();
-  return candidates.flatMap(({ baseUrl, key }) => {
-    if (!baseUrl || !key || seen.has(baseUrl)) return [];
-    seen.add(baseUrl);
-    return [{ baseUrl, key, feedbackModel, voiceModel }];
-  });
+  const baseUrl = secureEndpoint(env.AZURE_OPENAI_BASE_URL, "/openai/v1");
+  const key = env.AZURE_OPENAI_API_KEY?.trim();
+  return baseUrl && key ? [{ baseUrl, key, feedbackModel, voiceModel }] : [];
 }
 
 export function getAzureConfig(env: Environment = process.env) {
@@ -153,7 +137,14 @@ export function allowAiRequest(userId: string): boolean {
 
 export function safeOrigin(request: Request): boolean {
   const origin = request.headers.get("origin");
-  return origin === new URL(request.url).origin && request.headers.get("sec-fetch-site") !== "cross-site";
+  if (!origin || request.headers.get("sec-fetch-site") === "cross-site") return false;
+  try {
+    const requestUrl = new URL(request.url);
+    const host = request.headers.get("host")?.trim();
+    const protocol = request.headers.get("x-forwarded-proto")?.split(",")[0].trim() || requestUrl.protocol.slice(0, -1);
+    const browserOrigin = new URL(origin);
+    return browserOrigin.origin === requestUrl.origin || Boolean(host && browserOrigin.origin === `${protocol}://${host}`);
+  } catch { return false; }
 }
 
 export function apiError(message: string, status = 400) {
@@ -222,7 +213,7 @@ async function providerRequest(url: string, headers: Record<string, string>, bod
 
 export async function callOpenAI(path: "responses" | "audio/transcriptions", body: string | FormData): Promise<unknown> {
   const azureConfigs = getAzureConfigs();
-  // Recorded audio uses Azure Speech, not the unrelated GPT-Live deployment.
+  // Recorded audio uses Azure Speech, not the Realtime conversation deployment.
   if (azureConfigs.length && path === "responses") {
     let lastError: unknown;
     for (const [index, azure] of azureConfigs.entries()) {

@@ -10,40 +10,76 @@ credentials server-only and do not add a `NEXT_PUBLIC_` key.
 | Writing and transcript feedback | Azure OpenAI / Microsoft Foundry | `AZURE_OPENAI_BASE_URL`, `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_FEEDBACK_MODEL` |
 | Recorded-speech transcription | Azure Speech fast transcription | `AZURE_SPEECH_ENDPOINT`, the shared resource key, `AZURE_SPEECH_API_VERSION` |
 | Chapter and character audio | Azure Speech text to speech | `AZURE_SPEECH_TTS_ENDPOINT`, the shared resource key |
-| Live speaking partner | Azure GPT Live | `AZURE_OPENAI_BASE_URL`, the shared resource key, `AZURE_OPENAI_VOICE_MODEL` |
+| Live speaking partner | Azure OpenAI Realtime over WebRTC | `AZURE_OPENAI_BASE_URL`, the shared resource key, `AZURE_OPENAI_VOICE_MODEL` |
 
-The Foundry resource key is reused by Speech when `AZURE_SPEECH_API_KEY` is
-empty. Do not duplicate the secret unless Speech is later moved to a different
-resource.
+All connected services use the `main-azure-backup-resource` Foundry resource.
+Its resource key is reused by Speech when `AZURE_SPEECH_API_KEY` is empty. Do
+not duplicate the secret unless Speech is later moved to a different resource.
+
+The project-management endpoint is:
+
+```text
+https://main-azure-backup-resource.services.ai.azure.com/api/projects/main-azure-backup
+```
+
+Runtime model calls use the resource endpoint rather than the project path:
+
+```text
+https://main-azure-backup-resource.openai.azure.com/openai/v1
+```
+
+## Realtime endpoint decision
+
+The deployed server-to-server WebSocket address is:
+
+```text
+wss://main-azure-backup-resource.openai.azure.com/openai/v1/realtime?model=gpt-realtime-2.1-mini
+```
+
+Stigen is a browser application, so it uses the lower-latency GA WebRTC form on
+the same resource instead:
+
+```text
+https://main-azure-backup-resource.openai.azure.com/openai/v1/realtime/calls
+```
+
+The trusted `/api/live` route creates a short-lived Realtime client secret,
+keeps it server-side, and proxies the SDP negotiation. It also enables
+`webrtcfilter=on`, so the Azure key, ephemeral secret, lesson prompt, and
+unfiltered provider events do not reach the browser. Keep only the shared
+`/openai/v1` base URL and
+`AZURE_OPENAI_VOICE_MODEL=gpt-realtime-2.1-mini` in the environment; do not add
+a duplicate WebSocket URL variable.
 
 ## Text-to-speech endpoint decision
 
-The Speech SDK accepts the custom-domain base endpoint:
+Azure Speech transcription uses the resource-level endpoint (without the
+project path):
 
 ```text
-https://main-ai-foundry-3103.cognitiveservices.azure.com/
+https://main-azure-backup-resource.services.ai.azure.com
 ```
 
-Stigen calls the REST API, so it normalizes that base to:
+Text-to-speech uses the matching custom-domain base endpoint:
 
 ```text
-https://main-ai-foundry-3103.cognitiveservices.azure.com/tts/cognitiveservices/v1
+https://main-azure-backup-resource.cognitiveservices.azure.com/
 ```
 
-The custom-domain voice catalog uses:
+Stigen normalizes that base to the REST synthesis endpoint:
 
 ```text
-https://main-ai-foundry-3103.cognitiveservices.azure.com/tts/cognitiveservices/voices/list
+https://main-azure-backup-resource.cognitiveservices.azure.com/tts/cognitiveservices/v1
 ```
 
-The live resource check returned 787 voices. Alex and Aino retain their
-multilingual voices because Azure's Swedish pronunciation assessment recognized
-their sample lines completely with 98/100 word accuracy. Sami now uses native
-`sv-SE-MattiasNeural` for Swedish and keeps
+The consolidated resource returned valid Swedish audio, and its speech service
+recognized the complete loopback sentence “Hej, jag heter Alex och jag bor i
+Finland.” Alex and Aino retain their multilingual voices because earlier Azure
+pronunciation checks recognized their sample lines completely with 98/100 word
+accuracy. Sami uses native `sv-SE-MattiasNeural` for Swedish and keeps
 `en-US-AndrewMultilingualNeural` for English; Mattias achieved 96/100 word
-accuracy and complete recognition on Sami's Swedish sample. A Swedish synthesis
-request returned valid audio. The shorter custom-domain path
-`/cognitiveservices/v1` returned 404 and must not be used for this resource.
+accuracy and complete recognition on Sami's Swedish sample. The Settings voice
+previews remain the source of truth for the currently configured resource.
 
 These scores validate recognition and word accuracy, not human-perceived voice
 quality. Azure Speech does not currently support prosody assessment for Swedish,
@@ -101,7 +137,8 @@ The Azure settings tab deliberately separates these states:
 - [Speech language and voice support](https://learn.microsoft.com/azure/ai-services/speech-service/language-support)
 - [Language learning with Azure Speech](https://learn.microsoft.com/Azure/ai-services/speech-service/language-learning-overview)
 - [Pronunciation Assessment](https://learn.microsoft.com/azure/ai-services/speech-service/how-to-pronunciation-assessment)
-- [GPT Live with WebRTC](https://learn.microsoft.com/azure/foundry/openai/how-to/gpt-live-webrtc)
+- [Azure OpenAI Realtime with WebRTC](https://learn.microsoft.com/azure/foundry/openai/how-to/realtime-audio-webrtc)
+- [Azure OpenAI Realtime REST reference](https://learn.microsoft.com/rest/api/microsoft-foundry/azureopenai/realtime)
 - [Content Understanding prebuilt analyzers](https://learn.microsoft.com/azure/ai-services/content-understanding/concepts/prebuilt-analyzers)
 - [Azure Translator overview](https://learn.microsoft.com/azure/ai-services/translator/text-translation/overview)
 - [Text PII redaction](https://learn.microsoft.com/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii)

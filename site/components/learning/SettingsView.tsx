@@ -105,7 +105,7 @@ const azureServices: Array<{
   },
   {
     key: "liveVoice",
-    service: "Azure GPT Live",
+    service: "Azure OpenAI Realtime",
     variables: [
       "AZURE_OPENAI_BASE_URL",
       "AZURE_OPENAI_API_KEY",
@@ -758,7 +758,7 @@ export default function SettingsView({
                 <h2 id="azure-live-test-heading">Test Swedish voice chat</h2>
               </div>
               <p>
-                This is the real GPT Live path—not a configuration simulation.
+                This is the real Azure OpenAI Realtime WebRTC path—not a configuration simulation.
                 Start it, say “Hej! Jag heter …”, listen for the reply, and end
                 the conversation when you are finished.
               </p>
