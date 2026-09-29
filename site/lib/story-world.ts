@@ -1,3 +1,5 @@
+// Keep this list limited to characters that have passed the introduction gate
+// in docs/character-mapping.md. Source-book names are not runtime characters.
 export const storyCharacterNames = ["Alex", "Aino", "Sami"] as const;
 
 export type StoryCharacterName = (typeof storyCharacterNames)[number];

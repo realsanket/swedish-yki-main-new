@@ -43,12 +43,13 @@ Lecture 1 explicitly opts into `presentation.template: "conversation-first"` and
 ## Adding a future lecture
 
 1. Read and verify that teacher lesson first. Do not begin from the Lecture 1 layout.
-2. Create the new numbered lecture JSON with its actual teaching content.
-3. Leave `presentation` absent until the content shows what the interface needs.
-4. Use existing optional fields only when they fit the teaching purpose.
-5. If the lesson needs a genuinely new visual pattern, add a new template or hero variant in `course-types.ts`, give it an isolated renderer and `.lecture-template-*` CSS scope, and leave existing templates unchanged.
-6. Never add `lecture.number === X` presentation branches to shared components.
-7. Regenerate `content/lectures/index.json`, then run typecheck, lint, build, and visible browser QA.
+2. Check `docs/character-mapping.md`. Reuse Alex, Aino, or Sami when the role is natural; use an unnamed episodic role when continuity is unnecessary. Add a recurring character only after the introduction gate is satisfied.
+3. Create the new numbered lecture JSON with its actual teaching content.
+4. Leave `presentation` absent until the content shows what the interface needs.
+5. Use existing optional fields only when they fit the teaching purpose.
+6. If the lesson needs a genuinely new visual pattern, add a new template or hero variant in `course-types.ts`, give it an isolated renderer and `.lecture-template-*` CSS scope, and leave existing templates unchanged.
+7. Never add `lecture.number === X` presentation branches to shared components.
+8. Regenerate `content/lectures/index.json`, then run typecheck, lint, build, and visible browser QA.
 
 ## Future lecture presentation fragment
 

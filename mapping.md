@@ -22,6 +22,21 @@ The backup is reference material, not part of the live course. Its presence must
 5. Keep learner-facing dialogues and exercises original. Do not reproduce long copyrighted passages or proprietary exercises.
 6. Edit `site/content/lectures/lecture-01.json`, regenerate `site/content/lectures/index.json` from the active numbered lecture files, and verify the running lesson.
 
+## Character mapping rule
+
+The live cast remains **Alex, Aino, and Sami** for Lecture 1. Anna and Tomas's
+opening textbook function is already covered by Aino and Alex, while Sami owns
+the explicit teaching and pronunciation role. Do not add Anna, Tomas, or any of
+the recurring textbook family cast to the runtime merely because they appear in
+the source.
+
+The complete source-role mapping, evidence, five-character ceiling, and
+introduction gate are recorded in
+[`site/docs/character-mapping.md`](site/docs/character-mapping.md). Apply that
+gate before adding a name to `site/lib/story-world.ts`. Mapping a source
+character means preserving the **language function or relationship needed by a
+verified lesson**, not copying the source identity or plot.
+
 ## Verified pilot: Lesson 1
 
 ### Source boundary
