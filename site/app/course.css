@@ -8549,3 +8549,127 @@
 .lecture-title > .lecture-overview-toggle {
   margin-top: 10px;
 }
+
+/* Teaching topics: a picker plus tappable progress segments. */
+.lecture-workspace .teach-pagination-header {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px 18px;
+}
+.topic-picker {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+.topic-picker > summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2px 10px;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+.topic-picker > summary::-webkit-details-marker {
+  display: none;
+}
+.topic-picker > summary .eyebrow {
+  grid-column: 1;
+}
+.topic-picker-current {
+  grid-column: 1;
+  overflow: hidden;
+  color: #173858;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.topic-picker-hint {
+  display: inline-flex;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 12px;
+  border: 1px solid #e2c36a;
+  border-radius: 99px;
+  background: #fff8e5;
+  color: #6b4b0d;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.topic-picker[open] .topic-picker-hint svg {
+  transform: rotate(180deg);
+}
+.topic-picker > ol {
+  display: grid;
+  gap: 6px;
+  margin: 10px 0 4px;
+  padding: 0;
+  list-style: none;
+}
+.topic-picker > ol button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 46px;
+  padding: 8px 12px;
+  border: 1px solid #e5e2d6;
+  border-radius: 12px;
+  background: #fff;
+  color: #173858;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+.topic-picker > ol button > span {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #d8dfe6;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.topic-picker > ol button.done > span {
+  border-color: #83ad88;
+  background: #edf6e9;
+  color: #347059;
+}
+.topic-picker > ol button.current {
+  border-color: #163e6d;
+  background: #edf3f9;
+}
+.topic-picker > ol button.current > span {
+  border-color: #163e6d;
+  background: #163e6d;
+  color: #fff;
+}
+.lecture-workspace .teach-pagination-bar {
+  align-self: center;
+}
+.lecture-workspace .teach-pagination-bar > button {
+  display: block;
+  flex: 1 1 0;
+  min-width: 34px;
+  /* A tall invisible hit area around a thin visible segment. */
+  padding: 12px 2px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.lecture-workspace .teach-pagination-bar > button > span {
+  display: block;
+  height: 6px;
+  border-radius: 99px;
+  background: #eadfc4;
+}
+.lecture-workspace .teach-pagination-bar > button.filled > span {
+  background: #f2b32b;
+}
+.lecture-workspace .teach-pagination-bar > button[aria-current="step"] > span {
+  box-shadow: 0 0 0 2px rgba(22, 62, 109, 0.25);
+}

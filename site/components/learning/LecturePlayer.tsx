@@ -271,6 +271,7 @@ export default function LecturePlayer({
   const pending = useRef<CourseDraftPatch>({});
   const stepHeadingRef = useRef<HTMLDivElement>(null);
   const stepDrawerRef = useRef<HTMLDetailsElement>(null);
+  const topicPickerRef = useRef<HTMLDetailsElement>(null);
   const teachingCardRef = useRef<HTMLElement>(null);
   const beatNavigated = useRef(false);
   const [overviewOpen, setOverviewOpen] = useState(false);
@@ -1038,6 +1039,12 @@ export default function LecturePlayer({
                     setTeachingBeatIdx(0);
                   }
                 };
+                const jumpToTopic = (index: number) => {
+                  beatNavigated.current = true;
+                  setSectionIdx(index);
+                  setTeachingBeatIdx(0);
+                  if (topicPickerRef.current) topicPickerRef.current.open = false;
+                };
                 const nextLabel = !isLastBeat
                   ? `Next: ${teachingBeats[safeBeatIdx + 1]?.label}`
                   : !isLastTopic
@@ -1066,12 +1073,45 @@ export default function LecturePlayer({
                       </div>
                     </div>
                     <div className="teach-pagination-header">
-                      <span className="eyebrow">TEACHING TOPIC {sectionIdx + 1} OF {totalSections}</span>
-                      <div className="teach-pagination-bar" role="progressbar" aria-valuemin={1} aria-valuemax={totalSections} aria-valuenow={sectionIdx + 1} aria-valuetext={`Teaching topic ${sectionIdx + 1} of ${totalSections}: ${currentSection.title}`}>
-                        {lecture.sections.map((_, i) => (
-                          <span key={i} className={i <= sectionIdx ? "filled" : ""} />
+                      {/* Topics are directly reachable: open the list, or tap a segment. */}
+                      <details className="topic-picker" ref={topicPickerRef}>
+                        <summary>
+                          <span className="eyebrow">TEACHING TOPIC {sectionIdx + 1} OF {totalSections}</span>
+                          <span className="topic-picker-current">{currentSection.title}</span>
+                          <span className="topic-picker-hint">
+                            All topics <ChevronDown size={15} aria-hidden="true" />
+                          </span>
+                        </summary>
+                        <ol>
+                          {lecture.sections.map((section, i) => (
+                            <li key={section.title}>
+                              <button
+                                type="button"
+                                className={i === sectionIdx ? "current" : i < sectionIdx ? "done" : ""}
+                                aria-current={i === sectionIdx ? "step" : undefined}
+                                onClick={() => jumpToTopic(i)}
+                              >
+                                <span>{i + 1}</span>
+                                {section.title}
+                              </button>
+                            </li>
+                          ))}
+                        </ol>
+                      </details>
+                      <nav className="teach-pagination-bar" aria-label="Jump to a teaching topic">
+                        {lecture.sections.map((section, i) => (
+                          <button
+                            type="button"
+                            key={section.title}
+                            className={i <= sectionIdx ? "filled" : ""}
+                            aria-label={`Topic ${i + 1}: ${section.title}`}
+                            aria-current={i === sectionIdx ? "step" : undefined}
+                            onClick={() => jumpToTopic(i)}
+                          >
+                            <span />
+                          </button>
                         ))}
-                      </div>
+                      </nav>
                     </div>
                     <section className={`teaching-section teaching-section-${sectionKind}`} ref={teachingCardRef}>
                       <div className="teaching-card-heading">
