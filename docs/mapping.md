@@ -118,6 +118,7 @@ The former Lectures 2–5 are not live Chapter 1 content. Their files are preser
 - Updated title: **Introduce yourself and hear Swedish sounds**.
 - Reworked into five teaching topics, each disclosed through short Understand / See the pattern / Hear it / Try it beats: introduction; vowel mouth map; vowel/consonant length; g/k/sk changes; recognition-only regional spellings.
 - Moved the model conversation before the first questions, kept its text closed for the first listen, restored the source's reciprocal `Och du?` turn, and reduced the opening to two meaning checks.
+- Added the verified textbook physical page 4 as a visible three-mode practice surface: look/listen, accessible line-by-line reading, and cover/recall. The page remains a private reference and the Elin/Alex scene remains the original learner-facing adaptation.
 - Added a personal four-line builder whose result carries into the speaking draft, Azure playback, and an optional live rehearsal.
 - Added an optional Azure pronunciation coach to each sound topic without turning pronunciation into an unsupported automatic score.
 - Added learner-authored Hindi/Marathi/English memory bridges plus a “Do it now” action to each card.

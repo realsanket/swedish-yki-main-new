@@ -45,6 +45,7 @@ import PracticeStudio from "./PracticeStudio";
 import QuestionCard from "./QuestionCard";
 import EpisodeBrief from "./EpisodeBrief";
 import IntroductionBuilder from "./IntroductionBuilder";
+import SourcePagePractice from "./SourcePagePractice";
 import StoryScene from "./StoryScene";
 import { StoryAvatar } from "./StoryAvatar";
 import YkiMockFlow from "./YkiMockFlow";
@@ -201,6 +202,7 @@ export default function LecturePlayer({
   const presentation = lecture.presentation;
   const opening = presentation?.opening;
   const dialoguePresentation = opening?.dialogue;
+  const sourcePractice = opening?.sourcePractice;
   const dialoguePart = dialoguePresentation?.part ?? "teach";
   const teachingPresentation = presentation?.teaching;
   const templateClass = `lecture-template-${presentation?.template ?? "standard"}`;
@@ -750,6 +752,7 @@ export default function LecturePlayer({
                   initiallyOpen={dialoguePresentation?.initiallyOpen}
                 />
               )}
+              {sourcePractice && <SourcePagePractice practice={sourcePractice} />}
               {ykiMock && (
                 <section className="mock-conditions-card">
                   <span className="eyebrow">SET CONDITIONS · {ykiMock.totalMinutes} MINUTES</span>

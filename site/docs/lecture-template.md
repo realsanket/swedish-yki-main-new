@@ -39,6 +39,7 @@ across all four fields.
 - `routeSteps`: overrides only selected learner-facing step labels and descriptions.
 - `opening.teacherNote`: changes the opening guidance without changing shared logic.
 - `opening.questionIntro`: explains how the opening questions should be used.
+- `opening.sourcePractice`: attaches an explicitly verified source-page image, accessible dialogue, listening focus, and recall cues to the opening step. Never infer or reuse a later page.
 - `opening.dialogue.part`: places dialogue in `recall` or `teach`.
 - `opening.dialogue`: controls the dialogue title, eyebrow, instructions, and initial text visibility.
 - `teaching.builder`: attaches a typed task-specific interaction to one explicitly named teaching section. Omit it unless that section genuinely requires the interaction.

@@ -39,6 +39,16 @@ export type CourseQuestion = {
   hint: string;
   explanation: string;
 };
+export type SourcePagePractice = {
+  title: string;
+  image: string;
+  imageAlt: string;
+  note?: string;
+  focus: string[];
+  recallCues: string[];
+  lines: Array<{ speaker: string; voice: string; fi: string; en: string }>;
+};
+
 export type LecturePresentation = {
   /**
    * Selects a visual treatment, not a curriculum structure. A future lecture
@@ -54,6 +64,7 @@ export type LecturePresentation = {
   opening?: {
     teacherNote?: { title: string; body: string };
     questionIntro?: string;
+    sourcePractice?: SourcePagePractice;
     dialogue?: {
       part: "recall" | "teach";
       eyebrow?: string;
