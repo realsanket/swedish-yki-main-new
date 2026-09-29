@@ -135,10 +135,14 @@ async function resolveModule(number, course) {
  */
 export async function resolveVoiceLiveContext(contextId) {
   if (typeof contextId !== "string") return null;
-  const course = await readCourseMap();
-  const episodeMatch = /^(?:lecture|episode)-(\d{1,3})$/.exec(contextId);
-  if (episodeMatch) return resolveEpisode(Number(episodeMatch[1]), course);
-  const moduleMatch = /^module-(\d{1,3})$/.exec(contextId);
-  if (moduleMatch) return resolveModule(Number(moduleMatch[1]), course);
-  return null;
+  try {
+    const course = await readCourseMap();
+    const episodeMatch = /^(?:lecture|episode)-(\d{1,3})$/.exec(contextId);
+    if (episodeMatch) return resolveEpisode(Number(episodeMatch[1]), course);
+    const moduleMatch = /^module-(\d{1,3})$/.exec(contextId);
+    if (moduleMatch) return resolveModule(Number(moduleMatch[1]), course);
+    return null;
+  } catch {
+    return null;
+  }
 }
