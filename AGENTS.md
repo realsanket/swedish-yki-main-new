@@ -253,9 +253,44 @@ Viewing any step is always allowed.
 - **Input grows with the course:** see `site/docs/input-plan.md` (word-count
   targets per stage, easy stories, real Finland-Swedish audio).
 
----
+### Known weaknesses of the lecture template (review, September 30, 2026)
 
-## 9. Status (September 30, 2026)
+An honest review of Lectures 1-2 before they become the template. Fix these in
+the template, not one lecture at a time. Not yet fixed unless marked.
+
+1. **Too much English, too little Swedish.** Each lecture has roughly 4,400-5,700
+   English words to read and only 50-70 words of connected Swedish story. The
+   app mostly explains Swedish in English. Future lectures: cut explanation
+   text, and add easy stories (backlog 1) so Swedish input grows (see
+   `site/docs/input-plan.md`).
+2. **Writing and reading are optional and hidden.** The only required task is
+   speaking; writing sits under a closed "Optional: practise another skill".
+   YKI has four equal parts. From about Lecture 3, alternate the required task
+   (speaking one lecture, a short YKI-style message the next) or require both.
+3. **All audio is synthetic Sweden-Swedish.** Clear and slow, the same four
+   voices, no Finland-Swedish, no natural speed or background noise. YKI
+   listening uses real speakers. Backlog 2 (real Finland-Swedish clips).
+4. **Pronunciation is scored against Sweden-Swedish (sv-SE).** A correct
+   Finland-Swedish sound (for example "sh" in sju) can lose points. Tell the
+   learner this beside every score; never treat a score as a grade.
+5. **Review depends on honest self-rating.** Phrase cards ask "how did it go?"
+   and learners over-rate. Use the recording (transcript or pronunciation
+   score) to suggest the rating.
+6. **Recall happens once per card per session.** Research favours several
+   retrievals in a session and mixing earlier lectures in. The warm-up has only
+   3 earlier phrases; missions use only the current lecture.
+7. **The "Check yourself" step is mostly recognition** (multiple choice). The
+   real check is the spoken mission. Keep production items (type or say the
+   Swedish) in every checkpoint.
+8. **Busy interface.** Seven steps, five textbook stages and five mission
+   stages per lecture. Time spent learning the app is time not spent on
+   Swedish. Keep new lectures on the same steps; add no new step kinds unless
+   the content really needs one.
+9. **Swedish correctness is checked only by the author.** The validator checks
+   structure, not language. Before a lecture goes live, ask the teacher (or a
+   native speaker) to glance at the new Swedish lines.
+
+ (September 30, 2026)
 
 **Done and on `main`:** Lectures 1-2 with textbook steps; grammar side notes;
 mobile layout; in-lecture navigation and topic picker; lecture-owned extra
