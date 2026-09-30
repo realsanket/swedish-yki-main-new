@@ -12,10 +12,14 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "typecheck": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
-    "content:index": "python3 scripts/build-lecture-index.py",
+    "content:index": "npm run content:sync && python3 scripts/build-lecture-index.py",
     "content:check": "python3 scripts/validate-content.py",
     "test:progress": "tsx scripts/course-progress.test.ts",
-    "check": "npm run content:check && npm run typecheck && npm run lint && npm run test:progress"
+    "check": "npm run content:check && npm run typecheck && npm run lint && npm run test:progress",
+    "content:sync": "python3 scripts/sync-textbook-images.py",
+    "precheck": "npm run content:sync",
+    "prebuild": "npm run content:sync",
+    "predev": "npm run content:sync"
   },
   "dependencies": {
     "@azure/ai-voicelive": "^1.1.0",

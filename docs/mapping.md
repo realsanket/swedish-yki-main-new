@@ -4,10 +4,10 @@ This file is the curriculum handoff for humans and AI agents. It records what ha
 
 ## Active course scope
 
-- **Live total:** 2 lectures.
-- **Live structure:** Chapter 1 contains Lectures 1 and 2.
+- **Live total:** 22 lectures.
+- **Live structure:** Six chapters contain the complete textbook phase, Lectures 1–22.
 - **Source spine:** 51 dated teacher lessons in `docs/Group 3.md`, supported first by `docs/text-book-images/text-book.pdf` and later by the YKI preparation book.
-- **Current method:** improve the live lectures one teaching step at a time. Do not activate Lecture 3 or a later chapter until the user explicitly changes the scope.
+- **Current method:** maintain the complete textbook phase. Do not activate Lecture 23 or the YKI-book phase until the owner approves a separate plan.
 - **Former future course:** the old Lectures 2–60, 12-chapter plan, later story registry and artwork were removed on September 30, 2026 and remain only in git history. The old Lecture 2 (names and spelling) did not match teacher Lesson 2; the live Lecture 2 was built from the teacher's Lesson 2.
 - **Template rule:** Lecture 1 opts into its own content-defined presentation. Future lectures use the neutral default unless their verified material requires a different template; never branch on a lecture number.
 
@@ -155,7 +155,7 @@ The learner speaks English but is new to grammar terminology. Both lectures list
 | 1 | Introduce yourself and hear Swedish sounds | **Verified and revised from Lesson 1** |
 | 2 | How are you? People and questions | **Verified and built from Lesson 2 and textbook pages 5–6** |
 
-The former Lectures 3–5 are not live Chapter 1 content. They were removed with the rest of the old future course and remain only in git history.
+Lectures 3–5 are now the active continuation of Chapter 1 and were rebuilt from teacher Lessons 3–5 rather than restored from the deleted future course.
 
 ## Episode 1 implementation record
 
@@ -185,11 +185,11 @@ The former Lectures 3–5 are not live Chapter 1 content. They were removed with
 - Both lectures: the written message is now a required YKI-style task. Lecture 1: a hello to the new class group chat (15-30 words). Lecture 2: an answer to Sara's message "Hej! Hur mår du? Berätta om din familj!" (25-40 words). Both close with Hälsningar and a name.
 - The sj-sound stays as Azure's Sweden-Swedish voices say it (owner's decision).
 
-## Planned mapping: Lectures 3-22 (textbook phase)
+## Source mapping: Lectures 3-22 (textbook phase)
 
-**Status: plan only.** Nothing here is live. Build a lecture only when the owner
-asks, and re-read its exact teacher-note boundary first (section 10 of
-`AGENTS.md`).
+**Status: built and active September 30, 2026.** The mapping below is the source
+record for the live textbook phase. Re-read each exact teacher-note boundary
+before revising a lecture.
 
 ### Where the textbook ends
 
@@ -278,6 +278,169 @@ is planned.
 Chapter 1 today holds only Lectures 1-2. Extend its range only when Lecture 3
 is built.
 
+## Built lecture design notes
+
+### Lecture 3 — What you do, what you can, what you don't
+
+- **Source boundary:** Lesson 3 (lines 218–393), textbook pages 7–8 and Homework 2–5.
+- **Concept map:** the three verb forms and the teacher's `-ar/-er/-r` table feed a sort; `kan/vill/måste/ska/hinner/orkar` feed a help-verb match; `inte` placement and verb-second order feed sorts, guided production and the tired-before-a-test Elin–Alex story.
+- **Accuracy decisions:** `Jag pluggar` expresses both “study” and “am studying”; `Jag är pluggar` is rejected. `bo` and `må` are infinitive exceptions. Original material uses `i morgon`, while the exact page transcription preserves `imorgon`. `Oroa dig inte` is noted as a reflexive imperative pattern.
+- **Swedish input:** approximately 590–650 words, depending on repeated page labels.
+- **Source check:** Homework 2–5 pre-date the lesson but match its content, as the planned mapping records; no new contradiction was found.
+
+### Lecture 4 — Things, work and free time
+
+- **Source boundary:** Lesson 4 (lines 394–511), textbook pages 9–12 and the teacher's free-time prompt.
+- **Concept map:** pages 9–10 introduce `en/ett` and compound gender; page 11 supports `jobbar som` versus `jobbar på`; page 12 supplies `brukar`, leisure language and time phrases. The speaking task combines work or studies with free time, and the writing task is a language-exchange profile.
+- **Accuracy decisions:** professions take no article after `som`; workplaces keep their article; compound gender follows the final noun; `brukar` takes the infinitive. Page 12's `kafe` is transcribed exactly, with standard `kafé` in the usage note.
+- **Swedish input:** approximately 814 words. The four required pages alone contribute about 311, so the 250–600 target conflicts with including every page and the full required template.
+- **Teacher check:** confirm whether `Vad jobbar du med?` should remain the preferred broad beginner prompt over `Vad jobbar du som?`.
+
+### Lecture 5 — Dreams, links and descriptions
+
+- **Source boundary:** Lesson 5 (lines 512–632), textbook pages 13 and 15 (page 14 is a divider), and Homework 6.
+- **Concept map:** dream phrases shape the story and missions; the six linkers feed a match; definite singular endings and en/ett adjective agreement feed sorts, guided practice and the checkpoint.
+- **Accuracy decisions:** corrected source `Min intresse` to `Mitt intresse`; used `YKI-testet`; separated amount word `lite` from adjective `liten`; taught idiomatic `Jag ska ta risken` while preserving page 13's `Jag ska riskera` only for recognition; described adjective agreement rather than saying adjectives follow nouns in word order.
+- **Swedish input:** about 900 words when repeated encounters count, or about 760 across distinct Swedish strings.
+- **Teacher check:** page 13's `Jag ska riskera` is understandable but less idiomatic. The notes' `På skolan läser vi varje dag` may be Finland-Swedish; `I skolan ...` is the safer general production model and is used here.
+
+### Lecture 6 — What happened? The past tense
+
+- **Source boundary:** Lesson 6 (lines 633–730), pages 16–18, Homework 7 and the recurring diary task in Homework 8.
+- **Concept map:** pages 16–18 support reactions, the party retelling, strong-verb recall and `hem/hemma`; sections cover four regular past patterns, common irregular pairs, reactions and location versus direction; speaking and writing retell yesterday.
+- **Accuracy decisions:** one past form serves every person; frequent irregulars are learned as pairs; original material prefers `fantastiska nyheter` and accepts idiomatic `inga pengar`; `hem` is movement and `hemma` location.
+- **Swedish input:** approximately 1,090 words.
+- **Teacher check:** source `Jag hade inte pengar` is possible contrastively but `Jag hade inga pengar` is normally more idiomatic; source `så hon lämnade` is less explicit than `så hon gick därifrån`.
+
+### Lecture 7 — One car, two cars
+
+- **Source boundary:** Lesson 7 (lines 731–835), pages 22–23 (page 21 is a divider), and Homework 9.
+- **Concept map:** the five-group table drives a five-way sort; named exceptions and group-5 jobs/origins have focused practice; `många` versus `mycket` supports the home inventory and shopping message.
+- **Accuracy decisions:** the teacher's clues are presented as clues, not universal rules; `pengar` uses `mycket`; containers allow countable phrases such as `två flaskor vatten`; source cast stays in source practice.
+- **Swedish input:** approximately 1,054 words.
+- **Teacher check:** source `...vi kan träffas...` may be better as `kunde` in careful past narration; `vet många saker` is grammatical but may be less idiomatic than `lär sig många saker`; source `Marvel superhjältar` should normally be `Marvel-superhjältar`.
+
+### Lecture 8 — Diary and good friends
+
+- **Source boundary:** Lesson 8 (lines 836–962), pages 19–20; page 18 was consulted as the earlier strong-verb reference; no new homework, and the diary continues.
+- **Concept map:** past-time ordering and V2 drive a sort and typed production; page 19 models diary form; page 20 supports informal-letter structure and friendship language; `det handlar om` returns throughout.
+- **Accuracy decisions:** the affair plot remains source-only; `den 1:a april` is retained with spoken `den första april`; source `borde` is recognised before its full Lecture 13 treatment; learner letters use `Hej → news → question → Kram`.
+- **Swedish input:** approximately 635 words.
+- **Teacher check:** source `Första dejt med Nora` would normally be `Första dejten med Nora`; `hade fru och barn` may sound more natural with `en fru`; the future meaning of `blir Lena ... besviken` could be clearer with `kommer att bli`.
+- **Plan difference:** page 18 is a reference, not a repeated third source-practice page; the mapped new pages remain 19–20.
+
+### Lecture 9 — Health, pets and shopping
+
+- **Source boundary:** Lesson 9 (lines 963–1109), pages 24–26; no Classroom homework.
+- **Concept map:** the doctor page supports symptoms and duration; pages 25–26 practise unchanged plurals, clothes and adjective forms; three teaching sections cover health, plural groups 4–5 and plural/definite adjectives, while clothes stay in source practice and the word bank.
+- **Accuracy decisions:** `är förkyld` but `har feber`; definite body parts after `ont i`; `den här nya jackan` and `min nya jacka`, never `min nya jackan`; source cast stays source-only.
+- **Swedish input:** approximately 860 words.
+- **Teacher check:** `Jag hoppas vara tillbaka på jobbet i morgon` is standard, though `Jag hoppas att jag kan vara tillbaka ...` may be clearer at A1.
+- **Source ambiguity:** the notes appear to gloss `tycker om` both as “like” and “think about”; only the unambiguous page question `Vad tycker du om ...?` is preserved.
+
+### Lecture 10 — Food, family and a picnic
+
+- **Source boundary:** Lesson 10 (lines 1110–1266), pages 27–31; no Classroom homework.
+- **Concept map:** the picnic story joins shopping, numbers, time and weather; five short sections and five source tabs cover quantities, numbers, family, clock/frequency and weather; speaking presents a family and writing arranges a picnic.
+- **Accuracy decisions:** the source cast remains source-only; learner production uses `i en mataffär` beside source `på`; uses plural `sambor` beside source singular; explains `halv sex` as 17:30; forecasts use simple `blir`.
+- **Swedish input:** approximately 909 words.
+- **Teacher check:** source `Peter är på en mataffär` is less standard than `i`; `De var sambo` should be `De var sambor`; the page's causal link between Nora being young and child-free is semantically awkward.
+
+### Lecture 11 — The things, him and her
+
+- **Source boundary:** Lesson 11 (lines 1267–1353), pages 33–34 plus page 29 for ordinals, Homework 10–11.
+- **Concept map:** definite plural endings, object pronouns, ordinal dates and invitation language drive four sections and both missions.
+- **Accuracy decisions:** written `dem` is distinguished from spoken `dom`; dates use `den + ordinal + month`; the affair plot remains source-only.
+- **Swedish input:** approximately 904 words.
+- **Teacher check:** source `Det fanns många barn som ville ha dem` is retained, though the antecedent is old models/toy cars.
+
+### Lecture 12 — Better, best, and the days of the week
+
+- **Source boundary:** Lesson 12 (lines 1354–1514), pages 35–37, Homework 12.
+- **Concept map:** regular and `mer/mest` comparisons, irregular families, and three weekday meanings feed source practice, activities and comparative review tasks.
+- **Accuracy decisions:** use `den billigaste` before a definite noun; `fler/flest` is for countable plurals and `mer/mest` for amounts; the source affair hint remains isolated.
+- **Swedish input:** approximately 1,103 words. No doubtful lines or contradictions were identified.
+
+### Lecture 13 — Should, may, and don't have to
+
+- **Source boundary:** Lesson 13 (lines 1515–1566), page 38, Homework 13.
+- **Concept map:** past help verbs, `borde`, permission with `får`, and `måste/får inte/behöver inte` drive four sections, source hunt and advice missions.
+- **Accuracy decisions:** do not use `måste inte` for English “must not”; distinguish prohibition from lack of necessity; `brukade` marks a repeated past habit.
+- **Swedish input:** approximately 1,574 words. No doubtful lines or contradictions were identified.
+
+### Lecture 14 — Complaints and directions
+
+- **Source boundary:** Lesson 14 (lines 1567–1676), pages 39–40, Homework 14 and its seven-criteria rubric.
+- **Concept map:** help-verb review supports polite strength; complaint phrases and the rubric shape a formal-email section and task; imperatives and spatial phrases support the directions mission.
+- **Accuracy decisions:** uses source `ni/er`; separates movement `till vänster` from location `på din vänstra sida`; renders the rubric as five plain-English checks.
+- **Swedish input:** approximately 1,218 words.
+- **Teacher check:** page 39's `en bärbar ... från deras Elitebook serie` appears nonstandard (likely `en bärbar dator ... Elitebook-serie`); page 40's stop names `Glass` and `Rött hus` are unusual but transcribed exactly.
+
+### Lecture 15 — Mine, yours and your own
+
+- **Source boundary:** Lesson 15 (lines 1677–1833), pages 42–43 (page 41 is a divider), Homework 15.
+- **Concept map:** Swedish-first possessive tables and sorts, subject/object matching for reflexives, same-owner sorting for `sin/sitt/sina`, and everyday general rules with `man` support ownership and lost-property missions.
+- **Accuracy decisions:** the owned noun controls possessive form; `hans/hennes/deras` do not change; `sin/sitt/sina` refers to the subject of the same clause; `man` connects to `en/sig/sin`; the affair plot remains source-only.
+- **Swedish input:** approximately 1,250–1,450 words.
+- **Teacher check:** source `Jag känner mig dåligt` is replaced in production by `Jag mår dåligt` or `Jag känner mig dålig`; source `Våra dejtar` would normally be `Våra dejter`.
+
+### Lecture 16 — Next year, and what you think
+
+- **Source boundary:** Lesson 16 (lines 1834–1962), pages 44–45, Homework 16–17.
+- **Concept map:** four futures distinguish schedules, controlled plans, intentions and predictions; a second section distinguishes `tycker`, `tror`, `tänker + infinitive` and `tänker på`; missions cover next-year plans and views.
+- **Accuracy decisions:** exact textbook lines remain source-only; guided work explicitly contrasts the pairs tested by the homework.
+- **Swedish input:** approximately 1,357 words.
+- **Teacher check:** page 44's `Jag tänker det skulle bli fint om jag skaffade mig en ny hobby` is awkward/nonstandard but transcribed exactly.
+
+### Lecture 17 — Experiences and personality
+
+- **Source boundary:** Lesson 17 (lines 1963–2076), pages 46, 48 and 49; no homework.
+- **Concept map:** prediction/personality material, `har + supine`, experience time words, strong-verb forms and duration contrasts support a Nordic-experience conversation and new-colleague message.
+- **Accuracy decisions:** `i ... år` expresses duration without claiming it belongs only to the perfect; continuing `har bott` contrasts with finished `bodde`; page 49 stays within its printed forms.
+- **Swedish input:** approximately 1,230 words. No doubtful lines or contradictions were identified.
+
+### Lecture 18 — School years and linked ideas
+
+- **Source boundary:** Lesson 18 (lines 2077–2175), page 50; no homework.
+- **Concept map:** coordinating linkers, fresh main-clause word order and school vocabulary support a Maja–Alex comparison and linked school-memory tasks.
+- **Accuracy decisions:** `grundskola` is “comprehensive school”; `plugghäst` is explained neutrally; page 50's `eftersom` remains source recognition until Lecture 19.
+- **Swedish input:** approximately 1,290 words.
+- **Teacher check:** comma conventions around causal `för` vary; `ta ett sabbatsår efter studenten` is interpreted as after upper-secondary graduation.
+- **Source/plan variance:** Lesson 18 begins with substantial present-perfect review assigned mainly to Lecture 17, and page 50 already contains `eftersom`; both are treated as carry-over/recognition.
+
+### Lecture 19 — Because, when and if
+
+- **Source boundary:** Lesson 19 (lines 2176–2258), optional page-50 revisit omitted; no homework.
+- **Concept map:** six subjunctions, dependent-clause word order and teacher school opinions drive activities, BIFF practice and reasoned school tasks.
+- **Accuracy decisions:** corrected source `Om jag göra ...`; uses `duktig på` a subject and `undervisa någon i` a subject; distinguishes purpose `för att + infinitive`.
+- **Swedish input:** approximately 1,496 words.
+- **Teacher check:** `Jag tycker att lärare inte alltid behöver vara stränga` is grammatical, but moving `inte` to `Jag tycker inte att ...` changes scope and may be more idiomatic for the intended meaning.
+- **Source issue:** `Om jag göra mina hemläxor ...` is ungrammatical, and `bra på skolan`/the “smart” gloss for `duktig` are not used as models.
+
+### Lecture 20 — Work-life balance and the restaurant
+
+- **Source boundary:** Lesson 20 (lines 2259–2375), pages 51–53, the Amira/Vegan questions and “Gör pengar oss lyckliga?”.
+- **Concept map:** work strain, two-sided reasoning and restaurant needs/complaints support a dinner story, restaurant mission and balanced money paragraph; the UR resource retains the teacher's questions.
+- **Accuracy decisions:** teacher typos `Felxtid` and `Räkninh` are corrected/omitted; exact page wording remains source-only.
+- **Swedish input:** approximately 1,511 words.
+- **Teacher check:** page 51's `ganska säker att` normally takes `på att`; page 53 switches from `ni` to `du` mid-dialogue.
+
+### Lecture 21 — Home and environment
+
+- **Source boundary:** Lesson 21 (lines 2376–2491), pages 54–55 and housing-video/ideal-home tasks.
+- **Concept map:** housing needs, environmental cause/result, pointing forms and work vocabulary support Alex's flat search, green choices and a flat-ad reply.
+- **Accuracy decisions:** anonymous page-54 profiles use existing role voices; `den här + definite noun` contrasts with `denna + plain noun`; `på grund av + noun`, `eftersom + clause`, and V2 after `därför` are kept distinct.
+- **Swedish input:** approximately 1,444 words.
+- **Teacher check:** source `en lägenhet på två rum och kök` is less everyday than `en tvåa/en tvårummare`; page 55's immediate `blir veganer` may be clearer as `tänker bli`; marked `Närproducerat kött kan man väl äta?` has a more neutral alternative; check authored `På grund av det lilla köket kan jag inte laga mat med vänner`.
+
+### Lecture 22 — My ideal home, and my opinion
+
+- **Source boundary:** Lesson 22 (lines 2492–2539), no textbook page, with later structural reinforcement from Homework 24 and its argumentative-text PDF.
+- **Concept map:** ideal-home frames, intro/body/conclusion structure and city/country trade-offs support the final spoken home and argued writing missions.
+- **Accuracy decisions:** `Sammanfattningsvis` is the summary marker; `Till slut` remains sequencing; conversational `stan` and standard `staden` are used appropriately; production uses reflexive `koncentrera mig`.
+- **Swedish input:** approximately 1,384 words. No doubtful authored lines were identified.
+- **Source note:** the PDF is image-only for local text extraction, and Homework 24's later topic choices differ from the planned city/country prompt; it is used only as structural reinforcement.
+
 ## Next safe step
 
-Improve Lecture 1 or 2 one visible teaching step at a time, comparing each change with its verified boundary above. Do not activate Lecture 3 or any later chapter without an explicit user request.
+Run native-speaker review on the doubtful lines recorded above and continue the shared-template backlog. Do not activate Lecture 23 or later until the owner requests and approves a separate YKI-book-phase mapping and build plan.

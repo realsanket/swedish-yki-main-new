@@ -1,0 +1,1530 @@
+{
+  "number": 20,
+  "routeProfile": "standard",
+  "objectives": [
+    "Discuss work, stress and work–life balance.",
+    "Weigh two sides with å ena sidan and å andra sidan.",
+    "Order food, explain a dietary need and solve a restaurant problem.",
+    "Write a short argued paragraph about money and happiness."
+  ],
+  "focusSkills": [
+    "speaking",
+    "writing",
+    "listening",
+    "reading",
+    "vocabulary"
+  ],
+  "grammarTerms": [
+    "conjunction",
+    "main-clause",
+    "subordinate-clause",
+    "word-order",
+    "adverb"
+  ],
+  "presentation": {
+    "template": "conversation-first",
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen for work stress and restaurant needs."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Work vocabulary, two-sided arguments, and restaurant phrases."
+      }
+    },
+    "opening": {
+      "teacherNote": {
+        "title": "Listen for the problem",
+        "body": "First catch why Elin is tired and what Alex needs at the restaurant."
+      },
+      "questionIntro": "Answer from the conversation.",
+      "dialogue": {
+        "part": "recall",
+        "eyebrow": "START WITH THE STORY",
+        "title": "Dinner after a long workday",
+        "instructions": "Listen once without text. Then open it and find the two sides of Elin’s choice.",
+        "initiallyOpen": false
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 20",
+        "3 JUNE 2026"
+      ],
+      "kicker": "WORK, BALANCE, DINNER",
+      "title": "Å ena sidan … å andra sidan …",
+      "lede": "Talk about a balanced working life and manage a restaurant visit.",
+      "startLine": {
+        "label": "START WITH TWO SIDES",
+        "fi": "Å ena sidan gillar jag jobbet. Å andra sidan är jag trött.",
+        "en": "On one hand I like the job. On the other hand I am tired.",
+        "audioText": "Å ena sidan gillar jag jobbet. Å andra sidan är jag trött."
+      },
+      "speakers": [
+        {
+          "name": "Elin",
+          "fi": "Jag har jobbat över hela veckan."
+        },
+        {
+          "name": "Alex",
+          "fi": "Då behöver du vila."
+        }
+      ],
+      "connector": "TVÅ SIDOR",
+      "encounterLabel": "Elin and Alex discuss work over dinner",
+      "chunks": [
+        {
+          "label": "ONE SIDE",
+          "fi": "Å ena sidan …",
+          "en": "On one hand …"
+        },
+        {
+          "label": "OTHER SIDE",
+          "fi": "Å andra sidan …",
+          "en": "On the other hand …"
+        },
+        {
+          "label": "DIET",
+          "fi": "Jag tål inte …",
+          "en": "I cannot tolerate …"
+        },
+        {
+          "label": "BILL",
+          "fi": "Kan vi få notan?",
+          "en": "Can we have the bill?"
+        }
+      ],
+      "footerTags": [
+        "Give a reason",
+        "Solve a restaurant problem"
+      ]
+    }
+  },
+  "recall": [
+    {
+      "id": "sv-20-recall-work",
+      "prompt": "Why is Elin tired?",
+      "answers": [
+        "She has worked overtime all week."
+      ],
+      "options": [
+        "She has worked overtime all week.",
+        "She has travelled all week.",
+        "She is ill."
+      ],
+      "hint": "Listen for jobbat över.",
+      "explanation": "Elin says that she has worked overtime all week."
+    },
+    {
+      "id": "sv-20-recall-food",
+      "prompt": "What dietary need does Alex state?",
+      "answers": [
+        "He cannot tolerate gluten."
+      ],
+      "options": [
+        "He cannot tolerate gluten.",
+        "He cannot eat nuts.",
+        "He does not drink coffee."
+      ],
+      "hint": "Listen for Jag tål inte.",
+      "explanation": "Alex says: Jag tål inte gluten."
+    }
+  ],
+  "dialogue": [
+    {
+      "speaker": "Elin",
+      "fi": "Jag har jobbat över hela veckan och känner mig helt slut.",
+      "en": "I have worked overtime all week and feel exhausted."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Det låter jobbigt. Varför har du så stor arbetsbörda?",
+      "en": "That sounds difficult. Why do you have such a heavy workload?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Min kollega är sjukskriven, så jag har fått fler arbetsuppgifter.",
+      "en": "My colleague is on sick leave, so I have received more tasks."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Borde du prata med din chef och kanske jobba deltid ett tag?",
+      "en": "Should you speak with your manager and perhaps work part-time for a while?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Å ena sidan gillar jag mitt jobb. Å andra sidan behöver jag mer tid för att vila.",
+      "en": "On one hand I like my job. On the other hand I need more time to rest."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Hälsan kommer först. Nu äter vi och tänker på något annat.",
+      "en": "Health comes first. Now let us eat and think about something else."
+    },
+    {
+      "speaker": "Servitör",
+      "fi": "Är ni redo att beställa?",
+      "en": "Are you ready to order?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Ja, jag tar grönsakssoppan, men jag tål inte gluten. Är brödet glutenfritt?",
+      "en": "Yes, I’ll have the vegetable soup, but I cannot tolerate gluten. Is the bread gluten-free?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Jag tar pastan. Kan ni sänka musiken lite, tack?",
+      "en": "I’ll have the pasta. Could you lower the music a little, please?"
+    },
+    {
+      "speaker": "Servitör",
+      "fi": "Självklart. Jag kontrollerar också brödet med köket.",
+      "en": "Of course. I will also check the bread with the kitchen."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Tack. När vi har ätit vill vi gärna ha notan.",
+      "en": "Thanks. When we have eaten, we would like the bill."
+    }
+  ],
+  "extraSteps": [
+    {
+      "id": "textbook-pages",
+      "after": "recall",
+      "kind": "source-practice",
+      "label": "Textbook pages 51–53",
+      "description": "Work pressure, balance, and a restaurant conversation.",
+      "minutes": 22,
+      "action": "Work page by page: listen, understand, hunt key phrases, then role-play.",
+      "pages": [
+        {
+          "title": "Textbook page practice: Jobbar du för mycket?",
+          "tabLabel": "Page 51 · Jobbar du för mycket?",
+          "intro": "Three people face different choices about work, responsibility, money, and health.",
+          "image": "/images/source/textbook-lesson-20-page-51.png",
+          "imageAlt": "Textbook page 51, Jobbar du för mycket?",
+          "pageLabel": "textbook physical page 51",
+          "focus": [
+            "jobbar över",
+            "arbetsgivare",
+            "anställda",
+            "arbetsuppgifter",
+            "sjukskriven"
+          ],
+          "recallCues": [
+            "Andreas works as a lawyer in an office in the city centre.",
+            "He often works overtime, but he has a high salary.",
+            "His employer told him that he can become a manager next month.",
+            "Then he will have much more responsibility.",
+            "The other employees like Andreas, so he is quite sure that he will perform well as a manager.",
+            "Lena loves her job and was very happy when she started working again after maternity leave.",
+            "She works full-time but can spend a lot of time with the children because Andreas hired a cleaner to ease their housework burden.",
+            "Lena’s mother will retire next year.",
+            "Now she wants to change to part-time because she has too many tasks and thinks she will burn out.",
+            "If that happens, she will go on sick leave.",
+            "She wants to earn some extra money, but health comes first."
+          ],
+          "lines": [
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Andreas jobbar som advokat på ett kontor mitt i stan.",
+              "en": "Andreas works as a lawyer in an office in the city centre.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Han jobbar ofta över men han har en hög lön.",
+              "en": "He often works overtime, but he has a high salary.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Hans arbetsgivare sa till honom att han kan bli chef nästa månad.",
+              "en": "His employer told him that he can become a manager next month.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Då kommer han att ha mycket mer ansvar.",
+              "en": "Then he will have much more responsibility.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "De andra anställda tycker om Andreas så han är ganska säker att han kommer att prestera bra som chef.",
+              "en": "The other employees like Andreas, so he is quite sure that he will perform well as a manager.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Maja",
+              "fi": "Lena älskar sitt jobb och var mycket glad när hon började jobba igen efter mammaledigheten.",
+              "en": "Lena loves her job and was very happy when she started working again after maternity leave.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Maja",
+              "fi": "Hon jobbar heltid men kan spendera mycket tid med barnen eftersom Andreas hyrde en städare för att underlätta deras hemarbetsbörda.",
+              "en": "She works full-time but can spend a lot of time with the children because Andreas hired a cleaner to ease their housework burden.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Elin",
+              "fi": "Lenas mamma ska gå i pension nästa år.",
+              "en": "Lena’s mother will retire next year.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Elin",
+              "fi": "Nu vill hon byta till deltid eftersom hon har för många arbetsuppgifter och tror att hon kommer att bli utbränd.",
+              "en": "Now she wants to change to part-time because she has too many tasks and thinks she will burn out.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Elin",
+              "fi": "Om det händer blir hon sjukskriven.",
+              "en": "If that happens, she will go on sick leave.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Elin",
+              "fi": "Hon vill tjäna lite extra pengar men hälsan kommer först.",
+              "en": "She wants to earn some extra money, but health comes first.",
+              "glossary": []
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "What is the main idea?",
+              "options": [
+                "Three people face different choices about work, responsibility, money, and health.",
+                "A holiday plan",
+                "Directions through a city"
+              ],
+              "answer": 0,
+              "explanation": "Three people face different choices about work, responsibility, money, and health."
+            },
+            {
+              "prompt": "Which phrase belongs to this page?",
+              "options": [
+                "jobbar över",
+                "Var ligger stationen?",
+                "Jag var på bio i går."
+              ],
+              "answer": 0,
+              "explanation": "Listen for jobbar över."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "Andreas jobbar som advokat på ett kontor mitt i stan.",
+              "natural": "Andreas jobbar som advokat på ett kontor mitt i stan.",
+              "note": "Learn this as a complete useful chunk."
+            }
+          ],
+          "backchain": {
+            "line": 0,
+            "chunks": [
+              "stan.",
+              "Andreas jobbar som advokat på ett kontor mitt i stan."
+            ]
+          },
+          "hunt": {
+            "label": "Phrase hunt",
+            "title": "Find the key work or restaurant phrases.",
+            "instructions": "Tap each phrase, then say its whole sentence.",
+            "missHint": "Look at the marked language on the page.",
+            "spots": [
+              {
+                "word": "jobbar",
+                "mark": "jobbar",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "arbetsgivare",
+                "mark": "arbetsgivare",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "anställda",
+                "mark": "anställda",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "arbetsuppgifter",
+                "mark": "arbetsuppgifter",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "sjukskriven",
+                "mark": "sjukskriven",
+                "rule": "Use this phrase as one chunk."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Textbook page practice: Balansen",
+          "tabLabel": "Page 52 · Balansen",
+          "intro": "Maria and Peter show how pay, enjoyment, security, and health can pull in different directions.",
+          "image": "/images/source/textbook-lesson-20-page-52.png",
+          "imageAlt": "Textbook page 52, Balansen",
+          "pageLabel": "textbook physical page 52",
+          "focus": [
+            "välbetalt",
+            "mental hälsa",
+            "arbetsnarkoman",
+            "säga upp sig",
+            "startade eget"
+          ],
+          "recallCues": [
+            "Maria’s job is not well-paid, but it is fun.",
+            "“You do not perform if you do not like the job,” she usually says.",
+            "She also thinks her mental health is important, so she does not want a stressful job.",
+            "She is satisfied with her secure job at a government agency and teaches her children that money cannot buy everything in life.",
+            "Maria often says that her husband Peter is a workaholic because he does not stop working when he comes home.",
+            "At his previous job, he had a toxic work environment, so he was forced to resign.",
+            "After this, he started his own business and therefore works so much.",
+            "It is not easy to be an entrepreneur! He thinks about work all the time.",
+            "Maria thinks that it is not good for his health. “It was better when he was unemployed,” she says to Lena."
+          ],
+          "lines": [
+            {
+              "speaker": "Text",
+              "voice": "Maja",
+              "fi": "Marias jobb är inte välbetalt men det är roligt.",
+              "en": "Maria’s job is not well-paid, but it is fun.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Maja",
+              "fi": "”Man presterar inte om man inte gillar jobbet”, brukar hon säga.",
+              "en": "“You do not perform if you do not like the job,” she usually says.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Maja",
+              "fi": "Hon tycker också att hennes mentala hälsa är viktig och därför vill hon inte ha ett stressigt jobb.",
+              "en": "She also thinks her mental health is important, so she does not want a stressful job.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Maja",
+              "fi": "Hon är nöjd med sitt trygga jobb på en statlig myndighet och hon lär sina barn att pengar inte kan köpa allt i livet.",
+              "en": "She is satisfied with her secure job at a government agency and teaches her children that money cannot buy everything in life.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Maria brukar säga att hennes man Peter är arbetsnarkoman eftersom han inte slutar med jobbet när han kommer hem.",
+              "en": "Maria often says that her husband Peter is a workaholic because he does not stop working when he comes home.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "På sitt tidigare jobb hade han en giftig arbetsmiljö så han blev tvungen att säga upp sig.",
+              "en": "At his previous job, he had a toxic work environment, so he was forced to resign.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Efter detta startade han eget och därför jobbar han så mycket.",
+              "en": "After this, he started his own business and therefore works so much.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Det är inte lätt att vara entreprenör! Han tänker på jobbet hela tiden.",
+              "en": "It is not easy to be an entrepreneur! He thinks about work all the time.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Maja",
+              "fi": "Maria tycker att det inte är bra för hälsan. ”Det var bättre när han var arbetslös”, säger hon till Lena.",
+              "en": "Maria thinks that it is not good for his health. “It was better when he was unemployed,” she says to Lena.",
+              "glossary": []
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "What is the main idea?",
+              "options": [
+                "Maria and Peter show how pay, enjoyment, security, and health can pull in different directions.",
+                "A holiday plan",
+                "Directions through a city"
+              ],
+              "answer": 0,
+              "explanation": "Maria and Peter show how pay, enjoyment, security, and health can pull in different directions."
+            },
+            {
+              "prompt": "Which phrase belongs to this page?",
+              "options": [
+                "välbetalt",
+                "Var ligger stationen?",
+                "Jag var på bio i går."
+              ],
+              "answer": 0,
+              "explanation": "Listen for välbetalt."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "Marias jobb är inte välbetalt men det är roligt.",
+              "natural": "Marias jobb är inte välbetalt men det är roligt.",
+              "note": "Learn this as a complete useful chunk."
+            }
+          ],
+          "backchain": {
+            "line": 0,
+            "chunks": [
+              "roligt.",
+              "Marias jobb är inte välbetalt men det är roligt."
+            ]
+          },
+          "hunt": {
+            "label": "Phrase hunt",
+            "title": "Find the key work or restaurant phrases.",
+            "instructions": "Tap each phrase, then say its whole sentence.",
+            "missHint": "Look at the marked language on the page.",
+            "spots": [
+              {
+                "word": "välbetalt",
+                "mark": "välbetalt",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "hälsa",
+                "mark": "hälsa",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "arbetsnarkoman",
+                "mark": "arbetsnarkoman",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "giftig",
+                "mark": "giftig",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "arbetslös",
+                "mark": "arbetslös",
+                "rule": "Use this phrase as one chunk."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Textbook page practice: Restaurang",
+          "tabLabel": "Page 53 · Restaurang",
+          "intro": "Diners order drinks and food, state their needs, solve a noise problem, and ask for the bill.",
+          "image": "/images/source/textbook-lesson-20-page-53.png",
+          "imageAlt": "Textbook page 53, Restaurang",
+          "pageLabel": "textbook physical page 53",
+          "focus": [
+            "sänka musiken",
+            "redo att beställa",
+            "veganska alternativ",
+            "tål inte gluten",
+            "få notan"
+          ],
+          "recallCues": [
+            "What would you like to drink?",
+            "I’ll have a glass of wine.",
+            "I do not drink alcohol. A glass of lemon juice, please. And can you lower the music a little?",
+            "Are you ready to order?",
+            "Do you have any vegan options?",
+            "I cannot tolerate gluten; what can you recommend then? And can we change tables? There are children shouting at the table next to us.",
+            "Does the food taste good?",
+            "Yes, it was delicious! Can we have the bill?",
+            "How much should we tip?"
+          ],
+          "lines": [
+            {
+              "speaker": "Servitör",
+              "voice": "Henrik",
+              "fi": "Vad vill ni dricka?",
+              "en": "What would you like to drink?",
+              "glossary": []
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Jag tar ett glas vin.",
+              "en": "I’ll have a glass of wine.",
+              "glossary": []
+            },
+            {
+              "speaker": "En ogift man",
+              "voice": "Alex",
+              "fi": "Jag dricker inte alkohol. Ett glas citronsaft, tack. Och kan ni sänka musiken lite?",
+              "en": "I do not drink alcohol. A glass of lemon juice, please. And can you lower the music a little?",
+              "glossary": []
+            },
+            {
+              "speaker": "Servitör",
+              "voice": "Henrik",
+              "fi": "Är ni redo att beställa?",
+              "en": "Are you ready to order?",
+              "glossary": []
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Har ni några veganska alternativ?",
+              "en": "Do you have any vegan options?",
+              "glossary": []
+            },
+            {
+              "speaker": "En ogift man",
+              "voice": "Alex",
+              "fi": "Jag tål inte gluten, vad kan du rekommendera då? Och kan vi byta bord? Det finns barn som skriker vid bordet bredvid oss.",
+              "en": "I cannot tolerate gluten; what can you recommend then? And can we change tables? There are children shouting at the table next to us.",
+              "glossary": []
+            },
+            {
+              "speaker": "Servitör",
+              "voice": "Henrik",
+              "fi": "Smakar maten bra?",
+              "en": "Does the food taste good?",
+              "glossary": []
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Ja, det var urgott! Kan vi få notan?",
+              "en": "Yes, it was delicious! Can we have the bill?",
+              "glossary": []
+            },
+            {
+              "speaker": "En ogift man",
+              "voice": "Alex",
+              "fi": "Hur mycket ska vi dricksa?",
+              "en": "How much should we tip?",
+              "glossary": []
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "What is the main idea?",
+              "options": [
+                "Diners order drinks and food, state their needs, solve a noise problem, and ask for the bill.",
+                "A holiday plan",
+                "Directions through a city"
+              ],
+              "answer": 0,
+              "explanation": "Diners order drinks and food, state their needs, solve a noise problem, and ask for the bill."
+            },
+            {
+              "prompt": "Which phrase belongs to this page?",
+              "options": [
+                "sänka musiken",
+                "Var ligger stationen?",
+                "Jag var på bio i går."
+              ],
+              "answer": 0,
+              "explanation": "Listen for sänka musiken."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "Vad vill ni dricka?",
+              "natural": "Vad vill ni dricka?",
+              "note": "Learn this as a complete useful chunk."
+            }
+          ],
+          "backchain": {
+            "line": 0,
+            "chunks": [
+              "dricka?",
+              "Vad vill ni dricka?"
+            ]
+          },
+          "hunt": {
+            "label": "Phrase hunt",
+            "title": "Find the key work or restaurant phrases.",
+            "instructions": "Tap each phrase, then say its whole sentence.",
+            "missHint": "Look at the marked language on the page.",
+            "spots": [
+              {
+                "word": "sänka",
+                "mark": "sänka",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "beställa",
+                "mark": "beställa",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "veganska",
+                "mark": "veganska",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "gluten",
+                "mark": "gluten",
+                "rule": "Use this phrase as one chunk."
+              },
+              {
+                "word": "notan",
+                "mark": "notan",
+                "rule": "Use this phrase as one chunk."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "kind": "concept",
+      "title": "Arbete, ansvar och hälsa",
+      "body": [
+        "Lön is pay. An arbetsgivare employs an anställd. Heltid is full-time and deltid is part-time. Att jobba över means to work overtime. A person with too many arbetsuppgifter may have a heavy arbetsbörda, become utbränd, or need to be sjukskriven. Put health before performance."
+      ],
+      "examples": [
+        {
+          "fi": "Jag jobbar heltid men jag jobbar sällan över.",
+          "en": "I work full-time, but I seldom work overtime."
+        },
+        {
+          "fi": "Min arbetsgivare ger mig många arbetsuppgifter.",
+          "en": "My employer gives me many tasks."
+        },
+        {
+          "fi": "Hon är sjukskriven eftersom hon blev utbränd.",
+          "en": "She is on sick leave because she burned out."
+        },
+        {
+          "fi": "Jag vill byta till deltid för att få bättre balans.",
+          "en": "I want to change to part-time to get a better balance."
+        }
+      ],
+      "memoryTip": "Jag jobbar heltid men jag jobbar sällan över.",
+      "tryIt": "Say two new sentences about your own life.",
+      "activity": {
+        "type": "sort",
+        "label": "Work, choice, or health?",
+        "title": "Work, choice, or health?",
+        "instructions": "Sort each item, then say it in a complete sentence.",
+        "buckets": [
+          {
+            "id": "work",
+            "label": "Work facts",
+            "hint": "job, pay, tasks"
+          },
+          {
+            "id": "choice",
+            "label": "A work choice",
+            "hint": "change or resign"
+          },
+          {
+            "id": "health",
+            "label": "Health warning",
+            "hint": "stress or sick leave"
+          }
+        ],
+        "items": [
+          {
+            "fi": "hög lön",
+            "en": "high salary",
+            "bucket": "work",
+            "why": "This is a fact about pay."
+          },
+          {
+            "fi": "säga upp sig",
+            "en": "resign",
+            "bucket": "choice",
+            "why": "This is a decision to leave a job."
+          },
+          {
+            "fi": "byta till deltid",
+            "en": "change to part-time",
+            "bucket": "choice",
+            "why": "This changes working hours."
+          },
+          {
+            "fi": "bli utbränd",
+            "en": "burn out",
+            "bucket": "health",
+            "why": "This is a serious health warning."
+          },
+          {
+            "fi": "vara sjukskriven",
+            "en": "be on sick leave",
+            "bucket": "health",
+            "why": "This concerns health and absence."
+          },
+          {
+            "fi": "jobba över",
+            "en": "work overtime",
+            "bucket": "work",
+            "why": "This describes working beyond normal hours."
+          }
+        ],
+        "summary": "Say one sentence from each group aloud."
+      }
+    },
+    {
+      "kind": "concept",
+      "title": "Å ena sidan, å andra sidan",
+      "body": [
+        "Use the pair to weigh two sides of one question. Each phrase can begin a main clause, so the verb comes before the subject: Å ena sidan är lönen hög. Å andra sidan har jag lite fritid. You can then state your view with För mig … and support it with eftersom."
+      ],
+      "examples": [
+        {
+          "fi": "Å ena sidan sparar jag tid när jag jobbar hemifrån.",
+          "en": "On one hand I save time when I work from home."
+        },
+        {
+          "fi": "Å andra sidan saknar jag mina kollegor.",
+          "en": "On the other hand I miss my colleagues."
+        },
+        {
+          "fi": "För mig är balansen viktigast eftersom hälsan kommer först.",
+          "en": "For me, balance is most important because health comes first."
+        },
+        {
+          "fi": "Pengar kan göra livet lättare, men de kan inte köpa allt.",
+          "en": "Money can make life easier, but it cannot buy everything."
+        }
+      ],
+      "memoryTip": "Å ena sidan sparar jag tid när jag jobbar hemifrån.",
+      "tryIt": "Say two new sentences about your own life.",
+      "activity": {
+        "type": "sort",
+        "label": "Which side?",
+        "title": "Which side?",
+        "instructions": "Sort each item, then say it in a complete sentence.",
+        "buckets": [
+          {
+            "id": "plus",
+            "label": "Advantage",
+            "hint": "a benefit"
+          },
+          {
+            "id": "minus",
+            "label": "Disadvantage",
+            "hint": "a cost"
+          },
+          {
+            "id": "view",
+            "label": "Own view",
+            "hint": "your conclusion"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Man behöver inte pendla.",
+            "en": "You do not need to commute.",
+            "bucket": "plus",
+            "why": "This saves time."
+          },
+          {
+            "fi": "Man träffar färre kollegor.",
+            "en": "You meet fewer colleagues.",
+            "bucket": "minus",
+            "why": "This can feel lonely."
+          },
+          {
+            "fi": "Lönen är lägre.",
+            "en": "The salary is lower.",
+            "bucket": "minus",
+            "why": "This is a financial cost."
+          },
+          {
+            "fi": "Man får mer tid att vila.",
+            "en": "You get more time to rest.",
+            "bucket": "plus",
+            "why": "This supports health."
+          },
+          {
+            "fi": "För mig är deltid bäst.",
+            "en": "For me part-time is best.",
+            "bucket": "view",
+            "why": "This states a conclusion."
+          }
+        ],
+        "summary": "Say one sentence from each group aloud."
+      }
+    },
+    {
+      "kind": "concept",
+      "title": "På restaurang",
+      "body": [
+        "Order with Jag tar … or Jag skulle vilja ha …. Say a dietary need before ordering: Jag tål inte gluten. Ask Har ni några veganska alternativ? If something is wrong, begin with Ursäkta and make a concrete request. Notan is the bill at a restaurant; kvittot is the receipt."
+      ],
+      "examples": [
+        {
+          "fi": "Jag skulle vilja ha dagens soppa, tack.",
+          "en": "I would like today’s soup, please."
+        },
+        {
+          "fi": "Jag tål inte gluten. Är soppan glutenfri?",
+          "en": "I cannot tolerate gluten. Is the soup gluten-free?"
+        },
+        {
+          "fi": "Ursäkta, maten är kall. Kan ni värma den?",
+          "en": "Excuse me, the food is cold. Can you warm it?"
+        },
+        {
+          "fi": "Kan vi byta bord och få notan, tack?",
+          "en": "Can we change tables and have the bill, please?"
+        }
+      ],
+      "memoryTip": "Jag skulle vilja ha dagens soppa, tack.",
+      "tryIt": "Say two new sentences about your own life.",
+      "activity": {
+        "type": "sort",
+        "label": "What are you doing?",
+        "title": "What are you doing?",
+        "instructions": "Sort each item, then say it in a complete sentence.",
+        "buckets": [
+          {
+            "id": "order",
+            "label": "Order",
+            "hint": "choose food or drink"
+          },
+          {
+            "id": "need",
+            "label": "State a need",
+            "hint": "diet or accessibility"
+          },
+          {
+            "id": "solve",
+            "label": "Solve a problem",
+            "hint": "request an action"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Jag tar ett glas vatten.",
+            "en": "I’ll have a glass of water.",
+            "bucket": "order",
+            "why": "This orders a drink."
+          },
+          {
+            "fi": "Har ni några veganska alternativ?",
+            "en": "Do you have vegan options?",
+            "bucket": "need",
+            "why": "This checks a dietary option."
+          },
+          {
+            "fi": "Jag tål inte gluten.",
+            "en": "I cannot tolerate gluten.",
+            "bucket": "need",
+            "why": "This states a dietary need."
+          },
+          {
+            "fi": "Kan ni sänka musiken lite?",
+            "en": "Can you lower the music a little?",
+            "bucket": "solve",
+            "why": "This asks for a change."
+          },
+          {
+            "fi": "Kan vi byta bord?",
+            "en": "Can we change tables?",
+            "bucket": "solve",
+            "why": "This suggests a solution."
+          },
+          {
+            "fi": "Kan vi få notan?",
+            "en": "Can we have the bill?",
+            "bucket": "solve",
+            "why": "This ends the visit politely."
+          }
+        ],
+        "summary": "Say one sentence from each group aloud."
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-20-g1",
+      "prompt": "I often work overtime.",
+      "answers": [
+        "Jag jobbar ofta över."
+      ],
+      "hint": "Jobba över is one phrase.",
+      "explanation": "Jag jobbar ofta över."
+    },
+    {
+      "id": "sv-20-g2",
+      "prompt": "Choose: ___ gillar jag lönen. ___ behöver jag mer fritid.",
+      "answers": [
+        "Å ena sidan / Å andra sidan"
+      ],
+      "options": [
+        "Å ena sidan / Å andra sidan",
+        "Eftersom / Om",
+        "Först / I går"
+      ],
+      "hint": "Show two sides.",
+      "explanation": "Å ena sidan … å andra sidan …"
+    },
+    {
+      "id": "sv-20-g3",
+      "prompt": "I work part-time because the workload is too heavy.",
+      "answers": [
+        "Jag jobbar deltid eftersom arbetsbördan är för stor."
+      ],
+      "hint": "Inte is not needed here.",
+      "explanation": "Jag jobbar deltid eftersom arbetsbördan är för stor."
+    },
+    {
+      "id": "sv-20-g4",
+      "prompt": "How do you say “I cannot tolerate gluten”?",
+      "answers": [
+        "Jag tål inte gluten."
+      ],
+      "hint": "Use tål inte.",
+      "explanation": "Jag tål inte gluten."
+    },
+    {
+      "id": "sv-20-g5",
+      "prompt": "Ask politely if there are vegan options.",
+      "answers": [
+        "Har ni några veganska alternativ?"
+      ],
+      "hint": "Use ni to address the restaurant.",
+      "explanation": "Har ni några veganska alternativ?"
+    },
+    {
+      "id": "sv-20-g6",
+      "prompt": "Ask for the bill.",
+      "answers": [
+        "Kan vi få notan?"
+      ],
+      "options": [
+        "Kan vi få notan?",
+        "Kan vi ta kvittot hemma?",
+        "Var är räkningen huset?"
+      ],
+      "hint": "Notan is the restaurant bill.",
+      "explanation": "Kan vi få notan?"
+    }
+  ],
+  "sittingBreakAfter": "guided",
+  "missionPlan": {
+    "title": "Plan your restaurant conversation",
+    "intro": "Prepare 6–8 lines: order, dietary need, question, problem, response, bill, and one opinion with a reason.",
+    "lines": [
+      {
+        "label": "Order",
+        "before": "Jag tar",
+        "after": ".",
+        "placeholder": "grönsakssoppan"
+      },
+      {
+        "label": "Dietary need",
+        "before": "Jag tål inte",
+        "after": ".",
+        "placeholder": "gluten"
+      },
+      {
+        "label": "Ask",
+        "before": "Har ni",
+        "after": "?",
+        "placeholder": "några veganska alternativ"
+      },
+      {
+        "label": "Problem",
+        "before": "Ursäkta,",
+        "after": ".",
+        "placeholder": "maten är kall"
+      },
+      {
+        "label": "Request",
+        "before": "Kan ni",
+        "after": "?",
+        "placeholder": "byta maten"
+      },
+      {
+        "label": "Opinion and reason",
+        "before": "Jag tycker att restaurangen är bra eftersom",
+        "after": ".",
+        "placeholder": "personalen hjälper oss"
+      },
+      {
+        "label": "Bill",
+        "before": "Kan vi få",
+        "after": "?",
+        "placeholder": "notan"
+      }
+    ]
+  },
+  "practice": {
+    "words": [
+      {
+        "id": "sv-20-word-1",
+        "fi": "jobba över",
+        "en": "work overtime",
+        "example": "Jag jobbar ofta över.",
+        "translation": "work overtime",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-2",
+        "fi": "en lön",
+        "en": "a salary",
+        "example": "Jag har en rimlig lön.",
+        "translation": "a salary",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-3",
+        "fi": "en arbetsgivare",
+        "en": "an employer",
+        "example": "Min arbetsgivare lyssnar.",
+        "translation": "an employer",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-4",
+        "fi": "en anställd",
+        "en": "an employee",
+        "example": "Hon är anställd på ett företag.",
+        "translation": "an employee",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-5",
+        "fi": "ett ansvar",
+        "en": "a responsibility",
+        "example": "Jag har mycket ansvar.",
+        "translation": "a responsibility",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-6",
+        "fi": "en arbetsuppgift",
+        "en": "a work task",
+        "example": "Jag har tre arbetsuppgifter.",
+        "translation": "a work task",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-7",
+        "fi": "en arbetsbörda",
+        "en": "a workload",
+        "example": "Arbetsbördan är för stor.",
+        "translation": "a workload",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-8",
+        "fi": "heltid",
+        "en": "full-time",
+        "example": "Jag jobbar heltid.",
+        "translation": "full-time",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-9",
+        "fi": "deltid",
+        "en": "part-time",
+        "example": "Hon vill jobba deltid.",
+        "translation": "part-time",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-10",
+        "fi": "utbränd",
+        "en": "burned out",
+        "example": "Han blev utbränd.",
+        "translation": "burned out",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-11",
+        "fi": "sjukskriven",
+        "en": "on sick leave",
+        "example": "Hon är sjukskriven.",
+        "translation": "on sick leave",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-12",
+        "fi": "säga upp sig",
+        "en": "resign",
+        "example": "Han måste säga upp sig.",
+        "translation": "resign",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-13",
+        "fi": "välbetalt",
+        "en": "well-paid",
+        "example": "Jobbet är välbetalt.",
+        "translation": "well-paid",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-14",
+        "fi": "en arbetsmiljö",
+        "en": "a work environment",
+        "example": "Vi har en trygg arbetsmiljö.",
+        "translation": "a work environment",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-15",
+        "fi": "å ena sidan",
+        "en": "on one hand",
+        "example": "Å ena sidan är lönen bra.",
+        "translation": "on one hand",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-16",
+        "fi": "å andra sidan",
+        "en": "on the other hand",
+        "example": "Å andra sidan är jobbet stressigt.",
+        "translation": "on the other hand",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-17",
+        "fi": "en fördel",
+        "en": "an advantage",
+        "example": "Det är en stor fördel.",
+        "translation": "an advantage",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-18",
+        "fi": "en nackdel",
+        "en": "a disadvantage",
+        "example": "En nackdel är lönen.",
+        "translation": "a disadvantage",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-19",
+        "fi": "beställa",
+        "en": "order",
+        "example": "Vi är redo att beställa.",
+        "translation": "order",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-20",
+        "fi": "ett veganskt alternativ",
+        "en": "a vegan option",
+        "example": "Har ni ett veganskt alternativ?",
+        "translation": "a vegan option",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-21",
+        "fi": "tåla",
+        "en": "tolerate",
+        "example": "Jag tål inte gluten.",
+        "translation": "tolerate",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-22",
+        "fi": "rekommendera",
+        "en": "recommend",
+        "example": "Vad kan du rekommendera?",
+        "translation": "recommend",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-23",
+        "fi": "byta bord",
+        "en": "change tables",
+        "example": "Kan vi byta bord?",
+        "translation": "change tables",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-24",
+        "fi": "sänka musiken",
+        "en": "lower the music",
+        "example": "Kan ni sänka musiken?",
+        "translation": "lower the music",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-25",
+        "fi": "notan",
+        "en": "the bill",
+        "example": "Kan vi få notan?",
+        "translation": "the bill",
+        "level": "A2"
+      },
+      {
+        "id": "sv-20-word-26",
+        "fi": "dricksa",
+        "en": "tip",
+        "example": "Brukar man dricksa här?",
+        "translation": "tip",
+        "level": "A2"
+      }
+    ],
+    "pronunciation": {
+      "text": "Å ena sidan. Å andra sidan. Arbetsgivare, arbetsbörda, sjukskriven. Jag tål inte gluten. Kan vi få notan?",
+      "tip": "Keep å ena sidan and å andra sidan as steady chunks. Stress the first part of compound work words."
+    },
+    "listening": {
+      "text": "Jonas jobbar heltid på ett kontor. Han gillar sina kollegor men jobbar ofta över. Å ena sidan är lönen bra. Å andra sidan är han trött varje kväll. Nu vill han prata med sin chef om att jobba deltid en period. Han tror att hälsan kommer först, eftersom en hög lön inte hjälper om man blir utbränd.",
+      "question": "Why does Jonas want to discuss part-time work?",
+      "options": [
+        "He is tired every evening.",
+        "He dislikes his colleagues.",
+        "He wants a higher salary."
+      ],
+      "answer": 0,
+      "explanation": "Han är trött varje kväll och vill skydda sin hälsa."
+    },
+    "reading": {
+      "text": "Mira arbetar på ett stort företag i Helsingfors. Jobbet är välbetalt och hon tycker om sina kollegor. Å ena sidan är hon nöjd eftersom hon får intressanta arbetsuppgifter och kan jobba hemifrån två dagar i veckan. Å andra sidan har arbetsbördan blivit för stor. Hon jobbar ofta över och tänker på jobbet även på kvällen. Förra månaden blev en kollega sjukskriven, och då fick Mira ännu mer ansvar. Hennes chef säger att alla måste prestera, men Mira tror att gruppen behöver vila. Hon vill inte bli utbränd. Därför ska hon prata med chefen och föreslå flexiblare arbetstider. Hon kan tänka sig att jobba deltid under sommaren. Då tjänar hon mindre pengar, men hon får mer tid med familjen. För Mira är hälsan viktigare än en hög lön. Hon tycker att pengar kan göra vardagen tryggare, men de kan inte köpa tid, vänskap eller hälsa. På fredag går hon ut och äter med en vän. Mira beställer en vegansk rätt och berättar att hon inte tål gluten. När maten kommer är den kall. Hon säger vänligt: ”Ursäkta, kan ni värma maten?” Servitören hjälper henne genast. Efter maten ber de om notan och lämnar dricks eftersom servicen var bra.",
+      "question": "What will Mira propose to her manager?",
+      "options": [
+        "More flexible working hours",
+        "A higher restaurant bill",
+        "A new office in another city"
+      ],
+      "answer": 0,
+      "explanation": "Hon ska föreslå flexiblare arbetstider."
+    },
+    "reading_passage": {
+      "text": "Mira arbetar på ett stort företag i Helsingfors. Jobbet är välbetalt och hon tycker om sina kollegor. Å ena sidan är hon nöjd eftersom hon får intressanta arbetsuppgifter och kan jobba hemifrån två dagar i veckan. Å andra sidan har arbetsbördan blivit för stor. Hon jobbar ofta över och tänker på jobbet även på kvällen. Förra månaden blev en kollega sjukskriven, och då fick Mira ännu mer ansvar. Hennes chef säger att alla måste prestera, men Mira tror att gruppen behöver vila. Hon vill inte bli utbränd. Därför ska hon prata med chefen och föreslå flexiblare arbetstider. Hon kan tänka sig att jobba deltid under sommaren. Då tjänar hon mindre pengar, men hon får mer tid med familjen. För Mira är hälsan viktigare än en hög lön. Hon tycker att pengar kan göra vardagen tryggare, men de kan inte köpa tid, vänskap eller hälsa. På fredag går hon ut och äter med en vän. Mira beställer en vegansk rätt och berättar att hon inte tål gluten. När maten kommer är den kall. Hon säger vänligt: ”Ursäkta, kan ni värma maten?” Servitören hjälper henne genast. Efter maten ber de om notan och lämnar dricks eftersom servicen var bra.",
+      "gist": {
+        "prompt": "What connects the two parts of the text?",
+        "options": [
+          "Mira protects her needs at work and at a restaurant.",
+          "Mira looks for a new home.",
+          "Mira describes a school."
+        ],
+        "answer": 0,
+        "explanation": "She communicates clearly about balance and dietary needs."
+      },
+      "detail": {
+        "prompt": "Why do Mira and her friend leave a tip?",
+        "options": [
+          "The service was good.",
+          "The food was expensive.",
+          "The music was loud."
+        ],
+        "answer": 0,
+        "explanation": "De lämnar dricks eftersom servicen var bra."
+      }
+    },
+    "speaking": {
+      "prompt": "Role-play a restaurant visit. Order a meal, state one dietary need, ask one question, report one problem, request a solution, ask for the bill, and give one opinion with a reason.",
+      "help": "Jag tar … · Jag tål inte … · Har ni …? · Ursäkta, … · Kan ni …? · Kan vi få notan? · Jag tycker … eftersom …",
+      "model": "Jag tar grönsakssoppan, tack. Jag tål inte gluten. Har ni glutenfritt bröd? Ursäkta, soppan är kall. Kan ni värma den? Jag tycker att servicen är bra eftersom ni hjälper mig. Kan jag få notan, tack?"
+    },
+    "writing": {
+      "prompt": "Write an argued paragraph answering: Gör pengar oss lyckliga?",
+      "situation": "A class discussion asks whether money makes people happy. Write a short balanced answer and state your own view.",
+      "points": [
+        "Introduce the question and state your view.",
+        "Give one positive side with Å ena sidan.",
+        "Give one negative side with Å andra sidan.",
+        "Support your view with at least one reason using eftersom.",
+        "Give a clear final sentence."
+      ],
+      "wordRange": [
+        70,
+        110
+      ],
+      "help": "Jag tycker att … · Å ena sidan … · Å andra sidan … · Pengar kan … · Pengar kan inte … · eftersom … · Därför …",
+      "model": "Gör pengar oss lyckliga? Jag tycker att pengar är viktiga, men de räcker inte för ett lyckligt liv. Å ena sidan ger pengar trygghet. Man kan betala hyran, köpa mat och göra roliga saker med familjen. Å andra sidan kan en hög lön betyda mycket arbete och lite fritid. Pengar kan inte köpa hälsa, kärlek eller goda vänner. För mig är balans viktigast eftersom jag behöver både trygghet och tid med människor jag tycker om. Därför vill jag ha tillräckligt med pengar, men inte arbeta hela tiden."
+    }
+  },
+  "route": {
+    "expectedOutput": "First, perform a 6–8-line restaurant visit with an order, a dietary need, a problem, and a request. Then write 70–110 words about whether money makes us happy.",
+    "transferPrompt": "Change your dietary need or restaurant complaint and perform the conversation again.",
+    "returnPrompt": "Tomorrow, explain one advantage and one disadvantage of your work or studies without looking.",
+    "successChecks": [
+      "I can order politely and state a dietary need.",
+      "I can explain a problem and ask for a solution.",
+      "I can use å ena sidan and å andra sidan to weigh two sides.",
+      "My spoken answer has 6–8 lines and one opinion with a reason.",
+      "My written text covers both sides and is 70–110 words."
+    ],
+    "primarySkill": "speaking",
+    "requiredSkills": [
+      "speaking",
+      "writing"
+    ]
+  },
+  "unplannedQuestions": [
+    {
+      "id": "sv-20-question-1",
+      "fi": "Vad gillar du med ditt jobb eller dina studier?",
+      "en": "What do you like about your job or studies?",
+      "sample": "Jag gillar mina kollegor eftersom de hjälper mig."
+    },
+    {
+      "id": "sv-20-question-2",
+      "fi": "Vad är en nackdel med distansarbete?",
+      "en": "What is one disadvantage of remote work?",
+      "sample": "En nackdel är att man träffar färre människor."
+    },
+    {
+      "id": "sv-20-question-3",
+      "fi": "Är en hög lön viktig för dig?",
+      "en": "Is a high salary important to you?",
+      "sample": "Ja, men fritid är också viktig."
+    },
+    {
+      "id": "sv-20-question-4",
+      "fi": "Vad gör du när arbetet blir stressigt?",
+      "en": "What do you do when work becomes stressful?",
+      "sample": "Jag tar en paus och pratar med min chef."
+    },
+    {
+      "id": "sv-20-question-5",
+      "fi": "Vad brukar du beställa på restaurang?",
+      "en": "What do you usually order at a restaurant?",
+      "sample": "Jag brukar beställa soppa."
+    },
+    {
+      "id": "sv-20-question-6",
+      "fi": "Har du någon specialkost?",
+      "en": "Do you have a special diet?",
+      "sample": "Ja, jag äter veganskt. / Nej, jag har ingen specialkost."
+    }
+  ],
+  "reviewPhrases": [
+    {
+      "id": "sv-20-review-1",
+      "en": "I often work overtime.",
+      "fi": "Jag jobbar ofta över."
+    },
+    {
+      "id": "sv-20-review-2",
+      "en": "I work part-time.",
+      "fi": "Jag jobbar deltid."
+    },
+    {
+      "id": "sv-20-review-3",
+      "en": "On one hand …",
+      "fi": "Å ena sidan …"
+    },
+    {
+      "id": "sv-20-review-4",
+      "en": "On the other hand …",
+      "fi": "Å andra sidan …"
+    },
+    {
+      "id": "sv-20-review-5",
+      "en": "Health comes first.",
+      "fi": "Hälsan kommer först."
+    },
+    {
+      "id": "sv-20-review-6",
+      "en": "I cannot tolerate gluten.",
+      "fi": "Jag tål inte gluten."
+    },
+    {
+      "id": "sv-20-review-7",
+      "en": "Do you have vegan options?",
+      "fi": "Har ni några veganska alternativ?"
+    },
+    {
+      "id": "sv-20-review-8",
+      "en": "Can we have the bill?",
+      "fi": "Kan vi få notan?"
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-20-check-produce",
+      "prompt": "Produce in Swedish: “On one hand the salary is good. On the other hand the job is stressful.”",
+      "answers": [
+        "Å ena sidan är lönen bra. Å andra sidan är jobbet stressigt."
+      ],
+      "hint": "Remember verb-second after each opening phrase.",
+      "explanation": "Å ena sidan är lönen bra. Å andra sidan är jobbet stressigt."
+    },
+    {
+      "id": "sv-20-check-diet",
+      "prompt": "Which sentence states a dietary intolerance?",
+      "answers": [
+        "Jag tål inte gluten."
+      ],
+      "options": [
+        "Jag tål inte gluten.",
+        "Jag gillar inte notan.",
+        "Jag dricksar inte gluten."
+      ],
+      "hint": "Tål means tolerate.",
+      "explanation": "Jag tål inte gluten."
+    },
+    {
+      "id": "sv-20-check-work",
+      "prompt": "What does jobba över mean?",
+      "answers": [
+        "work overtime"
+      ],
+      "options": [
+        "work overtime",
+        "work from home",
+        "resign"
+      ],
+      "hint": "It means work beyond normal hours.",
+      "explanation": "Jobba över means work overtime."
+    },
+    {
+      "id": "sv-20-check-bill",
+      "prompt": "Produce in Swedish: “Can we have the bill?”",
+      "answers": [
+        "Kan vi få notan?"
+      ],
+      "hint": "Use få + notan.",
+      "explanation": "Kan vi få notan?"
+    }
+  ],
+  "assignment": {
+    "title": "Episode 20 mission: Work and dinner",
+    "instructions": "CORE: Perform your restaurant conversation with an order, a dietary need, one problem and a polite solution. Then explain two sides of one work choice.\n\nVIDEO: Watch the Amira är här episode and answer the four questions in the resource.\n\nRETURN: Tomorrow, repeat your two-sided opinion from memory.",
+    "model": "Jag tar grönsakssoppan, tack. Jag tål inte gluten. Är brödet glutenfritt? Ursäkta, soppan är kall. Kan ni värma den? Jag tycker ändå att servicen är bra eftersom ni hjälper mig. Kan jag få notan, tack?"
+  },
+  "takeaways": [
+    "Use clear work words to explain workload, health and choices.",
+    "Use å ena sidan and å andra sidan for two contrasting views.",
+    "State dietary needs with Jag tål inte … or Har ni … alternativ?",
+    "Use polite questions to order, solve a problem and ask for the bill."
+  ],
+  "resources": [
+    {
+      "label": "Amira är här – med stödord: Vegan (UR Play)",
+      "url": "https://urplay.se/program/199763-amira-ar-har-med-stodord-vegan",
+      "description": "Watch and answer: Why was Amira late? What problem did they have at the restaurant? What did the waiter recommend? How did they react?"
+    },
+    {
+      "label": "Svenska Akademiens ordböcker (svenska.se)",
+      "url": "https://svenska.se/",
+      "description": "Check a work or restaurant word."
+    }
+  ]
+}

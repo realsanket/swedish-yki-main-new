@@ -11,6 +11,10 @@ if idx!=L: errs.append('index.json is stale')
 mods=json.load(open('content/modules.json'))
 allq=set(); allw=set()
 gloss={t['id'] for t in json.load(open('content/grammar-terms.json'))['terms']}
+module_numbers=[m['number'] for m in mods['modules']]
+if module_numbers!=list(range(1,len(module_numbers)+1)): errs.append('module numbers must be consecutive from 1')
+for prev,current in zip(mods['modules'],mods['modules'][1:]):
+    if prev['last']+1!=current['first']: errs.append(f"module ranges must be consecutive: {prev['number']} to {current['number']}")
 for l in L:
     for tid in l.get('grammarTerms',[]):
         if tid not in gloss: errs.append(f"{l['number']}: unknown grammar term {tid}")
@@ -33,6 +37,8 @@ for l in L:
     b=t.get('builder')
     if b and b['sectionTitle'] not in titles: errs.append(f'{n}: builder section missing')
     for s in l['sections']:
+      if not isinstance(s.get('body'),list) or not all(isinstance(p,str) and p.strip() for p in s['body']):
+        errs.append(f"{n}: section body must be a non-empty string list: {s.get('title','untitled')}")
       for a in ([s['activity']] if s.get('activity') else [])+s.get('activities',[]):
         if a['type']=='question-gap':
             if a['answerer'] not in ('Alex','Elin','Henrik','Maja'): errs.append(f'{n}: bad answerer')
@@ -53,24 +59,32 @@ for l in L:
                     if x not in f: errs.append(f'{n}: bad feature')
     op=l.get('presentation',{}).get('opening',{})
     rp=l.get('reviewPhrases',[])
+    if not 6<=len(rp)<=10: errs.append(f'{n}: reviewPhrases needs 6-10 phrases')
     if len({x['id'] for x in rp})!=len(rp): errs.append(f'{n}: duplicate review phrase id')
     for x in rp:
         if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,40}',x['id']) or not x['en'].strip() or not x['fi'].strip(): errs.append(f"{n}: bad review phrase {x.get('id')}")
     wr=l['practice']['writing']
+    if not wr.get('points'): errs.append(f'{n}: writing points are required')
+    if 'wordRange' not in wr: errs.append(f'{n}: writing wordRange is required')
     if 'wordRange' in wr:
         r=wr['wordRange']
         if not (isinstance(r,list) and len(r)==2 and all(isinstance(v,int) for v in r) and 0<r[0]<=r[1]): errs.append(f'{n}: writing wordRange must be [fewest, most]')
         if len(wr['model'].split())>r[1]: errs.append(f'{n}: writing model is longer than its wordRange')
     if 'points' in wr and (not wr['points'] or not all(p.strip() for p in wr['points'])): errs.append(f'{n}: writing points must be non-empty')
     uq=l.get('unplannedQuestions',[])
-    if uq and len(uq)<3: errs.append(f'{n}: unplannedQuestions needs at least 3 questions')
+    if len(uq)<6: errs.append(f'{n}: unplannedQuestions needs at least 6 questions')
     if len({x['id'] for x in uq})!=len(uq): errs.append(f'{n}: duplicate unplanned question id')
     for x in uq:
         if not (x['fi'].strip().endswith('?') and x['en'].strip() and x['sample'].strip()): errs.append(f"{n}: bad unplanned question {x.get('id')}")
     mp=l.get('missionPlan')
-    if mp:
+    if not mp: errs.append(f'{n}: missionPlan is required')
+    else:
         for ln in mp['lines']:
             if not ln['label'].strip() or not ln['placeholder'].strip(): errs.append(f'{n}: mission plan line missing label/placeholder')
+    if not l.get('sittingBreakAfter'): errs.append(f'{n}: sittingBreakAfter is required')
+    required=l.get('route',{}).get('requiredSkills',[])
+    if not {'speaking','writing'}.issubset(required): errs.append(f'{n}: route.requiredSkills needs speaking and writing')
+    if not any(not q.get('options') for q in l['checkpoint']): errs.append(f'{n}: checkpoint needs a typed-production item')
     if 'sourcePractice' in op or 'sourcePractices' in op: errs.append(f'{n}: textbook pages belong in extraSteps now')
     parts=['recall','teach','guided','practice','check','assignment']
     steps=l.get('extraSteps',[])

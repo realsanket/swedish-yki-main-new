@@ -1,0 +1,1606 @@
+{
+  "number": 17,
+  "routeProfile": "standard",
+  "objectives": [
+    "Describe your own and another person’s personality.",
+    "Ask and answer questions about life experiences.",
+    "Say how long you have lived somewhere.",
+    "Write a short introduction for a new colleague."
+  ],
+  "focusSkills": [
+    "speaking",
+    "writing",
+    "grammar",
+    "reading",
+    "listening"
+  ],
+  "grammarTerms": [
+    "adjective",
+    "present-perfect",
+    "supine",
+    "regular-irregular",
+    "word-order",
+    "adverb"
+  ],
+  "presentation": {
+    "template": "conversation-first",
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen for travel experiences and personality words."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Personality, present perfect, experience words, and duration."
+      }
+    },
+    "opening": {
+      "teacherNote": {
+        "title": "Listen for experience",
+        "body": "First, catch which countries Alex has visited and how long he has lived in Finland."
+      },
+      "questionIntro": "Answer from the conversation.",
+      "dialogue": {
+        "part": "recall",
+        "eyebrow": "START WITH THE STORY",
+        "title": "Experiences in the Nordic countries",
+        "instructions": "Listen once without text. Then open the text and notice every har + supine pair.",
+        "initiallyOpen": false
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 17",
+        "27 MAY 2026"
+      ],
+      "kicker": "WHAT HAVE YOU DONE?",
+      "title": "Har du varit i Sverige?",
+      "lede": "Describe personality and connect past experiences with life now.",
+      "startLine": {
+        "label": "START WITH ONE QUESTION",
+        "fi": "Har du varit i Sverige någon gång?",
+        "en": "Have you ever been to Sweden?",
+        "audioText": "Har du varit i Sverige någon gång? Jag har bott i Finland i två år."
+      },
+      "speakers": [
+        {
+          "name": "Henrik",
+          "fi": "Vilka länder har du varit i?"
+        },
+        {
+          "name": "Alex",
+          "fi": "Jag har varit i Sverige och Norge."
+        }
+      ],
+      "connector": "HAR + SUPINUM",
+      "encounterLabel": "Henrik asks Alex about Nordic experiences",
+      "chunks": [
+        {
+          "label": "EXPERIENCE",
+          "fi": "Jag har varit …",
+          "en": "I have been …"
+        },
+        {
+          "label": "DURATION",
+          "fi": "Jag har bott här i … år.",
+          "en": "I have lived here for … years."
+        },
+        {
+          "label": "PERSONALITY",
+          "fi": "Hon är omtänksam.",
+          "en": "She is caring."
+        },
+        {
+          "label": "EVER",
+          "fi": "någon gång",
+          "en": "ever"
+        }
+      ],
+      "footerTags": [
+        "Ask about experience",
+        "Say what is still true"
+      ]
+    }
+  },
+  "recall": [
+    {
+      "id": "sv-17-recall-countries",
+      "prompt": "Which Nordic countries has Alex visited?",
+      "answers": [
+        "Sweden and Norway"
+      ],
+      "options": [
+        "Sweden and Norway",
+        "Finland and Iceland",
+        "Denmark and Iceland"
+      ],
+      "hint": "Listen after Jag har varit i.",
+      "explanation": "Alex says: Jag har varit i Sverige och Norge."
+    },
+    {
+      "id": "sv-17-recall-duration",
+      "prompt": "How long has Alex lived in Finland?",
+      "answers": [
+        "Two years"
+      ],
+      "options": [
+        "Two years",
+        "Five years",
+        "Ten years"
+      ],
+      "hint": "Listen for i två år.",
+      "explanation": "Jag har bott här i två år."
+    }
+  ],
+  "dialogue": [
+    {
+      "speaker": "Henrik",
+      "fi": "Alex, vilka nordiska länder har du varit i?",
+      "en": "Alex, which Nordic countries have you visited?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Jag har varit i Sverige och Norge, men jag har aldrig varit på Island.",
+      "en": "I have been to Sweden and Norway, but I have never been to Iceland."
+    },
+    {
+      "speaker": "Henrik",
+      "fi": "Har du ätit laxsoppa någon gång?",
+      "en": "Have you ever eaten salmon soup?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Ja, jag har redan ätit den flera gånger i Helsingfors.",
+      "en": "Yes, I have already eaten it several times in Helsinki."
+    },
+    {
+      "speaker": "Henrik",
+      "fi": "Hur länge har du bott i Finland?",
+      "en": "How long have you lived in Finland?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Jag har bott här i två år. Jag trivs bra här.",
+      "en": "I have lived here for two years. I like it here."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Alex är nyfiken och social. Han provar gärna nya saker.",
+      "en": "Alex is curious and sociable. He likes trying new things."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Tack! Elin är omtänksam, ärlig och mycket pålitlig.",
+      "en": "Thanks! Elin is caring, honest, and very reliable."
+    },
+    {
+      "speaker": "Henrik",
+      "fi": "Vad vill du göra nästa år?",
+      "en": "What do you want to do next year?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Jag tror att jag kommer att resa norrut, för jag har aldrig sett midnattssolen.",
+      "en": "I think I will travel north, because I have never seen the midnight sun."
+    }
+  ],
+  "extraSteps": [
+    {
+      "id": "textbook-pages",
+      "after": "recall",
+      "kind": "source-practice",
+      "label": "Textbook pages 46, 48 and 49",
+      "description": "A prediction and personality page, an experience text, and a strong-verb reference list.",
+      "minutes": 20,
+      "action": "Work page by page. Listen, hunt the key forms, then retell one idea without the text.",
+      "pages": [
+        {
+          "title": "Textbook page practice: Vad kommer att hända nu?",
+          "tabLabel": "Page 46 · Vad kommer att hända nu?",
+          "intro": "Nora looks online for a new partner and the page asks for predictions, descriptions, and advice.",
+          "image": "/images/source/textbook-lesson-17-page-46.png",
+          "imageAlt": "Textbook page 46, Vad kommer att hända nu?",
+          "pageLabel": "textbook physical page 46",
+          "focus": [
+            "nyfikna",
+            "kärlek",
+            "olika",
+            "letar efter",
+            "ärlig",
+            "tålmodig"
+          ],
+          "recallCues": [
+            "What happened to Nora? Are you curious?",
+            "She broke up with Andreas and decided to find love online instead.",
+            "She looks at different profiles in an app and is looking for someone who seems honest, sociable, and patient.",
+            "Do you think she will find such a person?",
+            "Is it possible to find an ideal partner online?",
+            "What should an ideal partner be like, in your opinion?",
+            "Do you have any advice for Nora?",
+            "Please share your thoughts."
+          ],
+          "lines": [
+            {
+              "speaker": "Text",
+              "voice": "Elin",
+              "fi": "Vad hände med Nora? Är ni nyfikna?",
+              "en": "What happened to Nora? Are you curious?",
+              "glossary": [
+                {
+                  "fi": "nyfikna",
+                  "en": "curious, plural"
+                }
+              ]
+            },
+            {
+              "speaker": "Text",
+              "voice": "Maja",
+              "fi": "Hon gjorde slut med Andreas och bestämde sig för att hitta kärlek på nätet istället.",
+              "en": "She broke up with Andreas and decided to find love online instead.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Maja",
+              "fi": "Hon tittar på olika profiler på en app och letar efter någon som verkar vara ärlig, social och tålmodig.",
+              "en": "She looks at different profiles in an app and is looking for someone who seems honest, sociable, and patient.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Elin",
+              "fi": "Tror ni att hon kommer att hitta en sådan person?",
+              "en": "Do you think she will find such a person?",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Elin",
+              "fi": "Är det möjligt att hitta en ideal partner på nätet?",
+              "en": "Is it possible to find an ideal partner online?",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Elin",
+              "fi": "Hurdan ska en ideal partner vara, enligt er?",
+              "en": "What should an ideal partner be like, in your opinion?",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Elin",
+              "fi": "Har ni några råd till Nora?",
+              "en": "Do you have any advice for Nora?",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Elin",
+              "fi": "Dela gärna era tankar.",
+              "en": "Please share your thoughts.",
+              "glossary": []
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "What is the main idea?",
+              "options": [
+                "Nora looks online for a new partner and the page asks for predictions, descriptions, and advice.",
+                "A shopping list",
+                "Directions"
+              ],
+              "answer": 0,
+              "explanation": "Nora looks online for a new partner and the page asks for predictions, descriptions, and advice."
+            },
+            {
+              "prompt": "Which form or phrase is central on this page?",
+              "options": [
+                "nyfikna",
+                "i går",
+                "måste"
+              ],
+              "answer": 0,
+              "explanation": "Listen for nyfikna."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "Vad hände med Nora? Är ni nyfikna?",
+              "natural": "Vad hände med Nora? Är ni nyfikna?",
+              "note": "Listen to the whole phrase as one meaningful chunk, then repeat it."
+            }
+          ],
+          "backchain": {
+            "line": 0,
+            "chunks": [
+              "nyfikna?",
+              "Vad hände med Nora? Är ni nyfikna?"
+            ]
+          },
+          "hunt": {
+            "label": "Form hunt",
+            "title": "Find the red personality and prediction words.",
+            "instructions": "Tap each marked form and say what it does.",
+            "missHint": "Look at the highlighted words on the page.",
+            "spots": [
+              {
+                "word": "nyfikna",
+                "mark": "nyfikna",
+                "rule": "Notice nyfikna in the page and say the whole phrase."
+              },
+              {
+                "word": "kärlek",
+                "mark": "kärlek",
+                "rule": "Notice kärlek in the page and say the whole phrase."
+              },
+              {
+                "word": "olika",
+                "mark": "olika",
+                "rule": "Notice olika in the page and say the whole phrase."
+              },
+              {
+                "word": "ärlig",
+                "mark": "ärlig",
+                "rule": "Notice ärlig in the page and say the whole phrase."
+              },
+              {
+                "word": "tålmodig",
+                "mark": "tålmodig",
+                "rule": "Notice tålmodig in the page and say the whole phrase."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Textbook page practice: Har du varit i Sverige någon gång?",
+          "tabLabel": "Page 48 · Har du varit i Sverige någon gång?",
+          "intro": "A person describes experiences in Sweden with har plus the supine.",
+          "image": "/images/source/textbook-lesson-17-page-48.png",
+          "imageAlt": "Textbook page 48, Har du varit i Sverige någon gång?",
+          "pageLabel": "textbook physical page 48",
+          "focus": [
+            "har bott",
+            "har ätit",
+            "sedan dess",
+            "har aldrig varit",
+            "har sett",
+            "någon gång"
+          ],
+          "recallCues": [
+            "I have lived in Sweden for five years.",
+            "I moved here five years ago, when I got a top job at a Swedish company.",
+            "I have eaten so much Swedish candy since then and tried different local dishes.",
+            "I have never been on a moose safari, but I have often seen moose on my holidays.",
+            "We have just renovated our summer cottage, but we have not yet swum in the lake in front of it because the weather has been so cold this week.",
+            "Have you ever been to Sweden?"
+          ],
+          "lines": [
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Jag har bott i Sverige i fem år.",
+              "en": "I have lived in Sweden for five years.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Jag flyttade hit för fem år sedan, när jag fick ett toppjobb på ett svenskt företag.",
+              "en": "I moved here five years ago, when I got a top job at a Swedish company.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Jag har ätit så mycket svenskt godis sedan dess och testat olika lokala maträtter.",
+              "en": "I have eaten so much Swedish candy since then and tried different local dishes.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Jag har aldrig varit på älgsafari men jag har ofta sett älgar på mina semestrar.",
+              "en": "I have never been on a moose safari, but I have often seen moose on my holidays.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Vi har just renoverat vår sommarstuga men vi har ännu inte badat i sjön framför stugan eftersom vädret har varit så kallt den här veckan.",
+              "en": "We have just renovated our summer cottage, but we have not yet swum in the lake in front of it because the weather has been so cold this week.",
+              "glossary": []
+            },
+            {
+              "speaker": "Text",
+              "voice": "Henrik",
+              "fi": "Har du varit i Sverige någon gång?",
+              "en": "Have you ever been to Sweden?",
+              "glossary": []
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "What is the main idea?",
+              "options": [
+                "A person describes experiences in Sweden with har plus the supine.",
+                "A shopping list",
+                "Directions"
+              ],
+              "answer": 0,
+              "explanation": "A person describes experiences in Sweden with har plus the supine."
+            },
+            {
+              "prompt": "Which form or phrase is central on this page?",
+              "options": [
+                "har bott",
+                "i går",
+                "måste"
+              ],
+              "answer": 0,
+              "explanation": "Listen for har bott."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "Jag har bott i Sverige i fem år.",
+              "natural": "Jag har bott i Sverige i fem år.",
+              "note": "Listen to the whole phrase as one meaningful chunk, then repeat it."
+            }
+          ],
+          "backchain": {
+            "line": 0,
+            "chunks": [
+              "år.",
+              "Jag har bott i Sverige i fem år."
+            ]
+          },
+          "hunt": {
+            "label": "Form hunt",
+            "title": "Find the present-perfect pairs and time words.",
+            "instructions": "Tap each marked form and say what it does.",
+            "missHint": "Look at the highlighted words on the page.",
+            "spots": []
+          }
+        },
+        {
+          "title": "Textbook page practice: En lista på starka verb",
+          "tabLabel": "Page 49 · En lista på starka verb",
+          "intro": "A reference list links present and past forms to the supine used after har.",
+          "image": "/images/source/textbook-lesson-17-page-49.png",
+          "imageAlt": "Textbook page 49, En lista på starka verb",
+          "pageLabel": "textbook physical page 49",
+          "focus": [
+            "varit",
+            "velat",
+            "kunnat",
+            "sagt",
+            "kommit",
+            "gjort"
+          ],
+          "recallCues": [
+            "be – was – been",
+            "want – wanted – wanted",
+            "can – could – been able",
+            "say – said – said",
+            "come – came – come",
+            "do – did – done",
+            "go – went – gone",
+            "get – got – got",
+            "give – gave – given",
+            "have – had – had",
+            "take – took – taken",
+            "see – saw – seen",
+            "know – knew – known",
+            "write – wrote – written",
+            "eat – ate – eaten",
+            "drink – drank – drunk",
+            "sleep – slept – slept",
+            "become – became – become"
+          ],
+          "lines": [
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "är – var – varit",
+              "en": "be – was – been",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "vill – ville – velat",
+              "en": "want – wanted – wanted",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "kan – kunde – kunnat",
+              "en": "can – could – been able",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "säger – sa – sagt",
+              "en": "say – said – said",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "kommer – kom – kommit",
+              "en": "come – came – come",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "gör – gjorde – gjort",
+              "en": "do – did – done",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "går – gick – gått",
+              "en": "go – went – gone",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "får – fick – fått",
+              "en": "get – got – got",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "ger – gav – givit",
+              "en": "give – gave – given",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "har – hade – haft",
+              "en": "have – had – had",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "tar – tog – tagit",
+              "en": "take – took – taken",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "ser – såg – sett",
+              "en": "see – saw – seen",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "vet – visste – vetat",
+              "en": "know – knew – known",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "skriver – skrev – skrivit",
+              "en": "write – wrote – written",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "äter – åt – ätit",
+              "en": "eat – ate – eaten",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "dricker – drack – druckit",
+              "en": "drink – drank – drunk",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "sover – sov – sovit",
+              "en": "sleep – slept – slept",
+              "glossary": []
+            },
+            {
+              "speaker": "List",
+              "voice": "Henrik",
+              "fi": "blir – blev – blivit",
+              "en": "become – became – become",
+              "glossary": []
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "What is the main idea?",
+              "options": [
+                "A reference list links present and past forms to the supine used after har.",
+                "A shopping list",
+                "Directions"
+              ],
+              "answer": 0,
+              "explanation": "A reference list links present and past forms to the supine used after har."
+            },
+            {
+              "prompt": "Which form or phrase is central on this page?",
+              "options": [
+                "varit",
+                "i går",
+                "måste"
+              ],
+              "answer": 0,
+              "explanation": "Listen for varit."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "är – var – varit",
+              "natural": "är – var – varit",
+              "note": "Listen to the whole phrase as one meaningful chunk, then repeat it."
+            }
+          ],
+          "backchain": {
+            "line": 0,
+            "chunks": [
+              "varit",
+              "är – var – varit"
+            ]
+          },
+          "hunt": {
+            "label": "Form hunt",
+            "title": "Find the purple supine forms.",
+            "instructions": "Tap each marked form and say what it does.",
+            "missHint": "Look at the highlighted words on the page.",
+            "spots": [
+              {
+                "word": "varit",
+                "mark": "varit",
+                "rule": "Notice varit in the page and say the whole phrase."
+              },
+              {
+                "word": "velat",
+                "mark": "velat",
+                "rule": "Notice velat in the page and say the whole phrase."
+              },
+              {
+                "word": "kunnat",
+                "mark": "kunnat",
+                "rule": "Notice kunnat in the page and say the whole phrase."
+              },
+              {
+                "word": "sagt",
+                "mark": "sagt",
+                "rule": "Notice sagt in the page and say the whole phrase."
+              },
+              {
+                "word": "kommit",
+                "mark": "kommit",
+                "rule": "Notice kommit in the page and say the whole phrase."
+              },
+              {
+                "word": "gjort",
+                "mark": "gjort",
+                "rule": "Notice gjort in the page and say the whole phrase."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "kind": "concept",
+      "title": "Beskriv en person: personality",
+      "body": [
+        "Ärlig means honest. Omtänksam means caring. Pålitlig means reliable: you can lita på that person. Swedish adjectives change in the plural: en nyfiken person, flera nyfikna personer. Put the Swedish description first and then add your reason. Avoid labels that can hurt; describe behaviour instead."
+      ],
+      "examples": [
+        {
+          "fi": "Elin är omtänksam och pålitlig.",
+          "en": "Elin is caring and reliable."
+        },
+        {
+          "fi": "Alex är nyfiken eftersom han gärna lär sig nya saker.",
+          "en": "Alex is curious because he likes learning new things."
+        },
+        {
+          "fi": "För mig är det viktigt att en vän är ärlig.",
+          "en": "For me it is important that a friend is honest."
+        },
+        {
+          "fi": "Mina kollegor är sociala och tålmodiga.",
+          "en": "My colleagues are sociable and patient."
+        }
+      ],
+      "memoryTip": "Pålitlig contains lita på: someone you can rely on.",
+      "tryIt": "Describe yourself with two traits and give one reason.",
+      "activity": {
+        "type": "sort",
+        "label": "Which kind of trait?",
+        "title": "Which kind of trait?",
+        "instructions": "Sort each Swedish example into the best group.",
+        "buckets": [
+          {
+            "id": "warm",
+            "label": "How someone treats others",
+            "hint": "kind and caring"
+          },
+          {
+            "id": "trust",
+            "label": "Trust and dependability",
+            "hint": "truth and reliability"
+          },
+          {
+            "id": "style",
+            "label": "Social style",
+            "hint": "quiet or outgoing"
+          }
+        ],
+        "items": [
+          {
+            "fi": "snäll",
+            "en": "kind",
+            "bucket": "warm",
+            "why": "A kind person treats others well."
+          },
+          {
+            "fi": "omtänksam",
+            "en": "caring",
+            "bucket": "warm",
+            "why": "A caring person notices other people."
+          },
+          {
+            "fi": "ärlig",
+            "en": "honest",
+            "bucket": "trust",
+            "why": "An honest person tells the truth."
+          },
+          {
+            "fi": "pålitlig",
+            "en": "reliable",
+            "bucket": "trust",
+            "why": "You can rely on this person."
+          },
+          {
+            "fi": "social",
+            "en": "sociable",
+            "bucket": "style",
+            "why": "This describes ease with other people."
+          },
+          {
+            "fi": "tystlåten",
+            "en": "quiet",
+            "bucket": "style",
+            "why": "This describes a quiet social style."
+          }
+        ],
+        "summary": "Say each complete example aloud after sorting."
+      }
+    },
+    {
+      "kind": "concept",
+      "title": "Har + supinum: an experience matters now",
+      "body": [
+        "Jag har varit i Sverige means “I have been to Sweden.” Build the present perfect with har plus a supine form. The supine is the special verb form used after har: bott, ätit, sett. Use it for life experience or something inside an unfinished time such as den här veckan."
+      ],
+      "examples": [
+        {
+          "fi": "Jag har varit i Sverige.",
+          "en": "I have been to Sweden."
+        },
+        {
+          "fi": "Hon har bott i Åbo.",
+          "en": "She has lived in Turku."
+        },
+        {
+          "fi": "Vi har ätit laxsoppa.",
+          "en": "We have eaten salmon soup."
+        },
+        {
+          "fi": "Den här veckan har jag skrivit tre mejl.",
+          "en": "This week I have written three emails."
+        }
+      ],
+      "table": {
+        "headers": [
+          "Present",
+          "Past: finished time",
+          "Supine after har"
+        ],
+        "rows": [
+          [
+            "bor",
+            "bodde",
+            "bott"
+          ],
+          [
+            "äter",
+            "åt",
+            "ätit"
+          ],
+          [
+            "ser",
+            "såg",
+            "sett"
+          ],
+          [
+            "skriver",
+            "skrev",
+            "skrivit"
+          ],
+          [
+            "är",
+            "var",
+            "varit"
+          ]
+        ]
+      },
+      "memoryTip": "Har is the helper; the second verb is the supine. Never say har var or har åt.",
+      "tryIt": "Say three things you have done this week.",
+      "activity": {
+        "type": "sort",
+        "label": "Past or present perfect?",
+        "title": "Past or present perfect?",
+        "instructions": "Sort each Swedish example into the best group.",
+        "buckets": [
+          {
+            "id": "past",
+            "label": "Finished past time",
+            "hint": "i går, förra året"
+          },
+          {
+            "id": "perfect",
+            "label": "Experience or unfinished time",
+            "hint": "någon gång, den här veckan"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Jag var i Sverige förra året.",
+            "en": "I was in Sweden last year.",
+            "bucket": "past",
+            "why": "Förra året is finished."
+          },
+          {
+            "fi": "Jag har varit i Sverige.",
+            "en": "I have been to Sweden.",
+            "bucket": "perfect",
+            "why": "No finished time is named; it is an experience."
+          },
+          {
+            "fi": "Jag åt laxsoppa i går.",
+            "en": "I ate salmon soup yesterday.",
+            "bucket": "past",
+            "why": "I går is finished."
+          },
+          {
+            "fi": "Jag har ätit laxsoppa många gånger.",
+            "en": "I have eaten salmon soup many times.",
+            "bucket": "perfect",
+            "why": "This counts experience up to now."
+          },
+          {
+            "fi": "Jag har läst mycket den här veckan.",
+            "en": "I have read a lot this week.",
+            "bucket": "perfect",
+            "why": "This week is still open."
+          }
+        ],
+        "summary": "Say each complete example aloud after sorting."
+      }
+    },
+    {
+      "kind": "concept",
+      "title": "Någon gång, aldrig, redan och ännu",
+      "body": [
+        "Ask about life experience with någon gång: ever. Answer with aldrig for never or redan for already. In a negative sentence, ännu means yet. These small words usually stand after har, while inte stands directly after har in a main clause."
+      ],
+      "examples": [
+        {
+          "fi": "Har du varit i Sverige någon gång?",
+          "en": "Have you ever been to Sweden?"
+        },
+        {
+          "fi": "Jag har aldrig sett en älg.",
+          "en": "I have never seen a moose."
+        },
+        {
+          "fi": "Jag har redan sett den filmen.",
+          "en": "I have already seen that film."
+        },
+        {
+          "fi": "Jag har inte beställt maten ännu.",
+          "en": "I have not ordered the food yet."
+        }
+      ],
+      "memoryTip": "Question: någon gång? No: aldrig. Yes and sooner than expected: redan. Not up to now: inte … ännu.",
+      "tryIt": "Ask a partner two Har du … någon gång? questions.",
+      "activity": {
+        "type": "match",
+        "label": "Time words",
+        "title": "Time words",
+        "instructions": "Match each Swedish expression to its meaning.",
+        "pairs": [
+          {
+            "left": "någon gång",
+            "right": "ever / at some time"
+          },
+          {
+            "left": "aldrig",
+            "right": "never"
+          },
+          {
+            "left": "redan",
+            "right": "already"
+          },
+          {
+            "left": "ännu",
+            "right": "yet"
+          },
+          {
+            "left": "sedan dess",
+            "right": "since then"
+          },
+          {
+            "left": "den här veckan",
+            "right": "this week"
+          }
+        ],
+        "summary": "Read every matched pair aloud."
+      }
+    },
+    {
+      "kind": "concept",
+      "title": "How long: i … år and sedan",
+      "body": [
+        "Jag har bott i Finland i två år means you still live here. I marks the length of time. Jag flyttade hit för två år sedan names the finished event when the period began. If you no longer live there, use the past: Jag bodde där i två år."
+      ],
+      "examples": [
+        {
+          "fi": "Jag har bott i Finland i två år.",
+          "en": "I have lived in Finland for two years and still do."
+        },
+        {
+          "fi": "Jag flyttade hit för två år sedan.",
+          "en": "I moved here two years ago."
+        },
+        {
+          "fi": "Jag bodde i Stockholm i ett år.",
+          "en": "I lived in Stockholm for a year and no longer do."
+        },
+        {
+          "fi": "Hur länge har du arbetat här?",
+          "en": "How long have you worked here?"
+        }
+      ],
+      "memoryTip": "Still true now: har bott i två år. Finished: bodde i två år. Starting point: för två år sedan.",
+      "tryIt": "Say how long you have lived in Finland and when you moved.",
+      "activity": {
+        "type": "sort",
+        "label": "Still true or finished?",
+        "title": "Still true or finished?",
+        "instructions": "Sort each Swedish example into the best group.",
+        "buckets": [
+          {
+            "id": "still",
+            "label": "Still true now",
+            "hint": "har + supine"
+          },
+          {
+            "id": "finished",
+            "label": "Finished",
+            "hint": "past tense"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Jag har bott här i fem år.",
+            "en": "I have lived here for five years.",
+            "bucket": "still",
+            "why": "Har bott connects the past with now."
+          },
+          {
+            "fi": "Jag bodde där i fem år.",
+            "en": "I lived there for five years.",
+            "bucket": "finished",
+            "why": "Bodde presents the stay as finished."
+          },
+          {
+            "fi": "Vi har varit gifta i tio år.",
+            "en": "We have been married for ten years.",
+            "bucket": "still",
+            "why": "The relationship continues."
+          },
+          {
+            "fi": "De var gifta i tio år.",
+            "en": "They were married for ten years.",
+            "bucket": "finished",
+            "why": "The period is over."
+          }
+        ],
+        "summary": "Say each complete example aloud after sorting."
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-17-g1",
+      "prompt": "Jag har ___ i Finland i tre år. (bo)",
+      "answers": [
+        "bott"
+      ],
+      "options": [
+        "bott",
+        "bodde",
+        "bor"
+      ],
+      "hint": "After har, use the supine.",
+      "explanation": "bo → bodde → bott."
+    },
+    {
+      "id": "sv-17-g2",
+      "prompt": "Har du ___ laxsoppa någon gång? (äta)",
+      "answers": [
+        "ätit"
+      ],
+      "options": [
+        "ätit",
+        "åt",
+        "äter"
+      ],
+      "hint": "Use the supine after har.",
+      "explanation": "äta → åt → ätit."
+    },
+    {
+      "id": "sv-17-g3",
+      "prompt": "I have never seen a moose.",
+      "answers": [
+        "Jag har aldrig sett en älg."
+      ],
+      "hint": "har + aldrig + supine",
+      "explanation": "Jag har aldrig sett en älg."
+    },
+    {
+      "id": "sv-17-g4",
+      "prompt": "You still live here: Jag ___ här i fem år.",
+      "answers": [
+        "har bott"
+      ],
+      "options": [
+        "har bott",
+        "bodde",
+        "bor sedan"
+      ],
+      "hint": "The situation began earlier and continues.",
+      "explanation": "Har bott connects the past to now."
+    },
+    {
+      "id": "sv-17-g5",
+      "prompt": "Choose the natural description of a trusted friend.",
+      "answers": [
+        "Hon är ärlig och pålitlig."
+      ],
+      "options": [
+        "Hon är ärlig och pålitlig.",
+        "Hon har ärlig och pålitlig.",
+        "Hon är ärligt och pålitligt."
+      ],
+      "hint": "A person is an en-word, so use the base adjectives.",
+      "explanation": "Hon är ärlig och pålitlig."
+    },
+    {
+      "id": "sv-17-g6",
+      "prompt": "I moved here two years ago.",
+      "answers": [
+        "Jag flyttade hit för två år sedan."
+      ],
+      "hint": "A finished move uses past tense and för … sedan.",
+      "explanation": "Jag flyttade hit för två år sedan."
+    }
+  ],
+  "sittingBreakAfter": "guided",
+  "missionPlan": {
+    "title": "Plan your experience story",
+    "intro": "Prepare 6–8 lines: a place, an experience, duration, personality, and one opinion with a reason.",
+    "lines": [
+      {
+        "label": "A place",
+        "before": "Jag har varit i",
+        "after": ".",
+        "placeholder": "Sverige och Norge"
+      },
+      {
+        "label": "One experience",
+        "before": "Där har jag",
+        "after": ".",
+        "placeholder": "ätit lokal mat"
+      },
+      {
+        "label": "Something never done",
+        "before": "Jag har aldrig",
+        "after": ".",
+        "placeholder": "sett en älg"
+      },
+      {
+        "label": "Duration",
+        "before": "Jag har bott i Finland i",
+        "after": ".",
+        "placeholder": "två år"
+      },
+      {
+        "label": "Personality",
+        "before": "Jag är",
+        "after": ".",
+        "placeholder": "nyfiken och omtänksam"
+      },
+      {
+        "label": "Opinion and reason",
+        "before": "Jag tycker om att resa eftersom",
+        "after": ".",
+        "placeholder": "jag lär mig nya saker"
+      }
+    ]
+  },
+  "practice": {
+    "words": [
+      {
+        "id": "sv-17-word-1",
+        "fi": "ärlig",
+        "en": "honest",
+        "example": "Min vän är ärlig.",
+        "translation": "honest",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-2",
+        "fi": "tålmodig",
+        "en": "patient",
+        "example": "Hon är tålmodig.",
+        "translation": "patient",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-3",
+        "fi": "nyfiken",
+        "en": "curious",
+        "example": "Hon är nyfiken.",
+        "translation": "curious",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-4",
+        "fi": "snäll",
+        "en": "kind",
+        "example": "Hon är snäll.",
+        "translation": "kind",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-5",
+        "fi": "artig",
+        "en": "polite",
+        "example": "Hon är artig.",
+        "translation": "polite",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-6",
+        "fi": "tystlåten",
+        "en": "quiet",
+        "example": "Hon är tystlåten.",
+        "translation": "quiet",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-7",
+        "fi": "social",
+        "en": "sociable",
+        "example": "Hon är social.",
+        "translation": "sociable",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-8",
+        "fi": "generös",
+        "en": "generous",
+        "example": "Hon är generös.",
+        "translation": "generous",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-9",
+        "fi": "omtänksam",
+        "en": "caring",
+        "example": "Hon är omtänksam.",
+        "translation": "caring",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-10",
+        "fi": "pålitlig",
+        "en": "reliable",
+        "example": "Hon är pålitlig.",
+        "translation": "reliable",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-11",
+        "fi": "beslutsam",
+        "en": "determined",
+        "example": "Hon är beslutsam.",
+        "translation": "determined",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-12",
+        "fi": "lojal",
+        "en": "loyal",
+        "example": "Hon är lojal.",
+        "translation": "loyal",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-13",
+        "fi": "lita på",
+        "en": "rely on",
+        "example": "Jag säger lita på.",
+        "translation": "rely on",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-14",
+        "fi": "någon gång",
+        "en": "ever",
+        "example": "Har du varit där någon gång?",
+        "translation": "ever",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-15",
+        "fi": "aldrig",
+        "en": "never",
+        "example": "Jag har aldrig sett en älg.",
+        "translation": "never",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-16",
+        "fi": "redan",
+        "en": "already",
+        "example": "Jag säger redan.",
+        "translation": "already",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-17",
+        "fi": "ännu",
+        "en": "yet",
+        "example": "Jag säger ännu.",
+        "translation": "yet",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-18",
+        "fi": "sedan dess",
+        "en": "since then",
+        "example": "Jag säger sedan dess.",
+        "translation": "since then",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-19",
+        "fi": "har varit",
+        "en": "have been",
+        "example": "Jag säger har varit.",
+        "translation": "have been",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-20",
+        "fi": "har bott",
+        "en": "have lived",
+        "example": "Jag har bott här i två år.",
+        "translation": "have lived",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-21",
+        "fi": "har ätit",
+        "en": "have eaten",
+        "example": "Jag säger har ätit.",
+        "translation": "have eaten",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-22",
+        "fi": "har sett",
+        "en": "have seen",
+        "example": "Jag säger har sett.",
+        "translation": "have seen",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-23",
+        "fi": "en maträtt",
+        "en": "a dish",
+        "example": "Jag säger en maträtt.",
+        "translation": "a dish",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-24",
+        "fi": "flytta",
+        "en": "move",
+        "example": "Jag säger flytta.",
+        "translation": "move",
+        "level": "A2"
+      },
+      {
+        "id": "sv-17-word-25",
+        "fi": "komma ihåg",
+        "en": "remember",
+        "example": "Jag säger komma ihåg.",
+        "translation": "remember",
+        "level": "A2"
+      }
+    ],
+    "pronunciation": {
+      "text": "Har varit. Har bott. Har ätit. Har sett. Nyfiken, generös, pålitlig, omtänksam.",
+      "tip": "Keep har short and give the meaning-heavy supine more stress. In generös, g sounds like the y in yes."
+    },
+    "listening": {
+      "text": "Jag heter Samira och jag har bott i Esbo i sex år. Jag har arbetat på samma skola sedan dess. Mina kollegor säger att jag är lugn och pålitlig. Jag har aldrig besökt Lappland, men jag har redan sett många andra platser i Finland. På fritiden har hon lärt känna nya vänner genom en bokklubb. De har läst tre svenska romaner den här våren. Samira är nyfiken och omtänksam, och hon tycker om att höra andra människors berättelser. Hon har ännu inte läst en bok på svenska utan hjälp, men hon har redan bestämt vilken bok hon vill prova.",
+      "question": "Which place has Samira never visited?",
+      "options": [
+        "Lapland",
+        "Espoo",
+        "Other places in Finland"
+      ],
+      "answer": 0,
+      "explanation": "Jag har aldrig besökt Lappland."
+    },
+    "reading": {
+      "text": "Hej! Jag heter Leo och jag har bott i Åbo i fyra år. Jag flyttade hit när jag började studera. Nu har jag arbetat på ett litet företag i två år. Mina kollegor säger att jag är nyfiken, social och pålitlig, men ibland är jag ganska tystlåten. Jag har lärt känna många människor genom arbetet. Vi har ofta ätit lunch tillsammans och jag har provat flera finländska maträtter. Jag har redan ätit laxsoppa, karelska piroger och många sorters rågbröd. Jag har rest mycket i Finland. Jag har besökt Helsingfors, Tammerfors, Vasa, Borgå och Mariehamn. Förra vintern åkte jag till Rovaniemi, men jag har aldrig sett midnattssolen. Därför vill jag resa till Lappland igen nästa sommar. Jag tycker att resor är viktiga eftersom man lär sig något nytt om både platser och människor. På fritiden har jag börjat studera svenska. Jag har studerat i sex månader och har redan haft flera korta samtal på svenska. Det har inte alltid varit lätt, men jag är tålmodig och beslutsam. Någon gång vill jag arbeta på svenska en hel dag. Har du bott i en annan stad någon gång, och vilken plats vill du besöka nästa gång?",
+      "question": "How long has Leo worked at the company?",
+      "options": [
+        "Two years",
+        "Four years",
+        "One year"
+      ],
+      "answer": 0,
+      "explanation": "Han har arbetat på ett litet företag i två år."
+    },
+    "reading_passage": {
+      "text": "Hej! Jag heter Leo och jag har bott i Åbo i fyra år. Jag flyttade hit när jag började studera. Nu har jag arbetat på ett litet företag i två år. Mina kollegor säger att jag är nyfiken, social och pålitlig, men ibland är jag ganska tystlåten. Jag har lärt känna många människor genom arbetet. Vi har ofta ätit lunch tillsammans och jag har provat flera finländska maträtter. Jag har redan ätit laxsoppa, karelska piroger och många sorters rågbröd. Jag har rest mycket i Finland. Jag har besökt Helsingfors, Tammerfors, Vasa, Borgå och Mariehamn. Förra vintern åkte jag till Rovaniemi, men jag har aldrig sett midnattssolen. Därför vill jag resa till Lappland igen nästa sommar. Jag tycker att resor är viktiga eftersom man lär sig något nytt om både platser och människor. På fritiden har jag börjat studera svenska. Jag har studerat i sex månader och har redan haft flera korta samtal på svenska. Det har inte alltid varit lätt, men jag är tålmodig och beslutsam. Någon gång vill jag arbeta på svenska en hel dag. Har du bott i en annan stad någon gång, och vilken plats vill du besöka nästa gång?",
+      "gist": {
+        "prompt": "What is this text mainly doing?",
+        "options": [
+          "Introducing Leo and his experience",
+          "Complaining about a job",
+          "Giving directions"
+        ],
+        "answer": 0,
+        "explanation": "Leo introduces himself, his personality, and his experience."
+      },
+      "detail": {
+        "prompt": "Which three cities has Leo visited?",
+        "options": [
+          "Helsinki, Tampere, and Vaasa",
+          "Turku, Oulu, and Porvoo",
+          "Espoo, Lahti, and Kuopio"
+        ],
+        "answer": 0,
+        "explanation": "Helsingfors, Tammerfors och Vasa."
+      }
+    },
+    "speaking": {
+      "prompt": "Tell about one place you have visited, how long you have lived in Finland, and what kind of person you are. Give one opinion with a reason.",
+      "help": "Jag har varit i … · Där har jag … · Jag har aldrig … · Jag har bott i Finland i … år · Jag är … · Jag tycker … eftersom …",
+      "model": "Jag har varit i Sverige två gånger. Där har jag besökt Stockholm och ätit svensk mat. Jag har aldrig varit i norra Sverige. Jag har bott i Finland i två år. Jag är nyfiken och omtänksam. Jag tycker om att resa eftersom jag lär mig nya saker."
+    },
+    "writing": {
+      "prompt": "Write a message introducing yourself to a new colleague.",
+      "situation": "A new colleague, Sara, starts on Monday. Send a friendly message before her first day. Introduce your personality and experience, and help her feel welcome.",
+      "points": [
+        "Greet Sara and say who you are.",
+        "Describe your personality with at least two words.",
+        "Say how long you have lived or worked here.",
+        "Mention one relevant experience with har + supine.",
+        "Give one opinion with a reason.",
+        "Ask Sara one friendly question and close the message."
+      ],
+      "wordRange": [
+        60,
+        100
+      ],
+      "help": "Hej Sara! · Jag heter … · Jag är … och … · Jag har bott/arbetat här i … år · Jag har … · Jag tycker att … eftersom … · Har du … någon gång? · Vi ses på måndag!",
+      "model": "Hej Sara! Välkommen till vårt team. Jag heter Alex och arbetar med kundservice. Jag är nyfiken, lugn och omtänksam. Jag har bott i Helsingfors i två år och har arbetat här i ett år. Jag har redan hjälpt många nya kollegor, så fråga mig gärna om något är oklart. Jag tycker att vårt team är bra eftersom alla hjälper varandra. Har du varit i Helsingfors någon gång? Vi ses på måndag! Hälsningar, Alex"
+    }
+  },
+  "route": {
+    "expectedOutput": "First, speak for 6–8 lines about a place, your experience, duration, and personality. Then write a 60–100-word introduction to a new colleague.",
+    "transferPrompt": "Ask a real person Har du … någon gång? and listen for har + supine in the answer.",
+    "returnPrompt": "Tomorrow, say three experience sentences without looking: one with någon gång, one with aldrig, and one with i … år.",
+    "successChecks": [
+      "I can use har + supine rather than har + past tense.",
+      "I can distinguish a continuing situation from a finished past period.",
+      "I can describe personality respectfully with at least two adjectives.",
+      "My spoken answer has 6–8 lines and one opinion with a reason.",
+      "My written message covers every point and is 60–100 words."
+    ],
+    "primarySkill": "speaking",
+    "requiredSkills": [
+      "speaking",
+      "writing"
+    ]
+  },
+  "unplannedQuestions": [
+    {
+      "id": "sv-17-question-1",
+      "fi": "Har du varit i Sverige någon gång?",
+      "en": "Have you ever been to Sweden?",
+      "sample": "Ja, jag har varit i Stockholm."
+    },
+    {
+      "id": "sv-17-question-2",
+      "fi": "Hur länge har du bott i Finland?",
+      "en": "How long have you lived in Finland?",
+      "sample": "Jag har bott här i två år."
+    },
+    {
+      "id": "sv-17-question-3",
+      "fi": "Vilken ny maträtt har du provat?",
+      "en": "Which new dish have you tried?",
+      "sample": "Jag har provat laxsoppa."
+    },
+    {
+      "id": "sv-17-question-4",
+      "fi": "Hurdan är en bra kollega?",
+      "en": "What is a good colleague like?",
+      "sample": "En bra kollega är omtänksam."
+    },
+    {
+      "id": "sv-17-question-5",
+      "fi": "Vad har du gjort den här veckan?",
+      "en": "What have you done this week?",
+      "sample": "Jag har arbetat och studerat."
+    },
+    {
+      "id": "sv-17-question-6",
+      "fi": "Vilken plats vill du besöka och varför?",
+      "en": "Which place do you want to visit and why?",
+      "sample": "Jag vill besöka Island eftersom naturen är vacker."
+    }
+  ],
+  "reviewPhrases": [
+    {
+      "id": "sv-17-review-1",
+      "en": "I have been to Sweden.",
+      "fi": "Jag har varit i Sverige."
+    },
+    {
+      "id": "sv-17-review-2",
+      "en": "Have you ever eaten salmon soup?",
+      "fi": "Har du ätit laxsoppa någon gång?"
+    },
+    {
+      "id": "sv-17-review-3",
+      "en": "I have never seen a moose.",
+      "fi": "Jag har aldrig sett en älg."
+    },
+    {
+      "id": "sv-17-review-4",
+      "en": "I have lived in Finland for two years.",
+      "fi": "Jag har bott i Finland i två år."
+    },
+    {
+      "id": "sv-17-review-5",
+      "en": "I moved here two years ago.",
+      "fi": "Jag flyttade hit för två år sedan."
+    },
+    {
+      "id": "sv-17-review-6",
+      "en": "She is caring and reliable.",
+      "fi": "Hon är omtänksam och pålitlig."
+    },
+    {
+      "id": "sv-17-review-7",
+      "en": "I have already seen that film.",
+      "fi": "Jag har redan sett den filmen."
+    },
+    {
+      "id": "sv-17-review-8",
+      "en": "I have not ordered yet.",
+      "fi": "Jag har inte beställt ännu."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-17-check-produce",
+      "prompt": "Produce in Swedish: “I have lived in Finland for three years.”",
+      "answers": [
+        "Jag har bott i Finland i tre år."
+      ],
+      "hint": "har + supine; duration with i",
+      "explanation": "Jag har bott i Finland i tre år."
+    },
+    {
+      "id": "sv-17-check-ever",
+      "prompt": "Which asks about life experience?",
+      "answers": [
+        "Har du varit i Sverige någon gång?"
+      ],
+      "options": [
+        "Har du varit i Sverige någon gång?",
+        "Var du i Sverige i går?",
+        "Är du i Sverige nu?"
+      ],
+      "hint": "Look for ever.",
+      "explanation": "Någon gång makes this an experience question."
+    },
+    {
+      "id": "sv-17-check-form",
+      "prompt": "Choose the correct supine: Jag har ___ laxsoppa.",
+      "answers": [
+        "ätit"
+      ],
+      "options": [
+        "ätit",
+        "åt",
+        "äter"
+      ],
+      "hint": "After har, use the third form.",
+      "explanation": "äta – åt – ätit."
+    },
+    {
+      "id": "sv-17-check-duration",
+      "prompt": "Which sentence says the person still lives here?",
+      "answers": [
+        "Jag har bott här i fem år."
+      ],
+      "options": [
+        "Jag har bott här i fem år.",
+        "Jag bodde här i fem år.",
+        "Jag flyttade här fem år."
+      ],
+      "hint": "Connect the past to now.",
+      "explanation": "Har bott says the situation continues."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 17 mission: My experience",
+    "instructions": "CORE: Speak for 6–8 lines about a place you have visited, one thing you have done there, something you have never done, how long you have lived in Finland, and two personality traits. Add one opinion with eftersom.\n\nQUESTION LOOP: Ask someone two Har du … någon gång? questions and one Hur länge har du …? question.\n\nRETURN: Tomorrow, repeat your answer from memory and change one place or experience.",
+    "model": "Jag har varit i Sverige två gånger. Där har jag besökt Stockholm och ätit svensk mat. Jag har aldrig varit i norra Sverige. Jag har bott i Finland i två år. Jag är nyfiken och omtänksam. Jag tycker om att resa eftersom jag lär mig nya saker."
+  },
+  "takeaways": [
+    "Use har + supine for experiences connected to now.",
+    "Use i … år for a continuing duration and för … sedan for when it began.",
+    "Use någon gång, aldrig, redan and ännu to place an experience in time.",
+    "Describe personality with clear, respectful adjectives."
+  ],
+  "resources": [
+    {
+      "label": "Svenska Akademiens ordböcker (svenska.se)",
+      "url": "https://svenska.se/",
+      "description": "Check a supine form or a personality adjective."
+    }
+  ]
+}

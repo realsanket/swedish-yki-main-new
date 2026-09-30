@@ -25,13 +25,11 @@ each class lesson into an app lecture.
   writing). YKI is a Finnish national certificate, so Finland-Swedish matters.
 - Works mostly on a laptop, but the app must also work on a phone.
 
-**Current scope:** Chapter 1 only, with **Lecture 1** (introduce yourself,
-Swedish sounds) and **Lecture 2** (how are you, people in your life, question
-words). **The owner has asked (September 30, 2026) for Lectures 3-22 to be
-built on the laptop from `docs/lecture-build-plan.md`**, one lecture at a time,
-each activated only when it meets that plan's definition of done. Lecture 23
-and later (the YKI-book phase) are not planned yet: do not build them until the
-owner asks.
+**Current scope:** The full textbook phase, **Lectures 1-22**, is active across
+six chapters. It follows teacher Lessons 1-22 and textbook pages 4-55, then
+ends with the first argumentative text. Lectures 3-22 were completed on
+September 30, 2026 from `docs/lecture-build-plan.md`. Lecture 23 and later
+(the YKI-book phase) are not planned yet: do not build them until the owner asks.
 
 ---
 
@@ -111,6 +109,12 @@ npm run check            # content validator + typecheck + lint + progress tests
 npm run build            # production build (stop and restart `npm run dev` afterwards;
                          # the build replaces the dev server's .next files)
 ```
+
+`content:index`, `check`, `build` and `dev` first run
+`scripts/sync-textbook-images.py`. It copies the canonical page scans from
+`docs/text-book-images/` into the public image paths referenced by lecture
+JSON. Those generated copies are gitignored: do not commit a second set of
+binary page images.
 
 - **Local** runs everything: saved progress (SQLite in `site/data/`), Azure
   voices, live coach, pronunciation scoring.
@@ -303,7 +307,7 @@ the template, not one lecture at a time. Not yet fixed unless marked.
 
 ## 9. Status (September 30, 2026)
 
-**Done and on `main`:** Lectures 1-2 with textbook steps; grammar side notes;
+**Done and on `main`:** Lectures 1-22 (the complete textbook phase) with textbook steps where mapped; grammar side notes;
 mobile layout; in-lecture navigation and topic picker; lecture-owned extra
 steps; dialogue audio fix; live coach on gpt-realtime (HD voice, speaks first,
 chat-style transcript, Azure Speech recognition); guided "Do the task" mission;
@@ -336,15 +340,12 @@ card (logic tested).
     voice?
 4. Save the mission plan and the unexpected-questions result to the server (both
    are browser-only now).
-5. Lectures 3-22 (approved by the owner): follow `docs/lecture-build-plan.md`
-   (workflow, definition of done, and a section per lecture). The mapping
-   behind it (teacher Lessons 3-22, textbook pages 7-55, Classroom homework
-   2-17) is in `docs/mapping.md` under "Planned mapping". Lecture 23 on
-   follows the YKI book and is not planned yet. For each lecture: re-read the
-   teacher lesson in `docs/Group 3.md`, confirm its pages and homework, record
-   decisions in `docs/mapping.md`, then build it to this template, including
-   `reviewPhrases`, `unplannedQuestions`, `missionPlan`, `sittingBreakAfter` and
-   the input targets.
+5. Plan the YKI-book phase (Lecture 23 onward) only when the owner asks.
+   Teacher Lessons 23-51 and Classroom items 18 onward still need a separate
+   source mapping and build plan; do not extend the active curriculum before
+   that planning is approved.
+6. Native-speaker review of the doubtful source and authored Swedish lines
+   recorded under the built lecture design notes in `docs/mapping.md`.
 
 **Housekeeping for the owner:** revoke the Azure key that was pasted in chat;
 put the new key in `site/.env` and the cloud environment; remove the old

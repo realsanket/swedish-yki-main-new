@@ -1,0 +1,1325 @@
+{
+  "number": 8,
+  "routeProfile": "standard",
+  "objectives": [
+    "Tell what happened during a past day in a clear order.",
+    "Put a time phrase first and keep the verb in the second position.",
+    "Understand and use det handlar om to say what something is about.",
+    "Write a short informal letter with news, a question and a closing."
+  ],
+  "focusSkills": [
+    "listening",
+    "reading",
+    "speaking",
+    "writing"
+  ],
+  "grammarTerms": [
+    "verb",
+    "subject",
+    "word-order",
+    "verb-second",
+    "past-tense",
+    "regular-irregular",
+    "infinitive",
+    "modal-verb",
+    "adverb",
+    "formal-informal"
+  ],
+  "presentation": {
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the letter",
+        "description": "Listen to Elin and Alex share news from their week."
+      },
+      "teach": {
+        "label": "Build a past story",
+        "description": "Order past events and shape a friendly letter."
+      },
+      "guided": {
+        "label": "Try the story",
+        "description": "Build useful lines about last weekend."
+      },
+      "practice": {
+        "label": "Tell your weekend",
+        "description": "Speak, then write an informal letter."
+      }
+    },
+    "opening": {
+      "teacherNote": {
+        "title": "Today: turn events into a story",
+        "body": "You already know many past forms. Now connect them with time words, and use the same clear order in a friendly letter."
+      },
+      "dialogue": {
+        "part": "recall",
+        "eyebrow": "Elin and Alex · a message exchange",
+        "title": "How was your week?",
+        "instructions": "Listen once for the main events. Then read and notice the time words.",
+        "initiallyOpen": false
+      }
+    }
+  },
+  "recall": [
+    {
+      "id": "sv-08-recall-1",
+      "prompt": "What did Elin do on Saturday?",
+      "answers": [
+        "She met Maja and went to a café."
+      ],
+      "hint": "Listen for I lördags.",
+      "explanation": "Elin says: I lördags träffade jag Maja. Sedan gick vi till ett kafé.",
+      "options": [
+        "She met Maja and went to a café.",
+        "She studied alone all day.",
+        "She travelled to Stockholm."
+      ]
+    },
+    {
+      "id": "sv-08-recall-2",
+      "prompt": "What question does Elin ask Alex?",
+      "answers": [
+        "What did you do at the weekend?"
+      ],
+      "hint": "The question is near the end of her message.",
+      "explanation": "Vad gjorde du i helgen? means What did you do at the weekend?",
+      "options": [
+        "What did you do at the weekend?",
+        "Where do you live?",
+        "What is the film about?"
+      ]
+    }
+  ],
+  "dialogue": [
+    {
+      "speaker": "Elin",
+      "fi": "Hej Alex! Hur är det med dig?",
+      "en": "Hi Alex! How are things with you?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Jag vill berätta om min vecka.",
+      "en": "I want to tell you about my week."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "I lördags träffade jag Maja. Sedan gick vi till ett kafé.",
+      "en": "On Saturday I met Maja. Then we went to a café."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Vi drack kaffe och pratade svenska tillsammans.",
+      "en": "We drank coffee and spoke Swedish together."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Efter det såg jag en film hemma. Den handlar om vänskap.",
+      "en": "After that I watched a film at home. It is about friendship."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Vad gjorde du i helgen? Kram, Elin",
+      "en": "What did you do at the weekend? Hugs, Elin"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Hej Elin! Tack för ditt brev.",
+      "en": "Hi Elin! Thanks for your letter."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Först tränade jag på gymmet. Sedan lagade jag mat med en vän.",
+      "en": "First I worked out at the gym. Then I cooked with a friend."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "På söndagen läste jag en bok. Den handlar om Finland.",
+      "en": "On Sunday I read a book. It is about Finland."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Det var en lugn och bra helg. Vi ses snart! Kram, Alex",
+      "en": "It was a calm and good weekend. See you soon! Hugs, Alex"
+    }
+  ],
+  "extraSteps": [
+    {
+      "id": "textbook-pages",
+      "after": "recall",
+      "kind": "source-practice",
+      "label": "Textbook pages 19–20",
+      "description": "Read a diary and a friendship letter in five short stages.",
+      "minutes": 15,
+      "action": "Listen for the main point, unpack the lines, then retell each text from cues.",
+      "pages": [
+        {
+          "title": "Textbook page practice: Dagbok",
+          "tabLabel": "Page 19 · Dagbok",
+          "intro": "This page belongs to the textbook drama. Use Andreas only as a diary-form model: dated news, events in order and past verbs.",
+          "image": "/images/source/textbook-lesson-08-page-19.png",
+          "imageAlt": "Textbook page 19, Dagbok, where Andreas writes about his secret and his first date",
+          "textRegion": {
+            "top": 18,
+            "height": 70
+          },
+          "pageLabel": "textbook physical page 19",
+          "focus": [
+            "a dated diary opening",
+            "past-tense event verbs",
+            "för … sedan",
+            "time and order phrases"
+          ],
+          "recallCues": [
+            "Date and place.",
+            "Andreas introduces himself and says why he started a diary.",
+            "He describes his family and a woman he met a month ago.",
+            "They began dating last week; he wonders whether to tell Nora the truth.",
+            "He worries that Lena will be disappointed.",
+            "First date: he booked a table and waited for Nora.",
+            "They ate and drank, then went to the cinema."
+          ],
+          "lines": [
+            {
+              "speaker": "Andreas",
+              "voice": "Henrik",
+              "fi": "den 1:a april\nStockholm",
+              "en": "1 April, Stockholm",
+              "glossary": [
+                {
+                  "fi": "den 1:a april",
+                  "en": "1 April"
+                }
+              ]
+            },
+            {
+              "speaker": "Andreas",
+              "voice": "Henrik",
+              "fi": "Jag heter Andreas. Jag har ett hemligt liv så jag började skriva dagbok.",
+              "en": "My name is Andreas. I have a secret life, so I started writing a diary.",
+              "glossary": [
+                {
+                  "fi": "hemligt liv",
+                  "en": "secret life"
+                },
+                {
+                  "fi": "började skriva",
+                  "en": "started writing"
+                }
+              ]
+            },
+            {
+              "speaker": "Andreas",
+              "voice": "Henrik",
+              "fi": "Jag har en fru som heter Lena och två söner, Jonas och Nils. Jag älskar min familj, men jag träffade en otroligt vacker kvinna för en månad sedan.",
+              "en": "I have a wife called Lena and two sons, Jonas and Nils. I love my family, but I met an incredibly beautiful woman a month ago.",
+              "glossary": [
+                {
+                  "fi": "för en månad sedan",
+                  "en": "a month ago"
+                }
+              ]
+            },
+            {
+              "speaker": "Andreas",
+              "voice": "Henrik",
+              "fi": "Jag blev kär i henne direkt. Vi började dejta förra veckan. Hon vet ingenting om min familj. Borde jag berätta sanningen för Nora?",
+              "en": "I fell in love with her immediately. We started dating last week. She knows nothing about my family. Should I tell Nora the truth?",
+              "glossary": [
+                {
+                  "fi": "blev kär",
+                  "en": "fell in love"
+                },
+                {
+                  "fi": "berätta sanningen",
+                  "en": "tell the truth"
+                }
+              ]
+            },
+            {
+              "speaker": "Andreas",
+              "voice": "Henrik",
+              "fi": "Dessutom blir Lena så besviken på mig. Hjälp!",
+              "en": "Besides, Lena will be so disappointed in me. Help!",
+              "glossary": [
+                {
+                  "fi": "dessutom",
+                  "en": "besides"
+                },
+                {
+                  "fi": "besviken på",
+                  "en": "disappointed in"
+                }
+              ]
+            },
+            {
+              "speaker": "Andreas",
+              "voice": "Henrik",
+              "fi": "Första dejt med Nora: Jag bokade bord på en fin restaurang. Jag kom 5 minuter tidigare och väntade på Nora. Hon kom inte i tid, hon var 5 minuter sen.",
+              "en": "First date with Nora: I booked a table at a nice restaurant. I arrived 5 minutes early and waited for Nora. She did not arrive on time; she was 5 minutes late.",
+              "glossary": [
+                {
+                  "fi": "bokade bord",
+                  "en": "booked a table"
+                },
+                {
+                  "fi": "väntade på",
+                  "en": "waited for"
+                },
+                {
+                  "fi": "i tid",
+                  "en": "on time"
+                }
+              ]
+            },
+            {
+              "speaker": "Andreas",
+              "voice": "Henrik",
+              "fi": "Vi åt pasta och drack vin. Efter restaurangen gick vi på bio. Det var romantiskt.",
+              "en": "We ate pasta and drank wine. After the restaurant we went to the cinema. It was romantic.",
+              "glossary": [
+                {
+                  "fi": "åt",
+                  "en": "ate"
+                },
+                {
+                  "fi": "drack",
+                  "en": "drank"
+                },
+                {
+                  "fi": "gick på bio",
+                  "en": "went to the cinema"
+                }
+              ]
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "Why did Andreas start a diary?",
+              "options": [
+                "He has a secret life",
+                "He is learning Swedish",
+                "He wants restaurant notes"
+              ],
+              "answer": 0,
+              "explanation": "Jag har ett hemligt liv så jag började skriva dagbok."
+            },
+            {
+              "prompt": "What did Andreas and Nora do after the restaurant?",
+              "options": [
+                "They went to the cinema",
+                "They went home",
+                "They met Lena"
+              ],
+              "answer": 0,
+              "explanation": "Efter restaurangen gick vi på bio."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "den 1:a april",
+              "natural": "den första april",
+              "note": "The page writes the ordinal with a figure; read it aloud as den första april."
+            },
+            {
+              "source": "Borde jag berätta sanningen för Nora?",
+              "natural": "Ska jag berätta sanningen för Nora?",
+              "note": "Borde means should and appears fully in a later lecture. Ska jag …? is enough to produce now."
+            }
+          ],
+          "backchain": {
+            "line": 6,
+            "chunks": [
+              "på bio",
+              "gick vi på bio",
+              "Efter restaurangen gick vi på bio."
+            ]
+          },
+          "hunt": {
+            "label": "Past-tense hunt",
+            "title": "Find the event verbs the page marks in red.",
+            "instructions": "Tap the marked past forms and connect each one to an event in the diary.",
+            "missHint": "Look for what started or happened: började, träffade, bokade, väntade.",
+            "spots": [
+              {
+                "word": "började",
+                "mark": "började",
+                "rule": "började: started; the next verb stays in the infinitive."
+              },
+              {
+                "word": "träffade",
+                "mark": "träffade",
+                "rule": "träffade: met; a regular past form."
+              },
+              {
+                "word": "bokade",
+                "mark": "bokade",
+                "rule": "bokade: booked; a regular past form."
+              },
+              {
+                "word": "väntade",
+                "mark": "väntade",
+                "rule": "väntade på: waited for; keep på with the verb."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Textbook page practice: Det är viktigt att ha bra vänner",
+          "tabLabel": "Page 20 · Bra vänner",
+          "intro": "This is Maria’s letter to Lena inside the textbook plot. Use it as a model for an informal letter: greeting, important news, support and a closing.",
+          "image": "/images/source/textbook-lesson-08-page-20.png",
+          "imageAlt": "Textbook page 20, Det är viktigt att ha bra vänner, a letter from Maria to Lena",
+          "textRegion": {
+            "top": 15,
+            "height": 73
+          },
+          "pageLabel": "textbook physical page 20",
+          "focus": [
+            "friendly greeting and closing",
+            "det handlar om",
+            "important news",
+            "supporting a friend"
+          ],
+          "recallCues": [
+            "Maria greets Lena.",
+            "She has something important to tell; it is about Andreas.",
+            "She says he booked a café table with Nora behind Lena’s back.",
+            "She asks Lena not to be angry with Nora.",
+            "Maria and Nora planned the date to show Lena the truth.",
+            "Maria offers help, then closes with a hug and her name.",
+            "Close with love from Maria."
+          ],
+          "lines": [
+            {
+              "speaker": "Maria",
+              "voice": "Maja",
+              "fi": "Hej, Lena!",
+              "en": "Hi, Lena!",
+              "glossary": []
+            },
+            {
+              "speaker": "Maria",
+              "voice": "Maja",
+              "fi": "Jag har något viktigt att berätta för dig. Det handlar om Andreas.",
+              "en": "I have something important to tell you. It is about Andreas.",
+              "glossary": [
+                {
+                  "fi": "något viktigt",
+                  "en": "something important"
+                },
+                {
+                  "fi": "Det handlar om",
+                  "en": "It is about"
+                }
+              ]
+            },
+            {
+              "speaker": "Maria",
+              "voice": "Maja",
+              "fi": "Ni köpte ett stort hus tillsammans och har två barn men jag tycker inte att han är ärlig.",
+              "en": "You bought a big house together and have two children, but I do not think he is honest.",
+              "glossary": [
+                {
+                  "fi": "tillsammans",
+                  "en": "together"
+                },
+                {
+                  "fi": "ärlig",
+                  "en": "honest"
+                }
+              ]
+            },
+            {
+              "speaker": "Maria",
+              "voice": "Maja",
+              "fi": "Ett nytt, mysigt kafé öppnar på fredag den 10 april och Andreas bokade bord. Han ska ha fika där med min vän Nora bakom din rygg.",
+              "en": "A new, cosy café opens on Friday 10 April, and Andreas booked a table. He is going to have coffee there with my friend Nora behind your back.",
+              "glossary": [
+                {
+                  "fi": "mysigt kafé",
+                  "en": "cosy café"
+                },
+                {
+                  "fi": "bakom din rygg",
+                  "en": "behind your back"
+                }
+              ]
+            },
+            {
+              "speaker": "Maria",
+              "voice": "Maja",
+              "fi": "Bli inte arg på Nora! Hon visste inte att Andreas hade fru och barn. Hon är en snäll tjej och hon ska göra slut med Andreas på fredag.",
+              "en": "Do not be angry with Nora! She did not know that Andreas had a wife and children. She is a kind woman, and she will break up with Andreas on Friday.",
+              "glossary": [
+                {
+                  "fi": "arg på",
+                  "en": "angry with"
+                },
+                {
+                  "fi": "göra slut",
+                  "en": "break up"
+                }
+              ]
+            },
+            {
+              "speaker": "Maria",
+              "voice": "Maja",
+              "fi": "Vi planerade den här dejten så att vi kan visa dig sanningen. Andreas ljuger! Jag finns här för dig om du behöver något.",
+              "en": "We planned this date so that we can show you the truth. Andreas is lying! I am here for you if you need anything.",
+              "glossary": [
+                {
+                  "fi": "visa dig sanningen",
+                  "en": "show you the truth"
+                },
+                {
+                  "fi": "Jag finns här för dig",
+                  "en": "I am here for you"
+                }
+              ]
+            },
+            {
+              "speaker": "Maria",
+              "voice": "Maja",
+              "fi": "Kram,\nMaria",
+              "en": "Hugs, Maria",
+              "glossary": [
+                {
+                  "fi": "Kram",
+                  "en": "Hugs; an informal closing"
+                }
+              ]
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "Who writes the letter?",
+              "options": [
+                "Maria",
+                "Nora",
+                "Andreas"
+              ],
+              "answer": 0,
+              "explanation": "The letter closes Kram, Maria."
+            },
+            {
+              "prompt": "Why did Maria and Nora plan the date?",
+              "options": [
+                "To show Lena the truth",
+                "To celebrate a birthday",
+                "To practise Swedish"
+              ],
+              "answer": 0,
+              "explanation": "Vi planerade den här dejten så att vi kan visa dig sanningen."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "Jag har något viktigt att berätta för dig.",
+              "natural": "Jag måste berätta en viktig sak.",
+              "note": "Both are natural. The source phrase is useful when you have important news."
+            }
+          ],
+          "backchain": {
+            "line": 1,
+            "chunks": [
+              "om Andreas",
+              "handlar om Andreas",
+              "Det handlar om Andreas."
+            ]
+          },
+          "hunt": {
+            "label": "Letter-phrase hunt",
+            "title": "Find the useful phrases marked or underlined on the page.",
+            "instructions": "These chunks tell the topic, refer to secrecy, and offer support.",
+            "missHint": "Look for the underlined groups.",
+            "spots": [
+              {
+                "word": "handlar",
+                "mark": "handlar",
+                "rule": "Use det handlar om + topic: it is about …"
+              },
+              {
+                "word": "bakom",
+                "mark": "bakom",
+                "rule": "A fixed phrase meaning behind your back."
+              },
+              {
+                "word": "finns",
+                "mark": "finns",
+                "rule": "A warm way to offer support."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "Put past events in order",
+      "kind": "rule",
+      "body": [
+        "A list becomes a story when the listener knows when things happened and in what order. Start with a time: igår, i lördags, förra veckan. Then guide the listener with först, sedan, efter det and till slut.",
+        "Swedish keeps the verb in the second position. If a time phrase takes the first position, the past-tense verb comes next and the subject follows: Förra veckan läste vi en bok. Do not say Förra veckan vi läste."
+      ],
+      "examples": [
+        {
+          "fi": "Igår spelade jag datorspel.",
+          "en": "Yesterday I played video games.",
+          "note": "Igår first; spelade second."
+        },
+        {
+          "fi": "Förra veckan läste vi en bok.",
+          "en": "Last week we read a book.",
+          "note": "Time first changes the order to läste vi."
+        },
+        {
+          "fi": "Först åt jag frukost. Sedan gick jag på bio. Efter det träffade jag en vän.",
+          "en": "First I ate breakfast. Then I went to the cinema. After that I met a friend.",
+          "note": "Three signposts make the order clear."
+        }
+      ],
+      "table": {
+        "headings": [
+          "First place",
+          "Verb (second)",
+          "Subject + rest"
+        ],
+        "rows": [
+          [
+            "Igår",
+            "spelade",
+            "jag datorspel."
+          ],
+          [
+            "Förra veckan",
+            "läste",
+            "vi en bok."
+          ],
+          [
+            "Efter det",
+            "träffade",
+            "jag en vän."
+          ]
+        ]
+      },
+      "memoryTip": "TIME → VERB → PERSON: Förra veckan → läste → vi.",
+      "tryIt": "Say three true or invented events. Begin each line with Igår, Sedan or Efter det.",
+      "activity": {
+        "type": "sort",
+        "label": "Order or verb?",
+        "title": "What job does the first phrase do?",
+        "instructions": "Sort each phrase into a time anchor or an order signpost. Then say its complete model aloud.",
+        "buckets": [
+          {
+            "id": "time",
+            "label": "When?",
+            "hint": "a day or period"
+          },
+          {
+            "id": "order",
+            "label": "What came next?",
+            "hint": "position in the story"
+          }
+        ],
+        "items": [
+          {
+            "fi": "igår",
+            "en": "yesterday",
+            "bucket": "time",
+            "why": "Igår says when."
+          },
+          {
+            "fi": "förra veckan",
+            "en": "last week",
+            "bucket": "time",
+            "why": "Förra veckan says when."
+          },
+          {
+            "fi": "först",
+            "en": "first",
+            "bucket": "order",
+            "why": "Först begins an ordered list."
+          },
+          {
+            "fi": "sedan",
+            "en": "then",
+            "bucket": "order",
+            "why": "Sedan moves to the next event."
+          },
+          {
+            "fi": "efter det",
+            "en": "after that",
+            "bucket": "order",
+            "why": "Efter det links to the earlier event."
+          },
+          {
+            "fi": "till slut",
+            "en": "finally",
+            "bucket": "order",
+            "why": "Till slut closes the sequence."
+          }
+        ],
+        "summary": "Put any one of these first, then put the verb second."
+      }
+    },
+    {
+      "title": "Write to a friend",
+      "kind": "register",
+      "body": [
+        "An informal letter sounds like a conversation. Begin with Hej + name. Share your news in short paragraphs. Ask one real question so your friend can answer. End warmly with Kram or Hälsningar and your name.",
+        "A diary records a day for yourself. A letter chooses news for another person. Both become easy to follow when you use time and order phrases."
+      ],
+      "examples": [
+        {
+          "fi": "Hej Sara!",
+          "en": "Hi Sara!",
+          "note": "Friendly greeting."
+        },
+        {
+          "fi": "I måndags började jag en ny kurs. Sedan träffade jag en vän.",
+          "en": "On Monday I started a new course. Then I met a friend.",
+          "note": "Two pieces of news in time order."
+        },
+        {
+          "fi": "Hur var din vecka?",
+          "en": "How was your week?",
+          "note": "A question invites an answer."
+        },
+        {
+          "fi": "Kram, Alex",
+          "en": "Hugs, Alex",
+          "note": "Warm and informal."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Part",
+          "Job",
+          "Useful Swedish"
+        ],
+        "rows": [
+          [
+            "Greeting",
+            "name your friend",
+            "Hej Sara!"
+          ],
+          [
+            "News",
+            "say what happened",
+            "I måndags … Sedan …"
+          ],
+          [
+            "Question",
+            "invite an answer",
+            "Vad gjorde du?"
+          ],
+          [
+            "Closing",
+            "finish warmly",
+            "Kram, Alex"
+          ]
+        ]
+      },
+      "memoryTip": "HEJ → NEWS → QUESTION → KRAM.",
+      "tryIt": "Say a four-part letter aloud before you write it.",
+      "activity": {
+        "type": "match",
+        "label": "Build the letter",
+        "title": "Match each letter part to a useful line",
+        "instructions": "Make the four-part shape of a friendly letter.",
+        "leftLabel": "Letter part",
+        "rightLabel": "Line",
+        "pairs": [
+          {
+            "left": "Greeting",
+            "right": "Hej Sara!"
+          },
+          {
+            "left": "News",
+            "right": "I lördags träffade jag en vän."
+          },
+          {
+            "left": "Question",
+            "right": "Vad gjorde du i helgen?"
+          },
+          {
+            "left": "Closing",
+            "right": "Kram, Alex"
+          }
+        ],
+        "pattern": "A friendly letter needs a greeting, news, a question and a closing.",
+        "sentence": "{left}: {right}"
+      }
+    },
+    {
+      "title": "Say what it is about",
+      "kind": "scene",
+      "body": [
+        "Use det handlar om when you name the topic or story of a book, film, letter or conversation. Learn it as one chunk. Handlar alone often means deals, but handlar om means is about.",
+        "Put the thing first, then handlar om, then the topic: Filmen handlar om vänskap."
+      ],
+      "examples": [
+        {
+          "fi": "Filmen handlar om vänskap.",
+          "en": "The film is about friendship."
+        },
+        {
+          "fi": "Boken handlar om Finland.",
+          "en": "The book is about Finland."
+        },
+        {
+          "fi": "Brevet handlar om Andreas.",
+          "en": "The letter is about Andreas."
+        }
+      ],
+      "memoryTip": "THING + handlar om + TOPIC. Keep om attached.",
+      "tryIt": "Name one film or book and say what it is about.",
+      "activity": {
+        "type": "match",
+        "label": "What is it about?",
+        "title": "Match each thing with its topic",
+        "instructions": "Match the halves, then say every full sentence.",
+        "leftLabel": "Thing",
+        "rightLabel": "Topic",
+        "pairs": [
+          {
+            "left": "Filmen handlar om",
+            "right": "vänskap."
+          },
+          {
+            "left": "Boken handlar om",
+            "right": "Finland."
+          },
+          {
+            "left": "Brevet handlar om",
+            "right": "Andreas."
+          },
+          {
+            "left": "Kursen handlar om",
+            "right": "svensk vardag."
+          }
+        ],
+        "pattern": "handlar om stays together before the topic.",
+        "sentence": "{left} {right}"
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-08-guided-1",
+      "prompt": "Produce: “Yesterday I played video games.”",
+      "answers": [
+        "Igår spelade jag datorspel."
+      ],
+      "hint": "Put the time first and the past verb second.",
+      "explanation": "Igår spelade jag datorspel."
+    },
+    {
+      "id": "sv-08-guided-2",
+      "prompt": "Förra veckan ___ vi en bok.",
+      "answers": [
+        "läste"
+      ],
+      "hint": "The time phrase is first, so the verb comes before vi.",
+      "explanation": "Förra veckan läste vi en bok.",
+      "options": [
+        "läste",
+        "vi läste",
+        "läser"
+      ]
+    },
+    {
+      "id": "sv-08-guided-3",
+      "prompt": "Choose the next-event signpost: Först åt vi. ___ gick vi på bio.",
+      "answers": [
+        "Sedan"
+      ],
+      "hint": "You need then, not yesterday.",
+      "explanation": "Sedan moves the story to its next event.",
+      "options": [
+        "Sedan",
+        "Igår",
+        "Förra veckan"
+      ]
+    },
+    {
+      "id": "sv-08-guided-4",
+      "prompt": "Produce: “After that I met a friend.”",
+      "answers": [
+        "Efter det träffade jag en vän."
+      ],
+      "hint": "After that comes first, so put the past verb next.",
+      "explanation": "Efter det träffade jag en vän."
+    },
+    {
+      "id": "sv-08-guided-5",
+      "prompt": "Complete: Filmen ___ kärlek.",
+      "answers": [
+        "handlar om"
+      ],
+      "hint": "Keep the two-word chunk together.",
+      "explanation": "Filmen handlar om kärlek."
+    },
+    {
+      "id": "sv-08-guided-6",
+      "prompt": "Which opening and closing fit a friend?",
+      "answers": [
+        "Hej Sara! … Kram, Alex"
+      ],
+      "hint": "Choose the warm everyday pair.",
+      "explanation": "Hej and Kram fit an informal letter.",
+      "options": [
+        "Hej Sara! … Kram, Alex",
+        "Bästa kund … Med vänlig hälsning",
+        "Kram Sara … Hej Alex"
+      ]
+    },
+    {
+      "id": "sv-08-guided-7",
+      "prompt": "Produce the common-mistake correction: “Last Saturday I went to the cinema.”",
+      "answers": [
+        "Förra lördagen gick jag på bio.",
+        "I lördags gick jag på bio."
+      ],
+      "hint": "Do not put jag before the verb when time comes first.",
+      "explanation": "Model: Förra lördagen gick jag på bio."
+    }
+  ],
+  "sittingBreakAfter": "guided",
+  "missionPlan": {
+    "title": "Plan your weekend story",
+    "intro": "Choose real or invented details. Keep each line short.",
+    "lines": [
+      {
+        "label": "Open",
+        "before": "I helgen ",
+        "after": ".",
+        "placeholder": "träffade jag en vän"
+      },
+      {
+        "label": "First",
+        "before": "Först ",
+        "after": ".",
+        "placeholder": "tränade jag på gymmet"
+      },
+      {
+        "label": "Then",
+        "before": "Sedan ",
+        "after": ".",
+        "placeholder": "gick vi på bio"
+      },
+      {
+        "label": "After that",
+        "before": "Efter det ",
+        "after": ".",
+        "placeholder": "åt vi på ett kafé"
+      },
+      {
+        "label": "Finish",
+        "before": "Till slut ",
+        "after": ".",
+        "placeholder": "gick jag hem"
+      }
+    ]
+  },
+  "practice": {
+    "words": [
+      {
+        "id": "sv-08-word-1",
+        "fi": "igår",
+        "en": "yesterday",
+        "example": "Igår skrev jag till Elin.",
+        "translation": "Yesterday I wrote to Elin.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-2",
+        "fi": "förra veckan",
+        "en": "last week",
+        "example": "Förra veckan läste vi en bok.",
+        "translation": "Last week we read a book.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-3",
+        "fi": "först",
+        "en": "first",
+        "example": "Först åt jag frukost.",
+        "translation": "First I ate breakfast.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-4",
+        "fi": "sedan",
+        "en": "then",
+        "example": "Sedan gick jag ut.",
+        "translation": "Then I went out.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-5",
+        "fi": "efter det",
+        "en": "after that",
+        "example": "Efter det träffade jag en vän.",
+        "translation": "After that I met a friend.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-6",
+        "fi": "till slut",
+        "en": "finally",
+        "example": "Till slut gick jag hem.",
+        "translation": "Finally I went home.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-7",
+        "fi": "en dagbok",
+        "en": "a diary",
+        "example": "Jag skrev i min dagbok.",
+        "translation": "I wrote in my diary.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-8",
+        "fi": "ett brev",
+        "en": "a letter",
+        "example": "Jag skrev ett brev till Alex.",
+        "translation": "I wrote a letter to Alex.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-9",
+        "fi": "började",
+        "en": "started",
+        "example": "Jag började skriva.",
+        "translation": "I started writing.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-10",
+        "fi": "träffade",
+        "en": "met",
+        "example": "Jag träffade Elin i lördags.",
+        "translation": "I met Elin on Saturday.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-11",
+        "fi": "gick",
+        "en": "went",
+        "example": "Vi gick på bio.",
+        "translation": "We went to the cinema.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-12",
+        "fi": "såg",
+        "en": "saw",
+        "example": "Vi såg en rolig film.",
+        "translation": "We saw a funny film.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-13",
+        "fi": "åt",
+        "en": "ate",
+        "example": "Vi åt på ett kafé.",
+        "translation": "We ate at a café.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-14",
+        "fi": "drack",
+        "en": "drank",
+        "example": "Jag drack kaffe.",
+        "translation": "I drank coffee.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-15",
+        "fi": "berättade",
+        "en": "told",
+        "example": "Hon berättade om sin vecka.",
+        "translation": "She told me about her week.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-16",
+        "fi": "det handlar om",
+        "en": "it is about",
+        "example": "Filmen handlar om vänskap.",
+        "translation": "The film is about friendship.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-17",
+        "fi": "viktig",
+        "en": "important",
+        "example": "Vänskap är viktig.",
+        "translation": "Friendship is important.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-18",
+        "fi": "ärlig",
+        "en": "honest",
+        "example": "En bra vän är ärlig.",
+        "translation": "A good friend is honest.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-19",
+        "fi": "tillsammans",
+        "en": "together",
+        "example": "Vi lagade mat tillsammans.",
+        "translation": "We cooked together.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-20",
+        "fi": "Kram",
+        "en": "Hugs",
+        "example": "Kram, Elin",
+        "translation": "Hugs, Elin",
+        "level": "A1"
+      }
+    ],
+    "pronunciation": {
+      "text": "Igår skrev jag ett brev. Först tränade jag. Sedan gick vi på bio. Efter det åt vi på ett kafé. Till slut gick jag hem.",
+      "tip": "Keep the time phrase as one beat. Then stress the past verb: FÖRST TRÄNADE jag."
+    },
+    "reading_passage": {
+      "text": "Hej Maja!\nI måndags började jag en ny kurs. Först träffade jag läraren. Sedan pratade jag med de andra eleverna. Efter lektionen drack vi kaffe tillsammans. Kursen handlar om svensk vardag. Vad gjorde du i måndags?\nKram, Elin",
+      "gist": {
+        "prompt": "Why does Elin write?",
+        "options": [
+          "To share news about a new course",
+          "To complain about a café",
+          "To invite Maja to the cinema"
+        ],
+        "answer": 0,
+        "explanation": "She tells Maja what happened on the first day of her new course."
+      },
+      "detail": {
+        "prompt": "What did they do after the lesson?",
+        "options": [
+          "They drank coffee together",
+          "They watched a film",
+          "They went home immediately"
+        ],
+        "answer": 0,
+        "explanation": "Efter lektionen drack vi kaffe tillsammans."
+      }
+    },
+    "reading": {
+      "text": "Hej Maja! I måndags började jag en ny kurs. Först träffade jag läraren. Sedan pratade jag med de andra eleverna. Efter lektionen drack vi kaffe tillsammans. Kursen handlar om svensk vardag. Vad gjorde du i måndags? Kram, Elin",
+      "question": "What is the course about?",
+      "options": [
+        "Everyday life in Sweden",
+        "Films",
+        "Food"
+      ],
+      "answer": 0,
+      "explanation": "Kursen handlar om svensk vardag."
+    },
+    "listening": {
+      "text": "Förra lördagen vaknade jag tidigt. Först åt jag frukost. Sedan åkte jag till Åbo och träffade en vän. Vi promenerade och åt lunch tillsammans. På kvällen åkte jag hem.",
+      "question": "Where did the speaker go?",
+      "options": [
+        "Turku",
+        "Stockholm",
+        "Helsinki"
+      ],
+      "answer": 0,
+      "explanation": "Åbo is the Swedish name for Turku."
+    },
+    "speaking": {
+      "prompt": "Tell a friend about last weekend in five to seven lines. Say when, give at least three events in order, and finish with how the weekend was.",
+      "help": "I helgen … · Först … · Sedan … · Efter det … · Till slut … · Det var …",
+      "model": "I helgen träffade jag en vän. Först drack vi kaffe. Sedan gick vi på bio och såg en rolig film. Efter det åt vi på en restaurang. Till slut gick jag hem. Det var en mysig helg."
+    },
+    "writing": {
+      "prompt": "Write an informal letter to a friend about your week.",
+      "situation": "Your friend Sara asks: “Hur var din vecka?” (How was your week?) Write back with your news.",
+      "points": [
+        "Greet your friend.",
+        "Describe at least two events from your week in a clear order.",
+        "Ask your friend one question.",
+        "Use an informal closing and your name."
+      ],
+      "wordRange": [
+        40,
+        70
+      ],
+      "help": "Hej Sara! · I måndags … · Först … · Sedan … · Efter det … · Vad gjorde du? · Hur var din vecka? · Kram, …",
+      "model": "Hej Sara!\nTack för ditt brev. Min vecka var bra. I måndags tränade jag på gymmet. Sedan träffade jag en vän och vi drack kaffe tillsammans. I onsdags såg jag en rolig film hemma. Vad gjorde du i veckan?\nKram, Alex"
+    }
+  },
+  "route": {
+    "expectedOutput": "Tell a friend about last weekend in five to seven lines, then write a 40–70-word informal letter about your week.",
+    "transferPrompt": "Tell it again, but change one event or add how you felt.",
+    "returnPrompt": "Without notes, tell three events from last weekend in order.",
+    "successChecks": [
+      "I say when the events happened.",
+      "I use at least three past-tense verbs.",
+      "I connect events with först, sedan or efter det.",
+      "My letter has a greeting, news, a question and a closing."
+    ],
+    "primarySkill": "speaking",
+    "requiredSkills": [
+      "speaking",
+      "writing"
+    ]
+  },
+  "unplannedQuestions": [
+    {
+      "id": "sv-08-unplanned-1",
+      "fi": "Vad gjorde du i lördags?",
+      "en": "What did you do on Saturday?",
+      "sample": "I lördags träffade jag en vän."
+    },
+    {
+      "id": "sv-08-unplanned-2",
+      "fi": "Vem träffade du?",
+      "en": "Who did you meet?",
+      "sample": "Jag träffade en vän."
+    },
+    {
+      "id": "sv-08-unplanned-3",
+      "fi": "Vad åt du?",
+      "en": "What did you eat?",
+      "sample": "Jag åt pasta."
+    },
+    {
+      "id": "sv-08-unplanned-4",
+      "fi": "Såg du en film?",
+      "en": "Did you watch a film?",
+      "sample": "Ja, jag såg en rolig film."
+    },
+    {
+      "id": "sv-08-unplanned-5",
+      "fi": "Hur var helgen?",
+      "en": "How was the weekend?",
+      "sample": "Den var lugn och bra."
+    },
+    {
+      "id": "sv-08-unplanned-6",
+      "fi": "Vad handlar din favoritfilm om?",
+      "en": "What is your favourite film about?",
+      "sample": "Den handlar om vänskap."
+    }
+  ],
+  "reviewPhrases": [
+    {
+      "id": "sv-08-review-1",
+      "en": "Last week …",
+      "fi": "Förra veckan …"
+    },
+    {
+      "id": "sv-08-review-2",
+      "en": "First …",
+      "fi": "Först …"
+    },
+    {
+      "id": "sv-08-review-3",
+      "en": "Then …",
+      "fi": "Sedan …"
+    },
+    {
+      "id": "sv-08-review-4",
+      "en": "After that …",
+      "fi": "Efter det …"
+    },
+    {
+      "id": "sv-08-review-5",
+      "en": "Finally …",
+      "fi": "Till slut …"
+    },
+    {
+      "id": "sv-08-review-6",
+      "en": "It is about …",
+      "fi": "Det handlar om …"
+    },
+    {
+      "id": "sv-08-review-7",
+      "en": "What did you do at the weekend?",
+      "fi": "Vad gjorde du i helgen?"
+    },
+    {
+      "id": "sv-08-review-8",
+      "en": "Hugs, …",
+      "fi": "Kram, …"
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-08-check-v2",
+      "prompt": "Produce: “Last week we read a book.”",
+      "answers": [
+        "Förra veckan läste vi en bok."
+      ],
+      "hint": "Time first, verb second, then the subject.",
+      "explanation": "Förra veckan takes the first place, so läste comes before vi."
+    },
+    {
+      "id": "sv-08-check-order",
+      "prompt": "Choose the line with correct word order.",
+      "answers": [
+        "Igår spelade jag datorspel."
+      ],
+      "hint": "After Igår, put the verb before the subject.",
+      "explanation": "Igår spelade jag … keeps the verb second.",
+      "options": [
+        "Igår spelade jag datorspel.",
+        "Igår jag spelade datorspel.",
+        "Igår datorspel jag spelade."
+      ]
+    },
+    {
+      "id": "sv-08-check-about",
+      "prompt": "Complete: Filmen ___ vänskap.",
+      "answers": [
+        "handlar om"
+      ],
+      "hint": "Use the chunk for saying the topic of a film or book.",
+      "explanation": "Filmen handlar om vänskap: The film is about friendship.",
+      "options": [
+        "handlar om",
+        "väntar på",
+        "går om"
+      ]
+    },
+    {
+      "id": "sv-08-check-letter",
+      "prompt": "Which ending suits a letter to a friend?",
+      "answers": [
+        "Kram, Elin"
+      ],
+      "hint": "Choose the warm, informal closing.",
+      "explanation": "Kram is natural between friends.",
+      "options": [
+        "Kram, Elin",
+        "Med vänlig hälsning, Elin",
+        "Hej Elin"
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "Episode 8 mission: My weekend in order",
+    "instructions": "CORE: Tell a friend about last weekend in five to seven lines. Say when, and connect at least three events with först, sedan, efter det or till slut. Finish with how it was.\n\nWRITE: Answer a friend in 40–70 words. Include a greeting, two events, one question and an informal closing.\n\nRETURN: Tomorrow, tell three events again without looking.",
+    "model": "I helgen träffade jag en vän. Först drack vi kaffe. Sedan gick vi på bio. Efter det åt vi middag tillsammans. Till slut gick jag hem. Det var en rolig helg."
+  },
+  "takeaways": [
+    "A time phrase can come first: Förra veckan läste vi en bok. The verb still comes second.",
+    "Order a past story with först, sedan, efter det and till slut.",
+    "Det handlar om tells the topic of a book, film or conversation.",
+    "A friendly letter has a greeting, news, a question and a warm closing."
+  ],
+  "resources": [
+    {
+      "label": "Svenska Akademiens ordböcker (svenska.se)",
+      "url": "https://svenska.se/",
+      "description": "Look up one past-tense verb, such as skrev, gick or såg."
+    }
+  ]
+}

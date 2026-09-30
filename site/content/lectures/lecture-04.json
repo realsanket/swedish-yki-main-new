@@ -1,0 +1,1421 @@
+{
+  "number": 4,
+  "routeProfile": "standard",
+  "objectives": [
+    "Choose en or ett for common things and use the last word to understand a compound noun.",
+    "Say what you do for work and where you work.",
+    "Describe what you usually do in your free time with brukar and useful time phrases."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "writing"
+  ],
+  "grammarTerms": [
+    "noun",
+    "gender",
+    "article",
+    "compound-word",
+    "verb",
+    "present-tense",
+    "infinitive",
+    "adverb",
+    "word-order",
+    "verb-second"
+  ],
+  "presentation": {
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen for Alex’s work and Elin’s weekend habit."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Learn en and ett, work phrases, and free-time habits."
+      }
+    },
+    "opening": {
+      "teacherNote": {
+        "title": "Listen for work and habits",
+        "body": "First listen for two facts: where Alex works, and what Elin usually does at the weekend."
+      },
+      "questionIntro": "Answer from the story. You do not need every word.",
+      "dialogue": {
+        "part": "recall",
+        "eyebrow": "START WITH THE STORY",
+        "title": "Monday coffee",
+        "instructions": "Listen once without text. Then open it and copy one useful line.",
+        "initiallyOpen": false
+      }
+    },
+    "teaching": {
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the Lesson 4 word bank"
+      }
+    }
+  },
+  "sittingBreakAfter": "guided",
+  "unplannedQuestions": [
+    {
+      "id": "job",
+      "fi": "Vad jobbar du med?",
+      "en": "What do you do for work?",
+      "sample": "Jag jobbar som programmerare."
+    },
+    {
+      "id": "place",
+      "fi": "Var jobbar du?",
+      "en": "Where do you work?",
+      "sample": "Jag jobbar på ett företag i Helsingfors."
+    },
+    {
+      "id": "home",
+      "fi": "Jobbar du hemifrån?",
+      "en": "Do you work from home?",
+      "sample": "Ja, jag jobbar mestadels hemifrån."
+    },
+    {
+      "id": "weekend",
+      "fi": "Vad brukar du göra på helgen?",
+      "en": "What do you usually do at the weekend?",
+      "sample": "På helgen brukar jag läsa en bok."
+    },
+    {
+      "id": "evening",
+      "fi": "Vad gör du på kvällen?",
+      "en": "What do you do in the evening?",
+      "sample": "På kvällen lyssnar jag på musik."
+    },
+    {
+      "id": "wish",
+      "fi": "Vad vill du ha?",
+      "en": "What would you like?",
+      "sample": "Jag vill ha en dator och ett datorspel."
+    }
+  ],
+  "reviewPhrases": [
+    {
+      "id": "job-as",
+      "en": "I work as …",
+      "fi": "Jag jobbar som …"
+    },
+    {
+      "id": "job-company",
+      "en": "I work at a company.",
+      "fi": "Jag jobbar på ett företag."
+    },
+    {
+      "id": "work-home",
+      "en": "I work from home.",
+      "fi": "Jag jobbar hemifrån."
+    },
+    {
+      "id": "weekend-usually",
+      "en": "At the weekend I usually …",
+      "fi": "På helgen brukar jag …"
+    },
+    {
+      "id": "read-book",
+      "en": "I read a book.",
+      "fi": "Jag läser en bok."
+    },
+    {
+      "id": "one-job-computer",
+      "en": "a job, a computer",
+      "fi": "ett jobb, en dator"
+    },
+    {
+      "id": "evening-film",
+      "en": "In the evening I watch a film.",
+      "fi": "På kvällen tittar jag på en film."
+    },
+    {
+      "id": "now-vacation",
+      "en": "Right now I am on holiday.",
+      "fi": "Just nu är jag på semester."
+    }
+  ],
+  "missionPlan": {
+    "title": "Plan your five lines",
+    "intro": "Say what your work situation is and what you do in your free time. Change any frame so it is true for you.",
+    "lines": [
+      {
+        "label": "Work",
+        "before": "Jag jobbar som",
+        "after": ".",
+        "placeholder": "programmerare"
+      },
+      {
+        "label": "Place",
+        "before": "Jag jobbar på",
+        "after": ".",
+        "placeholder": "ett företag i Helsingfors"
+      },
+      {
+        "label": "Work arrangement",
+        "before": "Jag jobbar",
+        "after": ".",
+        "placeholder": "mestadels hemifrån"
+      },
+      {
+        "label": "Weekend habit",
+        "before": "På helgen brukar jag",
+        "after": ".",
+        "placeholder": "läsa en bok"
+      },
+      {
+        "label": "Another habit",
+        "before": "På kvällen brukar jag",
+        "after": ".",
+        "placeholder": "lyssna på musik"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "Elin",
+      "fi": "Hej Alex! Vad jobbar du med?",
+      "en": "Hi Alex! What do you do for work?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Jag jobbar som programmerare.",
+      "en": "I work as a programmer."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Var jobbar du?",
+      "en": "Where do you work?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Jag jobbar på ett företag i Helsingfors, men jag jobbar mestadels hemifrån.",
+      "en": "I work at a company in Helsinki, but I work mostly from home."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Och du? Vad brukar du göra på helgen?",
+      "en": "And you? What do you usually do at the weekend?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "På helgen brukar jag läsa en bok eller gå på bio.",
+      "en": "At the weekend I usually read a book or go to the cinema."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Brukar du spela datorspel?",
+      "en": "Do you usually play video games?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Nej, men då och då tittar jag på en film.",
+      "en": "No, but now and then I watch a film."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Det låter bra! Jag vill ha ett nytt datorspel.",
+      "en": "That sounds good! I want a new video game."
+    }
+  ],
+  "recall": [
+    {
+      "id": "sv-04-notice-work",
+      "prompt": "Where does Alex work?",
+      "answers": [
+        "At a company in Helsinki"
+      ],
+      "options": [
+        "At a company in Helsinki",
+        "At a school in Turku",
+        "At a hospital"
+      ],
+      "hint": "Listen for på ett företag.",
+      "explanation": "Alex says: Jag jobbar på ett företag i Helsingfors."
+    },
+    {
+      "id": "sv-04-notice-weekend",
+      "prompt": "What does Elin usually do at the weekend?",
+      "answers": [
+        "Read a book or go to the cinema"
+      ],
+      "options": [
+        "Read a book or go to the cinema",
+        "Work at a hospital",
+        "Play football every day"
+      ],
+      "hint": "Listen for På helgen brukar jag.",
+      "explanation": "She usually reads a book or goes to the cinema."
+    }
+  ],
+  "extraSteps": [
+    {
+      "id": "textbook-pages",
+      "after": "recall",
+      "kind": "source-practice",
+      "label": "Textbook pages 9–12",
+      "description": "Four source pages: a wish list, ett words, work, and free time.",
+      "minutes": 18,
+      "action": "Finish each page’s listening, meaning, hunt, vanishing-text and role-play stages.",
+      "pages": [
+        {
+          "title": "Textbook page practice: Jag vill ha en dator och ett datorspel!",
+          "tabLabel": "Page 9 · Jag vill ha en dator och ett datorspel!",
+          "intro": "Use the wish list to notice that Swedish things carry en or ett.",
+          "image": "/images/source/textbook-lesson-04-page-09.png",
+          "imageAlt": "Textbook physical page 9: Jag vill ha en dator och ett datorspel!",
+          "pageLabel": "textbook physical page 9",
+          "focus": [
+            "en bil",
+            "en dator",
+            "ett datorspel"
+          ],
+          "recallCues": [
+            "Explain why Jonas writes the list.",
+            "Recall all six presents."
+          ],
+          "lines": [
+            {
+              "speaker": "Berättare",
+              "voice": "Henrik",
+              "fi": "Jonas fyller år snart. Hans födelsedag är nästa vecka. Han skriver en lista – det är hans önskelista. Där står alla presenter som han vill få. Andreas och Lena läser listan.",
+              "en": "Jonas has a birthday soon. His birthday is next week. He writes a list—his wish list. All the presents he wants are on it. Andreas and Lena read the list.",
+              "glossary": []
+            },
+            {
+              "speaker": "Jonas",
+              "voice": "Maja",
+              "fi": "Min lista: en bil, en dator, en bok om programmering, ett par löparskor för gymmet, en mobiltelefon, ett datorspel.",
+              "en": "My list: a car, a computer, a book about programming, a pair of running shoes for the gym, a mobile phone, a video game.",
+              "glossary": []
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "When is Jonas’s birthday?",
+              "options": [
+                "Next week",
+                "Today",
+                "Next month"
+              ],
+              "answer": 0,
+              "explanation": "Hans födelsedag är nästa vecka."
+            },
+            {
+              "prompt": "Which two presents take ett?",
+              "options": [
+                "ett par löparskor and ett datorspel",
+                "en bil and en dator",
+                "en bok and en mobiltelefon"
+              ],
+              "answer": 0,
+              "explanation": "The list writes ett before par and datorspel."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "ett datorspel",
+              "natural": "ett datorspel",
+              "note": "The last part is spel, an ett word, so the whole compound is ett."
+            }
+          ],
+          "backchain": {
+            "line": 1,
+            "chunks": [
+              "ett datorspel",
+              "en mobiltelefon, ett datorspel",
+              "ett par löparskor för gymmet, en mobiltelefon, ett datorspel"
+            ]
+          }
+        },
+        {
+          "title": "Textbook page practice: En lista på ETT ord",
+          "tabLabel": "Page 10 · En lista på ETT ord",
+          "intro": "This reference page gathers common ett words. Learn useful groups, not the whole list at once.",
+          "image": "/images/source/textbook-lesson-04-page-10.png",
+          "imageAlt": "Textbook physical page 10: En lista på ETT ord",
+          "pageLabel": "textbook physical page 10",
+          "focus": [
+            "ett jobb",
+            "ett företag",
+            "ett språk"
+          ],
+          "recallCues": [
+            "Recall four work words.",
+            "Recall four home or life words.",
+            "Recall four communication or study words.",
+            "Recall the remaining common ett words."
+          ],
+          "lines": [
+            {
+              "speaker": "Lista",
+              "voice": "Henrik",
+              "fi": "ett jobb, ett arbete, ett mejl, ett problem, ett dokument, ett möte, ett kontor, ett team, ett företag, ett projekt, ett schema",
+              "en": "a job, work, an email, a problem, a document, a meeting, an office, a team, a company, a project, a schedule",
+              "glossary": []
+            },
+            {
+              "speaker": "Lista",
+              "voice": "Henrik",
+              "fi": "ett kort, ett program, ett nummer, ett fel, ett sätt, ett paket, ett pass, ett papper, ett brev, ett prov, ett meddelande",
+              "en": "a card, a program, a number, an error, a way, a package, a passport, paper, a letter, a test, a message",
+              "glossary": []
+            },
+            {
+              "speaker": "Lista",
+              "voice": "Henrik",
+              "fi": "ett land, ett område, ett hem, ett hus, ett rum, ett kök, ett kylskåp, ett huvud",
+              "en": "a country, an area, a home, a house, a room, a kitchen, a refrigerator, a head",
+              "glossary": []
+            },
+            {
+              "speaker": "Lista",
+              "voice": "Henrik",
+              "fi": "ett barn, ett kafé, ett liv, ett äpple, ett djur, ett språk, ett ämne",
+              "en": "a child, a café, a life, an apple, an animal, a language, a subject",
+              "glossary": []
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "What do all words on this page share?",
+              "options": [
+                "They take ett",
+                "They name people",
+                "They take en"
+              ],
+              "answer": 0,
+              "explanation": "The title says this is a list of ett words."
+            },
+            {
+              "prompt": "Which is a place to work?",
+              "options": [
+                "ett kontor",
+                "ett äpple",
+                "ett huvud"
+              ],
+              "answer": 0,
+              "explanation": "Ett kontor means an office."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "En lista på ETT ord",
+              "natural": "en lista med ett-ord",
+              "note": "Both forms are understandable; ett-ord is a useful way to name the group."
+            }
+          ],
+          "backchain": {
+            "line": 0,
+            "chunks": [
+              "ett jobb",
+              "ett jobb, ett arbete",
+              "ett jobb, ett arbete, ett mejl"
+            ]
+          },
+          "hunt": {
+            "label": "Article hunt",
+            "title": "Find the repeated article.",
+            "instructions": "Every noun is printed with the same article.",
+            "missHint": "Look immediately before each noun.",
+            "spots": [
+              {
+                "word": "ett",
+                "mark": "ett",
+                "rule": "Every noun on this reference page is an ett word."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Textbook page practice: Jobb",
+          "tabLabel": "Page 11 · Jobb",
+          "intro": "The page gives both a social introduction and a job interview. Listen for som and på.",
+          "image": "/images/source/textbook-lesson-04-page-11.png",
+          "imageAlt": "Textbook physical page 11: Jobb",
+          "pageLabel": "textbook physical page 11",
+          "focus": [
+            "jobbar som",
+            "jobbar på",
+            "hemifrån"
+          ],
+          "recallCues": [
+            "Andreas introduces himself.",
+            "Nora says her profession and workplace.",
+            "Andreas says where he works.",
+            "The interviewer asks why.",
+            "Maria gives her experience and goal.",
+            "The interviewer asks for a self-description.",
+            "Maria describes herself.",
+            "The interviewer mentions salary.",
+            "Maria reacts."
+          ],
+          "lines": [
+            {
+              "speaker": "Andreas",
+              "voice": "Alex",
+              "fi": "Hej, jag heter Andreas. Jag är advokat.",
+              "en": "Hi, my name is Andreas. I am a lawyer.",
+              "glossary": []
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Hej, jag heter Nora. Jag jobbar som läkare. Jag jobbar på ett sjukhus.",
+              "en": "Hi, my name is Nora. I work as a doctor. I work at a hospital.",
+              "glossary": []
+            },
+            {
+              "speaker": "Andreas",
+              "voice": "Alex",
+              "fi": "Jag jobbar på ett kontor i stan. Ibland jobbar jag hemifrån.",
+              "en": "I work at an office in town. Sometimes I work from home.",
+              "glossary": []
+            },
+            {
+              "speaker": "Intervjuare",
+              "voice": "Henrik",
+              "fi": "Varför vill du jobba här?",
+              "en": "Why do you want to work here?",
+              "glossary": []
+            },
+            {
+              "speaker": "Maria",
+              "voice": "Maja",
+              "fi": "Jag är ingenjör. Jag hade bra betyg på universitetet men har inte så mycket erfarenhet. Jag vill lära mig mer och jobba i ett team.",
+              "en": "I am an engineer. I had good grades at university but do not have much experience. I want to learn more and work in a team.",
+              "glossary": []
+            },
+            {
+              "speaker": "Intervjuare",
+              "voice": "Henrik",
+              "fi": "Hur skulle du beskriva dig själv?",
+              "en": "How would you describe yourself?",
+              "glossary": []
+            },
+            {
+              "speaker": "Maria",
+              "voice": "Maja",
+              "fi": "Jag är en motiverad och arbetsam person.",
+              "en": "I am a motivated and hardworking person.",
+              "glossary": []
+            },
+            {
+              "speaker": "Intervjuare",
+              "voice": "Henrik",
+              "fi": "Okej. Nu ska vi prata om din lön. Vår budget är mellan 4 och 6 tusen.",
+              "en": "Okay. Now we will talk about your salary. Our budget is between four and six thousand.",
+              "glossary": []
+            },
+            {
+              "speaker": "Maria",
+              "voice": "Maja",
+              "fi": "Det låter bra.",
+              "en": "That sounds good.",
+              "glossary": []
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "Where does Nora work?",
+              "options": [
+                "At a hospital",
+                "At a school",
+                "At home"
+              ],
+              "answer": 0,
+              "explanation": "Jag jobbar på ett sjukhus."
+            },
+            {
+              "prompt": "What does Maria want?",
+              "options": [
+                "Learn more and work in a team",
+                "Buy a computer",
+                "Go on holiday"
+              ],
+              "answer": 0,
+              "explanation": "Jag vill lära mig mer och jobba i ett team."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "Jag jobbar som läkare.",
+              "natural": "Jag jobbar som läkare.",
+              "note": "No en after som when you name your profession."
+            }
+          ],
+          "backchain": {
+            "line": 4,
+            "chunks": [
+              "jobba i ett team",
+              "lära mig mer och jobba i ett team",
+              "Jag vill lära mig mer och jobba i ett team."
+            ]
+          },
+          "hunt": {
+            "label": "Work-phrase hunt",
+            "title": "Find the work phrases marked in red.",
+            "instructions": "Notice which phrase names a profession and which names a place.",
+            "missHint": "Look for som, på and hemifrån.",
+            "spots": [
+              {
+                "word": "jobbar",
+                "mark": "jobbar",
+                "rule": "som + profession, with no article"
+              },
+              {
+                "word": "på",
+                "mark": "på",
+                "rule": "på + workplace"
+              },
+              {
+                "word": "hemifrån",
+                "mark": "hemifrån",
+                "rule": "from home"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Textbook page practice: Fritid",
+          "tabLabel": "Page 12 · Fritid",
+          "intro": "Compare Sofia’s holiday and habits with Nora’s quieter routine.",
+          "image": "/images/source/textbook-lesson-04-page-12.png",
+          "imageAlt": "Textbook physical page 12: Fritid",
+          "pageLabel": "textbook physical page 12",
+          "focus": [
+            "brukar",
+            "på helgen",
+            "då och då"
+          ],
+          "recallCues": [
+            "Sofia describes her holiday.",
+            "Sofia describes weekend habits.",
+            "Nora describes home and course habits.",
+            "Nora describes evening and morning habits."
+          ],
+          "lines": [
+            {
+              "speaker": "Sofia",
+              "voice": "Maja",
+              "fi": "Hej, jag heter Sofia. Just nu är jag på semester med min mamma. Vi åker till havet varje år. Där sitter vi och vilar hela tiden. Och badar såklart!",
+              "en": "Hi, my name is Sofia. Right now I am on holiday with my mother. We go to the sea every year. There we sit and relax all the time. And swim, of course!",
+              "glossary": []
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Maja",
+              "fi": "Jag brukar spela datorspel på helgen. Ibland går jag ut med vänner. Vi går på bio eller fikar på ett kafe.",
+              "en": "I usually play video games at the weekend. Sometimes I go out with friends. We go to the cinema or have coffee at a café.",
+              "glossary": []
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Hej, jag heter Nora. Jag brukar stanna hemma på helgen. Jag läser ofta en bok eller leker med min katt. Jag går en matlagningskurs då och då. Det är spännande.",
+              "en": "Hi, my name is Nora. I usually stay home at the weekend. I often read a book or play with my cat. I take a cooking class now and then. It is exciting.",
+              "glossary": []
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "På kvällen brukar jag titta på Netflix. Jag gillar filmer! På morgonen tränar jag på gymmet.",
+              "en": "In the evening I usually watch Netflix. I like films! In the morning I work out at the gym.",
+              "glossary": []
+            }
+          ],
+          "listenQuestions": [
+            {
+              "prompt": "What does Sofia usually do at the weekend?",
+              "options": [
+                "Play video games",
+                "Work in an office",
+                "Read every morning"
+              ],
+              "answer": 0,
+              "explanation": "Jag brukar spela datorspel på helgen."
+            },
+            {
+              "prompt": "When does Nora work out?",
+              "options": [
+                "In the morning",
+                "At the weekend",
+                "In the evening"
+              ],
+              "answer": 0,
+              "explanation": "På morgonen tränar jag på gymmet."
+            }
+          ],
+          "naturalNotes": [
+            {
+              "source": "fikar på ett kafe",
+              "natural": "fikar på ett kafé",
+              "note": "The page omits the accent; standard spelling is kafé."
+            }
+          ],
+          "backchain": {
+            "line": 2,
+            "chunks": [
+              "då och då",
+              "en matlagningskurs då och då",
+              "Jag går en matlagningskurs då och då."
+            ]
+          },
+          "hunt": {
+            "label": "Habit hunt",
+            "title": "Find the habit and time phrases marked in red.",
+            "instructions": "Find brukar plus an action and the phrases that say when.",
+            "missHint": "Look for brukar, på helgen, då och då, på kvällen and på morgonen.",
+            "spots": [
+              {
+                "word": "brukar",
+                "mark": "brukar",
+                "rule": "brukar + infinitive describes a usual habit"
+              },
+              {
+                "word": "helgen",
+                "mark": "helgen",
+                "rule": "at the weekend"
+              },
+              {
+                "word": "då",
+                "mark": "då",
+                "rule": "now and then"
+              },
+              {
+                "word": "kvällen",
+                "mark": "kvällen",
+                "rule": "in the evening"
+              },
+              {
+                "word": "morgonen",
+                "mark": "morgonen",
+                "rule": "in the morning"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "En or ett: every thing has a partner",
+      "kind": "grammar",
+      "body": [
+        "A Swedish noun normally comes with en or ett when it means one thing. Learn the article together with the noun: en dator, ett jobb. About four out of five nouns are en words, and words for people are usually en words.",
+        "For a compound noun, the last noun decides. Spel is an ett word, so dator + spel becomes ett datorspel."
+      ],
+      "examples": [
+        {
+          "fi": "en dator · ett spel · ett datorspel",
+          "en": "a computer · a game · a video game",
+          "note": "The last part, spel, decides."
+        },
+        {
+          "fi": "en kvinna · en läkare · en programmerare",
+          "en": "a woman · a doctor · a programmer",
+          "note": "Words for people are usually en words."
+        },
+        {
+          "fi": "ett jobb · ett företag · ett kontor",
+          "en": "a job · a company · an office",
+          "note": "Learn these useful work words as complete chunks."
+        }
+      ],
+      "table": {
+        "headings": [
+          "en words",
+          "ett words",
+          "Compound"
+        ],
+        "rows": [
+          [
+            "en bil · en bok · en dator",
+            "ett jobb · ett språk · ett spel",
+            "ett datorspel"
+          ],
+          [
+            "en läkare · en vän",
+            "ett företag · ett kontor",
+            "en önskelista"
+          ]
+        ]
+      },
+      "memoryTip": "Do not learn dator alone. Learn en dator. The small word is part of the word.",
+      "tryIt": "Point to five things near you. If you know the Swedish word, say it with en or ett.",
+      "activity": {
+        "type": "sort",
+        "label": "En or ett?",
+        "title": "Sort common things by their article",
+        "instructions": "Say the complete chunk before you place it.",
+        "buckets": [
+          {
+            "id": "en",
+            "label": "en words",
+            "hint": "most nouns; usually people"
+          },
+          {
+            "id": "ett",
+            "label": "ett words",
+            "hint": "learn these by heart"
+          }
+        ],
+        "items": [
+          {
+            "fi": "dator",
+            "en": "computer",
+            "bucket": "en",
+            "why": "It is en dator."
+          },
+          {
+            "fi": "jobb",
+            "en": "job",
+            "bucket": "ett",
+            "why": "It is ett jobb."
+          },
+          {
+            "fi": "läkare",
+            "en": "doctor",
+            "bucket": "en",
+            "why": "A person: en läkare."
+          },
+          {
+            "fi": "företag",
+            "en": "company",
+            "bucket": "ett",
+            "why": "It is ett företag."
+          },
+          {
+            "fi": "bok",
+            "en": "book",
+            "bucket": "en",
+            "why": "It is en bok."
+          },
+          {
+            "fi": "språk",
+            "en": "language",
+            "bucket": "ett",
+            "why": "It is ett språk."
+          },
+          {
+            "fi": "datorspel",
+            "en": "video game",
+            "bucket": "ett",
+            "why": "The last part spel is an ett word."
+          },
+          {
+            "fi": "önskelista",
+            "en": "wish list",
+            "bucket": "en",
+            "why": "The last part lista is an en word."
+          }
+        ],
+        "summary": "Learn article + noun together. In a compound, the final noun decides."
+      }
+    },
+    {
+      "title": "Work: what you do and where",
+      "kind": "grammar",
+      "body": [
+        "Use jobbar som plus the profession. Do not put en or ett before the profession: Jag jobbar som lärare.",
+        "Use jobbar på plus the workplace: på en skola, på ett sjukhus, på Ikea. Hemifrån means from home, and på distans means remotely."
+      ],
+      "examples": [
+        {
+          "fi": "Jag jobbar som programmerare.",
+          "en": "I work as a programmer.",
+          "note": "No article after som."
+        },
+        {
+          "fi": "Jag jobbar på ett företag i Finland.",
+          "en": "I work at a company in Finland.",
+          "note": "The workplace keeps its article."
+        },
+        {
+          "fi": "Jag jobbar mestadels hemifrån.",
+          "en": "I work mostly from home.",
+          "note": "Mestadels means most of the time."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Meaning",
+          "Pattern",
+          "Example"
+        ],
+        "rows": [
+          [
+            "profession",
+            "jobbar som + job",
+            "Jag jobbar som ingenjör."
+          ],
+          [
+            "workplace",
+            "jobbar på + place",
+            "Jag jobbar på ett kontor."
+          ],
+          [
+            "arrangement",
+            "hemifrån / på distans",
+            "Jag jobbar hemifrån."
+          ]
+        ]
+      },
+      "memoryTip": "Som answers “as what?” På answers “at where?”",
+      "tryIt": "Say one true work line. If you do not currently work, say Jag studerar or Jag söker jobb.",
+      "activity": {
+        "type": "match",
+        "label": "Job and place",
+        "title": "Match each profession to a possible workplace",
+        "instructions": "Match, then say both lines: Jag jobbar som … Jag jobbar på …",
+        "leftLabel": "Profession",
+        "rightLabel": "Workplace",
+        "pairs": [
+          {
+            "left": "lärare",
+            "right": "en skola"
+          },
+          {
+            "left": "läkare",
+            "right": "ett sjukhus"
+          },
+          {
+            "left": "programmerare",
+            "right": "ett företag"
+          },
+          {
+            "left": "servitör",
+            "right": "ett kafé"
+          }
+        ],
+        "pattern": "Jag jobbar som läkare. Jag jobbar på ett sjukhus."
+      }
+    },
+    {
+      "title": "Free time: habits with brukar",
+      "kind": "grammar",
+      "body": [
+        "Brukar says that something is a habit: something you do regularly. The action after brukar stays in the infinitive: brukar läsa, brukar spela, brukar gå.",
+        "A time phrase can come first. Then the verb stays second: På helgen brukar jag läsa. Useful phrases are på fritiden, på helgen, på kvällen, på morgonen and då och då."
+      ],
+      "examples": [
+        {
+          "fi": "På helgen brukar jag läsa en bok.",
+          "en": "At the weekend I usually read a book.",
+          "note": "Time first, then brukar, then jag."
+        },
+        {
+          "fi": "Jag brukar lyssna på musik på kvällen.",
+          "en": "I usually listen to music in the evening.",
+          "note": "The time can also come last."
+        },
+        {
+          "fi": "Då och då går jag på bio.",
+          "en": "Now and then I go to the cinema.",
+          "note": "A habit can be expressed without brukar too."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Time",
+          "Habit"
+        ],
+        "rows": [
+          [
+            "På morgonen",
+            "tränar jag på gymmet."
+          ],
+          [
+            "På kvällen",
+            "brukar jag titta på en film."
+          ],
+          [
+            "På helgen",
+            "brukar jag gå på bio."
+          ],
+          [
+            "Då och då",
+            "går jag en matlagningskurs."
+          ]
+        ]
+      },
+      "memoryTip": "Brukar already carries the present tense. The next verb is the short infinitive: brukar spela, not brukar spelar.",
+      "tryIt": "Say three honest habits with three different time phrases.",
+      "activity": {
+        "type": "question-gap",
+        "label": "Ask about habits",
+        "title": "Ask Elin and Maja about their week",
+        "instructions": "Choose the question that gets each hidden fact.",
+        "card": {
+          "title": "Elin and Maja’s free time",
+          "subtitle": "Ask when and what they usually do."
+        },
+        "answerer": "Elin",
+        "gaps": [
+          {
+            "about": "Elin",
+            "field": "Weekend habit",
+            "options": [
+              "Vad brukar du göra på helgen?",
+              "Var jobbar du?",
+              "Vad du brukar göra?"
+            ],
+            "answer": "Vad brukar du göra på helgen?",
+            "reply": {
+              "fi": "På helgen brukar jag läsa en bok.",
+              "en": "At the weekend I usually read a book."
+            },
+            "why": "Vad asks what, and brukar comes before du."
+          },
+          {
+            "about": "Maja",
+            "field": "Evening habit",
+            "options": [
+              "Vad brukar Maja göra på kvällen?",
+              "Vad Maja brukar göra?",
+              "När jobbar Maja?"
+            ],
+            "answer": "Vad brukar Maja göra på kvällen?",
+            "reply": {
+              "fi": "På kvällen brukar hon spela datorspel.",
+              "en": "In the evening she usually plays video games."
+            },
+            "why": "The verb brukar is second."
+          },
+          {
+            "about": "Elin",
+            "field": "Exercise time",
+            "options": [
+              "När brukar du träna?",
+              "Var brukar du träna när?",
+              "När du brukar träna?"
+            ],
+            "answer": "När brukar du träna?",
+            "reply": {
+              "fi": "Jag brukar träna på morgonen.",
+              "en": "I usually work out in the morning."
+            },
+            "why": "När asks for a time."
+          }
+        ],
+        "summary": "Ask Vad brukar du göra …? Answer with a time phrase + brukar + person + infinitive."
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-04-guided-article",
+      "prompt": "Choose the complete phrase for “a job”.",
+      "answers": [
+        "ett jobb"
+      ],
+      "options": [
+        "en jobb",
+        "ett jobb",
+        "jobb en"
+      ],
+      "hint": "Learn the noun with its article.",
+      "explanation": "Jobb is an ett word: ett jobb."
+    },
+    {
+      "id": "sv-04-guided-compound",
+      "prompt": "Complete: Jag spelar ___ datorspel.",
+      "answers": [
+        "ett"
+      ],
+      "options": [
+        "en",
+        "ett"
+      ],
+      "hint": "The last word is spel.",
+      "explanation": "Spel is an ett word, so it is ett datorspel."
+    },
+    {
+      "id": "sv-04-guided-som",
+      "prompt": "Complete: Jag jobbar som ___.",
+      "answers": [
+        "lärare"
+      ],
+      "options": [
+        "en lärare",
+        "lärare",
+        "ett lärare"
+      ],
+      "hint": "No article after som.",
+      "explanation": "Say Jag jobbar som lärare."
+    },
+    {
+      "id": "sv-04-guided-place",
+      "prompt": "Build: “I work at a hospital.”",
+      "answers": [
+        "Jag jobbar på ett sjukhus."
+      ],
+      "hint": "Use på + workplace.",
+      "explanation": "Jag jobbar på ett sjukhus."
+    },
+    {
+      "id": "sv-04-guided-brukar",
+      "prompt": "Complete: På helgen brukar jag ___ en bok.",
+      "answers": [
+        "läsa"
+      ],
+      "options": [
+        "läser",
+        "läsa",
+        "läs"
+      ],
+      "hint": "After brukar, use the infinitive.",
+      "explanation": "Brukar läsa, not brukar läser."
+    },
+    {
+      "id": "sv-04-guided-order",
+      "prompt": "Build: “In the evening I usually listen to music.”",
+      "answers": [
+        "På kvällen brukar jag lyssna på musik."
+      ],
+      "hint": "Time first; brukar stays second.",
+      "explanation": "På kvällen brukar jag lyssna på musik."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-04-word-1",
+        "fi": "en dator",
+        "en": "a computer",
+        "example": "Jag har en dator.",
+        "translation": "I have a computer.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-2",
+        "fi": "ett datorspel",
+        "en": "a video game",
+        "example": "Jag spelar ett datorspel.",
+        "translation": "I play a video game.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-3",
+        "fi": "ett jobb",
+        "en": "a job",
+        "example": "Jag har ett jobb.",
+        "translation": "I have a job.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-4",
+        "fi": "ett företag",
+        "en": "a company",
+        "example": "Jag jobbar på ett företag.",
+        "translation": "I work at a company.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-5",
+        "fi": "ett kontor",
+        "en": "an office",
+        "example": "Jag jobbar på ett kontor.",
+        "translation": "I work in an office.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-6",
+        "fi": "ett sjukhus",
+        "en": "a hospital",
+        "example": "Hon jobbar på ett sjukhus.",
+        "translation": "She works at a hospital.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-7",
+        "fi": "lärare",
+        "en": "teacher",
+        "example": "Jag jobbar som lärare.",
+        "translation": "I work as a teacher.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-8",
+        "fi": "programmerare",
+        "en": "programmer",
+        "example": "Jag jobbar som programmerare.",
+        "translation": "I work as a programmer.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-9",
+        "fi": "hemifrån",
+        "en": "from home",
+        "example": "Jag jobbar hemifrån.",
+        "translation": "I work from home.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-10",
+        "fi": "på distans",
+        "en": "remotely",
+        "example": "Jag jobbar på distans.",
+        "translation": "I work remotely.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-11",
+        "fi": "mestadels",
+        "en": "mostly",
+        "example": "Jag jobbar mestadels hemma.",
+        "translation": "I work mostly at home.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-12",
+        "fi": "brukar",
+        "en": "usually; habitually",
+        "example": "Jag brukar läsa.",
+        "translation": "I usually read.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-13",
+        "fi": "på fritiden",
+        "en": "in my free time",
+        "example": "På fritiden tränar jag.",
+        "translation": "I work out in my free time.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-14",
+        "fi": "på helgen",
+        "en": "at the weekend",
+        "example": "På helgen vilar jag.",
+        "translation": "At the weekend I relax.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-15",
+        "fi": "på kvällen",
+        "en": "in the evening",
+        "example": "På kvällen läser jag.",
+        "translation": "In the evening I read.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-16",
+        "fi": "på morgonen",
+        "en": "in the morning",
+        "example": "På morgonen tränar jag.",
+        "translation": "In the morning I work out.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-17",
+        "fi": "då och då",
+        "en": "now and then",
+        "example": "Jag fikar då och då.",
+        "translation": "I have coffee now and then.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-18",
+        "fi": "läser en bok",
+        "en": "read a book",
+        "example": "Jag läser en bok.",
+        "translation": "I read a book.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-19",
+        "fi": "lyssnar på musik",
+        "en": "listen to music",
+        "example": "Jag lyssnar på musik.",
+        "translation": "I listen to music.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-20",
+        "fi": "går på bio",
+        "en": "go to the cinema",
+        "example": "Vi går på bio.",
+        "translation": "We go to the cinema.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-21",
+        "fi": "tränar på gymmet",
+        "en": "work out at the gym",
+        "example": "Hon tränar på gymmet.",
+        "translation": "She works out at the gym.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-22",
+        "fi": "lagar mat",
+        "en": "cook",
+        "example": "Jag lagar mat.",
+        "translation": "I cook.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-23",
+        "fi": "är på semester",
+        "en": "am on holiday",
+        "example": "Jag är på semester.",
+        "translation": "I am on holiday.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-24",
+        "fi": "önskelista",
+        "en": "wish list",
+        "example": "Det är min önskelista.",
+        "translation": "It is my wish list.",
+        "level": "A0"
+      }
+    ],
+    "pronunciation": {
+      "text": "en dator, ett datorspel, ett jobb, ett företag, jobbar som, jobbar på, brukar läsa, brukar spela",
+      "tip": "Keep en short and light. In ett, hold the final t. Link brukar directly to the infinitive."
+    },
+    "listening": {
+      "text": "Hej! Jag heter Maja. Jag studerar, men på lördagar jobbar jag på ett kafé. På fritiden brukar jag lyssna på musik och spela datorspel. På kvällen läser jag ofta en bok. Då och då går jag på bio med Elin.",
+      "question": "Where does Maja work on Saturdays?",
+      "options": [
+        "At a café",
+        "At a hospital",
+        "At a school"
+      ],
+      "answer": 0,
+      "explanation": "På lördagar jobbar jag på ett kafé."
+    },
+    "reading_passage": {
+      "text": "Hej! Jag heter Samir. Jag jobbar som ingenjör på ett företag i Esbo. Jag jobbar mestadels hemifrån. På morgonen brukar jag träna. På kvällen lagar jag mat och lyssnar på musik. På helgen går jag då och då på bio.",
+      "gist": {
+        "prompt": "What is this profile mainly about?",
+        "options": [
+          "Samir’s work and free time",
+          "A birthday list",
+          "A hospital visit"
+        ],
+        "answer": 0,
+        "explanation": "Samir describes his job, workplace and habits."
+      },
+      "detail": {
+        "prompt": "When does Samir usually exercise?",
+        "options": [
+          "In the morning",
+          "In the evening",
+          "At the weekend"
+        ],
+        "answer": 0,
+        "explanation": "På morgonen brukar jag träna."
+      }
+    },
+    "reading": {
+      "text": "Hej! Jag heter Samir. Jag jobbar som ingenjör på ett företag i Esbo. Jag jobbar mestadels hemifrån. På morgonen brukar jag träna. På kvällen lagar jag mat och lyssnar på musik. På helgen går jag då och då på bio.",
+      "question": "Where does Samir work?",
+      "options": [
+        "At a company in Espoo",
+        "At a café in Helsinki",
+        "At a hospital in Turku"
+      ],
+      "answer": 0,
+      "explanation": "Han jobbar på ett företag i Esbo."
+    },
+    "speaking": {
+      "prompt": "Introduce your work or study situation and describe your free time in five lines.",
+      "help": "Jag jobbar som … / Jag studerar. · Jag jobbar på … / hemifrån. · På helgen brukar jag … · På kvällen … · Då och då …",
+      "model": "Jag jobbar som programmerare. Jag jobbar på ett företag i Helsingfors. Jag jobbar mestadels hemifrån. På helgen brukar jag läsa en bok. På kvällen lyssnar jag på musik."
+    },
+    "writing": {
+      "prompt": "Write a short profile with your work or studies, where you do it, two free-time habits, and one thing you want.",
+      "situation": "A Swedish-speaking language-exchange website asks new members to introduce their everyday life. Write your profile.",
+      "points": [
+        "Say what you do for work or study.",
+        "Say where you work or study.",
+        "Describe two free-time habits, with at least one time phrase.",
+        "Say one thing you want.",
+        "Use en or ett with a thing."
+      ],
+      "wordRange": [
+        25,
+        45
+      ],
+      "help": "Jag jobbar som … / Jag studerar. · Jag jobbar på … / hemifrån. · På helgen brukar jag … · På kvällen … · Jag vill ha en … / ett …",
+      "model": "Hej! Jag jobbar som programmerare på ett företag i Helsingfors. Jag jobbar ofta hemifrån. På helgen brukar jag läsa en bok och gå på bio. Jag vill ha ett nytt datorspel."
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Introduce your work or studies and describe your free-time habits in five spoken lines. Then write a short language-exchange profile.",
+    "transferPrompt": "Change one time phrase and one habit, then say the five lines again.",
+    "returnPrompt": "From memory, say where you work or study and two things you usually do.",
+    "successChecks": [
+      "Name work or studies and a place.",
+      "Use jobbar som without an article, or use a natural study line.",
+      "Use brukar + infinitive for at least one habit.",
+      "Use one time phrase and one en/ett noun."
+    ],
+    "requiredSkills": [
+      "speaking",
+      "writing"
+    ]
+  },
+  "checkpoint": [
+    {
+      "id": "sv-04-check-work",
+      "prompt": "Produce: “I work as a teacher. I work at a school.”",
+      "answers": [
+        "Jag jobbar som lärare. Jag jobbar på en skola."
+      ],
+      "hint": "No article after som; use på before the workplace.",
+      "explanation": "Jag jobbar som lärare. Jag jobbar på en skola."
+    },
+    {
+      "id": "sv-04-check-habit",
+      "prompt": "Which sentence is correct?",
+      "answers": [
+        "På helgen brukar jag läsa en bok."
+      ],
+      "options": [
+        "På helgen brukar jag läser en bok.",
+        "På helgen brukar jag läsa en bok.",
+        "På helgen jag brukar läsa en bok."
+      ],
+      "hint": "After brukar, use the infinitive; with time first, the verb is second.",
+      "explanation": "På helgen brukar jag läsa en bok."
+    },
+    {
+      "id": "sv-04-check-article",
+      "prompt": "Choose the correct pair.",
+      "answers": [
+        "en dator, ett datorspel"
+      ],
+      "options": [
+        "ett dator, en datorspel",
+        "en dator, ett datorspel",
+        "en dator, en datorspel"
+      ],
+      "hint": "The compound follows its last part: ett spel.",
+      "explanation": "En dator, but ett datorspel."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 4 mission: My work and free time",
+    "instructions": "CORE: Say five lines: what you do, where you do it, and three details about your free time. Use brukar for at least one regular habit and a time phrase such as på helgen.\n\nWRITE: Post your 25–45 word language-exchange profile. Check that som + profession has no article.\n\nRETURN: Tomorrow, say your work or study line and two habits without looking.",
+    "model": "Jag jobbar som programmerare. Jag jobbar på ett företag i Helsingfors, men jag jobbar mestadels hemifrån. På helgen brukar jag läsa en bok. På kvällen lyssnar jag på musik. Då och då går jag på bio."
+  },
+  "takeaways": [
+    "Learn a noun with its article: en dator, ett jobb. The last noun decides a compound: ett datorspel.",
+    "Work: jobbar som + profession without an article; jobbar på + workplace.",
+    "Habits: brukar + infinitive. Put a time first and keep the verb second: På helgen brukar jag läsa."
+  ],
+  "resources": [
+    {
+      "label": "Svenska Akademiens ordböcker (svenska.se)",
+      "url": "https://svenska.se/",
+      "description": "Look up one noun and note whether it is an en word or an ett word."
+    }
+  ]
+}
