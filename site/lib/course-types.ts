@@ -340,6 +340,12 @@ export type LectureContent = {
    * in Swedish. They join the learner's review once the teaching step is done.
    */
   reviewPhrases?: Array<{ id: string; en: string; fi: string }>;
+  /**
+   * Questions the learner has not planned for, asked aloud in the mission's
+   * unexpected-questions round. Three are picked each time; `sample` is one
+   * possible answer shown afterwards.
+   */
+  unplannedQuestions?: Array<{ id: string; fi: string; en: string; sample: string }>;
   objectives: string[];
   focusSkills: Skill[];
   /** Optional for legacy JSON; course.ts supplies a safe runtime fallback. */

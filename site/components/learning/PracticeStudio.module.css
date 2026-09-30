@@ -114,7 +114,7 @@
 .mission { padding: 26px !important; min-width: 0; }
 .missionHeader { display: grid; gap: 12px; margin-bottom: 8px; }
 .missionHeader .prompt { margin: 0; font-size: 18px; line-height: 1.5; color: #203b2d; font-weight: 600; }
-.stageStrip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
+.stageStrip { display: grid; grid-template-columns: repeat(var(--stages, 4), minmax(0, 1fr)); gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
 .stageStrip li { display: flex; align-items: center; gap: 8px; min-width: 0; padding: 9px 10px; border: 1px solid #e3e8dc; border-radius: 11px; background: #fbfcf8; color: #7b8971; font-size: 12px; font-weight: 700; line-height: 1.3; }
 .stageStrip li > span { display: grid; place-items: center; flex-shrink: 0; width: 22px; height: 22px; border: 1px solid #cfdcc8; border-radius: 50%; background: #fff; font-size: 11px; }
 .stageStrip li[data-state="current"] { border-color: #163e6d; background: #eef3fa; color: #163e6d; }
@@ -152,7 +152,7 @@
 .mission .selfReview h4 { display: none; }
 .mission .finish { margin-top: 12px; }
 @media (max-width: 760px) {
-  .stageStrip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stageStrip { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   .plannerLines li { grid-template-columns: 1fr; gap: 5px; }
 }
 @media (max-width: 520px) {

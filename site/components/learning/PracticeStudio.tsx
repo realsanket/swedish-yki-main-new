@@ -27,6 +27,7 @@ import AudioButton from "./AudioButton";
 import LiveVoice from "./LiveVoice";
 import MissionPlanner from "./MissionPlanner";
 import SoundCheck from "./SoundCheck";
+import QuickQuestions from "./QuickQuestions";
 import QuestionCard from "./QuestionCard";
 import ReadingPassageCard from "./ReadingPassageCard";
 import { StoryCast } from "./StoryAvatar";
@@ -432,6 +433,7 @@ function Exercise({
   const [selfChecks, setSelfChecks] = useState<boolean[]>(noChecks);
   const [planScript, setPlanScript] = useState("");
   const [planComplete, setPlanComplete] = useState(false);
+  const [roundDone, setRoundDone] = useState(false);
   const handlePlanChange = useCallback((script: string, complete: boolean) => {
     setPlanScript(script);
     setPlanComplete(complete);
@@ -1378,12 +1380,17 @@ function Exercise({
     const planDone = plan ? planComplete : true;
     const checkDone =
       hasFirstAttempt && (Boolean(feedback) || selfChecks.every(Boolean));
+    const questions = lecture.unplannedQuestions ?? [];
+    const quickDone = !questions.length || roundDone || saved;
     const stages = [
       { title: plan?.title ?? "Plan what you will say", done: planDone },
       { title: "Say it out loud", done: hasFirstAttempt },
       { title: "Check it", done: checkDone },
+      ...(questions.length ? [{ title: "Answer unexpected questions", done: quickDone }] : []),
       { title: "Say it again, with one change", done: saved },
     ];
+    const quickIndex = questions.length ? 3 : -1;
+    const againIndex = stages.length - 1;
     const current = stages.findIndex((stage) => !stage.done);
     const stageState = (index: number) =>
       stages[index].done ? "done" : index === current ? "current" : "later";
@@ -1401,7 +1408,11 @@ function Exercise({
         <header className={styles.missionHeader}>
           <span className="badge">Your turn in the scene</span>
           <p className={styles.prompt}>{task.prompt}</p>
-          <ol className={styles.stageStrip} aria-label="Mission stages">
+          <ol
+            className={styles.stageStrip}
+            aria-label="Mission stages"
+            style={{ "--stages": stages.length } as React.CSSProperties}
+          >
             {stages.map((stage, index) => (
               <li key={stage.title} data-state={stageState(index)}>
                 <span aria-hidden="true">
@@ -1479,9 +1490,30 @@ function Exercise({
           )}
         </section>
 
-        <section className={styles.stage} data-state={stageState(3)} aria-label={stages[3].title}>
-          {heading(3)}
-          {checkDone || saved ? (
+        {quickIndex >= 0 && (
+          <section className={styles.stage} data-state={stageState(quickIndex)} aria-label={stages[quickIndex].title}>
+            {heading(quickIndex)}
+            {checkDone || saved ? (
+              <>
+                <p className={styles.stageIntro}>
+                  Real conversations do not follow your plan. Three questions you have not
+                  prepared, one at a time: hear it, answer aloud within a few seconds, then
+                  compare.
+                </p>
+                <QuickQuestions questions={questions} onDone={() => setRoundDone(true)} />
+              </>
+            ) : (
+              <p className={styles.locked}>
+                After the check, answer three questions you have not planned for, the way a
+                real conversation goes.
+              </p>
+            )}
+          </section>
+        )}
+
+        <section className={styles.stage} data-state={stageState(againIndex)} aria-label={stages[againIndex].title}>
+          {heading(againIndex)}
+          {(checkDone && quickDone) || saved ? (
             <>
               <p className={styles.transferNote}>
                 <span>THE CHANGE</span>
@@ -1496,8 +1528,9 @@ function Exercise({
             </>
           ) : (
             <p className={styles.locked}>
-              After the check, you say it once more with one small change. That
-              second try is where it sticks.
+              {checkDone
+                ? "Answer the unexpected questions first. Then you say it once more with one small change."
+                : "After the check, you say it once more with one small change. That second try is where it sticks."}
             </p>
           )}
         </section>
