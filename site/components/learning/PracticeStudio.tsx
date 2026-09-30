@@ -1394,6 +1394,15 @@ function Exercise({
     const current = stages.findIndex((stage) => !stage.done);
     const stageState = (index: number) =>
       stages[index].done ? "done" : index === current ? "current" : "later";
+    const stageId = (index: number) => `mission-${task.id}-stage-${index + 1}`;
+    // The strip is a jump list: each stage scrolls into view below the sticky
+    // bars (see .stage scroll-margin) and takes focus for keyboard users.
+    const goToStage = (index: number) => {
+      const section = document.getElementById(stageId(index));
+      if (!section) return;
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      section.focus({ preventScroll: true });
+    };
     const heading = (index: number) => (
       <h4 className={styles.stageHeading}>
         <span aria-hidden="true">
@@ -1415,16 +1424,22 @@ function Exercise({
           >
             {stages.map((stage, index) => (
               <li key={stage.title} data-state={stageState(index)}>
-                <span aria-hidden="true">
-                  {stage.done ? <Check size={13} /> : index + 1}
-                </span>
-                {stage.title}
+                <button
+                  type="button"
+                  aria-current={index === current ? "step" : undefined}
+                  onClick={() => goToStage(index)}
+                >
+                  <span aria-hidden="true">
+                    {stage.done ? <Check size={13} /> : index + 1}
+                  </span>
+                  {stage.title}
+                </button>
               </li>
             ))}
           </ol>
         </header>
 
-        <section className={styles.stage} data-state={stageState(0)} aria-label={stages[0].title}>
+        <section id={stageId(0)} tabIndex={-1} className={styles.stage} data-state={stageState(0)} aria-label={stages[0].title}>
           {heading(0)}
           {plan ? (
             <MissionPlanner
@@ -1440,7 +1455,7 @@ function Exercise({
           )}
         </section>
 
-        <section className={styles.stage} data-state={stageState(1)} aria-label={stages[1].title}>
+        <section id={stageId(1)} tabIndex={-1} className={styles.stage} data-state={stageState(1)} aria-label={stages[1].title}>
           {heading(1)}
           <p className={styles.stageIntro}>
             Say your lines aloud, without reading if you can. Record yourself,
@@ -1468,7 +1483,7 @@ function Exercise({
           )}
         </section>
 
-        <section className={styles.stage} data-state={stageState(2)} aria-label={stages[2].title}>
+        <section id={stageId(2)} tabIndex={-1} className={styles.stage} data-state={stageState(2)} aria-label={stages[2].title}>
           {heading(2)}
           {hasFirstAttempt ? (
             <>
@@ -1491,7 +1506,7 @@ function Exercise({
         </section>
 
         {quickIndex >= 0 && (
-          <section className={styles.stage} data-state={stageState(quickIndex)} aria-label={stages[quickIndex].title}>
+          <section id={stageId(quickIndex)} tabIndex={-1} className={styles.stage} data-state={stageState(quickIndex)} aria-label={stages[quickIndex].title}>
             {heading(quickIndex)}
             {checkDone || saved ? (
               <>
@@ -1511,7 +1526,7 @@ function Exercise({
           </section>
         )}
 
-        <section className={styles.stage} data-state={stageState(againIndex)} aria-label={stages[againIndex].title}>
+        <section id={stageId(againIndex)} tabIndex={-1} className={styles.stage} data-state={stageState(againIndex)} aria-label={stages[againIndex].title}>
           {heading(againIndex)}
           {(checkDone && quickDone) || saved ? (
             <>
