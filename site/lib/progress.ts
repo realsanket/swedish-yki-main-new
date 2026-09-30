@@ -123,8 +123,22 @@ export function parseProgressAction(value: unknown): ProgressAction {
 
 export function assertSameOrigin(request: Request): void {
   const origin = request.headers.get("origin");
-  const expected = new URL(request.url).origin;
   // This endpoint is used by the app's own browser. Missing or opaque origins
   // are rejected as well, so cookie-authenticated form posts cannot mutate it.
-  if (!origin || origin !== expected || request.headers.get("sec-fetch-site") === "cross-site") throw new ProgressError(403, "This request must come from the app's own page.");
+  let originHost: string | null = null;
+  try {
+    originHost = origin ? new URL(origin).host : null;
+  } catch {
+    originHost = null;
+  }
+  // Compare with the host the browser actually addressed. request.url alone is
+  // not enough: the local server binds to 0.0.0.0, so it reports
+  // http://0.0.0.0:3000 while the browser's origin is http://localhost:3000,
+  // and a hosting proxy can rewrite it the same way.
+  const allowedHosts = [
+    new URL(request.url).host,
+    request.headers.get("host"),
+    request.headers.get("x-forwarded-host")?.split(",")[0]?.trim(),
+  ].filter(Boolean);
+  if (!originHost || !allowedHosts.includes(originHost) || request.headers.get("sec-fetch-site") === "cross-site") throw new ProgressError(403, "This request must come from the app's own page.");
 }

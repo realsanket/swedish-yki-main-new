@@ -79,7 +79,7 @@ export default function SourcePagePractice({ practice }: { practice: SourcePageP
         <AudioButton text={fullText} segments={segments} label="Hear the textbook dialogue" className="secondary" />
       </header>
 
-      <nav aria-label="Textbook page practice stages" style={{ gridTemplateColumns: `repeat(${modes.length}, minmax(0, 1fr))` }}>
+      <nav aria-label="Textbook page practice stages" style={{ "--stage-count": modes.length } as React.CSSProperties}>
         {modes.map((item, index) => {
           const Icon = item.icon;
           return (
@@ -337,7 +337,9 @@ function HuntStage({
       return;
     }
     if (!found.includes(spot.word)) setFound((current) => [...current, spot.word]);
-    setMessage({ ok: true, text: `${spot.word}: ${spot.rule}` });
+    // Some rules already open with the word ("Hon: she…"); do not repeat it.
+    const namesWord = normalize(spot.rule.split(/[:\s]/)[0] ?? "") === normalize(spot.word);
+    setMessage({ ok: true, text: namesWord ? spot.rule : `${spot.word}: ${spot.rule}` });
   }
 
   return (

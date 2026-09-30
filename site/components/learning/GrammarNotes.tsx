@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from "react";
-import { BookOpen, X } from "lucide-react";
+import { BookOpen, ChevronDown, ChevronUp, X } from "lucide-react";
 import { findTerms, type GrammarTerm } from "@/lib/grammar-terms";
 import styles from "./GrammarNotes.module.css";
 
@@ -12,6 +12,19 @@ type Glossary = {
 };
 
 const GlossaryContext = createContext<Glossary | null>(null);
+
+/** Matches the 900px breakpoint in app/responsive.css where the notes stop fitting beside a topic. */
+function useNarrowScreen() {
+  const [narrow, setNarrow] = useState(false);
+  useEffect(() => {
+    const query = window.matchMedia("(max-width: 900px)");
+    const update = () => setNarrow(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+  return narrow;
+}
 
 /** Makes a lecture's grammar words available to every text inside it. */
 export function GlossaryProvider({ terms, children }: { terms: GrammarTerm[]; children: ReactNode }) {
@@ -112,6 +125,8 @@ export function GlossText({ text }: { text: string }) {
  */
 export function GrammarSideNotes({ terms }: { terms: GrammarTerm[] }) {
   const glossary = useContext(GlossaryContext);
+  const narrow = useNarrowScreen();
+  const [expanded, setExpanded] = useState(false);
   const all = glossary?.terms ?? [];
   const others = all.filter((term) => !terms.some((shown) => shown.id === term.id));
   const refs = useRef<Record<string, HTMLLIElement | null>>({});
@@ -120,6 +135,21 @@ export function GrammarSideNotes({ terms }: { terms: GrammarTerm[] }) {
     if (active) refs.current[active]?.scrollIntoView({ block: "nearest", behavior: "smooth" });
   }, [active]);
   if (!all.length) return null;
+  if (narrow && !expanded) {
+    // Phones: a slim bar above the topic that opens the same notes on demand.
+    return (
+      <aside className={`${styles.side} ${styles.collapsed}`} aria-label="Grammar words in plain English">
+        <button type="button" className={styles.expand} aria-expanded="false" onClick={() => setExpanded(true)}>
+          <BookOpen size={17} aria-hidden="true" />
+          <span>
+            <b>Grammar words in this topic ({terms.length})</b>
+            <small>{terms.length ? terms.map((term) => term.term).join(" · ") : "None here: just listen and copy."}</small>
+          </span>
+          <ChevronDown size={17} aria-hidden="true" />
+        </button>
+      </aside>
+    );
+  }
   return (
     <aside className={styles.side} aria-label="Grammar words in plain English">
       <div className={styles.sideHead}>
@@ -128,6 +158,11 @@ export function GrammarSideNotes({ terms }: { terms: GrammarTerm[] }) {
           <b>Grammar words, in plain English</b>
           <small>Tap any underlined word in the lesson to highlight it here.</small>
         </div>
+        {narrow && (
+          <button type="button" className={styles.collapse} aria-label="Hide grammar words" onClick={() => setExpanded(false)}>
+            <ChevronUp size={17} aria-hidden="true" />
+          </button>
+        )}
       </div>
       {terms.length ? (
         <ul>

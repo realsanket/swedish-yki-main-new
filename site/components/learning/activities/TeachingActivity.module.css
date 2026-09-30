@@ -486,3 +486,34 @@
   color: #1d5c45;
   font-size: 13px;
 }
+
+@media (max-width: 640px) {
+  .gap {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .gapCard li {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2px 8px;
+    padding: 8px 14px;
+  }
+  .gapCard li > :last-child {
+    grid-column: 1 / -1;
+  }
+  .buckets {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bucket,
+  .matchItem,
+  .quizOptions button {
+    min-height: 48px;
+  }
+  .sortWord {
+    font-size: 30px;
+  }
+  /* Keep both column labels one line tall so the two columns stay aligned. */
+  .columnLabel {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
