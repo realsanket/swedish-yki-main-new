@@ -53,7 +53,7 @@ import EpisodeBrief from "./EpisodeBrief";
 import IntroductionBuilder from "./IntroductionBuilder";
 import ExtraStep from "./ExtraStep";
 import PhraseReview, { type SaveReview } from "./PhraseReview";
-import { warmUpCards } from "@/lib/review-cards";
+import { lectureRecallCards, warmUpCards } from "@/lib/review-cards";
 import type { ReviewState } from "@/lib/progress";
 import TeachingActivity, { DEFAULT_ACTIVITY_LABEL } from "./activities/TeachingActivity";
 import { GlossaryProvider, GlossText, GrammarSideNotes } from "./GrammarNotes";
@@ -316,7 +316,30 @@ export default function LecturePlayer({
   // An extra step borrows the part it follows for shared state such as
   // questions; `view` is what the page shows, and is null on an extra step.
   const part: CoursePart = activeEntry.kind === "part" ? activeEntry.part : activeEntry.step.after;
-  const view: CoursePart | null = activeExtra ? null : part;
+  // Two sittings: part 2 starts after the break step and any extra steps
+  // attached to it. -1 when the lecture is one sitting.
+  const partTwoStart = (() => {
+    const breakAt = lecture.sittingBreakAfter
+      ? sequence.findIndex((entry) => entry.key === lecture.sittingBreakAfter)
+      : -1;
+    if (breakAt < 0) return -1;
+    let end = breakAt;
+    while (sequence[end + 1]?.kind === "extra") end += 1;
+    return end + 1 < sequence.length ? end + 1 : -1;
+  })();
+  const [justFinishedPartOne, setJustFinishedPartOne] = useState(false);
+  const pausing =
+    justFinishedPartOne && sequence.indexOf(activeEntry) === partTwoStart;
+  const view: CoursePart | null = activeExtra || pausing ? null : part;
+  // Part 2 opens by recalling this lecture's own phrases, picked once.
+  const [partTwoRecall, setPartTwoRecall] = useState<ReturnType<typeof lectureRecallCards>>([]);
+  useEffect(() => {
+    if (partTwoRecall.length || !reviews || partTwoStart < 0) return;
+    if (sequence.indexOf(activeEntry) !== partTwoStart) return;
+    if (!state.completedParts.includes("teach")) return;
+    const cards = lectureRecallCards(lecture.id, reviews);
+    if (cards.length) setPartTwoRecall(cards);
+  }, [activeEntry, lecture.id, partTwoRecall.length, partTwoStart, reviews, sequence, state.completedParts]);
   const pending = useRef<CourseDraftPatch>({});
   const stepHeadingRef = useRef<HTMLDivElement>(null);
   const stepDrawerRef = useRef<HTMLDetailsElement>(null);
@@ -542,7 +565,10 @@ export default function LecturePlayer({
                 : {}),
             },
       );
+      const finishedIndex = sequence.indexOf(activeEntry);
       setPosition(resumeEntry(lecture, result.lectures[lecture.id]).key);
+      // Finishing part 1 suggests a break before part 2.
+      if (partTwoStart > 0 && finishedIndex === partTwoStart - 1) setJustFinishedPartOne(true);
       scrollToStep();
     } catch (cause) {
       setError(
@@ -717,6 +743,7 @@ export default function LecturePlayer({
             {completed ? <Check size={15} /> : index + 1}
           </span>
           <span className="route-step-copy">
+            {index === partTwoStart && <em className="route-part">Part 2</em>}
             <b>{step.label}</b>
             <small>{step.minutes} min · {step.description}</small>
           </span>
@@ -1591,6 +1618,33 @@ export default function LecturePlayer({
               )}
             </>
             )
+          )}
+          {pausing && (
+            <section className="sitting-break" aria-labelledby="sitting-break-heading">
+              <span className="eyebrow">PART 1 DONE</span>
+              <h3 id="sitting-break-heading">A good place to stop for today</h3>
+              <p>
+                You have heard, built and tried today&rsquo;s Swedish. Part 2 is the real
+                task. It goes better after a night&rsquo;s sleep, because pulling the phrases
+                back tomorrow is what makes them stay. Part 2 starts with a short recall.
+              </p>
+              <div className="lecture-actions-pair">
+                <button type="button" className="primary" disabled={busy} onClick={() => leave(onExit)}>
+                  Stop here for today
+                </button>
+                <button type="button" className="secondary" onClick={() => setJustFinishedPartOne(false)}>
+                  Continue with part 2 now
+                </button>
+              </div>
+            </section>
+          )}
+          {partTwoRecall.length > 0 && onReview && !pausing && itemIndex === partTwoStart && (
+            <section className="warmup-retrieval" aria-labelledby="part-two-recall-heading">
+              <span className="eyebrow">PART 2 · FIRST, BRING IT BACK</span>
+              <h3 id="part-two-recall-heading">Say {partTwoRecall.length} of this lecture&rsquo;s phrases from memory</h3>
+              <p>Before the task, pull back what you learned in part 1. Say each one aloud, then check.</p>
+              <PhraseReview cards={partTwoRecall} onReview={onReview} doneText="Ready. Now the real task." />
+            </section>
           )}
           {view === "practice" && (
             ykiMock ? (

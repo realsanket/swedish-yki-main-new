@@ -346,6 +346,12 @@ export type LectureContent = {
    * possible answer shown afterwards.
    */
   unplannedQuestions?: Array<{ id: string; fi: string; en: string; sample: string }>;
+  /**
+   * Splits the lecture into two sittings after this stored step. The route
+   * marks part 2, suggests stopping after part 1, and opens part 2 with a
+   * short recall of the lecture's own phrases.
+   */
+  sittingBreakAfter?: CoursePart;
   objectives: string[];
   focusSkills: Skill[];
   /** Optional for legacy JSON; course.ts supplies a safe runtime fallback. */

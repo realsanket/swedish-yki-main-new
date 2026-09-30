@@ -8760,3 +8760,9 @@
 .quick-questions-sample { padding: 8px 12px; border-radius: 10px; background: #fff8e5; color: #173858 !important; font-size: 16px !important; font-weight: 700; }
 .quick-questions-done { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 14px 16px; border: 1px solid #bfd8bd; border-radius: 14px; background: #eef6ea; }
 .quick-questions-done p { display: flex; align-items: center; gap: 6px; margin: 0; color: #2d6a4f; font-weight: 700; }
+
+/* Two sittings: a marker on the route and a stop card after part 1. */
+.route-part { display: block; margin-bottom: 2px; color: #8a6412; font-size: 10px; font-style: normal; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.sitting-break { display: grid; gap: 10px; margin-bottom: 20px; padding: 22px; border: 1px solid #ead8a4; border-radius: 18px; background: linear-gradient(135deg, #fff8e5, #fffdf8); }
+.sitting-break h3 { margin: 0; color: #173858; font-size: 22px; }
+.sitting-break p { margin: 0; max-width: 680px; color: #52667a; line-height: 1.6; }

@@ -74,6 +74,12 @@ A lecture's speaking or writing task runs as one guided mission in four stages: 
 
 The plan comes from `missionPlan`, a top-level field: a `title`, an `intro`, and `lines`, each with a `label`, the frame text `before` and `after` the learner's words, and a `placeholder`. An empty `before` makes the line free text, which suits sentences that change shape (han/hon). Without `missionPlan`, the Plan stage shows the task's help text. Plan values stay in the learner's browser; the saved evidence is still the spoken or written attempt.
 
+## Remembering, speaking without a plan, and pacing
+
+- `reviewPhrases`: about eight useful chunks, each `{ id, en, fi }`. They join the learner's spaced review once the lecture's teaching step is done: the English is shown, the learner says the Swedish aloud, then reveals, hears and rates it. Keep a frame with a gap (`Jag heter …`) for chunks that take the learner's own words; those are not pronunciation-scored. Each later lecture's warm-up starts with three of the earlier lectures' phrases, and a finished lecture's `route.returnPrompt` returns as a "say it from memory" card a day later, then at growing intervals.
+- `unplannedQuestions`: at least three (six is better) questions `{ id, fi, en, sample }` the learner has not planned for. The mission picks three for its unexpected-questions stage; `sample` is one possible answer (use ` / ` between alternatives).
+- `sittingBreakAfter`: the stored step after which the lecture splits into two sittings (Lectures 1 and 2 use `guided`). The route marks part 2, a stop card follows part 1, and part 2 opens with a recall of this lecture's own phrases.
+
 ## Grammar words in plain English
 
 The learner speaks English but has not studied grammar, so words like *verb*, *subject*, or *front vowel* need explaining. Every definition lives once in `content/grammar-terms.json` (plain explanation, a familiar English example, a Swedish example, and an optional tip). A lecture lists the ids it uses in `grammarTerms`. The teaching step then underlines those words wherever they appear in section text, example notes, and activity feedback; tapping one opens a short note and highlights it in a side column that shows only the words the current topic uses. When a new lecture needs a new grammar word, add it to the glossary with its aliases (longer aliases win, so "front vowel" beats "vowel") and list its id in the lecture.

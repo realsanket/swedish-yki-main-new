@@ -109,3 +109,16 @@ export function memoryByLecture(course: CourseProgressData | undefined, reviews:
     })
     .filter((row) => row.unlocked > 0);
 }
+
+/** This lecture's own phrases, most in need of practice first (for part 2). */
+export function lectureRecallCards(lectureId: string, reviews: Reviews, now = Date.now(), count = 3) {
+  const rank = (card: ReviewCard) => {
+    const review = reviews[card.id];
+    if (!review) return 1;
+    return review.due <= now ? 0 : 2 + review.repetitions;
+  };
+  return reviewCards
+    .filter((card) => card.kind === "phrase" && card.lectureId === lectureId)
+    .sort((a, b) => rank(a) - rank(b))
+    .slice(0, count);
+}
