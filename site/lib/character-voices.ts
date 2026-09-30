@@ -6,27 +6,33 @@ export type CharacterVoiceProfile = {
   azureVoices: Record<SpeechLanguage, string>;
   normalRate: string;
   slowRate: string;
+  /** Optional SSML pitch, to tell two characters on one voice apart. */
+  pitch?: string;
   description: string;
 };
 
 /**
- * Casting is explicit per language. Multilingual voices preserve the same
- * persona where their Swedish output passes review; a native sv-SE voice can
- * be selected independently when it gives clearer Swedish.
+ * Casting is explicit per language. Every Swedish line is a model the
+ * learner copies, so Swedish always uses a native sv-SE voice (Azure has
+ * Sofie, Hillevi and Mattias; there is no Finland-Swedish voice). English
+ * explanations keep multilingual voices. Two characters on the same voice
+ * are told apart by pitch.
  */
 export const characterVoiceProfiles = {
   Alex: {
     azureVoices: {
-      sv: "en-US-BrianMultilingualNeural",
+      sv: "sv-SE-MattiasNeural",
       en: "en-US-BrianMultilingualNeural",
     },
-    normalRate: "0%",
-    slowRate: "-24%",
+    normalRate: "+3%",
+    slowRate: "-22%",
+    // Same native voice as Henrik; a higher pitch keeps them distinct.
+    pitch: "+9%",
     description: "Open newcomer voice for first attempts and everyday tasks",
   },
   Elin: {
     azureVoices: {
-      sv: "en-US-AvaMultilingualNeural",
+      sv: "sv-SE-HilleviNeural",
       en: "en-US-AvaMultilingualNeural",
     },
     normalRate: "+2%",
@@ -40,6 +46,7 @@ export const characterVoiceProfiles = {
     },
     normalRate: "-6%",
     slowRate: "-28%",
+    pitch: "-4%",
     description: "Calm language-coach voice with a native Swedish model",
   },
   Maja: {

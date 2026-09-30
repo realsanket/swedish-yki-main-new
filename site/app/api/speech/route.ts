@@ -62,7 +62,8 @@ function voiceElement(segment: SpeechSegment, slow: boolean, pause: boolean) {
   // Azure rejects any element outside a <voice>, so the pause between turns
   // closes the speaker's own voice block instead of sitting between blocks.
   const gap = pause ? '<break time="180ms"/>' : "";
-  return `<voice name="${voice}"><prosody rate="${rate}"><lang xml:lang="${locale}">${escapeSsml(segment.text)}</lang></prosody>${gap}</voice>`;
+  const pitch = "pitch" in profile && profile.pitch ? ` pitch="${profile.pitch}"` : "";
+  return `<voice name="${voice}"><prosody rate="${rate}"${pitch}><lang xml:lang="${locale}">${escapeSsml(segment.text)}</lang></prosody>${gap}</voice>`;
 }
 
 export function buildSpeechSsml(segments: SpeechSegment[], slow: boolean) {

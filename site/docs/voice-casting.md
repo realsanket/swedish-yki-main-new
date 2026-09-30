@@ -1,16 +1,22 @@
 # Character voice casting
 
 Stigen gives each recurring character an explicit Azure voice for Swedish and
-English. A multilingual voice stays with the character when its verified
-Swedish output is strong; Henrik uses a Swedish-native voice for Swedish after a
-live pronunciation check found clearer, complete recognition.
+English. Every Swedish line is a model the learner copies, so Swedish always
+uses a native `sv-SE` voice. Azure has three: Sofie, Hillevi and Mattias. There
+is no Finland-Swedish voice; real Finland-Swedish audio has to come from
+recordings (for example Svenska Yle). English explanations keep multilingual
+voices. Alex and Henrik share Mattias and are told apart by pitch.
 
-| Character | Teaching role | Swedish voice | English voice | Normal pace | Slow pace |
-|---|---|---|---|---:|---:|
-| Alex | Learner making the first attempt | `en-US-BrianMultilingualNeural` with `sv-SE` | `en-US-BrianMultilingualNeural` | `0%` | `-24%` |
-| Elin | Warm conversation partner | `en-US-AvaMultilingualNeural` with `sv-SE` | `en-US-AvaMultilingualNeural` | `+2%` | `-22%` |
-| Henrik | Calm teacher and default narrator | `sv-SE-MattiasNeural` | `en-US-AndrewMultilingualNeural` | `-6%` | `-28%` |
-| Maja | Student viewpoint for school and youth life | `sv-SE-SofieNeural` | `en-US-EmmaMultilingualNeural` | `+2%` | `-22%` |
+| Character | Teaching role | Swedish voice | English voice | Normal pace | Slow pace | Pitch |
+|---|---|---|---|---:|---:|---:|
+| Alex | Learner making the first attempt | `sv-SE-MattiasNeural` | `en-US-BrianMultilingualNeural` | `+3%` | `-22%` | `+9%` |
+| Elin | Warm conversation partner | `sv-SE-HilleviNeural` | `en-US-AvaMultilingualNeural` | `+2%` | `-22%` | default |
+| Henrik | Calm teacher and default narrator | `sv-SE-MattiasNeural` | `en-US-AndrewMultilingualNeural` | `-6%` | `-28%` | `-4%` |
+| Maja | Student viewpoint for school and youth life | `sv-SE-SofieNeural` | `en-US-EmmaMultilingualNeural` | `+2%` | `-22%` | default |
+
+The live voice coach is separate: it defaults to the multilingual HD voice
+`en-US-Andrew:DragonHDLatestNeural` because it must switch between Swedish
+and English in one reply.
 
 Both Maja previews returned valid 24 kHz mono MP3 audio from the configured
 Azure resource on September 29, 2026. Her first voiced story scene remains tied
@@ -18,7 +24,7 @@ to the first verified school or youth-life lesson rather than Lecture 1.
 
 The canonical mapping lives in `lib/character-voices.ts`. Do not assign voices
 inside individual lessons or components. New recurring characters must receive
-one documented multilingual profile there before they appear in voiced scenes.
+one documented profile there (a native `sv-SE` voice for Swedish) before they appear in voiced scenes.
 
 ## Runtime behaviour
 
