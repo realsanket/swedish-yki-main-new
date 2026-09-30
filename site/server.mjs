@@ -32,12 +32,42 @@ function liveConfig() {
       endpoint: endpoint.origin,
       key,
       model,
-      voice: process.env.AZURE_VOICELIVE_VOICE || "sv-SE-MattiasNeural",
+      voice: process.env.AZURE_VOICELIVE_VOICE || DEFAULT_VOICE,
       apiVersion: process.env.AZURE_VOICELIVE_API_VERSION || "2026-01-01-preview",
     };
   } catch {
     return null;
   }
+}
+
+// A multilingual HD voice sounds natural in both Swedish and English, like
+// the Voice Live playground. Any Azure voice name (with "-" or ":") or a
+// native gpt-realtime voice name (such as "marin") can replace it in env.
+const DEFAULT_VOICE = "en-US-Andrew:DragonHDLatestNeural";
+
+/** Voice settings for Voice Live, following Azure's own quickstart rule. */
+function voiceFor(name, mode) {
+  // A bare name ("marin", "alloy") is the model's own speech-to-speech voice.
+  if (!name.includes("-") && !name.includes(":")) return { type: "openai", name };
+  const hd = name.includes(":DragonHD");
+  return {
+    type: "azure-standard",
+    name,
+    // Voice Live detects each reply's language from the text. These locales
+    // keep Swedish Swedish and give English explanations an Indian accent.
+    preferLocales: ["sv-SE", "en-IN"],
+    // HD voices take a temperature for natural variation; standard voices
+    // take a prosody rate, slightly slower for a beginner.
+    ...(hd ? { temperature: 0.7 } : { rate: mode === "pronunciation" ? "-12%" : "-5%" }),
+  };
+}
+
+/** What the coach says first, so the conversation starts like a real call. */
+function openingFor(context, mode) {
+  if (mode === "pronunciation") {
+    return `Start the session now. In one short, warm English sentence, say you will practise a few Swedish sounds from "${context.title}" together. Then say the first target word in Swedish once, ask the learner to repeat it, and stop.`;
+  }
+  return `Start the session now. In one short, warm English sentence, welcome the learner and say you will practise "${context.speaking.prompt}" together, and that they can ask in English any time. Then ask your first simple Swedish question from the trusted material and stop.`;
 }
 
 function sameOrigin(request) {
@@ -195,21 +225,18 @@ function attachLiveSession(socket, request) {
       await session.updateSession({
         modalities: ["text", "audio"],
         instructions: instructionsFor(context, mode),
-        voice: {
-          type: "azure-standard",
-          name: config.voice,
-          // Voice Live detects the response language from the generated text.
-          // These locales preserve Swedish pronunciation and give English
-          // explanations an Indian-English accent.
-          preferLocales: ["sv-SE", "en-IN"],
-          rate: mode === "pronunciation" ? "-12%" : "-5%",
-        },
+        voice: voiceFor(config.voice, mode),
         inputAudioFormat: "pcm16",
         outputAudioFormat: "pcm16",
         inputAudioSamplingRate: 24_000,
-        // Omitting a fixed language lets one session transcribe both Swedish
-        // practice and English questions.
-        inputAudioTranscription: { model: "whisper-1" },
+        // Azure Speech transcription with automatic Swedish/English detection
+        // is steadier than Whisper on short beginner turns, and the lesson's
+        // own phrases bias it towards the words the learner is practising.
+        inputAudioTranscription: {
+          model: "azure-speech",
+          language: "sv-SE,en-IN",
+          ...(context.phrases.length ? { phraseList: context.phrases.slice(0, 16) } : {}),
+        },
         turnDetection: {
           type: "server_vad",
           threshold: 0.45,
@@ -243,6 +270,18 @@ function attachLiveSession(socket, request) {
         voice: config.voice,
         model: config.model,
       });
+      // The coach speaks first, as in a real conversation. If the opening
+      // cannot be sent, the learner can still start by speaking.
+      try {
+        await session.addConversationItem({
+          type: "message",
+          role: "system",
+          content: [{ type: "input_text", text: openingFor(context, mode) }],
+        });
+        await session.sendEvent({ type: "response.create" });
+      } catch (error) {
+        console.warn("Voice Live opening turn failed:", error instanceof Error ? error.message : "Unknown error");
+      }
     } catch (error) {
       console.error("Voice Live session start failed:", error instanceof Error ? error.message : "Unknown error");
       fail("Azure Voice Live could not start this conversation.", "session_start_failed");

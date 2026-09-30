@@ -27,6 +27,8 @@ type LiveEvent = {
   error?: { message?: string; code?: string };
 };
 
+type Turn = { id: number; role: "learner" | "coach"; text: string; pending?: boolean };
+
 const MAX_SECONDS = 180;
 const MAX_TRANSCRIPT = 20_000;
 const noOp = () => {};
@@ -39,8 +41,7 @@ export default function LiveVoice({ contextId, available, signedIn, disabled = f
   const [notice, setNotice] = useState("");
   const [error, setError] = useState("");
   const [needsPlayback, setNeedsPlayback] = useState(false);
-  const [learnerText, setLearnerText] = useState("");
-  const [coachText, setCoachText] = useState("");
+  const [turns, setTurns] = useState<Turn[]>([]);
   const [imported, setImported] = useState(false);
   const mounted = useRef(true);
   const running = useRef(false);
@@ -52,8 +53,9 @@ export default function LiveVoice({ contextId, available, signedIn, disabled = f
   const durationTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const closing = useRef(false);
   const suppressPlayback = useRef(false);
-  const coachTurnStarted = useRef(false);
-  const transcripts = useRef({ learner: "", coach: "" });
+  const turnLog = useRef<Turn[]>([]);
+  const nextTurnId = useRef(0);
+  const logRef = useRef<HTMLOListElement>(null);
   const active = phase === "connecting" || phase === "live" || phase === "closing";
   const pronunciationMode = mode === "pronunciation";
 
@@ -76,7 +78,6 @@ export default function LiveVoice({ contextId, available, signedIn, disabled = f
     audio.current = null;
     if (engine) void engine.close();
     suppressPlayback.current = false;
-    coachTurnStarted.current = false;
     closing.current = false;
   }, []);
 
@@ -135,24 +136,63 @@ export default function LiveVoice({ contextId, available, signedIn, disabled = f
     }
   }
 
-  function appendTranscript(role: "learner" | "coach", fragment: string, newTurn = false) {
-    const current = transcripts.current[role];
-    const separator = current && newTurn ? "\n" : role === "learner" && current ? " " : "";
-    const next = current + separator + fragment;
-    if (next.length > MAX_TRANSCRIPT) {
+  /**
+   * The conversation is one ordered log of turns. A learner turn is opened
+   * when speech starts and filled when its transcription arrives, which can be
+   * after the coach has begun replying, so the order always matches speech.
+   */
+  function updateTurns(change: (log: Turn[]) => Turn[]) {
+    const next = change(turnLog.current);
+    if (next.reduce((total, turn) => total + turn.text.length, 0) > MAX_TRANSCRIPT) {
       finish("The transcript limit was reached. Review this conversation before starting another.");
       return;
     }
-    transcripts.current[role] = next;
-    if (role === "learner") setLearnerText(next);
-    else setCoachText(next);
+    turnLog.current = next;
+    setTurns(next);
   }
+  const newTurn = (role: Turn["role"], text = "", pending = false): Turn => ({ id: nextTurnId.current++, role, text, pending });
+  function learnerStarted() {
+    updateTurns((log) => (log.some((turn) => turn.pending) ? log : [...log, newTurn("learner", "", true)]));
+  }
+  function learnerHeard(text: string | null) {
+    updateTurns((log) => {
+      const index = log.findIndex((turn) => turn.pending);
+      if (index < 0) return text ? [...log, newTurn("learner", text)] : log;
+      return text
+        ? log.map((turn, i) => (i === index ? { ...turn, text, pending: false } : turn))
+        : log.filter((_, i) => i !== index);
+    });
+  }
+  function coachStarted() {
+    updateTurns((log) => [...log, newTurn("coach")]);
+  }
+  function coachSaid(fragment: string) {
+    updateTurns((log) => {
+      const index = log.findLastIndex((turn) => turn.role === "coach");
+      if (index < 0) return [...log, newTurn("coach", fragment)];
+      const before = log[index].text;
+      // Separate sentences that arrive in separate spoken segments.
+      const gap = /[.!?:]$/.test(before) && /^\p{L}/u.test(fragment) ? " " : "";
+      return log.map((turn, i) => (i === index ? { ...turn, text: before + gap + fragment } : turn));
+    });
+  }
+  function dropEmptyCoachTurn() {
+    updateTurns((log) => {
+      const last = log[log.length - 1];
+      return last?.role === "coach" && !last.text.trim() ? log.slice(0, -1) : log;
+    });
+  }
+  const learnerText = turns.filter((turn) => turn.role === "learner" && turn.text).map((turn) => turn.text).join("\n");
+  useEffect(() => {
+    const log = logRef.current;
+    if (log) log.scrollTop = log.scrollHeight;
+  }, [turns]);
 
   async function start() {
     if (running.current || active || disabled || !available) return;
     release();
     setError(""); setNotice(""); setMuted(false); setImported(false); setNeedsPlayback(false);
-    setLearnerText(""); setCoachText(""); transcripts.current = { learner: "", coach: "" };
+    turnLog.current = []; setTurns([]);
     setRemaining(MAX_SECONDS);
     if (!window.isSecureContext || !navigator.mediaDevices?.getUserMedia || !window.WebSocket || !window.AudioContext || !window.AudioWorkletNode) {
       setError("Live voice needs a current browser with microphone, Web Audio, and WebSocket support on a secure connection. Recording practice remains available below.");
@@ -212,6 +252,7 @@ export default function LiveVoice({ contextId, available, signedIn, disabled = f
         }
 
         if (event.type === "input_audio_buffer.speech_started") {
+          learnerStarted();
           suppressPlayback.current = true;
           engine.stopPlayback();
           setNotice("Listening…");
@@ -223,12 +264,13 @@ export default function LiveVoice({ contextId, available, signedIn, disabled = f
         }
         if (event.type === "response.created") {
           suppressPlayback.current = false;
-          coachTurnStarted.current = false;
+          coachStarted();
           setError("");
           setNotice("Your coach is responding…");
           return;
         }
         if (event.type === "response.done") {
+          dropEmptyCoachTurn();
           if (event.status === "incomplete") {
             setNotice("Your coach is listening. Please try that sentence once more.");
             setError("Azure ended the previous reply before speech arrived. The conversation is still connected.");
@@ -244,12 +286,15 @@ export default function LiveVoice({ contextId, available, signedIn, disabled = f
           return;
         }
         if (event.type === "conversation.input_transcription.completed" && typeof event.transcript === "string" && event.transcript.trim()) {
-          appendTranscript("learner", event.transcript.trim(), Boolean(transcripts.current.learner));
+          learnerHeard(event.transcript.trim());
+          return;
+        }
+        if (event.type === "conversation.input_transcription.failed") {
+          learnerHeard(null);
           return;
         }
         if (event.type === "response.audio_transcript.delta" && typeof event.delta === "string") {
-          appendTranscript("coach", event.delta, !coachTurnStarted.current);
-          coachTurnStarted.current = true;
+          coachSaid(event.delta);
           return;
         }
         if (event.type === "session.limit") {
@@ -306,13 +351,20 @@ export default function LiveVoice({ contextId, available, signedIn, disabled = f
     {notice && <p className={styles.notice} role="status">{notice}</p>}
     {error && <p className={styles.error} role="alert">{error}</p>}
     {!available && !active && <p className={styles.unavailable}>{signedIn ? "Live voice is not connected for this session. Recording and typed practice are available below." : <>Sign in to check live voice availability. <a href="/signin-with-chatgpt?return_to=/">Sign in with ChatGPT</a></>}</p>}
-    {(active || learnerText || coachText) && <div className={styles.transcripts}>
-      <div className={styles.transcript}><h5><Mic size={15} />Your words</h5><p lang="sv">{learnerText || "Your speech will appear here…"}</p></div>
-      <div className={styles.transcript}><h5><Sparkles size={15} />Your coach</h5><p>{coachText || "Your coach’s words will appear here…"}</p></div>
-      <small>Live transcripts can contain mistakes. Each completed turn is kept on a new line.</small>
+    {(active || turns.length > 0) && <div className={styles.transcripts}>
+      <ol className={styles.log} ref={logRef} aria-live="polite" aria-label="Conversation so far">
+        {turns.length === 0 && <li className={styles.waiting}>Your coach will say hello first. Then just answer, in Swedish or English.</li>}
+        {turns.map((turn) => (
+          <li key={turn.id} className={turn.role === "learner" ? styles.learnerTurn : styles.coachTurn}>
+            <span>{turn.role === "learner" ? <><Mic size={13} />You</> : <><Sparkles size={13} />Coach</>}</span>
+            <p>{turn.pending ? "…" : turn.text || "…"}</p>
+          </li>
+        ))}
+      </ol>
+      <small>Live transcripts can contain mistakes.</small>
       {!active && learnerText.trim() && onTranscript && <button className="secondary" disabled={disabled || imported} onClick={() => { if (onTranscript(learnerText.trim())) setImported(true); }}>{imported ? <Check size={16} /> : <ArrowDownToLine size={16} />}{imported ? "Your words added to the draft" : "Add my words to the draft"}</button>}
     </div>}
     <p className={styles.privacy}><Headphones size={14} /><span>Headphones give the cleanest turn-taking. Your microphone audio passes through Stigen’s secure server to Azure Voice Live; the Azure key and lesson instructions never enter the browser.</span></p>
-    {(learnerText || coachText) && !active && <small className={styles.retention}>Add any words you want to keep to your draft before starting another conversation or leaving this exercise.</small>}
+    {turns.length > 0 && !active && <small className={styles.retention}>Add any words you want to keep to your draft before starting another conversation or leaving this exercise.</small>}
   </section>;
 }
