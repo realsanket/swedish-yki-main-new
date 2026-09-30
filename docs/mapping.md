@@ -185,6 +185,98 @@ The former Lectures 3–5 are not live Chapter 1 content. They were removed with
 - Both lectures: the written message is now a required YKI-style task. Lecture 1: a hello to the new class group chat (15-30 words). Lecture 2: an answer to Sara's message "Hej! Hur mår du? Berätta om din familj!" (25-40 words). Both close with Hälsningar and a name.
 - The sj-sound stays as Azure's Sweden-Swedish voices say it (owner's decision).
 
+## Planned mapping: Lectures 3-22 (textbook phase)
+
+**Status: plan only.** Nothing here is live. Build a lecture only when the owner
+asks, and re-read its exact teacher-note boundary first (section 10 of
+`AGENTS.md`).
+
+### Where the textbook ends
+
+The class textbook (*Läs och lär dig svenska*, `docs/text-book-images/`,
+physical pages 4-55) is finished in **teacher Lesson 21** (June 5):
+page 54 *Boende* and page 55 *Miljö*. **Lesson 22** (June 8) closes the phase:
+speaking about your ideal home (from page 54) and the first argumentative text.
+From **Lesson 23** (June 10) the teacher switches to the YKI book (*Förbered
+dig för allmän språkexamen*, Gimara): exam structure, dialogues by book page,
+formal and informal emails. So the textbook phase is **Lectures 1-22**, one
+lecture per teacher lesson, as for Lectures 1 and 2.
+
+How pages were matched: the teacher names pages 44, 45, 46, 50, 51, 52, 53 and
+54 directly; every other page was matched by its story title appearing in that
+lesson's notes (for example *Skvaller*, *Bättre än Barbie*, *Något eget*), or,
+for the reference lists (pages 10, 18, 29, 36, 49), by the grammar taught that
+day. Homework was matched by its Classroom posting date and topic. Page-level
+content and cast handling are in `site/docs/textbook-page-map.md`.
+
+### Lecture-by-lecture plan
+
+| Lecture | Teacher lesson (date, lines in `Group 3.md`) | Teacher topics | Textbook pages | Classroom homework |
+|---:|---|---|---|---|
+| 1 | L1 (Apr 13, 26-110) | Introduce yourself, vowels, sound changes | 4 | none (live) |
+| 2 | L2 (Apr 15, 111-217) | Greetings, personal pronouns, relations, question words | 5-6 | 1 Personal pronouns (live) |
+| 3 | L3 (Apr 20, 218-393) | Verb forms (present, command, infinitive), help verbs kan/måste/vill/ska, hinner/orkar, negation *inte*, word order (verb second) | 7 *Du ska sitta!*, 8 *Jag kan inte plugga mer!* | 2 Hjälpverb 1, 3 Infinitive or present, 4 Command form, 5 Word order |
+| 4 | L4 (Apr 22, 394-511) | Noun gender en/ett, work (*jobbar som / på*), free time, *brukar*, time phrases | 9 *datorspel*, 10 *ETT ord* list, 11 *Jobb*, 12 *Fritid* | teacher task: "What do you do in your free time?" |
+| 5 | L5 (Apr 24, 512-632) | My dream, conjunctions och/så/eller/men/för/sedan, definite nouns, adjective agreement en/ett | 13 *Min dröm*, 14 (Del 2 divider), 15 *En rolig film, ett roligt jobb* | 6 Definite form of nouns |
+| 6 | L6 (Apr 27, 633-730) | Past tense (preteritum), news and parties | 16 *Vilka fantastiska nyheter!*, 17 *Hur var det på festen?*, 18 strong-verb list | 7 Preteritum (regular verbs), 8 Diary (ongoing) |
+| 7 | L7 (Apr 29, 731-835) | Noun plural, groups 1-3 | 21 (Del 3 divider), 22 *Blommor och flaskor vin*, 23 *En bil, två bilar* | 9 Noun plural |
+| 8 | L8 (May 4, 836-962) | Past-tense practice, diary, friendship letter | 19 *Dagbok*, 20 *Det är viktigt att ha bra vänner* (18 again for strong verbs) | none (diary continues) |
+| 9 | L9 (May 8, 963-1109) | Health, plural groups 4-5, adjective plurals and definite adjectives, clothes | 24 *Du är frisk!*, 25 *Många djur, många problem*, 26 *Det är spännande att spendera pengar!* | none |
+| 10 | L10 (May 11, 1110-1266) | Shopping list and food, numbers, family, clock time and falling in love, weather | 27 *Inköpslista*, 28 *Familjen*, 29 numbers, 30 *Jag blev kär i…*, 31 *Vad har ni för väder?* | none |
+| 11 | L11 (May 13, 1267-1353) | Definite plural nouns, object pronouns, ordinal numbers | 32 (Del 4 divider), 33 *Skvaller*, 34 *Vill du gå på bio med mig?*, 29 ordinals | 10 Definite plural of nouns, 11 Objektspronomen |
+| 12 | L12 (May 15, 1354-1514) | Comparison of adjectives, irregular comparison, weekdays (*på måndag / i måndags / på måndagar*) | 35 *Bättre än Barbie*, 36 special adjectives, 37 *Veckodagar* | 12 Komparation |
+| 13 | L13 (May 18, 1515-1566) | Help verbs in the past (*kunde, ville, skulle, brukade*), advice *borde*, permission *får*, need *behöver (inte)* | 38 *Jag kan inte sova!* | 13 Hjälpverb 2 |
+| 14 | L14 (May 20, 1567-1676) | Help verbs 2 (review), formal complaint email, giving directions | 39 *Klagomål*, 40 *Vägbeskrivning* | 14 Formal email: complaint (with the 7-criteria writing rubric) |
+| 15 | L15 (May 22, 1677-1833) | Possessive pronouns, reflexive object and possessive pronouns (*sin/sitt/sina*), *man* | 41 (Del 5 divider), 42 *Din fru och hennes vän*, 43 *Något eget* | 15 Possessiva pronomen |
+| 16 | L16 (May 25, 1834-1962) | Future: *ska, kommer att*, present, *tänker*; thinking verbs *tycker/tror/tänker* | 44 *Nästa år…*, 45 *Tror du på mig?* | 16 SKA vs KOMMER ATT, 17 TYCKER vs TROR |
+| 17 | L17 (May 27, 1963-2076) | Predictions and advice, personality traits, present perfect (*har varit*) | 46 *Vad kommer att hända nu?*, 47 (Del 6 divider), 48 *Har du varit i Sverige någon gång?*, 49 strong-verb list with supine | none |
+| 18 | L18 (May 29, 2077-2175) | Conjunctions (independent linkers), school | 50 *Skolan* | none |
+| 19 | L19 (Jun 1, 2176-2258) | Talking about your school days (from page 50), subjunctions (dependent linkers: *eftersom, när, om, att…*) | 50 again (no new page) | none |
+| 20 | L20 (Jun 3, 2259-2375) | Work and work-life balance, *å ena sidan / å andra sidan*, restaurant | 51 *Jobbar du för mycket?*, 52 *Balansen*, 53 *Restaurang* | teacher task: UR Play video *Amira är här: Vegan* with questions; "Gör pengar oss lyckliga?" |
+| 21 | L21 (Jun 5, 2376-2491) | *den här / denna* (this), *när det gäller*, housing, environment, work vocabulary review | 54 *Boende*, 55 *Miljö* | teacher task: the Amira video; video *Vår lägenhet i Zadar*; prepare to talk about your ideal home |
+| 22 | L22 (Jun 8, 2492-2539) | Speaking about your ideal home, intro to argumentative writing (intro, body with *å ena sidan / å andra sidan*, conclusion) | none (builds on 54) | later reinforcement: 24 Opinion piece (posted Jun 26, with the argumentative-text structure PDF) |
+
+### Homework after the textbook phase (not mapped here)
+
+Classroom items 18 onward (informal and formal emails from Jun 10, news
+listening *Nyheter 1-9*, reading texts, the ad, the application, mock tests)
+belong to the YKI-book phase (teacher Lessons 23-51). Map them when that phase
+is planned.
+
+### Ambiguities to settle when each lecture is built
+
+- **Homework 2-5 were posted on April 17**, before the notes dated Lesson 3
+  (April 20), but they test exactly Lesson 3's topics (help verbs, infinitive or
+  present, command form, word order). They are mapped to Lecture 3.
+- **Page order and lesson order differ in Lessons 6-9.** Lesson 7 teaches the
+  plural (pages 22-23) before Lesson 8 returns to past-tense pages 19-20, and
+  Lesson 9 finishes the plural (pages 24-25). Follow the teacher's order.
+- **Lessons 9 and 10 are heavy** (four or five topics and three to five pages
+  each). Keep one lecture per lesson with two sittings, but consider moving one
+  topic into the textbook step or a light review, rather than splitting the
+  lecture.
+- **Lesson 19 has no new page.** Its textbook step can revisit page 50 or be
+  left out (extra steps are optional per lecture).
+- **Lesson 22 has no page.** It needs no textbook step; its written task is the
+  first short argumentative text.
+- **Source cast.** Many pages carry the textbook's family and affair plot
+  (Andreas, Nora, Lena…). Keep teaching the language function with Alex, Elin,
+  Henrik and Maja (see `site/docs/textbook-page-map.md`).
+
+### Suggested chapters (for `content/modules.json`, when activated)
+
+| Chapter | Lectures | Book part |
+|---|---|---|
+| 1 First meetings and verbs | 1-5 | Del 1 (pages 4-13) and page 15 |
+| 2 The past and many things | 6-8 | Del 2 (pages 16-20) and the start of Del 3 |
+| 3 Everyday life | 9-10 | Del 3 (pages 24-31) |
+| 4 Plans, rules and complaints | 11-14 | Del 4 (pages 32-40) |
+| 5 Mine, yours and the future | 15-16 | Del 5 (pages 41-45) |
+| 6 Experience, school, work and home | 17-22 | Del 6 (pages 46-55) and the first argumentative text |
+
+Chapter 1 today holds only Lectures 1-2. Extend its range only when Lecture 3
+is built.
+
 ## Next safe step
 
 Improve Lecture 1 or 2 one visible teaching step at a time, comparing each change with its verified boundary above. Do not activate Lecture 3 or any later chapter without an explicit user request.

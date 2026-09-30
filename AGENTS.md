@@ -331,9 +331,12 @@ card (logic tested).
     voice?
 4. Save the mission plan and the unexpected-questions result to the server (both
    are browser-only now).
-5. Lecture 3 onward, only when the owner asks: read the teacher lesson in
-   `docs/Group 3.md`, find its textbook page(s) and homework, record decisions
-   in `docs/mapping.md`, then build it to this template, including
+5. Lecture 3 onward, only when the owner asks. The plan for Lectures 3-22 (the
+   textbook phase: teacher Lessons 3-22, textbook pages 7-55, Classroom
+   homework 2-17) is in `docs/mapping.md` under "Planned mapping". Lecture 23 on
+   follows the YKI book and is not planned yet. For each lecture: re-read the
+   teacher lesson in `docs/Group 3.md`, confirm its pages and homework, record
+   decisions in `docs/mapping.md`, then build it to this template, including
    `reviewPhrases`, `unplannedQuestions`, `missionPlan`, `sittingBreakAfter` and
    the input targets.
 
