@@ -175,7 +175,7 @@ function ListenStage({
       {practice.setting && <p className={styles.setting}>Scene: {practice.setting.en}</p>}
       <div className={styles.audioRow}>
         <AudioButton text={fullText} segments={segments} label="Play the dialogue" className="secondary" />
-        <AudioButton text={fullText} label="Play it slowly" slow className="secondary" />
+        <AudioButton text={fullText} segments={segments} label="Play it slowly" slow className="secondary" />
       </div>
       <ol className={styles.questions}>
         {questions.map((question, questionIndex) => {

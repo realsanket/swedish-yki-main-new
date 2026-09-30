@@ -49,7 +49,7 @@ export default function StoryScene({
               language: "sv",
             }))}
             label="Listen once"
-            className="story-scene-play"
+            className="secondary story-scene-play"
           />
           <button
             type="button"

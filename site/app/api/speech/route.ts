@@ -54,18 +54,21 @@ function escapeSsml(text: string) {
     .replaceAll(">", "&gt;");
 }
 
-function voiceElement(segment: SpeechSegment, slow: boolean) {
+function voiceElement(segment: SpeechSegment, slow: boolean, pause: boolean) {
   const profile = characterVoiceProfiles[segment.speaker];
   const rate = slow ? profile.slowRate : profile.normalRate;
   const locale = speechLocales[segment.language];
   const voice = profile.azureVoices[segment.language];
-  return `<voice name="${voice}"><prosody rate="${rate}"><lang xml:lang="${locale}">${escapeSsml(segment.text)}</lang></prosody></voice>`;
+  // Azure rejects any element outside a <voice>, so the pause between turns
+  // closes the speaker's own voice block instead of sitting between blocks.
+  const gap = pause ? '<break time="180ms"/>' : "";
+  return `<voice name="${voice}"><prosody rate="${rate}"><lang xml:lang="${locale}">${escapeSsml(segment.text)}</lang></prosody>${gap}</voice>`;
 }
 
 export function buildSpeechSsml(segments: SpeechSegment[], slow: boolean) {
   return `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">${segments
-    .map((segment) => voiceElement(segment, slow))
-    .join('<break time="180ms"/>')}</speak>`;
+    .map((segment, index) => voiceElement(segment, slow, index < segments.length - 1))
+    .join("")}</speak>`;
 }
 
 function allowSpeechRequest(id: string) {

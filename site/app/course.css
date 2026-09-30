@@ -1417,7 +1417,12 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 8px;
-  align-items: center;
+  align-items: flex-start;
+}
+/* Match the audio button's height so both actions share one baseline even
+   when an audio message appears under the button. */
+.story-scene-actions > .text-button {
+  min-height: 44px;
 }
 .story-scene-predict {
   padding: 19px 24px;
