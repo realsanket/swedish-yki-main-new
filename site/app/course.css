@@ -8680,3 +8680,45 @@
 .lecture-workspace .teach-pagination-bar > button[aria-current="step"] > span {
   box-shadow: 0 0 0 2px rgba(22, 62, 109, 0.25);
 }
+
+/* Spaced phrase review: English prompt, spoken Swedish, honest rating. */
+.phrase-review-panel { display: grid; gap: 16px; margin-bottom: 22px; }
+.phrase-review-panel-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px; }
+.phrase-review-panel-head h2 { margin: 4px 0 6px; font-size: 22px; }
+.phrase-review-panel-head .help-text { max-width: 620px; }
+.phrase-review { display: grid; gap: 10px; }
+.phrase-review-meta { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.phrase-review-card { display: grid; justify-items: start; gap: 10px; padding: 20px; border: 1px solid #ead8a4; border-radius: 16px; background: linear-gradient(135deg, #fff8e5, #fffdf8); }
+.phrase-review-card h3 { margin: 0; color: #173858; font-size: 20px; line-height: 1.35; }
+.phrase-review-card .help-text { display: flex; align-items: center; gap: 6px; margin: 0; }
+.phrase-review-answer { margin: 0; color: #163e6d; font-size: 22px; font-weight: 800; line-height: 1.35; }
+.phrase-review-ratings { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; width: 100%; }
+.phrase-review-ratings button { display: grid; gap: 2px; min-height: 52px; padding: 8px 10px; border: 1px solid #dfe5ea; border-radius: 12px; background: #fff; color: #173858; text-align: center; cursor: pointer; }
+.phrase-review-ratings button:hover:not(:disabled) { border-color: #ffb51b; }
+.phrase-review-ratings button:nth-child(3) { border-color: #2d7658; background: #e5f2e3; }
+.phrase-review-ratings small { color: #607284; font-size: 11px; }
+.phrase-review-done { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 14px 16px; border: 1px solid #bfd8bd; border-radius: 14px; background: #eef6ea; color: #2d6a4f; }
+.phrase-review-done p { margin: 0; font-weight: 700; }
+.warmup-retrieval { display: grid; gap: 8px; margin-bottom: 20px; padding: 18px; border: 1px solid #d3deeb; border-radius: 18px; background: #f4f7fb; }
+.warmup-retrieval h3 { margin: 0; color: #173858; font-size: 19px; }
+.warmup-retrieval > p { margin: 0 0 4px; color: #52667a; font-size: 14px; line-height: 1.55; }
+.memory-chart { margin: 0; padding: 16px; border: 1px solid #e3e8dc; border-radius: 14px; background: #fbfcf8; }
+.memory-chart figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 12px; color: #203b2d; font-size: 14px; }
+.memory-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; color: #607284; font-size: 12px; }
+.memory-legend i, .memory-bar i { display: inline-block; }
+.memory-legend i { width: 10px; height: 10px; margin-right: -6px; border-radius: 3px; }
+.memory-chart ul { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.memory-chart li { display: grid; grid-template-columns: minmax(120px, 220px) minmax(0, 1fr) auto; align-items: center; gap: 12px; }
+.memory-label { display: grid; color: #203b2d; font-size: 13px; font-weight: 700; }
+.memory-label small { overflow: hidden; color: #607284; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; }
+.memory-bar { display: flex; height: 12px; overflow: hidden; border-radius: 99px; background: #eef1f4; }
+.memory-bar i { height: 100%; }
+.memory-count { color: #203b2d; font-size: 13px; font-variant-numeric: tabular-nums; }
+.memory-chart .remembered { background: #2d7658; }
+.memory-chart .due { background: #ffb51b; }
+.memory-chart .fresh { background: #cfd8e3; }
+@media (max-width: 640px) {
+  .phrase-review-ratings { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .memory-chart li { grid-template-columns: minmax(0, 1fr) auto; }
+  .memory-bar { grid-column: 1 / -1; grid-row: 2; }
+}

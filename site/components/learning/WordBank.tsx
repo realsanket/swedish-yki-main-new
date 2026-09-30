@@ -13,6 +13,9 @@ import { courseWords as words, lectures } from "@/lib/course";
 import type { CourseProgressData } from "@/lib/course-progress";
 import type { ProgressData } from "@/lib/progress";
 import AudioButton from "./AudioButton";
+import PhraseReview from "./PhraseReview";
+import MemoryChart from "./MemoryChart";
+import { dueCards, memoryByLecture, type ReviewCard } from "@/lib/review-cards";
 export default function WordBank({
   data,
   course,
@@ -37,6 +40,11 @@ export default function WordBank({
   const [now, setNow] = useState(() => Date.now());
   useEffect(() => { const timer = setInterval(() => setNow(Date.now()), 60000); return () => clearInterval(timer); }, []);
   const requestId = useRef<string | null>(null);
+  // Phrase and return cards are fixed for one session so a rating does not
+  // reshuffle the queue under the learner.
+  const [phraseSession, setPhraseSession] = useState<ReviewCard[] | null>(null);
+  const duePhrases = dueCards(course, data.reviews, now);
+  const memory = memoryByLecture(course, data.reviews, now);
   const learned = new Set(
     lessons
       .filter((l) => data.completed.includes(l.id))
@@ -180,6 +188,36 @@ export default function WordBank({
         </section>
       ) : (
         <>
+          <section className="panel phrase-review-panel" aria-labelledby="phrase-review-heading">
+            <div className="phrase-review-panel-head">
+              <div>
+                <p className="eyebrow">SAY IT IN SWEDISH · SPACED REVIEW</p>
+                <h2 id="phrase-review-heading">
+                  {duePhrases.length
+                    ? `${duePhrases.length} ${duePhrases.length === 1 ? "phrase is" : "phrases are"} ready to say again`
+                    : "No phrases due right now"}
+                </h2>
+                <p className="help-text">
+                  You see the English and say the Swedish aloud before you check it. Phrases
+                  come back just before you would forget them, and a finished lecture&rsquo;s
+                  task comes back to be said from memory.
+                </p>
+              </div>
+              {!phraseSession && duePhrases.length > 0 && (
+                <button className="primary" onClick={() => setPhraseSession(duePhrases)}>
+                  Start phrase review <ArrowRight size={17} />
+                </button>
+              )}
+            </div>
+            {phraseSession && (
+              <PhraseReview
+                cards={phraseSession}
+                onReview={(cardId, rating, id) => onReview(cardId, rating, id)}
+                onDone={() => setPhraseSession(null)}
+              />
+            )}
+            {memory.length > 0 && <MemoryChart rows={memory} />}
+          </section>
           <div className="review-banner">
             <span className="section-symbol">
               <Layers />

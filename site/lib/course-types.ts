@@ -335,6 +335,11 @@ export type LectureContent = {
   extraSteps?: LectureExtraStep[];
   /** Sentence frames the learner fills in before the "Do the task" attempt. */
   missionPlan?: MissionPlan;
+  /**
+   * Useful chunks for spaced review, prompted in English and answered aloud
+   * in Swedish. They join the learner's review once the teaching step is done.
+   */
+  reviewPhrases?: Array<{ id: string; en: string; fi: string }>;
   objectives: string[];
   focusSkills: Skill[];
   /** Optional for legacy JSON; course.ts supplies a safe runtime fallback. */

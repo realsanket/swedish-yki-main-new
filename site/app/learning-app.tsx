@@ -560,6 +560,11 @@ function AppContent({ userId }: { userId: string }) {
                 onOpenChapterReview={(number) =>
                   openChapterReview(number, lecture.id)
                 }
+                course={course.data}
+                reviews={data.reviews}
+                onReview={(wordId, rating, id) =>
+                  save({ action: "review", wordId, rating, id })
+                }
               />
             ) : lesson ? (
               <LessonPlayer

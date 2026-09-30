@@ -33,6 +33,7 @@ import {
   routeSequence,
   type CourseDraftPatch,
   type CourseLectureState,
+  type CourseProgressData,
   type RouteEntry,
 } from "@/lib/course-progress";
 import { bookReviewsForAnchorEpisode } from "@/lib/book-reviews";
@@ -51,6 +52,9 @@ import QuestionCard from "./QuestionCard";
 import EpisodeBrief from "./EpisodeBrief";
 import IntroductionBuilder from "./IntroductionBuilder";
 import ExtraStep from "./ExtraStep";
+import PhraseReview, { type SaveReview } from "./PhraseReview";
+import { warmUpCards } from "@/lib/review-cards";
+import type { ReviewState } from "@/lib/progress";
 import TeachingActivity, { DEFAULT_ACTIVITY_LABEL } from "./activities/TeachingActivity";
 import { GlossaryProvider, GlossText, GrammarSideNotes } from "./GrammarNotes";
 import { grammarTermsFor, termsInText } from "@/lib/grammar-terms";
@@ -70,6 +74,10 @@ type Props = {
   last: boolean;
   onPracticeSaved: () => void;
   onOpenChapterReview: (chapterNumber: number) => void;
+  /** Whole-course progress and review schedule, for the warm-up retrieval. */
+  course?: CourseProgressData;
+  reviews?: Record<string, ReviewState>;
+  onReview?: SaveReview;
 };
 
 const questionAction: Partial<Record<CoursePart, string>> = {
@@ -240,6 +248,9 @@ export default function LecturePlayer({
   last,
   onPracticeSaved,
   onOpenChapterReview,
+  course,
+  reviews,
+  onReview,
 }: Props) {
   const chapter = storyChapterForModule(lecture.module);
   const routeProfile = routeProfileForLecture(lecture);
@@ -271,6 +282,16 @@ export default function LecturePlayer({
     routeProfile.id === "clinic" || routeProfile.id === "checkpoint";
   // The route is the six stored parts plus this lecture's own extra steps.
   const sequence = routeSequence(lecture);
+  // Earlier lectures' phrases to retrieve before today's content, chosen once
+  // when the lecture opens so the list does not change mid-warm-up.
+  // Progress can arrive after the lecture opens, so the list is picked the
+  // first time it is non-empty and then kept.
+  const [warmUp, setWarmUp] = useState<ReturnType<typeof warmUpCards>>([]);
+  useEffect(() => {
+    if (warmUp.length || !reviews || !course) return;
+    const cards = warmUpCards(lecture.number, course, reviews, Date.now());
+    if (cards.length) setWarmUp(cards);
+  }, [course, lecture.number, reviews, warmUp.length]);
   const [position, setPosition] = useState<RouteEntry["key"]>(
       () => resumeEntry(lecture, state).key,
     ),
@@ -888,6 +909,21 @@ export default function LecturePlayer({
           {activeExtra && <ExtraStep step={activeExtra} />}
           {view === "recall" && (
             <>
+              {warmUp.length > 0 && onReview && (
+                <section className="warmup-retrieval" aria-labelledby="warmup-heading">
+                  <span className="eyebrow">FIRST, FROM EARLIER LECTURES · ABOUT 2 MINUTES</span>
+                  <h3 id="warmup-heading">Bring back {warmUp.length} phrases before today&rsquo;s lesson</h3>
+                  <p>
+                    Say each one aloud in Swedish, then check. Pulling old phrases out of
+                    memory is what makes them stay.
+                  </p>
+                  <PhraseReview
+                    cards={warmUp}
+                    onReview={onReview}
+                    doneText="Done. Now on to today’s conversation."
+                  />
+                </section>
+              )}
               <div className="teacher-note">
                 <Lightbulb size={22} />
                 <div>

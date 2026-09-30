@@ -26,6 +26,7 @@ import {
   type CourseLecture,
 } from "@/lib/course";
 import { resumeEntry, type CourseProgressData } from "@/lib/course-progress";
+import { dueCards, reviewCardIds } from "@/lib/review-cards";
 import type { ProgressData } from "@/lib/progress";
 import type { Skill } from "@/lib/curriculum";
 import { SKILL_CONFIG } from "@/lib/skill-config";
@@ -78,8 +79,9 @@ export function CourseHome({
   );
   const completion = lectures.length ? (done / lectures.length) * 100 : 0;
   const newToCourse = done === 0 && !state?.revision;
-  const due = Object.values(progress.reviews).filter(
-    (r) => r.due <= now,
+  const duePhrases = dueCards(data, progress.reviews, now).length;
+  const due = Object.entries(progress.reviews).filter(
+    ([id, r]) => r.due <= now && !reviewCardIds.has(id),
   ).length;
   return (
     <div className="course-space story-home">
@@ -270,8 +272,11 @@ export function CourseHome({
           <Layers />
           <span>
             <b>
-              {due
-                ? `${due} words ready to revisit`
+              {duePhrases || due
+                ? [
+                    duePhrases && `${duePhrases} ${duePhrases === 1 ? "phrase" : "phrases"} to say again`,
+                    due && `${due} ${due === 1 ? "word" : "words"} to revisit`,
+                  ].filter(Boolean).join(" · ")
                 : "Keep useful words close"}
             </b>
             <small>Spaced recall supports what you learn in Stigen.</small>
