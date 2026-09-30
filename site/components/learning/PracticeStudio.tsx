@@ -25,6 +25,7 @@ import type { PracticeFeedback } from "@/lib/ai";
 import { storyChapters } from "@/lib/story-world";
 import AudioButton from "./AudioButton";
 import LiveVoice from "./LiveVoice";
+import MissionPlanner from "./MissionPlanner";
 import QuestionCard from "./QuestionCard";
 import ReadingPassageCard from "./ReadingPassageCard";
 import { StoryCast } from "./StoryAvatar";
@@ -296,11 +297,6 @@ export default function PracticeStudio({
                         first, use support only when you need it, then change
                         one detail for a second attempt.
                       </p>
-                      <ul className={styles.missionChecks}>
-                        {lecture.route.successChecks.slice(0, 3).map((check) => (
-                          <li key={check}>{check}</li>
-                        ))}
-                      </ul>
                       <StoryCast
                         names={chapter.cast}
                         label="In the scene"
@@ -316,6 +312,9 @@ export default function PracticeStudio({
                     />
                   </div>
                 )}
+                {/* In a lecture the mission card and the task itself already say
+                    what to do, so the studio heading shows only for extra skills. */}
+                {(!lecture || !lecture.route.requiredSkills.includes(skill)) && (
                 <div className={styles.intro}>
                   <div>
                     <span className={styles.eyebrow}>
@@ -356,6 +355,7 @@ export default function PracticeStudio({
                     </label>
                   )}
                 </div>
+                )}
                 <Exercise
                   key={`${skill}-${level}-${exam}-${task.id}-${timed ? "timed" : "open"}-${timeLimitSeconds ?? "task"}-${requireChangedRetry ? "retry" : "first"}`}
                   task={task}
@@ -424,11 +424,17 @@ function Exercise({
   const [checked, setChecked] = useState(false);
   const [showTranscript, setShowTranscript] = useState(false);
   const [showModel, setShowModel] = useState(false);
-  const [selfChecks, setSelfChecks] = useState<boolean[]>([
-    false,
-    false,
-    false,
-  ]);
+  // A lecture's own success checks become the self-review in its mission.
+  const lectureChecks =
+    lecture && isProductive ? lecture.route.successChecks : null;
+  const noChecks = () => (lectureChecks ?? [0, 0, 0]).map(() => false);
+  const [selfChecks, setSelfChecks] = useState<boolean[]>(noChecks);
+  const [planScript, setPlanScript] = useState("");
+  const [planComplete, setPlanComplete] = useState(false);
+  const handlePlanChange = useCallback((script: string, complete: boolean) => {
+    setPlanScript(script);
+    setPlanComplete(complete);
+  }, []);
   const [draft, setDraft] = useState(initialDraft ?? "");
   const [draftLoaded, setDraftLoaded] = useState(initialDraft !== undefined);
   const suppliedDraft = useRef(initialDraft);
@@ -513,8 +519,9 @@ function Exercise({
           100,
       )
     : 0;
-  const checklist =
-    skill === "speaking"
+  const checklist = lectureChecks
+    ? lectureChecks
+    : skill === "speaking"
       ? [
           "I answered all parts of the prompt.",
           recordingUrl
@@ -918,7 +925,7 @@ function Exercise({
     }
     setDraft(updated);
     setFeedback(null);
-    setSelfChecks([false, false, false]);
+    setSelfChecks(noChecks());
     setError("");
     return true;
   }
@@ -953,6 +960,547 @@ function Exercise({
       savePending.current = false;
       if (mounted.current) setSaving(false);
     }
+  }
+
+  // Shared pieces. The guided lecture mission and the classic studio layout
+  // arrange the same controls, so recording, drafts and saving behave alike.
+  const liveVoiceEl =
+    skill === "speaking" && !isTimed ? (
+      <LiveVoice
+                contextId={task.id}
+                available={canLiveVoice}
+                signedIn={Boolean(ai?.signedIn)}
+                disabled={
+                  locked ||
+                  recording ||
+                  micPending ||
+                  Boolean(busy) ||
+                  saving ||
+                  !draftLoaded
+                }
+                onTranscript={addLiveTranscript}
+                onActiveChange={handleLiveActiveChange}
+              />
+    ) : null;
+  const recorderEl =
+    skill === "speaking" ? (
+      <div className={styles.recorder}>
+                <div
+                  className={`${styles.micCircle} ${recording ? styles.recording : ""}`}
+                >
+                  <Mic size={27} />
+                </div>
+                <strong>
+                  {recording
+                    ? "Recording your Swedish…"
+                    : recordingUrl
+                      ? "Your voice, your progress"
+                      : "Ready when you are"}
+                </strong>
+                <p>
+                  {recording
+                    ? `${Math.floor(recordedSeconds / 60)}:${String(recordedSeconds % 60).padStart(2, "0")} · 3-minute recording limit`
+                    : isTimed
+                      ? "Live conversation is paused for this timed attempt. Record a short answer or type it below."
+                      : "Find a quiet spot. A few simple sentences are enough."}
+                </p>
+                <button
+                  className={recording ? "secondary" : "primary"}
+                  disabled={locked || micPending || Boolean(busy) || liveActive}
+                  onClick={() =>
+                    recording ? recorder.current?.stop() : void startRecording()
+                  }
+                >
+                  {micPending ? (
+                    <Loader2 size={17} className={styles.spinner} />
+                  ) : recording ? (
+                    <Square size={16} />
+                  ) : (
+                    <Mic size={17} />
+                  )}
+                  {micPending
+                    ? "Opening microphone…"
+                    : recording
+                      ? "Stop recording"
+                      : recordingUrl
+                        ? "Record again"
+                        : "Start recording"}
+                </button>
+                {recordingUrl && !recording && !liveActive && (
+                  <div className={styles.recordingPlayback}>
+                    <audio
+                      ref={recordingPlayback}
+                      controls
+                      src={recordingUrl}
+                      aria-label="Your Swedish recording"
+                    />
+                    <a
+                      href={recordingUrl}
+                      download={`finnish-${task.id}.${recordingExtension}`}
+                      className="text-button"
+                    >
+                      Download recording
+                    </a>
+                    {canTranscribe && (
+                      <button
+                        className="secondary"
+                        onClick={transcribe}
+                        disabled={Boolean(busy) || recording || locked}
+                      >
+                        {busy === "transcription" ? (
+                          <Loader2 size={16} className={styles.spinner} />
+                        ) : (
+                          <Sparkles size={16} />
+                        )}
+                        {busy === "transcription"
+                          ? "Transcribing…"
+                          : "Transcribe with AI"}
+                      </button>
+                    )}
+                  </div>
+                )}
+                <small>
+                  {canTranscribe
+                    ? "Recording stays in this tab until you choose AI transcription. Download it to keep a copy."
+                    : "Recordings stay in this tab. Download a copy and type what you said below; file transcription is not connected."}
+                </small>
+              </div>
+    ) : null;
+  const draftEl = isProductive ? (
+    <>
+      <label
+                  className={styles.draftLabel}
+                  htmlFor={`draft-${task.id}`}
+                >
+                  {skill === "speaking"
+                    ? "What did you say?"
+                    : "Your Swedish response"}
+                  <span>
+                    {skill === "speaking"
+                      ? "Type your words, edit a transcript, or add your words from a live conversation."
+                      : "Start small. Being understood matters more than being perfect."}
+                  </span>
+                </label>
+                <textarea
+                  id={`draft-${task.id}`}
+                  className={`field ${styles.draft}`}
+                  value={draft}
+                  maxLength={5000}
+                  rows={skill === "speaking" ? 5 : 8}
+                  placeholder={
+                    level === "A0" ? "Hej! Jag heter…" : "Skriv här…"
+                  }
+                  disabled={!draftLoaded || locked || Boolean(busy)}
+                  aria-describedby={
+                    retryIsRequired ? `retry-guidance-${task.id}` : undefined
+                  }
+                  onChange={(event) => {
+                    setDraft(event.target.value);
+                    setFeedback(null);
+                    setError("");
+                  }}
+                  spellCheck
+                  lang="sv"
+                />
+                <div className={styles.draftMeta}>
+                  <span>
+                    {wordCount} {wordCount === 1 ? "word" : "words"} ·{" "}
+                    {draft.length}/5,000 characters
+                  </span>
+                  <span>
+                    {onDraftChange ? "Lecture draft" : "Draft kept in this tab"}
+                  </span>
+                </div>
+    </>
+  ) : null;
+  const feedbackEl = isProductive ? (
+    <>
+      <div className={styles.aiState}>
+                  <Sparkles size={17} />
+                  <div>
+                    <strong>
+                      {ai === null
+                        ? "Checking AI availability…"
+                        : canFeedback && !feedbackAvailableNow
+                          ? "Your feedback coach unlocks after the timed attempt"
+                          : canFeedback
+                          ? "Your Swedish feedback coach is connected"
+                          : ai.configured && !ai.signedIn
+                            ? "Sign in to use your AI coach"
+                            : "Guided self-review is ready"}
+                    </strong>
+                    <p>
+                      {canFeedback
+                        ? !feedbackAvailableNow
+                          ? "Work independently while the timer runs. You can review your response with AI after time is up or when you continue untimed."
+                          : `${skill === "speaking" ? "Feedback covers your transcript’s language and task completion, not pronunciation." : "Get specific corrections, an improved version, and your next step."} Your response is sent to ${feedbackProvider} only when you ask for feedback.`
+                        : "AI feedback is currently unavailable. Compare with the model answer and use the checklist below."}
+                    </p>
+                    {ai?.configured && !ai.signedIn && (
+                      <a
+                        href="/signin-with-chatgpt?return_to=/"
+                        className="text-button"
+                      >
+                        Sign in with ChatGPT
+                      </a>
+                    )}
+                  </div>
+                </div>
+                {canFeedback && feedbackAvailableNow && (
+                  <button
+                    className="primary"
+                    disabled={
+                      draft.trim().length < 2 ||
+                      Boolean(busy) ||
+                      locked ||
+                      recording ||
+                      liveActive
+                    }
+                    onClick={getFeedback}
+                  >
+                    {busy === "feedback" ? (
+                      <Loader2 size={17} className={styles.spinner} />
+                    ) : (
+                      <Sparkles size={17} />
+                    )}
+                    {busy === "feedback"
+                      ? "Reviewing your Swedish…"
+                      : "Get AI feedback"}
+                  </button>
+                )}
+
+                {feedback && (
+                  <div
+                    className={`feedback-box ${styles.feedback}`}
+                    aria-live="polite"
+                  >
+                    <span className={styles.eyebrow}>
+                      Your AI learning feedback
+                    </span>
+                    <h4>{feedback.summary}</h4>
+                    <p className={styles.disclaimer}>
+                      Learning feedback, not an official YKI assessment.
+                    </p>
+                    <ul>
+                      {feedback.strengths.map((strength, index) => (
+                        <li key={index}>{strength}</li>
+                      ))}
+                    </ul>
+                    <div className={styles.rubric}>
+                      {feedback.rubric.map((item, index) => (
+                        <div key={index}>
+                          <strong>{item.criterion}</strong>
+                          <span className="badge">{item.assessment}</span>
+                          <p>{item.note}</p>
+                        </div>
+                      ))}
+                    </div>
+                    {feedback.corrections.length > 0 && (
+                      <>
+                        <h4>A few helpful corrections</h4>
+                        {feedback.corrections.map((correction, index) => (
+                          <div key={index} className={styles.correction}>
+                            <p>
+                              <del lang="sv">{correction.original}</del>
+                              <ArrowRight size={14} />
+                              <strong lang="sv">{correction.corrected}</strong>
+                            </p>
+                            <span>{correction.explanation}</span>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                    <h4>A more natural version</h4>
+                    <p lang="sv" className={styles.passage}>
+                      {feedback.improvedVersion}
+                    </p>
+                    <p>
+                      <strong>Try next:</strong> {feedback.nextStep}
+                    </p>
+                  </div>
+                )}
+    </>
+  ) : null;
+  const selfReviewEl = isProductive ? (
+    <div className={styles.selfReview}>
+                  <h4>
+                    <CheckCircle2 size={19} /> Make it stick
+                  </h4>
+                  <p>
+                    {lectureChecks
+                      ? "Tick each check your attempt meets. If one is missing, that is your change for the next try."
+                      : "Use these checks after you compare your response with the example."}
+                  </p>
+                  {checklist.map((item, index) => (
+                    <label key={item}>
+                      <input
+                        type="checkbox"
+                        checked={selfChecks[index]}
+                        disabled={saved}
+                        onChange={(event) =>
+                          setSelfChecks(
+                            selfChecks.map((value, i) =>
+                              i === index ? event.target.checked : value,
+                            ),
+                          )
+                        }
+                      />
+                      {item}
+                    </label>
+                  ))}
+                </div>
+  ) : null;
+  const finishEl = ((saved ||
+              checked ||
+              (isProductive &&
+                hasFirstAttempt &&
+                (Boolean(feedback) || selfChecks.every(Boolean))))) ? (
+    <div className={styles.finish}>
+                {saved ? (
+                  <>
+                    <p role="status">
+                      <CheckCircle2 size={19} /> Practice saved. Another small
+                      step forward.
+                    </p>
+                    {!embedded && (
+                      <button className="primary" onClick={onNext}>
+                        Next exercise <ArrowRight size={16} />
+                      </button>
+                    )}
+                    <button
+                      className="secondary"
+                      onClick={() => {
+                        setRepeating(true);
+                        setSaved(false);
+                        setChecked(false);
+                        setAnswers({});
+                        setFeedback(null);
+                        setSelfChecks(noChecks());
+                        setError("");
+                        attemptId.current = null;
+                        sessionStarted.current = Date.now();
+                        if (isTimed) {
+                          if (timedSessionKey)
+                            clearTimedAttempt(timedSessionKey);
+                          setStarted(false);
+                          setRemaining(timeLimit);
+                          setDeadline(null);
+                          setUntimed(false);
+                          setRestoredTimedSessionKey(timedSessionKey);
+                        }
+                      }}
+                    >
+                      <RotateCcw size={15} />
+                      Practise again
+                    </button>
+                  </>
+                ) : (
+                  <button
+                    className="primary"
+                    disabled={
+                      saving ||
+                      Boolean(busy) ||
+                      recording ||
+                      liveActive ||
+                      (isTimed && !started) ||
+                      !changedRetryReady
+                    }
+                    onClick={save}
+                  >
+                    {saving ? (
+                      <Loader2 size={17} className={styles.spinner} />
+                    ) : (
+                      <Check size={17} />
+                    )}
+                    {saving
+                      ? "Saving…"
+                      : embedded
+                        ? "Save this attempt"
+                        : "Save practice"}
+                  </button>
+                )}
+                {!saved && checked && (
+                  <button
+                    className="text-button"
+                    onClick={() => {
+                      setChecked(false);
+                      setAnswers({});
+                    }}
+                  >
+                    <RotateCcw size={15} /> Try again
+                  </button>
+                )}
+              </div>
+  ) : null;
+  const modelEl =
+    isProductive && task.model ? (
+      hasFirstAttempt && !timerStillProtectsFirstAttempt ? (
+              <>
+                <button
+                  className="secondary"
+                  onClick={() => setShowModel(!showModel)}
+                  aria-expanded={showModel}
+                >
+                  {showModel ? "Hide model answer" : "See a model answer"}
+                  <BookOpen size={16} />
+                </button>
+                {showModel && (
+                  <div className={styles.model}>
+                    <p lang="sv">{task.model}</p>
+                    <AudioButton
+                      text={task.model}
+                      label="Listen to the example"
+                      slow={level === "A0" || level === "A1"}
+                    />
+                    <small>
+                      One possible response. Your own ideas are welcome.
+                    </small>
+                  </div>
+                )}
+              </>
+            ) : (
+              <p className={styles.modelUnlock}>
+                {timerStillProtectsFirstAttempt
+                  ? "The model answer unlocks after the timed attempt, so you can work independently first."
+                  : "Make a short first attempt to unlock the model answer."}
+              </p>
+            )
+    ) : null;
+
+  // A lecture's speaking or writing task runs as one guided mission: plan,
+  // say it, check it, say it again. Timed and exam tasks keep the classic
+  // layout so their independent-first-attempt rules stay untouched.
+  const guided = Boolean(lecture) && isProductive && !isTimed;
+  const plan = lecture?.missionPlan;
+
+  if (guided && lecture) {
+    const planDone = plan ? planComplete : true;
+    const checkDone =
+      hasFirstAttempt && (Boolean(feedback) || selfChecks.every(Boolean));
+    const stages = [
+      { title: plan?.title ?? "Plan what you will say", done: planDone },
+      { title: "Say it out loud", done: hasFirstAttempt },
+      { title: "Check it", done: checkDone },
+      { title: "Say it again, with one change", done: saved },
+    ];
+    const current = stages.findIndex((stage) => !stage.done);
+    const stageState = (index: number) =>
+      stages[index].done ? "done" : index === current ? "current" : "later";
+    const heading = (index: number) => (
+      <h4 className={styles.stageHeading}>
+        <span aria-hidden="true">
+          {stages[index].done ? <Check size={15} /> : index + 1}
+        </span>
+        {stages[index].title}
+        {stages[index].done && <small>Done</small>}
+      </h4>
+    );
+    return (
+      <article className={`panel ${styles.mission}`}>
+        <header className={styles.missionHeader}>
+          <span className="badge">Your turn in the scene</span>
+          <p className={styles.prompt}>{task.prompt}</p>
+          <ol className={styles.stageStrip} aria-label="Mission stages">
+            {stages.map((stage, index) => (
+              <li key={stage.title} data-state={stageState(index)}>
+                <span aria-hidden="true">
+                  {stage.done ? <Check size={13} /> : index + 1}
+                </span>
+                {stage.title}
+              </li>
+            ))}
+          </ol>
+        </header>
+
+        <section className={styles.stage} data-state={stageState(0)} aria-label={stages[0].title}>
+          {heading(0)}
+          {plan ? (
+            <MissionPlanner
+              plan={plan}
+              storageKey={`stigen:mission-plan:${lecture.id}`}
+              draft={draft}
+              onChange={handlePlanChange}
+            />
+          ) : (
+            <p className={styles.stageIntro}>
+              {Array.isArray(task.help) ? task.help.join(" ") : task.help}
+            </p>
+          )}
+        </section>
+
+        <section className={styles.stage} data-state={stageState(1)} aria-label={stages[1].title}>
+          {heading(1)}
+          <p className={styles.stageIntro}>
+            Say your lines aloud, without reading if you can. Record yourself,
+            or practise them with Stigen in a live conversation first.
+          </p>
+          {recorderEl}
+          {liveVoiceEl && (
+            <details className={styles.liveOption}>
+              <summary>Practise it live with Stigen first</summary>
+              {liveVoiceEl}
+            </details>
+          )}
+          {draftEl}
+          {plan && planComplete && !draft.trim() && !locked && (
+            <button
+              className="text-button"
+              onClick={() => {
+                setDraft(planScript);
+                setFeedback(null);
+                setError("");
+              }}
+            >
+              I said my planned lines. Add them as my words.
+            </button>
+          )}
+        </section>
+
+        <section className={styles.stage} data-state={stageState(2)} aria-label={stages[2].title}>
+          {heading(2)}
+          {hasFirstAttempt ? (
+            <>
+              {selfReviewEl}
+              {feedbackEl}
+              {modelEl && <div className={styles.modelStage}>{modelEl}</div>}
+            </>
+          ) : (
+            <p className={styles.locked}>
+              Say it first. Then check it here against the lesson&rsquo;s own
+              checks, get feedback, and compare with a model answer.
+            </p>
+          )}
+        </section>
+
+        <section className={styles.stage} data-state={stageState(3)} aria-label={stages[3].title}>
+          {heading(3)}
+          {checkDone || saved ? (
+            <>
+              <p className={styles.transferNote}>
+                <span>THE CHANGE</span>
+                <b>{lecture.route.transferPrompt}</b>
+              </p>
+              <p className={styles.stageIntro}>
+                {retryIsRequired && !changedRetryReady
+                  ? "Your first answer stays in the box. Add the changed version after a blank line, or record again. Changing only punctuation will not unlock saving."
+                  : "Record again, or add your new version to your words above. Then save this attempt to finish the step."}
+              </p>
+              {finishEl}
+            </>
+          ) : (
+            <p className={styles.locked}>
+              After the check, you say it once more with one small change. That
+              second try is where it sticks.
+            </p>
+          )}
+        </section>
+        {error && (
+          <p className={styles.error} role="alert">
+            {error}
+          </p>
+        )}
+      </article>
+    );
   }
 
   return (
@@ -1164,370 +1712,17 @@ function Exercise({
                 )}
               </div>
             )}
-            {skill === "speaking" && !isTimed && (
-              <LiveVoice
-                contextId={task.id}
-                available={canLiveVoice}
-                signedIn={Boolean(ai?.signedIn)}
-                disabled={
-                  locked ||
-                  recording ||
-                  micPending ||
-                  Boolean(busy) ||
-                  saving ||
-                  !draftLoaded
-                }
-                onTranscript={addLiveTranscript}
-                onActiveChange={handleLiveActiveChange}
-              />
-            )}
-            {skill === "speaking" && (
-              <div className={styles.recorder}>
-                <div
-                  className={`${styles.micCircle} ${recording ? styles.recording : ""}`}
-                >
-                  <Mic size={27} />
-                </div>
-                <strong>
-                  {recording
-                    ? "Recording your Swedish…"
-                    : recordingUrl
-                      ? "Your voice, your progress"
-                      : "Ready when you are"}
-                </strong>
-                <p>
-                  {recording
-                    ? `${Math.floor(recordedSeconds / 60)}:${String(recordedSeconds % 60).padStart(2, "0")} · 3-minute recording limit`
-                    : isTimed
-                      ? "Live conversation is paused for this timed attempt. Record a short answer or type it below."
-                      : "Find a quiet spot. A few simple sentences are enough."}
-                </p>
-                <button
-                  className={recording ? "secondary" : "primary"}
-                  disabled={locked || micPending || Boolean(busy) || liveActive}
-                  onClick={() =>
-                    recording ? recorder.current?.stop() : void startRecording()
-                  }
-                >
-                  {micPending ? (
-                    <Loader2 size={17} className={styles.spinner} />
-                  ) : recording ? (
-                    <Square size={16} />
-                  ) : (
-                    <Mic size={17} />
-                  )}
-                  {micPending
-                    ? "Opening microphone…"
-                    : recording
-                      ? "Stop recording"
-                      : recordingUrl
-                        ? "Record again"
-                        : "Start recording"}
-                </button>
-                {recordingUrl && !recording && !liveActive && (
-                  <div className={styles.recordingPlayback}>
-                    <audio
-                      ref={recordingPlayback}
-                      controls
-                      src={recordingUrl}
-                      aria-label="Your Swedish recording"
-                    />
-                    <a
-                      href={recordingUrl}
-                      download={`finnish-${task.id}.${recordingExtension}`}
-                      className="text-button"
-                    >
-                      Download recording
-                    </a>
-                    {canTranscribe && (
-                      <button
-                        className="secondary"
-                        onClick={transcribe}
-                        disabled={Boolean(busy) || recording || locked}
-                      >
-                        {busy === "transcription" ? (
-                          <Loader2 size={16} className={styles.spinner} />
-                        ) : (
-                          <Sparkles size={16} />
-                        )}
-                        {busy === "transcription"
-                          ? "Transcribing…"
-                          : "Transcribe with AI"}
-                      </button>
-                    )}
-                  </div>
-                )}
-                <small>
-                  {canTranscribe
-                    ? "Recording stays in this tab until you choose AI transcription. Download it to keep a copy."
-                    : "Recordings stay in this tab. Download a copy and type what you said below; file transcription is not connected."}
-                </small>
-              </div>
-            )}
-            {isProductive && (
-              <>
-                <label
-                  className={styles.draftLabel}
-                  htmlFor={`draft-${task.id}`}
-                >
-                  {skill === "speaking"
-                    ? "What did you say?"
-                    : "Your Swedish response"}
-                  <span>
-                    {skill === "speaking"
-                      ? "Type your words, edit a transcript, or add your words from a live conversation."
-                      : "Start small. Being understood matters more than being perfect."}
-                  </span>
-                </label>
-                <textarea
-                  id={`draft-${task.id}`}
-                  className={`field ${styles.draft}`}
-                  value={draft}
-                  maxLength={5000}
-                  rows={skill === "speaking" ? 5 : 8}
-                  placeholder={
-                    level === "A0" ? "Hej! Jag heter…" : "Skriv här…"
-                  }
-                  disabled={!draftLoaded || locked || Boolean(busy)}
-                  aria-describedby={
-                    retryIsRequired ? `retry-guidance-${task.id}` : undefined
-                  }
-                  onChange={(event) => {
-                    setDraft(event.target.value);
-                    setFeedback(null);
-                    setError("");
-                  }}
-                  spellCheck
-                  lang="sv"
-                />
-                <div className={styles.draftMeta}>
-                  <span>
-                    {wordCount} {wordCount === 1 ? "word" : "words"} ·{" "}
-                    {draft.length}/5,000 characters
-                  </span>
-                  <span>
-                    {onDraftChange ? "Lecture draft" : "Draft kept in this tab"}
-                  </span>
-                </div>
-                <div className={styles.aiState}>
-                  <Sparkles size={17} />
-                  <div>
-                    <strong>
-                      {ai === null
-                        ? "Checking AI availability…"
-                        : canFeedback && !feedbackAvailableNow
-                          ? "Your feedback coach unlocks after the timed attempt"
-                          : canFeedback
-                          ? "Your Swedish feedback coach is connected"
-                          : ai.configured && !ai.signedIn
-                            ? "Sign in to use your AI coach"
-                            : "Guided self-review is ready"}
-                    </strong>
-                    <p>
-                      {canFeedback
-                        ? !feedbackAvailableNow
-                          ? "Work independently while the timer runs. You can review your response with AI after time is up or when you continue untimed."
-                          : `${skill === "speaking" ? "Feedback covers your transcript’s language and task completion, not pronunciation." : "Get specific corrections, an improved version, and your next step."} Your response is sent to ${feedbackProvider} only when you ask for feedback.`
-                        : "AI feedback is currently unavailable. Compare with the model answer and use the checklist below."}
-                    </p>
-                    {ai?.configured && !ai.signedIn && (
-                      <a
-                        href="/signin-with-chatgpt?return_to=/"
-                        className="text-button"
-                      >
-                        Sign in with ChatGPT
-                      </a>
-                    )}
-                  </div>
-                </div>
-                {canFeedback && feedbackAvailableNow && (
-                  <button
-                    className="primary"
-                    disabled={
-                      draft.trim().length < 2 ||
-                      Boolean(busy) ||
-                      locked ||
-                      recording ||
-                      liveActive
-                    }
-                    onClick={getFeedback}
-                  >
-                    {busy === "feedback" ? (
-                      <Loader2 size={17} className={styles.spinner} />
-                    ) : (
-                      <Sparkles size={17} />
-                    )}
-                    {busy === "feedback"
-                      ? "Reviewing your Swedish…"
-                      : "Get AI feedback"}
-                  </button>
-                )}
-
-                {feedback && (
-                  <div
-                    className={`feedback-box ${styles.feedback}`}
-                    aria-live="polite"
-                  >
-                    <span className={styles.eyebrow}>
-                      Your AI learning feedback
-                    </span>
-                    <h4>{feedback.summary}</h4>
-                    <p className={styles.disclaimer}>
-                      Learning feedback, not an official YKI assessment.
-                    </p>
-                    <ul>
-                      {feedback.strengths.map((strength, index) => (
-                        <li key={index}>{strength}</li>
-                      ))}
-                    </ul>
-                    <div className={styles.rubric}>
-                      {feedback.rubric.map((item, index) => (
-                        <div key={index}>
-                          <strong>{item.criterion}</strong>
-                          <span className="badge">{item.assessment}</span>
-                          <p>{item.note}</p>
-                        </div>
-                      ))}
-                    </div>
-                    {feedback.corrections.length > 0 && (
-                      <>
-                        <h4>A few helpful corrections</h4>
-                        {feedback.corrections.map((correction, index) => (
-                          <div key={index} className={styles.correction}>
-                            <p>
-                              <del lang="sv">{correction.original}</del>
-                              <ArrowRight size={14} />
-                              <strong lang="sv">{correction.corrected}</strong>
-                            </p>
-                            <span>{correction.explanation}</span>
-                          </div>
-                        ))}
-                      </>
-                    )}
-                    <h4>A more natural version</h4>
-                    <p lang="sv" className={styles.passage}>
-                      {feedback.improvedVersion}
-                    </p>
-                    <p>
-                      <strong>Try next:</strong> {feedback.nextStep}
-                    </p>
-                  </div>
-                )}
-                <div className={styles.selfReview}>
-                  <h4>
-                    <CheckCircle2 size={19} /> Make it stick
-                  </h4>
-                  <p>
-                    Use these checks after you compare your response with the
-                    example.
-                  </p>
-                  {checklist.map((item, index) => (
-                    <label key={item}>
-                      <input
-                        type="checkbox"
-                        checked={selfChecks[index]}
-                        disabled={saved}
-                        onChange={(event) =>
-                          setSelfChecks(
-                            selfChecks.map((value, i) =>
-                              i === index ? event.target.checked : value,
-                            ),
-                          )
-                        }
-                      />
-                      {item}
-                    </label>
-                  ))}
-                </div>
-              </>
-            )}
+            {liveVoiceEl}
+            {recorderEl}
+            {draftEl}
+            {feedbackEl}
+            {selfReviewEl}
             {error && (
               <p className={styles.error} role="alert">
                 {error}
               </p>
             )}
-            {(saved ||
-              checked ||
-              (isProductive &&
-                hasFirstAttempt &&
-                (Boolean(feedback) || selfChecks.every(Boolean)))) && (
-              <div className={styles.finish}>
-                {saved ? (
-                  <>
-                    <p role="status">
-                      <CheckCircle2 size={19} /> Practice saved. Another small
-                      step forward.
-                    </p>
-                    {!embedded && (
-                      <button className="primary" onClick={onNext}>
-                        Next exercise <ArrowRight size={16} />
-                      </button>
-                    )}
-                    <button
-                      className="secondary"
-                      onClick={() => {
-                        setRepeating(true);
-                        setSaved(false);
-                        setChecked(false);
-                        setAnswers({});
-                        setFeedback(null);
-                        setSelfChecks([false, false, false]);
-                        setError("");
-                        attemptId.current = null;
-                        sessionStarted.current = Date.now();
-                        if (isTimed) {
-                          if (timedSessionKey)
-                            clearTimedAttempt(timedSessionKey);
-                          setStarted(false);
-                          setRemaining(timeLimit);
-                          setDeadline(null);
-                          setUntimed(false);
-                          setRestoredTimedSessionKey(timedSessionKey);
-                        }
-                      }}
-                    >
-                      <RotateCcw size={15} />
-                      Practise again
-                    </button>
-                  </>
-                ) : (
-                  <button
-                    className="primary"
-                    disabled={
-                      saving ||
-                      Boolean(busy) ||
-                      recording ||
-                      liveActive ||
-                      (isTimed && !started) ||
-                      !changedRetryReady
-                    }
-                    onClick={save}
-                  >
-                    {saving ? (
-                      <Loader2 size={17} className={styles.spinner} />
-                    ) : (
-                      <Check size={17} />
-                    )}
-                    {saving
-                      ? "Saving…"
-                      : embedded
-                        ? "Save this attempt"
-                        : "Save practice"}
-                  </button>
-                )}
-                {!saved && checked && (
-                  <button
-                    className="text-button"
-                    onClick={() => {
-                      setChecked(false);
-                      setAnswers({});
-                    }}
-                  >
-                    <RotateCcw size={15} /> Try again
-                  </button>
-                )}
-              </div>
-            )}
+            {finishEl}
           </div>
         )}
       </article>
@@ -1547,39 +1742,7 @@ function Exercise({
           ) : (
             <p>{task.help}</p>
           )}
-          {isProductive && task.model && (
-            hasFirstAttempt && !timerStillProtectsFirstAttempt ? (
-              <>
-                <button
-                  className="secondary"
-                  onClick={() => setShowModel(!showModel)}
-                  aria-expanded={showModel}
-                >
-                  {showModel ? "Hide model answer" : "See a model answer"}
-                  <BookOpen size={16} />
-                </button>
-                {showModel && (
-                  <div className={styles.model}>
-                    <p lang="sv">{task.model}</p>
-                    <AudioButton
-                      text={task.model}
-                      label="Listen to the example"
-                      slow={level === "A0" || level === "A1"}
-                    />
-                    <small>
-                      One possible response. Your own ideas are welcome.
-                    </small>
-                  </div>
-                )}
-              </>
-            ) : (
-              <p className={styles.modelUnlock}>
-                {timerStillProtectsFirstAttempt
-                  ? "The model answer unlocks after the timed attempt, so you can work independently first."
-                  : "Make a short first attempt to unlock the model answer."}
-              </p>
-            )
-          )}
+          {modelEl}
         </div>
         <div className={styles.gentleTip}>
           <span>PIENIN ASKELIN</span>

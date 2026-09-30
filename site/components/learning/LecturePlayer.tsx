@@ -1573,23 +1573,9 @@ export default function LecturePlayer({
               />
             ) : (
             <>
-              {lecture.level === "A0" && hydrated && (
-                <details className="a0-companion-drawer" open>
-                  <summary>
-                    <AudioLines size={18} />
-                    <span>
-                      <b>Talk with Stigen &mdash; your AI companion for this task</b>
-                      <small>
-                        Voice conversation, sound drill, or text help. Stigen
-                        knows this lesson&rsquo;s rules and challenges you as you
-                        do the real task.
-                      </small>
-                    </span>
-                    <ChevronDown size={16} />
-                  </summary>
-                  <A0TeachingCompanion lectureId={lecture.id} />
-                </details>
-              )}
+              {/* With one required skill the mission itself says what to do;
+                  the switcher appears only for several skills or on a detour. */}
+              {(route.requiredSkills.length > 1 || !route.requiredSkills.includes(skill)) && (
               <div className="practice-focus">
                 <span className="eyebrow">YOUR CORE MISSION</span>
                 <p>{route.expectedOutput}</p>
@@ -1613,6 +1599,7 @@ export default function LecturePlayer({
                   ))}
                 </div>
               </div>
+              )}
               {hydrated && (
                 <PracticeStudio
                   key={`${lecture.id}-${skill}`}
@@ -1653,6 +1640,22 @@ export default function LecturePlayer({
                     )
                   }
                 />
+              )}
+              {lecture.level === "A0" && hydrated && (
+                <details className="a0-companion-drawer">
+                  <summary>
+                    <AudioLines size={18} />
+                    <span>
+                      <b>Stuck? Ask Stigen</b>
+                      <small>
+                        Ask a question in writing, or drill one sound. Stigen
+                        knows this lesson&rsquo;s words and rules.
+                      </small>
+                    </span>
+                    <ChevronDown size={16} />
+                  </summary>
+                  <A0TeachingCompanion lectureId={lecture.id} voiceTools={["pronunciation"]} />
+                </details>
               )}
               <details className="extra-practice">
                 <summary>Optional: practise another skill from this episode</summary>

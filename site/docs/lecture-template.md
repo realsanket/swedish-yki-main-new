@@ -68,6 +68,12 @@ Kinds available now:
 
 To add a kind, add its data shape to the `LectureExtraStep` union in `lib/course-types.ts` and one renderer in `components/learning/ExtraStep.tsx`; TypeScript reports a kind without a renderer. The route, saving, and ordering need no change, and never branch on a lecture number.
 
+## The "Do the task" mission
+
+A lecture's speaking or writing task runs as one guided mission in four stages: **Plan** (the learner writes their own details into sentence frames and hears them read back), **Say it** (record, or rehearse with the live coach, then keep the words they said), **Check it** (the lecture's own `route.successChecks` as tick boxes, AI feedback, and the model answer, which unlocks only after a first attempt), and **Say it again** (the lecture's `route.transferPrompt` as the one change, then save). Timed and exam tasks keep the classic layout so their independent-attempt rules stay intact.
+
+The plan comes from `missionPlan`, a top-level field: a `title`, an `intro`, and `lines`, each with a `label`, the frame text `before` and `after` the learner's words, and a `placeholder`. An empty `before` makes the line free text, which suits sentences that change shape (han/hon). Without `missionPlan`, the Plan stage shows the task's help text. Plan values stay in the learner's browser; the saved evidence is still the spoken or written attempt.
+
 ## Grammar words in plain English
 
 The learner speaks English but has not studied grammar, so words like *verb*, *subject*, or *front vowel* need explaining. Every definition lives once in `content/grammar-terms.json` (plain explanation, a familiar English example, a Swedish example, and an optional tip). A lecture lists the ids it uses in `grammarTerms`. The teaching step then underlines those words wherever they appear in section text, example notes, and activity feedback; tapping one opens a short note and highlights it in a side column that shows only the words the current topic uses. When a new lecture needs a new grammar word, add it to the glossary with its aliases (longer aliases win, so "front vowel" beats "vowel") and list its id in the lecture.

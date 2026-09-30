@@ -115,6 +115,23 @@ export type LectureExtraStep = {
     }
 );
 
+/**
+ * A fill-in plan for the "Do the task" step: the learner writes their own
+ * details into the lecture's sentence frames before speaking. Each line is
+ * `before` + the learner's words + `after`; an empty `before` makes the whole
+ * line free text. Omit it and the step shows the task's help text instead.
+ */
+export type MissionPlan = {
+  title: string;
+  intro: string;
+  lines: Array<{
+    label: string;
+    before: string;
+    after?: string;
+    placeholder: string;
+  }>;
+};
+
 export type LecturePresentation = {
   /**
    * Selects a visual treatment, not a curriculum structure. A future lecture
@@ -316,6 +333,8 @@ export type LectureContent = {
   presentation?: LecturePresentation;
   /** Lecture-owned steps added to the route, such as textbook page practice. */
   extraSteps?: LectureExtraStep[];
+  /** Sentence frames the learner fills in before the "Do the task" attempt. */
+  missionPlan?: MissionPlan;
   objectives: string[];
   focusSkills: Skill[];
   /** Optional for legacy JSON; course.ts supplies a safe runtime fallback. */
