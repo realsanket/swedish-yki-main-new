@@ -136,6 +136,26 @@ export function aiProvider(env: Environment = process.env): "azure" | "openai" |
   if (getAzureConfig(env)) return "azure";
   return env.OPENAI_API_KEY?.trim() ? "openai" : null;
 }
+/**
+ * Pronunciation assessment uses Speech's short-audio recognition endpoint on
+ * the resource's own domain. AZURE_SPEECH_STT_ENDPOINT can name it directly;
+ * otherwise it is derived from the Cognitive Services text-to-speech domain.
+ */
+export function getPronunciationConfig(env: Environment = process.env) {
+  const key = env.AZURE_SPEECH_API_KEY?.trim() || env.AZURE_OPENAI_API_KEY?.trim();
+  const path = "/stt/speech/recognition/conversation/cognitiveservices/v1";
+  const explicit = secureEndpoint(env.AZURE_SPEECH_STT_ENDPOINT);
+  let endpoint: string | null = null;
+  if (explicit) {
+    endpoint = new URL(explicit).pathname.replace(/\/+$/, "") ? explicit : `${new URL(explicit).origin}${path}`;
+  } else {
+    const tts = secureEndpoint(env.AZURE_SPEECH_TTS_ENDPOINT);
+    if (tts && new URL(tts).hostname.endsWith(".cognitiveservices.azure.com")) endpoint = `${new URL(tts).origin}${path}`;
+  }
+  if (!endpoint || !key) return null;
+  return { endpoint, key };
+}
+
 export function aiCapabilities(env: Environment = process.env) {
   return {
     feedback: Boolean(aiProvider(env)),
@@ -143,6 +163,7 @@ export function aiCapabilities(env: Environment = process.env) {
     transcription: Boolean(getSpeechConfig(env) || aiProvider(env) === "openai"),
     characterVoices: Boolean(getSpeechSynthesisConfig(env)),
     liveVoice: Boolean(getVoiceLiveConfig(env)),
+    pronunciation: Boolean(getPronunciationConfig(env)),
   };
 }
 export function aiConfigured() { return aiCapabilities().feedback; }

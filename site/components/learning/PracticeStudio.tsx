@@ -26,6 +26,7 @@ import { storyChapters } from "@/lib/story-world";
 import AudioButton from "./AudioButton";
 import LiveVoice from "./LiveVoice";
 import MissionPlanner from "./MissionPlanner";
+import SoundCheck from "./SoundCheck";
 import QuestionCard from "./QuestionCard";
 import ReadingPassageCard from "./ReadingPassageCard";
 import { StoryCast } from "./StoryAvatar";
@@ -1461,6 +1462,12 @@ function Exercise({
           {hasFirstAttempt ? (
             <>
               {selfReviewEl}
+              {skill === "speaking" && (planScript || task.model) && (
+                <SoundCheck
+                  reference={(planScript || task.model || "").replace(/\s*\n\s*/g, " ")}
+                  title={planScript ? "Check how your lines sound" : "Check how the model lines sound in your voice"}
+                />
+              )}
               {feedbackEl}
               {modelEl && <div className={styles.modelStage}>{modelEl}</div>}
             </>

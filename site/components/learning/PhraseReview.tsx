@@ -5,6 +5,7 @@ import { CheckCircle2, Eye, Mic } from "lucide-react";
 import type { ReviewCard } from "@/lib/review-cards";
 import type { ReviewRating } from "@/lib/progress";
 import AudioButton from "./AudioButton";
+import SoundCheck from "./SoundCheck";
 
 export type SaveReview = (cardId: string, rating: ReviewRating, requestId: string) => Promise<void>;
 
@@ -97,6 +98,13 @@ export default function PhraseReview({
           <>
             <p className="phrase-review-answer" lang="sv">{current.answer}</p>
             <AudioButton text={current.answer} label="Hear it" slow className="secondary" />
+            {/* A frame with a gap ("Jag heter …") has no single right answer to score. */}
+            {!isReturn && !current.answer.includes("…") && (
+              <details className="phrase-review-sound">
+                <summary>Check my pronunciation</summary>
+                <SoundCheck key={current.id} reference={current.answer} title="Say it and compare" />
+              </details>
+            )}
             <p className="help-text">How did your version go?</p>
             <div className="phrase-review-ratings" role="group" aria-label="Rate your recall">
               {ratings.map((item) => (
