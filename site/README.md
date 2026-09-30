@@ -24,7 +24,7 @@ Source-to-lecture decisions are tracked in [`../docs/mapping.md`](../docs/mappin
 - `docs/character-mapping.md` — the four stable viewpoints, minimal-cast rule, and introduction gate for any fifth character.
 - `docs/textbook-page-map.md` — the complete physical-page 4-55 reading record and four-character coverage evidence; it does not activate later lessons.
 
-Lectures 3–60, the former 12-chapter plan, later story mappings, and later artwork are preserved outside the runtime tree in [`../backup/future-course-2026-09-29`](../backup/future-course-2026-09-29). Do not restore them until the user explicitly expands the course scope.
+The former 60-lecture plan was removed from the repository on September 30, 2026 (it remains in git history). New lectures are built one at a time from the teacher's lessons; see the checklist in [`../AGENTS.md`](../AGENTS.md).
 
 Lecture presentation is optional metadata. Lecture 1 opts into `conversation-first`; a future lecture defaults to a neutral renderer and must earn any custom layout from its own verified teaching material. Shared components must not branch on lecture numbers.
 
@@ -42,10 +42,13 @@ Open [http://localhost:3000](http://localhost:3000). Progress is stored in a loc
 ## Checks
 
 ```bash
-npm run typecheck
-npm run lint
+npm run content:index   # regenerate content/lectures/index.json after editing a lecture
+npm run check           # content validator, typecheck, lint, progress-rule tests
 npm run build
 ```
+
+The full project handbook, including features, Azure lessons learned and the
+backlog, is [`../AGENTS.md`](../AGENTS.md).
 
 ## Optional AI features
 
@@ -54,7 +57,8 @@ Copy `.env.example` to `.env` and add only the server-side credentials you use. 
 - Text feedback and the inline lesson coach use an OpenAI-compatible Responses endpoint.
 - Fast Swedish transcription can use Azure Speech, with Swedish locales configured server-side.
 - All character, dialogue, vocabulary, and pronunciation playback uses server-side Azure Speech synthesis. There is no browser or static-audio fallback.
-- Live voice uses Azure Speech Voice Live with `gpt-realtime-2.1-mini` and native `sv-SE-MattiasNeural`. A same-origin server WebSocket proxy keeps the long-lived Azure key and trusted lesson instructions out of the browser.
+- Live voice uses Azure Speech Voice Live with `gpt-realtime-2.1-mini` and the multilingual HD voice `en-US-Andrew:DragonHDLatestNeural` (Swedish and English in one reply). A same-origin server WebSocket proxy keeps the long-lived Azure key and trusted lesson instructions out of the browser.
+- Pronunciation scoring uses Azure Speech pronunciation assessment for `sv-SE` (`/api/pronunciation`).
 
 The AI coach is practice support, not an official YKI examiner. It does not assign official grades or guarantee a test result.
 

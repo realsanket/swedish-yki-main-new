@@ -8,10 +8,10 @@ This file is the curriculum handoff for humans and AI agents. It records what ha
 - **Live structure:** Chapter 1 contains Lectures 1 and 2.
 - **Source spine:** 51 dated teacher lessons in `docs/Group 3.md`, supported first by `docs/text-book-images/text-book.pdf` and later by the YKI preparation book.
 - **Current method:** improve the live lectures one teaching step at a time. Do not activate Lecture 3 or a later chapter until the user explicitly changes the scope.
-- **Backup:** the former Lectures 2–60, 12-chapter plan, later story registry, and later artwork are in `backup/future-course-2026-09-29/`. The old backup Lecture 2 (names and spelling) did not match teacher Lesson 2 and was not restored; only its Episode 2 artwork was moved back.
+- **Former future course:** the old Lectures 2–60, 12-chapter plan, later story registry and artwork were removed on September 30, 2026 and remain only in git history. The old Lecture 2 (names and spelling) did not match teacher Lesson 2; the live Lecture 2 was built from the teacher's Lesson 2.
 - **Template rule:** Lecture 1 opts into its own content-defined presentation. Future lectures use the neutral default unless their verified material requires a different template; never branch on a lecture number.
 
-The backup is reference material, not part of the live course. Its presence must not make later chapters appear in navigation, progress totals, the curriculum page, or the generated runtime index.
+Later chapters must not appear in navigation, progress totals, the curriculum page, or the generated runtime index until they are built and activated.
 
 ## Source-handling rules
 
@@ -155,7 +155,7 @@ The learner speaks English but is new to grammar terminology. Both lectures list
 | 1 | Introduce yourself and hear Swedish sounds | **Verified and revised from Lesson 1** |
 | 2 | How are you? People and questions | **Verified and built from Lesson 2 and textbook pages 5–6** |
 
-The former Lectures 3–5 are not live Chapter 1 content. Their files are preserved with the rest of the future-course backup.
+The former Lectures 3–5 are not live Chapter 1 content. They were removed with the rest of the old future course and remain only in git history.
 
 ## Episode 1 implementation record
 
