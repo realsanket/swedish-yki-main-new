@@ -69,7 +69,7 @@ export function FullCurriculum({
       <div className="curriculum-principle">
         <BookOpen size={18} />
         <p>
-          <b>Use only this live path.</b> Complete each lecture’s six steps in
+          <b>Use only this live path.</b> Complete each lecture’s steps in
           order. Source documents support the teaching decisions, but they are
           not extra required work.
         </p>

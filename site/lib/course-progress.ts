@@ -1,4 +1,4 @@
-import type { CourseLecture, CourseQuestion, CoursePart } from "./course-types.ts";
+import type { CourseLecture, CourseQuestion, CoursePart, LectureExtraStep } from "./course-types.ts";
 import type { Skill } from "./curriculum.ts";
 import { COURSE_PARTS } from "./course.ts";
 import { getYkiMock, parseYkiTargetedReturn } from "./yki-mocks.ts";
@@ -8,6 +8,8 @@ export type CourseLectureState = {
   revision: number;
   part: CoursePart;
   completedParts: CoursePart[];
+  /** Ids of the lecture's own extra steps that are done. Absent in older records. */
+  completedExtraSteps?: string[];
   answers: Record<string, string>;
   drafts: Partial<Record<Skill, string>>;
   notes: string;
@@ -22,11 +24,12 @@ type Mutation = { lectureId: string; revision: number; mutationId: string };
 export type CourseAction = Mutation & (
   | { action: "saveDraft"; patch: CourseDraftPatch }
   | { action: "completePart"; part: CoursePart; acknowledged?: true }
+  | { action: "completeExtraStep"; stepId: string }
   | { action: "completePractice"; skill: Skill; attemptId: string; score: number | null; minutes: number }
 );
 
 export function defaultCourseLectureState(): CourseLectureState {
-  return { contentVersion: 1, revision: 0, part: "recall", completedParts: [], answers: {}, drafts: {}, notes: "", assignment: "", practice: {}, completedAt: null, updatedAt: null };
+  return { contentVersion: 1, revision: 0, part: "recall", completedParts: [], completedExtraSteps: [], answers: {}, drafts: {}, notes: "", assignment: "", practice: {}, completedAt: null, updatedAt: null };
 }
 export function defaultCourseProgress(): CourseProgressData { return { lectures: {} }; }
 
@@ -86,6 +89,61 @@ function resumePart(completedParts: readonly CoursePart[]): CoursePart {
     COURSE_PARTS.find((part) => !completedParts.includes(part)) ??
     COURSE_PARTS[COURSE_PARTS.length - 1]
   );
+}
+
+/**
+ * One lecture's full route: the six stable parts in order, each followed by
+ * the lecture's own extra steps that name it in `after`. The server and the
+ * player both walk this list, so a new step kind never needs its own ordering.
+ */
+export type RouteEntry =
+  | { kind: "part"; key: CoursePart; part: CoursePart }
+  | { kind: "extra"; key: `extra:${string}`; step: LectureExtraStep };
+
+export function routeSequence(lecture: Pick<CourseLecture, "extraSteps">): RouteEntry[] {
+  const extras = lecture.extraSteps ?? [];
+  return COURSE_PARTS.flatMap((part): RouteEntry[] => [
+    { kind: "part", key: part, part },
+    ...extras
+      .filter((step) => step.after === part)
+      .map((step): RouteEntry => ({ kind: "extra", key: `extra:${step.id}`, step })),
+  ]);
+}
+
+export function routeEntryDone(
+  entry: RouteEntry,
+  state: Pick<CourseLectureState, "completedParts" | "completedExtraSteps">,
+): boolean {
+  return entry.kind === "part"
+    ? state.completedParts.includes(entry.part)
+    : (state.completedExtraSteps ?? []).includes(entry.step.id);
+}
+
+/** Where to resume: the first unfinished step, or the last step when all are done. */
+export function resumeEntry(
+  lecture: Pick<CourseLecture, "extraSteps">,
+  state: Pick<CourseLectureState, "completedParts" | "completedExtraSteps">,
+): RouteEntry {
+  const sequence = routeSequence(lecture);
+  return sequence.find((entry) => !routeEntryDone(entry, state)) ?? sequence[sequence.length - 1];
+}
+
+function routeComplete(
+  lecture: Pick<CourseLecture, "extraSteps">,
+  state: Pick<CourseLectureState, "completedParts" | "completedExtraSteps">,
+): boolean {
+  return routeSequence(lecture).every((entry) => routeEntryDone(entry, state));
+}
+
+/** The first unfinished step before `key`, so a step is never saved out of order. */
+function unfinishedBefore(
+  lecture: Pick<CourseLecture, "extraSteps">,
+  state: Pick<CourseLectureState, "completedParts" | "completedExtraSteps">,
+  key: RouteEntry["key"],
+): RouteEntry | undefined {
+  const sequence = routeSequence(lecture);
+  const index = sequence.findIndex((entry) => entry.key === key);
+  return sequence.slice(0, index).find((entry) => !routeEntryDone(entry, state));
 }
 
 function practiceIsReached(completedParts: readonly CoursePart[]): boolean {
@@ -249,6 +307,10 @@ export function parseCourseAction(value: unknown): CourseAction {
     if (input.acknowledged !== undefined && input.acknowledged !== true) throw new CourseError(400, "Review the lecture part before continuing.");
     return { ...common, action: "completePart", part: input.part, ...(input.acknowledged === true ? { acknowledged: true as const } : {}) };
   }
+  if (input.action === "completeExtraStep") {
+    keys(input, [...shared, "stepId"]);
+    return { ...common, action: "completeExtraStep", stepId: identifier(input.stepId, "Step ID") };
+  }
   if (input.action === "completePractice") {
     keys(input, [...shared, "skill", "attemptId", "score", "minutes"]);
     if (!skills.includes(input.skill as Skill)) throw new CourseError(400, "Choose one of the four language skills.");
@@ -270,6 +332,8 @@ export function updateCourseState(current: CourseLectureState, action: CourseAct
   // than from a draft patch or a client-side preview of a completed step.
   next.completedParts = completedParts;
   next.part = resumePart(completedParts);
+  const extraIds = new Set((lecture.extraSteps ?? []).map((step) => step.id));
+  next.completedExtraSteps = (current.completedExtraSteps ?? []).filter((id) => extraIds.has(id));
   next.practice = { ...(current.practice ?? {}) };
   if (action.action === "saveDraft") {
     const questionIds = new Set([...lecture.recall, ...lecture.guided, ...lecture.checkpoint].map(question => question.id));
@@ -315,9 +379,25 @@ export function updateCourseState(current: CourseLectureState, action: CourseAct
         score: action.score,
       };
     }
+  } else if (action.action === "completeExtraStep") {
+    const step = lecture.extraSteps?.find((item) => item.id === action.stepId);
+    if (!step) throw new CourseError(400, "This step does not belong to this lecture.");
+    if (!next.completedExtraSteps.includes(step.id)) {
+      if (unfinishedBefore(lecture, next, `extra:${step.id}`)) throw new CourseError(422, "Finish the earlier lecture steps before marking this one complete.", "part_incomplete");
+      next.completedExtraSteps = [...next.completedExtraSteps, step.id];
+      if (!next.completedAt && routeComplete(lecture, next)) next.completedAt = new Date(now).toISOString();
+    }
   } else if (!completedParts.includes(action.part)) {
-    const index = COURSE_PARTS.indexOf(action.part);
-    if (COURSE_PARTS.slice(0, index).some(part => !completedParts.includes(part))) throw new CourseError(422, "Finish the earlier lecture parts before marking this one complete.", "part_incomplete");
+    const blocker = unfinishedBefore(lecture, next, action.part);
+    if (blocker) {
+      throw new CourseError(
+        422,
+        blocker.kind === "extra"
+          ? `Finish the step “${blocker.step.label}” before marking this one complete.`
+          : "Finish the earlier lecture parts before marking this one complete.",
+        "part_incomplete",
+      );
+    }
     if (["recall", "teach", "guided", "check", "assignment"].includes(action.part) && !action.acknowledged) {
       throw new CourseError(422, "Review this step before continuing.", "part_incomplete");
     }
@@ -371,7 +451,7 @@ export function updateCourseState(current: CourseLectureState, action: CourseAct
     }
     next.completedParts = COURSE_PARTS.filter(part => part === action.part || completedParts.includes(part));
     next.part = resumePart(next.completedParts);
-    if (next.completedParts.length === COURSE_PARTS.length) next.completedAt = new Date(now).toISOString();
+    if (routeComplete(lecture, next)) next.completedAt = new Date(now).toISOString();
   }
   next.updatedAt = new Date(now).toISOString();
   next.revision = current.revision + 1;

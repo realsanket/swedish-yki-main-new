@@ -190,7 +190,9 @@ export const lectures: CourseLecture[] = (lectureData as LectureContent[])
       title: lectureTitles[content.number - 1],
       summary: content.objectives[0],
       previous: content.number > 1 ? [`lecture-${String(content.number - 1).padStart(2, "0")}`] : [],
-      minutes: routeProfile.steps.reduce((total, step) => total + step.minutes, 0),
+      minutes:
+        routeProfile.steps.reduce((total, step) => total + step.minutes, 0) +
+        (content.extraSteps ?? []).reduce((total, step) => total + step.minutes, 0),
     };
   });
 

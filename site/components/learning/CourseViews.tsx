@@ -25,7 +25,7 @@ import {
   routeProfileForLecture,
   type CourseLecture,
 } from "@/lib/course";
-import type { CourseProgressData } from "@/lib/course-progress";
+import { resumeEntry, type CourseProgressData } from "@/lib/course-progress";
 import type { ProgressData } from "@/lib/progress";
 import type { Skill } from "@/lib/curriculum";
 import { SKILL_CONFIG } from "@/lib/skill-config";
@@ -61,9 +61,15 @@ export function CourseHome({
   const [now] = useState(() => Date.now());
   const next = nextLecture(data);
   const state = next && data.lectures[next.id];
-  const bookmark = next && state?.revision && !state.completedAt
-    ? routeProfileForLecture(next).steps.find((step) => step.part === state.part)
+  const resume = next && state?.revision && !state.completedAt
+    ? resumeEntry(next, state)
     : undefined;
+  const bookmark = !next || !resume
+    ? undefined
+    : resume.kind === "extra"
+      ? resume.step
+      : next.presentation?.routeSteps?.[resume.part] ??
+        routeProfileForLecture(next).steps.find((step) => step.part === resume.part);
   const done = lectures.filter((l) => data.lectures[l.id]?.completedAt).length;
   const currentModule = courseModules.find((m) => m.number === next?.module);
   const chapter = storyChapterForModule(next?.module ?? 1);
@@ -414,7 +420,7 @@ export function CourseSyllabus({
       <div className="course-note">
         <BookOpen size={20} />
         <p>
-          Work through each lecture’s six steps in order. English support stays
+          Work through each lecture’s steps in order. English support stays
           available while you listen, notice, speak, and retrieve the core
           lines. A0 means our complete-beginner starting point (Pre-A1).
         </p>

@@ -25,7 +25,7 @@ export function detailedCurriculumMarkdown() {
     "",
     "## How to use this curriculum",
     "",
-    "1. Follow each lecture’s six steps in order: hear, learn, try, use, check, and carry forward.",
+    "1. Follow each lecture’s steps in order: hear, learn, try, use, check, and carry forward, plus any textbook practice the lecture adds.",
     "2. Use the teaching index to review the actual concepts, language patterns, examples, and takeaways.",
     "",
   ];

@@ -90,6 +90,31 @@ export type SourcePagePractice = {
   };
 };
 
+/**
+ * A step one lecture adds to its route. The six stored CourseParts never
+ * change: an extra step sits after one of them, is saved under its own `id`,
+ * and is drawn by the renderer registered for its `kind` (see
+ * components/learning/ExtraStep.tsx). A new kind of step is a new member of
+ * this union plus one renderer; lectures that do not need it are unaffected.
+ */
+export type LectureExtraStep = {
+  /** Stable save key. Renaming it resets this step's saved completion. */
+  id: string;
+  /** The core step this one follows. */
+  after: CoursePart;
+  label: string;
+  description: string;
+  minutes: number;
+  /** The "Your action" line under the step heading. */
+  action: string;
+} & (
+  | {
+      /** Verified textbook pages, practised one at a time behind a page switcher. */
+      kind: "source-practice";
+      pages: SourcePagePractice[];
+    }
+);
+
 export type LecturePresentation = {
   /**
    * Selects a visual treatment, not a curriculum structure. A future lecture
@@ -105,9 +130,6 @@ export type LecturePresentation = {
   opening?: {
     teacherNote?: { title: string; body: string };
     questionIntro?: string;
-    sourcePractice?: SourcePagePractice;
-    /** Several verified pages, practised one at a time behind a page switcher. */
-    sourcePractices?: SourcePagePractice[];
     dialogue?: {
       part: "recall" | "teach";
       eyebrow?: string;
@@ -292,6 +314,8 @@ export type LectureContent = {
   grammarTerms?: string[];
   /** Presentation is optional so future lectures do not inherit Lesson 1. */
   presentation?: LecturePresentation;
+  /** Lecture-owned steps added to the route, such as textbook page practice. */
+  extraSteps?: LectureExtraStep[];
   objectives: string[];
   focusSkills: Skill[];
   /** Optional for legacy JSON; course.ts supplies a safe runtime fallback. */

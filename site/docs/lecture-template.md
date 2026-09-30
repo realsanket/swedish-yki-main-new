@@ -25,7 +25,7 @@ A future lecture can omit `presentation` completely. It then receives:
 
 `routeProfile` is also explicit. A future lecture number does not automatically become a clinic, checkpoint, workshop, or mock. Omit the field for `standard`, or choose another profile only after the verified content requires it.
 
-Lecture 1 explicitly opts into `presentation.template: "conversation-first"` and supplies its own hero, opening sequence, two route-label overrides, introduction builder, resource introduction, and collapsed word bank.
+Lecture 1 explicitly opts into `presentation.template: "conversation-first"` and supplies its own hero, opening sequence, two route-label overrides, a textbook-page step (`extraSteps`), introduction builder, resource introduction, and collapsed word bank.
 
 Every teaching section is progressively disclosed as **Understand**, optional
 **See the pattern**, **Hear it**, and **Try it** beats. Put explanation in
@@ -39,8 +39,6 @@ across all four fields.
 - `routeSteps`: overrides only selected learner-facing step labels and descriptions.
 - `opening.teacherNote`: changes the opening guidance without changing shared logic.
 - `opening.questionIntro`: explains how the opening questions should be used.
-- `opening.sourcePractice`: attaches an explicitly verified source-page image and its dialogue to the opening step as a five-stage ladder: **Listen for gist** (`listenQuestions`, with the page text covered), **Understand** (per-line `glossary`, a `backchain` for one long line, and `naturalNotes` pairing source wording with what to produce), **Sound hunt** (`soundSpots`: the words the page itself marks, each with its rule; the stage is omitted when absent), **Vanishing text** (full → gaps → first letters → `recallCues`), and **Role-play** (the app plays the partner; the learner answers from the cue). Never infer or reuse a later page.
-- `opening.sourcePractices`: several verified pages for one lecture, shown one at a time behind a page switcher (`tabLabel`). Each page may also set `intro` (why it follows the lecture's story), `setting` (a narrator line), `textRegion` (where the dialogue sits on the image, so gist listening hides only the text), and `hunt` (the words the page marks in colour, with a content-owned label such as Sound hunt, Pronoun hunt, or Question hunt).
 - `opening.dialogue.part`: places dialogue in `recall` or `teach`.
 - `opening.dialogue`: controls the dialogue title, eyebrow, instructions, and initial text visibility.
 - `sections[].activity`: attaches one hands-on interaction to a teaching section, shown as its own beat after **Hear it**. The generic types are `sound-map` (explore sounds, light up shared features, rebuild two-part mouth recipes), `sort` (predict one item at a time into content-defined groups with a reason for each), `match` (pair two columns, then say each pair in a content-defined sentence), and `question-gap` (an information gap: reveal a card's hidden facts by choosing the question that really gets each one, and a registered character answers aloud). Use `activities` for several activities in one section; each becomes its own beat. Every learner-facing string lives in the JSON. Add a new type in `course-types.ts` plus a case in `components/learning/activities/TeachingActivity.tsx`; never branch on a lecture number.
@@ -49,6 +47,26 @@ across all four fields.
 - `teaching.wordBank`: chooses an open or collapsed word bank and optionally supplies its title.
 - `teaching.resourceIntro`: supplies context appropriate to that lecture's resources.
 - `hero`: opts into a specialised hero and owns every learner-facing string inside it.
+
+## Lecture-owned route steps
+
+The route always has the six stored steps (`recall`, `teach`, `guided`,
+`practice`, `check`, `assignment`), relabelled with `routeSteps`. When a
+lecture needs something the six do not cover, it adds its own step in
+`extraSteps`, a top-level array of the lecture JSON. Each entry has:
+
+- `id`: the stable save key, such as `textbook-page`. Renaming it resets this step's saved completion.
+- `after`: the stored step it follows, such as `recall`. Several extra steps may follow the same step; they keep their array order.
+- `label`, `description`, `minutes`, `action`: what the route tab, the step heading, and the "Your action" line show. Keep `label` short (two or three words); the route shows every step's label side by side.
+- `kind`: which renderer draws the step, plus that kind's own data.
+
+Extra steps are real steps. They are numbered in the route ("Step 2 of 7"), saved on the server like the stored steps, counted in the progress bar and the lecture's minutes, and kept in order: a later step is not saved until the extra steps before it are done. Lectures without `extraSteps` keep the plain six-step route.
+
+Kinds available now:
+
+- `source-practice`: verified textbook pages in `pages`, practised one at a time behind a page switcher (`tabLabel`) when there are several. Each page runs a five-stage ladder: **Listen for gist** (`listenQuestions`, with the page text covered), **Understand** (per-line `glossary`, a `backchain` for one long line, and `naturalNotes` pairing source wording with what to produce), **Hunt** (`hunt`: the words the page itself marks in colour, each with its rule, under a content-owned label such as Sound hunt, Pronoun hunt, or Question hunt; the stage is omitted when absent), **Vanishing text** (full → gaps → first letters → `recallCues`), and **Role-play** (the app plays the partner; the learner answers from the cue). A page may also set `intro` (why it follows the lecture's story), `setting` (a narrator line), and `textRegion` (where the dialogue sits on the image, so gist listening hides only the text). Never infer or reuse a later page.
+
+To add a kind, add its data shape to the `LectureExtraStep` union in `lib/course-types.ts` and one renderer in `components/learning/ExtraStep.tsx`; TypeScript reports a kind without a renderer. The route, saving, and ordering need no change, and never branch on a lecture number.
 
 ## Grammar words in plain English
 

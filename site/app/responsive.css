@@ -19,6 +19,53 @@
   }
 }
 
+/* Small laptops: the sticky route has no room for every label, so steps show
+   their number and only the current step shows its name. Hovering a number
+   shows its name, and each button keeps its full accessible label. */
+@media (min-width: 1001px) and (max-width: 1279px) {
+  .lecture-template-conversation-first .lecture-outline.episode-route-panel > nav {
+    display: flex;
+    align-items: center;
+  }
+  .lecture-template-conversation-first .lecture-outline.episode-route-panel > nav > button {
+    flex: 0 0 auto;
+    width: auto;
+    align-items: center;
+  }
+  .lecture-template-conversation-first
+    .lecture-outline.episode-route-panel
+    > nav
+    > button:not(.selected)
+    > .route-step-copy {
+    display: none;
+  }
+  .lecture-template-conversation-first .lecture-outline.episode-route-panel > nav > button.selected {
+    flex: 1 1 auto;
+  }
+  .lecture-template-conversation-first
+    .lecture-outline.episode-route-panel
+    > nav
+    > button.selected
+    .route-step-copy
+    b {
+    white-space: nowrap;
+  }
+}
+
+/* Textbook page stages: five equal tabs only fit on a wide screen. Between
+   phone and laptop widths they become chips that wrap onto a second row. */
+@media (min-width: 641px) and (max-width: 1180px) {
+  .source-page-practice > nav {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .source-page-practice > nav button {
+    flex: 1 1 auto;
+    white-space: nowrap;
+  }
+}
+
 /* The grammar notes column only fits beside a topic on a wide screen. */
 @media (max-width: 900px) {
   .lecture-workspace .teach-with-notes {

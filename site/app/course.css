@@ -7107,7 +7107,8 @@
 .lecture-template-conversation-first .lecture-outline.episode-route-panel {
   position: sticky;
   z-index: 4;
-  top: 12px;
+  /* Stick just below the 72px top bar, not behind it. */
+  top: 80px;
   display: grid;
   grid-template-columns: 155px minmax(0, 1fr);
   align-items: center;
@@ -7145,7 +7146,8 @@
 .lecture-template-conversation-first
   .lecture-outline.episode-route-panel
   > nav {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  /* One column per step; a lecture's extra steps raise the count. */
+  grid-template-columns: repeat(var(--route-steps, 6), minmax(0, 1fr));
   gap: 7px;
   margin: 0;
 }

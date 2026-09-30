@@ -30,7 +30,7 @@
     "routeSteps": {
       "recall": {
         "label": "Hear the conversation",
-        "description": "Listen first, answer two meaning checks, then work through the two textbook pages."
+        "description": "Listen first, then answer two meaning checks about the conversation."
       },
       "teach": {
         "label": "Build it step by step",
@@ -49,8 +49,106 @@
         "title": "A break in class",
         "instructions": "Listen once without text. Then open the Swedish and copy one line that you could say today.",
         "initiallyOpen": false
+      }
+    },
+    "teaching": {
+      "livePractice": [
+        {
+          "sectionTitle": "Greet: choose the right question",
+          "mode": "conversation"
+        },
+        {
+          "sectionTitle": "How are you? Pick an honest answer",
+          "mode": "conversation"
+        },
+        {
+          "sectionTitle": "People in your life: family and relationships",
+          "mode": "conversation"
+        },
+        {
+          "sectionTitle": "Question words: ask the next question",
+          "mode": "conversation"
+        },
+        {
+          "sectionTitle": "Hear it the way people say it",
+          "mode": "pronunciation"
+        }
+      ],
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the complete Lesson 2 word bank"
       },
-      "sourcePractices": [
+      "resourceIntro": {
+        "eyebrow": "OPTIONAL WORD CHECK",
+        "title": "Check one word, then return",
+        "body": "Look up a single word from today, read its meaning, and come back to say it in one of your own sentences."
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 2",
+        "15 APRIL 2026"
+      ],
+      "kicker": "HOW ARE YOU, AND WHO ARE THEY?",
+      "title": "Hur är det?",
+      "lede": "Say how you really are, talk about the people in your life, and ask the next question.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Hej! Hur är det med dig?",
+        "en": "Hi! How are things with you?",
+        "audioText": "Hej Alex! Hur är det? Det är bra, tack. Och du?"
+      },
+      "speakers": [
+        {
+          "name": "Elin",
+          "fi": "Hej Alex! Hur är det?"
+        },
+        {
+          "name": "Alex",
+          "fi": "Det är bra, tack. Och du?"
+        }
+      ],
+      "connector": "HUR?",
+      "encounterLabel": "Elin and Alex at the class break",
+      "chunks": [
+        {
+          "label": "HOW YOU ARE",
+          "fi": "Jag mår bra.",
+          "en": "I'm fine."
+        },
+        {
+          "label": "PEOPLE",
+          "fi": "Hon heter …",
+          "en": "Her name is …"
+        },
+        {
+          "label": "RELATIONSHIPS",
+          "fi": "Jag är sambo.",
+          "en": "I live with my partner."
+        },
+        {
+          "label": "QUESTIONS",
+          "fi": "Var? När? Varför?",
+          "en": "Where? When? Why?"
+        }
+      ],
+      "footerTags": [
+        "Answer, then ask back",
+        "Point with pronouns"
+      ]
+    }
+  },
+  "extraSteps": [
+    {
+      "id": "textbook-pages",
+      "after": "recall",
+      "kind": "source-practice",
+      "label": "Textbook pages 5–6",
+      "description": "Pages 5 and 6, one at a time, each in five short stages: hear it, understand it, hunt its words, lose the text, play a part.",
+      "minutes": 14,
+      "action": "Finish page 5, then switch to page 6. Say each line aloud before the text starts to vanish.",
+      "pages": [
         {
           "title": "Textbook page practice: Hej! Jag har en pojkvän!",
           "tabLabel": "Page 5 · Hej! Jag har en pojkvän!",
@@ -549,95 +647,8 @@
           }
         }
       ]
-    },
-    "teaching": {
-      "livePractice": [
-        {
-          "sectionTitle": "Greet: choose the right question",
-          "mode": "conversation"
-        },
-        {
-          "sectionTitle": "How are you? Pick an honest answer",
-          "mode": "conversation"
-        },
-        {
-          "sectionTitle": "People in your life: family and relationships",
-          "mode": "conversation"
-        },
-        {
-          "sectionTitle": "Question words: ask the next question",
-          "mode": "conversation"
-        },
-        {
-          "sectionTitle": "Hear it the way people say it",
-          "mode": "pronunciation"
-        }
-      ],
-      "wordBank": {
-        "mode": "collapsed",
-        "title": "Open the complete Lesson 2 word bank"
-      },
-      "resourceIntro": {
-        "eyebrow": "OPTIONAL WORD CHECK",
-        "title": "Check one word, then return",
-        "body": "Look up a single word from today, read its meaning, and come back to say it in one of your own sentences."
-      }
-    },
-    "hero": {
-      "variant": "conversation",
-      "meta": [
-        "LEKTION 2",
-        "15 APRIL 2026"
-      ],
-      "kicker": "HOW ARE YOU, AND WHO ARE THEY?",
-      "title": "Hur är det?",
-      "lede": "Say how you really are, talk about the people in your life, and ask the next question.",
-      "startLine": {
-        "label": "START WITH ONE LINE",
-        "fi": "Hej! Hur är det med dig?",
-        "en": "Hi! How are things with you?",
-        "audioText": "Hej Alex! Hur är det? Det är bra, tack. Och du?"
-      },
-      "speakers": [
-        {
-          "name": "Elin",
-          "fi": "Hej Alex! Hur är det?"
-        },
-        {
-          "name": "Alex",
-          "fi": "Det är bra, tack. Och du?"
-        }
-      ],
-      "connector": "HUR?",
-      "encounterLabel": "Elin and Alex at the class break",
-      "chunks": [
-        {
-          "label": "HOW YOU ARE",
-          "fi": "Jag mår bra.",
-          "en": "I'm fine."
-        },
-        {
-          "label": "PEOPLE",
-          "fi": "Hon heter …",
-          "en": "Her name is …"
-        },
-        {
-          "label": "RELATIONSHIPS",
-          "fi": "Jag är sambo.",
-          "en": "I live with my partner."
-        },
-        {
-          "label": "QUESTIONS",
-          "fi": "Var? När? Varför?",
-          "en": "Where? When? Why?"
-        }
-      ],
-      "footerTags": [
-        "Answer, then ask back",
-        "Point with pronouns"
-      ]
     }
-  },
+  ],
   "recall": [
     {
       "id": "sv-02-notice-feeling",

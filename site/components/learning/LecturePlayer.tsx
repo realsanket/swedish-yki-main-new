@@ -1,7 +1,7 @@
 "use client";
 /* Browser recovery storage is hydrated after SSR; a single client render is intentional. */
 /* eslint-disable react-hooks/set-state-in-effect */
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
 import {
   AudioLines,
   ArrowLeft,
@@ -28,8 +28,12 @@ import {
   defaultCourseLectureState,
   questionIsCorrect,
   questionsAttempted,
+  resumeEntry,
+  routeEntryDone,
+  routeSequence,
   type CourseDraftPatch,
   type CourseLectureState,
+  type RouteEntry,
 } from "@/lib/course-progress";
 import { bookReviewsForAnchorEpisode } from "@/lib/book-reviews";
 import type { TeachingSection } from "@/lib/course-types";
@@ -46,7 +50,7 @@ import PracticeStudio from "./PracticeStudio";
 import QuestionCard from "./QuestionCard";
 import EpisodeBrief from "./EpisodeBrief";
 import IntroductionBuilder from "./IntroductionBuilder";
-import { SourcePagePracticeSet } from "./SourcePagePractice";
+import ExtraStep from "./ExtraStep";
 import TeachingActivity, { DEFAULT_ACTIVITY_LABEL } from "./activities/TeachingActivity";
 import { GlossaryProvider, GlossText, GrammarSideNotes } from "./GrammarNotes";
 import { grammarTermsFor, termsInText } from "@/lib/grammar-terms";
@@ -98,6 +102,22 @@ function blockedReason(part: CoursePart, primarySkill: Skill) {
   if (part === "guided" || part === "check") return "Answer every question above, then press Check to see the feedback.";
   if (part === "practice") return `Save one ${primarySkill} attempt in the task above to continue.`;
   return "Finish this step's task above to continue.";
+}
+
+/**
+ * Height of the screen top that sticky bars cover (the app top bar, and the
+ * route bar when it sticks), so a scroll can land a heading just below them.
+ */
+function stickyCover() {
+  const topbar = document.querySelector<HTMLElement>(".topbar");
+  let cover = topbar ? Math.max(0, topbar.getBoundingClientRect().bottom) : 0;
+  const route = document.querySelector<HTMLElement>(".lecture-workspace .episode-route-panel");
+  if (route) {
+    const style = getComputedStyle(route);
+    if (style.position === "sticky" && style.display !== "none")
+      cover = Math.max(cover, parseFloat(style.top) + route.offsetHeight);
+  }
+  return cover + 12;
 }
 
 function skillLabel(skill: Skill | null) {
@@ -227,8 +247,6 @@ export default function LecturePlayer({
   const presentation = lecture.presentation;
   const opening = presentation?.opening;
   const dialoguePresentation = opening?.dialogue;
-  const sourcePages =
-    opening?.sourcePractices ?? (opening?.sourcePractice ? [opening.sourcePractice] : []);
   const dialoguePart = dialoguePresentation?.part ?? "teach";
   const teachingPresentation = presentation?.teaching;
   const templateClass = `lecture-template-${presentation?.template ?? "standard"}`;
@@ -251,7 +269,11 @@ export default function LecturePlayer({
   const chapterReviews = bookReviewsForAnchorEpisode(lecture.number);
   const requiresIndependentFirstAttempt =
     routeProfile.id === "clinic" || routeProfile.id === "checkpoint";
-  const [part, setPart] = useState<CoursePart>(state.part),
+  // The route is the six stored parts plus this lecture's own extra steps.
+  const sequence = routeSequence(lecture);
+  const [position, setPosition] = useState<RouteEntry["key"]>(
+      () => resumeEntry(lecture, state).key,
+    ),
     [answers, setAnswers] = useState(state.answers),
     [notes, setNotes] = useState(state.notes),
     [assignment, setAssignment] = useState(state.assignment),
@@ -268,6 +290,12 @@ export default function LecturePlayer({
     [hydrated, setHydrated] = useState(false),
     [sectionIdx, setSectionIdx] = useState(0),
     [teachingBeatIdx, setTeachingBeatIdx] = useState(0);
+  const activeEntry = sequence.find((entry) => entry.key === position) ?? sequence[0];
+  const activeExtra = activeEntry.kind === "extra" ? activeEntry.step : null;
+  // An extra step borrows the part it follows for shared state such as
+  // questions; `view` is what the page shows, and is null on an extra step.
+  const part: CoursePart = activeEntry.kind === "part" ? activeEntry.part : activeEntry.step.after;
+  const view: CoursePart | null = activeExtra ? null : part;
   const pending = useRef<CourseDraftPatch>({});
   const stepHeadingRef = useRef<HTMLDivElement>(null);
   const stepDrawerRef = useRef<HTMLDetailsElement>(null);
@@ -434,20 +462,22 @@ export default function LecturePlayer({
     const card = teachingCardRef.current;
     if (!card) return;
     const top = card.getBoundingClientRect().top;
+    const cover = stickyCover();
     // Only move when the start of the new beat is out of sight.
-    if (top < 70 || top > window.innerHeight * 0.45)
-      window.scrollTo({ top: top + window.scrollY - 84, behavior: "smooth" });
+    if (top < cover || top > window.innerHeight * 0.45)
+      window.scrollTo({ top: top + window.scrollY - cover, behavior: "smooth" });
   }, [sectionIdx, teachingBeatIdx]);
   const changeDraft = useCallback(
     (value: string) => changeDraftForSkill(skill, value),
     [changeDraftForSkill, skill],
   );
-  function preview(next: CoursePart) {
+  function preview(next: RouteEntry["key"]) {
     // Free navigation: learner can jump to any step at any time. Completion is
-    // tracked separately (state.completedParts) so a peek does not affect
-    // progress.
-    setPart(next);
-    setChecked((c) => ({ ...c, [next]: false }));
+    // tracked separately (state.completedParts, state.completedExtraSteps) so
+    // a peek does not affect progress.
+    setPosition(next);
+    if ((COURSE_PARTS as readonly string[]).includes(next))
+      setChecked((c) => ({ ...c, [next]: false }));
     // A chosen step closes the phone step list so the step itself is on screen.
     if (stepDrawerRef.current) stepDrawerRef.current.open = false;
     scrollToStep();
@@ -457,7 +487,7 @@ export default function LecturePlayer({
     requestAnimationFrame(() => {
       const heading = stepHeadingRef.current;
       if (!heading) return window.scrollTo({ top: 0, behavior: "smooth" });
-      window.scrollTo({ top: heading.getBoundingClientRect().top + window.scrollY - 84, behavior: "smooth" });
+      window.scrollTo({ top: heading.getBoundingClientRect().top + window.scrollY - stickyCover(), behavior: "smooth" });
     });
   }
   async function leave(action: () => void) {
@@ -471,22 +501,27 @@ export default function LecturePlayer({
     }
   }
   async function complete() {
-    if (state.completedParts.includes(part) && partIndex < 5) {
-      preview(COURSE_PARTS[partIndex + 1]);
+    if (partDone && !isLastPart) {
+      preview(sequence[itemIndex + 1].key);
       return;
     }
     setBusy(true);
     setError("");
     try {
       await flush();
-      const result = await save(lecture.id, {
-        action: "completePart",
-        part,
-        ...(part !== "practice"
-          ? { acknowledged: true as const }
-          : {}),
-      });
-      setPart(result.lectures[lecture.id].part);
+      const result = await save(
+        lecture.id,
+        activeExtra
+          ? { action: "completeExtraStep", stepId: activeExtra.id }
+          : {
+              action: "completePart",
+              part,
+              ...(part !== "practice"
+                ? { acknowledged: true as const }
+                : {}),
+            },
+      );
+      setPosition(resumeEntry(lecture, result.lectures[lecture.id]).key);
       scrollToStep();
     } catch (cause) {
       setError(
@@ -496,13 +531,14 @@ export default function LecturePlayer({
       setBusy(false);
     }
   }
-  const partIndex = COURSE_PARTS.indexOf(part);
-  const earlierDone = COURSE_PARTS.slice(0, partIndex).every((p) =>
-    state.completedParts.includes(p),
-  );
-  const firstUnfinished = COURSE_PARTS.slice(0, partIndex).find(
-    (p) => !state.completedParts.includes(p),
-  );
+  const itemIndex = sequence.indexOf(activeEntry);
+  const entryDone = (entry: RouteEntry) => routeEntryDone(entry, state);
+  const stepNumber = (entry: RouteEntry) => sequence.indexOf(entry) + 1;
+  const doneCount = sequence.filter(entryDone).length;
+  const earlierDone = sequence.slice(0, itemIndex).every(entryDone);
+  const firstUnfinished = sequence
+    .slice(0, itemIndex)
+    .find((entry) => !entryDone(entry));
   const questions =
     part === "recall"
       ? lecture.recall
@@ -546,8 +582,10 @@ export default function LecturePlayer({
     ? parseYkiTargetedReturn(assignment)
     : null;
   const canContinue = (() => {
-    if (state.completedParts.includes(part)) return true;
+    if (entryDone(activeEntry)) return true;
     if (!earlierDone) return false;
+    // Extra steps are self-paced practice: reviewing them is enough.
+    if (activeExtra) return true;
     if (part === "recall")
       return (
         (!questions.length || allQuestionsAttempted) &&
@@ -600,11 +638,19 @@ export default function LecturePlayer({
     const override = presentation?.routeSteps?.[step.part];
     return override ? { ...step, ...override } : step;
   };
+  /** Label, description and minutes for any step on the route. */
+  const entryInfo = (entry: RouteEntry) =>
+    entry.kind === "extra"
+      ? entry.step
+      : lectureStep(
+          routeProfile.steps.find((step) => step.part === entry.part) ??
+            routeProfile.steps[0],
+        );
   // One forward action everywhere: it saves the step when it can, and never
   // leaves the learner stuck when an earlier step is still unfinished.
-  const isLastPart = partIndex === COURSE_PARTS.length - 1;
-  const partDone = state.completedParts.includes(part);
-  const nextPartStep = isLastPart ? null : lectureStep(routeProfile.steps[partIndex + 1]);
+  const isLastPart = itemIndex === sequence.length - 1;
+  const partDone = entryDone(activeEntry);
+  const nextPartStep = isLastPart ? null : entryInfo(sequence[itemIndex + 1]);
   const forwardLabel = nextPartStep
     ? `Next: ${nextPartStep.label}`
     : partDone
@@ -612,38 +658,39 @@ export default function LecturePlayer({
       : "Finish the lecture";
   const forwardEnabled = partDone || !!firstUnfinished || canContinue;
   const forwardNote = partDone
-    ? `Step ${partIndex + 1} is saved.`
+    ? `Step ${itemIndex + 1} is saved.`
     : firstUnfinished
-      ? `Step ${COURSE_PARTS.indexOf(firstUnfinished) + 1} is not finished yet, so this step is not saved. You can keep going and finish it later.`
+      ? `Step ${stepNumber(firstUnfinished)} is not finished yet, so this step is not saved. You can keep going and finish it later.`
       : canContinue
-        ? `Saves step ${partIndex + 1}.`
+        ? `Saves step ${itemIndex + 1}.`
         : blockedReason(part, route.primarySkill);
   function goForward() {
     if (firstUnfinished && !partDone) {
-      if (!isLastPart) preview(COURSE_PARTS[partIndex + 1]);
+      if (!isLastPart) preview(sequence[itemIndex + 1].key);
       return;
     }
     if (partDone && isLastPart) return leave(onExit);
     void complete();
   }
-  const activeStep = lectureStep(routeProfile.steps[partIndex]);
+  const activeStep = entryInfo(activeEntry);
   const routeStepButtons = (mobile = false) =>
-    routeProfile.steps.map((original, index) => {
-      const step = lectureStep(original);
-      const completed = state.completedParts.includes(step.part);
-      const selected = step.part === part;
+    sequence.map((entry, index) => {
+      const step = entryInfo(entry);
+      const completed = entryDone(entry);
+      const selected = entry.key === activeEntry.key;
       return (
         <button
           type="button"
-          key={step.part}
+          key={entry.key}
           className={[
             selected ? "selected" : "",
             completed ? "completed" : "",
             mobile ? "mobile-step" : "",
           ].filter(Boolean).join(" ")}
           aria-current={selected ? "step" : undefined}
+          title={step.label}
           aria-label={`Step ${index + 1}: ${step.label}, about ${step.minutes} minutes${completed ? ", completed" : ""}`}
-          onClick={() => preview(step.part)}
+          onClick={() => preview(entry.key)}
         >
           <span className="route-step-status" aria-hidden="true">
             {completed ? <Check size={15} /> : index + 1}
@@ -694,14 +741,14 @@ export default function LecturePlayer({
       <header className="lecture-title story-episode-title">
         {/* The full overview introduces step 1. Later steps fold it into one line
             so each step starts near the top of the screen. */}
-        {partIndex === 0 || overviewOpen ? (
+        {itemIndex === 0 || overviewOpen ? (
           <>
             <EpisodeBrief
               lecture={lecture}
               chapter={chapter}
               previousTitle={previousLecture?.title}
             />
-            {partIndex > 0 && (
+            {itemIndex > 0 && (
               <button type="button" className="lecture-overview-toggle" onClick={() => setOverviewOpen(false)}>
                 Hide lecture overview
               </button>
@@ -723,11 +770,11 @@ export default function LecturePlayer({
             {routeProfile.label.toUpperCase()}
           </span>
           <Progress
-            value={(state.completedParts.length / COURSE_PARTS.length) * 100}
+            value={(doneCount / sequence.length) * 100}
             aria-label={`Episode ${lecture.number} completion`}
           />
           <span>
-            {state.completedParts.length}/{COURSE_PARTS.length} steps complete · about {lecture.minutes} minutes, split as needed
+            {doneCount}/{sequence.length} steps complete · about {lecture.minutes} minutes, split as needed
           </span>
         </div>
       </header>
@@ -735,9 +782,12 @@ export default function LecturePlayer({
         <aside className="lecture-outline episode-route-panel">
           <div className="episode-route-panel-heading">
             <p className="eyebrow lecture-outline-label">TODAY’S ROUTE</p>
-            <p>Step {partIndex + 1} of {COURSE_PARTS.length} · about {activeStep.minutes} min</p>
+            <p>Step {itemIndex + 1} of {sequence.length} · about {activeStep.minutes} min</p>
           </div>
-          <nav aria-label={`Episode ${lecture.number} learning route`}>
+          <nav
+            aria-label={`Episode ${lecture.number} learning route`}
+            style={{ "--route-steps": sequence.length } as CSSProperties}
+          >
             {routeStepButtons()}
           </nav>
           <div className="route-current-task">
@@ -758,18 +808,18 @@ export default function LecturePlayer({
         <div className="lecture-page">
           <div className="part-heading" ref={stepHeadingRef}>
             <p className="eyebrow">
-              STEP {partIndex + 1} OF {COURSE_PARTS.length} · ABOUT {activeStep.minutes} MINUTES
+              STEP {itemIndex + 1} OF {sequence.length} · ABOUT {activeStep.minutes} MINUTES
             </p>
             <h2>{activeStep.label}</h2>
             <p>{activeStep.description}</p>
             <div className="step-contract">
               <span>YOUR ACTION</span>
-              <p>{stepAction(part, route.expectedOutput)}</p>
+              <p>{activeExtra ? activeExtra.action : stepAction(part, route.expectedOutput)}</p>
             </div>
           </div>
           <details className="mobile-route-drawer" ref={stepDrawerRef}>
             <summary>
-              <span>Step {partIndex + 1} of {COURSE_PARTS.length}</span>
+              <span>Step {itemIndex + 1} of {sequence.length}</span>
               <small>{activeStep.minutes} min · All steps</small>
             </summary>
             <nav aria-label={`All steps for episode ${lecture.number}`}>
@@ -835,7 +885,8 @@ export default function LecturePlayer({
               </button>
             </div>
           )}
-          {part === "recall" && (
+          {activeExtra && <ExtraStep step={activeExtra} />}
+          {view === "recall" && (
             <>
               <div className="teacher-note">
                 <Lightbulb size={22} />
@@ -949,12 +1000,9 @@ export default function LecturePlayer({
                   Check my warm-up
                 </button>
               )}
-              {/* The verified source page follows the meaning checks so it never
-                  interrupts the listen → check sequence of the adapted scene. */}
-              {sourcePages.length > 0 && <SourcePagePracticeSet pages={sourcePages} />}
             </>
           )}
-          {part === "teach" && (
+          {view === "teach" && (
             <>
               {ykiMock ? (
                 <YkiMockFlow
@@ -1410,7 +1458,7 @@ export default function LecturePlayer({
               })()}
             </>
           )}
-          {(part === "guided" || part === "check") && (
+          {(view === "guided" || view === "check") && (
             ykiMock ? (
                 <YkiMockFlow
                 mock={ykiMock}
@@ -1508,7 +1556,7 @@ export default function LecturePlayer({
             </>
             )
           )}
-          {part === "practice" && (
+          {view === "practice" && (
             ykiMock ? (
               <YkiMockFlow
                 mock={ykiMock}
@@ -1624,7 +1672,7 @@ export default function LecturePlayer({
             </>
             )
           )}
-          {part === "assignment" && (
+          {view === "assignment" && (
             <>
               <section className="takeaways">
                 <h3>Keep these ideas</h3>
@@ -1721,7 +1769,7 @@ export default function LecturePlayer({
               placeholder="These notes also appear in your course notebook."
             />
           </details>
-          {state.completedAt && part === "assignment" ? (
+          {state.completedAt && view === "assignment" ? (
             <>
               {chapterReviews.map((review) => (
                 <BookReviewBridge
@@ -1754,8 +1802,8 @@ export default function LecturePlayer({
             <footer className="lecture-actions">
               <button
                 className="text-button"
-                disabled={partIndex === 0 || busy}
-                onClick={() => preview(COURSE_PARTS[partIndex - 1])}
+                disabled={itemIndex === 0 || busy}
+                onClick={() => preview(sequence[itemIndex - 1].key)}
               >
                 <ArrowLeft size={16} />
                 Previous step
@@ -1768,21 +1816,21 @@ export default function LecturePlayer({
                       type="button"
                       className="secondary"
                       disabled={busy}
-                      onClick={() => preview(firstUnfinished)}
+                      onClick={() => preview(firstUnfinished.key)}
                     >
-                      Finish step {COURSE_PARTS.indexOf(firstUnfinished) + 1}
+                      Finish step {stepNumber(firstUnfinished)}
                     </button>
                   )}
                   <button
                     type="button"
                     // While teaching beats remain, the beat's own Next button leads;
                     // this one becomes a quieter shortcut past the rest of the step.
-                    className={part === "teach" && !teachingFinished ? "secondary" : "primary"}
+                    className={view === "teach" && !teachingFinished ? "secondary" : "primary"}
                     disabled={!forwardEnabled || busy || saving}
                     onClick={goForward}
                   >
                     {busy ? <Loader2 className="animate-spin" size={18} /> : null}
-                    {part === "teach" && !teachingFinished && nextPartStep ? `Skip to ${nextPartStep.label}` : forwardLabel}
+                    {view === "teach" && !teachingFinished && nextPartStep ? `Skip to ${nextPartStep.label}` : forwardLabel}
                     <ArrowRight size={18} />
                   </button>
                 </div>
