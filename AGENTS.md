@@ -264,7 +264,11 @@ chat-style transcript, Azure Speech recognition); guided "Do the task" mission;
 spaced phrase review (any lecture's phrases can be practised before they
 unlock), warm-up retrieval, return tasks and memory chart; Swedish
 pronunciation scoring; native Swedish voices; unexpected-questions round; two
-sittings per lecture; input plan; repo scripts for content checks.
+sittings per lecture; input plan; repo scripts for content checks; lecture
+audit fixes (the teacher's question examples, the "X och jag = vi" trap,
+Bangladesh and portugisiska, the teacher's Svensktoppen and Spotify links,
+clearer "Check yourself" wording, and "Take it forward" lists the phrases that
+go into spaced review).
 
 **Tested by the owner:** pronunciation scoring from a real microphone (scores
 and coloured words came back). **Not yet waited for:** the day-later return
@@ -277,12 +281,11 @@ card (logic tested).
 2. Real Finland-Swedish audio links from the A1 stage (for example Svenska Yle
    Klartext) with gist questions.
 3. Home screen: "Resume Part 2 today" when a lecture is mid-way.
-3a. **Waiting on the owner:** Finland-Swedish "sh" for the sj-sound (skjorta,
-    sju, sjuk). Azure's voices are Sweden-Swedish and say a breathy [ɧ]; an
-    SSML `<phoneme alphabet="ipa" ph="ˈʃʊʈːa">` override produces "sh". Samples
-    were sent; if the owner prefers "sh", apply it to sj-words in
-    `app/api/speech/route.ts`. Also decide whether the live coach should use a
-    Swedish voice (Swedish accent in English too) instead of the HD voice.
+3a. **Decided (keep as is):** the sj-sound stays as Azure's Sweden-Swedish
+    voices say it (breathy [ɧ]), even though Finland-Swedish says "sh". The
+    owner accepted this; the lecture text explains the Finland-Swedish sound.
+    Open question: should the live coach use a Swedish voice instead of the HD
+    voice?
 4. Save the mission plan and the unexpected-questions result to the server (both
    are browser-only now).
 5. Lecture 3 onward, only when the owner asks: read the teacher lesson in

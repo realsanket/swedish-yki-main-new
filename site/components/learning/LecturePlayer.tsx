@@ -83,7 +83,7 @@ type Props = {
 const questionAction: Partial<Record<CoursePart, string>> = {
   recall: "Try before you look back. A missed item tells you exactly what to return to; it is not a grade.",
   guided: "Use the hint only when you need it. Build one useful line, then make it personal in the next step.",
-  check: "Check the important pieces, then make one small change and try the message again.",
+  check: "Answer from memory before you look back. A missed item shows one thing to review; it is not a grade.",
 };
 
 function outputLabel(skill: Skill) {
@@ -99,7 +99,7 @@ function stepAction(part: CoursePart, expectedOutput: string) {
     return "Build each phrase with support, check it, and then change one detail.";
   if (part === "practice") return expectedOutput;
   if (part === "check")
-    return "Retry the message with one changed detail and notice what became clearer.";
+    return "Answer the check questions without looking back, then read the note on anything you missed.";
   return "Keep one useful phrase and choose when you will return to it.";
 }
 
@@ -1594,23 +1594,24 @@ export default function LecturePlayer({
                   className="secondary"
                   onClick={() => setChecked((c) => ({ ...c, [part]: true }))}
                 >
-                  {part === "guided" ? "Check my built line" : "Check and plan my retry"}
+                  {part === "guided" ? "Check my built line" : "Check my answers"}
                 </button>
                 <p className="help-text">
-                  Answer every item, then use the feedback. A missed item
-                  points to one useful retry; it does not block you behind a score.
+                  Answer every item, then read the feedback. A missed item
+                  shows one thing to review; it never blocks you.
                 </p>
               </div>
               {checked[part] && (
                 <>
                   <p className="checkpoint-feedback passed" role="status">
-                    {result.correct}/{result.total} correct. You have reviewed
-                    the feedback; continue when you are ready. If one item
-                    affects your message, change it on the retry.
+                    {result.correct}/{result.total} correct.{" "}
+                    {part === "check"
+                      ? "Read the note under any missed item; that is what to review. Continue when you are ready."
+                      : "You have reviewed the feedback; continue when you are ready."}
                   </p>
                   {part === "check" && (
                     <div className="transfer-card">
-                      <span className="eyebrow">ONE CHANGED DETAIL</span>
+                      <span className="eyebrow">NEXT TIME, CHANGE ONE DETAIL</span>
                       <p>{route.transferPrompt}</p>
                     </div>
                   )}
@@ -1780,15 +1781,42 @@ export default function LecturePlayer({
               </section>
               <section className="follow-up">
                 <span className="eyebrow">REVISIT LATER</span>
-                <h3>{ykiMock ? "Your targeted return" : "Save one thing you will use again"}</h3>
-                <p>{route.returnPrompt}</p>
-                <div className="return-phrase-card">
-                  <b>{ykiMock ? skillLabel(mockTargetedReturn?.skill ?? null) : "Key phrase or word family"}</b>
-                  <p lang={ykiMock ? undefined : "sv"}>
-                    {ykiMock
-                      ? (mockTargetedReturn?.drill ?? "Choose a next drill in the diagnosis step.")
-                      : lecture.takeaways[0]}
+                <h3>{ykiMock ? "Your targeted return" : "What comes back for review"}</h3>
+                {ykiMock || !lecture.reviewPhrases?.length ? (
+                  <p>{route.returnPrompt}</p>
+                ) : (
+                  <p>
+                    You do not need to plan this. These phrases go into your
+                    spaced review automatically: you see the English, say the
+                    Swedish aloud, and each one returns just before you would
+                    forget it. About a day after you finish this lecture, its
+                    task also comes back to do from memory:{" "}
+                    <b>{route.returnPrompt}</b>
                   </p>
+                )}
+                <div className="return-phrase-card">
+                  {ykiMock || !lecture.reviewPhrases?.length ? (
+                    <>
+                      <b>{ykiMock ? skillLabel(mockTargetedReturn?.skill ?? null) : "Key idea"}</b>
+                      <p>
+                        {ykiMock
+                          ? (mockTargetedReturn?.drill ?? "Choose a next drill in the diagnosis step.")
+                          : lecture.takeaways[0]}
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <b>Phrases in your review</b>
+                      <ul className="return-phrase-list">
+                        {lecture.reviewPhrases.map((phrase) => (
+                          <li key={phrase.id}>
+                            <span lang="sv">{phrase.fi}</span>
+                            <small>{phrase.en}</small>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
                   <button
                     type="button"
                     className="text-button"
@@ -1820,7 +1848,7 @@ export default function LecturePlayer({
                       placeholder="For example: ‘Ask again slowly when I do not understand.’"
                     />
                     <p className="help-text">
-                      This is optional. Saving the episode also makes its words
+                      This is optional. Saving this step also makes the lecture words
                       ready for Word Bank review; no reflection is graded.
                     </p>
                     <details>

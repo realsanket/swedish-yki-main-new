@@ -177,6 +177,13 @@ The former Lectures 3–5 are not live Chapter 1 content. They were removed with
 - Preserved the app's internal `fi` field for compatibility; it contains Swedish text.
 - The editable source is `site/content/lectures/lecture-01.json`. The runtime source is `site/content/lectures/index.json`; regenerate it from the active numbered lecture JSON files after an edit.
 
+## Audit fixes (September 30, 2026)
+
+- Lecture 1: added the teacher's Bangladesh (bengali) and portugisiska to the country-language match.
+- Lecture 2: added the homework trap "Anna och jag → vi" (rule line, example, guided item `sv-02-guided-vi`) and "Hej Sara och Peter! Talar ni…?"; replaced the question-word examples with the teacher's (Vad köper du? Hur är vädret? Var är Anna? När äter vi lunch? Varför springer han? Vem gillar du?); added skilja sig.
+- Both lectures: linked the teacher's listening resources (Svensktoppen, the teacher's Spotify playlist).
+- The sj-sound stays as Azure's Sweden-Swedish voices say it (owner's decision).
+
 ## Next safe step
 
 Improve Lecture 1 or 2 one visible teaching step at a time, comparing each change with its verified boundary above. Do not activate Lecture 3 or any later chapter without an explicit user request.

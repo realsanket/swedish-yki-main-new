@@ -1068,7 +1068,8 @@
       "body": [
         "Swedish subject pronouns: jag (I), du (you, one person), han (he), hon (she), hen (they, one person), vi (we), ni (you, two or more), de (they).",
         "Count the people for you: du is singular (one person), ni is plural (two or more). Modern Swedish uses du with almost everyone, including teachers and shop staff.",
-        "Hen means one person without saying he or she. Use it when you do not know or it does not matter (En ny elev kommer. Hen heter Kim.), and for people who are neither he nor she. It works like Finnish hän. De is written de but said dom."
+        "Hen means one person without saying he or she. Use it when you do not know or it does not matter (En ny elev kommer. Hen heter Kim.), and for people who are neither he nor she. It works like Finnish hän. De is written de but said dom.",
+        "A common trap: someone and I together is vi (we). Anna och jag bor i Esbo. Vi talar svenska. When you talk to two people, use ni: Hej Sara och Peter! Talar ni svenska?"
       ],
       "examples": [
         {
@@ -1090,6 +1091,16 @@
           "fi": "Hej Alex och Elin! Hur mår ni?",
           "en": "Hi Alex and Elin! How are you (both)?",
           "note": "Two people, so ni."
+        },
+        {
+          "fi": "Hej Sara och Peter! Talar ni svenska?",
+          "en": "Hi Sara and Peter! Do you (both) speak Swedish?",
+          "note": "You are talking to two people, so ni."
+        },
+        {
+          "fi": "Anna och jag bor i Esbo. Vi talar svenska.",
+          "en": "Anna and I live in Espoo. We speak Swedish.",
+          "note": "Someone and I = vi, not de."
         },
         {
           "fi": "Priya och Rohan? De bor i Indien.",
@@ -1198,7 +1209,7 @@
       "body": [
         "Family words are nouns: syster, bror, barn. Build sentences with the verbs har (have) and är (am): Jag har en syster. Jag är gift.",
         "Swedish glues words together into compound words: pojke + vän = pojkvän (boyfriend), flicka + vän = flickvän (girlfriend). Bo means live, as in Jag bor i: a sambo lives together with a partner, a särbo lives apart.",
-        "Useful status words: gift (married), sambo, singel, skild (divorced), and Jag bor ensam (I live alone). Barn means child or children; syskon means brothers and sisters together."
+        "Useful status words: gift (married), sambo, singel, skild (divorced; skilja sig = to get divorced), and Jag bor ensam (I live alone). Barn means child or children; syskon means brothers and sisters together."
       ],
       "examples": [
         {
@@ -1325,9 +1336,14 @@
       ],
       "examples": [
         {
-          "fi": "Vad gillar du?",
-          "en": "What do you like?",
+          "fi": "Vad köper du?",
+          "en": "What are you buying?",
           "note": "Vad asks for a thing."
+        },
+        {
+          "fi": "Hur är vädret?",
+          "en": "How is the weather?",
+          "note": "Hur asks how something is."
         },
         {
           "fi": "Hur gammal är du?",
@@ -1335,23 +1351,23 @@
           "note": "Hur + a describing word: hur gammal."
         },
         {
-          "fi": "Var bor du?",
-          "en": "Where do you live?",
+          "fi": "Var är Anna?",
+          "en": "Where is Anna?",
           "note": "Var asks for a place."
         },
         {
-          "fi": "När börjar lektionen?",
-          "en": "When does the class start?",
+          "fi": "När äter vi lunch?",
+          "en": "When do we eat lunch?",
           "note": "När asks for a time."
         },
         {
-          "fi": "Varför pluggar ni svenska?",
-          "en": "Why are you (all) studying Swedish?",
-          "note": "Varför asks for a reason. Ni: more than one person."
+          "fi": "Varför springer han?",
+          "en": "Why is he running?",
+          "note": "Varför asks for a reason."
         },
         {
-          "fi": "Vem är hon?",
-          "en": "Who is she?",
+          "fi": "Vem gillar du?",
+          "en": "Who do you like?",
           "note": "Vem asks for a person."
         }
       ],
@@ -1717,6 +1733,20 @@
       "explanation": "You, two or more people, is ni. Du is only for one person."
     },
     {
+      "id": "sv-02-guided-vi",
+      "prompt": "Alex says: Priya och jag bor i Helsingfors. ___ gillar kaffe.",
+      "answers": [
+        "Vi"
+      ],
+      "options": [
+        "Vi",
+        "De",
+        "Ni"
+      ],
+      "hint": "Alex is one of the two people.",
+      "explanation": "Someone and I together is vi (we). De would mean two other people."
+    },
+    {
       "id": "sv-02-guided-answer",
       "prompt": "Elin: Hur mår du? Choose Alex's best answer.",
       "answers": [
@@ -1873,6 +1903,16 @@
       "label": "Svenska Akademiens ordböcker (svenska.se)",
       "url": "https://svenska.se/",
       "description": "Look up one word from today, such as sambo or syskon, and read its Swedish definition."
+    },
+    {
+      "label": "Your teacher's Spotify playlist",
+      "url": "https://open.spotify.com/playlist/3WbpcxVJHizwpn7TL4x5zI",
+      "description": "Your teacher's own playlist, with a wide mix of genres. Listen for han, hon, vi and de in the lyrics."
+    },
+    {
+      "label": "Svensktoppen (Sveriges Radio)",
+      "url": "https://sverigesradio.se/svensktoppen",
+      "description": "A weekly chart of Swedish-language songs. Your teacher recommends it for pronunciation and listening."
     }
   ],
   "practice": {
