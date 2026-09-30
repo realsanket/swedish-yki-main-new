@@ -219,9 +219,9 @@ content and cast handling are in `site/docs/textbook-page-map.md`.
 | 4 | L4 (Apr 22, 394-511) | Noun gender en/ett, work (*jobbar som / på*), free time, *brukar*, time phrases | 9 *datorspel*, 10 *ETT ord* list, 11 *Jobb*, 12 *Fritid* | teacher task: "What do you do in your free time?" |
 | 5 | L5 (Apr 24, 512-632) | My dream, conjunctions och/så/eller/men/för/sedan, definite nouns, adjective agreement en/ett | 13 *Min dröm*, 14 (Del 2 divider), 15 *En rolig film, ett roligt jobb* | 6 Definite form of nouns |
 | 6 | L6 (Apr 27, 633-730) | Past tense (preteritum), news and parties | 16 *Vilka fantastiska nyheter!*, 17 *Hur var det på festen?*, 18 strong-verb list | 7 Preteritum (regular verbs), 8 Diary (ongoing) |
-| 7 | L7 (Apr 29, 731-835) | Noun plural, groups 1-3 | 21 (Del 3 divider), 22 *Blommor och flaskor vin*, 23 *En bil, två bilar* | 9 Noun plural |
+| 7 | L7 (Apr 29, 731-835) | Noun plural, all five groups (teacher's table and exceptions) | 21 (Del 3 divider), 22 *Blommor och flaskor vin*, 23 *En bil, två bilar* | 9 Noun plural |
 | 8 | L8 (May 4, 836-962) | Past-tense practice, diary, friendship letter | 19 *Dagbok*, 20 *Det är viktigt att ha bra vänner* (18 again for strong verbs) | none (diary continues) |
-| 9 | L9 (May 8, 963-1109) | Health, plural groups 4-5, adjective plurals and definite adjectives, clothes | 24 *Du är frisk!*, 25 *Många djur, många problem*, 26 *Det är spännande att spendera pengar!* | none |
+| 9 | L9 (May 8, 963-1109) | Health, plural practice (groups 4-5 on the pages), adjective plurals and definite adjectives, clothes | 24 *Du är frisk!*, 25 *Många djur, många problem*, 26 *Det är spännande att spendera pengar!* | none |
 | 10 | L10 (May 11, 1110-1266) | Shopping list and food, numbers, family, clock time and falling in love, weather | 27 *Inköpslista*, 28 *Familjen*, 29 numbers, 30 *Jag blev kär i…*, 31 *Vad har ni för väder?* | none |
 | 11 | L11 (May 13, 1267-1353) | Definite plural nouns, object pronouns, ordinal numbers | 32 (Del 4 divider), 33 *Skvaller*, 34 *Vill du gå på bio med mig?*, 29 ordinals | 10 Definite plural of nouns, 11 Objektspronomen |
 | 12 | L12 (May 15, 1354-1514) | Comparison of adjectives, irregular comparison, weekdays (*på måndag / i måndags / på måndagar*) | 35 *Bättre än Barbie*, 36 special adjectives, 37 *Veckodagar* | 12 Komparation |
@@ -249,8 +249,9 @@ is planned.
   (April 20), but they test exactly Lesson 3's topics (help verbs, infinitive or
   present, command form, word order). They are mapped to Lecture 3.
 - **Page order and lesson order differ in Lessons 6-9.** Lesson 7 teaches the
-  plural (pages 22-23) before Lesson 8 returns to past-tense pages 19-20, and
-  Lesson 9 finishes the plural (pages 24-25). Follow the teacher's order.
+  plural (all five groups, with pages 22-23) before Lesson 8 returns to
+  past-tense pages 19-20, and Lesson 9 reads the book's plural pages for groups
+  4-5 (pages 24-25). Follow the teacher's order.
 - **Lessons 9 and 10 are heavy** (four or five topics and three to five pages
   each). Keep one lecture per lesson with two sittings, but consider moving one
   topic into the textbook step or a light review, rather than splitting the

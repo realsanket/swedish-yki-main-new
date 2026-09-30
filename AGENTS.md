@@ -27,7 +27,11 @@ each class lesson into an app lecture.
 
 **Current scope:** Chapter 1 only, with **Lecture 1** (introduce yourself,
 Swedish sounds) and **Lecture 2** (how are you, people in your life, question
-words). Do not activate Lecture 3 or later until the owner asks.
+words). **The owner has asked (September 30, 2026) for Lectures 3-22 to be
+built on the laptop from `docs/lecture-build-plan.md`**, one lecture at a time,
+each activated only when it meets that plan's definition of done. Lecture 23
+and later (the YKI-book phase) are not planned yet: do not build them until the
+owner asks.
 
 ---
 
@@ -70,6 +74,7 @@ docs/
   Group 3.md                 teacher's notes: 51 dated lessons (the course spine)
   mapping.md                 source-to-lecture decisions and change log (read first
                              for any curriculum work)
+  lecture-build-plan.md      step-by-step plan for building Lectures 3-22
   text-book-images/          textbook pages (Lesson 1 = page 4, Lesson 2 = pages 5-6)
   excercise/                 Classroom homework exports
 backup/source-originals-*/   original Group 3 .docx/.pdf
@@ -331,9 +336,10 @@ card (logic tested).
     voice?
 4. Save the mission plan and the unexpected-questions result to the server (both
    are browser-only now).
-5. Lecture 3 onward, only when the owner asks. The plan for Lectures 3-22 (the
-   textbook phase: teacher Lessons 3-22, textbook pages 7-55, Classroom
-   homework 2-17) is in `docs/mapping.md` under "Planned mapping". Lecture 23 on
+5. Lectures 3-22 (approved by the owner): follow `docs/lecture-build-plan.md`
+   (workflow, definition of done, and a section per lecture). The mapping
+   behind it (teacher Lessons 3-22, textbook pages 7-55, Classroom homework
+   2-17) is in `docs/mapping.md` under "Planned mapping". Lecture 23 on
    follows the YKI book and is not planned yet. For each lecture: re-read the
    teacher lesson in `docs/Group 3.md`, confirm its pages and homework, record
    decisions in `docs/mapping.md`, then build it to this template, including
