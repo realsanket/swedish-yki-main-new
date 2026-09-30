@@ -25,9 +25,21 @@ function band(word: Result["words"][number]) {
  * connected, see which words sounded right. Scores are practice signals, not
  * a YKI rating.
  */
-export default function SoundCheck({ reference, title = "Check your pronunciation" }: { reference: string; title?: string }) {
+export default function SoundCheck({
+  reference,
+  title = "Check your pronunciation",
+  recording,
+}: {
+  reference: string;
+  title?: string;
+  /**
+   * An attempt recorded elsewhere (the mission's "Say it" stage). When given,
+   * that recording is scored straight away and no second recorder is shown.
+   */
+  recording?: Blob | null;
+}) {
   const [canScore, setCanScore] = useState(false);
-  const [recording, setRecording] = useState(false);
+  const [recordingNow, setRecording] = useState(false);
   const [seconds, setSeconds] = useState(0);
   const [url, setUrl] = useState("");
   const [busy, setBusy] = useState(false);
@@ -50,6 +62,20 @@ export default function SoundCheck({ reference, title = "Check your pronunciatio
     };
   }, []);
   useEffect(() => () => { if (url) URL.revokeObjectURL(url); }, [url]);
+  // Use a recording made elsewhere, and score it once scoring is available.
+  const autoScored = useRef(false);
+  useEffect(() => {
+    if (!recording) return;
+    blob.current = recording;
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- mirrors an external recording
+    setUrl(URL.createObjectURL(recording));
+  }, [recording]);
+  useEffect(() => {
+    if (!recording || !canScore || autoScored.current) return;
+    autoScored.current = true;
+    void score();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [recording, canScore]);
 
   async function start() {
     setError("");
@@ -108,25 +134,33 @@ export default function SoundCheck({ reference, title = "Check your pronunciatio
       <p className="sound-check-target" lang="sv">{reference}</p>
       <div className="sound-check-actions">
         <AudioButton text={reference} label="Hear the model" slow className="secondary" />
-        <button type="button" className={recording ? "secondary" : "primary"} onClick={() => (recording ? recorder.current?.stop() : void start())}>
-          {recording ? <Square size={15} /> : <Mic size={15} />}
-          {recording ? `Stop (${seconds}s)` : url ? "Record again" : "Record yourself"}
-        </button>
+        {!recording && (
+          <button type="button" className={recordingNow ? "secondary" : "primary"} onClick={() => (recordingNow ? recorder.current?.stop() : void start())}>
+            {recordingNow ? <Square size={15} /> : <Mic size={15} />}
+            {recordingNow ? `Stop (${seconds}s)` : url ? "Record again" : "Record yourself"}
+          </button>
+        )}
       </div>
-      {url && !recording && (
+      {url && !recordingNow && (
         <div className="sound-check-compare">
           <span>Your voice</span>
           <audio controls src={url} aria-label="Your recording" />
           <small>Play the model, then yourself. Listen for one difference at a time.</small>
           {canScore && (
-            <button type="button" className="primary" disabled={busy} onClick={() => void score()}>
+            <button type="button" className={result ? "secondary" : "primary"} disabled={busy} onClick={() => void score()}>
               {busy ? <Loader2 size={15} className="animate-spin" /> : <Gauge size={15} />}
-              {busy ? "Scoring…" : "Score my pronunciation"}
+              {busy ? "Scoring…" : result ? "Score again" : "Score my pronunciation"}
             </button>
           )}
         </div>
       )}
-      {result && (
+      {result && result.scores.completeness === 0 && (
+        <p className="sound-check-silent" role="status">
+          No Swedish words were heard in this recording. Record again, a little louder and
+          closer to the microphone.
+        </p>
+      )}
+      {result && result.scores.completeness !== 0 && (
         <div className="sound-check-result" aria-live="polite">
           <dl>
             {([["Overall", result.scores.pronunciation], ["Sounds", result.scores.accuracy], ["Flow", result.scores.fluency], ["Complete", result.scores.completeness]] as const).map(([label, value]) => (

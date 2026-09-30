@@ -111,7 +111,8 @@
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes pulse { 50% { box-shadow: 0 0 0 10px #efc9bc35; } }
 /* Guided lecture mission: plan, say it, check it, say it again. */
-.mission { padding: 26px !important; min-width: 0; }
+.mission { padding: 26px !important; min-width: 0; scroll-margin-top: 176px; }
+@media (max-width: 1000px) { .mission { scroll-margin-top: 72px; } }
 .missionHeader { display: grid; gap: 12px; margin-bottom: 8px; }
 .missionHeader .prompt { margin: 0; font-size: 18px; line-height: 1.5; color: #203b2d; font-weight: 600; }
 .stageStrip { display: grid; grid-template-columns: repeat(var(--stages, 4), minmax(0, 1fr)); gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
@@ -172,3 +173,14 @@
 @media (max-width: 520px) { .tab { padding: 11px 5px !important; font-size: 12px !important; gap: 5px !important; } .tab svg { width: 14px; } .exercise { padding: 20px 17px !important; } .exercise h3 { font-size: 22px; } .side { grid-template-columns: 1fr; } .rubric { grid-template-columns: 1fr; } .passage { padding: 17px; font-size: 15px !important; } .intro h2 { font-size: 24px; } }
 @media (max-width: 520px) { .storyBridge { grid-template-columns: 1fr; } .storyBridge > img { display: none; } }
 @media (prefers-reduced-motion: reduce) { .spinner, .recording { animation: none; } }
+/* One stage at a time: the strip marks the stage on screen, a bar moves on. */
+.stageStrip li[data-viewing] { box-shadow: 0 0 0 2px #163e6d; }
+.stageNav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 22px; padding-top: 16px; border-top: 1px solid #e9ece3; }
+.stageNav > div { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 10px; margin-left: auto; }
+.stageNav small { color: #7b8971; font-size: 13px; }
+.peek, .wordsBox, .moreHelp { margin: 0 0 16px; border: 1px solid #e3e8dc; border-radius: 12px; background: #fbfcf8; }
+.peek > summary, .wordsBox > summary, .moreHelp > summary { padding: 11px 14px; color: #436239; font-size: 14px; font-weight: 700; cursor: pointer; }
+.peek > p { margin: 0; padding: 0 14px 12px; color: #173858; font-weight: 600; line-height: 1.7; white-space: pre-line; }
+.wordsBox[open], .moreHelp[open] { padding: 0 14px 14px; }
+.wordsBox[open] > summary, .moreHelp[open] > summary { margin: 0 -14px 12px; border-bottom: 1px solid #e3e8dc; }
+.moreHelp { margin-top: 16px; }

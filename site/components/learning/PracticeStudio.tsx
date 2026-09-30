@@ -421,6 +421,11 @@ function Exercise({
 }) {
   const isProductive = skill === "speaking" || skill === "writing";
   const isTimed = exam || timed;
+  // A lecture's speaking or writing task runs as one guided mission: plan,
+  // say it, check it, say it again. Timed and exam tasks keep the classic
+  // layout so their independent-first-attempt rules stay untouched.
+  const guided = Boolean(lecture) && isProductive && !isTimed;
+  const plan = lecture?.missionPlan;
   const timeLimit = taskTimeLimit(task.seconds, timeLimitSeconds);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [checked, setChecked] = useState(false);
@@ -434,6 +439,10 @@ function Exercise({
   const [planScript, setPlanScript] = useState("");
   const [planComplete, setPlanComplete] = useState(false);
   const [roundDone, setRoundDone] = useState(false);
+  // The mission shows one stage at a time; null means "the next unfinished one".
+  const [openStage, setOpenStage] = useState<number | null>(null);
+  const transcribedUrl = useRef("");
+  const [lastRecording, setLastRecording] = useState<Blob | null>(null);
   const handlePlanChange = useCallback((script: string, complete: boolean) => {
     setPlanScript(script);
     setPlanComplete(complete);
@@ -768,6 +777,7 @@ function Exercise({
         if (!mounted.current) return;
         const blob = new Blob(chunks, { type: rec.mimeType || "audio/webm" });
         recordedBlob.current = blob;
+        setLastRecording(blob);
         if (url.current) URL.revokeObjectURL(url.current);
         url.current = URL.createObjectURL(blob);
         setRecordingUrl(url.current);
@@ -965,6 +975,16 @@ function Exercise({
     }
   }
 
+  // In the mission, a finished recording is transcribed straight away, so the
+  // learner records once and never has to press a separate button.
+  useEffect(() => {
+    if (!guided || !canTranscribe || !recordingUrl || recording || busy) return;
+    if (transcribedUrl.current === recordingUrl) return;
+    transcribedUrl.current = recordingUrl;
+    void transcribe();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [guided, canTranscribe, recordingUrl, recording, busy]);
+
   // Shared pieces. The guided lecture mission and the classic studio layout
   // arrange the same controls, so recording, drafts and saving behave alike.
   const liveVoiceEl =
@@ -1044,7 +1064,7 @@ function Exercise({
                     >
                       Download recording
                     </a>
-                    {canTranscribe && (
+                    {canTranscribe && !guided && (
                       <button
                         className="secondary"
                         onClick={transcribe}
@@ -1063,7 +1083,9 @@ function Exercise({
                   </div>
                 )}
                 <small>
-                  {canTranscribe
+                  {guided
+                    ? "Your recording stays in this browser. Download it to keep a copy."
+                    : canTranscribe
                     ? "Recording stays in this tab until you choose AI transcription. Download it to keep a copy."
                     : "Recordings stay in this tab. Download a copy and type what you said below; file transcription is not connected."}
                 </small>
@@ -1370,12 +1392,6 @@ function Exercise({
             )
     ) : null;
 
-  // A lecture's speaking or writing task runs as one guided mission: plan,
-  // say it, check it, say it again. Timed and exam tasks keep the classic
-  // layout so their independent-first-attempt rules stay untouched.
-  const guided = Boolean(lecture) && isProductive && !isTimed;
-  const plan = lecture?.missionPlan;
-
   if (guided && lecture) {
     const planDone = plan ? planComplete : true;
     const checkDone =
@@ -1390,18 +1406,17 @@ function Exercise({
       { title: "Say it again, with one change", done: saved },
     ];
     const quickIndex = questions.length ? 3 : -1;
-    const againIndex = stages.length - 1;
     const current = stages.findIndex((stage) => !stage.done);
     const stageState = (index: number) =>
       stages[index].done ? "done" : index === current ? "current" : "later";
-    const stageId = (index: number) => `mission-${task.id}-stage-${index + 1}`;
-    // The strip is a jump list: each stage scrolls into view below the sticky
-    // bars (see .stage scroll-margin) and takes focus for keyboard users.
-    const goToStage = (index: number) => {
-      const section = document.getElementById(stageId(index));
-      if (!section) return;
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-      section.focus({ preventScroll: true });
+    const viewing = openStage ?? (current < 0 ? stages.length - 1 : current);
+    const show = (index: number) => {
+      setOpenStage(index);
+      setError("");
+      // Bring the mission's own top into view when the stage changes.
+      requestAnimationFrame(() =>
+        document.getElementById(`mission-${task.id}`)?.scrollIntoView({ behavior: "smooth", block: "start" }),
+      );
     };
     const heading = (index: number) => (
       <h4 className={styles.stageHeading}>
@@ -1412,8 +1427,134 @@ function Exercise({
         {stages[index].done && <small>Done</small>}
       </h4>
     );
+    // What must happen before the next stage makes sense, in plain words.
+    const waitingFor = [
+      plan ? "Fill in every line of your plan first." : "",
+      "Record yourself, or add the words you said.",
+      "Tick the checks your attempt meets, or get AI feedback.",
+      ...(questions.length ? ["Answer all three questions first."] : []),
+      "",
+    ];
+    const stageBody = (index: number) => {
+      if (index === 0) {
+        return plan ? (
+          <MissionPlanner
+            plan={plan}
+            storageKey={`stigen:mission-plan:${lecture.id}`}
+            draft={draft}
+            onChange={handlePlanChange}
+          />
+        ) : (
+          <p className={styles.stageIntro}>
+            {Array.isArray(task.help) ? task.help.join(" ") : task.help}
+          </p>
+        );
+      }
+      if (index === 1) {
+        return (
+          <>
+            <p className={styles.stageIntro}>
+              Say your lines aloud, without reading if you can. Record once; your words
+              are written out for you, and the next stage scores this recording.
+            </p>
+            {planScript && (
+              <details className={styles.peek}>
+                <summary>Peek at my lines</summary>
+                <p lang="sv">{planScript}</p>
+              </details>
+            )}
+            {recorderEl}
+            {busy === "transcription" && <p className={styles.stageIntro}>Writing out what you said…</p>}
+            <details className={styles.wordsBox} open={!canTranscribe || undefined}>
+              <summary>
+                {draft.trim() ? "Your words (edit if the transcript is wrong)" : "No microphone? Type what you said instead"}
+              </summary>
+              {draftEl}
+              {plan && planComplete && !draft.trim() && !locked && (
+                <button
+                  className="text-button"
+                  onClick={() => {
+                    setDraft(planScript);
+                    setFeedback(null);
+                    setError("");
+                  }}
+                >
+                  I said my planned lines. Add them as my words.
+                </button>
+              )}
+            </details>
+            {liveVoiceEl && (
+              <details className={styles.liveOption}>
+                <summary>Optional: rehearse it live with Stigen first</summary>
+                {liveVoiceEl}
+              </details>
+            )}
+          </>
+        );
+      }
+      if (index === 2) {
+        if (!hasFirstAttempt) {
+          return <p className={styles.locked}>Say it first. Then this stage scores your recording and checks it.</p>;
+        }
+        const reference = (planScript || task.model || "").replace(/\s*\n\s*/g, " ");
+        return (
+          <>
+            {skill === "speaking" && reference && (
+              <SoundCheck
+                key={recordingUrl || "self"}
+                reference={reference}
+                recording={lastRecording}
+                title={planScript ? "How your recording sounds" : "How the model lines sound in your voice"}
+              />
+            )}
+            {selfReviewEl}
+            <details className={styles.moreHelp}>
+              <summary>More help: AI feedback and a model answer</summary>
+              {feedbackEl}
+              {modelEl && <div className={styles.modelStage}>{modelEl}</div>}
+            </details>
+          </>
+        );
+      }
+      if (index === quickIndex) {
+        return checkDone || saved ? (
+          <>
+            <p className={styles.stageIntro}>
+              Real conversations do not follow your plan. Three questions you have not
+              prepared, one at a time: hear it, answer aloud within a few seconds, then
+              compare.
+            </p>
+            <QuickQuestions questions={questions} onDone={() => setRoundDone(true)} />
+          </>
+        ) : (
+          <p className={styles.locked}>Finish the check first. Then answer three questions you have not planned for.</p>
+        );
+      }
+      return (checkDone && quickDone) || saved ? (
+        <>
+          <p className={styles.transferNote}>
+            <span>THE CHANGE</span>
+            <b>{lecture.route.transferPrompt}</b>
+          </p>
+          <p className={styles.stageIntro}>
+            {retryIsRequired && !changedRetryReady
+              ? "Your first answer stays saved. Record again with the change, or add the changed version to your words. Changing only punctuation will not unlock saving."
+              : "Record once more with the change, then save this attempt to finish the step."}
+          </p>
+          {recorderEl}
+          {finishEl}
+        </>
+      ) : (
+        <p className={styles.locked}>
+          {checkDone
+            ? "Answer the unexpected questions first. Then you say it once more with one small change."
+            : "After the check, you say it once more with one small change. That second try is where it sticks."}
+        </p>
+      );
+    };
+    const next = viewing + 1 < stages.length ? viewing + 1 : -1;
     return (
-      <article className={`panel ${styles.mission}`}>
+      <article id={`mission-${task.id}`} className={`panel ${styles.mission}`}>
         <header className={styles.missionHeader}>
           <span className="badge">Your turn in the scene</span>
           <p className={styles.prompt}>{task.prompt}</p>
@@ -1423,11 +1564,11 @@ function Exercise({
             style={{ "--stages": stages.length } as React.CSSProperties}
           >
             {stages.map((stage, index) => (
-              <li key={stage.title} data-state={stageState(index)}>
+              <li key={stage.title} data-state={stageState(index)} data-viewing={index === viewing || undefined}>
                 <button
                   type="button"
-                  aria-current={index === current ? "step" : undefined}
-                  onClick={() => goToStage(index)}
+                  aria-current={index === viewing ? "step" : undefined}
+                  onClick={() => show(index)}
                 >
                   <span aria-hidden="true">
                     {stage.done ? <Check size={13} /> : index + 1}
@@ -1439,121 +1580,41 @@ function Exercise({
           </ol>
         </header>
 
-        <section id={stageId(0)} tabIndex={-1} className={styles.stage} data-state={stageState(0)} aria-label={stages[0].title}>
-          {heading(0)}
-          {plan ? (
-            <MissionPlanner
-              plan={plan}
-              storageKey={`stigen:mission-plan:${lecture.id}`}
-              draft={draft}
-              onChange={handlePlanChange}
-            />
-          ) : (
-            <p className={styles.stageIntro}>
-              {Array.isArray(task.help) ? task.help.join(" ") : task.help}
-            </p>
-          )}
+        <section className={styles.stage} data-state={stageState(viewing)} aria-label={stages[viewing].title}>
+          {heading(viewing)}
+          {stageBody(viewing)}
         </section>
 
-        <section id={stageId(1)} tabIndex={-1} className={styles.stage} data-state={stageState(1)} aria-label={stages[1].title}>
-          {heading(1)}
-          <p className={styles.stageIntro}>
-            Say your lines aloud, without reading if you can. Record yourself,
-            or practise them with Stigen in a live conversation first.
-          </p>
-          {recorderEl}
-          {liveVoiceEl && (
-            <details className={styles.liveOption}>
-              <summary>Practise it live with Stigen first</summary>
-              {liveVoiceEl}
-            </details>
-          )}
-          {draftEl}
-          {plan && planComplete && !draft.trim() && !locked && (
-            <button
-              className="text-button"
-              onClick={() => {
-                setDraft(planScript);
-                setFeedback(null);
-                setError("");
-              }}
-            >
-              I said my planned lines. Add them as my words.
-            </button>
-          )}
-        </section>
-
-        <section id={stageId(2)} tabIndex={-1} className={styles.stage} data-state={stageState(2)} aria-label={stages[2].title}>
-          {heading(2)}
-          {hasFirstAttempt ? (
-            <>
-              {selfReviewEl}
-              {skill === "speaking" && (planScript || task.model) && (
-                <SoundCheck
-                  reference={(planScript || task.model || "").replace(/\s*\n\s*/g, " ")}
-                  title={planScript ? "Check how your lines sound" : "Check how the model lines sound in your voice"}
-                />
-              )}
-              {feedbackEl}
-              {modelEl && <div className={styles.modelStage}>{modelEl}</div>}
-            </>
-          ) : (
-            <p className={styles.locked}>
-              Say it first. Then check it here against the lesson&rsquo;s own
-              checks, get feedback, and compare with a model answer.
-            </p>
-          )}
-        </section>
-
-        {quickIndex >= 0 && (
-          <section id={stageId(quickIndex)} tabIndex={-1} className={styles.stage} data-state={stageState(quickIndex)} aria-label={stages[quickIndex].title}>
-            {heading(quickIndex)}
-            {checkDone || saved ? (
-              <>
-                <p className={styles.stageIntro}>
-                  Real conversations do not follow your plan. Three questions you have not
-                  prepared, one at a time: hear it, answer aloud within a few seconds, then
-                  compare.
-                </p>
-                <QuickQuestions questions={questions} onDone={() => setRoundDone(true)} />
-              </>
-            ) : (
-              <p className={styles.locked}>
-                After the check, answer three questions you have not planned for, the way a
-                real conversation goes.
-              </p>
-            )}
-          </section>
-        )}
-
-        <section id={stageId(againIndex)} tabIndex={-1} className={styles.stage} data-state={stageState(againIndex)} aria-label={stages[againIndex].title}>
-          {heading(againIndex)}
-          {(checkDone && quickDone) || saved ? (
-            <>
-              <p className={styles.transferNote}>
-                <span>THE CHANGE</span>
-                <b>{lecture.route.transferPrompt}</b>
-              </p>
-              <p className={styles.stageIntro}>
-                {retryIsRequired && !changedRetryReady
-                  ? "Your first answer stays in the box. Add the changed version after a blank line, or record again. Changing only punctuation will not unlock saving."
-                  : "Record again, or add your new version to your words above. Then save this attempt to finish the step."}
-              </p>
-              {finishEl}
-            </>
-          ) : (
-            <p className={styles.locked}>
-              {checkDone
-                ? "Answer the unexpected questions first. Then you say it once more with one small change."
-                : "After the check, you say it once more with one small change. That second try is where it sticks."}
-            </p>
-          )}
-        </section>
         {error && (
           <p className={styles.error} role="alert">
             {error}
           </p>
         )}
+
+        <nav className={styles.stageNav} aria-label="Mission stage">
+          <button
+            type="button"
+            className="text-button"
+            disabled={viewing === 0}
+            onClick={() => show(viewing - 1)}
+          >
+            ← Back
+          </button>
+          {next >= 0 && (
+            <div>
+              {!stages[viewing].done && waitingFor[viewing] && (
+                <small>{waitingFor[viewing]}</small>
+              )}
+              <button
+                type="button"
+                className={stages[viewing].done ? "primary" : "secondary"}
+                onClick={() => show(next)}
+              >
+                Next: {stages[next].title} →
+              </button>
+            </div>
+          )}
+        </nav>
       </article>
     );
   }

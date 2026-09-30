@@ -179,10 +179,12 @@ lecture extra steps, shown as one numbered route ("Step 2 of 7"):
 4. **Try the phrases** (guided): build and check lines. **End of Part 1**: a
    "good place to stop for today" card.
 5. **Do the task** (practice), **Part 2** starts with recall of this lecture's
-   phrases, then a guided mission:
-   plan your lines, say it out loud (record or live coach), check it (the
-   lecture's own checks, pronunciation score, AI feedback, model answer),
-   answer unexpected questions, say it again with one change, then save.
+   phrases, then a guided mission shown **one stage at a time** (strip at the
+   top jumps, Back/Next at the bottom): plan your lines; say it out loud (one
+   recording, transcribed automatically; typing is the fallback; live coach is
+   optional); check it (that same recording is pronunciation-scored, then the
+   lecture's own checks; AI feedback and the model answer sit under "More
+   help"); answer unexpected questions; say it again with one change, then save.
 6. **Check yourself** (check).
 7. **Take it forward** (assignment).
 
@@ -264,9 +266,9 @@ unlock), warm-up retrieval, return tasks and memory chart; Swedish
 pronunciation scoring; native Swedish voices; unexpected-questions round; two
 sittings per lecture; input plan; repo scripts for content checks.
 
-**Not fully tested:** pronunciation scoring from a real microphone through the
-browser (API tested with Azure, browser recorder tested with a fake mic); the
-day-later return card (logic tested, not waited for).
+**Tested by the owner:** pronunciation scoring from a real microphone (scores
+and coloured words came back). **Not yet waited for:** the day-later return
+card (logic tested).
 
 **Backlog, in priority order:**
 
