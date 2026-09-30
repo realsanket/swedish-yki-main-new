@@ -173,7 +173,10 @@ export default function LiveVoice({ contextId, available, signedIn, disabled = f
       const before = log[index].text;
       // Separate sentences that arrive in separate spoken segments.
       const gap = /[.!?:]$/.test(before) && /^\p{L}/u.test(fragment) ? " " : "";
-      return log.map((turn, i) => (i === index ? { ...turn, text: before + gap + fragment } : turn));
+      // The spoken transcript can also join sentences inside one fragment
+      // ("try.Say"); a capital straight after a full stop starts a sentence.
+      const text = (before + gap + fragment).replace(/([a-zåäö][.!?])(?=\p{Lu})/gu, "$1 ");
+      return log.map((turn, i) => (i === index ? { ...turn, text } : turn));
     });
   }
   function dropEmptyCoachTurn() {
