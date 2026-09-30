@@ -45,15 +45,31 @@ export const reviewCardIds = new Set(reviewCards.map((card) => card.id));
 
 type Reviews = Record<string, ReviewState>;
 
-/** A card is in the learner's review once its lecture has taught it. */
-export function cardUnlocked(card: ReviewCard, course: CourseProgressData | undefined) {
+/**
+ * A card is in the learner's review once its lecture has taught it, or once
+ * the learner has practised it by choice (from "Practise these now").
+ */
+export function cardUnlocked(card: ReviewCard, course: CourseProgressData | undefined, reviews?: Reviews) {
+  if (reviews?.[card.id]) return true;
   const state = course?.lectures[card.lectureId];
   if (!state) return false;
   return card.kind === "phrase" ? state.completedParts.includes("teach") : Boolean(state.completedAt);
 }
 
+/** Each lecture's phrase cards, for starting practice before they unlock. */
+export function phraseCardsByLecture() {
+  return lectures
+    .map((lecture) => ({
+      lectureId: lecture.id,
+      number: lecture.number,
+      title: lecture.title,
+      cards: reviewCards.filter((card) => card.lectureId === lecture.id && card.kind === "phrase"),
+    }))
+    .filter((group) => group.cards.length > 0);
+}
+
 export function cardDue(card: ReviewCard, course: CourseProgressData | undefined, reviews: Reviews, now: number) {
-  if (!cardUnlocked(card, course)) return false;
+  if (!cardUnlocked(card, course, reviews)) return false;
   const review = reviews[card.id];
   if (review) return review.due <= now;
   if (card.kind === "phrase") return true;
@@ -80,7 +96,7 @@ export function warmUpCards(lectureNumber: number, course: CourseProgressData | 
     return review.due <= now ? 0 : 2 + review.repetitions;
   };
   return reviewCards
-    .filter((card) => card.kind === "phrase" && card.lectureNumber < lectureNumber && cardUnlocked(card, course))
+    .filter((card) => card.kind === "phrase" && card.lectureNumber < lectureNumber && cardUnlocked(card, course, reviews))
     .sort((a, b) => rank(a) - rank(b) || b.lectureNumber - a.lectureNumber)
     .slice(0, count);
 }
@@ -90,7 +106,7 @@ export function memoryByLecture(course: CourseProgressData | undefined, reviews:
   return lectures
     .map((lecture) => {
       const cards = reviewCards.filter((card) => card.lectureId === lecture.id && card.kind === "phrase");
-      const unlocked = cards.filter((card) => cardUnlocked(card, course));
+      const unlocked = cards.filter((card) => cardUnlocked(card, course, reviews));
       const remembered = unlocked.filter((card) => {
         const review = reviews[card.id];
         return review && review.repetitions > 0 && review.due > now;
@@ -104,7 +120,7 @@ export function memoryByLecture(course: CourseProgressData | undefined, reviews:
         unlocked: unlocked.length,
         remembered,
         due: practised - remembered,
-        fresh: unlocked.length - practised,
+        fresh: cards.length - practised,
       };
     })
     .filter((row) => row.unlocked > 0);

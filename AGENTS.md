@@ -259,7 +259,8 @@ Viewing any step is always allowed.
 mobile layout; in-lecture navigation and topic picker; lecture-owned extra
 steps; dialogue audio fix; live coach on gpt-realtime (HD voice, speaks first,
 chat-style transcript, Azure Speech recognition); guided "Do the task" mission;
-spaced phrase review, warm-up retrieval, return tasks and memory chart; Swedish
+spaced phrase review (any lecture's phrases can be practised before they
+unlock), warm-up retrieval, return tasks and memory chart; Swedish
 pronunciation scoring; native Swedish voices; unexpected-questions round; two
 sittings per lecture; input plan; repo scripts for content checks.
 
@@ -274,6 +275,12 @@ day-later return card (logic tested, not waited for).
 2. Real Finland-Swedish audio links from the A1 stage (for example Svenska Yle
    Klartext) with gist questions.
 3. Home screen: "Resume Part 2 today" when a lecture is mid-way.
+3a. **Waiting on the owner:** Finland-Swedish "sh" for the sj-sound (skjorta,
+    sju, sjuk). Azure's voices are Sweden-Swedish and say a breathy [ɧ]; an
+    SSML `<phoneme alphabet="ipa" ph="ˈʃʊʈːa">` override produces "sh". Samples
+    were sent; if the owner prefers "sh", apply it to sj-words in
+    `app/api/speech/route.ts`. Also decide whether the live coach should use a
+    Swedish voice (Swedish accent in English too) instead of the HD voice.
 4. Save the mission plan and the unexpected-questions result to the server (both
    are browser-only now).
 5. Lecture 3 onward, only when the owner asks: read the teacher lesson in

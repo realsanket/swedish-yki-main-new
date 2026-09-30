@@ -15,7 +15,7 @@ import type { ProgressData } from "@/lib/progress";
 import AudioButton from "./AudioButton";
 import PhraseReview from "./PhraseReview";
 import MemoryChart from "./MemoryChart";
-import { dueCards, memoryByLecture, type ReviewCard } from "@/lib/review-cards";
+import { cardUnlocked, dueCards, memoryByLecture, phraseCardsByLecture, type ReviewCard } from "@/lib/review-cards";
 export default function WordBank({
   data,
   course,
@@ -209,6 +209,30 @@ export default function WordBank({
                 </button>
               )}
             </div>
+            {!phraseSession && (
+              <ul className="phrase-lecture-list">
+                {phraseCardsByLecture().map((group) => {
+                  const joined = group.cards.filter((card) => cardUnlocked(card, course, data.reviews)).length;
+                  return (
+                    <li key={group.lectureId}>
+                      <span>
+                        <b>Lecture {group.number}</b> · {group.title}
+                        <small>
+                          {joined === group.cards.length
+                            ? `All ${group.cards.length} phrases are in your review.`
+                            : joined
+                              ? `${joined} of ${group.cards.length} phrases in your review. The rest join after “Build it step by step”, or practise them now.`
+                              : `${group.cards.length} phrases. They join your review after “Build it step by step” in this lecture, or practise them now.`}
+                        </small>
+                      </span>
+                      <button className="secondary" onClick={() => setPhraseSession(group.cards)}>
+                        Practise these now
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
             {phraseSession && (
               <PhraseReview
                 cards={phraseSession}

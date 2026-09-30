@@ -8766,3 +8766,7 @@
 .sitting-break { display: grid; gap: 10px; margin-bottom: 20px; padding: 22px; border: 1px solid #ead8a4; border-radius: 18px; background: linear-gradient(135deg, #fff8e5, #fffdf8); }
 .sitting-break h3 { margin: 0; color: #173858; font-size: 22px; }
 .sitting-break p { margin: 0; max-width: 680px; color: #52667a; line-height: 1.6; }
+.phrase-lecture-list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.phrase-lecture-list li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 14px; border: 1px solid #e3e8dc; border-radius: 12px; background: #fbfcf8; }
+.phrase-lecture-list span { display: grid; gap: 2px; color: #203b2d; font-size: 14px; }
+.phrase-lecture-list small { color: #607284; font-size: 13px; }

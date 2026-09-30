@@ -7,7 +7,7 @@
 export default function MemoryChart({
   rows,
 }: {
-  rows: Array<{ lectureId: string; number: number; title: string; unlocked: number; remembered: number; due: number; fresh: number }>;
+  rows: Array<{ lectureId: string; number: number; title: string; total: number; remembered: number; due: number; fresh: number }>;
 }) {
   return (
     <figure className="memory-chart">
@@ -26,14 +26,14 @@ export default function MemoryChart({
             <span
               className="memory-bar"
               role="img"
-              aria-label={`Lecture ${row.number}: ${row.remembered} of ${row.unlocked} phrases remembered, ${row.due} due again, ${row.fresh} not practised yet`}
+              aria-label={`Lecture ${row.number}: ${row.remembered} of ${row.total} phrases remembered, ${row.due} due again, ${row.fresh} not practised yet`}
             >
               {row.remembered > 0 && <i className="remembered" style={{ flexGrow: row.remembered }} />}
               {row.due > 0 && <i className="due" style={{ flexGrow: row.due }} />}
               {row.fresh > 0 && <i className="fresh" style={{ flexGrow: row.fresh }} />}
             </span>
             <span className="memory-count">
-              {row.remembered}/{row.unlocked}
+              {row.remembered}/{row.total}
             </span>
           </li>
         ))}
