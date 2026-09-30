@@ -50,6 +50,10 @@ type Task = {
   text?: string;
   questions: Question[];
   seconds: number;
+  /** YKI-style writing: the situation, the points to cover, a word range. */
+  situation?: string;
+  points?: string[];
+  wordRange?: number[];
 };
 type AiStatus = {
   configured: boolean;
@@ -133,6 +137,9 @@ function getTasks(
       model: exercise.model,
       questions: [],
       seconds: skill === "speaking" ? 120 : 600,
+      ...("points" in exercise
+        ? { situation: exercise.situation, points: exercise.points, wordRange: exercise.wordRange }
+        : {}),
     };
   });
 }
@@ -432,8 +439,13 @@ function Exercise({
   const [showTranscript, setShowTranscript] = useState(false);
   const [showModel, setShowModel] = useState(false);
   // A lecture's own success checks become the self-review in its mission.
+  // A YKI-style writing task checks its own points instead.
   const lectureChecks =
-    lecture && isProductive ? lecture.route.successChecks : null;
+    lecture && isProductive
+      ? skill === "writing" && task.points?.length
+        ? task.points
+        : lecture.route.successChecks
+      : null;
   const noChecks = () => (lectureChecks ?? [0, 0, 0]).map(() => false);
   const [selfChecks, setSelfChecks] = useState<boolean[]>(noChecks);
   const [planScript, setPlanScript] = useState("");
@@ -1091,6 +1103,13 @@ function Exercise({
                 </small>
               </div>
     ) : null;
+  // The mission stage that holds the text box while no stage is chosen.
+  const draftStage =
+    skill !== "writing"
+      ? 1
+      : hasFirstAttempt && (Boolean(feedback) || selfChecks.every(Boolean))
+        ? 2
+        : 0;
   const draftEl = isProductive ? (
     <>
       <label
@@ -1120,8 +1139,11 @@ function Exercise({
                     retryIsRequired ? `retry-guidance-${task.id}` : undefined
                   }
                   onChange={(event) => {
+                    // Typing never moves the mission to another stage.
+                    setOpenStage((stage) => stage ?? draftStage);
                     setDraft(event.target.value);
-                    setFeedback(null);
+                    // A written message is fixed using its feedback, so keep it visible.
+                    if (skill !== "writing") setFeedback(null);
                     setError("");
                   }}
                   spellCheck
@@ -1252,7 +1274,9 @@ function Exercise({
                     <CheckCircle2 size={19} /> Make it stick
                   </h4>
                   <p>
-                    {lectureChecks
+                    {skill === "writing" && task.points?.length
+                      ? "Tick each point your message covers. A missing point is the first thing to add."
+                      : lectureChecks
                       ? "Tick each check your attempt meets. If one is missing, that is your change for the next try."
                       : "Use these checks after you compare your response with the example."}
                   </p>
@@ -1398,14 +1422,22 @@ function Exercise({
       hasFirstAttempt && (Boolean(feedback) || selfChecks.every(Boolean));
     const questions = lecture.unplannedQuestions ?? [];
     const quickDone = !questions.length || roundDone || saved;
-    const stages = [
-      { title: plan?.title ?? "Plan what you will say", done: planDone },
-      { title: "Say it out loud", done: hasFirstAttempt },
-      { title: "Check it", done: checkDone },
-      ...(questions.length ? [{ title: "Answer unexpected questions", done: quickDone }] : []),
-      { title: "Say it again, with one change", done: saved },
-    ];
-    const quickIndex = questions.length ? 3 : -1;
+    // A written message has its own, shorter mission: write, check, fix and save.
+    const writing = skill === "writing";
+    const stages = writing
+      ? [
+          { title: "Write your message", done: hasFirstAttempt },
+          { title: "Check it", done: checkDone },
+          { title: "Fix one thing, then save", done: saved },
+        ]
+      : [
+          { title: plan?.title ?? "Plan what you will say", done: planDone },
+          { title: "Say it out loud", done: hasFirstAttempt },
+          { title: "Check it", done: checkDone },
+          ...(questions.length ? [{ title: "Answer unexpected questions", done: quickDone }] : []),
+          { title: "Say it again, with one change", done: saved },
+        ];
+    const quickIndex = !writing && questions.length ? 3 : -1;
     const current = stages.findIndex((stage) => !stage.done);
     const stageState = (index: number) =>
       stages[index].done ? "done" : index === current ? "current" : "later";
@@ -1428,14 +1460,84 @@ function Exercise({
       </h4>
     );
     // What must happen before the next stage makes sense, in plain words.
-    const waitingFor = [
-      plan ? "Fill in every line of your plan first." : "",
-      "Record yourself, or add the words you said.",
-      "Tick the checks your attempt meets, or get AI feedback.",
-      ...(questions.length ? ["Answer all three questions first."] : []),
-      "",
-    ];
+    const waitingFor = writing
+      ? ["Write your message first.", "Tick the points your message covers, or get AI feedback.", ""]
+      : [
+          plan ? "Fill in every line of your plan first." : "",
+          "Record yourself, or add the words you said.",
+          "Tick the checks your attempt meets, or get AI feedback.",
+          ...(questions.length ? ["Answer all three questions first."] : []),
+          "",
+        ];
+    const [minWords = 0, maxWords = 0] = task.wordRange ?? [];
+    const brief = (
+      <div className={styles.ykiBrief}>
+        <span>YKI-STYLE WRITING TASK</span>
+        {task.situation && <p>{task.situation}</p>}
+        {task.points?.length ? (
+          <>
+            <b>Your message must:</b>
+            <ul>
+              {task.points.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+          </>
+        ) : null}
+        {maxWords > 0 && (
+          <small data-state={wordCount < minWords ? "short" : "ok"}>
+            About {minWords}–{maxWords} words. You have {wordCount}.
+          </small>
+        )}
+      </div>
+    );
+    const writingBody = (index: number) => {
+      if (index === 0) {
+        return (
+          <>
+            {brief}
+            {draftEl}
+            <details className={styles.peek}>
+              <summary>Stuck? Words that help</summary>
+              <p>{Array.isArray(task.help) ? task.help.join(" ") : task.help}</p>
+            </details>
+          </>
+        );
+      }
+      if (index === 1) {
+        if (!hasFirstAttempt)
+          return <p className={styles.locked}>Write your message first. Then this stage checks it.</p>;
+        return (
+          <>
+            {selfReviewEl}
+            {feedbackEl}
+            {modelEl && (
+              <details className={styles.moreHelp}>
+                <summary>See a model message</summary>
+                <div className={styles.modelStage}>{modelEl}</div>
+              </details>
+            )}
+          </>
+        );
+      }
+      return checkDone || saved ? (
+        <>
+          <p className={styles.stageIntro}>
+            Use your check: add a missing point, or fix one mistake from the
+            feedback. Then save your message.
+          </p>
+          {brief}
+          {draftEl}
+          {finishEl}
+        </>
+      ) : (
+        <p className={styles.locked}>
+          After the check, you fix one thing in your message and save it.
+        </p>
+      );
+    };
     const stageBody = (index: number) => {
+      if (writing) return writingBody(index);
       if (index === 0) {
         return plan ? (
           <MissionPlanner

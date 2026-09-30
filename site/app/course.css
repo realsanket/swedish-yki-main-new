@@ -8794,3 +8794,7 @@
 .phrase-lecture-list span { display: grid; gap: 2px; color: #203b2d; font-size: 14px; }
 .phrase-lecture-list small { color: #607284; font-size: 13px; }
 .sound-check-silent { margin: 0; padding: 10px 12px; border-radius: 10px; background: #fff3ea; color: #98583d; font-size: 14px; line-height: 1.5; }
+.sound-check-note { margin: 10px 0 0; padding: 10px 12px; border-left: 3px solid #2f5f8a; border-radius: 8px; background: #f4f8fb; color: #3d5670; font-size: 13px; line-height: 1.55; }
+.sound-check-note b { color: #213b52; }
+.practice-next { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin: 12px 0 0; color: #2d6b4f; font-size: 14px; font-weight: 700; }
+.practice-focus .practice-next button { text-transform: none; }

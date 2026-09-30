@@ -20,8 +20,22 @@ export type Lesson = {
   reading: Question & { text: string };
   listening: Question & { text: string };
   speaking: { prompt: string; help: string; model: string };
-  writing: { prompt: string; help: string; model: string };
+  writing: WritingTask;
   quiz: Question[];
+};
+/**
+ * A short written message. `situation`, `points` and `wordRange` make it a
+ * YKI-style task: who you write to and why, the points the message must cover
+ * (they become the learner's checklist), and a target length in words.
+ */
+export type WritingTask = {
+  prompt: string;
+  help: string;
+  model: string;
+  situation?: string;
+  points?: string[];
+  /** [fewest, most] words; the content validator checks the shape. */
+  wordRange?: number[];
 };
 export type ExamTask = {
   id: string;

@@ -56,6 +56,12 @@ for l in L:
     if len({x['id'] for x in rp})!=len(rp): errs.append(f'{n}: duplicate review phrase id')
     for x in rp:
         if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,40}',x['id']) or not x['en'].strip() or not x['fi'].strip(): errs.append(f"{n}: bad review phrase {x.get('id')}")
+    wr=l['practice']['writing']
+    if 'wordRange' in wr:
+        r=wr['wordRange']
+        if not (isinstance(r,list) and len(r)==2 and all(isinstance(v,int) for v in r) and 0<r[0]<=r[1]): errs.append(f'{n}: writing wordRange must be [fewest, most]')
+        if len(wr['model'].split())>r[1]: errs.append(f'{n}: writing model is longer than its wordRange')
+    if 'points' in wr and (not wr['points'] or not all(p.strip() for p in wr['points'])): errs.append(f'{n}: writing points must be non-empty')
     uq=l.get('unplannedQuestions',[])
     if uq and len(uq)<3: errs.append(f'{n}: unplannedQuestions needs at least 3 questions')
     if len({x['id'] for x in uq})!=len(uq): errs.append(f'{n}: duplicate unplanned question id')

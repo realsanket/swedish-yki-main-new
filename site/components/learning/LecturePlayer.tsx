@@ -104,11 +104,12 @@ function stepAction(part: CoursePart, expectedOutput: string) {
 }
 
 /** What is still missing before a step can be saved, in the learner's words. */
-function blockedReason(part: CoursePart, primarySkill: Skill) {
+function blockedReason(part: CoursePart, missingSkills: Skill[]) {
   if (part === "recall") return "Answer the questions above, then press Check to see the feedback.";
   if (part === "teach") return "Finish the first attempt above to continue.";
   if (part === "guided" || part === "check") return "Answer every question above, then press Check to see the feedback.";
-  if (part === "practice") return `Save one ${primarySkill} attempt in the task above to continue.`;
+  if (part === "practice")
+    return `Save your ${missingSkills.join(" and ") || "task"} attempt above to continue.`;
   return "Finish this step's task above to continue.";
 }
 
@@ -612,7 +613,8 @@ export default function LecturePlayer({
     !currentWorkshopFirstAttempt && !!legacyWorkshopFirstAttempt;
   const hasWorkshopFirstAttempt =
     ykiWorkshop && workshopFirstAttempt.length >= 2;
-  const practiceDone = route.requiredSkills.every((s) => state.practice[s]);
+  const missingSkills = route.requiredSkills.filter((s) => !state.practice[s]);
+  const practiceDone = missingSkills.length === 0;
   const mockListeningComplete = ykiMock
     ? ykiReceptiveStageComplete(
         drafts.listening,
@@ -710,7 +712,7 @@ export default function LecturePlayer({
       ? `Step ${stepNumber(firstUnfinished)} is not finished yet, so this step is not saved. You can keep going and finish it later.`
       : canContinue
         ? `Saves step ${itemIndex + 1}.`
-        : blockedReason(part, route.primarySkill);
+        : blockedReason(part, missingSkills);
   function goForward() {
     if (firstUnfinished && !partDone) {
       if (!isLastPart) preview(sequence[itemIndex + 1].key);
@@ -1685,10 +1687,18 @@ export default function LecturePlayer({
                       ) : (
                         <span className="open-circle" />
                       )}
-                      {s}
+                      {skillLabel(s)}
                     </button>
                   ))}
                 </div>
+                {state.practice[skill] && missingSkills.length > 0 && (
+                  <p className="practice-next" role="status">
+                    {skillLabel(skill)} saved.{" "}
+                    <button type="button" className="text-button" onClick={() => setSkill(missingSkills[0])}>
+                      Next: the {skillLabel(missingSkills[0]).toLowerCase()} task <ArrowRight size={15} />
+                    </button>
+                  </p>
+                )}
               </div>
               )}
               {hydrated && (

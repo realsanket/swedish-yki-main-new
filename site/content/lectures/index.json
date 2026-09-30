@@ -1724,14 +1724,26 @@
         "model": "Hej! Jag heter Alex. Jag bor i Helsingfors. Jag kommer från Indien. Jag talar hindi, engelska och lite svenska."
       },
       "writing": {
-        "prompt": "Write a four-sentence introduction with your name, current home, origin, and languages.",
-        "help": "Check heter, bor i, kommer från, talar, och, and lite.",
-        "model": "Hej! Jag heter Alex.\nJag bor i Helsingfors.\nJag kommer från Indien.\nJag talar hindi, engelska och lite svenska."
+        "prompt": "Write a short message to your new class: who you are, where you live, where you come from, and what you speak.",
+        "situation": "You have joined a Swedish class in Helsingfors. The teacher asks everyone to write a short hello to the class group chat.",
+        "points": [
+          "Greet the class and say your name.",
+          "Say where you live.",
+          "Say where you come from.",
+          "Say which languages you speak.",
+          "End with a greeting and your name."
+        ],
+        "wordRange": [
+          15,
+          30
+        ],
+        "help": "Hej alla! (Hi everyone!) · Jag heter … · Jag bor i … · Jag kommer från … · Jag talar … och lite svenska. · End with Hälsningar (Best wishes) and your name.",
+        "model": "Hej alla!\nJag heter Alex. Jag bor i Helsingfors.\nJag kommer från Indien.\nJag talar hindi, engelska och lite svenska.\nHälsningar, Alex"
       }
     },
     "route": {
       "primarySkill": "speaking",
-      "expectedOutput": "Give a clear four-line introduction with your real details.",
+      "expectedOutput": "Say a clear four-line introduction with your real details, then write it as a short message to your class.",
       "transferPrompt": "Change one detail, then give the four-line introduction again.",
       "returnPrompt": "Give your real introduction from memory in under 20 seconds.",
       "successChecks": [
@@ -1740,7 +1752,8 @@
         "Speak once with the model and once without looking."
       ],
       "requiredSkills": [
-        "speaking"
+        "speaking",
+        "writing"
       ]
     }
   },
@@ -4053,14 +4066,26 @@
         "model": "Jag mår bra, tack. Och du? Det är min syster. Hon heter Priya. Hon bor i Indien. Det är min vän. Hon heter Elin. Hon bor i Helsingfors."
       },
       "writing": {
-        "prompt": "Write a short message to a friend: ask how they are, say how you are, and tell them about one person in your life.",
-        "help": "Check Hur mår du?, mår or är, the pronoun that points to your person, and one question word with the verb second.",
-        "model": "Hej Sara!\nHur mår du? Jag mår toppen.\nJag har en bror. Han heter Rohan. Han bor i Indien.\nNär kommer du till Helsingfors?"
+        "prompt": "Answer your friend's message: say how you are, ask back, tell her about one person in your life, and ask her one question.",
+        "situation": "Your friend Sara lives in Åbo. She sends you this message: “Hej! Hur mår du? Berätta om din familj!” (Hi! How are you? Tell me about your family!) Write back.",
+        "points": [
+          "Greet Sara.",
+          "Say how you are, and ask how she is.",
+          "Tell her about one person in your life: who, their name, where they live.",
+          "Ask her one question with a question word (vad, var, när, varför, vem).",
+          "End with a greeting and your name."
+        ],
+        "wordRange": [
+          25,
+          40
+        ],
+        "help": "Hej Sara! · Jag mår bra / toppen / så där. · Hur mår du? · Jag har en syster / en bror / en vän. · Hon heter … / Han heter … · Hon bor i … · När kommer du till Helsingfors? · Hälsningar (Best wishes) and your name. Keep the verb second in your question.",
+        "model": "Hej Sara!\nJag mår bra, men jag är lite trött. Hur mår du?\nJag har en bror. Han heter Rohan. Han bor i Indien.\nNär kommer du till Helsingfors?\nHälsningar, Alex"
       }
     },
     "route": {
       "primarySkill": "speaking",
-      "expectedOutput": "Say how you are, ask back, and present two people in your life.",
+      "expectedOutput": "Say how you are, ask back, and present two people in your life. Then answer a friend's message in writing.",
       "transferPrompt": "Present the same two people to a group, and ask them one question with ni.",
       "returnPrompt": "Say how you are and introduce one person from memory in under 20 seconds.",
       "successChecks": [
@@ -4069,7 +4094,8 @@
         "Ask at least one question with the verb second."
       ],
       "requiredSkills": [
-        "speaking"
+        "speaking",
+        "writing"
       ]
     }
   }

@@ -72,6 +72,13 @@ To add a kind, add its data shape to the `LectureExtraStep` union in `lib/course
 
 A lecture's speaking or writing task runs as one guided mission in four stages: **Plan** (the learner writes their own details into sentence frames and hears them read back), **Say it** (record, or rehearse with the live coach, then keep the words they said), **Check it** (the lecture's own `route.successChecks` as tick boxes, AI feedback, and the model answer, which unlocks only after a first attempt), and **Say it again** (the lecture's `route.transferPrompt` as the one change, then save). Timed and exam tasks keep the classic layout so their independent-attempt rules stay intact.
 
+The written message is required too (`route.requiredSkills: ["speaking", "writing"]`) and has its own three stages: **Write your message**, **Check it**, **Fix one thing, then save**. Make it YKI-style in `practice.writing`:
+
+- `situation`: who the learner writes to and why, in plain English (a Swedish message they answer may be quoted with its English meaning).
+- `points`: 4-5 things the message must do. They are the learner's tick boxes and are sent to AI feedback to judge task completion.
+- `wordRange`: `[fewest, most]` words. The model answer must fit inside it (the validator checks this). A0: about 15-40 words.
+- `help`: useful words and frames, shown under "Stuck? Words that help".
+
 The plan comes from `missionPlan`, a top-level field: a `title`, an `intro`, and `lines`, each with a `label`, the frame text `before` and `after` the learner's words, and a `placeholder`. An empty `before` makes the line free text, which suits sentences that change shape (han/hon). Without `missionPlan`, the Plan stage shows the task's help text. Plan values stay in the learner's browser; the saved evidence is still the spoken or written attempt.
 
 ## Remembering, speaking without a plan, and pacing

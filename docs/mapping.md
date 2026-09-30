@@ -182,6 +182,7 @@ The former Lectures 3–5 are not live Chapter 1 content. They were removed with
 - Lecture 1: added the teacher's Bangladesh (bengali) and portugisiska to the country-language match.
 - Lecture 2: added the homework trap "Anna och jag → vi" (rule line, example, guided item `sv-02-guided-vi`) and "Hej Sara och Peter! Talar ni…?"; replaced the question-word examples with the teacher's (Vad köper du? Hur är vädret? Var är Anna? När äter vi lunch? Varför springer han? Vem gillar du?); added skilja sig.
 - Both lectures: linked the teacher's listening resources (Svensktoppen, the teacher's Spotify playlist).
+- Both lectures: the written message is now a required YKI-style task. Lecture 1: a hello to the new class group chat (15-30 words). Lecture 2: an answer to Sara's message "Hej! Hur mår du? Berätta om din familj!" (25-40 words). Both close with Hälsningar and a name.
 - The sj-sound stays as Azure's Sweden-Swedish voices say it (owner's decision).
 
 ## Next safe step

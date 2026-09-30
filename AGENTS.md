@@ -151,7 +151,7 @@ full rules in `site/docs/lecture-template.md`):
 | `unplannedQuestions` | Questions for the "unexpected questions" round (6 per lecture, 3 asked) |
 | `reviewPhrases` | About 8 chunks for spaced review (English prompt, Swedish answer) |
 | `sittingBreakAfter` | Splits the lecture into Part 1 / Part 2 after this step (`guided`) |
-| `practice` | Words, pronunciation note, listening/reading/speaking/writing tasks |
+| `practice` | Words, pronunciation note, listening/reading/speaking/writing tasks. `writing.situation`, `writing.points`, `writing.wordRange` make the written message a YKI-style task |
 | `dialogue` | The story conversation (Elin and Alex) |
 
 After editing: `npm run content:index`, then `npm run check`.
@@ -185,6 +185,9 @@ lecture extra steps, shown as one numbered route ("Step 2 of 7"):
    optional); check it (that same recording is pronunciation-scored, then the
    lecture's own checks; AI feedback and the model answer sit under "More
    help"); answer unexpected questions; say it again with one change, then save.
+   Then the **written message** (YKI style, required): read the situation and
+   the points, write, check (points as tick boxes, AI feedback, model), fix one
+   thing and save.
 6. **Check yourself** (check).
 7. **Take it forward** (assignment).
 
@@ -258,21 +261,22 @@ Viewing any step is always allowed.
 An honest review of Lectures 1-2 before they become the template. Fix these in
 the template, not one lecture at a time. Not yet fixed unless marked.
 
-1. **Too much English, too little Swedish.** Each lecture has roughly 4,400-5,700
-   English words to read and only 50-70 words of connected Swedish story. The
-   app mostly explains Swedish in English. Future lectures: cut explanation
-   text, and add easy stories (backlog 1) so Swedish input grows (see
+1. **Lots of English, little Swedish.** Each lecture has roughly 4,400-5,700
+   English words to read and only 50-70 words of connected Swedish story.
+   **Owner's decision:** keep the full English explanations at the beginning
+   (A0), because grammar and the sounds are new; reduce them gradually in later
+   lectures. Grow Swedish input with easy stories (backlog 1, see
    `site/docs/input-plan.md`).
-2. **Writing and reading are optional and hidden.** The only required task is
-   speaking; writing sits under a closed "Optional: practise another skill".
-   YKI has four equal parts. From about Lecture 3, alternate the required task
-   (speaking one lecture, a short YKI-style message the next) or require both.
+2. **Fixed:** writing is now a required YKI-style task next to speaking. Its
+   `practice.writing` has a `situation`, `points` (the checklist, also sent to
+   AI feedback) and a `wordRange`, and runs as a 3-stage mission (write, check,
+   fix one thing and save). Reading is still only practised inside the steps.
 3. **All audio is synthetic Sweden-Swedish.** Clear and slow, the same four
    voices, no Finland-Swedish, no natural speed or background noise. YKI
    listening uses real speakers. Backlog 2 (real Finland-Swedish clips).
-4. **Pronunciation is scored against Sweden-Swedish (sv-SE).** A correct
-   Finland-Swedish sound (for example "sh" in sju) can lose points. Tell the
-   learner this beside every score; never treat a score as a grade.
+4. **Fixed:** pronunciation is scored against Sweden-Swedish (sv-SE), so a
+   correct Finland-Swedish sound can lose points. Every score now shows a
+   Finland-Swedish note saying so.
 5. **Review depends on honest self-rating.** Phrase cards ask "how did it go?"
    and learners over-rate. Use the recording (transcript or pronunciation
    score) to suggest the rating.
@@ -290,7 +294,9 @@ the template, not one lecture at a time. Not yet fixed unless marked.
    structure, not language. Before a lecture goes live, ask the teacher (or a
    native speaker) to glance at the new Swedish lines.
 
- (September 30, 2026)
+---
+
+## 9. Status (September 30, 2026)
 
 **Done and on `main`:** Lectures 1-2 with textbook steps; grammar side notes;
 mobile layout; in-lecture navigation and topic picker; lecture-owned extra
@@ -299,7 +305,9 @@ chat-style transcript, Azure Speech recognition); guided "Do the task" mission;
 spaced phrase review (any lecture's phrases can be practised before they
 unlock), warm-up retrieval, return tasks and memory chart; Swedish
 pronunciation scoring; native Swedish voices; unexpected-questions round; two
-sittings per lecture; input plan; repo scripts for content checks; lecture
+sittings per lecture; input plan; repo scripts for content checks; a required
+YKI-style written message in each lecture; a Finland-Swedish note beside
+pronunciation scores; lecture
 audit fixes (the teacher's question examples, the "X och jag = vi" trap,
 Bangladesh and portugisiska, the teacher's Svensktoppen and Spotify links,
 clearer "Check yourself" wording, and "Take it forward" lists the phrases that

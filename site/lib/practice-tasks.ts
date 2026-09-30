@@ -7,6 +7,10 @@ export type TrustedPracticeTask = {
   prompt: string;
   help: string;
   model?: string;
+  /** YKI-style writing details, when the lecture's task has them. */
+  situation?: string;
+  points?: string[];
+  wordRange?: number[];
   pronunciation?: { text: string; tip: string };
 };
 /** One trusted resolver for new lectures, existing lesson bookmarks and exam tasks. */

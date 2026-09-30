@@ -2245,14 +2245,23 @@
       "model": "Jag mår bra, tack. Och du? Det är min syster. Hon heter Priya. Hon bor i Indien. Det är min vän. Hon heter Elin. Hon bor i Helsingfors."
     },
     "writing": {
-      "prompt": "Write a short message to a friend: ask how they are, say how you are, and tell them about one person in your life.",
-      "help": "Check Hur mår du?, mår or är, the pronoun that points to your person, and one question word with the verb second.",
-      "model": "Hej Sara!\nHur mår du? Jag mår toppen.\nJag har en bror. Han heter Rohan. Han bor i Indien.\nNär kommer du till Helsingfors?"
+      "prompt": "Answer your friend's message: say how you are, ask back, tell her about one person in your life, and ask her one question.",
+      "situation": "Your friend Sara lives in Åbo. She sends you this message: “Hej! Hur mår du? Berätta om din familj!” (Hi! How are you? Tell me about your family!) Write back.",
+      "points": [
+        "Greet Sara.",
+        "Say how you are, and ask how she is.",
+        "Tell her about one person in your life: who, their name, where they live.",
+        "Ask her one question with a question word (vad, var, när, varför, vem).",
+        "End with a greeting and your name."
+      ],
+      "wordRange": [25, 40],
+      "help": "Hej Sara! · Jag mår bra / toppen / så där. · Hur mår du? · Jag har en syster / en bror / en vän. · Hon heter … / Han heter … · Hon bor i … · När kommer du till Helsingfors? · Hälsningar (Best wishes) and your name. Keep the verb second in your question.",
+      "model": "Hej Sara!\nJag mår bra, men jag är lite trött. Hur mår du?\nJag har en bror. Han heter Rohan. Han bor i Indien.\nNär kommer du till Helsingfors?\nHälsningar, Alex"
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Say how you are, ask back, and present two people in your life.",
+    "expectedOutput": "Say how you are, ask back, and present two people in your life. Then answer a friend's message in writing.",
     "transferPrompt": "Present the same two people to a group, and ask them one question with ni.",
     "returnPrompt": "Say how you are and introduce one person from memory in under 20 seconds.",
     "successChecks": [
@@ -2261,7 +2270,8 @@
       "Ask at least one question with the verb second."
     ],
     "requiredSkills": [
-      "speaking"
+      "speaking",
+      "writing"
     ]
   }
 }

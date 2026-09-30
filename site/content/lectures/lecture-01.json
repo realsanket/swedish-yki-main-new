@@ -634,14 +634,23 @@
       "model": "Hej! Jag heter Alex. Jag bor i Helsingfors. Jag kommer från Indien. Jag talar hindi, engelska och lite svenska."
     },
     "writing": {
-      "prompt": "Write a four-sentence introduction with your name, current home, origin, and languages.",
-      "help": "Check heter, bor i, kommer från, talar, och, and lite.",
-      "model": "Hej! Jag heter Alex.\nJag bor i Helsingfors.\nJag kommer från Indien.\nJag talar hindi, engelska och lite svenska."
+      "prompt": "Write a short message to your new class: who you are, where you live, where you come from, and what you speak.",
+      "situation": "You have joined a Swedish class in Helsingfors. The teacher asks everyone to write a short hello to the class group chat.",
+      "points": [
+        "Greet the class and say your name.",
+        "Say where you live.",
+        "Say where you come from.",
+        "Say which languages you speak.",
+        "End with a greeting and your name."
+      ],
+      "wordRange": [15, 30],
+      "help": "Hej alla! (Hi everyone!) · Jag heter … · Jag bor i … · Jag kommer från … · Jag talar … och lite svenska. · End with Hälsningar (Best wishes) and your name.",
+      "model": "Hej alla!\nJag heter Alex. Jag bor i Helsingfors.\nJag kommer från Indien.\nJag talar hindi, engelska och lite svenska.\nHälsningar, Alex"
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Give a clear four-line introduction with your real details.",
+    "expectedOutput": "Say a clear four-line introduction with your real details, then write it as a short message to your class.",
     "transferPrompt": "Change one detail, then give the four-line introduction again.",
     "returnPrompt": "Give your real introduction from memory in under 20 seconds.",
     "successChecks": [
@@ -649,6 +658,6 @@
       "Keep home and origin separate.",
       "Speak once with the model and once without looking."
     ],
-    "requiredSkills": ["speaking"]
+    "requiredSkills": ["speaking", "writing"]
   }
 }

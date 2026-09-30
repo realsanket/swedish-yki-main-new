@@ -180,6 +180,12 @@ export default function SoundCheck({
               : "Every word was clear. Record once more at normal speed."}{" "}
             Practice scores from Azure, not a YKI rating.
           </small>
+          <p className="sound-check-note">
+            <b>Finland-Swedish note:</b> the scorer compares you with Sweden-Swedish.
+            Finland-Swedish is also correct, and YKI accepts it. So a lower mark on a word
+            like <span lang="sv">sju</span> or <span lang="sv">skjorta</span> (said with
+            &ldquo;sh&rdquo;), or on the rise and fall of a word, is not a mistake.
+          </p>
         </div>
       )}
       {error && <p className="lecture-error" role="alert">{error}</p>}
