@@ -26048,7 +26048,6 @@
     "focusSkills": [
       "speaking",
       "writing",
-      "grammar",
       "reading",
       "listening"
     ],
@@ -26139,6 +26138,12 @@
           "Ask about experience",
           "Say what is still true"
         ]
+      },
+      "teaching": {
+        "wordBank": {
+          "mode": "collapsed",
+          "title": "Open the Lesson 17 word bank"
+        }
       }
     },
     "recall": [
@@ -26276,71 +26281,106 @@
                 "voice": "Maja",
                 "fi": "Hon gjorde slut med Andreas och bestämde sig för att hitta kärlek på nätet istället.",
                 "en": "She broke up with Andreas and decided to find love online instead.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "bestämde sig",
+                    "en": "decided"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Maja",
                 "fi": "Hon tittar på olika profiler på en app och letar efter någon som verkar vara ärlig, social och tålmodig.",
                 "en": "She looks at different profiles in an app and is looking for someone who seems honest, sociable, and patient.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "letar efter",
+                    "en": "looks for"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Elin",
                 "fi": "Tror ni att hon kommer att hitta en sådan person?",
                 "en": "Do you think she will find such a person?",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "en sådan person",
+                    "en": "such a person"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Elin",
                 "fi": "Är det möjligt att hitta en ideal partner på nätet?",
                 "en": "Is it possible to find an ideal partner online?",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "möjligt",
+                    "en": "possible"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Elin",
                 "fi": "Hurdan ska en ideal partner vara, enligt er?",
                 "en": "What should an ideal partner be like, in your opinion?",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "enligt er",
+                    "en": "in your opinion"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Elin",
                 "fi": "Har ni några råd till Nora?",
                 "en": "Do you have any advice for Nora?",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "råd",
+                    "en": "advice"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Elin",
                 "fi": "Dela gärna era tankar.",
                 "en": "Please share your thoughts.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "tankar",
+                    "en": "thoughts"
+                  }
+                ]
               }
             ],
             "listenQuestions": [
               {
-                "prompt": "What is the main idea?",
+                "prompt": "Which qualities is Nora looking for?",
                 "options": [
-                  "Nora looks online for a new partner and the page asks for predictions, descriptions, and advice.",
-                  "A shopping list",
-                  "Directions"
+                  "Honest, sociable and patient",
+                  "Wealthy, quiet and famous",
+                  "Tall and athletic"
                 ],
                 "answer": 0,
-                "explanation": "Nora looks online for a new partner and the page asks for predictions, descriptions, and advice."
+                "explanation": "The text says ärlig, social och tålmodig."
               },
               {
-                "prompt": "Which form or phrase is central on this page?",
+                "prompt": "What does the page invite readers to give?",
                 "options": [
-                  "nyfikna",
-                  "i går",
-                  "måste"
+                  "Advice and opinions",
+                  "A shopping list",
+                  "Their home address"
                 ],
                 "answer": 0,
-                "explanation": "Listen for nyfikna."
+                "explanation": "Har ni några råd …? Dela gärna era tankar."
               }
             ],
             "naturalNotes": [
@@ -26351,10 +26391,12 @@
               }
             ],
             "backchain": {
-              "line": 0,
+              "line": 3,
               "chunks": [
-                "nyfikna?",
-                "Vad hände med Nora? Är ni nyfikna?"
+                "en sådan person",
+                "hitta en sådan person",
+                "hon kommer att hitta en sådan person",
+                "Tror ni att hon kommer att hitta en sådan person?"
               ]
             },
             "hunt": {
@@ -26366,27 +26408,27 @@
                 {
                   "word": "nyfikna",
                   "mark": "nyfikna",
-                  "rule": "Notice nyfikna in the page and say the whole phrase."
+                  "rule": "The plural of nyfiken, agreeing with ni."
                 },
                 {
                   "word": "kärlek",
                   "mark": "kärlek",
-                  "rule": "Notice kärlek in the page and say the whole phrase."
+                  "rule": "Love; hitta kärlek means find love."
                 },
                 {
                   "word": "olika",
                   "mark": "olika",
-                  "rule": "Notice olika in the page and say the whole phrase."
+                  "rule": "Different: several different profiles."
                 },
                 {
                   "word": "ärlig",
                   "mark": "ärlig",
-                  "rule": "Notice ärlig in the page and say the whole phrase."
+                  "rule": "Honest; tells the truth."
                 },
                 {
                   "word": "tålmodig",
                   "mark": "tålmodig",
-                  "rule": "Notice tålmodig in the page and say the whole phrase."
+                  "rule": "Patient; can wait calmly."
                 }
               ]
             }
@@ -26420,64 +26462,94 @@
                 "voice": "Henrik",
                 "fi": "Jag har bott i Sverige i fem år.",
                 "en": "I have lived in Sweden for five years.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "har bott",
+                    "en": "have lived"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Henrik",
                 "fi": "Jag flyttade hit för fem år sedan, när jag fick ett toppjobb på ett svenskt företag.",
                 "en": "I moved here five years ago, when I got a top job at a Swedish company.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "flyttade hit",
+                    "en": "moved here"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Henrik",
                 "fi": "Jag har ätit så mycket svenskt godis sedan dess och testat olika lokala maträtter.",
                 "en": "I have eaten so much Swedish candy since then and tried different local dishes.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "sedan dess",
+                    "en": "since then"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Henrik",
                 "fi": "Jag har aldrig varit på älgsafari men jag har ofta sett älgar på mina semestrar.",
                 "en": "I have never been on a moose safari, but I have often seen moose on my holidays.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "älgar",
+                    "en": "moose, plural"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Henrik",
                 "fi": "Vi har just renoverat vår sommarstuga men vi har ännu inte badat i sjön framför stugan eftersom vädret har varit så kallt den här veckan.",
                 "en": "We have just renovated our summer cottage, but we have not yet swum in the lake in front of it because the weather has been so cold this week.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "ännu inte",
+                    "en": "not yet"
+                  }
+                ]
               },
               {
                 "speaker": "Text",
                 "voice": "Henrik",
                 "fi": "Har du varit i Sverige någon gång?",
                 "en": "Have you ever been to Sweden?",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "någon gång",
+                    "en": "ever"
+                  }
+                ]
               }
             ],
             "listenQuestions": [
               {
-                "prompt": "What is the main idea?",
+                "prompt": "How long has the person lived in Sweden?",
                 "options": [
-                  "A person describes experiences in Sweden with har plus the supine.",
-                  "A shopping list",
-                  "Directions"
+                  "Five years",
+                  "Two years",
+                  "One year"
                 ],
                 "answer": 0,
-                "explanation": "A person describes experiences in Sweden with har plus the supine."
+                "explanation": "Jag har bott i Sverige i fem år."
               },
               {
-                "prompt": "Which form or phrase is central on this page?",
+                "prompt": "Why have they not swum near the cottage yet?",
                 "options": [
-                  "har bott",
-                  "i går",
-                  "måste"
+                  "The weather has been cold",
+                  "The lake is too far away",
+                  "They have no cottage"
                 ],
                 "answer": 0,
-                "explanation": "Listen for har bott."
+                "explanation": "Vädret har varit så kallt den här veckan."
               }
             ],
             "naturalNotes": [
@@ -26490,7 +26562,9 @@
             "backchain": {
               "line": 0,
               "chunks": [
-                "år.",
+                "i fem år",
+                "i Sverige i fem år",
+                "bott i Sverige i fem år",
                 "Jag har bott i Sverige i fem år."
               ]
             },
@@ -26499,7 +26573,38 @@
               "title": "Find the present-perfect pairs and time words.",
               "instructions": "Tap each marked form and say what it does.",
               "missHint": "Look at the highlighted words on the page.",
-              "spots": []
+              "spots": [
+                {
+                  "word": "bott",
+                  "mark": "bott",
+                  "rule": "Har bott: has lived, continuing until now."
+                },
+                {
+                  "word": "ätit",
+                  "mark": "ätit",
+                  "rule": "Har ätit: has eaten, experience up to now."
+                },
+                {
+                  "word": "varit",
+                  "mark": "varit",
+                  "rule": "Har varit: has been; here never been on a safari."
+                },
+                {
+                  "word": "sett",
+                  "mark": "sett",
+                  "rule": "Har sett: has seen."
+                },
+                {
+                  "word": "renoverat",
+                  "mark": "renoverat",
+                  "rule": "Har renoverat: has renovated."
+                },
+                {
+                  "word": "badat",
+                  "mark": "badat",
+                  "rule": "Har ännu inte badat: has not swum yet."
+                }
+              ]
             }
           },
           {
@@ -26667,24 +26772,24 @@
             ],
             "listenQuestions": [
               {
-                "prompt": "What is the main idea?",
-                "options": [
-                  "A reference list links present and past forms to the supine used after har.",
-                  "A shopping list",
-                  "Directions"
-                ],
-                "answer": 0,
-                "explanation": "A reference list links present and past forms to the supine used after har."
-              },
-              {
-                "prompt": "Which form or phrase is central on this page?",
+                "prompt": "Which form belongs after har?",
                 "options": [
                   "varit",
-                  "i går",
-                  "måste"
+                  "var",
+                  "är"
                 ],
                 "answer": 0,
-                "explanation": "Listen for varit."
+                "explanation": "Har varit uses the supine."
+              },
+              {
+                "prompt": "Which row means see, saw, seen?",
+                "options": [
+                  "ser – såg – sett",
+                  "säger – sa – sagt",
+                  "sover – sov – sovit"
+                ],
+                "answer": 0,
+                "explanation": "Ser – såg – sett."
               }
             ],
             "naturalNotes": [
@@ -26710,32 +26815,92 @@
                 {
                   "word": "varit",
                   "mark": "varit",
-                  "rule": "Notice varit in the page and say the whole phrase."
+                  "rule": "After har, use varit. Present: är."
                 },
                 {
                   "word": "velat",
                   "mark": "velat",
-                  "rule": "Notice velat in the page and say the whole phrase."
+                  "rule": "After har, use velat. Present: vill."
                 },
                 {
                   "word": "kunnat",
                   "mark": "kunnat",
-                  "rule": "Notice kunnat in the page and say the whole phrase."
+                  "rule": "After har, use kunnat. Present: kan."
                 },
                 {
                   "word": "sagt",
                   "mark": "sagt",
-                  "rule": "Notice sagt in the page and say the whole phrase."
+                  "rule": "After har, use sagt. Present: säger."
                 },
                 {
                   "word": "kommit",
                   "mark": "kommit",
-                  "rule": "Notice kommit in the page and say the whole phrase."
+                  "rule": "After har, use kommit. Present: kommer."
                 },
                 {
                   "word": "gjort",
                   "mark": "gjort",
-                  "rule": "Notice gjort in the page and say the whole phrase."
+                  "rule": "After har, use gjort. Present: gör."
+                },
+                {
+                  "word": "gått",
+                  "mark": "gått",
+                  "rule": "After har, use gått. Present: går."
+                },
+                {
+                  "word": "fått",
+                  "mark": "fått",
+                  "rule": "After har, use fått. Present: får."
+                },
+                {
+                  "word": "givit",
+                  "mark": "givit",
+                  "rule": "After har, use givit. Present: ger."
+                },
+                {
+                  "word": "haft",
+                  "mark": "haft",
+                  "rule": "After har, use haft. Present: har."
+                },
+                {
+                  "word": "tagit",
+                  "mark": "tagit",
+                  "rule": "After har, use tagit. Present: tar."
+                },
+                {
+                  "word": "sett",
+                  "mark": "sett",
+                  "rule": "After har, use sett. Present: ser."
+                },
+                {
+                  "word": "vetat",
+                  "mark": "vetat",
+                  "rule": "After har, use vetat. Present: vet."
+                },
+                {
+                  "word": "skrivit",
+                  "mark": "skrivit",
+                  "rule": "After har, use skrivit. Present: skriver."
+                },
+                {
+                  "word": "ätit",
+                  "mark": "ätit",
+                  "rule": "After har, use ätit. Present: äter."
+                },
+                {
+                  "word": "druckit",
+                  "mark": "druckit",
+                  "rule": "After har, use druckit. Present: dricker."
+                },
+                {
+                  "word": "sovit",
+                  "mark": "sovit",
+                  "rule": "After har, use sovit. Present: sover."
+                },
+                {
+                  "word": "blivit",
+                  "mark": "blivit",
+                  "rule": "After har, use blivit. Present: blir."
                 }
               ]
             }
@@ -26837,7 +27002,8 @@
         "kind": "concept",
         "title": "Har + supinum: an experience matters now",
         "body": [
-          "Jag har varit i Sverige means “I have been to Sweden.” Build the present perfect with har plus a supine form. The supine is the special verb form used after har: bott, ätit, sett. Use it for life experience or something inside an unfinished time such as den här veckan."
+          "Jag har varit i Sverige means “I have been to Sweden.” Build the present perfect with har plus a supine form. The supine is the special verb form used after har: bott, ätit, sett. Use it for life experience or something inside an unfinished time such as den här veckan.",
+          "Jag har pluggat, ringt, köpt och bott. Regular supines often end in -at, -t or -tt. Compare the present–past–supine rows below. The strong verbs on page 49 need their own learned forms."
         ],
         "examples": [
           {
@@ -26858,12 +27024,22 @@
           }
         ],
         "table": {
-          "headers": [
-            "Present",
-            "Past: finished time",
-            "Supine after har"
-          ],
           "rows": [
+            [
+              "pluggar",
+              "pluggade",
+              "pluggat"
+            ],
+            [
+              "ringer",
+              "ringde",
+              "ringt"
+            ],
+            [
+              "köper",
+              "köpte",
+              "köpt"
+            ],
             [
               "bor",
               "bodde",
@@ -26889,6 +27065,11 @@
               "var",
               "varit"
             ]
+          ],
+          "headings": [
+            "Present",
+            "Past: finished time",
+            "Supine after har"
           ]
         },
         "memoryTip": "Har is the helper; the second verb is the supine. Never say har var or har åt.",
@@ -26949,7 +27130,7 @@
         "kind": "concept",
         "title": "Någon gång, aldrig, redan och ännu",
         "body": [
-          "Ask about life experience with någon gång: ever. Answer with aldrig for never or redan for already. In a negative sentence, ännu means yet. These small words usually stand after har, while inte stands directly after har in a main clause."
+          "Har du varit där någon gång? Någon gång means ever in this question. Jag har aldrig varit där means I have never been there. Jag har redan varit där means I have already been there. Aldrig and redan usually sit after har; någon gång and ännu can come at the end. Jag har inte beställt maten ännu means I have not ordered the food yet."
         ],
         "examples": [
           {
@@ -27002,7 +27183,9 @@
               "right": "this week"
             }
           ],
-          "summary": "Read every matched pair aloud."
+          "leftLabel": "Swedish",
+          "rightLabel": "Meaning",
+          "pattern": "Keep the time word with a complete har + supine sentence."
         }
       },
       {
@@ -27204,7 +27387,7 @@
           "fi": "ärlig",
           "en": "honest",
           "example": "Min vän är ärlig.",
-          "translation": "honest",
+          "translation": "My friend is honest.",
           "level": "A2"
         },
         {
@@ -27212,7 +27395,7 @@
           "fi": "tålmodig",
           "en": "patient",
           "example": "Hon är tålmodig.",
-          "translation": "patient",
+          "translation": "She is patient.",
           "level": "A2"
         },
         {
@@ -27220,7 +27403,7 @@
           "fi": "nyfiken",
           "en": "curious",
           "example": "Hon är nyfiken.",
-          "translation": "curious",
+          "translation": "She is curious.",
           "level": "A2"
         },
         {
@@ -27228,7 +27411,7 @@
           "fi": "snäll",
           "en": "kind",
           "example": "Hon är snäll.",
-          "translation": "kind",
+          "translation": "She is kind.",
           "level": "A2"
         },
         {
@@ -27236,7 +27419,7 @@
           "fi": "artig",
           "en": "polite",
           "example": "Hon är artig.",
-          "translation": "polite",
+          "translation": "She is polite.",
           "level": "A2"
         },
         {
@@ -27244,7 +27427,7 @@
           "fi": "tystlåten",
           "en": "quiet",
           "example": "Hon är tystlåten.",
-          "translation": "quiet",
+          "translation": "She is quiet.",
           "level": "A2"
         },
         {
@@ -27252,7 +27435,7 @@
           "fi": "social",
           "en": "sociable",
           "example": "Hon är social.",
-          "translation": "sociable",
+          "translation": "She is sociable.",
           "level": "A2"
         },
         {
@@ -27260,7 +27443,7 @@
           "fi": "generös",
           "en": "generous",
           "example": "Hon är generös.",
-          "translation": "generous",
+          "translation": "She is generous.",
           "level": "A2"
         },
         {
@@ -27268,7 +27451,7 @@
           "fi": "omtänksam",
           "en": "caring",
           "example": "Hon är omtänksam.",
-          "translation": "caring",
+          "translation": "She is caring.",
           "level": "A2"
         },
         {
@@ -27276,7 +27459,7 @@
           "fi": "pålitlig",
           "en": "reliable",
           "example": "Hon är pålitlig.",
-          "translation": "reliable",
+          "translation": "She is reliable.",
           "level": "A2"
         },
         {
@@ -27284,7 +27467,7 @@
           "fi": "beslutsam",
           "en": "determined",
           "example": "Hon är beslutsam.",
-          "translation": "determined",
+          "translation": "She is determined.",
           "level": "A2"
         },
         {
@@ -27292,15 +27475,15 @@
           "fi": "lojal",
           "en": "loyal",
           "example": "Hon är lojal.",
-          "translation": "loyal",
+          "translation": "She is loyal.",
           "level": "A2"
         },
         {
           "id": "sv-17-word-13",
           "fi": "lita på",
           "en": "rely on",
-          "example": "Jag säger lita på.",
-          "translation": "rely on",
+          "example": "Jag kan lita på henne.",
+          "translation": "I can rely on her.",
           "level": "A2"
         },
         {
@@ -27308,7 +27491,7 @@
           "fi": "någon gång",
           "en": "ever",
           "example": "Har du varit där någon gång?",
-          "translation": "ever",
+          "translation": "Have you ever been there?",
           "level": "A2"
         },
         {
@@ -27316,39 +27499,39 @@
           "fi": "aldrig",
           "en": "never",
           "example": "Jag har aldrig sett en älg.",
-          "translation": "never",
+          "translation": "I have never seen a moose.",
           "level": "A2"
         },
         {
           "id": "sv-17-word-16",
           "fi": "redan",
           "en": "already",
-          "example": "Jag säger redan.",
-          "translation": "already",
+          "example": "Jag har redan ätit.",
+          "translation": "I have already eaten.",
           "level": "A2"
         },
         {
           "id": "sv-17-word-17",
           "fi": "ännu",
           "en": "yet",
-          "example": "Jag säger ännu.",
-          "translation": "yet",
+          "example": "Jag har inte ätit ännu.",
+          "translation": "I have not eaten yet.",
           "level": "A2"
         },
         {
           "id": "sv-17-word-18",
           "fi": "sedan dess",
           "en": "since then",
-          "example": "Jag säger sedan dess.",
-          "translation": "since then",
+          "example": "Jag flyttade hit 2024 och har bott här sedan dess.",
+          "translation": "I moved here in 2024 and have lived here since then.",
           "level": "A2"
         },
         {
           "id": "sv-17-word-19",
           "fi": "har varit",
           "en": "have been",
-          "example": "Jag säger har varit.",
-          "translation": "have been",
+          "example": "Jag har varit i Sverige.",
+          "translation": "I have been to Sweden.",
           "level": "A2"
         },
         {
@@ -27356,56 +27539,128 @@
           "fi": "har bott",
           "en": "have lived",
           "example": "Jag har bott här i två år.",
-          "translation": "have lived",
+          "translation": "I have lived here for two years.",
           "level": "A2"
         },
         {
           "id": "sv-17-word-21",
           "fi": "har ätit",
           "en": "have eaten",
-          "example": "Jag säger har ätit.",
-          "translation": "have eaten",
+          "example": "Jag har ätit laxsoppa.",
+          "translation": "I have eaten salmon soup.",
           "level": "A2"
         },
         {
           "id": "sv-17-word-22",
           "fi": "har sett",
           "en": "have seen",
-          "example": "Jag säger har sett.",
-          "translation": "have seen",
+          "example": "Jag har sett den filmen.",
+          "translation": "I have seen that film.",
           "level": "A2"
         },
         {
           "id": "sv-17-word-23",
           "fi": "en maträtt",
           "en": "a dish",
-          "example": "Jag säger en maträtt.",
-          "translation": "a dish",
+          "example": "Laxsoppa är en finländsk maträtt.",
+          "translation": "Salmon soup is a Finnish dish.",
           "level": "A2"
         },
         {
           "id": "sv-17-word-24",
           "fi": "flytta",
           "en": "move",
-          "example": "Jag säger flytta.",
-          "translation": "move",
+          "example": "Jag ska flytta till Åbo.",
+          "translation": "I am going to move to Turku.",
           "level": "A2"
         },
         {
           "id": "sv-17-word-25",
           "fi": "komma ihåg",
           "en": "remember",
-          "example": "Jag säger komma ihåg.",
-          "translation": "remember",
+          "example": "Jag kommer ihåg min första resa.",
+          "translation": "I remember my first trip.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-17-word-26",
+          "fi": "snål",
+          "en": "stingy",
+          "example": "Han vill inte dela med sig. I den situationen verkar han snål.",
+          "translation": "He does not want to share. In that situation he seems stingy.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-17-word-27",
+          "fi": "likasinnad",
+          "en": "like-minded",
+          "example": "Jag har träffat likasinnade vänner.",
+          "translation": "I have met like-minded friends.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-17-word-28",
+          "fi": "kärleksfull",
+          "en": "loving",
+          "example": "Hon är kärleksfull.",
+          "translation": "She is loving.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-17-word-29",
+          "fi": "opålitlig",
+          "en": "unreliable",
+          "example": "Den här informationen är opålitlig.",
+          "translation": "This information is unreliable.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-17-word-30",
+          "fi": "passionerad",
+          "en": "passionate",
+          "example": "Hon är en passionerad musiker.",
+          "translation": "She is a passionate musician.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-17-word-31",
+          "fi": "intelligent",
+          "en": "intelligent",
+          "example": "Han är intelligent och nyfiken.",
+          "translation": "He is intelligent and curious.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-17-word-32",
+          "fi": "dum",
+          "en": "stupid; foolish",
+          "example": "Det var ett dumt misstag.",
+          "translation": "It was a foolish mistake.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-17-word-33",
+          "fi": "tacksam",
+          "en": "grateful",
+          "example": "Jag är tacksam för hjälpen.",
+          "translation": "I am grateful for the help.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-17-word-34",
+          "fi": "en egenskap",
+          "en": "a trait",
+          "example": "Tålamod är en bra egenskap.",
+          "translation": "Patience is a good trait.",
           "level": "A2"
         }
       ],
       "pronunciation": {
         "text": "Har varit. Har bott. Har ätit. Har sett. Nyfiken, generös, pålitlig, omtänksam.",
-        "tip": "Keep har short and give the meaning-heavy supine more stress. In generös, g sounds like the y in yes."
+        "tip": "Keep har short and stress the supine. The first sound in generös is the sj-sound: the model uses Sweden-Swedish; in Finland-Swedish it is usually like English sh. It is not the y sound."
       },
       "listening": {
-        "text": "Jag heter Samira och jag har bott i Esbo i sex år. Jag har arbetat på samma skola sedan dess. Mina kollegor säger att jag är lugn och pålitlig. Jag har aldrig besökt Lappland, men jag har redan sett många andra platser i Finland. På fritiden har hon lärt känna nya vänner genom en bokklubb. De har läst tre svenska romaner den här våren. Samira är nyfiken och omtänksam, och hon tycker om att höra andra människors berättelser. Hon har ännu inte läst en bok på svenska utan hjälp, men hon har redan bestämt vilken bok hon vill prova.",
+        "text": "Jag heter Samira och jag har bott i Esbo i sex år. Jag har arbetat på samma skola sedan dess. Mina kollegor säger att jag är lugn och pålitlig. Jag har aldrig besökt Lappland, men jag har redan sett många andra platser i Finland. På fritiden har jag lärt känna nya vänner genom en bokklubb. De har läst tre svenska romaner den här våren. Jag är nyfiken och omtänksam, och jag tycker om att höra andra människors berättelser. Jag har ännu inte läst en bok på svenska utan hjälp, men jag har redan bestämt vilken bok jag vill prova.",
         "question": "Which place has Samira never visited?",
         "options": [
           "Lapland",
@@ -27456,21 +27711,21 @@
       },
       "writing": {
         "prompt": "Write a message introducing yourself to a new colleague.",
-        "situation": "A new colleague, Sara, starts on Monday. Send a friendly message before her first day. Introduce your personality and experience, and help her feel welcome.",
+        "situation": "A new colleague starts on Monday. Send a friendly message before the first day. Introduce your personality and experience, and help the colleague feel welcome.",
         "points": [
-          "Greet Sara and say who you are.",
+          "Greet your colleague and say who you are.",
           "Describe your personality with at least two words.",
           "Say how long you have lived or worked here.",
           "Mention one relevant experience with har + supine.",
           "Give one opinion with a reason.",
-          "Ask Sara one friendly question and close the message."
+          "Ask your colleague one friendly question and close the message."
         ],
         "wordRange": [
           60,
           100
         ],
-        "help": "Hej Sara! · Jag heter … · Jag är … och … · Jag har bott/arbetat här i … år · Jag har … · Jag tycker att … eftersom … · Har du … någon gång? · Vi ses på måndag!",
-        "model": "Hej Sara! Välkommen till vårt team. Jag heter Alex och arbetar med kundservice. Jag är nyfiken, lugn och omtänksam. Jag har bott i Helsingfors i två år och har arbetat här i ett år. Jag har redan hjälpt många nya kollegor, så fråga mig gärna om något är oklart. Jag tycker att vårt team är bra eftersom alla hjälper varandra. Har du varit i Helsingfors någon gång? Vi ses på måndag! Hälsningar, Alex"
+        "help": "Hej! · Jag heter … · Jag är … och … · Jag har bott/arbetat här i … år · Jag har … · Jag tycker att … eftersom … · Har du … någon gång? · Vi ses på måndag!",
+        "model": "Hej! Välkommen till vårt team. Jag heter Alex och arbetar som programmerare. Jag är nyfiken, lugn och omtänksam. Jag har bott i Helsingfors i två år och har arbetat här i ett år. Jag har redan hjälpt många nya kollegor, så fråga mig gärna om något är oklart. Jag tycker att vårt team är bra eftersom alla hjälper varandra. Har du varit i Helsingfors någon gång? Vi ses på måndag! Hälsningar, Alex"
       }
     },
     "route": {
@@ -27640,7 +27895,10 @@
         "url": "https://svenska.se/",
         "description": "Check a supine form or a personality adjective."
       }
-    ]
+    ],
+    "story": {
+      "object": "memories of Nordic journeys"
+    }
   },
   {
     "number": 18,

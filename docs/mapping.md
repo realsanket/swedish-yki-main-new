@@ -664,3 +664,17 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   explicitly doubtful and source-only, with a simpler wish model. Teacher `låna dig
   min bil` should be `låna ut min bil till dig`; it is not used as a model.
   Writing model fits 60–100 words.
+
+### Lecture 17 repair
+
+- Re-read Lesson 17 lines 1963–2076 and scans 46/48/49; no homework; 47 is a divider.
+- Checked the existing hero field by field; it matches the Nordic-experience dialogue.
+  Added collapsed word bank, repaired the table and match fields, and removed invalid
+  `grammar` from focusSkills. Filled the empty page-48 hunt and made every rule useful.
+- Replaced “Jag säger …” placeholder examples and all copied word gloss translations
+  with real sentences. Added missing personality words and regular supine patterns.
+- Corrected the pronunciation of generös (sj-sound, not English y), the unexplained
+  shift from jag to hon in listening, and Alex’s unexplained change of profession.
+  Clarified time-word positions and preserved the teacher’s contrasting duration examples.
+- Swedish: all lines reviewed; no doubtful authored line identified. The source’s
+  strong-verb list is complete and checked against page 49. Writing fits 60–100 words.
