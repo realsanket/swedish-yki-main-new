@@ -464,3 +464,15 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   No doubtful authored line identified. Source `i morgon`/`imorgon` variation
   is explained. Teacher's broad present/infinitive rules are qualified with
   exceptions in the teaching.
+
+### Lecture 4 repair
+
+- Re-read Lesson 4 lines 394–511, plan section 6, and scans 9–12. All four pages
+  are mapped correctly. Work, noun gender and the free-time homework are practised.
+- Added the full lecture-specific hero (22 April), textbook glossaries and the
+  page-9 article hunt. Corrected page-10 recall cues, which referred to the wrong
+  word groups. Kept the source spelling `kafe` visible with standard `kafé` support.
+- Added `ett barn` as an exception to the people/en clue and the teacher's afternoon
+  and ASAP phrases. Clarified that Elin answers questions about Maja in the activity.
+- Swedish: all lines reviewed; no doubtful authored line identified. Source dialogue
+  transcriptions checked against the images. The website-profile model fits 25–45 words.
