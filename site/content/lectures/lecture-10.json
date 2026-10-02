@@ -18,24 +18,97 @@
     "singular-plural",
     "adjective",
     "ordinal-number",
-    "word-order"
+    "word-order",
+    "adverb",
+    "verb-second",
+    "subject",
+    "pronoun"
   ],
   "presentation": {
     "opening": {
-      "teacherNote": "This is a big lesson, so use one practical scene: plan a picnic, check the shopping, choose a time and look at the weather. Family is your main speaking task.",
+      "teacherNote": {
+        "title": "Plan one picnic, one detail at a time",
+        "body": "This is a big lesson, so use one practical scene: plan a picnic, check the shopping, choose a time and look at the weather. Family is your main speaking task."
+      },
       "dialogue": {
         "part": "recall",
         "title": "A picnic plan",
         "eyebrow": "Elin and Alex",
         "instructions": "Listen once for the day, time and weather. Then show the Swedish.",
-        "initiallyHidden": true
-      }
+        "initiallyOpen": false
+      },
+      "questionIntro": "Use the picnic conversation to check the time and the forecast."
     },
     "teaching": {
       "wordBank": {
-        "mode": "open",
+        "mode": "collapsed",
         "title": "Picnic words"
       }
+    },
+    "template": "conversation-first",
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen for the picnic time, shopping list and weather."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Build quantities, numbers, family descriptions, times and weather reports."
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 10",
+        "11 MAY 2026"
+      ],
+      "kicker": "FOOD, FAMILY, TIME AND WEATHER",
+      "title": "Ska vi ha picknick?",
+      "lede": "Make a shopping list and choose a time. Introduce your family, then invite a friend with all the details they need.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Vi träffas klockan två på lördag.",
+        "en": "We are meeting at two on Saturday.",
+        "audioText": "Vi träffas klockan två på lördag. Det blir soligt och varmt."
+      },
+      "speakers": [
+        {
+          "name": "Elin",
+          "fi": "Ska vi ha picknick på lördag?"
+        },
+        {
+          "name": "Alex",
+          "fi": "Ja, gärna!"
+        }
+      ],
+      "connector": "NÄR?",
+      "encounterLabel": "Elin and Alex plan food and a meeting time for a picnic",
+      "chunks": [
+        {
+          "label": "SHOP",
+          "fi": "två påsar äpplen",
+          "en": "two bags of apples"
+        },
+        {
+          "label": "FAMILY",
+          "fi": "Min syster är trettio år.",
+          "en": "My sister is thirty."
+        },
+        {
+          "label": "TIME",
+          "fi": "halv sex",
+          "en": "half past five"
+        },
+        {
+          "label": "WEATHER",
+          "fi": "Det blir soligt.",
+          "en": "It will be sunny."
+        }
+      ],
+      "footerTags": [
+        "Numbers for ages and quantities",
+        "Day, time, place and weather"
+      ]
     }
   },
   "recall": [
@@ -64,8 +137,8 @@
         "Rain and wind",
         "Snow"
       ],
-      "hint": "Listen to Alex's forecast.",
-      "explanation": "Alex says that it will be sunny and warm."
+      "hint": "Listen to Elin’s forecast.",
+      "explanation": "Elin says that it will be sunny and warm."
     }
   ],
   "dialogue": [
@@ -196,8 +269,8 @@
             {
               "speaker": "Peter",
               "voice": "Henrik",
-              "fi": "nio korvar, tio tårullar, elva potatisar, tolv påsar godis",
-              "en": "nine sausages, ten rolls, eleven potatoes, twelve bags of sweets",
+              "fi": "nio korvar, tio toarullar, elva potatisar, tolv påsar godis",
+              "en": "nine sausages, ten toilet rolls, eleven potatoes, twelve bags of sweets",
               "glossary": [
                 {
                   "fi": "påsar",
@@ -233,6 +306,16 @@
               "source": "på en mataffär",
               "natural": "i en mataffär",
               "note": "The source says på. In ordinary production, say i en mataffär for being inside a grocery shop."
+            },
+            {
+              "source": "jus",
+              "natural": "juice",
+              "note": "For the drink, copy the standard spelling juice. Jus usually means meat juices or a sauce."
+            },
+            {
+              "source": "toarullar",
+              "natural": "tio rullar toalettpapper",
+              "note": "Toarullar is the informal word for toilet rolls, not bread rolls."
             }
           ],
           "backchain": {
@@ -298,7 +381,7 @@
             {
               "speaker": "Berättare",
               "voice": "Maja",
-              "fi": "Peter och Maria är gifta och har två döttrar, Sara och Jenny. De var sambo i många år men de gifte sig för åtta år sedan. Peter är 45 år gammal och Maria är 42. Sara är 15 och Jenny är 9 år.",
+              "fi": "Peter och Maria är gifta och har två döttrar, Sara och Jenny. De var sambo i många år men de gifte sig för åtta år sedan. Peter är 45 (fyrtiofem) år gammal och Maria är 42 (fyrtiotvå). Sara är 15 (femton) och Jenny är 9 år.",
               "en": "Peter and Maria are married and have two daughters, Sara and Jenny. They lived together for many years but married eight years ago. Peter is 45 and Maria is 42. Sara is 15 and Jenny is 9.",
               "glossary": [
                 {
@@ -310,7 +393,7 @@
             {
               "speaker": "Berättare",
               "voice": "Maja",
-              "fi": "Lena och Andreas har två söner, Nils och Jonas, som går i grundskolan. Andreas föräldrar är deras farmor och farfar. Lenas föräldrar är deras mormor och morfar. De är mycket gamla, ungefär 70 år.",
+              "fi": "Lena och Andreas har två söner, Nils och Jonas, som går i grundskolan. Andreas föräldrar är deras farmor och farfar. Lenas föräldrar är deras mormor och morfar. De är mycket gamla, ungefär 70 (sjuttio) år.",
               "en": "Lena and Andreas have two sons who attend comprehensive school. Andreas's parents are their paternal grandparents; Lena's are their maternal grandparents. They are about 70.",
               "glossary": [
                 {
@@ -324,12 +407,17 @@
               "voice": "Maja",
               "fi": "Sofias mamma, Ingrid, är singel.",
               "en": "Sofia's mother, Ingrid, is single.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "singel",
+                  "en": "single"
+                }
+              ]
             },
             {
               "speaker": "Berättare",
               "voice": "Maja",
-              "fi": "Nora har inga barn för hon är ung. Hon är 32 år. Dessutom gillar hon att vara barnfri.",
+              "fi": "Nora har inga barn för hon är ung. Hon är 32 (trettiotvå) år. Dessutom gillar hon att vara barnfri.",
               "en": "Nora has no children because she is young. She is 32. In addition, she likes being child-free.",
               "glossary": [
                 {
@@ -435,7 +523,7 @@
             {
               "speaker": "Henrik",
               "voice": "Henrik",
-              "fi": "tretton, fjorton, femton, sexton, sjutton, arton, nitton, tjugo, tjugoett",
+              "fi": "tretton, fjorton, femton, sexton, sjutton, arton, nitton, tjugo, tjugoen",
               "en": "thirteen through twenty-one",
               "glossary": []
             },
@@ -498,6 +586,11 @@
               "source": "40 – fyrtio",
               "natural": "fyrtio (often pronounced förti)",
               "note": "Write fyrtio. Everyday speech often sounds like förti."
+            },
+            {
+              "source": "21 – tjugoen",
+              "natural": "tjugoen personer; tjugoett äpplen",
+              "note": "The last part follows the noun’s en/ett gender. The page gives the en form."
             }
           ],
           "backchain": {
@@ -555,7 +648,7 @@
           ],
           "recallCues": [
             "Five o'clock.",
-            "Quarter past and half past five.",
+            "Ten past five, quarter past five and half past five.",
             "Quarter to and five to six.",
             "Jonas's frequency paragraph."
           ],
@@ -575,8 +668,8 @@
             {
               "speaker": "Jonas",
               "voice": "Maja",
-              "fi": "Kvart över fem tänker jag på henne. Halv sex tänker jag på henne.",
-              "en": "At quarter past five I think of her. At half past five I think of her.",
+              "fi": "Tio över fem tänker jag på henne. Kvart över fem tänker jag på henne. Halv sex tänker jag på henne.",
+              "en": "At ten past five, quarter past five and half past five, I think of her.",
               "glossary": [
                 {
                   "fi": "halv sex",
@@ -600,7 +693,7 @@
               "speaker": "Berättare",
               "voice": "Maja",
               "fi": "Jonas blev kär i en skolkamrat. Han tänker på henne hela tiden. Han är alltid glad när han tänker på henne. Han tittar ofta på henne i klassrummet. Ibland köper han choklad till henne. Hon märker det ibland. De träffas sällan under sommarlovet. Hon messar aldrig på sociala medier.",
-              "en": "Jonas fell in love with a classmate. He thinks of her all the time. He often looks at her in class. Sometimes he buys her chocolate. They rarely meet during summer break. She never messages on social media.",
+              "en": "Jonas fell in love with a classmate. He thinks of her all the time. He is always happy when he thinks of her. He often looks at her in the classroom. Sometimes he buys her chocolate. She sometimes notices it. They rarely meet during summer break. She never messages on social media.",
               "glossary": [
                 {
                   "fi": "hela tiden",
@@ -675,6 +768,11 @@
                 "word": "aldrig",
                 "mark": "aldrig",
                 "rule": "aldrig: never"
+              },
+              {
+                "word": "sällan",
+                "mark": "sällan",
+                "rule": "sällan: rarely"
               }
             ]
           }
@@ -682,7 +780,7 @@
         {
           "title": "Textbook page practice: Vad har ni för väder?",
           "tabLabel": "Page 31 · Weather",
-          "intro": "This picture wheel gives nine short weather reports.",
+          "intro": "This picture wheel gives ten weather words and phrases.",
           "image": "/images/source/textbook-lesson-10-page-31.png",
           "imageAlt": "Textbook page 31 with a wheel of weather expressions",
           "pageLabel": "textbook physical page 31",
@@ -705,8 +803,8 @@
             {
               "speaker": "Henrik",
               "voice": "Henrik",
-              "fi": "Det åskar. Det är växlande molnighet.",
-              "en": "There is thunder. There is variable cloudiness.",
+              "fi": "Det åskar. Växlande molnighet.",
+              "en": "There is thunder. Variable cloudiness.",
               "glossary": [
                 {
                   "fi": "växlande molnighet",
@@ -717,7 +815,7 @@
             {
               "speaker": "Henrik",
               "voice": "Henrik",
-              "fi": "Vinden blåser. Det är dimma.",
+              "fi": "Vinden blåser. Der är dimma.",
               "en": "The wind is blowing. It is foggy.",
               "glossary": [
                 {
@@ -741,8 +839,8 @@
             {
               "speaker": "Henrik",
               "voice": "Henrik",
-              "fi": "Det är molnigt. Det regnar. Det är en regnbåge.",
-              "en": "It is cloudy. It is raining. There is a rainbow.",
+              "fi": "Det är molnigt. Det regnar. En regnbåge.",
+              "en": "It is cloudy. It is raining. A rainbow.",
               "glossary": [
                 {
                   "fi": "regnbåge",
@@ -778,6 +876,16 @@
               "source": "Vad har ni för väder?",
               "natural": "Vad har ni för väder?",
               "note": "This is a natural way to ask people elsewhere what their weather is like."
+            },
+            {
+              "source": "der är dimma",
+              "natural": "Det är dimma.",
+              "note": "The page has a typo: der should be det."
+            },
+            {
+              "source": "en regnbåge",
+              "natural": "Det finns en regnbåge.",
+              "note": "The page gives a noun label. This is a full sentence: there is a rainbow."
             }
           ],
           "backchain": {
@@ -875,7 +983,8 @@
       "title": "Numbers and order numbers",
       "kind": "grammar",
       "body": [
-        "Counting numbers answer how many: tjugo, fyrtiotvå, hundra. An ordinal number gives a place in order: första, andra, tredje. Dates use order numbers too: den elfte maj."
+        "Counting numbers answer how many: tjugo, fyrtiotvå, hundra. An ordinal number gives a place in order: första, andra, tredje. Dates use order numbers too: den elfte maj.",
+        "Build larger numbers from the parts: 21 tjugoett, 42 fyrtiotvå, 100 hundra, 125 hundratjugofem, 1,000 tusen. Before an en-word, one becomes en: tjugoen personer. For a phone number, say one digit at a time."
       ],
       "examples": [
         {
@@ -887,6 +996,11 @@
           "fi": "Vi ses den tjugoförsta maj.",
           "en": "We meet on 21 May.",
           "note": "Tjugoförsta is an ordinal number."
+        },
+        {
+          "fi": "Vad är ditt telefonnummer? Mitt nummer är noll fyra noll, ett två tre, fyra fem sex sju.",
+          "en": "What is your phone number? My number is 040 123 4567.",
+          "note": "An invented number for speaking practice. Say every digit, including zero."
         }
       ],
       "memoryTip": "14 fjorton and 40 fyrtio are easy to mix up. Say both slowly.",
@@ -942,7 +1056,8 @@
       "title": "Present your family",
       "kind": "vocabulary",
       "body": [
-        "Start with the relationship, then add a name, age and home. Swedish has exact grandparent words: farmor and farfar are your father's parents; mormor and morfar are your mother's parents. Inga means no before a plural noun."
+        "Start with the relationship, then add a name, age and home. Swedish has exact grandparent words: farmor and farfar are your father's parents; mormor and morfar are your mother's parents. Inga means no before a plural noun.",
+        "Moster is your mother’s sister and morbror her brother. Faster is your father’s sister and farbror his brother. Bror and syster become bröder and systrar. Barnfri usually describes choosing not to have children; barnlös means without children, often when that is not a choice."
       ],
       "examples": [
         {
@@ -984,6 +1099,35 @@
           }
         ],
         "pattern": "far- = father's side; mor- = mother's side."
+      },
+      "table": {
+        "headings": [
+          "Relative",
+          "Mother’s side",
+          "Father’s side"
+        ],
+        "rows": [
+          [
+            "grandmother",
+            "mormor",
+            "farmor"
+          ],
+          [
+            "grandfather",
+            "morfar",
+            "farfar"
+          ],
+          [
+            "aunt",
+            "moster",
+            "faster"
+          ],
+          [
+            "uncle",
+            "morbror",
+            "farbror"
+          ]
+        ]
       }
     },
     {
@@ -1088,7 +1232,7 @@
   "guided": [
     {
       "id": "sv-10-guided-quantity",
-      "prompt": "Complete the shopping list: tre ___ juice",
+      "prompt": "Complete the shopping list with bottles: tre ___ juice",
       "answers": [
         "flaskor"
       ],
@@ -1154,7 +1298,7 @@
     },
     {
       "id": "sv-10-guided-frequency",
-      "prompt": "Put ‘often’ in the natural place: Jag ___ handlar på lördagar.",
+      "prompt": "Put “often” in the gap: Jag handlar ___ på lördagar.",
       "answers": [
         "ofta"
       ],
@@ -1164,7 +1308,7 @@
         "första"
       ],
       "hint": "The sentence says this happens frequently.",
-      "explanation": "Jag handlar ofta is also common; here the gap asks for ofta before the main verb."
+      "explanation": "Jag handlar ofta på lördagar. In this statement, ofta follows the verb handlar."
     }
   ],
   "sittingBreakAfter": "guided",
@@ -1445,7 +1589,7 @@
       "explanation": "Ta med två flaskor vatten och en påse äpplen."
     },
     "reading_passage": {
-      "text": "Hej Elin! Jag kommer gärna på picknicken. Min syster Priya kommer också. Hon är trettio år och bor i Esbo. Vi kommer klockan kvart över två. Jag tar med ett kilo jordgubbar och tre flaskor juice. Prognosen säger att solen skiner, men det blåser lite. Vi ses på lördag! Alex",
+      "text": "Hej Elin! Jag kommer gärna på picknicken. Min syster Priya kommer också. Hon är trettio år och bor i Indien. Nu hälsar hon på i Finland. Vi kommer klockan kvart över två. Jag tar med ett kilo jordgubbar och tre flaskor juice. Prognosen säger att solen skiner, men det blåser lite. Vi ses på lördag! Alex",
       "gist": {
         "prompt": "Why does Alex write?",
         "options": [
@@ -1468,7 +1612,7 @@
       }
     },
     "reading": {
-      "text": "Hej Elin! Jag kommer gärna på picknicken. Min syster Priya kommer också. Hon är trettio år och bor i Esbo. Vi kommer klockan kvart över två. Jag tar med ett kilo jordgubbar och tre flaskor juice. Prognosen säger att solen skiner, men det blåser lite. Vi ses på lördag! Alex",
+      "text": "Hej Elin! Jag kommer gärna på picknicken. Min syster Priya kommer också. Hon är trettio år och bor i Indien. Nu hälsar hon på i Finland. Vi kommer klockan kvart över två. Jag tar med ett kilo jordgubbar och tre flaskor juice. Prognosen säger att solen skiner, men det blåser lite. Vi ses på lördag! Alex",
       "question": "What will Alex bring?",
       "options": [
         "Strawberries and juice",
@@ -1481,24 +1625,24 @@
     "speaking": {
       "prompt": "Present two or three people in your family: their relationship to you, names, ages and where they live.",
       "help": "Jag vill berätta om … · Jag har en syster / en bror / två syskon. · Hon/Han heter … · är … år · bor i … · Dessutom … · Vi brukar …",
-      "model": "Jag vill berätta om min familj. Jag har en syster som heter Priya. Hon är trettio år och bor i Esbo. Dessutom har jag en bror som heter Rohan. Han är tjugosju år och bor i Indien. Vi pratar ofta i telefon."
+      "model": "Jag vill berätta om min familj. Jag har en syster som heter Priya. Hon är trettio år och bor i Indien. Dessutom har jag en bror som heter Rohan. Han är tjugosju år och bor i Indien. Vi pratar ofta i telefon."
     },
     "writing": {
       "prompt": "Invite a friend to a picnic and include every practical detail.",
-      "situation": "You are planning a picnic in Helsinki. Write a message to your friend Sara and invite her.",
+      "situation": "You are planning a picnic in Helsinki. Write a message to your friend Elin and invite her.",
       "points": [
-        "Invite Sara and give the day.",
+        "Invite Elin and give the day.",
         "Give the meeting time and place.",
         "Say what you will bring.",
-        "Ask Sara to bring one food or drink.",
+        "Ask Elin to bring one food or drink.",
         "Describe the weather forecast and close naturally."
       ],
       "wordRange": [
         40,
         70
       ],
-      "help": "Hej Sara! · Vill du komma på picknick …? · Vi träffas klockan … vid … · Jag tar med … · Kan du ta med …? · Det blir soligt / molnigt / varmt. · Vi ses!",
-      "model": "Hej Sara! Vill du komma på picknick på lördag? Vi träffas klockan två i Brunnsparken. Jag tar med smörgåsar, ett kilo jordgubbar och två flaskor vatten. Kan du ta med juice? Det blir soligt och ungefär tjugo grader, men det blåser lite. Hoppas att du kan komma! Vi ses, Alex"
+      "help": "Hej Elin! · Vill du komma på picknick …? · Vi träffas klockan … vid … · Jag tar med … · Kan du ta med …? · Det blir soligt / molnigt / varmt. · Vi ses!",
+      "model": "Hej Elin! Vill du komma på picknick på lördag? Vi träffas klockan två i Brunnsparken. Jag tar med smörgåsar, ett kilo jordgubbar och två flaskor vatten. Kan du ta med juice? Det blir soligt och ungefär tjugo grader, men det blåser lite. Hoppas att du kan komma! Vi ses, Alex"
     }
   },
   "route": {
@@ -1649,7 +1793,7 @@
   "assignment": {
     "title": "Lecture 10 mission: My family and a picnic",
     "instructions": "CORE: Present two or three people in your family. Give their names, ages and where they live. Add one thing you often do together.\n\nWRITE: Invite a friend to a picnic. Include day, time, place, food to bring and weather.\n\nRETURN: Present two people from memory in under 30 seconds.",
-    "model": "Jag vill berätta om min familj. Jag har en syster som heter Priya. Hon är trettio år och bor i Esbo. Dessutom har jag en bror som heter Rohan. Han är tjugosju år och bor i Indien. Vi pratar ofta i telefon."
+    "model": "Jag vill berätta om min familj. Jag har en syster som heter Priya. Hon är trettio år och bor i Indien. Dessutom har jag en bror som heter Rohan. Han är tjugosju år och bor i Indien. Vi pratar ofta i telefon."
   },
   "takeaways": [
     "Build a shopping quantity with a container or weight: två påsar äpplen, ett kilo ost.",
@@ -1663,5 +1807,8 @@
       "url": "https://svenska.se/",
       "description": "Check a family, food or weather word and listen to its pronunciation."
     }
-  ]
+  ],
+  "story": {
+    "object": "a picnic shopping list"
+  }
 }

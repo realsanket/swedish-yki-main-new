@@ -551,3 +551,22 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
 - Swedish: all lines reviewed. The early perfect phrase is explicitly a chunk;
   full tense teaching remains Lecture 17. Source `går bra med` is a teacher-review
   item. No doubtful authored line identified; writing model fits 40–70 words.
+
+### Lecture 10 repair
+
+- Re-read Lesson 10 lines 1110–1266 and all five scans 27–31. No Classroom homework.
+  All five planned teaching topics have activities; number composition to 1,000,
+  phone digits and all four aunt/uncle terms are now explicit.
+- Fixed a string-shaped teacher note that rendered empty, wrong dialogue visibility
+  field, and missing route presentation. Added the complete 11 May picnic hero.
+- Corrected the ungrammatical guided model `Jag ofta handlar` to `Jag handlar ofta`;
+  corrected the recall answer’s speaker from Alex to Elin. Kept Priya living in India
+  as Lecture 2 establishes, visiting Finland for the picnic.
+- Corrected source transcription `tårullar` to `toarullar` and its mistranslation
+  as bread rolls. Added the omitted 17:10 clock line and omitted translation clauses.
+  Page 29’s `tjugoen` and printed number readings are now preserved. Page 31 has ten,
+  not nine, weather labels; the printed `der` typo gets correct `Det` production support.
+- Swedish: all lines reviewed. Source `jus`, `på en mataffär`, `De var sambo` and
+  `der är dimma` have explicit standard alternatives. The source explanation of
+  Nora’s age/child-free status remains source-only and flagged for the teacher.
+  No doubtful authored line identified. Writing model fits 40–70 words.
