@@ -536,3 +536,18 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   `ha fika` gets `fika`. Do not replace `borde` with `ska`: their meanings differ.
   Source `hade fru och barn` and the future reading of `blir Lena … besviken` remain
   teacher-review notes. No doubtful authored line identified.
+
+### Lecture 9 repair
+
+- Re-read Lesson 9 lines 963–1109 and scans 24–26. No Classroom homework.
+- Added the full 8 May hero and stable presentation. Repaired three crashing hunts,
+  `produce` fields that should be `natural`, generic gist questions, empty support,
+  generic recall cues and one-line backchains. Assigned distinct native voice roles.
+- Restored exact page-24 wording (`tillräckligt vatten`) with a natural production
+  alternative. Source clothing `går bra med` gets `passar bra till` support.
+- Fixed every word-bank example translation (they were repeated dictionary glosses).
+  Added missing clothes, frisk/hälsosam, ingen/inget/inga and the definite-plural
+  exception `små`. Added glossary ids for terms used in the teaching.
+- Swedish: all lines reviewed. The early perfect phrase is explicitly a chunk;
+  full tense teaching remains Lecture 17. Source `går bra med` is a teacher-review
+  item. No doubtful authored line identified; writing model fits 40–70 words.

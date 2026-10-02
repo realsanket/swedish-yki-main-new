@@ -20,16 +20,21 @@
     "plural-group",
     "agreement",
     "definite-form",
-    "present-perfect"
+    "present-perfect",
+    "possessive",
+    "infinitive",
+    "vowel",
+    "consonant",
+    "article"
   ],
   "presentation": {
     "routeSteps": {
       "recall": {
-        "label": "Hear the sick day",
+        "label": "Hear the conversation",
         "description": "Listen to Alex explain why he cannot meet Elin."
       },
       "teach": {
-        "label": "Health and things",
+        "label": "Build it step by step",
         "description": "Build symptom, plural and adjective patterns."
       },
       "guided": {
@@ -37,7 +42,7 @@
         "description": "Build lines for the doctor and the shop."
       },
       "practice": {
-        "label": "Visit the doctor",
+        "label": "Do the task",
         "description": "Explain symptoms, then write to your manager."
       }
     },
@@ -52,7 +57,69 @@
         "title": "Alex is ill",
         "instructions": "Listen for Alex's symptoms and Elin's advice.",
         "initiallyOpen": false
+      },
+      "questionIntro": "Listen for the symptoms and the change of plan, then answer both meaning checks."
+    },
+    "template": "conversation-first",
+    "teaching": {
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the Lesson 9 word bank"
       }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 9",
+        "8 MAY 2026"
+      ],
+      "kicker": "SAY WHAT HURTS AND WHEN IT STARTED",
+      "title": "Jag är förkyld.",
+      "lede": "Explain your symptoms, change a plan and send a clear message to your manager. Then practise describing clothes.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Jag har feber och ont i halsen.",
+        "en": "I have a fever and a sore throat.",
+        "audioText": "Jag är förkyld. Jag har feber och ont i halsen."
+      },
+      "speakers": [
+        {
+          "name": "Elin",
+          "fi": "Var har du ont?"
+        },
+        {
+          "name": "Alex",
+          "fi": "Jag har ont i halsen."
+        }
+      ],
+      "connector": "SEDAN NÄR?",
+      "encounterLabel": "Alex explains why he must change his shopping plan with Elin",
+      "chunks": [
+        {
+          "label": "SYMPTOM",
+          "fi": "Jag har feber.",
+          "en": "I have a fever."
+        },
+        {
+          "label": "PAIN",
+          "fi": "Jag har ont i huvudet.",
+          "en": "My head hurts."
+        },
+        {
+          "label": "SINCE",
+          "fi": "Sedan i går kväll.",
+          "en": "Since yesterday evening."
+        },
+        {
+          "label": "DESCRIBE",
+          "fi": "den här nya jackan",
+          "en": "this new jacket"
+        }
+      ],
+      "footerTags": [
+        "Symptoms and a starting time",
+        "Nya kläder, min nya jacka"
+      ]
     }
   },
   "recall": [
@@ -164,17 +231,17 @@
             "simple advice"
           ],
           "recallCues": [
-            "Line 1: recall the meaning and say the Swedish.",
-            "Line 2: recall the meaning and say the Swedish.",
-            "Line 3: recall the meaning and say the Swedish.",
-            "Line 4: recall the meaning and say the Swedish.",
-            "Line 5: recall the meaning and say the Swedish.",
-            "Line 6: recall the meaning and say the Swedish.",
-            "Line 7: recall the meaning and say the Swedish.",
-            "Line 8: recall the meaning and say the Swedish.",
-            "Line 9: recall the meaning and say the Swedish.",
-            "Line 10: recall the meaning and say the Swedish.",
-            "Line 11: recall the meaning and say the Swedish."
+            "Say who Peter is speaking to.",
+            "Describe the daily headache.",
+            "Ask about enough water.",
+            "Answer with two litres every day.",
+            "Ask about healthy food.",
+            "Answer with three apples a day.",
+            "Ask about working a lot.",
+            "Say there are many meetings at work.",
+            "Give the doctor’s view about stress.",
+            "Ask what to do and about painkillers.",
+            "Suggest time off work."
           ],
           "lines": [
             {
@@ -182,130 +249,192 @@
               "voice": "Henrik",
               "fi": "Peter pratar med en läkare.",
               "en": "Peter is talking to a doctor.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "en läkare",
+                  "en": "a doctor"
+                }
+              ]
             },
             {
               "speaker": "Peter",
-              "voice": "Henrik",
+              "voice": "Alex",
               "fi": "Jag har ont i huvudet varje dag.",
               "en": "My head hurts every day.",
               "glossary": [
                 {
                   "fi": "ont i huvudet",
-                  "en": "a headache / pain in the head"
+                  "en": "a headache"
                 }
               ]
             },
             {
               "speaker": "Läkare",
-              "voice": "Henrik",
-              "fi": "Dricker du tillräckligt med vatten?",
+              "voice": "Elin",
+              "fi": "Dricker du tillräckligt vatten?",
               "en": "Do you drink enough water?",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "tillräckligt",
+                  "en": "enough"
+                }
+              ]
             },
             {
               "speaker": "Peter",
-              "voice": "Henrik",
+              "voice": "Alex",
               "fi": "Ja, såklart. Två liter varje dag.",
               "en": "Yes, of course. Two litres every day.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "såklart",
+                  "en": "of course"
+                }
+              ]
             },
             {
               "speaker": "Läkare",
-              "voice": "Henrik",
+              "voice": "Elin",
               "fi": "Äter du hälsosam mat?",
               "en": "Do you eat healthy food?",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "hälsosam mat",
+                  "en": "healthy food"
+                }
+              ]
             },
             {
               "speaker": "Peter",
-              "voice": "Henrik",
+              "voice": "Alex",
               "fi": "Jag äter tre äpplen om dagen.",
               "en": "I eat three apples a day.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "om dagen",
+                  "en": "a day"
+                }
+              ]
             },
             {
               "speaker": "Läkare",
-              "voice": "Henrik",
+              "voice": "Elin",
               "fi": "Jobbar du mycket?",
               "en": "Do you work a lot?",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "mycket",
+                  "en": "a lot"
+                }
+              ]
             },
             {
               "speaker": "Peter",
-              "voice": "Henrik",
+              "voice": "Alex",
               "fi": "Ja, jag har många möten på jobbet.",
               "en": "Yes, I have many meetings at work.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "möten",
+                  "en": "meetings"
+                }
+              ]
             },
             {
               "speaker": "Läkare",
-              "voice": "Henrik",
+              "voice": "Elin",
               "fi": "Jag tycker att din huvudvärk beror på stress.",
               "en": "I think your headache is caused by stress.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "beror på",
+                  "en": "depends on; is caused by"
+                }
+              ]
             },
             {
               "speaker": "Peter",
-              "voice": "Henrik",
+              "voice": "Alex",
               "fi": "Vad kan jag göra? Ska jag ta värktabletter?",
               "en": "What can I do? Should I take painkillers?",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "värktabletter",
+                  "en": "painkillers"
+                }
+              ]
             },
             {
               "speaker": "Läkare",
-              "voice": "Henrik",
+              "voice": "Elin",
               "fi": "Nej, ta ledigt från jobbet. Det blir bättre.",
               "en": "No, take time off work. It will get better.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "ta ledigt",
+                  "en": "take time off"
+                }
+              ]
             }
           ],
           "listenQuestions": [
             {
-              "prompt": "What is the main situation?",
+              "prompt": "What bothers Peter every day?",
               "options": [
-                "A health, pet or shopping problem",
-                "A train journey",
-                "A school exam"
+                "A headache",
+                "A sore foot",
+                "A fever"
               ],
               "answer": 0,
-              "explanation": "Listen for the people, place and repeated topic words."
+              "explanation": "Jag har ont i huvudet varje dag."
             },
             {
-              "prompt": "Which detail changes the situation?",
+              "prompt": "What does the doctor suggest?",
               "options": [
-                "Advice or a choice",
-                "A new address",
-                "A birthday"
+                "Time off work",
+                "More meetings",
+                "New shoes"
               ],
               "answer": 0,
-              "explanation": "The final lines give advice or a decision."
+              "explanation": "Ta ledigt från jobbet."
             }
           ],
           "naturalNotes": [
             {
-              "source": "Peter pratar med en läkare.",
-              "produce": "Peter pratar med en läkare.",
-              "note": "Keep this opening as one smooth phrase."
+              "source": "Dricker du tillräckligt vatten?",
+              "natural": "Dricker du tillräckligt med vatten?",
+              "note": "Both are understandable. Tillräckligt med vatten is a useful everyday phrase."
+            },
+            {
+              "source": "frisk / hälsosam",
+              "natural": "Jag är frisk. Maten är hälsosam.",
+              "note": "A person is frisk; food or a lifestyle can be hälsosam."
             }
           ],
           "backchain": {
-            "line": 10,
+            "line": 8,
             "chunks": [
-              "Nej, ta ledigt från jobbet. Det blir bättre."
+              "på stress",
+              "beror på stress",
+              "din huvudvärk beror på stress",
+              "Jag tycker att din huvudvärk beror på stress."
             ]
           },
           "hunt": {
-            "label": "Plural hunt",
-            "instructions": "Find the red group-4 plurals. These ett-words add -n.",
-            "items": [
+            "label": "Form hunt",
+            "title": "Find the marked forms on the page",
+            "instructions": "Tap a marked word and say why its ending fits here.",
+            "missHint": "Look for one of the plural or adjective forms in the focus list.",
+            "spots": [
               {
-                "fi": "äpple → äpplen",
-                "rule": "Group 4: many ett-words ending in a vowel add -n."
+                "word": "äpplen",
+                "mark": "äpplen",
+                "rule": "ett äpple → äpplen, group 4"
               },
               {
-                "fi": "möte → möten",
-                "rule": "The plural has -n: ett möte, flera möten."
+                "word": "möten",
+                "mark": "möten",
+                "rule": "ett möte → möten, group 4"
               }
             ]
           }
@@ -327,12 +456,12 @@
             "inga in the plural"
           ],
           "recallCues": [
-            "Line 1: recall the meaning and say the Swedish.",
-            "Line 2: recall the meaning and say the Swedish.",
-            "Line 3: recall the meaning and say the Swedish.",
-            "Line 4: recall the meaning and say the Swedish.",
-            "Line 5: recall the meaning and say the Swedish.",
-            "Line 6: recall the meaning and say the Swedish."
+            "Introduce Sara and her wish for many pets.",
+            "List her pets and the animals she wants.",
+            "Explain her parents’ one-pet rule.",
+            "Suggest a room for the animals.",
+            "Object about space and ask about food.",
+            "Offer hamburgers and announce a vegan plan."
           ],
           "lines": [
             {
@@ -340,94 +469,141 @@
               "voice": "Henrik",
               "fi": "Maria och Peter har en dotter som heter Sara. Hon älskar djur och vill ha många husdjur.",
               "en": "Maria and Peter have a daughter called Sara. She loves animals and wants many pets.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "husdjur",
+                  "en": "pets"
+                }
+              ]
             },
             {
               "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "Hon har två hundar och många fiskar men hon vill också ha flera katter och kaniner.",
               "en": "She has two dogs and many fish, but she also wants several cats and rabbits.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "kaniner",
+                  "en": "rabbits"
+                }
+              ]
             },
             {
               "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "Mamma och pappa säger att hon måste välja bara ett husdjur men hon kan inte.",
               "en": "Mum and dad say she must choose only one pet, but she cannot.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "välja",
+                  "en": "choose"
+                }
+              ]
             },
             {
               "speaker": "Sara",
-              "voice": "Henrik",
+              "voice": "Maja",
               "fi": "De kan ha ett rum i huset och då blir det inga problem.",
               "en": "They can have a room in the house and then there will be no problems.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "inga problem",
+                  "en": "no problems"
+                }
+              ]
             },
             {
               "speaker": "Föräldrarna",
               "voice": "Henrik",
               "fi": "Vi har inte så många rum i huset! Och vad ska de äta?",
               "en": "We do not have that many rooms in the house! And what will they eat?",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "rum",
+                  "en": "rooms"
+                }
+              ]
             },
             {
               "speaker": "Sara",
-              "voice": "Henrik",
+              "voice": "Maja",
               "fi": "De kan äta mina hamburgare! Jag ska bli vegan!",
               "en": "They can eat my hamburgers! I am going to become vegan!",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "hamburgare",
+                  "en": "hamburgers"
+                }
+              ]
             }
           ],
           "listenQuestions": [
             {
-              "prompt": "What is the main situation?",
+              "prompt": "What do the parents want Sara to choose?",
               "options": [
-                "A health, pet or shopping problem",
-                "A train journey",
-                "A school exam"
+                "Only one pet",
+                "Two rooms",
+                "A new house"
               ],
               "answer": 0,
-              "explanation": "Listen for the people, place and repeated topic words."
+              "explanation": "Hon måste välja bara ett husdjur."
             },
             {
-              "prompt": "Which detail changes the situation?",
+              "prompt": "What is their concern?",
               "options": [
-                "Advice or a choice",
-                "A new address",
-                "A birthday"
+                "Space and food",
+                "The colour of the pets",
+                "Museum tickets"
               ],
               "answer": 0,
-              "explanation": "The final lines give advice or a decision."
+              "explanation": "They ask about rooms and what the animals will eat."
             }
           ],
           "naturalNotes": [
             {
-              "source": "Maria och Peter har en dotter som heter Sara. Hon älskar djur och vill ha många husdjur.",
-              "produce": "Maria och Peter har en dotter som heter Sara. Hon älskar djur och vill ha många husdjur.",
-              "note": "Keep this opening as one smooth phrase."
+              "source": "inga problem",
+              "natural": "Jag har inget husdjur. Vi har inga problem.",
+              "note": "Inget goes with an ett-word; inga goes with a plural."
             }
           ],
           "backchain": {
-            "line": 5,
+            "line": 4,
             "chunks": [
-              "De kan äta mina hamburgare! Jag ska bli vegan!"
+              "rum i huset",
+              "så många rum i huset",
+              "Vi har inte så många rum i huset!"
             ]
           },
           "hunt": {
-            "label": "Plural hunt",
-            "instructions": "Find the red group-5 plurals. These forms have no added ending.",
-            "items": [
+            "label": "Form hunt",
+            "title": "Find the marked forms on the page",
+            "instructions": "Tap a marked word and say why its ending fits here.",
+            "missHint": "Look for one of the plural or adjective forms in the focus list.",
+            "spots": [
               {
-                "fi": "djur → djur",
-                "rule": "Group 5 keeps the same form."
+                "word": "djur",
+                "mark": "djur",
+                "rule": "ett djur → djur, group 5"
               },
               {
-                "fi": "husdjur → husdjur",
-                "rule": "This compound also stays unchanged."
+                "word": "husdjur",
+                "mark": "husdjur",
+                "rule": "ett husdjur → husdjur, group 5"
               },
               {
-                "fi": "problem → problem",
-                "rule": "Ett problem has the unchanged plural problem."
+                "word": "problem",
+                "mark": "problem",
+                "rule": "ett problem → problem, group 5"
+              },
+              {
+                "word": "rum",
+                "mark": "rum",
+                "rule": "ett rum → rum, group 5"
+              },
+              {
+                "word": "hamburgare",
+                "mark": "hamburgare",
+                "rule": "en hamburgare → hamburgare, unchanged plural"
               }
             ]
           }
@@ -449,13 +625,13 @@
             "clothes and shopping"
           ],
           "recallCues": [
-            "Line 1: recall the meaning and say the Swedish.",
-            "Line 2: recall the meaning and say the Swedish.",
-            "Line 3: recall the meaning and say the Swedish.",
-            "Line 4: recall the meaning and say the Swedish.",
-            "Line 5: recall the meaning and say the Swedish.",
-            "Line 6: recall the meaning and say the Swedish.",
-            "Line 7: recall the meaning and say the Swedish."
+            "Say where Maria and Nora are and what they buy.",
+            "Explain Maria’s old dresses and new purchase.",
+            "Describe the shoes and their discount.",
+            "Mention the fashionable bags.",
+            "Ask for an opinion about the black model.",
+            "Say it matches the white shirt.",
+            "Ask whether to buy a black jacket too."
           ],
           "lines": [
             {
@@ -463,101 +639,153 @@
               "voice": "Henrik",
               "fi": "Maria och Nora är i ett köpcentrum. De köper nya kläder.",
               "en": "Maria and Nora are in a shopping centre. They buy new clothes.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "nya kläder",
+                  "en": "new clothes"
+                }
+              ]
             },
             {
               "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "Maria har många gamla klänningar hemma men hon köper en ny klänning.",
               "en": "Maria has many old dresses at home, but she buys a new dress.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "gamla klänningar",
+                  "en": "old dresses"
+                }
+              ]
             },
             {
               "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "Nora köper ett par fina läderskor. De var dyra förra veckan men nu är de på rea med 50% rabatt så de är billiga.",
               "en": "Nora buys a pair of nice leather shoes. They were expensive last week, but now they are on sale with a 50% discount, so they are cheap.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "på rea",
+                  "en": "on sale"
+                }
+              ]
             },
             {
               "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "Maria och Nora följer mode och köper moderna väskor också.",
               "en": "Maria and Nora follow fashion and buy modern bags too.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "moderna väskor",
+                  "en": "modern bags"
+                }
+              ]
             },
             {
               "speaker": "Nora",
-              "voice": "Henrik",
+              "voice": "Elin",
               "fi": "Vad tycker du om den här svarta modellen?",
               "en": "What do you think of this black model?",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "den här svarta modellen",
+                  "en": "this black model"
+                }
+              ]
             },
             {
               "speaker": "Maria",
-              "voice": "Henrik",
+              "voice": "Maja",
               "fi": "Den går bra med din vita skjorta!",
               "en": "It goes well with your white shirt!",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "din vita skjorta",
+                  "en": "your white shirt"
+                }
+              ]
             },
             {
               "speaker": "Nora",
-              "voice": "Henrik",
+              "voice": "Elin",
               "fi": "Borde jag köpa en svart jacka också?",
               "en": "Should I buy a black jacket too?",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "en svart jacka",
+                  "en": "a black jacket"
+                }
+              ]
             }
           ],
           "listenQuestions": [
             {
-              "prompt": "What is the main situation?",
+              "prompt": "Why are the shoes cheap now?",
               "options": [
-                "A health, pet or shopping problem",
-                "A train journey",
-                "A school exam"
+                "They have a 50% discount",
+                "They are broken",
+                "They are used"
               ],
               "answer": 0,
-              "explanation": "Listen for the people, place and repeated topic words."
+              "explanation": "Nu är de på rea med 50% rabatt."
             },
             {
-              "prompt": "Which detail changes the situation?",
+              "prompt": "What does Maria say matches the bag?",
               "options": [
-                "Advice or a choice",
-                "A new address",
-                "A birthday"
+                "Nora’s white shirt",
+                "A red skirt",
+                "A blue hat"
               ],
               "answer": 0,
-              "explanation": "The final lines give advice or a decision."
+              "explanation": "Din vita skjorta."
             }
           ],
           "naturalNotes": [
             {
-              "source": "Maria och Nora är i ett köpcentrum. De köper nya kläder.",
-              "produce": "Maria och Nora är i ett köpcentrum. De köper nya kläder.",
-              "note": "Keep this opening as one smooth phrase."
+              "source": "Den går bra med din vita skjorta!",
+              "natural": "Den passar bra till din vita skjorta!",
+              "note": "Passar bra till is the usual clothing phrase for goes well with."
             }
           ],
           "backchain": {
-            "line": 6,
+            "line": 4,
             "chunks": [
-              "Borde jag köpa en svart jacka också?"
+              "svarta modellen",
+              "den här svarta modellen",
+              "Vad tycker du om den här svarta modellen?"
             ]
           },
           "hunt": {
-            "label": "Adjective hunt",
-            "instructions": "Find the red adjectives and notice -a with plural or definite nouns.",
-            "items": [
+            "label": "Form hunt",
+            "title": "Find the marked forms on the page",
+            "instructions": "Tap a marked word and say why its ending fits here.",
+            "missHint": "Look for one of the plural or adjective forms in the focus list.",
+            "spots": [
               {
-                "fi": "nya kläder",
-                "rule": "Plural adjective: ny becomes nya."
+                "word": "nya",
+                "mark": "nya",
+                "rule": "Plural: nya kläder."
               },
               {
-                "fi": "den här svarta modellen",
-                "rule": "After den här, use the definite adjective in -a."
+                "word": "gamla",
+                "mark": "gamla",
+                "rule": "Plural: gamla klänningar."
               },
               {
-                "fi": "din vita skjorta",
-                "rule": "After a possessive, use the adjective in -a."
+                "word": "fina",
+                "mark": "fina",
+                "rule": "Plural: fina läderskor."
+              },
+              {
+                "word": "svarta",
+                "mark": "svarta",
+                "rule": "Definite: den här svarta modellen."
+              },
+              {
+                "word": "vita",
+                "mark": "vita",
+                "rule": "After a possessive: din vita skjorta."
               }
             ]
           }
@@ -572,7 +800,8 @@
       "body": [
         "Use Jag har ont i + the definite body part: Jag har ont i halsen. For a named condition, use Jag har: Jag har feber. To say you have a cold, use Jag är förkyld.",
         "A doctor may ask Sedan när? Answer with sedan: Jag har varit sjuk sedan i måndags.",
-        "Three small links return from the teacher notes. Use till for movement to a place: Jag går till läkaren. Use att before an infinitive: Jag gillar att gå. Som adds information about the word before it: en läkare som hjälper mig."
+        "Three small links return from the teacher notes. Use till for movement to a place: Jag går till läkaren. Use att before an infinitive: Jag gillar att gå. Som adds information about the word before it: en läkare som hjälper mig.",
+        "Frisk describes a person who is well. Hälsosam describes food or a way of living that supports health. Har varit sjuk is a useful whole phrase for now; Lecture 17 explains har + the past form in detail."
       ],
       "examples": [
         {
@@ -601,6 +830,10 @@
           "fi": "Jag har en läkare som hjälper mig.",
           "en": "I have a doctor who helps me.",
           "note": "som adds information about läkare."
+        },
+        {
+          "fi": "Nu är jag frisk igen. Jag äter hälsosam mat.",
+          "en": "Now I am well again. I eat healthy food."
         }
       ],
       "memoryTip": "ont i + definite body part: halsen, huvudet, magen.",
@@ -639,7 +872,7 @@
       "kind": "rule",
       "body": [
         "Group 4 often has an ett-word ending in a vowel. Add -n: ett äpple, flera äpplen. Group 5 adds no ending: ett djur, flera djur; ett problem, flera problem.",
-        "Many is många: många möten, många djur. Use inga for no in the plural: inga problem."
+        "Many is många: många möten, många djur. Use inga for no in the plural: inga problem. For one en-word use ingen (ingen hund); for one ett-word use inget (inget husdjur)."
       ],
       "examples": [
         {
@@ -781,8 +1014,8 @@
           ],
           [
             "liten",
-            "små / lilla",
-            "special forms"
+            "en liten väska; ett litet hus; små väskor; den lilla väskan; de små väskorna",
+            "lilla for one definite thing; små for several"
           ]
         ]
       },
@@ -950,7 +1183,7 @@
         "fi": "förkyld",
         "en": "having a cold",
         "example": "Jag är förkyld.",
-        "translation": "having a cold",
+        "translation": "I have a cold.",
         "level": "A1"
       },
       {
@@ -958,7 +1191,7 @@
         "fi": "feber",
         "en": "fever",
         "example": "Jag har feber.",
-        "translation": "fever",
+        "translation": "I have a fever.",
         "level": "A1"
       },
       {
@@ -966,7 +1199,7 @@
         "fi": "hostar",
         "en": "coughing",
         "example": "Jag hostar mycket.",
-        "translation": "coughing",
+        "translation": "I cough a lot.",
         "level": "A1"
       },
       {
@@ -974,7 +1207,7 @@
         "fi": "nyser",
         "en": "sneezing",
         "example": "Jag nyser.",
-        "translation": "sneezing",
+        "translation": "I am sneezing.",
         "level": "A1"
       },
       {
@@ -982,7 +1215,7 @@
         "fi": "ont i halsen",
         "en": "a sore throat",
         "example": "Jag har ont i halsen.",
-        "translation": "a sore throat",
+        "translation": "My throat hurts.",
         "level": "A1"
       },
       {
@@ -990,7 +1223,7 @@
         "fi": "huvudvärk",
         "en": "headache",
         "example": "Jag har huvudvärk.",
-        "translation": "headache",
+        "translation": "I have a headache.",
         "level": "A1"
       },
       {
@@ -998,7 +1231,7 @@
         "fi": "en läkare",
         "en": "a doctor",
         "example": "Jag pratar med en läkare.",
-        "translation": "a doctor",
+        "translation": "I am talking to a doctor.",
         "level": "A1"
       },
       {
@@ -1006,7 +1239,7 @@
         "fi": "en läkartid",
         "en": "a doctor's appointment",
         "example": "Jag har läkartid klockan tio.",
-        "translation": "a doctor's appointment",
+        "translation": "I have a doctor’s appointment at ten.",
         "level": "A1"
       },
       {
@@ -1014,7 +1247,7 @@
         "fi": "ett apotek",
         "en": "a pharmacy",
         "example": "Apoteket ligger nära.",
-        "translation": "a pharmacy",
+        "translation": "The pharmacy is nearby.",
         "level": "A1"
       },
       {
@@ -1022,7 +1255,7 @@
         "fi": "värktabletter",
         "en": "painkillers",
         "example": "Ska jag ta värktabletter?",
-        "translation": "painkillers",
+        "translation": "Should I take painkillers?",
         "level": "A1"
       },
       {
@@ -1030,7 +1263,7 @@
         "fi": "sedan",
         "en": "since",
         "example": "Jag har varit sjuk sedan i måndags.",
-        "translation": "since",
+        "translation": "I have been ill since Monday.",
         "level": "A1"
       },
       {
@@ -1038,7 +1271,7 @@
         "fi": "ett äpple, äpplen",
         "en": "an apple, apples",
         "example": "Jag äter två äpplen.",
-        "translation": "an apple, apples",
+        "translation": "I eat two apples.",
         "level": "A1"
       },
       {
@@ -1046,7 +1279,7 @@
         "fi": "ett möte, möten",
         "en": "a meeting, meetings",
         "example": "Jag har många möten.",
-        "translation": "a meeting, meetings",
+        "translation": "I have many meetings.",
         "level": "A1"
       },
       {
@@ -1054,7 +1287,7 @@
         "fi": "ett djur, djur",
         "en": "an animal, animals",
         "example": "Maja älskar djur.",
-        "translation": "an animal, animals",
+        "translation": "Maja loves animals.",
         "level": "A1"
       },
       {
@@ -1062,7 +1295,7 @@
         "fi": "ett husdjur, husdjur",
         "en": "a pet, pets",
         "example": "Hon vill ha ett husdjur.",
-        "translation": "a pet, pets",
+        "translation": "She wants a pet.",
         "level": "A1"
       },
       {
@@ -1070,7 +1303,7 @@
         "fi": "inga problem",
         "en": "no problems",
         "example": "Det blir inga problem.",
-        "translation": "no problems",
+        "translation": "There will be no problems.",
         "level": "A1"
       },
       {
@@ -1078,7 +1311,7 @@
         "fi": "nya kläder",
         "en": "new clothes",
         "example": "Elin köper nya kläder.",
-        "translation": "new clothes",
+        "translation": "Elin is buying new clothes.",
         "level": "A1"
       },
       {
@@ -1086,7 +1319,7 @@
         "fi": "en jacka",
         "en": "a jacket",
         "example": "Den här jackan är varm.",
-        "translation": "a jacket",
+        "translation": "This jacket is warm.",
         "level": "A1"
       },
       {
@@ -1094,7 +1327,7 @@
         "fi": "skor",
         "en": "shoes",
         "example": "Mina nya skor är svarta.",
-        "translation": "shoes",
+        "translation": "My new shoes are black.",
         "level": "A1"
       },
       {
@@ -1102,7 +1335,7 @@
         "fi": "en skjorta",
         "en": "a shirt",
         "example": "Din vita skjorta är fin.",
-        "translation": "a shirt",
+        "translation": "Your white shirt is nice.",
         "level": "A1"
       },
       {
@@ -1110,7 +1343,7 @@
         "fi": "en klänning",
         "en": "a dress",
         "example": "Hon har en ny klänning.",
-        "translation": "a dress",
+        "translation": "She has a new dress.",
         "level": "A1"
       },
       {
@@ -1118,7 +1351,7 @@
         "fi": "en väska",
         "en": "a bag",
         "example": "Min lilla väska är brun.",
-        "translation": "a bag",
+        "translation": "My small bag is brown.",
         "level": "A1"
       },
       {
@@ -1126,7 +1359,7 @@
         "fi": "på rea",
         "en": "on sale",
         "example": "Skorna är på rea.",
-        "translation": "on sale",
+        "translation": "The shoes are on sale.",
         "level": "A1"
       },
       {
@@ -1134,7 +1367,7 @@
         "fi": "rabatt",
         "en": "discount",
         "example": "Det är femtio procent rabatt.",
-        "translation": "discount",
+        "translation": "There is a fifty percent discount.",
         "level": "A1"
       },
       {
@@ -1142,7 +1375,87 @@
         "fi": "billig",
         "en": "cheap",
         "example": "Jackan är billig.",
-        "translation": "cheap",
+        "translation": "The jacket is cheap.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-26",
+        "fi": "en tröja",
+        "en": "a sweater",
+        "example": "Min tröja är grön.",
+        "translation": "My sweater is green.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-27",
+        "fi": "byxor",
+        "en": "trousers",
+        "example": "Mina byxor är blå.",
+        "translation": "My trousers are blue.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-28",
+        "fi": "strumpor",
+        "en": "socks",
+        "example": "Jag har vita strumpor.",
+        "translation": "I have white socks.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-29",
+        "fi": "en mössa",
+        "en": "a hat",
+        "example": "Mössan är röd.",
+        "translation": "The hat is red.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-30",
+        "fi": "handskar",
+        "en": "gloves",
+        "example": "Jag behöver nya handskar.",
+        "translation": "I need new gloves.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-31",
+        "fi": "en halsduk",
+        "en": "a scarf",
+        "example": "Halsduken är gul.",
+        "translation": "The scarf is yellow.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-32",
+        "fi": "en kjol",
+        "en": "a skirt",
+        "example": "Kjolen är grå.",
+        "translation": "The skirt is grey.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-33",
+        "fi": "en kostym",
+        "en": "a suit",
+        "example": "Kostymen är svart.",
+        "translation": "The suit is black.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-34",
+        "fi": "en kavaj",
+        "en": "a suit jacket",
+        "example": "Kavajen är brun.",
+        "translation": "The suit jacket is brown.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-09-word-35",
+        "fi": "stövlar",
+        "en": "boots",
+        "example": "Jag har svarta stövlar.",
+        "translation": "I have black boots.",
         "level": "A1"
       }
     ],
@@ -1390,5 +1703,8 @@
       "url": "https://svenska.se/",
       "description": "Look up one body word or clothing word and listen to its form."
     }
-  ]
+  ],
+  "story": {
+    "object": "a cancelled shopping plan"
+  }
 }
