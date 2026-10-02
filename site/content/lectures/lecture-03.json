@@ -65,7 +65,7 @@
       ],
       "kicker": "WHAT YOU CAN DO, AND WHAT YOU NEED",
       "title": "Jag kan inte i dag.",
-      "lede": "Say what you can, want and must do. Give a simple instruction and make room for a different plan.",
+      "lede": "Say what you can, want and must do, say what you do not do, and give a simple instruction.",
       "startLine": {
         "label": "START WITH ONE LINE",
         "fi": "Jag måste plugga svenska.",
@@ -83,7 +83,7 @@
         }
       ],
       "connector": "KAN?",
-      "encounterLabel": "Alex and Elin discuss the evening before a test",
+      "encounterLabel": "Elin phones Alex the evening before his test",
       "chunks": [
         {
           "label": "ABILITY",
@@ -129,7 +129,7 @@
     },
     {
       "id": "sv-03-recall-advice",
-      "prompt": "What does Elin finally tell Alex to do?",
+      "prompt": "What does Elin finally tell Alex to do tonight?",
       "answers": [
         "Sleep now."
       ],
@@ -139,19 +139,19 @@
         "Go to class now."
       ],
       "hint": "Listen for Sov nu!",
-      "explanation": "Elin gives the command Sov nu! — Sleep now!"
+      "explanation": "Elin gives the command Sov nu! — Sleep now! (Ring mig efter provet is for tomorrow.)"
     }
   ],
   "dialogue": [
     {
       "speaker": "Elin",
-      "fi": "Hej Alex! Hur mår du i dag?",
-      "en": "Hi Alex! How are you today?"
+      "fi": "Hej Alex! Det är Elin. Hur mår du?",
+      "en": "Hi Alex! It’s Elin. How are you?"
     },
     {
       "speaker": "Alex",
-      "fi": "Jag är trött. Jag har ett svenskprov i morgon.",
-      "en": "I’m tired. I have a Swedish test tomorrow."
+      "fi": "Hej Elin! Jag är trött. Jag har ett svenskprov i morgon.",
+      "en": "Hi Elin! I’m tired. I have a Swedish test tomorrow."
     },
     {
       "speaker": "Elin",
@@ -161,7 +161,7 @@
     {
       "speaker": "Alex",
       "fi": "Jag pluggar svenska, men jag orkar inte plugga mer.",
-      "en": "I’m studying Swedish, but I don’t have the energy to study more."
+      "en": "I’m studying Swedish, but I don’t have the energy to study any more."
     },
     {
       "speaker": "Elin",
@@ -170,8 +170,8 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Jag måste läsa ett kapitel till.",
-      "en": "I have to read one more chapter."
+      "fi": "Jag kan inte vila. Jag måste läsa ett kapitel till.",
+      "en": "I can’t rest. I have to read one more chapter."
     },
     {
       "speaker": "Elin",
@@ -180,18 +180,23 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Jag vill klara provet.",
-      "en": "I want to pass the test."
+      "fi": "Jag vill klara provet, men jag hinner inte läsa allt!",
+      "en": "I want to pass the test, but I don’t have time to read everything!"
     },
     {
       "speaker": "Elin",
-      "fi": "Du hinner. Oroa dig inte! Sov nu!",
-      "en": "You have time. Don’t worry! Sleep now!"
+      "fi": "Oroa dig inte! Du pluggar varje dag. Sov nu!",
+      "en": "Don’t worry! You study every day. Sleep now!"
     },
     {
       "speaker": "Alex",
-      "fi": "Tack, Elin. I morgon ska jag göra mitt bästa.",
-      "en": "Thanks, Elin. Tomorrow I’ll do my best."
+      "fi": "Okej. Tack, Elin! I morgon ska jag göra mitt bästa.",
+      "en": "OK. Thanks, Elin! Tomorrow I’ll do my best."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Lycka till! Ring mig efter provet!",
+      "en": "Good luck! Call me after the test!"
     }
   ],
   "extraSteps": [
@@ -207,18 +212,16 @@
         {
           "title": "Textbook page practice: Du ska sitta!",
           "tabLabel": "Page 7 · Du ska sitta!",
-          "intro": "Maria needs Peter’s help with dinner, then Peter tries three verb forms with the dog. Notice present, command and infinitive.",
+          "intro": "Maria is grilling and wants Peter home. Then Peter tries a command and a polite question with the dog. Notice the present, command and infinitive forms.",
           "image": "/images/source/textbook-lesson-03-page-07.png",
-          "imageAlt": "Textbook page Du ska sitta! with Maria, Peter and a dog practising infinitive and imperative forms",
+          "imageAlt": "Textbook page Du ska sitta! with a short dialogue between Maria and Peter, then Peter training a dog on a stool; the note card says infinitiv och imperativ",
           "textRegion": {
             "top": 24,
             "height": 38
           },
           "pageLabel": "textbook physical page 7",
           "focus": [
-            "kommer · kom · komma",
-            "grillar · grilla",
-            "sitt · sitta · sitter"
+            "infinitiv och imperativ (infinitive and command form)"
           ],
           "recallCues": [
             "Maria asks when Peter comes home and commands him to come quickly.",
@@ -291,7 +294,7 @@
               ]
             },
             {
-              "speaker": "Hunden",
+              "speaker": "Berättare",
               "voice": "Alex",
               "fi": "Hunden sitter inte.",
               "en": "The dog does not sit.",
@@ -315,7 +318,7 @@
               ]
             },
             {
-              "speaker": "Hunden",
+              "speaker": "Berättare",
               "voice": "Alex",
               "fi": "Hunden sitter.",
               "en": "The dog sits.",
@@ -368,43 +371,48 @@
           "hunt": {
             "label": "Verb-form hunt",
             "title": "Find the present, command and infinitive forms.",
-            "instructions": "Tap each marked verb and name the job it does.",
-            "missHint": "Look around kommer/kom/komma and sitter/sitt/sitta.",
+            "instructions": "This page does not colour its verbs, but its note card says infinitiv och imperativ. Tap each verb form below and see which job it does.",
+            "missHint": "Look at kommer, kom and komma, at grillar and grilla, and at sitt, sitta and sitter.",
             "spots": [
               {
                 "word": "kommer",
                 "mark": "kommer",
-                "rule": "Present tense: it tells what happens now."
+                "rule": "Present tense, ends in r: När kommer du hem? = When are you coming home?"
               },
               {
                 "word": "Kom",
                 "mark": "Kom",
-                "rule": "Command: the naked verb tells someone to act."
+                "rule": "Command: kommer loses er and keeps one m. Kom snabbt! = Come quickly!"
               },
               {
                 "word": "komma",
                 "mark": "komma",
-                "rule": "Infinitive after måste."
+                "rule": "Infinitive after the help verb måste: måste komma."
               },
               {
                 "word": "grillar",
                 "mark": "grillar",
-                "rule": "Present tense ends in r."
+                "rule": "Present tense, ends in r: Jag grillar = I am grilling."
               },
               {
                 "word": "grilla",
                 "mark": "grilla",
-                "rule": "Infinitive after kan."
+                "rule": "Infinitive after kan: kan inte grilla. For ar verbs it looks just like the command (Grilla!)."
               },
               {
                 "word": "Sitt",
                 "mark": "Sitt",
-                "rule": "Command form."
+                "rule": "Command: sitter loses er. Sitt! = Sit!"
+              },
+              {
+                "word": "sitta",
+                "mark": "sitta",
+                "rule": "Infinitive after kan: Kan du sitta? A polite way to ask."
               },
               {
                 "word": "sitter",
                 "mark": "sitter",
-                "rule": "Present tense."
+                "rule": "Present tense: Hunden sitter = the dog sits."
               }
             ]
           }
@@ -412,24 +420,22 @@
         {
           "title": "Textbook page practice: Jag kan inte plugga mer!",
           "tabLabel": "Page 8 · Jag kan inte plugga mer!",
-          "intro": "Sofia has a maths test tomorrow. Follow every help verb and notice that inte comes after the first verb.",
+          "intro": "Like Alex, Sofia has a test tomorrow (in maths). Follow every help verb and notice that inte comes after the first verb.",
           "setting": {
-            "fi": "Sofia är 16 år gammal. Just nu pluggar hon matte. I morgon har hon ett prov. Sofia är mycket trött. Hon måste plugga hela natten.",
-            "en": "Sofia is 16. Right now she is studying maths. Tomorrow she has a test. Sofia is very tired. She has to study all night."
+            "fi": "Sofia är 16 år gammal. Just nu pluggar hon matte. Imorgon har hon ett prov. Sofia är mycket trött. Hon måste plugga hela natten.",
+            "en": "Sofia is 16 years old. Right now she is studying maths. Tomorrow she has a test. Sofia is very tired. She has to study all night."
           },
           "image": "/images/source/textbook-lesson-03-page-08.png",
-          "imageAlt": "Textbook page Jag kan inte plugga mer where Sofia and her mother discuss studying for a maths test",
+          "imageAlt": "Textbook page Jag kan inte plugga mer! where Sofia and her mother talk about a maths test; inte is red, the help verbs are in italics, and the note card says inte, hjälpverb, ordföljd",
           "textRegion": {
             "top": 10,
             "height": 55
           },
           "pageLabel": "textbook physical page 8",
           "focus": [
-            "kan inte",
-            "vill",
-            "måste",
-            "ska",
-            "inte after the first verb"
+            "inte (not)",
+            "hjälpverb (help verbs)",
+            "ordföljd (word order)"
           ],
           "recallCues": [
             "Sofia cannot read more and wants to sleep.",
@@ -493,8 +499,8 @@
               "en": "Yes, I don’t want you to be late tomorrow.",
               "glossary": [
                 {
-                  "fi": "blir sen",
-                  "en": "are late"
+                  "fi": "att du blir sen",
+                  "en": "that you are late (att = that)"
                 },
                 {
                   "fi": "imorgon",
@@ -511,6 +517,10 @@
                 {
                   "fi": "skjutsa mig",
                   "en": "give me a lift"
+                },
+                {
+                  "fi": "så",
+                  "en": "so (that)"
                 },
                 {
                   "fi": "längre",
@@ -557,6 +567,10 @@
                   "en": "Don’t worry."
                 },
                 {
+                  "fi": "hjälpa dig att plugga",
+                  "en": "help you (to) study (att = to)"
+                },
+                {
                   "fi": "Du hinner!",
                   "en": "You have time!"
                 }
@@ -594,7 +608,12 @@
             {
               "source": "imorgon",
               "natural": "i morgon",
-              "note": "Both spellings occur; the app uses the two-word form i morgon in its own model lines."
+              "note": "Both spellings are correct. Språkrådet recommends the two-word i morgon, and this app uses it in its own lines. Morgon alone means morning."
+            },
+            {
+              "source": "Oroa dig inte.",
+              "natural": "Oroa dej inte.",
+              "note": "This is how it sounds, not how to write it. Mig and dig are said mej and dej, in Finland too. Write mig and dig."
             }
           ],
           "backchain": {
@@ -608,15 +627,35 @@
             ]
           },
           "hunt": {
-            "label": "Word-order hunt",
-            "title": "Find inte after the first verb.",
-            "instructions": "Tap each red inte and see which first verb it follows.",
-            "missHint": "Look just after kan, vill and vet, and after the command oroa.",
+            "label": "Help-verb and inte hunt",
+            "title": "Find inte and the four help verbs the page marks.",
+            "instructions": "On the page, inte is red and the help verbs kan, vill, måste and ska are in italics. Tap each one and see what follows it.",
+            "missHint": "Look for the red inte, and for the italic word just before an infinitive: kan, vill, måste, ska.",
             "spots": [
               {
                 "word": "inte",
                 "mark": "inte",
-                "rule": "In these statements, inte follows the first verb (kan, vill or vet). In the command Oroa dig inte, it follows the verb and dig."
+                "rule": "Inte (not) comes straight after the first verb: kan inte, vill inte, vet inte. In the command Oroa dig inte, it comes after oroa dig."
+              },
+              {
+                "word": "kan",
+                "mark": "kan",
+                "rule": "Kan (can) is a help verb. The next verb is an infinitive: kan läsa, kan sova. Kan du …? asks for help politely."
+              },
+              {
+                "word": "vill",
+                "mark": "vill",
+                "rule": "Vill (want to) is a help verb: vill sova."
+              },
+              {
+                "word": "måste",
+                "mark": "måste",
+                "rule": "Måste (must, have to) is a help verb: måste klara, måste sova, måste jobba."
+              },
+              {
+                "word": "ska",
+                "mark": "ska",
+                "rule": "Ska is a help verb too: vad jag ska göra = what I should do."
               }
             ]
           }
@@ -626,91 +665,106 @@
   ],
   "sections": [
     {
-      "title": "Three verb forms: does, command, dictionary",
+      "title": "Three verb forms: now, command, dictionary",
       "kind": "rule",
       "body": [
-        "A verb is an action word. The present tense says what happens now and normally ends in r: talar, köper, bor. Swedish uses the same present form for I study and I am studying: Jag pluggar. Never say Jag är pluggar.",
-        "The imperative is the command form: tala!, köp!, ring! It is the naked base. The infinitive is the dictionary form, often ending in a: tala, köpa, ringa. Two short exceptions are bo and må.",
-        "One important irregular verb is vara (be): är in the present and var! as a command. Compare Jag är trött, Jag vill vara pigg and Var glad! With kommer, the command loses one m: Kom!"
+        "A verb is a doing word. Today you need three verb forms. The present tense says what happens now or regularly. It ends in r: talar, köper, bor. The help verbs kan, vill, ska and måste are the exceptions. Swedish uses the same form for I study and I am studying: Jag pluggar. Never say Jag är pluggar.",
+        "The imperative (command form) tells someone to do something: Tala! Köp! Ring! Your teacher calls it the naked verb. The infinitive is the dictionary form. It follows a help verb and usually ends in a: tala, köpa, ringa. Dictionaries often show it with att (to): att tala = to speak.",
+        "Make the forms from the present tense, in three groups. Ar verbs: take away r. Talar becomes Tala! and tala; the command and the infinitive look the same. Er verbs: take away er for the command, then add a for the infinitive. Köper becomes Köp! and köpa. Short verbs: take away r. Bor becomes Bo! and bo; this infinitive does not end in a (also må).",
+        "Two verbs need extra care. Vara (be) is irregular: är in the present and Var! as a command. Kommer keeps only one m in the command: Kom! The infinitive is komma."
       ],
       "examples": [
         {
           "fi": "Jag talar svenska. · Tala svenska! · Jag kan tala svenska.",
           "en": "I speak Swedish. · Speak Swedish! · I can speak Swedish.",
-          "note": "Present, command, infinitive."
+          "note": "Ar verb: present, command, infinitive."
         },
         {
           "fi": "Jag köper bröd. · Köp bröd! · Jag vill köpa bröd.",
           "en": "I buy bread. · Buy bread! · I want to buy bread.",
-          "note": "Köper loses er for the command and adds a for the infinitive."
+          "note": "Er verb: köper loses er for the command (Köp!), then adds a for the infinitive (köpa)."
         },
         {
           "fi": "Jag mår bra. · Må bra! · Jag vill må bättre.",
           "en": "I feel well. · Be well! · I want to feel better.",
-          "note": "Må is a short infinitive exception."
+          "note": "Short verb: mår loses r. The infinitive må does not end in a."
+        },
+        {
+          "fi": "Han kommer hem. · Kom hem! · Han måste komma hem.",
+          "en": "He is coming home. · Come home! · He has to come home.",
+          "note": "Kommer keeps only one m in the command: Kom!"
         },
         {
           "fi": "Jag är glad. · Var glad! · Jag vill vara glad.",
           "en": "I am happy. · Be happy! · I want to be happy.",
-          "note": "Vara changes to är in the present and var in a command."
+          "note": "Vara is irregular: är in the present, Var! as a command."
         }
       ],
       "table": {
         "headings": [
+          "Group",
           "Present: now",
           "Command",
           "Infinitive"
         ],
         "rows": [
           [
+            "-ar verb",
             "gillar",
             "Gilla!",
             "gilla"
           ],
           [
+            "-ar verb",
             "talar",
             "Tala!",
             "tala"
           ],
           [
+            "-er verb",
             "köper",
             "Köp!",
             "köpa"
           ],
           [
+            "-er verb",
             "ringer",
             "Ring!",
             "ringa"
           ],
           [
+            "-er verb",
+            "kommer",
+            "Kom!",
+            "komma"
+          ],
+          [
+            "short verb",
             "bor",
             "Bo!",
             "bo"
           ],
           [
+            "short verb",
             "mår",
             "Må bra!",
             "må"
           ],
           [
+            "irregular",
             "är",
             "Var!",
             "vara"
-          ],
-          [
-            "kommer",
-            "Kom!",
-            "komma"
           ]
         ]
       },
       "memoryTip": "Present wears r. A command is naked. The dictionary form often ends in a.",
-      "tryIt": "Say the three forms of tala, köpa and ringa aloud.",
+      "tryIt": "Make all three forms from jobbar, läser and bor, and say them aloud. (Check: Jobba! jobba · Läs! läsa · Bo! bo)",
       "activity": {
         "type": "sort",
         "label": "Sort verb forms",
         "title": "Which job does this verb form do?",
-        "instructions": "Put each form under present, command or infinitive.",
+        "instructions": "Look at the marked verb. Is it the present, a command, or the infinitive?",
         "buckets": [
           {
             "id": "present",
@@ -730,39 +784,79 @@
         ],
         "items": [
           {
-            "fi": "talar",
-            "en": "speaks",
+            "fi": "Hon talar svenska.",
+            "en": "She speaks Swedish.",
             "bucket": "present",
-            "why": "The r marks present tense."
+            "mark": "talar",
+            "why": "Talar ends in r: it says what she does."
           },
           {
-            "fi": "Tala!",
-            "en": "Speak!",
+            "fi": "Tala långsamt!",
+            "en": "Speak slowly!",
             "bucket": "command",
-            "why": "The naked form gives a command."
+            "mark": "Tala",
+            "why": "No r and no help verb: it tells someone to act."
           },
           {
-            "fi": "tala",
-            "en": "to speak",
+            "fi": "Jag kan tala svenska.",
+            "en": "I can speak Swedish.",
             "bucket": "infinitive",
-            "why": "The dictionary form ends in a."
+            "mark": "tala",
+            "why": "It follows the help verb kan, so it is the infinitive."
           },
           {
-            "fi": "köper",
-            "en": "buys",
+            "fi": "Jag köper bröd.",
+            "en": "I buy bread.",
             "bucket": "present",
-            "why": "Köper is present."
+            "mark": "köper",
+            "why": "Köper ends in r: present tense."
+          },
+          {
+            "fi": "Köp bröd!",
+            "en": "Buy bread!",
+            "bucket": "command",
+            "mark": "Köp",
+            "why": "Köper loses er: Köp! is the command."
+          },
+          {
+            "fi": "Jag vill köpa bröd.",
+            "en": "I want to buy bread.",
+            "bucket": "infinitive",
+            "mark": "köpa",
+            "why": "After vill, the verb ends in a: köpa."
+          },
+          {
+            "fi": "Ring mig!",
+            "en": "Call me!",
+            "bucket": "command",
+            "mark": "Ring",
+            "why": "Ringer loses er: Ring! is the command."
+          },
+          {
+            "fi": "Hon måste ringa nu.",
+            "en": "She must call now.",
+            "bucket": "infinitive",
+            "mark": "ringa",
+            "why": "After måste, use the infinitive ringa."
+          },
+          {
+            "fi": "Var glad!",
+            "en": "Be happy!",
+            "bucket": "command",
+            "mark": "Var",
+            "why": "Var! is the command of vara (be)."
           }
         ],
-        "summary": "Ask what the verb is doing: reporting now, giving an instruction, or following a help verb."
+        "summary": "Ask what the verb is doing: telling what happens (present, r), giving an instruction (command), or following a help verb (infinitive)."
       }
     },
     {
       "title": "Help verbs open the door to an infinitive",
       "kind": "rule",
       "body": [
-        "Kan (can), vill (want), måste (must) and ska (will/plan to) are help verbs. The next verb uses the infinitive: kan tala, vill köpa, måste jobba, ska träna. Do not add r to that second verb.",
-        "Hinner means have enough time; orkar means have enough energy. They work the same way: Jag hinner komma. Jag orkar inte plugga. Vill ha is the normal way to say want something."
+        "Kan (can), vill (want to), måste (must, have to) and ska (will, be going to) are help verbs. The verb after them is always the infinitive: kan tala, vill köpa, måste jobba, ska träna. Never use the present tense there: kan tala, not kan talar.",
+        "Hinner (have time to) and orkar (have the energy to) work the same way: Jag hinner gå till affären. Jag orkar inte plugga.",
+        "Two useful questions. Kan du …? asks for help politely: Kan du hjälpa mig? Ska vi …? suggests a plan: Ska vi dricka kaffe? To want a thing, say vill ha: Jag vill ha kaffe, not Jag vill kaffe."
       ],
       "examples": [
         {
@@ -778,15 +872,25 @@
         {
           "fi": "I morgon ska jag träffa Elin.",
           "en": "Tomorrow I’m going to meet Elin.",
-          "note": "Ska marks a plan; träffa is infinitive."
+          "note": "Ska marks a plan; träffa is the infinitive."
         },
         {
           "fi": "Jag hinner gå till affären.",
           "en": "I have time to go to the shop.",
-          "note": "Hinner describes enough time."
+          "note": "Hinner is about time."
+        },
+        {
+          "fi": "Kan du hjälpa mig?",
+          "en": "Can you help me?",
+          "note": "Kan du …? is a polite request."
+        },
+        {
+          "fi": "Ska vi dricka kaffe?",
+          "en": "Shall we have coffee?",
+          "note": "Ska vi …? suggests a plan."
         }
       ],
-      "memoryTip": "One help verb is enough to carry the tense. The next verb stays in its dictionary form.",
+      "memoryTip": "Only the first verb changes. The verb after a help verb stays in its dictionary form.",
       "tryIt": "Finish aloud: Jag kan … Jag vill … Jag måste … I morgon ska jag …",
       "activity": {
         "type": "match",
@@ -828,8 +932,10 @@
       "title": "Inte comes after the first verb",
       "kind": "rule",
       "body": [
-        "Inte is the negation word: it makes a sentence negative. Put it after the first verb. With one verb: Jag simmar inte. With a help verb: Jag kan inte simma. Kan is first, so inte comes before the infinitive simma.",
-        "This rule also works with vill, ska, måste, hinner and orkar: Jag vill inte ha kaffe. Jag ska inte jobba. Jag orkar inte plugga."
+        "Inte means not. It makes a sentence negative. Put inte straight after the first verb. One verb: Jag simmar inte. With a help verb: Jag kan inte simma. Kan is the first verb, so inte comes before the infinitive simma.",
+        "English adds do: I do not swim. Swedish never adds an extra verb. The rule works with every help verb: Jag vill inte ha kaffe. Jag hinner inte komma. In a command, inte also follows the verb: Läs inte mer! Oroa dig inte!",
+        "Short adverbs such as ofta (often), alltid (always) and aldrig (never) go in the same place as inte: Jag dricker ofta kaffe. Jag dricker aldrig vin.",
+        "Finland-Swedish note: in fast speech in Helsinki you will often hear int instead of inte. Recognise it, but write inte."
       ],
       "examples": [
         {
@@ -846,25 +952,40 @@
           "fi": "Jag vill inte ha kaffe.",
           "en": "I do not want coffee.",
           "note": "After vill, before ha."
+        },
+        {
+          "fi": "I kväll orkar jag inte laga mat.",
+          "en": "Tonight I don’t have the energy to cook.",
+          "note": "Time first: verb, then jag, then inte."
+        },
+        {
+          "fi": "Jag dricker ofta kaffe.",
+          "en": "I often drink coffee.",
+          "note": "Ofta sits where inte would be."
+        },
+        {
+          "fi": "Oroa dig inte!",
+          "en": "Don’t worry!",
+          "note": "In a command, inte follows the verb and dig."
         }
       ],
       "memoryTip": "Find the first verb. Park inte directly after it.",
-      "tryIt": "Make these negative: Jag jobbar. Jag kan dansa. Jag ska träna.",
+      "tryIt": "Make these negative aloud: Jag jobbar. Jag kan dansa. Jag ska träna. (Check: Jag jobbar inte. Jag kan inte dansa. Jag ska inte träna.)",
       "activity": {
         "type": "sort",
         "label": "Place inte",
         "title": "Which word order is correct?",
-        "instructions": "Sort each sentence by whether inte is after the first verb.",
+        "instructions": "Sort each sentence: is inte (or ofta, aldrig) after the first verb?",
         "buckets": [
           {
             "id": "right",
             "label": "Correct",
-            "hint": "inte follows first verb"
+            "hint": "inte or aldrig after the first verb"
           },
           {
             "id": "wrong",
             "label": "Fix it",
-            "hint": "inte is misplaced"
+            "hint": "inte or aldrig is misplaced"
           }
         ],
         "items": [
@@ -878,7 +999,7 @@
             "fi": "Jag inte kan sjunga.",
             "en": "I cannot sing.",
             "bucket": "wrong",
-            "why": "Move inte after kan."
+            "why": "Move inte after kan: Jag kan inte sjunga."
           },
           {
             "fi": "Han dricker inte vin.",
@@ -891,28 +1012,53 @@
             "en": "We will not eat pizza.",
             "bucket": "wrong",
             "why": "Say Vi ska inte äta pizza."
+          },
+          {
+            "fi": "I dag jobbar jag inte.",
+            "en": "Today I am not working.",
+            "bucket": "right",
+            "why": "Jobbar is the first verb. Jag comes right after it, then inte."
+          },
+          {
+            "fi": "Jag orkar plugga inte.",
+            "en": "I don’t have the energy to study.",
+            "bucket": "wrong",
+            "why": "Say Jag orkar inte plugga."
+          },
+          {
+            "fi": "Jag dricker aldrig vin.",
+            "en": "I never drink wine.",
+            "bucket": "right",
+            "why": "Aldrig sits where inte would be: after dricker."
+          },
+          {
+            "fi": "Jag aldrig dricker vin.",
+            "en": "I never drink wine.",
+            "bucket": "wrong",
+            "why": "Say Jag dricker aldrig vin."
           }
         ],
-        "summary": "First verb, then inte: kan inte, vill inte, jobbar inte."
+        "summary": "First verb, then inte: kan inte, vill inte, jobbar inte. Ofta, alltid and aldrig go in the same place."
       }
     },
     {
       "title": "The verb stays second",
       "kind": "rule",
       "body": [
-        "A Swedish main sentence has one golden rule: the first verb is in position two. The first position can be the person: Min mamma bakar en kaka i dag. Or it can be a time: I dag bakar min mamma en kaka.",
-        "When time comes first, the subject moves after the verb. Count chunks, not single words: I dag is one first-position chunk. With a help verb: I morgon ska jag inte jobba. Ska is second, jag comes next, then inte."
+        "The golden rule of Swedish word order is verb second (V2): in a statement, the first verb is always the second building block. Position one can be the person (Min mamma bakar en kaka i dag), a time (I dag bakar min mamma en kaka) or a place (I Finland dricker vi mycket kaffe).",
+        "The subject always stands right next to the verb: just before it or just after it. When a time or a place comes first, the subject moves to just after the verb. Count chunks, not words: I dag is one chunk in position one.",
+        "With a help verb and inte: I morgon ska jag inte jobba. Ska is in position two, then jag, then inte, then the infinitive. Questions with a question word follow the same rule: Varför kommer du sent?"
       ],
       "examples": [
         {
           "fi": "Min mamma bakar en kaka i dag.",
-          "en": "My mother bakes a cake today.",
+          "en": "My mother is baking a cake today.",
           "note": "Subject first, verb second."
         },
         {
           "fi": "I dag bakar min mamma en kaka.",
-          "en": "Today my mother bakes a cake.",
-          "note": "Time first, then verb, then subject."
+          "en": "Today my mother is baking a cake.",
+          "note": "Time first, then the verb, then the subject."
         },
         {
           "fi": "Just nu kan jag inte plugga.",
@@ -923,6 +1069,11 @@
           "fi": "I Finland dricker vi mycket kaffe varje dag.",
           "en": "In Finland we drink a lot of coffee every day.",
           "note": "Place first, dricker second."
+        },
+        {
+          "fi": "Varför kommer du sent?",
+          "en": "Why are you late?",
+          "note": "The question word is position one; kommer is position two."
         }
       ],
       "table": {
@@ -930,7 +1081,7 @@
           "Position 1",
           "Verb",
           "Subject",
-          "Inte",
+          "Inte / ofta",
           "Rest"
         ],
         "rows": [
@@ -940,6 +1091,13 @@
             "—",
             "inte",
             "dansa i kväll."
+          ],
+          [
+            "Vi",
+            "dricker",
+            "—",
+            "ofta",
+            "kaffe."
           ],
           [
             "I dag",
@@ -961,11 +1119,18 @@
             "jag",
             "inte",
             "plugga."
+          ],
+          [
+            "Varför",
+            "kommer",
+            "du",
+            "—",
+            "sent?"
           ]
         ]
       },
       "memoryTip": "Start with who, when or where. Then the verb must arrive immediately.",
-      "tryIt": "Change Jag jobbar i dag to start with I dag. Then change Jag ska inte träna i morgon to start with I morgon.",
+      "tryIt": "Change Jag jobbar i dag to start with I dag. Then change Jag ska inte träna i morgon to start with I morgon. (Check: I dag jobbar jag. I morgon ska jag inte träna.)",
       "activity": {
         "type": "sort",
         "label": "Verb-second check",
@@ -986,15 +1151,15 @@
         "items": [
           {
             "fi": "I dag bakar min mamma en kaka.",
-            "en": "Today my mother bakes a cake.",
+            "en": "Today my mother is baking a cake.",
             "bucket": "right",
             "why": "I dag is first; bakar is second."
           },
           {
             "fi": "I dag min mamma bakar en kaka.",
-            "en": "Today my mother bakes a cake.",
+            "en": "Today my mother is baking a cake.",
             "bucket": "wrong",
-            "why": "Say I dag bakar min mamma."
+            "why": "Say I dag bakar min mamma en kaka."
           },
           {
             "fi": "Just nu kan jag inte plugga.",
@@ -1004,9 +1169,27 @@
           },
           {
             "fi": "I morgon jag ska träna.",
-            "en": "Tomorrow I will exercise.",
+            "en": "Tomorrow I am going to exercise.",
             "bucket": "wrong",
             "why": "Say I morgon ska jag träna."
+          },
+          {
+            "fi": "I Finland dricker vi mycket kaffe.",
+            "en": "In Finland we drink a lot of coffee.",
+            "bucket": "right",
+            "why": "I Finland is one chunk; dricker is second."
+          },
+          {
+            "fi": "Varje dag jag dricker kaffe.",
+            "en": "Every day I drink coffee.",
+            "bucket": "wrong",
+            "why": "Say Varje dag dricker jag kaffe."
+          },
+          {
+            "fi": "Jag tränar i dag.",
+            "en": "I am exercising today.",
+            "bucket": "right",
+            "why": "Subject first, verb second. The time can also go at the end."
           }
         ],
         "summary": "Time first causes the swap: I dag + verb + subject."
@@ -1014,20 +1197,6 @@
     }
   ],
   "guided": [
-    {
-      "id": "sv-03-guided-present",
-      "prompt": "Right now Alex ___ Swedish.",
-      "answers": [
-        "pluggar"
-      ],
-      "options": [
-        "pluggar",
-        "plugga",
-        "plugga!"
-      ],
-      "hint": "This happens now.",
-      "explanation": "Present tense: Alex pluggar."
-    },
     {
       "id": "sv-03-guided-infinitive",
       "prompt": "Jag kan ___ svenska.",
@@ -1037,10 +1206,10 @@
       "options": [
         "tala",
         "talar",
-        "tal!"
+        "att tala"
       ],
       "hint": "After kan, use the dictionary form.",
-      "explanation": "Kan tala: help verb plus infinitive."
+      "explanation": "Kan tala: after a help verb, use the infinitive, without att."
     },
     {
       "id": "sv-03-guided-command",
@@ -1071,50 +1240,60 @@
       "explanation": "Never add är before another present verb: Jag pluggar."
     },
     {
-      "id": "sv-03-guided-negative",
-      "prompt": "Jag vill ___ ha kaffe.",
+      "id": "sv-03-guided-must",
+      "prompt": "Alex’s test is tomorrow. He says: “I have to study tonight.” Jag ___ plugga i kväll.",
       "answers": [
-        "inte"
+        "måste"
       ],
       "options": [
-        "inte",
-        "att",
-        "är"
+        "måste",
+        "kan",
+        "vill"
       ],
-      "hint": "Negation follows the first verb vill.",
-      "explanation": "Jag vill inte ha kaffe."
+      "hint": "Have to is a need, not a wish or an ability.",
+      "explanation": "Jag måste plugga i kväll. Måste = must, have to."
+    },
+    {
+      "id": "sv-03-guided-polite",
+      "prompt": "Make a softer request: “Can you speak slowly, please?” ___ du tala långsamt, snälla?",
+      "answers": [
+        "Kan"
+      ],
+      "options": [
+        "Kan",
+        "Ska",
+        "Måste"
+      ],
+      "hint": "Ask about ability to make it polite.",
+      "explanation": "Kan du …? is a polite request. Måste du …? means Do you have to …?"
+    },
+    {
+      "id": "sv-03-guided-orkar-inte",
+      "prompt": "Make it negative and type the whole sentence: Jag orkar plugga. (I have the energy to study.)",
+      "answers": [
+        "Jag orkar inte plugga."
+      ],
+      "hint": "Find the first verb, then put inte right after it.",
+      "explanation": "Jag orkar inte plugga: inte comes right after orkar."
     },
     {
       "id": "sv-03-guided-v2",
       "prompt": "Start Jag bakar en kaka i dag with I dag. Type the whole sentence.",
       "answers": [
-        "I dag bakar jag en kaka."
+        "I dag bakar jag en kaka.",
+        "Idag bakar jag en kaka."
       ],
       "hint": "Time first, then the verb, then jag.",
       "explanation": "I dag bakar jag en kaka. The verb stays second."
     },
     {
-      "id": "sv-03-guided-plan",
-      "prompt": "I morgon ___ jag träna.",
-      "answers": [
-        "ska"
-      ],
-      "options": [
-        "ska",
-        "jag ska",
-        "tränar"
-      ],
-      "hint": "The verb must be second.",
-      "explanation": "I morgon ska jag träna."
-    },
-    {
       "id": "sv-03-guided-irregular",
-      "prompt": "Give a friendly command using kommer: “Come here!”",
+      "prompt": "A mother phones her son and says: “Come home!” Type the command of kommer with hem (home).",
       "answers": [
-        "Kom hit!"
+        "Kom hem!"
       ],
-      "hint": "The command loses er and one m.",
-      "explanation": "Kom hit! uses the command kom, with one m."
+      "hint": "Kommer loses er, and mm becomes one m. Hem means home (page 7: När kommer du hem?).",
+      "explanation": "Kom hem! Kommer → Kom!, with one m."
     }
   ],
   "sittingBreakAfter": "guided",
@@ -1305,48 +1484,104 @@
         "example": "Oroa dig inte!",
         "translation": "Don’t worry!",
         "level": "A0"
+      },
+      {
+        "id": "sv-03-word-25",
+        "fi": "just nu",
+        "en": "right now",
+        "example": "Just nu pluggar jag.",
+        "translation": "Right now I’m studying.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-03-word-26",
+        "fi": "snälla",
+        "en": "please",
+        "example": "Kan du hjälpa mig, snälla?",
+        "translation": "Can you help me, please?",
+        "level": "A0"
+      },
+      {
+        "id": "sv-03-word-27",
+        "fi": "vara",
+        "en": "be (är, Var!)",
+        "example": "Var glad!",
+        "translation": "Be happy!",
+        "level": "A0"
+      },
+      {
+        "id": "sv-03-word-28",
+        "fi": "komma",
+        "en": "come (kommer, Kom!)",
+        "example": "Kom hem!",
+        "translation": "Come home!",
+        "level": "A0"
+      },
+      {
+        "id": "sv-03-word-29",
+        "fi": "ofta",
+        "en": "often",
+        "example": "Jag dricker ofta kaffe.",
+        "translation": "I often drink coffee.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-03-word-30",
+        "fi": "aldrig",
+        "en": "never",
+        "example": "Jag dricker aldrig vin.",
+        "translation": "I never drink wine.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-03-word-31",
+        "fi": "Lycka till!",
+        "en": "Good luck!",
+        "example": "Lycka till med provet!",
+        "translation": "Good luck with the test!",
+        "level": "A0"
       }
     ],
     "pronunciation": {
-      "text": "Kan, vill, måste, ska. Jag kan tala. Jag måste jobba. Tala! Ring!",
-      "tip": "Keep the help verb short and clear, then leave the next verb in its infinitive form. Hear the long vowel in tala and the rounded å in måste."
+      "text": "Kan, vill, måste, ska. Jag kan tala. Jag måste jobba. Tala! Ring mig! Oroa dig inte!",
+      "tip": "Keep the help verb short and clear, then say the infinitive. Hear the long a in tala and the short, rounded å in måste. Say mig and dig like mej and dej."
     },
     "reading_passage": {
-      "text": "Hej Elin!\nJag kan inte träffa dig i kväll. Jag är trött och jag måste plugga svenska. Jag har ett prov i morgon. Vi kan dricka kaffe på fredag. Hinner du då?\nHälsningar, Alex",
+      "text": "Hej Alex!\nI dag har du provet. Oroa dig inte! Ät frukost och drick vatten. Läs inte mer nu. Lycka till! Ring mig efter provet.\nHälsningar, Elin",
       "gist": {
-        "prompt": "Why does Alex write?",
+        "prompt": "Why does Elin write?",
         "options": [
-          "He cannot meet tonight and suggests Friday.",
-          "He wants to buy coffee.",
-          "He passed his test."
+          "To wish Alex luck and give advice before his test.",
+          "To invite Alex to a party.",
+          "To say that she is ill."
         ],
         "answer": 0,
-        "explanation": "He says he cannot meet tonight and suggests coffee on Friday."
+        "explanation": "I dag har du provet … Lycka till! She writes on the morning of his test."
       },
       "detail": {
-        "prompt": "What must Alex do?",
+        "prompt": "What should Alex not do now?",
         "options": [
-          "Study Swedish",
-          "Work all night",
-          "Call Elin"
+          "Read more",
+          "Eat breakfast",
+          "Drink water"
         ],
         "answer": 0,
-        "explanation": "Jag måste plugga svenska."
+        "explanation": "Läs inte mer nu: Don’t read any more now."
       }
     },
     "reading": {
-      "text": "Hej Elin!\nJag kan inte träffa dig i kväll. Jag är trött och jag måste plugga svenska. Jag har ett prov i morgon. Vi kan dricka kaffe på fredag. Hinner du då?\nHälsningar, Alex",
-      "question": "When can Alex drink coffee with Elin?",
+      "text": "Hej Alex!\nI dag har du provet. Oroa dig inte! Ät frukost och drick vatten. Läs inte mer nu. Lycka till! Ring mig efter provet.\nHälsningar, Elin",
+      "question": "When does Elin want Alex to call her?",
       "options": [
-        "Friday",
-        "Tonight",
-        "Tomorrow morning"
+        "After the test",
+        "Before the test",
+        "At lunch tomorrow"
       ],
       "answer": 0,
-      "explanation": "Vi kan dricka kaffe på fredag."
+      "explanation": "Ring mig efter provet: Call me after the test."
     },
     "listening": {
-      "text": "I dag jobbar Elin till klockan fyra. Sedan måste hon plugga svenska. Hon vill träna, men hon hinner inte. I morgon ska hon vila och träffa en vän.",
+      "text": "I dag jobbar Elin hela dagen. Sedan måste hon laga mat. Hon vill träna, men hon hinner inte. I morgon ska hon inte jobba. Hon ska vila och träffa en vän.",
       "question": "Why does Elin not exercise today?",
       "options": [
         "She does not have time.",
@@ -1375,7 +1610,7 @@
         20,
         40
       ],
-      "help": "Hej Elin! · Jag kan inte träffa dig i kväll. · Jag är trött. · Jag måste plugga. · Vi kan … på … · Hälsningar, Alex",
+      "help": "Hej Elin! · Jag kan inte träffa dig i kväll. · Jag är trött. · Jag måste plugga. · Vi kan … på fredag / på lördag (on Friday / on Saturday). · Hinner du då? (Do you have time then?) · Hälsningar (Best wishes) and your name.",
       "model": "Hej Elin!\nJag kan inte träffa dig i kväll. Jag är trött och måste plugga svenska. Vi kan dricka kaffe på fredag. Hinner du då?\nHälsningar, Alex"
     }
   },
@@ -1385,9 +1620,9 @@
     "transferPrompt": "Say the same plan again, but begin two lines with I dag or I morgon.",
     "returnPrompt": "From memory, say one kan line, one måste line and one negative line in under 20 seconds.",
     "successChecks": [
-      "Use kan, vill, måste or ska with an infinitive.",
-      "Put inte after the first verb.",
-      "Say four to six clear lines, including one time-first line."
+      "Say six lines: three with kan, one with vill, one with måste and one with inte.",
+      "Use the infinitive after each help verb: kan tala, not kan talar.",
+      "Put inte after the first verb."
     ],
     "requiredSkills": [
       "speaking",
@@ -1399,19 +1634,19 @@
       "id": "can-swedish",
       "fi": "Kan du tala svenska?",
       "en": "Can you speak Swedish?",
-      "sample": "Ja, jag kan tala lite svenska."
+      "sample": "Ja, jag kan tala lite svenska. / Nej, inte så bra."
     },
     {
       "id": "must-today",
       "fi": "Vad måste du göra i dag?",
       "en": "What must you do today?",
-      "sample": "Jag måste jobba."
+      "sample": "Jag måste jobba. / I dag måste jag plugga."
     },
     {
       "id": "want-drink",
       "fi": "Vad vill du dricka?",
       "en": "What do you want to drink?",
-      "sample": "Jag vill dricka kaffe."
+      "sample": "Jag vill dricka kaffe. / Jag vill ha vatten, tack."
     },
     {
       "id": "plan-tomorrow",
@@ -1423,13 +1658,13 @@
       "id": "energy",
       "fi": "Orkar du träna i kväll?",
       "en": "Do you have the energy to exercise tonight?",
-      "sample": "Nej, jag orkar inte."
+      "sample": "Nej, jag orkar inte. / Ja, jag orkar."
     },
     {
       "id": "time",
       "fi": "Hinner du komma i tid?",
       "en": "Can you make it on time?",
-      "sample": "Ja, jag hinner."
+      "sample": "Ja, jag hinner. / Nej, jag hinner inte."
     }
   ],
   "reviewPhrases": [
@@ -1469,20 +1704,22 @@
       "fi": "Oroa dig inte!"
     },
     {
-      "id": "have-time",
-      "en": "I have time to come.",
-      "fi": "Jag hinner komma."
+      "id": "no-time",
+      "en": "I don’t have time.",
+      "fi": "Jag hinner inte."
     }
   ],
   "checkpoint": [
     {
       "id": "sv-03-check-produce",
-      "prompt": "Produce in Swedish: “Today I can’t study.”",
+      "prompt": "Start with I dag and write in Swedish: “Today I can’t study.”",
       "answers": [
         "I dag kan jag inte plugga.",
-        "Idag kan jag inte plugga."
+        "Idag kan jag inte plugga.",
+        "I dag kan jag inte studera.",
+        "Idag kan jag inte studera."
       ],
-      "hint": "Time first, then the first verb, then the person, then inte.",
+      "hint": "Time first, then the first verb, then jag, then inte.",
       "explanation": "I dag kan jag inte plugga: the verb kan stays in position two."
     },
     {
@@ -1500,18 +1737,15 @@
       "explanation": "A help verb takes the infinitive: måste plugga."
     },
     {
-      "id": "sv-03-check-command",
-      "prompt": "Which line is a command?",
+      "id": "sv-03-check-ring",
+      "prompt": "Write the command form of ringer: “___ mig i morgon!” (Call me tomorrow!)",
       "answers": [
-        "Tala långsamt!"
+        "Ring",
+        "Ring mig i morgon!",
+        "Ring mig imorgon!"
       ],
-      "options": [
-        "Tala långsamt!",
-        "Jag talar långsamt.",
-        "Jag kan tala långsamt."
-      ],
-      "hint": "A command uses the naked verb.",
-      "explanation": "Tala! is the command form; talar is present tense."
+      "hint": "Ringer loses er.",
+      "explanation": "Ring mig i morgon! The command is the naked verb: ringer → Ring!"
     },
     {
       "id": "sv-03-check-inte",
@@ -1526,6 +1760,20 @@
       ],
       "hint": "Put inte after the first verb.",
       "explanation": "Vill is the first verb, so inte comes directly after it."
+    },
+    {
+      "id": "sv-03-check-hinner",
+      "prompt": "What does Jag hinner inte komma mean?",
+      "answers": [
+        "I don’t have time to come."
+      ],
+      "options": [
+        "I don’t have time to come.",
+        "I don’t have the energy to come.",
+        "I don’t want to come."
+      ],
+      "hint": "Hinner is about time.",
+      "explanation": "Hinner = have time. Orkar = have the energy. Vill = want."
     }
   ],
   "assignment": {
@@ -1534,16 +1782,16 @@
     "model": "Jag kan tala engelska. Jag kan laga mat. Jag kan simma. Jag vill träna. I morgon måste jag plugga svenska. Jag jobbar inte på fredag."
   },
   "takeaways": [
-    "Present tense usually ends in r; the command is the naked verb; the infinitive is the dictionary form.",
+    "Present tense usually ends in r; the command is the naked verb; the infinitive is the dictionary form that follows a help verb.",
     "After kan, vill, måste and ska, use the infinitive: Jag kan tala.",
-    "Put inte after the first verb: Jag kan inte komma.",
+    "Put inte after the first verb: Jag kan inte komma. In a command too: Oroa dig inte!",
     "A time phrase may come first, but the verb stays second: I dag bakar min mamma en kaka."
   ],
   "resources": [
     {
       "label": "Svenska Akademiens ordböcker (svenska.se)",
       "url": "https://svenska.se/",
-      "description": "Look up one verb and compare its infinitive, present and command forms."
+      "description": "Look up one verb from today, for example köpa, and find its present form (köper)."
     },
     {
       "label": "Your teacher’s Spotify playlist",
@@ -1553,6 +1801,6 @@
   ],
   "title": "What you do, what you can, what you don't",
   "story": {
-    "object": "a Swedish test tomorrow"
+    "object": "study notes and a phone"
   }
 }
