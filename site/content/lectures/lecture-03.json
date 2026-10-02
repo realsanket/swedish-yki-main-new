@@ -55,6 +55,61 @@
         "mode": "collapsed",
         "title": "Open the Lesson 3 word bank"
       }
+    },
+    "template": "conversation-first",
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 3",
+        "20 APRIL 2026"
+      ],
+      "kicker": "WHAT YOU CAN DO, AND WHAT YOU NEED",
+      "title": "Jag kan inte i dag.",
+      "lede": "Say what you can, want and must do. Give a simple instruction and make room for a different plan.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Jag måste plugga svenska.",
+        "en": "I have to study Swedish.",
+        "audioText": "Jag måste plugga svenska. Jag kan inte i dag."
+      },
+      "speakers": [
+        {
+          "name": "Alex",
+          "fi": "Jag orkar inte plugga mer."
+        },
+        {
+          "name": "Elin",
+          "fi": "Du kan vila lite."
+        }
+      ],
+      "connector": "KAN?",
+      "encounterLabel": "Alex and Elin discuss the evening before a test",
+      "chunks": [
+        {
+          "label": "ABILITY",
+          "fi": "Jag kan tala svenska.",
+          "en": "I can speak Swedish."
+        },
+        {
+          "label": "NEED",
+          "fi": "Jag måste plugga.",
+          "en": "I have to study."
+        },
+        {
+          "label": "COMMAND",
+          "fi": "Tala långsamt, snälla!",
+          "en": "Speak slowly, please!"
+        },
+        {
+          "label": "TIME FIRST",
+          "fi": "I dag ska jag träna.",
+          "en": "Today I am going to exercise."
+        }
+      ],
+      "footerTags": [
+        "Help verb + infinitive",
+        "First verb, then inte"
+      ]
     }
   },
   "recall": [
@@ -561,22 +616,7 @@
               {
                 "word": "inte",
                 "mark": "inte",
-                "rule": "Inte follows kan, the first verb."
-              },
-              {
-                "word": "inte",
-                "mark": "inte",
-                "rule": "Inte follows vill, the first verb."
-              },
-              {
-                "word": "inte",
-                "mark": "inte",
-                "rule": "Inte follows vet, the first verb."
-              },
-              {
-                "word": "inte",
-                "mark": "inte",
-                "rule": "With this command and reflexive pronoun, the textbook phrase is Oroa dig inte."
+                "rule": "In these statements, inte follows the first verb (kan, vill or vet). In the command Oroa dig inte, it follows the verb and dig."
               }
             ]
           }
@@ -590,7 +630,8 @@
       "kind": "rule",
       "body": [
         "A verb is an action word. The present tense says what happens now and normally ends in r: talar, köper, bor. Swedish uses the same present form for I study and I am studying: Jag pluggar. Never say Jag är pluggar.",
-        "The imperative is the command form: tala!, köp!, ring! It is the naked base. The infinitive is the dictionary form, often ending in a: tala, köpa, ringa. Two short exceptions are bo and må."
+        "The imperative is the command form: tala!, köp!, ring! It is the naked base. The infinitive is the dictionary form, often ending in a: tala, köpa, ringa. Two short exceptions are bo and må.",
+        "One important irregular verb is vara (be): är in the present and var! as a command. Compare Jag är trött, Jag vill vara pigg and Var glad! With kommer, the command loses one m: Kom!"
       ],
       "examples": [
         {
@@ -607,6 +648,11 @@
           "fi": "Jag mår bra. · Må bra! · Jag vill må bättre.",
           "en": "I feel well. · Be well! · I want to feel better.",
           "note": "Må is a short infinitive exception."
+        },
+        {
+          "fi": "Jag är glad. · Var glad! · Jag vill vara glad.",
+          "en": "I am happy. · Be happy! · I want to be happy.",
+          "note": "Vara changes to är in the present and var in a command."
         }
       ],
       "table": {
@@ -645,6 +691,16 @@
             "mår",
             "Må bra!",
             "må"
+          ],
+          [
+            "är",
+            "Var!",
+            "vara"
+          ],
+          [
+            "kommer",
+            "Kom!",
+            "komma"
           ]
         ]
       },
@@ -1030,17 +1086,12 @@
     },
     {
       "id": "sv-03-guided-v2",
-      "prompt": "___ bakar min mamma en kaka.",
+      "prompt": "Start Jag bakar en kaka i dag with I dag. Type the whole sentence.",
       "answers": [
-        "I dag"
+        "I dag bakar jag en kaka."
       ],
-      "options": [
-        "I dag",
-        "Min mamma i dag",
-        "Inte"
-      ],
-      "hint": "Put time first; bakar is already second.",
-      "explanation": "I dag bakar min mamma en kaka."
+      "hint": "Time first, then the verb, then jag.",
+      "explanation": "I dag bakar jag en kaka. The verb stays second."
     },
     {
       "id": "sv-03-guided-plan",
@@ -1055,12 +1106,21 @@
       ],
       "hint": "The verb must be second.",
       "explanation": "I morgon ska jag träna."
+    },
+    {
+      "id": "sv-03-guided-irregular",
+      "prompt": "Give a friendly command using kommer: “Come here!”",
+      "answers": [
+        "Kom hit!"
+      ],
+      "hint": "The command loses er and one m.",
+      "explanation": "Kom hit! uses the command kom, with one m."
     }
   ],
   "sittingBreakAfter": "guided",
   "missionPlan": {
     "title": "Plan six short lines",
-    "intro": "Tell Elin what you can, want, must and plan to do this week. Add one true negative.",
+    "intro": "Tell Elin three things you can do, one thing you want to do, one thing you must do, and one thing you do not do this week.",
     "lines": [
       {
         "label": "Can 1",
@@ -1075,6 +1135,12 @@
         "placeholder": "laga mat"
       },
       {
+        "label": "Can 3",
+        "before": "Jag kan",
+        "after": ".",
+        "placeholder": "simma"
+      },
+      {
         "label": "Want",
         "before": "Jag vill",
         "after": ".",
@@ -1085,12 +1151,6 @@
         "before": "Jag måste",
         "after": ".",
         "placeholder": "plugga svenska"
-      },
-      {
-        "label": "Plan",
-        "before": "I veckan ska jag",
-        "after": ".",
-        "placeholder": "träna"
       },
       {
         "label": "Not",
@@ -1286,8 +1346,8 @@
       "explanation": "Vi kan dricka kaffe på fredag."
     },
     "listening": {
-      "text": "I dag jobbar Maja till klockan fyra. Sedan måste hon plugga matte. Hon vill träna, men hon hinner inte. I morgon ska hon vila och träffa en vän.",
-      "question": "Why does Maja not exercise today?",
+      "text": "I dag jobbar Elin till klockan fyra. Sedan måste hon plugga svenska. Hon vill träna, men hon hinner inte. I morgon ska hon vila och träffa en vän.",
+      "question": "Why does Elin not exercise today?",
       "options": [
         "She does not have time.",
         "She does not want to.",
@@ -1297,9 +1357,9 @@
       "explanation": "Hon vill träna, men hon hinner inte."
     },
     "speaking": {
-      "prompt": "Tell Elin two things you can do, one thing you want to do, one thing you must do, one plan, and one thing you do not do this week.",
-      "help": "Jag kan … · Jag vill … · Jag måste … · I morgon ska jag … · Jag … inte i veckan.",
-      "model": "Jag kan tala engelska och jag kan laga mat. Jag vill träna. Jag måste plugga svenska. I morgon ska jag jobba. Jag tränar inte på fredag."
+      "prompt": "Tell Elin three things you can do, one thing you want to do, one thing you must do, and one thing you do not do this week.",
+      "help": "Jag kan … · Jag vill … · I morgon måste jag … · Jag … inte i veckan.",
+      "model": "Jag kan tala engelska. Jag kan laga mat. Jag kan simma. Jag vill träna. I morgon måste jag plugga svenska. Jag jobbar inte på fredag."
     },
     "writing": {
       "prompt": "Write a short message explaining why you cannot meet tonight and suggesting another time.",
@@ -1321,7 +1381,7 @@
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Tell Elin what you can, want, must and plan to do, plus one thing you do not do this week. Then write why you cannot meet tonight and suggest another plan.",
+    "expectedOutput": "Tell Elin three things you can do, one thing you want to do, one thing you must do, and one thing you do not do this week. Then write why you cannot meet tonight and suggest another plan.",
     "transferPrompt": "Say the same plan again, but begin two lines with I dag or I morgon.",
     "returnPrompt": "From memory, say one kan line, one måste line and one negative line in under 20 seconds.",
     "successChecks": [
@@ -1470,8 +1530,8 @@
   ],
   "assignment": {
     "title": "Episode 3 mission: My week",
-    "instructions": "CORE: Say two things you can do, one thing you want to do, one thing you must do, one plan, and one thing you do not do this week.\n\nCHANGE: Start two lines with I dag or I morgon and keep the verb second.\n\nRETURN: Tomorrow, say a kan line, a måste line and a negative line without looking.",
-    "model": "Jag kan tala engelska och jag kan laga mat. Jag vill träna. Jag måste plugga svenska. I morgon ska jag jobba. Jag tränar inte på fredag."
+    "instructions": "CORE: Say three things you can do, one thing you want to do, one thing you must do, and one thing you do not do this week.\n\nCHANGE: Start two lines with I dag or I morgon and keep the verb second.\n\nRETURN: Tomorrow, say a kan line, a måste line and a negative line without looking.",
+    "model": "Jag kan tala engelska. Jag kan laga mat. Jag kan simma. Jag vill träna. I morgon måste jag plugga svenska. Jag jobbar inte på fredag."
   },
   "takeaways": [
     "Present tense usually ends in r; the command is the naked verb; the infinitive is the dictionary form.",
@@ -1491,5 +1551,8 @@
       "description": "Listen for kan, vill, måste, ska and inte in a Swedish song."
     }
   ],
-  "title": "What you do, what you can, what you don't"
+  "title": "What you do, what you can, what you don't",
+  "story": {
+    "object": "a Swedish test tomorrow"
+  }
 }

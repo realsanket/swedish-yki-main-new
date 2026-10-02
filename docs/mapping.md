@@ -444,3 +444,23 @@ is built.
 ## Next safe step
 
 Run native-speaker review on the doubtful lines recorded above and continue the shared-template backlog. Do not activate Lecture 23 or later until the owner requests and approves a separate YKI-book-phase mapping and build plan.
+
+## Repair audit — October 2, 2026
+
+Cloud build notes above are historical claims, not verification. The repair branch
+is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd`.
+
+### Lecture 3 repair
+
+- Re-read Lesson 3 lines 218–393, physical pages 7–8, and Homework 2–5.
+- Added the missing `vara → är → var!` exception and `kommer → kom!` spelling.
+  Added typed command and time-first production, rather than recognition alone.
+- Restored the planned three abilities in the speaking mission and aligned its
+  planner, prompt and model. Maja's first story appearance stays in Lecture 5.
+- Added a lecture-specific conversation hero dated 20 April 2026. Source pages
+  7–8 match the canonical scans. The dog narration is source narration, not an
+  extra recurring character.
+- Swedish: reviewed all strings, including intentional incorrect distractors.
+  No doubtful authored line identified. Source `i morgon`/`imorgon` variation
+  is explained. Teacher's broad present/infinitive rules are qualified with
+  exceptions in the teaching.
