@@ -32118,7 +32118,9 @@
       "main-clause",
       "subordinate-clause",
       "word-order",
-      "verb-second"
+      "verb-second",
+      "infinitive",
+      "clause"
     ],
     "presentation": {
       "template": "conversation-first",
@@ -32157,12 +32159,12 @@
             "fi": "Jag letar efter en ny lägenhet."
           },
           {
-            "name": "Maja",
-            "fi": "Den här lägenheten verkar bra."
+            "name": "Elin",
+            "fi": "Den här lägenheten ligger nära metron."
           }
         ],
         "connector": "DÄRFÖR",
-        "encounterLabel": "Alex and Maja compare homes and habits",
+        "encounterLabel": "Alex and Elin compare homes; Maja adds an environmental choice",
         "chunks": [
           {
             "label": "HOME",
@@ -32189,6 +32191,22 @@
           "Housing needs",
           "Environmental choices"
         ]
+      },
+      "routeSteps": {
+        "recall": {
+          "label": "Hear the conversation",
+          "description": "Listen for Alex’s housing needs and Maja’s environmental choices."
+        },
+        "teach": {
+          "label": "Build it step by step",
+          "description": "Describe housing, connect causes and results, point to things and review work language."
+        }
+      },
+      "teaching": {
+        "wordBank": {
+          "mode": "collapsed",
+          "title": "Open the Lesson 21 word bank"
+        }
       }
     },
     "sittingBreakAfter": "guided",
@@ -32286,7 +32304,7 @@
           "label": "Rooms",
           "before": "Mitt hem har",
           "after": ".",
-          "placeholder": "ett sovrum, ett kök och en balkong"
+          "placeholder": "ett sovrum, ett vardagsrum, ett kök och en balkong"
         },
         {
           "label": "Good point",
@@ -32298,7 +32316,7 @@
           "label": "Need",
           "before": "När det gäller boende behöver jag",
           "after": ".",
-          "placeholder": "gångavstånd till metrostationen"
+          "placeholder": "bo nära en metrostation"
         },
         {
           "label": "Change",
@@ -32310,7 +32328,7 @@
           "label": "Reason",
           "before": "På grund av",
           "after": ".",
-          "placeholder": "det lilla köket kan jag inte laga mat med vänner"
+          "placeholder": "platsbristen vill jag ha ett större kök"
         },
         {
           "label": "Result",
@@ -32331,15 +32349,15 @@
         "id": "sv-21-r1",
         "prompt": "What matters most to Alex in a new flat?",
         "answers": [
-          "A quiet area and a short journey to work"
+          "A quiet area where he can work from home"
         ],
         "options": [
-          "A quiet area and a short journey to work",
+          "A quiet area where he can work from home",
           "A large garage",
           "A house in another country"
         ],
         "hint": "Listen after När det gäller boende.",
-        "explanation": "Alex wants a quiet area and does not want a long journey to work."
+        "explanation": "Alex says he works from home and therefore needs a quiet area. He does not say he wants a short commute."
       },
       {
         "id": "sv-21-r2",
@@ -32439,7 +32457,7 @@
             },
             {
               "left": "en lägenhet",
-              "right": "på två rum och kök"
+              "right": "med två rum och kök"
             },
             {
               "left": "en skola",
@@ -32450,7 +32468,10 @@
               "right": "där jag kan odla växter"
             }
           ],
-          "summary": "Use med, på, till and där to add useful detail."
+          "leftLabel": "Home feature",
+          "rightLabel": "Detail",
+          "pattern": "Add a useful detail after the home feature.",
+          "sentence": "{left} {right}"
         }
       },
       {
@@ -32687,6 +32708,11 @@
             "fi": "En trygg arbetsmiljö är viktig för min mentala hälsa.",
             "en": "A safe work environment is important for my mental health.",
             "note": "Connect work and wellbeing."
+          },
+          {
+            "fi": "Jag har väntat länge, men jag stannar om maten kommer snart. Jag sänkte musiken för att prata med min vän.",
+            "en": "I have waited a long time, but I will stay if the food comes soon. I lowered the music to talk to my friend.",
+            "note": "The teacher revisits restaurant requests, dependent clauses and purpose before the housing topic."
           }
         ],
         "memoryTip": "När det gäller + topic, then a complete main clause with the verb second.",
@@ -32714,7 +32740,10 @@
               "right": "är lugn och trygg."
             }
           ],
-          "summary": "Use the older work words to explain why a home feature matters."
+          "leftLabel": "Work topic",
+          "rightLabel": "Statement",
+          "pattern": "Use these complete statements to explain a housing need.",
+          "sentence": "{left} {right}"
         }
       }
     ],
@@ -32865,7 +32894,7 @@
     ],
     "assignment": {
       "title": "Episode 21 mission: My home and one change",
-      "instructions": "CORE: Describe your present home in six to eight lines. Include its type, rooms, area, one need and one thing you would change. Give a reason and one opinion.\n\nGREEN HOME: Add one environmental choice you make now or would make in a new home.\n\nRETURN: Tomorrow, say the description again without notes and change one housing need.",
+      "instructions": "CORE: Describe your present home in six to eight lines. Include its type, rooms, area, one need and one thing you would change. Give a reason and one opinion.\n\nGREEN HOME: Add one environmental choice you make now or would make in a new home.\n\nRETURN: Tomorrow, say the description again without notes and change one housing need.\n\nCLASS HOMEWORK: Watch Vår lägenhet i Zadar and return to Amira: Vegan with the four questions. Prepare to describe your ideal home in the next lecture.",
       "model": "Jag bor i en tvårumslägenhet i Helsingfors. Den här lägenheten har ett sovrum, ett vardagsrum och en balkong. Området är lugnt och affären ligger på gångavstånd. När det gäller arbete behöver jag ett tyst rum eftersom jag jobbar hemifrån. Jag skulle vilja ha ett större kök. Därför letar jag efter en ny lägenhet. Jag sopsorterar och cyklar för att skydda miljön."
     },
     "takeaways": [
@@ -32933,6 +32962,11 @@
         "description": "Teacher-assigned video: listen for rooms, furniture and what the speakers like about the flat."
       },
       {
+        "label": "Amira är här – med stödord: Vegan (UR Play)",
+        "url": "https://urplay.se/program/199763-amira-ar-har-med-stodord-vegan",
+        "description": "Watch and answer: Why was Amira late? What problem did they have at the restaurant? What did the waiter recommend? How did they react?"
+      },
+      {
         "label": "Svenska Akademiens ordböcker",
         "url": "https://svenska.se/",
         "description": "Look up housing and environment words, then return to your own sentence."
@@ -32945,7 +32979,7 @@
           "fi": "boende",
           "en": "housing",
           "example": "När det gäller boende vill jag bo nära naturen.",
-          "translation": "",
+          "translation": "When it comes to housing, I want to live near nature.",
           "level": "A2"
         },
         {
@@ -32953,7 +32987,7 @@
           "fi": "en lägenhet",
           "en": "a flat",
           "example": "Jag hyr en lägenhet i Esbo.",
-          "translation": "",
+          "translation": "I rent a flat in Espoo.",
           "level": "A2"
         },
         {
@@ -32961,7 +32995,7 @@
           "fi": "ett hus",
           "en": "a house",
           "example": "De bor i ett hus på landet.",
-          "translation": "",
+          "translation": "They live in a house in the countryside.",
           "level": "A2"
         },
         {
@@ -32969,7 +33003,7 @@
           "fi": "ett sovrum",
           "en": "a bedroom",
           "example": "Lägenheten har ett sovrum.",
-          "translation": "",
+          "translation": "The flat has one bedroom.",
           "level": "A2"
         },
         {
@@ -32977,7 +33011,7 @@
           "fi": "ett vardagsrum",
           "en": "a living room",
           "example": "Vi sitter i vardagsrummet.",
-          "translation": "",
+          "translation": "We are sitting in the living room.",
           "level": "A2"
         },
         {
@@ -32985,7 +33019,7 @@
           "fi": "ett kök",
           "en": "a kitchen",
           "example": "Köket är ljust.",
-          "translation": "",
+          "translation": "The kitchen is bright.",
           "level": "A2"
         },
         {
@@ -32993,7 +33027,7 @@
           "fi": "en balkong",
           "en": "a balcony",
           "example": "Jag odlar örter på balkongen.",
-          "translation": "",
+          "translation": "I grow herbs on the balcony.",
           "level": "A2"
         },
         {
@@ -33001,7 +33035,7 @@
           "fi": "en utsikt",
           "en": "a view",
           "example": "Vi har utsikt över havet.",
-          "translation": "",
+          "translation": "We have a view of the sea.",
           "level": "A2"
         },
         {
@@ -33009,7 +33043,7 @@
           "fi": "gångavstånd",
           "en": "walking distance",
           "example": "Butiken ligger på gångavstånd.",
-          "translation": "",
+          "translation": "The shop is within walking distance.",
           "level": "A2"
         },
         {
@@ -33017,7 +33051,7 @@
           "fi": "kvadratmeter",
           "en": "square metres",
           "example": "Lägenheten är 55 kvadratmeter.",
-          "translation": "",
+          "translation": "The flat is 55 square metres.",
           "level": "A2"
         },
         {
@@ -33025,7 +33059,7 @@
           "fi": "en trädgård",
           "en": "a garden",
           "example": "Jag vill ha en stor trädgård.",
-          "translation": "",
+          "translation": "I want a large garden.",
           "level": "A2"
         },
         {
@@ -33033,7 +33067,7 @@
           "fi": "en bastu",
           "en": "a sauna",
           "example": "Huset har en bastu.",
-          "translation": "",
+          "translation": "The house has a sauna.",
           "level": "A2"
         },
         {
@@ -33041,7 +33075,7 @@
           "fi": "en tvättstuga",
           "en": "a laundry room",
           "example": "Tvättstugan ligger i källaren.",
-          "translation": "",
+          "translation": "The laundry room is in the basement.",
           "level": "A2"
         },
         {
@@ -33049,7 +33083,7 @@
           "fi": "en hiss",
           "en": "a lift",
           "example": "Jag behöver en hiss.",
-          "translation": "",
+          "translation": "I need a lift.",
           "level": "A2"
         },
         {
@@ -33057,7 +33091,7 @@
           "fi": "ett renoveringsobjekt",
           "en": "a renovation project",
           "example": "Huset är ett renoveringsobjekt.",
-          "translation": "",
+          "translation": "The house needs renovation.",
           "level": "A2"
         },
         {
@@ -33065,7 +33099,7 @@
           "fi": "nyrenoverad",
           "en": "newly renovated",
           "example": "Köket är nyrenoverat.",
-          "translation": "",
+          "translation": "The kitchen is newly renovated.",
           "level": "A2"
         },
         {
@@ -33073,7 +33107,7 @@
           "fi": "ett tyst område",
           "en": "a quiet area",
           "example": "Jag söker ett tyst område.",
-          "translation": "",
+          "translation": "I am looking for a quiet area.",
           "level": "A2"
         },
         {
@@ -33081,7 +33115,7 @@
           "fi": "leta efter",
           "en": "look for",
           "example": "Jag letar efter en tvåa.",
-          "translation": "",
+          "translation": "I am looking for a two-room flat.",
           "level": "A2"
         },
         {
@@ -33089,7 +33123,7 @@
           "fi": "miljön",
           "en": "the environment",
           "example": "Vi måste skydda miljön.",
-          "translation": "",
+          "translation": "We must protect the environment.",
           "level": "A2"
         },
         {
@@ -33097,7 +33131,7 @@
           "fi": "klimatförändringar",
           "en": "climate change",
           "example": "Klimatförändringarna oroar mig.",
-          "translation": "",
+          "translation": "Climate change worries me.",
           "level": "A2"
         },
         {
@@ -33105,7 +33139,7 @@
           "fi": "släppa ut koldioxid",
           "en": "emit carbon dioxide",
           "example": "Bilar släpper ut koldioxid.",
-          "translation": "",
+          "translation": "Cars emit carbon dioxide.",
           "level": "A2"
         },
         {
@@ -33113,7 +33147,7 @@
           "fi": "sopsortera",
           "en": "sort waste",
           "example": "Vi sopsorterar hemma.",
-          "translation": "",
+          "translation": "We sort our waste at home.",
           "level": "A2"
         },
         {
@@ -33121,7 +33155,7 @@
           "fi": "återvinna",
           "en": "recycle",
           "example": "Jag återvinner glas och papper.",
-          "translation": "",
+          "translation": "I recycle glass and paper.",
           "level": "A2"
         },
         {
@@ -33129,7 +33163,7 @@
           "fi": "skydda miljön",
           "en": "protect the environment",
           "example": "Jag cyklar för att skydda miljön.",
-          "translation": "",
+          "translation": "I cycle to protect the environment.",
           "level": "A2"
         },
         {
@@ -33137,7 +33171,7 @@
           "fi": "närproducerad mat",
           "en": "locally produced food",
           "example": "Vi köper närproducerad mat.",
-          "translation": "",
+          "translation": "We buy locally produced food.",
           "level": "A2"
         },
         {
@@ -33145,7 +33179,7 @@
           "fi": "miljöpåverkan",
           "en": "environmental impact",
           "example": "Flyg har stor miljöpåverkan.",
-          "translation": "",
+          "translation": "Flying has a large environmental impact.",
           "level": "A2"
         },
         {
@@ -33153,7 +33187,7 @@
           "fi": "på grund av",
           "en": "because of",
           "example": "Bussen är sen på grund av snön.",
-          "translation": "",
+          "translation": "The bus is late because of the snow.",
           "level": "A2"
         },
         {
@@ -33161,7 +33195,7 @@
           "fi": "därför",
           "en": "therefore",
           "example": "Jag har ingen bil. Därför tar jag tåget.",
-          "translation": "",
+          "translation": "I do not have a car. Therefore I take the train.",
           "level": "A2"
         },
         {
@@ -33169,7 +33203,7 @@
           "fi": "när det gäller",
           "en": "when it comes to",
           "example": "När det gäller köket behöver jag mer plats.",
-          "translation": "",
+          "translation": "When it comes to the kitchen, I need more space.",
           "level": "A2"
         },
         {
@@ -33177,13 +33211,53 @@
           "fi": "den här lägenheten",
           "en": "this flat",
           "example": "Den här lägenheten är ljus.",
-          "translation": "",
+          "translation": "This flat is bright.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-21-word-31",
+          "fi": "platsbrist",
+          "en": "lack of space",
+          "example": "På grund av platsbristen vill jag ha ett större kök.",
+          "translation": "Because of the lack of space, I want a larger kitchen.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-21-word-32",
+          "fi": "ett fönster",
+          "en": "a window",
+          "example": "Köket har två stora fönster.",
+          "translation": "The kitchen has two large windows.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-21-word-33",
+          "fi": "möbler",
+          "en": "furniture",
+          "example": "Mina möbler får plats här.",
+          "translation": "My furniture fits here.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-21-word-34",
+          "fi": "en tvättmaskin",
+          "en": "a washing machine",
+          "example": "Finns det en tvättmaskin?",
+          "translation": "Is there a washing machine?",
+          "level": "A2"
+        },
+        {
+          "id": "sv-21-word-35",
+          "fi": "en diskmaskin",
+          "en": "a dishwasher",
+          "example": "Köket har en diskmaskin.",
+          "translation": "The kitchen has a dishwasher.",
           "level": "A2"
         }
       ],
       "pronunciation": {
         "text": "lägenhet, kvadratmeter, gångavstånd, nyrenoverad, miljö, återvinna, koldioxid, därför, den här lägenheten",
-        "tip": "Keep the long sounds clear: the first ä in lägenhet, long ö in miljö, and long i in återvinna. In därför, stress the first syllable."
+        "tip": "Hear the long ä in lägenhet and the long ö in miljö. In återvinna, the i before double n is short. In därför, stress the first syllable."
       },
       "reading_passage": {
         "text": "BOSTAD UTHYRES\nLjus tvårumslägenhet på 52 kvadratmeter i ett tyst område i Esbo. Lägenheten har ett sovrum, ett vardagsrum, kök, badrum och en liten balkong med utsikt över en park. Metrostationen och två mataffärer ligger på gångavstånd. Huset har hiss, tvättstuga och ett tryggt cykelrum. Ingen parkeringsplats finns. Hyran är 980 euro per månad. Vi söker en lugn hyresgäst som inte röker. Skriv och berätta vem du är, när du vill flytta in och varför lägenheten passar dig.",
@@ -33233,7 +33307,7 @@
       "speaking": {
         "prompt": "Describe your home in six to eight lines and say one thing you would change, with a reason.",
         "help": "Jag bor i … · Mitt hem har … · Området är … · När det gäller … behöver jag … · Jag skulle vilja … · På grund av … · Därför … · Jag tycker att … eftersom …",
-        "model": "Jag bor i en tvåa i Helsingfors. Lägenheten har ett sovrum, ett vardagsrum och en liten balkong. Området är lugnt och metrostationen ligger på gångavstånd. När det gäller köket behöver jag mer plats. På grund av det lilla köket kan jag inte laga mat med vänner. Därför skulle jag vilja ha ett större kök. Jag tycker att ett hem ska vara praktiskt eftersom vardagen blir lättare då."
+        "model": "Jag bor i en tvåa i Helsingfors. Lägenheten har ett sovrum, ett vardagsrum och en liten balkong. Området är lugnt och metrostationen ligger på gångavstånd. När det gäller köket behöver jag mer plats. På grund av platsbristen vill jag ha ett större kök. Därför letar jag efter en ny lägenhet. Jag tycker att ett hem ska vara praktiskt eftersom vardagen blir lättare då."
       },
       "writing": {
         "prompt": "Answer a flat advert and explain why the home suits you.",
@@ -33318,70 +33392,120 @@
                 "voice": "Elin",
                 "fi": "Jag vill gärna hyra en lägenhet på två rum och kök med stora fönster och mycket ljus.",
                 "en": "I would like to rent a two-room flat with a kitchen, large windows and plenty of light.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "två rum och kök",
+                    "en": "two rooms and a kitchen"
+                  }
+                ]
               },
               {
                 "speaker": "Profil 1",
                 "voice": "Elin",
                 "fi": "Jag har ett barn så jag vill gärna att lägenheten är på gångavstånd till en skola och till några affärer eftersom jag inte har någon bil.",
                 "en": "I have a child, so I would like the flat to be within walking distance of a school and some shops because I do not have a car.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "på gångavstånd",
+                    "en": "within walking distance"
+                  }
+                ]
               },
               {
                 "speaker": "Profil 1",
                 "voice": "Elin",
                 "fi": "En balkong med utsikt över en park blir också bra men det är inget måste.",
                 "en": "A balcony overlooking a park would also be nice, but it is not essential.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "utsikt över",
+                    "en": "a view of"
+                  }
+                ]
               },
               {
                 "speaker": "Profil 1",
                 "voice": "Elin",
                 "fi": "Min budget är _____ euro per månad.",
                 "en": "My budget is _____ euros per month.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "per månad",
+                    "en": "per month"
+                  }
+                ]
               },
               {
                 "speaker": "Profil 2",
                 "voice": "Henrik",
                 "fi": "Jag vill köpa ett hus på landet på 80 kvm.",
                 "en": "I want to buy an 80-square-metre house in the countryside.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "på landet",
+                    "en": "in the countryside"
+                  }
+                ]
               },
               {
                 "speaker": "Profil 2",
                 "voice": "Henrik",
                 "fi": "Jag vill ha en stor trädgård där jag kan odla olika växter och där min hund kan springa runt.",
                 "en": "I want a large garden where I can grow different plants and where my dog can run around.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "odla",
+                    "en": "grow; cultivate"
+                  }
+                ]
               },
               {
                 "speaker": "Profil 2",
                 "voice": "Henrik",
                 "fi": "En bastu är ett måste för mig.",
                 "en": "A sauna is essential for me.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "ett måste",
+                    "en": "essential"
+                  }
+                ]
               },
               {
                 "speaker": "Profil 2",
                 "voice": "Henrik",
                 "fi": "Huset kan vara ett renoveringsobjekt – jag har tid att renovera eftersom jag är pensionär och dessutom är det billigare!",
                 "en": "The house can be a renovation project—I have time to renovate because I am retired, and besides, it is cheaper!",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "renoveringsobjekt",
+                    "en": "a home needing renovation"
+                  }
+                ]
               },
               {
                 "speaker": "Profil 3",
                 "voice": "Alex",
                 "fi": "Jag letar efter en nyrenoverad studiolägenhet.",
                 "en": "I am looking for a newly renovated studio flat.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "nyrenoverad",
+                    "en": "newly renovated"
+                  }
+                ]
               },
               {
                 "speaker": "Profil 3",
                 "voice": "Alex",
                 "fi": "Stadsdelen är inte så viktig eftersom jag jobbar hemifrån men jag behöver ett tyst område med mycket natur omkring så att jag kan motionera och hantera min stress.",
                 "en": "The district is not so important because I work from home, but I need a quiet area with plenty of nature around so that I can exercise and manage my stress.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "hantera min stress",
+                    "en": "manage my stress"
+                  }
+                ]
               }
             ],
             "listenQuestions": [
@@ -33432,10 +33556,9 @@
               "line": 1,
               "chunks": [
                 "någon bil",
+                "jag inte har någon bil",
                 "eftersom jag inte har någon bil",
-                "till en skola och till några affärer",
-                "på gångavstånd till en skola och till några affärer eftersom jag inte har någon bil",
-                "Jag vill gärna att lägenheten är på gångavstånd till en skola och till några affärer eftersom jag inte har någon bil."
+                "på gångavstånd till en skola och till några affärer eftersom jag inte har någon bil"
               ]
             },
             "hunt": {
@@ -33523,70 +33646,120 @@
                 "voice": "Henrik",
                 "fi": "Hur var det i skolan, sötnos?",
                 "en": "How was school, sweetheart?",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "sötnos",
+                    "en": "sweetheart"
+                  }
+                ]
               },
               {
                 "speaker": "Jenny",
                 "voice": "Maja",
                 "fi": "Idag lärde vi oss om miljön!",
                 "en": "Today we learned about the environment!",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "miljön",
+                    "en": "the environment"
+                  }
+                ]
               },
               {
                 "speaker": "Peter",
                 "voice": "Henrik",
                 "fi": "Verkligen? Vad fint!",
                 "en": "Really? How nice!",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "Verkligen",
+                    "en": "Really"
+                  }
+                ]
               },
               {
                 "speaker": "Jenny",
                 "voice": "Maja",
                 "fi": "Visste du att det är så varmt på sommaren eftersom människor har för många bilar? Bilar släpper ut koldioxid och det skadar miljön.",
                 "en": "Did you know that it is so warm in summer because people have too many cars? Cars emit carbon dioxide and that harms the environment.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "släpper ut koldioxid",
+                    "en": "emit carbon dioxide"
+                  }
+                ]
               },
               {
                 "speaker": "Peter",
                 "voice": "Henrik",
                 "fi": "Ja, klimatförändringar är en viktig fråga.",
                 "en": "Yes, climate change is an important issue.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "klimatförändringar",
+                    "en": "climate change"
+                  }
+                ]
               },
               {
                 "speaker": "Jenny",
                 "voice": "Maja",
                 "fi": "Läraren sa att vi måste sopsortera och återvinna för att skydda miljön. Och sluta köpa så mycket plast! Jag måste säga till mamma att sluta beställa så mycket på nätet också.",
                 "en": "The teacher said that we must sort waste and recycle to protect the environment. And stop buying so much plastic! I must tell Mum to stop ordering so much online too.",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "återvinna",
+                    "en": "recycle"
+                  }
+                ]
               },
               {
                 "speaker": "Peter",
                 "voice": "Henrik",
                 "fi": "Vilken bra idé!",
                 "en": "What a good idea!",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "en bra idé",
+                    "en": "a good idea"
+                  }
+                ]
               },
               {
                 "speaker": "Jenny",
                 "voice": "Maja",
                 "fi": "Och Sara och jag blir veganer!",
                 "en": "And Sara and I are becoming vegans!",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "blir veganer",
+                    "en": "are becoming vegans"
+                  }
+                ]
               },
               {
                 "speaker": "Peter",
                 "voice": "Henrik",
                 "fi": "Men du älskar kött...",
                 "en": "But you love meat...",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "kött",
+                    "en": "meat"
+                  }
+                ]
               },
               {
                 "speaker": "Jenny",
                 "voice": "Maja",
                 "fi": "Men närproducerat kött kan man väl äta? Det har en mindre miljöpåverkan...",
                 "en": "But surely one can eat locally produced meat? It has a smaller environmental impact...",
-                "glossary": []
+                "glossary": [
+                  {
+                    "fi": "miljöpåverkan",
+                    "en": "environmental impact"
+                  }
+                ]
               }
             ],
             "listenQuestions": [
@@ -33638,8 +33811,8 @@
               "chunks": [
                 "skydda miljön",
                 "för att skydda miljön",
-                "sopsortera och återvinna",
-                "vi måste sopsortera och återvinna för att skydda miljön",
+                "återvinna för att skydda miljön",
+                "sopsortera och återvinna för att skydda miljön",
                 "Läraren sa att vi måste sopsortera och återvinna för att skydda miljön."
               ]
             },
@@ -33704,7 +33877,10 @@
           }
         ]
       }
-    ]
+    ],
+    "story": {
+      "object": "a flat advert and a place for a bicycle"
+    }
   },
   {
     "number": 22,

@@ -727,3 +727,20 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   Azure verification follow in the final gate.
 - Swedish: all lines reviewed; no doubtful authored line identified. The source’s
   ni/du switch is explained as staff versus an individual waiter. Writing fits 70–110 words.
+
+### Lecture 21 repair
+
+- Re-read Lesson 21 lines 2376–2491 and scans 54–55. Restored the omitted Amira
+  homework link/questions alongside Vår lägenhet i Zadar and ideal-home preparation.
+- Checked every hero field; Elin now says the flat line she actually says in the
+  dialogue. Added route labels and collapsed word bank. Corrected a recall answer
+  inventing a short commute for Alex, who says he works from home.
+- Filled all 30 empty example translations, repaired two match contracts, filled
+  textbook glossaries and rebuilt backchains. Restored restaurant-language carry-over.
+- Corrected the false long-i pronunciation note for återvinna (short i before nn).
+  Replaced the doubtful kitchen sentence with a clear `på grund av platsbristen`
+  model and taught that word; the planner now forms natural phrases.
+- Swedish: all lines reviewed. Source housing shorthand and the emphatic word order
+  around locally produced meat are explained. Source climate/food claims remain
+  attributed to Jenny; they are not asserted as a scientific account. No doubtful
+  authored line remains. Writing fits 70–110 words.
