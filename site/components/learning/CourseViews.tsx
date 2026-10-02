@@ -30,7 +30,7 @@ import { dueCards, reviewCardIds } from "@/lib/review-cards";
 import type { ProgressData } from "@/lib/progress";
 import type { Skill } from "@/lib/curriculum";
 import { SKILL_CONFIG } from "@/lib/skill-config";
-import { storyArtForLecture, storyChapterForModule } from "@/lib/story-world";
+import { storyArtForLecture, storyChapterForModule, storyCastForLecture } from "@/lib/story-world";
 import { bookReviews } from "@/lib/book-reviews";
 import { StoryCast } from "./StoryAvatar";
 
@@ -73,7 +73,7 @@ export function CourseHome({
         routeProfileForLecture(next).steps.find((step) => step.part === resume.part);
   const done = lectures.filter((l) => data.lectures[l.id]?.completedAt).length;
   const currentModule = courseModules.find((m) => m.number === next?.module);
-  const chapter = storyChapterForModule(next?.module ?? 1);
+  const chapter = storyChapterForModule(next?.module);
   const chapterLectures = lectures.filter(
     (lecture) => lecture.module === next?.module,
   );
@@ -103,13 +103,13 @@ export function CourseHome({
       <div className="classroom-grid">
         <section className="course-cover story-course-cover">
           <div className="story-cover-art">
-            <Image
+            {chapter.art ? <Image
               src={chapter.art}
               alt={"Illustrated scene for " + chapter.title}
               fill
               priority
               sizes="(max-width: 950px) 100vw, 760px"
-            />
+            /> : <StoryCast names={chapter.cast} label="In this chapter" />}
             <span className="story-art-label">
               CHAPTER {chapter.number} · {chapter.title}
             </span>
@@ -470,12 +470,12 @@ export function CourseSyllabus({
             >
               <header>
                 <div className="syllabus-chapter-art">
-                  <Image
+                  {chapter.art ? <Image
                     src={chapter.art}
                     alt={`Illustrated chapter setting: ${chapter.setting}`}
                     fill
                     sizes="(max-width: 700px) 100vw, 280px"
-                  />
+                  /> : <StoryCast names={chapter.cast} label="In this chapter" />}
                   <span>CHAPTER {String(m.number).padStart(2, "0")}</span>
                 </div>
                 <span className="module-index">
@@ -695,15 +695,16 @@ export function CourseNotebook({
       <div className="notebook-grid">
         {selected.map((l) => {
           const state = data.lectures[l.id];
+          const artwork = storyArtForLecture(l);
           return (
             <article className="notebook-entry" key={l.id}>
               <div className="notebook-entry-art">
-                <Image
-                  src={storyArtForLecture(l.number)}
+                {artwork ? <Image
+                  src={artwork}
                   alt={`Illustrated moment from Episode ${l.number}`}
                   fill
                   sizes="(max-width: 767px) 100vw, 350px"
-                />
+                /> : <StoryCast names={storyCastForLecture(l)} label="In this scene" />}
               </div>
               <span className="eyebrow">
                 EPISODE {l.number} · {l.level}

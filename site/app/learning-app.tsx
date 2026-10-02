@@ -338,7 +338,7 @@ function AppContent({ userId }: { userId: string }) {
   const currentLecture =
     lectures.find((item) => !course.data.lectures[item.id]?.completedAt) ??
     lectures.at(-1);
-  const currentChapter = storyChapterForModule(currentLecture?.module ?? 1);
+  const currentChapter = storyChapterForModule(lecture?.module ?? currentLecture?.module);
   const currentViewLabel =
     chapterReview
       ? `Chapter ${String(chapterReview.number).padStart(2, "0")} companion`
@@ -555,7 +555,7 @@ function AppContent({ userId }: { userId: string }) {
                   if (next) start(next);
                   else navigate("Course");
                 }}
-                last={lecture.number === lectures.at(-1)?.number}
+                last={lecture.id === lectures.at(-1)?.id}
                 onPracticeSaved={() => void load(true)}
                 onOpenChapterReview={(number) =>
                   openChapterReview(number, lecture.id)

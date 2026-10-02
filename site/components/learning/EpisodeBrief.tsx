@@ -4,6 +4,7 @@ import type { CourseLecture } from "@/lib/course";
 import {
   storyArtForLecture,
   storyObjectForLecture,
+  storyCastForLecture,
   type StoryChapter,
 } from "@/lib/story-world";
 import AudioButton from "./AudioButton";
@@ -27,6 +28,8 @@ export default function EpisodeBrief({
   const ruleCount = lecture.sections.filter((section) => section.kind === "rule").length;
   const byTheEnd = lecture.route?.expectedOutput ?? lecture.takeaways[0];
   const hero = lecture.presentation?.hero;
+  const artwork = storyArtForLecture(lecture);
+  const storyObject = storyObjectForLecture(lecture);
   const previouslyText = previousTitle
     ? `The last episode was “${previousTitle}.”`
     : "This is the first live lesson. Begin from its model before analysing the language.";
@@ -150,20 +153,20 @@ export default function EpisodeBrief({
         </ul>
       </div>
       <figure className="episode-brief-art">
-        <Image
-          src={storyArtForLecture(lecture.number)}
+        {artwork ? <Image
+          src={artwork}
           alt={`Illustrated scene for Episode ${lecture.number}: ${lecture.title}`}
           fill
-          priority={lecture.number <= 2}
+          priority
           sizes="(max-width: 850px) 100vw, 55vw"
-        />
+        /> : <StoryCast names={storyCastForLecture(lecture)} label="In this scene" />}
         <figcaption>
           <span>
             <MapPin size={14} /> {chapter.setting}
           </span>
-          <span>
-            <Sparkles size={14} /> {storyObjectForLecture(lecture.number)}
-          </span>
+          {storyObject && <span>
+            <Sparkles size={14} /> {storyObject}
+          </span>}
         </figcaption>
         <div className="episode-brief-cast">
           <StoryCast names={chapter.cast} label="In this chapter" compact />

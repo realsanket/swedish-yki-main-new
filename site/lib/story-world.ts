@@ -1,3 +1,6 @@
+import modulesData from "../content/modules.json";
+import type { CourseModule, LectureContent } from "./course-types";
+
 // Keep this list limited to characters that have passed the introduction gate
 // in docs/character-mapping.md. Source-book names are not runtime characters.
 export const storyCharacterNames = ["Alex", "Elin", "Henrik", "Maja"] as const;
@@ -36,34 +39,26 @@ export type StoryChapter = {
   title: string;
   setting: string;
   summary: string;
-  cast: readonly StoryCharacterName[];
-  art: string;
+  cast: readonly string[];
+  art: string | null;
 };
 
-export const storyChapters: Record<number, StoryChapter> = {
-  1: {
-    number: 1,
-    title: "The first class",
-    setting: "A community class and a first Swedish conversation",
-    summary:
-      "Alex meets Elin and learns to share a name, home, origin, and languages before noticing the sounds inside those useful phrases. At the next class break they talk about how they feel and the people in their lives.",
-    cast: ["Alex", "Elin", "Henrik"],
-    art: "/images/story/chapters/chapter-01-first-class.webp",
-  },
-};
+/** Story data belongs to the module, including explicit absence of artwork. */
+export function storyChapterForModule(moduleNumber?: number): StoryChapter {
+  const module = (modulesData.modules as CourseModule[]).find((item) => item.number === moduleNumber);
+  return {
+    number: module?.number ?? 0,
+    title: module?.story?.title ?? "Your Swedish story",
+    setting: module?.story?.setting ?? "An everyday Swedish conversation",
+    summary: module?.story?.summary ?? "Listen, try a useful phrase, and make it your own.",
+    cast: module?.story?.cast ?? [],
+    art: module?.story?.art ?? null,
+  };
+}
 
-const fallbackStoryChapter: StoryChapter = {
-  number: 1,
-  title: "The first class",
-  setting: "A community class and a first Swedish conversation",
-  summary:
-    "Begin with one useful conversation and build the sounds one step at a time.",
-  cast: ["Alex", "Elin", "Henrik"],
-  art: "/images/story/chapters/chapter-01-first-class.webp",
-};
-
-export function storyChapterForModule(moduleNumber: number): StoryChapter {
-  return storyChapters[moduleNumber] ?? fallbackStoryChapter;
+/** An episode may narrow the chapter cast to its own scene. */
+export function storyCastForLecture(lecture: Pick<LectureContent, "story" | "dialogue">) {
+  return lecture.story?.cast ?? [...new Set(lecture.dialogue?.map((line) => line.speaker) ?? [])];
 }
 
 export function storyCharacterForSpeaker(speaker: string) {
@@ -73,23 +68,10 @@ export function storyCharacterForSpeaker(speaker: string) {
   return match ? storyCharacters[match] : null;
 }
 
-const episodeArtwork: Record<number, string> = {
-  1: "episode-01-sound-workshop.webp",
-  2: "episode-02-names-at-break.webp",
-};
-
-const episodeObjects: Record<number, string> = {
-  1: "sound cards",
-  2: "family photos on a phone",
-};
-
-export function storyArtForLecture(lectureNumber: number) {
-  const artwork = episodeArtwork[lectureNumber];
-  return artwork
-    ? `/images/story/episodes/${artwork}`
-    : "/images/story/episodes/episode-01-sound-workshop.webp";
+export function storyArtForLecture(lecture: Pick<LectureContent, "story">) {
+  return lecture.story?.art ?? null;
 }
 
-export function storyObjectForLecture(lectureNumber: number) {
-  return episodeObjects[lectureNumber] ?? "a useful clue";
+export function storyObjectForLecture(lecture: Pick<LectureContent, "story">) {
+  return lecture.story?.object ?? null;
 }

@@ -1,8 +1,6 @@
 import Image from "next/image";
 import {
   storyCharacterForSpeaker,
-  storyCharacters,
-  type StoryCharacterName,
 } from "@/lib/story-world";
 
 export function StoryAvatar({
@@ -50,7 +48,7 @@ export function StoryCast({
   label = "In this chapter",
   compact = false,
 }: {
-  names: readonly StoryCharacterName[];
+  names: readonly string[];
   label?: string;
   compact?: boolean;
 }) {
@@ -63,7 +61,7 @@ export function StoryCast({
       </div>
       <span>
         <small>{label}</small>
-        <b>{names.map((name) => storyCharacters[name].name).join(", ")}</b>
+        <b>{names.join(", ")}</b>
       </span>
     </div>
   );

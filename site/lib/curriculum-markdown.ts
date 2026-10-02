@@ -19,9 +19,9 @@ export function detailedCurriculumMarkdown() {
   const lines = [
     "# Stigen — Detailed Swedish Curriculum",
     "",
-    "> The ordered teaching index for the live Chapter 1 workshop.",
+    "> The ordered teaching index for the active textbook course.",
     "",
-    `**${lectures.length} live episodes** across **${liveModules.length} story chapters**. The supplied classroom notes and books informed the sequence, but their pages are not embedded; every learner-facing task is original.`,
+    `**${lectures.length} live episodes** across **${liveModules.length} story chapters**. The supplied classroom notes and books informed the sequence, with mapped page scans in textbook practice and original story scenes and tasks.`,
     "",
     "## How to use this curriculum",
     "",

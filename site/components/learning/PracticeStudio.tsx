@@ -22,7 +22,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { lessons, examTasks } from "@/lib/curriculum";
 import type { CourseLecture } from "@/lib/course-types";
 import type { PracticeFeedback } from "@/lib/ai";
-import { storyChapters } from "@/lib/story-world";
+import { storyChapterForModule, storyCastForLecture } from "@/lib/story-world";
 import AudioButton from "./AudioButton";
 import LiveVoice from "./LiveVoice";
 import MissionPlanner from "./MissionPlanner";
@@ -267,7 +267,7 @@ export default function PracticeStudio({
   );
   const taskIndex = Math.min(index, Math.max(0, tasks.length - 1));
   const task = tasks[taskIndex];
-  const chapter = lecture ? storyChapters[lecture.module] : null;
+  const chapter = lecture ? storyChapterForModule(lecture.module) : null;
   return (
     <section className={styles.studio} data-embedded={embedded}>
       <Tabs
@@ -307,7 +307,7 @@ export default function PracticeStudio({
                         one detail for a second attempt.
                       </p>
                       <StoryCast
-                        names={chapter.cast}
+                        names={storyCastForLecture(lecture)}
                         label="In the scene"
                         compact
                       />

@@ -322,6 +322,8 @@ export type LecturePractice = Pick<
 export type LectureContent = {
   number: number;
   legacyLessonId?: string;
+  /** Scene details belong to this lecture; absent art shows cast portraits. */
+  story?: { art?: string; object?: string; cast?: string[] };
   /** Explicit route choice. Future lecture numbers carry no implied format. */
   routeProfile?: LectureRouteProfileId;
   /**
@@ -382,6 +384,14 @@ export type CourseLecture = Omit<LectureContent, "practice" | "route"> &
     minutes: number;
   };
 export type CourseModule = {
+  story?: {
+    title: string;
+    setting: string;
+    summary: string;
+    cast: string[];
+    /** Only existing /images/story artwork, or null for cast portraits. */
+    art: string | null;
+  };
   number: number;
   level: Level;
   title: string;

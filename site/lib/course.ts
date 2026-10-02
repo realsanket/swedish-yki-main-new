@@ -112,24 +112,6 @@ export function routeProfileForLecture(
 }
 
 const allSkills: Skill[] = ["listening", "speaking", "reading", "writing"];
-const legacyPrimarySkills: Record<number, "speaking" | "writing"> = {
-  1: "speaking", 2: "speaking", 3: "speaking", 4: "speaking",
-  6: "speaking", 7: "speaking", 8: "speaking", 9: "speaking",
-  11: "speaking", 12: "speaking", 13: "writing", 14: "speaking",
-  16: "speaking", 17: "writing", 18: "speaking", 19: "speaking",
-  21: "writing", 22: "speaking", 23: "speaking", 24: "writing",
-  26: "speaking", 27: "writing", 28: "speaking", 29: "speaking",
-  31: "speaking", 32: "speaking", 33: "writing", 34: "writing",
-  36: "speaking", 37: "writing", 38: "writing", 39: "speaking",
-  41: "writing", 42: "speaking", 43: "writing", 44: "writing",
-  46: "speaking", 47: "speaking", 48: "writing", 49: "speaking",
-  51: "speaking", 52: "writing", 53: "speaking", 54: "writing",
-};
-
-function fallbackPrimarySkill(number: number): "speaking" | "writing" {
-  return legacyPrimarySkills[number] ?? "speaking";
-}
-
 function fallbackTransfer(instructions: string): string {
   const match = instructions.match(/TRANSFER:\s*([^\n]+)/i);
   return match?.[1]?.trim() || "Change one important detail and respond again.";
@@ -153,7 +135,7 @@ function fallbackExpectedOutput(
 export function routeForLecture(lecture: LectureContent | CourseLecture): EpisodeRoute {
   if (lecture.route) return lecture.route;
   const profile = routeProfileForLecture(lecture).id;
-  const primarySkill = fallbackPrimarySkill(lecture.number);
+  const primarySkill = "speaking";
   const requiredSkills = profile === "standard" ? [primarySkill] : allSkills;
   return {
     primarySkill,
