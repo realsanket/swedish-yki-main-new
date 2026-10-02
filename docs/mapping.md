@@ -521,3 +521,18 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
 - Swedish: reviewed all lines; source `kan träffas` in past narration, `vet många
   saker` and `Marvel superhjältar` remain flagged for the teacher. No doubtful
   authored line remains. Shopping model fits 30–55 words.
+
+### Lecture 8 repair
+
+- Re-read Lesson 8 lines 836–962, plan section 6 and scans 19–20; the recurring
+  diary task remains the homework. Restored page 18 as an explicit reference tab,
+  as the planned mapping says “18 again”. This supersedes the cloud build’s omission.
+- Added the 4 May hero and complete opening, stable labels and collapsed word bank.
+  Corrected shifted page-20 recall cues and added the teacher’s object-first example,
+  `i morse`, `började (att) skriva` and the two uses of `att`.
+- Kept Andreas and Sara out of original teaching and writing examples. Clarified
+  the course example as everyday life in Finland. The letter model fits 40–70 words.
+- Swedish: all lines reviewed. Source `Första dejt` gets the model `Första dejten`;
+  `ha fika` gets `fika`. Do not replace `borde` with `ska`: their meanings differ.
+  Source `hade fru och barn` and the future reading of `blir Lena … besviken` remain
+  teacher-review notes. No doubtful authored line identified.
