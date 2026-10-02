@@ -678,3 +678,19 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   Clarified time-word positions and preserved the teacher’s contrasting duration examples.
 - Swedish: all lines reviewed; no doubtful authored line identified. The source’s
   strong-verb list is complete and checked against page 49. Writing fits 60–100 words.
+
+### Lecture 18 repair
+
+- Re-read Lesson 18 lines 2077–2175 and scan 50; no homework.
+- Added the 29 May hero and stable presentation. Repaired the hunt, natural-note
+  fields and match activity contract. Replaced answer-as-hint and empty explanations.
+- Included the teacher’s substantial perfect-tense carry-over in teaching and typed
+  practice without changing the new-topic order. Recognised page 50’s `eftersom`
+  while keeping its full word-order lesson in Lecture 19.
+- Kept Maja a current student: the long graduate/university retrospective now belongs
+  to adult Elin. Alex’s first day in Finland is explicitly his adult Swedish course.
+  Used ordinary “school” for his India example rather than equating school systems.
+- Swedish: all lines reviewed; no doubtful authored line identified. Clarified the
+  school-stage words, ordinary dagis, plugghäst and lumpen. The teacher’s claim that
+  everyone in Finland must take a gap year for military service is not used as a rule.
+  Writing model fits 60–100 words.
