@@ -66,3 +66,12 @@ export function StoryCast({
     </div>
   );
 }
+
+/** A scene without verified artwork shows its actual cast, never another scene. */
+export function StoryPortraits({ names }: { names: readonly string[] }) {
+  return (
+    <div className="story-portraits" role="img" aria-label={`Cast: ${names.join(", ") || "a Swedish conversation"}`}>
+      {names.map((name) => <StoryAvatar key={name} name={name} size={48} />)}
+    </div>
+  );
+}

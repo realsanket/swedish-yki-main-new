@@ -4229,7 +4229,7 @@
   content: "";
   background: linear-gradient(180deg, transparent, rgba(19, 58, 47, 0.48));
 }
-.story-syllabus .syllabus-chapter-art span {
+.story-syllabus .syllabus-chapter-art > span {
   position: absolute;
   z-index: 1;
   bottom: 15px;
@@ -8798,3 +8798,18 @@
 .sound-check-note b { color: #213b52; }
 .practice-next { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin: 12px 0 0; color: #2d6b4f; font-size: 14px; font-weight: 700; }
 .practice-focus .practice-next button { text-transform: none; }
+
+/* Portrait fallback for content that has no verified scene illustration. */
+.story-portraits {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 18px;
+  background: linear-gradient(135deg, #e8f0e5, #fff2cb);
+}
+.story-portraits .story-avatar { flex: 0 0 auto; }

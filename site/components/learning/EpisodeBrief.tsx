@@ -8,7 +8,7 @@ import {
   type StoryChapter,
 } from "@/lib/story-world";
 import AudioButton from "./AudioButton";
-import { StoryAvatar, StoryCast } from "./StoryAvatar";
+import { StoryAvatar, StoryCast, StoryPortraits } from "./StoryAvatar";
 
 type Props = {
   lecture: CourseLecture;
@@ -159,7 +159,7 @@ export default function EpisodeBrief({
           fill
           priority
           sizes="(max-width: 850px) 100vw, 55vw"
-        /> : <StoryCast names={storyCastForLecture(lecture)} label="In this scene" />}
+        /> : <StoryPortraits names={storyCastForLecture(lecture)} />}
         <figcaption>
           <span>
             <MapPin size={14} /> {chapter.setting}

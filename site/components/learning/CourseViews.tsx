@@ -32,7 +32,7 @@ import type { Skill } from "@/lib/curriculum";
 import { SKILL_CONFIG } from "@/lib/skill-config";
 import { storyArtForLecture, storyChapterForModule, storyCastForLecture } from "@/lib/story-world";
 import { bookReviews } from "@/lib/book-reviews";
-import { StoryCast } from "./StoryAvatar";
+import { StoryCast, StoryPortraits } from "./StoryAvatar";
 
 export function nextLecture(
   data: CourseProgressData,
@@ -109,7 +109,7 @@ export function CourseHome({
               fill
               priority
               sizes="(max-width: 950px) 100vw, 760px"
-            /> : <StoryCast names={chapter.cast} label="In this chapter" />}
+            /> : <StoryPortraits names={chapter.cast} />}
             <span className="story-art-label">
               CHAPTER {chapter.number} · {chapter.title}
             </span>
@@ -475,7 +475,7 @@ export function CourseSyllabus({
                     alt={`Illustrated chapter setting: ${chapter.setting}`}
                     fill
                     sizes="(max-width: 700px) 100vw, 280px"
-                  /> : <StoryCast names={chapter.cast} label="In this chapter" />}
+                  /> : <StoryPortraits names={chapter.cast} />}
                   <span>CHAPTER {String(m.number).padStart(2, "0")}</span>
                 </div>
                 <span className="module-index">
@@ -704,7 +704,7 @@ export function CourseNotebook({
                   alt={`Illustrated moment from Episode ${l.number}`}
                   fill
                   sizes="(max-width: 767px) 100vw, 350px"
-                /> : <StoryCast names={storyCastForLecture(l)} label="In this scene" />}
+                /> : <StoryPortraits names={storyCastForLecture(l)} />}
               </div>
               <span className="eyebrow">
                 EPISODE {l.number} · {l.level}
