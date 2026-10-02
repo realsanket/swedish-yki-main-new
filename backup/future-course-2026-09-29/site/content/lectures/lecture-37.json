@@ -1,0 +1,461 @@
+{
+  "number": 37,
+  "legacyLessonId": "a2-rules",
+  "objectives": [
+    "Describe skills and experience, understand a course or job notice and request additional information.",
+    "Use and recognise: Jag har erfarenhet av kundservice. · Jag kan arbeta självständigt och i team. · När börjar kursen och vilka krav gäller?",
+    "Complete a first attempt, inspect evidence or feedback, then repeat with a changed condition."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-37-recall-1",
+      "prompt": "Which phrase introduces experience?",
+      "answers": [
+        "Jag har erfarenhet av …"
+      ],
+      "options": [
+        "Jag har erfarenhet av …",
+        "Jag är erfarenhet om …",
+        "Jag kan erfarenhet …"
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “Jag har erfarenhet av …”."
+    },
+    {
+      "id": "sv-37-recall-2",
+      "prompt": "What does deltid mean?",
+      "answers": [
+        "part-time"
+      ],
+      "options": [
+        "part-time",
+        "permanent qualification",
+        "distance learning"
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “part-time”."
+    },
+    {
+      "id": "sv-37-recall-3",
+      "prompt": "Choose the natural ability pattern.",
+      "answers": [
+        "Jag kan arbeta i team."
+      ],
+      "options": [
+        "Jag kan arbeta i team.",
+        "Jag kan arbetar i team.",
+        "Jag arbetar kan i team."
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “Jag kan arbeta i team.”."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Work and education: meaning and form",
+      "body": [
+        "Goal: Describe skills and experience, understand a course or job notice and request additional information.",
+        "Core vocabulary: en behörighet, arbetslivserfarenhet, deltid. Key phrases: Jag har erfarenhet av kundservice. · Jag kan arbeta självständigt och i team. · När börjar kursen och vilka krav gäller?",
+        "Use kan for ability, har erfarenhet av + noun or -ing form for experience, and har arbetat som + occupation for previous or currently relevant experience. Formal notices often compress information, so expand key requirements into complete questions before responding.",
+        "Say the examples aloud, notice the pattern, and then change one detail rather than memorising a fixed script."
+      ],
+      "examples": [
+        {
+          "fi": "Jag har erfarenhet av kundservice.",
+          "en": "I have experience in customer service."
+        },
+        {
+          "fi": "Jag kan arbeta självständigt och i team.",
+          "en": "I can work independently and in a team."
+        },
+        {
+          "fi": "När börjar kursen och vilka krav gäller?",
+          "en": "When does the course begin and what requirements apply?"
+        }
+      ]
+    },
+    {
+      "title": "Register, evidence and independent use",
+      "body": [
+        "Register model: “Jag skriver för att anmäla mitt intresse för tjänsten.” is a formal-neutral application way to express “I am writing to express my interest in the position.”.",
+        "For listening and reading, answer from a specific word or phrase. For speaking and writing, make the recipient, purpose and next action clear.",
+        "Attempt the task before using the model. Improve one high-impact feature, then perform it again with the transfer condition."
+      ],
+      "examples": [
+        {
+          "fi": "Jag skriver för att anmäla mitt intresse för tjänsten.",
+          "en": "I am writing to express my interest in the position.",
+          "note": "Use as a formal-neutral application model, then adapt the details."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Communicative move",
+          "Useful Swedish",
+          "Check"
+        ],
+        "rows": [
+          [
+            "establish the episode function",
+            "Jag har erfarenhet av kundservice.",
+            "Is the meaning clear?"
+          ],
+          [
+            "add or contrast information",
+            "Jag kan arbeta självständigt och i team.",
+            "Does the form fit?"
+          ],
+          [
+            "complete the task",
+            "När börjar kursen och vilka krav gäller?",
+            "Can the listener or reader act?"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-37-guided-1",
+      "prompt": "Choose the meaning of “Jag har erfarenhet av kundservice.”.",
+      "answers": [
+        "I have experience in customer service."
+      ],
+      "options": [
+        "I have experience in customer service.",
+        "I can work independently and in a team.",
+        "When does the course begin and what requirements apply?"
+      ],
+      "hint": "Match the complete Swedish phrase to its communicative meaning.",
+      "explanation": "“Jag har erfarenhet av kundservice.” means “I have experience in customer service.”."
+    },
+    {
+      "id": "sv-37-guided-2",
+      "prompt": "Jag har arbetat ___ vårdassistent i två år.",
+      "answers": [
+        "som"
+      ],
+      "options": [
+        "som",
+        "av",
+        "till"
+      ],
+      "hint": "Use the grammar pattern from the teaching section.",
+      "explanation": "The correct completion is “som”."
+    },
+    {
+      "id": "sv-37-guided-3",
+      "prompt": "Which line is part of the episode dialogue?",
+      "answers": [
+        "Vad vill du veta?"
+      ],
+      "options": [
+        "Vad vill du veta?",
+        "När börjar kursen och vilka krav gäller?",
+        "Jag kaffe är."
+      ],
+      "hint": "Return to the dialogue and locate the exact line.",
+      "explanation": "The dialogue includes “Vad vill du veta?”."
+    },
+    {
+      "id": "sv-37-guided-4",
+      "prompt": "What must participants be able to do?",
+      "answers": [
+        "attend on both evenings"
+      ],
+      "options": [
+        "attend on both evenings",
+        "show previous studies",
+        "study entirely online"
+      ],
+      "hint": "Listen first for the situation, then again for the requested detail.",
+      "explanation": "The relevant listening detail is “attend on both evenings”."
+    },
+    {
+      "id": "sv-37-guided-5",
+      "prompt": "Which item is an advantage but not a requirement?",
+      "answers": [
+        "previous experience"
+      ],
+      "options": [
+        "previous experience",
+        "speaking Swedish",
+        "being available for evening shifts"
+      ],
+      "hint": "Locate the words that prove the answer; do not translate every sentence.",
+      "explanation": "The text shows that the answer is “previous experience”."
+    },
+    {
+      "id": "sv-37-guided-6",
+      "prompt": "Which opening fits an expression of interest?",
+      "answers": [
+        "Jag skriver för att anmäla mitt intresse för tjänsten."
+      ],
+      "options": [
+        "Jag skriver för att anmäla mitt intresse för tjänsten.",
+        "Hej, jobbet verkar kul typ.",
+        "Ge mig tjänsten tack."
+      ],
+      "hint": "Consider the reader, relationship and purpose.",
+      "explanation": "The best fit is “Jag skriver för att anmäla mitt intresse för tjänsten.”."
+    },
+    {
+      "id": "sv-37-guided-7",
+      "prompt": "Which item is a core vocabulary target in this episode?",
+      "answers": [
+        "arbetslivserfarenhet"
+      ],
+      "options": [
+        "arbetslivserfarenhet",
+        "Jag kan arbeta självständigt och i team.",
+        "Jag kaffe är."
+      ],
+      "hint": "Choose the standalone word or phrase introduced in this episode.",
+      "explanation": "arbetslivserfarenhet means “work experience”."
+    },
+    {
+      "id": "sv-37-guided-8",
+      "prompt": "Which Swedish phrase best supports the goal “Describe skills and experience, understand a course or job notice and request additional information.”?",
+      "answers": [
+        "När börjar kursen och vilka krav gäller?"
+      ],
+      "options": [
+        "När börjar kursen och vilka krav gäller?",
+        "God natt!",
+        "Jag heter ett bord."
+      ],
+      "hint": "Choose the phrase that performs the target function.",
+      "explanation": "“När börjar kursen och vilka krav gäller?” directly supports the episode goal."
+    },
+    {
+      "id": "sv-37-guided-9",
+      "prompt": "Which action demonstrates transfer rather than memorisation?",
+      "answers": [
+        "adapt the useful pattern to the changed situation"
+      ],
+      "options": [
+        "adapt the useful pattern to the changed situation",
+        "repeat the dialogue word for word",
+        "translate the English model only"
+      ],
+      "hint": "Transfer means keeping the function while changing important details.",
+      "explanation": "Independent transfer adapts language to a new condition."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-37-check-1",
+      "prompt": "Choose the sentence that best represents the episode's core language.",
+      "answers": [
+        "Jag har erfarenhet av kundservice."
+      ],
+      "options": [
+        "Jag har erfarenhet av kundservice.",
+        "Jag kaffe är.",
+        "God natt."
+      ],
+      "hint": "Choose the sentence tied directly to today's objective.",
+      "explanation": "Carry forward “Jag har erfarenhet av kundservice.”."
+    },
+    {
+      "id": "sv-37-check-2",
+      "prompt": "What must participants be able to do?",
+      "answers": [
+        "attend on both evenings"
+      ],
+      "options": [
+        "attend on both evenings",
+        "show previous studies",
+        "study entirely online"
+      ],
+      "hint": "Replay only after making a first evidence-based choice.",
+      "explanation": "The key detail is “attend on both evenings”."
+    },
+    {
+      "id": "sv-37-check-3",
+      "prompt": "Which item is an advantage but not a requirement?",
+      "answers": [
+        "previous experience"
+      ],
+      "options": [
+        "previous experience",
+        "speaking Swedish",
+        "being available for evening shifts"
+      ],
+      "hint": "Use a phrase in the text as proof.",
+      "explanation": "The correct answer is “previous experience”."
+    },
+    {
+      "id": "sv-37-check-4",
+      "prompt": "What should you carry into the next episode?",
+      "answers": [
+        "one usable pattern, one comprehension strategy and one completed real task"
+      ],
+      "options": [
+        "one usable pattern, one comprehension strategy and one completed real task",
+        "a word-for-word memorised dialogue",
+        "only English grammar labels"
+      ],
+      "hint": "Keep a small set that you can retrieve and adapt.",
+      "explanation": "Durable learning combines retrieval, evidence and independent use."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill task and transfer",
+    "instructions": "LISTEN: First listen without a transcript. Answer: What must participants be able to do? Replay once and identify the exact words that prove the answer.\n\nREAD: Read for purpose and evidence. Answer: Which item is an advantage but not a requirement? Mark the shortest phrase that supports your choice.\n\nSPEAK: Introduce yourself for a course or job inquiry. Mention two skills, one relevant experience and ask two precise questions. Make a first attempt, check clarity and repeat once.\n\nWRITE: Write a 120-word expression of interest for an original part-time role. Connect your experience to the listed tasks and state your availability. Check reader, purpose, required details and next action.\n\nTRANSFER: The role changes from customer service to a training course; adapt your evidence and questions rather than reusing the application unchanged.\n\nBETWEEN LESSON · Optional, 5 minutes: retrieve the three key phrases without looking, then use one in a new sentence.",
+    "model": "Jag har erfarenhet av kundservice. Jag kan arbeta självständigt och i team. När börjar kursen och vilka krav gäller?"
+  },
+  "takeaways": [
+    "Use: Jag har erfarenhet av kundservice.",
+    "Notice: Use kan for ability, har erfarenhet av + noun or -ing form for experience, and har arbetat som + occupation for previous or currently relevant experience.",
+    "Transfer the pattern: The role changes from customer service to a training course; adapt your evidence and questions rather than reusing the application unchanged."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Sökande",
+      "fi": "Hej, jag ringer om utbildningen till närvårdare.",
+      "en": "Hello, I am calling about the practical-nurse programme."
+    },
+    {
+      "speaker": "Studierådgivare",
+      "fi": "Vad vill du veta?",
+      "en": "What would you like to know?"
+    },
+    {
+      "speaker": "Sökande",
+      "fi": "När börjar kursen, och krävs tidigare erfarenhet inom vården?",
+      "en": "When does the course begin, and is previous healthcare experience required?"
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-37-word-1",
+        "fi": "en behörighet",
+        "en": "a qualification/eligibility",
+        "example": "en behörighet",
+        "translation": "a qualification/eligibility",
+        "level": "A2"
+      },
+      {
+        "id": "sv-37-word-2",
+        "fi": "arbetslivserfarenhet",
+        "en": "work experience",
+        "example": "arbetslivserfarenhet",
+        "translation": "work experience",
+        "level": "A2"
+      },
+      {
+        "id": "sv-37-word-3",
+        "fi": "deltid",
+        "en": "part-time",
+        "example": "deltid",
+        "translation": "part-time",
+        "level": "A2"
+      },
+      {
+        "id": "sv-37-phrase-1",
+        "fi": "Jag har erfarenhet av kundservice.",
+        "en": "I have experience in customer service.",
+        "example": "Jag har erfarenhet av kundservice.",
+        "translation": "I have experience in customer service.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-37-phrase-2",
+        "fi": "Jag kan arbeta självständigt och i team.",
+        "en": "I can work independently and in a team.",
+        "example": "Jag kan arbeta självständigt och i team.",
+        "translation": "I can work independently and in a team.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-37-phrase-3",
+        "fi": "När börjar kursen och vilka krav gäller?",
+        "en": "When does the course begin and what requirements apply?",
+        "example": "När börjar kursen och vilka krav gäller?",
+        "translation": "When does the course begin and what requirements apply?",
+        "level": "A2"
+      }
+    ],
+    "pronunciation": {
+      "text": "Jag kan arbeta självständigt och i team.",
+      "tip": "Break självständigt into manageable parts, then stress the first syllable and keep the final -t light."
+    },
+    "reading_passage": {
+      "text": "Ledig tjänst: Butiksmedarbetare, deltid 25 timmar per vecka. Arbetet omfattar kundservice, varuplockning och kvällspass. Vi söker dig som talar svenska, samarbetar väl och kan börja den 3 november. Erfarenhet är en fördel men inget krav.",
+      "gist": {
+        "prompt": "What is the main purpose of this text?",
+        "options": [
+          "to communicate practical information",
+          "to list unrelated grammar terms",
+          "to tell a fantasy story"
+        ],
+        "answer": 0,
+        "explanation": "The text gives information that supports an everyday decision or action."
+      },
+      "detail": {
+        "prompt": "Which item is an advantage but not a requirement?",
+        "options": [
+          "previous experience",
+          "speaking Swedish",
+          "being available for evening shifts"
+        ],
+        "answer": 0,
+        "explanation": "The text supports “previous experience”."
+      }
+    },
+    "reading": {
+      "text": "Ledig tjänst: Butiksmedarbetare, deltid 25 timmar per vecka. Arbetet omfattar kundservice, varuplockning och kvällspass. Vi söker dig som talar svenska, samarbetar väl och kan börja den 3 november. Erfarenhet är en fördel men inget krav.",
+      "question": "Which item is an advantage but not a requirement?",
+      "options": [
+        "previous experience",
+        "speaking Swedish",
+        "being available for evening shifts"
+      ],
+      "answer": 0,
+      "explanation": "Use the text as evidence for “previous experience”."
+    },
+    "listening": {
+      "text": "Kvällskursen börjar den sjätte september och pågår i tolv veckor. Undervisningen ordnas på tisdagar och torsdagar på plats. Du behöver inga tidigare studier, men du måste kunna delta båda kvällarna.",
+      "question": "What must participants be able to do?",
+      "options": [
+        "attend on both evenings",
+        "show previous studies",
+        "study entirely online"
+      ],
+      "answer": 0,
+      "explanation": "The spoken message identifies “attend on both evenings”."
+    },
+    "speaking": {
+      "prompt": "Introduce yourself for a course or job inquiry. Mention two skills, one relevant experience and ask two precise questions.",
+      "help": "Plan three chunks and reuse, without copying, one of these patterns: Jag har erfarenhet av kundservice. · Jag kan arbeta självständigt och i team. · När börjar kursen och vilka krav gäller?",
+      "model": "Jag har erfarenhet av kundservice. Jag kan arbeta självständigt och i team. När börjar kursen och vilka krav gäller?"
+    },
+    "writing": {
+      "prompt": "Write a 120-word expression of interest for an original part-time role. Connect your experience to the listed tasks and state your availability.",
+      "help": "Identify the reader and purpose, include every requested detail, connect the ideas, and finish with a clear next action.",
+      "model": "Jag har erfarenhet av kundservice. Jag kan arbeta självständigt och i team. När börjar kursen och vilka krav gäller?"
+    }
+  },
+  "route": {
+    "primarySkill": "writing",
+    "expectedOutput": "Present relevant skills and experience in a targeted work or study message.",
+    "transferPrompt": "The role changes from customer service to a training course; adapt your evidence and questions rather than reusing the application unchanged.",
+    "returnPrompt": "Within two days, retrieve “Jag har erfarenhet av kundservice.” and use it in a different context.",
+    "successChecks": [
+      "Evidence connects directly to the opportunity.",
+      "Ability and experience use natural structures.",
+      "Questions request information missing from the notice."
+    ],
+    "requiredSkills": [
+      "writing"
+    ]
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "number": 19,
+  "objectives": [
+    "Tell a sequence of completed past events.",
+    "Form regular preterites and recognise common irregulars.",
+    "Use past time expressions with V2."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-19-recall-1",
+      "prompt": "Retrieve a useful line from the preceding episode.",
+      "answers": [
+        "Igår arbetade jag inte."
+      ],
+      "options": [
+        "Igår arbetade jag inte.",
+        "Igår jag inte arbetade.",
+        "Igår inte arbetade jag."
+      ],
+      "hint": "Choose the grammatically complete line.",
+      "explanation": "This recycles earlier Swedish."
+    },
+    {
+      "id": "sv-19-recall-key",
+      "prompt": "Choose the Swedish line meaning “Yesterday I worked, cooked, and watched a film.”",
+      "answers": [
+        "Igår arbetade jag, lagade mat och såg en film."
+      ],
+      "options": [
+        "Igår arbetade jag, lagade mat och såg en film.",
+        "Vad gjorde du i helgen?",
+        "förra veckan"
+      ],
+      "hint": "Match the whole message.",
+      "explanation": "Igår arbetade jag, lagade mat och såg en film. means “Yesterday I worked, cooked, and watched a film.”"
+    },
+    {
+      "id": "sv-19-recall-sound",
+      "prompt": "Which ending is unstressed in arbetade?",
+      "answers": [
+        "-ade"
+      ],
+      "options": [
+        "-ade",
+        "ar-",
+        "both equally"
+      ],
+      "hint": "Say the options and apply the cue.",
+      "explanation": "Main stress stays on the stem."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Yesterday and the preterite",
+      "kind": "scene",
+      "body": [
+        "A past story needs time, two or three actions, and a reaction.",
+        "Stay with preterite for a finished event at a stated past time.",
+        "Use först, sedan, till slut for order."
+      ],
+      "examples": [
+        {
+          "fi": "Vad gjorde du i helgen?",
+          "en": "What did you do this weekend?"
+        },
+        {
+          "fi": "I lördags gick jag till marknaden.",
+          "en": "Saturday I went to the market."
+        },
+        {
+          "fi": "Köpte du något?",
+          "en": "Did you buy anything?"
+        },
+        {
+          "fi": "Ja, bröd, och jag såg en konsert.",
+          "en": "Yes, bread, and I saw a concert."
+        }
+      ]
+    },
+    {
+      "title": "Regular and irregular past forms",
+      "kind": "rule",
+      "body": [
+        "Many -ar verbs add -ade: arbetar → arbetade. Many -er verbs take -de/-te: stänger → stängde, köper → köpte.",
+        "Learn frequent irregular pairs: är/var, går/gick, ser/såg, gör/gjorde, kommer/kom.",
+        "Use igår, i morse, förra veckan, i helgen; a fronted time keeps the verb second."
+      ],
+      "examples": [
+        {
+          "fi": "Igår arbetade jag hemma.",
+          "en": "Yesterday I worked at home."
+        },
+        {
+          "fi": "Hon köpte mat.",
+          "en": "She bought food."
+        },
+        {
+          "fi": "Vi gick till biblioteket.",
+          "en": "We went to the library."
+        },
+        {
+          "fi": "De såg en film.",
+          "en": "They watched a film."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Present",
+          "Past",
+          "Pattern"
+        ],
+        "rows": [
+          [
+            "arbetar",
+            "arbetade",
+            "-ar → -ade"
+          ],
+          [
+            "köper",
+            "köpte",
+            "-te"
+          ],
+          [
+            "är",
+            "var",
+            "irregular"
+          ],
+          [
+            "går",
+            "gick",
+            "irregular"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-19-guided-meaning",
+      "prompt": "What does “Igår arbetade jag, lagade mat och såg en film.” mean?",
+      "answers": [
+        "Yesterday I worked, cooked, and watched a film."
+      ],
+      "options": [
+        "Yesterday I worked, cooked, and watched a film.",
+        "What did you do this weekend?",
+        "went"
+      ],
+      "hint": "Match the whole line.",
+      "explanation": "Igår arbetade jag, lagade mat och såg en film. means “Yesterday I worked, cooked, and watched a film.”"
+    },
+    {
+      "id": "sv-19-guided-form",
+      "prompt": "Past of att arbeta?",
+      "answers": [
+        "arbetade"
+      ],
+      "options": [
+        "arbetade",
+        "arbetar",
+        "arbetat"
+      ],
+      "hint": "Use the rule.",
+      "explanation": "Many -ar verbs form past with -ade."
+    },
+    {
+      "id": "sv-19-guided-scene",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Köpte du något?"
+      ],
+      "options": [
+        "Köpte du något?",
+        "Vad gjorde du i helgen?",
+        "Igår arbetade jag, lagade mat och såg en film."
+      ],
+      "hint": "Locate the line.",
+      "explanation": "The dialogue includes Köpte du något?"
+    },
+    {
+      "id": "sv-19-guided-listen",
+      "prompt": "What happened Sunday?",
+      "answers": [
+        "Stayed home and read"
+      ],
+      "options": [
+        "Stayed home and read",
+        "Worked",
+        "Met a friend"
+      ],
+      "hint": "Listen for the detail.",
+      "explanation": "Var hemma och läste."
+    },
+    {
+      "id": "sv-19-guided-read",
+      "prompt": "What happened after the library?",
+      "answers": [
+        "He bought food"
+      ],
+      "options": [
+        "He bought food",
+        "He watched a film",
+        "He worked"
+      ],
+      "hint": "Scan the text.",
+      "explanation": "Sedan köpte han mat."
+    },
+    {
+      "id": "sv-19-guided-sound",
+      "prompt": "Which ending is unstressed in arbetade?",
+      "answers": [
+        "-ade"
+      ],
+      "options": [
+        "-ade",
+        "ar-",
+        "both equally"
+      ],
+      "hint": "Use spelling and audio.",
+      "explanation": "Main stress stays on the stem."
+    },
+    {
+      "id": "sv-19-guided-word",
+      "prompt": "Which item means “yesterday”?",
+      "answers": [
+        "igår"
+      ],
+      "options": [
+        "igår",
+        "förra veckan",
+        "gick"
+      ],
+      "hint": "Use the examples.",
+      "explanation": "igår means yesterday."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-19-check-key",
+      "prompt": "Produce: “Yesterday I worked, cooked, and watched a film.”",
+      "answers": [
+        "Igår arbetade jag, lagade mat och såg en film."
+      ],
+      "hint": "Say, then type.",
+      "explanation": "Model: Igår arbetade jag, lagade mat och såg en film."
+    },
+    {
+      "id": "sv-19-check-form",
+      "prompt": "Past of att arbeta?",
+      "answers": [
+        "arbetade"
+      ],
+      "options": [
+        "arbetade",
+        "arbetar",
+        "arbetat"
+      ],
+      "hint": "Apply from memory.",
+      "explanation": "Many -ar verbs form past with -ade."
+    },
+    {
+      "id": "sv-19-check-listen",
+      "prompt": "What happened Sunday?",
+      "answers": [
+        "Stayed home and read"
+      ],
+      "options": [
+        "Stayed home and read",
+        "Worked",
+        "Met a friend"
+      ],
+      "hint": "Replay once.",
+      "explanation": "Var hemma och läste."
+    },
+    {
+      "id": "sv-19-check-transfer",
+      "prompt": "What best tests transfer?",
+      "answers": [
+        "Change one detail and rebuild the message"
+      ],
+      "options": [
+        "Change one detail and rebuild the message",
+        "Copy the model",
+        "Translate every word"
+      ],
+      "hint": "Change the situation.",
+      "explanation": "Rebuilding tests transfer."
+    }
+  ],
+  "assignment": {
+    "title": "Episode 19 mission: Yesterday and the preterite",
+    "instructions": "LISTEN: Hear twice and answer: What happened Sunday?\n\nREAD: Read for purpose and detail. Answer: What happened after the library?\n\nSPEAK: Tell a three-event past story. Try once unaided, then improve one detail.\n\nWRITE: Write five connected past sentences. Check word order, forms, and purpose.\n\nTRANSFER: Change the day and one regular verb to irregular.\n\nRETURN: Give past of arbetar, är, går, ser, köper.",
+    "model": "Speaking: Igår gick jag till centrum. Sedan köpte jag mat. Till slut såg jag en film.\nWriting: Igår var jag ledig. Först gick jag till biblioteket. Sedan träffade jag en vän. Vi fikade. På kvällen såg jag en film."
+  },
+  "takeaways": [
+    "Use: Igår arbetade jag, lagade mat och såg en film.",
+    "Rule: Many -ar verbs add -ade: arbetar → arbetade. Many -er verbs take -de/-te: stänger → stängde, köper → köpte.",
+    "Return: Give past of arbetar, är, går, ser, köper."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Nora",
+      "fi": "Vad gjorde du i helgen?",
+      "en": "What did you do this weekend?"
+    },
+    {
+      "speaker": "Pekka",
+      "fi": "I lördags gick jag till marknaden.",
+      "en": "Saturday I went to the market."
+    },
+    {
+      "speaker": "Nora",
+      "fi": "Köpte du något?",
+      "en": "Did you buy anything?"
+    },
+    {
+      "speaker": "Pekka",
+      "fi": "Ja, bröd, och jag såg en konsert.",
+      "en": "Yes, bread, and I saw a concert."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-19-word-1",
+        "fi": "igår",
+        "en": "yesterday",
+        "example": "Igår arbetade jag.",
+        "translation": "Yesterday I worked.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-19-word-2",
+        "fi": "förra veckan",
+        "en": "last week",
+        "example": "Förra veckan var jag sjuk.",
+        "translation": "Last week I was ill.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-19-word-3",
+        "fi": "gick",
+        "en": "went",
+        "example": "Vi gick hem.",
+        "translation": "We went home.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-19-word-4",
+        "fi": "såg",
+        "en": "saw",
+        "example": "Jag såg en film.",
+        "translation": "I watched a film.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-19-word-5",
+        "fi": "köpte",
+        "en": "bought",
+        "example": "Hon köpte en bok.",
+        "translation": "She bought a book.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-19-word-6",
+        "fi": "sedan",
+        "en": "then",
+        "example": "Sedan lagade vi mat.",
+        "translation": "Then we cooked.",
+        "level": "A1"
+      }
+    ],
+    "pronunciation": {
+      "text": "arbetade, lagade, köpte, gick, såg, gjorde",
+      "tip": "Keep past endings light but audible in careful practice."
+    },
+    "reading_passage": {
+      "text": "Igår var Ali ledig. Först gick han till biblioteket. Sedan köpte han mat och lagade middag. På kvällen såg han en film.",
+      "gist": {
+        "prompt": "What is this short text mainly doing?",
+        "options": [
+          "Telling a sequence of events from yesterday",
+          "Giving directions to a library",
+          "Listing grocery prices"
+        ],
+        "answer": 0,
+        "explanation": "Past verbs and sequence words tell what Ali did yesterday."
+      },
+      "detail": {
+        "prompt": "What happened after the library?",
+        "options": [
+          "He bought food",
+          "He watched a film",
+          "He worked"
+        ],
+        "answer": 0,
+        "explanation": "Sedan köpte han mat."
+      }
+    },
+    "reading": {
+      "text": "Igår var Ali ledig. Först gick han till biblioteket. Sedan köpte han mat och lagade middag. På kvällen såg han en film.",
+      "question": "What happened after the library?",
+      "options": [
+        "He bought food",
+        "He watched a film",
+        "He worked"
+      ],
+      "answer": 0,
+      "explanation": "Sedan köpte han mat."
+    },
+    "listening": {
+      "text": "I helgen arbetade jag inte. På lördagen träffade jag en vän. På söndagen var jag hemma och läste.",
+      "question": "What happened Sunday?",
+      "options": [
+        "Stayed home and read",
+        "Worked",
+        "Met a friend"
+      ],
+      "answer": 0,
+      "explanation": "Var hemma och läste."
+    },
+    "speaking": {
+      "prompt": "Tell a three-event past story.",
+      "help": "Use Igår/Först/Sedan/Till slut.",
+      "model": "Igår gick jag till centrum. Sedan köpte jag mat. Till slut såg jag en film."
+    },
+    "writing": {
+      "prompt": "Write five connected past sentences.",
+      "help": "Keep main events in preterite.",
+      "model": "Igår var jag ledig. Först gick jag till biblioteket. Sedan träffade jag en vän. Vi fikade. På kvällen såg jag en film."
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Tell a past story with three events.",
+    "transferPrompt": "Change the day and one regular verb to irregular.",
+    "returnPrompt": "Give past of arbetar, är, går, ser, köper.",
+    "successChecks": [
+      "Keep completed past frame.",
+      "V2 after time phrase.",
+      "Use sequence words."
+    ],
+    "requiredSkills": [
+      "speaking"
+    ]
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "number": 30,
+  "legacyLessonId": "a2-problem-clinic",
+  "objectives": [
+    "Read task instructions strategically and complete an original four-skill mini-clinic under light time pressure.",
+    "Use and recognise: Vem är mottagaren? · Vad måste svaret innehålla? · Jag ger en orsak och föreslår en lösning.",
+    "Complete a first attempt, inspect evidence or feedback, then repeat with a changed condition."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-30-recall-1",
+      "prompt": "Which noun means “recipient”?",
+      "answers": [
+        "en mottagare"
+      ],
+      "options": [
+        "en mottagare",
+        "en berättare",
+        "en författning"
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “en mottagare”."
+    },
+    {
+      "id": "sv-30-recall-2",
+      "prompt": "What should you identify before writing?",
+      "answers": [
+        "reader, purpose and required details"
+      ],
+      "options": [
+        "reader, purpose and required details",
+        "every unknown word",
+        "a memorised answer"
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “reader, purpose and required details”."
+    },
+    {
+      "id": "sv-30-recall-3",
+      "prompt": "Which strategy best supports listening?",
+      "answers": [
+        "Read the question before the audio starts."
+      ],
+      "options": [
+        "Read the question before the audio starts.",
+        "Translate every sentence during the audio.",
+        "Ignore names, times and places."
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “Read the question before the audio starts.”."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Bridge to YKI-style four-skill work: meaning and form",
+      "body": [
+        "Goal: Read task instructions strategically and complete an original four-skill mini-clinic under light time pressure.",
+        "Core vocabulary: en instruktion, en mottagare, ett syfte. Key phrases: Vem är mottagaren? · Vad måste svaret innehålla? · Jag ger en orsak och föreslår en lösning.",
+        "Before producing language, identify four things: situation, recipient, purpose and required details. In comprehension, read or listen for the question first, then locate evidence. In production, complete the communicative task before polishing grammar.",
+        "Say the examples aloud, notice the pattern, and then change one detail rather than memorising a fixed script."
+      ],
+      "examples": [
+        {
+          "fi": "Vem är mottagaren?",
+          "en": "Who is the recipient?"
+        },
+        {
+          "fi": "Vad måste svaret innehålla?",
+          "en": "What must the answer include?"
+        },
+        {
+          "fi": "Jag ger en orsak och föreslår en lösning.",
+          "en": "I give a reason and suggest a solution."
+        }
+      ]
+    },
+    {
+      "title": "Register, evidence and independent use",
+      "body": [
+        "Register model: “Jag skulle vilja ändra min bokning.” is a formal-neutral request way to express “I would like to change my booking.”.",
+        "For listening and reading, answer from a specific word or phrase. For speaking and writing, make the recipient, purpose and next action clear.",
+        "Attempt the task before using the model. Improve one high-impact feature, then perform it again with the transfer condition."
+      ],
+      "examples": [
+        {
+          "fi": "Jag skulle vilja ändra min bokning.",
+          "en": "I would like to change my booking.",
+          "note": "Use as a formal-neutral request model, then adapt the details."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Communicative move",
+          "Useful Swedish",
+          "Check"
+        ],
+        "rows": [
+          [
+            "establish the episode function",
+            "Vem är mottagaren?",
+            "Is the meaning clear?"
+          ],
+          [
+            "add or contrast information",
+            "Vad måste svaret innehålla?",
+            "Does the form fit?"
+          ],
+          [
+            "complete the task",
+            "Jag ger en orsak och föreslår en lösning.",
+            "Can the listener or reader act?"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-30-guided-1",
+      "prompt": "Choose the meaning of “Vem är mottagaren?”.",
+      "answers": [
+        "Who is the recipient?"
+      ],
+      "options": [
+        "Who is the recipient?",
+        "What must the answer include?",
+        "I give a reason and suggest a solution."
+      ],
+      "hint": "Match the complete Swedish phrase to its communicative meaning.",
+      "explanation": "“Vem är mottagaren?” means “Who is the recipient?”."
+    },
+    {
+      "id": "sv-30-guided-2",
+      "prompt": "I uppgiften ska du förklara problemet och ___ en lösning.",
+      "answers": [
+        "föreslå"
+      ],
+      "options": [
+        "föreslå",
+        "förslag",
+        "föreslog att i morgon"
+      ],
+      "hint": "Use the grammar pattern from the teaching section.",
+      "explanation": "The correct completion is “föreslå”."
+    },
+    {
+      "id": "sv-30-guided-3",
+      "prompt": "Which line is part of the episode dialogue?",
+      "answers": [
+        "Identifiera mottagaren och markera de tre detaljer som måste finnas med."
+      ],
+      "options": [
+        "Identifiera mottagaren och markera de tre detaljer som måste finnas med.",
+        "Jag ger en orsak och föreslår en lösning.",
+        "Jag kaffe är."
+      ],
+      "hint": "Return to the dialogue and locate the exact line.",
+      "explanation": "The dialogue includes “Identifiera mottagaren och markera de tre detaljer som måste finnas med.”."
+    },
+    {
+      "id": "sv-30-guided-4",
+      "prompt": "What two alternatives are offered?",
+      "answers": [
+        "attend on Saturday or request a refund"
+      ],
+      "options": [
+        "attend on Saturday or request a refund",
+        "swim tonight or call the trainer",
+        "change rooms or arrive earlier"
+      ],
+      "hint": "Listen first for the situation, then again for the requested detail.",
+      "explanation": "The relevant listening detail is “attend on Saturday or request a refund”."
+    },
+    {
+      "id": "sv-30-guided-5",
+      "prompt": "What has NOT changed?",
+      "answers": [
+        "the starting time"
+      ],
+      "options": [
+        "the starting time",
+        "the weekday",
+        "the room"
+      ],
+      "hint": "Locate the words that prove the answer; do not translate every sentence.",
+      "explanation": "The text shows that the answer is “the starting time”."
+    },
+    {
+      "id": "sv-30-guided-6",
+      "prompt": "Which opening fits a community-centre request?",
+      "answers": [
+        "Hej, jag skriver angående min bokning."
+      ],
+      "options": [
+        "Hej, jag skriver angående min bokning.",
+        "Tja, ändra grejen.",
+        "Bokningen tycker jag om kanske."
+      ],
+      "hint": "Consider the reader, relationship and purpose.",
+      "explanation": "The best fit is “Hej, jag skriver angående min bokning.”."
+    },
+    {
+      "id": "sv-30-guided-7",
+      "prompt": "Which item is a core vocabulary target in this episode?",
+      "answers": [
+        "en mottagare"
+      ],
+      "options": [
+        "en mottagare",
+        "Vad måste svaret innehålla?",
+        "Jag kaffe är."
+      ],
+      "hint": "Choose the standalone word or phrase introduced in this episode.",
+      "explanation": "en mottagare means “a recipient”."
+    },
+    {
+      "id": "sv-30-guided-8",
+      "prompt": "Which Swedish phrase best supports the goal “Read task instructions strategically and complete an original four-skill mini-clinic under light time pressure.”?",
+      "answers": [
+        "Jag ger en orsak och föreslår en lösning."
+      ],
+      "options": [
+        "Jag ger en orsak och föreslår en lösning.",
+        "God natt!",
+        "Jag heter ett bord."
+      ],
+      "hint": "Choose the phrase that performs the target function.",
+      "explanation": "“Jag ger en orsak och föreslår en lösning.” directly supports the episode goal."
+    },
+    {
+      "id": "sv-30-guided-9",
+      "prompt": "Which action demonstrates transfer rather than memorisation?",
+      "answers": [
+        "adapt the useful pattern to the changed situation"
+      ],
+      "options": [
+        "adapt the useful pattern to the changed situation",
+        "repeat the dialogue word for word",
+        "translate the English model only"
+      ],
+      "hint": "Transfer means keeping the function while changing important details.",
+      "explanation": "Independent transfer adapts language to a new condition."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-30-check-1",
+      "prompt": "Choose the sentence that best represents the episode's core language.",
+      "answers": [
+        "Vem är mottagaren?"
+      ],
+      "options": [
+        "Vem är mottagaren?",
+        "Jag kaffe är.",
+        "God natt."
+      ],
+      "hint": "Choose the sentence tied directly to today's objective.",
+      "explanation": "Carry forward “Vem är mottagaren?”."
+    },
+    {
+      "id": "sv-30-check-2",
+      "prompt": "What two alternatives are offered?",
+      "answers": [
+        "attend on Saturday or request a refund"
+      ],
+      "options": [
+        "attend on Saturday or request a refund",
+        "swim tonight or call the trainer",
+        "change rooms or arrive earlier"
+      ],
+      "hint": "Replay only after making a first evidence-based choice.",
+      "explanation": "The key detail is “attend on Saturday or request a refund”."
+    },
+    {
+      "id": "sv-30-check-3",
+      "prompt": "What has NOT changed?",
+      "answers": [
+        "the starting time"
+      ],
+      "options": [
+        "the starting time",
+        "the weekday",
+        "the room"
+      ],
+      "hint": "Use a phrase in the text as proof.",
+      "explanation": "The correct answer is “the starting time”."
+    },
+    {
+      "id": "sv-30-check-4",
+      "prompt": "What should you carry into the next episode?",
+      "answers": [
+        "one usable pattern, one comprehension strategy and one completed real task"
+      ],
+      "options": [
+        "one usable pattern, one comprehension strategy and one completed real task",
+        "a word-for-word memorised dialogue",
+        "only English grammar labels"
+      ],
+      "hint": "Keep a small set that you can retrieve and adapt.",
+      "explanation": "Durable learning combines retrieval, evidence and independent use."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill task and transfer",
+    "instructions": "LISTEN: First listen without a transcript. Answer: What two alternatives are offered? Replay once and identify the exact words that prove the answer.\n\nREAD: Read for purpose and evidence. Answer: What has NOT changed? Mark the shortest phrase that supports your choice.\n\nSPEAK: You cannot attend an agreed activity. Leave a 45–60 second message: identify yourself, explain why, propose an alternative and ask for confirmation. Make a first attempt, check clarity and repeat once.\n\nWRITE: Write 90–110 words to a community centre about an activity you booked. Explain a problem, give two key details and request a practical solution. Check reader, purpose, required details and next action.\n\nTRANSFER: The recipient becomes a friend rather than the community centre; adapt register while preserving the task details.\n\nBETWEEN LESSON · Optional, 5 minutes: retrieve the three key phrases without looking, then use one in a new sentence.",
+    "model": "Vem är mottagaren? Vad måste svaret innehålla? Jag ger en orsak och föreslår en lösning."
+  },
+  "takeaways": [
+    "Use: Vem är mottagaren?",
+    "Notice: Before producing language, identify four things: situation, recipient, purpose and required details.",
+    "Transfer the pattern: The recipient becomes a friend rather than the community centre; adapt register while preserving the task details."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Deltagare",
+      "fi": "Jag har trettio sekunder. Vad behöver jag göra?",
+      "en": "I have thirty seconds. What do I need to do?"
+    },
+    {
+      "speaker": "Handledare",
+      "fi": "Identifiera mottagaren och markera de tre detaljer som måste finnas med.",
+      "en": "Identify the recipient and mark the three details that must be included."
+    },
+    {
+      "speaker": "Deltagare",
+      "fi": "Sedan svarar jag direkt och kontrollerar uppgiften igen.",
+      "en": "Then I answer directly and check the task again."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-30-word-1",
+        "fi": "en instruktion",
+        "en": "an instruction",
+        "example": "en instruktion",
+        "translation": "an instruction",
+        "level": "A2"
+      },
+      {
+        "id": "sv-30-word-2",
+        "fi": "en mottagare",
+        "en": "a recipient",
+        "example": "en mottagare",
+        "translation": "a recipient",
+        "level": "A2"
+      },
+      {
+        "id": "sv-30-word-3",
+        "fi": "ett syfte",
+        "en": "a purpose",
+        "example": "ett syfte",
+        "translation": "a purpose",
+        "level": "A2"
+      },
+      {
+        "id": "sv-30-phrase-1",
+        "fi": "Vem är mottagaren?",
+        "en": "Who is the recipient?",
+        "example": "Vem är mottagaren?",
+        "translation": "Who is the recipient?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-30-phrase-2",
+        "fi": "Vad måste svaret innehålla?",
+        "en": "What must the answer include?",
+        "example": "Vad måste svaret innehålla?",
+        "translation": "What must the answer include?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-30-phrase-3",
+        "fi": "Jag ger en orsak och föreslår en lösning.",
+        "en": "I give a reason and suggest a solution.",
+        "example": "Jag ger en orsak och föreslår en lösning.",
+        "translation": "I give a reason and suggest a solution.",
+        "level": "A2"
+      }
+    ],
+    "pronunciation": {
+      "text": "Vad måste svaret innehålla?",
+      "tip": "Stress måste and innehålla so the required action remains clear when speaking under time pressure."
+    },
+    "reading_passage": {
+      "text": "Bibliotekets språkkafé flyttas från tisdag till torsdag den här veckan. Tiden är fortfarande 17.30, men gruppen träffas i rum 204 i stället för kaféet. Anmäl dig i receptionen senast onsdag.",
+      "gist": {
+        "prompt": "What is the main purpose of this text?",
+        "options": [
+          "to communicate practical information",
+          "to list unrelated grammar terms",
+          "to tell a fantasy story"
+        ],
+        "answer": 0,
+        "explanation": "The text gives information that supports an everyday decision or action."
+      },
+      "detail": {
+        "prompt": "What has NOT changed?",
+        "options": [
+          "the starting time",
+          "the weekday",
+          "the room"
+        ],
+        "answer": 0,
+        "explanation": "The text supports “the starting time”."
+      }
+    },
+    "reading": {
+      "text": "Bibliotekets språkkafé flyttas från tisdag till torsdag den här veckan. Tiden är fortfarande 17.30, men gruppen träffas i rum 204 i stället för kaféet. Anmäl dig i receptionen senast onsdag.",
+      "question": "What has NOT changed?",
+      "options": [
+        "the starting time",
+        "the weekday",
+        "the room"
+      ],
+      "answer": 0,
+      "explanation": "Use the text as evidence for “the starting time”."
+    },
+    "listening": {
+      "text": "Du har ringt simhallen. Kvällens nybörjargrupp är inställd eftersom tränaren är sjuk. Du kan delta på lördag klockan elva eller be om pengarna tillbaka i receptionen.",
+      "question": "What two alternatives are offered?",
+      "options": [
+        "attend on Saturday or request a refund",
+        "swim tonight or call the trainer",
+        "change rooms or arrive earlier"
+      ],
+      "answer": 0,
+      "explanation": "The spoken message identifies “attend on Saturday or request a refund”."
+    },
+    "speaking": {
+      "prompt": "You cannot attend an agreed activity. Leave a 45–60 second message: identify yourself, explain why, propose an alternative and ask for confirmation.",
+      "help": "Plan three chunks and reuse, without copying, one of these patterns: Vem är mottagaren? · Vad måste svaret innehålla? · Jag ger en orsak och föreslår en lösning.",
+      "model": "Vem är mottagaren? Vad måste svaret innehålla? Jag ger en orsak och föreslår en lösning."
+    },
+    "writing": {
+      "prompt": "Write 90–110 words to a community centre about an activity you booked. Explain a problem, give two key details and request a practical solution.",
+      "help": "Identify the reader and purpose, include every requested detail, connect the ideas, and finish with a clear next action.",
+      "model": "Vem är mottagaren? Vad måste svaret innehålla? Jag ger en orsak och föreslår en lösning."
+    }
+  },
+  "route": {
+    "primarySkill": "writing",
+    "expectedOutput": "Complete an unseen practical task with the right recipient, purpose, details and action.",
+    "transferPrompt": "The recipient becomes a friend rather than the community centre; adapt register while preserving the task details.",
+    "returnPrompt": "Within two days, retrieve “Vem är mottagaren?” and use it in a different context.",
+    "successChecks": [
+      "Every requested content point is present.",
+      "Register fits the recipient.",
+      "The response remains understandable despite limited time."
+    ],
+    "requiredSkills": [
+      "writing"
+    ]
+  }
+}

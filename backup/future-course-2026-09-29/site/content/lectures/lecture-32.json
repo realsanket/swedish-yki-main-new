@@ -1,0 +1,461 @@
+{
+  "number": 32,
+  "legacyLessonId": "a2-plans-movement",
+  "objectives": [
+    "Respond naturally to good news, bad news, suggestions and misunderstandings, then add a relevant follow-up.",
+    "Use and recognise: Vad roligt! Berätta mer. · Vad tråkigt. Hur mår du nu? · Det låter bra, men vilken tid passar?",
+    "Complete a first attempt, inspect evidence or feedback, then repeat with a changed condition."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-32-recall-1",
+      "prompt": "Which reaction suits good news?",
+      "answers": [
+        "Vad roligt!"
+      ],
+      "options": [
+        "Vad roligt!",
+        "Vad tråkigt!",
+        "Jag beklagar."
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “Vad roligt!”."
+    },
+    {
+      "id": "sv-32-recall-2",
+      "prompt": "Which phrase asks for clarification?",
+      "answers": [
+        "Ursäkta, hur menar du?"
+      ],
+      "options": [
+        "Ursäkta, hur menar du?",
+        "Jag förstår allt kanske.",
+        "Vad roligt med problemet!"
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “Ursäkta, hur menar du?”."
+    },
+    {
+      "id": "sv-32-recall-3",
+      "prompt": "Choose a sympathetic response.",
+      "answers": [
+        "Vad tråkigt. Kan jag hjälpa till?"
+      ],
+      "options": [
+        "Vad tråkigt. Kan jag hjälpa till?",
+        "Toppen att du är sjuk!",
+        "Jaha."
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “Vad tråkigt. Kan jag hjälpa till?”."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quick reactions in conversation: meaning and form",
+      "body": [
+        "Goal: Respond naturally to good news, bad news, suggestions and misunderstandings, then add a relevant follow-up.",
+        "Core vocabulary: en reaktion, förvånad, beklagar. Key phrases: Vad roligt! Berätta mer. · Vad tråkigt. Hur mår du nu? · Det låter bra, men vilken tid passar?",
+        "A useful reaction has two parts: acknowledge what you heard and continue the exchange. Choose a reaction that matches the situation: Vad roligt!, Vad tråkigt!, Det låter bra, Jag förstår or Ursäkta, hur menar du? Avoid using jaha alone when warmth or clarity matters.",
+        "Say the examples aloud, notice the pattern, and then change one detail rather than memorising a fixed script."
+      ],
+      "examples": [
+        {
+          "fi": "Vad roligt! Berätta mer.",
+          "en": "How nice! Tell me more."
+        },
+        {
+          "fi": "Vad tråkigt. Hur mår du nu?",
+          "en": "That's unfortunate. How are you now?"
+        },
+        {
+          "fi": "Det låter bra, men vilken tid passar?",
+          "en": "That sounds good, but what time works?"
+        }
+      ]
+    },
+    {
+      "title": "Register, evidence and independent use",
+      "body": [
+        "Register model: “Vad tråkigt att höra.” is a warm neutral response way to express “I am sorry to hear that.”.",
+        "For listening and reading, answer from a specific word or phrase. For speaking and writing, make the recipient, purpose and next action clear.",
+        "Attempt the task before using the model. Improve one high-impact feature, then perform it again with the transfer condition."
+      ],
+      "examples": [
+        {
+          "fi": "Vad tråkigt att höra.",
+          "en": "I am sorry to hear that.",
+          "note": "Use as a warm neutral response model, then adapt the details."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Communicative move",
+          "Useful Swedish",
+          "Check"
+        ],
+        "rows": [
+          [
+            "establish the episode function",
+            "Vad roligt! Berätta mer.",
+            "Is the meaning clear?"
+          ],
+          [
+            "add or contrast information",
+            "Vad tråkigt. Hur mår du nu?",
+            "Does the form fit?"
+          ],
+          [
+            "complete the task",
+            "Det låter bra, men vilken tid passar?",
+            "Can the listener or reader act?"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-32-guided-1",
+      "prompt": "Choose the meaning of “Vad roligt! Berätta mer.”.",
+      "answers": [
+        "How nice! Tell me more."
+      ],
+      "options": [
+        "How nice! Tell me more.",
+        "That's unfortunate. How are you now?",
+        "That sounds good, but what time works?"
+      ],
+      "hint": "Match the complete Swedish phrase to its communicative meaning.",
+      "explanation": "“Vad roligt! Berätta mer.” means “How nice! Tell me more.”."
+    },
+    {
+      "id": "sv-32-guided-2",
+      "prompt": "– Jag fick jobbet! – Vad ___! När börjar du?",
+      "answers": [
+        "roligt"
+      ],
+      "options": [
+        "roligt",
+        "tråkigt",
+        "sjuk"
+      ],
+      "hint": "Use the grammar pattern from the teaching section.",
+      "explanation": "The correct completion is “roligt”."
+    },
+    {
+      "id": "sv-32-guided-3",
+      "prompt": "Which line is part of the episode dialogue?",
+      "answers": [
+        "Vad roligt! När börjar du?"
+      ],
+      "options": [
+        "Vad roligt! När börjar du?",
+        "Det låter bra, men vilken tid passar?",
+        "Jag kaffe är."
+      ],
+      "hint": "Return to the dialogue and locate the exact line.",
+      "explanation": "The dialogue includes “Vad roligt! När börjar du?”."
+    },
+    {
+      "id": "sv-32-guided-4",
+      "prompt": "Which reaction best fits?",
+      "answers": [
+        "Jag förstår. Meddela när du är framme."
+      ],
+      "options": [
+        "Jag förstår. Meddela när du är framme.",
+        "Vad roligt!",
+        "Nej, bussen är alltid tidig."
+      ],
+      "hint": "Listen first for the situation, then again for the requested detail.",
+      "explanation": "The relevant listening detail is “Jag förstår. Meddela när du är framme.”."
+    },
+    {
+      "id": "sv-32-guided-5",
+      "prompt": "Which response best acknowledges Jo's situation?",
+      "answers": [
+        "Vad tråkigt att din son är sjuk. Söndag fungerar också."
+      ],
+      "options": [
+        "Vad tråkigt att din son är sjuk. Söndag fungerar också.",
+        "Toppen! Kom på lördag.",
+        "Jag tycker om flyttlådor."
+      ],
+      "hint": "Locate the words that prove the answer; do not translate every sentence.",
+      "explanation": "The text shows that the answer is “Vad tråkigt att din son är sjuk. Söndag fungerar också.”."
+    },
+    {
+      "id": "sv-32-guided-6",
+      "prompt": "Which reply is warm and suitable to a colleague?",
+      "answers": [
+        "Vad tråkigt att höra. Jag hoppas att du snart mår bättre."
+      ],
+      "options": [
+        "Vad tråkigt att höra. Jag hoppas att du snart mår bättre.",
+        "Jaha, okej.",
+        "Synd för dig!"
+      ],
+      "hint": "Consider the reader, relationship and purpose.",
+      "explanation": "The best fit is “Vad tråkigt att höra. Jag hoppas att du snart mår bättre.”."
+    },
+    {
+      "id": "sv-32-guided-7",
+      "prompt": "Which item is a core vocabulary target in this episode?",
+      "answers": [
+        "förvånad"
+      ],
+      "options": [
+        "förvånad",
+        "Vad tråkigt. Hur mår du nu?",
+        "Jag kaffe är."
+      ],
+      "hint": "Choose the standalone word or phrase introduced in this episode.",
+      "explanation": "förvånad means “surprised”."
+    },
+    {
+      "id": "sv-32-guided-8",
+      "prompt": "Which Swedish phrase best supports the goal “Respond naturally to good news, bad news, suggestions and misunderstandings, then add a relevant follow-up.”?",
+      "answers": [
+        "Det låter bra, men vilken tid passar?"
+      ],
+      "options": [
+        "Det låter bra, men vilken tid passar?",
+        "God natt!",
+        "Jag heter ett bord."
+      ],
+      "hint": "Choose the phrase that performs the target function.",
+      "explanation": "“Det låter bra, men vilken tid passar?” directly supports the episode goal."
+    },
+    {
+      "id": "sv-32-guided-9",
+      "prompt": "Which action demonstrates transfer rather than memorisation?",
+      "answers": [
+        "adapt the useful pattern to the changed situation"
+      ],
+      "options": [
+        "adapt the useful pattern to the changed situation",
+        "repeat the dialogue word for word",
+        "translate the English model only"
+      ],
+      "hint": "Transfer means keeping the function while changing important details.",
+      "explanation": "Independent transfer adapts language to a new condition."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-32-check-1",
+      "prompt": "Choose the sentence that best represents the episode's core language.",
+      "answers": [
+        "Vad roligt! Berätta mer."
+      ],
+      "options": [
+        "Vad roligt! Berätta mer.",
+        "Jag kaffe är.",
+        "God natt."
+      ],
+      "hint": "Choose the sentence tied directly to today's objective.",
+      "explanation": "Carry forward “Vad roligt! Berätta mer.”."
+    },
+    {
+      "id": "sv-32-check-2",
+      "prompt": "Which reaction best fits?",
+      "answers": [
+        "Jag förstår. Meddela när du är framme."
+      ],
+      "options": [
+        "Jag förstår. Meddela när du är framme.",
+        "Vad roligt!",
+        "Nej, bussen är alltid tidig."
+      ],
+      "hint": "Replay only after making a first evidence-based choice.",
+      "explanation": "The key detail is “Jag förstår. Meddela när du är framme.”."
+    },
+    {
+      "id": "sv-32-check-3",
+      "prompt": "Which response best acknowledges Jo's situation?",
+      "answers": [
+        "Vad tråkigt att din son är sjuk. Söndag fungerar också."
+      ],
+      "options": [
+        "Vad tråkigt att din son är sjuk. Söndag fungerar också.",
+        "Toppen! Kom på lördag.",
+        "Jag tycker om flyttlådor."
+      ],
+      "hint": "Use a phrase in the text as proof.",
+      "explanation": "The correct answer is “Vad tråkigt att din son är sjuk. Söndag fungerar också.”."
+    },
+    {
+      "id": "sv-32-check-4",
+      "prompt": "What should you carry into the next episode?",
+      "answers": [
+        "one usable pattern, one comprehension strategy and one completed real task"
+      ],
+      "options": [
+        "one usable pattern, one comprehension strategy and one completed real task",
+        "a word-for-word memorised dialogue",
+        "only English grammar labels"
+      ],
+      "hint": "Keep a small set that you can retrieve and adapt.",
+      "explanation": "Durable learning combines retrieval, evidence and independent use."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill task and transfer",
+    "instructions": "LISTEN: First listen without a transcript. Answer: Which reaction best fits? Replay once and identify the exact words that prove the answer.\n\nREAD: Read for purpose and evidence. Answer: Which response best acknowledges Jo's situation? Mark the shortest phrase that supports your choice.\n\nSPEAK: Respond to four short prompts: good news, illness, a practical suggestion and an unclear instruction. Add one useful follow-up each time. Make a first attempt, check clarity and repeat once.\n\nWRITE: Write three brief message replies that show warmth and move the situation forward: congratulations, sympathy and a changed plan. Check reader, purpose, required details and next action.\n\nTRANSFER: You are speaking to a colleague rather than a close friend; keep the reaction warm but use neutral workplace language.\n\nBETWEEN LESSON · Optional, 5 minutes: retrieve the three key phrases without looking, then use one in a new sentence.",
+    "model": "Vad roligt! Berätta mer. Vad tråkigt. Hur mår du nu? Det låter bra, men vilken tid passar?"
+  },
+  "takeaways": [
+    "Use: Vad roligt! Berätta mer.",
+    "Notice: A useful reaction has two parts: acknowledge what you heard and continue the exchange.",
+    "Transfer the pattern: You are speaking to a colleague rather than a close friend; keep the reaction warm but use neutral workplace language."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Lova",
+      "fi": "Jag har fått en plats på utbildningen!",
+      "en": "I have been offered a place on the course!"
+    },
+    {
+      "speaker": "Samir",
+      "fi": "Vad roligt! När börjar du?",
+      "en": "How nice! When do you start?"
+    },
+    {
+      "speaker": "Lova",
+      "fi": "Nästa månad, men jag är lite nervös.",
+      "en": "Next month, but I am a little nervous."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-32-word-1",
+        "fi": "en reaktion",
+        "en": "a reaction",
+        "example": "en reaktion",
+        "translation": "a reaction",
+        "level": "A2"
+      },
+      {
+        "id": "sv-32-word-2",
+        "fi": "förvånad",
+        "en": "surprised",
+        "example": "förvånad",
+        "translation": "surprised",
+        "level": "A2"
+      },
+      {
+        "id": "sv-32-word-3",
+        "fi": "beklagar",
+        "en": "am sorry/regret",
+        "example": "beklagar",
+        "translation": "am sorry/regret",
+        "level": "A2"
+      },
+      {
+        "id": "sv-32-phrase-1",
+        "fi": "Vad roligt! Berätta mer.",
+        "en": "How nice! Tell me more.",
+        "example": "Vad roligt! Berätta mer.",
+        "translation": "How nice! Tell me more.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-32-phrase-2",
+        "fi": "Vad tråkigt. Hur mår du nu?",
+        "en": "That's unfortunate. How are you now?",
+        "example": "Vad tråkigt. Hur mår du nu?",
+        "translation": "That's unfortunate. How are you now?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-32-phrase-3",
+        "fi": "Det låter bra, men vilken tid passar?",
+        "en": "That sounds good, but what time works?",
+        "example": "Det låter bra, men vilken tid passar?",
+        "translation": "That sounds good, but what time works?",
+        "level": "A2"
+      }
+    ],
+    "pronunciation": {
+      "text": "Vad tråkigt. Hur mår du nu?",
+      "tip": "Use falling intonation on the acknowledgement and a gentle rise on the caring follow-up question."
+    },
+    "reading_passage": {
+      "text": "Meddelande från Jo: Jag kan tyvärr inte hjälpa till med flytten på lördag. Min son har blivit sjuk. Jag hoppas att ni hittar någon annan. Jag kan komma på söndag om det fortfarande behövs.",
+      "gist": {
+        "prompt": "What is the main purpose of this text?",
+        "options": [
+          "to communicate practical information",
+          "to list unrelated grammar terms",
+          "to tell a fantasy story"
+        ],
+        "answer": 0,
+        "explanation": "The text gives information that supports an everyday decision or action."
+      },
+      "detail": {
+        "prompt": "Which response best acknowledges Jo's situation?",
+        "options": [
+          "Vad tråkigt att din son är sjuk. Söndag fungerar också.",
+          "Toppen! Kom på lördag.",
+          "Jag tycker om flyttlådor."
+        ],
+        "answer": 0,
+        "explanation": "The text supports “Vad tråkigt att din son är sjuk. Söndag fungerar också.”."
+      }
+    },
+    "reading": {
+      "text": "Meddelande från Jo: Jag kan tyvärr inte hjälpa till med flytten på lördag. Min son har blivit sjuk. Jag hoppas att ni hittar någon annan. Jag kan komma på söndag om det fortfarande behövs.",
+      "question": "Which response best acknowledges Jo's situation?",
+      "options": [
+        "Vad tråkigt att din son är sjuk. Söndag fungerar också.",
+        "Toppen! Kom på lördag.",
+        "Jag tycker om flyttlådor."
+      ],
+      "answer": 0,
+      "explanation": "Use the text as evidence for “Vad tråkigt att din son är sjuk. Söndag fungerar också.”."
+    },
+    "listening": {
+      "text": "Jag missade bussen och kommer ungefär tjugo minuter sent till mötet. Förlåt att du måste vänta.",
+      "question": "Which reaction best fits?",
+      "options": [
+        "Jag förstår. Meddela när du är framme.",
+        "Vad roligt!",
+        "Nej, bussen är alltid tidig."
+      ],
+      "answer": 0,
+      "explanation": "The spoken message identifies “Jag förstår. Meddela när du är framme.”."
+    },
+    "speaking": {
+      "prompt": "Respond to four short prompts: good news, illness, a practical suggestion and an unclear instruction. Add one useful follow-up each time.",
+      "help": "Plan three chunks and reuse, without copying, one of these patterns: Vad roligt! Berätta mer. · Vad tråkigt. Hur mår du nu? · Det låter bra, men vilken tid passar?",
+      "model": "Vad roligt! Berätta mer. Vad tråkigt. Hur mår du nu? Det låter bra, men vilken tid passar?"
+    },
+    "writing": {
+      "prompt": "Write three brief message replies that show warmth and move the situation forward: congratulations, sympathy and a changed plan.",
+      "help": "Identify the reader and purpose, include every requested detail, connect the ideas, and finish with a clear next action.",
+      "model": "Vad roligt! Berätta mer. Vad tråkigt. Hur mår du nu? Det låter bra, men vilken tid passar?"
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Give situation-appropriate reactions followed by useful questions or actions.",
+    "transferPrompt": "You are speaking to a colleague rather than a close friend; keep the reaction warm but use neutral workplace language.",
+    "returnPrompt": "Within two days, retrieve “Vad roligt! Berätta mer.” and use it in a different context.",
+    "successChecks": [
+      "The emotional tone matches the news.",
+      "Each reaction includes a relevant continuation.",
+      "Clarification is requested when meaning is uncertain."
+    ],
+    "requiredSkills": [
+      "speaking"
+    ]
+  }
+}

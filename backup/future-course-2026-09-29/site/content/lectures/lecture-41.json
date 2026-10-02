@@ -1,0 +1,460 @@
+{
+  "number": 41,
+  "legacyLessonId": "sv-work-application",
+  "objectives": [
+    "Read a job advertisement and write a short application that matches its requirements.",
+    "Use and recognise: Jag söker tjänsten som cafébiträde. · Jag har erfarenhet av kundservice. · Jag kan börja den första oktober.",
+    "Complete an independent first attempt, review one specific feature, then transfer the language to a changed situation."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-e41-recall-1",
+      "prompt": "Warm up for work and recruitment: choose the Swedish line that best supports today's goal.",
+      "answers": [
+        "Jag söker tjänsten som cafébiträde."
+      ],
+      "options": [
+        "Jag söker tjänsten som cafébiträde.",
+        "Jag har erfarenhet av kundservice.",
+        "Jag kan börja den första oktober."
+      ],
+      "hint": "Choose by communicative purpose, not by translating every word.",
+      "explanation": "Jag söker tjänsten som cafébiträde. is the most direct starting point for this task."
+    },
+    {
+      "id": "sv-e41-recall-2",
+      "prompt": "Which strategy will help most in this work and recruitment task?",
+      "answers": [
+        "Match each claim in your application to one requirement in the advertisement."
+      ],
+      "options": [
+        "Match each claim in your application to one requirement in the advertisement.",
+        "Translate every word before deciding what to do.",
+        "Memorise the model and repeat it without changing details."
+      ],
+      "hint": "Choose the action that makes the input usable in a new situation.",
+      "explanation": "Match each claim in your application to one requirement in the advertisement."
+    },
+    {
+      "id": "sv-e41-recall-3",
+      "prompt": "Say or type this useful line from memory: “I can start on the first of October.”",
+      "answers": [
+        "Jag kan börja den första oktober."
+      ],
+      "hint": "Try once before looking back at the phrase list.",
+      "explanation": "A clear answer is: Jag kan börja den första oktober."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Situation, language and purpose",
+      "body": [
+        "Goal: Read a job advertisement and write a short application that matches its requirements.",
+        "Core vocabulary: tjänst, erfarenhet, referens. Key phrases: Jag söker tjänsten som cafébiträde. · Jag har erfarenhet av kundservice. · Jag kan börja den första oktober.",
+        "Meaning first: use the language to complete a real work and recruitment purpose, not to display isolated grammar.",
+        "Purposeful return: Reuse one evidence sentence in a later interview task."
+      ],
+      "examples": [
+        {
+          "fi": "Jag söker tjänsten som cafébiträde.",
+          "en": "I am applying for the position as a café assistant."
+        },
+        {
+          "fi": "Jag har erfarenhet av kundservice.",
+          "en": "I have experience in customer service."
+        },
+        {
+          "fi": "Jag kan börja den första oktober.",
+          "en": "I can start on the first of October."
+        }
+      ]
+    },
+    {
+      "title": "Register, strategy and transfer",
+      "body": [
+        "REGISTER · NEUTRAL SWEDISH: Jag har två års erfarenhet av kundservice. EVERYDAY SPEECH / CONTEXT: Jag har jobbat med kunder i två år.",
+        "Practice move: Match each claim in your application to one requirement in the advertisement.",
+        "Make a first attempt without the model. Review one feature, then respond again after an important condition changes."
+      ],
+      "examples": [
+        {
+          "fi": "NEUTRAL SWEDISH: Jag har två års erfarenhet av kundservice.",
+          "en": "A clear production model for neutral or formal use."
+        },
+        {
+          "fi": "EVERYDAY / CONTEXTUAL FORM: Jag har jobbat med kunder i två år.",
+          "en": "Useful recognition or familiar-language model.",
+          "note": "Both are correct. The second is compact and suitable in a formal application."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Advertisement says",
+          "Your evidence",
+          "Application sentence"
+        ],
+        "rows": [
+          [
+            "kundservice",
+            "work in a shop",
+            "Jag har erfarenhet av kundservice."
+          ],
+          [
+            "datorkunskaper",
+            "daily use of office software",
+            "Jag är van vid att arbeta med datorer."
+          ],
+          [
+            "start 15 October",
+            "available from that date",
+            "Jag kan börja den 15 oktober."
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-e41-guided-meaning",
+      "prompt": "Choose the meaning of “Jag söker tjänsten som cafébiträde.”.",
+      "answers": [
+        "I am applying for the position as a café assistant."
+      ],
+      "options": [
+        "I am applying for the position as a café assistant.",
+        "I have experience in customer service.",
+        "I can start on the first of October."
+      ],
+      "hint": "Match the whole sentence to its communicative purpose.",
+      "explanation": "“Jag söker tjänsten som cafébiträde.” means “I am applying for the position as a café assistant.”"
+    },
+    {
+      "id": "sv-e41-guided-form",
+      "prompt": "Complete the application: Jag har ___ av kundservice.",
+      "answers": [
+        "erfarenhet"
+      ],
+      "options": [
+        "erfarenhet",
+        "anställd",
+        "arbetstid"
+      ],
+      "hint": "Read the whole sentence before choosing the form.",
+      "explanation": "The fitting form is erfarenhet."
+    },
+    {
+      "id": "sv-e41-guided-dialogue",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Jag tycker om kundkontakt och har arbetat på ett café tidigare."
+      ],
+      "options": [
+        "Jag tycker om kundkontakt och har arbetat på ett café tidigare.",
+        "Jag har erfarenhet av kundservice.",
+        "Jag kan börja den första oktober."
+      ],
+      "hint": "Locate the exact line and identify what it accomplishes.",
+      "explanation": "The middle speaker uses this line in the situation."
+    },
+    {
+      "id": "sv-e41-guided-listening",
+      "prompt": "What availability does the employer need?",
+      "answers": [
+        "Two evenings a week"
+      ],
+      "options": [
+        "Two evenings a week",
+        "Every weekday morning",
+        "Only Sunday afternoons"
+      ],
+      "hint": "Listen once for the situation and again for the requested detail.",
+      "explanation": "The employer says två kvällar i veckan."
+    },
+    {
+      "id": "sv-e41-guided-reading",
+      "prompt": "When is the application due?",
+      "answers": [
+        "2 October"
+      ],
+      "options": [
+        "2 October",
+        "15 October",
+        "25 October"
+      ],
+      "hint": "Find the exact phrase that proves the answer.",
+      "explanation": "The advertisement says senast den 2 oktober."
+    },
+    {
+      "id": "sv-e41-guided-register",
+      "prompt": "Which neutral form preserves the meaning of “Jag har jobbat med kunder i två år.”?",
+      "answers": [
+        "Jag har två års erfarenhet av kundservice."
+      ],
+      "options": [
+        "Jag har två års erfarenhet av kundservice.",
+        "Jag har erfarenhet av kundservice.",
+        "Jag kan börja den första oktober."
+      ],
+      "hint": "Keep the meaning while choosing a form suitable for clear production.",
+      "explanation": "Both are correct. The second is compact and suitable in a formal application."
+    },
+    {
+      "id": "sv-e41-guided-vocabulary",
+      "prompt": "Which word belongs directly to today's work and recruitment task?",
+      "answers": [
+        "tjänst"
+      ],
+      "options": [
+        "tjänst",
+        "experience",
+        "I can start on the first of October."
+      ],
+      "hint": "Choose the Swedish target word, not an English gloss or a full sentence.",
+      "explanation": "tjänst means position / post."
+    },
+    {
+      "id": "sv-e41-guided-strategy",
+      "prompt": "Which action best improves an independent second attempt?",
+      "answers": [
+        "Match each claim in your application to one requirement in the advertisement."
+      ],
+      "options": [
+        "Match each claim in your application to one requirement in the advertisement.",
+        "Copy the model word for word.",
+        "Replace all precise details with general language."
+      ],
+      "hint": "The best strategy should transfer to fresh material.",
+      "explanation": "Match each claim in your application to one requirement in the advertisement."
+    },
+    {
+      "id": "sv-e41-guided-transfer",
+      "prompt": "Which changed condition should you respond to in the transfer attempt?",
+      "answers": [
+        "The position changes from library assistant to restaurant assistant; adapt your experience and availability."
+      ],
+      "options": [
+        "The position changes from library assistant to restaurant assistant; adapt your experience and availability.",
+        "Repeat the original scene without any change.",
+        "Give an English summary instead of completing the Swedish task."
+      ],
+      "hint": "Transfer requires a meaningful new condition.",
+      "explanation": "The position changes from library assistant to restaurant assistant; adapt your experience and availability."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-e41-check-core",
+      "prompt": "Choose the phrase that most directly supports today's main goal.",
+      "answers": [
+        "Jag söker tjänsten som cafébiträde."
+      ],
+      "options": [
+        "Jag söker tjänsten som cafébiträde.",
+        "Jag har erfarenhet av kundservice.",
+        "Jag kan börja den första oktober."
+      ],
+      "hint": "Return to the goal and select the line that starts that action.",
+      "explanation": "Use Jag söker tjänsten som cafébiträde."
+    },
+    {
+      "id": "sv-e41-check-listening",
+      "prompt": "What availability does the employer need?",
+      "answers": [
+        "Two evenings a week"
+      ],
+      "options": [
+        "Two evenings a week",
+        "Every weekday morning",
+        "Only Sunday afternoons"
+      ],
+      "hint": "Answer from the audio first; inspect the script only afterwards.",
+      "explanation": "The employer says två kvällar i veckan."
+    },
+    {
+      "id": "sv-e41-check-reading",
+      "prompt": "What should an interested applicant send?",
+      "answers": [
+        "An application and a CV"
+      ],
+      "options": [
+        "An application and a CV",
+        "Only a reference",
+        "Only a course certificate"
+      ],
+      "hint": "Read for the required action and the detail that controls it.",
+      "explanation": "The final sentence asks for ansökan och CV."
+    },
+    {
+      "id": "sv-e41-check-next",
+      "prompt": "What should you save for later review?",
+      "answers": [
+        "one skill-specific result, one useful phrase and one concrete improvement"
+      ],
+      "options": [
+        "one skill-specific result, one useful phrase and one concrete improvement",
+        "a single overall score with no skill detail",
+        "a copied model with no record of your own attempt"
+      ],
+      "hint": "Useful evidence tells you what to repeat and what to change.",
+      "explanation": "Separate evidence makes the next practice decision specific."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill practice, transfer and delayed return",
+    "instructions": "LISTEN: answer “What availability does the employer need?” from the recording before reading the script. Save the listening result separately.\n\nREAD: answer the gist and detail questions, and mark the exact phrase that proves each answer. Save the reading result separately.\n\nSPEAK: Give a 45-second introduction for a job you would like to apply for. Record an independent first attempt, then improve one feature.\n\nWRITE: Write a concise application email responding to the library advertisement. Draft without the model, then revise for reader, purpose, essential detail and next action.\n\nTRANSFER: The position changes from library assistant to restaurant assistant; adapt your experience and availability.\n\nBETWEEN LESSON · Optional, 5 minutes: Reuse one evidence sentence in a later interview task.",
+    "model": "SPEAKING MODEL: Jag söker tjänsten som cafébiträde. Jag är lugn och serviceinriktad. Jag har erfarenhet av kundservice och kan börja den första oktober.\n\nWRITING MODEL: Hej! Jag söker tjänsten som biblioteksassistent. Jag har erfarenhet av kundservice och är van vid datorer. Jag kan börja den 15 oktober. Jag berättar gärna mer i en intervju. Vänliga hälsningar, Samira"
+  },
+  "takeaways": [
+    "Use: Jag söker tjänsten som cafébiträde.",
+    "Register: Jag har jobbat med kunder i två år. → Jag har två års erfarenhet av kundservice.",
+    "A focused application answers the advertisement instead of listing everything about you."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Rekryterare",
+      "fi": "Varför söker du den här tjänsten?",
+      "en": "Why are you applying for this position?"
+    },
+    {
+      "speaker": "Nora",
+      "fi": "Jag tycker om kundkontakt och har arbetat på ett café tidigare.",
+      "en": "I enjoy customer contact and have worked in a café before."
+    },
+    {
+      "speaker": "Rekryterare",
+      "fi": "När kan du börja?",
+      "en": "When can you start?"
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-e41-v1",
+        "fi": "tjänst",
+        "en": "position / post",
+        "example": "Tjänsten är på deltid.",
+        "translation": "The position is part-time.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-e41-v2",
+        "fi": "erfarenhet",
+        "en": "experience",
+        "example": "Hon har erfarenhet av lagerarbete.",
+        "translation": "She has experience in warehouse work.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-e41-v3",
+        "fi": "referens",
+        "en": "reference",
+        "example": "Du kan ange en referens i ansökan.",
+        "translation": "You can give a reference in the application.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-e41-p1",
+        "fi": "Jag söker tjänsten som cafébiträde.",
+        "en": "I am applying for the position as a café assistant.",
+        "example": "Jag söker tjänsten som cafébiträde.",
+        "translation": "I am applying for the position as a café assistant.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-e41-p2",
+        "fi": "Jag har erfarenhet av kundservice.",
+        "en": "I have experience in customer service.",
+        "example": "Jag har erfarenhet av kundservice.",
+        "translation": "I have experience in customer service.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-e41-p3",
+        "fi": "Jag kan börja den första oktober.",
+        "en": "I can start on the first of October.",
+        "example": "Jag kan börja den första oktober.",
+        "translation": "I can start on the first of October.",
+        "level": "A2"
+      }
+    ],
+    "pronunciation": {
+      "text": "tjänst – erfarenhet – självständig – ansökan",
+      "tip": "In tjänst, tj is a soft sound. Keep the consonant cluster at the end audible without adding an extra vowel."
+    },
+    "reading_passage": {
+      "text": "Ledigt jobb: Biblioteksassistent, 25 timmar i veckan. Arbetet börjar den 15 oktober. Du hjälper besökare och ordnar material. God svenska och grundläggande datorkunskaper krävs. Skicka ansökan och CV senast den 2 oktober.",
+      "gist": {
+        "prompt": "What is the text mainly about?",
+        "options": [
+          "A part-time job at a library",
+          "A computer course",
+          "Changed library hours"
+        ],
+        "answer": 0,
+        "explanation": "The heading and duties show that this is a job advertisement."
+      },
+      "detail": {
+        "prompt": "When is the application due?",
+        "options": [
+          "2 October",
+          "15 October",
+          "25 October"
+        ],
+        "answer": 0,
+        "explanation": "The advertisement says senast den 2 oktober."
+      }
+    },
+    "reading": {
+      "text": "Ledigt jobb: Biblioteksassistent, 25 timmar i veckan. Arbetet börjar den 15 oktober. Du hjälper besökare och ordnar material. God svenska och grundläggande datorkunskaper krävs. Skicka ansökan och CV senast den 2 oktober.",
+      "question": "What should an interested applicant send?",
+      "options": [
+        "An application and a CV",
+        "Only a reference",
+        "Only a course certificate"
+      ],
+      "answer": 0,
+      "explanation": "The final sentence asks for ansökan och CV."
+    },
+    "listening": {
+      "text": "Hej! Vi söker någon som kan arbeta två kvällar i veckan. På lördagar börjar passet klockan tio. Erfarenhet är bra, men vi ger också introduktion.",
+      "question": "What availability does the employer need?",
+      "options": [
+        "Two evenings a week",
+        "Every weekday morning",
+        "Only Sunday afternoons"
+      ],
+      "answer": 0,
+      "explanation": "The employer says två kvällar i veckan."
+    },
+    "speaking": {
+      "prompt": "Give a 45-second introduction for a job you would like to apply for.",
+      "help": "Name the job, one relevant strength, one experience and when you can start.",
+      "model": "Jag söker tjänsten som cafébiträde. Jag är lugn och serviceinriktad. Jag har erfarenhet av kundservice och kan börja den första oktober."
+    },
+    "writing": {
+      "prompt": "Write a concise application email responding to the library advertisement.",
+      "help": "Include the position, relevant experience, availability and a polite closing. Do not invent certificates you do not have.",
+      "model": "Hej! Jag söker tjänsten som biblioteksassistent. Jag har erfarenhet av kundservice och är van vid datorer. Jag kan börja den 15 oktober. Jag berättar gärna mer i en intervju. Vänliga hälsningar, Samira"
+    }
+  },
+  "route": {
+    "primarySkill": "writing",
+    "expectedOutput": "Write a concise application email responding to the library advertisement.",
+    "transferPrompt": "The position changes from library assistant to restaurant assistant; adapt your experience and availability.",
+    "returnPrompt": "Reuse one evidence sentence in a later interview task.",
+    "successChecks": [
+      "You complete the communicative purpose without copying the model.",
+      "Essential facts, times and requested actions are understandable.",
+      "You preserve meaning when register or conditions change."
+    ],
+    "requiredSkills": [
+      "writing"
+    ]
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "number": 51,
+  "legacyLessonId": "sv-opinion-with-support",
+  "objectives": [
+    "State an opinion, give two distinct reasons and support one with a concrete example.",
+    "Use and recognise: Jag anser att biblioteket borde ha öppet på söndagar. · Ett viktigt skäl är att många arbetar på vardagar. · Till exempel behöver studerande en lugn arbetsplats.",
+    "Complete an independent first attempt, review one specific feature, then transfer the language to a changed situation."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-e51-recall-1",
+      "prompt": "Warm up for opinions and reasons: choose the Swedish line that best supports today's goal.",
+      "answers": [
+        "Jag anser att biblioteket borde ha öppet på söndagar."
+      ],
+      "options": [
+        "Jag anser att biblioteket borde ha öppet på söndagar.",
+        "Ett viktigt skäl är att många arbetar på vardagar.",
+        "Till exempel behöver studerande en lugn arbetsplats."
+      ],
+      "hint": "Choose by communicative purpose, not by translating every word.",
+      "explanation": "Jag anser att biblioteket borde ha öppet på söndagar. is the most direct starting point for this task."
+    },
+    {
+      "id": "sv-e51-recall-2",
+      "prompt": "Which strategy will help most in this opinions and reasons task?",
+      "answers": [
+        "Make each reason do different work; do not repeat the same idea with new words."
+      ],
+      "options": [
+        "Make each reason do different work; do not repeat the same idea with new words.",
+        "Translate every word before deciding what to do.",
+        "Memorise the model and repeat it without changing details."
+      ],
+      "hint": "Choose the action that makes the input usable in a new situation.",
+      "explanation": "Make each reason do different work; do not repeat the same idea with new words."
+    },
+    {
+      "id": "sv-e51-recall-3",
+      "prompt": "Say or type this useful line from memory: “For example, students need a quiet place to work.”",
+      "answers": [
+        "Till exempel behöver studerande en lugn arbetsplats."
+      ],
+      "hint": "Try once before looking back at the phrase list.",
+      "explanation": "A clear answer is: Till exempel behöver studerande en lugn arbetsplats."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Situation, language and purpose",
+      "body": [
+        "Goal: State an opinion, give two distinct reasons and support one with a concrete example.",
+        "Core vocabulary: ståndpunkt, argument, exempel. Key phrases: Jag anser att biblioteket borde ha öppet på söndagar. · Ett viktigt skäl är att många arbetar på vardagar. · Till exempel behöver studerande en lugn arbetsplats.",
+        "Meaning first: use the language to complete a real opinions and reasons purpose, not to display isolated grammar.",
+        "Purposeful return: Reuse one reason-plus-example pair in the counterargument episode."
+      ],
+      "examples": [
+        {
+          "fi": "Jag anser att biblioteket borde ha öppet på söndagar.",
+          "en": "I think the library should be open on Sundays."
+        },
+        {
+          "fi": "Ett viktigt skäl är att många arbetar på vardagar.",
+          "en": "One important reason is that many people work on weekdays."
+        },
+        {
+          "fi": "Till exempel behöver studerande en lugn arbetsplats.",
+          "en": "For example, students need a quiet place to work."
+        }
+      ]
+    },
+    {
+      "title": "Register, strategy and transfer",
+      "body": [
+        "REGISTER · NEUTRAL SWEDISH: Jag anser att biblioteket borde ha öppet på söndagar. EVERYDAY SPEECH / CONTEXT: Jag tycker biblioteket ska va öppet på söndagar.",
+        "Practice move: Make each reason do different work; do not repeat the same idea with new words.",
+        "Make a first attempt without the model. Review one feature, then respond again after an important condition changes."
+      ],
+      "examples": [
+        {
+          "fi": "NEUTRAL SWEDISH: Jag anser att biblioteket borde ha öppet på söndagar.",
+          "en": "A clear production model for neutral or formal use."
+        },
+        {
+          "fi": "EVERYDAY / CONTEXTUAL FORM: Jag tycker biblioteket ska va öppet på söndagar.",
+          "en": "Useful recognition or familiar-language model.",
+          "note": "The first line reflects reduced casual speech. Use full forms in careful speech and writing."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Function",
+          "Signal",
+          "Content"
+        ],
+        "rows": [
+          [
+            "position",
+            "Jag anser att …",
+            "one answer to the question"
+          ],
+          [
+            "reasons",
+            "Ett skäl är … / Dessutom …",
+            "two distinct supports"
+          ],
+          [
+            "example and close",
+            "Till exempel … / Därför föreslår jag …",
+            "evidence and recommendation"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-e51-guided-meaning",
+      "prompt": "Choose the meaning of “Jag anser att biblioteket borde ha öppet på söndagar.”.",
+      "answers": [
+        "I think the library should be open on Sundays."
+      ],
+      "options": [
+        "I think the library should be open on Sundays.",
+        "One important reason is that many people work on weekdays.",
+        "For example, students need a quiet place to work."
+      ],
+      "hint": "Match the whole sentence to its communicative purpose.",
+      "explanation": "“Jag anser att biblioteket borde ha öppet på söndagar.” means “I think the library should be open on Sundays.”"
+    },
+    {
+      "id": "sv-e51-guided-form",
+      "prompt": "Complete the opinion: Jag ___ att biblioteket borde ha öppet på söndagar.",
+      "answers": [
+        "anser"
+      ],
+      "options": [
+        "anser",
+        "händer",
+        "erbjuder"
+      ],
+      "hint": "Read the whole sentence before choosing the form.",
+      "explanation": "The fitting form is anser."
+    },
+    {
+      "id": "sv-e51-guided-dialogue",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Ja, det tycker jag. Många arbetar på vardagar och studerande behöver en lugn plats."
+      ],
+      "options": [
+        "Ja, det tycker jag. Många arbetar på vardagar och studerande behöver en lugn plats.",
+        "Ett viktigt skäl är att många arbetar på vardagar.",
+        "Till exempel behöver studerande en lugn arbetsplats."
+      ],
+      "hint": "Locate the exact line and identify what it accomplishes.",
+      "explanation": "The middle speaker uses this line in the situation."
+    },
+    {
+      "id": "sv-e51-guided-listening",
+      "prompt": "What concern did the staff raise?",
+      "answers": [
+        "Higher costs and the need for substitutes"
+      ],
+      "options": [
+        "Higher costs and the need for substitutes",
+        "Too many books",
+        "A lack of online surveys"
+      ],
+      "hint": "Listen once for the situation and again for the requested detail.",
+      "explanation": "The staff mention higher costs and more substitutes."
+    },
+    {
+      "id": "sv-e51-guided-reading",
+      "prompt": "How should the trial be evaluated?",
+      "answers": [
+        "Compare visitor numbers with costs"
+      ],
+      "options": [
+        "Compare visitor numbers with costs",
+        "Ask only the staff",
+        "Count online loans only"
+      ],
+      "hint": "Find the exact phrase that proves the answer.",
+      "explanation": "The final sentence names both visitor numbers and costs."
+    },
+    {
+      "id": "sv-e51-guided-register",
+      "prompt": "Which neutral form preserves the meaning of “Jag tycker biblioteket ska va öppet på söndagar.”?",
+      "answers": [
+        "Jag anser att biblioteket borde ha öppet på söndagar."
+      ],
+      "options": [
+        "Jag anser att biblioteket borde ha öppet på söndagar.",
+        "Ett viktigt skäl är att många arbetar på vardagar.",
+        "Till exempel behöver studerande en lugn arbetsplats."
+      ],
+      "hint": "Keep the meaning while choosing a form suitable for clear production.",
+      "explanation": "The first line reflects reduced casual speech. Use full forms in careful speech and writing."
+    },
+    {
+      "id": "sv-e51-guided-vocabulary",
+      "prompt": "Which word belongs directly to today's opinions and reasons task?",
+      "answers": [
+        "ståndpunkt"
+      ],
+      "options": [
+        "ståndpunkt",
+        "argument / reason",
+        "For example, students need a quiet place to work."
+      ],
+      "hint": "Choose the Swedish target word, not an English gloss or a full sentence.",
+      "explanation": "ståndpunkt means position / viewpoint."
+    },
+    {
+      "id": "sv-e51-guided-strategy",
+      "prompt": "Which action best improves an independent second attempt?",
+      "answers": [
+        "Make each reason do different work; do not repeat the same idea with new words."
+      ],
+      "options": [
+        "Make each reason do different work; do not repeat the same idea with new words.",
+        "Copy the model word for word.",
+        "Replace all precise details with general language."
+      ],
+      "hint": "The best strategy should transfer to fresh material.",
+      "explanation": "Make each reason do different work; do not repeat the same idea with new words."
+    },
+    {
+      "id": "sv-e51-guided-transfer",
+      "prompt": "Which changed condition should you respond to in the transfer attempt?",
+      "answers": [
+        "Argue the opposite position while keeping the same evidence structure."
+      ],
+      "options": [
+        "Argue the opposite position while keeping the same evidence structure.",
+        "Repeat the original scene without any change.",
+        "Give an English summary instead of completing the Swedish task."
+      ],
+      "hint": "Transfer requires a meaningful new condition.",
+      "explanation": "Argue the opposite position while keeping the same evidence structure."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-e51-check-core",
+      "prompt": "Choose the phrase that most directly supports today's main goal.",
+      "answers": [
+        "Jag anser att biblioteket borde ha öppet på söndagar."
+      ],
+      "options": [
+        "Jag anser att biblioteket borde ha öppet på söndagar.",
+        "Ett viktigt skäl är att många arbetar på vardagar.",
+        "Till exempel behöver studerande en lugn arbetsplats."
+      ],
+      "hint": "Return to the goal and select the line that starts that action.",
+      "explanation": "Use Jag anser att biblioteket borde ha öppet på söndagar."
+    },
+    {
+      "id": "sv-e51-check-listening",
+      "prompt": "What concern did the staff raise?",
+      "answers": [
+        "Higher costs and the need for substitutes"
+      ],
+      "options": [
+        "Higher costs and the need for substitutes",
+        "Too many books",
+        "A lack of online surveys"
+      ],
+      "hint": "Answer from the audio first; inspect the script only afterwards.",
+      "explanation": "The staff mention higher costs and more substitutes."
+    },
+    {
+      "id": "sv-e51-check-reading",
+      "prompt": "Which group does the writer say has difficulty using the current hours?",
+      "answers": [
+        "People with weekday jobs"
+      ],
+      "options": [
+        "People with weekday jobs",
+        "Only tourists",
+        "Only children under school age"
+      ],
+      "hint": "Read for the required action and the detail that controls it.",
+      "explanation": "The text explicitly mentions personer med vardagsjobb."
+    },
+    {
+      "id": "sv-e51-check-next",
+      "prompt": "What should you save for later review?",
+      "answers": [
+        "one skill-specific result, one useful phrase and one concrete improvement"
+      ],
+      "options": [
+        "one skill-specific result, one useful phrase and one concrete improvement",
+        "a single overall score with no skill detail",
+        "a copied model with no record of your own attempt"
+      ],
+      "hint": "Useful evidence tells you what to repeat and what to change.",
+      "explanation": "Separate evidence makes the next practice decision specific."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill practice, transfer and delayed return",
+    "instructions": "LISTEN: answer “What concern did the staff raise?” from the recording before reading the script. Save the listening result separately.\n\nREAD: answer the gist and detail questions, and mark the exact phrase that proves each answer. Save the reading result separately.\n\nSPEAK: Give a one-minute opinion on Sunday library hours. Record an independent first attempt, then improve one feature.\n\nWRITE: Write a short comment supporting or opposing Sunday library hours. Draft without the model, then revise for reader, purpose, essential detail and next action.\n\nTRANSFER: Argue the opposite position while keeping the same evidence structure.\n\nBETWEEN LESSON · Optional, 5 minutes: Reuse one reason-plus-example pair in the counterargument episode.",
+    "model": "SPEAKING MODEL: Jag anser att biblioteket borde ha öppet vissa söndagar. Ett skäl är att många arbetar på vardagar. Dessutom behöver studerande en lugn arbetsplats. Till exempel är mitt hem ofta för trångt för distansstudier. Kommunen skulle kunna prova söndagsöppet två gånger i månaden.\n\nWRITING MODEL: Jag stöder en försöksperiod med söndagsöppet. För det första får personer med vardagsjobb bättre tillgång till biblioteket. För det andra får studerande en lugn plats. Till exempel är många studieutrymmen fulla under veckan. Efter tre månader kan kommunen jämföra nytta och kostnad."
+  },
+  "takeaways": [
+    "Use: Jag anser att biblioteket borde ha öppet på söndagar.",
+    "Register: Jag tycker biblioteket ska va öppet på söndagar. → Jag anser att biblioteket borde ha öppet på söndagar.",
+    "A supported opinion is easier to follow when position, reasons and example have visible roles."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Intervjuare",
+      "fi": "Borde biblioteket ha öppet på söndagar?",
+      "en": "Should the library be open on Sundays?"
+    },
+    {
+      "speaker": "Dani",
+      "fi": "Ja, det tycker jag. Många arbetar på vardagar och studerande behöver en lugn plats.",
+      "en": "Yes, I think so. Many people work on weekdays and students need a quiet place."
+    },
+    {
+      "speaker": "Intervjuare",
+      "fi": "Kan du ge ett konkret exempel?",
+      "en": "Can you give a concrete example?"
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-e51-v1",
+        "fi": "ståndpunkt",
+        "en": "position / viewpoint",
+        "example": "Min ståndpunkt är tydlig.",
+        "translation": "My position is clear.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e51-v2",
+        "fi": "argument",
+        "en": "argument / reason",
+        "example": "Hon gav två argument för förslaget.",
+        "translation": "She gave two arguments for the proposal.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e51-v3",
+        "fi": "exempel",
+        "en": "example",
+        "example": "Ge ett konkret exempel.",
+        "translation": "Give a concrete example.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e51-p1",
+        "fi": "Jag anser att biblioteket borde ha öppet på söndagar.",
+        "en": "I think the library should be open on Sundays.",
+        "example": "Jag anser att biblioteket borde ha öppet på söndagar.",
+        "translation": "I think the library should be open on Sundays.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e51-p2",
+        "fi": "Ett viktigt skäl är att många arbetar på vardagar.",
+        "en": "One important reason is that many people work on weekdays.",
+        "example": "Ett viktigt skäl är att många arbetar på vardagar.",
+        "translation": "One important reason is that many people work on weekdays.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e51-p3",
+        "fi": "Till exempel behöver studerande en lugn arbetsplats.",
+        "en": "For example, students need a quiet place to work.",
+        "example": "Till exempel behöver studerande en lugn arbetsplats.",
+        "translation": "For example, students need a quiet place to work.",
+        "level": "B1"
+      }
+    ],
+    "pronunciation": {
+      "text": "anser – argument – dessutom – till exempel",
+      "tip": "Use a short pause before each new reason. This makes the structure audible even if individual sounds are imperfect."
+    },
+    "reading_passage": {
+      "text": "Insändare: Vårt bibliotek stänger redan klockan tre på lördagar och är stängt på söndagar. Det gör det svårt för familjer och personer med vardagsjobb att använda tjänsterna. Jag föreslår en försöksperiod med söndagsöppet två gånger i månaden. Besöksantalet kan sedan jämföras med kostnaderna.",
+      "gist": {
+        "prompt": "What is the writer's main proposal?",
+        "options": [
+          "Open on two Sundays a month as a trial",
+          "Close earlier on Saturdays",
+          "Replace the library with an online service"
+        ],
+        "answer": 0,
+        "explanation": "The writer proposes en försöksperiod med söndagsöppet två gånger i månaden."
+      },
+      "detail": {
+        "prompt": "How should the trial be evaluated?",
+        "options": [
+          "Compare visitor numbers with costs",
+          "Ask only the staff",
+          "Count online loans only"
+        ],
+        "answer": 0,
+        "explanation": "The final sentence names both visitor numbers and costs."
+      }
+    },
+    "reading": {
+      "text": "Insändare: Vårt bibliotek stänger redan klockan tre på lördagar och är stängt på söndagar. Det gör det svårt för familjer och personer med vardagsjobb att använda tjänsterna. Jag föreslår en försöksperiod med söndagsöppet två gånger i månaden. Besöksantalet kan sedan jämföras med kostnaderna.",
+      "question": "Which group does the writer say has difficulty using the current hours?",
+      "options": [
+        "People with weekday jobs",
+        "Only tourists",
+        "Only children under school age"
+      ],
+      "answer": 0,
+      "explanation": "The text explicitly mentions personer med vardagsjobb."
+    },
+    "listening": {
+      "text": "I vår enkät svarade 62 procent att de skulle använda biblioteket oftare om det var öppet på söndagar. Personalen lyfte däremot fram högre kostnader och behovet av fler vikarier. Kommunen fattar beslut efter sommaren.",
+      "question": "What concern did the staff raise?",
+      "options": [
+        "Higher costs and the need for substitutes",
+        "Too many books",
+        "A lack of online surveys"
+      ],
+      "answer": 0,
+      "explanation": "The staff mention higher costs and more substitutes."
+    },
+    "speaking": {
+      "prompt": "Give a one-minute opinion on Sunday library hours.",
+      "help": "State your position, give two different reasons, add one concrete example and finish with a practical suggestion.",
+      "model": "Jag anser att biblioteket borde ha öppet vissa söndagar. Ett skäl är att många arbetar på vardagar. Dessutom behöver studerande en lugn arbetsplats. Till exempel är mitt hem ofta för trångt för distansstudier. Kommunen skulle kunna prova söndagsöppet två gånger i månaden."
+    },
+    "writing": {
+      "prompt": "Write a short comment supporting or opposing Sunday library hours.",
+      "help": "Use a clear position, two reasons, one example and a final recommendation.",
+      "model": "Jag stöder en försöksperiod med söndagsöppet. För det första får personer med vardagsjobb bättre tillgång till biblioteket. För det andra får studerande en lugn plats. Till exempel är många studieutrymmen fulla under veckan. Efter tre månader kan kommunen jämföra nytta och kostnad."
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Give a one-minute opinion on Sunday library hours.",
+    "transferPrompt": "Argue the opposite position while keeping the same evidence structure.",
+    "returnPrompt": "Reuse one reason-plus-example pair in the counterargument episode.",
+    "successChecks": [
+      "You complete the communicative purpose without copying the model.",
+      "Essential facts, reasons and requested actions are understandable.",
+      "You preserve meaning when register or conditions change."
+    ],
+    "requiredSkills": [
+      "speaking"
+    ]
+  }
+}

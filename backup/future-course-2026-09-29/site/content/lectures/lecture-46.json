@@ -1,0 +1,460 @@
+{
+  "number": 46,
+  "legacyLessonId": "sv-connected-narrative",
+  "objectives": [
+    "Tell a connected past event with a clear sequence, complication and outcome.",
+    "Use and recognise: Först missade jag bussen. · Därefter ringde jag min handledare. · Till slut kom jag fram i tid till mötet.",
+    "Complete an independent first attempt, review one specific feature, then transfer the language to a changed situation."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-e46-recall-1",
+      "prompt": "Warm up for connected narratives: choose the Swedish line that best supports today's goal.",
+      "answers": [
+        "Först missade jag bussen."
+      ],
+      "options": [
+        "Först missade jag bussen.",
+        "Därefter ringde jag min handledare.",
+        "Till slut kom jag fram i tid till mötet."
+      ],
+      "hint": "Choose by communicative purpose, not by translating every word.",
+      "explanation": "Först missade jag bussen. is the most direct starting point for this task."
+    },
+    {
+      "id": "sv-e46-recall-2",
+      "prompt": "Which strategy will help most in this connected narratives task?",
+      "answers": [
+        "Build the story around a cause-and-effect chain instead of listing unrelated events."
+      ],
+      "options": [
+        "Build the story around a cause-and-effect chain instead of listing unrelated events.",
+        "Translate every word before deciding what to do.",
+        "Memorise the model and repeat it without changing details."
+      ],
+      "hint": "Choose the action that makes the input usable in a new situation.",
+      "explanation": "Build the story around a cause-and-effect chain instead of listing unrelated events."
+    },
+    {
+      "id": "sv-e46-recall-3",
+      "prompt": "Say or type this useful line from memory: “In the end I arrived in time for the meeting.”",
+      "answers": [
+        "Till slut kom jag fram i tid till mötet."
+      ],
+      "hint": "Try once before looking back at the phrase list.",
+      "explanation": "A clear answer is: Till slut kom jag fram i tid till mötet."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Situation, language and purpose",
+      "body": [
+        "Goal: Tell a connected past event with a clear sequence, complication and outcome.",
+        "Core vocabulary: händelse, därefter, trots det. Key phrases: Först missade jag bussen. · Därefter ringde jag min handledare. · Till slut kom jag fram i tid till mötet.",
+        "Meaning first: use the language to complete a real connected narratives purpose, not to display isolated grammar.",
+        "Purposeful return: Use one narrative connector in a later service complaint."
+      ],
+      "examples": [
+        {
+          "fi": "Först missade jag bussen.",
+          "en": "First I missed the bus."
+        },
+        {
+          "fi": "Därefter ringde jag min handledare.",
+          "en": "After that I called my supervisor."
+        },
+        {
+          "fi": "Till slut kom jag fram i tid till mötet.",
+          "en": "In the end I arrived in time for the meeting."
+        }
+      ]
+    },
+    {
+      "title": "Register, strategy and transfer",
+      "body": [
+        "REGISTER · NEUTRAL SWEDISH: Därefter tog vi tåget. EVERYDAY SPEECH / CONTEXT: Sen tog vi tåget.",
+        "Practice move: Build the story around a cause-and-effect chain instead of listing unrelated events.",
+        "Make a first attempt without the model. Review one feature, then respond again after an important condition changes."
+      ],
+      "examples": [
+        {
+          "fi": "NEUTRAL SWEDISH: Därefter tog vi tåget.",
+          "en": "A clear production model for neutral or formal use."
+        },
+        {
+          "fi": "EVERYDAY / CONTEXTUAL FORM: Sen tog vi tåget.",
+          "en": "Useful recognition or familiar-language model.",
+          "note": "Sen is natural in conversation. Därefter gives more explicit structure in a prepared account."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Story part",
+          "Question",
+          "Connector"
+        ],
+        "rows": [
+          [
+            "setting",
+            "What was supposed to happen?",
+            "I går skulle …"
+          ],
+          [
+            "complication and response",
+            "What went wrong and what did you do?",
+            "därför / därefter"
+          ],
+          [
+            "outcome",
+            "How did it end?",
+            "till slut"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-e46-guided-meaning",
+      "prompt": "Choose the meaning of “Först missade jag bussen.”.",
+      "answers": [
+        "First I missed the bus."
+      ],
+      "options": [
+        "First I missed the bus.",
+        "After that I called my supervisor.",
+        "In the end I arrived in time for the meeting."
+      ],
+      "hint": "Match the whole sentence to its communicative purpose.",
+      "explanation": "“Först missade jag bussen.” means “First I missed the bus.”"
+    },
+    {
+      "id": "sv-e46-guided-form",
+      "prompt": "Complete the sequence: Först missade jag bussen. ___ ringde jag min handledare.",
+      "answers": [
+        "Därefter"
+      ],
+      "options": [
+        "Därefter",
+        "Eftersom",
+        "Fastän"
+      ],
+      "hint": "Read the whole sentence before choosing the form.",
+      "explanation": "The fitting form is Därefter."
+    },
+    {
+      "id": "sv-e46-guided-dialogue",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Först missade jag bussen, så jag tog tåget i stället."
+      ],
+      "options": [
+        "Först missade jag bussen, så jag tog tåget i stället.",
+        "Därefter ringde jag min handledare.",
+        "Till slut kom jag fram i tid till mötet."
+      ],
+      "hint": "Locate the exact line and identify what it accomplishes.",
+      "explanation": "The middle speaker uses this line in the situation."
+    },
+    {
+      "id": "sv-e46-guided-listening",
+      "prompt": "Why was the interview moved?",
+      "answers": [
+        "The train stopped in heavy snow"
+      ],
+      "options": [
+        "The train stopped in heavy snow",
+        "The employer was ill",
+        "The applicant forgot the time"
+      ],
+      "hint": "Listen once for the situation and again for the requested detail.",
+      "explanation": "The stopped train caused the delay."
+    },
+    {
+      "id": "sv-e46-guided-reading",
+      "prompt": "How did they reach the station?",
+      "answers": [
+        "By bus"
+      ],
+      "options": [
+        "By bus",
+        "In the neighbour's car",
+        "On foot"
+      ],
+      "hint": "Find the exact phrase that proves the answer.",
+      "explanation": "Därefter tog vi bussen till stationen."
+    },
+    {
+      "id": "sv-e46-guided-register",
+      "prompt": "Which neutral form preserves the meaning of “Sen tog vi tåget.”?",
+      "answers": [
+        "Därefter tog vi tåget."
+      ],
+      "options": [
+        "Därefter tog vi tåget.",
+        "Därefter ringde jag min handledare.",
+        "Till slut kom jag fram i tid till mötet."
+      ],
+      "hint": "Keep the meaning while choosing a form suitable for clear production.",
+      "explanation": "Sen is natural in conversation. Därefter gives more explicit structure in a prepared account."
+    },
+    {
+      "id": "sv-e46-guided-vocabulary",
+      "prompt": "Which word belongs directly to today's connected narratives task?",
+      "answers": [
+        "händelse"
+      ],
+      "options": [
+        "händelse",
+        "after that",
+        "In the end I arrived in time for the meeting."
+      ],
+      "hint": "Choose the Swedish target word, not an English gloss or a full sentence.",
+      "explanation": "händelse means event."
+    },
+    {
+      "id": "sv-e46-guided-strategy",
+      "prompt": "Which action best improves an independent second attempt?",
+      "answers": [
+        "Build the story around a cause-and-effect chain instead of listing unrelated events."
+      ],
+      "options": [
+        "Build the story around a cause-and-effect chain instead of listing unrelated events.",
+        "Copy the model word for word.",
+        "Replace all precise details with general language."
+      ],
+      "hint": "The best strategy should transfer to fresh material.",
+      "explanation": "Build the story around a cause-and-effect chain instead of listing unrelated events."
+    },
+    {
+      "id": "sv-e46-guided-transfer",
+      "prompt": "Which changed condition should you respond to in the transfer attempt?",
+      "answers": [
+        "Retell the same event as a short formal incident report with dates and facts."
+      ],
+      "options": [
+        "Retell the same event as a short formal incident report with dates and facts.",
+        "Repeat the original scene without any change.",
+        "Give an English summary instead of completing the Swedish task."
+      ],
+      "hint": "Transfer requires a meaningful new condition.",
+      "explanation": "Retell the same event as a short formal incident report with dates and facts."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-e46-check-core",
+      "prompt": "Choose the phrase that most directly supports today's main goal.",
+      "answers": [
+        "Först missade jag bussen."
+      ],
+      "options": [
+        "Först missade jag bussen.",
+        "Därefter ringde jag min handledare.",
+        "Till slut kom jag fram i tid till mötet."
+      ],
+      "hint": "Return to the goal and select the line that starts that action.",
+      "explanation": "Use Först missade jag bussen."
+    },
+    {
+      "id": "sv-e46-check-listening",
+      "prompt": "Why was the interview moved?",
+      "answers": [
+        "The train stopped in heavy snow"
+      ],
+      "options": [
+        "The train stopped in heavy snow",
+        "The employer was ill",
+        "The applicant forgot the time"
+      ],
+      "hint": "Answer from the audio first; inspect the script only afterwards.",
+      "explanation": "The stopped train caused the delay."
+    },
+    {
+      "id": "sv-e46-check-reading",
+      "prompt": "Which sentence gives the outcome?",
+      "answers": [
+        "Till slut kom vi fram före mörkret."
+      ],
+      "options": [
+        "Till slut kom vi fram före mörkret.",
+        "Vi ringde en granne.",
+        "Bilen startade inte."
+      ],
+      "hint": "Read for the required action and the detail that controls it.",
+      "explanation": "Till slut signals the final result."
+    },
+    {
+      "id": "sv-e46-check-next",
+      "prompt": "What should you save for later review?",
+      "answers": [
+        "one skill-specific result, one useful phrase and one concrete improvement"
+      ],
+      "options": [
+        "one skill-specific result, one useful phrase and one concrete improvement",
+        "a single overall score with no skill detail",
+        "a copied model with no record of your own attempt"
+      ],
+      "hint": "Useful evidence tells you what to repeat and what to change.",
+      "explanation": "Separate evidence makes the next practice decision specific."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill practice, transfer and delayed return",
+    "instructions": "LISTEN: answer “Why was the interview moved?” from the recording before reading the script. Save the listening result separately.\n\nREAD: answer the gist and detail questions, and mark the exact phrase that proves each answer. Save the reading result separately.\n\nSPEAK: Tell a one-minute story about a plan that changed unexpectedly. Record an independent first attempt, then improve one feature.\n\nWRITE: Write a connected account of a travel or work problem and how it ended. Draft without the model, then revise for reader, purpose, essential detail and next action.\n\nTRANSFER: Retell the same event as a short formal incident report with dates and facts.\n\nBETWEEN LESSON · Optional, 5 minutes: Use one narrative connector in a later service complaint.",
+    "model": "SPEAKING MODEL: I går skulle jag träffa en vän. Först märkte jag att min telefon var urladdad. Därför kunde jag inte hitta adressen. Jag frågade en person om hjälp, och till slut kom jag fram bara tio minuter sent.\n\nWRITING MODEL: I måndags var jag på väg till jobbet när bussen gick sönder. Först väntade vi på en ny buss. Därefter ringde jag min chef och berättade att jag blev sen. Till slut kom jag fram trettio minuter senare, och vi flyttade morgonmötet."
+  },
+  "takeaways": [
+    "Use: Först missade jag bussen.",
+    "Register: Sen tog vi tåget. → Därefter tog vi tåget.",
+    "A connected narrative makes time order and consequences easy to follow."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Handledare",
+      "fi": "Hur gick det på vägen hit?",
+      "en": "How did it go on the way here?"
+    },
+    {
+      "speaker": "Rami",
+      "fi": "Först missade jag bussen, så jag tog tåget i stället.",
+      "en": "First I missed the bus, so I took the train instead."
+    },
+    {
+      "speaker": "Handledare",
+      "fi": "Bra att du meddelade. Du kom ju fram i tid.",
+      "en": "Good that you let us know. You did arrive in time."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-e46-v1",
+        "fi": "händelse",
+        "en": "event",
+        "example": "Det var en oväntad händelse.",
+        "translation": "It was an unexpected event.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e46-v2",
+        "fi": "därefter",
+        "en": "after that",
+        "example": "Därefter gick vi hem.",
+        "translation": "After that we went home.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e46-v3",
+        "fi": "trots det",
+        "en": "despite that",
+        "example": "Det regnade, men trots det fortsatte vi.",
+        "translation": "It rained, but despite that we continued.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e46-p1",
+        "fi": "Först missade jag bussen.",
+        "en": "First I missed the bus.",
+        "example": "Först missade jag bussen.",
+        "translation": "First I missed the bus.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e46-p2",
+        "fi": "Därefter ringde jag min handledare.",
+        "en": "After that I called my supervisor.",
+        "example": "Därefter ringde jag min handledare.",
+        "translation": "After that I called my supervisor.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e46-p3",
+        "fi": "Till slut kom jag fram i tid till mötet.",
+        "en": "In the end I arrived in time for the meeting.",
+        "example": "Till slut kom jag fram i tid till mötet.",
+        "translation": "In the end I arrived in time for the meeting.",
+        "level": "B1"
+      }
+    ],
+    "pronunciation": {
+      "text": "först – därefter – därför – till slut",
+      "tip": "Stress the key linking words enough to make the sequence easy to follow; do not rush them together."
+    },
+    "reading_passage": {
+      "text": "I lördags skulle vi åka till en stuga. Först upptäckte vi att bilen inte startade. Vi ringde en granne, men hon var inte hemma. Därefter tog vi bussen till stationen och fortsatte med tåg. Resan tog längre tid än planerat, men till slut kom vi fram före mörkret.",
+      "gist": {
+        "prompt": "What is the story mainly about?",
+        "options": [
+          "A journey with an unexpected problem",
+          "Buying a new car",
+          "Planning a normal workday"
+        ],
+        "answer": 0,
+        "explanation": "The travellers solve a transport problem and still reach the cottage."
+      },
+      "detail": {
+        "prompt": "How did they reach the station?",
+        "options": [
+          "By bus",
+          "In the neighbour's car",
+          "On foot"
+        ],
+        "answer": 0,
+        "explanation": "Därefter tog vi bussen till stationen."
+      }
+    },
+    "reading": {
+      "text": "I lördags skulle vi åka till en stuga. Först upptäckte vi att bilen inte startade. Vi ringde en granne, men hon var inte hemma. Därefter tog vi bussen till stationen och fortsatte med tåg. Resan tog längre tid än planerat, men till slut kom vi fram före mörkret.",
+      "question": "Which sentence gives the outcome?",
+      "options": [
+        "Till slut kom vi fram före mörkret.",
+        "Vi ringde en granne.",
+        "Bilen startade inte."
+      ],
+      "answer": 0,
+      "explanation": "Till slut signals the final result."
+    },
+    "listening": {
+      "text": "När jag var på väg till intervjun började det snöa kraftigt. Tåget stannade mellan två stationer. Jag ringde arbetsgivaren och förklarade situationen. Intervjun flyttades en timme, och till slut hann jag dit.",
+      "question": "Why was the interview moved?",
+      "options": [
+        "The train stopped in heavy snow",
+        "The employer was ill",
+        "The applicant forgot the time"
+      ],
+      "answer": 0,
+      "explanation": "The stopped train caused the delay."
+    },
+    "speaking": {
+      "prompt": "Tell a one-minute story about a plan that changed unexpectedly.",
+      "help": "Use four steps: setting, problem, response and outcome. Link them with först, därefter, därför and till slut.",
+      "model": "I går skulle jag träffa en vän. Först märkte jag att min telefon var urladdad. Därför kunde jag inte hitta adressen. Jag frågade en person om hjälp, och till slut kom jag fram bara tio minuter sent."
+    },
+    "writing": {
+      "prompt": "Write a connected account of a travel or work problem and how it ended.",
+      "help": "Use past tense consistently and make the cause-and-effect chain visible.",
+      "model": "I måndags var jag på väg till jobbet när bussen gick sönder. Först väntade vi på en ny buss. Därefter ringde jag min chef och berättade att jag blev sen. Till slut kom jag fram trettio minuter senare, och vi flyttade morgonmötet."
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Tell a one-minute story about a plan that changed unexpectedly.",
+    "transferPrompt": "Retell the same event as a short formal incident report with dates and facts.",
+    "returnPrompt": "Use one narrative connector in a later service complaint.",
+    "successChecks": [
+      "You complete the communicative purpose without copying the model.",
+      "Essential facts, times and requested actions are understandable.",
+      "You preserve meaning when register or conditions change."
+    ],
+    "requiredSkills": [
+      "speaking"
+    ]
+  }
+}

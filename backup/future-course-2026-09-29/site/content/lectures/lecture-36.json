@@ -1,0 +1,461 @@
+{
+  "number": 36,
+  "legacyLessonId": "a2-polite-requests",
+  "objectives": [
+    "Describe symptoms and duration, understand care instructions and ask an appropriate follow-up question.",
+    "Use and recognise: Jag har haft feber i tre dagar. · Jag har ont i halsen och känner mig yr. · När bör jag kontakta vården igen?",
+    "Complete a first attempt, inspect evidence or feedback, then repeat with a changed condition."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-36-recall-1",
+      "prompt": "Which expression describes pain?",
+      "answers": [
+        "Jag har ont i ryggen."
+      ],
+      "options": [
+        "Jag har ont i ryggen.",
+        "Jag är ont ryggen.",
+        "Ryggen har mig."
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “Jag har ont i ryggen.”."
+    },
+    {
+      "id": "sv-36-recall-2",
+      "prompt": "Choose the duration beginning at a point in time.",
+      "answers": [
+        "sedan i måndags"
+      ],
+      "options": [
+        "sedan i måndags",
+        "i tre dagar sedan",
+        "för tre dagar ännu"
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “sedan i måndags”."
+    },
+    {
+      "id": "sv-36-recall-3",
+      "prompt": "Which modal verb gives measured advice?",
+      "answers": [
+        "bör"
+      ],
+      "options": [
+        "bör",
+        "hade",
+        "brukade i går"
+      ],
+      "hint": "Retrieve the Swedish form before reopening the teaching section.",
+      "explanation": "The useful form is “bör”."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Health and wellbeing: meaning and form",
+      "body": [
+        "Goal: Describe symptoms and duration, understand care instructions and ask an appropriate follow-up question.",
+        "Core vocabulary: ett symtom, yr, återhämta sig. Key phrases: Jag har haft feber i tre dagar. · Jag har ont i halsen och känner mig yr. · När bör jag kontakta vården igen?",
+        "Use Jag har ont i … for pain and Jag har haft … sedan/i … for duration continuing until now: sedan i måndags, i tre dagar. Advice often uses bör, kan or an imperative. In urgent symptoms, follow the service's instructions rather than relying on language practice.",
+        "Say the examples aloud, notice the pattern, and then change one detail rather than memorising a fixed script."
+      ],
+      "examples": [
+        {
+          "fi": "Jag har haft feber i tre dagar.",
+          "en": "I have had a fever for three days."
+        },
+        {
+          "fi": "Jag har ont i halsen och känner mig yr.",
+          "en": "I have a sore throat and feel dizzy."
+        },
+        {
+          "fi": "När bör jag kontakta vården igen?",
+          "en": "When should I contact healthcare again?"
+        }
+      ]
+    },
+    {
+      "title": "Register, evidence and independent use",
+      "body": [
+        "Register model: “När bör jag kontakta vården igen?” is a neutral healthcare question way to express “When should I contact healthcare again?”.",
+        "For listening and reading, answer from a specific word or phrase. For speaking and writing, make the recipient, purpose and next action clear.",
+        "Attempt the task before using the model. Improve one high-impact feature, then perform it again with the transfer condition."
+      ],
+      "examples": [
+        {
+          "fi": "När bör jag kontakta vården igen?",
+          "en": "When should I contact healthcare again?",
+          "note": "Use as a neutral healthcare question model, then adapt the details."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Communicative move",
+          "Useful Swedish",
+          "Check"
+        ],
+        "rows": [
+          [
+            "establish the episode function",
+            "Jag har haft feber i tre dagar.",
+            "Is the meaning clear?"
+          ],
+          [
+            "add or contrast information",
+            "Jag har ont i halsen och känner mig yr.",
+            "Does the form fit?"
+          ],
+          [
+            "complete the task",
+            "När bör jag kontakta vården igen?",
+            "Can the listener or reader act?"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-36-guided-1",
+      "prompt": "Choose the meaning of “Jag har haft feber i tre dagar.”.",
+      "answers": [
+        "I have had a fever for three days."
+      ],
+      "options": [
+        "I have had a fever for three days.",
+        "I have a sore throat and feel dizzy.",
+        "When should I contact healthcare again?"
+      ],
+      "hint": "Match the complete Swedish phrase to its communicative meaning.",
+      "explanation": "“Jag har haft feber i tre dagar.” means “I have had a fever for three days.”."
+    },
+    {
+      "id": "sv-36-guided-2",
+      "prompt": "Jag har haft hosta ___ fyra dagar.",
+      "answers": [
+        "i"
+      ],
+      "options": [
+        "i",
+        "sedan",
+        "för"
+      ],
+      "hint": "Use the grammar pattern from the teaching section.",
+      "explanation": "The correct completion is “i”."
+    },
+    {
+      "id": "sv-36-guided-3",
+      "prompt": "Which line is part of the episode dialogue?",
+      "answers": [
+        "Har du svårt att andas eller mycket ont i bröstet?"
+      ],
+      "options": [
+        "Har du svårt att andas eller mycket ont i bröstet?",
+        "När bör jag kontakta vården igen?",
+        "Jag kaffe är."
+      ],
+      "hint": "Return to the dialogue and locate the exact line.",
+      "explanation": "The dialogue includes “Har du svårt att andas eller mycket ont i bröstet?”."
+    },
+    {
+      "id": "sv-36-guided-4",
+      "prompt": "What should the patient keep nearby?",
+      "answers": [
+        "a medication list"
+      ],
+      "options": [
+        "a medication list",
+        "a travel card",
+        "a food receipt"
+      ],
+      "hint": "Listen first for the situation, then again for the requested detail.",
+      "explanation": "The relevant listening detail is “a medication list”."
+    },
+    {
+      "id": "sv-36-guided-5",
+      "prompt": "When should the reader contact healthcare?",
+      "answers": [
+        "if symptoms quickly worsen or breathing becomes difficult"
+      ],
+      "options": [
+        "if symptoms quickly worsen or breathing becomes difficult",
+        "whenever they drink water",
+        "only after returning to work"
+      ],
+      "hint": "Locate the words that prove the answer; do not translate every sentence.",
+      "explanation": "The text shows that the answer is “if symptoms quickly worsen or breathing becomes difficult”."
+    },
+    {
+      "id": "sv-36-guided-6",
+      "prompt": "Which description gives useful clinical detail?",
+      "answers": [
+        "Jag har haft feber i tre dagar."
+      ],
+      "options": [
+        "Jag har haft feber i tre dagar.",
+        "Jag mår konstigt typ.",
+        "Feber är kanske en sak."
+      ],
+      "hint": "Consider the reader, relationship and purpose.",
+      "explanation": "The best fit is “Jag har haft feber i tre dagar.”."
+    },
+    {
+      "id": "sv-36-guided-7",
+      "prompt": "Which item is a core vocabulary target in this episode?",
+      "answers": [
+        "yr"
+      ],
+      "options": [
+        "yr",
+        "Jag har ont i halsen och känner mig yr.",
+        "Jag kaffe är."
+      ],
+      "hint": "Choose the standalone word or phrase introduced in this episode.",
+      "explanation": "yr means “dizzy”."
+    },
+    {
+      "id": "sv-36-guided-8",
+      "prompt": "Which Swedish phrase best supports the goal “Describe symptoms and duration, understand care instructions and ask an appropriate follow-up question.”?",
+      "answers": [
+        "När bör jag kontakta vården igen?"
+      ],
+      "options": [
+        "När bör jag kontakta vården igen?",
+        "God natt!",
+        "Jag heter ett bord."
+      ],
+      "hint": "Choose the phrase that performs the target function.",
+      "explanation": "“När bör jag kontakta vården igen?” directly supports the episode goal."
+    },
+    {
+      "id": "sv-36-guided-9",
+      "prompt": "Which action demonstrates transfer rather than memorisation?",
+      "answers": [
+        "adapt the useful pattern to the changed situation"
+      ],
+      "options": [
+        "adapt the useful pattern to the changed situation",
+        "repeat the dialogue word for word",
+        "translate the English model only"
+      ],
+      "hint": "Transfer means keeping the function while changing important details.",
+      "explanation": "Independent transfer adapts language to a new condition."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-36-check-1",
+      "prompt": "Choose the sentence that best represents the episode's core language.",
+      "answers": [
+        "Jag har haft feber i tre dagar."
+      ],
+      "options": [
+        "Jag har haft feber i tre dagar.",
+        "Jag kaffe är.",
+        "God natt."
+      ],
+      "hint": "Choose the sentence tied directly to today's objective.",
+      "explanation": "Carry forward “Jag har haft feber i tre dagar.”."
+    },
+    {
+      "id": "sv-36-check-2",
+      "prompt": "What should the patient keep nearby?",
+      "answers": [
+        "a medication list"
+      ],
+      "options": [
+        "a medication list",
+        "a travel card",
+        "a food receipt"
+      ],
+      "hint": "Replay only after making a first evidence-based choice.",
+      "explanation": "The key detail is “a medication list”."
+    },
+    {
+      "id": "sv-36-check-3",
+      "prompt": "When should the reader contact healthcare?",
+      "answers": [
+        "if symptoms quickly worsen or breathing becomes difficult"
+      ],
+      "options": [
+        "if symptoms quickly worsen or breathing becomes difficult",
+        "whenever they drink water",
+        "only after returning to work"
+      ],
+      "hint": "Use a phrase in the text as proof.",
+      "explanation": "The correct answer is “if symptoms quickly worsen or breathing becomes difficult”."
+    },
+    {
+      "id": "sv-36-check-4",
+      "prompt": "What should you carry into the next episode?",
+      "answers": [
+        "one usable pattern, one comprehension strategy and one completed real task"
+      ],
+      "options": [
+        "one usable pattern, one comprehension strategy and one completed real task",
+        "a word-for-word memorised dialogue",
+        "only English grammar labels"
+      ],
+      "hint": "Keep a small set that you can retrieve and adapt.",
+      "explanation": "Durable learning combines retrieval, evidence and independent use."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill task and transfer",
+    "instructions": "LISTEN: First listen without a transcript. Answer: What should the patient keep nearby? Replay once and identify the exact words that prove the answer.\n\nREAD: Read for purpose and evidence. Answer: When should the reader contact healthcare? Mark the shortest phrase that supports your choice.\n\nSPEAK: Call a clinic about a non-emergency problem. Describe two symptoms, say when they began and ask what you should do next. Make a first attempt, check clarity and repeat once.\n\nWRITE: Write a concise symptom update for a digital appointment: symptoms, duration, effect on daily life and one question. Check reader, purpose, required details and next action.\n\nTRANSFER: One symptom has improved but a new symptom began this morning; update the report accurately.\n\nBETWEEN LESSON · Optional, 5 minutes: retrieve the three key phrases without looking, then use one in a new sentence.",
+    "model": "Jag har haft feber i tre dagar. Jag har ont i halsen och känner mig yr. När bör jag kontakta vården igen?"
+  },
+  "takeaways": [
+    "Use: Jag har haft feber i tre dagar.",
+    "Notice: Use Jag har ont i … for pain and Jag har haft … sedan/i … for duration continuing until now: sedan i måndags, i tre dagar.",
+    "Transfer the pattern: One symptom has improved but a new symptom began this morning; update the report accurately."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Patient",
+      "fi": "Jag har haft feber i tre dagar och känner mig yr.",
+      "en": "I have had a fever for three days and feel dizzy."
+    },
+    {
+      "speaker": "Sjukskötare",
+      "fi": "Har du svårt att andas eller mycket ont i bröstet?",
+      "en": "Do you have difficulty breathing or severe chest pain?"
+    },
+    {
+      "speaker": "Patient",
+      "fi": "Nej. När bör jag kontakta vården igen?",
+      "en": "No. When should I contact healthcare again?"
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-36-word-1",
+        "fi": "ett symtom",
+        "en": "a symptom",
+        "example": "ett symtom",
+        "translation": "a symptom",
+        "level": "A2"
+      },
+      {
+        "id": "sv-36-word-2",
+        "fi": "yr",
+        "en": "dizzy",
+        "example": "yr",
+        "translation": "dizzy",
+        "level": "A2"
+      },
+      {
+        "id": "sv-36-word-3",
+        "fi": "återhämta sig",
+        "en": "to recover",
+        "example": "återhämta sig",
+        "translation": "to recover",
+        "level": "A2"
+      },
+      {
+        "id": "sv-36-phrase-1",
+        "fi": "Jag har haft feber i tre dagar.",
+        "en": "I have had a fever for three days.",
+        "example": "Jag har haft feber i tre dagar.",
+        "translation": "I have had a fever for three days.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-36-phrase-2",
+        "fi": "Jag har ont i halsen och känner mig yr.",
+        "en": "I have a sore throat and feel dizzy.",
+        "example": "Jag har ont i halsen och känner mig yr.",
+        "translation": "I have a sore throat and feel dizzy.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-36-phrase-3",
+        "fi": "När bör jag kontakta vården igen?",
+        "en": "When should I contact healthcare again?",
+        "example": "När bör jag kontakta vården igen?",
+        "translation": "When should I contact healthcare again?",
+        "level": "A2"
+      }
+    ],
+    "pronunciation": {
+      "text": "När bör jag kontakta vården igen?",
+      "tip": "Practise the long vowel in bör and the retroflex sound sequence in vården if it occurs in your accent; clarity matters more than imitation."
+    },
+    "reading_passage": {
+      "text": "Egenvårdsråd vid förkylning: Vila och drick tillräckligt. Stanna hemma medan du har feber. Kontakta vården om symtomen snabbt blir värre eller om du får svårt att andas. Vid akut fara, ring nödnumret.",
+      "gist": {
+        "prompt": "What is the main purpose of this text?",
+        "options": [
+          "to communicate practical information",
+          "to list unrelated grammar terms",
+          "to tell a fantasy story"
+        ],
+        "answer": 0,
+        "explanation": "The text gives information that supports an everyday decision or action."
+      },
+      "detail": {
+        "prompt": "When should the reader contact healthcare?",
+        "options": [
+          "if symptoms quickly worsen or breathing becomes difficult",
+          "whenever they drink water",
+          "only after returning to work"
+        ],
+        "answer": 0,
+        "explanation": "The text supports “if symptoms quickly worsen or breathing becomes difficult”."
+      }
+    },
+    "reading": {
+      "text": "Egenvårdsråd vid förkylning: Vila och drick tillräckligt. Stanna hemma medan du har feber. Kontakta vården om symtomen snabbt blir värre eller om du får svårt att andas. Vid akut fara, ring nödnumret.",
+      "question": "When should the reader contact healthcare?",
+      "options": [
+        "if symptoms quickly worsen or breathing becomes difficult",
+        "whenever they drink water",
+        "only after returning to work"
+      ],
+      "answer": 0,
+      "explanation": "Use the text as evidence for “if symptoms quickly worsen or breathing becomes difficult”."
+    },
+    "listening": {
+      "text": "Din telefontid är i dag klockan 14.20. Ha din läkemedelslista nära. Sjukskötaren ringer från ett dolt nummer, så svara även om numret inte syns.",
+      "question": "What should the patient keep nearby?",
+      "options": [
+        "a medication list",
+        "a travel card",
+        "a food receipt"
+      ],
+      "answer": 0,
+      "explanation": "The spoken message identifies “a medication list”."
+    },
+    "speaking": {
+      "prompt": "Call a clinic about a non-emergency problem. Describe two symptoms, say when they began and ask what you should do next.",
+      "help": "Plan three chunks and reuse, without copying, one of these patterns: Jag har haft feber i tre dagar. · Jag har ont i halsen och känner mig yr. · När bör jag kontakta vården igen?",
+      "model": "Jag har haft feber i tre dagar. Jag har ont i halsen och känner mig yr. När bör jag kontakta vården igen?"
+    },
+    "writing": {
+      "prompt": "Write a concise symptom update for a digital appointment: symptoms, duration, effect on daily life and one question.",
+      "help": "Identify the reader and purpose, include every requested detail, connect the ideas, and finish with a clear next action.",
+      "model": "Jag har haft feber i tre dagar. Jag har ont i halsen och känner mig yr. När bör jag kontakta vården igen?"
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Give healthcare staff a clear symptom timeline and ask for next-step guidance.",
+    "transferPrompt": "One symptom has improved but a new symptom began this morning; update the report accurately.",
+    "returnPrompt": "Within two days, retrieve “Jag har haft feber i tre dagar.” and use it in a different context.",
+    "successChecks": [
+      "Symptoms and duration are specific.",
+      "Current and improved symptoms are distinguished.",
+      "The follow-up question is clear and relevant."
+    ],
+    "requiredSkills": [
+      "speaking"
+    ]
+  }
+}

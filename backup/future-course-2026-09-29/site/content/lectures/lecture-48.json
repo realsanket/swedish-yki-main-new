@@ -1,0 +1,460 @@
+{
+  "number": 48,
+  "legacyLessonId": "sv-service-complaint",
+  "objectives": [
+    "Report a service problem with relevant facts and request a proportionate solution.",
+    "Use and recognise: Paketet kom fram, men innehållet var skadat. · Jag bifogar ett foto på skadan. · Jag önskar en ny vara eller återbetalning.",
+    "Complete an independent first attempt, review one specific feature, then transfer the language to a changed situation."
+  ],
+  "focusSkills": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "recall": [
+    {
+      "id": "sv-e48-recall-1",
+      "prompt": "Warm up for complaints and problem-solving: choose the Swedish line that best supports today's goal.",
+      "answers": [
+        "Paketet kom fram, men innehållet var skadat."
+      ],
+      "options": [
+        "Paketet kom fram, men innehållet var skadat.",
+        "Jag bifogar ett foto på skadan.",
+        "Jag önskar en ny vara eller återbetalning."
+      ],
+      "hint": "Choose by communicative purpose, not by translating every word.",
+      "explanation": "Paketet kom fram, men innehållet var skadat. is the most direct starting point for this task."
+    },
+    {
+      "id": "sv-e48-recall-2",
+      "prompt": "Which strategy will help most in this complaints and problem-solving task?",
+      "answers": [
+        "Separate observable facts from emotion, then request a solution that matches the problem."
+      ],
+      "options": [
+        "Separate observable facts from emotion, then request a solution that matches the problem.",
+        "Translate every word before deciding what to do.",
+        "Memorise the model and repeat it without changing details."
+      ],
+      "hint": "Choose the action that makes the input usable in a new situation.",
+      "explanation": "Separate observable facts from emotion, then request a solution that matches the problem."
+    },
+    {
+      "id": "sv-e48-recall-3",
+      "prompt": "Say or type this useful line from memory: “I would like a replacement item or a refund.”",
+      "answers": [
+        "Jag önskar en ny vara eller återbetalning."
+      ],
+      "hint": "Try once before looking back at the phrase list.",
+      "explanation": "A clear answer is: Jag önskar en ny vara eller återbetalning."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Situation, language and purpose",
+      "body": [
+        "Goal: Report a service problem with relevant facts and request a proportionate solution.",
+        "Core vocabulary: skada, reklamation, återbetalning. Key phrases: Paketet kom fram, men innehållet var skadat. · Jag bifogar ett foto på skadan. · Jag önskar en ny vara eller återbetalning.",
+        "Meaning first: use the language to complete a real complaints and problem-solving purpose, not to display isolated grammar.",
+        "Purposeful return: Reuse the fact–effect–request structure in a community proposal."
+      ],
+      "examples": [
+        {
+          "fi": "Paketet kom fram, men innehållet var skadat.",
+          "en": "The parcel arrived, but the contents were damaged."
+        },
+        {
+          "fi": "Jag bifogar ett foto på skadan.",
+          "en": "I am attaching a photo of the damage."
+        },
+        {
+          "fi": "Jag önskar en ny vara eller återbetalning.",
+          "en": "I would like a replacement item or a refund."
+        }
+      ]
+    },
+    {
+      "title": "Register, strategy and transfer",
+      "body": [
+        "REGISTER · NEUTRAL SWEDISH: Varan var skadad vid leveransen. EVERYDAY SPEECH / CONTEXT: Den var sönder när den kom.",
+        "Practice move: Separate observable facts from emotion, then request a solution that matches the problem.",
+        "Make a first attempt without the model. Review one feature, then respond again after an important condition changes."
+      ],
+      "examples": [
+        {
+          "fi": "NEUTRAL SWEDISH: Varan var skadad vid leveransen.",
+          "en": "A clear production model for neutral or formal use."
+        },
+        {
+          "fi": "EVERYDAY / CONTEXTUAL FORM: Den var sönder när den kom.",
+          "en": "Useful recognition or familiar-language model.",
+          "note": "The spoken version is natural. The formal version identifies the item and time more precisely."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Complaint element",
+          "Question",
+          "Example"
+        ],
+        "rows": [
+          [
+            "fact",
+            "What and when?",
+            "order 4821, delivered 8 May"
+          ],
+          [
+            "evidence and effect",
+            "What proves the problem?",
+            "photo of a cracked surface"
+          ],
+          [
+            "solution",
+            "What would resolve it?",
+            "replacement or refund"
+          ]
+        ]
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-e48-guided-meaning",
+      "prompt": "Choose the meaning of “Paketet kom fram, men innehållet var skadat.”.",
+      "answers": [
+        "The parcel arrived, but the contents were damaged."
+      ],
+      "options": [
+        "The parcel arrived, but the contents were damaged.",
+        "I am attaching a photo of the damage.",
+        "I would like a replacement item or a refund."
+      ],
+      "hint": "Match the whole sentence to its communicative purpose.",
+      "explanation": "“Paketet kom fram, men innehållet var skadat.” means “The parcel arrived, but the contents were damaged.”"
+    },
+    {
+      "id": "sv-e48-guided-form",
+      "prompt": "Complete the evidence sentence: Jag ___ ett foto på skadan.",
+      "answers": [
+        "bifogar"
+      ],
+      "options": [
+        "bifogar",
+        "betalar",
+        "erbjuder"
+      ],
+      "hint": "Read the whole sentence before choosing the form.",
+      "explanation": "The fitting form is bifogar."
+    },
+    {
+      "id": "sv-e48-guided-dialogue",
+      "prompt": "Which line appears in the dialogue?",
+      "answers": [
+        "Kan du skicka ordernumret och ett foto på skadan?"
+      ],
+      "options": [
+        "Kan du skicka ordernumret och ett foto på skadan?",
+        "Jag bifogar ett foto på skadan.",
+        "Jag önskar en ny vara eller återbetalning."
+      ],
+      "hint": "Locate the exact line and identify what it accomplishes.",
+      "explanation": "The middle speaker uses this line in the situation."
+    },
+    {
+      "id": "sv-e48-guided-listening",
+      "prompt": "What should the customer do with the broken machine?",
+      "answers": [
+        "Take it to electronics recycling"
+      ],
+      "options": [
+        "Take it to electronics recycling",
+        "Return it by post",
+        "Keep using it"
+      ],
+      "hint": "Listen once for the situation and again for the requested detail.",
+      "explanation": "The speaker asks the customer to leave it at elektronikåtervinningen."
+    },
+    {
+      "id": "sv-e48-guided-reading",
+      "prompt": "What should the customer wait for before returning the item?",
+      "answers": [
+        "Return instructions"
+      ],
+      "options": [
+        "Return instructions",
+        "A new order number",
+        "Fourteen more days"
+      ],
+      "hint": "Find the exact phrase that proves the answer.",
+      "explanation": "Skicka inte tillbaka varan innan du fått returinstruktioner."
+    },
+    {
+      "id": "sv-e48-guided-register",
+      "prompt": "Which neutral form preserves the meaning of “Den var sönder när den kom.”?",
+      "answers": [
+        "Varan var skadad vid leveransen."
+      ],
+      "options": [
+        "Varan var skadad vid leveransen.",
+        "Jag bifogar ett foto på skadan.",
+        "Jag önskar en ny vara eller återbetalning."
+      ],
+      "hint": "Keep the meaning while choosing a form suitable for clear production.",
+      "explanation": "The spoken version is natural. The formal version identifies the item and time more precisely."
+    },
+    {
+      "id": "sv-e48-guided-vocabulary",
+      "prompt": "Which word belongs directly to today's complaints and problem-solving task?",
+      "answers": [
+        "skada"
+      ],
+      "options": [
+        "skada",
+        "complaint about faulty goods",
+        "I would like a replacement item or a refund."
+      ],
+      "hint": "Choose the Swedish target word, not an English gloss or a full sentence.",
+      "explanation": "skada means damage."
+    },
+    {
+      "id": "sv-e48-guided-strategy",
+      "prompt": "Which action best improves an independent second attempt?",
+      "answers": [
+        "Separate observable facts from emotion, then request a solution that matches the problem."
+      ],
+      "options": [
+        "Separate observable facts from emotion, then request a solution that matches the problem.",
+        "Copy the model word for word.",
+        "Replace all precise details with general language."
+      ],
+      "hint": "The best strategy should transfer to fresh material.",
+      "explanation": "Separate observable facts from emotion, then request a solution that matches the problem."
+    },
+    {
+      "id": "sv-e48-guided-transfer",
+      "prompt": "Which changed condition should you respond to in the transfer attempt?",
+      "answers": [
+        "The seller offers only a discount; explain why that does or does not solve the problem."
+      ],
+      "options": [
+        "The seller offers only a discount; explain why that does or does not solve the problem.",
+        "Repeat the original scene without any change.",
+        "Give an English summary instead of completing the Swedish task."
+      ],
+      "hint": "Transfer requires a meaningful new condition.",
+      "explanation": "The seller offers only a discount; explain why that does or does not solve the problem."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-e48-check-core",
+      "prompt": "Choose the phrase that most directly supports today's main goal.",
+      "answers": [
+        "Paketet kom fram, men innehållet var skadat."
+      ],
+      "options": [
+        "Paketet kom fram, men innehållet var skadat.",
+        "Jag bifogar ett foto på skadan.",
+        "Jag önskar en ny vara eller återbetalning."
+      ],
+      "hint": "Return to the goal and select the line that starts that action.",
+      "explanation": "Use Paketet kom fram, men innehållet var skadat."
+    },
+    {
+      "id": "sv-e48-check-listening",
+      "prompt": "What should the customer do with the broken machine?",
+      "answers": [
+        "Take it to electronics recycling"
+      ],
+      "options": [
+        "Take it to electronics recycling",
+        "Return it by post",
+        "Keep using it"
+      ],
+      "hint": "Answer from the audio first; inspect the script only afterwards.",
+      "explanation": "The speaker asks the customer to leave it at elektronikåtervinningen."
+    },
+    {
+      "id": "sv-e48-check-reading",
+      "prompt": "Which two facts should the complaint include?",
+      "answers": [
+        "Order number and a clear fault description"
+      ],
+      "options": [
+        "Order number and a clear fault description",
+        "Password and bank code",
+        "A friend's address and work time"
+      ],
+      "hint": "Read for the required action and the detail that controls it.",
+      "explanation": "The policy asks for ordernummer and a description."
+    },
+    {
+      "id": "sv-e48-check-next",
+      "prompt": "What should you save for later review?",
+      "answers": [
+        "one skill-specific result, one useful phrase and one concrete improvement"
+      ],
+      "options": [
+        "one skill-specific result, one useful phrase and one concrete improvement",
+        "a single overall score with no skill detail",
+        "a copied model with no record of your own attempt"
+      ],
+      "hint": "Useful evidence tells you what to repeat and what to change.",
+      "explanation": "Separate evidence makes the next practice decision specific."
+    }
+  ],
+  "assignment": {
+    "title": "Four-skill practice, transfer and delayed return",
+    "instructions": "LISTEN: answer “What should the customer do with the broken machine?” from the recording before reading the script. Save the listening result separately.\n\nREAD: answer the gist and detail questions, and mark the exact phrase that proves each answer. Save the reading result separately.\n\nSPEAK: Explain a faulty product to customer service and negotiate a suitable solution. Record an independent first attempt, then improve one feature.\n\nWRITE: Write a clear complaint about a damaged delivery. Draft without the model, then revise for reader, purpose, essential detail and next action.\n\nTRANSFER: The seller offers only a discount; explain why that does or does not solve the problem.\n\nBETWEEN LESSON · Optional, 5 minutes: Reuse the fact–effect–request structure in a community proposal.",
+    "model": "SPEAKING MODEL: Jag köpte lampan den 3 maj. Paketet kom fram i går, men skärmen var sprucken. Jag har ordernumret och kan skicka ett foto. Jag önskar i första hand en ny lampa. Hur går vi vidare?\n\nWRITING MODEL: Ämne: Reklamation, order 4821. Hej! Paketet levererades den 8 maj, men bordsskivan var skadad. Jag bifogar ett foto. Jag önskar en ny skiva eller återbetalning. Skicka gärna returinstruktioner. Vänliga hälsningar, Noor"
+  },
+  "takeaways": [
+    "Use: Paketet kom fram, men innehållet var skadat.",
+    "Register: Den var sönder när den kom. → Varan var skadad vid leveransen.",
+    "A strong complaint makes it easy for the recipient to verify the case and take action."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Kund",
+      "fi": "Paketet kom fram i går, men lampan var trasig.",
+      "en": "The parcel arrived yesterday, but the lamp was broken."
+    },
+    {
+      "speaker": "Kundtjänst",
+      "fi": "Kan du skicka ordernumret och ett foto på skadan?",
+      "en": "Can you send the order number and a photo of the damage?"
+    },
+    {
+      "speaker": "Kund",
+      "fi": "Ja. Jag önskar en ny lampa, inte en återbetalning.",
+      "en": "Yes. I would like a new lamp, not a refund."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-e48-v1",
+        "fi": "skada",
+        "en": "damage",
+        "example": "Det finns en skada på bordsskivan.",
+        "translation": "There is damage to the tabletop.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e48-v2",
+        "fi": "reklamation",
+        "en": "complaint about faulty goods",
+        "example": "Jag skickade en reklamation till butiken.",
+        "translation": "I sent a complaint to the shop.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e48-v3",
+        "fi": "återbetalning",
+        "en": "refund",
+        "example": "Återbetalningen tar fem vardagar.",
+        "translation": "The refund takes five working days.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e48-p1",
+        "fi": "Paketet kom fram, men innehållet var skadat.",
+        "en": "The parcel arrived, but the contents were damaged.",
+        "example": "Paketet kom fram, men innehållet var skadat.",
+        "translation": "The parcel arrived, but the contents were damaged.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e48-p2",
+        "fi": "Jag bifogar ett foto på skadan.",
+        "en": "I am attaching a photo of the damage.",
+        "example": "Jag bifogar ett foto på skadan.",
+        "translation": "I am attaching a photo of the damage.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-e48-p3",
+        "fi": "Jag önskar en ny vara eller återbetalning.",
+        "en": "I would like a replacement item or a refund.",
+        "example": "Jag önskar en ny vara eller återbetalning.",
+        "translation": "I would like a replacement item or a refund.",
+        "level": "B1"
+      }
+    ],
+    "pronunciation": {
+      "text": "reklamation – återbetalning – ordernummer – returinstruktion",
+      "tip": "Break long compounds into meaningful parts, but keep them within one word in writing."
+    },
+    "reading_passage": {
+      "text": "Reklamation: Kontakta kundtjänsten inom 14 dagar efter att du upptäckt felet. Ange ordernummer och beskriv felet tydligt. Bifoga gärna en bild, men skicka inte tillbaka varan innan du fått returinstruktioner. Vi svarar normalt inom tre vardagar.",
+      "gist": {
+        "prompt": "What does the text explain?",
+        "options": [
+          "How to report a faulty product",
+          "How to order a new product",
+          "How to apply for a job"
+        ],
+        "answer": 0,
+        "explanation": "It gives the steps for a reklamation."
+      },
+      "detail": {
+        "prompt": "What should the customer wait for before returning the item?",
+        "options": [
+          "Return instructions",
+          "A new order number",
+          "Fourteen more days"
+        ],
+        "answer": 0,
+        "explanation": "Skicka inte tillbaka varan innan du fått returinstruktioner."
+      }
+    },
+    "reading": {
+      "text": "Reklamation: Kontakta kundtjänsten inom 14 dagar efter att du upptäckt felet. Ange ordernummer och beskriv felet tydligt. Bifoga gärna en bild, men skicka inte tillbaka varan innan du fått returinstruktioner. Vi svarar normalt inom tre vardagar.",
+      "question": "Which two facts should the complaint include?",
+      "options": [
+        "Order number and a clear fault description",
+        "Password and bank code",
+        "A friend's address and work time"
+      ],
+      "answer": 0,
+      "explanation": "The policy asks for ordernummer and a description."
+    },
+    "listening": {
+      "text": "Hej! Vi har behandlat din reklamation om kaffemaskinen. Vi kan skicka en ny maskin på måndag. Du behöver inte returnera den trasiga apparaten, men lämna den till elektronikåtervinningen. Svara på meddelandet om du hellre vill ha pengarna tillbaka.",
+      "question": "What should the customer do with the broken machine?",
+      "options": [
+        "Take it to electronics recycling",
+        "Return it by post",
+        "Keep using it"
+      ],
+      "answer": 0,
+      "explanation": "The speaker asks the customer to leave it at elektronikåtervinningen."
+    },
+    "speaking": {
+      "prompt": "Explain a faulty product to customer service and negotiate a suitable solution.",
+      "help": "Give purchase date, problem, evidence, effect and preferred solution. Answer one follow-up question.",
+      "model": "Jag köpte lampan den 3 maj. Paketet kom fram i går, men skärmen var sprucken. Jag har ordernumret och kan skicka ett foto. Jag önskar i första hand en ny lampa. Hur går vi vidare?"
+    },
+    "writing": {
+      "prompt": "Write a clear complaint about a damaged delivery.",
+      "help": "Use a factual subject line; include order, date, fault, evidence and requested solution.",
+      "model": "Ämne: Reklamation, order 4821. Hej! Paketet levererades den 8 maj, men bordsskivan var skadad. Jag bifogar ett foto. Jag önskar en ny skiva eller återbetalning. Skicka gärna returinstruktioner. Vänliga hälsningar, Noor"
+    }
+  },
+  "route": {
+    "primarySkill": "writing",
+    "expectedOutput": "Write a clear complaint about a damaged delivery.",
+    "transferPrompt": "The seller offers only a discount; explain why that does or does not solve the problem.",
+    "returnPrompt": "Reuse the fact–effect–request structure in a community proposal.",
+    "successChecks": [
+      "You complete the communicative purpose without copying the model.",
+      "Essential facts, times and requested actions are understandable.",
+      "You preserve meaning when register or conditions change."
+    ],
+    "requiredSkills": [
+      "writing"
+    ]
+  }
+}
