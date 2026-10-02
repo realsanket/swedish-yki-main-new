@@ -152,8 +152,11 @@ for module in mods['modules']:
     story=module.get('story',{})
     for key in ('title','setting','summary','cast'):
         if not story.get(key): errs.append(f'module {module["number"]}: missing story.{key}')
-    actual={line['speaker'] for l in L if module['first']<=l['number']<=module['last'] for line in l.get('dialogue',[])}
-    if set(story.get('cast',[]))!=actual: errs.append(f'module {module["number"]}: story cast does not match its dialogues')
+    # The chapter cast lists the recurring characters who speak in its dialogues;
+    # one-scene roles (Servitör, Läkare…) stay in their lecture only.
+    recurring={'Alex','Elin','Henrik','Maja'}
+    actual={line['speaker'] for l in L if module['first']<=l['number']<=module['last'] for line in l.get('dialogue',[])}&recurring
+    if set(story.get('cast',[]))!=actual: errs.append(f'module {module["number"]}: story cast must be the recurring characters in its dialogues')
     art=story.get('art')
     if art and (not art.startswith('/images/story/') or not os.path.isfile('public'+art)): errs.append('invalid chapter art '+art)
 for l in L:

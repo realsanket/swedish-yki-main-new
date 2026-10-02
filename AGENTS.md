@@ -27,9 +27,10 @@ each class lesson into an app lecture.
 
 **Current scope:** The full textbook phase, **Lectures 1-22**, is active across
 six chapters. It follows teacher Lessons 1-22 and textbook pages 4-55, then
-ends with the first argumentative text. The cloud build of Lectures 3-22 was not verified. Its repair on October 2, 2026
-follows `docs/lecture-build-plan.md`; the final gate and independent review are
-recorded in `docs/lecture-repair-audit.md`. Lecture 23 and later
+ends with the first argumentative text. Lectures 3-22 were first built by Codex
+cloud (unreliable), repaired on October 2, 2026 against
+`docs/lecture-build-plan.md`, then reviewed and fixed again; both are recorded
+under "Repair audit" in `docs/mapping.md`. Lecture 23 and later
 (the YKI-book phase) are not planned yet: do not build them until the owner asks.
 
 ---
@@ -76,7 +77,7 @@ docs/
   lecture-build-plan.md      step-by-step plan for building Lectures 3-22
   text-book-images/          textbook pages (Lesson 1 = page 4, Lesson 2 = pages 5-6)
   excercise/                 Classroom homework exports
-backup/source-originals-*/   original Group 3 .docx/.pdf
+backup/                      originals of migrated sources only (backup/README.md)
 site/                        the Next.js app (everything runnable)
   content/
     lectures/lecture-01.json, lecture-02.json   EDIT THESE
@@ -93,10 +94,11 @@ site/                        the Next.js app (everything runnable)
   DEPLOY.md                  local (full) versus Vercel preview (limited)
 ```
 
-The old future-course archive is restored at `backup/future-course-2026-09-29/`.
-It was already absent from `origin/main` at the start of this repair; its last
-surviving revision before `53aed43` was restored. It is reference-only and does not
-activate any additional lecture.
+`backup/` keeps only the originals of migrated material (the teacher's Group 3
+.docx/.pdf). The old 60-lecture future course was deleted by the owner
+(September 30, 2026) and removed again on October 2: nothing in it was migrated.
+It is recoverable from commit `359475a`; `backup/README.md` gives the commands.
+Do not restore it into the working tree.
 
 ---
 
@@ -122,7 +124,12 @@ adding a page; verify the physical page and commit the corresponding public asse
 It checks all 22 lectures at 1440×900 and 390×844, including textbook stages,
 teaching beats and activities, and both mission strips. It uses an empty learner
 fixture and blocks progress writes, so it does not alter the owner's database.
-Use `AUDIT_BASE_URL` to select the server. Evidence is saved in ignored `.audit/`.
+Use `AUDIT_BASE_URL` to select the server, `AUDIT_LECTURES=3,4` and
+`AUDIT_WIDTHS=1440` to narrow a run, and `AUDIT_CHROMIUM=/path/to/chrome` when
+Playwright's own browser is not installed (in the cloud container:
+`/opt/pw-browsers/chromium-1194/chrome-linux/chrome`). A full run takes about
+5 minutes per lecture; split it into parallel `AUDIT_LECTURES` batches. Evidence
+is saved in ignored `.audit/`.
 
 - **Local** runs everything: saved progress (SQLite in `site/data/`), Azure
   voices, live coach, pronunciation scoring.
@@ -323,8 +330,8 @@ the template, not one lecture at a time. Not yet fixed unless marked.
 ## 9. Status (October 2, 2026)
 
 **Active scope:** Lectures 1–22 (the complete textbook phase). The October repair
-corrects cloud content and presentation; see `docs/lecture-repair-audit.md` for
-shipping status, exact checks and independent review. Features include textbook steps where mapped; grammar side notes;
+corrects cloud content and presentation; see "Repair audit" in
+`docs/mapping.md` for the checks and the review. Features include textbook steps where mapped; grammar side notes;
 mobile layout; in-lecture navigation and topic picker; lecture-owned extra
 steps; dialogue audio fix; live coach on gpt-realtime (HD voice, speaks first,
 chat-style transcript, Azure Speech recognition); guided "Do the task" mission;

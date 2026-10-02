@@ -779,3 +779,27 @@ PR #4. Their data was moved unchanged into `content/yki-mocks.json`; a lecture m
 now explicitly supply `ykiMockId` to select a set. None of Lectures 1–22 selects one.
 This removes the remaining number-dependent behavior without activating or rebuilding
 any YKI-book lecture. The exported data before and after migration was compared exactly.
+
+## Review fixes — October 2, 2026
+
+An independent review of the repaired branch (`fix/lectures-3-22`) found it
+sound: Lecture 2's design on all 22 lectures, content-driven story data, all 46
+textbook images identical to their scans, all 20 new dialogues and one textbook
+page plus one writing-feedback call per chapter passing against real Azure, and
+natural Swedish in every dialogue and writing model. Fixed before merging:
+
+- `backup/future-course-2026-09-29/` removed again (the repair had restored it).
+  `backup/` keeps only the teacher's original Group 3 files; see
+  `backup/README.md`.
+- `npm run check` failed on a lint error in `site/scripts/mission-audit.ts`.
+- Lecture 3: `svenskaprov` corrected to `svenskprov`.
+- `site/scripts/ui-audit.mjs` raced the app's smooth scroll to a new stage and
+  failed falsely at 1440 px; it now waits for the scroll to finish.
+  `AUDIT_WIDTHS` and `AUDIT_CHROMIUM` were added.
+- Hero dates in Lectures 16, 19, 21 and 22 used Swedish month names; all now use
+  English, as Lectures 1-15 do, and the audit accepts only English.
+- Swedish-only topic titles in Lectures 15-22 now carry a short English meaning
+  (`Swedish · English`).
+- Chapter casts list only the recurring characters (Alex, Elin, Henrik, Maja);
+  one-scene roles such as Servitör stay in their lecture. The validator enforces
+  this.
