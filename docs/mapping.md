@@ -476,3 +476,19 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   and ASAP phrases. Clarified that Elin answers questions about Maja in the activity.
 - Swedish: all lines reviewed; no doubtful authored line identified. Source dialogue
   transcriptions checked against the images. The website-profile model fits 25–45 words.
+
+### Lecture 5 repair
+
+- Re-read Lesson 5 lines 512–632, Homework 6 and scans 13/15 (14 is a divider).
+  All four teacher topics appear in their own teaching section and activity.
+- Added the complete 24 April hero and explained who Maja is at her entrance.
+  Restored stable route labels and the collapsed word bank from Lecture 2.
+- Replaced malformed linking-word table fragments with full Swedish sentences;
+  distinguished time-word `sedan` from conjunctions. Clarified that the noun sort
+  asks which suffix is *added*, avoiding overlapping “ends in n/en” categories.
+- Removed the textbook name Sara from the original writing task. The writing model
+  now includes the required `för` reason. Turned two isolated review nouns into
+  useful full sentences, retaining eight review items.
+- Swedish: all lines reviewed. Source `jag ska riskera` remains source-only with
+  `Jag ska ta risken` as the production model; ask the teacher to confirm the source
+  wording. No doubtful authored line remains.

@@ -7361,26 +7361,26 @@
     "presentation": {
       "routeSteps": {
         "recall": {
-          "label": "Hear the dream",
+          "label": "Hear the conversation",
           "description": "Listen to Maja and Alex share plans, then check the meaning."
         },
         "teach": {
-          "label": "Build the dream",
+          "label": "Build it step by step",
           "description": "Learn dream phrases, linking words, “the”, and adjective endings."
         },
         "guided": {
-          "label": "Link your lines",
+          "label": "Try the phrases",
           "description": "Choose and build the forms that make a dream clear."
         },
         "practice": {
-          "label": "Share your dream",
+          "label": "Do the task",
           "description": "Speak in linked sentences, then write a short reply."
         }
       },
       "opening": {
         "teacherNote": {
           "title": "One dream, four useful tools",
-          "body": "First follow Maja’s dream. Then learn how short linking words join reasons and results, how a noun says “the”, and why ett makes many describing words end in -t."
+          "body": "Maja is a 17-year-old student in Finland. Listen for her dream and Alex’s interest. Then use linking words, noun endings and describing words to share your own dream."
         },
         "questionIntro": "Listen once for the big idea. You do not need every word yet.",
         "dialogue": {
@@ -7393,7 +7393,7 @@
       },
       "teaching": {
         "wordBank": {
-          "mode": "open",
+          "mode": "collapsed",
           "title": "Words for dreams and descriptions"
         },
         "resourceIntro": {
@@ -7401,6 +7401,61 @@
           "title": "Hear linking words in real use",
           "body": "Use these teacher-recommended resources after the core task. Listen for one small word such as men, så or för."
         }
+      },
+      "template": "conversation-first",
+      "hero": {
+        "variant": "conversation",
+        "meta": [
+          "LEKTION 5",
+          "24 APRIL 2026"
+        ],
+        "kicker": "A DREAM, A REASON AND A FIRST STEP",
+        "title": "Vad drömmer du om?",
+        "lede": "Meet Maja and share an interest or a dream. Link your ideas and describe a job, a home or a useful first step.",
+        "startLine": {
+          "label": "START WITH ONE LINE",
+          "fi": "Jag drömmer om ett roligt jobb.",
+          "en": "I dream about a fun job.",
+          "audioText": "Jag drömmer om ett roligt jobb. Jag vill bli fotograf."
+        },
+        "speakers": [
+          {
+            "name": "Elin",
+            "fi": "Vad drömmer du om?"
+          },
+          {
+            "name": "Maja",
+            "fi": "Jag vill bli fotograf."
+          }
+        ],
+        "connector": "VARFÖR?",
+        "encounterLabel": "Elin asks Maja about her dream after class",
+        "chunks": [
+          {
+            "label": "INTEREST",
+            "fi": "Jag är intresserad av konst.",
+            "en": "I am interested in art."
+          },
+          {
+            "label": "REASON",
+            "fi": "Jag övar för jag vill lära mig.",
+            "en": "I practise because I want to learn."
+          },
+          {
+            "label": "THE THING",
+            "fi": "en bok → boken",
+            "en": "a book → the book"
+          },
+          {
+            "label": "DESCRIBE",
+            "fi": "en rolig film, ett roligt jobb",
+            "en": "a fun film, a fun job"
+          }
+        ],
+        "footerTags": [
+          "Give a reason and a next step",
+          "Let en or ett guide the ending"
+        ]
       }
     },
     "sittingBreakAfter": "guided",
@@ -7421,7 +7476,7 @@
         "id": "sv-05-unplanned-3",
         "fi": "Varför vill du byta jobb?",
         "en": "Why do you want to change jobs?",
-        "sample": "För jag vill ha ett roligt jobb."
+        "sample": "Jag vill byta jobb för jag vill göra något nytt."
       },
       {
         "id": "sv-05-unplanned-4",
@@ -7465,13 +7520,13 @@
       },
       {
         "id": "sv-05-review-book",
-        "en": "the book",
-        "fi": "boken"
+        "en": "The book is fun.",
+        "fi": "Boken är rolig."
       },
       {
         "id": "sv-05-review-house",
-        "en": "the house",
-        "fi": "huset"
+        "en": "The house is big.",
+        "fi": "Huset är stort."
       },
       {
         "id": "sv-05-review-fun",
@@ -8030,7 +8085,7 @@
         "title": "Link one idea to the next",
         "kind": "rule",
         "body": [
-          "A conjunction is a small linking word. Och adds. Eller gives a choice. Men makes a contrast. Så gives a result. För gives a reason. Sedan moves the story to the next action.",
+          "A conjunction is a small linking word. Och adds. Eller gives a choice. Men makes a contrast. Så gives a result. För gives a reason. Sedan moves the story to the next action. Sedan is a time word rather than a conjunction: when it comes first, put the verb before the person (Sedan söker jag jobb).",
           "These are complete everyday links. Keep the normal person + verb order after och, men, så and för: jag är, jag vill, jag kan."
         ],
         "examples": [
@@ -8080,17 +8135,17 @@
             [
               "så",
               "result",
-              "pluggar, så kan klara"
+              "Jag jobbar mycket, så jag är trött."
             ],
             [
               "för",
               "reason",
-              "kan inte sova, för dricker kaffe"
+              "Jag kan inte sova, för jag dricker kaffe."
             ],
             [
               "sedan",
               "next",
-              "äter, sedan åker"
+              "Jag äter. Sedan åker jag till jobbet."
             ]
           ]
         },
@@ -8189,23 +8244,23 @@
           "type": "sort",
           "label": "Ending sort",
           "title": "Sort each “the” form by its ending",
-          "instructions": "Put each definite noun under the ending you can see. Say the pair after every answer.",
+          "instructions": "Start from the plain noun. Sort by the ending added to make “the”, then say both forms.",
           "buckets": [
             {
               "id": "en",
-              "label": "ends in -en"
+              "label": "add -en"
             },
             {
               "id": "et",
-              "label": "ends in -et"
+              "label": "add -et"
             },
             {
               "id": "n",
-              "label": "ends in -n"
+              "label": "add -n"
             },
             {
               "id": "t",
-              "label": "ends in -t"
+              "label": "add -t"
             }
           ],
           "items": [
@@ -8862,9 +8917,9 @@
       },
       "writing": {
         "prompt": "Reply to your friend and explain your dream, why you have it, and one thing you will try.",
-        "situation": "Your friend Sara writes: “Hej! Vad drömmer du om?” Write a short reply.",
+        "situation": "Your friend Elin writes: “Hej! Vad drömmer du om?” Write a short reply.",
         "points": [
-          "Greet Sara.",
+          "Greet Elin.",
           "Say what you dream about.",
           "Say what interests you or what you want to become.",
           "Give a reason with för and a result or contrast with så or men.",
@@ -8875,8 +8930,8 @@
           30,
           55
         ],
-        "help": "Hej Sara! · Jag drömmer om … · Jag är intresserad av … · Jag vill … för … · … så … · Det är inte lätt, men … · Först … och sedan … · Hälsningar, …",
-        "model": "Hej Sara!\nJag drömmer om ett roligt jobb. Jag är intresserad av språk, så jag vill bli lärare. Jag vill hjälpa människor, men jag måste lära mig mer svenska. Först går jag en kurs och sedan söker jag jobb.\nHälsningar,\nAlex"
+        "help": "Hej Elin! · Jag drömmer om … · Jag är intresserad av … · Jag vill … för … · … så … · Det är inte lätt, men … · Först … och sedan … · Hälsningar, …",
+        "model": "Hej Elin!\nJag drömmer om ett roligt jobb. Jag vill bli lärare för jag vill hjälpa människor. Jag är intresserad av språk, men jag måste lära mig mer svenska. Först går jag en kurs och sedan söker jag jobb.\nHälsningar,\nAlex"
       }
     },
     "route": {
@@ -8894,6 +8949,9 @@
         "speaking",
         "writing"
       ]
+    },
+    "story": {
+      "object": "Maja’s dream of becoming a photographer"
     }
   },
   {
