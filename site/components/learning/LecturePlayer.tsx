@@ -263,7 +263,7 @@ export default function LecturePlayer({
   const teachingPresentation = presentation?.teaching;
   const templateClass = `lecture-template-${presentation?.template ?? "standard"}`;
   const lectureGrammarTerms = grammarTermsFor(lecture.grammarTerms);
-  const ykiMock = routeProfile.id === "yki-mock" ? getYkiMock(lecture.number) : undefined;
+  const ykiMock = routeProfile.id === "yki-mock" ? getYkiMock(lecture.ykiMockId) : undefined;
   const ykiWorkshop = routeProfile.id === "yki-workshop";
   // A workshop chooses its first-attempt skill in content. Lecture numbers do
   // not imply listening, reading, speaking, or writing behaviour.

@@ -122,7 +122,7 @@ export function detailedCurriculumMarkdown() {
         "",
       );
 
-      const mock = getYkiMock(lecture.number);
+      const mock = getYkiMock(lecture.ykiMockId);
       if (mock) {
         lines.push(
           "#### Original compressed mock task set",

@@ -771,3 +771,11 @@ Those invented values crash teaching. Every section now uses a supported kind ba
 on its actual purpose; the validator rejects unknown kinds, table headers, incomplete
 activities, empty hunts and malformed opening data. No renderer variant was invented
 to accommodate broken content.
+
+### Remove the final implicit lecture-number behavior
+
+The gate found legacy mock sets keyed by 59 and 60 in `lib/yki-mocks.ts`, predating
+PR #4. Their data was moved unchanged into `content/yki-mocks.json`; a lecture must
+now explicitly supply `ykiMockId` to select a set. None of Lectures 1–22 selects one.
+This removes the remaining number-dependent behavior without activating or rebuilding
+any YKI-book lecture. The exported data before and after migration was compared exactly.

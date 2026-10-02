@@ -276,7 +276,7 @@ export function FullCurriculum({
                         </ul>
                       </div>
                       {(() => {
-                        const mock = getYkiMock(lecture.number);
+                        const mock = getYkiMock(lecture.ykiMockId);
                         return mock ? (
                           <div className="curriculum-mock-index">
                             <p>ORIGINAL COMPRESSED MOCK · {mock.totalMinutes} MINUTES</p>

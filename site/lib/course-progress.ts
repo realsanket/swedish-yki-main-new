@@ -167,7 +167,7 @@ function hasProductiveAttempt(
   // A recording is deliberately not stored in the progress record. A short
   // typed version is therefore the durable, privacy-safe evidence we can
   // validate without changing the stored-state schema.
-  const mock = getYkiMock(lecture.number);
+  const mock = getYkiMock(lecture.ykiMockId);
   if (mock) {
     const tasks = skill === "speaking" ? mock.speaking : mock.writing;
     return mockProductionStageComplete(state.drafts?.[skill], tasks);
@@ -326,7 +326,7 @@ export function parseCourseAction(value: unknown): CourseAction {
 export function updateCourseState(current: CourseLectureState, action: CourseAction, lecture: CourseLecture, now = Date.now()): CourseLectureState {
   if (current.contentVersion !== 1) throw new CourseError(409, "This lecture uses an updated course format. Reload before saving.", "content_version_conflict");
   const completedParts = completedPartPrefix(current.completedParts);
-  const mock = getYkiMock(lecture.number);
+  const mock = getYkiMock(lecture.ykiMockId);
   const next = structuredClone(current);
   // `part` is server-owned: it is derived from the completed prefix, rather
   // than from a draft patch or a client-side preview of a completed step.
