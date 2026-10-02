@@ -33904,7 +33904,8 @@
       "conjunction",
       "main-clause",
       "subordinate-clause",
-      "word-order"
+      "word-order",
+      "adverb"
     ],
     "presentation": {
       "template": "conversation-first",
@@ -33975,6 +33976,22 @@
           "Describe with reasons",
           "Weigh two sides"
         ]
+      },
+      "routeSteps": {
+        "recall": {
+          "label": "Hear the conversation",
+          "description": "Listen for two different ideal homes and the reasons for each choice."
+        },
+        "teach": {
+          "label": "Build it step by step",
+          "description": "Describe an ideal home, organise an argument and support a city or country preference."
+        }
+      },
+      "teaching": {
+        "wordBank": {
+          "mode": "collapsed",
+          "title": "Open the Lesson 22 word bank"
+        }
       }
     },
     "sittingBreakAfter": "guided",
@@ -34007,7 +34024,7 @@
         "id": "city",
         "fi": "Vilken nackdel finns med stan?",
         "en": "What is one disadvantage of town?",
-        "sample": "Det finns mycket buller och hyran är dyr."
+        "sample": "Det finns mycket buller och hyran är hög."
       },
       {
         "id": "change",
@@ -34096,7 +34113,7 @@
           "label": "Reason two",
           "before": "Dessutom",
           "after": ".",
-          "placeholder": "finns naturen nära"
+          "placeholder": "kan jag promenera till stationen"
         },
         {
           "label": "One drawback",
@@ -34197,7 +34214,10 @@
               "right": "eftersom jag tycker om att odla."
             }
           ],
-          "summary": "A concrete home detail becomes meaningful when you add its purpose or reason."
+          "leftLabel": "Point",
+          "rightLabel": "Reason or consequence",
+          "pattern": "Say the complete idea, then explain how its second part supports the first.",
+          "sentence": "{left} {right}"
         }
       },
       {
@@ -34207,7 +34227,8 @@
           "A short argumentative text has three jobs. The introduction names the issue and your view. The body gives reasons, examples and another side. The conclusion returns to your view.",
           "Många tycker att … is a useful opening, but do not stop there. Follow with Jag håller med, Jag håller inte med or Enligt mig … so the reader knows your position.",
           "In the body, Å ena sidan … å andra sidan … weighs two sides. Några av fördelarna är … introduces several benefits; En nackdel är att … introduces one drawback.",
-          "In the ending, Personligen … sounds natural for your final view. Till slut can mean finally in a sequence; when you sum up an argument, Sammanfattningsvis is more exact."
+          "In the ending, Personligen … sounds natural for your final view. Till slut can mean finally in a sequence; when you sum up an argument, Sammanfattningsvis is more exact.",
+          "För det första … För det andra … can organise two reasons supporting your view. Give at least one concrete example after a reason. Sammanfattningsvis … returns to your opinion without adding a new argument."
         ],
         "examples": [
           {
@@ -34234,6 +34255,11 @@
             "fi": "Personligen föredrar jag landet framför stan.",
             "en": "Personally, I prefer the countryside to town.",
             "note": "Föredra X framför Y gives a clear comparison."
+          },
+          {
+            "fi": "För det första kan jag gå till jobbet. För det andra bor mina vänner nära. Sammanfattningsvis passar stan mig bäst.",
+            "en": "First, I can walk to work. Second, my friends live nearby. In conclusion, town suits me best.",
+            "note": "The later writing handout reinforces these three structural moves."
           }
         ],
         "memoryTip": "Intro: issue + view. Body: side A + side B + examples. End: your view again.",
@@ -34274,8 +34300,8 @@
               "why": "It begins supporting evidence."
             },
             {
-              "fi": "En nackdel är att hyran är dyr.",
-              "en": "One drawback is that rent is expensive.",
+              "fi": "En nackdel är att hyran är hög.",
+              "en": "One drawback is that rent is high.",
               "bucket": "body",
               "why": "It presents the other side."
             },
@@ -34293,10 +34319,10 @@
         "title": "Stan eller landet? Ge konkreta skäl",
         "kind": "practice",
         "body": [
-          "På landet finns ofta frisk luft, lugn och ro, större hus and nature nearby. Possible difficulties include long journeys, few shops and buses that do not run often.",
-          "I stan finns kollektivtrafik, kulturliv, schools, restaurants and more job opportunities. Possible drawbacks are noise, heavy traffic, expensive rent and less nature.",
+          "På landet finns ofta frisk luft, lugn och ro och natur nära hemmet. These are possible advantages of country life. Possible difficulties include long journeys, few shops and buses that do not run often.",
+          "I stan finns kollektivtrafik, kulturliv och många arbetsmöjligheter. These are possible advantages of city life. Possible drawbacks include noise, heavy traffic, high rent and less nature.",
           "Do not only list words. Turn each point into a sentence, explain its effect and add an example: Det finns bra kollektivtrafik. Därför behöver jag ingen bil. Till exempel går tåget var tionde minut.",
-          "Dock and emellertid both mean however and suit careful writing. Men is simpler and natural in both speech and writing. Put dock after the first element: Hyran är dock hög."
+          "Dock and emellertid both mean however and suit careful writing. Men is simpler and natural in both speech and writing. Dock often follows the first verb in a main clause: Hyran är dock hög."
         ],
         "examples": [
           {
@@ -34338,8 +34364,8 @@
               "right": "så jag behöver ingen bil."
             },
             {
-              "left": "Det är långt till affärerna,",
-              "right": "därför måste många planera sina inköp."
+              "left": "Det är långt till affärerna.",
+              "right": "Därför måste många planera sina inköp."
             },
             {
               "left": "Det finns mycket tung trafik,",
@@ -34350,7 +34376,10 @@
               "right": "så det är lätt att promenera och motionera."
             }
           ],
-          "summary": "A reason becomes convincing when its consequence is clear."
+          "leftLabel": "Point",
+          "rightLabel": "Reason or consequence",
+          "pattern": "Say the complete idea, then explain how its second part supports the first.",
+          "sentence": "{left} {right}"
         }
       }
     ],
@@ -34682,8 +34711,8 @@
           "id": "sv-22-word-15",
           "fi": "en hyra",
           "en": "rent",
-          "example": "Hyran är ganska dyr.",
-          "translation": "The rent is quite expensive.",
+          "example": "Hyran är ganska hög.",
+          "translation": "The rent is quite high.",
           "level": "A2"
         },
         {
@@ -34796,7 +34825,7 @@
         "tip": "Keep the long words in clear parts: till-räck-ligt, per-son-li-gen. Link Å ena sidan and Å andra sidan as complete chunks."
       },
       "reading_passage": {
-        "text": "Många tycker att livet på landet är bättre än livet i stan. Å ena sidan förstår jag den åsikten. På landet är det ofta lugnt, luften är friskare och naturen ligger nära. Ett hus kan också vara tillräckligt stort för en familj utan att hyran blir mycket hög. Den som har en trädgård kan odla grönsaker och barn får mer plats att leka. Å andra sidan finns det praktiska problem. Bussarna går inte alltid ofta, affärerna ligger långt bort och många måste pendla till jobbet. Nuförtiden kan en del människor arbeta hemifrån, men alla har inte den möjligheten. I stan finns fler arbetsmöjligheter, bra kollektivtrafik och ett rikt kulturliv. Det är lätt att träffa vänner, gå på museum eller prova en ny restaurang. Stan kan dock vara bullrig, och hyran är ofta dyr. Personligen föredrar jag en liten stad framför både centrum och ren landsbygd. Där finns tillräckligt med service, men området är mestadels lugnt. För mig är den balansen viktigast.",
+        "text": "Många tycker att livet på landet är bättre än livet i stan. Å ena sidan förstår jag den åsikten. På landet är det ofta lugnt, luften är friskare och naturen ligger nära. Ett hus kan också vara tillräckligt stort för en familj utan att hyran blir mycket hög. Den som har en trädgård kan odla grönsaker och barn får mer plats att leka. Å andra sidan finns det praktiska problem. Bussarna går inte alltid ofta, affärerna ligger långt bort och många måste pendla till jobbet. Nuförtiden kan en del människor arbeta hemifrån, men alla har inte den möjligheten. I stan finns fler arbetsmöjligheter, bra kollektivtrafik och ett rikt kulturliv. Det är lätt att träffa vänner, gå på museum eller prova en ny restaurang. Stan kan dock vara bullrig, och hyran är ofta hög. Personligen föredrar jag en liten stad framför både centrum och ren landsbygd. Där finns tillräckligt med service, men området är mestadels lugnt. För mig är den balansen viktigast.",
         "gist": {
           "prompt": "What place does the writer finally prefer?",
           "options": [
@@ -34819,7 +34848,7 @@
         }
       },
       "reading": {
-        "text": "Många tycker att livet på landet är bättre än livet i stan. Å ena sidan förstår jag den åsikten. På landet är det ofta lugnt, luften är friskare och naturen ligger nära. Ett hus kan också vara tillräckligt stort för en familj utan att hyran blir mycket hög. Den som har en trädgård kan odla grönsaker och barn får mer plats att leka. Å andra sidan finns det praktiska problem. Bussarna går inte alltid ofta, affärerna ligger långt bort och många måste pendla till jobbet. Nuförtiden kan en del människor arbeta hemifrån, men alla har inte den möjligheten. I stan finns fler arbetsmöjligheter, bra kollektivtrafik och ett rikt kulturliv. Det är lätt att träffa vänner, gå på museum eller prova en ny restaurang. Stan kan dock vara bullrig, och hyran är ofta dyr. Personligen föredrar jag en liten stad framför både centrum och ren landsbygd. Där finns tillräckligt med service, men området är mestadels lugnt. För mig är den balansen viktigast.",
+        "text": "Många tycker att livet på landet är bättre än livet i stan. Å ena sidan förstår jag den åsikten. På landet är det ofta lugnt, luften är friskare och naturen ligger nära. Ett hus kan också vara tillräckligt stort för en familj utan att hyran blir mycket hög. Den som har en trädgård kan odla grönsaker och barn får mer plats att leka. Å andra sidan finns det praktiska problem. Bussarna går inte alltid ofta, affärerna ligger långt bort och många måste pendla till jobbet. Nuförtiden kan en del människor arbeta hemifrån, men alla har inte den möjligheten. I stan finns fler arbetsmöjligheter, bra kollektivtrafik och ett rikt kulturliv. Det är lätt att träffa vänner, gå på museum eller prova en ny restaurang. Stan kan dock vara bullrig, och hyran är ofta hög. Personligen föredrar jag en liten stad framför både centrum och ren landsbygd. Där finns tillräckligt med service, men området är mestadels lugnt. För mig är den balansen viktigast.",
         "question": "Why does a small town suit the writer?",
         "options": [
           "It has enough services and is mostly quiet",
@@ -34830,7 +34859,7 @@
         "explanation": "Där finns tillräckligt med service, men området är mestadels lugnt."
       },
       "listening": {
-        "text": "Maja berättar om sitt idealiska hem. Hon vill bo i ett ljust trähus nära en sjö, men inte långt från en järnvägsstation. Huset behöver inte vara mycket stort. Det ska ha två sovrum, ett kök och ett arbetsrum, eftersom hon arbetar delvis hemifrån. En källare är inte nödvändig, men hon vill gärna ha ett förråd och en liten trädgård. Maja tycker om lugn och ro, så området ska vara mestadels tyst. Samtidigt vill hon kunna resa till stan utan bil. Å ena sidan lockar landet med frisk luft och natur. Å andra sidan vill hon inte vänta länge på en buss eller pendla två timmar varje dag. Därför väljer hon ett mindre samhälle nära tåget. En nackdel kan vara att det bara finns en mataffär. Personligen tycker hon ändå att närheten till naturen är viktigare än många butiker och restauranger.",
+        "text": "Maja berättar om sitt idealiska hem. Hon vill bo i ett ljust trähus nära en sjö, men inte långt från en järnvägsstation. Huset behöver inte vara mycket stort. Det ska ha två sovrum, ett kök och ett arbetsrum, eftersom hon vill kunna studera hemma. En källare är inte nödvändig, men hon vill gärna ha ett förråd och en liten trädgård. Maja tycker om lugn och ro, så området ska vara mestadels tyst. Samtidigt vill hon kunna resa till stan utan bil. Å ena sidan lockar landet med frisk luft och natur. Å andra sidan vill hon inte vänta länge på en buss eller pendla två timmar varje dag. Därför väljer hon ett mindre samhälle nära tåget. En nackdel kan vara att det bara finns en mataffär. Personligen tycker hon ändå att närheten till naturen är viktigare än många butiker och restauranger.",
         "question": "Why does Maja want to live near a railway station?",
         "options": [
           "She wants to reach town without a car",
@@ -34861,7 +34890,7 @@
           120
         ],
         "help": "Många tycker att … · Jag håller (inte) med. · Enligt mig … · Å ena sidan … · Å andra sidan … · En fördel är … · En nackdel är att … · Personligen föredrar jag … framför …",
-        "model": "Många tycker att livet på landet är bättre än livet i stan. Jag håller delvis med. Å ena sidan är landet lugnt och naturen ligger nära. Luften är ofta friskare, och ett hus kan vara tillräckligt stort för en familj. Å andra sidan måste många pendla, och bussarna går inte alltid ofta. I stan finns bra kollektivtrafik, fler arbetsmöjligheter och många aktiviteter. En nackdel är dock bullret och den dyra hyran. Personligen föredrar jag en liten stad framför ren landsbygd. Då har jag service nära, men området är ändå mestadels lugnt."
+        "model": "Många tycker att livet på landet är bättre än livet i stan. Jag håller delvis med. Å ena sidan är landet lugnt och naturen ligger nära. Luften är ofta friskare, och ett hus kan vara tillräckligt stort för en familj. Å andra sidan måste många pendla, och bussarna går inte alltid ofta. I stan finns bra kollektivtrafik, fler arbetsmöjligheter och många aktiviteter. Två nackdelar är dock bullret och den höga hyran. Personligen föredrar jag en liten stad framför ren landsbygd. Då har jag service nära, men området är ändå mestadels lugnt."
       }
     },
     "route": {
@@ -34880,6 +34909,9 @@
         "speaking",
         "writing"
       ]
+    },
+    "story": {
+      "object": "two different dream homes"
     }
   }
 ]

@@ -744,3 +744,20 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   around locally produced meat are explained. Source climate/food claims remain
   attributed to Jenny; they are not asserted as a scientific account. No doubtful
   authored line remains. Writing fits 70–110 words.
+
+### Lecture 22 repair
+
+- Re-read Lesson 22 lines 2492–2539, Homework 24 and all three pages of the
+  argumentative-writing PDF. It does contain a city/countryside example and supports
+  the approved Lecture 22 topic; later homework topic choices are not activated.
+- Checked every existing hero field; its date, speakers, audio and chunks fit.
+  Added stable labels and collapsed word bank. The lecture correctly has no extra
+  textbook step and therefore six route steps.
+- Repaired two match contracts, mixed-language example sentences and the incorrect
+  placement instruction for dock. Added För det första/För det andra and a clear
+  summary model from the handout’s structural guidance, using original content.
+- Kept Maja’s ideal study space consistent with her student role and used hög hyra
+  in the rent examples. Swedish: all lines reviewed; no doubtful authored line identified.
+  The final writing model fits 80–120 words and includes both sides and a personal view.
+- This completes the repair’s per-lecture source/content pass. Activation beyond
+  Lecture 22 remains outside scope. Browser, Azure and independent gates still follow.
