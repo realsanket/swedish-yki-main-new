@@ -585,3 +585,18 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   `De måste skynda sig`. Source `Det fanns många barn som ville ha dem` is grammatical
   but its reference to the figures merits teacher confirmation. No doubtful authored
   line identified; writing model fits 40–70 words.
+
+### Lecture 12 repair
+
+- Re-read Lesson 12 lines 1354–1514, Homework 12 and scans 35–37.
+- Repaired three tables using unsupported `headers` instead of `headings`, plus the
+  opening schema. Added the full 15 May hero, stable labels and collapsed word bank.
+- Restored all irregular families to active practice, rather than leaving four only
+  in the textbook reference. Added the teacher’s weekday list, vänlig/vanlig, food
+  godare, går/åker and a typed carry-over check of definite plural/object pronouns.
+- Replaced Swedish copied into activity English fields with actual meanings; repaired
+  backchains, filled source glossaries and distinguished the dialogue voices.
+- Swedish: all lines reviewed. Page 37’s missing `En fotograf utan kamera!` is restored.
+  Source `AB … i hans tidigare filmer` is flagged; use `sina` when AB owns the films.
+  The teacher’s mer/mest pattern is taught without falsely ruling out alternative
+  comparative forms. No doubtful authored line identified. Writing fits 50–80 words.
