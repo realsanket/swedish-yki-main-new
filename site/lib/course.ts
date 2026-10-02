@@ -136,7 +136,7 @@ export function routeForLecture(lecture: LectureContent | CourseLecture): Episod
   if (lecture.route) return lecture.route;
   const profile = routeProfileForLecture(lecture).id;
   const primarySkill = "speaking";
-  const requiredSkills = profile === "standard" ? [primarySkill] : allSkills;
+  const requiredSkills: Skill[] = profile === "standard" ? [primarySkill] : allSkills;
   return {
     primarySkill,
     requiredSkills,
