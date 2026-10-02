@@ -761,3 +761,13 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   The final writing model fits 80–120 words and includes both sides and a personal view.
 - This completes the repair’s per-lecture source/content pass. Activation beyond
   Lecture 22 remains outside scope. Browser, Azure and independent gates still follow.
+
+### Shared presentation contract discovered by the browser gate
+
+The cloud JSON invented section kinds (`grammar`, `pattern`, `concept`, `vocabulary`,
+`function`, `review`, `practice`, `contrast`, `use`). The unchanged Lecture 2 renderer
+supports only `rule`, `scene` and `register` and dereferenced their metadata directly.
+Those invented values crash teaching. Every section now uses a supported kind based
+on its actual purpose; the validator rejects unknown kinds, table headers, incomplete
+activities, empty hunts and malformed opening data. No renderer variant was invented
+to accommodate broken content.
