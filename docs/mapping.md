@@ -613,3 +613,21 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   `all skräp` to `allt skräp`. The textbook coffee rule is explicitly that household’s.
 - Swedish: all lines reviewed. No doubtful authored line identified. The 50–80-word
   writing model includes advice, a real rule in the scenario, optional work and a reason.
+
+### Lecture 14 repair
+
+- Re-read Lesson 14 lines 1567–1676, scans 39–40, the two-page complaint PDF,
+  Homework 14 and every category of the seven-criteria rubric. Kitchen work is one
+  of the assigned topics; the writing task retains that topic and 60–100 words.
+- Added the 20 May hero and repaired both hunts and natural-note fields. Replaced
+  useless single-word glosses (Peter, Jag, Du) with useful phrases. Source page 39
+  now preserves the printed omission of `dator`, with a correct production alternative.
+- Mapped all seven rubric areas explicitly to writing points and route checks. The
+  speaking checks now also assess directions. Moved the reading letter’s closing
+  from its middle to its end, and used adult Alex for the kitchen complaint.
+- Clarified ni/er as addressing a company; restored attached-form agreement and
+  location/direction contrasts. Fixed the listening question to identify which of
+  the two routes it asks about, and corrected the recall landmark to the crossing.
+- Swedish: all lines reviewed. Source `en bärbar … Elitebook serie`, bus `stationer`
+  and stop names Glass/Rött hus are recorded with natural alternatives or context.
+  No doubtful authored line identified.

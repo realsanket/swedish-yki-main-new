@@ -3,7 +3,7 @@
   "routeProfile": "standard",
   "objectives": [
     "Write a clear formal complaint with a greeting, problem, requested solution and closing.",
-    "Use ni and er for formal you and connect details with eftersom, dessutom and men.",
+    "Address a company with ni and er and connect details with eftersom, dessutom and men.",
     "Give and follow walking and public-transport directions.",
     "Review borde, får, måste and behöver inte when discussing solutions and rules."
   ],
@@ -34,6 +34,73 @@
         "instructions": "Listen once with the text closed. What does Maja want, and where is the shop?",
         "initiallyOpen": false
       }
+    },
+    "template": "conversation-first",
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen for the situation and the speakers’ plans, then answer two meaning checks."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Review help verbs, organise a company complaint and give clear directions."
+      }
+    },
+    "teaching": {
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the Lesson 14 word bank"
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 14",
+        "20 MAY 2026"
+      ],
+      "kicker": "EXPLAIN A PROBLEM AND THE WAY THERE",
+      "title": "Kan ni hjälpa mig?",
+      "lede": "Write a clear complaint to a company. Then give a route from the station, one instruction at a time.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Kan ni laga datorn eller ge pengarna tillbaka?",
+        "en": "Can you repair the computer or refund the money?",
+        "audioText": "Kan ni laga datorn eller ge pengarna tillbaka?"
+      },
+      "speakers": [
+        {
+          "name": "Maja",
+          "fi": "Min nya dator fungerar inte."
+        },
+        {
+          "name": "Henrik",
+          "fi": "Du borde skriva till kundtjänsten."
+        }
+      ],
+      "connector": "KAN NI?",
+      "encounterLabel": "Henrik helps Maja write a complaint, and Elin explains the way to the shop",
+      "chunks": [
+        {
+          "label": "PURPOSE",
+          "fi": "Jag skriver eftersom …",
+          "en": "I am writing because …"
+        },
+        {
+          "label": "EVIDENCE",
+          "fi": "Kvittot är bifogat.",
+          "en": "The receipt is attached."
+        },
+        {
+          "label": "DIRECTION",
+          "fi": "Gå rakt fram.",
+          "en": "Go straight ahead."
+        },
+        {
+          "label": "TURN",
+          "fi": "Sväng till vänster.",
+          "en": "Turn left."
+        }
+      ]
     }
   },
   "sittingBreakAfter": "guided",
@@ -200,8 +267,12 @@
               "en": "Peter bought Jonas a new laptop a few days ago, but it does not work. Something is wrong with the charger. There is also a scratch on the screen. Peter writes customer service.",
               "glossary": [
                 {
-                  "fi": "Peter",
-                  "en": "Peter"
+                  "fi": "bärbar dator",
+                  "en": "laptop"
+                },
+                {
+                  "fi": "en repa på skärmen",
+                  "en": "a scratch on the screen"
                 }
               ]
             },
@@ -213,19 +284,31 @@
               "glossary": [
                 {
                   "fi": "Hej",
-                  "en": "Hello,"
+                  "en": "Hello"
                 }
               ]
             },
             {
               "speaker": "Peter",
               "voice": "Alex",
-              "fi": "Jag skriver eftersom jag är mycket besviken på produkten jag köpte från er. Det är en bärbar dator av märket HP från deras Elitebook serie. Något är fel med laddaren. Dessutom finns det en repa på skärmen. Kan ni laga datorn eller ge pengarna tillbaka? Garantin gäller fortfarande. Kvittot är bifogat. Tack på förhand!",
+              "fi": "Jag skriver eftersom jag är mycket besviken på produkten jag köpte från er. Det är en bärbar av märket HP från deras Elitebook serie. Något är fel med laddaren. Dessutom finns det en repa på skärmen. Kan ni laga datorn eller ge pengarna tillbaka? Garantin gäller fortfarande. Kvittot är bifogat. Tack på förhand!",
               "en": "I am writing because I am very disappointed with the product I bought from you. It is an HP laptop from their Elitebook series. Something is wrong with the charger. There is also a scratch on the screen. Can you repair the computer or refund the money? The warranty is still valid. The receipt is attached. Thank you in advance!",
               "glossary": [
                 {
-                  "fi": "Jag",
-                  "en": "I"
+                  "fi": "kundtjänst",
+                  "en": "customer service"
+                },
+                {
+                  "fi": "besviken på",
+                  "en": "disappointed with"
+                },
+                {
+                  "fi": "Garantin gäller fortfarande",
+                  "en": "The warranty is still valid"
+                },
+                {
+                  "fi": "Kvittot är bifogat",
+                  "en": "The receipt is attached"
                 }
               ]
             },
@@ -236,8 +319,8 @@
               "en": "Best regards, Peter Malmgren",
               "glossary": [
                 {
-                  "fi": "Vänliga",
-                  "en": "Best"
+                  "fi": "Vänliga hälsningar",
+                  "en": "Best regards"
                 }
               ]
             }
@@ -267,13 +350,18 @@
           "naturalNotes": [
             {
               "source": "bärbar dator",
-              "produce": "bärbar dator",
-              "note": "Learn this as a useful complete chunk."
+              "note": "Learn this as a useful complete chunk.",
+              "natural": "bärbar dator"
             },
             {
               "source": "Tack på förhand",
-              "produce": "Tack på förhand",
-              "note": "Keep the preposition with the phrase."
+              "note": "Keep the preposition with the phrase.",
+              "natural": "Tack på förhand"
+            },
+            {
+              "source": "en bärbar av märket HP från deras Elitebook serie",
+              "natural": "en bärbar dator från HP:s EliteBook-serie",
+              "note": "The printed text omits dator and separates the compound. Use a clear noun and join serie to the name in your own message."
             }
           ],
           "backchain": {
@@ -286,23 +374,29 @@
           },
           "hunt": {
             "label": "Phrase hunt",
-            "instructions": "Find the highlighted practical phrases.",
-            "items": [
+            "title": "Find useful phrases on the page",
+            "instructions": "Tap a marked word, then say the complete phrase it belongs to.",
+            "missHint": "Look at the route or complaint phrases in the focus list.",
+            "spots": [
               {
-                "fi": "bärbar dator",
-                "rule": "Use this whole phrase in the same situation."
+                "word": "bärbar",
+                "mark": "bärbar",
+                "rule": "A portable computer: en bärbar dator."
               },
               {
-                "fi": "fungerar inte",
-                "rule": "Use this whole phrase in the same situation."
+                "word": "fungerar",
+                "mark": "fungerar",
+                "rule": "Fungerar inte means does not work."
               },
               {
-                "fi": "besviken på",
-                "rule": "Use this whole phrase in the same situation."
+                "word": "besviken",
+                "mark": "besviken",
+                "rule": "Keep på with besviken: disappointed with."
               },
               {
-                "fi": "Tack på förhand",
-                "rule": "Use this whole phrase in the same situation."
+                "word": "bifogat",
+                "mark": "bifogat",
+                "rule": "Ett kvitto → kvittot är bifogat."
               }
             ]
           }
@@ -339,8 +433,8 @@
               "en": "Hello Google, how can I walk to the new sushi restaurant?",
               "glossary": [
                 {
-                  "fi": "Hej",
-                  "en": "Hello"
+                  "fi": "sushirestaurangen",
+                  "en": "the sushi restaurant"
                 }
               ]
             },
@@ -351,8 +445,16 @@
               "en": "Leave the house and turn left. Go straight and take the second street on the right. You pass a lake and see a hamburger place on your left. Turn left there. Then go straight, and after two crossings you see the sushi restaurant on your left. It takes 40 minutes to walk there.",
               "glossary": [
                 {
-                  "fi": "Gå",
-                  "en": "Leave"
+                  "fi": "gå förbi",
+                  "en": "pass"
+                },
+                {
+                  "fi": "på din vänstra sida",
+                  "en": "on your left"
+                },
+                {
+                  "fi": "framme",
+                  "en": "at the destination"
                 }
               ]
             },
@@ -363,8 +465,8 @@
               "en": "That sounds complicated.",
               "glossary": [
                 {
-                  "fi": "Det",
-                  "en": "That"
+                  "fi": "Det låter komplicerat",
+                  "en": "That sounds complicated"
                 }
               ]
             },
@@ -375,8 +477,12 @@
               "en": "You can also go by bus. First take bus 5 from the Glass stop. At the Rött hus stop, change to bus 7. Get off after two stops. Walk straight for 200 metres.",
               "glossary": [
                 {
-                  "fi": "Du",
-                  "en": "You"
+                  "fi": "byta till",
+                  "en": "change to"
+                },
+                {
+                  "fi": "Gå av",
+                  "en": "Get off"
                 }
               ]
             },
@@ -387,8 +493,8 @@
               "en": "Oh… I do not want to eat sushi anymore.",
               "glossary": [
                 {
-                  "fi": "Oj",
-                  "en": "Oh…"
+                  "fi": "inte … längre",
+                  "en": "not … any more"
                 }
               ]
             }
@@ -418,13 +524,18 @@
           "naturalNotes": [
             {
               "source": "gå",
-              "produce": "gå",
-              "note": "Learn this as a useful complete chunk."
+              "note": "Learn this as a useful complete chunk.",
+              "natural": "gå"
             },
             {
               "source": "på din vänstra sida",
-              "produce": "på din vänstra sida",
-              "note": "Keep the preposition with the phrase."
+              "note": "Keep the preposition with the phrase.",
+              "natural": "på din vänstra sida"
+            },
+            {
+              "source": "Gå av efter två stationer.",
+              "natural": "Gå av efter två hållplatser.",
+              "note": "For the bus, hållplatser is the usual word for stops. The page’s named stops are fictional."
             }
           ],
           "backchain": {
@@ -437,23 +548,39 @@
           },
           "hunt": {
             "label": "Phrase hunt",
-            "instructions": "Find the highlighted practical phrases.",
-            "items": [
+            "title": "Find useful phrases on the page",
+            "instructions": "Tap a marked word, then say the complete phrase it belongs to.",
+            "missHint": "Look at the route or complaint phrases in the focus list.",
+            "spots": [
               {
-                "fi": "gå",
-                "rule": "Use this whole phrase in the same situation."
+                "word": "Gå",
+                "mark": "Gå",
+                "rule": "The command form: go on foot."
               },
               {
-                "fi": "sväng till vänster",
-                "rule": "Use this whole phrase in the same situation."
+                "word": "sväng",
+                "mark": "sväng",
+                "rule": "The command form: turn."
               },
               {
-                "fi": "gå förbi",
-                "rule": "Use this whole phrase in the same situation."
+                "word": "förbi",
+                "mark": "förbi",
+                "rule": "Gå förbi means pass."
               },
               {
-                "fi": "på din vänstra sida",
-                "rule": "Use this whole phrase in the same situation."
+                "word": "vänstra",
+                "mark": "vänstra",
+                "rule": "On your left: på din vänstra sida."
+              },
+              {
+                "word": "byta",
+                "mark": "byta",
+                "rule": "Byta till means change to another bus."
+              },
+              {
+                "word": "av",
+                "mark": "av",
+                "rule": "Gå av means get off."
               }
             ]
           }
@@ -480,15 +607,15 @@
       "id": "sv-14-recall-2",
       "prompt": "Where is the shop in Elin’s directions?",
       "answers": [
-        "On the right after the pharmacy"
+        "On the right after the crossing"
       ],
       "options": [
-        "On the right after the pharmacy",
+        "On the right after the crossing",
         "Behind the station",
         "Beside Maja’s home"
       ],
       "hint": "Listen for högra sida.",
-      "explanation": "Elin says that the shop is on the right after the pharmacy."
+      "explanation": "After turning at the pharmacy and passing the café, the shop is on the right after the crossing."
     }
   ],
   "sections": [
@@ -584,8 +711,8 @@
       "kind": "pattern",
       "body": [
         "A clear formal email has a greeting, the reason for writing, precise facts, the solution you want, thanks and a closing. The recipient should understand the problem without guessing.",
-        "Use ni and er for formal “you”. Link ideas with eftersom, men and dessutom. Be polite and direct: Jag skriver eftersom … Kan ni …?",
-        "The seven-criteria rubric rewards suitable tone, connected ideas, understandable details, useful vocabulary, workable grammar, clear description and a complete text type. At this level, clarity matters more than difficult sentences."
+        "Use ni and er when addressing the company, as the teacher’s complaint handout does. You are writing to the organisation. Link ideas with eftersom, men and dessutom. Be polite and direct: Jag skriver eftersom … Kan ni …?",
+        "The teacher’s seven rubric areas become seven checks: fit the reader and purpose; link ideas; use precise words; check grammar; describe events clearly; follow the text type; explain your view and requested solution. Use clear everyday sentences."
       ],
       "examples": [
         {
@@ -607,6 +734,11 @@
           "fi": "Tack på förhand! Vänliga hälsningar, Alex Khan",
           "en": "Thank you in advance! Best regards, Alex Khan",
           "note": "Formal closing and full name."
+        },
+        {
+          "fi": "Kvittot är bifogat. Inbjudan är bifogad. Bilderna är bifogade.",
+          "en": "The receipt is attached. The invitation is attached. The pictures are attached.",
+          "note": "The ending matches an ett-word, an en-word or a plural."
         }
       ],
       "table": {
@@ -692,8 +824,8 @@
             "why": "It requests action."
           },
           {
-            "fi": "Vänliga hälsningar, Maja Patel",
-            "en": "Best regards, Maja Patel",
+            "fi": "Vänliga hälsningar, Alex Khan",
+            "en": "Best regards, Alex Khan",
             "bucket": "closing",
             "why": "It ends formally."
           }
@@ -707,7 +839,8 @@
       "body": [
         "Use the imperative for direct route instructions: gå, sväng, ta, byt and gå av. One instruction per sentence is easier to follow.",
         "Say where a turn happens with vid: sväng vid apoteket. Use till vänster or till höger for the movement, but på din vänstra/högra sida for a place you see.",
-        "Order the route with först, sedan and efter det. Add a landmark and an estimated time so the listener can check the route."
+        "Order the route with först, sedan and efter det. Add a landmark and an estimated time so the listener can check the route.",
+        "Use här/där for a place and hit/dit for movement: Jag är här. Kom hit! Apoteket ligger där. Gå dit! Compare gå (on foot) with åka (by transport). Korsa gatan means cross the street; krossa means smash. Väg is a road; vägg is a wall."
       ],
       "examples": [
         {
@@ -729,6 +862,11 @@
           "fi": "Gå av efter två hållplatser.",
           "en": "Get off after two stops.",
           "note": "Gå av is a fixed phrase."
+        },
+        {
+          "fi": "Ta hissen upp. Jag är uppe. Ta rulltrappan ner. Jag väntar nere.",
+          "en": "Take the lift up. I am upstairs. Take the escalator down. I am waiting downstairs.",
+          "note": "Short upp/ner show direction; uppe/nere show location."
         }
       ],
       "memoryTip": "Turn: till höger. Location: på din högra sida.",
@@ -792,7 +930,7 @@
         "dig",
         "hon"
       ],
-      "hint": "Formal you is ni.",
+      "hint": "You are addressing the company as ni.",
       "explanation": "Kan ni laga datorn?"
     },
     {
@@ -1197,9 +1335,9 @@
       "tip": "Stress the first part of compound words such as kundtjänst and vägbeskrivning. Keep höger and högra distinct."
     },
     "reading_passage": {
-      "text": "Hej, jag skriver eftersom jag är besviken på arbetet i mitt kök. Ni lovade att arbetet skulle bli klart i fredags, men det blev klart tre dagar för sent. Dessutom fungerar inte den nya kranen och det finns en repa på skåpet. Jag bifogar bilder och kvittot. Kan ni laga kranen och skåpet nästa vecka eller sänka priset? Garantin gäller fortfarande. Tack på förhand! Vänliga hälsningar, Maja Patel Jag vill gärna få ett skriftligt svar senast på fredag. Ni kan ringa mig på eftermiddagen, men jag föredrar ett mejl eftersom jag vill spara all information. Om ni behöver se skadorna kan en hantverkare komma på tisdag eller torsdag. Jag hoppas att vi kan lösa problemet snabbt och enkelt. Köket kostade mycket pengar, och därför förväntar jag mig att allt fungerar och att arbetet är snyggt utfört.",
+      "text": "Hej, jag skriver eftersom jag är besviken på arbetet i mitt kök. Ni lovade att arbetet skulle bli klart i fredags, men det blev klart tre dagar för sent. Dessutom fungerar inte den nya kranen och det finns en repa på skåpet. Jag bifogar bilder och kvittot. Kan ni laga kranen och skåpet nästa vecka eller sänka priset? Garantin gäller fortfarande. Jag vill gärna få ett skriftligt svar senast på fredag. Ni kan ringa mig på eftermiddagen, men jag föredrar ett mejl eftersom jag vill spara all information. Om ni behöver se skadorna kan en hantverkare komma på tisdag eller torsdag. Jag hoppas att vi kan lösa problemet snabbt och enkelt. Köket kostade mycket pengar, och därför förväntar jag mig att allt fungerar och att arbetet är snyggt utfört.\n\nTack på förhand!\nVänliga hälsningar,\nAlex Khan",
       "gist": {
-        "prompt": "Why does Maja write?",
+        "prompt": "Why does Alex write?",
         "options": [
           "To complain about kitchen work",
           "To invite a worker",
@@ -1220,7 +1358,7 @@
       }
     },
     "reading": {
-      "text": "Från stationen går du rakt fram till torget. Sväng till höger vid banken och gå förbi apoteket. Biblioteket ligger på din vänstra sida. Hållplatsen ligger framför biblioteket. Ta buss nummer fyra och gå av efter tre hållplatser. Fortsätt sedan längs parken och korsa den stora gatan vid trafikljusen. Där ser du ett bageri och en liten blomsterbutik. Gå mellan butikerna och ta den första gatan till vänster. Om du ser en skola har du gått för långt. Vänd då tillbaka till bageriet. Resan från stationen tar ungefär femton minuter, men med buss tar den bara åtta minuter.",
+      "text": "Från stationen går du rakt fram till torget. Sväng till höger vid banken och gå förbi apoteket. Biblioteket ligger på din vänstra sida. Hållplatsen ligger framför biblioteket. Ta buss nummer fyra och gå av efter tre hållplatser. Fortsätt sedan längs parken och korsa den stora gatan vid trafikljusen. Där ser du ett bageri och en liten blomsterbutik. Gå mellan butikerna och ta den första gatan till vänster. Om du ser en skola har du gått för långt. Vänd då tillbaka till bageriet. Den här resan med buss och promenad tar ungefär femton minuter.",
       "question": "Where is the bus stop?",
       "options": [
         "In front of the library",
@@ -1232,14 +1370,14 @@
     },
     "listening": {
       "text": "Först går du ut från stationen och svänger till vänster. Gå rakt fram i ungefär hundra meter. Du ser ett apotek på din högra sida. Sväng till höger efter apoteket och gå förbi ett kafé. Mitt hus är det gula huset bredvid parken. Det tar cirka åtta minuter. Om du kommer med buss kan du ta buss nummer fem från centrum. Byt till buss nummer sju vid salutorget och gå av vid biblioteket. Därifrån ser du parken. Korsa gatan försiktigt och följ vägen längs parken. När du ser en liten mataffär ska du svänga till vänster. Ring mig om du inte hittar, så möter jag dig utanför huset.",
-      "question": "Which landmark comes just before the final house?",
+      "question": "On the walking route from the station, what do you pass after the pharmacy?",
       "options": [
         "A café",
         "A station",
         "A lake"
       ],
       "answer": 0,
-      "explanation": "The listener passes a café before reaching the yellow house."
+      "explanation": "On that walking route, you pass a café after turning right at the pharmacy."
     },
     "speaking": {
       "prompt": "Explain the way from a station or public-transport stop to your home. Give six to eight lines, include one landmark, travel time, and an opinion with a reason.",
@@ -1250,18 +1388,20 @@
       "prompt": "Write a formal complaint to a company about unsatisfactory kitchen work.",
       "situation": "A company renovated your kitchen. The work finished late, one item does not work and another is damaged. Email the company privately and ask for a solution.",
       "points": [
-        "Use a suitable greeting, formal ni/er and a full-name closing.",
-        "State why you are writing and describe the important facts clearly.",
-        "Connect ideas with simple linkers such as eftersom, men and dessutom.",
-        "Ask for a specific reasonable solution and mention attached evidence.",
-        "Use understandable everyday vocabulary and grammar, then check spelling and word order."
+        "Fit the recipient: greet the company and use ni/er with a full-name closing.",
+        "Link the facts with eftersom, men or dessutom.",
+        "Use precise words for the faulty item and the damage.",
+        "Check simple grammar, spelling and word order.",
+        "Describe what happened, including when the work finished.",
+        "Follow the complaint shape: purpose, facts, evidence, request and closing.",
+        "Explain why you are dissatisfied and request a reasonable solution."
       ],
       "wordRange": [
         60,
         100
       ],
       "help": "Hej, · Jag skriver eftersom … · Jag är besviken på … · Dessutom … · Kan ni …? · Jag bifogar … · Tack på förhand! · Vänliga hälsningar, …",
-      "model": "Hej, jag skriver eftersom jag är besviken på arbetet i mitt kök. Ni blev klara en vecka för sent. Dessutom fungerar inte kranen och det finns en repa på skåpet. Jag bifogar bilder och kvittot. Kan ni laga kranen och skåpet nästa vecka eller sänka priset? Garantin gäller fortfarande. Tack på förhand! Vänliga hälsningar, Maja Patel"
+      "model": "Hej, jag skriver eftersom jag är besviken på arbetet i mitt kök. Ni blev klara en vecka för sent. Dessutom fungerar inte kranen och det finns en repa på skåpet. Jag bifogar bilder och kvittot. Kan ni laga kranen och skåpet nästa vecka eller sänka priset? Garantin gäller fortfarande. Jag ser fram emot ert svar. Tack på förhand! Vänliga hälsningar, Alex Khan"
     }
   },
   "route": {
@@ -1270,16 +1410,21 @@
     "transferPrompt": "Give the route again, but change the starting point or the transport and keep every step easy to follow.",
     "returnPrompt": "Without looking, give four route instructions and recall the opening and closing of a formal complaint.",
     "successChecks": [
-      "Make the purpose, recipient and formal tone clear.",
-      "Connect facts so the complaint is coherent and easy to follow.",
-      "Use precise everyday words and understandable grammar.",
-      "Describe the problem and relevant evidence clearly.",
-      "Ask for a concrete solution and complete the formal email structure."
+      "Fit your listener or reader: guide a visitor clearly and address the company politely in writing.",
+      "Put events or route moves in a clear order with simple links.",
+      "Use precise everyday words for landmarks, faults and requested actions.",
+      "Use understandable grammar: clear imperatives for the route and full sentences for the email.",
+      "Give concrete details: a route landmark and time, or the work date and damage.",
+      "Complete the task shape: start and arrival for the route; greeting, problem, request and closing for the email.",
+      "Give your view with a reason: why the route is easy or why you want a repair."
     ],
     "requiredSkills": [
       "speaking",
       "writing"
     ]
   },
-  "title": "Complaints and directions"
+  "title": "Complaints and directions",
+  "story": {
+    "object": "a broken laptop and its receipt"
+  }
 }
