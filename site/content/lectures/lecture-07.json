@@ -27,7 +27,7 @@
         "description": "Listen for what Alex brings to dinner and how many things he buys."
       },
       "teach": {
-        "label": "Build plurals",
+        "label": "Build it step by step",
         "description": "Learn the five plural groups, then choose många or mycket."
       }
     },
@@ -50,6 +50,61 @@
         "mode": "collapsed",
         "title": "Open the Lesson 7 word bank"
       }
+    },
+    "template": "conversation-first",
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 7",
+        "29 APRIL 2026"
+      ],
+      "kicker": "ONE THING, MANY THINGS",
+      "title": "Hur många har du?",
+      "lede": "Bring something to dinner, count the things at home and make a useful shopping list.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Jag köper blommor och en flaska vin.",
+        "en": "I am buying flowers and a bottle of wine.",
+        "audioText": "Jag köper blommor och en flaska vin."
+      },
+      "speakers": [
+        {
+          "name": "Alex",
+          "fi": "Jag vill ta med blommor och vin."
+        },
+        {
+          "name": "Elin",
+          "fi": "Vad snällt!"
+        }
+      ],
+      "connector": "HUR MÅNGA?",
+      "encounterLabel": "Alex checks what to bring to dinner at Elin’s",
+      "chunks": [
+        {
+          "label": "GROUP 1",
+          "fi": "en blomma → blommor",
+          "en": "a flower → flowers"
+        },
+        {
+          "label": "GROUP 2",
+          "fi": "en bil → bilar",
+          "en": "a car → cars"
+        },
+        {
+          "label": "COUNT",
+          "fi": "många saker",
+          "en": "many things"
+        },
+        {
+          "label": "AMOUNT",
+          "fi": "mycket kaffe",
+          "en": "a lot of coffee"
+        }
+      ],
+      "footerTags": [
+        "Learn each noun as a pair",
+        "Count things; describe amounts"
+      ]
     }
   },
   "sittingBreakAfter": "guided",
@@ -188,8 +243,8 @@
     },
     {
       "speaker": "Elin",
-      "fi": "Vad snällt! En blomma räcker, men vi är fyra personer.",
-      "en": "How kind! One flower is enough, but there are four of us."
+      "fi": "Vad snällt! Vi blir fyra personer på middagen.",
+      "en": "How kind! There will be four of us at dinner."
     },
     {
       "speaker": "Alex",
@@ -568,7 +623,8 @@
       "kind": "rule",
       "body": [
         "Plural means more than one. Swedish has five useful groups. The group tells you which ending to add. Learn every new noun as a pair: en blomma – blommor.",
-        "The clues help, but they do not replace learning the pair. Keep the teacher’s groups and the listed exceptions."
+        "The clues help, but they do not replace learning the pair. Keep the teacher’s groups and the listed exceptions.",
+        "The teacher’s e clue includes en cykel → cyklar: the e can be in either of the last two positions. These are clues, not promises. Learn the actual plural with each noun."
       ],
       "examples": [
         {
@@ -606,7 +662,7 @@
           ],
           [
             "2",
-            "many short concrete en words; -e or -ing → -ar",
+            "many short concrete en words; -ing or e near the end → -ar",
             "pojke → pojkar"
           ],
           [
@@ -712,7 +768,8 @@
       "kind": "rule",
       "body": [
         "Group 3 includes some words that do not follow the simple foreign-word clue. The teacher asks you to learn saker, katter, chefer and vänner. Museum and protein are ett-words but take -er.",
-        "Group 5 also includes en-words for some jobs and origins: en lärare – två lärare, en italienare – två italienare."
+        "Group 5 also includes en-words for some jobs and origins: en lärare – två lärare, en italienare – två italienare.",
+        "The home task also uses en bok → böcker. Learn that frequent irregular pair as it is."
       ],
       "examples": [
         {
@@ -730,6 +787,10 @@
         {
           "fi": "en lärare – lärare",
           "en": "a teacher – teachers"
+        },
+        {
+          "fi": "en läkare – två läkare",
+          "en": "one doctor – two doctors"
         }
       ],
       "memoryTip": "Learn the six exceptions as spoken pairs, not as a new general rule.",
@@ -772,7 +833,8 @@
       "kind": "rule",
       "body": [
         "Use många before things you can count one by one: många bilar, många möten. Ask Hur många?",
-        "Use mycket for an amount you do not count as separate items: mycket vin, mycket kaffe, mycket pengar. Ask Hur mycket? A container makes it countable: två flaskor vin."
+        "Use mycket for an amount you do not count as separate items: mycket vin, mycket kaffe, mycket pengar. Ask Hur mycket? A container makes it countable: två flaskor vin.",
+        "Two useful pairs from the pages: träffar någon means meets someone; träffas means meets each other. Leker is play for children and pets; spelar is play for games, sports and instruments."
       ],
       "examples": [
         {
@@ -794,6 +856,11 @@
         {
           "fi": "två flaskor vatten",
           "en": "two bottles of water"
+        },
+        {
+          "fi": "Vi träffar Elin. Vi träffas i kväll. Vi ses!",
+          "en": "We meet Elin. We meet each other tonight. See you!",
+          "note": "Träffar names the person you meet. Träffas and ses mean meet/see each other."
         }
       ],
       "memoryTip": "If a number can stand directly before the noun, många usually works: tre böcker → många böcker.",
@@ -879,7 +946,7 @@
       "answers": [
         "vänner"
       ],
-      "hint": "The vowel changes and the ending is -er.",
+      "hint": "Learn the irregular spelling: the n doubles and the ending is -er.",
       "explanation": "En vän becomes vänner."
     },
     {
@@ -1209,9 +1276,9 @@
       "explanation": "Hon har två biljetter till ett museum."
     },
     "reading_passage": {
-      "text": "Hej Maja! Jag ska handla efter jobbet. Hemma har vi två äpplen men inga apelsiner. Kan du köpa fyra apelsiner och tre bananer? Vi behöver också två flaskor vatten. Köp inte kaffe, för vi har mycket kaffe. Jag vill laga mat i kväll, så köp tomater och potatis. Vi har många tallrikar men bara två glas. Kan du köpa fyra nya glas? Jag kommer hem klockan sex. Då kan vi laga maten tillsammans. Tack! / Alex",
+      "text": "Hej! Jag ska handla efter jobbet. Hemma har vi två äpplen men inga apelsiner. Kan du köpa fyra apelsiner och tre bananer? Vi behöver också två flaskor vatten. Köp inte kaffe, för vi har mycket kaffe. Jag vill laga mat i kväll, så köp tomater och potatis. Vi har många tallrikar men bara två glas. Kan du köpa fyra nya glas? Jag kommer hem klockan sex. Då kan vi laga maten tillsammans. Tack! / Alex",
       "gist": {
-        "prompt": "Why does Alex write to Maja?",
+        "prompt": "Why does Alex write to his flatmate?",
         "options": [
           "He needs help with shopping",
           "He wants museum tickets",
@@ -1221,7 +1288,7 @@
         "explanation": "He asks Maja to buy food, water and glasses."
       },
       "detail": {
-        "prompt": "What should Maja not buy?",
+        "prompt": "What should the flatmate not buy?",
         "options": [
           "Coffee",
           "Oranges",
@@ -1232,8 +1299,8 @@
       }
     },
     "reading": {
-      "text": "Hej Maja! Jag ska handla efter jobbet. Hemma har vi två äpplen men inga apelsiner. Kan du köpa fyra apelsiner och tre bananer? Vi behöver också två flaskor vatten. Köp inte kaffe, för vi har mycket kaffe. Jag vill laga mat i kväll, så köp tomater och potatis. Vi har många tallrikar men bara två glas. Kan du köpa fyra nya glas? Jag kommer hem klockan sex. Då kan vi laga maten tillsammans. Tack! / Alex",
-      "question": "How many new glasses should Maja buy?",
+      "text": "Hej! Jag ska handla efter jobbet. Hemma har vi två äpplen men inga apelsiner. Kan du köpa fyra apelsiner och tre bananer? Vi behöver också två flaskor vatten. Köp inte kaffe, för vi har mycket kaffe. Jag vill laga mat i kväll, så köp tomater och potatis. Vi har många tallrikar men bara två glas. Kan du köpa fyra nya glas? Jag kommer hem klockan sex. Då kan vi laga maten tillsammans. Tack! / Alex",
+      "question": "How many new glasses should the flatmate buy?",
       "options": [
         "Four",
         "Two",
@@ -1262,7 +1329,7 @@
         55
       ],
       "help": "Hej! · Kan du köpa …? · två flaskor … · tre apelsiner · många tomater · Vi har mycket … · Jag kommer hem … · Tack!",
-      "model": "Hej Maja! Kan du köpa tre apelsiner, fyra tomater och två flaskor vatten? Köp också många potatisar. Vi har mycket kaffe och många äpplen hemma. Jag kommer hem klockan sex. Då lagar vi mat tillsammans. Tack! / Alex"
+      "model": "Hej! Kan du köpa tre apelsiner, fyra tomater och två flaskor vatten? Köp också sex potatisar. Vi har mycket kaffe och många äpplen hemma. Jag kommer hem klockan sex. Då lagar vi mat tillsammans. Tack! / Alex"
     }
   },
   "route": {
@@ -1280,5 +1347,8 @@
       "speaking",
       "writing"
     ]
+  },
+  "story": {
+    "object": "flowers and a bottle of wine"
   }
 }

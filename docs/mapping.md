@@ -507,3 +507,17 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   5–10 minutes, and its model fits 35–60 words.
 - Swedish: all lines reviewed. Source `så hon lämnade` remains source-only with
   clearer production guidance `så hon gick därifrån`; teacher confirmation is useful.
+
+### Lecture 7 repair
+
+- Re-read Lesson 7 lines 731–835, Homework 9 and scans 22–23. The five groups,
+  all named exceptions and many/much distinction are covered. Page 21 is a divider;
+  pages 24–25 remain in Lecture 9 as planned.
+- Added the full 29 April hero. Restored the teacher’s “e in either of the last two
+  positions” clue with `cykel → cyklar`, explicitly as a clue, and added `läkare`.
+  Added the teacher’s `träffar/träffas`, `ses` and `leker/spelar` contrasts.
+- Corrected the claim that the vowel changes in `vän → vänner`: the spelling
+  doubles n. Kept Maja out of the adult flatmate role in the original messages.
+- Swedish: reviewed all lines; source `kan träffas` in past narration, `vet många
+  saker` and `Marvel superhjältar` remain flagged for the teacher. No doubtful
+  authored line remains. Shopping model fits 30–55 words.
