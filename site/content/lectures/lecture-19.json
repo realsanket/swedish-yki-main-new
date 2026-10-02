@@ -21,7 +21,10 @@
     "adverb",
     "conjunction",
     "main-clause",
-    "subordinate-clause"
+    "subordinate-clause",
+    "infinitive",
+    "present-perfect",
+    "preposition"
   ],
   "presentation": {
     "template": "conversation-first",
@@ -64,7 +67,7 @@
           "fi": "Ja, eftersom jag hade bra vänner."
         }
       ],
-      "connector": "SEDAN",
+      "connector": "EFTERSOM",
       "encounterLabel": "Elin and Alex compare school memories",
       "chunks": [
         {
@@ -92,6 +95,22 @@
         "Dependent linkers",
         "Inte before the verb"
       ]
+    },
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen for Alex and Elin’s school memories and the reasons behind their views."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Choose a dependent linker, place inte and explain your school opinion."
+      }
+    },
+    "teaching": {
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the Lesson 19 word bank"
+      }
     }
   },
   "sittingBreakAfter": "guided",
@@ -222,15 +241,15 @@
       "id": "sv-19-r1",
       "prompt": "Why did Alex enjoy school?",
       "answers": [
-        "He had good friends and a funny teacher"
+        "He had good friends"
       ],
       "options": [
-        "He had good friends and a funny teacher",
+        "He had good friends",
         "He never had homework",
         "He studied at home"
       ],
       "hint": "Listen after eftersom.",
-      "explanation": "Alex says that he had good friends and a funny teacher."
+      "explanation": "Alex says that he enjoyed school because he had good friends. The dialogue does not describe his teacher as funny."
     },
     {
       "id": "sv-19-r2",
@@ -243,8 +262,8 @@
         "She disliked every teacher",
         "She had no classmates"
       ],
-      "hint": "Listen after trots att.",
-      "explanation": "Elin liked school even though she did not always understand physics."
+      "hint": "Listen for förstod inte alltid.",
+      "explanation": "Elin says her physics teacher was strict and she did not always understand the lessons."
     }
   ],
   "sections": [
@@ -254,7 +273,7 @@
       "body": [
         "Jag tycker att skolan är viktig. Att introduces what someone says, thinks or knows. När gives a time, om gives a condition, and eftersom gives a reason.",
         "Jag pluggar för att klara provet. För att plus an infinitive gives a purpose: what you want to achieve. Trots att introduces a surprising contrast.",
-        "Each linker begins a dependent clause: a group of words that belongs to a larger sentence. It has its own subject and verb but depends on the other part."
+        "Most of these linkers begin a dependent clause with its own subject and verb. För att + infinitive is an exception: Jag pluggar för att klara provet has no new subject after för att. With a new subject, purpose can use för att + subject + ska: Läraren ordnar en bokklubb för att eleverna ska läsa mer."
       ],
       "examples": [
         {
@@ -413,7 +432,8 @@
       "body": [
         "Jag kommer inte. That is a main clause: inte normally follows the verb. After a dependent linker the order changes: Jag säger att jag inte kommer.",
         "The subject comes first after the linker. Then short adverbs such as inte, alltid, också, aldrig, ofta and just stand before the verb: eftersom jag inte hade tid.",
-        "If the dependent clause comes first, the next main clause begins with its verb: När jag var liten gillade jag matte. Keep each clause’s own pattern."
+        "If the dependent clause comes first, the next main clause begins with its verb: När jag var liten gillade jag matte. Keep each clause’s own pattern.",
+        "Jag har varit sjuk i två dagar. Jag har inte varit i skolan på två dagar. I gives the duration of being ill. Inte … på gives a period when something has not happened."
       ],
       "examples": [
         {
@@ -435,9 +455,14 @@
           "fi": "Om elever alltid får hjälp känner de sig trygga.",
           "en": "If pupils always receive help, they feel safe.",
           "note": "Alltid stands before får in the dependent clause."
+        },
+        {
+          "fi": "Jag har inte varit i skolan på två dagar eftersom jag har varit sjuk.",
+          "en": "I have not been at school for two days because I have been ill.",
+          "note": "Negative period: inte … på två dagar. The reason still has its own subject and verb."
         }
       ],
-      "memoryTip": "BIFF: I en bisats kommer inte före det finita verbet. In a dependent clause, inte comes before the verb.",
+      "memoryTip": "BIFF: Bisats – Inte Före Finita verbet. Put inte before the first verb that carries time, such as är, hade or har.",
       "tryIt": "Change Han pluggar inte into Jag vet att …",
       "activity": {
         "type": "sort",
@@ -540,7 +565,10 @@
             "right": "borde läraren lyssna."
           }
         ],
-        "summary": "Connect the claim and its support."
+        "leftLabel": "Beginning",
+        "rightLabel": "Reason or condition",
+        "pattern": "Keep the subject before the verb after the dependent linker.",
+        "sentence": "{left} {right}"
       }
     }
   ],
@@ -642,6 +670,16 @@
       ],
       "hint": "Put the adverb before the verb.",
       "explanation": "In the dependent clause, alltid precedes får."
+    },
+    {
+      "id": "sv-19-g8",
+      "prompt": "Produce: “If I do my homework now, I can play after lunch.”",
+      "answers": [
+        "Om jag gör mina läxor nu kan jag spela efter lunch.",
+        "Om jag gör mina hemläxor nu kan jag spela efter lunch."
+      ],
+      "hint": "After om jag use the present gör. The next main clause starts with kan.",
+      "explanation": "Om jag gör mina läxor nu kan jag spela efter lunch. Gör is the present form; göra is the infinitive."
     }
   ],
   "checkpoint": [
@@ -656,7 +694,7 @@
     },
     {
       "id": "sv-19-c2",
-      "prompt": "Which dependent clause has correct word order?",
+      "prompt": "Which dependent clause uses the neutral word order taught here?",
       "answers": [
         "att jag inte kommer"
       ],
@@ -1062,5 +1100,8 @@
       "speaking",
       "writing"
     ]
+  },
+  "story": {
+    "object": "school memories and reasons"
   }
 }

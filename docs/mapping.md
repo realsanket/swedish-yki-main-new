@@ -694,3 +694,20 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   school-stage words, ordinary dagis, plugghäst and lumpen. The teacher’s claim that
   everyone in Finland must take a gap year for military service is not used as a rule.
   Writing model fits 60–100 words.
+
+### Lecture 19 repair
+
+- Re-read Lesson 19 lines 2176–2258 and its plan. The optional page-50 revisit is
+  omitted as explicitly allowed, so the lecture has six route steps.
+- Checked every existing hero field and replaced the unrelated connector SEDAN
+  with EFTERSOM. Added stable route labels and collapsed word bank.
+- Fixed a recall answer that invented a funny teacher and a hint pointing to a
+  nonexistent Elin `trots att` line. Corrected the claim that every linker has its
+  own subject: `för att + infinitive` is the stated exception. Explained the purpose
+  clause used by the writing model and clarified the BIFF mnemonic.
+- Added the teacher’s negative-duration contrast `i två dagar` / `inte … på två dagar`
+  and typed practice correcting source `Om jag göra` to `Om jag gör`. Fixed match fields.
+- Swedish: read every line. `Jag tycker att lärare inte alltid behöver vara stränga`
+  deliberately means “not always necessary”; moving inte outside att changes scope.
+  Retain it for teacher review of the intended nuance, not as a clear grammar error.
+  The writing model fits 70–110 words and gives two reasons.
