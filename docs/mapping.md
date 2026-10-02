@@ -310,7 +310,7 @@ is built.
 - **Concept map:** pages 16–18 support reactions, the party retelling, strong-verb recall and `hem/hemma`; sections cover four regular past patterns, common irregular pairs, reactions and location versus direction; speaking and writing retell yesterday.
 - **Accuracy decisions:** one past form serves every person; frequent irregulars are learned as pairs; original material prefers `fantastiska nyheter` and accepts idiomatic `inga pengar`; `hem` is movement and `hemma` location.
 - **Swedish input:** approximately 1,090 words.
-- **Teacher check:** source `Jag hade inte pengar` is possible contrastively but `Jag hade inga pengar` is normally more idiomatic; source `så hon lämnade` is less explicit than `så hon gick därifrån`.
+- **Teacher check:** source `så hon lämnade` is less explicit than `så hon gick därifrån` (the lecture explains that lämna normally takes an object). Page 17 prints `hon hade inte några pengar`, which is correct; the earlier `Jag hade inte pengar` query was a misquote and is closed.
 
 ### Lecture 7 — One car, two cars
 
@@ -803,3 +803,23 @@ natural Swedish in every dialogue and writing model. Fixed before merging:
 - Chapter casts list only the recurring characters (Alex, Elin, Henrik, Maja);
   one-scene roles such as Servitör stay in their lecture. The validator enforces
   this.
+
+## Lectures 3-7 independent review — October 2, 2026
+
+Five independent reviewers (one per lecture) re-checked each lecture against its
+teacher lesson, textbook pages, homework and online sources (svenska.se/SAOL,
+Språkrådet, Institutet för de inhemska språken, Svenska Yle). Every mapping was
+confirmed correct; every textbook line was re-checked against the scan. Full
+reports were kept with the session; the outcome:
+
+| Lecture | Main fixes | For the teacher |
+|---:|---|---|
+| 3 | Story becomes a phone call so Elin's advice makes sense; wrong "never add -r" rule fixed (kan köpa); checkpoint no longer rejects a correct answer; sorts no longer show the answer; page-8 hunt covers inte and the help verbs; added verb groups, att, the inte/ofta slot, mej/dej; reading and listening texts no longer copy the writing model. | Style only: `Tala långsamt, snälla!` in Finland-Swedish; `i veckan` vs `den här veckan`. |
+| 4 | Page-11 hunt rule (som/på) and page-10 spelling and backchain fixed; listening options no longer give the answer; weekday and story ending fixed; new free-time section with spelar/leker; time phrases incl. `på veckoslutet` and `i helgen`; work frames made free text; reading text unnamed. | None. The earlier `Vad jobbar du med?` / `som?` check is closed: both are correct. |
+| 5 | Maja is introduced properly (17, `går i gymnasiet`); reading and writing texts no longer borrow the textbook's plot; adjective rule fixed (only ny→nytt and liten→litet change more); `i skolan`, `på jobbet`; honest sorts and unambiguous matches; page-15 hunt complete; numbers 15 and 45, världen, tråkig/gammal/farlig added. | `jag ska riskera` (page only); `går i gymnasiet` (Finland-Swedish norm); `Det är inte lätt, men jag vill prova`. |
+| 6 | Maja's test is a maths test (she is a native speaker); story continues Lecture 5 and leads to Lecture 7's dinner; regular past forms rebuilt on the teacher's rule and PocKeTS trick; hem/hemma corrected; hunts cover every marked word (11, 18, 18); time words (för … sedan) taught; typed answers accept i går/igår; a fake resource link replaced by Svenska Yle Lättläst. | `Idag fick jag veta att jag klarade matteprovet` (or `hade klarat`); source `så hon lämnade`. |
+| 7 | Six sections: overview, groups 1-2 (pojkar, cyklar), group 3 with all six exceptions, groups 4-5, många/mycket, verb pairs; sorts show only the singular; hunts cover every marked word on pages 22-23; the `kunde` note corrected; story continues Lecture 6 (dinner for Maja's test, Mikko off-screen); reading text no longer contradicts itself. | Source page 23: `vill att … vet många saker`, `Marvel superhjältar`; authored `Vi firar Maja.`, `Jag bakar en äppelkaka.` |
+
+Swedish input after the review: about 660 (L3), 850 (L4), 1,080 (L6) and 1,180
+(L7) words; Lectures 3-4 stay above the A0 band, as already noted. Pictures for
+these lectures are planned in `docs/image-prompts/episodes.md`.
