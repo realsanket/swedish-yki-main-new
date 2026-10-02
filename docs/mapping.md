@@ -600,3 +600,16 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   Source `AB … i hans tidigare filmer` is flagged; use `sina` when AB owns the films.
   The teacher’s mer/mest pattern is taught without falsely ruling out alternative
   comparative forms. No doubtful authored line identified. Writing fits 50–80 words.
+
+### Lecture 13 repair
+
+- Re-read Lesson 13 lines 1515–1566, Homework 13 and scan 38.
+- Added the complete 18 May hero and stable presentation. Replaced unrelated
+  `stressad` glosses copied onto most textbook lines, restored the short narrator
+  transition and combined conflicting duplicate `får` hunt rules.
+- Corrected authored coffee advice presented as prohibition: use `borde inte` for
+  advice, and the stated exam phone rule for `får inte`. Distinguished negative plans
+  with `ska inte` from prohibitions. Added all/allt/alla, correcting the notes’
+  `all skräp` to `allt skräp`. The textbook coffee rule is explicitly that household’s.
+- Swedish: all lines reviewed. No doubtful authored line identified. The 50–80-word
+  writing model includes advice, a real rule in the scenario, optional work and a reason.

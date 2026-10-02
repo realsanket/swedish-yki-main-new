@@ -34,6 +34,73 @@
         "instructions": "Listen without text first. Which advice could you use tonight?",
         "initiallyOpen": false
       }
+    },
+    "template": "conversation-first",
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen for the situation and the speakers’ plans, then answer two meaning checks."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Contrast past help verbs, advice, permission and necessity."
+      }
+    },
+    "teaching": {
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the Lesson 13 word bank"
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 13",
+        "18 MAY 2026"
+      ],
+      "kicker": "ADVICE, PERMISSION AND WHAT IS OPTIONAL",
+      "title": "Du behöver inte göra allt nu.",
+      "lede": "Help Maja before an exam. Give advice, explain a rule and make clear what she does not have to do.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Du borde vila. Du behöver inte läsa allt igen.",
+        "en": "You should rest. You do not have to read everything again.",
+        "audioText": "Du borde vila. Du behöver inte läsa allt igen."
+      },
+      "speakers": [
+        {
+          "name": "Maja",
+          "fi": "Jag kan inte sova."
+        },
+        {
+          "name": "Elin",
+          "fi": "Du borde lägga bort telefonen."
+        }
+      ],
+      "connector": "BORDE?",
+      "encounterLabel": "Elin and Henrik help Maja understand her choices before an exam",
+      "chunks": [
+        {
+          "label": "ADVICE",
+          "fi": "Du borde vila.",
+          "en": "You should rest."
+        },
+        {
+          "label": "PERMISSION",
+          "fi": "Får jag låna din penna?",
+          "en": "May I borrow your pen?"
+        },
+        {
+          "label": "RULE",
+          "fi": "Du får inte använda telefonen.",
+          "en": "You must not use the phone."
+        },
+        {
+          "label": "OPTIONAL",
+          "fi": "Du behöver inte svara nu.",
+          "en": "You do not have to answer now."
+        }
+      ]
     }
   },
   "sittingBreakAfter": "guided",
@@ -143,7 +210,7 @@
         "label": "Rule",
         "before": "Du får inte",
         "after": ".",
-        "placeholder": "dricka kaffe sent"
+        "placeholder": "använda telefonen under provet"
       },
       {
         "label": "Not necessary",
@@ -220,8 +287,8 @@
               "en": "She worked from home today and drank a cup of coffee at eight in the evening.",
               "glossary": [
                 {
-                  "fi": "stressad",
-                  "en": "stressed"
+                  "fi": "jobbade hemifrån",
+                  "en": "worked from home"
                 }
               ]
             },
@@ -232,8 +299,8 @@
               "en": "The doctor said that drinking coffee in the evening was bad.",
               "glossary": [
                 {
-                  "fi": "stressad",
-                  "en": "stressed"
+                  "fi": "på kvällen",
+                  "en": "in the evening"
                 }
               ]
             },
@@ -244,8 +311,8 @@
               "en": "She should listen to the doctor’s advice, but sometimes it is difficult.",
               "glossary": [
                 {
-                  "fi": "borde",
-                  "en": "should"
+                  "fi": "läkarens råd",
+                  "en": "the doctor’s advice"
                 }
               ]
             },
@@ -256,8 +323,8 @@
               "en": "She should exercise more and eat more fruit instead of chocolate.",
               "glossary": [
                 {
-                  "fi": "borde",
-                  "en": "should"
+                  "fi": "istället för",
+                  "en": "instead of"
                 }
               ]
             },
@@ -268,20 +335,20 @@
               "en": "She knows all this, but she thinks it is hard.",
               "glossary": [
                 {
-                  "fi": "stressad",
-                  "en": "stressed"
+                  "fi": "jobbigt",
+                  "en": "hard; tiring"
                 }
               ]
             },
             {
               "speaker": "Berättare",
               "voice": "Henrik",
-              "fi": "Klockan är 11 på natten och hon hör musik från Jonas rum.",
-              "en": "It is eleven at night, and she hears music from Jonas’s room.",
+              "fi": "Klockan är 11 på natten och hon hör musik från Jonas rum. Hon kommer in och säger:",
+              "en": "It is eleven at night, and she hears music from Jonas’s room. She comes in and says:",
               "glossary": [
                 {
-                  "fi": "stressad",
-                  "en": "stressed"
+                  "fi": "hör",
+                  "en": "hears"
                 }
               ]
             },
@@ -292,8 +359,8 @@
               "en": "You are not allowed to listen to music so loudly in the middle of the night. The neighbours do not like it.",
               "glossary": [
                 {
-                  "fi": "får inte",
-                  "en": "is not allowed to"
+                  "fi": "mitt i natten",
+                  "en": "in the middle of the night"
                 }
               ]
             },
@@ -304,8 +371,8 @@
               "en": "Do I have to stop listening to music?",
               "glossary": [
                 {
-                  "fi": "stressad",
-                  "en": "stressed"
+                  "fi": "sluta lyssna",
+                  "en": "stop listening"
                 }
               ]
             },
@@ -316,8 +383,8 @@
               "en": "No, you do not have to do that. You can use the headphones we bought last week.",
               "glossary": [
                 {
-                  "fi": "behöver inte",
-                  "en": "does not have to"
+                  "fi": "hörlurarna",
+                  "en": "the headphones"
                 }
               ]
             },
@@ -328,8 +395,8 @@
               "en": "May I drink a little coffee? I was planning to do the homework tonight.",
               "glossary": [
                 {
-                  "fi": "stressad",
-                  "en": "stressed"
+                  "fi": "hemläxorna",
+                  "en": "the homework"
                 }
               ]
             },
@@ -340,8 +407,8 @@
               "en": "No, children are not allowed to drink coffee. Besides, you do not have to do the homework now. Tomorrow is Saturday. Good night, sleep well!",
               "glossary": [
                 {
-                  "fi": "får inte",
-                  "en": "is not allowed to"
+                  "fi": "Sov gott",
+                  "en": "Sleep well"
                 }
               ]
             }
@@ -387,7 +454,7 @@
             {
               "source": "Klockan 8 på kvällen",
               "natural": "Klockan åtta på kvällen",
-              "note": "Digits are common in notes; write the number as a word in running text."
+              "note": "Digits are common in notes. Read 8 as åtta; both can appear in writing."
             }
           ],
           "backchain": {
@@ -412,12 +479,7 @@
               {
                 "word": "får",
                 "mark": "får",
-                "rule": "Får asks or gives permission."
-              },
-              {
-                "word": "får",
-                "mark": "får",
-                "rule": "Får inte means that something is not allowed."
+                "rule": "Får asks or gives permission. With inte, it means not allowed."
               },
               {
                 "word": "behöver",
@@ -644,7 +706,7 @@
         {
           "fi": "Barn får inte dricka kaffe.",
           "en": "Children are not allowed to drink coffee.",
-          "note": "A general rule in the textbook story."
+          "note": "This is Lena’s household rule in the textbook story, not a general law."
         }
       ],
       "memoryTip": "Får jag? asks permission. Får inte means no permission.",
@@ -705,8 +767,9 @@
       "kind": "rule",
       "body": [
         "Måste means that something is necessary: Jag måste plugga. Swedish does not normally use måste inte for English must not.",
-        "Use får inte or ska inte for a prohibition: Du får inte röka här. Use behöver inte when something is unnecessary: Du behöver inte boka bord. You can book, but it is not required.",
-        "This difference matters: Du får inte komma means you are not allowed to come. Du behöver inte komma means coming is optional."
+        "Use får inte for a clear prohibition: Du får inte röka här. Ska inte can be a firm instruction, but it can also mean a negative plan: Jag ska inte jobba i morgon. Use behöver inte when something is unnecessary: Du behöver inte boka bord. You can book, but it is not required.",
+        "This difference matters: Du får inte komma means you are not allowed to come. Du behöver inte komma means coming is optional.",
+        "For all or everything, learn the teacher’s useful pairs: all mat, allt arbete, allt skräp and alla vänner. All goes with an en-word, allt with an ett-word, and alla with a plural."
       ],
       "examples": [
         {
@@ -749,7 +812,7 @@
           ],
           [
             "not allowed",
-            "får inte / ska inte",
+            "får inte",
             "no"
           ],
           [
@@ -988,7 +1051,7 @@
   "assignment": {
     "title": "Lecture 13 mission: Advice before bedtime",
     "instructions": "CORE: A friend cannot sleep before an exam. Give three pieces of advice, say one thing that is not allowed or is a bad idea, and one thing they do not need to do. Add your opinion and a reason.\n\nNOTICE: Keep the second verb in the infinitive: borde sova, får använda, behöver göra.\n\nRETURN: Tomorrow, give the three most useful lines again without looking.",
-    "model": "Jag förstår att du är stressad. Du borde lägga bort telefonen och andas långsamt. Du kan ta en kort promenad. Du får inte dricka kaffe sent. Du behöver inte göra alla läxor i kväll. Jag tycker att du borde vila eftersom kroppen behöver sömn."
+    "model": "Jag förstår att du är stressad. Du borde lägga bort telefonen och andas långsamt. Du kan ta en kort promenad. Under provet får du inte använda telefonen. Du behöver inte göra alla läxor i kväll. Jag tycker att du borde vila eftersom kroppen behöver sömn."
   },
   "takeaways": [
     "Help verbs are followed by the infinitive: kunde sova, ville gå, brukade läsa.",
@@ -1314,7 +1377,7 @@
     "speaking": {
       "prompt": "Your friend cannot sleep before an exam. Give three pieces of advice, one rule or warning, and one thing that is not necessary. Include your opinion and a reason.",
       "help": "Du borde … · Du kan … · Du får inte … · Du behöver inte … · Jag tycker att … eftersom …",
-      "model": "Jag förstår att du är stressad. Du borde stänga av telefonen och ta en kort promenad. Du kan andas långsamt. Du får inte dricka kaffe sent. Du behöver inte läsa allt igen. Jag tycker att du borde vila eftersom sömn hjälper minnet."
+      "model": "Jag förstår att du är stressad. Du borde stänga av telefonen och ta en kort promenad. Du kan andas långsamt. Under provet får du inte använda telefonen. Du behöver inte läsa allt igen. Jag tycker att du borde vila eftersom sömn hjälper minnet."
     },
     "writing": {
       "prompt": "Reply to your friend with practical advice about sleep.",
@@ -1331,7 +1394,7 @@
         80
       ],
       "help": "Jag förstår att … · Du borde … · Du kan … · Du får inte … · Du behöver inte … · Jag tycker att … eftersom … · Sov gott!",
-      "model": "Hej! Jag förstår att du är stressad inför provet. Du borde lägga bort telefonen och andas långsamt. Du kan också ta en kort promenad. Du får inte dricka kaffe sent, eftersom det kan störa sömnen. Du behöver inte läsa allt igen i kväll. Jag tycker att vila är viktigt eftersom hjärnan behöver sömn. Lycka till och sov gott!"
+      "model": "Hej! Jag förstår att du är stressad inför provet. Du borde lägga bort telefonen och andas långsamt. Du kan också ta en kort promenad. Du borde inte dricka kaffe sent. Under provet får du inte använda telefonen. Du behöver inte läsa allt igen i kväll. Jag tycker att vila är viktigt eftersom hjärnan behöver sömn. Lycka till och sov gott!"
     }
   },
   "route": {
@@ -1349,5 +1412,8 @@
       "speaking",
       "writing"
     ]
+  },
+  "story": {
+    "object": "a phone put away before bedtime"
   }
 }
