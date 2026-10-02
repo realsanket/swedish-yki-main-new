@@ -711,3 +711,19 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   deliberately means “not always necessary”; moving inte outside att changes scope.
   Retain it for teacher review of the intended nuance, not as a clear grammar error.
   The writing model fits 70–110 words and gives two reasons.
+
+### Lecture 20 repair
+
+- Re-read Lesson 20 lines 2259–2375 and scans 51–53. The UR resource retains all
+  four teacher listening questions; the written money/happiness task uses both sides.
+- Checked the full existing 3 June hero. Removed invalid vocabulary focusSkill and
+  added the collapsed word bank. Replaced all example glosses with full translations;
+  restored missing work terms including flextid, parental leave, retirement and job changes.
+- Kept textbook Jonas out of an original adult-work listening profile. Gave each
+  source page real gist/detail questions, useful glossaries, specific hunt rules and
+  backchains. Source `säker att` and `hyrde en städare` have clear natural alternatives.
+- Servitör is a one-scene role, already resolved by the UI to Henrik’s native sv-SE
+  voice and a letter avatar; no new permanent character is introduced. Browser and
+  Azure verification follow in the final gate.
+- Swedish: all lines reviewed; no doubtful authored line identified. The source’s
+  ni/du switch is explained as staff versus an individual waiter. Writing fits 70–110 words.
