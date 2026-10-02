@@ -570,3 +570,18 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   `der är dimma` have explicit standard alternatives. The source explanation of
   Nora’s age/child-free status remains source-only and flagged for the teacher.
   No doubtful authored line identified. Writing model fits 40–70 words.
+
+### Lecture 11 repair
+
+- Re-read Lesson 11 lines 1267–1353, Homework 10/11 and scans 33/34/29.
+- Added the 13 May hero and repaired the invisible teacher note and dialogue field.
+  Removed the incorrect Tuesday implication for 24 May. Restored `lärare → lärarna`,
+  `känner/vet` and the missing ni/er activity pair; added plain-English preposition support.
+- Replaced generic source cues and incomplete translations, and made backchains
+  actually build a phrase. Removed a fabricated cinema sentence from page 29 by
+  using the verified reference transcription instead. Kept textbook names out of
+  original grammar examples and the writing task.
+- Swedish: read every line. Teacher `De måste skynda dem` is incorrect; taught
+  `De måste skynda sig`. Source `Det fanns många barn som ville ha dem` is grammatical
+  but its reference to the figures merits teacher confirmation. No doubtful authored
+  line identified; writing model fits 40–70 words.

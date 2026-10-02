@@ -20,24 +20,91 @@
     "pronoun",
     "object",
     "object-pronoun",
-    "ordinal-number"
+    "ordinal-number",
+    "subject",
+    "preposition"
   ],
   "presentation": {
     "opening": {
-      "teacherNote": "Use one cinema plan to connect “the things”, object pronouns and dates. Listen first; then notice who acts and who receives the action.",
+      "teacherNote": {
+        "title": "Invite someone and agree a date",
+        "body": "Use one cinema plan to connect “the things”, object pronouns and dates. Listen first; then notice who acts and who receives the action."
+      },
       "dialogue": {
         "part": "recall",
         "title": "A cinema invitation",
         "eyebrow": "Maja, Elin and Alex",
         "instructions": "Listen for the date, time and Elin’s polite reply.",
-        "initiallyHidden": true
-      }
+        "initiallyOpen": false
+      },
+      "questionIntro": "Use the story you just heard. Answer both checks from its meaning."
     },
     "teaching": {
       "wordBank": {
-        "mode": "open",
-        "title": "Invitation words"
+        "mode": "collapsed",
+        "title": "Open the Lesson 11 word bank"
       }
+    },
+    "template": "conversation-first",
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen for the situation and the speakers’ plans, then answer two meaning checks."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Build definite plurals, object pronouns, dates and invitations."
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 11",
+        "13 MAY 2026"
+      ],
+      "kicker": "INVITE SOMEONE AND AGREE A DATE",
+      "title": "Vill du gå på bio med mig?",
+      "lede": "Use words for me, you and them. Choose a date, give the details and ask your friend to reply.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Vi träffas framför bion kvart i sju.",
+        "en": "We are meeting in front of the cinema at quarter to seven.",
+        "audioText": "Vi träffas framför bion kvart i sju."
+      },
+      "speakers": [
+        {
+          "name": "Maja",
+          "fi": "Vill du gå på bio med mig?"
+        },
+        {
+          "name": "Alex",
+          "fi": "Ja, gärna! När vill du gå?"
+        }
+      ],
+      "connector": "NÄR?",
+      "encounterLabel": "Maja invites Alex and asks whether Elin can join them",
+      "chunks": [
+        {
+          "label": "THE THINGS",
+          "fi": "biljetterna",
+          "en": "the tickets"
+        },
+        {
+          "label": "OBJECT",
+          "fi": "Jag ringer henne.",
+          "en": "I am calling her."
+        },
+        {
+          "label": "DATE",
+          "fi": "den tjugofjärde maj",
+          "en": "on the twenty-fourth of May"
+        },
+        {
+          "label": "CONFIRM",
+          "fi": "Passar det dig?",
+          "en": "Does that suit you?"
+        }
+      ]
     }
   },
   "recall": [
@@ -113,8 +180,8 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Perfekt. Biljetterna är billiga på tisdagar.",
-      "en": "Perfect. The tickets are cheap on Tuesdays."
+      "fi": "Perfekt. Biljetterna till den filmen är billiga.",
+      "en": "Perfect. The tickets for that film are cheap."
     },
     {
       "speaker": "Maja",
@@ -144,16 +211,19 @@
             "height": 76
           },
           "focus": [
-            "Skvaller",
-            "listening and recall"
+            "löparskorna",
+            "leksaksbilarna",
+            "figurerna",
+            "meddelandena",
+            "barnen"
           ],
           "recallCues": [
-            "Recall line 1.",
-            "Recall line 2.",
-            "Recall line 3.",
-            "Recall line 4.",
-            "Recall line 5.",
-            "Recall line 6."
+            "Say what Maria is showing.",
+            "Describe the running shoes, toy cars and discounted figures.",
+            "Thank Maria, discuss prices and ask about the messages.",
+            "Explain the old models, then acknowledge the messages.",
+            "Say where the children are and ask for the news.",
+            "Begin identifying the woman."
           ],
           "lines": [
             {
@@ -161,13 +231,18 @@
               "voice": "Maja",
               "fi": "Maria visar vad hon köpte när hon var ute med Nora.",
               "en": "Maria shows what she bought when she was out with Nora.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "visar",
+                  "en": "shows"
+                }
+              ]
             },
             {
               "speaker": "Maria",
               "voice": "Maja",
               "fi": "Jag köpte nya löparskor till dig eftersom du måste motionera lite mer. Till Jonas köpte jag leksaksbilar för 99 euro. Nils fick två nya figurer som var på rea med 50 % rabatt.",
-              "en": "I bought you new running shoes because you need more exercise. I bought toy cars for Jonas. Nils got two figures on sale.",
+              "en": "I bought you new running shoes because you need to be more physically active. I bought toy cars for Jonas for 99 euros. Nils got two new figures that were on sale with a 50% discount.",
               "glossary": [
                 {
                   "fi": "på rea",
@@ -183,7 +258,7 @@
               "speaker": "Peter",
               "voice": "Henrik",
               "fi": "Löparskorna är jättefina, tack så mycket! De passar mig perfekt. Men leksaksbilarna var lite dyra... Varför var figurerna på rea? Förresten, fick du mina meddelanden om Andreas?",
-              "en": "The running shoes are lovely and fit perfectly. But the toy cars were expensive. Why were the figures on sale? Did you get my messages about Andreas?",
+              "en": "The running shoes are lovely, thank you very much! They fit me perfectly. But the toy cars were a little expensive... Why were the figures on sale? By the way, did you get my messages about Andreas?",
               "glossary": [
                 {
                   "fi": "passar mig",
@@ -200,21 +275,36 @@
               "voice": "Maja",
               "fi": "De är gamla modeller så de var billigare. Det fanns många barn som ville ha dem. Ja, jag fick meddelandena och jag känner hans älskarinna.",
               "en": "They are old models, so they were cheaper. Many children wanted them. Yes, I got the messages and know his mistress.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "gamla modeller",
+                  "en": "old models"
+                }
+              ]
             },
             {
               "speaker": "Peter",
               "voice": "Henrik",
               "fi": "Nähä! Barnen leker ute just nu, berätta!",
               "en": "Really! The children are playing outside now; tell me!",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "berätta",
+                  "en": "tell"
+                }
+              ]
             },
             {
               "speaker": "Maria",
               "voice": "Maja",
               "fi": "Hon är...",
               "en": "She is...",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "hon",
+                  "en": "she"
+                }
+              ]
             }
           ],
           "listenQuestions": [
@@ -249,8 +339,9 @@
           "backchain": {
             "line": 2,
             "chunks": [
-              "om Andreas?",
-              "Löparskorna är jättefina, tack så mycket! De passar mig perfekt. Men leksaksbilarna var lite dyra... Varför var figurerna på rea? Förresten, fick du mina meddelanden om Andreas?"
+              "mig perfekt",
+              "passar mig perfekt",
+              "De passar mig perfekt."
             ]
           },
           "hunt": {
@@ -299,83 +390,130 @@
             "height": 76
           },
           "focus": [
-            "Vill du gå på bio med mig?",
-            "listening and recall"
+            "mig/dig",
+            "honom/henne",
+            "oss/er",
+            "de/dem"
           ],
           "recallCues": [
-            "Recall line 1.",
-            "Recall line 2.",
-            "Recall line 3.",
-            "Recall line 4.",
-            "Recall line 5.",
-            "Recall line 6.",
-            "Recall line 7.",
-            "Recall line 8.",
-            "Recall line 9."
+            "Call Sofia, tell her to hurry and mention the taxi.",
+            "Apologise and say when you will be ready.",
+            "Offer to call Peter about being late.",
+            "Say you messaged Sara and cannot call her now.",
+            "Set the scene in front of the cinema.",
+            "Point out Peter and Sara waiting.",
+            "Greet them and ask how they are.",
+            "Explain the long wait and when the film starts.",
+            "Apologise."
           ],
           "lines": [
             {
               "speaker": "Ingrid",
-              "voice": "Maja",
+              "voice": "Elin",
               "fi": "Sofia, hör du mig? Skynda dig! En taxi väntar på oss!",
               "en": "Sofia, can you hear me? Hurry up! A taxi is waiting for us!",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "Skynda dig",
+                  "en": "Hurry up"
+                }
+              ]
             },
             {
               "speaker": "Sofia",
-              "voice": "Elin",
+              "voice": "Maja",
               "fi": "Förlåt mamma. Jag är klar om 5 minuter.",
               "en": "Sorry, Mum. I will be ready in five minutes.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "om fem minuter",
+                  "en": "in five minutes"
+                }
+              ]
             },
             {
               "speaker": "Ingrid",
-              "voice": "Maja",
+              "voice": "Elin",
               "fi": "Jag ska ringa Peter och berätta för honom att vi blir lite sena.",
               "en": "I will call Peter and tell him that we will be a little late.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "för honom",
+                  "en": "to him"
+                }
+              ]
             },
             {
               "speaker": "Sofia",
-              "voice": "Elin",
+              "voice": "Maja",
               "fi": "Tack! Jag messade Sara, jag har inte tid att ringa henne nu.",
               "en": "Thanks! I messaged Sara; I do not have time to call her now.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "ringa henne",
+                  "en": "call her"
+                }
+              ]
             },
             {
               "speaker": "Berättare",
-              "voice": "Maja",
+              "voice": "Henrik",
               "fi": "Lite senare, framför bion.",
               "en": "A little later, in front of the cinema.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "framför bion",
+                  "en": "in front of the cinema"
+                }
+              ]
             },
             {
               "speaker": "Ingrid",
-              "voice": "Maja",
+              "voice": "Elin",
               "fi": "Jag ser dem! Där står Peter och Sara och väntar.",
               "en": "I see them! Peter and Sara are standing there waiting.",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "dem",
+                  "en": "them"
+                }
+              ]
             },
             {
               "speaker": "Sofia",
-              "voice": "Elin",
+              "voice": "Maja",
               "fi": "Hej Sara! Hej Peter! Hur är det?",
               "en": "Hi Sara! Hi Peter! How are you?",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "Hur är det",
+                  "en": "How are things"
+                }
+              ]
             },
             {
               "speaker": "Sara",
               "voice": "Maja",
               "fi": "Det är okej men vi väntade så länge på er... Ni är mycket sena! Filmen börjar om 5 minuter!",
               "en": "It is okay, but we waited so long for you. You are very late! The film starts in five minutes!",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "på er",
+                  "en": "for you (plural)"
+                }
+              ]
             },
             {
               "speaker": "Sofia",
-              "voice": "Elin",
+              "voice": "Maja",
               "fi": "Förlåt!",
               "en": "Sorry!",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "Förlåt",
+                  "en": "Sorry"
+                }
+              ]
             }
           ],
           "listenQuestions": [
@@ -410,8 +548,10 @@
           "backchain": {
             "line": 2,
             "chunks": [
-              "lite sena.",
-              "Jag ska ringa Peter och berätta för honom att vi blir lite sena."
+              "lite sena",
+              "vi blir lite sena",
+              "att vi blir lite sena",
+              "berätta för honom att vi blir lite sena"
             ]
           },
           "hunt": {
@@ -461,125 +601,132 @@
         {
           "title": "Textbook page practice: Hur gammal är du?",
           "tabLabel": "Page 29 · Ordinals",
-          "intro": "Return to the number reference and focus on order numbers for dates.",
+          "intro": "Return to the number reference and focus on its ordinal column for dates.",
           "image": "/images/source/textbook-lesson-10-page-29.png",
-          "imageAlt": "Textbook page 29, Hur gammal är du?",
+          "imageAlt": "Textbook page 29 listing cardinal and ordinal numbers",
           "pageLabel": "textbook physical page 29",
           "textRegion": {
-            "top": 12,
-            "height": 76
+            "top": 20,
+            "height": 72
           },
           "focus": [
-            "Hur gammal är du?",
-            "listening and recall"
+            "13 to 1,000",
+            "first to thirtieth",
+            "age"
           ],
           "recallCues": [
-            "Recall line 1.",
-            "Recall line 2.",
-            "Recall line 3.",
-            "Recall line 4."
+            "Teen numbers.",
+            "Tens, hundred and thousand.",
+            "First to tenth.",
+            "Eleventh to thirtieth."
           ],
           "lines": [
             {
               "speaker": "Henrik",
               "voice": "Henrik",
+              "fi": "tretton, fjorton, femton, sexton, sjutton, arton, nitton, tjugo, tjugoen",
+              "en": "thirteen through twenty-one",
+              "glossary": []
+            },
+            {
+              "speaker": "Henrik",
+              "voice": "Henrik",
+              "fi": "trettio, fyrtio, femtio, sextio, sjuttio, åttio, nittio, hundra, tusen",
+              "en": "thirty through one thousand",
+              "glossary": []
+            },
+            {
+              "speaker": "Henrik",
+              "voice": "Henrik",
               "fi": "första, andra, tredje, fjärde, femte, sjätte, sjunde, åttonde, nionde, tionde",
               "en": "first through tenth",
-              "glossary": []
+              "glossary": [
+                {
+                  "fi": "första",
+                  "en": "first"
+                }
+              ]
             },
             {
               "speaker": "Henrik",
               "voice": "Henrik",
-              "fi": "elfte, tolfte, trettonde, fjortonde, femtonde, sextonde, sjuttonde, artonde, nittonde, tjugonde",
-              "en": "eleventh through twentieth",
-              "glossary": []
-            },
-            {
-              "speaker": "Henrik",
-              "voice": "Henrik",
-              "fi": "tjugoförsta, trettionde",
-              "en": "twenty-first, thirtieth",
-              "glossary": []
-            },
-            {
-              "speaker": "Henrik",
-              "voice": "Henrik",
-              "fi": "Den tjugofjärde maj går vi på bio.",
-              "en": "On the twenty-fourth of May we are going to the cinema.",
-              "glossary": []
+              "fi": "elfte, tolfte, trettonde, fjortonde, femtonde, sextonde, sjuttonde, artonde, nittonde, tjugonde, tjugoförsta, trettionde",
+              "en": "eleventh through thirtieth",
+              "glossary": [
+                {
+                  "fi": "tjugoförsta",
+                  "en": "twenty-first"
+                }
+              ]
             }
           ],
           "listenQuestions": [
             {
-              "prompt": "Which word means fourth?",
+              "prompt": "Which word means 18?",
               "options": [
-                "fjärde",
-                "fjorton",
-                "fyrtio"
+                "arton",
+                "åttonde",
+                "åttio"
               ],
               "answer": 0,
-              "explanation": "Fjärde means fourth."
+              "explanation": "Arton is eighteen."
             },
             {
-              "prompt": "What comes before a date?",
+              "prompt": "Which word means eighth?",
               "options": [
-                "den",
-                "det",
-                "en"
+                "åttonde",
+                "arton",
+                "åtta"
               ],
               "answer": 0,
-              "explanation": "Say den tjugofjärde maj."
+              "explanation": "Åttonde is eighth."
             }
           ],
           "naturalNotes": [
             {
-              "source": "date number",
-              "natural": "den + ordinal + month",
-              "note": "Use den before a date: den tjugofjärde maj."
+              "source": "40 – fyrtio",
+              "natural": "fyrtio (often pronounced förti)",
+              "note": "Write fyrtio. Everyday speech often sounds like förti."
+            },
+            {
+              "source": "21 – tjugoen",
+              "natural": "tjugoen personer; tjugoett äpplen",
+              "note": "The last part follows the noun’s en/ett gender. The page gives the en form."
             }
           ],
           "backchain": {
             "line": 3,
             "chunks": [
-              "på bio.",
-              "Den tjugofjärde maj går vi på bio."
+              "tjugoförsta",
+              "tjugoförsta, trettionde",
+              "nittonde, tjugonde, tjugoförsta, trettionde"
             ]
           },
           "hunt": {
-            "label": "Form hunt",
-            "title": "Find the marked forms.",
-            "instructions": "Connect each marked word to its job.",
-            "missHint": "Look at the red print on the page.",
+            "label": "Irregular-form hunt",
+            "title": "Find forms marked red.",
+            "instructions": "Notice the number words whose shape needs special attention.",
+            "missHint": "Look at the red print.",
             "spots": [
+              {
+                "word": "fjorton",
+                "mark": "fjorton",
+                "rule": "14 is fjorton."
+              },
+              {
+                "word": "arton",
+                "mark": "arton",
+                "rule": "18 is arton."
+              },
               {
                 "word": "första",
                 "mark": "första",
-                "rule": "first"
+                "rule": "1st is första."
               },
               {
                 "word": "andra",
                 "mark": "andra",
-                "rule": "second"
-              },
-              {
-                "word": "tredje",
-                "mark": "tredje",
-                "rule": "third"
-              },
-              {
-                "word": "fjärde",
-                "mark": "fjärde",
-                "rule": "fourth"
-              },
-              {
-                "word": "elfte",
-                "mark": "elfte",
-                "rule": "eleventh"
-              },
-              {
-                "word": "tolfte",
-                "mark": "tolfte",
-                "rule": "twelfth"
+                "rule": "2nd is andra."
               }
             ]
           }
@@ -594,7 +741,8 @@
       "kind": "grammar",
       "body": [
         "Swedish adds an ending to mean “the” in plural. Groups 1–3 usually add -na: veckorna, bilarna, bananerna. Group 4 adds -a: mötena. Many group 5 nouns add -en: jobben and barnen.",
-        "Learn a noun with its plural. Then the definite plural becomes easier: en bil – bilar – bilarna."
+        "Learn a noun with its plural. Then the definite plural becomes easier: en bil – bilar – bilarna.",
+        "Group-5 job words in -are have a different pattern: en lärare → lärare → lärarna. Känner means know a person; vet means know a fact: Jag känner lärarna. Jag vet vad de heter."
       ],
       "examples": [
         {
@@ -655,6 +803,45 @@
           }
         ],
         "summary": "Say each complete form aloud."
+      },
+      "table": {
+        "headings": [
+          "One",
+          "Several",
+          "The specific ones"
+        ],
+        "rows": [
+          [
+            "en vecka",
+            "veckor",
+            "veckorna"
+          ],
+          [
+            "en bil",
+            "bilar",
+            "bilarna"
+          ],
+          [
+            "en banan",
+            "bananer",
+            "bananerna"
+          ],
+          [
+            "ett möte",
+            "möten",
+            "mötena"
+          ],
+          [
+            "ett jobb",
+            "jobb",
+            "jobben"
+          ],
+          [
+            "en lärare",
+            "lärare",
+            "lärarna"
+          ]
+        ]
       }
     },
     {
@@ -662,8 +849,9 @@
       "title": "Who receives the action?",
       "kind": "grammar",
       "body": [
-        "A subject does the action: jag ringer. An object receives it: Sara ringer mig. Use mig, dig, honom, henne, oss, er and dem after verbs and prepositions.",
-        "De and dem are usually both pronounced dom, but formal writing keeps them separate: de act; someone sees dem."
+        "A subject does the action: jag ringer. An object receives it: Elin ringer mig. Use mig, dig, honom, henne, oss, er and dem after verbs and prepositions.",
+        "De and dem are usually both pronounced dom, but formal writing keeps them separate: de act; someone sees dem.",
+        "Skynda dig! means Hurry up! When people hurry themselves, say Vi måste skynda oss or De måste skynda sig. The teacher-note line with de … dem is a slip; use sig here."
       ],
       "examples": [
         {
@@ -702,7 +890,7 @@
         ]
       },
       "memoryTip": "Ask: who does it, and who receives it?",
-      "tryIt": "Replace Sara in Jag ringer Sara with henne.",
+      "tryIt": "Replace Elin in Jag ringer Elin with henne.",
       "activity": {
         "type": "match",
         "label": "Match the pairs",
@@ -732,11 +920,15 @@
             "right": "oss"
           },
           {
+            "left": "ni",
+            "right": "er"
+          },
+          {
             "left": "de",
             "right": "dem"
           }
         ],
-        "pattern": "Sara ringer + object: Sara ringer mig."
+        "pattern": "Elin ringer + object: Elin ringer mig."
       }
     },
     {
@@ -898,7 +1090,7 @@
     },
     {
       "id": "sv-11-g4",
-      "prompt": "Choose: Jag ska ringa Sara och prata med ___.",
+      "prompt": "Choose: Jag ska ringa Elin och prata med ___.",
       "answers": [
         "henne"
       ],
@@ -1212,20 +1404,20 @@
     },
     "writing": {
       "prompt": "Write a cinema invitation and ask your friend to reply.",
-      "situation": "You want to see a film with your friend Leo. Write an invitation with a calendar date.",
+      "situation": "You want to see a film with your friend Elin. Write an invitation with a calendar date.",
       "points": [
-        "Invite Leo to the cinema.",
+        "Invite Elin to the cinema.",
         "Give the date with an ordinal number.",
         "Give a time and meeting place.",
-        "Ask whether the plan suits Leo.",
+        "Ask whether the plan suits Elin.",
         "Close the message naturally."
       ],
       "wordRange": [
         40,
         70
       ],
-      "help": "Hej Leo! · Vill du gå på bio med mig? · den … · Filmen börjar … · Vi träffas … · Passar det dig? · Svara gärna! · Hälsningar",
-      "model": "Hej Leo! Vill du gå på bio med mig den tjugofjärde maj? Filmen börjar klockan sju. Vi kan träffas framför bion kvart i sju. Jag kan köpa biljetterna åt oss. Passar datumet och tiden dig? Svara gärna före fredag. Hoppas att du kan komma! Hälsningar, Alex"
+      "help": "Hej Elin! · Vill du gå på bio med mig? · den … · Filmen börjar … · Vi träffas … · Passar det dig? · Svara gärna! · Hälsningar",
+      "model": "Hej Elin! Vill du gå på bio med mig den tjugofjärde maj? Filmen börjar klockan sju. Vi kan träffas framför bion kvart i sju. Jag kan köpa biljetterna åt oss. Passar datumet och tiden dig? Svara gärna före fredag. Hoppas att du kan komma! Hälsningar, Alex"
     }
   },
   "route": {
@@ -1285,8 +1477,8 @@
   "reviewPhrases": [
     {
       "id": "sv-11-review-1",
-      "en": "the cars",
-      "fi": "bilarna"
+      "en": "The cars are black.",
+      "fi": "Bilarna är svarta."
     },
     {
       "id": "sv-11-review-2",
@@ -1390,5 +1582,8 @@
       "url": "https://svenska.se/",
       "description": "Check a noun plural or an invitation word and listen to pronunciation."
     }
-  ]
+  ],
+  "story": {
+    "object": "cinema tickets and a calendar date"
+  }
 }
