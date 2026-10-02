@@ -45,14 +45,14 @@ export type StoryChapter = {
 
 /** Story data belongs to the module, including explicit absence of artwork. */
 export function storyChapterForModule(moduleNumber?: number): StoryChapter {
-  const module = (modulesData.modules as CourseModule[]).find((item) => item.number === moduleNumber);
+  const courseModule = (modulesData.modules as CourseModule[]).find((item) => item.number === moduleNumber);
   return {
-    number: module?.number ?? 0,
-    title: module?.story?.title ?? "Your Swedish story",
-    setting: module?.story?.setting ?? "An everyday Swedish conversation",
-    summary: module?.story?.summary ?? "Listen, try a useful phrase, and make it your own.",
-    cast: module?.story?.cast ?? [],
-    art: module?.story?.art ?? null,
+    number: courseModule?.number ?? 0,
+    title: courseModule?.story?.title ?? "Your Swedish story",
+    setting: courseModule?.story?.setting ?? "An everyday Swedish conversation",
+    summary: courseModule?.story?.summary ?? "Listen, try a useful phrase, and make it your own.",
+    cast: courseModule?.story?.cast ?? [],
+    art: courseModule?.story?.art ?? null,
   };
 }
 
