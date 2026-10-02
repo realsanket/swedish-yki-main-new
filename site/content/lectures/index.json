@@ -8980,19 +8980,19 @@
     "presentation": {
       "routeSteps": {
         "recall": {
-          "label": "Hear the news",
+          "label": "Hear the conversation",
           "description": "Listen to Maja’s good news and a short party story."
         },
         "teach": {
-          "label": "Build the past",
+          "label": "Build it step by step",
           "description": "Learn regular endings, common irregular forms, reactions and hem/hemma."
         },
         "guided": {
-          "label": "Tell yesterday",
+          "label": "Try the phrases",
           "description": "Choose and produce the forms that tell a past day."
         },
         "practice": {
-          "label": "Retell your day",
+          "label": "Do the task",
           "description": "Speak from morning to evening, then write your first diary entry."
         }
       },
@@ -9012,9 +9012,64 @@
       },
       "teaching": {
         "wordBank": {
-          "mode": "open",
+          "mode": "collapsed",
           "title": "Words for yesterday and good news"
         }
+      },
+      "template": "conversation-first",
+      "hero": {
+        "variant": "conversation",
+        "meta": [
+          "LEKTION 6",
+          "27 APRIL 2026"
+        ],
+        "kicker": "GOOD NEWS AND YESTERDAY’S STORY",
+        "title": "Vad gjorde du igår?",
+        "lede": "React to Maja’s good news, ask about a party and tell your own day from morning to evening.",
+        "startLine": {
+          "label": "START WITH ONE LINE",
+          "fi": "Igår jobbade jag och pluggade svenska.",
+          "en": "Yesterday I worked and studied Swedish.",
+          "audioText": "Vad gjorde du igår? Igår jobbade jag och pluggade svenska."
+        },
+        "speakers": [
+          {
+            "name": "Maja",
+            "fi": "Jag klarade svenskprovet!"
+          },
+          {
+            "name": "Elin",
+            "fi": "Vilka fantastiska nyheter!"
+          }
+        ],
+        "connector": "GRATTIS!",
+        "encounterLabel": "Maja tells Elin and Alex that she passed her test",
+        "chunks": [
+          {
+            "label": "REGULAR PAST",
+            "fi": "jobbar → jobbade",
+            "en": "work → worked"
+          },
+          {
+            "label": "IRREGULAR PAST",
+            "fi": "äter → åt",
+            "en": "eat → ate"
+          },
+          {
+            "label": "GO HOME",
+            "fi": "Jag gick hem.",
+            "en": "I went home."
+          },
+          {
+            "label": "AT HOME",
+            "fi": "Jag var hemma.",
+            "en": "I was at home."
+          }
+        ],
+        "footerTags": [
+          "Tell the events in order",
+          "React, then ask a question"
+        ]
       }
     },
     "sittingBreakAfter": "guided",
@@ -9168,14 +9223,14 @@
               "hem / hemma"
             ],
             "recallCues": [
-              "Retell line 1 from the page in the past.",
-              "Retell line 2 from the page in the past.",
-              "Retell line 3 from the page in the past.",
-              "Retell line 4 from the page in the past.",
-              "Retell line 5 from the page in the past.",
-              "Retell line 6 from the page in the past.",
-              "Retell line 7 from the page in the past.",
-              "Retell line 8 from the page in the past."
+              "Sofia comes home with good test news and wants a party.",
+              "Tell Mum you passed.",
+              "Congratulate Sofia and say you are proud.",
+              "Remind Mum about a party at home and ask when.",
+              "Suggest Friday.",
+              "Say you will send Sara an invitation.",
+              "Offer to call Sara’s mother.",
+              "Say that sounds good and thank her."
             ],
             "lines": [
               {
@@ -9297,24 +9352,24 @@
             ],
             "listenQuestions": [
               {
-                "prompt": "What is this page mainly about?",
+                "prompt": "What does Sofia want to celebrate?",
                 "options": [
-                  "Something that happened before now",
-                  "A plan for next year",
-                  "A daily timetable"
+                  "Passing a test",
+                  "A birthday",
+                  "A new job"
                 ],
                 "answer": 0,
-                "explanation": "The page uses past-tense forms to tell what happened."
+                "explanation": "Jag klarade provet!"
               },
               {
-                "prompt": "Which time does the main story describe?",
+                "prompt": "When can they celebrate?",
                 "options": [
-                  "The past",
-                  "Only the present",
-                  "Only the future"
+                  "On Friday",
+                  "On Monday",
+                  "Tonight"
                 ],
                 "answer": 0,
-                "explanation": "Past forms such as klarade, kom and var place events before now."
+                "explanation": "Vi kan fira på fredag."
               }
             ],
             "naturalNotes": [
@@ -9325,31 +9380,33 @@
               }
             ],
             "backchain": {
-              "line": 1,
+              "line": 2,
               "chunks": [
-                "Mamma, jag klarade provet!",
-                "Mamma, jag klarade provet!"
+                "över dig",
+                "stolt över dig",
+                "Jag är så stolt över dig."
               ]
             },
             "hunt": {
               "label": "Past-form hunt",
-              "title": "Find what happened",
-              "instructions": "Match each marked past form to its job, then say it in a short sentence.",
-              "items": [
+              "title": "Find the past forms on the page",
+              "instructions": "Tap a past form and say its present–past pair.",
+              "missHint": "Look for a verb that describes a past action.",
+              "spots": [
                 {
-                  "fi": "klarade",
-                  "en": "passed",
-                  "rule": "Group 1 adds -ade."
+                  "word": "klarade",
+                  "mark": "klarade",
+                  "rule": "Group 1: klara → klarade."
                 },
                 {
-                  "fi": "pluggade",
-                  "en": "studied",
-                  "rule": "Group 1 adds -ade."
+                  "word": "pluggade",
+                  "mark": "pluggade",
+                  "rule": "Group 1: plugga → pluggade."
                 },
                 {
-                  "fi": "pratade",
-                  "en": "talked",
-                  "rule": "Group 1 adds -ade."
+                  "word": "pratade",
+                  "mark": "pratade",
+                  "rule": "Group 1: prata → pratade."
                 }
               ]
             }
@@ -9377,8 +9434,8 @@
               "gick"
             ],
             "recallCues": [
-              "Retell line 1 from the page in the past.",
-              "Retell line 2 from the page in the past."
+              "Retell how Sara chose a present and why Sofia was happy.",
+              "Retell the music, the neighbour, the food and when Sara went home."
             ],
             "lines": [
               {
@@ -9440,59 +9497,61 @@
             ],
             "listenQuestions": [
               {
-                "prompt": "What is this page mainly about?",
+                "prompt": "Why is Sofia happy with the present?",
                 "options": [
-                  "Something that happened before now",
-                  "A plan for next year",
-                  "A daily timetable"
+                  "She wanted the book but had no money",
+                  "It is a new phone",
+                  "Sara wrote it"
                 ],
                 "answer": 0,
-                "explanation": "The page uses past-tense forms to tell what happened."
+                "explanation": "Sofia ville ha boken men hon hade inte några pengar."
               },
               {
-                "prompt": "Which time does the main story describe?",
+                "prompt": "When does Sara go home?",
                 "options": [
-                  "The past",
-                  "Only the present",
-                  "Only the future"
+                  "At eight",
+                  "At midnight",
+                  "Before dinner"
                 ],
                 "answer": 0,
-                "explanation": "Past forms such as klarade, kom and var place events before now."
+                "explanation": "Sara gick hem klockan 8."
               }
             ],
             "naturalNotes": [
               {
-                "source": "hem / hemma",
-                "natural": "Jag gick hem. Sedan var jag hemma.",
-                "note": "Hem shows movement toward home. Hemma shows the location."
+                "source": "så hon lämnade",
+                "natural": "så hon gick därifrån",
+                "note": "The source leaves the place unstated. Gick därifrån makes leaving the party explicit."
               }
             ],
             "backchain": {
               "line": 1,
               "chunks": [
-                "Efter festen läste Sofia boken.",
-                "ara gick hem klockan 8. Hon sa att hon måste vakna tidigt. Efter festen läste Sofia boken."
+                "Sofia boken",
+                "läste Sofia boken",
+                "Efter festen läste Sofia boken."
               ]
             },
             "hunt": {
               "label": "Past-form hunt",
-              "title": "Find what happened",
-              "instructions": "Match each marked past form to its job, then say it in a short sentence.",
-              "items": [
+              "title": "Find the past forms on the page",
+              "instructions": "Tap a past form and say its present–past pair.",
+              "missHint": "Look for a verb that describes a past action.",
+              "spots": [
                 {
-                  "fi": "köpte",
-                  "en": "bought",
-                  "rule": "The ending is -te after the voiceless p sound."
+                  "word": "köpte",
+                  "mark": "köpte",
+                  "rule": "Group 2: köpa → köpte, with -te after p."
                 },
                 {
-                  "fi": "dansade",
-                  "en": "danced",
-                  "rule": "Group 1 adds -ade."
+                  "word": "dansade",
+                  "mark": "dansade",
+                  "rule": "Group 1: dansa → dansade."
                 },
                 {
-                  "fi": "åt",
-                  "en": "ate",
-                  "rule": "This is an irregular form to learn as a pair: äter–åt."
+                  "word": "åt",
+                  "mark": "åt",
+                  "rule": "Irregular pair: äter → åt."
                 }
               ]
             }
@@ -9521,8 +9580,8 @@
               "sov"
             ],
             "recallCues": [
-              "Retell line 1 from the page in the past.",
-              "Retell line 2 from the page in the past."
+              "Recall the past of är, vill, kan, säger, kommer, gör, går and får.",
+              "Recall the past of ger, har, tar, ser, vet, skriver, äter, dricker, sover and blir."
             ],
             "lines": [
               {
@@ -9552,59 +9611,61 @@
             ],
             "listenQuestions": [
               {
-                "prompt": "What is this page mainly about?",
+                "prompt": "What does the second column show?",
                 "options": [
-                  "Something that happened before now",
-                  "A plan for next year",
-                  "A daily timetable"
+                  "Past forms",
+                  "Job names",
+                  "Commands"
                 ],
                 "answer": 0,
-                "explanation": "The page uses past-tense forms to tell what happened."
+                "explanation": "The pairs connect present forms with past forms."
               },
               {
-                "prompt": "Which time does the main story describe?",
+                "prompt": "Which form means ate?",
                 "options": [
-                  "The past",
-                  "Only the present",
-                  "Only the future"
+                  "åt",
+                  "äter",
+                  "är"
                 ],
                 "answer": 0,
-                "explanation": "Past forms such as klarade, kom and var place events before now."
+                "explanation": "Äter becomes åt in the past."
               }
             ],
             "naturalNotes": [
               {
-                "source": "hem / hemma",
-                "natural": "Jag gick hem. Sedan var jag hemma.",
-                "note": "Hem shows movement toward home. Hemma shows the location."
+                "source": "säger – sa",
+                "natural": "Jag sa hej.",
+                "note": "Sa and sade are both standard past forms of säga. Sa is common in speech."
               }
             ],
             "backchain": {
               "line": 1,
               "chunks": [
-                "ger – gav; har – hade; tar – tog; ser – såg; vet – visste; skriver – skrev; äter – åt; dricker – drack; sover – sov; blir – blev.",
-                " såg; vet – visste; skriver – skrev; äter – åt; dricker – drack; sover – sov; blir – blev."
+                "blir – blev",
+                "sover – sov; blir – blev",
+                "dricker – drack; sover – sov; blir – blev"
               ]
             },
             "hunt": {
               "label": "Past-form hunt",
-              "title": "Find what happened",
-              "instructions": "Match each marked past form to its job, then say it in a short sentence.",
-              "items": [
+              "title": "Find the past forms on the page",
+              "instructions": "Tap a past form and say its present–past pair.",
+              "missHint": "Look for a verb that describes a past action.",
+              "spots": [
                 {
-                  "fi": "är → var",
-                  "en": "is → was",
-                  "rule": "The stem changes; learn the pair."
+                  "word": "var",
+                  "mark": "var",
+                  "rule": "är → var"
                 },
                 {
-                  "fi": "går → gick",
-                  "en": "goes → went",
-                  "rule": "The stem changes; learn the pair."
+                  "word": "gick",
+                  "mark": "gick",
+                  "rule": "går → gick"
                 },
                 {
-                  "fi": "äter → åt",
-                  "en": "eats → ate",
-                  "rule": "The stem changes; learn the pair."
+                  "word": "åt",
+                  "mark": "åt",
+                  "rule": "äter → åt"
                 }
               ]
             }
@@ -9675,7 +9736,7 @@
       },
       {
         "fi": "Jag jobbade länge. Sedan gick jag hem.",
-        "en": "I worked late. Then I went home.",
+        "en": "I worked for a long time. Then I went home.",
         "speaker": "Alex"
       },
       {
@@ -9692,6 +9753,16 @@
         "fi": "Bra! Nu kan vi fira tillsammans på fredag.",
         "en": "Good! Now we can celebrate together on Friday.",
         "speaker": "Maja"
+      },
+      {
+        "speaker": "Alex",
+        "fi": "Elin, hur var det på festen i lördags?",
+        "en": "Elin, how was the party on Saturday?"
+      },
+      {
+        "speaker": "Elin",
+        "fi": "Det var roligt! Vi åt god mat och dansade.",
+        "en": "It was fun! We ate good food and danced."
       }
     ],
     "sections": [
@@ -9700,7 +9771,8 @@
         "kind": "rule",
         "body": [
           "Past tense tells about a finished time: igår, förra veckan or för tre år sedan. The verb has one past form for every person: jag jobbade, du jobbade, vi jobbade.",
-          "Four useful patterns are -ade, -de, -te and -dde. Start from the infinitive or command stem. Group 1 keeps its -a and adds -de: jobba → jobbade. After a voiceless p, t, k, s or x sound, use -te: köpa → köpte."
+          "Four useful patterns are -ade, -de, -te and -dde. Group 1 keeps its -a and adds -de: jobba → jobbade. For group 2, remove the infinitive’s -a: ringa → ring → ringde. A group-2 stem ending in a voiceless sound (p, t, k, s or x) takes -te: köpa → köp → köpte. Short regular verbs such as bo and må add -dde: bodde, mådde.",
+          "Voiceless means your throat does not buzz when you say the sound. Compare s (no buzz) with z (buzz). The -te clue applies to group 2, not to every verb: prata is group 1 and becomes pratade."
         ],
         "examples": [
           {
@@ -9811,8 +9883,8 @@
         "title": "Learn the common irregular pairs",
         "kind": "rule",
         "body": [
-          "Some very common verbs do not build the past with a regular ending. These are irregular or strong verbs. Learn each present–past pair as one small chunk.",
-          "Start with forms that make a whole day possible: är–var, har–hade, går–gick, äter–åt, dricker–drack and sover–sov. Inte still comes after the first verb: Jag hade inte pengar."
+          "Some very common verbs do not follow these regular ending patterns. Learn each present–past pair as one small chunk. The textbook groups them together under strong verbs; more generally, call them irregular verbs.",
+          "Start with forms that make a whole day possible: är–var, har–hade, går–gick, äter–åt, dricker–drack and sover–sov. Inte still comes after the first verb: Jag hade inte tid."
         ],
         "examples": [
           {
@@ -9824,8 +9896,8 @@
             "en": "We ate dinner and drank coffee."
           },
           {
-            "fi": "Sara gick hem klockan åtta.",
-            "en": "Sara went home at eight."
+            "fi": "Maja gick hem klockan åtta.",
+            "en": "Maja went home at eight."
           },
           {
             "fi": "Jag sov bra.",
@@ -10097,13 +10169,13 @@
       },
       {
         "id": "sv-06-guided-negative",
-        "prompt": "Produce: “I did not have money.”",
+        "prompt": "Produce: “I did not have time.”",
         "answers": [
-          "Jag hade inte pengar.",
-          "Jag hade inga pengar."
+          "Jag hade inte tid.",
+          "Jag hade ingen tid."
         ],
         "hint": "The first verb is hade; inte follows it.",
-        "explanation": "Jag hade inte pengar."
+        "explanation": "Jag hade inte tid. Inte follows hade."
       },
       {
         "id": "sv-06-guided-home",
@@ -10402,7 +10474,7 @@
         "tip": "Keep the final -de or -te audible. In gick, the g sounds like English y. Contrast short hem with two-syllable hemma."
       },
       "listening": {
-        "text": "Igår vaknade Alex klockan sju. Han åt frukost och drack kaffe. Sedan gick han till jobbet. På jobbet pratade han med Elin och skrev många meddelanden. Efter jobbet köpte han mat. Han gick hem klockan sex och lagade soppa. På kvällen pluggade han svenska, såg en kort film och ringde en vän. Han var trött, så han sov tidigt.",
+        "text": "Igår vaknade Alex klockan sju. Han åt frukost och drack kaffe. Sedan gick han till jobbet. På jobbet pratade han med Elin och skrev många meddelanden. Efter jobbet köpte han mat. Han gick hem klockan sex och lagade soppa. På kvällen pluggade han svenska, såg en kort film och ringde en vän. Han var trött och sov bra.",
         "question": "What did Alex do after work before he went home?",
         "options": [
           "He bought food",
@@ -10413,7 +10485,7 @@
         "explanation": "Efter jobbet köpte han mat."
       },
       "reading_passage": {
-        "text": "Måndag kväll\nIgår hade Maja en mycket bra dag. Hon vaknade tidigt och åt frukost hemma. Sedan gick hon till skolan. Där skrev hon ett prov. Provet var svårt, men Maja kunde svara på frågorna. Efter skolan träffade hon Elin på ett kafé. Maja berättade de fantastiska nyheterna: hon klarade provet. De drack kaffe och pratade om en fest. Sedan gick Maja hem. Hemma åt hon middag, skickade en inbjudan och sov bra.",
+        "text": "Dagbok\nIgår hade Maja en mycket bra dag. Hon vaknade tidigt och åt frukost hemma. Sedan gick hon till skolan. Där skrev hon ett prov. Provet var svårt, men Maja kunde svara på frågorna. Efter skolan träffade hon Elin på ett kafé. Maja berättade de fantastiska nyheterna: hon klarade provet. De drack kaffe och pratade om en fest. Sedan gick Maja hem. Hemma åt hon middag, skickade en inbjudan och sov bra.",
         "gist": {
           "prompt": "Why was Maja’s day especially good?",
           "options": [
@@ -10506,7 +10578,10 @@
         "url": "https://svenska.se/",
         "description": "Write for 5–10 minutes, then check only the verbs you needed."
       }
-    ]
+    ],
+    "story": {
+      "object": "good news about a test"
+    }
   },
   {
     "number": 7,

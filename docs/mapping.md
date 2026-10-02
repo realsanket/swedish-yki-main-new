@@ -492,3 +492,18 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
 - Swedish: all lines reviewed. Source `jag ska riskera` remains source-only with
   `Jag ska ta risken` as the production model; ask the teacher to confirm the source
   wording. No doubtful authored line remains.
+
+### Lecture 6 repair
+
+- Re-read Lesson 6 lines 633–730, Homework 7/8 and scans 16–18.
+- Repaired all three textbook hunts: they used unsupported `items` instead of
+  `spots`, which would crash the renderer. Replaced generic “retell line N” cues,
+  copied gist questions and broken backchains (one began mid-word with `ara`).
+- Added the 27 April hero, stable labels, and the planned Alex–Elin party exchange.
+  Qualified the -te rule so it cannot incorrectly produce `pratte` from `prata`;
+  explained “voiceless” in plain English. All direction/location pairs are covered.
+- Replaced unnatural authored `sov tidigt` with `sov bra`, and `hade inte pengar`
+  with `hade inte tid` for a natural negation example. The diary remains daily,
+  5–10 minutes, and its model fits 35–60 words.
+- Swedish: all lines reviewed. Source `så hon lämnade` remains source-only with
+  clearer production guidance `så hon gick därifrån`; teacher confirmation is useful.
