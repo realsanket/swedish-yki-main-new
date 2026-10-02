@@ -10,7 +10,8 @@ const lectures=JSON.parse(await fs.readFile('content/lectures/index.json','utf8'
 const modules=JSON.parse(await fs.readFile('content/modules.json','utf8')).modules;
 const voices={Alex:'sv-SE-MattiasNeural',Elin:'sv-SE-HilleviNeural',Henrik:'sv-SE-MattiasNeural',Maja:'sv-SE-SofieNeural'};
 const report={dialogues:[],pages:[],feedback:[],failures:[],playbackRate:4};
-const browser=await chromium.launch();const context=await browser.newContext();
+// AUDIT_CHROMIUM points at an installed Chromium when Playwright's own build is missing.
+const browser=await chromium.launch({executablePath:process.env.AUDIT_CHROMIUM||undefined});const context=await browser.newContext();
 await context.route('**/api/course',r=>r.request().method()==='GET'?r.fulfill({json:{lectures:{}}}):r.abort());
 await context.route('**/api/progress',r=>r.request().method()==='GET'?r.fulfill({json:{profile:{name:'Learner',dailyGoal:15,level:'A0'},completed:[],reviews:{},activity:{},attempts:[]}}):r.abort());
 const page=await context.newPage();

@@ -14,7 +14,7 @@ const all = JSON.parse(await fs.readFile(path.join(content, 'lectures/index.json
 const modules = JSON.parse(await fs.readFile(path.join(content, 'modules.json'), 'utf8')).modules;
 const selected = process.env.AUDIT_LECTURES?.split(',').map(Number);
 const lectures = all.filter(l => selected ? selected.includes(l.number) : !reference || l.number <= 2);
-const widths = [1440, 390];
+const widths = (process.env.AUDIT_WIDTHS ?? '1440,390').split(',').map(Number);
 const failures = [];
 const records = [];
 const stats = { routeViews: 0, textbookStages: 0, teachingBeats: 0, completedActivities: 0, missionStages: 0, checks: 0 };
@@ -38,7 +38,7 @@ if (!reference) {
     assert.equal(hero.speakers.length, 2);
     assert.equal(hero.chunks.length, 4);
     assert.equal(hero.meta[0], `LEKTION ${lecture.number}`);
-    const months = { APRIL:'04', MAY:'05', MAJ:'05', JUNE:'06', JUNI:'06' };
+    const months = { APRIL:'04', MAY:'05', JUNE:'06' }; // English month names, as in Lectures 1-2
     const [day, month, year] = hero.meta[1].split(' ');
     assert.equal(`${year}-${months[month]}-${day.padStart(2,'0')}`, plan.date, `L${lecture.number}: teacher date`);
     assert.equal(lecture.presentation.opening.dialogue.part, 'recall');
@@ -60,7 +60,8 @@ if (!reference) {
   }
 }
 
-const browser = await chromium.launch({ headless:true });
+// AUDIT_CHROMIUM points at an installed Chromium when Playwright's own build is missing.
+const browser = await chromium.launch({ headless:true, executablePath: process.env.AUDIT_CHROMIUM || undefined });
 async function settle(page) {
   await page.evaluate(async () => { await document.fonts.ready; for (const img of document.images) img.loading = 'eager'; });
   await page.waitForFunction(() => [...document.images].every(i => i.complete), {}, { timeout:30000 });
@@ -83,7 +84,13 @@ async function inspect(page, label, lecture, errors) {
   assert.equal(errors.length,0,`${label}: ${errors.join('\n')}`);
 }
 async function capture(page, dir, name) {
-  await page.evaluate(() => scrollTo({top:0,left:0,behavior:'instant'}));
+  // A stage change starts a smooth scroll to the new stage; jump to the top
+  // until that scroll has finished instead of racing it.
+  for (let i = 0; i < 40; i++) {
+    await page.evaluate(() => scrollTo({top:0,left:0,behavior:'instant'}));
+    await page.waitForTimeout(250);
+    if (await page.evaluate(() => scrollY===0)) break;
+  }
   await page.waitForFunction(() => scrollY===0);
   await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
   const bounds=await page.locator('.lecture-workspace').boundingBox();

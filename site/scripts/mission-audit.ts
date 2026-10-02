@@ -9,13 +9,14 @@ import { defaultCourseLectureState, parseCourseAction, updateCourseState } from 
 const base=process.env.AUDIT_BASE_URL ?? 'http://localhost:3103';
 const out=path.resolve(process.env.AUDIT_OUT_DIR ?? '../.audit/missions');
 const selected=process.env.AUDIT_LECTURES?.split(',').map(Number);
-const browser=await chromium.launch();
+// AUDIT_CHROMIUM points at an installed Chromium when Playwright's own build is missing.
+const browser=await chromium.launch({executablePath:process.env.AUDIT_CHROMIUM||undefined});
 const failures:string[]=[];
 let runs=0,savedAttempts=0;
 try {
  for(const width of [1440,390]) for(const lecture of lectures.filter(l=>!selected||selected.includes(l.number))) {
   const dir=path.join(out,lecture.id,String(width));await fs.mkdir(dir,{recursive:true});
-  let state={...defaultCourseLectureState(),completedParts:['recall','teach'] as ('recall'|'teach'|'guided'|'practice'|'check'|'assignment')[],completedExtraSteps:(lecture.extraSteps??[]).map(s=>s.id),part:'guided' as const,answers:Object.fromEntries(lecture.guided.map(q=>[q.id,q.answers[0]])),drafts:{speaking:lecture.speaking.model,writing:lecture.writing.model}};
+  const state={...defaultCourseLectureState(),completedParts:['recall','teach'] as ('recall'|'teach'|'guided'|'practice'|'check'|'assignment')[],completedExtraSteps:(lecture.extraSteps??[]).map(s=>s.id),part:'guided' as const,answers:Object.fromEntries(lecture.guided.map(q=>[q.id,q.answers[0]])),drafts:{speaking:lecture.speaking.model,writing:lecture.writing.model}};
   // The explicit type permits the reducer to advance the part and optional drafts.
   let current:ReturnType<typeof defaultCourseLectureState>=state;
   const context=await browser.newContext({viewport:{width,height:width===1440?900:844},reducedMotion:'reduce'});
