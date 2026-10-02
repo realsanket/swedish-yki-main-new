@@ -1,6 +1,6 @@
 # Extending the lecture system
 
-The lecture engine is deliberately content-driven. Lecture 1 uses a custom `conversation-first` presentation, but that presentation is **not** selected by lecture number and is **not** the default for future lectures.
+The lecture engine is deliberately content-driven. All active textbook lectures explicitly use the `conversation-first` presentation verified in Lecture 2. The JSON selects it; lecture numbers never select behavior. A future lecture may use a neutral default only when its approved content calls for it.
 
 ## Separation of responsibilities
 
@@ -46,7 +46,13 @@ across all four fields.
 - `teaching.livePractice`: explicitly assigns `conversation` or `pronunciation` Voice Live practice to named teaching sections. Omit a section rather than guessing a mode from its position or kind.
 - `teaching.wordBank`: chooses an open or collapsed word bank and optionally supplies its title.
 - `teaching.resourceIntro`: supplies context appropriate to that lecture's resources.
-- `hero`: opts into a specialised hero and owns every learner-facing string inside it.
+- `hero`: owns every learner-facing string: `variant: "conversation"`, `meta` (LEKTION N and the teacher’s date), `kicker`, `title`, `lede`, `startLine` (`label`, `fi`, `en`, `audioText`), two `speakers` (`name`, `fi`), `connector`, `encounterLabel`, and four `chunks` (`label`, `fi`, `en`). Optional `footerTags` add concise reminders.
+- `story` is a **top-level lecture field**, separate from `presentation`: optional `art` is an existing `/images/story/…` path; optional `object` names an actual scene detail; optional `cast` narrows the scene cast. Missing art displays the dialogue’s cast portraits. Missing object adds no invented caption. Pilots 1–2 retain their original scene cast via metadata; their teaching content is unchanged.
+- Each module in `content/modules.json` owns `story: { title, setting, summary, cast, art }`. Set `art` to `null` when no existing story image fits. Cast must match the chapter’s original dialogue speakers, including one-scene roles. Never borrow another chapter’s title, summary or image as a fallback.
+- `sections[].kind` supports exactly `rule`, `scene` and `register`. Use `table.headings`, never `headers`. Opening notes are `{ title, body }`, never strings; dialogue visibility is `initiallyOpen`, never `initiallyHidden` or `startWithTextHidden`.
+- A `match` activity supplies `leftLabel`, `rightLabel`, `pairs` and `pattern`; optional `sentence` combines matched text. A textbook `hunt` supplies `label`, `title`, `instructions`, `missHint` and nonempty `spots: [{ word, mark, rule }]`, never `items`. Use one general rule per repeated word unless the renderer gains an explicit occurrence model.
+- `naturalNotes` use `{ source, natural, note }`, never `produce`. Source errors remain visible only in source practice with a correct, clearly distinguished production model. Each backchain builds progressively, and each recall cue identifies the actual meaning of its corresponding line.
+- `ykiMockId` explicitly selects a set in `content/yki-mocks.json`. It is reserved for an approved future mock lecture; none of Lectures 1–22 sets it.
 
 ## Lecture-owned route steps
 
@@ -70,7 +76,7 @@ To add a kind, add its data shape to the `LectureExtraStep` union in `lib/course
 
 ## The "Do the task" mission
 
-A lecture's speaking or writing task runs as one guided mission in four stages: **Plan** (the learner writes their own details into sentence frames and hears them read back), **Say it** (record, or rehearse with the live coach, then keep the words they said), **Check it** (the lecture's own `route.successChecks` as tick boxes, AI feedback, and the model answer, which unlocks only after a first attempt), and **Say it again** (the lecture's `route.transferPrompt` as the one change, then save). Timed and exam tasks keep the classic layout so their independent-attempt rules stay intact.
+A lecture's speaking or writing task runs as one guided mission in five stages: **Plan** (the learner writes their own details into sentence frames and hears them read back), **Say it** (record, or rehearse with the live coach, then keep the words they said), **Check it** (the lecture's own `route.successChecks` as tick boxes, AI feedback, and the model answer, which unlocks only after a first attempt), **Answer unexpected questions** (three from the six authored questions), and **Say it again** (the lecture's `route.transferPrompt` as the one change, then save). Timed and exam tasks keep the classic layout so their independent-attempt rules stay intact.
 
 The written message is required too (`route.requiredSkills: ["speaking", "writing"]`) and has its own three stages: **Write your message**, **Check it**, **Fix one thing, then save**. Make it YKI-style in `practice.writing`:
 
@@ -96,7 +102,7 @@ The learner speaks English but has not studied grammar, so words like *verb*, *s
 1. Read and verify that teacher lesson first. Do not begin from the Lecture 1 layout.
 2. Check `docs/character-mapping.md`. Reuse Alex, Elin, Henrik, or Maja when the role is natural; use an unnamed episodic role when continuity is unnecessary. Add a fifth recurring character only after the introduction gate is satisfied.
 3. Create the new numbered lecture JSON with its actual teaching content.
-4. Leave `presentation` absent until the content shows what the interface needs.
+4. For the active textbook phase, use Lecture 2’s presentation structure with the new lecture’s own content, stable route labels and teacher date.
 5. Use existing optional fields only when they fit the teaching purpose.
 6. If the lesson needs a genuinely new visual pattern, add a new template or hero variant in `course-types.ts`, give it an isolated renderer and `.lecture-template-*` CSS scope, and leave existing templates unchanged.
 7. Never add `lecture.number === X` presentation branches to shared components.
@@ -119,8 +125,23 @@ The learner speaks English but has not studied grammar, so words like *verb*, *s
 }
 ```
 
-This is a fragment to merge into a complete, validated lecture—not a complete lecture file. If Lesson 2 does not need an override, omit `presentation` entirely rather than copying Lecture 1.
+This is only a minimal API fragment, not the complete presentation required for an active textbook lecture. Use the full verified Lecture 2 shape when authoring textbook content.
 
 ## Stable progress boundary
 
 The six stored progress parts—`recall`, `teach`, `guided`, `practice`, `check`, and `assignment`—remain stable so saved work can be resumed safely. Their visible labels and teaching treatment may vary by lecture. Adding or removing stored progress parts is a data-migration decision, not a template decision.
+
+## Verification gate
+
+Run `npm run content:index`, `npm run check`, `npm run build`, restart the server,
+and `npm run audit:ui`. Install the audit browser with `npx playwright install chromium`.
+The audit checks 22 lectures against `scripts/fixtures/lecture-audit-plan.json` at
+both laptop and phone widths. This fixture records the independently mapped pages,
+dates and step counts; do not regenerate it from the lecture JSON to hide a mismatch.
+It visits every textbook stage, teaching beat, sort/match/question-gap activity and
+mission stage; screenshots and the JSON report go to `.audit/`. Progress writes are
+blocked and an empty learner fixture is used. Locked mission stages are inspected
+as previews; actual Azure requests and persistence checks are separate gates.
+
+Commit public textbook assets for every lecture. The clean `site/` build must not
+need a parent source directory. Page scans are evidence, not instructions.

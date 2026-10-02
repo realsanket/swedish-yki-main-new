@@ -27,8 +27,9 @@ each class lesson into an app lecture.
 
 **Current scope:** The full textbook phase, **Lectures 1-22**, is active across
 six chapters. It follows teacher Lessons 1-22 and textbook pages 4-55, then
-ends with the first argumentative text. Lectures 3-22 were completed on
-September 30, 2026 from `docs/lecture-build-plan.md`. Lecture 23 and later
+ends with the first argumentative text. The cloud build of Lectures 3-22 was not verified. Its repair on October 2, 2026
+follows `docs/lecture-build-plan.md`; the final gate and independent review are
+recorded in `docs/lecture-repair-audit.md`. Lecture 23 and later
 (the YKI-book phase) are not planned yet: do not build them until the owner asks.
 
 ---
@@ -92,8 +93,10 @@ site/                        the Next.js app (everything runnable)
   DEPLOY.md                  local (full) versus Vercel preview (limited)
 ```
 
-The old 60-lecture future course was deleted by the owner (September 30, 2026).
-It is still in git history (before commit `53aed43`) if ever needed.
+The old future-course archive is restored at `backup/future-course-2026-09-29/`.
+It was already absent from `origin/main` at the start of this repair; its last
+surviving revision before `53aed43` was restored. It is reference-only and does not
+activate any additional lecture.
 
 ---
 
@@ -110,11 +113,16 @@ npm run build            # production build (stop and restart `npm run dev` afte
                          # the build replaces the dev server's .next files)
 ```
 
-`content:index`, `check`, `build` and `dev` first run
-`scripts/sync-textbook-images.py`. It copies the canonical page scans from
-`docs/text-book-images/` into the public image paths referenced by lecture
-JSON. Those generated copies are gitignored: do not commit a second set of
-binary page images.
+All mapped textbook page images are committed in `site/public/images/source/`,
+including Lectures 1–2. Builds rooted at `site/` do not depend on `../docs` or an
+image-generation hook. Use the canonical scans in `docs/text-book-images/` when
+adding a page; verify the physical page and commit the corresponding public asset.
+
+`npm run audit:ui` runs Chromium against a production server (default port 3102).
+It checks all 22 lectures at 1440×900 and 390×844, including textbook stages,
+teaching beats and activities, and both mission strips. It uses an empty learner
+fixture and blocks progress writes, so it does not alter the owner's database.
+Use `AUDIT_BASE_URL` to select the server. Evidence is saved in ignored `.audit/`.
 
 - **Local** runs everything: saved progress (SQLite in `site/data/`), Azure
   voices, live coach, pronunciation scoring.
@@ -144,6 +152,12 @@ binary page images.
 
 ## 5. How a lecture is built (content model)
 
+Chapter story title, setting, summary, cast and optional artwork live in
+`site/content/modules.json` under each module’s `story`. Cast includes the people
+who actually speak in that chapter’s original dialogues, including one-scene roles.
+The active textbook lectures all use the `conversation-first` presentation from
+Lecture 2, with their own hero and teacher date.
+
 A lecture is one JSON file. Key fields (types in `site/lib/course-types.ts`;
 full rules in `site/docs/lecture-template.md`):
 
@@ -151,6 +165,7 @@ full rules in `site/docs/lecture-template.md`):
 |---|---|
 | `number`, `routeProfile`, `objectives`, `focusSkills`, `route` | Identity, route type (`standard`), mission (`route.expectedOutput`, `successChecks`, `transferPrompt`, `returnPrompt`) |
 | `grammarTerms` | Glossary ids; those words are underlined with plain-English notes |
+| `story` | Optional lecture art/object and scene cast; no numbered lookup in code. Missing art shows cast portraits. |
 | `presentation` | Visual options: template, route-step labels, opening (teacher note, dialogue), teaching options, hero |
 | `recall`, `guided`, `checkpoint` | Questions for steps 1, 4 and 6 |
 | `sections` | Teaching topics; each shows as beats: Understand, See the pattern, Hear it, activities, Try it |
@@ -305,9 +320,11 @@ the template, not one lecture at a time. Not yet fixed unless marked.
 
 ---
 
-## 9. Status (September 30, 2026)
+## 9. Status (October 2, 2026)
 
-**Done and on `main`:** Lectures 1-22 (the complete textbook phase) with textbook steps where mapped; grammar side notes;
+**Active scope:** Lectures 1–22 (the complete textbook phase). The October repair
+corrects cloud content and presentation; see `docs/lecture-repair-audit.md` for
+shipping status, exact checks and independent review. Features include textbook steps where mapped; grammar side notes;
 mobile layout; in-lecture navigation and topic picker; lecture-owned extra
 steps; dialogue audio fix; live coach on gpt-realtime (HD voice, speaks first,
 chat-style transcript, Azure Speech recognition); guided "Do the task" mission;
@@ -325,6 +342,12 @@ go into spaced review).
 **Tested by the owner:** pronunciation scoring from a real microphone (scores
 and coloured words came back). **Not yet waited for:** the day-later return
 card (logic tested).
+
+Story data now lives in content, with neutral fallbacks. Unnamed dialogue roles
+use a letter avatar and Henrik’s native Swedish voice. Teaching kinds are limited
+to `rule`, `scene` and `register`; the validator rejects invented kinds and malformed
+renderer fields. Archived YKI mock data lives in `content/yki-mocks.json` and is
+selected only by optional `ykiMockId`; no current lecture selects it.
 
 **Backlog, in priority order:**
 

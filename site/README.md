@@ -12,7 +12,7 @@ Source-to-lecture decisions are tracked in [`../docs/mapping.md`](../docs/mappin
 - `content/lectures/lecture-01.json` — the editable Lesson 1 content.
 - `content/lectures/lecture-02.json` — the editable Lesson 2 content.
 - `content/lectures/index.json` — the generated runtime index; currently contains Lectures 1 and 2.
-- `lib/story-world.ts` — the Chapter 1 story, cast, and artwork lookup.
+- `content/modules.json` and each lecture’s `story` — chapter stories and scene metadata; `lib/story-world.ts` supplies neutral lookups and the character registry.
 - `lib/character-voices.ts` — the bilingual Azure voice casting for Alex, Elin, Henrik, and Maja.
 - `lib/azure-capabilities.ts` — the shared public capability map used by Settings and future learning surfaces.
 - `lib/voice-live-context.mjs` — the server-only resolver that turns safe episode or module IDs into bounded Voice Live teaching context.

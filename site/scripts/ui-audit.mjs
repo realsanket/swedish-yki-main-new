@@ -83,9 +83,14 @@ async function inspect(page, label, lecture, errors) {
   assert.equal(errors.length,0,`${label}: ${errors.join('\n')}`);
 }
 async function capture(page, dir, name) {
-  await page.evaluate(() => scrollTo(0,0));
+  await page.evaluate(() => scrollTo({top:0,left:0,behavior:'instant'}));
+  await page.waitForFunction(() => scrollY===0);
+  await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+  const bounds=await page.locator('.lecture-workspace').boundingBox();
   await page.screenshot({ path:path.join(dir,`${name}.png`), fullPage:true, animations:'disabled' });
-  await page.locator('.lecture-workspace').screenshot({ path:path.join(dir,`${name}-lecture.png`), animations:'disabled' });
+  // Crop the full screenshot using these bounds for pixel comparison. Element
+  // screenshots scroll tall elements and can place the fixed app header over them.
+  await fs.writeFile(path.join(dir,`${name}-bounds.json`),JSON.stringify(bounds));
   await fs.writeFile(path.join(dir,`${name}.txt`),await page.locator('.lecture-workspace').innerText());
 }
 async function completeActivity(page, activity) {
