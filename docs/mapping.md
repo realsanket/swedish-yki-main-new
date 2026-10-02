@@ -631,3 +631,20 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
 - Swedish: all lines reviewed. Source `en bärbar … Elitebook serie`, bus `stationer`
   and stop names Glass/Rött hus are recorded with natural alternatives or context.
   No doubtful authored line identified.
+
+### Lecture 15 repair
+
+- Re-read Lesson 15 lines 1677–1833, Homework 15 and scans 42–43 (41 is a divider).
+- Added the 22 May hero, repaired tables/opening fields and made planner frames form
+  real sentences. Removed duplicate identical `sig` choices from the matching game.
+- Restored possessive + definite adjective + plain noun, and the missing `ens`
+  distinction. Added a plain-English clause note. Removed the textbook husband
+  example from the original checkpoint, using the core cast and a dog instead.
+- Elin now calls Maja’s sister: calling Maja’s lost phone, which is in the room,
+  could not reach her. Corrected recall wording and the false “double t in vårt” note.
+- Repaired source recall cues, owner translations and duplicate hunt rules that
+  assigned the wrong boy to later occurrences. Restored the source narrator transition.
+- Swedish: all lines reviewed. Source `känner mig dåligt` and `Våra dejtar` have correct
+  production alternatives. Teacher generalisation “all -skap nouns are ett” is not
+  used (en vänskap is a counterexample). No doubtful authored line identified.
+  Writing model fits 50–90 words.

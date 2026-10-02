@@ -23,33 +23,94 @@
     "agreement",
     "subject",
     "object",
-    "definite-form"
+    "definite-form",
+    "clause"
   ],
   "presentation": {
     "routeSteps": {
       "recall": {
-        "label": "Whose things?",
+        "label": "Hear the conversation",
         "description": "Hear Alex and Elin sort out the things left after a party."
       },
       "teach": {
-        "label": "Show ownership",
+        "label": "Build it step by step",
         "description": "Build possessives, reflexive forms and man from Swedish examples."
       },
       "guided": {
-        "label": "Choose the owner",
+        "label": "Try the phrases",
         "description": "Choose the form that shows both the owner and the owned thing."
       }
     },
     "opening": {
-      "teacherNote": "Start with the Swedish line. First ask: who owns it, and what is the thing? Then use the English note.",
+      "teacherNote": {
+        "title": "Who owns it?",
+        "body": "Start with the Swedish line. First ask: who owns it, and what is the thing? Then use the English note."
+      },
       "questionIntro": "Listen once for the owners. Listen again for min, mitt, mina, sin and hennes.",
       "dialogue": {
         "part": "recall",
         "title": "After the party",
         "eyebrow": "Elin and Alex sort a box of forgotten things",
         "instructions": "Listen without reading first. Who owns the scarf, the books and the phone?",
-        "startWithTextHidden": true
+        "initiallyOpen": false
       }
+    },
+    "template": "conversation-first",
+    "teaching": {
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the Lesson 15 word bank"
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 15",
+        "22 MAY 2026"
+      ],
+      "kicker": "WHO OWNS IT?",
+      "title": "Är den din?",
+      "lede": "Sort out the things left after a party. Match min, mitt and mina to the thing, then show whose own things you mean.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Min halsduk är blå. Böckerna är mina.",
+        "en": "My scarf is blue. The books are mine.",
+        "audioText": "Min halsduk är blå. Böckerna är mina."
+      },
+      "speakers": [
+        {
+          "name": "Elin",
+          "fi": "Vems röda halsduk är det här?"
+        },
+        {
+          "name": "Alex",
+          "fi": "Min halsduk är blå."
+        }
+      ],
+      "connector": "VEMS?",
+      "encounterLabel": "Elin and Alex identify forgotten things after a party",
+      "chunks": [
+        {
+          "label": "EN WORD",
+          "fi": "min lägenhet",
+          "en": "my apartment"
+        },
+        {
+          "label": "ETT WORD",
+          "fi": "mitt rum",
+          "en": "my room"
+        },
+        {
+          "label": "PLURAL",
+          "fi": "mina böcker",
+          "en": "my books"
+        },
+        {
+          "label": "OWN THING",
+          "fi": "Hon tar sin väska.",
+          "en": "She takes her own bag."
+        }
+      ]
     }
   },
   "sittingBreakAfter": "guided",
@@ -119,8 +180,8 @@
     },
     {
       "id": "sv-15-r6",
-      "en": "his own phone",
-      "fi": "sin egen telefon"
+      "en": "He takes his own phone.",
+      "fi": "Han tar sin egen telefon."
     },
     {
       "id": "sv-15-r7",
@@ -140,8 +201,8 @@
       {
         "label": "Your home",
         "before": "Jag bor i ",
-        "after": ". Det är min lägenhet.",
-        "placeholder": "Helsingfors"
+        "after": ".",
+        "placeholder": "en lägenhet i Helsingfors"
       },
       {
         "label": "One ett thing",
@@ -157,15 +218,15 @@
       },
       {
         "label": "Another owner",
-        "before": "Min vän har ",
-        "after": ". Hans/Hennes sak är fin.",
-        "placeholder": "en cykel"
+        "before": "",
+        "after": "",
+        "placeholder": "Elin har en cykel. Hennes cykel är grön."
       },
       {
         "label": "Own thing",
-        "before": "Han/Hon tar hand om ",
-        "after": ".",
-        "placeholder": "sin cykel"
+        "before": "",
+        "after": "",
+        "placeholder": "Hon tar hand om sin cykel."
       },
       {
         "label": "Opinion and reason",
@@ -212,6 +273,7 @@
             "Peter says that training has improved his body, mood and muscles.",
             "Andreas says training helps Peter's health and relationship, then asks about Nora.",
             "Peter says the problem is Andreas's own fault.",
+            "Set the yoga-class scene and name what they discuss.",
             "Nora says they never discussed their future or relationship.",
             "Maria has a plan involving Lena and their next date.",
             "Nora feels bad because of their family and children."
@@ -270,6 +332,22 @@
                 {
                   "fi": "fel",
                   "en": "fault; mistake"
+                }
+              ]
+            },
+            {
+              "speaker": "Berättare",
+              "voice": "Henrik",
+              "fi": "Nora och Maria är på yogapass. De diskuterar Andreas, hans familj, hans beteende och hans lögner.",
+              "en": "Nora and Maria are at a yoga class. They discuss Andreas, his family, his behaviour and his lies.",
+              "glossary": [
+                {
+                  "fi": "beteende",
+                  "en": "behaviour"
+                },
+                {
+                  "fi": "lögner",
+                  "en": "lies"
                 }
               ]
             },
@@ -349,6 +427,11 @@
               "source": "Jag känner mig dåligt.",
               "natural": "Jag mår dåligt. / Jag känner mig dålig.",
               "note": "The page has dåligt. In your own Swedish, say Jag mår dåligt, or use the adjective that describes jag: Jag känner mig dålig."
+            },
+            {
+              "source": "Våra dejtar",
+              "natural": "Våra dejter",
+              "note": "The standard plural of en dejt is dejter."
             }
           ],
           "backchain": {
@@ -422,11 +505,11 @@
             "hans = another male person's"
           ],
           "recallCues": [
-            "Nils and Jonas play with their own toys.",
-            "Nils worries because Jonas took his action figure.",
-            "Jonas cares for his own toys, not Nils's toys.",
-            "Nils cannot understand his brother.",
-            "Their desks are very different."
+            "Nils and Jonas play; explain why Nils worries.",
+            "Compare how Jonas treats his own toys and Nils’s toys.",
+            "Explain how Nils treats Jonas’s cars.",
+            "Contrast the two desks and how tidy the boys are.",
+            "Explain the failed attempt to tidy Jonas’s desk and the new rule."
           ],
           "lines": [
             {
@@ -449,7 +532,7 @@
               "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "Nils gillar inte när Jonas leker med hans leksaker istället för sina egna. Jonas tar bra hand om sina leksaker men inte om hans leksaker.",
-              "en": "Nils does not like it when Jonas plays with his toys instead of his own. Jonas takes good care of his own toys but not his toys.",
+              "en": "Nils dislikes Jonas playing with Nils’s toys instead of Jonas’s own. Jonas looks after his own toys, but not Nils’s.",
               "glossary": [
                 {
                   "fi": "istället för",
@@ -465,7 +548,7 @@
               "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "Nils kan inte förstå sin bror. Nils är försiktig när han tar hans bilar, lika försiktig som med sina figurer.",
-              "en": "Nils cannot understand his brother. Nils is careful when he takes his cars, as careful as with his own figures.",
+              "en": "Nils cannot understand his brother. Nils is careful with Jonas’s cars, just as careful as with his own figures.",
               "glossary": [
                 {
                   "fi": "försiktig",
@@ -497,7 +580,7 @@
               "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "En gång försökte Nils städa hans bord men Jonas blev mycket arg. Han gillar inte när någon annan flyttar hans saker. Efter detta städar Nils bara sitt eget skrivbord.",
-              "en": "Once Nils tried to clean his desk, but Jonas became very angry. He does not like someone else moving his things. After this, Nils cleans only his own desk.",
+              "en": "Once Nils tried to clean Jonas’s desk, but Jonas became very angry. Jonas dislikes someone else moving his things. After this, Nils cleans only his own desk.",
               "glossary": [
                 {
                   "fi": "någon annan",
@@ -534,9 +617,9 @@
           ],
           "naturalNotes": [
             {
-              "source": "sin / sitt / sina",
-              "natural": "Look back to the subject",
-              "note": "Ask who does the action. If the owner is that same person, use sin, sitt or sina."
+              "source": "sina leksaker",
+              "natural": "Nils och Jonas leker med sina leksaker.",
+              "note": "Sina points back to the two boys doing the playing."
             }
           ],
           "backchain": {
@@ -557,32 +640,22 @@
               {
                 "word": "sina",
                 "mark": "sina",
-                "rule": "Nils and Jonas play with their own toys."
-              },
-              {
-                "word": "hans",
-                "mark": "hans",
-                "rule": "Jonas took Nils's figure, not his own."
+                "rule": "Plural things belonging to the subject of this clause."
               },
               {
                 "word": "sin",
                 "mark": "sin",
-                "rule": "Jonas put it in Jonas's own car."
+                "rule": "An en-word belonging to the subject of this clause."
               },
               {
                 "word": "sitt",
                 "mark": "sitt",
-                "rule": "Nils has things on Nils's own desk."
+                "rule": "An ett-word belonging to the subject of this clause."
               },
               {
                 "word": "hans",
                 "mark": "hans",
-                "rule": "Nils tried to clean Jonas's desk."
-              },
-              {
-                "word": "sitt",
-                "mark": "sitt",
-                "rule": "Nils now cleans only Nils's own desk."
+                "rule": "Belongs to another male person, not the subject of this clause. Check whether Nils or Jonas does the action."
               }
             ]
           }
@@ -593,7 +666,7 @@
   "recall": [
     {
       "id": "sv-15-recall-1",
-      "prompt": "Which things in the box belong to Alex?",
+      "prompt": "Which things does Alex say belong to him?",
       "answers": [
         "The books and the blue scarf"
       ],
@@ -607,7 +680,7 @@
     },
     {
       "id": "sv-15-recall-2",
-      "prompt": "Why does Elin call Maja?",
+      "prompt": "Why does Elin call Maja’s sister?",
       "answers": [
         "The phone is Maja's"
       ],
@@ -617,7 +690,7 @@
         "Maja owns the red scarf"
       ],
       "hint": "Listen for hennes telefon.",
-      "explanation": "Elin says Det är hennes telefon and calls Maja."
+      "explanation": "Maja’s phone is here, so Elin contacts her sister to help return it."
     }
   ],
   "sections": [
@@ -625,7 +698,8 @@
       "title": "Min stol, mitt bord, mina böcker",
       "kind": "pattern",
       "body": [
-        "Min lägenhet. Mitt rum. Mina böcker. The Swedish example comes first: the owned thing chooses the ending. Use min/din with one en word, mitt/ditt with one ett word, and mina/dina with every plural. Vår and er follow the same three-way pattern. Hans, hennes and deras never change."
+        "Min lägenhet. Mitt rum. Mina böcker. The Swedish example comes first: the owned thing chooses the ending. Use min/din with one en word, mitt/ditt with one ett word, and mina/dina with every plural. Vår and er follow the same three-way pattern. Hans, hennes and deras never change.",
+        "Hans nya bil. Min nya jacka. After a possessive, the adjective uses its definite form, but the noun keeps its plain form: bil, not bilen."
       ],
       "examples": [
         {
@@ -645,12 +719,6 @@
         }
       ],
       "table": {
-        "headers": [
-          "Owner",
-          "en thing",
-          "ett thing",
-          "plural things"
-        ],
         "rows": [
           [
             "jag",
@@ -682,6 +750,12 @@
             "hans / hennes / deras bord",
             "hans / hennes / deras böcker"
           ]
+        ],
+        "headings": [
+          "Owner",
+          "en thing",
+          "ett thing",
+          "plural things"
         ]
       },
       "memoryTip": "Look right, not left. The noun after the possessive controls the form.",
@@ -696,37 +770,37 @@
             "fi": "___ lägenhet (jag)",
             "bucket": "en",
             "why": "en lägenhet → min lägenhet",
-            "en": "en lägenhet → min lägenhet"
+            "en": "my apartment"
           },
           {
             "fi": "___ rum (du)",
             "bucket": "ett",
             "why": "ett rum → ditt rum",
-            "en": "ett rum → ditt rum"
+            "en": "your room"
           },
           {
             "fi": "___ nycklar (vi)",
             "bucket": "plural",
             "why": "plural nycklar → våra nycklar",
-            "en": "plural nycklar → våra nycklar"
+            "en": "our keys"
           },
           {
             "fi": "___ hus (ni)",
             "bucket": "ett",
             "why": "ett hus → ert hus",
-            "en": "ett hus → ert hus"
+            "en": "your house (to a group)"
           },
           {
             "fi": "___ granne (jag)",
             "bucket": "en",
             "why": "en granne → min granne",
-            "en": "en granne → min granne"
+            "en": "my neighbour"
           },
           {
             "fi": "___ foton (du)",
             "bucket": "plural",
             "why": "plural foton → dina foton",
-            "en": "plural foton → dina foton"
+            "en": "your photos"
           }
         ],
         "buckets": [
@@ -769,11 +843,6 @@
         }
       ],
       "table": {
-        "headers": [
-          "Subject",
-          "Reflexive object",
-          "Example"
-        ],
         "rows": [
           [
             "jag",
@@ -805,6 +874,11 @@
             "sig",
             "De gifter sig."
           ]
+        ],
+        "headings": [
+          "Subject",
+          "Reflexive object",
+          "Example"
         ]
       },
       "memoryTip": "Say the pair as one chunk: jag–mig, du–dig, hon–sig, vi–oss, ni–er, de–sig.",
@@ -826,7 +900,7 @@
             "right": "dig"
           },
           {
-            "left": "hon",
+            "left": "han / hon / man / de",
             "right": "sig"
           },
           {
@@ -836,10 +910,6 @@
           {
             "left": "ni",
             "right": "er"
-          },
-          {
-            "left": "de",
-            "right": "sig"
           }
         ],
         "pattern": "The ending points back to the subject."
@@ -849,7 +919,7 @@
       "title": "Sin egen eller hans?",
       "kind": "contrast",
       "body": [
-        "Alex tar sin telefon. Alex tar hans telefon. Sin means the subject's own; hans means another man's. First find the subject of this clause. Then ask whether that same person owns the thing. Sin follows an en word, sitt an ett word and sina a plural."
+        "Alex tar sin telefon. Alex tar hans telefon. Sin means the subject's own; hans means another man's. First find the subject of this clause. Then ask whether that same person owns the thing. Use sin before an en-word, sitt before an ett-word and sina before a plural. A clause is one small unit with a subject and a verb; check the owner again in each clause."
       ],
       "examples": [
         {
@@ -874,10 +944,6 @@
         }
       ],
       "table": {
-        "headers": [
-          "Same as subject",
-          "Someone else"
-        ],
         "rows": [
           [
             "Hon älskar sin hund.",
@@ -891,6 +957,10 @@
             "De hittar sina nycklar.",
             "De hittar deras nycklar."
           ]
+        ],
+        "headings": [
+          "Same as subject",
+          "Someone else"
         ]
       },
       "memoryTip": "Subject first, owner second. Same person: sin. Different person: hans, hennes or deras.",
@@ -902,25 +972,25 @@
         "instructions": "Sort each sentence by who owns the thing.",
         "items": [
           {
-            "fi": "Anna ringer sina föräldrar.",
+            "fi": "Elin ringer sina föräldrar.",
             "bucket": "same",
-            "why": "Anna calls Anna's own parents.",
-            "en": "Anna calls Anna's own parents."
+            "why": "Elin calls Elin's own parents.",
+            "en": "Elin calls Elin's own parents."
           },
           {
-            "fi": "Anna ringer hennes föräldrar.",
+            "fi": "Elin ringer hennes föräldrar.",
             "bucket": "other",
-            "why": "Anna calls another woman's parents.",
-            "en": "Anna calls another woman's parents."
+            "why": "Elin calls another woman's parents.",
+            "en": "Elin calls another woman's parents."
           },
           {
-            "fi": "Jonas lägger boken på sitt bord.",
+            "fi": "Alex lägger boken på sitt bord.",
             "bucket": "same",
-            "why": "The table belongs to Jonas.",
-            "en": "The table belongs to Jonas."
+            "why": "The table belongs to Alex.",
+            "en": "The table belongs to Alex."
           },
           {
-            "fi": "Jonas lägger boken på hans bord.",
+            "fi": "Alex lägger boken på hans bord.",
             "bucket": "other",
             "why": "The table belongs to another man.",
             "en": "The table belongs to another man."
@@ -954,7 +1024,8 @@
       "title": "Man tar hand om sina saker",
       "kind": "use",
       "body": [
-        "Man brukar dricka kaffe i Finland. Man means people in general: one, you, we or people. It does not mean one named man. Its object form is en, and its own things are sin, sitt and sina."
+        "Man brukar dricka kaffe i Finland. Man means people in general: one, you, we or people. It does not mean one named man. Its object form is en, and its own things are sin, sitt and sina.",
+        "Man vill att ens vänner mår bra. Use ens when the thing belongs to people in general and sin cannot point to the subject of that small sentence: here vänner is the subject of mår. Compare Man hjälper sina vänner, where man is the subject of hjälper."
       ],
       "examples": [
         {
@@ -971,6 +1042,11 @@
           "fi": "Hur stavar man ditt namn?",
           "en": "How does one spell your name?",
           "note": "A common general question."
+        },
+        {
+          "fi": "Det hjälper en att vila. Man vill att ens vänner mår bra.",
+          "en": "Resting helps a person. People want their friends to be well.",
+          "note": "En is the object form; ens can show ownership."
         }
       ],
       "memoryTip": "If English could say people in general, Swedish can often use man.",
@@ -1126,17 +1202,17 @@
     },
     {
       "id": "sv-15-c3",
-      "prompt": "Which sentence means that Nora loves her own husband?",
+      "prompt": "Which sentence means that Elin loves her own dog?",
       "answers": [
-        "Nora älskar sin man."
+        "Elin älskar sin hund."
       ],
       "options": [
-        "Nora älskar sin man.",
-        "Nora älskar hennes man.",
-        "Nora älskar hans man."
+        "Elin älskar sin hund.",
+        "Elin älskar hennes hund.",
+        "Elin älskar hans hund."
       ],
-      "hint": "The subject and owner are Nora.",
-      "explanation": "Sin points back to Nora. Hennes would point to another woman."
+      "hint": "The subject and owner are Elin.",
+      "explanation": "Sin points back to Elin. Hennes would point to another woman."
     },
     {
       "id": "sv-15-c4",
@@ -1157,7 +1233,7 @@
     "The owned thing chooses the ending: min stol, mitt bord, mina böcker.",
     "Hans, hennes and deras never change. Sin, sitt and sina point back to the subject of the same clause.",
     "Reflexive verbs point back to the subject: jag känner mig, du känner dig, hon känner sig.",
-    "Man means people in general; its object is en and its possessive is sin/sitt/sina."
+    "Man means people in general. Use en as object, sin/sitt/sina for its own things in the same clause, and ens when that link is absent."
   ],
   "dialogue": [
     {
@@ -1202,8 +1278,8 @@
     },
     {
       "speaker": "Elin",
-      "fi": "Jag ringer henne. Man blir orolig när man inte hittar sin telefon.",
-      "en": "I'll call her. People get worried when they cannot find their phone."
+      "fi": "Jag ringer hennes syster. Man blir orolig när man inte hittar sin telefon.",
+      "en": "I’ll call her sister. People get worried when they cannot find their phone."
     },
     {
       "speaker": "Alex",
@@ -1468,7 +1544,7 @@
     ],
     "pronunciation": {
       "text": "Min lägenhet, mitt rum, mina böcker. Din jacka, ditt paraply, dina skor. Sin telefon, sitt bord, sina saker. Jag känner mig lugn. Hon oroar sig.",
-      "tip": "Keep the short possessive attached to the noun. Contrast min–mitt–mina and sin–sitt–sina; make the double t in mitt, ditt, sitt and vårt crisp."
+      "tip": "Keep the short possessive attached to the noun. Contrast min–mitt–mina and sin–sitt–sina; hear the short vowel before the double t in mitt, ditt and sitt."
     },
     "reading_passage": {
       "text": "Hej! Jag tror att du hittade min ryggsäck i tvättstugan. Den är mörkblå och mitt namn står i en liten ficka. Mina nycklar och min svenska bok ligger i ryggsäcken. Jag såg den senast bredvid tvättmaskinen i går kväll. Kan du ringa mig? Jag hämtar den gärna efter jobbet. Tack för att du tog hand om mina saker! Hälsningar, Alex",
@@ -1553,5 +1629,8 @@
       "speaking",
       "writing"
     ]
+  },
+  "story": {
+    "object": "a box of forgotten things"
   }
 }
