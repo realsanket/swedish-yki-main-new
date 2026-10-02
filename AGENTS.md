@@ -75,6 +75,8 @@ docs/
   mapping.md                 source-to-lecture decisions and change log (read first
                              for any curriculum work)
   lecture-build-plan.md      step-by-step plan for building Lectures 3-22
+  image-prompts/             prompts for chapter and lecture pictures the owner will
+                             generate (style, cast, file names)
   text-book-images/          textbook pages (Lesson 1 = page 4, Lesson 2 = pages 5-6)
   excercise/                 Classroom homework exports
 backup/                      originals of migrated sources only (backup/README.md)
