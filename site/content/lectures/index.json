@@ -24723,7 +24723,9 @@
       "infinitive",
       "modal-verb",
       "adverb",
-      "future"
+      "future",
+      "past-tense",
+      "preposition"
     ],
     "presentation": {
       "template": "conversation-first",
@@ -24794,6 +24796,22 @@
           "Four ways to the future",
           "Tycker, tror or tänker"
         ]
+      },
+      "routeSteps": {
+        "recall": {
+          "label": "Hear the conversation",
+          "description": "Listen for summer plans and Maja’s prediction about her exam."
+        },
+        "teach": {
+          "label": "Build it step by step",
+          "description": "Choose four future forms and distinguish opinions, beliefs and intentions."
+        }
+      },
+      "teaching": {
+        "wordBank": {
+          "mode": "collapsed",
+          "title": "Open the Lesson 16 word bank"
+        }
       }
     },
     "sittingBreakAfter": "guided",
@@ -24959,8 +24977,12 @@
                 "en": "I have a plan for next year. First I will study Swedish so that I get good grades and pass the test. Then I will celebrate my results with my friends. We will go out and eat good food. After this summer begins and I will go on holiday!",
                 "glossary": [
                   {
-                    "fi": "Jag",
-                    "en": "I"
+                    "fi": "betyg",
+                    "en": "grades"
+                  },
+                  {
+                    "fi": "fira",
+                    "en": "celebrate"
                   }
                 ]
               },
@@ -24971,8 +24993,12 @@
                 "en": "What will happen next year? I am unsure. Next year I turn 30. Perhaps I will make new friends or change jobs? I am planning a trip to the Maldives. It will be fun, I hope.",
                 "glossary": [
                   {
-                    "fi": "Vad",
-                    "en": "What"
+                    "fi": "osäker",
+                    "en": "unsure"
+                  },
+                  {
+                    "fi": "skaffa nya vänner",
+                    "en": "make new friends"
                   }
                 ]
               },
@@ -24983,67 +25009,79 @@
                 "en": "Next year I do not intend to sit at home. I think it would be nice if I got a new hobby. Next year is my year!",
                 "glossary": [
                   {
-                    "fi": "Nästa",
-                    "en": "Next"
+                    "fi": "en ny hobby",
+                    "en": "a new hobby"
                   }
                 ]
               }
             ],
             "listenQuestions": [
               {
-                "prompt": "What is the text mainly about?",
+                "prompt": "What does the first speaker plan to study?",
                 "options": [
-                  "Plans, predictions and thoughts",
-                  "A complaint",
-                  "Directions"
+                  "Swedish",
+                  "Journalism",
+                  "Photography"
                 ],
                 "answer": 0,
-                "explanation": "The speakers describe the future or what someone thinks."
+                "explanation": "Först ska jag plugga svenska."
               },
               {
-                "prompt": "Which language is central?",
+                "prompt": "Where does the second speaker plan a trip?",
                 "options": [
-                  "Future and thinking verbs",
-                  "Only past tense",
-                  "Only commands"
+                  "The Maldives",
+                  "Finland",
+                  "Norway"
                 ],
                 "answer": 0,
-                "explanation": "Listen for ska, kommer att, tänker, tycker and tror."
+                "explanation": "Jag planerar en resa till Maldiverna."
               }
             ],
             "naturalNotes": [
               {
-                "source": "ska",
-                "produce": "ska",
-                "note": "Keep this as a complete chunk and listen for the stressed verb."
+                "source": "Jag tänker det skulle bli fint om jag skaffade mig en ny hobby.",
+                "natural": "Jag vill prova en ny hobby.",
+                "note": "The source sentence is awkward; ask your teacher about its wording. This simpler model expresses a wish to try a hobby, without copying that structure."
               }
             ],
             "backchain": {
               "line": 0,
               "chunks": [
-                "Vi ska gå ut och äta god mat.",
-                "Jag har en plan för nästa år. Först ska jag plugga svenska så att jag får bra betyg och klarar testet. Sedan ska jag fira mina resultat med mina vänner. Vi ska gå ut och äta god mat. Efter detta börjar sommaren och jag ska åka på semester!"
+                "på semester",
+                "åka på semester",
+                "jag ska åka på semester"
               ]
             },
             "hunt": {
               "label": "Verb hunt",
-              "instructions": "Find the marked future or thinking verbs.",
-              "items": [
+              "title": "Find the verbs that show the speaker’s meaning",
+              "instructions": "Tap a marked verb and say whether it gives a plan, opinion or belief.",
+              "missHint": "Look for the verbs in the focus list and their forms.",
+              "spots": [
                 {
-                  "fi": "ska",
-                  "rule": "Decide what meaning this verb adds."
+                  "word": "ska",
+                  "mark": "ska",
+                  "rule": "A decided plan, followed by an infinitive."
                 },
                 {
-                  "fi": "kommer att",
-                  "rule": "Decide what meaning this verb adds."
+                  "word": "kommer",
+                  "mark": "kommer",
+                  "rule": "Kommer att introduces a prediction."
                 },
                 {
-                  "fi": "tänker",
-                  "rule": "Decide what meaning this verb adds."
+                  "word": "tänker",
+                  "mark": "tänker",
+                  "rule": "Tänker + infinitive describes an intention."
                 },
                 {
-                  "fi": "presens",
-                  "rule": "Decide what meaning this verb adds."
+                  "word": "börjar",
+                  "mark": "börjar",
+                  "rule": "Present tense can refer to a future event."
+                },
+                {
+                  "word": "fyller",
+                  "mark": "fyller",
+                  "rule": "Present tense with nästa år gives a future fact."
                 }
               ]
             }
@@ -25077,8 +25115,12 @@
                 "en": "Sara plays football. She thinks it is exciting, but her friends say it is better to take a dance class. Sara does not know what a dance class is like, but she believes it must also be interesting.",
                 "glossary": [
                   {
-                    "fi": "Sara",
-                    "en": "Sara"
+                    "fi": "tycker",
+                    "en": "thinks; gives an opinion"
+                  },
+                  {
+                    "fi": "tror",
+                    "en": "believes; guesses"
                   }
                 ]
               },
@@ -25089,8 +25131,16 @@
                 "en": "Do not believe everything they say. I had the same experience when I was a teenager and played hockey, said Mum. I met your dad at hockey. Therefore I think your friends are jealous. They also want to become friends with the boys.",
                 "glossary": [
                   {
-                    "fi": "Tro",
-                    "en": "Do"
+                    "fi": "Tro inte på allt",
+                    "en": "Do not believe everything"
+                  },
+                  {
+                    "fi": "erfarenhet",
+                    "en": "experience"
+                  },
+                  {
+                    "fi": "svartsjuka",
+                    "en": "jealous"
                   }
                 ]
               },
@@ -25101,63 +25151,78 @@
                 "en": "Sara does not believe it. She thinks Mum is a little subjective, but she cannot be sure. Mum is usually right, but Sara cannot stop thinking about it.",
                 "glossary": [
                   {
-                    "fi": "Sara",
-                    "en": "Sara"
+                    "fi": "har oftast rätt",
+                    "en": "is usually right"
+                  },
+                  {
+                    "fi": "tänka på",
+                    "en": "think about"
                   }
                 ]
               }
             ],
             "listenQuestions": [
               {
-                "prompt": "What is the text mainly about?",
+                "prompt": "Which activity has Sara already tried?",
                 "options": [
-                  "Plans, predictions and thoughts",
-                  "A complaint",
-                  "Directions"
+                  "Football",
+                  "A dance class",
+                  "Hockey"
                 ],
                 "answer": 0,
-                "explanation": "The speakers describe the future or what someone thinks."
+                "explanation": "Sara tränar fotboll."
               },
               {
-                "prompt": "Which language is central?",
+                "prompt": "How certain is Sara about her mother’s explanation?",
                 "options": [
-                  "Future and thinking verbs",
-                  "Only past tense",
-                  "Only commands"
+                  "She is not sure",
+                  "She fully agrees",
+                  "She has proof it is wrong"
                 ],
                 "answer": 0,
-                "explanation": "Listen for ska, kommer att, tänker, tycker and tror."
+                "explanation": "Hon kan inte vara säker."
               }
             ],
             "naturalNotes": [
               {
-                "source": "tycker",
-                "produce": "tycker",
-                "note": "Keep this as a complete chunk and listen for the stressed verb."
+                "source": "Tror du på mig?",
+                "natural": "Jag tror på dig.",
+                "note": "Tro på someone means believe them. Tro att introduces what you believe: Jag tror att det är sant."
               }
             ],
             "backchain": {
-              "line": 0,
+              "line": 2,
               "chunks": [
-                "Sara vet inte hur en danskurs ser ut men hon tror att det också måste vara intressant.",
-                "Sara tränar fotboll. Hon tycker att det är spännande men hennes vänner säger att det är bättre att gå en danskurs. Sara vet inte hur en danskurs ser ut men hon tror att det också måste vara intressant."
+                "tänka på det",
+                "sluta tänka på det",
+                "Sara kan inte sluta tänka på det."
               ]
             },
             "hunt": {
               "label": "Verb hunt",
-              "instructions": "Find the marked future or thinking verbs.",
-              "items": [
+              "title": "Find the verbs that show the speaker’s meaning",
+              "instructions": "Tap a marked verb and say whether it gives a plan, opinion or belief.",
+              "missHint": "Look for the verbs in the focus list and their forms.",
+              "spots": [
                 {
-                  "fi": "tycker",
-                  "rule": "Decide what meaning this verb adds."
+                  "word": "tycker",
+                  "mark": "tycker",
+                  "rule": "An opinion or evaluation."
                 },
                 {
-                  "fi": "tror",
-                  "rule": "Decide what meaning this verb adds."
+                  "word": "tror",
+                  "mark": "tror",
+                  "rule": "A belief or uncertain idea."
                 },
                 {
-                  "fi": "tänker",
-                  "rule": "Decide what meaning this verb adds."
+                  "word": "Tro",
+                  "mark": "Tro",
+                  "rule": "Command form of tror: believe."
+                },
+                {
+                  "word": "tänka",
+                  "mark": "tänka",
+                  "rule": "Tänka på means think about something."
                 }
               ]
             }
@@ -25184,15 +25249,15 @@
         "id": "sv-16-r2",
         "prompt": "What does Maja predict?",
         "answers": [
-          "The summer will be warm"
+          "She will get a good grade"
         ],
         "options": [
-          "The summer will be warm",
+          "She will get a good grade",
           "The class is cancelled",
           "Alex will fail"
         ],
         "hint": "Listen for kommer att.",
-        "explanation": "Maja predicts warm weather."
+        "explanation": "Maja predicts that she will get a good grade on the test."
       }
     ],
     "sections": [
@@ -25202,7 +25267,8 @@
         "body": [
           "Vi ses på måndag. A present-tense verb plus a future time word often marks a schedule or known fact. The time word does the future work.",
           "Jag ska resa. Use ska plus the infinitive for a decision or plan you control. Jag tänker resa presents an intention you have in mind.",
-          "Det kommer att regna. Use kommer att plus the infinitive for a prediction or development outside your control. English “will” does not tell you which Swedish form to choose; meaning does."
+          "Det kommer att regna. Use kommer att plus the infinitive for a prediction or development outside your control. English “will” does not tell you which Swedish form to choose; meaning does.",
+          "These are the teacher’s useful first choices, not a rule that makes every other form impossible. A speaker can present the same event as a plan, an arrangement or a prediction."
         ],
         "examples": [
           {
@@ -25319,7 +25385,8 @@
         "body": [
           "Jag tycker att … introduces an opinion or evaluation, often based on experience: Jag tycker att filmen är bra. Ask Vad tycker du om filmen?",
           "Jag tror att … marks a belief, guess, or uncertain fact: Jag tror att tåget är sent. Tror du på mig? means “Do you believe me?”",
-          "Jag tänker resa uses tänker plus an infinitive for an intention. Jag tänker på resan uses tänker på plus a noun for something in your thoughts. Keep the small word på when that is the meaning."
+          "Jag tänker resa uses tänker plus an infinitive for an intention. Jag tänker på resan uses tänker på plus a noun for something in your thoughts. Keep the small word på when that is the meaning.",
+          "Jag tyckte att filmen var bra. Jag trodde att tåget var sent. Jag tänkte på min familj. The past forms are tyckte, trodde and tänkte; the opinion/belief/thought distinction stays the same."
         ],
         "examples": [
           {
@@ -25333,8 +25400,8 @@
             "note": "A belief or guess."
           },
           {
-            "fi": "Jag tänker sova tidigt.",
-            "en": "I intend to sleep early.",
+            "fi": "Jag tänker gå och lägga mig tidigt.",
+            "en": "I intend to go to bed early.",
             "note": "Tänker plus infinitive: a plan."
           },
           {
@@ -25394,13 +25461,37 @@
             }
           ],
           "summary": "Do not translate all three as the same English “think”; choose by meaning."
+        },
+        "table": {
+          "headings": [
+            "Now",
+            "Past",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "tycker",
+              "tyckte",
+              "opinion"
+            ],
+            [
+              "tror",
+              "trodde",
+              "belief or guess"
+            ],
+            [
+              "tänker",
+              "tänkte",
+              "thought or intention"
+            ]
+          ]
         }
       }
     ],
     "guided": [
       {
         "id": "sv-16-g1",
-        "prompt": "The forecast says rain: Det ___ regna imorgon.",
+        "prompt": "Use the prediction pattern from this lesson: Det ___ regna imorgon.",
         "answers": [
           "kommer att"
         ],
@@ -25470,7 +25561,7 @@
       },
       {
         "id": "sv-16-g6",
-        "prompt": "An uncertain guess: Jag ___ att Sara kommer snart.",
+        "prompt": "An uncertain guess: Jag ___ att Elin kommer snart.",
         "answers": [
           "tror"
         ],
@@ -25495,6 +25586,15 @@
         ],
         "hint": "This meaning needs a preposition.",
         "explanation": "Tänker på means think about."
+      },
+      {
+        "id": "sv-16-g8",
+        "prompt": "Complete: När jag var liten ___ jag att tomten fanns. (I believed)",
+        "answers": [
+          "trodde"
+        ],
+        "hint": "An old belief takes the past of tror.",
+        "explanation": "Jag trodde att tomten fanns. Tyckte would describe an opinion instead."
       }
     ],
     "checkpoint": [
@@ -25584,13 +25684,13 @@
       },
       {
         "speaker": "Maja",
-        "fi": "Jag tror att sommaren kommer att bli varm.",
-        "en": "I think the summer will be warm."
+        "fi": "Jag tror att jag kommer att få ett bra betyg på provet.",
+        "en": "I think I will get a good grade on the test."
       },
       {
         "speaker": "Alex",
-        "fi": "Det hoppas jag. Jag tycker att Finland är vackrast på sommaren.",
-        "en": "I hope so. I think Finland is most beautiful in summer."
+        "fi": "Det hoppas jag också! Och jag tycker att Finland är vackrast på sommaren.",
+        "en": "I hope so too! And I think Finland is most beautiful in summer."
       },
       {
         "speaker": "Elin",
@@ -25707,10 +25807,10 @@
         },
         {
           "id": "sv-16-word-12",
-          "fi": "kontrollera",
-          "en": "control",
-          "example": "Jag kan kontrollera mitt val.",
-          "translation": "I can control my choice.",
+          "fi": "påverka",
+          "en": "influence; affect",
+          "example": "Jag kan inte påverka vädret.",
+          "translation": "I cannot influence the weather.",
           "level": "A2"
         },
         {
@@ -25881,8 +25981,8 @@
         "explanation": "På hösten ska jag söka ett nytt jobb."
       },
       "listening": {
-        "text": "Nästa år blir annorlunda för Maja. I februari börjar hon en ny kurs på universitetet. Hon ska läsa på kvällarna och arbeta på dagarna. Hon tänker cykla till arbetet när vädret är bra. Hon tror att våren kommer att bli stressig, men hon tycker att ämnet är mycket intressant. I juni ska hon ta ett viktigt prov. Efter provet tänker hon och hennes syster resa till Sverige. Färjan går från Helsingfors på fredagskvällen. De ska vara i Stockholm i fyra dagar och träffa en gammal vän. Maja tror att de kommer att ha roligt, även om det kanske regnar. Hon tycker att Stockholm är en vacker stad eftersom det finns vatten och gamla hus överallt. Efter resan börjar hennes semester. Då tänker hon sova länge, läsa romaner och bada i havet. Hon ska inte kontrollera sin jobbmejl varje dag. Hon tror att vilan kommer att ge henne ny energi inför hösten.",
-        "question": "What does Maja predict about spring?",
+        "text": "Nästa år blir annorlunda för Elin. I februari börjar hon en ny kurs på universitetet. Hon ska läsa på kvällarna och arbeta på dagarna. Hon tänker cykla till arbetet när vädret är bra. Hon tror att våren kommer att bli stressig, men hon tycker att ämnet är mycket intressant. I juni ska hon ta ett viktigt prov. Efter provet tänker hon och hennes syster resa till Sverige. Färjan går från Helsingfors på fredagskvällen. De ska vara i Stockholm i fyra dagar och träffa en gammal vän. Elin tror att de kommer att ha roligt, även om det kanske regnar. Hon tycker att Stockholm är en vacker stad eftersom det finns vatten och gamla hus överallt. Efter resan börjar hennes semester. Då tänker hon sova länge, läsa romaner och bada i havet. Hon ska inte kontrollera sin jobbmejl varje dag. Hon tror att vilan kommer att ge henne ny energi inför hösten.",
+        "question": "What does Elin predict about spring?",
         "options": [
           "It will be stressful",
           "It will be free",
@@ -25931,6 +26031,9 @@
         "speaking",
         "writing"
       ]
+    },
+    "story": {
+      "object": "next year’s plans"
     }
   },
   {

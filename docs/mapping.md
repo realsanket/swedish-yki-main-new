@@ -648,3 +648,19 @@ is checked against teacher boundaries, the build plan, and Lecture 2 at `8f0effd
   production alternatives. Teacher generalisation “all -skap nouns are ett” is not
   used (en vänskap is a counterexample). No doubtful authored line identified.
   Writing model fits 50–90 words.
+
+### Lecture 16 repair
+
+- Re-read Lesson 16 lines 1834–1962, Homework 16/17 and scans 44–45.
+- Checked every existing hero field: the date, title, speakers, audio and chunks fit
+  this lecture. Added missing route labels and the collapsed word bank.
+- Maja now predicts her exam result as planned; an adult work/university listening
+  profile uses Elin rather than silently turning Maja into a full-time adult worker.
+- Added tyckte/trodde/tänkte and a typed past-belief item required by the homework.
+  Qualified future-form guidance; replaced unnatural `sova tidigt` and the misleading
+  `kontrollera mitt val` example. Repaired two hunts, natural-note fields, copied
+  gist questions, literal-word glosses and non-building backchains.
+- Swedish: all lines reviewed. Page 44’s `Jag tänker det skulle bli fint …` remains
+  explicitly doubtful and source-only, with a simpler wish model. Teacher `låna dig
+  min bil` should be `låna ut min bil till dig`; it is not used as a model.
+  Writing model fits 60–100 words.
