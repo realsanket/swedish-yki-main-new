@@ -74,7 +74,7 @@ export default function MatchActivity({ activity }: { activity: MatchActivityDat
       </div>
       <p className={styles.matchStatus} aria-live="polite">
         {miss
-          ? "Not that pair. Look at the start of the word and try again."
+          ? "Not that pair. Try again."
           : complete
             ? "All pairs matched."
             : `${matched.length} of ${activity.pairs.length} matched. Choose one item on each side.`}
@@ -89,6 +89,19 @@ export default function MatchActivity({ activity }: { activity: MatchActivityDat
               <AudioButton text={sentenceFor(index) ?? ""} label={`Hear: ${sentenceFor(index)}`} className="icon-button" />
             </div>
           ))}
+        </div>
+      )}
+      {matched.length > 0 && !activity.sentence && activity.pairs.some((pair) => pair.note) && (
+        <div className={styles.sayList}>
+          <b>Why each pair fits</b>
+          {matched.map((index) =>
+            activity.pairs[index].note ? (
+              <div key={index}>
+                <p>{activity.pairs[index].left} → {activity.pairs[index].right}</p>
+                <small>{activity.pairs[index].note}</small>
+              </div>
+            ) : null,
+          )}
         </div>
       )}
       {complete && (

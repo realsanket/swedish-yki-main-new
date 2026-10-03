@@ -3,9 +3,9 @@
   "routeProfile": "standard",
   "objectives": [
     "Use the definite plural for specific things and people.",
-    "Choose object pronouns such as mig, dig, honom, henne and dem.",
-    "Give a calendar date with an ordinal number.",
-    "Invite someone to the cinema and agree on a date and time."
+    "Choose the object pronoun (mig, dig, honom, henne, oss, er, dem) by its role, not its place in the sentence.",
+    "Say and read dates: den + ordinal + month, and Finnish short dates such as 24.5.",
+    "Invite someone, or say no kindly and suggest another day."
   ],
   "focusSkills": [
     "speaking",
@@ -22,19 +22,22 @@
     "object-pronoun",
     "ordinal-number",
     "subject",
-    "preposition"
+    "preposition",
+    "verb",
+    "verb-second",
+    "yes-no-question"
   ],
   "presentation": {
     "opening": {
       "teacherNote": {
         "title": "Invite someone and agree a date",
-        "body": "One cinema plan joins the four ideas of Lesson 11: “the” in plural (biljetterna), words for me, you, him and her (mig, dig, henne), dates (den tjugofjärde maj) and a kind no with a new suggestion. Listen first, then notice who acts and who receives the action."
+        "body": "Lesson 11 in one cinema plan: “the” in plural (biljetterna), me, you, him and her (mig, dig, henne), dates (den tjugofjärde maj) and a kind no with a new idea. As you listen, notice who does each action and who receives it."
       },
       "dialogue": {
         "part": "recall",
         "title": "A cinema invitation",
         "eyebrow": "Maja, Elin and Alex",
-        "instructions": "Listen for the date, Elin’s polite no and the new day she suggests.",
+        "instructions": "Before you listen, guess: will Elin say yes? Then listen for the date, Elin’s answer and the new day she suggests.",
         "initiallyOpen": false
       },
       "questionIntro": "Use the story you just heard. Answer both checks from its meaning."
@@ -558,8 +561,8 @@
           "naturalNotes": [
             {
               "source": "dem (written)",
-              "natural": "dem, usually pronounced dom",
-              "note": "Write dem as the object form. In ordinary speech, both de and dem usually sound like dom."
+              "natural": "dem, often said dom",
+              "note": "Write dem for the object form. In Sweden de and dem both usually sound like dom, as the app’s voices say them. In Finland many people still say de (often like di) and dem differently."
             }
           ],
           "backchain": {
@@ -627,8 +630,9 @@
             "height": 72
           },
           "focus": [
-            "1:a första · 2:a andra",
-            "3:e tredje and all the rest take :e",
+            "1:a första",
+            "2:a andra",
+            "3:e tredje",
             "21:a tjugoförsta"
           ],
           "recallCues": [
@@ -703,12 +707,17 @@
             {
               "source": "1:a, 2:a, 3:e, 24:e",
               "natural": "den första, den andra, den tredje, den tjugofjärde",
-              "note": "Write :a after 1, 2, 21, 22 and 31 because första and andra end in -a. Every other number takes :e."
+              "note": "Write :a after 1, 2, 21, 22 and 31, because första and andra end in -a. All others take :e. Letters often write just den 24 maj."
             },
             {
               "source": "21:a – tjugoförsta",
               "natural": "den tjugoförsta maj",
               "note": "From 21 to 31, join the tens and the order word: tjugo + första, trettio + första."
+            },
+            {
+              "source": "första, fjärde",
+              "natural": "för-sta, fjär-de (Finland)",
+              "note": "The app’s Sweden-Swedish voices melt r into the next sound (första sounds like “fösh-ta”). In Finland the r is usually said on its own."
             }
           ],
           "backchain": {
@@ -746,9 +755,14 @@
                 "rule": "4th, from fyra. The vowel changes: fyr → fjär."
               },
               {
+                "word": "femte",
+                "mark": "femte",
+                "rule": "5th, from fem: add -te, not -nde. Written 5:e."
+              },
+              {
                 "word": "sjätte",
                 "mark": "sjätte",
-                "rule": "6th, from sex. Said with the sj-sound."
+                "rule": "6th, from sex. Said with the sj-sound (in Finland often close to English sh)."
               },
               {
                 "word": "åttonde",
@@ -777,16 +791,17 @@
       "title": "The specific things and people",
       "kind": "rule",
       "body": [
-        "Swedish puts “the” at the end of the noun: bilen (the car), bilarna (the cars). English puts the in front, and Hindi and Marathi have no word for it, so this ending is easy to forget.",
-        "To make “the” in plural, look at the last letter of the plural. It ends in -r: add -na (bilar → bilarna). It ends in -n: add -a (möten → mötena). It has no ending: add -en (barn → barnen, jobb → jobben).",
-        "One exception: words for people in -are drop the last e and add -na: en lärare → lärare → lärarna.",
-        "Use the “the” form for specific ones. Många pojkar gillar bilar is about boys in general. Pojkarna som jag känner are the boys I know. After båda (both), use it too: båda bilarna."
+        "Swedish puts “the” on the end: bilen (the car), bilarna (the cars). Hindi and Marathi have no “the”, so this ending is easy to forget.",
+        "Start from the plural (Lecture 7) and look at its last letter: -r → add -na (bilarna), -n → add -a (mötena), no ending → add -en (barnen).",
+        "Exception: people words in -are drop the e and add -na: lärare → lärarna.",
+        "Use it for specific ones: Pojkarna som jag känner (the boys I know). For things in general, no ending: Många pojkar gillar bilar. Båda (both) takes it: båda bilarna.",
+        "Typical mistake: -arna on every word. It is bananerna, because the plural is bananer."
       ],
       "examples": [
         {
-          "fi": "Var är nycklarna?",
-          "en": "Where are the keys?",
-          "note": "nycklar ends in -r: add -na."
+          "fi": "Mötena är långa, men jobben är roliga.",
+          "en": "The meetings are long, but the jobs are fun.",
+          "note": "möten + a; jobb + en"
         },
         {
           "fi": "Jag köpte en bil. Bilen är tysk. Nu har jag två bilar. Båda bilarna är tyska.",
@@ -799,18 +814,13 @@
           "note": "General first, then specific. Vår = our."
         },
         {
-          "fi": "Mötena är långa, men jobben är roliga.",
-          "en": "The meetings are long, but the jobs are fun.",
-          "note": "möten + a; jobb + en"
-        },
-        {
           "fi": "Jag känner lärarna, men jag vet inte vad de heter.",
           "en": "I know the teachers, but I do not know their names.",
           "note": "känner = know a person; vet = know a fact"
         }
       ],
       "memoryTip": "Look at the plural’s last letter: -r → -na, -n → -a, nothing → -en.",
-      "tryIt": "Say “the tickets, the apples, the children”: biljetterna, äpplena, barnen.",
+      "tryIt": "Say “the tickets, the apples, the children, the bananas”: biljetterna, äpplena, barnen, bananerna.",
       "activity": {
         "type": "sort",
         "label": "Choose the ending",
@@ -828,6 +838,12 @@
             "en": "tickets",
             "bucket": "na",
             "why": "Ends in -r: biljetter + na = biljetterna."
+          },
+          {
+            "fi": "bananer",
+            "en": "bananas",
+            "bucket": "na",
+            "why": "Ends in -r: bananerna, not bananarna."
           },
           {
             "fi": "nycklar",
@@ -883,7 +899,7 @@
             "hint": "the plural has no ending"
           }
         ],
-        "summary": "Say each “the” form aloud: veckorna, biljetterna, nycklarna, mötena, äpplena, barnen, jobben, lärarna."
+        "summary": "Say each “the” form aloud: veckorna, biljetterna, bananerna, nycklarna, mötena, äpplena, barnen, jobben, lärarna."
       },
       "table": {
         "headings": [
@@ -940,11 +956,12 @@
       "title": "Who receives the action?",
       "kind": "rule",
       "body": [
-        "A subject does the action: Jag ringer. An object receives it: Elin ringer mig. After a verb, or after a little word such as på, med or för, use the object form: mig, dig, honom, henne, oss, er, dem.",
-        "Hindi and Marathi change these words too: main → mujhe, mī → malā. English does it for I → me and he → him, but you stays you. Swedish has two: dig for one person, er for several.",
-        "In everyday speech mig and dig sound like mej and dej. De and dem often both sound like dom, but writing keeps them apart: de do the action; someone sees dem.",
-        "Do not mix up henne and hennes. Jag ser henne = I see her. Hennes bil = her car (she owns it).",
-        "Skynda dig! (Hurry up!) is a fixed phrase. For several people say Skynda er! For us: Vi måste skynda oss. For them: De måste skynda sig, not dem (the teacher’s note has a slip here)."
+        "The subject does the action; the object receives it: Elin ringer mig. After på, med, för, till or från, use the object form too: Vänta på mig!",
+        "Decide by role, not place. In a yes/no question or after a time word, the doer comes after the verb (Lecture 3) but keeps its form: Kan du hjälpa mig? I dag kan jag inte.",
+        "Hindi main → mujhe and Marathi mī → malā work like jag → mig. But “I like” is mujhe pasand hai or malā āvaḍta, while Swedish says Jag gillar, never Mig gillar.",
+        "Swedish splits English you: dig for one person, er for several. Henne is her; hennes is her as owner (hennes bil).",
+        "De or dem? Both often sound like dom. Where vi would fit, write de; where oss would fit, write dem.",
+        "Skynda dig! (Hurry up!) changes with the person: Skynda er! Vi måste skynda oss. De måste skynda sig, not dem (a slip in the teacher’s note)."
       ],
       "examples": [
         {
@@ -992,13 +1009,13 @@
           "Object"
         ]
       },
-      "memoryTip": "Ask: who does it, and who receives it?",
-      "tryIt": "Say Jag ringer Elin, then Jag ringer henne. Say Vi väntar på Alex, then Vi väntar på honom.",
+      "memoryTip": "Ask who does it and who receives it. The place in the sentence does not decide.",
+      "tryIt": "Say Jag ringer Elin, then Jag ringer henne. Then ask: Kan du hjälpa mig?",
       "activity": {
         "type": "match",
         "label": "Swap the name",
         "title": "Replace the names with a pronoun",
-        "instructions": "Read each sentence with names. Find the same sentence with an object pronoun, then say both aloud.",
+        "instructions": "Read each sentence with names. Find the same sentence with an object pronoun, then say it aloud.",
         "leftLabel": "With names",
         "rightLabel": "With a pronoun",
         "pairs": [
@@ -1028,19 +1045,85 @@
             "note": "You and someone else: er."
           }
         ],
-        "pattern": "Who receives it? one woman → henne, one man → honom, you and others → er, others → dem, me and others → oss."
-      }
+        "pattern": "Who receives it? one woman → henne, one man → honom, you and others → er, others → dem, me and others → oss.",
+        "sentence": "{right}"
+      },
+      "activities": [
+        {
+          "type": "sort",
+          "label": "Doer or receiver?",
+          "title": "Which form fills the gap?",
+          "instructions": "Does the missing word do the action or receive it? Choose, then say the whole sentence.",
+          "items": [
+            {
+              "fi": "I dag kan ___ inte.",
+              "en": "Today I can’t.",
+              "bucket": "doer",
+              "why": "jag: after i dag the verb comes second, then the doer (Lecture 3)."
+            },
+            {
+              "fi": "Elin ringer ___ i kväll.",
+              "en": "Elin is calling me tonight.",
+              "bucket": "receiver",
+              "why": "mig: Elin calls; you receive the call."
+            },
+            {
+              "fi": "___ gillar te.",
+              "en": "I like tea.",
+              "bucket": "doer",
+              "why": "Jag: Swedish uses the doer, unlike mujhe pasand hai or malā āvaḍta."
+            },
+            {
+              "fi": "Vet ___ var bion är?",
+              "en": "Do you know where the cinema is?",
+              "bucket": "doer",
+              "why": "du: you do the knowing, even after the verb."
+            },
+            {
+              "fi": "Vi väntar på ___.",
+              "en": "We are waiting for you (one person).",
+              "bucket": "receiver",
+              "why": "dig: object form after på."
+            },
+            {
+              "fi": "Maja skickar biljetterna till ___.",
+              "en": "Maja is sending the tickets to us.",
+              "bucket": "receiver",
+              "why": "oss: object form after till."
+            },
+            {
+              "fi": "Där står Alex och Maja. Ser du ___?",
+              "en": "Alex and Maja are standing there. Do you see them?",
+              "bucket": "receiver",
+              "why": "dem: you see them. Write dem even when you hear dom."
+            }
+          ],
+          "buckets": [
+            {
+              "id": "doer",
+              "label": "Doer form",
+              "hint": "jag, du, han, hon, vi, ni, de"
+            },
+            {
+              "id": "receiver",
+              "label": "Receiver form",
+              "hint": "mig, dig, honom, henne, oss, er, dem"
+            }
+          ],
+          "summary": "The role decides, not the place: in Kan du hjälpa mig? du comes after the verb but still helps."
+        }
+      ]
     },
     {
       "id": "dates",
       "title": "Order numbers and dates",
       "kind": "rule",
       "body": [
-        "An ordinal number gives order: första (1st), andra (2nd), tredje (3rd). A date is den + ordinal + month: den tredje juni. Months start with a small letter.",
-        "Learn 1st to 12th by heart: första, andra, tredje, fjärde, femte, sjätte, sjunde, åttonde, nionde, tionde, elfte, tolfte. From 13th, most end in -nde: trettonde, fjortonde, tjugonde, trettionde. From 21st, join the parts: tjugo + första = tjugoförsta.",
-        "Watch two traps: arton is 18, but åttonde is 8th. Elva and tolv change v to f: elfte, tolfte.",
-        "Short written forms: 1:a, 2:a, 21:a, 22:a, 31:a (första and andra end in -a). All others take :e: 3:e, 24:e. On notices and forms in Finland you often see 24.5. (day, then month).",
-        "Ask about birthdays with När fyller du år? Answer: Jag fyller år den tionde maj."
+        "A date is den + ordinal + month: den tredje juni. The months are almost English, with a small letter (see the table).",
+        "Lecture 10 gave första, andra, tredje. Learn up to tolfte by heart. From 13th most add -nde (trettonde); from 21st, join the parts (tjugoförsta).",
+        "Traps: åttonde (8th) but arton (18); elva, tolv → elfte, tolfte; fem → femte.",
+        "Written: den 24 maj or den 24:e maj (:a after 1, 2, 21, 22, 31). Finnish notices write 24.5., day first. You may also hear den tjugofjärde i femte (“the 24th of the 5th”).",
+        "Birthdays: När fyller du år? Jag fyller år den tionde maj."
       ],
       "examples": [
         {
@@ -1051,7 +1134,17 @@
         {
           "fi": "Jag ordnar en fest den trettionde september.",
           "en": "I am having a party on the thirtieth of September.",
-          "note": "Written: den 30:e september (teacher’s example)"
+          "note": "Written den 30 september or den 30:e september (teacher’s example)"
+        },
+        {
+          "fi": "Alex fyller år den tjugoåttonde maj. Festen är på lördag den trettionde.",
+          "en": "Alex’s birthday is on the twenty-eighth of May. The party is on Saturday the thirtieth.",
+          "note": "tjugo + åttonde; weekday first, then den + date"
+        },
+        {
+          "fi": "Självständighetsdagen är den sjätte december.",
+          "en": "Independence Day is on the sixth of December.",
+          "note": "Finland’s national day, written 6.12."
         },
         {
           "fi": "– Vilket datum är det i dag? – Det är den trettonde maj.",
@@ -1059,42 +1152,78 @@
           "note": "The date of this lesson: 13.5."
         }
       ],
-      "memoryTip": "A written 24:e is spoken tjugofjärde; 24.5. is den tjugofjärde maj.",
-      "tryIt": "Say today’s date with den. Then say your birthday: Jag fyller år den …",
+      "memoryTip": "24.5. → den tjugofjärde maj: day first, then den + ordinal + month.",
+      "tryIt": "Say today’s date. Then say your birthday: Jag fyller år den …",
       "activity": {
         "type": "match",
-        "label": "Build dates",
-        "title": "Match the written date to the spoken word",
-        "instructions": "Match each written short form to the word you say. Watch for 8th and 18th.",
-        "leftLabel": "Written",
+        "label": "Read Finnish dates",
+        "title": "Say the dates you see on Finnish notices",
+        "instructions": "Finnish short dates put the day first. Match each to what you say. Watch 6.12. and 12.6., and 8th and 18th.",
+        "leftLabel": "On the notice",
         "rightLabel": "Say",
         "pairs": [
           {
-            "left": "3:e",
-            "right": "tredje"
+            "left": "1.5.",
+            "right": "den första maj",
+            "note": "vappen, the first of May"
           },
           {
-            "left": "8:e",
-            "right": "åttonde"
+            "left": "6.12.",
+            "right": "den sjätte december",
+            "note": "Independence Day"
           },
           {
-            "left": "12:e",
-            "right": "tolfte"
+            "left": "12.6.",
+            "right": "den tolfte juni",
+            "note": "Day 12, month 6"
           },
           {
-            "left": "18:e",
-            "right": "artonde"
+            "left": "8.10.",
+            "right": "den åttonde oktober",
+            "note": "åttonde, not artonde"
           },
           {
-            "left": "21:a",
-            "right": "tjugoförsta"
+            "left": "18.8.",
+            "right": "den artonde augusti",
+            "note": "arton + de"
           },
           {
-            "left": "30:e",
-            "right": "trettionde"
+            "left": "24.5.",
+            "right": "den tjugofjärde maj",
+            "note": "The cinema date"
           }
         ],
-        "pattern": "den + ordinal + month: den tjugoförsta maj"
+        "pattern": "Day first, then month: 6.12. = den sjätte december.",
+        "sentence": "{right}"
+      },
+      "table": {
+        "headings": [
+          "Months 1–4",
+          "Months 5–8",
+          "Months 9–12"
+        ],
+        "rows": [
+          [
+            "januari",
+            "maj",
+            "september"
+          ],
+          [
+            "februari",
+            "juni",
+            "oktober"
+          ],
+          [
+            "mars",
+            "juli",
+            "november"
+          ],
+          [
+            "april",
+            "augusti",
+            "december"
+          ]
+        ]
       }
     },
     {
@@ -1104,15 +1233,10 @@
       "body": [
         "Invite: Vill du gå på bio med mig? or simply Vill du följa med? (Do you want to come along?)",
         "Accept: Ja, gärna! Det låter kul! Det passar mig bra.",
-        "Say no in three parts: thanks, a short reason, a new idea. Tack för inbjudan! Tyvärr kan jag inte då, jag ska jobba. Kan vi gå på lördag i stället? A bare Nej sounds cold.",
+        "Say no in three parts: thanks or sorry, a short reason, a new idea. Tack för inbjudan! Tyvärr kan jag inte då, jag ska jobba. Kan vi gå på lördag i stället? A bare Nej sounds cold.",
         "Close the plan: date, time and place, then check: Passar det dig?"
       ],
       "examples": [
-        {
-          "fi": "Vill du gå på bio med mig den tjugofjärde?",
-          "en": "Do you want to go to the cinema with me on the twenty-fourth?",
-          "note": "A complete invitation."
-        },
         {
           "fi": "Tack för inbjudan! Tyvärr kan jag inte då. Kan vi gå den tjugotredje i stället?",
           "en": "Thanks for the invitation! Unfortunately I cannot then. Can we go on the twenty-third instead?",
@@ -1191,46 +1315,46 @@
   ],
   "guided": [
     {
-      "id": "sv-11-g1",
-      "prompt": "Complete: två bilar → de två ___",
+      "id": "sv-11-g-both",
+      "prompt": "Choose: Båda ___ är tyska. (bil, several)",
       "answers": [
         "bilarna"
       ],
       "options": [
+        "bilar",
         "bilarna",
-        "bilaren",
-        "bilar"
+        "bilen"
       ],
-      "hint": "Add -na.",
-      "explanation": "de två bilarna"
+      "hint": "Båda takes the “the” form.",
+      "explanation": "Båda bilarna är tyska (teacher’s example): bilar + na."
     },
     {
-      "id": "sv-11-g2",
-      "prompt": "Complete: tre möten → de tre ___",
+      "id": "sv-11-g-keys",
+      "prompt": "Choose by meaning: Var är ___? Jag hittar dem inte. (keys)",
       "answers": [
-        "mötena"
+        "nycklarna"
       ],
       "options": [
-        "mötena",
-        "mötenna",
-        "mötenen"
+        "nycklar",
+        "nycklarna",
+        "nyckeln"
       ],
-      "hint": "Group 4 adds -a.",
-      "explanation": "de tre mötena"
+      "hint": "Specific keys, and dem shows several.",
+      "explanation": "Var är nycklarna? Your own keys are specific, so use the “the” form."
     },
     {
-      "id": "sv-11-g3",
-      "prompt": "Choose: Kan du hjälpa ___?",
+      "id": "sv-11-g-du",
+      "prompt": "Choose: Kan ___ hjälpa mig i morgon? (you, one person)",
       "answers": [
-        "mig"
+        "du"
       ],
       "options": [
-        "jag",
-        "mig",
-        "min"
+        "du",
+        "dig",
+        "din"
       ],
-      "hint": "The receiver needs the object form.",
-      "explanation": "Kan du hjälpa mig?"
+      "hint": "Who does the helping?",
+      "explanation": "Kan du hjälpa mig? The verb comes first in a yes/no question (Lecture 3), but du still does the helping."
     },
     {
       "id": "sv-11-g4",
@@ -1248,13 +1372,14 @@
     },
     {
       "id": "sv-11-g5",
-      "prompt": "Write 12 May in Swedish.",
+      "prompt": "Write 12.5. in words, as you say it.",
       "answers": [
         "den tolfte maj",
-        "den 12:e maj"
+        "tolfte maj",
+        "den tolfte i femte"
       ],
-      "hint": "Use den + ordinal + month.",
-      "explanation": "den tolfte maj"
+      "hint": "den + ordinal + month. Tolv changes in the ordinal.",
+      "explanation": "den tolfte maj: tolv → tolfte. In Finland you may also hear den tolfte i femte."
     },
     {
       "id": "sv-11-g6",
@@ -1263,20 +1388,24 @@
         "jag kan inte då",
         "jag kan tyvärr inte då",
         "tyvärr kan jag inte då",
-        "jag kan inte"
+        "jag kan inte",
+        "jag kan tyvärr inte",
+        "tyvärr kan jag inte"
       ],
       "hint": "Use kan inte, and då for then.",
       "explanation": "Tack för inbjudan, men jag kan inte då."
     },
     {
-      "id": "sv-11-g7",
-      "prompt": "Translate: “We are waiting for them.”",
+      "id": "sv-11-g-fix-dem",
+      "prompt": "Fix one word: Jag pratade med de i går.",
       "answers": [
-        "Vi väntar på dem.",
-        "Vi väntar på dem"
+        "Jag pratade med dem i går.",
+        "Jag pratade med dem igår.",
+        "I går pratade jag med dem.",
+        "Igår pratade jag med dem."
       ],
-      "hint": "Use dem after på.",
-      "explanation": "Vi väntar på dem."
+      "hint": "After med, use the object form. Would oss fit?",
+      "explanation": "Jag pratade med dem i går. Oss would fit, so write dem. Pratade: past form, Lecture 6."
     },
     {
       "id": "sv-11-g8",
@@ -1432,19 +1561,19 @@
         "level": "A1"
       },
       {
-        "id": "sv-11-word-13",
-        "fi": "första",
-        "en": "first",
-        "example": "den första maj",
-        "translation": "the first of May",
+        "id": "sv-11-word-eighth",
+        "fi": "åttonde",
+        "en": "eighth",
+        "example": "den åttonde oktober",
+        "translation": "the eighth of October",
         "level": "A1"
       },
       {
-        "id": "sv-11-word-14",
-        "fi": "andra",
-        "en": "second",
-        "example": "den andra juni",
-        "translation": "the second of June",
+        "id": "sv-11-word-invitation",
+        "fi": "en inbjudan",
+        "en": "an invitation",
+        "example": "Tack för inbjudan!",
+        "translation": "Thanks for the invitation!",
         "level": "A1"
       },
       {
@@ -1480,14 +1609,6 @@
         "level": "A1"
       },
       {
-        "id": "sv-11-word-19",
-        "fi": "gå på bio",
-        "en": "go to the cinema",
-        "example": "Vill du gå på bio?",
-        "translation": "Do you want to go to the cinema?",
-        "level": "A1"
-      },
-      {
         "id": "sv-11-word-20",
         "fi": "framför bion",
         "en": "in front of the cinema",
@@ -1504,11 +1625,11 @@
         "level": "A1"
       },
       {
-        "id": "sv-11-word-22",
-        "fi": "Ja, gärna!",
-        "en": "Yes, gladly!",
-        "example": "Ja, gärna! Vi ses då.",
-        "translation": "Yes, gladly! See you then.",
+        "id": "sv-11-word-sorry",
+        "fi": "förlåt",
+        "en": "sorry",
+        "example": "Förlåt, jag kan inte i kväll.",
+        "translation": "Sorry, I cannot tonight.",
         "level": "A1"
       },
       {
@@ -1537,22 +1658,22 @@
       }
     ],
     "pronunciation": {
-      "text": "mig, dig; honom, henne; oss, er, dem; första, fjärde, sjätte, åttonde",
-      "tip": "In ordinary speech mig and dig sound like mej and dej, and dem usually sounds like dom."
+      "text": "Hör du mig? Skynda dig! Jag ser honom. Vi väntar på dem.",
+      "tip": "Spelling and sound differ. Mig and dig sound like mej and dej (Lecture 3). Honom sounds like hånnåm: both o’s are short, like å. Dem usually sounds like dom in Sweden; in Finland many keep de (often said di) and dem apart."
     },
     "listening": {
-      "text": "Hej! Vill du följa med oss på bio den tjugofjärde maj? Det är en söndag. Filmen börjar klockan sju. Jag köper biljetterna. Vi träffas framför bion kvart i sju. Messa mig om dagen inte passar dig.",
-      "question": "When and where do they meet?",
+      "text": "Välkommen till Bio Sol! På söndag den tjugofjärde maj klockan sju visar vi en ny finsk komedi med svensk text. Biljetterna kostar tolv euro. Barn under tolv år betalar åtta euro. Kassan öppnar klockan sex.",
+      "question": "How much does a ten-year-old pay?",
       "options": [
-        "Quarter to seven in front of the cinema",
-        "Seven inside the cinema",
-        "Quarter past seven at home"
+        "Eight euros",
+        "Twelve euros",
+        "Ten euros"
       ],
       "answer": 0,
-      "explanation": "Vi träffas framför bion kvart i sju."
+      "explanation": "Barn under tolv år betalar åtta euro. Here barn has no “the”: it means children in general."
     },
     "reading_passage": {
-      "text": "Hej Alex! Nu har jag köpt biljetterna till söndag den tjugofjärde maj. Filmen börjar klockan sju. Elin kan inte komma, men hon vill följa med nästa gång. Jag skickar biljetterna till dig i kväll. Du kan visa dem i telefonen vid dörren. Vi träffas framför bion kvart i sju. Ring mig om du blir sen! Vi ses! Maja",
+      "text": "Hej Alex! Nu har jag köpt biljetterna till söndag den tjugofjärde maj. Elin kan inte komma, men hon vill följa med nästa gång. Jag skickar biljetterna till dig i kväll. Du kan visa dem i telefonen vid dörren. Vi träffas framför bion kvart i sju. Ring mig om du blir sen! Maja",
       "gist": {
         "prompt": "Why does Maja write?",
         "options": [
@@ -1575,7 +1696,7 @@
       }
     },
     "reading": {
-      "text": "Hej Alex! Nu har jag köpt biljetterna till söndag den tjugofjärde maj. Filmen börjar klockan sju. Elin kan inte komma, men hon vill följa med nästa gång. Jag skickar biljetterna till dig i kväll. Du kan visa dem i telefonen vid dörren. Vi träffas framför bion kvart i sju. Ring mig om du blir sen! Vi ses! Maja",
+      "text": "Hej Alex! Nu har jag köpt biljetterna till söndag den tjugofjärde maj. Elin kan inte komma, men hon vill följa med nästa gång. Jag skickar biljetterna till dig i kväll. Du kan visa dem i telefonen vid dörren. Vi träffas framför bion kvart i sju. Ring mig om du blir sen! Maja",
       "question": "How do they get into the cinema?",
       "options": [
         "They show the tickets on the phone",
@@ -1586,38 +1707,38 @@
       "explanation": "Du kan visa dem i telefonen vid dörren."
     },
     "speaking": {
-      "prompt": "Invite a friend to the cinema. Give a date with an ordinal, the time and a meeting place. Ask whether it suits them, and offer a second date in case it does not.",
-      "help": "Vill du gå på bio med mig? · den tjugofjärde maj · klockan sju · framför bion · Passar det dig? · Annars kan vi gå den … i stället.",
-      "model": "Hej! Vill du gå på bio med mig? Kan vi gå den tjugofjärde maj? Filmen börjar klockan sju. Vi träffas framför bion kvart i sju. Passar det dig? Annars kan vi gå den tjugotredje i stället. Jag köper biljetterna åt oss."
+      "prompt": "Ring en vän och fråga om hon eller han vill gå på bio med dig. Säg datum, tid och plats. Fråga om det passar, och föreslå en annan dag också. (Call a friend and ask if she or he wants to go to the cinema with you. Give the date, time and place, ask if it suits, and suggest a second date too.)",
+      "help": "Vill du gå på bio med mig? · på söndag den tjugofjärde maj · klockan sju · framför bion · Passar det dig? · Annars kan vi gå den … i stället.",
+      "model": "Hej! Vill du gå på bio med mig på söndag den tjugofjärde maj? Filmen börjar klockan sju. Vi träffas framför bion kvart i sju. Passar det dig? Annars kan vi gå den tjugotredje i stället. Jag köper biljetterna."
     },
     "writing": {
-      "prompt": "Write a birthday party invitation and ask for a reply.",
-      "situation": "You have a birthday soon and want to celebrate at home. Write a message to your friends Elin and Mikko and invite them both.",
+      "prompt": "Skriv ett meddelande: be om ursäkt och föreslå en annan dag. (Write a message: say sorry and suggest another day.)",
+      "situation": "Du och din granne ska gå på bio i kväll. Nu har du inte tid. Skriv ett meddelande till henne eller honom. (You and your neighbour plan to go to the cinema tonight, but now you have no time. Write her or him a message. This is a real YKI basic-level task; the test gives instructions in Swedish.)",
       "points": [
-        "Say why: your birthday, with the date as an ordinal.",
-        "Invite Elin and Mikko to the party (use ni or er).",
-        "Give the day, time and place.",
-        "Ask them to reply by a date.",
-        "Close the message naturally."
+        "Be om ursäkt. (Say sorry.)",
+        "Säg varför du inte kan komma. (Give a short reason.)",
+        "Föreslå en annan dag, med datum. (Suggest another day, with den + ordinal.)",
+        "Säg var och när ni kan träffas. (Say where and at what time to meet.)",
+        "Hälsa och avsluta. (Open and close the message.)"
       ],
       "wordRange": [
         40,
         70
       ],
-      "help": "Hej Elin och Mikko! · Jag fyller år den … · Jag ordnar en fest … · hemma hos mig · klockan … · Kan ni komma? · Svara mig gärna senast den … · Hälsningar",
-      "model": "Hej Elin och Mikko! Jag fyller år den tjugoåttonde maj, och jag vill fira med er. Jag ordnar en fest hemma hos mig lördagen den trettionde maj klockan sex. Vi lagar mat tillsammans och spelar spel. Ni behöver inte ta med något. Kan ni komma? Svara mig gärna senast den tjugofemte maj. Hälsningar, Alex"
+      "help": "Hej …! · Förlåt, men jag kan tyvärr inte … i kväll. · Jag måste …, för … · Kan vi gå på fredag den … i stället? · Vi kan träffas framför … klockan … · Passar det dig? · Hälsningar, …",
+      "model": "Hej Johanna! Förlåt, men jag kan tyvärr inte gå på bio med dig i kväll. Jag måste jobba sent, för vi har ett viktigt möte. Kan vi gå på fredag den femtonde i stället? Vi kan träffas framför bion kvart i sju. Passar det dig? Messa mig! Hälsningar, Alex"
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Invite someone to the cinema and agree on a date, time and meeting place, with a second date ready. Then write a party invitation that asks for a reply.",
-    "transferPrompt": "Your friend says the date does not work. Say thanks, suggest another date with i stället, and confirm with Passar det dig?",
+    "expectedOutput": "Invite someone to the cinema and agree on a date, time and meeting place, with a second date ready. Then write a YKI-style message: say sorry, say why you cannot come and suggest another day.",
+    "transferPrompt": "Nu frågar din vän: Vill du gå på bio på söndag? Säg tack, säg att du inte kan och varför, och föreslå en annan dag med i stället. (Now your friend invites you: thank them, say you cannot and why, and suggest another day with i stället.)",
     "returnPrompt": "From memory, invite someone and agree on a date and time in under 30 seconds.",
     "successChecks": [
-      "Use Vill du … med mig/oss?",
+      "Use Vill du … med mig?",
       "Say a date with den plus an ordinal.",
-      "Give a time and meeting place.",
-      "Use at least one object pronoun correctly.",
+      "Give a time and a meeting place.",
+      "Use object pronouns correctly (mig, dig, oss …).",
       "Offer another date with i stället."
     ],
     "requiredSkills": [
@@ -1642,7 +1763,7 @@
       "id": "sv-11-q-birthday",
       "fi": "När fyller du år?",
       "en": "When is your birthday?",
-      "sample": "Jag fyller år den tionde maj."
+      "sample": "Jag fyller år den tjugoåttonde maj."
     },
     {
       "id": "sv-11-q4",
@@ -1685,9 +1806,9 @@
       "fi": "Vi väntar på dem."
     },
     {
-      "id": "sv-11-review-5",
-      "en": "on the twenty-fourth of May",
-      "fi": "den tjugofjärde maj"
+      "id": "sv-11-review-birthday",
+      "en": "My birthday is on the … (say your own date)",
+      "fi": "Jag fyller år den …"
     },
     {
       "id": "sv-11-review-6",
@@ -1726,7 +1847,7 @@
         "möten",
         "mötet"
       ],
-      "hint": "Group 4 adds -a.",
+      "hint": "The plural möten ends in -n.",
       "explanation": "mötena: möten ends in -n, so add -a."
     },
     {
@@ -1734,33 +1855,35 @@
       "prompt": "Write: “on the third of June”",
       "answers": [
         "den tredje juni",
-        "den 3:e juni"
+        "den 3:e juni",
+        "den 3 juni",
+        "den tredje i sjätte"
       ],
       "hint": "den + ordinal + month",
       "explanation": "den tredje juni"
     },
     {
-      "id": "sv-11-c4",
-      "prompt": "Choose the object form: De väntar på ___.",
+      "id": "sv-11-c-like",
+      "prompt": "Choose: ___ gillar filmer. (I like films.)",
       "answers": [
-        "oss"
+        "Jag"
       ],
       "options": [
-        "vi",
-        "oss",
-        "vår"
+        "Jag",
+        "Mig",
+        "Min"
       ],
-      "hint": "After på, use oss.",
-      "explanation": "De väntar på oss."
+      "hint": "Who does the liking?",
+      "explanation": "Jag gillar filmer: Swedish uses the doer form (gillar, Lecture 1), unlike Hindi mujhe or Marathi malā."
     },
     {
-      "id": "sv-11-c5",
-      "prompt": "Write the “the” form: barn (children) → ___",
+      "id": "sv-11-c-bananas",
+      "prompt": "Write “the bananas”. (en banan)",
       "answers": [
-        "barnen"
+        "bananerna"
       ],
-      "hint": "The plural has no ending, so add -en.",
-      "explanation": "barnen"
+      "hint": "First the plural from Lecture 7: bananer. It ends in -r.",
+      "explanation": "en banan → bananer (group 3, Lecture 7) → bananerna. Not bananarna."
     },
     {
       "id": "sv-11-c6",
@@ -1775,24 +1898,41 @@
       ],
       "hint": "8th, not 18 or 80.",
       "explanation": "åttonde = 8th; arton = 18; åttio = 80."
+    },
+    {
+      "id": "sv-11-c-saw",
+      "prompt": "Write in Swedish: “I saw her yesterday.”",
+      "answers": [
+        "Jag såg henne i går.",
+        "Jag såg henne igår.",
+        "I går såg jag henne.",
+        "Igår såg jag henne."
+      ],
+      "hint": "Past of se from Lecture 6, then the object form.",
+      "explanation": "Jag såg henne i går: såg is the past of se (Lecture 6); henne receives the action."
     }
   ],
   "assignment": {
     "title": "Lecture 11 mission: A cinema invitation",
-    "instructions": "CORE: Invite someone to the cinema. Agree on a date, time and meeting place, use an object pronoun, and offer a second date with i stället.\n\nWRITE: Send a party invitation with a date and ask for a reply.\n\nRETURN: Repeat the invitation from memory with a changed date.",
-    "model": "Vill du gå på bio med mig? Kan vi gå den tjugofjärde maj? Filmen börjar klockan sju. Vi träffas framför bion. Passar det dig? Annars kan vi gå den tjugotredje i stället."
+    "instructions": "CORE: Invite someone to the cinema. Agree on a date, time and meeting place, use an object pronoun, and offer a second date with i stället.\n\nWRITE: Send a YKI-style message: say sorry, say why you cannot come, and suggest another day with a date.\n\nRETURN: Repeat the invitation from memory with a changed date.",
+    "model": "Vill du gå på bio med mig på söndag den tjugofjärde maj? Vi träffas framför bion kvart i sju. Passar det dig? Annars kan vi gå den tjugotredje i stället."
   },
   "takeaways": [
     "For “the” in plural, look at the plural’s last letter: -r → -na, -n → -a, nothing → -en (lärare → lärarna).",
-    "Use mig, dig, honom, henne, oss, er and dem for the receiver of an action and after på, med and för.",
-    "Say a date with den plus an ordinal: den tjugofjärde maj. Watch åttonde (8th) and arton (18).",
-    "A kind no has thanks, a reason and a new idea: Tyvärr kan jag inte då. Kan vi gå på lördag i stället?"
+    "Choose the pronoun by role, not place: the doer is jag, du, han …; the receiver, also after på, med or till, is mig, dig, honom … Kan du hjälpa mig?",
+    "A date is den + ordinal + month: den tjugofjärde maj, written 24.5. on Finnish notices. Watch åttonde (8th) and arton (18).",
+    "A kind no has thanks or sorry, a reason and a new idea: Tyvärr kan jag inte då. Kan vi gå på lördag i stället?"
   ],
   "resources": [
     {
       "label": "Svenska Akademiens ordböcker (svenska.se)",
       "url": "https://svenska.se/",
       "description": "Check a noun plural or an invitation word and listen to pronunciation."
+    },
+    {
+      "label": "YKI practice tasks: Swedish, basic level, writing",
+      "url": "https://ykitesti.solki.jyu.fi/tutustu-testiin/svenska/grundniva-skriftlig-framstallning/",
+      "description": "Official sample tasks, with instructions in Swedish. Task 2 is today’s message: say sorry, say why and suggest another time."
     }
   ],
   "story": {

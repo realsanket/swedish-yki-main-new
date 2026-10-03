@@ -243,6 +243,12 @@ function clearTimedAttempt(key: string) {
   }
 }
 
+
+/** The reading card already shows this text when it matches the passage. */
+function sameText(a: string, b?: string) {
+  const flat = (value: string) => value.replace(/\s+/g, " ").trim();
+  return b !== undefined && flat(a) === flat(b);
+}
 export default function PracticeStudio({
   initialSkill = "listening",
   level: requestedLevel = "A0",
@@ -1882,7 +1888,9 @@ function Exercise({
             {skill === "reading" && lecture?.reading_passage && (
               <ReadingPassageCard passage={lecture.reading_passage} />
             )}
-            {skill === "reading" && task.text && (
+            {skill === "reading" &&
+              task.text &&
+              !sameText(task.text, lecture?.reading_passage?.text) && (
               <div className={styles.passage} lang="sv">
                 {task.text}
               </div>
