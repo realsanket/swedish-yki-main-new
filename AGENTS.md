@@ -30,8 +30,10 @@ six chapters. It follows teacher Lessons 1-22 and textbook pages 4-55, then
 ends with the first argumentative text. Lectures 3-22 were first built by Codex
 cloud (unreliable), repaired on October 2, 2026 against
 `docs/lecture-build-plan.md`, then reviewed and fixed again; both are recorded
-under "Repair audit" in `docs/mapping.md`. Lecture 23 and later
-(the YKI-book phase) are not planned yet: do not build them until the owner asks.
+under "Repair audit" in `docs/mapping.md`. **The YKI-book phase (Lectures
+23-52)** follows teacher Lessons 23-51 and *Förbered dig för allmän språkexamen*
+(Gimara); its source map and build plan are in `docs/yki-phase-plan.md`. The
+owner approved building all of it on October 3, 2026.
 
 ---
 
@@ -75,6 +77,7 @@ docs/
   mapping.md                 source-to-lecture decisions and change log (read first
                              for any curriculum work)
   lecture-build-plan.md      step-by-step plan for building Lectures 3-22
+  yki-phase-plan.md          source map and build plan for Lectures 23-52 (YKI book)
   image-prompts/             prompts for chapter and lecture pictures the owner will
                              generate (style, cast, file names)
   text-book-images/          textbook pages (Lesson 1 = page 4, Lesson 2 = pages 5-6)
@@ -178,7 +181,7 @@ full rules in `site/docs/lecture-template.md`):
 | `presentation` | Visual options: template, route-step labels, opening (teacher note, dialogue), teaching options, hero |
 | `recall`, `guided`, `checkpoint` | Questions for steps 1, 4 and 6 |
 | `sections` | Teaching topics; each shows as beats: Understand, See the pattern, Hear it, activities, Try it |
-| `sections[].activity(ies)` | Hands-on activities: `sound-map`, `sort`, `match`, `question-gap` |
+| `sections[].activity(ies)` | Hands-on activities: `sound-map`, `sort`, `match`, `question-gap`. A sort that shows deliberate mistakes sets `"audio": false` |
 | `extraSteps` | Lecture-owned route steps. Kind `source-practice` = verified textbook pages in a 5-stage ladder |
 | `missionPlan` | Fill-in sentence frames for stage 1 of "Do the task" |
 | `unplannedQuestions` | Questions for the "unexpected questions" round (6 per lecture, 3 asked) |
@@ -354,8 +357,12 @@ card (logic tested).
 
 **Independently reviewed:** Lectures 3-7 twice (October 2 and 3) and Lectures
 1-2 and 8-22 once (October 3), one reviewer per lecture, against sources and online
-references, with teaching improvements; results in `docs/mapping.md`. Pictures
-for Chapters 2-6 and Lectures 3-22 wait on the owner (`docs/image-prompts/`).
+references. **Round 3 (October 3)** then improved all 22 for learning effect:
+items that mix earlier lectures, more typed production, the learner's likely
+errors named and drilled, YKI task formats with Swedish-first instructions,
+sourced Finland-Swedish notes and one pronunciation point per lecture. Results
+in `docs/mapping.md`. Pictures for Chapters 2-6 and Lectures 3-22 wait on the
+owner (`docs/image-prompts/`).
 
 Story data now lives in content, with neutral fallbacks. Unnamed dialogue roles
 use a letter avatar and Henrik’s native Swedish voice. Teaching kinds are limited
@@ -378,10 +385,8 @@ selected only by optional `ykiMockId`; no current lecture selects it.
     voice?
 4. Save the mission plan and the unexpected-questions result to the server (both
    are browser-only now).
-5. Plan the YKI-book phase (Lecture 23 onward) only when the owner asks.
-   Teacher Lessons 23-51 and Classroom items 18 onward still need a separate
-   source mapping and build plan; do not extend the active curriculum before
-   that planning is approved.
+5. **In progress:** build the YKI-book phase (Lectures 23-52) from
+   `docs/yki-phase-plan.md` (mapped and approved October 3, 2026).
 6. Native-speaker review of the doubtful source and authored Swedish lines
    recorded under the built lecture design notes in `docs/mapping.md`.
 

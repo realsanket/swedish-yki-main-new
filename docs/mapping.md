@@ -121,8 +121,8 @@ Episode 1 therefore uses an original consolidation mission inside Stigen, clearl
 |---|---|---|
 | Hur är det? / Hur mår du?; bra, toppen, okej, så där, trött, dåligt, ganska | Topic 1 with a mood-meter sort | The answer mirrors the question: är det → det är, mår du → jag mår. `Jag är bra` is recognised as casual |
 | jag, du, han, hon, hen, hän, vi, ni, de /dom/ | Topic 2 with a Who-is-who match | `hen` is taught as working like Finnish `hän` (one word for he or she); du = one person, ni = two or more |
-| vän, pojkvän, flickvän, sambo, särbo, mambo, gift, man, fru, make/maka, singel, bor ensam, barn, son, dotter, bror, syster, syskon, skild, göra slut | Topic 3 with a Build-the-word match | `bo` (live) links sambo/särbo/mambo back to Lesson 1's `bor i`; mambo is labelled a joke word; gift = married vs ett gift = poison kept as a memory hook |
-| vad, hur, var, varifrån, när, varför, (vem, vilken/vilket/vilka) | Topic 4 with an Answer-detective sort | Verb-second order taught explicitly; vilken/vilket/vilka recognised only |
+| vän, pojkvän, flickvän, sambo, särbo, mambo, gift, man, fru, make/maka, singel, bor ensam, barn, son, dotter, bror, syster, syskon, skild, göra slut | Topic 3 with a find-the-word meaning match (round 3) | `bo` (live) links sambo/särbo/mambo back to Lesson 1's `bor i`; mambo is labelled a joke word; gift = married vs ett gift = poison kept as a memory hook |
+| vad, hur, var, varifrån, när, varför, (vem, vilken/vilket/vilka) | Topic 4 with a "Keep or fix?" error sort (round 3) | Verb-second order taught explicitly; vilken/vilket/vilka recognised only |
 | De /dom/ | Topic 5, spoken forms | Extended to the common reductions dom, ja, e, de, va (recognition only; write full forms) |
 | Closing word list | Word bank and page 6 glossary | Words are taught where the source page uses them |
 
@@ -180,9 +180,9 @@ Lectures 3–5 are now the active continuation of Chapter 1 and were rebuilt fro
 ## Audit fixes (September 30, 2026)
 
 - Lecture 1: added the teacher's Bangladesh (bengali) and portugisiska to the country-language match.
-- Lecture 2: added the homework trap "Anna och jag → vi" (rule line, example, guided item `sv-02-guided-vi`) and "Hej Sara och Peter! Talar ni…?"; replaced the question-word examples with the teacher's (Vad köper du? Hur är vädret? Var är Anna? När äter vi lunch? Varför springer han? Vem gillar du?); added skilja sig.
+- Lecture 2: added the homework trap "X och jag → vi" (now "Rohan och jag → vi", rule line, example, guided item `sv-02-guided-vi`) and "Hej Priya och Rohan! Talar ni…?" (textbook names Sara, Peter and Anna replaced outside the textbook step in round 3); replaced the question-word examples with the teacher's (Vad köper du? Hur är vädret? Var är Anna? När äter vi lunch? Varför springer han? Vem gillar du?); added skilja sig.
 - Both lectures: linked the teacher's listening resources (Svensktoppen, the teacher's Spotify playlist).
-- Both lectures: the written message is now a required YKI-style task. Lecture 1: a hello to the new class group chat (15-30 words). Lecture 2: an answer to Sara's message "Hej! Hur mår du? Berätta om din familj!" (25-40 words). Both close with Hälsningar and a name.
+- Both lectures: the written message is now a required YKI-style task. Lecture 1: a hello to the new class group chat (15-30 words). Lecture 2: an answer to a friend's message (Elin's since round 3) "Hej! Hur mår du? Berätta om din familj!" (25-40 words). Both close with Hälsningar and a name.
 - The sj-sound stays as Azure's Sweden-Swedish voices say it (owner's decision).
 
 ## Source mapping: Lectures 3-22 (textbook phase)
@@ -372,7 +372,7 @@ is built.
 
 - **Source boundary:** Lesson 14 (lines 1567–1676), pages 39–40, Homework 14 and its seven-criteria rubric.
 - **Concept map:** help-verb review supports polite strength; complaint phrases and the rubric shape a formal-email section and task; imperatives and spatial phrases support the directions mission.
-- **Accuracy decisions:** uses source `ni/er`; separates movement `till vänster` from location `på din vänstra sida`; renders the rubric as five plain-English checks.
+- **Accuracy decisions:** uses source `ni/er`; teaches `till vänster/höger` (direction, and also place: till höger om) and `på din vänstra/högra sida`, never `på din höger sida` (corrected in round 3); renders the rubric as five plain-English checks.
 - **Swedish input:** approximately 1,218 words.
 - **Teacher check:** page 39's `en bärbar ... från deras Elitebook serie` appears nonstandard (likely `en bärbar dator ... Elitebook-serie`); page 40's stop names `Glass` and `Rött hus` are unusual but transcribed exactly.
 
@@ -909,3 +909,60 @@ teacher items in Lessons 1-2 are taught, and the page 4-6 lines match the scans.
 
 Swedish input: about 670 (L1) and 910 (L2) words counted broadly with the word
 bank and repeats; connected text about 245 and 400 words.
+
+## Round 3: teaching improvements, all 22 lectures — October 3, 2026
+
+One reviewer per lecture with a shared brief about learning effect rather than
+correctness: retrieval and interleaving (from Lecture 3, at least two items mix
+an earlier lecture with today's point and name it), production (at least two
+typed checkpoint items, distractors that are real learner errors), the 1-3
+errors English/Hindi/Marathi speakers really make on each topic, YKI task
+formats checked against the official samples (ykitesti.solki.jyu.fi: basic-level
+instructions are in Swedish, so tasks from Lecture 9 on, and many earlier ones,
+give the instruction in simple Swedish first with the real line "Kom ihåg att
+inleda och avsluta meddelandet på lämpligt sätt"), sourced Finland-Swedish
+notes (no tonal word accent; r+s, r+t, r+d kept apart; unaspirated t/k), one
+pronunciation point per lecture, and shorter English from Lecture 9 and 15.
+Every reviewer also re-read all Swedish with fresh eyes.
+
+**Shared changes:** sort activities accept `"audio": false` (used on every sort
+that shows deliberate mistakes, so a native voice never models an error; cards
+with a `___` gap never get a play button); the reading task no longer prints the
+passage twice; match activities show their pair notes even without a say-aloud
+sentence; glossary gains "particle verb" and a note that dessutom/därför are
+adverbs.
+
+| Lecture | Main changes | For the teacher |
+|---:|---|---|
+| 1 | Named first slips (bor i vs kommer från, j = य, capital language names, stiff "Mitt namn är") with a "Ready or fix?" sort; Helsingfors is stressed at the end; YKI interview speaking; Elin's own introduction as listening, a classmate's group-chat hello as reading. | Helsingfors end stress; Finland-Swedish unaspirated t/k and rolled r |
+| 2 | Four items recycle Lecture 1; "Keep or fix?" sort (V2, ni to one teacher, de for vi); vowel length with short han/hon/den/vem/man/vän; YKI "Berätta om en god vän"; textbook names replaced by Priya, Rohan and Elin. | de said as written in Finland; vän short |
+| 3 | YKI basic cancel-the-plan message and interview with Swedish guide questions; learner places inte; named errors (Jag är pluggar, vill att, vill = will); meaning match for help verbs. | `Vad hinner du inte göra i veckan?`; `Tyvärr, jag kan inte` (comma form) |
+| 4 | YKI "berätta" interview and e-mail; café job-ad reading; named errors (en lärare, Det är dator, På helgen jag brukar, brukar att); Maja no longer appears before Lecture 5; stress on job words. | `erfarenhet från`; `basta` vs `gå i bastu`; bare `på sjukhus` |
+| 5 | "Mark the only once" (min boken, en boken) with a Fix-it sort from real learner errors; 4 of 6 checkpoint items typed; dental -t; Helsingfors arbis. | — |
+| 6 | Writing is the YKI apology message; telling task with six Swedish questions; "Spot the mistake" sort; named errors (V2 after a time word, "two years back", sovde, gådde); Wilma; the klarade/hade klarat query closed. | — |
+| 7 | Plural errors named (one ending for all, två bil, mycket with plurals, äpplen/äpplet); "-ar or -er?" predict sort; Ask-Elin question card; Alko; Alex has no flatmate; Elin's museum moves to Sunday. | `på Alko` |
+| 8 | YKI tell-about-last-weekend and card to a friend; three mixed typed items; i tjugo minuter vs för; Elin's Saturday question-gap; "Ready to send?" error hunt; vappen; corrected stress tip. | — |
+| 9 | "Är, har or har ont i?" sort (Indian English "I have fever"); ny/nytt/nya with min/mitt/mina; till vs att; Swedish-first YKI tasks; hel.fi health numbers; part 2 a few days later. | `magvärk` (now `magont (or magvärk)`) |
+| 10 | Halv sex trap (half five, saadhe paanch); fjorton vs fyrtio; mama/mamma; ibland fix-it sort; YKI "Berätta om din familj" with exam timing; story fixes (invitation, forecast, Priya in India). | `tre och femtio`; `på K-market`; r+t in fjorton |
+| 11 | Object pronouns by role, not place ("Doer or receiver?"); mujhe/malā vs Jag gillar; de/dem; -erna; YKI apology message; month table and Finnish short dates; cinema announcement as listening. | `den tjugofjärde i femte` accepted |
+| 12 | mer billigare, mer bussar, på söndag for a past day ("Spot the slip"); YKI opinion speaking; Helsinki weather report and Bio Berghäll programme as texts; hälsostationen; lika … som. | `På onsdag regnar det mest` |
+| 13 | måste inte, borde inte on a rule, får + thing vs får + verb; right-or-wrong sort; YKI voice-message reply; Helsinki swimming-hall rule, the 2025 school phone law, the YKI pen rule. | Marathi `गरज नाही`, `मनाई आहे` |
+| 14 | Writing follows the official YKI "Reklamation" (renovation bill); till höger can give a place too, the error is `på din höger sida`; tone in a complaint replaces a repeat of Lecture 13; two fix-it sorts; var/vart question-gap; du in speech, ni to a company. | `Jag ska svänga till höger eller till vänster?` marked wrong |
+| 15 | YKI "Berätta om ditt hem" card; reflexive fix-it sort; possessives after är; 5 of 7 checkpoint items typed; full-sentence review cards. | `i bussen` accepted |
+| 16 | YKI postcard; vill = want, tycker vs tror, V2 after Nästa år/Kanske; `i sommar` (not nästa sommar) for the coming summer; softer tänker att rule; hearsay ska; Elin's midsommar in Vasa. | Finland-Swedish stress on each key word |
+| 17 | Official YKI "Berätta om en god vän" card and holiday "Kort"; "Three traps" sort (har + past form, har with a finished time, sedan with a length); supine vowel length with Hindi पता/पत्ता. | `Bara sedan april …`; bare `bor här sedan två år` marked wrong |
+| 18 | YKI "Berätta kort om din skoltid"; informal e-mail to Leena (Classroom item 18 structure); linker errors (English order after men, verb after för, inte before the verb); Finnish school facts. | `Grattis i efterskott`; `armén` vs `lumpen` |
+| 19 | att han kommer inte, verb after a fronted clause, trots att … men (ändå); formal "Respons" e-mail to Arbis (Classroom item 19); vitsord; Yle lätt svenska. | `går kvällskursen` vs `går på kvällskursen` |
+| 20 | Writing is the basic "Respons" survey answer; errors after Å andra sidan, inte both ways, bare commands when ordering; restaurant problem-request match; VL = laktosfattig confirmed (Helsinki menu, teacher check closed); Classroom item 20 news linked. | `Kan vi få räkningen?` accepted |
+| 21 | 2BHK = en trea (1BHK = en tvåa); inte … någon with two verbs; "Därför jag letar"; formal message to a landlord; YKI situation questions; soptunna (kärl question closed), bastutur. | `bastutur`; `mjölkpaket` vs `mjölkburk` |
+| 22 | Writing is the basic "Respons" opinion task (the justified insändare is level 3 / B1, named as the next step, as teacher Lesson 23 does); föredrar … framför, på landet, många/mycket; dialogue links the dream home to Alex's real tvåa search; Kvarnbäcken advert as reading; egnahemshus. | `Det finns mycket bilar` marked as needing a fix in writing |
+
+**Story facts now relied on** (in addition to AGENTS.md's): Alex signs formal
+messages "Alex Khan" (Lectures 19, 21); Leena is a friend from the Swedish course
+with a son, Leo (Lectures 10, 12, 18); Elin spends midsommar in Vasa (train 18
+June, Lecture 16); Helsinki's Swedish-language schools ended the spring term on
+30 May 2026, so from June Maja is on a summer course in chemistry (Lectures 18,
+19, 21, 22). Lecture 14's formal-letter model is signed by a neutral example
+name, Ravi Kumar. Swedish input stays inside each stage's target (Lectures 1-4
+connected text inside 250-600; Lectures 3-4 counted broadly are above it
+because of the required textbook pages, as noted before).
