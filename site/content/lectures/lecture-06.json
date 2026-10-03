@@ -5,7 +5,7 @@
     "Tell what you did yesterday from morning to evening, with time words such as igår, förra veckan and för … sedan.",
     "Build regular past forms from the present form: -ade, -de, -te and -dde.",
     "Use common irregular past forms such as var, hade, gick, åt, drack, sov and gjorde.",
-    "React to good news, and choose hem (direction) or hemma (location)."
+    "React to news, choose hem (direction) or hemma (location), and say sorry that you could not come (Jag kunde inte komma)."
   ],
   "focusSkills": [
     "listening",
@@ -21,6 +21,7 @@
     "infinitive",
     "vowel",
     "chunk",
+    "modal-verb",
     "negation",
     "word-order",
     "verb-second",
@@ -43,7 +44,7 @@
       },
       "practice": {
         "label": "Do the task",
-        "description": "Speak from morning to evening, then write your first diary entry."
+        "description": "Tell your day from morning to evening, then write a message to a friend whose party you missed."
       }
     },
     "opening": {
@@ -150,15 +151,15 @@
     },
     {
       "id": "sv-06-unplanned-5",
-      "fi": "Var var du på kvällen?",
-      "en": "Where were you in the evening?",
+      "fi": "Var var du igår kväll?",
+      "en": "Where were you yesterday evening?",
       "sample": "Jag var hemma."
     },
     {
       "id": "sv-06-unplanned-6",
-      "fi": "När gick du hem?",
-      "en": "When did you go home?",
-      "sample": "Jag gick hem klockan åtta."
+      "fi": "Vad gjorde du i helgen?",
+      "en": "What did you do at the weekend?",
+      "sample": "I lördags bastade jag med en vän."
     }
   ],
   "reviewPhrases": [
@@ -193,9 +194,9 @@
       "fi": "Vilka fantastiska nyheter! Grattis!"
     },
     {
-      "id": "sv-06-review-7",
-      "en": "I am so proud of you.",
-      "fi": "Jag är så stolt över dig."
+      "id": "sv-06-review-9",
+      "en": "Sorry, I could not come.",
+      "fi": "Förlåt, jag kunde inte komma."
     },
     {
       "id": "sv-06-review-8",
@@ -1035,11 +1036,12 @@
       "kind": "rule",
       "body": [
         "Past tense tells what happened at a finished time: igår (yesterday), igår kväll (yesterday evening), i lördags (last Saturday: i + day + s), förra veckan (last week), förra året (last year). For “ago”, put the time between för and sedan: för fem år sedan = five years ago. Sedan on its own means then: Sedan gick jag hem.",
+        "With a finished time such as igår or för … sedan, Swedish uses this past form. Indian English often says I have come here two years back; in Swedish say Jag kom hit för två år sedan.",
         "The past form is the same for every person: jag jobbade, du jobbade, hon jobbade, vi jobbade. Unlike Hindi (gaya, gayi, gaye) or English (was, were), it never changes for a man, a woman or a group.",
         "Your teacher’s clue: look at the present tense form. Verbs with -ar in the present are group 1. Keep the -a of the base form and add -de: jobbar → jobba → jobbade, dansar → dansade.",
         "Most group 2 verbs have -er in the present. Take away -er and add -de: ringer → ringde, beställer → beställde. If what is left ends in p, k, t, s or x, add -te instead: köper → köpte, tycker → tyckte, läser → läste. These sounds are voiceless: your throat does not buzz when you say them. The -te rule is only for -er verbs; pratar is group 1, so it becomes pratade.",
         "Group 3 verbs are short and end in a vowel + r in the present: bor, mår, tror. They add -dde: bodde, mådde, trodde. Careful: some of the most common verbs break these patterns (har → hade, tar → tog, går → gick, äter → åt). Learn those as pairs in the next topic.",
-        "When a time word comes first, the verb still comes second and jag moves after it: Igår jobbade jag. Not: Igår jag jobbade. This is the verb-second word order from Lecture 3."
+        "When a time word comes first, the verb still comes second and jag moves after it: Igår jobbade jag. Not: Igår jag jobbade. This is the verb-second word order from Lecture 3. Learners of every language find it hard, so practise it with every time word in your story: Sedan åkte jag …, På kvällen åt jag …"
       ],
       "examples": [
         {
@@ -1137,11 +1139,11 @@
             "why": "Pratar ends in -ar: group 1, even though the stem has a t. Pratar → pratade."
           },
           {
-            "fi": "lagar",
-            "en": "cooks",
+            "fi": "bastar",
+            "en": "takes a sauna",
             "bucket": "ade",
             "mark": "ar",
-            "why": "Lagar ends in -ar: group 1. Lagar → lagade."
+            "why": "Bastar ends in -ar: group 1. Bastar → bastade. Swedish speakers in Finland say basta for bada bastu (take a sauna)."
           },
           {
             "fi": "ringer",
@@ -1200,16 +1202,13 @@
       "title": "Learn the common irregular pairs",
       "kind": "rule",
       "body": [
-        "Some very common verbs do not follow the regular patterns. Often the vowel inside the verb changes (dricker → drack, skriver → skrev); sometimes the whole word changes (är → var). Learn each present–past pair as one chunk. The textbook calls them starka verb (strong verbs); this course calls them irregular verbs.",
+        "Some very common verbs do not follow the regular patterns. Often the vowel inside the verb changes (dricker → drack, skriver → skrev); sometimes the whole word changes (är → var). Learn each present–past pair as one chunk, and never add -de to them: sov, not sovde. Careful: går looks like mår (mådde), but går → gick. The textbook calls them starka verb (strong verbs); this course calls them irregular verbs.",
         "Start with the forms you need to tell a whole day: är → var, har → hade, går → gick, äter → åt, dricker → drack, sover → sov, gör → gjorde, kommer → kom. Page 18 has ten more. Learn a few each day in your diary.",
+        "The help verbs from Lecture 3 have past forms too: kan → kunde, vill → ville, and måste stays måste. The next verb stays in its base form, and inte still comes right after the first verb: Jag kunde inte komma. Sofia ville ha boken.",
         "A trap: var can mean was (Jag var hemma) or where (Var bor du?), so Var var du? means Where were you?",
         "Swedish has no did. In a yes/no question the past verb simply comes first: Åt du frukost? (Did you eat breakfast?) Hade du en bra dag på jobbet? (Did you have a good day at work?) In a negative sentence inte comes after the past verb: Jag sov inte bra. (I did not sleep well.) Never use gjorde for did: Åt du? (not Gjorde du äta?)"
       ],
       "examples": [
-        {
-          "fi": "Jag var hemma hela kvällen.",
-          "en": "I was at home all evening."
-        },
         {
           "fi": "Vi åt middag och drack kaffe.",
           "en": "We ate dinner and drank coffee."
@@ -1223,8 +1222,8 @@
           "en": "Did you have a good day at work?"
         },
         {
-          "fi": "Jag kom till Finland för fem år sedan.",
-          "en": "I came to Finland five years ago."
+          "fi": "Förlåt, jag kunde inte komma igår.",
+          "en": "Sorry, I could not come yesterday."
         }
       ],
       "table": {
@@ -1273,62 +1272,96 @@
             "kommer",
             "kom",
             "comes / came"
+          ],
+          [
+            "kan",
+            "kunde",
+            "can / could"
+          ],
+          [
+            "vill",
+            "ville",
+            "wants / wanted"
           ]
         ]
       },
       "memoryTip": "Learn them in sound families: går–gick and får–fick; skriver–skrev and blir–blev; vill–ville and kan–kunde. Gick and gjorde both start with a y sound.",
-      "tryIt": "Cover the past column and say all eight past forms. Then ask one question without did, for example Åt du frukost?, and answer it: Ja, jag åt … / Nej, jag åt inte …",
+      "tryIt": "Cover the past column and say all ten past forms. Then ask one question without did, for example Åt du frukost?, and answer it: Ja, jag åt … / Nej, jag åt inte …",
       "activity": {
-        "type": "match",
-        "label": "Irregular pairs",
-        "title": "Match the present to the past",
-        "instructions": "Match each present form to its past form, then say each pair aloud.",
-        "leftLabel": "Present",
-        "rightLabel": "Past",
-        "pairs": [
+        "type": "sort",
+        "label": "Spot the mistake",
+        "title": "Correct, or a mistake?",
+        "instructions": "Read the line and its meaning. Is the Swedish correct? If you think it has a mistake, say the fixed line aloud before you choose.",
+        "buckets": [
           {
-            "left": "är",
-            "right": "var",
-            "note": "Igår var jag trött. (Yesterday I was tired.)"
+            "id": "ok",
+            "label": "correct",
+            "hint": "say it as it is"
           },
           {
-            "left": "har",
-            "right": "hade",
-            "note": "Vi hade fest. (We had a party.)"
-          },
-          {
-            "left": "går",
-            "right": "gick",
-            "note": "Jag gick hem. (I went home.)"
-          },
-          {
-            "left": "äter",
-            "right": "åt",
-            "note": "Jag åt frukost. (I ate breakfast.)"
-          },
-          {
-            "left": "dricker",
-            "right": "drack",
-            "note": "Jag drack kaffe. (I drank coffee.)"
-          },
-          {
-            "left": "sover",
-            "right": "sov",
-            "note": "Jag sov bra. (I slept well.)"
-          },
-          {
-            "left": "gör",
-            "right": "gjorde",
-            "note": "Vad gjorde du? (What did you do?)"
-          },
-          {
-            "left": "kommer",
-            "right": "kom",
-            "note": "Jag kom hem sent. (I came home late.)"
+            "id": "fix",
+            "label": "a mistake",
+            "hint": "say the fixed line"
           }
         ],
-        "pattern": "There is no single ending rule. Often the vowel changes (dricker → drack); sometimes the whole word changes (är → var). Learn them as pairs.",
-        "sentence": "{left}, {right}"
+        "items": [
+          {
+            "fi": "Igår jag gick hem.",
+            "en": "Yesterday I went home.",
+            "bucket": "fix",
+            "why": "After a time word the verb comes second: Igår gick jag hem."
+          },
+          {
+            "fi": "Sov du bra?",
+            "en": "Did you sleep well?",
+            "bucket": "ok",
+            "why": "In a yes/no question the past verb comes first. Swedish adds no did."
+          },
+          {
+            "fi": "Jag sovde bra.",
+            "en": "I slept well.",
+            "bucket": "fix",
+            "why": "Sover is irregular and takes no ending: Jag sov bra."
+          },
+          {
+            "fi": "Jag åt inte frukost.",
+            "en": "I did not eat breakfast.",
+            "bucket": "ok",
+            "why": "Inte comes right after the past verb, and there is no did."
+          },
+          {
+            "fi": "Gjorde du äta frukost?",
+            "en": "Did you eat breakfast?",
+            "bucket": "fix",
+            "why": "Never use gjorde for did. Put the past verb first: Åt du frukost?"
+          },
+          {
+            "fi": "Var var du igår?",
+            "en": "Where were you yesterday?",
+            "bucket": "ok",
+            "why": "The first var means where, the second means were."
+          },
+          {
+            "fi": "Vi gådde hem klockan ett.",
+            "en": "We went home at one o’clock.",
+            "bucket": "fix",
+            "why": "Går looks like mår (mådde), but it is irregular: Vi gick hem klockan ett."
+          },
+          {
+            "fi": "Igår drack vi kaffe och åt tårta.",
+            "en": "Yesterday we drank coffee and ate cake.",
+            "bucket": "ok",
+            "why": "Drack comes straight after Igår, and vi follows it."
+          },
+          {
+            "fi": "Jag går hem igår.",
+            "en": "I went home yesterday.",
+            "bucket": "fix",
+            "why": "Igår is a finished time, so use the past form: Jag gick hem igår."
+          }
+        ],
+        "audio": false,
+        "summary": "Four mistakes to catch in your own speech: the verb after a time word (Igår gick jag), did (Åt du?), an ending on an irregular verb (sov, gick), and a present form with a past time word."
       }
     },
     {
@@ -1343,10 +1376,6 @@
         {
           "fi": "Vilka fantastiska nyheter! Grattis!",
           "en": "What fantastic news! Congratulations!"
-        },
-        {
-          "fi": "Jag är så stolt över dig.",
-          "en": "I am so proud of you."
         },
         {
           "fi": "Vad roligt! Hur var det?",
@@ -1401,7 +1430,7 @@
       "kind": "rule",
       "body": [
         "Hem shows direction: you move toward home. Hemma shows location: you are already there. English says “home” for both, so look at the verb.",
-        "Movement verbs take hem: gå hem (go home on foot), åka hem (go home by bus, tram or car), komma hem. Being or doing something there takes hemma: Jag var hemma. Jag jobbade hemma. Hemma åt jag middag. Åker → åkte is regular: -te after k.",
+        "Movement verbs take hem: gå hem (go home on foot), åka hem (go home by bus, tram or car), komma hem. Being or doing something there takes hemma: Jag var hemma. Jag jobbade hemma. Hemma åt jag middag. Careful: English went covers both gick and åkte. Gick means you walked; by tram, bus or train say åkte (åker → åkte is regular: -te after k).",
         "The same idea works for ut–ute (out–outside), in–inne (in–inside), upp–uppe (up–upstairs) and ner–nere (down–downstairs). The short form shows movement; the form ending in -a or -e shows location.",
         "Two useful chunks: hem till mig (to my place) and hemma hos mig (at my place)."
       ],
@@ -1415,8 +1444,8 @@
           "en": "I am at home, come when you like!"
         },
         {
-          "fi": "Igår åkte jag hem klockan fem.",
-          "en": "Yesterday I went home at five."
+          "fi": "Igår åkte jag hem med spårvagnen.",
+          "en": "Yesterday I went home by tram."
         },
         {
           "fi": "Kom hem till mig på fredag!",
@@ -1476,63 +1505,63 @@
         ],
         "items": [
           {
-            "fi": "Igår gick jag … klockan sex.",
+            "fi": "Igår gick jag ___ klockan sex.",
             "en": "Yesterday I went home at six.",
             "bucket": "move",
             "mark": "gick",
             "why": "Gick is movement toward home: Igår gick jag hem klockan sex."
           },
           {
-            "fi": "Jag var … hela kvällen.",
+            "fi": "Jag var ___ hela kvällen.",
             "en": "I was at home all evening.",
             "bucket": "place",
             "mark": "var",
             "why": "Var tells where you were: Jag var hemma hela kvällen."
           },
           {
-            "fi": "Jag åkte … med bussen.",
+            "fi": "Jag åkte ___ med bussen.",
             "en": "I went home by bus.",
             "bucket": "move",
             "mark": "åkte",
             "why": "Åkte is movement: Jag åkte hem med bussen."
           },
           {
-            "fi": "Jag jobbade … igår.",
+            "fi": "Jag jobbade ___ igår.",
             "en": "I worked at home yesterday.",
             "bucket": "place",
             "mark": "jobbade",
             "why": "You worked in a place; you did not move there: Jag jobbade hemma igår."
           },
           {
-            "fi": "Kom … till mig på fredag!",
+            "fi": "Kom ___ till mig på fredag!",
             "en": "Come to my place on Friday!",
             "bucket": "move",
             "mark": "Kom",
             "why": "Komma is movement toward a home: Kom hem till mig på fredag!"
           },
           {
-            "fi": "Jag måste gå …",
+            "fi": "Jag måste gå ___.",
             "en": "I have to go out.",
             "bucket": "move",
             "mark": "gå",
             "why": "Gå shows movement: Jag måste gå ut."
           },
           {
-            "fi": "Jag är … med hunden.",
+            "fi": "Jag är ___ med hunden.",
             "en": "I am outside with the dog.",
             "bucket": "place",
             "mark": "är",
             "why": "Är tells where you are: Jag är ute med hunden."
           },
           {
-            "fi": "Hissen går …",
+            "fi": "Hissen går ___.",
             "en": "The lift goes up.",
             "bucket": "move",
             "mark": "går",
             "why": "The lift moves: Hissen går upp."
           },
           {
-            "fi": "Jag är … på andra våningen.",
+            "fi": "Jag är ___ på andra våningen.",
             "en": "I am up on the second floor.",
             "bucket": "place",
             "mark": "är",
@@ -1558,7 +1587,7 @@
         "Jag arbetade mycket i går."
       ],
       "hint": "Put the verb straight after Igår, then jag: Igår jobbade jag …",
-      "explanation": "Igår jobbade jag mycket. With igår first, the verb comes second and jag follows it. Not: Igår jag jobbade."
+      "explanation": "Igår jobbade jag mycket. This is the verb-second rule from Lecture 3: with igår first, the verb comes next and jag follows it. Not: Igår jag jobbade."
     },
     {
       "id": "sv-06-guided-did-question",
@@ -1594,13 +1623,15 @@
     },
     {
       "id": "sv-06-guided-negative",
-      "prompt": "Produce: “I did not have time.”",
+      "prompt": "Produce: “I could not come. I did not have time.”",
       "answers": [
-        "Jag hade inte tid.",
-        "Jag hade ingen tid."
+        "Jag kunde inte komma. Jag hade inte tid.",
+        "Jag kunde inte komma. Jag hade ingen tid.",
+        "Jag kunde inte komma, för jag hade inte tid.",
+        "Jag kunde inte komma, för jag hade ingen tid."
       ],
-      "hint": "The verb is hade; inte comes after it.",
-      "explanation": "Jag hade inte tid. Inte follows hade."
+      "hint": "kan → kunde, har → hade. Inte comes right after the first verb.",
+      "explanation": "Jag kunde inte komma. Jag hade inte tid. As in Lecture 3, the help verb (kunde) is followed by the base form (komma), and inte comes right after the first verb. Swedish adds no did."
     },
     {
       "id": "sv-06-guided-home",
@@ -1636,7 +1667,9 @@
       "prompt": "Produce: “What did you do yesterday?”",
       "answers": [
         "Vad gjorde du igår?",
-        "Vad gjorde du i går?"
+        "Vad gjorde du i går?",
+        "Vad gjorde ni igår?",
+        "Vad gjorde ni i går?"
       ],
       "hint": "gör → gjorde.",
       "explanation": "Vad gjorde du igår? Igår and i går are both correct spellings."
@@ -1660,6 +1693,20 @@
       "explanation": "Model: Igår gick jag hem och åt middag."
     },
     {
+      "id": "sv-06-check-sleep-question",
+      "prompt": "How do you ask “Did you sleep well?”",
+      "answers": [
+        "Sov du bra?"
+      ],
+      "options": [
+        "Sov du bra?",
+        "Gjorde du sova bra?",
+        "Sovde du bra?"
+      ],
+      "hint": "Start with the past form of sover.",
+      "explanation": "Sov du bra? Swedish has no did: the past verb comes first. Sover → sov, with no ending."
+    },
+    {
       "id": "sv-06-check-fill-laser",
       "prompt": "Write the past form of LÄSER: Igår ___ jag en bok på svenska.",
       "answers": [
@@ -1669,34 +1716,6 @@
       ],
       "hint": "Läs ends in s: group 2 with -te.",
       "explanation": "Igår läste jag en bok på svenska. Läser → läste."
-    },
-    {
-      "id": "sv-06-check-regular",
-      "prompt": "Which line has the correct past form?",
-      "answers": [
-        "Jag köpte en bok."
-      ],
-      "options": [
-        "Jag köpde en bok.",
-        "Jag köpte en bok.",
-        "Jag köper en bok igår."
-      ],
-      "hint": "Köpa takes -te in the past.",
-      "explanation": "Jag köpte en bok."
-    },
-    {
-      "id": "sv-06-check-strong",
-      "prompt": "Which pair is correct?",
-      "answers": [
-        "sover → sov"
-      ],
-      "options": [
-        "sover → sov",
-        "sover → sovde",
-        "sover → soverade"
-      ],
-      "hint": "This verb is irregular: no ending is added.",
-      "explanation": "Sover becomes sov."
     },
     {
       "id": "sv-06-check-place",
@@ -1711,6 +1730,32 @@
       ],
       "hint": "Use hemma for location.",
       "explanation": "Jag var hemma."
+    },
+    {
+      "id": "sv-06-check-house-party",
+      "prompt": "Elin describes Saturday’s party. Write in Swedish: “The house was big and the party was fun.”",
+      "answers": [
+        "Huset var stort och festen var rolig.",
+        "Festen var rolig och huset var stort.",
+        "Huset var stort. Festen var rolig.",
+        "Festen var rolig. Huset var stort."
+      ],
+      "hint": "Use the definite forms from Lecture 5 (huset, festen) and the past of är.",
+      "explanation": "Huset var stort och festen var rolig. As in Lecture 5, ett hus → huset takes stort, and en fest → festen takes rolig. In the past only är changes to var."
+    },
+    {
+      "id": "sv-06-check-habit",
+      "prompt": "Choose: På helgen brukar jag träna, men i lördags ___ jag hemma.",
+      "answers": [
+        "var"
+      ],
+      "options": [
+        "var",
+        "är",
+        "brukar vara"
+      ],
+      "hint": "I lördags is one finished day.",
+      "explanation": "I lördags var jag hemma. Brukar from Lecture 4 is for habits (På helgen brukar jag träna); one finished day takes the past form var."
     }
   ],
   "practice": {
@@ -1941,11 +1986,11 @@
       }
     ],
     "pronunciation": {
-      "text": "jobbade, ringde, köpte, bodde. Var, hade, gick, åt, drack, sov. Jag gick hem. Jag var hemma.",
-      "tip": "Keep the final -de or -te audible. In gick and gjorde, the start sounds like English y. Contrast short hem with two-syllable hemma."
+      "text": "jobbade, pratade, vaknade, köpte. Gick, gjorde. Jag gick hem. Jag var hemma.",
+      "tip": "Stress the first syllable and keep the ending light but audible: JOBbade, PRAtade, VAKnade, KÖPte. The Sweden-Swedish voices give these words a falling-then-rising tune (accent 2). Standard Finland-Swedish has no such tune, only plain stress, so you do not need it. In relaxed speech many Swedes clip -ade to -a (jag jobba igår): recognise it, but write -ade. Gick and gjorde start with an English y sound (Lecture 1). Hem has one syllable, hemma two."
     },
     "listening": {
-      "text": "Igår sov Elin länge. Hon vaknade klockan elva och drack kaffe hemma. Sedan ringde hon en vän. På eftermiddagen gick hon ut och köpte mat. Hon gick en promenad i parken. Klockan fem gick hon hem och lagade soppa. På kvällen läste hon en bok. Hon var trött och sov bra.",
+      "text": "Igår sov Elin länge. Hon vaknade klockan elva och drack kaffe hemma. Sedan ringde hon en vän. På eftermiddagen gick hon ut och köpte mat. Hon gick en promenad i parken. Klockan fem gick hon hem och lagade soppa. På kvällen bastade hon och läste en bok. Hon var trött och sov bra.",
       "question": "What did Elin do in the afternoon?",
       "options": [
         "She bought food and went for a walk",
@@ -1956,7 +2001,7 @@
       "explanation": "På eftermiddagen gick hon ut och köpte mat. Hon gick en promenad i parken."
     },
     "reading_passage": {
-      "text": "Majas dagbok, söndag\nIdag fick jag veta att jag klarade matteprovet! Jag blev så glad. Jag pluggade mycket förra veckan. Mamma sa: ”Jag är så stolt över dig.” På eftermiddagen firade vi hemma. Vi åt tårta och drack kaffe. Sedan ringde jag en kompis och berättade allt. Nu är jag trött men glad. God natt!",
+      "text": "Majas dagbok, söndag\nIdag såg jag resultatet i Wilma: jag klarade matteprovet! Jag blev så glad. Jag pluggade mycket förra veckan. Mamma sa: ”Jag är så stolt över dig.” På eftermiddagen firade vi hemma. Vi åt tårta och drack kaffe. Sedan ringde jag en kompis och berättade allt. Nu är jag trött men glad. God natt!",
       "gist": {
         "prompt": "Why was Maja’s day especially good?",
         "options": [
@@ -1965,7 +2010,7 @@
           "She did not go to school"
         ],
         "answer": 0,
-        "explanation": "Idag fick jag veta att jag klarade matteprovet!"
+        "explanation": "Idag såg jag resultatet i Wilma: jag klarade matteprovet!"
       },
       "detail": {
         "prompt": "What did Maja and her family do in the afternoon?",
@@ -1979,7 +2024,7 @@
       }
     },
     "reading": {
-      "text": "I lördags var Elin på fest hos en vän. Hon kom klockan sju. De åt god mat och dansade. Grannen klagade på musiken, men det var roligt. Elin gick hem klockan ett. Igår sov hon länge.",
+      "text": "I lördags var Elin på fest hos en vän, Sanna. Hon kom klockan sju. De åt god mat och dansade. Grannen klagade på musiken, men det var roligt. Elin gick hem klockan ett. Igår sov hon länge.",
       "question": "Where was Elin on Saturday evening?",
       "options": [
         "At a friend’s party",
@@ -1987,40 +2032,40 @@
         "At work"
       ],
       "answer": 0,
-      "explanation": "I lördags var Elin på fest hos en vän."
+      "explanation": "I lördags var Elin på fest hos en vän, Sanna."
     },
     "speaking": {
-      "prompt": "Tell Elin what you did yesterday in six lines, from morning to evening. Use at least four past verbs and one time phrase.",
-      "help": "Igår vaknade jag … · Sedan åkte jag … · På dagen … · Efter jobbet … · Klockan … åkte jag hem. · Hemma åt jag …",
-      "model": "Igår vaknade jag klockan sju och åt frukost. Sedan åkte jag till jobbet med bussen. På jobbet pratade jag med en kollega. Efter jobbet köpte jag mat. Klockan sex åkte jag hem. Hemma åt jag middag och pluggade svenska."
+      "prompt": "A YKI-style telling task (basic level: about 1 minute to prepare, 1½ minutes to speak). Berätta om din dag igår. (Tell about your day yesterday.) Answer these questions in order: När vaknade du? Vad gjorde du på dagen? Vem pratade du med? Vad åt du? Vad gjorde du på kvällen? Hur var dagen?",
+      "help": "Igår vaknade jag … · Sedan åkte jag … · På dagen pratade jag med … · Efter jobbet … · Hemma åt jag … · Dagen var …",
+      "model": "Igår vaknade jag klockan sju och åt frukost. Sedan åkte jag till jobbet med spårvagnen. På jobbet pratade jag med en kollega. Efter jobbet köpte jag mat och åkte hem. Hemma åt jag middag och pluggade svenska. Dagen var lång men bra."
     },
     "writing": {
-      "prompt": "Write your first short diary entry about yesterday in five to seven sentences.",
-      "situation": "Your Swedish teacher asks you to keep a diary in Swedish: 5–10 minutes every day, in the past tense. Write your first entry, about yesterday.",
+      "prompt": "Write a short message to a friend: say sorry you missed the party, say why, and ask how it was.",
+      "situation": "Skriv ett meddelande till din vän. (Write a message to your friend.) Elin’s friend Sanna invited you to her party last Saturday, but you could not go. This is the YKI basic-level message task: say sorry, say why, suggest something, and open and close the message in a suitable way.",
       "points": [
-        "Say when it happened (Igår …) and tell your morning.",
-        "Say where you went or where you were (use hem or hemma once).",
-        "Name one person in your life you met, called or talked to.",
-        "Use at least two irregular past forms, such as var, åt or gick.",
-        "End with your evening and what you liked or did not like about the day."
+        "Open with Hej and your friend’s name; close with Kram or Hälsningar and your name.",
+        "Say sorry that you could not come: Förlåt, jag kunde inte komma …",
+        "Say why, in the past (for example jobba, sjuk or trött).",
+        "Say one thing you did instead, with an irregular past form.",
+        "Ask how the party was, and invite your friend or suggest a day."
       ],
       "wordRange": [
         35,
         60
       ],
-      "help": "Igår vaknade jag … · Sedan åkte/gick jag till … · Där pratade jag med … · Efter jobbet ringde jag … · Hemma åt jag … · Dagen var …, men jag gillade …",
-      "model": "Igår vaknade jag tidigt och drack kaffe. Sedan åkte jag till jobbet. Där pratade jag med min kollega. Efter jobbet ringde jag min mamma. Klockan sex gick jag hem. Hemma åt jag en god middag och pluggade svenska. Dagen var lång, men jag gillade kvällen."
+      "help": "Hej Sanna! · Förlåt, jag kunde inte komma på festen i lördags. · Jag måste … / Jag var sjuk. · Sedan var jag hemma och … · Hur var festen? · Vill du komma hem till mig på …? · Kram, …",
+      "model": "Hej Sanna!\nFörlåt, jag kunde inte komma på festen i lördags. Jag måste jobba hela dagen, och sedan var jag mycket trött. Jag åt middag hemma och såg en film. Hur var festen? Dansade ni mycket? Vill du komma hem till mig på söndag?\nKram,\nAlex"
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Tell Elin about yesterday in six past-tense lines, then write a 35–60-word diary entry.",
+    "expectedOutput": "Tell your day yesterday in six past-tense lines (a YKI telling task), then write a 35–60-word message to a friend whose party you missed.",
     "transferPrompt": "Change one detail: tell the same day with a different meal, place or evening activity.",
     "returnPrompt": "Tomorrow, retell yesterday from memory in under 40 seconds with four past verbs.",
     "successChecks": [
-      "Move from morning to evening in a clear order.",
-      "Use at least four correct past-tense verbs.",
-      "Include one regular and one irregular past form.",
+      "Answer the six task questions in order, from morning to evening.",
+      "Use at least four correct past forms, including one irregular one (var, åt, gick).",
+      "After a time word, put the verb before jag: Sedan åkte jag …",
       "Use hem for movement or hemma for location correctly."
     ],
     "requiredSkills": [
@@ -2030,13 +2075,14 @@
   },
   "assignment": {
     "title": "Episode 6 mission: Yesterday",
-    "instructions": "CORE: Tell Elin what you did yesterday in six lines, from morning to evening. Use at least four past verbs.\n\nWRITING: Start your diary with five to seven sentences about yesterday.\n\nDAILY: Continue the diary for 5–10 minutes every day, as your teacher asked. Each day, use at least two irregular past forms and one new word about your own life.\n\nRETURN: Tomorrow, retell the day without looking.",
-    "model": "Igår vaknade jag klockan sju och åt frukost. Sedan åkte jag till jobbet med bussen. På jobbet pratade jag med en kollega. Efter jobbet köpte jag mat. Klockan sex åkte jag hem. Hemma åt jag middag och pluggade svenska."
+    "instructions": "CORE: Tell your day yesterday in six lines, from morning to evening, as in the YKI telling task. Use at least four past verbs.\n\nWRITING: Write to a friend whose party you missed: say sorry, say why, tell one thing you did and ask how it was.\n\nDAILY: Start your diary today and write for 5–10 minutes every day, as your teacher asked. Each day, use at least two irregular past forms and one new word about your own life.\n\nRETURN: Tomorrow, retell the day without looking.",
+    "model": "Igår vaknade jag klockan sju och åt frukost. Sedan åkte jag till jobbet med spårvagnen. På jobbet pratade jag med en kollega. Efter jobbet köpte jag mat och åkte hem. Hemma åt jag middag och pluggade svenska. Dagen var lång men bra."
   },
   "takeaways": [
     "Use one past form for every person: jag jobbade, hon jobbade, vi jobbade.",
     "Read the present form: -ar → -ade, -er → -de (or -te after p, k, t, s, x), short verbs with a vowel + r → -dde.",
-    "Learn frequent irregular verbs as pairs: är–var, har–hade, går–gick, äter–åt, gör–gjorde.",
+    "Learn frequent irregular verbs as pairs, with no ending: är–var, går–gick, äter–åt, sover–sov, kan–kunde.",
+    "After a time word the verb comes second (Igår gick jag hem), and Swedish has no did (Åt du? Jag åt inte).",
     "Hem is a direction; hemma is a location. React to news before asking what happened."
   ],
   "resources": [
