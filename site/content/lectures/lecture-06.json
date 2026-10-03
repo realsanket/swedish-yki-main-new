@@ -23,13 +23,15 @@
     "chunk",
     "negation",
     "word-order",
-    "verb-second"
+    "verb-second",
+    "yes-no-question",
+    "singular-plural"
   ],
   "presentation": {
     "routeSteps": {
       "recall": {
         "label": "Hear the conversation",
-        "description": "Listen to Maja’s good news, Alex’s Sunday and Elin’s party."
+        "description": "Listen to Maja’s good news, Alex’s Sunday and the party Elin went to."
       },
       "teach": {
         "label": "Build it step by step",
@@ -54,7 +56,7 @@
         "part": "recall",
         "eyebrow": "Maja, Elin and Alex · Monday after the weekend",
         "title": "Fantastic news!",
-        "instructions": "Listen with the words hidden. What is Maja’s news, what did Alex do yesterday, and how was Elin’s party?",
+        "instructions": "Listen with the words hidden. What is Maja’s news, what did Alex do yesterday, and how was the party on Saturday?",
         "initiallyOpen": false
       }
     },
@@ -1003,7 +1005,7 @@
     },
     {
       "fi": "Ja. Jag åt middag och pluggade svenska. Hur var det på festen i lördags, Elin?",
-      "en": "Yes. I ate dinner and studied Swedish. How was the party on Saturday, Elin?",
+      "en": "Yes. I ate dinner and studied Swedish. How was the party last Saturday, Elin?",
       "speaker": "Alex"
     },
     {
@@ -1032,7 +1034,8 @@
       "title": "Build regular past forms",
       "kind": "rule",
       "body": [
-        "Past tense tells what happened at a finished time: igår (yesterday), igår kväll (yesterday evening), förra veckan (last week), förra året (last year). For “ago”, put the time between för and sedan: för fem år sedan = five years ago. The past form is the same for every person: jag jobbade, du jobbade, vi jobbade.",
+        "Past tense tells what happened at a finished time: igår (yesterday), igår kväll (yesterday evening), i lördags (last Saturday: i + day + s), förra veckan (last week), förra året (last year). For “ago”, put the time between för and sedan: för fem år sedan = five years ago. Sedan on its own means then: Sedan gick jag hem.",
+        "The past form is the same for every person: jag jobbade, du jobbade, hon jobbade, vi jobbade. Unlike Hindi (gaya, gayi, gaye) or English (was, were), it never changes for a man, a woman or a group.",
         "Your teacher’s clue: look at the present tense form. Verbs with -ar in the present are group 1. Keep the -a of the base form and add -de: jobbar → jobba → jobbade, dansar → dansade.",
         "Most group 2 verbs have -er in the present. Take away -er and add -de: ringer → ringde, beställer → beställde. If what is left ends in p, k, t, s or x, add -te instead: köper → köpte, tycker → tyckte, läser → läste. These sounds are voiceless: your throat does not buzz when you say them. The -te rule is only for -er verbs; pratar is group 1, so it becomes pratade.",
         "Group 3 verbs are short and end in a vowel + r in the present: bor, mår, tror. They add -dde: bodde, mådde, trodde. Careful: some of the most common verbs break these patterns (har → hade, tar → tog, går → gick, äter → åt). Learn those as pairs in the next topic.",
@@ -1199,8 +1202,8 @@
       "body": [
         "Some very common verbs do not follow the regular patterns. Often the vowel inside the verb changes (dricker → drack, skriver → skrev); sometimes the whole word changes (är → var). Learn each present–past pair as one chunk. The textbook calls them starka verb (strong verbs); this course calls them irregular verbs.",
         "Start with the forms you need to tell a whole day: är → var, har → hade, går → gick, äter → åt, dricker → drack, sover → sov, gör → gjorde, kommer → kom. Page 18 has ten more. Learn a few each day in your diary.",
-        "Two traps. Var can mean was (Jag var hemma) or where (Var bor du?), so Var var du? means Where were you? And börjar becomes började, not började.",
-        "Negative sentences work as in the present: inte comes after the past verb. Jag hade inte tid. Jag sov inte bra."
+        "A trap: var can mean was (Jag var hemma) or where (Var bor du?), so Var var du? means Where were you?",
+        "Swedish has no did. In a yes/no question the past verb simply comes first: Åt du frukost? (Did you eat breakfast?) Hade du en bra dag på jobbet? (Did you have a good day at work?) In a negative sentence inte comes after the past verb: Jag sov inte bra. (I did not sleep well.) Never use gjorde for did: Åt du? (not Gjorde du äta?)"
       ],
       "examples": [
         {
@@ -1216,8 +1219,8 @@
           "en": "Maja went home at eight."
         },
         {
-          "fi": "Vad gjorde du igår?",
-          "en": "What did you do yesterday?"
+          "fi": "Hade du en bra dag på jobbet?",
+          "en": "Did you have a good day at work?"
         },
         {
           "fi": "Jag kom till Finland för fem år sedan.",
@@ -1273,8 +1276,8 @@
           ]
         ]
       },
-      "memoryTip": "Say the pairs with rhythm: går–gick, äter–åt, dricker–drack, sover–sov. Gick and gjorde both start with a y sound.",
-      "tryIt": "Cover the past column and say all eight past forms. Then say one true sentence with var and one with åt.",
+      "memoryTip": "Learn them in sound families: går–gick and får–fick; skriver–skrev and blir–blev; vill–ville and kan–kunde. Gick and gjorde both start with a y sound.",
+      "tryIt": "Cover the past column and say all eight past forms. Then ask one question without did, for example Åt du frukost?, and answer it: Ja, jag åt … / Nej, jag åt inte …",
       "activity": {
         "type": "match",
         "label": "Irregular pairs",
@@ -1333,7 +1336,7 @@
       "kind": "scene",
       "body": [
         "A story about the past is also a conversation. When a friend tells you news, react first, then ask one follow-up question.",
-        "Big good news: Vilka fantastiska nyheter! (What fantastic news!) or Grattis! (Congratulations!). Nyheter is plural in Swedish (en nyhet = one piece of news), so you say vilka, not vilken. Smaller good news: Vad roligt! (How nice!) or Vad bra! (How good!). Surprise or bad news: Oj! (Oh!). Jag är stolt över dig means I am proud of you.",
+        "Big good news: Vilka fantastiska nyheter! (What fantastic news!) or Grattis! (Congratulations!). Nyheter is plural in Swedish (en nyhet = one piece of news), so you say vilka, not vilken. Smaller good news: Vad roligt! (How nice!) or Vad bra! (How good!). Bad news: Vad tråkigt! (What a pity!). Tråkig also means boring, but as a reaction it means I am sorry to hear that. Surprise: Oj! (Oh!). Jag är stolt över dig means I am proud of you.",
         "Then ask a past question: Hur var det? (How was it?) or Vad gjorde du? (What did you do?)."
       ],
       "examples": [
@@ -1352,6 +1355,10 @@
         {
           "fi": "Hur var det på festen?",
           "en": "How was the party?"
+        },
+        {
+          "fi": "Oj, vad tråkigt! Hur mår du nu?",
+          "en": "Oh, what a pity! How are you now?"
         }
       ],
       "memoryTip": "React + ask: Vad roligt! Hur var det?",
@@ -1380,9 +1387,9 @@
             "note": "I bought a new book. — Good! Which book did you buy?"
           },
           {
-            "left": "Jag sov inte i natt.",
-            "right": "Oj! Hur mår du nu?",
-            "note": "I didn’t sleep last night. — Oh! How are you feeling now?"
+            "left": "Jag var sjuk i helgen.",
+            "right": "Oj, vad tråkigt! Hur mår du nu?",
+            "note": "I was ill at the weekend. — Oh, what a pity! How are you now?"
           }
         ],
         "pattern": "Show that you listened before you ask for more.",
@@ -1453,76 +1460,83 @@
       "activity": {
         "type": "sort",
         "label": "Move or stay",
-        "title": "Choose direction or location",
-        "instructions": "Sort each sentence: does someone move, or are they in a place?",
+        "title": "Movement or location: which word is missing?",
+        "instructions": "Look at the highlighted verb and the English. Does the missing word show movement (hem, ut, upp) or location (hemma, ute, uppe)? Choose, then say the full sentence aloud.",
         "buckets": [
           {
             "id": "move",
-            "label": "movement",
-            "hint": "hem, ut, in, upp, ner"
+            "label": "hem · ut · upp",
+            "hint": "movement: going there"
           },
           {
             "id": "place",
-            "label": "location",
-            "hint": "hemma, ute, inne, uppe, nere"
+            "label": "hemma · ute · uppe",
+            "hint": "location: already there"
           }
         ],
         "items": [
           {
-            "fi": "Jag gick hem.",
-            "en": "I went home.",
+            "fi": "Igår gick jag … klockan sex.",
+            "en": "Yesterday I went home at six.",
             "bucket": "move",
-            "mark": "hem",
-            "why": "Gick is movement toward home: hem."
+            "mark": "gick",
+            "why": "Gick is movement toward home: Igår gick jag hem klockan sex."
           },
           {
-            "fi": "Jag var hemma.",
-            "en": "I was at home.",
+            "fi": "Jag var … hela kvällen.",
+            "en": "I was at home all evening.",
             "bucket": "place",
-            "mark": "hemma",
-            "why": "Var tells where you were: hemma."
+            "mark": "var",
+            "why": "Var tells where you were: Jag var hemma hela kvällen."
           },
           {
-            "fi": "Jag åkte hem med bussen.",
+            "fi": "Jag åkte … med bussen.",
             "en": "I went home by bus.",
             "bucket": "move",
-            "mark": "hem",
-            "why": "Åkte is movement: hem."
+            "mark": "åkte",
+            "why": "Åkte is movement: Jag åkte hem med bussen."
           },
           {
-            "fi": "Jag jobbade hemma igår.",
+            "fi": "Jag jobbade … igår.",
             "en": "I worked at home yesterday.",
             "bucket": "place",
-            "mark": "hemma",
-            "why": "You worked in a place; you did not move there: hemma."
+            "mark": "jobbade",
+            "why": "You worked in a place; you did not move there: Jag jobbade hemma igår."
           },
           {
-            "fi": "Jag gick ut.",
-            "en": "I went out.",
+            "fi": "Kom … till mig på fredag!",
+            "en": "Come to my place on Friday!",
             "bucket": "move",
-            "mark": "ut",
-            "why": "Gick shows movement: ut."
+            "mark": "Kom",
+            "why": "Komma is movement toward a home: Kom hem till mig på fredag!"
           },
           {
-            "fi": "Jag var ute.",
-            "en": "I was outside.",
+            "fi": "Jag måste gå …",
+            "en": "I have to go out.",
+            "bucket": "move",
+            "mark": "gå",
+            "why": "Gå shows movement: Jag måste gå ut."
+          },
+          {
+            "fi": "Jag är … med hunden.",
+            "en": "I am outside with the dog.",
             "bucket": "place",
-            "mark": "ute",
-            "why": "Var shows location: ute."
+            "mark": "är",
+            "why": "Är tells where you are: Jag är ute med hunden."
           },
           {
-            "fi": "Hissen går upp.",
+            "fi": "Hissen går …",
             "en": "The lift goes up.",
             "bucket": "move",
-            "mark": "upp",
-            "why": "The lift moves: upp."
+            "mark": "går",
+            "why": "The lift moves: Hissen går upp."
           },
           {
-            "fi": "Jag är uppe på andra våningen.",
+            "fi": "Jag är … på andra våningen.",
             "en": "I am up on the second floor.",
             "bucket": "place",
-            "mark": "uppe",
-            "why": "You are already there: uppe."
+            "mark": "är",
+            "why": "You are already there: Jag är uppe på andra våningen."
           }
         ],
         "summary": "Short form for direction (hem, ut, upp); the form ending in -a or -e for location (hemma, ute, uppe)."
@@ -1547,18 +1561,15 @@
       "explanation": "Igår jobbade jag mycket. With igår first, the verb comes second and jag follows it. Not: Igår jag jobbade."
     },
     {
-      "id": "sv-06-guided-te",
-      "prompt": "Jag ___ en bok förra veckan. (köper)",
+      "id": "sv-06-guided-did-question",
+      "prompt": "Produce: “Did you have a good day at work?” Swedish has no did.",
       "answers": [
-        "köpte"
+        "Hade du en bra dag på jobbet?",
+        "Hade du en bra dag på arbetet?",
+        "Hade du en bra arbetsdag?"
       ],
-      "options": [
-        "köpte",
-        "köpde",
-        "köpade"
-      ],
-      "hint": "Köp ends in p, so it takes -te.",
-      "explanation": "Jag köpte en bok förra veckan."
+      "hint": "Start with the past verb hade, then du: Hade du …",
+      "explanation": "Hade du en bra dag på jobbet? In a yes/no question the past verb comes first. Never add gjorde for did."
     },
     {
       "id": "sv-06-guided-fill-lagar",
@@ -1734,6 +1745,14 @@
         "en": "last year",
         "example": "Förra året bodde jag i Indien.",
         "translation": "Last year I lived in India.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-06-word-28",
+        "fi": "i lördags",
+        "en": "last Saturday",
+        "example": "I lördags var jag på fest.",
+        "translation": "Last Saturday I was at a party.",
         "level": "A1"
       },
       {
