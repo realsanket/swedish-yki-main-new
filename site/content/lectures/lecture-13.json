@@ -4,7 +4,7 @@
   "objectives": [
     "Use kunde, ville, skulle and brukade to talk about past ability, wishes, plans and habits.",
     "Give kind advice with borde and ask or give permission with får.",
-    "Separate måste, får inte and behöver inte when talking about rules and necessity.",
+    "Separate måste, får inte and behöver inte, and read rules on real Finnish signs and notices.",
     "Give a friend practical advice about sleep or stress and explain one reason."
   ],
   "focusSkills": [
@@ -19,20 +19,21 @@
     "negation",
     "yes-no-question",
     "adverb",
+    "verb-second",
     "word-order"
   ],
   "presentation": {
     "opening": {
       "teacherNote": {
         "title": "Listen for the different kinds of help",
-        "body": "Maja studies at Elin’s kitchen table the evening before an exam. Henrik is there too. Listen once for the problem. Then listen again: which lines give advice, ask or give permission, state a rule, and say that something is not necessary?"
+        "body": "Maja studies at Elin’s kitchen table the evening before an exam, and Henrik is there too. Listen once for the problem. Then listen again for four kinds of help: advice, permission, a rule, and something that is not necessary."
       },
       "questionIntro": "Both checks are about the meaning of the opening story.",
       "dialogue": {
         "part": "recall",
         "eyebrow": "START WITH THE STORY",
         "title": "The evening before the exam",
-        "instructions": "Listen without text first. Which advice could you use tonight?",
+        "instructions": "Before you listen: Maja cannot sleep before an exam. Guess two pieces of advice. Then listen without the text and check your guess.",
         "initiallyOpen": false
       }
     },
@@ -113,34 +114,34 @@
       "sample": "Jag brukar gå och lägga mig klockan elva."
     },
     {
-      "id": "sleep-hours",
-      "fi": "Hur många timmar brukar du sova?",
-      "en": "How many hours do you usually sleep?",
-      "sample": "Jag brukar sova ungefär sju timmar."
+      "id": "child-dream",
+      "fi": "Vad ville du bli när du var barn?",
+      "en": "What did you want to be when you were a child?",
+      "sample": "När jag var barn ville jag bli läkare. / Jag ville bli pilot."
     },
     {
       "id": "smoke-cafe",
-      "fi": "Får man röka på kaféer i Finland?",
-      "en": "Are you allowed to smoke in cafés in Finland?",
-      "sample": "Nej, man får inte röka på kaféer i Finland."
+      "fi": "Får man röka på kaféer i ditt hemland?",
+      "en": "Are you allowed to smoke in cafés in your home country?",
+      "sample": "Nej, i mitt hemland får man inte röka inne på kaféer. / Ja, men bara ute."
     },
     {
-      "id": "stress-help",
-      "fi": "Vad hjälper dig när du är stressad?",
-      "en": "What helps you when you are stressed?",
-      "sample": "En kort promenad hjälper mig."
-    },
-    {
-      "id": "coffee",
-      "fi": "Brukar du dricka kaffe på kvällen?",
-      "en": "Do you usually drink coffee in the evening?",
-      "sample": "Nej, jag dricker inte kaffe efter klockan sex."
+      "id": "noisy-neighbour",
+      "fi": "Din granne spelar musik högt mitt i natten. Vad säger du?",
+      "en": "Your neighbour plays music loudly in the middle of the night. What do you say?",
+      "sample": "Hej! Ursäkta, men jag kan inte sova. Skulle du kunna använda hörlurar? / Kan du spela lite tystare?"
     },
     {
       "id": "first-phone",
       "fi": "När borde barn få sin första mobil?",
       "en": "When should children get their first mobile phone?",
-      "sample": "Jag tycker att barn borde få sin första mobil när de är tio år, eftersom de behöver den i skolan."
+      "sample": "Jag tycker att barn borde få sin första mobil när de är tio år, eftersom de måste kunna ringa hem."
+    },
+    {
+      "id": "borrow-phone",
+      "fi": "Du måste ringa din chef, men din telefon är hemma. Vad säger du till en kollega?",
+      "en": "You have to call your boss, but your phone is at home. What do you say to a colleague?",
+      "sample": "Ursäkta, får jag låna din telefon? Jag måste ringa min chef."
     }
   ],
   "reviewPhrases": [
@@ -187,13 +188,13 @@
   ],
   "missionPlan": {
     "title": "Plan three useful pieces of advice",
-    "intro": "Name the problem, give three different suggestions, say what is not allowed or not necessary, and add one reason.",
+    "intro": "Plan a one-minute voice message: show you understand, give advice, say what is not allowed and what is not necessary, and add one reason.",
     "lines": [
       {
         "label": "Show that you understand",
         "before": "Jag förstår att du",
         "after": ".",
-        "placeholder": "är stressad och inte kan sova"
+        "placeholder": "är nervös inför provet"
       },
       {
         "label": "Advice 1",
@@ -223,7 +224,7 @@
         "label": "Reason and opinion",
         "before": "Jag tycker att det är bra eftersom",
         "after": ".",
-        "placeholder": "kroppen behöver vila"
+        "placeholder": "hjärnan behöver sömn"
       }
     ]
   },
@@ -502,8 +503,8 @@
       ],
       "options": [
         "She is nervous about tomorrow’s exam",
-        "She drank coffee at night",
-        "She is hungry"
+        "Her neighbours play loud music",
+        "She drank coffee late"
       ],
       "hint": "Listen for nervös inför provet.",
       "explanation": "Maja says: Jag är nervös inför provet i morgon."
@@ -528,20 +529,20 @@
       "title": "Past help verbs: what was possible or planned",
       "kind": "rule",
       "body": [
-        "A help verb stands before another verb. The second verb stays in its basic infinitive form: kunde sova, ville gå, skulle ringa, brukade läsa.",
-        "The present and past pairs are kan–kunde, vill–ville, ska–skulle and brukar–brukade. Måste has the same form now and in the past; a time word shows when. You will also hear var tvungen att (had to): Jag var tvungen att stanna.",
-        "Use brukade for an old repeated habit, not one single event. Jag brukade läsa före läggdags describes what was usual before."
+        "Lecture 3’s help verbs have past forms: kan → kunde, vill → ville, ska → skulle, brukar (Lecture 4) → brukade. Måste stays måste. The next verb stays in the infinitive: kunde sova, never kunde sov.",
+        "Brukade = used to, an old habit. Do not use använde (used a thing), and add no att: Jag brukade läsa.",
+        "After a time word the verb still comes second (Lecture 3): I går kunde jag inte sova. With a past verb, i natt means last night."
       ],
       "examples": [
         {
           "fi": "I går kunde jag inte sova.",
           "en": "Yesterday I could not sleep.",
-          "note": "Inte follows the first verb, kunde."
+          "note": "Verb second after I går; inte after kunde."
         },
         {
           "fi": "Jag ville gå hem, men jag måste stanna.",
           "en": "I wanted to go home, but I had to stay.",
-          "note": "The time setting makes måste past here."
+          "note": "The time setting makes måste past here. You will also hear var tvungen att (had to)."
         },
         {
           "fi": "Henrik sa att han skulle ringa senare.",
@@ -588,47 +589,87 @@
           ]
         ]
       },
-      "memoryTip": "Change only the help verb. Keep the next verb plain: kunde sova, never kunde sov.",
-      "tryIt": "Say one thing you could do, wanted to do and used to do five years ago.",
+      "memoryTip": "Change only the help verb: kan sova → kunde sova.",
+      "tryIt": "Say one thing you could do, wanted to do and used to do five years ago. Start with För fem år sedan … and put the verb next.",
       "activity": {
-        "type": "match",
-        "label": "Now and then",
-        "title": "Match each present help verb with its past form",
-        "instructions": "Match the pair, then say the example aloud.",
-        "leftLabel": "Now",
-        "rightLabel": "Past",
-        "pairs": [
+        "type": "sort",
+        "label": "Right or wrong?",
+        "title": "Is the sentence correct, or does it need a fix?",
+        "instructions": "Decide first. If it needs a fix, say the correct sentence aloud before you check.",
+        "audio": false,
+        "buckets": [
           {
-            "left": "kan",
-            "right": "kunde",
-            "note": "can → could"
+            "id": "ok",
+            "label": "Correct",
+            "hint": "say it as it is"
           },
           {
-            "left": "vill",
-            "right": "ville",
-            "note": "want → wanted"
-          },
-          {
-            "left": "ska",
-            "right": "skulle",
-            "note": "will/shall → would/was going to"
-          },
-          {
-            "left": "brukar",
-            "right": "brukade",
-            "note": "usually do → used to do"
+            "id": "fix",
+            "label": "Needs a fix",
+            "hint": "say the correct version"
           }
         ],
-        "pattern": "The help verb changes for the past. The verb after it stays in the infinitive."
+        "items": [
+          {
+            "fi": "I går kunde jag inte sova.",
+            "en": "Yesterday I could not sleep.",
+            "bucket": "ok",
+            "why": "Correct: the verb comes second after I går (Lecture 3), and inte follows kunde."
+          },
+          {
+            "fi": "I går jag kunde inte sova.",
+            "en": "Yesterday I could not sleep.",
+            "bucket": "fix",
+            "why": "After I går the verb comes second: I går kunde jag inte sova. English and Hindi put jag first."
+          },
+          {
+            "fi": "Jag kunde inte sov.",
+            "en": "I could not sleep.",
+            "bucket": "fix",
+            "why": "After a help verb, use the infinitive: Jag kunde inte sova."
+          },
+          {
+            "fi": "När jag var barn brukade jag spela kricket.",
+            "en": "When I was a child, I used to play cricket.",
+            "bucket": "ok",
+            "why": "Correct: brukade + infinitive for an old habit."
+          },
+          {
+            "fi": "Jag använde att dricka te på kvällen.",
+            "en": "I used to drink tea in the evening.",
+            "bucket": "fix",
+            "why": "Used to is brukade, not använde: Jag brukade dricka te på kvällen."
+          },
+          {
+            "fi": "Jag brukade att jogga på morgonen.",
+            "en": "I used to jog in the morning.",
+            "bucket": "fix",
+            "why": "No att after brukade, just as after brukar (Lecture 4): Jag brukade jogga på morgonen."
+          },
+          {
+            "fi": "Förra året ville jag flytta till Helsingfors.",
+            "en": "Last year I wanted to move to Helsinki.",
+            "bucket": "ok",
+            "why": "Correct: verb second after Förra året (Lecture 6), then the infinitive flytta."
+          },
+          {
+            "fi": "Maja sa att hon skulle ringa i kväll.",
+            "en": "Maja said that she would call tonight.",
+            "bucket": "ok",
+            "why": "Correct: skulle reports a past plan."
+          }
+        ],
+        "summary": "Three checks: the verb second after a time word, the infinitive after a help verb, and brukade (not använde, no att) for used to."
       }
     },
     {
       "title": "Borde: kind advice, not an order",
       "kind": "rule",
       "body": [
-        "Borde means should. Use it when you think something is a good idea: Du borde vila. It is advice, not a command.",
-        "Put inte after borde to advise against something: Du borde inte dricka kaffe sent. Add a reason with eftersom to make advice more helpful.",
-        "On signs and in official letters you often see bör, a more formal form with the same meaning: Du bör boka tid i förväg (You should book an appointment in advance)."
+        "Borde = should: advice, not an order. Du borde vila. Du borde inte dricka kaffe sent.",
+        "Hindi करना चाहिए (karnā chāhiye) works the same way: आपको आराम करना चाहिए (āpko ārām karnā chāhiye) = Du borde vila.",
+        "Give a reason with eftersom (because), like för in Lecture 5: Du borde vila eftersom du är trött.",
+        "Signs and official letters use the formal bör: Du bör boka tid i förväg (You should book an appointment in advance)."
       ],
       "examples": [
         {
@@ -686,10 +727,10 @@
       "title": "Får: permission, rules and polite requests",
       "kind": "rule",
       "body": [
-        "Får can mean may or be allowed to. Ask Får jag …? when you want permission. Answer Ja, det får du or Nej, det får du inte.",
-        "Får inte means not allowed. It is a rule, not advice: Du får inte röka här.",
-        "Rules often use man (you, people in general): Får man äta här? Man får inte röka på bussen. The verb after man is the same as after jag.",
-        "Polite requests: ask for a thing with Kan jag få …? (Kan jag få ett glas vatten?). Ask someone to do something with Kan du …? or, more politely, Skulle du kunna …?"
+        "Får jag …? asks permission. Answer Ja, det får du or Nej, det får du inte. Får inte states a rule: Du får inte röka här.",
+        "Rules often use man (people in general): Får man äta här?",
+        "Får + a verb = may: Du får gå. Får + a thing = get: Du får ett recept (You get a prescription). So the teacher’s När borde barn få sin första mobil? is about getting a phone.",
+        "Polite requests: Kan jag få …? for a thing (Kan jag få ett glas vatten?). Kan du …? or, more politely, Skulle du kunna …? for a favour."
       ],
       "examples": [
         {
@@ -703,14 +744,14 @@
           "note": "A natural short answer."
         },
         {
-          "fi": "Du får inte parkera här.",
-          "en": "You may not park here.",
-          "note": "The teacher’s example: a rule."
-        },
-        {
           "fi": "Man får inte röka på bussen.",
           "en": "You are not allowed to smoke on the bus.",
           "note": "A real rule in Finland. Man = people in general."
+        },
+        {
+          "fi": "Alla gäster får en kopp kaffe.",
+          "en": "All guests get a cup of coffee.",
+          "note": "Får + a thing = get. Gäster is from Lecture 7."
         },
         {
           "fi": "Kan jag få ett glas vatten?",
@@ -720,16 +761,16 @@
         {
           "fi": "Skulle du kunna stänga fönstret?",
           "en": "Could you close the window?",
-          "note": "A very polite way to ask someone to do something."
+          "note": "Very polite: you ask someone to do something."
         }
       ],
-      "memoryTip": "Får jag …? = may I. Kan jag få …? = could I have. Får inte = not allowed.",
+      "memoryTip": "Får + verb = may. Får + thing = get. Kan jag få …? = could I have.",
       "tryIt": "In a café, ask if you may sit here, ask for a glass of water and ask someone politely to close the door.",
       "activity": {
         "type": "sort",
-        "label": "Permission, rule or request?",
-        "title": "Sort permission, rules and polite requests",
-        "instructions": "Read the Swedish. Is it about permission, a ban, or asking for something?",
+        "label": "Permission, rule, request or get?",
+        "title": "What does each line do?",
+        "instructions": "Read the Swedish. Does it ask or give permission, state a ban, ask for something, or mean get?",
         "buckets": [
           {
             "id": "permission",
@@ -745,6 +786,11 @@
             "id": "request",
             "label": "Request",
             "hint": "asking for a thing or a favour"
+          },
+          {
+            "id": "get",
+            "label": "Get",
+            "hint": "får + a thing"
           }
         ],
         "items": [
@@ -767,6 +813,12 @@
             "why": "Kan jag få …? asks politely for a thing."
           },
           {
+            "fi": "Vi får resultatet nästa vecka.",
+            "en": "resultatet = the result",
+            "bucket": "get",
+            "why": "Får + a thing (resultatet) means get."
+          },
+          {
             "fi": "Ja, det får du.",
             "en": "a short answer",
             "bucket": "permission",
@@ -783,20 +835,27 @@
             "en": "öppna dörren = open the door",
             "bucket": "request",
             "why": "You ask someone else to do something. Skulle du kunna is extra polite."
+          },
+          {
+            "fi": "Maja får ett meddelande från Elin.",
+            "en": "ett meddelande = a message",
+            "bucket": "get",
+            "why": "Får + a thing (ett meddelande) means gets. There is no second verb."
           }
         ],
-        "summary": "Får asks or gives permission. Får inte is a rule. Kan jag få …? and Skulle du kunna …? are polite requests."
+        "summary": "Får + a verb asks or gives permission; får inte is a rule; får + a thing means get. Kan jag få …? and Skulle du kunna …? are polite requests."
       }
     },
     {
       "title": "Must, must not, and do not have to",
       "kind": "rule",
       "body": [
-        "Måste means that something is necessary: Jag måste plugga. Rules use it too: Man måste ha biljett på bussen.",
-        "English must not is not måste inte. For a ban, say får inte: Du får inte röka här. For no need, say behöver inte: Du behöver inte boka bord. You may hear måste inte in casual speech, but your teacher marks it wrong; learn behöver inte.",
-        "Clue: får inte closes the door, behöver inte opens it. Du får inte komma = you are not allowed to come. Du behöver inte komma = you can come, but you do not have to.",
-        "Ska inte can also give a firm instruction (Du ska inte röka här), but often it is only a plan: Jag ska inte jobba i morgon.",
-        "The teacher’s extra: all, allt and alla mean all. Use all with an en-word for an amount (all mat, all tid), allt with an ett-word (allt arbete, allt skräp) and alla with a plural (alla vänner)."
+        "Måste = necessary: Man måste ha biljett på bussen. Behöver inte = not necessary: Du behöver inte boka bord.",
+        "Trap 1: English must not is får inte, never måste inte. A Swede hears måste inte as don’t have to: the opposite.",
+        "Trap 2: borde inte is only advice. A rule or a sign needs får inte, even where English says should not.",
+        "Hindi and Marathi help: behöver inte = ज़रूरत नहीं (zarūrat nahīn) / गरज नाही (garaj nāhī). Får inte = मना है (manā hai) / मनाई आहे (manāī āhe), as on a sign.",
+        "Clue: får inte closes the door; behöver inte opens it. Ska inte is usually a plan (Jag ska inte jobba i morgon); as an order it forbids: Du ska inte röka här.",
+        "The teacher’s extra: all + an en-word for an amount (all mat, all tid), allt + an ett-word (allt arbete, allt skräp), alla + a plural (alla vänner)."
       ],
       "examples": [
         {
@@ -901,6 +960,12 @@
             "why": "A ticket is required."
           },
           {
+            "fi": "I simhallen måste man duscha före bastun.",
+            "en": "duscha = shower",
+            "bucket": "must",
+            "why": "A real rule in Helsinki swimming halls: wash, without a swimsuit, before the sauna."
+          },
+          {
             "fi": "På biblioteket får man låna böcker gratis.",
             "en": "låna = borrow; gratis = free",
             "bucket": "may",
@@ -919,28 +984,22 @@
             "why": "Får inte is a ban."
           },
           {
+            "fi": "I grundskolan får eleverna inte använda mobilen under lektionerna.",
+            "en": "eleverna = the pupils",
+            "bucket": "notallowed",
+            "why": "A Finnish law since August 2025: no phones in lessons unless the teacher says yes."
+          },
+          {
             "fi": "Hunden behöver inte ha biljett.",
             "en": "hunden = the dog",
             "bucket": "neednt",
-            "why": "A ticket for the dog is not necessary."
+            "why": "On HSL buses a dog travels free, so a ticket is not necessary."
           },
           {
-            "fi": "Du behöver inte ta med en penna till provet.",
+            "fi": "Du behöver inte ta med en penna till YKI-testet.",
             "en": "ta med = bring",
             "bucket": "neednt",
-            "why": "Bringing a pen is optional."
-          },
-          {
-            "fi": "På jobbet får man inte röka inne.",
-            "en": "inne = inside",
-            "bucket": "notallowed",
-            "why": "Får inte states a workplace rule."
-          },
-          {
-            "fi": "Jag måste jobba i kväll.",
-            "en": "i kväll = tonight",
-            "bucket": "must",
-            "why": "The speaker sees it as necessary."
+            "why": "You get a pen there, so bringing one is optional."
           }
         ],
         "summary": "Ask: is it required, allowed, a good idea, banned, or optional? That tells you which help verb to choose."
@@ -974,7 +1033,17 @@
         "får"
       ],
       "hint": "This was an old habit.",
-      "explanation": "Brukade describes something repeated in the past."
+      "explanation": "Brukade describes something repeated in the past. Brukar (Lecture 4) is a habit now."
+    },
+    {
+      "id": "sv-13-g10",
+      "prompt": "Write in Swedish: “Last week I wanted to stay at home.” Start with Förra veckan.",
+      "answers": [
+        "Förra veckan ville jag stanna hemma.",
+        "Jag ville stanna hemma förra veckan."
+      ],
+      "hint": "Förra veckan + verb + jag. At home = hemma.",
+      "explanation": "Förra veckan ville jag stanna hemma. The verb comes second after a time phrase (Lecture 3); förra veckan and hemma are from Lecture 6, stanna hemma from Lecture 4."
     },
     {
       "id": "sv-13-g3",
@@ -991,32 +1060,18 @@
       "explanation": "Borde means should."
     },
     {
-      "id": "sv-13-g4",
-      "prompt": "Ask permission to leave: ___ jag gå hem?",
-      "answers": [
-        "Får"
-      ],
-      "options": [
-        "Får",
-        "Måste",
-        "Behöver"
-      ],
-      "hint": "You want to know if it is allowed.",
-      "explanation": "Får jag …? asks permission."
-    },
-    {
       "id": "sv-13-g5",
-      "prompt": "Smoking is prohibited: Du ___ röka här.",
+      "prompt": "A sign at the station says smoking is forbidden: Du ___ röka här.",
       "answers": [
         "får inte"
       ],
       "options": [
         "får inte",
-        "behöver inte",
-        "borde"
+        "borde inte",
+        "behöver inte"
       ],
-      "hint": "This is not allowed.",
-      "explanation": "Får inte expresses prohibition."
+      "hint": "A sign states a rule.",
+      "explanation": "Får inte is a ban. Borde inte is only advice, and behöver inte means it is optional."
     },
     {
       "id": "sv-13-g6",
@@ -1040,25 +1095,25 @@
       ],
       "options": [
         "Du får inte använda telefonen under provet.",
-        "Du behöver inte använda telefonen under provet.",
-        "Du borde använda telefonen under provet."
+        "Du måste inte använda telefonen under provet.",
+        "Du behöver inte använda telefonen under provet."
       ],
       "hint": "A firm rule needs får inte.",
-      "explanation": "Behöver inte means it is optional, not forbidden."
+      "explanation": "Får inte is the ban. A Swede hears måste inte as don’t have to, the same as behöver inte."
     },
     {
-      "id": "sv-13-g8",
-      "prompt": "No time: the bus leaves in two minutes. Jag ___ inte köpa kaffe.",
+      "id": "sv-13-g11",
+      "prompt": "The YKI rules say: Du får en penna på testplatsen. What does it mean?",
       "answers": [
-        "hinner"
+        "You get a pen at the test centre."
       ],
       "options": [
-        "hinner",
-        "får",
-        "borde"
+        "You get a pen at the test centre.",
+        "You may bring a pen to the test centre.",
+        "You must bring a pen to the test centre."
       ],
-      "hint": "You do not have the time (Lecture 3).",
-      "explanation": "Hinner inte means there is no time. It is not a rule and not advice."
+      "hint": "Is får followed by a verb or by a thing?",
+      "explanation": "Får + a thing (en penna) means get. Får + a verb means may: Du får ta med mat."
     },
     {
       "id": "sv-13-g9",
@@ -1073,6 +1128,20 @@
       ],
       "hint": "Could I have …?",
       "explanation": "Kan jag få …? is the polite way to ask for a thing. (Får jag få is wrong.)"
+    },
+    {
+      "id": "sv-13-g8",
+      "prompt": "No time: the bus leaves in two minutes. Jag ___ inte köpa kaffe.",
+      "answers": [
+        "hinner"
+      ],
+      "options": [
+        "hinner",
+        "får",
+        "borde"
+      ],
+      "hint": "You do not have the time (hinner, Lecture 3).",
+      "explanation": "Hinner inte means there is no time (Lecture 3). It is not a rule and not advice."
     }
   ],
   "checkpoint": [
@@ -1081,54 +1150,62 @@
       "prompt": "Write in Swedish: “You should sleep more because you are tired.”",
       "answers": [
         "Du borde sova mer eftersom du är trött.",
-        "Du borde sova mera eftersom du är trött.",
-        "Du bör sova mer eftersom du är trött.",
         "Du borde sova mer för att du är trött.",
         "Du borde sova mer för du är trött.",
-        "Eftersom du är trött borde du sova mer."
+        "Du borde sova mera eftersom du är trött.",
+        "Du borde sova mera för att du är trött.",
+        "Du borde sova mera för du är trött.",
+        "Du bör sova mer eftersom du är trött.",
+        "Du bör sova mer för att du är trött.",
+        "Du bör sova mer för du är trött.",
+        "Du bör sova mera eftersom du är trött.",
+        "Du bör sova mera för att du är trött.",
+        "Du bör sova mera för du är trött.",
+        "Eftersom du är trött borde du sova mer.",
+        "Eftersom du är trött borde du sova mera."
       ],
       "hint": "Start with Du borde + infinitive.",
       "explanation": "Model: Du borde sova mer eftersom du är trött."
     },
     {
-      "id": "sv-13-check-optional",
-      "prompt": "Which line means that booking is optional?",
+      "id": "sv-13-check-notice",
+      "prompt": "A notice at a Helsinki swimming hall says: Man får inte fotografera i simhallen. What does it mean?",
       "answers": [
-        "Du behöver inte boka bord."
+        "Taking photos is not allowed."
       ],
       "options": [
-        "Du behöver inte boka bord.",
-        "Du får inte boka bord.",
-        "Du måste boka bord."
+        "Taking photos is not allowed.",
+        "You do not have to take photos.",
+        "It is better not to take photos, but you may."
       ],
-      "hint": "Optional means not necessary.",
-      "explanation": "Behöver inte leaves the choice open."
+      "hint": "Får inte on a notice is a rule.",
+      "explanation": "Får inte = not allowed. Behöver inte would mean you do not have to, and borde inte would only be advice."
     },
     {
       "id": "sv-13-check-neednt",
-      "prompt": "Write in Swedish: “You don’t have to come tomorrow.” (Careful: not måste inte.)",
+      "prompt": "Write in Swedish: “You don’t have to buy the tickets today.” (Careful: not måste inte.)",
       "answers": [
-        "Du behöver inte komma i morgon.",
-        "Du behöver inte komma imorgon.",
-        "I morgon behöver du inte komma.",
-        "Imorgon behöver du inte komma."
+        "Du behöver inte köpa biljetterna i dag.",
+        "Du behöver inte köpa biljetterna idag.",
+        "I dag behöver du inte köpa biljetterna.",
+        "Idag behöver du inte köpa biljetterna."
       ],
-      "hint": "Du behöver inte + infinitive.",
-      "explanation": "English don’t have to = behöver inte. Du får inte komma would mean you are not allowed to come."
+      "hint": "Du behöver inte + infinitive. The tickets = biljetterna (Lecture 11).",
+      "explanation": "Du behöver inte köpa biljetterna i dag. Biljett → biljetter → biljetterna is from Lectures 7 and 11. Du får inte köpa … would mean you are not allowed to buy them."
     },
     {
       "id": "sv-13-check-past",
-      "prompt": "Which sentence describes an old habit?",
+      "prompt": "Which sentence means “I used to read in the evening”?",
       "answers": [
         "Jag brukade läsa på kvällen."
       ],
       "options": [
         "Jag brukade läsa på kvällen.",
-        "Jag borde läsa på kvällen.",
-        "Jag får läsa på kvällen."
+        "Jag brukar läsa på kvällen.",
+        "Jag använde att läsa på kvällen."
       ],
-      "hint": "Look for used to.",
-      "explanation": "Brukade marks a repeated habit in the past."
+      "hint": "Used to is about the past.",
+      "explanation": "Brukade = used to. Brukar (Lecture 4) is a habit now, and använde means used (a thing)."
     },
     {
       "id": "sv-13-check-permission",
@@ -1145,13 +1222,13 @@
   ],
   "assignment": {
     "title": "Lecture 13 mission: Advice before bedtime",
-    "instructions": "CORE: A friend cannot sleep before an exam. Give three pieces of advice, say one thing that is not allowed or is a bad idea, and one thing they do not need to do. Add your opinion and a reason.\n\nNOTICE: Keep the second verb in the infinitive: borde sova, får använda, behöver göra.\n\nRETURN: Tomorrow, give the three most useful lines again without looking.",
+    "instructions": "CORE: A friend cannot sleep before an exam. Leave a one-minute voice message: three pieces of advice, one rule (får inte), one thing they do not need to do (behöver inte), and your opinion with a reason.\n\nNOTICE: Never måste inte. Keep the second verb in the infinitive: borde sova, får använda, behöver göra.\n\nRETURN: Tomorrow, say the three most useful lines again without looking.",
     "model": "Jag förstår att du är stressad. Du borde lägga bort telefonen och andas långsamt. Du kan ta en kort promenad. Under provet får du inte använda telefonen. Du behöver inte göra alla läxor i kväll. Jag tycker att du borde vila eftersom kroppen behöver sömn."
   },
   "takeaways": [
-    "Help verbs are followed by the infinitive: kunde sova, ville gå, brukade läsa.",
-    "Borde gives advice; får asks or gives permission; Kan jag få …? asks politely for a thing.",
-    "English must not = får inte (a ban). English don’t have to = behöver inte (optional). Do not say måste inte."
+    "Past help verbs: kunde, ville, skulle, brukade + infinitive. Used to = brukade, not använde.",
+    "Borde gives advice; får + a verb asks or gives permission; får + a thing means get; Kan jag få …? asks politely.",
+    "English must not = får inte (a ban). Don’t have to = behöver inte. Never måste inte, and never borde inte for a rule."
   ],
   "dialogue": [
     {
@@ -1230,6 +1307,11 @@
       "label": "Före YKI-testdagen (Utbildningsstyrelsen)",
       "url": "https://www.oph.fi/sv/utbildning-och-examina/fore-yki-testdagen",
       "description": "Real YKI rules in Swedish. Find får inte and behöver inte, and see what you must bring."
+    },
+    {
+      "label": "Simhallsetikett, Georgsgatans simhall (hel.fi)",
+      "url": "https://www.hel.fi/sv/kultur-och-fritid/motion/georgsgatans-simhall/simhallsetikett",
+      "description": "Real Helsinki swimming-hall rules in Swedish. Find what you must do, and what is förbjudet or inte tillåtet."
     }
   ],
   "practice": {
@@ -1430,8 +1512,8 @@
         "id": "sv-13-word-25",
         "fi": "tillåtet",
         "en": "allowed",
-        "example": "Är det tillåtet här?",
-        "translation": "Is it allowed here?",
+        "example": "Är det tillåtet att parkera här?",
+        "translation": "Is parking allowed here?",
         "level": "A1"
       },
       {
@@ -1457,11 +1539,35 @@
         "example": "Jag måste boka tid på hälsostationen.",
         "translation": "I have to book an appointment at the health station.",
         "level": "A1"
+      },
+      {
+        "id": "sv-13-word-29",
+        "fi": "i natt",
+        "en": "tonight; last night (with a past verb)",
+        "example": "Jag kunde inte sova i natt.",
+        "translation": "I could not sleep last night.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-13-word-30",
+        "fi": "förbjuden / förbjudet",
+        "en": "forbidden (on signs)",
+        "example": "Rökning förbjuden.",
+        "translation": "No smoking.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-13-word-31",
+        "fi": "få / får",
+        "en": "get (with a thing)",
+        "example": "Vi får resultatet nästa vecka.",
+        "translation": "We get the result next week.",
+        "level": "A1"
       }
     ],
     "pronunciation": {
-      "text": "Borde, kunde, ville, skulle, brukade. Får jag? Du får inte. Du behöver inte. Sov gott!",
-      "tip": "Keep the stressed vowel clear in borde and kunde. Link behöver inte smoothly, but keep both words audible."
+      "text": "Du får inte. Du måste. Du behöver inte. Du borde vila. Får jag sitta här?",
+      "tip": "Får has a long å, close to English four; måste has a short å and a long s (long and short, as in Lecture 1). Stress behöver on HÖ: be- is never stressed (be-TA-la, be-HÖ-ver). In borde the app’s voices melt r + d into one sound, as with rs in Lecture 1; Helsinki speakers usually say r and d separately."
     },
     "reading_passage": {
       "text": "Hej Maja! Jag hörde att du inte kunde sova i natt. Du borde vila efter provet och du behöver inte svara på mitt meddelande direkt. Drick vatten istället för kaffe. På biblioteket får man inte prata högt, så vi kan träffas på kaféet senare. Jag tycker att en promenad är bra eftersom frisk luft hjälper när man är stressad. Sov gott i kväll! / Elin",
@@ -1498,48 +1604,48 @@
       "explanation": "Du får en penna på testplatsen, så du behöver inte ta med en egen."
     },
     "listening": {
-      "text": "När Henrik var student brukade han plugga sent. Han ville kunna allt före varje prov, men ibland kunde han inte sova. Nu ger han Maja ett råd: hon borde sluta plugga klockan nio. Hon behöver inte läsa varje sida igen, men hon måste ställa väckarklockan.",
-      "question": "What does Henrik advise Maja to do?",
+      "text": "Maja ringer Elin efter provet. Hej Elin! Nu är provet över! I natt kunde jag sova, för jag stängde av telefonen klockan nio. Förut brukade jag plugga hela natten före ett prov, men det hjälpte aldrig. I morse ville jag läsa allt igen, men jag gjorde det inte. Jag åt frukost och gick till skolan. Under provet fick vi inte använda telefonen, men vi fick ta med vatten. Första frågan var svår, men sedan gick det bra. Vi får resultatet nästa vecka, så jag behöver inte tänka på det nu. Tack för hjälpen!",
+      "question": "What were the students allowed to take into the exam?",
       "options": [
-        "Stop studying at nine",
-        "Read every page again",
-        "Drink coffee"
+        "Water",
+        "Their phones",
+        "Coffee"
       ],
       "answer": 0,
-      "explanation": "Hon borde sluta plugga klockan nio."
+      "explanation": "Vi fick ta med vatten. Fick is the past of får (Lecture 6), so it means were allowed."
     },
     "speaking": {
-      "prompt": "Your friend cannot sleep before an exam. Give three pieces of advice, one rule or warning, and one thing that is not necessary. Include your opinion and a reason.",
+      "prompt": "Din vän skickar ett röstmeddelande: “Jag kan inte sova före provet i morgon. Vad ska jag göra?” Svara med ett röstmeddelande på ungefär en minut. (Your friend sends a voice message: “I can’t sleep before the exam tomorrow. What should I do?” Reply with a voice message of about one minute, like YKI’s everyday phone-message tasks.) Give three pieces of advice, one rule, one thing that is not necessary, and your opinion with a reason.",
       "help": "Du borde … · Du kan … · Du får inte … · Du behöver inte … · Jag tycker att … eftersom …",
-      "model": "Jag förstår att du är stressad. Du borde stänga av telefonen och ta en kort promenad. Du kan andas långsamt. Under provet får du inte använda telefonen. Du behöver inte läsa allt igen. Jag tycker att du borde vila eftersom sömn hjälper minnet."
+      "model": "Hej! Tack för ditt meddelande. Jag förstår att du är nervös. Du borde stänga av telefonen och ta en kort promenad. Du kan också andas långsamt. Under provet får du inte använda telefonen. Men du behöver inte läsa allt igen. Du kan redan mycket! Jag tycker att du borde vila eftersom sömn hjälper minnet. Lycka till i morgon!"
     },
     "writing": {
       "prompt": "Reply to your friend with practical advice about sleep.",
-      "situation": "Your friend writes: “Jag kan inte sova före provet. Vad ska jag göra?” (I cannot sleep before the exam. What should I do?) Reply supportively.",
+      "situation": "Din vän skriver: “Jag kan inte sova före provet. Vad ska jag göra?” Svara din vän. Kom ihåg att inleda och avsluta meddelandet på lämpligt sätt. (Your friend writes: “I can’t sleep before the exam. What should I do?” Reply to your friend. Remember to open and close the message in a suitable way: real YKI writing tasks give this instruction in Swedish.)",
       "points": [
-        "Show that you understand the problem.",
-        "Give at least two pieces of advice with borde or kan.",
-        "Say one thing the friend must not do or is not allowed to do.",
-        "Say one thing the friend does not have to do.",
-        "Give your opinion and one reason, then end warmly."
+        "Visa att du förstår problemet. (Show that you understand the problem.)",
+        "Ge två råd med borde eller kan. (Give two pieces of advice with borde or kan.)",
+        "Säg vad din vän inte får göra. (Say one thing your friend is not allowed to do.)",
+        "Säg vad din vän inte behöver göra. (Say one thing your friend does not have to do.)",
+        "Säg vad du tycker och varför, och avsluta vänligt. (Give your opinion and a reason, and close warmly.)"
       ],
       "wordRange": [
         50,
         80
       ],
       "help": "Jag förstår att … · Du borde … · Du kan … · Du får inte … · Du behöver inte … · Jag tycker att … eftersom … · Sov gott!",
-      "model": "Hej! Jag förstår att du är stressad inför provet. Du borde lägga bort telefonen och andas långsamt. Du kan också ta en kort promenad. Du borde inte dricka kaffe sent. Under provet får du inte använda telefonen. Du behöver inte läsa allt igen i kväll. Jag tycker att vila är viktigt eftersom hjärnan behöver sömn. Lycka till och sov gott!"
+      "model": "Hej! Tack för ditt meddelande. Jag förstår att du är stressad inför provet. Du borde lägga bort telefonen och andas långsamt. Du kan också ta en kort promenad. Du borde inte dricka kaffe sent. Under provet får du inte använda telefonen. Men du behöver inte läsa allt igen i kväll. Jag tycker att vila är viktigt eftersom hjärnan behöver sömn. Lycka till och sov gott! Kram"
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Give a friend six to eight spoken lines of advice about sleep or stress, including one opinion with a reason. Then write a supportive reply.",
+    "expectedOutput": "Leave a friend a one-minute voice message with advice about sleep or stress, including one rule, one thing that is not necessary and one opinion with a reason. Then write a supportive reply.",
     "transferPrompt": "Give the same advice again, but change one suggestion and explain why it is better for this friend.",
     "returnPrompt": "Without looking, give three different kinds of help: one borde line, one får inte line and one behöver inte line.",
     "successChecks": [
       "Give at least three useful suggestions.",
-      "Use borde, får or får inte, and behöver inte with the infinitive.",
-      "Clearly separate not allowed from not necessary.",
+      "Use borde, får inte and behöver inte, each with an infinitive.",
+      "Clearly separate not allowed (får inte) from not necessary (behöver inte), with no måste inte.",
       "Include one opinion and a reason with eftersom."
     ],
     "requiredSkills": [
