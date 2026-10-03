@@ -4,7 +4,9 @@
   "objectives": [
     "Tell what happened during a past day in a clear order.",
     "Put a time phrase first and keep the verb in the second position.",
+    "Say when something happened with för … sedan (ago).",
     "Understand and use det handlar om to say what something is about.",
+    "Use the right small word after verbs such as vänta på, arg på and berätta för.",
     "Write a short informal letter with news, a question and a closing."
   ],
   "focusSkills": [
@@ -24,7 +26,10 @@
     "modal-verb",
     "adverb",
     "formal-informal",
-    "object"
+    "object",
+    "preposition",
+    "chunk",
+    "ordinal-number"
   ],
   "presentation": {
     "routeSteps": {
@@ -34,7 +39,7 @@
       },
       "teach": {
         "label": "Build it step by step",
-        "description": "Order past events and shape a friendly letter."
+        "description": "Order past events, shape a friendly letter and learn the small words after verbs."
       },
       "guided": {
         "label": "Try the phrases",
@@ -124,30 +129,30 @@
   "recall": [
     {
       "id": "sv-08-recall-1",
-      "prompt": "What did Elin do on Saturday?",
+      "prompt": "What did Elin and Maja do on Saturday?",
       "answers": [
-        "She met Maja and went to a café."
+        "They went to a café, then bought food."
       ],
-      "hint": "Listen for I lördags.",
-      "explanation": "Elin says: I lördags träffade jag Maja. Sedan gick vi till ett kafé.",
+      "hint": "Listen for I lördags, först and sedan.",
+      "explanation": "Elin writes: Först gick vi till ett mysigt kafé … Sedan handlade vi mat. Handla means to shop.",
       "options": [
-        "She met Maja and went to a café.",
-        "She studied alone all day.",
-        "She travelled to Stockholm."
+        "They went to a café, then bought food.",
+        "They studied alone all day.",
+        "They went to the cinema, then had dinner."
       ]
     },
     {
       "id": "sv-08-recall-2",
-      "prompt": "What question does Elin ask Alex?",
+      "prompt": "What is Alex's book about?",
       "answers": [
-        "What did you do at the weekend?"
+        "Finland"
       ],
-      "hint": "The question is near the end of her message.",
-      "explanation": "Vad gjorde du i helgen? means What did you do at the weekend?",
+      "hint": "Listen for handlar om in Alex's message, not in Elin's.",
+      "explanation": "Alex writes: I söndags läste jag en bok. Den handlar om Finland. Elin's film is about two old friends.",
       "options": [
-        "What did you do at the weekend?",
-        "Where do you live?",
-        "What is the film about?"
+        "Finland",
+        "Two old friends",
+        "Food from India"
       ]
     }
   ],
@@ -159,23 +164,23 @@
     },
     {
       "speaker": "Elin",
-      "fi": "Jag vill berätta om min vecka.",
-      "en": "I want to tell you about my week."
+      "fi": "Tack för blommorna i fredags! Maja blev så glad.",
+      "en": "Thanks for the flowers on Friday! Maja was so happy."
     },
     {
       "speaker": "Elin",
-      "fi": "I lördags träffade jag Maja. Sedan gick vi till ett kafé.",
-      "en": "On Saturday I met Maja. Then we went to a café."
+      "fi": "I lördags träffade jag Maja igen. Först gick vi till ett mysigt kafé.",
+      "en": "On Saturday I met Maja again. First we went to a cosy café."
     },
     {
       "speaker": "Elin",
-      "fi": "Vi drack kaffe och pratade svenska tillsammans.",
-      "en": "We drank coffee and spoke Swedish together."
+      "fi": "Vi drack kaffe och pratade svenska tillsammans. Sedan handlade vi mat.",
+      "en": "We drank coffee and spoke Swedish together. Then we bought food."
     },
     {
       "speaker": "Elin",
-      "fi": "Efter det såg jag en film hemma. Den handlar om vänskap.",
-      "en": "After that I watched a film at home. It is about friendship."
+      "fi": "Efter det såg jag en film hemma. Den handlar om två gamla vänner.",
+      "en": "After that I watched a film at home. It is about two old friends."
     },
     {
       "speaker": "Elin",
@@ -184,17 +189,22 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Hej Elin! Tack för ditt brev.",
-      "en": "Hi Elin! Thanks for your letter."
+      "fi": "Hej Elin! Tack för ditt meddelande. Jag mår bra.",
+      "en": "Hi Elin! Thanks for your message. I am fine."
     },
     {
       "speaker": "Alex",
-      "fi": "Först tränade jag på gymmet. Sedan lagade jag mat med en vän.",
-      "en": "First I worked out at the gym. Then I cooked with a friend."
+      "fi": "I lördags vaknade jag sent. Först åt jag fattiga riddare till frukost.",
+      "en": "On Saturday I woke up late. First I ate French toast for breakfast."
     },
     {
       "speaker": "Alex",
-      "fi": "På söndagen läste jag en bok. Den handlar om Finland.",
+      "fi": "Sedan tränade jag på gymmet. Efter det lagade jag mat med en vän.",
+      "en": "Then I worked out at the gym. After that I cooked with a friend."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "I söndags läste jag en bok. Den handlar om Finland.",
       "en": "On Sunday I read a book. It is about Finland."
     },
     {
@@ -402,8 +412,8 @@
           },
           "hunt": {
             "label": "Past-tense hunt",
-            "title": "Find the event verbs the page marks in red.",
-            "instructions": "Tap the marked past forms and connect each one to an event in the diary.",
+            "title": "Find the past-tense verbs in the diary.",
+            "instructions": "Tap each past form and connect it to an event. Three are red on the page; träffade is not marked, but it is a key event verb too.",
             "missHint": "Look for what started or happened: började, träffade, bokade, väntade.",
             "spots": [
               {
@@ -498,11 +508,11 @@
             {
               "speaker": "Maria",
               "voice": "Maja",
-              "fi": "Ett nytt, mysigt kafé öppnar på fredag den 10 april och Andreas bokade bord. Han ska ha fika där med min vän Nora bakom din rygg.",
+              "fi": "Ett nytt, mysigt kafe öppnar på fredag den 10 april och Andreas bokade bord. Han ska ha fika där med min vän Nora bakom din rygg.",
               "en": "A new, cosy café opens on Friday 10 April, and Andreas booked a table. He is going to have coffee there with my friend Nora behind your back.",
               "glossary": [
                 {
-                  "fi": "mysigt kafé",
+                  "fi": "mysigt kafe",
                   "en": "cosy café"
                 },
                 {
@@ -515,7 +525,7 @@
               "speaker": "Maria",
               "voice": "Maja",
               "fi": "Bli inte arg på Nora! Hon visste inte att Andreas hade fru och barn. Hon är en snäll tjej och hon ska göra slut med Andreas på fredag.",
-              "en": "Do not be angry with Nora! She did not know that Andreas had a wife and children. She is a kind woman, and she will break up with Andreas on Friday.",
+              "en": "Do not be angry with Nora! She did not know that Andreas had a wife and children. She is a kind girl, and she will break up with Andreas on Friday.",
               "glossary": [
                 {
                   "fi": "arg på",
@@ -588,6 +598,16 @@
               "source": "Han ska ha fika där",
               "natural": "Han ska fika där",
               "note": "Fika is also a verb. This is a shorter everyday way to say he will have coffee there."
+            },
+            {
+              "source": "Ett nytt, mysigt kafe",
+              "natural": "Ett nytt, mysigt kafé",
+              "note": "The book leaves out the accent. The dictionary spelling is kafé (café is also correct)."
+            },
+            {
+              "source": "på fredag den 10 april",
+              "natural": "på fredag den tionde april",
+              "note": "Read a date with an ordinal number: den tionde april (the tenth of April). Den 3:e is den tredje."
             }
           ],
           "backchain": {
@@ -744,37 +764,43 @@
       "title": "Put past events in order",
       "kind": "rule",
       "body": [
-        "A list becomes a story when the listener knows when things happened and in what order. Start with a time: igår, i lördags, förra veckan. Then guide the listener with först, sedan, efter det and till slut.",
-        "Swedish keeps the verb in the second position. If a time phrase takes the first position, the past-tense verb comes next and the subject follows: Förra veckan läste vi en bok. Do not say Förra veckan vi läste.",
-        "Började + infinitive tells when an activity started: Jag började skriva. Jag började att skriva is also correct. Att before an action means to; before a whole statement, it means that: Jag berättade att jag var trött."
+        "A list becomes a story when the listener knows when things happened and in what order. Start with a time: igår (yesterday), igår kväll (last night), i morse (this morning), i lördags (last Saturday), förra veckan (last week), förra året (last year). Then guide the listener with först (first), sedan (then), efter det (after that) and till slut (finally). In speech, sedan is often said sen.",
+        "Swedish keeps the verb in the second position. When a time phrase or a signpost takes the first place, the past-tense verb comes next and the subject follows: Förra veckan läste vi en bok. English says “Last week we read”, so English speakers often write Förra veckan vi läste. That is the most common mistake here. Put the verb straight after the first phrase.",
+        "To say ago, wrap the time between för and sedan: för en månad sedan (a month ago), för två dagar sedan (two days ago). English puts ago only at the end; Swedish needs both words.",
+        "Började works like a modal verb: the next verb stays in the infinitive. Jag började skriva. Jag började att skriva is also correct. Att before an action means to: Jag gillar att dansa. Before a whole statement it means that: Jag berättade att jag var trött."
       ],
       "examples": [
         {
           "fi": "Igår spelade jag datorspel.",
           "en": "Yesterday I played video games.",
-          "note": "Igår first; spelade second."
+          "note": "Igår first; spelade second; jag third."
         },
         {
-          "fi": "Förra veckan läste vi en bok.",
-          "en": "Last week we read a book.",
-          "note": "Time first changes the order to läste vi."
+          "fi": "Igår kväll beställde jag en pizza.",
+          "en": "Last night I ordered a pizza.",
+          "note": "The whole time phrase igår kväll fills the first place."
         },
         {
-          "fi": "Först åt jag frukost. Sedan gick jag på bio. Efter det träffade jag en vän.",
-          "en": "First I ate breakfast. Then I went to the cinema. After that I met a friend.",
-          "note": "Three signposts make the order clear."
+          "fi": "Först åt jag fattiga riddare till frukost. Sedan gick jag på bio. Efter det träffade jag en vän.",
+          "en": "First I ate French toast for breakfast. Then I went to the cinema. After that I met a friend.",
+          "note": "Three signposts make the order clear. Fattiga riddare (poor knights) is the Swedish name for French toast."
         },
         {
-          "fi": "I morse tränade jag på gymmet. En bok läste vi förra veckan.",
-          "en": "This morning I worked out at the gym. A book is what we read last week.",
-          "note": "The teacher also starts with an object, the thing the action affects. The verb still comes second."
+          "fi": "Jag reste till Spanien för ett år sedan.",
+          "en": "I travelled to Spain a year ago.",
+          "note": "För … sedan wraps the time."
+        },
+        {
+          "fi": "En kaka köpte hon igår.",
+          "en": "She bought a cake yesterday (a cake, not bread).",
+          "note": "The teacher also starts with an object, the thing the action affects, to stress it. The verb still comes second."
         }
       ],
       "table": {
         "headings": [
           "First place",
           "Verb (second)",
-          "Subject + rest"
+          "The rest"
         ],
         "rows": [
           [
@@ -783,89 +809,118 @@
             "jag datorspel."
           ],
           [
-            "Förra veckan",
-            "läste",
-            "vi en bok."
+            "I morse",
+            "tränade",
+            "jag på gymmet."
+          ],
+          [
+            "Förra året",
+            "reste",
+            "jag till Spanien."
           ],
           [
             "Efter det",
             "träffade",
             "jag en vän."
+          ],
+          [
+            "Jag",
+            "läste",
+            "en bok förra veckan."
           ]
         ]
       },
-      "memoryTip": "TIME → VERB → PERSON: Förra veckan → läste → vi.",
-      "tryIt": "Say three true or invented events. Begin each line with Igår, Sedan or Efter det.",
+      "memoryTip": "TIME → VERB → PERSON: Förra veckan → läste → vi. The verb never waits in third place.",
+      "tryIt": "Say three true or invented events from yesterday. Begin each line with Igår, Sedan or Efter det, and put the verb next.",
       "activity": {
         "type": "sort",
-        "label": "Order or verb?",
-        "title": "What job does the first phrase do?",
-        "instructions": "Sort each phrase into a time anchor or an order signpost. Then say its complete model aloud.",
+        "label": "Verb second?",
+        "title": "Is the verb in the second place?",
+        "instructions": "Read each line and predict: is it correct Swedish, or does the verb come too late? Then say the correct version aloud.",
         "buckets": [
           {
-            "id": "time",
-            "label": "When?",
-            "hint": "a day or period"
+            "id": "right",
+            "label": "Correct",
+            "hint": "the verb is second"
           },
           {
-            "id": "order",
-            "label": "What came next?",
-            "hint": "position in the story"
+            "id": "wrong",
+            "label": "Verb too late",
+            "hint": "fix the order"
           }
         ],
         "items": [
           {
-            "fi": "igår",
-            "en": "yesterday",
-            "bucket": "time",
-            "why": "Igår says when."
+            "fi": "Igår jag spelade datorspel.",
+            "en": "Yesterday I played video games.",
+            "bucket": "wrong",
+            "why": "Igår takes the first place, so the verb comes next: Igår spelade jag datorspel."
           },
           {
-            "fi": "förra veckan",
-            "en": "last week",
-            "bucket": "time",
-            "why": "Förra veckan says when."
+            "fi": "Förra veckan läste vi en bok.",
+            "en": "Last week we read a book.",
+            "bucket": "right",
+            "why": "Förra veckan, then läste, then vi."
           },
           {
-            "fi": "först",
-            "en": "first",
-            "bucket": "order",
-            "why": "Först begins an ordered list."
+            "fi": "Sedan vi gick på bio.",
+            "en": "Then we went to the cinema.",
+            "bucket": "wrong",
+            "why": "Sedan is a signpost in the first place: Sedan gick vi på bio."
           },
           {
-            "fi": "sedan",
-            "en": "then",
-            "bucket": "order",
-            "why": "Sedan moves to the next event."
+            "fi": "Igår kväll beställde jag en pizza.",
+            "en": "Last night I ordered a pizza.",
+            "bucket": "right",
+            "why": "Igår kväll is one time phrase, so beställde is still second."
           },
           {
-            "fi": "efter det",
-            "en": "after that",
-            "bucket": "order",
-            "why": "Efter det links to the earlier event."
+            "fi": "Jag reste till Spanien förra året.",
+            "en": "I travelled to Spain last year.",
+            "bucket": "right",
+            "why": "The subject jag is first, so reste is second. The time can also come at the end."
           },
           {
-            "fi": "till slut",
-            "en": "finally",
-            "bucket": "order",
-            "why": "Till slut closes the sequence."
+            "fi": "I morse jag tränade på gymmet.",
+            "en": "This morning I worked out at the gym.",
+            "bucket": "wrong",
+            "why": "After I morse the verb comes next: I morse tränade jag på gymmet."
+          },
+          {
+            "fi": "En kaka köpte hon igår.",
+            "en": "She bought a cake yesterday.",
+            "bucket": "right",
+            "why": "The object en kaka is first, and köpte is still second."
+          },
+          {
+            "fi": "Till slut jag gick hem.",
+            "en": "Finally I went home.",
+            "bucket": "wrong",
+            "why": "Till slut takes the first place: Till slut gick jag hem."
           }
         ],
-        "summary": "Put any one of these first, then put the verb second."
+        "summary": "Whatever comes first, the verb comes next."
       }
     },
     {
       "title": "Write to a friend",
       "kind": "register",
       "body": [
-        "An informal letter sounds like a conversation. Begin with Hej + name. Share your news in short paragraphs. Ask one real question so your friend can answer. End warmly with Kram or Hälsningar and your name.",
-        "A diary records a day for yourself. A letter chooses news for another person. Both become easy to follow when you use time and order phrases."
+        "An informal letter or message sounds like a conversation. It has four parts: a greeting with your friend's name (Hej Elin!), your news in time order, one real question so your friend can answer, and a warm closing such as Kram, Vi ses or Vi hörs, with your name.",
+        "After the greeting, a short friendly question is natural: Hur är det med dig? or Hur mår du? Then tell your news with time words and signposts. Short and correct is better than long and unsure.",
+        "A diary is for yourself and a letter is for another person, but both often begin with a date: den 4 maj. Read it aloud with an ordinal number, a counting word for order: den fjärde maj. You will practise more ordinals in Lecture 10.",
+        "The YKI basic-level writing test has this kind of task: a short card or message to a friend, with a list of points to cover. You must open and close it in a suitable way and cover every point."
       ],
       "examples": [
         {
           "fi": "Hej Elin!",
           "en": "Hi Elin!",
-          "note": "Friendly greeting."
+          "note": "Friendly greeting with the name."
+        },
+        {
+          "fi": "Hur är det med dig?",
+          "en": "How are things with you?",
+          "note": "A friendly start before your news."
         },
         {
           "fi": "I måndags började jag en ny kurs. Sedan träffade jag en vän.",
@@ -896,19 +951,24 @@
             "Hej Elin!"
           ],
           [
+            "Friendly start",
+            "show you care",
+            "Hur är det med dig?"
+          ],
+          [
             "News",
-            "say what happened",
+            "say what happened, in order",
             "I måndags … Sedan …"
           ],
           [
             "Question",
             "invite an answer",
-            "Vad gjorde du?"
+            "Vad gjorde du i helgen?"
           ],
           [
             "Closing",
             "finish warmly",
-            "Kram, Alex"
+            "Kram, Alex / Vi hörs!"
           ]
         ]
       },
@@ -947,8 +1007,10 @@
       "title": "Say what it is about",
       "kind": "scene",
       "body": [
-        "Use det handlar om when you name the topic or story of a book, film, letter or conversation. Learn it as one chunk. Handlar on its own can mean shops. Handlar om means is about.",
-        "Put the thing first, then handlar om, then the topic: Filmen handlar om vänskap."
+        "Use handlar om to name the topic of a book, film, letter or conversation: Filmen handlar om vänskap. Learn it as one chunk.",
+        "Do not translate English word for word. Swedish does not say Filmen är om vänskap. Say Filmen handlar om vänskap.",
+        "In a question, om moves to the end: Vad handlar filmen om? (What is the film about?)",
+        "Without om, handla is a different verb: it means to shop. Vi handlade mat means We bought food. Listen for om to know which one you hear."
       ],
       "examples": [
         {
@@ -960,51 +1022,198 @@
           "en": "The book is about Finland."
         },
         {
-          "fi": "Brevet handlar om min vecka.",
-          "en": "The letter is about my week."
+          "fi": "Vad handlar boken om?",
+          "en": "What is the book about?",
+          "note": "In a question, om goes to the end."
+        },
+        {
+          "fi": "Jag har något viktigt att berätta. Det handlar om jobbet.",
+          "en": "I have something important to tell you. It is about work.",
+          "note": "A useful way to start news in a letter."
+        },
+        {
+          "fi": "I lördags handlade vi mat.",
+          "en": "On Saturday we bought food.",
+          "note": "No om: handla means to shop."
         }
       ],
-      "memoryTip": "THING + handlar om + TOPIC. Keep om attached.",
-      "tryIt": "Name one film or book and say what it is about.",
+      "memoryTip": "THING + handlar om + TOPIC. Question: Vad handlar den om? No om = shopping.",
+      "tryIt": "Name one film or book you like and say what it is about. Then ask: Vad handlar din favoritfilm om?",
       "activity": {
-        "type": "match",
-        "label": "What is it about?",
-        "title": "Match each thing with its topic",
-        "instructions": "Match the halves, then say every full sentence.",
-        "leftLabel": "Thing",
-        "rightLabel": "Topic",
-        "pairs": [
+        "type": "sort",
+        "label": "About or shopping?",
+        "title": "Which handla is it?",
+        "instructions": "Decide what handlar means in each line. Look for om. Then say the line aloud.",
+        "buckets": [
           {
-            "left": "Filmen handlar om",
-            "right": "vänskap."
+            "id": "about",
+            "label": "is about",
+            "hint": "names a topic"
           },
           {
-            "left": "Boken handlar om",
-            "right": "Finland."
-          },
-          {
-            "left": "Brevet handlar om",
-            "right": "min vecka."
-          },
-          {
-            "left": "Kursen handlar om",
-            "right": "vardagen i Finland."
+            "id": "shop",
+            "label": "shops, buys",
+            "hint": "buying things"
           }
         ],
-        "pattern": "handlar om stays together before the topic.",
-        "sentence": "{left} {right}"
+        "items": [
+          {
+            "fi": "Filmen handlar om två gamla vänner.",
+            "bucket": "about",
+            "why": "Handlar om + topic: the film is about two old friends."
+          },
+          {
+            "fi": "Vi handlade mat i lördags.",
+            "bucket": "shop",
+            "why": "No om after handlade, and mat is what they bought."
+          },
+          {
+            "fi": "Vad handlar brevet om?",
+            "bucket": "about",
+            "why": "Om sits at the end of the question: What is the letter about?"
+          },
+          {
+            "fi": "Jag handlar i en mataffär nära jobbet.",
+            "bucket": "shop",
+            "why": "I en mataffär tells where you shop: I shop at a grocery shop near work."
+          },
+          {
+            "fi": "Boken handlar om Finland.",
+            "bucket": "about",
+            "why": "Handlar om + Finland: the book is about Finland."
+          },
+          {
+            "fi": "Maja handlade kläder på stan.",
+            "bucket": "shop",
+            "why": "No om after handlade, and kläder is what she bought."
+          }
+        ],
+        "summary": "Handlar om + topic means is about. Handla without om means to shop."
+      }
+    },
+    {
+      "title": "Small words after verbs",
+      "kind": "rule",
+      "body": [
+        "Some Swedish verbs and adjectives always take a small word after them, a preposition. It is often not the one English uses, so learn the pair as one chunk.",
+        "Waiting and many feelings take på: vänta på (wait for), arg på (angry with), besviken på (disappointed in). Being in love takes i: kär i.",
+        "Berätta has two partners: berätta om something (tell about it) and berätta för someone (tell it to them): Jag berättade om helgen för Elin."
+      ],
+      "examples": [
+        {
+          "fi": "Jag väntade på bussen i tjugo minuter.",
+          "en": "I waited for the bus for twenty minutes.",
+          "note": "English for, Swedish på."
+        },
+        {
+          "fi": "Bli inte arg på mig!",
+          "en": "Do not be angry with me!",
+          "note": "English with, Swedish på."
+        },
+        {
+          "fi": "Jag var besviken på filmen.",
+          "en": "I was disappointed in the film."
+        },
+        {
+          "fi": "Elin är kär i Mikko.",
+          "en": "Elin is in love with Mikko.",
+          "note": "English with, Swedish i."
+        },
+        {
+          "fi": "Jag berättade om helgen för Elin.",
+          "en": "I told Elin about the weekend.",
+          "note": "om = about; för = to the person."
+        }
+      ],
+      "table": {
+        "headings": [
+          "English",
+          "Swedish",
+          "Example"
+        ],
+        "rows": [
+          [
+            "wait for",
+            "vänta på",
+            "Jag väntar på dig."
+          ],
+          [
+            "angry with",
+            "arg på",
+            "Han är arg på mig."
+          ],
+          [
+            "disappointed in",
+            "besviken på",
+            "Hon är besviken på filmen."
+          ],
+          [
+            "in love with",
+            "kär i",
+            "Elin är kär i Mikko."
+          ],
+          [
+            "tell (about it)",
+            "berätta om",
+            "Berätta om din helg!"
+          ],
+          [
+            "tell (to someone)",
+            "berätta för",
+            "Berätta det för Maja!"
+          ]
+        ]
+      },
+      "memoryTip": "English for, with, in → Swedish often på: vänta på, arg på, besviken på.",
+      "tryIt": "Say one true sentence with vänta på and one with berätta för.",
+      "activity": {
+        "type": "match",
+        "label": "Word partners",
+        "title": "Match the English with the Swedish pair",
+        "instructions": "Match each English phrase with its Swedish partner. Then say each pair aloud.",
+        "leftLabel": "English",
+        "rightLabel": "Swedish",
+        "pairs": [
+          {
+            "left": "wait for",
+            "right": "vänta på"
+          },
+          {
+            "left": "angry with",
+            "right": "arg på"
+          },
+          {
+            "left": "disappointed in",
+            "right": "besviken på"
+          },
+          {
+            "left": "in love with",
+            "right": "kär i"
+          },
+          {
+            "left": "tell (to someone)",
+            "right": "berätta för"
+          }
+        ],
+        "pattern": "English for, with and in often become på in Swedish. Learn each verb with its partner.",
+        "sentence": "{left} = {right}"
       }
     }
   ],
   "guided": [
     {
       "id": "sv-08-guided-1",
-      "prompt": "Produce: “Yesterday I played video games.”",
+      "prompt": "Produce, starting with the time: “Yesterday I played video games.”",
       "answers": [
-        "Igår spelade jag datorspel."
+        "I går spelade jag datorspel.",
+        "Igår spelade jag datorspel.",
+        "Igår spelade jag tv-spel.",
+        "I går spelade jag tv-spel.",
+        "I går spelade jag videospel.",
+        "Igår spelade jag videospel."
       ],
       "hint": "Put the time first and the past verb second.",
-      "explanation": "Igår spelade jag datorspel."
+      "explanation": "Igår spelade jag datorspel. I går (two words) is also correct."
     },
     {
       "id": "sv-08-guided-2",
@@ -1038,10 +1247,28 @@
       "id": "sv-08-guided-4",
       "prompt": "Produce: “After that I met a friend.”",
       "answers": [
-        "Efter det träffade jag en vän."
+        "Efter det träffade jag en vän.",
+        "Efter det träffade jag en kompis.",
+        "Därefter träffade jag en vän."
       ],
       "hint": "After that comes first, so put the past verb next.",
       "explanation": "Efter det träffade jag en vän."
+    },
+    {
+      "id": "sv-08-guided-ago",
+      "prompt": "Produce: “I bought a cake a week ago.”",
+      "answers": [
+        "Jag köpte en kaka för en vecka sedan.",
+        "Jag köpte en kaka för en vecka sen.",
+        "För en vecka sen köpte jag en kaka.",
+        "För en vecka sedan köpte jag en kaka.",
+        "Jag köpte en tårta för en vecka sen.",
+        "Jag köpte en tårta för en vecka sedan.",
+        "För en vecka sen köpte jag en tårta.",
+        "För en vecka sedan köpte jag en tårta."
+      ],
+      "hint": "Wrap the time: för … sedan.",
+      "explanation": "Jag köpte en kaka för en vecka sedan. If the time comes first: För en vecka sedan köpte jag en kaka."
     },
     {
       "id": "sv-08-guided-5",
@@ -1050,7 +1277,21 @@
         "handlar om"
       ],
       "hint": "Keep the two-word chunk together.",
-      "explanation": "Filmen handlar om kärlek."
+      "explanation": "Filmen handlar om kärlek: The film is about love."
+    },
+    {
+      "id": "sv-08-guided-prep",
+      "prompt": "Choose: Jag väntade ___ Elin vid kaféet.",
+      "answers": [
+        "på"
+      ],
+      "hint": "English says wait for; Swedish uses another small word.",
+      "explanation": "Vänta på: Jag väntade på Elin vid kaféet.",
+      "options": [
+        "på",
+        "för",
+        "om"
+      ]
     },
     {
       "id": "sv-08-guided-6",
@@ -1068,13 +1309,13 @@
     },
     {
       "id": "sv-08-guided-7",
-      "prompt": "Produce the common-mistake correction: “Last Saturday I went to the cinema.”",
+      "prompt": "Produce, starting with the time: “Last Saturday I went to the cinema.”",
       "answers": [
-        "Förra lördagen gick jag på bio.",
-        "I lördags gick jag på bio."
+        "I lördags gick jag på bio.",
+        "Förra lördagen gick jag på bio."
       ],
       "hint": "Do not put jag before the verb when time comes first.",
-      "explanation": "Model: Förra lördagen gick jag på bio."
+      "explanation": "I lördags gick jag på bio. Förra lördagen gick jag på bio is also correct."
     }
   ],
   "sittingBreakAfter": "guided",
@@ -1111,6 +1352,12 @@
         "before": "Till slut ",
         "after": ".",
         "placeholder": "gick jag hem"
+      },
+      {
+        "label": "How it was",
+        "before": "Det var ",
+        "after": ".",
+        "placeholder": "en mysig helg"
       }
     ]
   },
@@ -1233,7 +1480,7 @@
         "fi": "berättade",
         "en": "told",
         "example": "Hon berättade om sin vecka.",
-        "translation": "She told someone about her week.",
+        "translation": "She talked about her week.",
         "level": "A1"
       },
       {
@@ -1275,6 +1522,86 @@
         "example": "Kram, Elin",
         "translation": "Hugs, Elin",
         "level": "A1"
+      },
+      {
+        "id": "sv-08-word-21",
+        "fi": "för … sedan",
+        "en": "… ago",
+        "example": "Jag flyttade till Finland för ett år sedan.",
+        "translation": "I moved to Finland a year ago.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-22",
+        "fi": "i morse",
+        "en": "this morning",
+        "example": "I morse drack jag te.",
+        "translation": "This morning I drank tea.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-23",
+        "fi": "till frukost",
+        "en": "for breakfast",
+        "example": "Jag åt gröt och ägg till frukost.",
+        "translation": "I ate porridge and eggs for breakfast.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-24",
+        "fi": "fattiga riddare",
+        "en": "French toast",
+        "example": "Vi åt fattiga riddare i lördags.",
+        "translation": "We ate French toast on Saturday.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-25",
+        "fi": "beställde",
+        "en": "ordered",
+        "example": "Igår kväll beställde jag en pizza.",
+        "translation": "Last night I ordered a pizza.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-26",
+        "fi": "reste",
+        "en": "travelled",
+        "example": "Förra året reste jag till Spanien.",
+        "translation": "Last year I travelled to Spain.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-27",
+        "fi": "hittade",
+        "en": "found",
+        "example": "Jag hittade ett roligt jobb.",
+        "translation": "I found a fun job.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-28",
+        "fi": "vänta på",
+        "en": "wait for",
+        "example": "Jag väntade på bussen.",
+        "translation": "I waited for the bus.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-29",
+        "fi": "arg på",
+        "en": "angry with",
+        "example": "Är du arg på mig?",
+        "translation": "Are you angry with me?",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-30",
+        "fi": "Jag finns här för dig.",
+        "en": "I am here for you.",
+        "example": "Jag finns här för dig om du behöver något.",
+        "translation": "I am here for you if you need something.",
+        "level": "A1"
       }
     ],
     "pronunciation": {
@@ -1282,7 +1609,7 @@
       "tip": "Keep the time phrase as one beat. Then stress the past verb: FÖRST TRÄNADE jag."
     },
     "reading_passage": {
-      "text": "Hej Maja!\nI måndags började jag en ny kurs. Först träffade jag läraren. Sedan pratade jag med de andra eleverna. Efter lektionen drack vi kaffe tillsammans. Kursen handlar om vardagen i Finland. Vad gjorde du i måndags?\nKram, Elin",
+      "text": "Hej Maja!\nI måndags började jag en kvällskurs i indisk matlagning. Först träffade jag läraren och de andra deltagarna. Sedan lagade vi en linsgryta tillsammans. Efter kursen drack vi te. Kursen handlar om mat från Indien, så nu kan jag laga mat till Alex! Vad gjorde du i måndags?\nKram, Elin",
       "gist": {
         "prompt": "Why does Elin write?",
         "options": [
@@ -1291,32 +1618,32 @@
           "To invite Maja to the cinema"
         ],
         "answer": 0,
-        "explanation": "She tells Maja what happened on the first day of her new course."
+        "explanation": "She tells Maja about the first evening of her new cooking course."
       },
       "detail": {
-        "prompt": "What did they do after the lesson?",
+        "prompt": "What did they do after the course?",
         "options": [
-          "They drank coffee together",
+          "They drank tea",
           "They watched a film",
           "They went home immediately"
         ],
         "answer": 0,
-        "explanation": "Efter lektionen drack vi kaffe tillsammans."
+        "explanation": "Efter kursen drack vi te."
       }
     },
     "reading": {
-      "text": "Hej Maja! I måndags började jag en ny kurs. Först träffade jag läraren. Sedan pratade jag med de andra eleverna. Efter lektionen drack vi kaffe tillsammans. Kursen handlar om vardagen i Finland. Vad gjorde du i måndags? Kram, Elin",
+      "text": "Hej Maja! I måndags började jag en kvällskurs i indisk matlagning. Först träffade jag läraren och de andra deltagarna. Sedan lagade vi en linsgryta tillsammans. Efter kursen drack vi te. Kursen handlar om mat från Indien, så nu kan jag laga mat till Alex! Vad gjorde du i måndags? Kram, Elin",
       "question": "What is the course about?",
       "options": [
-        "Everyday life in Finland",
+        "Food from India",
         "Films",
-        "Food"
+        "Everyday life in Finland"
       ],
       "answer": 0,
-      "explanation": "Kursen handlar om vardagen i Finland."
+      "explanation": "Kursen handlar om mat från Indien."
     },
     "listening": {
-      "text": "Förra lördagen vaknade jag tidigt. Först åt jag frukost. Sedan åkte jag till Åbo och träffade en vän. Vi promenerade och åt lunch tillsammans. På kvällen åkte jag hem.",
+      "text": "Förra lördagen vaknade jag tidigt. Först åt jag gröt och drack te. Sedan tog jag tåget till Åbo och träffade en gammal vän. Vi promenerade längs ån och åt lunch tillsammans. Efter det gick vi på bio. Filmen handlar om en hund och en pojke. Till slut tog jag tåget hem till Helsingfors. Det var en lång men rolig dag.",
       "question": "Where did the speaker go?",
       "options": [
         "Turku",
@@ -1332,20 +1659,21 @@
       "model": "I helgen träffade jag en vän. Först drack vi kaffe. Sedan gick vi på bio och såg en rolig film. Efter det åt vi på en restaurang. Till slut gick jag hem. Det var en mysig helg."
     },
     "writing": {
-      "prompt": "Write an informal letter to a friend about your week.",
-      "situation": "Your friend Elin asks: “Hur var din vecka?” (How was your week?) Write back with your news.",
+      "prompt": "Write an informal message to a friend about your week.",
+      "situation": "Your friend Elin writes: “Hej! Hur var din vecka? Vad gjorde du?” (Hi! How was your week? What did you do?) Write back. As in the YKI basic-level test, open and close the message in a suitable way and cover every point.",
       "points": [
-        "Greet your friend.",
-        "Describe at least two events from your week in a clear order.",
-        "Ask your friend one question.",
-        "Use an informal closing and your name."
+        "Greet Elin and ask how she is.",
+        "Tell at least two things you did this week, in order.",
+        "Say how it was (Det var …).",
+        "Ask Elin one question about her week.",
+        "Close warmly with your name."
       ],
       "wordRange": [
         40,
         70
       ],
-      "help": "Hej Elin! · I måndags … · Först … · Sedan … · Efter det … · Vad gjorde du? · Hur var din vecka? · Kram, …",
-      "model": "Hej Elin!\nTack för ditt brev. Min vecka var bra. I måndags tränade jag på gymmet. Sedan träffade jag en vän och vi drack kaffe tillsammans. I onsdags såg jag en rolig film hemma. Vad gjorde du i veckan?\nKram, Alex"
+      "help": "Hej Elin! · Hur är det med dig? · I måndags … · Först … · Sedan … · Efter det … · Det var … · Vad gjorde du i helgen? · Kram, …",
+      "model": "Hej Elin!\nHur är det med dig? Min vecka var bra. I måndags tränade jag på gymmet. Sedan träffade jag en vän och vi drack kaffe tillsammans. I onsdags såg jag en film hemma. Den handlar om en hund. Det var mysigt! Vad gjorde du i helgen?\nKram,\nAlex"
     }
   },
   "route": {
@@ -1354,7 +1682,7 @@
     "returnPrompt": "Without notes, tell three events from last weekend in order.",
     "successChecks": [
       "I say when the events happened.",
-      "I use at least three past-tense verbs.",
+      "I put the verb second after a time word: Igår åt jag …",
       "I connect events with först, sedan or efter det.",
       "My letter has a greeting, news, a question and a closing."
     ],
@@ -1379,15 +1707,15 @@
     },
     {
       "id": "sv-08-unplanned-3",
-      "fi": "Vad åt du?",
-      "en": "What did you eat?",
-      "sample": "Jag åt pasta."
+      "fi": "Vad åt du till frukost i morse?",
+      "en": "What did you eat for breakfast this morning?",
+      "sample": "Jag åt gröt och drack te. / Jag åt en macka."
     },
     {
       "id": "sv-08-unplanned-4",
-      "fi": "Såg du en film?",
-      "en": "Did you watch a film?",
-      "sample": "Ja, jag såg en rolig film."
+      "fi": "Reste du någonstans förra året?",
+      "en": "Did you travel anywhere last year?",
+      "sample": "Ja, jag reste till Indien. / Nej, jag var hemma."
     },
     {
       "id": "sv-08-unplanned-5",
@@ -1404,29 +1732,29 @@
   ],
   "reviewPhrases": [
     {
+      "id": "sv-08-review-9",
+      "en": "Yesterday I played video games.",
+      "fi": "Igår spelade jag datorspel."
+    },
+    {
       "id": "sv-08-review-1",
       "en": "Last week …",
       "fi": "Förra veckan …"
     },
     {
-      "id": "sv-08-review-2",
-      "en": "First …",
-      "fi": "Först …"
+      "id": "sv-08-review-10",
+      "en": "First I ate breakfast.",
+      "fi": "Först åt jag frukost."
     },
     {
-      "id": "sv-08-review-3",
-      "en": "Then …",
-      "fi": "Sedan …"
+      "id": "sv-08-review-11",
+      "en": "Then we went to the cinema.",
+      "fi": "Sedan gick vi på bio."
     },
     {
-      "id": "sv-08-review-4",
-      "en": "After that …",
-      "fi": "Efter det …"
-    },
-    {
-      "id": "sv-08-review-5",
-      "en": "Finally …",
-      "fi": "Till slut …"
+      "id": "sv-08-review-12",
+      "en": "a month ago",
+      "fi": "för en månad sedan"
     },
     {
       "id": "sv-08-review-6",
@@ -1439,9 +1767,9 @@
       "fi": "Vad gjorde du i helgen?"
     },
     {
-      "id": "sv-08-review-8",
-      "en": "Hugs, …",
-      "fi": "Kram, …"
+      "id": "sv-08-review-13",
+      "en": "I am here for you if you need something.",
+      "fi": "Jag finns här för dig om du behöver något."
     }
   ],
   "checkpoint": [
@@ -1449,10 +1777,11 @@
       "id": "sv-08-check-v2",
       "prompt": "Produce: “Last week we read a book.”",
       "answers": [
-        "Förra veckan läste vi en bok."
+        "Förra veckan läste vi en bok.",
+        "Vi läste en bok förra veckan."
       ],
       "hint": "Time first, verb second, then the subject.",
-      "explanation": "Förra veckan takes the first place, so läste comes before vi."
+      "explanation": "Förra veckan läste vi en bok. Förra veckan takes the first place, so läste comes before vi. Vi läste en bok förra veckan is also correct."
     },
     {
       "id": "sv-08-check-order",
@@ -1475,11 +1804,37 @@
         "handlar om"
       ],
       "hint": "Use the chunk for saying the topic of a film or book.",
-      "explanation": "Filmen handlar om vänskap: The film is about friendship.",
+      "explanation": "Filmen handlar om vänskap: The film is about friendship. Swedish does not say är om.",
       "options": [
         "handlar om",
-        "väntar på",
-        "går om"
+        "är om",
+        "väntar på"
+      ]
+    },
+    {
+      "id": "sv-08-check-ago",
+      "prompt": "Produce: “Two days ago I ordered a pizza.”",
+      "answers": [
+        "För två dagar sedan beställde jag en pizza.",
+        "För två dagar sen beställde jag en pizza.",
+        "Jag beställde en pizza för två dagar sen.",
+        "Jag beställde en pizza för två dagar sedan."
+      ],
+      "hint": "Wrap the time with för … sedan. If it comes first, the verb comes next.",
+      "explanation": "För två dagar sedan beställde jag en pizza. Jag beställde en pizza för två dagar sedan is also correct."
+    },
+    {
+      "id": "sv-08-check-prep",
+      "prompt": "Complete: Bli inte arg ___ mig!",
+      "answers": [
+        "på"
+      ],
+      "hint": "Angry with: Swedish uses a different small word.",
+      "explanation": "Arg på: Bli inte arg på mig! (Do not be angry with me!)",
+      "options": [
+        "på",
+        "med",
+        "i"
       ]
     },
     {
@@ -1499,13 +1854,14 @@
   ],
   "assignment": {
     "title": "Episode 8 mission: My weekend in order",
-    "instructions": "CORE: Tell a friend about last weekend in five to seven lines. Say when, and connect at least three events with först, sedan, efter det or till slut. Finish with how it was.\n\nWRITE: Answer a friend in 40–70 words. Include a greeting, two events, one question and an informal closing.\n\nRETURN: Tomorrow, tell three events again without looking.",
+    "instructions": "CORE: Tell a friend about last weekend in five to seven lines. Say when, and connect at least three events with först, sedan, efter det or till slut. Finish with how it was.\n\nWRITE: Answer a friend in 40–70 words. Include a greeting, two events, one question and an informal closing.\n\nDIARY: Keep your daily diary (5–10 minutes). Today, start three sentences with a time phrase and use för … sedan once.\n\nRETURN: Tomorrow, tell three events again without looking.",
     "model": "I helgen träffade jag en vän. Först drack vi kaffe. Sedan gick vi på bio. Efter det åt vi middag tillsammans. Till slut gick jag hem. Det var en rolig helg."
   },
   "takeaways": [
     "A time phrase can come first: Förra veckan läste vi en bok. The verb still comes second.",
-    "Order a past story with först, sedan, efter det and till slut.",
-    "Det handlar om tells the topic of a book, film or conversation.",
+    "Order a past story with först, sedan, efter det and till slut. Ago is för … sedan.",
+    "Det handlar om tells the topic. In a question: Vad handlar den om? Without om, handla means to shop.",
+    "Learn verbs with their small word: vänta på, arg på, besviken på, berätta för.",
     "A friendly letter has a greeting, news, a question and a warm closing."
   ],
   "resources": [
@@ -1513,9 +1869,14 @@
       "label": "Svenska Akademiens ordböcker (svenska.se)",
       "url": "https://svenska.se/",
       "description": "Look up one past-tense verb, such as skrev, gick or såg."
+    },
+    {
+      "label": "The Local: where to put the verb in Swedish sentences",
+      "url": "https://www.thelocal.se/20240701/grammar-guide-how-to-know-where-to-put-the-verb-in-swedish-sentences",
+      "description": "A short English guide to the verb-second rule, with the Igår åt jag pattern."
     }
   ],
   "story": {
-    "object": "letters about a week with friends"
+    "object": "Elin's message on Alex's laptop and a plate of fattiga riddare"
   }
 }
