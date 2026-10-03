@@ -5,7 +5,7 @@
     "Make the plural of nouns in the teacher's five plural groups, with her exceptions.",
     "Count things with a number or många, and describe an amount with mycket.",
     "Use träffar/träffas and leker/spelar correctly.",
-    "Describe things at home and write a shopping message with quantities."
+    "Describe your home in a YKI-style interview answer and write a shopping message with quantities."
   ],
   "focusSkills": [
     "speaking",
@@ -20,7 +20,12 @@
     "consonant",
     "loanword",
     "verb",
-    "object"
+    "object",
+    "definite-form",
+    "stress",
+    "syllable",
+    "yes-no-question",
+    "verb-second"
   ],
   "presentation": {
     "routeSteps": {
@@ -36,7 +41,7 @@
     "opening": {
       "teacherNote": {
         "title": "Listen for one and more than one",
-        "body": "Elin invites Alex to dinner on Friday to celebrate Maja's maths test (Lecture 6). Mikko is Elin's partner (sambo) from Lecture 2. First catch what Alex brings, then listen for the plural endings."
+        "body": "Elin invites Alex to dinner on Friday to celebrate Maja's maths test (Lecture 6). Mikko is Elin's partner (sambo) from Lecture 2. Before you listen, guess: will Alex bring one bottle of wine or two? Then listen for the plural endings. In Finland, ordinary wine is sold at Alko, the state alcohol shop; food shops may sell only drinks up to 8 % alcohol."
       },
       "questionIntro": "Answer from the conversation. You do not need every word.",
       "dialogue": {
@@ -115,7 +120,7 @@
       "id": "rooms",
       "fi": "Hur många rum har du hemma?",
       "en": "How many rooms do you have at home?",
-      "sample": "Jag har tre rum. / Jag har två rum och ett kök."
+      "sample": "Jag har två rum och ett kök."
     },
     {
       "id": "books",
@@ -130,16 +135,16 @@
       "sample": "Ja, jag har två blommor. / Nej, jag har inga blommor."
     },
     {
-      "id": "chairs",
-      "fi": "Hur många stolar har du?",
-      "en": "How many chairs do you have?",
-      "sample": "Jag har fyra stolar."
+      "id": "shopping",
+      "fi": "Vad brukar du köpa i mataffären?",
+      "en": "What do you usually buy at the grocery store?",
+      "sample": "Jag brukar köpa bananer, tomater och mjölk."
     },
     {
       "id": "coffee",
       "fi": "Dricker du mycket kaffe?",
       "en": "Do you drink a lot of coffee?",
-      "sample": "Ja, jag dricker mycket kaffe. / Nej, jag dricker inte så mycket kaffe."
+      "sample": "Ja, jag dricker mycket kaffe. / Nej, inte så mycket."
     },
     {
       "id": "museums",
@@ -186,8 +191,8 @@
     },
     {
       "id": "how-many",
-      "en": "How many cars do you have?",
-      "fi": "Hur många bilar har du?"
+      "en": "How many guests are coming?",
+      "fi": "Hur många gäster kommer?"
     }
   ],
   "missionPlan": {
@@ -198,7 +203,7 @@
         "label": "Home",
         "before": "Hemma har jag",
         "after": ".",
-        "placeholder": "tre rum"
+        "placeholder": "två rum och ett kök"
       },
       {
         "label": "Group 1",
@@ -208,27 +213,27 @@
       },
       {
         "label": "Group 2",
-        "before": "Jag har också",
+        "before": "I köket har jag",
         "after": ".",
         "placeholder": "fyra stolar"
       },
       {
         "label": "Another group",
-        "before": "Det finns",
+        "before": "I rummet finns",
         "after": ".",
         "placeholder": "många böcker"
       },
       {
         "label": "No ending",
-        "before": "Jag har",
+        "before": "Jag har också",
         "after": ".",
-        "placeholder": "två bord"
+        "placeholder": "många glas"
       },
       {
-        "label": "Amount",
-        "before": "Jag har inte mycket",
-        "after": ".",
-        "placeholder": "kaffe"
+        "label": "Amount + men",
+        "before": "",
+        "after": "",
+        "placeholder": "Jag har mycket te, men inte så mycket kaffe."
       }
     ]
   },
@@ -260,8 +265,8 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Okej, en flaska vin. Och en flaska juice till Maja?",
-      "en": "OK, one bottle of wine. And a bottle of juice for Maja?"
+      "fi": "Okej, jag köper en flaska vin på Alko. Och en flaska juice till Maja?",
+      "en": "OK, I will buy one bottle of wine at Alko. And a bottle of juice for Maja?"
     },
     {
       "speaker": "Elin",
@@ -768,7 +773,8 @@
         "Plural means two or more. English usually adds -s: one car, two cars. Swedish has five plural endings, so your teacher sorts nouns into five plural groups.",
         "Two clues point to the group. Is the noun an en-word or an ett-word? And what is its last letter? En blomma is an en-word that ends in -a, so it is group 1: två blommor.",
         "These are the teacher's clues, not laws. They work for many nouns, and the teacher lists the exceptions you need now. Learn every new noun as a pair: en bil, två bilar.",
-        "To count, put the number before the plural. One is en or ett, so it matches the noun: en bil, ett äpple. From two upwards, use the plural: två bilar, tre äpplen. Your textbook marks the groups too: page 22 shows group 1, page 23 groups 2 and 3."
+        "To count, put the number before the plural. One is en or ett, so it matches the noun: en bil, ett äpple. From two upwards, use the plural: två bilar, tre äpplen.",
+        "Two mistakes cost the most. Do not give every noun the same ending, as English does with -s: två vänner and två hus, not två vännar or två husar. And do not drop the ending after a number: två bilar, not två bil."
       ],
       "examples": [
         {
@@ -837,7 +843,7 @@
           ]
         ]
       },
-      "memoryTip": "Hindi and Marathi also change the end of a noun in the plural: लड़का → लड़के, मुलगा → मुलगे. And like Swedish group 5, some Hindi nouns do not change: एक घर, दो घर is like ett hus, två hus.",
+      "memoryTip": "Hindi and Marathi also change the end of a noun in the plural: लड़का → लड़के, मुलगा → मुलगे. Many Hindi and Marathi nouns keep the same form in the plural (Hindi एक घर, दो घर), just like Swedish group 5: ett hus, två hus. In Swedish only group 5 works like that, so two cars is två bilar, never två bil.",
       "tryIt": "Say one and two aloud: blomma, bil, apelsin, möte, jobb.",
       "activity": {
         "type": "sort",
@@ -953,17 +959,13 @@
         "Group 1: en-words that end in -a. Take away the -a and add -or: en blomma → blommor, en vecka → veckor, en kvinna → kvinnor, en flaska → flaskor.",
         "Group 2 takes -ar. The teacher gives three clues. First, many short everyday en-words: en bil → bilar, en hund → hundar, en buss → bussar.",
         "Second, en-words with e as the last or second-last letter. That e drops before -ar: en pojke → pojkar, en cykel → cyklar. Third, words that end in -ing: en tidning → tidningar, en klänning → klänningar.",
-        "The short-word clue is the weakest. Sak, katt, chef and vän look like group 2, but they take -er. You meet them in the next topic."
+        "The short-word clue is the weakest. Sak, katt, chef and vän look like group 2, but they take -er, and so does gäst (guest) from the dialogue. You meet them in the next topic."
       ],
       "examples": [
         {
           "fi": "en vecka, två veckor",
           "en": "one week, two weeks",
           "note": "The -a goes, -or comes."
-        },
-        {
-          "fi": "en kvinna, två kvinnor",
-          "en": "one woman, two women"
         },
         {
           "fi": "en hund, två hundar",
@@ -978,10 +980,6 @@
           "fi": "en cykel, två cyklar",
           "en": "one bicycle, two bicycles",
           "note": "The e in -el drops: cyklar, not cykelar."
-        },
-        {
-          "fi": "en klänning, två klänningar",
-          "en": "one dress, two dresses"
         }
       ],
       "memoryTip": "Groups 1 and 2 both end in -r. Listen for the vowel before it: blomm-or, bil-ar.",
@@ -1068,18 +1066,10 @@
         "Group 3 takes -er. The teacher's clue: words that came into Swedish from other languages (loanwords). En banan → bananer, en tomat → tomater, en apelsin → apelsiner, and job words on -ör: en frisör → frisörer, en servitör → servitörer, en ingenjör → ingenjörer, en direktör → direktörer.",
         "You cannot always know where a word comes from, so listen to it. Many group 3 loanwords are stressed on the last syllable: ba-NAN, to-MAT, apel-SIN, fri-SÖR, bil-JETT, tele-FON. Stress at the end is a strong hint for -er.",
         "Two ett-words also take -er: ett museum → museer (take away -um first) and ett protein → proteiner. Ett vitamin → vitaminer on page 23 works the same way.",
-        "Four short en-words look like group 2 but take -er: en sak → saker, en katt → katter, en chef → chefer, en vän → vänner. The ä in vän is short, so the n is written twice when an ending follows: vänner.",
+        "Four short en-words look like group 2 but take -er: en sak → saker, en katt → katter, en chef → chefer, en vän → vänner. En gäst → gäster from the dialogue works the same way. The ä in vän is short, so the n is written twice when an ending follows: vänner.",
         "A few -er words also change their vowel: en bok → böcker, en son → söner (page 23). Learn these exceptions as whole pairs. Do not build a new rule from them."
       ],
       "examples": [
-        {
-          "fi": "en tomat, två tomater",
-          "en": "one tomato, two tomatoes"
-        },
-        {
-          "fi": "en frisör, två frisörer",
-          "en": "one hairdresser, two hairdressers"
-        },
         {
           "fi": "en telefon, två telefoner",
           "en": "one phone, two phones",
@@ -1089,10 +1079,6 @@
           "fi": "ett museum, två museer",
           "en": "one museum, two museums",
           "note": "The -um goes, -er comes."
-        },
-        {
-          "fi": "ett protein, två proteiner",
-          "en": "one protein, two proteins"
         },
         {
           "fi": "en sak, två saker",
@@ -1119,42 +1105,87 @@
         }
       ],
       "memoryTip": "One sentence holds the four short exceptions: Min chef har många saker, två katter och många vänner. (My manager has many things, two cats and many friends.)",
-      "tryIt": "Cover the plurals and say them: sak, katt, chef, vän, museum, protein, bok.",
+      "tryIt": "Cover the plurals and say them: sak, katt, chef, vän, gäst, museum, protein, bok.",
       "activity": {
-        "type": "match",
-        "label": "Exception pairs",
-        "title": "Match the singular to the plural",
-        "instructions": "Make the teacher's six exception pairs, then say each pair aloud.",
-        "leftLabel": "One",
-        "rightLabel": "More than one",
-        "pairs": [
+        "type": "sort",
+        "label": "-ar or -er?",
+        "title": "Short en-words: rule or exception?",
+        "instructions": "Every word here is a short en-word. Say the plural aloud first, then choose: does it follow the group 2 clue (-ar), or is it an exception or a loanword (-er)?",
+        "buckets": [
           {
-            "left": "en sak",
-            "right": "saker"
+            "id": "ar",
+            "label": "-ar",
+            "hint": "follows the short-word clue"
           },
           {
-            "left": "en katt",
-            "right": "katter"
-          },
-          {
-            "left": "en chef",
-            "right": "chefer"
-          },
-          {
-            "left": "en vän",
-            "right": "vänner"
-          },
-          {
-            "left": "ett museum",
-            "right": "museer"
-          },
-          {
-            "left": "ett protein",
-            "right": "proteiner"
+            "id": "er",
+            "label": "-er",
+            "hint": "an exception, or a loanword stressed at the end"
           }
         ],
-        "pattern": "All six take -er although the clues point to group 2 or group 5. Learn them as pairs; do not make a wider rule.",
-        "sentence": "{left}, två {right}"
+        "items": [
+          {
+            "fi": "en dag",
+            "en": "a day",
+            "bucket": "ar",
+            "why": "Dag follows the clue: två dagar."
+          },
+          {
+            "fi": "en sak",
+            "en": "a thing",
+            "bucket": "er",
+            "why": "The teacher's exception: två saker, never sakar."
+          },
+          {
+            "fi": "en stol",
+            "en": "a chair",
+            "bucket": "ar",
+            "why": "Stol follows the clue: två stolar."
+          },
+          {
+            "fi": "en katt",
+            "en": "a cat",
+            "bucket": "er",
+            "why": "The teacher's exception: två katter."
+          },
+          {
+            "fi": "en hund",
+            "en": "a dog",
+            "bucket": "ar",
+            "why": "Hund follows the clue: två hundar."
+          },
+          {
+            "fi": "en vän",
+            "en": "a friend",
+            "bucket": "er",
+            "why": "The teacher's exception: två vänner, with nn. The homework trap is vännar."
+          },
+          {
+            "fi": "en buss",
+            "en": "a bus",
+            "bucket": "ar",
+            "why": "Buss follows the clue: två bussar, as on page 23."
+          },
+          {
+            "fi": "en gäst",
+            "en": "a guest",
+            "bucket": "er",
+            "why": "Like sak and katt: två gäster, as in the dialogue."
+          },
+          {
+            "fi": "en chef",
+            "en": "a manager",
+            "bucket": "er",
+            "why": "The teacher's exception: två chefer."
+          },
+          {
+            "fi": "en biljett",
+            "en": "a ticket",
+            "bucket": "er",
+            "why": "A loanword stressed at the end, bil-JETT: två biljetter."
+          }
+        ],
+        "summary": "Most short en-words take -ar, but sak, katt, chef, vän and gäst take -er. Learn these as pairs."
       }
     },
     {
@@ -1162,9 +1193,9 @@
       "kind": "rule",
       "body": [
         "Group 4: ett-words that end in a vowel. Just add -n: ett möte → möten, ett äpple → äpplen, ett konto → konton, ett meddelande → meddelanden.",
-        "Group 5: ett-words that end in a consonant. Add nothing: ett jobb → två jobb, ett företag → två företag, ett barn → två barn, ett spel → två spel, ett hus → två hus.",
-        "Group 5 also has some en-words for jobs and origins. The teacher's examples end in -are: en lärare → två lärare, en läkare → två läkare, en italienare → två italienare. Here in Finland: en finländare → två finländare. Job words on -ör, like frisör, stay in group 3.",
-        "In group 5 the noun does not change, so the number or a word like många tells you it is plural: ett barn, två barn, många barn."
+        "This -n is not the definite form from Lecture 5, where the ending means the: äpplet = the apple, but äpplen = apples; mötet = the meeting, but möten = meetings.",
+        "Group 5: ett-words that end in a consonant. Add nothing: ett jobb → två jobb, ett företag → två företag, ett barn → två barn, ett hus → två hus. The number or a word like många shows that it is plural.",
+        "Group 5 also has some en-words for jobs and origins. The teacher's examples end in -are: en lärare → två lärare, en läkare → två läkare, en italienare → två italienare. Here in Finland: en finländare → två finländare. Job words on -ör, like frisör, stay in group 3."
       ],
       "examples": [
         {
@@ -1172,25 +1203,13 @@
           "en": "one apple, two apples"
         },
         {
-          "fi": "ett meddelande, två meddelanden",
-          "en": "one message, two messages"
-        },
-        {
           "fi": "ett företag, två företag",
           "en": "one company, two companies"
-        },
-        {
-          "fi": "ett barn, två barn",
-          "en": "one child, two children"
         },
         {
           "fi": "en lärare, två lärare",
           "en": "one teacher, two teachers",
           "note": "An en-word, but a job on -are: no ending."
-        },
-        {
-          "fi": "en italienare, två italienare",
-          "en": "one Italian, two Italians"
         },
         {
           "fi": "Jag köpte datorspel.",
@@ -1294,17 +1313,8 @@
           "en": "I have many books at home."
         },
         {
-          "fi": "Hur många bilar har ni nu?",
-          "en": "How many cars do you have now?"
-        },
-        {
           "fi": "Hur mycket kaffe dricker du?",
           "en": "How much coffee do you drink?"
-        },
-        {
-          "fi": "Vi dricker inte så mycket vin.",
-          "en": "We do not drink that much wine.",
-          "note": "From Elin in the dialogue."
         },
         {
           "fi": "De vill tjäna mycket pengar.",
@@ -1317,11 +1327,6 @@
           "note": "några + plural; lite + amount."
         },
         {
-          "fi": "två flaskor vatten",
-          "en": "two bottles of water",
-          "note": "You count the bottles, not the water."
-        },
-        {
           "fi": "Jag har inga katter.",
           "en": "I have no cats.",
           "note": "Inga = no, before a plural."
@@ -1330,73 +1335,93 @@
       "memoryTip": "If a number fits in front, use många: tre böcker → många böcker. If no number fits, as with pengar, tid or kaffe, use mycket. A lot of cars = många bilar.",
       "tryIt": "Choose aloud: ___ äpplen; ___ kaffe; ___ möten; ___ pengar.",
       "activity": {
-        "type": "sort",
-        "label": "Many or much?",
-        "title": "Count it or measure it?",
-        "instructions": "Choose många or mycket for each word, then say the full phrase aloud.",
-        "buckets": [
+        "type": "question-gap",
+        "label": "Ask Elin",
+        "title": "Ask Elin about Friday's dinner",
+        "instructions": "Each fact is hidden. Choose the question that would really get it: många or mycket, the right plural ending, and the verb straight after the question words. Elin answers aloud.",
+        "card": {
+          "title": "Dinner at Elin's",
+          "subtitle": "Friday, for Maja's maths test"
+        },
+        "answerer": "Elin",
+        "gaps": [
           {
-            "id": "many",
-            "label": "många",
-            "hint": "plural things you can count"
+            "about": "Friday",
+            "field": "How many guests",
+            "options": [
+              "Hur många gäster kommer?",
+              "Hur mycket gäster kommer?",
+              "Hur många gästar kommer?"
+            ],
+            "answer": "Hur många gäster kommer?",
+            "reply": {
+              "fi": "Vi blir fyra personer.",
+              "en": "There will be four of us."
+            },
+            "why": "You count guests, so hur många. Gäst takes -er, like sak and katt: gäster."
           },
           {
-            "id": "much",
-            "label": "mycket",
-            "hint": "an amount"
+            "about": "Friday",
+            "field": "How much wine",
+            "options": [
+              "Hur mycket vin dricker ni?",
+              "Hur många vin dricker ni?",
+              "Hur mycket vin ni dricker?"
+            ],
+            "answer": "Hur mycket vin dricker ni?",
+            "reply": {
+              "fi": "Inte så mycket. En flaska räcker.",
+              "en": "Not that much. One bottle is enough."
+            },
+            "why": "Wine is an amount, so hur mycket. The verb dricker comes straight after the question words."
+          },
+          {
+            "about": "Friday",
+            "field": "How many apples",
+            "options": [
+              "Hur många äpplen behöver du?",
+              "Hur många äpplar behöver du?",
+              "Hur många äpplet behöver du?"
+            ],
+            "answer": "Hur många äpplen behöver du?",
+            "reply": {
+              "fi": "Sex äpplen. Jag bakar en äppelkaka.",
+              "en": "Six apples. I am baking an apple cake."
+            },
+            "why": "Ett äpple is group 4: add -n, äpplen. Äpplet means the apple (the definite form from Lecture 5)."
+          },
+          {
+            "about": "Friday",
+            "field": "How many chairs",
+            "options": [
+              "Hur många stolar har ni?",
+              "Hur många stolor har ni?",
+              "Hur mycket stolar har ni?"
+            ],
+            "answer": "Hur många stolar har ni?",
+            "reply": {
+              "fi": "Fyra. Det räcker!",
+              "en": "Four. That is enough!"
+            },
+            "why": "Stol is a short en-word: stolar. The -or ending is for en-words on -a, like lampa → lampor."
+          },
+          {
+            "about": "Friday",
+            "field": "Enough glasses",
+            "options": [
+              "Har ni många glas?",
+              "Har ni många glasar?",
+              "Ni har många glas?"
+            ],
+            "answer": "Har ni många glas?",
+            "reply": {
+              "fi": "Ja, vi har många glas.",
+              "en": "Yes, we have lots of glasses."
+            },
+            "why": "Ett glas is group 5: no ending. A yes/no question starts with the verb (Lecture 2): Har ni …?"
           }
         ],
-        "items": [
-          {
-            "fi": "bilar",
-            "en": "cars",
-            "bucket": "many",
-            "why": "You can count cars: många bilar."
-          },
-          {
-            "fi": "kaffe",
-            "en": "coffee",
-            "bucket": "much",
-            "why": "Coffee is an amount: mycket kaffe."
-          },
-          {
-            "fi": "möten",
-            "en": "meetings",
-            "bucket": "many",
-            "why": "You can count meetings: många möten."
-          },
-          {
-            "fi": "pengar",
-            "en": "money",
-            "bucket": "much",
-            "why": "In Swedish money is an amount: mycket pengar."
-          },
-          {
-            "fi": "äpplen",
-            "en": "apples",
-            "bucket": "many",
-            "why": "You can count apples: många äpplen."
-          },
-          {
-            "fi": "tid",
-            "en": "time",
-            "bucket": "much",
-            "why": "Time is an amount: mycket tid."
-          },
-          {
-            "fi": "vänner",
-            "en": "friends",
-            "bucket": "many",
-            "why": "You can count friends: många vänner."
-          },
-          {
-            "fi": "vatten",
-            "en": "water",
-            "bucket": "much",
-            "why": "Water is an amount: mycket vatten. But you can count bottles: två flaskor vatten."
-          }
-        ],
-        "summary": "Count separate things with många. Describe an amount with mycket."
+        "summary": "Hur många + a plural you can count; hur mycket + an amount. In a question the verb comes second, right after hur många or hur mycket."
       }
     },
     {
@@ -1423,10 +1448,6 @@
           "fi": "Vi träffades för två veckor sedan.",
           "en": "We met two weeks ago.",
           "note": "The past of träffas; för … sedan is on page 22."
-        },
-        {
-          "fi": "Vi ses på fredag!",
-          "en": "See you on Friday!"
         },
         {
           "fi": "Två barn leker i trädgården.",
@@ -1482,16 +1503,6 @@
   ],
   "guided": [
     {
-      "id": "sv-07-guided-g1",
-      "prompt": "Write the plural: en blomma → två ___.",
-      "answers": [
-        "blommor",
-        "två blommor"
-      ],
-      "hint": "Group 1: take away the -a and add -or.",
-      "explanation": "En blomma, två blommor."
-    },
-    {
       "id": "sv-07-guided-pojke",
       "prompt": "Write the plural: en pojke → två ___.",
       "answers": [
@@ -1500,6 +1511,42 @@
       ],
       "hint": "Group 2: the final e drops before -ar.",
       "explanation": "En pojke, två pojkar. Not pojkear."
+    },
+    {
+      "id": "sv-07-guided-g4",
+      "prompt": "Choose: ett möte → tre ___.",
+      "answers": [
+        "möten"
+      ],
+      "options": [
+        "möten",
+        "mötet",
+        "möter"
+      ],
+      "hint": "An ett-word ending in a vowel belongs to group 4.",
+      "explanation": "Add -n: möten. Mötet means the meeting (the definite form from Lecture 5)."
+    },
+    {
+      "id": "sv-07-guided-g3",
+      "prompt": "Write the plural: en vän → två ___.",
+      "answers": [
+        "vänner",
+        "två vänner"
+      ],
+      "hint": "It is one of the teacher's exceptions, and the n is written twice.",
+      "explanation": "En vän, två vänner. Not vännar: here the short-word clue fails."
+    },
+    {
+      "id": "sv-07-guided-veckor",
+      "prompt": "Complete with the time phrase from Lecture 6: Jag kom till Finland för två ___ sedan. (I came to Finland two weeks ago.)",
+      "answers": [
+        "veckor",
+        "två veckor",
+        "för två veckor sedan",
+        "Jag kom till Finland för två veckor sedan."
+      ],
+      "hint": "En vecka is an en-word ending in -a.",
+      "explanation": "En vecka, två veckor: group 1. För … sedan (ago) comes from Lecture 6 and page 22."
     },
     {
       "id": "sv-07-guided-stress",
@@ -1512,30 +1559,6 @@
       "explanation": "En telefon, två telefoner: group 3, like banan → bananer and biljett → biljetter."
     },
     {
-      "id": "sv-07-guided-g3",
-      "prompt": "Write the teacher's exception: en vän → två ___.",
-      "answers": [
-        "vänner",
-        "två vänner"
-      ],
-      "hint": "It takes -er, and the n is written twice.",
-      "explanation": "En vän, två vänner."
-    },
-    {
-      "id": "sv-07-guided-g4",
-      "prompt": "Choose: ett möte → tre ___.",
-      "answers": [
-        "möten"
-      ],
-      "options": [
-        "möten",
-        "möter",
-        "mötenar"
-      ],
-      "hint": "An ett-word ending in a vowel belongs to group 4.",
-      "explanation": "Add -n: möten."
-    },
-    {
       "id": "sv-07-guided-larare",
       "prompt": "Write the plural: en lärare → två ___.",
       "answers": [
@@ -1546,24 +1569,41 @@
       "explanation": "En lärare, två lärare: no ending. Not lärarer."
     },
     {
-      "id": "sv-07-guided-many",
-      "prompt": "Complete: Jag har ___ böcker men inte ___ kaffe. (I have many books but not much coffee.)",
+      "id": "sv-07-guided-fix",
+      "prompt": "Fix the two mistakes: “Jag har två bil och många vännar.”",
       "answers": [
-        "många, mycket",
-        "många mycket"
+        "Jag har två bilar och många vänner.",
+        "Jag har 2 bilar och många vänner.",
+        "Jag har många vänner och två bilar.",
+        "Jag har många vänner och 2 bilar."
       ],
-      "hint": "Count books; measure coffee.",
-      "explanation": "Många böcker, mycket kaffe."
+      "hint": "A number still needs the plural ending, and vän is an exception.",
+      "explanation": "Jag har två bilar och många vänner. The number does not replace the ending, and vän takes -er: vänner."
     },
     {
-      "id": "sv-07-guided-error",
-      "prompt": "Correct the common mistake: “två museum”.",
+      "id": "sv-07-guided-many",
+      "prompt": "Write in Swedish: “I do not drink much coffee, but I have many cups.”",
       "answers": [
-        "två museer",
-        "museer"
+        "Jag dricker inte mycket kaffe, men jag har många koppar.",
+        "Jag dricker inte så mycket kaffe, men jag har många koppar.",
+        "Jag dricker inte mycket kaffe men har många koppar.",
+        "Jag dricker inte så mycket kaffe men har många koppar.",
+        "Jag har många koppar, men jag dricker inte mycket kaffe.",
+        "Jag har många koppar, men jag dricker inte så mycket kaffe.",
+        "Jag har många koppar, men dricker inte mycket kaffe.",
+        "Jag har många koppar, men dricker inte så mycket kaffe."
       ],
-      "hint": "Museum is the teacher's group 3 ett-word exception.",
-      "explanation": "Ett museum, två museer."
+      "hint": "Inte comes right after the verb (Lecture 3). Count the cups; measure the coffee.",
+      "explanation": "Jag dricker inte (så) mycket kaffe, men jag har många koppar. Inte follows the verb dricker, as in Lecture 3. Kaffe is an amount (mycket); koppar can be counted (många)."
+    },
+    {
+      "id": "sv-07-guided-yesno",
+      "prompt": "Turn it into a yes/no question (Lecture 2): “De har många vitaminer.”",
+      "answers": [
+        "Har de många vitaminer?"
+      ],
+      "hint": "Start with the verb.",
+      "explanation": "Har de många vitaminer? A yes/no question starts with the verb (Lecture 2). This is the teacher's own practice with the sentence about oranges."
     },
     {
       "id": "sv-07-guided-translate",
@@ -1587,7 +1627,7 @@
         "Vi köpte en ny bil i går. Vi har 2 bilar nu."
       ],
       "hint": "Start with Igår, then the verb: Igår köpte vi … Then Nu har vi …",
-      "explanation": "The teacher's sentence: Igår köpte vi en ny bil. Nu har vi två bilar. After Igår and Nu, the verb comes second."
+      "explanation": "The teacher's sentence: Igår köpte vi en ny bil. Nu har vi två bilar. Köpte is the past form (Lecture 6), and after Igår and Nu the verb comes second (Lecture 3)."
     }
   ],
   "checkpoint": [
@@ -1600,45 +1640,48 @@
         "Jag har 2 katter och många böcker hemma.",
         "Hemma har jag 2 katter och många böcker.",
         "Jag har många böcker och två katter hemma.",
-        "Jag har många böcker och 2 katter hemma."
+        "Jag har många böcker och 2 katter hemma.",
+        "Hemma har jag många böcker och två katter.",
+        "Hemma har jag många böcker och 2 katter."
       ],
       "hint": "Katt is a teacher exception: katter.",
       "explanation": "Model: Jag har två katter och många böcker hemma."
     },
     {
       "id": "sv-07-check-groups",
-      "prompt": "Which row is correct?",
+      "prompt": "Which line means two apples and two houses?",
       "answers": [
-        "ett äpple → äpplen; ett hus → hus"
+        "två äpplen, två hus"
       ],
       "options": [
-        "ett äpple → äpplen; ett hus → hus",
-        "ett äpple → äpplar; ett hus → husar",
-        "ett äpple → äppler; ett hus → husen"
+        "två äpplen, två hus",
+        "två äpplet, två husar",
+        "två äpplar, två hus"
       ],
       "hint": "Group 4 adds -n; group 5 adds nothing.",
-      "explanation": "Äpple ends in a vowel; hus ends in a consonant."
+      "explanation": "Äpple ends in a vowel: äpplen. Hus ends in a consonant: hus. Äpplet means the apple (Lecture 5), and -ar belongs to en-words such as bil."
     },
     {
       "id": "sv-07-check-amount",
       "prompt": "Which sentence is natural?",
       "answers": [
-        "Jag dricker mycket kaffe."
+        "Vi har många vänner men inte mycket tid."
       ],
       "options": [
-        "Jag dricker mycket kaffe.",
-        "Jag dricker många kaffe.",
-        "Jag dricker mycket koppar."
+        "Vi har många vänner men inte mycket tid.",
+        "Vi har mycket vänner men inte många tid.",
+        "Vi har många vänner men inte många tid."
       ],
-      "hint": "Coffee is an amount here.",
-      "explanation": "Use mycket with kaffe; use många with koppar."
+      "hint": "You can count friends. Time is an amount.",
+      "explanation": "Många vänner (you count them), mycket tid (an amount). English a lot of, Hindi बहुत and Marathi खूप cover both; Swedish makes you choose."
     },
     {
       "id": "sv-07-check-exception",
       "prompt": "Write the missing words: “She likes museums, so I bought two tickets.” Hon gillar ___, så jag köpte två ___.",
       "answers": [
         "museer, biljetter",
-        "museer biljetter"
+        "museer biljetter",
+        "Hon gillar museer, så jag köpte två biljetter."
       ],
       "hint": "Both plurals end in -er.",
       "explanation": "Hon gillar museer, så jag köpte två biljetter. Museer is the teacher's exception; biljetter is group 3."
@@ -1648,21 +1691,25 @@
       "prompt": "Ask Elin in Swedish: “How many meetings do you have today?”",
       "answers": [
         "Hur många möten har du i dag?",
-        "Hur många möten har du idag?"
+        "Hur många möten har du idag?",
+        "Elin, hur många möten har du i dag?",
+        "Elin, hur många möten har du idag?",
+        "Hur många möten har du i dag, Elin?",
+        "Hur många möten har du idag, Elin?"
       ],
       "hint": "Hur många + plural + verb + du.",
-      "explanation": "Hur många möten har du i dag? Ett möte, två möten: group 4."
+      "explanation": "Hur många möten har du i dag? As in Var bor du? (Lecture 2), the verb comes straight after the question words. Ett möte, två möten: group 4."
     }
   ],
   "assignment": {
     "title": "Episode 7 mission: Things at home",
-    "instructions": "CORE: Give Elin a six-line tour of things in your home. Use at least three plural groups, one exact number, många and mycket.\n\nWRITING: Send a shopping list and short message to a flatmate.\n\nRETURN: Tomorrow, name five things at home from memory and give their plurals.",
-    "model": "Hemma har jag tre rum. Jag har två lampor och fyra stolar. I vardagsrummet finns många böcker och två bord. Jag har också tre växter. I köket har jag många glas, men inte mycket kaffe. Jag har inga katter."
+    "instructions": "CORE: Answer the YKI-style interview theme Berätta om ditt hem (Tell about your home) in five or six sentences. Use at least three plural groups, one exact number, många, mycket and inga, and link two ideas with men or för.\n\nWRITING: Answer a friend at the shop with a short shopping message (30–55 words).\n\nRETURN: Tomorrow, name five things at home from memory and give their plurals.",
+    "model": "Hemma har jag två lampor, fyra stolar, många böcker, fem blommor och två cyklar."
   },
   "takeaways": [
     "Group 1 (-or): en-words ending in -a, en blomma → blommor. Group 2 (-ar): many short en-words, and words with e near the end or -ing, en pojke → pojkar.",
-    "Group 3 (-er): words from other languages, often stressed on the last syllable (bananer, telefoner), plus the teacher's exceptions saker, katter, chefer, vänner, museer, proteiner. Group 4 (-n): ett-words ending in a vowel. Group 5 (no ending): ett-words ending in a consonant, and jobs on -are.",
-    "Count with många (många böcker) and några; describe an amount with mycket (mycket kaffe, mycket pengar) and lite. A lot of cars = många bilar. You träffar someone, but vi träffas; children leker, and you spelar games."
+    "Group 3 (-er): words from other languages, often stressed on the last syllable (bananer, telefoner), plus the exceptions saker, katter, chefer, vänner, gäster, museer, proteiner. Group 4 (-n): ett-words ending in a vowel; äpplen = apples, but äpplet = the apple. Group 5 (no ending): ett-words ending in a consonant, and jobs on -are.",
+    "Count with många and några; describe an amount with mycket and lite. Avoid the three big mistakes: två bil, två vännar, mycket bilar. You träffar someone, but vi träffas; children leker, and you spelar games."
   ],
   "resources": [
     {
@@ -1690,8 +1737,8 @@
         "id": "sv-07-word-2",
         "fi": "en flaska",
         "en": "a bottle",
-        "example": "Vi har två flaskor vatten.",
-        "translation": "We have two bottles of water.",
+        "example": "Jag köper en flaska vin på Alko.",
+        "translation": "I am buying a bottle of wine at Alko (Finland's state alcohol shop).",
         "level": "A1"
       },
       {
@@ -1714,8 +1761,8 @@
         "id": "sv-07-word-5",
         "fi": "en tidning",
         "en": "a newspaper",
-        "example": "Jag läser två tidningar varje dag.",
-        "translation": "I read two newspapers every day.",
+        "example": "Jag läser två tidningar.",
+        "translation": "I read two newspapers.",
         "level": "A1"
       },
       {
@@ -1746,8 +1793,8 @@
         "id": "sv-07-word-9",
         "fi": "en biljett",
         "en": "a ticket",
-        "example": "Vi har två biljetter.",
-        "translation": "We have two tickets.",
+        "example": "Jag köper två biljetter i HSL-appen.",
+        "translation": "I buy two tickets in the HSL app.",
         "level": "A1"
       },
       {
@@ -1936,11 +1983,11 @@
       }
     ],
     "pronunciation": {
-      "text": "En blomma, två blommor. En bil, två bilar. En apelsin, två apelsiner. Ett möte, två möten. Ett jobb, två jobb. En vän, två vänner.",
-      "tip": "Make the plural ending clear: -or, -ar, -er, -n, then no ending. Groups 1 and 2 differ only in the vowel: blomm-or, bil-ar. Keep the ä short in vän and vänner."
+      "text": "En blomma, två blommor. En bil, två bilar. En banan, två bananer. Ett museum, två museer. Ett möte, två möten. En vän, två vänner.",
+      "tip": "The stress stays on the same syllable as in the singular: BI-lar, ba-NA-ner, mu-SE-er (say both e's). Say the unstressed ending clearly, because it is the only sign of the group. Finland-Swedish weakens endings less than the Sweden-Swedish voices do, and it has no two-step word melody (accent 2) on words like bilar and blommor, so you do not need to copy that melody. Keep the ä short in vän and vänner."
     },
     "listening": {
-      "text": "Elin och Mikko bor i en lägenhet med tre rum. I vardagsrummet har de en soffa, fyra stolar och många böcker. På bordet står två lampor och tre glas. De har också fem blommor men inga katter. I köket finns många tallrikar, några flaskor vatten och sex äpplen. Elin dricker mycket kaffe, så hon har många koppar. Två dagar i veckan jobbar hon hemma. Då har hon många videomöten. Hon tycker om museer och har två biljetter till ett museum på lördag.",
+      "text": "Elin och Mikko bor i en lägenhet med tre rum. I vardagsrummet har de en soffa, fyra stolar och många böcker. På bordet står två lampor och tre glas. De har också fem blommor men inga katter. I köket finns många tallrikar, några flaskor vatten och sex äpplen. Elin dricker mycket kaffe, så hon har många koppar. Två dagar i veckan jobbar hon hemma. Då har hon många videomöten. Hon tycker om museer och har två biljetter till Ateneum på söndag.",
       "question": "What do Elin and Mikko not have?",
       "options": [
         "Cats",
@@ -1951,72 +1998,72 @@
       "explanation": "De har också fem blommor men inga katter. Inga means no, before a plural."
     },
     "reading_passage": {
-      "text": "Hej! Jag jobbar sent i dag, så jag hinner inte handla. Kan du köpa fyra apelsiner och tre bananer? Hemma har vi två äpplen men inga apelsiner. Vi behöver också två flaskor vatten. Köp inte kaffe, för vi har mycket kaffe. Jag vill laga mat i kväll, så köp några tomater och lite potatis. Vi har många tallrikar men bara två glas. Kan du köpa fyra glas? Jag kommer hem klockan sju. Då kan vi laga maten tillsammans. Tack! / Alex",
+      "text": "Hej Mikko! Jag jobbar sent i dag, så jag hinner inte handla. Kan du gå till butiken? Vi behöver fyra tomater, tre apelsiner, lite potatis och två flaskor vatten. Alex tar med vin, juice och sex äpplen. Köp inte kaffe, för vi har mycket kaffe. Vi har många tallrikar och glas. På fredag blir vi fyra. Jag kommer hem klockan sju. Då kan vi laga mat tillsammans. Kram, Elin",
       "gist": {
-        "prompt": "Why does Alex write to his flatmate?",
+        "prompt": "Why does Elin write to Mikko?",
         "options": [
-          "He needs help with shopping",
-          "He wants museum tickets",
-          "He is selling a car"
+          "She needs help with the shopping",
+          "She wants museum tickets",
+          "She is inviting him to dinner"
         ],
         "answer": 0,
-        "explanation": "He works late, so he asks his flatmate to buy food, water and glasses."
+        "explanation": "She works late, so she asks Mikko to buy food for Friday's dinner."
       },
       "detail": {
-        "prompt": "What should the flatmate not buy?",
+        "prompt": "What should Mikko not buy?",
         "options": [
           "Coffee",
-          "Oranges",
-          "Glasses"
+          "Tomatoes",
+          "Water"
         ],
         "answer": 0,
         "explanation": "Köp inte kaffe, för vi har mycket kaffe."
       }
     },
     "reading": {
-      "text": "Hej! Jag jobbar sent i dag, så jag hinner inte handla. Kan du köpa fyra apelsiner och tre bananer? Hemma har vi två äpplen men inga apelsiner. Vi behöver också två flaskor vatten. Köp inte kaffe, för vi har mycket kaffe. Jag vill laga mat i kväll, så köp några tomater och lite potatis. Vi har många tallrikar men bara två glas. Kan du köpa fyra glas? Jag kommer hem klockan sju. Då kan vi laga maten tillsammans. Tack! / Alex",
-      "question": "How many glasses should the flatmate buy?",
+      "text": "Hej Mikko! Jag jobbar sent i dag, så jag hinner inte handla. Kan du gå till butiken? Vi behöver fyra tomater, tre apelsiner, lite potatis och två flaskor vatten. Alex tar med vin, juice och sex äpplen. Köp inte kaffe, för vi har mycket kaffe. Vi har många tallrikar och glas. På fredag blir vi fyra. Jag kommer hem klockan sju. Då kan vi laga mat tillsammans. Kram, Elin",
+      "question": "Who brings the wine and the apples?",
       "options": [
-        "Four",
-        "Two",
-        "Six"
+        "Alex",
+        "Mikko",
+        "Maja"
       ],
       "answer": 0,
-      "explanation": "Kan du köpa fyra glas?"
+      "explanation": "Alex tar med vin, juice och sex äpplen."
     },
     "speaking": {
-      "prompt": "Give Elin a six-line tour of things at home. Use at least three plural groups, one exact number, många and mycket.",
-      "help": "Hemma har jag … · Det finns två … · Jag har många … · Jag har inte mycket … · I köket finns …",
-      "model": "Hemma har jag tre rum. Jag har två lampor och fyra stolar. I vardagsrummet finns många böcker och två bord. Jag har också tre växter och fem glas. I köket har jag många tallrikar, men inte mycket kaffe. Jag har inga katter."
+      "prompt": "YKI-style interview theme: Berätta om ditt hem (Tell about your home). Give the interviewer five or six sentences: your rooms, things you have many of, one thing you do not have much of, and one thing you have none of. Use at least three plural groups and link two ideas with men or för.",
+      "help": "Hemma har jag … · I rummet finns … · Jag har många … · Jag har inte så mycket … · Jag har inga … · …, men … · …, för …",
+      "model": "Jag bor i en liten lägenhet med ett rum och ett kök. I rummet finns en soffa, två lampor och många böcker. I köket har jag fyra stolar och många glas, men inte så mycket kaffe. Jag har också två cyklar. Jag har fem blommor, men inga katter."
     },
     "writing": {
-      "prompt": "Write a shopping list inside a short message to your flatmate. Use plural nouns and quantities.",
-      "situation": "You work late today. Your flatmate is going to the shop. Write a short message: ask them to buy what you need for dinner and say what you already have at home.",
+      "prompt": "Write a short shopping message to a friend. Use plural nouns and quantities.",
+      "situation": "A YKI-style message. Two friends are coming to your place for dinner tonight. Your friend Sanna is at the S-market and texts you: “Jag är i butiken. Behöver du något?” (I am at the shop. Do you need anything?) Write back. As in the test, start and end the message in a suitable way and cover every point.",
       "points": [
-        "Greet your flatmate.",
-        "Ask for at least three items with numbers or många.",
-        "Use at least two correct plural endings.",
-        "Say one thing you already have with mycket or många.",
-        "Say when you will be home and end the message."
+        "Greet Sanna and thank her.",
+        "Ask for at least three things, each with a number or några.",
+        "Use at least two different plural groups (for example -or and -er).",
+        "Say one thing you do not need, with mycket or många (Jag har mycket …).",
+        "Say how many you will be tonight, and end the message."
       ],
       "wordRange": [
         30,
         55
       ],
-      "help": "Hej! · Jag jobbar sent i dag. · Kan du köpa …? · två flaskor … · tre apelsiner · Vi har mycket … · Vi har många … · Jag kommer hem klockan … · Tack!",
-      "model": "Hej! Jag jobbar sent i dag. Kan du köpa tre apelsiner, fyra tomater och två flaskor vatten? Köp också sex potatisar. Vi har mycket kaffe och många äpplen hemma. Jag kommer hem klockan sju. Då lagar vi mat tillsammans. Tack! / Alex"
+      "help": "Hej Sanna! · Tack, vad snällt! · Kan du köpa …? · två flaskor … · sex äpplen · några tomater · Köp inte …, för jag har mycket … · Vi blir … i kväll. · Vi ses!",
+      "model": "Hej Sanna! Tack, vad snällt! Kan du köpa två flaskor vatten, sex äpplen och några tomater? Köp inte kaffe, för jag har mycket kaffe hemma. Jag har också många glas. Vi blir tre i kväll. Vi ses snart! / Alex"
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Describe plural things in your home, then write a shopping message with quantities.",
+    "expectedOutput": "Describe the things in your home in a YKI-style interview answer, then write a shopping message with quantities.",
     "transferPrompt": "Change the room and replace two things with nouns from different plural groups.",
     "returnPrompt": "Without looking, name five things at home with a number and the correct plural.",
     "successChecks": [
       "Use at least three different plural groups.",
       "Say one exact number before a plural noun.",
       "Use många for countable things and mycket for an amount.",
-      "Make your home description clear in five or six lines."
+      "Link two ideas with och, men or för, in five or six sentences."
     ],
     "requiredSkills": [
       "speaking",
