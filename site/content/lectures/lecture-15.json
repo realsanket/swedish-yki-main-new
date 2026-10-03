@@ -52,7 +52,7 @@
         "part": "recall",
         "title": "After the party",
         "eyebrow": "The morning after Elin's party, Alex helps her sort the forgotten things",
-        "instructions": "Listen without reading first. Who owns the scarf, the books and the phone?",
+        "instructions": "Predict first: is the red scarf Alex's? Then listen without reading. Who owns the scarf, the books and the phone?",
         "initiallyOpen": false
       }
     },
@@ -129,10 +129,10 @@
       "sample": "Jag har mina böcker i bokhyllan i vardagsrummet."
     },
     {
-      "id": "sv-15-u3",
-      "fi": "Vem brukar städa ert hem?",
-      "en": "Who usually cleans your home?",
-      "sample": "Vi städar vårt hem tillsammans."
+      "id": "sv-15-u7",
+      "fi": "Vad tar du med dig när du går hemifrån?",
+      "en": "What do you take with you when you leave home?",
+      "sample": "Jag tar med mig min telefon, mina nycklar och mitt HSL-kort."
     },
     {
       "id": "sv-15-u4",
@@ -155,29 +155,19 @@
   ],
   "reviewPhrases": [
     {
-      "id": "sv-15-r1",
-      "en": "my apartment",
-      "fi": "min lägenhet"
-    },
-    {
-      "id": "sv-15-r2",
-      "en": "my room",
-      "fi": "mitt rum"
-    },
-    {
-      "id": "sv-15-r3",
-      "en": "my books",
-      "fi": "mina böcker"
-    },
-    {
-      "id": "sv-15-r4",
-      "en": "her keys",
-      "fi": "hennes nycklar"
-    },
-    {
       "id": "sv-15-r5",
       "en": "Whose bag is this?",
       "fi": "Vems väska är det här?"
+    },
+    {
+      "id": "sv-15-r9",
+      "en": "No, it isn't mine.",
+      "fi": "Nej, den är inte min."
+    },
+    {
+      "id": "sv-15-r10",
+      "en": "My room is small but bright.",
+      "fi": "Mitt rum är litet men ljust."
     },
     {
       "id": "sv-15-r6",
@@ -185,19 +175,29 @@
       "fi": "Han tar sin egen telefon."
     },
     {
+      "id": "sv-15-r11",
+      "en": "She calls her own mum.",
+      "fi": "Hon ringer sin mamma."
+    },
+    {
       "id": "sv-15-r7",
       "en": "I feel tired.",
       "fi": "Jag känner mig trött."
     },
     {
-      "id": "sv-15-r8",
-      "en": "People usually take care of their things.",
-      "fi": "Man brukar ta hand om sina saker."
+      "id": "sv-15-r12",
+      "en": "In Finland people take off their shoes in the hall.",
+      "fi": "I Finland tar man av sig skorna i hallen."
+    },
+    {
+      "id": "sv-15-r13",
+      "en": "Yesterday I lost my keys.",
+      "fi": "Igår tappade jag mina nycklar."
     }
   ],
   "missionPlan": {
-    "title": "Plan six ownership lines",
-    "intro": "Choose real or invented details. Make the owned thing control the ending: en, ett or plural.",
+    "title": "Plan your answer: Berätta om ditt hem",
+    "intro": "Note key words first, as the YKI test lets you. The owned thing controls the ending: en, ett or plural.",
     "lines": [
       {
         "label": "Your home",
@@ -206,34 +206,34 @@
         "placeholder": "en lägenhet i Helsingfors"
       },
       {
-        "label": "One ett thing",
-        "before": "Mitt ",
-        "after": " är viktigt för mig.",
-        "placeholder": "skrivbord"
+        "label": "Rooms",
+        "before": "",
+        "after": "",
+        "placeholder": "Min lägenhet har två rum och ett litet kök."
       },
       {
-        "label": "Several things",
+        "label": "Favourite room and why",
+        "before": "Mitt favoritrum är ",
+        "after": ".",
+        "placeholder": "köket eftersom det är ljust"
+      },
+      {
+        "label": "Your things",
         "before": "Mina ",
         "after": " finns i mitt rum.",
         "placeholder": "böcker"
       },
       {
-        "label": "Another owner",
+        "label": "Another person's thing",
         "before": "",
         "after": "",
-        "placeholder": "Elin har en cykel. Hennes cykel är grön."
+        "placeholder": "Min vän har en cykel. Hans cykel står i hallen."
       },
       {
-        "label": "Own thing",
+        "label": "Their own thing",
         "before": "",
         "after": "",
-        "placeholder": "Hon tar hand om sin cykel."
-      },
-      {
-        "label": "Opinion and reason",
-        "before": "Jag tycker om mitt hem eftersom ",
-        "after": ".",
-        "placeholder": "det är lugnt"
+        "placeholder": "Han tar hand om sin cykel."
       }
     ]
   },
@@ -719,9 +719,10 @@
       "title": "Min stol, mitt bord, mina böcker · my chair, my table, my books",
       "kind": "rule",
       "body": [
-        "Min lägenhet. Mitt rum. Mina böcker. The owned thing chooses the ending: min/din/vår/er with one en word, mitt/ditt/vårt/ert with one ett word, mina/dina/våra/era with plurals. Hindi does the same: mera ghar, meri kitaab, mere dost. The ending follows the thing, not the owner.",
-        "Hans, hennes and deras never change. They follow the owner, as English his and her do: Alex → hans, Maja → hennes. (Hindi uska/uski does not show this, so check the owner.)",
-        "Hans nya bil. Min nya jacka. After a possessive the adjective takes its definite form, but the noun stays plain: bil, not bilen."
+        "Min lägenhet. Mitt rum. Mina böcker. The owned thing chooses the form: min for an en word, mitt for an ett word, mina for plurals. Din, vår and er work the same way, like Hindi mera ghar, meri kitaab, mere dost.",
+        "Hans, hennes and deras never change. Like English his and her, they show the owner. (Hindi uska/uski does not, so check who owns it.)",
+        "Jackan är min. Huset är mitt. Är den din? After är the thing still decides.",
+        "Hans nya bil. Min nya jacka, never min nya jackan: the adjective takes -a and the noun stays plain (Lecture 9)."
       ],
       "examples": [
         {
@@ -735,14 +736,14 @@
           "note": "vår (en), vårt (ett), våra (plural)."
         },
         {
-          "fi": "Hennes jacka, hennes paraply och hennes skor är här.",
-          "en": "Her jacket, umbrella and shoes are here.",
-          "note": "hennes stays the same."
+          "fi": "Är jackan din? Nej, den är inte min. Den är Majas.",
+          "en": "Is the jacket yours? No, it isn't mine. It's Maja's.",
+          "note": "jackan is an en word → din, min. Majas = Maja's."
         },
         {
           "fi": "Jag visar min nya lägenhet för mina vänner.",
           "en": "I show my new apartment to my friends.",
-          "note": "min + nya (definite) + lägenhet (plain)."
+          "note": "min + nya + lägenhet (plain), the Lecture 9 pattern."
         }
       ],
       "table": {
@@ -791,7 +792,7 @@
         "type": "sort",
         "label": "Choose the ending",
         "title": "Sort by the thing that is owned",
-        "instructions": "Put each phrase under en, ett or plural. Say the complete phrase.",
+        "instructions": "Put each card under en, ett or plural. The thing decides, even when the possessive comes after är. Then say the complete phrase.",
         "items": [
           {
             "fi": "___ lägenhet (jag)",
@@ -812,22 +813,28 @@
             "en": "our keys"
           },
           {
-            "fi": "___ hus (ni)",
+            "fi": "___ kök (ni)",
             "bucket": "ett",
-            "why": "ett hus → ert hus",
-            "en": "your house (to a group)"
+            "why": "ett kök → ert kök",
+            "en": "your kitchen (to a group)"
           },
           {
-            "fi": "___ granne (jag)",
+            "fi": "Är jackan ___? (du)",
             "bucket": "en",
-            "why": "en granne → min granne",
-            "en": "my neighbour"
+            "why": "en jacka → Är jackan din?",
+            "en": "Is the jacket yours?"
           },
           {
-            "fi": "___ foton (du)",
+            "fi": "Böckerna är ___. (jag)",
             "bucket": "plural",
-            "why": "plural foton → dina foton",
-            "en": "your photos"
+            "why": "plural böcker → Böckerna är mina.",
+            "en": "The books are mine."
+          },
+          {
+            "fi": "Huset är ___. (vi)",
+            "bucket": "ett",
+            "why": "ett hus → Huset är vårt.",
+            "en": "The house is ours."
           }
         ],
         "buckets": [
@@ -850,9 +857,10 @@
       "title": "Jag känner mig, hon tvättar sig · verbs that point back to yourself",
       "kind": "rule",
       "body": [
-        "Jag känner mig trött. Hon tvättar sig. The doer and the receiver are the same person, so Swedish adds mig, dig, sig, oss or er after the verb. Say mig, dig, sig as mej, dej, sej.",
-        "Jag känner mig trött, not Jag känner trött. English often drops the pronoun (I feel, I hurry, they get married); Swedish keeps it. Learn these as chunks: känna sig, skynda sig, sätta sig, gifta sig, skilja sig, försova sig, bete sig.",
-        "Jag tvättar händerna. Ta på dig jackan! With your own body and clothes Swedish usually says the, not my."
+        "Jag känner mig trött. Hon oroar sig. When the doer and the receiver are the same person, add mig, dig, sig, oss or er (say mej, dej, sej). You know Oroa dig inte! (Lecture 3) and Skynda dig! (Lecture 11).",
+        "Typical mistake: Jag känner trött. English drops myself; Swedish keeps it. Learn these as chunks: känna sig, skynda sig, sätta sig, gifta sig, skilja sig, försova sig, bete sig. But: Jag mår bra, with no mig.",
+        "Sig is the subject itself; honom, henne and dem are someone else. Han oroar sig, never Han oroar honom.",
+        "Jag tvättar händerna. Ta på dig jackan! For your own body and clothes, Swedish usually says the, not my."
       ],
       "examples": [
         {
@@ -916,47 +924,75 @@
         ]
       },
       "memoryTip": "Say the pair as one chunk: jag–mig, du–dig, hon–sig, vi–oss, ni–er, de–sig. Never leave the slot empty.",
-      "tryIt": "Say how you feel and one thing you do to yourself in the morning.",
+      "tryIt": "Say how you feel today with känner mig, then one thing you do every morning: Jag skyndar mig …",
       "activity": {
-        "type": "match",
-        "label": "Match the pair",
-        "title": "Match each subject to its reflexive object",
-        "instructions": "Match, then say the example aloud.",
-        "leftLabel": "Subject",
-        "rightLabel": "Reflexive object",
-        "pairs": [
+        "type": "sort",
+        "label": "Fix it",
+        "title": "Correct, or does it need a fix?",
+        "instructions": "Read each line. Is the reflexive word right, missing or wrong? Decide, then say the correct line aloud.",
+        "audio": false,
+        "items": [
           {
-            "left": "jag",
-            "right": "mig"
+            "fi": "Jag känner trött i dag.",
+            "bucket": "fix",
+            "why": "English drops myself; Swedish needs mig: Jag känner mig trött i dag."
           },
           {
-            "left": "du",
-            "right": "dig"
+            "fi": "Jag mår bra i dag.",
+            "bucket": "ok",
+            "why": "Correct. Mår never takes mig."
           },
           {
-            "left": "han / hon / man / de",
-            "right": "sig"
+            "fi": "Vi måste skynda oss!",
+            "bucket": "ok",
+            "why": "Correct: vi → oss, as in Lecture 11."
           },
           {
-            "left": "vi",
-            "right": "oss"
+            "fi": "De gifte dem i juni.",
+            "bucket": "fix",
+            "why": "Dem would be other people. De gifte sig i juni."
           },
           {
-            "left": "ni",
-            "right": "er"
+            "fi": "Han oroar honom för provet.",
+            "bucket": "fix",
+            "why": "Honom is another man. Han oroar sig för provet."
+          },
+          {
+            "fi": "Jag försov mig i morse.",
+            "bucket": "ok",
+            "why": "Correct: jag → mig, also in the past."
+          },
+          {
+            "fi": "Sätt dig här!",
+            "bucket": "ok",
+            "why": "Correct: du → dig. Sätt dig! = Sit down!"
+          },
+          {
+            "fi": "Jag mår mig dåligt.",
+            "bucket": "fix",
+            "why": "No mig after mår: Jag mår dåligt."
           }
         ],
-        "pattern": "The ending points back to the subject."
+        "buckets": [
+          {
+            "id": "ok",
+            "label": "Correct as it is"
+          },
+          {
+            "id": "fix",
+            "label": "Needs a fix"
+          }
+        ]
       }
     },
     {
       "title": "Sin egen eller hans? · his own, or someone else's?",
       "kind": "rule",
       "body": [
-        "Alex tar sin telefon. Alex tar hans telefon. Sin = the subject's own. Hans = another man's. Find the subject of the clause (one subject + one verb), then ask: does that same person own the thing? Sin, sitt and sina follow the thing, like min, mitt, mina.",
-        "Hindi and Marathi have the same idea: apna/apni/apne (aapla) = own. Ram apni kitaab padhta hai = Ram läser sin bok. One difference: Swedish sin is only for han, hon, man and de. With jag, du, vi and ni use min, din, vår, er: Jag ringer min mamma, never sin mamma.",
-        "Maja och hennes mamma bor i Helsingfors. Sin never stands inside the subject. Here Maja och hennes mamma is the subject, so hennes.",
-        "Min egen kopp, mitt eget rum, mina egna böcker. Egen (own) keeps these forms after a possessive in written Swedish. You may hear mitt egna in speech."
+        "Alex tar sin telefon: his own. Alex tar hans telefon: another man's. Find the subject (who does the verb). Is it the owner too? Then use sin, sitt or sina, chosen by the thing like min, mitt, mina.",
+        "Hindi and Marathi have the same idea: apna/apni/apne (Marathi aapla). Ram apni kitaab padhta hai = Ram läser sin bok. But sin is only for han, hon, man and de: Jag ringer min mamma, never sin mamma.",
+        "Maja och hennes mamma bor i Helsingfors. Sin never stands inside the subject, so here it is hennes.",
+        "Min egen kopp, mitt eget rum, mina egna böcker: after a possessive, egen keeps these forms in writing. In speech you may hear mitt egna."
       ],
       "examples": [
         {
@@ -1060,8 +1096,8 @@
       "title": "Man tar hand om sina saker · man means people in general",
       "kind": "scene",
       "body": [
-        "Man brukar dricka mycket kaffe i Finland. Man = people in general (one, you, we, people), never one named man. Its reflexive forms are sig and sin/sitt/sina: Man tar av sig skorna.",
-        "Det hjälper en att vila. Man vill att ens vänner mår bra. Its object form is en, and ens is used when sin cannot point to man as subject: here vänner is the subject of mår."
+        "Man (people in general) came in Lecture 13: Får man äta här? New today: man points back with sig and sin/sitt/sina, like han. Man tar av sig skorna. Man tar hand om sina saker.",
+        "Its object form is en, and its owner form is ens, used where sin cannot point back to man: Det hjälper en att vila. Man vill att ens vänner mår bra (vänner is the subject of mår)."
       ],
       "examples": [
         {
@@ -1072,12 +1108,12 @@
         {
           "fi": "Man borde hjälpa sina grannar.",
           "en": "People should help their neighbours.",
-          "note": "man → sina for plural grannar"
+          "note": "man → sina for plural grannar; borde from Lecture 13."
         },
         {
           "fi": "Var köper man en biljett till bussen?",
           "en": "Where do you buy a bus ticket?",
-          "note": "A common question about general rules."
+          "note": "A common question about how things work here."
         },
         {
           "fi": "Det hjälper en att vila. Man vill att ens vänner mår bra.",
@@ -1146,18 +1182,18 @@
       "explanation": "ett kontor takes ditt: Var ligger ditt kontor?"
     },
     {
-      "id": "sv-15-g3",
-      "prompt": "Vi bjuder ___ vänner till ___ hus.",
+      "id": "sv-15-g11",
+      "prompt": "Vi visar ___ nya lägenhet för ___ vänner.",
       "answers": [
-        "våra, vårt"
+        "vår, våra"
       ],
       "options": [
-        "våra, vårt",
         "vår, våra",
-        "vårt, vår"
+        "vårt, våra",
+        "våra, vår"
       ],
-      "hint": "plural vänner; ett hus",
-      "explanation": "våra vänner and vårt hus."
+      "hint": "en lägenhet; plural vänner",
+      "explanation": "vår nya lägenhet (en word; nya after a possessive, as in Lecture 9) and våra vänner (plural)."
     },
     {
       "id": "sv-15-g4",
@@ -1202,17 +1238,32 @@
       "explanation": "hans points away from Alex to Henrik."
     },
     {
+      "id": "sv-15-g12",
+      "prompt": "Maja visar ___ telefon för Elin. (ny)",
+      "answers": [
+        "sin nya"
+      ],
+      "options": [
+        "sin nya",
+        "sin ny",
+        "hennes nya"
+      ],
+      "hint": "Whose phone? And which adjective form follows a possessive?",
+      "explanation": "Maja owns it, so sin. After a possessive the adjective takes -a and the noun stays plain (Lecture 9): sin nya telefon."
+    },
+    {
       "id": "sv-15-g7",
       "prompt": "People usually take care of their things.",
       "answers": [
-        "Man brukar ta hand om sina saker."
+        "Man brukar ta hand om sina saker.",
+        "Man brukar ta hand om sina egna saker."
       ],
       "hint": "Start with Man; plural saker.",
-      "explanation": "Man brukar ta hand om sina saker."
+      "explanation": "Man brukar ta hand om sina saker. Brukar + infinitive, as in Lecture 4."
     },
     {
       "id": "sv-15-g8",
-      "prompt": "Jag ringer ___ mamma.",
+      "prompt": "Varje söndag ringer jag ___ mamma i Indien.",
       "answers": [
         "min"
       ],
@@ -1222,11 +1273,11 @@
         "mitt"
       ],
       "hint": "The subject is jag.",
-      "explanation": "Sin is only for han, hon, man and de. With jag, use min: Jag ringer min mamma. (Hindi apni works for every person; Swedish sin does not.)"
+      "explanation": "Sin is only for han, hon, man and de. With jag, use min: ringer jag min mamma. (Hindi apni works for every person; Swedish sin does not.) Ringer comes before jag after Varje söndag, as in Lecture 3."
     },
     {
       "id": "sv-15-g9",
-      "prompt": "Känner du Elin? Jag träffade ___ bror i affären.",
+      "prompt": "Elin har en ny cykel. Jag lånade ___ cykel i går.",
       "answers": [
         "hennes"
       ],
@@ -1235,8 +1286,8 @@
         "henne",
         "hennes"
       ],
-      "hint": "Whose brother? You need the owner form.",
-      "explanation": "hon = she, henne = her (object), hennes = her (owner): hennes bror."
+      "hint": "Whose bike? You need the owner form.",
+      "explanation": "As in Lecture 11: hon = she, henne = her (object), hennes = her (owner). Jag lånade hennes cykel."
     },
     {
       "id": "sv-15-g10",
@@ -1249,7 +1300,7 @@
         "eftersom"
       ],
       "hint": "Only a noun follows: förkylningen.",
-      "explanation": "på grund av + noun (på grund av förkylningen); eftersom + a whole clause (eftersom hon är sjuk)."
+      "explanation": "på grund av + noun (på grund av förkylningen); eftersom + a whole clause, as in Lecture 14 (eftersom hon är sjuk)."
     }
   ],
   "checkpoint": [
@@ -1257,11 +1308,10 @@
       "id": "sv-15-c1",
       "prompt": "Produce in Swedish: ‘My apartment is small, but my rooms are bright.’",
       "answers": [
-        "Min lägenhet är liten, men mina rum är ljusa.",
-        "Min lägenhet är liten men mina rum är ljusa."
+        "Min lägenhet är liten, men mina rum är ljusa."
       ],
       "hint": "en lägenhet; plural rum",
-      "explanation": "Min lägenhet är liten, men mina rum är ljusa."
+      "explanation": "Min lägenhet är liten, men mina rum är ljusa. Liten for an en word (Lecture 5); ljusa for plurals after är (Lecture 9)."
     },
     {
       "id": "sv-15-c2",
@@ -1278,27 +1328,15 @@
       "explanation": "Maja städar sitt rum."
     },
     {
-      "id": "sv-15-c3",
-      "prompt": "Which sentence means that Elin loves her own dog?",
-      "answers": [
-        "Elin älskar sin hund."
-      ],
-      "options": [
-        "Elin älskar sin hund.",
-        "Elin älskar hennes hund.",
-        "Elin älskar hans hund."
-      ],
-      "hint": "The subject and owner are Elin.",
-      "explanation": "Sin points back to Elin. Hennes would point to another woman."
-    },
-    {
       "id": "sv-15-c4",
       "prompt": "Produce one general sentence: ‘People should help their neighbours.’",
       "answers": [
-        "Man borde hjälpa sina grannar."
+        "Man borde hjälpa sina grannar.",
+        "Man bör hjälpa sina grannar.",
+        "Man ska hjälpa sina grannar."
       ],
       "hint": "man + borde + infinitive; the neighbours belong with man",
-      "explanation": "Man borde hjälpa sina grannar."
+      "explanation": "Man borde hjälpa sina grannar. Borde + infinitive from Lecture 13; man → sina."
     },
     {
       "id": "sv-15-c5",
@@ -1324,6 +1362,34 @@
       ],
       "hint": "Is the owned word inside the subject?",
       "explanation": "Alex och hans syster is the whole subject. Sin never stands inside the subject."
+    },
+    {
+      "id": "sv-15-c7",
+      "prompt": "Write in Swedish: ‘Yesterday I forgot my bag on the bus.’",
+      "answers": [
+        "Igår glömde jag min väska på bussen.",
+        "I går glömde jag min väska på bussen.",
+        "Jag glömde min väska på bussen igår.",
+        "Jag glömde min väska på bussen i går.",
+        "Igår glömde jag min väska i bussen.",
+        "I går glömde jag min väska i bussen.",
+        "Jag glömde min väska i bussen igår.",
+        "Jag glömde min väska i bussen i går."
+      ],
+      "hint": "glömma → glömde; if you start with Igår, the verb comes next.",
+      "explanation": "Igår glömde jag min väska på bussen. Past -de as in Lecture 6, verb second after Igår (Lecture 3), en väska → min."
+    },
+    {
+      "id": "sv-15-c8",
+      "prompt": "Write in Swedish: ‘My room is bigger than yours.’",
+      "answers": [
+        "Mitt rum är större än ditt.",
+        "Mitt rum är större än ditt rum.",
+        "Mitt rum är större än ert.",
+        "Mitt rum är större än ert rum."
+      ],
+      "hint": "stor → större (Lecture 12). Yours still means your room: an ett word.",
+      "explanation": "Mitt rum är större än ditt. Större än from Lecture 12; ditt because rum is an ett word, even when the word rum is left out."
     }
   ],
   "assignment": {
@@ -1334,7 +1400,7 @@
   "takeaways": [
     "The owned thing chooses the ending: min stol, mitt bord, mina böcker. Hans, hennes and deras never change.",
     "Sin, sitt and sina point back to the subject of the same clause (like Hindi apna), but only after han, hon, man and de, and never inside the subject.",
-    "Reflexive verbs keep their pronoun: jag känner mig, du skyndar dig, hon oroar sig.",
+    "Reflexive verbs keep their pronoun: jag känner mig, du skyndar dig, hon oroar sig. Mår never takes one: Jag mår bra.",
     "Man means people in general: man → sig, sin; object en, owner ens."
   ],
   "dialogue": [
@@ -1395,8 +1461,8 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Då tar jag mina böcker och går hem. Tack för en rolig fest!",
-      "en": "Then I'll take my books and go home. Thanks for a fun party!"
+      "fi": "Då tar jag med mig mina böcker och går hem. Tack för en rolig fest!",
+      "en": "Then I'll take my books with me and go home. Thanks for a fun party!"
     }
   ],
   "resources": [
@@ -1601,8 +1667,8 @@
         "id": "sv-15-word-24",
         "fi": "man",
         "en": "people in general; one",
-        "example": "Man brukar fika i Finland.",
-        "translation": "People usually have coffee in Finland.",
+        "example": "Man brukar dricka mycket kaffe i Finland.",
+        "translation": "People usually drink a lot of coffee in Finland.",
         "level": "A2"
       },
       {
@@ -1668,11 +1734,27 @@
         "example": "Jag försov mig i morse.",
         "translation": "I overslept this morning.",
         "level": "A2"
+      },
+      {
+        "id": "sv-15-word-33",
+        "fi": "tar med sig",
+        "en": "takes along",
+        "example": "Jag tar med mig min telefon.",
+        "translation": "I take my phone with me.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-15-word-34",
+        "fi": "glömde",
+        "en": "forgot",
+        "example": "Jag glömde min väska på bussen.",
+        "translation": "I forgot my bag on the bus.",
+        "level": "A2"
       }
     ],
     "pronunciation": {
-      "text": "Min lägenhet, mitt rum, mina böcker. Din jacka, ditt paraply, dina skor. Sin telefon, sitt bord, sina saker. Jag känner mig lugn. Hon oroar sig.",
-      "tip": "Keep the short possessive attached to the noun. Contrast min–mitt–mina and sin–sitt–sina; hear the short vowel before the double t in mitt, ditt and sitt. Say mig, dig, sig as mej, dej, sej."
+      "text": "Min bil, mitt hus, mina skor. Är den din? Nej, den är inte min. Vår lägenhet, vårt kök. Sin telefon, sitt rum, sina saker. Jag känner mig lugn.",
+      "tip": "Alone, min, din and sin have a long i: Den är min. Mitt, ditt and sitt have a short i and a long t. Vår is long, vårt is short. Before a noun the possessive is weak: min BIL; stress it only to contrast: Är det DIN eller MIN? Say mig, dig, sig as mej, dej, sej. In vårt the voice melts r and t into one sound, as in stort (Lecture 5); Finland-Swedish speakers say r and t separately."
     },
     "reading_passage": {
       "text": "Till alla som bor i huset! I tvättstugan finns en svart mössa, ett rött paraply och två par handskar. Är de dina? Du kan hämta dina saker hos fastighetsskötaren före fredag. Kom ihåg: man får inte lämna sina kläder i tvättstugan efter klockan 21. Man tar hand om sina egna saker och städar efter sig. Tack! Hälsningar, fastighetsskötaren",
@@ -1720,19 +1802,19 @@
       "explanation": "En bok har Majas namn: one book has Maja's name."
     },
     "speaking": {
-      "prompt": "Describe your home and family things in six to eight lines. Include one opinion and reason.",
-      "help": "Min lägenhet … · Mitt rum … · Mina böcker … · Min vän har … Hans/Hennes … · Han/Hon tar hand om sin/sitt/sina … · Jag tycker om … eftersom …",
-      "model": "Jag bor i en liten lägenhet. Min lägenhet ligger i Helsingfors. Mitt rum är ljust och mina böcker står vid fönstret. Min syster har en hund. Hennes hund heter Molly och hon tar hand om sin hund varje dag. Jag tycker om mitt hem eftersom det är lugnt."
+      "prompt": "Berätta om ditt hem. Du kan svara på frågorna nedan när du talar. Var bor du? Bor du ensam eller med någon? Hur många rum finns det? Vilket rum tycker du bäst om? Varför? Var har du dina saker? Vem städar vad? (Tell about your home. You can answer the questions below while you speak. This is the format of the YKI basic-level speaking task Att berätta: first note key words, then speak.)",
+      "help": "Jag bor i … · Min lägenhet har … rum. · Mitt favoritrum är … eftersom … · Mina … står/ligger i … · Min vän/sambo … Hans/Hennes … · Han/Hon städar sitt rum / tar hand om sina … · Hans rum är större än mitt.",
+      "model": "Jag bor i en lägenhet i Helsingfors med min vän Ravi. Vår lägenhet har tre rum och ett litet kök. Hans rum är större än mitt, men mitt rum är ljusare. Mitt favoritrum är köket eftersom vi lagar mat och pratar där. Mina böcker står i vardagsrummet. Ravi städar sitt rum på lördagar, och jag städar köket. I Finland tar man av sig skorna i hallen, så våra skor står vid dörren."
     },
     "writing": {
-      "prompt": "Write a message to your neighbour about a lost item. Describe it, say whose it is, where you last saw it and ask for help.",
-      "situation": "You lost an important item in your building. Your neighbour may have seen it. Send a clear, friendly message.",
+      "prompt": "Skriv ett meddelande till din granne om en sak som du har tappat. (Write your neighbour a message about something you have lost.)",
+      "situation": "Du har tappat en viktig sak i huset där du bor. Kanske har din granne sett den. Skriv ett meddelande till grannen. Kom ihåg att inleda och avsluta meddelandet på lämpligt sätt. (You have lost something important in your building. Maybe your neighbour has seen it. Write your neighbour a message. Remember to open and close the message in a suitable way: this is the wording of real YKI instructions.)",
       "points": [
-        "Greet your neighbour and say what you lost.",
-        "Describe the item with two details.",
-        "Say whose it is and what is inside or with it.",
-        "Say where and when you last saw it.",
-        "Ask the neighbour to contact you, and thank them."
+        "Hälsa och säg vad du har tappat. (Greet your neighbour and say what you have lost.)",
+        "Beskriv saken med två detaljer. (Describe it with two details.)",
+        "Säg vad som finns i den. (Say what is inside it: mina nycklar, min plånbok …)",
+        "Säg var och när du såg den senast. (Say where and when you last saw it.)",
+        "Be grannen kontakta dig, tacka och avsluta. (Ask your neighbour to contact you, thank them and close.)"
       ],
       "wordRange": [
         50,
@@ -1744,13 +1826,14 @@
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Describe your home and family things in six to eight lines, then write a neighbour about a lost item.",
-    "transferPrompt": "Change the owner in two lines. Make jag into hon or de and repair every possessive.",
+    "expectedOutput": "Tell about your home in six to eight lines (the YKI task Att berätta), then write to a neighbour about a lost item.",
+    "transferPrompt": "Change the owner in two lines. Make jag into hon or de and repair every possessive: Jag städar mitt rum → Hon städar sitt rum.",
     "returnPrompt": "From memory, describe three things in one room and say who owns each one.",
     "successChecks": [
-      "Use at least one correct en, ett and plural possessive.",
+      "Answer at least four questions from the card.",
+      "Use at least one correct en, ett and plural possessive (min, mitt, mina).",
       "Use hans, hennes or deras for another person's thing.",
-      "Use sin, sitt or sina only when it points back to the subject.",
+      "Use sin, sitt or sina only when it points back to han, hon, man or de.",
       "Give one opinion with a reason using eftersom."
     ],
     "requiredSkills": [
