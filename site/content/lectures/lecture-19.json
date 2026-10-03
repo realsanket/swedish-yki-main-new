@@ -6,7 +6,7 @@
     "Answer questions about your school days and give a reason for each answer.",
     "Choose between att, när, om, eftersom, för att and trots att.",
     "Put inte and other short adverbs before the verb in a dependent clause (BIFF).",
-    "Give an opinion about school with two reasons, spoken and written."
+    "Give your opinion with reasons, in speech and in a short formal email."
   ],
   "focusSkills": [
     "listening",
@@ -26,14 +26,17 @@
     "present-perfect",
     "preposition",
     "verb-second",
-    "clause"
+    "clause",
+    "modal-verb",
+    "stress",
+    "formal-informal"
   ],
   "presentation": {
     "template": "conversation-first",
     "opening": {
       "teacherNote": {
         "title": "Listen for reasons and opinions",
-        "body": "Two days after Alex’s birthday party, Maja, Elin and Alex talk about school. Listen for the small linking words before each reason, time or condition."
+        "body": "Two days after Alex’s birthday party, Maja, Elin and Alex talk about school. Before you play it, guess: who wants strict teachers, Alex or Elin? Then listen for the small word before each reason, time or condition."
       },
       "questionIntro": "Answer from the story. Listen after eftersom.",
       "dialogue": {
@@ -118,28 +121,22 @@
   "sittingBreakAfter": "guided",
   "unplannedQuestions": [
     {
-      "id": "liked",
-      "fi": "Gillade du skolan?",
-      "en": "Did you like school?",
-      "sample": "Ja, jag gillade skolan eftersom jag hade bra vänner."
+      "id": "sv-19-q-late",
+      "fi": "Varför kommer du så sent?",
+      "en": "(At your Swedish course) Why are you so late?",
+      "sample": "Förlåt! Jag är sen eftersom bussen inte kom."
     },
     {
-      "id": "good-at",
-      "fi": "Var du duktig i skolan?",
-      "en": "Were you good at school?",
-      "sample": "Ja, jag var duktig på matte, men jag pluggade inte så mycket."
+      "id": "sv-19-q-teacher",
+      "fi": "Hade du någon favoritlärare?",
+      "en": "Did you have a favourite teacher?",
+      "sample": "Ja, min mattelärare. Hon var sträng, men hon förklarade alltid tydligt."
     },
     {
-      "id": "why-swedish",
-      "fi": "Varför lär du dig svenska?",
-      "en": "Why are you learning Swedish?",
-      "sample": "Jag lär mig svenska för att klara YKI-testet."
-    },
-    {
-      "id": "strict",
-      "fi": "Borde lärare vara stränga?",
-      "en": "Should teachers be strict?",
-      "sample": "Lite, men jag tycker att lärare inte alltid behöver vara stränga."
+      "id": "sv-19-q-quit",
+      "fi": "Jag vill sluta plugga svenska. Vad tycker du?",
+      "en": "(A friend says) I want to stop studying Swedish. What do you think?",
+      "sample": "Sluta inte! Om du pluggar lite varje dag blir det lättare."
     },
     {
       "id": "happy",
@@ -152,6 +149,12 @@
       "fi": "Vad gör du om du inte förstår läraren?",
       "en": "What do you do if you do not understand the teacher?",
       "sample": "Om jag inte förstår frågar jag igen."
+    },
+    {
+      "id": "sv-19-q-tired",
+      "fi": "Vad gör du när du är trött efter jobbet?",
+      "en": "What do you do when you are tired after work?",
+      "sample": "När jag är trött lyssnar jag på musik."
     }
   ],
   "reviewPhrases": [
@@ -171,9 +174,9 @@
       "fi": "Jag tycker att lärare inte alltid behöver vara stränga."
     },
     {
-      "id": "if-happy",
-      "en": "If children enjoy school, they learn more.",
-      "fi": "Om barn trivs i skolan lär de sig mer."
+      "id": "sv-19-rp-if-time",
+      "en": "If I have time, I will help you.",
+      "fi": "Om jag har tid ska jag hjälpa dig."
     },
     {
       "id": "purpose",
@@ -181,9 +184,9 @@
       "fi": "Jag pluggar svenska för att klara YKI-testet."
     },
     {
-      "id": "although",
-      "en": "I went to school even though I was tired.",
-      "fi": "Jag gick till skolan trots att jag var trött."
+      "id": "sv-19-rp-although-first",
+      "en": "Even though I was tired, I went to the course.",
+      "fi": "Trots att jag var trött gick jag till kursen."
     },
     {
       "id": "good-at",
@@ -198,7 +201,7 @@
   ],
   "missionPlan": {
     "title": "Plan seven lines: school memories and an opinion",
-    "intro": "Answer three questions: Gillade du skolan? Var du duktig i skolan? Borde lärare vara stränga? Give a reason each time.",
+    "intro": "Answer the questions: Trivdes du i skolan? Varför? Var du duktig på något ämne? Borde lärare vara stränga? Varför? Give a reason each time.",
     "lines": [
       {
         "label": "Memory",
@@ -257,7 +260,7 @@
         "She worked late at a café"
       ],
       "hint": "Listen after eftersom when Maja explains.",
-      "explanation": "Jag pluggade sent i går eftersom vi har ett kemiprov i morgon. The party was on Saturday, not yesterday."
+      "explanation": "Jag pluggade sent i går eftersom jag har ett kemiprov på sommarkursen i morgon. The party was on Saturday, not yesterday."
     },
     {
       "id": "sv-19-r2",
@@ -279,10 +282,10 @@
       "title": "Sex små ord som bygger längre tankar · six small words for longer ideas",
       "kind": "rule",
       "body": [
-        "Jag tycker att skolan är viktig. Att introduces what someone says, thinks or knows. Hindi and Marathi use ki in the same way (main jaanta hoon ki …). När gives a time, om a condition and eftersom a reason.",
-        "Jag pluggar för att klara provet. För att + infinitive gives a purpose, and no new subject follows. With a new subject, use för att + subject + ska: Läraren ordnar en bokklubb för att eleverna ska läsa mer. Trots att gives a surprising contrast.",
-        "Eftersom or för? Both give a reason. För (Lecture 18) joins two main clauses and never starts a sentence: Jag stannade hemma, för jag var sjuk. Eftersom starts a dependent clause, so it can also come first: Eftersom jag var sjuk stannade jag hemma. Därför att means the same as eftersom, but it does not start a sentence either.",
-        "Om or när? English often says “if” for both. Use när for something that will happen (När jag kommer hem ringer jag dig) and om for something that may happen (Om jag har tid hjälper jag dig)."
+        "Jag tycker att skolan är viktig. Att, när, om, eftersom, för att and trots att start a dependent clause: a part that cannot stand alone. Att introduces what someone says, thinks or knows, like Hindi and Marathi ki. Trots att gives a surprising contrast.",
+        "Om or när? Hindi and Marathi already split them: jab / jevha = när (it happens or happened), agar / jar = om (it may happen). När jag kommer hem ringer jag dig. Om jag har tid hjälper jag dig.",
+        "Eftersom gives a reason and can start the sentence; för (Lecture 18) and därför att cannot: Eftersom jag var sjuk stannade jag hemma. In speech you will also hear för att + subject for “because” (… för att jag var sjuk). Understand it, but write eftersom.",
+        "För att + infinitive gives a purpose (Lecture 18): Jag pluggar för att klara provet. English “to” here is för att, never att alone. With a new subject, add ska: … för att eleverna ska läsa mer."
       ],
       "examples": [
         {
@@ -431,9 +434,9 @@
             "why": "Trots att: going to work is surprising when you are ill."
           },
           {
-            "fi": "Ring mig ___ du har kommit hem.",
+            "fi": "Jag köpte en jacka ___ jag var i Italien.",
             "bucket": "time",
-            "why": "När du har kommit hem: you will surely come home, so it is a time, not a condition."
+            "why": "När jag var i Italien: the time when it happened (the teacher’s example). Om would make it a condition, and eftersom would make Italy the reason for buying a jacket."
           },
           {
             "fi": "Jag stannade hemma ___ min dotter var sjuk.",
@@ -448,11 +451,13 @@
       "title": "Inte kommer före verbet · inte goes before the verb",
       "kind": "rule",
       "body": [
-        "Jag kommer inte. That is a main clause: inte normally follows the verb. After a dependent linker the order changes: Jag säger att jag inte kommer.",
-        "The subject comes first after the linker. Then short adverbs such as inte, alltid, också, aldrig, ofta and just stand before the verb: eftersom jag inte hade tid. Hindi works like this: nahin stands right before the verb (main nahin aaya). English does not, so do not copy “that he does not come” as att han kommer inte.",
-        "Put the subject straight after the linker: när jag kom hem i går, never när i går kom jag hem. If the dependent clause comes first, the next main clause begins with its verb: När jag var liten gillade jag matte.",
-        "Jag har varit sjuk i två dagar. Jag har inte varit på kontoret på två dagar. I gives how long something has lasted. Inte … på gives a period when something has not happened.",
-        "Swedes also often move inte to tycker: Jag tycker inte att lärare behöver vara stränga. That is correct too and means almost the same."
+        "Jag kommer inte: in a main clause inte follows the verb (Lecture 3). In a dependent clause the order is subject, inte, verb: Jag säger att jag inte kommer. Short adverbs such as alltid, också, aldrig, ofta and just move the same way.",
+        "Trap 1: English “that he does not come” gives att han kommer inte. Say att han inte kommer. Hindi nahin also stands before the verb (main nahin aaya), but use that order only here: alone, it is Han kommer inte.",
+        "Trap 2: a dependent clause at the start fills the first place, so the verb comes next (verb second, Lecture 3): Om jag har tid ska jag hjälpa dig. English and Hindi put the subject first here; Swedish does not.",
+        "Trap 3: one linker is enough. Hindi and Marathi pair two words (haalaanki … phir bhi, jari … tari), and Indian English learners often say “although …, but …”. Swedish never adds men: Trots att jag var trött gick jag till kursen. For “still”, add ändå: … gick jag ändå.",
+        "The subject comes straight after the linker: när jag kom hem i går, never när i går kom jag hem.",
+        "Jag har varit sjuk i två dagar, but Jag har inte varit på kontoret på två dagar: with inte, the time takes på.",
+        "You will also hear Jag tycker inte att lärare behöver vara stränga. That is correct too and means almost the same."
       ],
       "examples": [
         {
@@ -466,28 +471,33 @@
           "note": "Dependent clause: subject + inte + verb."
         },
         {
-          "fi": "När jag inte förstår frågar jag läraren.",
-          "en": "When I do not understand, I ask the teacher.",
-          "note": "The dependent clause comes first; the main verb frågar then comes before jag."
+          "fi": "Jag tror att hon inte kan komma.",
+          "en": "I think that she cannot come.",
+          "note": "With two verbs, inte goes before the first one, kan."
         },
         {
-          "fi": "Om elever alltid får hjälp känner de sig trygga.",
-          "en": "If pupils always get help, they feel safe.",
-          "note": "Alltid stands before får in the dependent clause; then känner comes before de."
+          "fi": "Om jag har tid ska jag hjälpa dig.",
+          "en": "If I have time, I will help you.",
+          "note": "The teacher’s example: the om part comes first, so ska comes next, before jag."
+        },
+        {
+          "fi": "Trots att jag var trött gick jag ändå till kursen.",
+          "en": "Even though I was tired, I still went to the course.",
+          "note": "No men after trots att. Ändå means still."
         },
         {
           "fi": "Jag har inte varit i skolan på två dagar eftersom jag har varit sjuk.",
           "en": "I have not been at school for two days because I have been ill.",
-          "note": "Negative period: inte … på två dagar. The reason still has its own subject and verb."
+          "note": "Negative period: inte … på två dagar."
         }
       ],
-      "memoryTip": "BIFF: Bisats – Inte Före Finita verbet. Put inte before the first verb that carries time, such as är, hade or har.",
-      "tryIt": "Change Han pluggar inte into Jag vet att … and Vi har inte svenska på fredag into Jag tror att …",
+      "memoryTip": "BIFF: Bisats – Inte Före Finita verbet. Put inte before the first verb (är, hade, har, kan …), never after it: eftersom hon inte har sovit, att jag inte kan komma.",
+      "tryIt": "Finish aloud: Om jag har tid … · Trots att jag var trött … · Jag tror att vi inte …",
       "activity": {
         "type": "sort",
         "label": "Find the order",
         "title": "Right order or wrong order?",
-        "instructions": "Check where inte or the adverb stands. Is the sentence correct Swedish?",
+        "instructions": "Check the word order: where does inte or the adverb stand, and what comes after a dependent clause at the start? Is the sentence correct Swedish?",
         "buckets": [
           {
             "id": "right",
@@ -497,7 +507,7 @@
           {
             "id": "wrong",
             "label": "Wrong order",
-            "hint": "fix it in your head"
+            "hint": "say the fixed sentence aloud"
           }
         ],
         "items": [
@@ -522,6 +532,11 @@
             "why": "BIFF is only for dependent clauses. Alone, the sentence is Han kommer inte till festen."
           },
           {
+            "fi": "Om jag har tid jag ska hjälpa dig.",
+            "bucket": "wrong",
+            "why": "The om part takes the first place, so the verb comes next: Om jag har tid ska jag hjälpa dig."
+          },
+          {
             "fi": "När i går kom jag hem var jag trött.",
             "bucket": "wrong",
             "why": "The subject comes straight after när: När jag kom hem i går var jag trött."
@@ -530,6 +545,11 @@
             "fi": "Eftersom jag inte hade tid åt jag ingen lunch.",
             "bucket": "right",
             "why": "Inte before hade after eftersom; then the main clause starts with its verb åt."
+          },
+          {
+            "fi": "Jag tror att hon inte kan komma.",
+            "bucket": "right",
+            "why": "After att: hon, then inte, then the first verb kan."
           },
           {
             "fi": "Om du alltid pratar svenska lär du dig snabbt.",
@@ -542,16 +562,16 @@
             "why": "After eftersom, alltid goes before the verb: eftersom jag alltid vill lära mig nya ord."
           }
         ],
-        "summary": "Main clause: verb + inte. Dependent clause: subject + inte + verb (BIFF)."
+        "summary": "Main clause: verb + inte. Dependent clause: subject + inte + verb (BIFF). A dependent clause at the start is followed by the verb.",
+        "audio": false
       }
     },
     {
       "title": "Tyck till och ge skäl · give an opinion with a reason",
       "kind": "scene",
       "body": [
-        "Trivs du i skolan? Trivdes du i skolan? Trivas means to feel happy and comfortable somewhere: Maja trivs, Jag trivdes. Var du duktig i skolan? Use duktig på for a subject: Jag var duktig på matte.",
-        "Undervisa någon i ett ämne: Hon undervisade oss i engelska.",
-        "The YKI speaking test asks for your opinion. A clear answer has three short parts: the opinion (Jag tycker att …), a reason (eftersom …) and an example or result (Till exempel … or På så sätt …, “in that way”)."
+        "Trivs du i skolan? Trivdes du i skolan? Trivas means to feel happy and at home somewhere. Duktig på + a subject: Jag var duktig på matte. Undervisa någon i + a subject: Hon undervisade oss i engelska.",
+        "Opinion and reason, as in Lecture 16: Jag tycker att … eftersom … Add a third part, an example or a result: Till exempel … or På så sätt … (“in that way”). YKI speaking questions often end with Varför? Answer each one with eftersom."
       ],
       "examples": [
         {
@@ -613,20 +633,6 @@
   ],
   "guided": [
     {
-      "id": "sv-19-g1",
-      "prompt": "Jag gick hem ___ jag var sjuk.",
-      "answers": [
-        "eftersom"
-      ],
-      "options": [
-        "eftersom",
-        "för att",
-        "trots att"
-      ],
-      "hint": "Give a reason.",
-      "explanation": "Eftersom introduces a reason."
-    },
-    {
       "id": "sv-19-g2",
       "prompt": "Jag gick till biblioteket ___ plugga.",
       "answers": [
@@ -634,11 +640,11 @@
       ],
       "options": [
         "för att",
-        "eftersom",
-        "om"
+        "att",
+        "för"
       ],
-      "hint": "A purpose followed by an infinitive.",
-      "explanation": "För att plugga means in order to study."
+      "hint": "English “to” before a verb, meaning in order to.",
+      "explanation": "För att + infinitive gives a purpose. Att alone cannot give a purpose here, and för alone needs a whole sentence after it: …, för jag ville plugga (Lecture 18)."
     },
     {
       "id": "sv-19-g9",
@@ -652,32 +658,28 @@
         "Därför att"
       ],
       "hint": "The reason comes first in the sentence.",
-      "explanation": "Only eftersom can start the sentence. För and därför att also give a reason, but they come after the main clause: Jag stannade hemma, för jag var sjuk."
+      "explanation": "Only eftersom can start the sentence. För (Lecture 18) and därför att also give a reason, but they come after the main clause: Jag stannade hemma, för jag var sjuk."
     },
     {
       "id": "sv-19-g3",
-      "prompt": "Make it a dependent clause. Hon kommer inte i dag. → Jag tror att …",
+      "prompt": "Make it a dependent clause. Hon kan inte komma i dag. → Jag tror att …",
       "answers": [
-        "Jag tror att hon inte kommer i dag.",
-        "Jag tror att hon inte kommer idag.",
-        "Jag tror att hon inte kommer."
+        "Jag tror att hon inte kan komma i dag.",
+        "Jag tror att hon inte kan komma idag.",
+        "Jag tror att hon inte kan komma."
       ],
-      "hint": "After att: subject, inte, verb.",
-      "explanation": "Jag tror att hon inte kommer i dag. In the main clause inte follows kommer; after att it moves before kommer."
+      "hint": "After att: subject, inte, then the first verb.",
+      "explanation": "Jag tror att hon inte kan komma i dag. In a main clause inte follows the first verb: kan inte komma (Lecture 3). After att it moves before that first verb, kan, never before komma."
     },
     {
-      "id": "sv-19-g4",
-      "prompt": "___ jag var liten gillade jag matte.",
+      "id": "sv-19-g12",
+      "prompt": "Write in Swedish: “Maja is tired because she has not slept.”",
       "answers": [
-        "När"
+        "Maja är trött eftersom hon inte har sovit.",
+        "Maja är trött därför att hon inte har sovit."
       ],
-      "options": [
-        "När",
-        "Om",
-        "Att"
-      ],
-      "hint": "This is a time memory.",
-      "explanation": "När introduces the time."
+      "hint": "Har sovit is from Lecture 17. Where does inte go after eftersom?",
+      "explanation": "Maja är trött eftersom hon inte har sovit. Har + supine is from Lecture 17. After eftersom, inte goes before the first verb, har: not har inte sovit."
     },
     {
       "id": "sv-19-g10",
@@ -689,49 +691,45 @@
         "När jag igår kom hem var jag trött."
       ],
       "hint": "Put the subject straight after när.",
-      "explanation": "När jag kom hem i går var jag trött. After när the subject jag comes first; then the main clause starts with its verb var."
+      "explanation": "När jag kom hem i går var jag trött. After när the subject jag comes first; then the main clause starts with its verb var (verb second, Lecture 3)."
     },
     {
-      "id": "sv-19-g5",
-      "prompt": "Jag hjälper dig ___ jag har tid.",
+      "id": "sv-19-g13",
+      "prompt": "Fix the order: Om jag har tid jag ska hjälpa dig.",
       "answers": [
-        "om"
+        "Om jag har tid ska jag hjälpa dig.",
+        "Jag ska hjälpa dig om jag har tid."
       ],
-      "options": [
-        "om",
-        "att",
-        "eftersom"
-      ],
-      "hint": "This depends on a condition.",
-      "explanation": "Om means if."
-    },
-    {
-      "id": "sv-19-g6",
-      "prompt": "Jag svarade ___ jag var nervös.",
-      "answers": [
-        "trots att"
-      ],
-      "options": [
-        "trots att",
-        "för att",
-        "eftersom"
-      ],
-      "hint": "The two facts contrast.",
-      "explanation": "Trots att means even though."
+      "hint": "The whole om part takes the first place. What must come second?",
+      "explanation": "Om jag har tid ska jag hjälpa dig. The om part is the first block, so the verb ska comes second, before jag (verb second, Lecture 3). English and Hindi put the subject first here; Swedish puts the verb first."
     },
     {
       "id": "sv-19-g7",
-      "prompt": "Om elever ___ får hjälp lär de sig mer.",
+      "prompt": "Which sentence is correct?",
       "answers": [
-        "alltid"
+        "Om elever alltid får hjälp lär de sig mer."
       ],
       "options": [
-        "alltid",
-        "får alltid",
-        "inte alltid får"
+        "Om elever alltid får hjälp lär de sig mer.",
+        "Om elever får alltid hjälp lär de sig mer.",
+        "Om elever alltid får hjälp de lär sig mer."
       ],
-      "hint": "Put the adverb before the verb.",
-      "explanation": "In the dependent clause, alltid precedes får."
+      "hint": "Check two places: alltid inside the om part, and the word right after it.",
+      "explanation": "Inside the om part, alltid comes before får (BIFF). After it, the main clause starts with its verb: lär de sig (verb second, Lecture 3)."
+    },
+    {
+      "id": "sv-19-g14",
+      "prompt": "Jag var trött. Jag gick till kursen. Which sentence joins them correctly?",
+      "answers": [
+        "Trots att jag var trött gick jag till kursen."
+      ],
+      "options": [
+        "Trots att jag var trött gick jag till kursen.",
+        "Trots att jag var trött, men jag gick till kursen.",
+        "Trots att jag var trött jag gick till kursen."
+      ],
+      "hint": "One linker is enough, and the verb comes right after the trots att part.",
+      "explanation": "Trots att jag var trött gick jag till kursen. Hindi haalaanki … phir bhi and Marathi jari … tari use two words; Swedish uses one. For “still”, add ändå: … gick jag ändå till kursen."
     },
     {
       "id": "sv-19-g11",
@@ -745,7 +743,7 @@
         "för"
       ],
       "hint": "The sentence has inte: a period when something has not happened.",
-      "explanation": "Inte … på två dagar. Without inte you use i: Jag har varit sjuk i två dagar."
+      "explanation": "Inte … på två dagar. Without inte, i gives how long, as in Lecture 17: Jag har bott i Finland i två år. Never för två dagar (English “for”)."
     },
     {
       "id": "sv-19-g8",
@@ -754,59 +752,61 @@
         "Om jag gör mina läxor nu kan jag spela efter lunch.",
         "Om jag gör mina hemläxor nu kan jag spela efter lunch."
       ],
-      "hint": "After om jag use the present gör. The next main clause starts with kan.",
-      "explanation": "Om jag gör mina läxor nu kan jag spela efter lunch. Gör is the present form; göra is the infinitive."
+      "hint": "After om jag use the present form. What comes right after the om part?",
+      "explanation": "Om jag gör mina läxor nu kan jag spela efter lunch. Gör is the present form; göra is the infinitive. After the om part, kan comes next (verb second, Lecture 3)."
     }
   ],
   "checkpoint": [
     {
       "id": "sv-19-c1",
-      "prompt": "Write in Swedish: “I liked school because I had good friends.”",
+      "prompt": "Write in Swedish: “I did not like physics because I did not understand the lessons.”",
       "answers": [
-        "Jag gillade skolan eftersom jag hade bra vänner.",
-        "Jag tyckte om skolan eftersom jag hade bra vänner.",
-        "Jag gillade skolan eftersom jag hade goda vänner."
+        "Jag gillade inte fysik eftersom jag inte förstod lektionerna.",
+        "Jag tyckte inte om fysik eftersom jag inte förstod lektionerna.",
+        "Jag gillade inte fysik därför att jag inte förstod lektionerna.",
+        "Jag tyckte inte om fysik därför att jag inte förstod lektionerna."
       ],
-      "hint": "Use eftersom for the reason.",
-      "explanation": "Jag gillade skolan eftersom jag hade bra vänner."
+      "hint": "You need inte twice. Is each part a main clause or a dependent clause?",
+      "explanation": "Jag gillade inte fysik eftersom jag inte förstod lektionerna. Main clause: gillade inte (Lecture 3). After eftersom: jag inte förstod (BIFF), as in Elin’s line in the story."
     },
     {
       "id": "sv-19-c2",
-      "prompt": "Which dependent clause uses the neutral word order taught here?",
+      "prompt": "Which sentence is correct?",
       "answers": [
-        "att jag inte kommer"
+        "Eftersom jag inte hade tid stannade jag hemma."
       ],
       "options": [
-        "att jag inte kommer",
-        "att jag kommer inte",
-        "att inte jag kommer"
+        "Eftersom jag inte hade tid stannade jag hemma.",
+        "Eftersom jag hade inte tid stannade jag hemma.",
+        "Eftersom jag inte hade tid jag stannade hemma."
       ],
-      "hint": "Subject, inte, verb.",
-      "explanation": "After att: jag + inte + kommer."
+      "hint": "Check inside the eftersom part, then the word right after it.",
+      "explanation": "Inside the eftersom part: jag inte hade (BIFF). Then the main clause starts with its verb: stannade jag (verb second, Lecture 3)."
     },
     {
       "id": "sv-19-c3",
-      "prompt": "Write: “When I was little, I liked maths.”",
+      "prompt": "Write in Swedish: “When I came to Finland, I could not speak Swedish.”",
       "answers": [
-        "När jag var liten gillade jag matte.",
-        "När jag var liten tyckte jag om matte."
+        "När jag kom till Finland kunde jag inte prata svenska.",
+        "När jag kom till Finland kunde jag inte tala svenska.",
+        "När jag kom till Finland kunde jag inte svenska."
       ],
-      "hint": "The dependent clause comes first.",
-      "explanation": "När jag var liten gillade jag matte."
+      "hint": "Start with När jag kom till Finland. What comes right after that part?",
+      "explanation": "När jag kom till Finland kunde jag inte prata svenska. The när part fills the first place, so kunde comes next (Lecture 3). Kunde is the past of kan (Lecture 13), and inte follows it in the main clause."
     },
     {
       "id": "sv-19-c4",
-      "prompt": "Which line expresses purpose?",
+      "prompt": "You are guessing. Which sentence fits?",
       "answers": [
-        "Jag pluggar för att klara provet."
+        "Jag tror att han inte kommer till festen."
       ],
       "options": [
-        "Jag pluggar för att klara provet.",
-        "Jag pluggar eftersom provet var svårt.",
-        "Jag pluggar trots att jag är trött."
+        "Jag tror att han inte kommer till festen.",
+        "Jag tycker att han inte kommer till festen.",
+        "Jag tror att han kommer inte till festen."
       ],
-      "hint": "Look for in order to.",
-      "explanation": "För att plus infinitive states the purpose."
+      "hint": "First the verb for a guess, then the order after att.",
+      "explanation": "Tror is for a guess, tycker for an opinion (Lecture 16). After att: han inte kommer (BIFF)."
     },
     {
       "id": "sv-19-c5",
@@ -828,14 +828,14 @@
   ],
   "assignment": {
     "title": "Lecture 19 mission: Tyck till om skolan",
-    "instructions": "CORE: Answer three questions in six to eight spoken lines: Gillade du skolan? Var du duktig i skolan? Borde lärare vara stränga? Give a reason for each answer and use at least three dependent linkers.\n\nNOTICE: Put inte before the verb after a dependent linker (BIFF).\n\nRETURN: Tomorrow, answer again but change one reason.",
+    "instructions": "CORE: Talk about your school days and give your opinion in six to eight lines: Trivdes du i skolan? Var du duktig på något ämne? Borde lärare vara stränga? Answer each Varför? with eftersom and use at least three dependent linkers.\n\nNOTICE: After a linker, inte comes before the verb (BIFF). After a dependent clause at the start, the verb comes next.\n\nRETURN: Tomorrow, answer again with a new reason and one trots att sentence.",
     "model": "När jag gick i skolan gillade jag matte. Jag trivdes eftersom jag hade bra vänner. Jag var duktig på matte trots att jag inte pluggade så mycket. Min engelsklärare var sträng, men hon förklarade alltid tydligt. Jag tycker att lärare inte alltid behöver vara stränga. Barn lär sig mer när de trivs i skolan. Om en elev inte förstår borde läraren förklara igen. Nu pluggar jag svenska för att klara YKI-testet."
   },
   "takeaways": [
-    "Att, när, om, eftersom, för att and trots att start a dependent clause; för att is followed by an infinitive.",
-    "In a dependent clause the subject comes first and inte or another short adverb comes before the verb (BIFF).",
-    "Eftersom can start a sentence; för and därför att cannot.",
-    "A spoken opinion gets stronger with a reason (eftersom) and an example or result (på så sätt)."
+    "Att, när, om, eftersom, för att and trots att start a dependent clause; för att takes an infinitive.",
+    "In a dependent clause: subject, then inte or a short adverb, then the verb (BIFF).",
+    "A dependent clause at the start fills the first place, so the verb comes next: Om jag har tid ska jag hjälpa dig.",
+    "One linker is enough: Trots att jag var trött gick jag (no men). Give every opinion a reason with eftersom."
   ],
   "dialogue": [
     {
@@ -850,8 +850,8 @@
     },
     {
       "speaker": "Maja",
-      "fi": "Ja, jag pluggade sent i går eftersom vi har ett kemiprov i morgon.",
-      "en": "Yes, I studied late yesterday because we have a chemistry test tomorrow."
+      "fi": "Ja, jag pluggade sent i går eftersom jag har ett kemiprov på sommarkursen i morgon.",
+      "en": "Yes, I studied late yesterday because I have a chemistry test on my summer course tomorrow."
     },
     {
       "speaker": "Elin",
@@ -904,42 +904,15 @@
       "label": "Svenska Akademiens ordböcker",
       "url": "https://svenska.se/",
       "description": "Look up trivas, undervisa and the linking words."
+    },
+    {
+      "label": "Yle Nyheter på lätt svenska",
+      "url": "https://arenan.yle.fi/poddar/1-50362086",
+      "description": "Real Finland-Swedish news in easy Swedish, with the text. Play one news item twice: first for the topic, then note every eftersom, när or om you hear."
     }
   ],
   "practice": {
     "words": [
-      {
-        "id": "sv-19-word-1",
-        "fi": "en skola",
-        "en": "a school",
-        "example": "Skolan ligger nära mitt hem.",
-        "translation": "The school is near my home.",
-        "level": "A2"
-      },
-      {
-        "id": "sv-19-word-2",
-        "fi": "en elev",
-        "en": "a pupil",
-        "example": "Varje elev behöver stöd.",
-        "translation": "Every pupil needs support.",
-        "level": "A2"
-      },
-      {
-        "id": "sv-19-word-3",
-        "fi": "en lärare",
-        "en": "a teacher",
-        "example": "Läraren lyssnar på eleverna.",
-        "translation": "The teacher listens to the pupils.",
-        "level": "A2"
-      },
-      {
-        "id": "sv-19-word-4",
-        "fi": "ett ämne",
-        "en": "a school subject",
-        "example": "Historia var mitt favoritämne.",
-        "translation": "History was my favourite subject.",
-        "level": "A2"
-      },
       {
         "id": "sv-19-word-5",
         "fi": "trivas",
@@ -962,14 +935,6 @@
         "en": "teach a subject",
         "example": "Han undervisar i fysik.",
         "translation": "He teaches physics.",
-        "level": "A2"
-      },
-      {
-        "id": "sv-19-word-8",
-        "fi": "sträng",
-        "en": "strict",
-        "example": "Läraren var sträng men rättvis.",
-        "translation": "The teacher was strict but fair.",
         "level": "A2"
       },
       {
@@ -1077,22 +1042,6 @@
         "level": "A2"
       },
       {
-        "id": "sv-19-word-22",
-        "fi": "ett betyg",
-        "en": "a grade",
-        "example": "Jag fick ett bra betyg.",
-        "translation": "I received a good grade.",
-        "level": "A2"
-      },
-      {
-        "id": "sv-19-word-23",
-        "fi": "ett prov",
-        "en": "a test",
-        "example": "Provet var svårt.",
-        "translation": "The test was difficult.",
-        "level": "A2"
-      },
-      {
         "id": "sv-19-word-24",
         "fi": "förstå",
         "en": "understand",
@@ -1115,14 +1064,54 @@
         "example": "Vi lär oss mer tillsammans.",
         "translation": "We learn more together.",
         "level": "A2"
+      },
+      {
+        "id": "sv-19-word-27",
+        "fi": "en åsikt",
+        "en": "an opinion",
+        "example": "Vad är din åsikt om skolan?",
+        "translation": "What is your opinion about school?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-19-word-28",
+        "fi": "tycka till",
+        "en": "say what you think",
+        "example": "Arbis vill att eleverna tycker till om kursen.",
+        "translation": "Arbis wants the students to say what they think about the course.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-19-word-29",
+        "fi": "ändå",
+        "en": "still, anyway",
+        "example": "Trots att jag var trött gick jag ändå till kursen.",
+        "translation": "Even though I was tired, I still went to the course.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-19-word-30",
+        "fi": "ett vitsord",
+        "en": "a grade (Finland; in Sweden ett betyg)",
+        "example": "I Finland får eleverna vitsord från 4 till 10.",
+        "translation": "In Finland, pupils get grades from 4 to 10.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-19-word-31",
+        "fi": "en förfrågan",
+        "en": "an inquiry; a request for answers",
+        "example": "Jag svarar på er förfrågan om kursen.",
+        "translation": "I am answering your inquiry about the course.",
+        "level": "A2"
       }
     ],
     "pronunciation": {
-      "text": "Jag trivdes i skolan eftersom jag hade bra vänner. Jag tycker att lärare inte alltid behöver vara stränga.",
-      "tip": "Say eftersom jag hade as one group, without a pause. Keep inte short; the stress falls on the content words: TRIVdes, VÄNner, LÄrare, beHÖVer, STRÄNga. The voice merges r + s in eftersom into a sh-like sound (Sweden-Swedish); in Finland most people say a clear r and s."
+      "text": "När jag var liten gillade jag matte. Om jag har tid ska jag hjälpa dig. Jag gillade inte fysik eftersom jag inte förstod.",
+      "tip": "Say a dependent clause at the start as one block, make a tiny pause or a small rise, then start with the verb: När jag var liten | gillade jag matte. The pause reminds you that the verb comes next. Inside the block keep inte short and stress the verb after it: eftersom jag inte förSTOD. In eftersom and förstod the voice merges r + s into a sh-like sound (Sweden-Swedish); in Helsinki most people keep a clear r and s (Lecture 1)."
     },
     "reading_passage": {
-      "text": "Borde lärare vara stränga? Vi frågade tre personer i Helsingfors. Sara, 42, lärare: Jag tycker att lärare behöver tydliga regler, men de behöver inte vara stränga hela tiden. När eleverna vet vad de ska göra känner de sig trygga. Om en elev inte förstår en uppgift förklarar jag den igen. Ahmed, 35, pappa: Min son trivs inte i skolan eftersom hans lärare ofta är arg. Han vågar inte fråga när han inte förstår. Jag tror att barn lär sig mer när de har roligt. Linnea, 17, gymnasieelev: Trots att min mattelärare är sträng gillar jag henne. Hon lyssnar alltid och ger oss extra tid för att vi ska klara proven. Jag tycker att stränga lärare är bra om de också är rättvisa.",
+      "text": "Borde lärare vara stränga? Vi frågade tre personer i Helsingfors. Sara, 42, lärare: Jag tycker att lärare behöver tydliga regler, men de behöver inte vara stränga hela tiden. När eleverna vet vad de ska göra känner de sig trygga. Om en elev inte förstår en uppgift förklarar jag den igen. Ahmed, 35, pappa: Min son trivs inte i skolan eftersom hans lärare ofta är arg. Han vågar inte fråga när han inte förstår. Jag tror att barn lär sig mer när de har roligt. Linnea, 17, gymnasieelev: Min mattelärare är sträng, men jag gillar henne eftersom hon alltid lyssnar. Hon ger oss extra tid för att vi ska klara proven. Jag tycker att stränga lärare är bra om de också är rättvisa.",
       "gist": {
         "prompt": "What are the three people talking about?",
         "options": [
@@ -1145,7 +1134,7 @@
       }
     },
     "reading": {
-      "text": "Borde lärare vara stränga? Vi frågade tre personer i Helsingfors. Sara, 42, lärare: Jag tycker att lärare behöver tydliga regler, men de behöver inte vara stränga hela tiden. När eleverna vet vad de ska göra känner de sig trygga. Om en elev inte förstår en uppgift förklarar jag den igen. Ahmed, 35, pappa: Min son trivs inte i skolan eftersom hans lärare ofta är arg. Han vågar inte fråga när han inte förstår. Jag tror att barn lär sig mer när de har roligt. Linnea, 17, gymnasieelev: Trots att min mattelärare är sträng gillar jag henne. Hon lyssnar alltid och ger oss extra tid för att vi ska klara proven. Jag tycker att stränga lärare är bra om de också är rättvisa.",
+      "text": "Borde lärare vara stränga? Vi frågade tre personer i Helsingfors. Sara, 42, lärare: Jag tycker att lärare behöver tydliga regler, men de behöver inte vara stränga hela tiden. När eleverna vet vad de ska göra känner de sig trygga. Om en elev inte förstår en uppgift förklarar jag den igen. Ahmed, 35, pappa: Min son trivs inte i skolan eftersom hans lärare ofta är arg. Han vågar inte fråga när han inte förstår. Jag tror att barn lär sig mer när de har roligt. Linnea, 17, gymnasieelev: Min mattelärare är sträng, men jag gillar henne eftersom hon alltid lyssnar. Hon ger oss extra tid för att vi ska klara proven. Jag tycker att stränga lärare är bra om de också är rättvisa.",
       "question": "When does Linnea think strict teachers are good?",
       "options": [
         "When they are also fair",
@@ -1156,51 +1145,51 @@
       "explanation": "Jag tycker att stränga lärare är bra om de också är rättvisa. Om gives the condition."
     },
     "listening": {
-      "text": "Henrik är språkcoach i Helsingfors. Han säger att vuxna ofta lär sig snabbare än de tror. När han undervisar ber han eleverna prata mycket, trots att de är nervösa. Om man inte förstår ett ord kan man alltid fråga: Vad betyder det? Henrik tycker att lärare inte behöver vara stränga, men att de måste vara tydliga. Hans elever lyssnar på svensk radio varje dag för att höra språket. Många av dem pluggar för att klara YKI-testet, eftersom de vill bli finska medborgare. Henrik minns sin egen skoltid. Han trivdes inte alltid, eftersom hans tysklärare var sträng och ofta arg. Därför försöker han nu vara en lärare som lyssnar. Han säger: Det är okej att göra fel. När man gör fel lär man sig.",
-      "question": "Why do Henrik’s students listen to Swedish radio every day?",
+      "text": "Henrik är språkcoach i Helsingfors. Han säger att vuxna ofta lär sig snabbare än de tror. När han undervisar ber han eleverna prata mycket, trots att de är nervösa. Om man inte förstår ett ord kan man alltid fråga: Vad betyder det? Henrik tycker att lärare inte behöver vara stränga, men att de måste vara tydliga. Hans elever lyssnar på Yle Vega varje dag för att höra språket. Många av dem pluggar för att klara YKI-testet, eftersom de vill bli finska medborgare. Henrik minns sin egen skoltid. Han trivdes inte alltid, eftersom hans tysklärare var sträng och ofta arg. Därför försöker han nu vara en lärare som lyssnar. Han säger: Det är okej att göra fel. När man gör fel lär man sig.",
+      "question": "Why do many of Henrik’s students study for the YKI test?",
       "options": [
-        "To hear the language",
-        "Because Henrik is on the radio",
-        "To pass a music test"
+        "They want to become Finnish citizens",
+        "Their employers pay for the test",
+        "Henrik tells them to take it"
       ],
       "answer": 0,
-      "explanation": "Hans elever lyssnar på svensk radio varje dag för att höra språket. För att gives the purpose."
+      "explanation": "Många av dem pluggar för att klara YKI-testet, eftersom de vill bli finska medborgare. För att gives the purpose, eftersom the reason. This is real: Migri accepts YKI at level 3 or higher in Finnish or Swedish for citizenship."
     },
     "speaking": {
-      "prompt": "Your Swedish teacher asks: Gillade du skolan? Var du duktig i skolan? Borde lärare vara stränga? Answer all three in six to eight lines. Give a reason for each answer and use at least three dependent linkers.",
+      "prompt": "Berätta om din skoltid och säg vad du tycker. Du kan svara på frågorna nedan när du talar: Trivdes du i skolan? Varför? Var du duktig på något ämne? Borde lärare vara stränga? Varför? Vad pluggar du nu, och varför? (This is the YKI speaking format: a topic with guiding questions. Plan for one minute, then speak for about a minute and a half, six to eight lines. Answer each Varför? with eftersom and use at least three dependent linkers.)",
       "help": "När jag gick i skolan … · Jag trivdes eftersom … · Jag var duktig på … trots att … · Jag tycker att lärare inte … · Om en elev inte förstår …",
       "model": "När jag gick i skolan gillade jag matte. Jag trivdes eftersom jag hade bra vänner. Jag var duktig på matte trots att jag inte pluggade så mycket. Min engelsklärare var sträng, men hon förklarade alltid tydligt. Jag tycker att lärare inte alltid behöver vara stränga. Barn lär sig mer när de trivs i skolan. Om en elev inte förstår borde läraren förklara igen. Nu pluggar jag svenska för att klara YKI-testet."
     },
     "writing": {
-      "prompt": "Write an opinion paragraph: Är det viktigt att barn trivs i skolan? Give two reasons.",
-      "situation": "Your local Swedish-language newspaper asks its readers: Är det viktigt att barn trivs i skolan? Write a short opinion for its website.",
+      "prompt": "Answer your Swedish course’s questionnaire in a short formal email (the YKI response task).",
+      "situation": "Du går en kvällskurs i svenska på Arbis. Arbis vill veta vad eleverna tycker om kursen och skickar en förfrågan. Svara med ett e-postmeddelande. Vad är bra i kursen? Varför? Vad kunde vara bättre? Varför? Borde läraren vara strängare? Kom ihåg att inleda och avsluta meddelandet på lämpligt sätt. (You take an evening Swedish course at Arbis, as in Lecture 5. Arbis asks its students what they think of the course. Answer by email. In this YKI task type, every point needs a reason.)",
       "points": [
-        "State your opinion clearly.",
-        "Give at least two reasons.",
-        "Use eftersom and at least one of när or om.",
-        "Use one dependent clause with inte or another adverb before the verb.",
-        "Include one practical suggestion for teachers or schools.",
-        "Finish with a short conclusion."
+        "Greet, say who you are and which course you take, with one fact such as the day or the time.",
+        "Name two good things about the course, each with a reason (eftersom).",
+        "Name one thing that could be better and suggest a change with om.",
+        "Answer the question about a stricter teacher, with inte or another short adverb before the verb after att.",
+        "Close politely with Med vänlig hälsning and your first name and surname."
       ],
       "wordRange": [
         70,
         110
       ],
-      "help": "Jag tycker att … · Det är viktigt eftersom … · Barn lär sig mer när … · Om ett barn inte trivs … · På så sätt … · Därför …",
-      "model": "Jag tycker att det är mycket viktigt att barn trivs i skolan. Det är viktigt eftersom barn lär sig mer när de känner sig trygga. Om ett barn inte trivs kan det vara svårt att koncentrera sig. Lärare behöver tydliga regler, men de behöver inte vara stränga hela tiden. De borde lyssna på varje elev och förklara igen om någon inte förstår. Skolan kan också ordna roliga aktiviteter för att barnen ska lära känna varandra. På så sätt blir skolan en trygg plats. Därför är trivsel en viktig del av skolan."
+      "help": "Hej! · Jag heter … och går … på … kl. … · Här är mina svar på er förfrågan. · Kursen är bra eftersom … · Jag gillar också … eftersom … alltid … · Kursen blir ännu bättre om … · Jag tycker att läraren inte behöver … · På så sätt … · Tack för en bra kurs! · Med vänlig hälsning, …",
+      "model": "Hej!\n\nJag heter Alex Khan och går kvällskursen i svenska på tisdagar kl. 17.30. Här är mina svar på er förfrågan.\n\nKursen är bra eftersom vi pratar mycket i små grupper. Jag gillar också läraren eftersom hon alltid förklarar tydligt när någon inte förstår.\n\nKursen blir ännu bättre om vi lyssnar mer på nyheter, till exempel Yle Nyheter på lätt svenska. Många av oss behöver det eftersom vi ska skriva YKI-testet i höst.\n\nJag tycker att läraren inte behöver vara strängare. Vi lär oss mer när vi trivs.\n\nTack för en bra kurs!\n\nMed vänlig hälsning\nAlex Khan"
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Answer three school questions in six to eight spoken lines with reasons, then write a 70–110-word opinion with two reasons.",
-    "transferPrompt": "Give the opinion again about work or language classes, changing the examples.",
+    "expectedOutput": "Talk about your school days and give your opinion in six to eight spoken lines, answering every Varför?, then answer a course questionnaire in a 70–110-word email.",
+    "transferPrompt": "Give your opinion again about your Swedish course or your workplace, with a new reason and a new example.",
     "returnPrompt": "Without looking, give one school memory with eftersom, one opinion with att + inte, and one sentence with för att.",
     "successChecks": [
       "Use at least three dependent linkers.",
       "Put inte or another short adverb before the verb in a dependent clause.",
-      "Give a reason for each answer.",
+      "After a dependent clause at the start, put the verb next.",
+      "Answer every Varför? with a reason.",
       "Speak for six to eight connected lines.",
-      "Write 70–110 words and answer every point."
+      "Write 70–110 words, answer every point and close the email formally."
     ],
     "requiredSkills": [
       "speaking",

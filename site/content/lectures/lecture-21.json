@@ -26,14 +26,15 @@
     "infinitive",
     "clause",
     "subject",
-    "verb"
+    "verb",
+    "gender"
   ],
   "presentation": {
     "template": "conversation-first",
     "opening": {
       "teacherNote": {
         "title": "Listen for a home and one green habit",
-        "body": "Alex’s lease ends, so he reads flat adverts with Elin. Then Maja arrives by bike and explains what goes in the bioavfall bin."
+        "body": "Alex’s lease ends, so he reads flat adverts with Elin. Then Maja arrives by bike and explains what goes in the bioavfall bin. Before you listen, guess: Alex works from home, so what does he need in a new flat?"
       },
       "questionIntro": "Answer from the story. Listen for what is a must for Alex and what Maja sorts.",
       "dialogue": {
@@ -118,22 +119,10 @@
   "sittingBreakAfter": "guided",
   "unplannedQuestions": [
     {
-      "id": "sv-21-u1",
-      "fi": "Hur många rum har ditt hem?",
-      "en": "How many rooms does your home have?",
-      "sample": "Mitt hem har två rum och kök. Det är en tvåa."
-    },
-    {
-      "id": "sv-21-u2",
-      "fi": "Vad tycker du bäst om i ditt område?",
-      "en": "What do you like best in your area?",
-      "sample": "Jag tycker bäst om naturen och att bussarna går ofta."
-    },
-    {
-      "id": "sv-21-u3",
-      "fi": "Vad skulle du vilja ändra hemma?",
-      "en": "What would you like to change at home?",
-      "sample": "Jag skulle vilja ha ett större kök."
+      "id": "sv-21-u8",
+      "fi": "Hej, det är hyresvärden. När kan du komma och titta på lägenheten?",
+      "en": "(The landlord calls you.) Hi, this is the landlord. When can you come and see the flat?",
+      "sample": "Hej! Jag kan komma på torsdag klockan fem. Passar det?"
     },
     {
       "id": "sv-21-u4",
@@ -142,10 +131,22 @@
       "sample": "Nej, det är inget måste, men det skulle vara trevligt."
     },
     {
+      "id": "sv-21-u9",
+      "fi": "Ursäkta, var ska jag slänga det här mjölkpaketet?",
+      "en": "(A neighbour in the waste room.) Excuse me, where should I throw this milk carton?",
+      "sample": "Det är kartong. Platta till det och lägg det i tunnan för kartong."
+    },
+    {
       "id": "sv-21-u5",
       "fi": "Vad gör du för att skydda miljön?",
       "en": "What do you do to protect the environment?",
       "sample": "Jag sopsorterar och åker kollektivt."
+    },
+    {
+      "id": "sv-21-u10",
+      "fi": "Hej! Jag har en ledig parkeringsplats. Behöver du den?",
+      "en": "(A neighbour.) Hi! I have a free parking space. Do you need it?",
+      "sample": "Tack, men jag har ingen bil, så jag behöver ingen parkeringsplats."
     },
     {
       "id": "sv-21-u7",
@@ -191,9 +192,9 @@
       "fi": "Eftersom jag jobbar hemifrån behöver jag ett tyst rum."
     },
     {
-      "id": "sv-21-rp8",
-      "en": "Therefore I cycle to work.",
-      "fi": "Därför cyklar jag till jobbet."
+      "id": "sv-21-rp10",
+      "en": "I have no car. That is why I cycle.",
+      "fi": "Jag har ingen bil. Därför cyklar jag."
     }
   ],
   "missionPlan": {
@@ -285,11 +286,11 @@
       "title": "Bostad i Helsingfors · finding a home in Helsinki",
       "kind": "scene",
       "body": [
-        "Jag bor i en hyresbostad. A hyresbostad (or hyreslägenhet) is rented: you sign a hyresavtal (lease) with a hyresvärd (landlord). An ägarbostad is a home you own.",
-        "Finland note: a bostadsrättsbostad in Finland is a middle form. You pay a share of the price and then a monthly fee, but you do not own the flat. In Sweden, bostadsrätt means you buy the flat, so the same word means something else there.",
-        "En etta, en tvåa, en trea: one, two or three rooms plus a kitchen. The kitchen is never counted. Trap for English speakers: a tvåa has ONE bedroom and a living room, not two bedrooms. Adverts write kvm; say kvadratmeter.",
-        "Ingen, inget, inga mean no or not any. Jag har inte någon bil = Jag har ingen bil. Use ingen with en-words (ingen hiss), inget with ett-words (inget badkar) and inga in the plural (inga husdjur).",
-        "Behöver is a real need. Vill gärna ha is a wish. Ett måste is essential; inget måste is optional."
+        "Jag bor i en hyresbostad. A hyresbostad is rented: you sign a hyresavtal (lease) with a hyresvärd (landlord). An ägarbostad is a home you own.",
+        "Finland note: in a bostadsrättsbostad you pay a starting fee and then a monthly fee, but you do not own the flat. In Sweden, bostadsrätt means you buy the flat.",
+        "En etta, en tvåa, en trea: one, two or three rooms plus a kitchen. The kitchen never counts. Trap from India: a 2BHK (two bedrooms and a hall) is en trea; a 1BHK is en tvåa.",
+        "Ingen, inget, inga work as in Lecture 10: ingen hiss, inget badkar, inga husdjur. New: with two verbs or after eftersom, say inte … någon: Jag har inte hittat någon lägenhet; eftersom jag inte har någon bil (page 54). Hindi splits it too: koi … nahin.",
+        "Behöver is a need; vill gärna ha is a wish. Ett måste is essential; inget måste is optional."
       ],
       "examples": [
         {
@@ -308,9 +309,9 @@
           "note": "Ingen with en-words, inget with ett-words."
         },
         {
-          "fi": "Jag letar efter en lägenhet i ett tyst område, på gångavstånd till metron.",
-          "en": "I am looking for a flat in a quiet area, within walking distance of the metro.",
-          "note": "Leta efter + what you want."
+          "fi": "Jag har inte hittat någon lägenhet än.",
+          "en": "I have not found a flat yet.",
+          "note": "Two verbs (har hittat), so inte … någon."
         },
         {
           "fi": "När det gäller säkerhet är det här området tryggt.",
@@ -349,10 +350,15 @@
             "en etta / tvåa / trea",
             "1 / 2 / 3 rooms + kitchen",
             "Jag letar efter en trea."
+          ],
+          [
+            "en bastutur",
+            "your booked time in the building’s shared sauna",
+            "Vår bastutur är på torsdag."
           ]
         ]
       },
-      "memoryTip": "Count the rooms you can sleep or sit in, never the kitchen: en tvåa = sovrum + vardagsrum + kök.",
+      "memoryTip": "Count the rooms you can sleep or sit in, never the kitchen: 1BHK = en tvåa, 2BHK = en trea.",
       "tryIt": "Say what kind of home you live in, how many rooms it has, and one thing it has not got (ingen/inget/inga).",
       "activity": {
         "type": "question-gap",
@@ -378,7 +384,7 @@
               "fi": "En tvåa räcker: ett sovrum och ett vardagsrum.",
               "en": "A two-room flat is enough: a bedroom and a living room."
             },
-            "why": "You can count rooms, so ask hur många. Du is the one who needs."
+            "why": "You can count rooms, so hur många (Lecture 7). Du is the one who needs, so du, not dig."
           },
           {
             "about": "Alex",
@@ -400,15 +406,15 @@
             "field": "Must",
             "options": [
               "Vad är ett måste för dig?",
-              "Vad måste är för dig?",
-              "Vad är inget måste för du?"
+              "Vad måste du göra?",
+              "Vad är ett måste för du?"
             ],
             "answer": "Vad är ett måste för dig?",
             "reply": {
               "fi": "Ett tyst område är ett måste, eftersom jag jobbar hemifrån.",
               "en": "A quiet area is a must, because I work from home."
             },
-            "why": "Ett måste is a noun here: something essential. After för, use dig."
+            "why": "Ett måste is a noun here: something essential. After för, use dig (Lecture 11). Vad måste du göra? asks about a duty, not about the flat."
           },
           {
             "about": "Alex",
@@ -463,11 +469,11 @@
       "title": "Den här lägenheten eller denna lägenhet? · two ways to say this",
       "kind": "rule",
       "body": [
-        "Den här lägenheten = denna lägenhet = this flat. With den här, the noun takes its definite form (-en, -et). With denna, the noun stays plain.",
-        "Choose by the noun: den här / denna for en-words, det här / detta for ett-words, de här / dessa in the plural: det här huset = detta hus; de här rummen = dessa rum.",
-        "Speech uses den här most. Denna and detta are common in adverts, notices and formal writing: Detta möte gäller vår budget. In southern Sweden people also say denna bilen, but write denna bil.",
-        "Det här alone points to a whole thing: Det här är min lägenhet. Det här är bra! Use det here even for an en-word. Den där, det där and de där mean that and those.",
-        "English and Hindi put no ending on the noun (this flat, यह फ़्लैट). Swedish den här needs the ending: den här lägenheten. An adjective takes -a in both patterns: den här ljusa tvåan, denna ljusa tvåa."
+        "Den här lägenheten = denna lägenhet = this flat. After den här the noun takes its definite form (Lecture 5: lägenheten). After denna it stays plain.",
+        "Match the noun, as in the table: den här / denna for en-words, det här / detta for ett-words, de här / dessa in the plural.",
+        "Speech mostly uses den här. Denna, detta and dessa are common in adverts, notices and formal writing: Detta möte gäller vår budget. In southern Sweden people also say denna bilen, but write denna bil.",
+        "Det här är min lägenhet. To present something, say det här är, even for an en-word. Den där, det där and de där mean that and those.",
+        "Trap: English and Hindi put no ending on the noun (this flat, यह फ़्लैट), so learners write den här lägenhet. Add the ending. An adjective takes -a, as in Lecture 9: den här ljusa tvåan, denna ljusa tvåa."
       ],
       "examples": [
         {
@@ -526,7 +532,7 @@
         "type": "sort",
         "label": "This and these",
         "title": "Correct, or mixed up?",
-        "instructions": "Decide if each phrase is correct written Swedish. Look at the pointing word and the noun's ending.",
+        "instructions": "Decide if each phrase is correct written Swedish. Look at the pointing word and the noun’s ending. If it is mixed up, say the correct form aloud before you check.",
         "buckets": [
           {
             "id": "ok",
@@ -589,18 +595,19 @@
             "why": "Hus is an ett-word: det här huset."
           }
         ],
-        "summary": "Den här + noun with ending; denna + noun without; match den/det/de to the noun."
+        "summary": "Den här + noun with ending; denna + noun without; match den/det/de to the noun.",
+        "audio": false
       }
     },
     {
       "title": "Därför, eftersom och på grund av · reason and result",
       "kind": "rule",
       "body": [
-        "Hyran är hög. Därför letar jag efter en ny lägenhet. Därför means that is why or therefore: it gives the result. It takes first place in the main clause, so the verb comes next (verb second): Därför letar jag, never Därför jag letar.",
-        "Eftersom gives the reason with a whole clause, a subject and a verb (Lecture 19): eftersom hyran är hög. På grund av gives the reason with a noun (Lecture 15): på grund av hyran. Before a whole clause, add att: på grund av att hyran är hög.",
-        "Trap: därför att means because, the opposite job of därför. Jag cyklar därför att det är billigt = Jag cyklar eftersom det är billigt.",
-        "When the reason comes first, the whole subordinate clause takes first place, so the main verb comes straight after it: Eftersom jag jobbar hemifrån behöver jag ett tyst rum. Inside the clause, inte goes before the verb: eftersom jag inte har någon bil (page 54).",
-        "Hindi helps here: इसलिए (isliye) = därför, क्योंकि (kyonki) = eftersom."
+        "Hyran är hög. Därför letar jag efter en ny lägenhet. Därför means that is why: it gives the result. It takes first place in the main clause, so the verb comes next (verb second): Därför letar jag.",
+        "Trap: English that’s why I … and Hindi isliye main … put the subject next, so learners say Därför jag letar. Så (Lecture 18) works that way, därför does not: …, så jag letar. Därför letar jag.",
+        "Eftersom + subject + verb gives the reason (Lecture 19): eftersom hyran är hög. På grund av + noun (Lecture 15): på grund av hyran. Before a whole clause, add att: på grund av att hyran är hög.",
+        "Trap: därför att means because, like eftersom: Jag cyklar därför att det är billigt.",
+        "Reason first? The whole subordinate clause takes first place, so the main verb comes straight after it (Lecture 19): Eftersom jag jobbar hemifrån behöver jag ett tyst rum. The teacher’s trots att sentence works the same way."
       ],
       "examples": [
         {
@@ -611,7 +618,7 @@
         {
           "fi": "Hyrorna är höga i centrum. Därför bor många i förorterna.",
           "en": "Rents are high in the centre. That is why many people live in the suburbs.",
-          "note": "Därför + verb + subject."
+          "note": "Därför + verb + subject. The same with så: …, så många bor i förorterna."
         },
         {
           "fi": "Eftersom jag jobbar hemifrån behöver jag ett tyst rum.",
@@ -655,6 +662,11 @@
             "eftersom / därför att",
             "subject + verb",
             "eftersom bilen släpper ut koldioxid"
+          ],
+          [
+            "så (Lecture 18)",
+            "subject + verb",
+            "…, så jag cyklar"
           ],
           [
             "därför",
@@ -754,10 +766,10 @@
       "title": "Sopsortera i Helsingfors · sorting waste at home",
       "kind": "scene",
       "body": [
-        "Vi sopsorterar hemma. In a Helsinki block of flats you find kärl (bins) for bioavfall, kartong, plast, glas, metall, papper and blandavfall, often in the yard or a waste room.",
-        "Finland note: Helsinki’s Swedish sorting guides say blandavfall for the bin for everything else. In Sweden you often see restavfall and matavfall instead. Bioavfall becomes biogas and fertiliser.",
+        "Vi sopsorterar hemma. A Helsinki block of flats has soptunnor (bins; the city’s guides say kärl) for bioavfall, kartong, plast, glas, metall, papper and blandavfall, often in the yard or a waste room.",
+        "Finland note: Helsinki’s Swedish sorting guides say blandavfall for the bin for everything else. In Sweden you often see restavfall and matavfall instead. Bioavfall becomes biogas.",
         "Two surprises: a drinking glass or a broken plate is not a glass package, so it goes in blandavfall. Milk cartons go in kartong; flatten them first.",
-        "The page 55 words give the reason: bilar släpper ut koldioxid, det skadar miljön, och vi vill skydda miljön. Miljöpåverkan is environmental impact."
+        "Page 55 gives the reason: bilar släpper ut koldioxid, det skadar miljön, och vi vill skydda miljön."
       ],
       "examples": [
         {
@@ -835,10 +847,10 @@
             "why": "Drink cartons go in kartong, flattened."
           },
           {
-            "fi": "en pizzakartong utan matrester",
-            "en": "a pizza box without food scraps",
+            "fi": "ett tomt flingpaket",
+            "en": "an empty cereal box",
             "bucket": "kartong",
-            "why": "A clean pizza box is cardboard packaging."
+            "why": "A cereal box is cardboard packaging: kartong."
           },
           {
             "fi": "en tom yoghurtburk",
@@ -878,9 +890,9 @@
       "title": "När det gäller arbete … · when it comes to work",
       "kind": "scene",
       "body": [
-        "När det gäller lön är jobbet bra. När det gäller means when it comes to or regarding. It takes first place, so the verb comes next: När det gäller lön är …",
+        "När det gäller lön är jobbet bra. När det gäller means when it comes to. It takes first place, so the verb comes next: När det gäller lön är …",
         "Gäller alone means is about: Detta möte gäller vår budget. Det gäller också hyran.",
-        "The teacher’s work text reuses the words from Lecture 20. Practise explaining a word in easy Swedish: utbränd – man är helt slut efter lång tids stress. That helps in the YKI speaking test when you forget a word."
+        "The teacher’s work text reuses Lecture 20’s words. If you forget a word in the YKI speaking test, explain it in easy Swedish: utbränd – man är helt slut efter lång tids stress."
       ],
       "examples": [
         {
@@ -891,7 +903,7 @@
         {
           "fi": "Hennes kollega är sjukskriven. Därför har Elin mer ansvar just nu.",
           "en": "Her colleague is on sick leave. That is why Elin has more responsibility right now.",
-          "note": "The story from Lecture 20 continues."
+          "note": "Lecture 20 said: …, så jag har fått hennes arbetsuppgifter. Därför says it with the verb first."
         },
         {
           "fi": "Elin vill inte bli utbränd, så hon pratar med sin chef.",
@@ -953,10 +965,10 @@
       ],
       "options": [
         "efter",
-        "på",
-        "till"
+        "för",
+        "på"
       ],
-      "hint": "The fixed phrase is leta efter.",
+      "hint": "The fixed phrase is leta efter. English look for tempts you to say för.",
       "explanation": "Jag letar efter … means I am looking for …"
     },
     {
@@ -971,7 +983,7 @@
         "De"
       ],
       "hint": "Lägenhet is an en-word.",
-      "explanation": "Den här lägenheten."
+      "explanation": "Den här lägenheten: lägenhet is an en-word (Lecture 4), and den här needs the definite form."
     },
     {
       "id": "sv-21-g3",
@@ -999,49 +1011,35 @@
         "inga"
       ],
       "hint": "Hiss is an en-word.",
-      "explanation": "Ingen hiss. Inget goes with ett-words, inga with plurals."
+      "explanation": "Ingen hiss, as in Lecture 10: inget goes with ett-words, inga with plurals."
     },
     {
-      "id": "sv-21-g4",
-      "prompt": "Jag jobbar hemifrån. ___ behöver jag ett tyst rum.",
+      "id": "sv-21-g11",
+      "prompt": "Jag har inte hittat ___ lägenhet än.",
       "answers": [
-        "Därför"
+        "någon"
       ],
       "options": [
-        "Därför",
-        "På grund av",
-        "Eftersom"
+        "någon",
+        "ingen",
+        "något"
       ],
-      "hint": "The second sentence states a result.",
-      "explanation": "Därför begins the result and is followed by behöver."
+      "hint": "Inte is already there. Lägenhet is an en-word.",
+      "explanation": "Har hittat is two verbs (har + supine, Lecture 17), so say inte … någon. Ingen after inte would say no twice."
     },
     {
-      "id": "sv-21-g5",
-      "prompt": "Luften är dålig på grund av ___.",
+      "id": "sv-21-g12",
+      "prompt": "A friend from Pune wants a 2BHK flat in Helsinki: two bedrooms, a hall and a kitchen. What should he search for?",
       "answers": [
-        "trafiken"
+        "en trea"
       ],
       "options": [
-        "trafiken",
-        "många kör bil",
-        "därför"
+        "en trea",
+        "en tvåa",
+        "en fyra"
       ],
-      "hint": "På grund av is followed by a noun.",
-      "explanation": "På grund av trafiken."
-    },
-    {
-      "id": "sv-21-g6",
-      "prompt": "Jag återvinner ___ skydda miljön.",
-      "answers": [
-        "för att"
-      ],
-      "options": [
-        "för att",
-        "därför",
-        "på grund av"
-      ],
-      "hint": "Give the purpose before an infinitive.",
-      "explanation": "För att skydda states the purpose."
+      "hint": "Count the bedrooms and the living room. Never count the kitchen.",
+      "explanation": "Two bedrooms + one living room = three rooms: en trea. A 1BHK is en tvåa."
     },
     {
       "id": "sv-21-g7",
@@ -1054,6 +1052,34 @@
       "explanation": "Correct: Därför cyklar jag till jobbet."
     },
     {
+      "id": "sv-21-g5",
+      "prompt": "Luften är dålig på grund av ___.",
+      "answers": [
+        "trafiken"
+      ],
+      "options": [
+        "trafiken",
+        "trafiken är tät",
+        "att trafiken"
+      ],
+      "hint": "På grund av is followed by a noun. A whole clause needs att.",
+      "explanation": "På grund av trafiken (Lecture 15). With a clause: på grund av att trafiken är tät."
+    },
+    {
+      "id": "sv-21-g6",
+      "prompt": "Jag återvinner ___ skydda miljön.",
+      "answers": [
+        "för att"
+      ],
+      "options": [
+        "för att",
+        "att",
+        "för"
+      ],
+      "hint": "English to protect needs two Swedish words here.",
+      "explanation": "För att + infinitive gives a purpose (Lecture 19): Jag återvinner för att skydda miljön."
+    },
+    {
       "id": "sv-21-g9",
       "prompt": "Put the verb in the right place: Eftersom jag jobbar hemifrån (jag behöver) ett tyst rum.",
       "answers": [
@@ -1061,7 +1087,7 @@
         "Eftersom jag arbetar hemifrån behöver jag ett tyst rum."
       ],
       "hint": "The whole eftersom-clause is first place. What comes second?",
-      "explanation": "Eftersom jag jobbar hemifrån behöver jag ett tyst rum: the verb behöver comes straight after the clause."
+      "explanation": "Eftersom jag jobbar hemifrån behöver jag ett tyst rum. As in Lecture 19, the whole eftersom-clause is first place, so the verb behöver comes straight after it."
     },
     {
       "id": "sv-21-g10",
@@ -1083,18 +1109,33 @@
       "id": "sv-21-c1",
       "prompt": "Write in Swedish: “I am looking for a quiet two-room flat.”",
       "answers": [
-        "Jag letar efter en tyst tvårumslägenhet.",
-        "Jag letar efter en tvårumslägenhet i ett tyst område.",
         "Jag letar efter en tyst tvåa.",
-        "Jag letar efter en tvåa i ett tyst område.",
         "Jag letar efter en lugn tvåa.",
+        "Jag letar efter en tyst tvårumslägenhet.",
         "Jag letar efter en lugn tvårumslägenhet.",
         "Jag letar efter en tyst tvårummare.",
+        "Jag letar efter en lugn tvårummare.",
+        "Jag letar efter en tvåa i ett tyst område.",
         "Jag letar efter en tvåa i ett lugnt område.",
-        "Jag letar efter en tvårumslägenhet i ett lugnt område."
+        "Jag letar efter en tvårumslägenhet i ett tyst område.",
+        "Jag letar efter en tvårumslägenhet i ett lugnt område.",
+        "Jag letar efter en tvårummare i ett tyst område.",
+        "Jag letar efter en tvårummare i ett lugnt område.",
+        "Jag söker en tyst tvåa.",
+        "Jag söker en lugn tvåa.",
+        "Jag söker en tyst tvårumslägenhet.",
+        "Jag söker en lugn tvårumslägenhet.",
+        "Jag söker en tyst tvårummare.",
+        "Jag söker en lugn tvårummare.",
+        "Jag söker en tvåa i ett tyst område.",
+        "Jag söker en tvåa i ett lugnt område.",
+        "Jag söker en tvårumslägenhet i ett tyst område.",
+        "Jag söker en tvårumslägenhet i ett lugnt område.",
+        "Jag söker en tvårummare i ett tyst område.",
+        "Jag söker en tvårummare i ett lugnt område."
       ],
-      "hint": "Use letar efter.",
-      "explanation": "Jag letar efter en tyst tvåa. Tvårumslägenhet and tvårummare are also right."
+      "hint": "Use letar efter (or söker).",
+      "explanation": "Jag letar efter en tyst tvåa. Tvårumslägenhet, tvårummare and söker are also right."
     },
     {
       "id": "sv-21-c2",
@@ -1115,9 +1156,17 @@
       "prompt": "Write: “I work from home. Therefore I need a quiet room.”",
       "answers": [
         "Jag jobbar hemifrån. Därför behöver jag ett tyst rum.",
-        "Jag arbetar hemifrån. Därför behöver jag ett tyst rum.",
         "Jag jobbar hemifrån, därför behöver jag ett tyst rum.",
-        "Jag arbetar hemifrån, därför behöver jag ett tyst rum."
+        "Jag jobbar hemifrån och därför behöver jag ett tyst rum.",
+        "Jag jobbar hemma. Därför behöver jag ett tyst rum.",
+        "Jag jobbar hemma, därför behöver jag ett tyst rum.",
+        "Jag jobbar hemma och därför behöver jag ett tyst rum.",
+        "Jag arbetar hemifrån. Därför behöver jag ett tyst rum.",
+        "Jag arbetar hemifrån, därför behöver jag ett tyst rum.",
+        "Jag arbetar hemifrån och därför behöver jag ett tyst rum.",
+        "Jag arbetar hemma. Därför behöver jag ett tyst rum.",
+        "Jag arbetar hemma, därför behöver jag ett tyst rum.",
+        "Jag arbetar hemma och därför behöver jag ett tyst rum."
       ],
       "hint": "After därför, put the verb before jag.",
       "explanation": "Därför behöver jag … keeps the verb second."
@@ -1144,18 +1193,35 @@
         "Detta hus är gammalt."
       ],
       "hint": "Hus is an ett-word, and gammal changes with it.",
-      "explanation": "Det här huset är gammalt, or in writing Detta hus är gammalt."
+      "explanation": "Det här huset är gammalt: hus is an ett-word, so huset and gammalt with -t, as in Lecture 5 (Huset är stort). In writing: Detta hus är gammalt."
     },
     {
-      "id": "sv-21-c6",
-      "prompt": "Write in Swedish: “I have no car.”",
+      "id": "sv-21-c8",
+      "prompt": "Write in Swedish: “The flat has no balcony.”",
       "answers": [
-        "Jag har ingen bil.",
-        "Jag har inte någon bil.",
-        "Jag har inte nån bil."
+        "Lägenheten har ingen balkong.",
+        "Lägenheten har inte någon balkong.",
+        "Lägenheten har inte nån balkong."
       ],
-      "hint": "Bil is an en-word.",
-      "explanation": "Jag har ingen bil = Jag har inte någon bil."
+      "hint": "Lägenheten needs its end article. Balkong is an en-word.",
+      "explanation": "Lägenheten har ingen balkong: the end article as in Lecture 5, and ingen with an en-word as in Lecture 10."
+    },
+    {
+      "id": "sv-21-c7",
+      "prompt": "Write in Swedish: “I have not found a good flat yet.”",
+      "answers": [
+        "Jag har inte hittat någon bra lägenhet än.",
+        "Jag har inte hittat någon bra lägenhet ännu.",
+        "Jag har ännu inte hittat någon bra lägenhet.",
+        "Jag har inte hittat nån bra lägenhet än.",
+        "Jag har inte hittat nån bra lägenhet ännu.",
+        "Jag har ännu inte hittat nån bra lägenhet.",
+        "Jag har inte hittat en bra lägenhet än.",
+        "Jag har inte hittat en bra lägenhet ännu.",
+        "Jag har ännu inte hittat en bra lägenhet."
+      ],
+      "hint": "Har + supine (Lecture 17). Where do inte and någon go?",
+      "explanation": "Jag har inte hittat någon bra lägenhet än. Har hittat is har + supine (Lecture 17), so inte comes after har and någon after hittat. Not: Jag har hittat ingen."
     }
   ],
   "assignment": {
@@ -1164,9 +1230,10 @@
     "model": "Jag bor i en hyresbostad i Helsingfors. Det är en tvåa. Min lägenhet har ett sovrum, ett vardagsrum och en liten balkong. Området är lugnt och affären ligger på gångavstånd. När det gäller arbete behöver jag ett tyst rum eftersom jag jobbar hemifrån. Jag skulle vilja ha ett större kök. Därför letar jag efter en ny lägenhet. Jag sopsorterar och cyklar för att skydda miljön."
   },
   "takeaways": [
-    "A tvåa has two rooms plus a kitchen; a hyresbostad is rented, an ägarbostad is owned.",
-    "Use den här + definite noun or denna + plain noun; say det här är … to present something.",
-    "Därför + verb + subject gives a result; eftersom, därför att and på grund av give a reason.",
+    "A tvåa has two rooms plus a kitchen, so a 1BHK is en tvåa and a 2BHK is en trea.",
+    "Den här + definite noun, denna + plain noun: den här lägenheten, denna lägenhet.",
+    "Därför + verb + subject gives a result: Därför letar jag, never Därför jag letar.",
+    "With two verbs, say inte … någon: Jag har inte hittat någon lägenhet.",
     "Sort waste the Helsinki way: bioavfall, kartong, plast, glas, metall and blandavfall."
   ],
   "dialogue": [
@@ -1207,8 +1274,8 @@
     },
     {
       "speaker": "Maja",
-      "fi": "Hej! Förlåt att jag är sen. Jag cyklade hit från skolan.",
-      "en": "Hi! Sorry I am late. I cycled here from school."
+      "fi": "Hej! Förlåt att jag är sen. Jag cyklade hit från sommarkursen.",
+      "en": "Hi! Sorry I am late. I cycled here from my summer course."
     },
     {
       "speaker": "Elin",
@@ -1227,7 +1294,7 @@
     },
     {
       "speaker": "Maja",
-      "fi": "Då ska du sopsortera. Hemma har vi kärl för bioavfall, kartong, plast och blandavfall.",
+      "fi": "Då ska du sopsortera. Hemma har vi soptunnor för bioavfall, kartong, plast och blandavfall.",
       "en": "Then you should sort your waste. At home we have bins for biowaste, cardboard, plastic and mixed waste."
     },
     {
@@ -1260,12 +1327,17 @@
     {
       "label": "Helsingfors stad: Boende",
       "url": "https://www.hel.fi/sv/boende",
-      "description": "The city’s Swedish housing page: hyresbostäder, bostadsrättsbostäder and ägarbostäder in Helsinki. Read only the headings and find the three home types."
+      "description": "The city’s Swedish housing page. Read only the headings: find the three home types and Hekas hyresbostäder, the city’s own rental flats."
     },
     {
       "label": "Helsingfors stad: sorteringsanvisningar (PDF)",
       "url": "https://ekotuki.hel.fi/wp-content/uploads/2026/01/ekotuki_ekotuki_lajitteluohjeet_A4_tulostettava_SV_2025.pdf",
       "description": "The city’s Swedish sorting guide. Find bioavfall, blandavfall and glasförpackningar, and check one thing from your own kitchen."
+    },
+    {
+      "label": "Svenska Yle: Bioavfallet hör inte hemma i blandavfallet",
+      "url": "https://yle.fi/a/7-10104577",
+      "description": "Real Finland-Swedish news about sorting (2024). Read the headline and the first lines: what should not go in blandavfall? Then find the word sophinken."
     },
     {
       "label": "Svenska Akademiens ordböcker",
@@ -1361,6 +1433,14 @@
         "en": "a sauna",
         "example": "Huset har en bastu.",
         "translation": "The house has a sauna.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-21-word-53",
+        "fi": "en bastutur",
+        "en": "a booked sauna time",
+        "example": "Vår bastutur är på torsdag klockan sju.",
+        "translation": "Our sauna time is on Thursday at seven.",
         "level": "A2"
       },
       {
@@ -1628,10 +1708,10 @@
         "level": "A2"
       },
       {
-        "id": "sv-21-word-48",
-        "fi": "ett kärl",
-        "en": "a (waste) bin",
-        "example": "Kärlen står på gården.",
+        "id": "sv-21-word-52",
+        "fi": "en soptunna",
+        "en": "a waste bin (guides say kärl)",
+        "example": "Soptunnorna står på gården.",
         "translation": "The bins are in the yard.",
         "level": "A2"
       },
@@ -1661,11 +1741,11 @@
       }
     ],
     "pronunciation": {
-      "text": "lägenhet, kvadratmeter, gångavstånd, kök, kärl, miljö, återvinna, koldioxid, därför, den här lägenheten",
-      "tip": "Hear the long ä in lägenhet and the long ö in miljö. K before ä and ö sounds like tj: kök, kärl. In återvinna, the i before double n is short. In därför, stress the first syllable."
+      "text": "lägenhet, hyresavtal, gångavstånd, bioavfall, blandavfall, kök, kött, den här lägenheten",
+      "tip": "In a compound word, stress the first part: HYRES-avtal, GÅNG-avstånd, BLAND-avfall. The Swedish voices add a second rise on the last part; Finland-Swedish has no such tone, so a clear stress on the first part is enough. In lägenhet, stress the long ä. K before ä and ö is soft: kök, kött. The voices say it like tj in tjugo; in Helsinki it sounds closer to English ch in chin."
     },
     "reading_passage": {
-      "text": "BOSTAD UTHYRES\nLjus tvårumslägenhet på 52 kvadratmeter i ett tyst område i Esbo. Lägenheten har ett sovrum, ett vardagsrum, kök, badrum och en liten balkong med utsikt över en park. Metrostationen och två mataffärer ligger på gångavstånd. Huset har hiss, tvättstuga och ett tryggt cykelrum. Ingen parkeringsplats finns. Hyran är 980 euro per månad. Vi söker en lugn hyresgäst som inte röker. Skriv och berätta vem du är, när du vill flytta in och varför lägenheten passar dig.",
+      "text": "BOSTAD UTHYRES\nLjus tvårumslägenhet på 52 kvadratmeter i ett tyst område i Esbo. Lägenheten har ett sovrum, ett vardagsrum, kök, badrum och en liten balkong med utsikt över en park. Metrostationen och två mataffärer ligger på gångavstånd. Huset har hiss, tvättstuga och ett tryggt cykelrum. Det finns ingen parkeringsplats. Hyran är 980 euro per månad. Vi söker en lugn hyresgäst som inte röker. Skriv och berätta vem du är, när du vill flytta in och varför lägenheten passar dig.",
       "gist": {
         "prompt": "What is this text?",
         "options": [
@@ -1677,18 +1757,18 @@
         "explanation": "The heading and details offer a flat for rent."
       },
       "detail": {
-        "prompt": "Which facility is missing?",
+        "prompt": "Rätt eller fel? Which statement is right (rätt)?",
         "options": [
-          "A parking space",
-          "A lift",
-          "A laundry room"
+          "Det finns ingen parkeringsplats.",
+          "Lägenheten har två sovrum.",
+          "Man får röka i lägenheten."
         ],
         "answer": 0,
-        "explanation": "Ingen parkeringsplats finns."
+        "explanation": "Det finns ingen parkeringsplats. A tvårumslägenhet has one sovrum plus a vardagsrum, and the landlord wants someone som inte röker."
       }
     },
     "reading": {
-      "text": "BOSTAD UTHYRES\nLjus tvårumslägenhet på 52 kvadratmeter i ett tyst område i Esbo. Lägenheten har ett sovrum, ett vardagsrum, kök, badrum och en liten balkong med utsikt över en park. Metrostationen och två mataffärer ligger på gångavstånd. Huset har hiss, tvättstuga och ett tryggt cykelrum. Ingen parkeringsplats finns. Hyran är 980 euro per månad. Vi söker en lugn hyresgäst som inte röker. Skriv och berätta vem du är, när du vill flytta in och varför lägenheten passar dig.",
+      "text": "BOSTAD UTHYRES\nLjus tvårumslägenhet på 52 kvadratmeter i ett tyst område i Esbo. Lägenheten har ett sovrum, ett vardagsrum, kök, badrum och en liten balkong med utsikt över en park. Metrostationen och två mataffärer ligger på gångavstånd. Huset har hiss, tvättstuga och ett tryggt cykelrum. Det finns ingen parkeringsplats. Hyran är 980 euro per månad. Vi söker en lugn hyresgäst som inte röker. Skriv och berätta vem du är, när du vill flytta in och varför lägenheten passar dig.",
       "question": "What should an applicant include?",
       "options": [
         "Who they are, move-in date and why the flat suits them",
@@ -1699,7 +1779,7 @@
       "explanation": "The final sentence asks for those three details."
     },
     "listening": {
-      "text": "När det gäller miljön försöker Maja göra små saker varje dag. Hon cyklar till skolan eftersom det är nära och billigt. Hemma sopsorterar hon, hennes mamma och hennes syster. I köket har de ett kärl för bioavfall, till exempel matrester och kaffesump. Kartong, plast, glas och metall bär de ner till kärlen på gården. Allt annat är blandavfall. Förra veckan gick ett dricksglas sönder. Maja ville lägga det bland glasburkarna, men mamma sa nej: ett dricksglas är blandavfall. Maja vill också köpa färre nya kläder. Därför lånar hon ibland kläder av en vän.",
+      "text": "När det gäller miljön försöker Maja göra små saker varje dag. Hon cyklar till skolan eftersom det är nära och billigt. Hemma sopsorterar hon, hennes mamma och hennes syster. I köket har de en liten soptunna för bioavfall, till exempel matrester och kaffesump. Kartong, plast, glas och metall bär de ner till soptunnorna på gården. Allt annat är blandavfall. Förra veckan gick ett dricksglas sönder. Maja ville lägga det i tunnan för glas, men mamma sa nej: ett dricksglas är blandavfall. Maja vill också köpa färre nya kläder. Därför lånar hon ibland kläder av en vän.",
       "question": "Where did the broken drinking glass go?",
       "options": [
         "In the mixed waste",
@@ -1710,26 +1790,26 @@
       "explanation": "Mamma sa nej: ett dricksglas är blandavfall."
     },
     "speaking": {
-      "prompt": "Berätta om ditt hem. Var bor du? Hurdan är bostaden? Vad tycker du om området? Vad skulle du vilja ändra, och varför? Speak for six to eight lines, as in the YKI speaking test.",
+      "prompt": "Berätta om ditt hem. Du kan svara på frågorna nedan när du talar. Var bor du? Hur ser ditt hem ut? Vad tycker du om området? Vad skulle du vilja ändra, och varför? (Tell about your home; the questions can guide you. This is the wording of the YKI basic-level speaking test, where you first get a few minutes to note key words. Speak for six to eight lines.)",
       "help": "Jag bor i … · Det är en etta/tvåa/trea · Mitt hem har … · Området är … · När det gäller … behöver jag … · Jag skulle vilja … · Eftersom … · Därför … · Jag tycker att … eftersom …",
-      "model": "Jag bor i en hyresbostad i Helsingfors. Det är en tvåa med ett sovrum, ett vardagsrum och en liten balkong. Området är lugnt och metrostationen ligger på gångavstånd. När det gäller köket behöver jag mer plats. På grund av platsbristen vill jag ha ett större kök. Därför letar jag efter en ny lägenhet. Jag tycker att ett hem ska vara praktiskt eftersom vardagen blir lättare då."
+      "model": "Jag bor i en hyresbostad i Helsingfors. Det är en tvåa med ett sovrum, ett vardagsrum och en liten balkong. Området är lugnt och metrostationen ligger på gångavstånd. När det gäller köket behöver jag mer plats. På grund av platsbristen vill jag ha ett större kök. Därför letar jag efter en ny lägenhet, men jag har inte hittat någon än. Jag tycker att ett hem ska vara praktiskt eftersom vardagen blir lättare då."
     },
     "writing": {
       "prompt": "Answer the flat advert from the reading text and explain why the home suits you.",
-      "situation": "You have read the advert BOSTAD UTHYRES: a bright two-room flat in Espoo, near the metro, 980 euros a month. Write an e-mail to the landlord.",
+      "situation": "Du har läst annonsen BOSTAD UTHYRES: en ljus tvåa i Esbo nära metron, 980 euro i månaden. Skriv ett mejl till hyresvärden. Kom ihåg att inleda och avsluta meddelandet på lämpligt sätt. (You have read the advert BOSTAD UTHYRES in the reading task: a bright two-room flat in Espoo near the metro, 980 euros a month. Write an e-mail to the landlord and open and close it in a suitable way: this is the wording of real YKI instructions. It is a formal message, so write ni and er, as in Lecture 14.)",
       "points": [
-        "Greet the landlord and say which advert you are writing about.",
-        "Say who you are and what you do.",
-        "Say when you want to move in and what you need in a home.",
-        "Explain why this flat suits you, with eftersom or därför.",
-        "Ask one practical question and close politely."
+        "Hälsa och säg vilken annons du skriver om. (Greet the landlord and name the advert.)",
+        "Berätta vem du är och vad du gör. (Say who you are and what you do.)",
+        "Säg när du vill flytta in och vad du behöver. (Say when you want to move in and what you need.)",
+        "Förklara med eftersom eller därför varför lägenheten passar dig. (Explain with eftersom or därför why the flat suits you.)",
+        "Ställ en praktisk fråga och avsluta artigt. (Ask one practical question, using ni, and close politely.)"
       ],
       "wordRange": [
         70,
         110
       ],
-      "help": "Hej! Jag skriver om annonsen … · Jag heter … och jobbar som/studerar … · Jag vill flytta in … · Eftersom … behöver jag … · Lägenheten passar mig eftersom … · Ingår …? Finns det …? · Vänliga hälsningar",
-      "model": "Hej!\nJag skriver om annonsen om den ljusa tvåan i Esbo. Jag heter Alex och jobbar som programmerare, oftast hemifrån. Mitt hyresavtal tar slut i augusti. Därför vill jag gärna flytta in den första augusti. Eftersom jag jobbar hemifrån behöver jag ett tyst område. Lägenheten passar mig, för metron ligger på gångavstånd och huset har ett cykelrum. Jag har ingen bil, så jag behöver ingen parkeringsplats. Jag röker inte och har inga husdjur. Ingår vatten i hyran?\nVänliga hälsningar\nAlex"
+      "help": "Hej, · Jag svarar på er annons om … · Jag heter … och jobbar som/studerar … · Jag vill flytta in den … · Eftersom … behöver jag … · Därför … · Jag har ingen bil / inga husdjur · Ingår vatten i hyran? (In Finland water is often paid separately.) · Kan jag komma och titta på lägenheten? · Tack på förhand! · Vänliga hälsningar",
+      "model": "Hej,\nJag svarar på er annons om den ljusa tvåan i Esbo. Jag heter Alex Khan och jobbar som programmerare, oftast hemifrån. Mitt hyresavtal tar slut i augusti, och därför vill jag gärna flytta in den första augusti. Eftersom jag jobbar hemifrån behöver jag ett tyst område. Lägenheten passar mig, för metron ligger på gångavstånd och huset har ett cykelrum. Jag har ingen bil, så jag behöver ingen parkeringsplats. Jag röker inte och har inga husdjur. Ingår vatten i hyran? Kan jag komma och titta på lägenheten nästa vecka?\nTack på förhand!\nVänliga hälsningar\nAlex Khan"
     }
   },
   "route": {
@@ -1740,7 +1820,7 @@
     "successChecks": [
       "Describe the home type, rooms and area.",
       "Say one real need and one optional wish.",
-      "Explain one reason or result with eftersom, på grund av or därför, with the verb in the right place.",
+      "Give one result with Därför + verb + subject, and one reason with eftersom or på grund av.",
       "Give six to eight connected spoken lines and one opinion with a reason.",
       "Write 70–110 words and answer every point in the advert task."
     ],
