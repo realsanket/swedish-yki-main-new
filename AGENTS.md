@@ -353,10 +353,9 @@ and coloured words came back). **Not yet waited for:** the day-later return
 card (logic tested).
 
 **Independently reviewed:** Lectures 3-7 twice (October 2 and 3) and Lectures
-8-16 once (October 3), one reviewer per lecture, against sources and online
-references, with teaching improvements; results in `docs/mapping.md`. Lectures
-17-22 have had the repair pass only. Pictures for Chapters 2-6 and Lectures
-3-16 wait on the owner (`docs/image-prompts/`).
+8-22 once (October 3), one reviewer per lecture, against sources and online
+references, with teaching improvements; results in `docs/mapping.md`. Pictures
+for Chapters 2-6 and Lectures 3-22 wait on the owner (`docs/image-prompts/`).
 
 Story data now lives in content, with neutral fallbacks. Unnamed dialogue roles
 use a letter avatar and Henrik’s native Swedish voice. Teaching kinds are limited

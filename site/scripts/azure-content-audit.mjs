@@ -45,7 +45,8 @@ async function audio(button,expected,name) {
   return {name,status:response.status(),bytes:bytes.length,durationSeconds:state.duration,playback:'ended',voices:[...new Set(expected.map(s=>voices[s.speaker]))]};
 }
 try {
-  await page.goto(base);const status=await (await page.request.get(`${base}/api/ai-status`)).json();
+  // Wait for hydration: a hash change made before it is reset to the server URL.
+  await page.goto(base,{waitUntil:'networkidle'});const status=await (await page.request.get(`${base}/api/ai-status`)).json();
   assert.equal(status.provider,'azure');assert.ok(status.capabilities.characterVoices && status.capabilities.feedback,'Real Azure services must be configured');
   for(const lecture of lectures.filter(l=>l.number>=3)) {
     const id=`lecture-${String(lecture.number).padStart(2,'0')}`;

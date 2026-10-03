@@ -1,4 +1,4 @@
-# Lecture pictures (Lectures 3-16)
+# Lecture pictures (Lectures 3-22)
 
 Lectures 1 and 2 already have pictures. Save each new picture in
 `site/public/images/story/episodes/` with the file name shown. Start every
@@ -154,3 +154,75 @@ lecture's object label (`story.object`) is already set in its JSON; only
 > about her home town. Across the table, Maja has a maths textbook and squared
 > notebook open and looks a little nervous but hopeful. Three cups of coffee and
 > a cinnamon bun.
+
+## Lecture 17: Have you been to Sweden?
+
+**File:** `episode-17-nordic-travel-map.webp` · **Object:** a Nordic map with travel pins
+
+> A bright Helsinki language-café room in late-May daylight, tall windows, birch
+> tables, a coffee pot and a potted plant. On the wall, a large hand-drawn map
+> of the Nordic countries with a few coloured pins and a dotted line north
+> towards Lapland (no readable text). Henrik stands by the map, pointing. Alex
+> sits at the table with his notebook open, smiling and pointing at Sweden.
+> Elin laughs beside him, holding a bowl of creamy salmon soup. Maja leans
+> forward excitedly and points at the far north of the map, her mustard backpack
+> on the chair. Curious, friendly mood full of travel stories.
+
+## Lecture 18: My favourite subject was maths
+
+**File:** `episode-18-school-memories-party.webp` · **Object:** school memories at Alex's party
+
+> A small, cosy Helsinki flat in late-spring daylight, a few birthday balloons
+> and paper garlands. Elin sets two homemade cakes on a wooden table. Alex
+> laughs and shows an old school class photo on his phone (a large class in
+> uniforms); his spiral notebook lies beside the coffee cups. Maja leans in to
+> look, holding a fork, ready for cake, her mustard backpack leaning on her
+> chair. Relaxed, friendly party mood.
+
+## Lecture 19: … because I didn't understand
+
+**File:** `episode-19-strict-teachers.webp` · **Object:** a chemistry textbook and a birthday card
+
+> A bright Helsinki kitchen in early June, green trees outside the large window.
+> Maja sits looking tired but smiling, an open chemistry textbook and a
+> highlighter in front of her, her mustard backpack at her feet. Alex leans
+> forward, gesturing as he explains, his spiral notebook beside a coffee cup; a
+> handmade birthday card from his party stands on the table. Elin listens with
+> a cup of tea, mid-laugh. Cinnamon buns on a plate. A relaxed, friendly debate.
+
+## Lecture 20: On the one hand … on the other hand …
+
+**File:** `episode-20-dinner-after-work.webp` · **Object:** a Helsinki lunch menu marked G, L and VEG
+
+> A small cosy Helsinki restaurant on a bright early-summer evening, a tram and
+> pale buildings blurred outside the large window. At a wooden table for two,
+> Elin looks tired but relieved, leaning back with a small smile; Alex listens
+> kindly, his spiral notebook beside his plate. On the table: a bowl of
+> vegetable soup with crispbread for Alex, salmon pasta for Elin, two glasses
+> of water and a folded paper menu with small coloured letter badges (no
+> readable text). In the background a friendly waiter, seen from the side,
+> turns down a small speaker on a shelf. Plants and linen napkins.
+
+## Lecture 21: I'm looking for a flat
+
+**File:** `episode-21-flat-hunt.webp` · **Object:** a flat advert on a phone and three sorting bins
+
+> A cosy Helsinki kitchen corner in bright early-summer daylight, tall windows,
+> a birch table, potted herbs on the sill. Alex sits with his spiral notebook
+> open on a hand-drawn floor plan of a small flat. Elin holds up her phone
+> towards him, showing a flat advert with a photo of a bright living room (no
+> readable text). In the doorway Maja has just arrived with a bicycle helmet in
+> her hand and points at three small coloured waste bins under the counter:
+> food scraps and coffee grounds, flattened milk cartons, plastic packaging.
+> Two coffee cups and a cinnamon bun. Cheerful, practical mood.
+
+## Lecture 22: My ideal home
+
+**File:** `episode-22-ideal-home.webp` · **Object:** a small house near nature and a flat in town
+
+> A bright Helsinki café table by a large window, a city street and a tram
+> outside. Alex sketches a small wooden house among pine trees in his spiral
+> notebook; the sketch shows a study window and a bicycle by a basement door.
+> Elin leans in, smiling, and gestures towards the lively street outside. Two
+> coffee cups, a folded flat advert and a phone with a map. A friendly
+> disagreement, soft natural light.

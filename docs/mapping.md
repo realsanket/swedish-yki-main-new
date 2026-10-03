@@ -870,3 +870,29 @@ Swedish input: about 1,150 (L11), 1,050 (L12), 1,210 (L13), 1,450 (L14),
 later: Alex's birthday is 28 May with a party on Saturday 30 May (Lecture 11's
 writing model); Elin grew up in Vasa (Lecture 16). Pictures for Lectures 11-16
 are in `docs/image-prompts/episodes.md`.
+
+## Lectures 17-22 review — October 3, 2026
+
+First full review of these lectures, one reviewer per lecture, with the same
+brief as Lectures 11-16 (correctness first, then improvements from online
+sources: Svensk ordbok/SAOL, Språkrådet, Institutet för de inhemska språken,
+Kela and City of Helsinki Swedish pages, oph.fi and YKI practice tasks, sfi and
+Folkuniversitetet handouts, the eWAVE atlas for Indian English, Hindi grammar
+notes). All page lines for pages 46-55 were checked word for word against the
+scans.
+
+| Lecture | Correctness fixes | Improvements | For the teacher |
+|---:|---|---|---|
+| 17 | Page-46 opinion and advice frames (enligt mig, borde, håller med) were untaught; hunts missed the pages' marked words (hitta, möjligt, testat, flyttade, fick, aldrig, ännu, just); placeholder notes; personality and duration sorts gave away their answers; an ungrammatical distractor; narrow typed answers; listening "sedan dess" without an event. | New section "Har varit eller var?" (the time word decides) with adverb placement; i / sedan / för … sedan / på gap sort; supine built from the past form; describing people kindly; Indian English "I have seen him yesterday" and Hindi से/कभी contrasts; YKI examiner card and welcome-message writing. Maja now speaks (in the Chapter 6 cast). | Source `en ideal partner` (`idealisk` more common); `hurdan` as everyday Finland-Swedish; whether `var` fits `___ du ___ i Lappland någon gång?` |
+| 18 | Teacher examples (Nokia, Lidl, Kanarieöarna) and the förstås/-is group added; a match where each ending fitted more than one beginning; give-away sorts. | Dialogue at Alex's birthday party (30 May); the linker "takes no place" rule with a 6-item word-order sort; rebuilt Finnish school system (förskola, grundskola 1-9, free lunch, studentexamen, bli student); new reading and listening. | `Efter tionde klass skrev vi ett stort prov`; `Grattis i efterskott`; `gå i armén` beside `lumpen` |
+| 19 | Give-away linker and word-order sorts replaced by gap and right/wrong sorts; a match rebuilt to pair one way only; wrong stress tip (inte is unstressed); a tense mismatch in a sample; reading and listening no longer repeat Lecture 18. | eftersom vs för vs därför att; om vs när (English "if" trap); BIFF covers short adverbs; honest `Jag tycker inte att …` nuance; dialogue thanks Alex for the party and ties to Maja's chemistry test and Elin's Vasa school; YKI speaking. | `… i morgon ___ det inte regnar` (om, eftersom marginal); `trivsel` a little formal for A2 |
+| 20 | Teacher's job questions, fördel/nackdel frames, säga upp mig, gå in i väggen, flextid, glas/glass, notan/räkningen/kvittot and page-52 `inte` before the verb added; hero line Alex never said; bill asked before the meal; hunts on unmarked words; give-away hints; a nonsense distractor; listening about Henrik in an office (now Maja's mum, a sjukskötare); reading about a new person (now Elin). | Job-interview question-gap section; "Right or needs a fix?" word-order sort; Finland notes (sjukledig, July semester, menu letters G/L/M/VL/VEG, no tipping, vegan vs vegetarian); YKI comment-on-a-letter writing; wrong-dish unexpected question. UR Play link found but blocked to bots: the owner should open it once. | Whether spoken `att man behöver inte` counts as an error; `VL = laktosfattig` on Finnish menus |
+| 21 | Missing teacher topics (säkerhet, ingen/inget/inga, trots att + verb, för = too, för att, stadsdel, badrum, diska); page-54 hunt missed balkong, bastu, Stadsdelen; give-away sorts; an ambiguous match; hero line out of the dialogue; unidiomatic lines (orolig på grund av, de bra bussarna, den vore trevlig); a merged teacher example with a wrong translation. | Dialogue: Alex's lease ends in August, Elin shows a small flat in Hertonäs without a balcony, Maja explains bioavfall; Helsinki housing words (hyres-/ägarbostad, etta/tvåa/trea, Finnish bostadsrätt); därför + verb and the `därför att` trap; Helsinki waste sorting (blandavfall, glass in blandavfall); explaining words in easy Swedish; YKI card and advert-reply writing. | Teacher's `Jag ska lämna om …` and `ordbok = vocabulary` not used; `kärl` as everyday word; accept spoken `nån` |
+| 22 | Alex wanted three bedrooms "for your family" and worked "partly" from home (contradicts Lecture 21); `tung trafik` means heavy vehicles (now `tät`/`mycket trafik`); `till slut` explained wrongly; agreement after `tillräckligt`; builder notes shown to the learner; an ambiguous match; stiff unplanned questions. | V2 after linkers (Å andra sidan måste man); håller med / delvis med / inte med; källarförråd and Helsinki/Esbo examples; YKI insändare writing task (this follows the YKI intermediate practice page, so it is a stretch task). | `Å andra sidan är det mycket buller` in writing; `tät trafik` for Finland-Swedish |
+
+Swedish input: about 1,700 (L17), 1,520 (L18), 1,390 (L19), 1,570 (L20) and
+1,760 (L21) words; L22 about 850 by a narrower count (texts, examples and
+activities only). Story facts relied on: Alex lives alone and works from home,
+wants a tvåa with a desk space and bike storage, and the Hertonäs flat was too
+small; Maja's favourite subject is chemistry. Pictures for Lectures 17-22 are in
+`docs/image-prompts/episodes.md`.
