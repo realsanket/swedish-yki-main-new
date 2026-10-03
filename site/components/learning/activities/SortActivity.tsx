@@ -81,7 +81,9 @@ export default function SortActivity({ activity }: { activity: SortActivityData 
           <MarkedWord text={item.fi} mark={item.mark} className={styles.mark} />
         </p>
         {item.en && <p className={styles.sortMeaning}>{item.en}</p>}
-        <AudioButton text={item.fi} label={`Hear ${item.fi}`} className="icon-button" />
+        {activity.audio !== false && !item.fi.includes("___") && (
+          <AudioButton text={item.fi} label={`Hear ${item.fi}`} className="icon-button" />
+        )}
       </div>
       <div className={styles.buckets} role="group" aria-label="Choose a group">
         {activity.buckets.map((bucket) => {

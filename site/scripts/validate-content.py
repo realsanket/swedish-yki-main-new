@@ -65,6 +65,7 @@ for l in L:
                 if len(set(g['options']))!=len(g['options']): errs.append(f"{n}: dup gap option")
         if a['type']=='sort':
             ids={x['id'] for x in a['buckets']}
+            if 'audio' in a and not isinstance(a['audio'],bool): errs.append(f'{n}: sort audio must be true or false')
             for it in a['items']:
                 if it['bucket'] not in ids: errs.append(f'{n}: bad bucket '+it['fi'])
                 if it.get('mark') and it['mark'].lower() not in it['fi'].lower(): errs.append(f'{n}: mark '+it['fi'])

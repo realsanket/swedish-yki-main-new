@@ -246,6 +246,8 @@ export type SortActivity = TeachingActivityBase & {
     mark?: string;
     why: string;
   }[];
+  /** false hides the play buttons, e.g. for cards that show a mistake on purpose. A card with a gap (___) never gets one. */
+  audio?: boolean;
   summary?: string;
 };
 export type MatchActivity = TeachingActivityBase & {
