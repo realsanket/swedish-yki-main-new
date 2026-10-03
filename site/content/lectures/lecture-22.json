@@ -2,10 +2,10 @@
   "number": 22,
   "routeProfile": "standard",
   "objectives": [
-    "Describe your ideal home and explain two choices.",
-    "Use tillräckligt (with the right adjective ending), delvis and mestadels to make a description precise.",
-    "Build a short YKI-style opinion text (insändare) with an introduction, three reasons, the other side and a conclusion.",
-    "State a preference for town or countryside and support it with reasons."
+    "Tell about your ideal home for about a minute, as in the YKI berätta task.",
+    "Use tillräckligt with the right adjective ending (stor, stort, stora), plus delvis and mestadels.",
+    "Write a short opinion text: your position, good and bad points with reasons, and a conclusion.",
+    "Avoid three typical errors: the verb after a linking word, föredra … framför, and på landet."
   ],
   "focusSkills": [
     "speaking",
@@ -23,21 +23,23 @@
     "subordinate-clause",
     "word-order",
     "verb-second",
-    "adverb"
+    "adverb",
+    "possessive",
+    "preposition"
   ],
   "presentation": {
     "template": "conversation-first",
     "opening": {
       "teacherNote": {
         "title": "Listen for a dream and a disagreement",
-        "body": "First catch where Alex wants to live and why Elin chooses differently. Then notice how both speakers give a reason."
+        "body": "Alex describes a dream home, Elin disagrees, and then Alex says what he is really looking for. Listen for the reason each of them gives."
       },
       "questionIntro": "Answer from the conversation. Listen for the home, the place and the reasons.",
       "dialogue": {
         "part": "recall",
         "eyebrow": "START WITH THE STORY",
         "title": "Two different dream homes",
-        "instructions": "Listen once without the text. Which home would you choose?",
+        "instructions": "Predict first: will Alex choose town or the countryside? Then listen once without the text.",
         "initiallyOpen": false
       }
     },
@@ -75,9 +77,9 @@
           "en": "big enough"
         },
         {
-          "label": "ONE SIDE",
-          "fi": "Å ena sidan …",
-          "en": "On the one hand …"
+          "label": "PARTLY",
+          "fi": "Jag håller delvis med.",
+          "en": "I partly agree."
         },
         {
           "label": "OTHER SIDE",
@@ -115,10 +117,10 @@
   "sittingBreakAfter": "guided",
   "unplannedQuestions": [
     {
-      "id": "place",
-      "fi": "Var ligger ditt idealiska hem?",
-      "en": "Where is your ideal home?",
-      "sample": "Det ligger nära havet, men inte långt från metron."
+      "id": "sv-22-u-howlong",
+      "fi": "Hur länge har du bott där du bor nu?",
+      "en": "How long have you lived where you live now?",
+      "sample": "Jag har bott här i två år. Jag flyttade hit för två år sedan."
     },
     {
       "id": "size",
@@ -163,9 +165,9 @@
       "fi": "Det är inte tillräckligt stort."
     },
     {
-      "id": "mostly-quiet",
-      "en": "The area is mostly quiet.",
-      "fi": "Området är mestadels lugnt."
+      "id": "some-advantages",
+      "en": "Some of the advantages are fresh air and peace and quiet.",
+      "fi": "Några av fördelarna är frisk luft och lugn och ro."
     },
     {
       "id": "many-think",
@@ -183,14 +185,14 @@
       "fi": "Enligt mig är läget viktigast."
     },
     {
-      "id": "two-sides",
-      "en": "On the one hand the rent is lower. On the other hand you have to commute.",
-      "fi": "Å ena sidan är hyran lägre. Å andra sidan måste man pendla."
-    },
-    {
       "id": "prefer",
       "en": "Personally, I prefer town to the countryside.",
       "fi": "Personligen föredrar jag stan framför landet."
+    },
+    {
+      "id": "in-conclusion",
+      "en": "In conclusion, I feel most at home in town.",
+      "fi": "Sammanfattningsvis trivs jag bäst i stan."
     }
   ],
   "missionPlan": {
@@ -251,10 +253,10 @@
       "options": [
         "Near nature, outside the city",
         "In the city centre",
-        "Beside his office"
+        "In the flat in Hertonäs"
       ],
       "hint": "Listen for nära naturen.",
-      "explanation": "Alex wants a small house near nature outside the city."
+      "explanation": "Alex dreams of a small house near nature, just outside town. The Hertonäs flat was too small."
     },
     {
       "id": "sv-22-r2",
@@ -265,10 +267,10 @@
       "options": [
         "She can walk to work and does not need a car",
         "She wants to grow vegetables",
-        "She dislikes cafés"
+        "She and Mikko have a car, so everything is easy"
       ],
       "hint": "Listen for jobbet and bil.",
-      "explanation": "Elin can walk to work, everything is close, and she and Mikko do not need a car."
+      "explanation": "Elin can walk to work and everything is close. Mikko och jag har ingen bil: listen for ingen."
     }
   ],
   "sections": [
@@ -276,26 +278,27 @@
       "title": "Beskriv ditt idealiska hem · describe your ideal home",
       "kind": "scene",
       "body": [
-        "Mitt idealiska hem ligger … Begin with the place, then the kind of home, then the rooms or outdoor space that matter to you, then a reason.",
-        "Tillräckligt means enough. Put it before an adjective, and give the adjective its normal ending: lägenheten är tillräckligt stor (en-word), huset är tillräckligt stort (ett-word, and the teacher's Det är inte tillräckligt stort), rummen är tillräckligt stora (plural). Before a noun, say tillräckligt med: tillräckligt med plats.",
-        "Delvis means partly; mestadels means mostly. They stop an answer from sounding all-or-nothing. Delvis is also very useful in an argument: Jag håller delvis med (I partly agree).",
-        "En källare is a basement. Many blocks of flats in Finland have a källarförråd, a small storage room in the basement for bikes and winter things."
+        "Mitt idealiska hem ligger … Start with the place, then the kind of home, the space you need and a reason.",
+        "Ett idealiskt hem, but mitt idealiska hem: after a possessive such as mitt, the adjective takes -a, as in mitt nya jobb (Lecture 9).",
+        "Tillräckligt means enough, and it never changes. The adjective after it does (Lecture 5): lägenheten är tillräckligt stor, huset är tillräckligt stort, rummen är tillräckligt stora. Before a noun, say tillräckligt med: tillräckligt med plats.",
+        "Delvis means partly; mestadels (Lecture 4) means mostly. They stop an answer from sounding all-or-nothing.",
+        "Finland words: ett egnahemshus is a detached house (Finnish omakotitalo; in Sweden en villa). Many blocks of flats have a källarförråd, a storage room in the källare (basement) for bikes and winter things."
       ],
       "examples": [
         {
-          "fi": "Mitt idealiska hem är ett ljust radhus nära havet.",
-          "en": "My ideal home is a bright terraced house near the sea.",
-          "note": "Kind of home, then place."
+          "fi": "Mitt idealiska hem är ett litet egnahemshus nära Noux nationalpark.",
+          "en": "My ideal home is a small detached house near Nuuksio National Park.",
+          "note": "After mitt: idealiska with -a."
         },
         {
-          "fi": "Lägenheten är inte tillräckligt stor för oss.",
-          "en": "The flat is not big enough for us.",
-          "note": "Lägenheten is an en-word, so stor."
+          "fi": "Lägenheten är inte tillräckligt stor. Det finns inte tillräckligt med plats för ett skrivbord.",
+          "en": "The flat is not big enough. There is not enough room for a desk.",
+          "note": "Tillräckligt + adjective, then tillräckligt med + noun."
         },
         {
-          "fi": "Det är tillräckligt stort för min familj.",
-          "en": "It is big enough for my family.",
-          "note": "Det, huset or hemmet: stort with -t."
+          "fi": "Huset är tillräckligt stort, och rummen är tillräckligt stora.",
+          "en": "The house is big enough, and the rooms are big enough.",
+          "note": "Ett-word: stort. Plural: stora."
         },
         {
           "fi": "Jag arbetar delvis hemifrån, så jag behöver ett arbetsrum.",
@@ -313,47 +316,118 @@
           "note": "Place first, so the verb finns comes next."
         }
       ],
-      "memoryTip": "Build outward: place → home → useful detail → reason. Check the ending after tillräckligt: stor, stort or stora?",
-      "tryIt": "Say four lines about a real or imagined home. Include tillräckligt and one reason.",
-      "activity": {
-        "type": "match",
-        "label": "Home builder",
-        "title": "Match each beginning to a natural ending",
-        "instructions": "Build useful lines about an ideal home.",
-        "pairs": [
-          {
-            "left": "Lägenheten är tillräckligt stor",
-            "right": "för två personer och en hund."
-          },
-          {
-            "left": "Jag arbetar delvis hemifrån,",
-            "right": "så jag behöver ett lugnt arbetsrum."
-          },
-          {
-            "left": "Området är mestadels lugnt,",
-            "right": "men bussen till centrum går ofta."
-          },
-          {
-            "left": "Jag vill ha en källare",
-            "right": "eftersom jag behöver ett förråd för cykeln."
-          }
-        ],
-        "leftLabel": "Point",
-        "rightLabel": "Detail, reason or contrast",
-        "pattern": "Say the complete idea, then explain how its second part supports the first.",
-        "sentence": "{left} {right}"
-      }
+      "memoryTip": "Place → home → space → reason. After tillräckligt, check the noun: stor, stort or stora?",
+      "tryIt": "Say four lines about your ideal home. Include tillräckligt and one reason with eftersom.",
+      "activities": [
+        {
+          "type": "sort",
+          "label": "Stor, stort or stora?",
+          "title": "Give the adjective its ending",
+          "instructions": "Read the meaning, then choose the form the gap needs. Ask: en-word, ett-word, plural, or after mitt?",
+          "buckets": [
+            {
+              "id": "base",
+              "label": "No ending",
+              "hint": "en-word: stor, idealisk"
+            },
+            {
+              "id": "t",
+              "label": "+ t",
+              "hint": "ett-word: stort, idealiskt"
+            },
+            {
+              "id": "a",
+              "label": "+ a",
+              "hint": "plural, or after mitt: stora, idealiska"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Lägenheten är tillräckligt ___. (stor)",
+              "en": "The flat is big enough.",
+              "bucket": "base",
+              "why": "Lägenhet is an en-word: stor."
+            },
+            {
+              "fi": "Huset är inte tillräckligt ___. (stor)",
+              "en": "The house is not big enough.",
+              "bucket": "t",
+              "why": "Hus is an ett-word: stort, as in the teacher's Det är inte tillräckligt stort."
+            },
+            {
+              "fi": "Rummen är tillräckligt ___. (stor)",
+              "en": "The rooms are big enough.",
+              "bucket": "a",
+              "why": "Rummen is plural: stora."
+            },
+            {
+              "fi": "Mitt ___ hem ligger nära havet. (idealisk)",
+              "en": "My ideal home is near the sea.",
+              "bucket": "a",
+              "why": "After mitt the adjective takes -a, even with an ett-word: mitt idealiska hem, like mitt nya jobb (Lecture 9)."
+            },
+            {
+              "fi": "Ett ___ hem har en bastu. (idealisk)",
+              "en": "An ideal home has a sauna.",
+              "bucket": "t",
+              "why": "Ett hem with no possessive: idealiskt."
+            },
+            {
+              "fi": "Området är mestadels ___. (lugn)",
+              "en": "The area is mostly quiet.",
+              "bucket": "t",
+              "why": "Område is an ett-word: lugnt."
+            },
+            {
+              "fi": "Balkongen är inte tillräckligt ___. (stor)",
+              "en": "The balcony is not big enough.",
+              "bucket": "base",
+              "why": "Balkong is an en-word: stor."
+            }
+          ],
+          "summary": "Tillräckligt never changes. The adjective after it follows the noun: stor, stort or stora."
+        },
+        {
+          "type": "match",
+          "label": "Home builder",
+          "title": "Match each beginning to a natural ending",
+          "instructions": "Build useful lines about an ideal home.",
+          "pairs": [
+            {
+              "left": "Lägenheten är tillräckligt stor",
+              "right": "för två personer och en hund."
+            },
+            {
+              "left": "Jag arbetar delvis hemifrån,",
+              "right": "så jag behöver ett lugnt arbetsrum."
+            },
+            {
+              "left": "Området är mestadels lugnt,",
+              "right": "men bussen till centrum går ofta."
+            },
+            {
+              "left": "Jag vill ha en källare",
+              "right": "eftersom jag behöver ett förråd för cykeln."
+            }
+          ],
+          "leftLabel": "Point",
+          "rightLabel": "Detail, reason or contrast",
+          "pattern": "Say the complete idea, then explain how its second part supports the first.",
+          "sentence": "{left} {right}"
+        }
+      ]
     },
     {
       "title": "Bygg en argumenterande text · build an opinion text",
       "kind": "rule",
       "body": [
-        "A short argumentative text has three parts. The introduction names the issue and your view. The body gives reasons, examples and the other side. The conclusion returns to your view.",
-        "In the YKI writing test (intermediate level), one task can be an insändare: a short opinion letter to a newspaper. You must say what you write about, give your view and support it in at least three ways. Give it a short headline and sign it at the end.",
-        "Start with Många tycker att …, then show your position: Jag håller med, Jag håller delvis med or Jag håller inte med. Enligt mig … adds your own view.",
-        "In the body, För det första … För det andra … Dessutom … lists your reasons. Å ena sidan … å andra sidan … weighs two sides. En nackdel är att … admits a problem.",
-        "Word order trap: after a linking word at the start, the verb comes next (V2). Å andra sidan måste man pendla, not Å andra sidan man måste. The same goes for Dessutom, Därför, Enligt mig, Personligen and Sammanfattningsvis. Men, och and så do not move the verb.",
-        "To end, use Sammanfattningsvis … or Till sist tycker jag att … (as in the class handout). Till slut means in the end, after something took time: Till slut hittade jag en lägenhet. Personligen … gives your final view."
+        "An opinion text has three parts, as on the class handout. Inledning: the issue and your position. Argument: reasons, good and bad points, examples. Avslutning: your view again.",
+        "Inledning: Många tycker att … Then your position: Jag håller med, Jag håller delvis med or Jag håller inte med (Lecture 12). Enligt mig … (Lecture 17) adds your own view.",
+        "Argument: För det första …, För det andra … and Dessutom … list reasons. Några av fördelarna är … and En nackdel är att … (Lecture 20) name good and bad points. Å ena sidan … å andra sidan … weighs them.",
+        "Avslutning: start with Sammanfattningsvis … or Till sist tycker jag att … and give your final view, for example Personligen föredrar jag X framför Y. Till slut (Lecture 8) is the last step of a story, so it does not close an argument.",
+        "Trap 1: a linking word at the start takes first place, so the verb comes next (Lecture 20): Dessutom är hyran lägre, not Dessutom hyran är. Men, och and så are different (Lecture 18).",
+        "Trap 2: föredrar stan framför landet, never än. “Prefer tea than coffee”, common in Indian English, and Hindi से (se, than) lead to än. Än only follows a comparative: Stan är bättre än landet (Lecture 12).",
+        "YKI: at basic level the opinion task is a short survey answer: what is good, what is bad, and why. At intermediate level it is a longer opinion piece (100–150 words, the teacher's Lesson 23). Both use these three parts."
       ],
       "examples": [
         {
@@ -367,19 +441,24 @@
           "note": "Enligt mig first, so är comes next."
         },
         {
+          "fi": "För det första kan jag gå till jobbet. För det andra bor mina vänner nära. Dessutom finns det mycket att göra.",
+          "en": "First, I can walk to work. Second, my friends live nearby. Also, there is a lot to do.",
+          "note": "Three reasons; the verb comes second each time."
+        },
+        {
+          "fi": "Några av fördelarna är frisk luft och lugn och ro.",
+          "en": "Some of the advantages are fresh air and peace and quiet.",
+          "note": "The teacher's frame: + nouns, or + att + a clause."
+        },
+        {
           "fi": "Å ena sidan är hyran ofta lägre. Å andra sidan måste många pendla.",
           "en": "On the one hand the rent is often lower. On the other hand many people have to commute.",
-          "note": "Two real sides; the verb comes second each time."
+          "note": "Two real sides."
         },
         {
           "fi": "En nackdel är att bussarna inte går så ofta.",
           "en": "One disadvantage is that the buses do not run very often.",
-          "note": "After att, inte stands before går."
-        },
-        {
-          "fi": "För det första kan jag gå till jobbet. För det andra bor mina vänner nära. Dessutom finns det mycket att göra.",
-          "en": "First, I can walk to work. Second, my friends live nearby. Also, there is a lot to do.",
-          "note": "Three reasons, as YKI asks for."
+          "note": "After att, inte stands before går (Lecture 19)."
         },
         {
           "fi": "Sammanfattningsvis föredrar jag stan framför landet.",
@@ -387,85 +466,170 @@
           "note": "Föredra X framför Y: a clear final view."
         }
       ],
-      "memoryTip": "Intro: issue + view. Body: three reasons + the other side. End: your view again. After a linking word: verb next.",
+      "memoryTip": "Inledning: issue + position. Argument: good and bad points, each with a reason. Avslutning: Sammanfattningsvis + your view.",
       "tryIt": "Say: Många tycker att det är dyrt att bo i Helsingfors. Then agree, partly agree or disagree, and give one reason with För det första.",
-      "activity": {
-        "type": "sort",
-        "label": "Text structure",
-        "title": "Where does each sentence belong?",
-        "instructions": "Sort the lines into introduction, body or conclusion.",
-        "buckets": [
-          {
-            "id": "intro",
-            "label": "Introduction",
-            "hint": "Issue and view"
-          },
-          {
-            "id": "body",
-            "label": "Body",
-            "hint": "Reasons, sides and examples"
-          },
-          {
-            "id": "end",
-            "label": "Conclusion",
-            "hint": "Final personal position"
-          }
-        ],
-        "items": [
-          {
-            "fi": "Många tycker att det är bättre att bo i stan.",
-            "en": "Many think it is better to live in town.",
-            "bucket": "intro",
-            "why": "It introduces the issue."
-          },
-          {
-            "fi": "Jag håller inte med.",
-            "en": "I disagree.",
-            "bucket": "intro",
-            "why": "It states the writer's position right after the issue."
-          },
-          {
-            "fi": "För det första är hyran lägre på landet.",
-            "en": "First, the rent is lower in the countryside.",
-            "bucket": "body",
-            "why": "It gives the first reason."
-          },
-          {
-            "fi": "Å andra sidan finns det färre arbetsmöjligheter.",
-            "en": "On the other hand there are fewer job opportunities.",
-            "bucket": "body",
-            "why": "It shows the other side."
-          },
-          {
-            "fi": "Sammanfattningsvis passar landet mig bäst.",
-            "en": "In conclusion, the countryside suits me best.",
-            "bucket": "end",
-            "why": "It sums up and returns to the writer's view."
-          }
-        ],
-        "summary": "Each part has one clear job: introduce, support, conclude."
-      }
+      "activities": [
+        {
+          "type": "sort",
+          "label": "Text structure",
+          "title": "Where does each sentence belong?",
+          "instructions": "Sort the lines of one opinion text into its three parts.",
+          "buckets": [
+            {
+              "id": "intro",
+              "label": "Inledning",
+              "hint": "Issue and position"
+            },
+            {
+              "id": "body",
+              "label": "Argument",
+              "hint": "Reasons, sides and examples"
+            },
+            {
+              "id": "end",
+              "label": "Avslutning",
+              "hint": "Final view"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Många tycker att det är bättre att bo i stan.",
+              "en": "Many think it is better to live in town.",
+              "bucket": "intro",
+              "why": "It introduces the issue."
+            },
+            {
+              "fi": "Jag håller inte med.",
+              "en": "I disagree.",
+              "bucket": "intro",
+              "why": "It states the writer's position right after the issue."
+            },
+            {
+              "fi": "För det första är hyran lägre på landet.",
+              "en": "First, the rent is lower in the countryside.",
+              "bucket": "body",
+              "why": "It gives the first reason."
+            },
+            {
+              "fi": "Till exempel kan man odla sin egen mat.",
+              "en": "For example, you can grow your own food.",
+              "bucket": "body",
+              "why": "An example supports a reason, so it belongs in the argument."
+            },
+            {
+              "fi": "Å andra sidan finns det färre arbetsmöjligheter.",
+              "en": "On the other hand there are fewer job opportunities.",
+              "bucket": "body",
+              "why": "It shows the other side."
+            },
+            {
+              "fi": "Sammanfattningsvis passar landet mig bäst.",
+              "en": "In conclusion, the countryside suits me best.",
+              "bucket": "end",
+              "why": "It sums up and returns to the writer's view."
+            }
+          ],
+          "summary": "Each part has one job: introduce, support, conclude."
+        },
+        {
+          "type": "sort",
+          "label": "Right or needs a fix?",
+          "title": "Find the typical errors",
+          "instructions": "Each card is a line from a learner's opinion text. Is it right, or does it need a fix? Say the correct version before you go on.",
+          "audio": false,
+          "buckets": [
+            {
+              "id": "ok",
+              "label": "Right",
+              "hint": "Correct Swedish"
+            },
+            {
+              "id": "fix",
+              "label": "Needs a fix",
+              "hint": "Word order or a wrong word"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Å andra sidan man måste pendla.",
+              "en": "On the other hand, you have to commute.",
+              "bucket": "fix",
+              "why": "After Å andra sidan the verb comes next: Å andra sidan måste man pendla (Lecture 20)."
+            },
+            {
+              "fi": "Dessutom är hyran lägre på landet.",
+              "en": "Also, the rent is lower in the countryside.",
+              "bucket": "ok",
+              "why": "Dessutom takes first place, then the verb är."
+            },
+            {
+              "fi": "Jag föredrar stan än landet.",
+              "en": "I prefer town to the countryside.",
+              "bucket": "fix",
+              "why": "Föredra X framför Y: Jag föredrar stan framför landet."
+            },
+            {
+              "fi": "Stan är bättre än landet för mig.",
+              "en": "Town is better than the countryside for me.",
+              "bucket": "ok",
+              "why": "Bättre is a comparative, so än is right here (Lecture 12)."
+            },
+            {
+              "fi": "Jag vill bo i landet, nära naturen.",
+              "en": "I want to live in the countryside, near nature.",
+              "bucket": "fix",
+              "why": "In the countryside is på landet (Lecture 5). I landet means in the country, such as Finland."
+            },
+            {
+              "fi": "En nackdel är att bussarna går inte ofta.",
+              "en": "One disadvantage is that the buses do not run often.",
+              "bucket": "fix",
+              "why": "After att, inte comes before the verb: att bussarna inte går ofta (Lecture 19)."
+            },
+            {
+              "fi": "Det finns mycket bilar i centrum.",
+              "en": "There are a lot of cars in the centre.",
+              "bucket": "fix",
+              "why": "In writing, use många with a plural: många bilar (Lecture 7). Mycket goes with buller, trafik and folk."
+            },
+            {
+              "fi": "Jag håller delvis med.",
+              "en": "I partly agree.",
+              "bucket": "ok",
+              "why": "Delvis stands where inte stands: after håller, before med."
+            }
+          ],
+          "summary": "Before you hand in: verb second after a linking word, framför after föredrar, inte before the verb after att."
+        }
+      ]
     },
     {
       "title": "Stan eller landet? Ge konkreta skäl · city or countryside? give real reasons",
       "kind": "scene",
       "body": [
-        "På landet finns ofta frisk luft, lugn och ro och natur nära hemmet. These are possible advantages of country life. Possible difficulties include long journeys, few shops and buses that do not run often.",
-        "I stan finns kollektivtrafik, kulturliv och många arbetsmöjligheter. These are possible advantages of city life. Possible drawbacks include noise, a lot of traffic, high rent and less nature.",
-        "Do not only list words. Turn each point into a sentence, explain its effect and add an example: Det finns bra kollektivtrafik. Därför behöver jag ingen bil. Till exempel går tåget var tionde minut.",
-        "Dock and emellertid both mean however and suit careful writing. Men is simpler and fine in speech and writing. Dock usually comes after the verb: Hyran är dock hög.",
-        "Careful with tung trafik: it means heavy vehicles, such as lorries. For a lot of cars, say mycket trafik or tät trafik."
+        "Landet. Fördelar: frisk luft, lugn och ro, naturen nära, större hus. Nackdelar: man måste pendla, det finns få affärer och bussarna går sällan.",
+        "Stan. Fördelar: allt är nära, bra kollektivtrafik, kulturliv och många arbetsmöjligheter. Nackdelar: mycket buller, tät trafik, hög hyra och lite natur.",
+        "Mycket or många (Lecture 7)? Mycket with what you cannot count: mycket buller, mycket trafik, mycket folk. Många with a plural: många affärer, många bilar.",
+        "The preposition matters: på landet means in the countryside (Lecture 5); i landet means in the country, such as Finland.",
+        "Do not only list. Answer “so what?” with så, därför (Lecture 21) or an example: Det finns bra kollektivtrafik. Därför behöver jag ingen bil. Till exempel går bussen var tionde minut.",
+        "Dock and emellertid mean however and suit writing; men is fine everywhere. Dock comes after the verb: Hyran är dock hög.",
+        "Tung trafik means heavy vehicles, such as lorries. For a lot of cars, say mycket trafik or tät trafik."
       ],
       "examples": [
         {
           "fi": "På landet är luften ofta friskare och man kan odla sin egen mat.",
-          "en": "In the countryside the air is often fresher and one can grow one’s own food.",
+          "en": "In the countryside the air is often fresher and you can grow your own food.",
           "note": "Two linked advantages."
         },
         {
           "fi": "Bussarna går inte ofta, så man kan behöva en bil.",
-          "en": "Buses do not run often, so one may need a car.",
+          "en": "Buses do not run often, so you may need a car.",
           "note": "Problem plus consequence."
+        },
+        {
+          "fi": "I stan finns det många affärer, men också mycket folk.",
+          "en": "In town there are many shops, but also a lot of people.",
+          "note": "Många + plural; mycket + something you cannot count."
         },
         {
           "fi": "I stan är allt nära och kollektivtrafiken fungerar bra.",
@@ -496,8 +660,8 @@
             "right": "så jag behöver ingen bil."
           },
           {
-            "left": "Det är långt till affärerna.",
-            "right": "Därför måste många planera sina inköp."
+            "left": "Det är långt till affärerna,",
+            "right": "så många behöver en bil."
           },
           {
             "left": "Det finns mycket trafik,",
@@ -518,31 +682,73 @@
   "guided": [
     {
       "id": "sv-22-g1",
-      "prompt": "Det är inte ___ stort för hela familjen.",
+      "prompt": "The house is big enough: Huset är tillräckligt ___.",
       "answers": [
-        "tillräckligt"
+        "stort"
       ],
       "options": [
-        "tillräckligt",
-        "mestadels",
-        "delvis"
+        "stort",
+        "stor",
+        "stora"
       ],
-      "hint": "Not big enough.",
-      "explanation": "Tillräckligt stort means big enough."
+      "hint": "Hus is an ett-word.",
+      "explanation": "Tillräckligt never changes; the adjective after it does. Hus is an ett-word, so stort, as in Huset är stort (Lecture 5)."
     },
     {
       "id": "sv-22-g2",
-      "prompt": "I work partly from home: Jag arbetar ___ hemifrån.",
+      "prompt": "Alex works mostly from home: Han arbetar ___ hemifrån.",
       "answers": [
-        "delvis"
+        "mestadels"
       ],
       "options": [
+        "mestadels",
         "delvis",
-        "framför",
-        "enligt"
+        "tillräckligt"
       ],
-      "hint": "Partly, not mostly.",
-      "explanation": "Delvis means partly."
+      "hint": "Mostly, not partly.",
+      "explanation": "Mestadels means mostly; you met it in Lecture 4 (Jag jobbar mestadels hemifrån). Delvis means partly."
+    },
+    {
+      "id": "sv-22-g9",
+      "prompt": "I want to live in the countryside: Jag vill bo ___.",
+      "answers": [
+        "på landet"
+      ],
+      "options": [
+        "på landet",
+        "i landet",
+        "på land"
+      ],
+      "hint": "Which preposition did Lecture 5 use for the countryside?",
+      "explanation": "På landet means in the countryside (Lecture 5). I landet means in the country, such as Finland. På land, without -et, means on land, not at sea."
+    },
+    {
+      "id": "sv-22-g7",
+      "prompt": "I stan finns det ___ affärer och ___ buller.",
+      "answers": [
+        "många … mycket"
+      ],
+      "options": [
+        "många … mycket",
+        "mycket … många",
+        "många … många"
+      ],
+      "hint": "Can you count it?",
+      "explanation": "Affärer is a plural you can count: många. Buller cannot be counted: mycket (Lecture 7). English “a lot of” covers both."
+    },
+    {
+      "id": "sv-22-g4",
+      "prompt": "Många tycker att stan är stressig. You agree only partly:",
+      "answers": [
+        "Jag håller delvis med."
+      ],
+      "options": [
+        "Jag håller delvis med.",
+        "Jag delvis håller med.",
+        "Delvis jag håller med."
+      ],
+      "hint": "Where does inte go in Jag håller inte med?",
+      "explanation": "Delvis stands where inte stands: after the verb håller, before med (Jag håller inte med, Lecture 12)."
     },
     {
       "id": "sv-22-g3",
@@ -552,25 +758,11 @@
       ],
       "options": [
         "Å andra sidan",
-        "Tillräckligt",
-        "På grund av"
+        "På andra sidan",
+        "Till slut"
       ],
       "hint": "Give the other side.",
-      "explanation": "Å ena sidan pairs with å andra sidan."
-    },
-    {
-      "id": "sv-22-g4",
-      "prompt": "Choose a clear position: Många tycker att landet är tråkigt. ___.",
-      "answers": [
-        "Jag håller inte med"
-      ],
-      "options": [
-        "Jag håller inte med",
-        "Några av fördelarna",
-        "Mestadels"
-      ],
-      "hint": "Disagree with the claim.",
-      "explanation": "Jag håller inte med clearly states disagreement. Jag håller delvis med would mean you partly agree."
+      "explanation": "Å ena sidan pairs with å andra sidan (Lecture 20). På andra sidan means on the other side of a place, such as a street."
     },
     {
       "id": "sv-22-g5",
@@ -580,11 +772,11 @@
       ],
       "options": [
         "framför",
-        "för",
-        "enligt"
+        "än",
+        "för"
       ],
       "hint": "Prefer X to Y.",
-      "explanation": "Föredra X framför Y is the fixed pattern."
+      "explanation": "Föredra X framför Y is the fixed pattern. Än (from “prefer … than” or Hindi से) only follows a comparative: bättre än (Lecture 12)."
     },
     {
       "id": "sv-22-g6",
@@ -598,7 +790,16 @@
         "Dessutom lägre är hyran på landet."
       ],
       "hint": "After a linking word at the start, what comes next?",
-      "explanation": "Dessutom fills the first place, so the verb är comes second, then the subject hyran."
+      "explanation": "Dessutom fills the first place, so the verb är comes second, then the subject hyran (Lecture 10: Dessutom har jag …)."
+    },
+    {
+      "id": "sv-22-g8",
+      "prompt": "Fix the word order: Sammanfattningsvis jag föredrar landet.",
+      "answers": [
+        "Sammanfattningsvis föredrar jag landet."
+      ],
+      "hint": "What comes straight after the linking word?",
+      "explanation": "Sammanfattningsvis takes first place, so the verb föredrar comes next, then jag. It is the same rule as Därför cyklar jag (Lecture 21)."
     }
   ],
   "checkpoint": [
@@ -608,10 +809,11 @@
       "answers": [
         "Mitt idealiska hem är tillräckligt stort för min familj.",
         "Mitt drömhem är tillräckligt stort för min familj.",
-        "Mitt idealiska hem är stort nog för min familj."
+        "Mitt idealiska hem är stort nog för min familj.",
+        "Mitt drömhem är stort nog för min familj."
       ],
       "hint": "Mitt idealiska hem är …",
-      "explanation": "Model: Mitt idealiska hem är tillräckligt stort för min familj."
+      "explanation": "Model: Mitt idealiska hem är tillräckligt stort för min familj. After mitt: idealiska (Lecture 9); hem is an ett-word: stort."
     },
     {
       "id": "sv-22-c2",
@@ -622,7 +824,7 @@
         "Å andra sidan finns det mycket oljud."
       ],
       "hint": "Å andra sidan + verb + det …",
-      "explanation": "Model: Å andra sidan finns det mycket buller. The verb finns comes straight after Å andra sidan."
+      "explanation": "Model: Å andra sidan finns det mycket buller. The verb finns comes straight after Å andra sidan (Lecture 20), and buller takes mycket (Lecture 7)."
     },
     {
       "id": "sv-22-c3",
@@ -633,10 +835,10 @@
       "options": [
         "En nackdel är att bussarna inte går ofta.",
         "En nackdel är att bussarna går inte ofta.",
-        "En nackdel att inte bussarna går ofta."
+        "En nackdel är att inte bussarna går ofta."
       ],
       "hint": "After att: subject + inte + verb.",
-      "explanation": "In the dependent clause, inte comes before går."
+      "explanation": "After att: subject, then inte, then the verb (Lecture 19): att bussarna inte går."
     },
     {
       "id": "sv-22-c4",
@@ -647,18 +849,44 @@
         "Personligen föredrar jag stan framför landsbygden."
       ],
       "hint": "föredrar X framför Y",
-      "explanation": "Model: Personligen föredrar jag stan framför landet."
+      "explanation": "Model: Personligen föredrar jag stan framför landet. Föredra takes framför, never än."
+    },
+    {
+      "id": "sv-22-c5",
+      "prompt": "Write in Swedish: “I partly agree, because the rent is high.”",
+      "answers": [
+        "Jag håller delvis med eftersom hyran är hög.",
+        "Jag håller delvis med, eftersom hyran är hög.",
+        "Jag håller delvis med för hyran är hög.",
+        "Jag håller delvis med därför att hyran är hög."
+      ],
+      "hint": "Delvis goes where inte goes. Eftersom + subject + verb.",
+      "explanation": "Model: Jag håller delvis med eftersom hyran är hög. Eftersom gives the reason (Lecture 19); för and därför att are also right."
+    },
+    {
+      "id": "sv-22-c6",
+      "prompt": "Which sentence is correct?",
+      "answers": [
+        "Rummen är tillräckligt stora."
+      ],
+      "options": [
+        "Rummen är tillräckligt stora.",
+        "Rummen är tillräckligt stort.",
+        "Rummen är tillräckliga stora."
+      ],
+      "hint": "Rummen is plural. Does tillräckligt change?",
+      "explanation": "Rummen is plural, so stora. Tillräckligt itself never changes."
     }
   ],
   "assignment": {
     "title": "Lecture 22 mission: Mitt idealiska hem och min åsikt",
-    "instructions": "CORE: Describe your ideal home in six to eight connected lines. Include its location, enough space, two reasons and one disadvantage.\n\nWRITE: Answer “Är det bättre att bo i stan eller på landet?” as a short insändare: headline, your view, three reasons, the other side, a conclusion and a signature.\n\nRETURN: Tomorrow, give the same opinion from memory but replace one reason.",
-    "model": "Mitt idealiska hem ligger nära havet utanför Helsingfors. Det är ett ljust radhus med en liten trädgård. Det är tillräckligt stort för min familj och jag kan arbeta delvis hemifrån. Området är mestadels lugnt. Jag vill bo där eftersom naturen ligger nära. Dessutom går det en buss till centrum. En nackdel är att resan till jobbet tar ganska lång tid."
+    "instructions": "CORE: Tell about your ideal home for about a minute: where it is, what it looks like, the rooms, two reasons and one disadvantage.\n\nWRITE: Answer the survey “Är det bättre att bo i stan eller på landet?”: your position, three good points and two bad points, each with a reason, and a conclusion.\n\nRETURN: Tomorrow, give the same opinion from memory but replace one reason.",
+    "model": "Mitt idealiska hem ligger i Borgå, nära ån. Det är ett gammalt trähus med en stor trädgård. Huset är tillräckligt stort för gäster, och köket är ljust. Jag arbetar delvis hemifrån, så jag behöver ett arbetsrum. Området är mestadels lugnt. Jag vill bo där eftersom jag tycker om lugn och ro. Dessutom går bussen till Helsingfors ofta. En nackdel är att resan till jobbet tar en timme."
   },
   "takeaways": [
-    "Describe the place and useful details, then explain them: tillräckligt stor/stort/stora, delvis, mestadels.",
-    "An insändare has an introduction (issue and view), at least three reasons plus the other side, and a conclusion.",
-    "After Å ena sidan, Å andra sidan, Dessutom or Sammanfattningsvis the verb comes next."
+    "Mitt idealiska hem: -a after mitt. Tillräckligt never changes, but the adjective does: stor, stort, stora.",
+    "An opinion text: Många tycker att … + your position, good and bad points with reasons, then Sammanfattningsvis …",
+    "After a linking word the verb comes next, and föredra takes framför, never än."
   ],
   "dialogue": [
     {
@@ -668,8 +896,8 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Inte än. Lägenheten som jag såg var inte tillräckligt stor.",
-      "en": "Not yet. The flat I saw was not big enough."
+      "fi": "Inte än. Lägenheten i Hertonäs var inte tillräckligt stor.",
+      "en": "Not yet. The flat in Herttoniemi was not big enough."
     },
     {
       "speaker": "Elin",
@@ -698,8 +926,8 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Jag håller inte med. På landet är det mestadels lugnt och luften är friskare.",
-      "en": "I disagree. In the countryside it is mostly quiet and the air is fresher."
+      "fi": "Jag håller inte med. Jag vill bo nära naturen. På landet är det lugnt och luften är friskare.",
+      "en": "I disagree. I want to live near nature. In the countryside it is quiet and the air is fresher."
     },
     {
       "speaker": "Elin",
@@ -723,8 +951,18 @@
     },
     {
       "speaker": "Elin",
-      "fi": "Då förstår jag ditt val. Våra idealiska hem är bara olika.",
-      "en": "Then I understand your choice. Our ideal homes are simply different."
+      "fi": "Då förstår jag ditt val. Men nu letar du efter en tvåa, eller hur?",
+      "en": "Then I understand your choice. But right now you are looking for a two-room flat, aren't you?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Ja, i verkligheten. Den ska vara tillräckligt stor för ett skrivbord, och huset ska ha ett förråd för cykeln.",
+      "en": "Yes, in real life. It has to be big enough for a desk, and the building has to have a storage room for the bike."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Bra! Då har du både en dröm och en plan.",
+      "en": "Good! Then you have both a dream and a plan."
     }
   ],
   "resources": [
@@ -734,9 +972,14 @@
       "description": "Check one opinion word, such as föredra, fördel or nackdel, then use it in your own sentence."
     },
     {
+      "label": "YKI practice site: Swedish, basic-level writing (University of Jyväskylä)",
+      "url": "https://ykitesti.solki.jyu.fi/tutustu-testiin/svenska/grundniva-skriftlig-framstallning/",
+      "description": "Read task 3, Respons: a survey answer with at least three good points and two bad points, each with a reason. That is this lecture's writing task."
+    },
+    {
       "label": "YKI practice site: Swedish, intermediate writing (University of Jyväskylä)",
       "url": "https://ykitesti2.solki.jyu.fi/ykitesti2/web/en/tutustu-testiin/svenska/mellanniva-skriftlig-framstallning/",
-      "description": "Read the real insändare task. Notice that it asks you to support your view in at least three ways."
+      "description": "Later goal: the insändare task asks you to support your view in at least three ways."
     }
   ],
   "practice": {
@@ -898,7 +1141,7 @@
         "fi": "å ena sidan",
         "en": "on the one hand",
         "example": "Å ena sidan är huset billigt.",
-        "translation": "On one hand the house is cheap.",
+        "translation": "On the one hand, the house is cheap.",
         "level": "A2"
       },
       {
@@ -980,14 +1223,30 @@
         "example": "Jag skriver en insändare till tidningen.",
         "translation": "I am writing a letter to the newspaper.",
         "level": "B1"
+      },
+      {
+        "id": "sv-22-word-31",
+        "fi": "ett egnahemshus",
+        "en": "a detached house (Finland-Swedish; in Sweden en villa)",
+        "example": "De bor i ett egnahemshus i Esbo.",
+        "translation": "They live in a detached house in Espoo.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-22-word-32",
+        "fi": "en enkät",
+        "en": "a survey; a questionnaire",
+        "example": "Jag svarar på en enkät om boende.",
+        "translation": "I am answering a survey about housing.",
+        "level": "A2"
       }
     ],
     "pronunciation": {
-      "text": "Mitt idealiska hem är tillräckligt stort. Å ena sidan är det lugnt. Å andra sidan måste jag pendla. Personligen föredrar jag landet framför stan.",
-      "tip": "Keep the long words in clear parts: till-räck-ligt, per-son-li-gen. Link Å ena sidan and Å andra sidan as complete chunks."
+      "text": "Hur ser ditt hem ut? Jag håller med. Jag håller inte med. Det är tillräckligt stort.",
+      "tip": "In a particle verb the small word takes the stress, as in tycker OM (Lecture 9): ser UT, håller MED. Inte stays light: jag håller inte MED. In tillräckligt the g is usually silent, as in roligt (Lecture 5): “tillräcklit”."
     },
     "reading_passage": {
-      "text": "Många tycker att livet på landet är bättre än livet i stan. Å ena sidan förstår jag den åsikten. På landet är det ofta lugnt, luften är friskare och naturen ligger nära. Ett hus kan också vara tillräckligt stort för en familj utan att hyran blir mycket hög. Den som har en trädgård kan odla grönsaker och barn får mer plats att leka. Å andra sidan finns det praktiska problem. Bussarna går inte alltid ofta, affärerna ligger långt bort och många måste pendla till jobbet. Nuförtiden kan en del människor arbeta hemifrån, men alla har inte den möjligheten. I stan finns fler arbetsmöjligheter, bra kollektivtrafik och ett rikt kulturliv. Det är lätt att träffa vänner, gå på museum eller prova en ny restaurang. Stan kan dock vara bullrig, och hyran är ofta hög. Personligen föredrar jag en liten stad framför både centrum och ren landsbygd. Där finns tillräckligt med service, men området är mestadels lugnt. För mig är den balansen viktigast.",
+      "text": "Det bästa av två världar\n\nMånga tycker att livet på landet är bättre än livet i stan. Å ena sidan förstår jag den åsikten. På landet är det ofta lugnt, luften är friskare och naturen ligger nära. Ett hus kan också vara tillräckligt stort för en familj utan att hyran blir mycket hög. Den som har en trädgård kan odla grönsaker, och barn får mer plats att leka. Å andra sidan finns det praktiska problem. Bussarna går sällan, affärerna ligger långt bort och många måste pendla till jobbet. Nuförtiden kan en del människor arbeta hemifrån, men alla har inte den möjligheten. I stan finns fler arbetsmöjligheter, bra kollektivtrafik och ett rikt kulturliv. Det är lätt att träffa vänner, gå på museum eller prova en ny restaurang. Stan kan dock vara bullrig, och hyran är ofta hög. Sammanfattningsvis föredrar jag en liten stad framför både centrum och ren landsbygd. Där finns tillräckligt med service, men området är mestadels lugnt. För mig är den balansen viktigast.\n\nSmåstadsbo i Borgå",
       "gist": {
         "prompt": "What place does the writer finally prefer?",
         "options": [
@@ -1002,69 +1261,69 @@
         "prompt": "What difficulty of country life does the writer mention?",
         "options": [
           "Many people must commute",
-          "There are too many museums",
-          "Homes are never large enough"
+          "The air is polluted",
+          "The rent is very high"
         ],
         "answer": 0,
-        "explanation": "The text says that many people must commute to work."
+        "explanation": "Många måste pendla till jobbet. The air is fresher in the countryside, and high rent is a problem in town."
       }
     },
     "reading": {
-      "text": "Många tycker att livet på landet är bättre än livet i stan. Å ena sidan förstår jag den åsikten. På landet är det ofta lugnt, luften är friskare och naturen ligger nära. Ett hus kan också vara tillräckligt stort för en familj utan att hyran blir mycket hög. Den som har en trädgård kan odla grönsaker och barn får mer plats att leka. Å andra sidan finns det praktiska problem. Bussarna går inte alltid ofta, affärerna ligger långt bort och många måste pendla till jobbet. Nuförtiden kan en del människor arbeta hemifrån, men alla har inte den möjligheten. I stan finns fler arbetsmöjligheter, bra kollektivtrafik och ett rikt kulturliv. Det är lätt att träffa vänner, gå på museum eller prova en ny restaurang. Stan kan dock vara bullrig, och hyran är ofta hög. Personligen föredrar jag en liten stad framför både centrum och ren landsbygd. Där finns tillräckligt med service, men området är mestadels lugnt. För mig är den balansen viktigast.",
-      "question": "Why does a small town suit the writer?",
+      "text": "LJUS TVÅA UTHYRES I KVARNBÄCKEN\n\nTvåa på 48 kvadratmeter i ett lugnt område, fem minuter från metron. Lägenheten har ett sovrum, ett vardagsrum med plats för ett skrivbord, kök och badrum. Huset har hiss, bastu, tvättstuga och ett källarförråd för cyklar. Ingen balkong. Hyran är 890 euro per månad. Lägenheten är ledig från den första augusti. Ring eller skicka sms efter klockan 16: 050 123 4567.",
+      "question": "Why could this flat suit Alex?",
       "options": [
-        "It has enough services and is mostly quiet",
-        "It has no public transport",
-        "It has the most expensive rent"
+        "It has room for a desk and bike storage, and it is free from August",
+        "It has a big balcony and a garden",
+        "It is a small house near nature"
       ],
       "answer": 0,
-      "explanation": "Där finns tillräckligt med service, men området är mestadels lugnt."
+      "explanation": "Plats för ett skrivbord, ett källarförråd för cyklar, ledig från den första augusti: Alex's lease ends in August (Lecture 21). There is no balcony, and it is a flat, not his dream house."
     },
     "listening": {
-      "text": "Maja berättar om sitt idealiska hem. Hon vill bo i ett ljust trähus nära en sjö, men inte långt från en järnvägsstation. Huset behöver inte vara mycket stort. Det ska ha två sovrum, ett kök och ett arbetsrum, eftersom hon vill kunna studera hemma. En källare är inte nödvändig, men hon vill gärna ha ett förråd och en liten trädgård. Maja tycker om lugn och ro, så området ska vara mestadels tyst. Samtidigt vill hon kunna resa till stan utan bil. Å ena sidan lockar landet med frisk luft och natur. Å andra sidan vill hon inte vänta länge på en buss eller pendla två timmar varje dag. Därför väljer hon ett mindre samhälle nära tåget. En nackdel kan vara att det bara finns en mataffär. Hon tycker ändå att närheten till naturen är viktigare än många butiker och restauranger.",
+      "text": "Maja berättar om sitt idealiska hem. Just nu går hon en sommarkurs i kemi och bor med sin mamma och sin syster i en lägenhet i stan. Om några år vill hon bo i ett ljust trähus nära en sjö, men inte långt från en järnvägsstation. Huset behöver inte vara stort. Det ska ha ett sovrum, ett kök och ett arbetsrum, eftersom hon vill bli fotograf och arbeta med sina bilder hemma. En källare är inte nödvändig, men hon vill gärna ha ett förråd och en liten trädgård. Maja tycker om lugn och ro, så området ska vara mestadels tyst. Samtidigt vill hon kunna resa till stan utan bil. Å ena sidan lockar landet med frisk luft och natur. Å andra sidan vill hon inte vänta länge på en buss eller pendla två timmar varje dag. Därför väljer hon ett mindre samhälle nära tåget. En nackdel kan vara att det bara finns en mataffär. Hon tycker ändå att naturen är viktigare än många butiker och restauranger. Hennes mamma skrattar och säger: ”Då får du hälsa på oss i stan varje helg!”",
       "question": "Why does Maja want to live near a railway station?",
       "options": [
         "She wants to reach town without a car",
-        "She works on trains",
-        "She dislikes nature"
+        "She is happy to commute two hours a day",
+        "Her mother works at the station"
       ],
       "answer": 0,
-      "explanation": "She wants nature and quiet but also wants to travel to town without a car."
+      "explanation": "She wants nature and quiet, but she also wants to travel to town without a car. She does not want to commute two hours: vill inte … pendla."
     },
     "speaking": {
-      "prompt": "Describe your ideal home in six to eight lines. Give its location, important features, two reasons and one disadvantage.",
-      "help": "Mitt idealiska hem ligger … · Det är tillräckligt … · Jag arbetar delvis … · Området är mestadels … · eftersom … · En nackdel är att …",
-      "model": "Mitt idealiska hem ligger nära havet utanför Helsingfors. Det är ett ljust radhus med en liten trädgård. Det är tillräckligt stort för min familj och har ett arbetsrum. Jag arbetar delvis hemifrån, så rummet är viktigt. Området är mestadels lugnt, men tåget går ofta. Jag vill bo där eftersom naturen ligger nära. Dessutom kan jag resa till stan utan bil. En nackdel är att hyran kan vara hög."
+      "prompt": "Berätta om ditt idealiska hem. Du kan svara på frågorna: Var ligger det? Hur ser det ut? Vilka rum behöver du? Varför vill du bo där? Finns det någon nackdel? (Tell about your ideal home; the questions can guide you. As in the YKI berätta task, plan for one minute, then speak for about one minute.)",
+      "help": "Mitt idealiska hem ligger … · Det är ett … med … · Det är tillräckligt … · Jag arbetar delvis / mestadels … · Området är mestadels … · Jag vill bo där eftersom … · Dessutom … · En nackdel är att …",
+      "model": "Mitt idealiska hem ligger nära havet utanför Helsingfors. Det är ett ljust radhus med en liten trädgård. Det är tillräckligt stort för min familj och har ett arbetsrum. Jag arbetar delvis hemifrån, så rummet är viktigt. Området är mestadels lugnt, men tåget går ofta. Jag vill bo där eftersom naturen ligger nära. Dessutom kan jag resa till stan utan bil. En nackdel är att det kan vara ganska dyrt."
     },
     "writing": {
-      "prompt": "Write an insändare (a short opinion letter): Är det bättre att bo i stan eller på landet? Give it a headline, give your view with three reasons, show the other side and sign it.",
-      "situation": "A Swedish-language newspaper in Finland is collecting readers' opinions: is it better to live in town or in the countryside? Write a short insändare for its letters page.",
+      "prompt": "Svara på en enkät: Är det bättre att bo i stan eller på landet? Skriv vad som är bra och dåligt, och varför. (Answer a survey: is it better to live in town or in the countryside? Say what is good and bad, and why.)",
+      "situation": "Du får en enkät där man vill veta dina åsikter om boende: Är det bättre att bo i stan eller på landet? Svara på enkäten och skriv vad du tycker och varför. (You get a survey that asks your opinion about housing: town or countryside? Answer it and say what you think and why. This copies the YKI basic-level opinion task, and YKI gives its instructions in Swedish.)",
       "points": [
-        "Start with a short headline.",
-        "Say what you write about and whether you agree, partly agree or disagree with a common view.",
-        "Support your view in at least three ways (För det första …, För det andra …, Dessutom …).",
-        "Show the other side with Å andra sidan or En nackdel är att.",
-        "Finish with your conclusion (Sammanfattningsvis …) and sign with a short signature."
+        "Börja med vad många tycker och säg om du håller med. (Start with what many people think, then agree, partly agree or disagree.)",
+        "Skriv minst tre saker som är bra, och varför. (Give at least three good points, each with a reason.)",
+        "Skriv minst två saker som är dåliga, och varför. (Give at least two bad points, each with a reason.)",
+        "Avsluta med din åsikt: Sammanfattningsvis … (End with your view.)",
+        "Efter ett ordningsord kommer verbet: För det första är …, Dessutom finns … (After a linking word, put the verb next.)"
       ],
       "wordRange": [
-        80,
-        120
+        70,
+        110
       ],
-      "help": "Många tycker att … · Jag håller (delvis / inte) med. · Enligt mig … · För det första … · För det andra … · Dessutom … · Å andra sidan … · En nackdel är att … · Sammanfattningsvis … · Personligen föredrar jag … framför …",
-      "model": "Stan är bäst för mig\n\nMånga tycker att livet på landet är bättre än livet i stan. Jag håller inte med. För det första finns det bra kollektivtrafik i stan, så jag behöver ingen bil. För det andra finns det fler arbetsmöjligheter. Dessutom är det lätt att träffa vänner och gå på bio eller museum. Å andra sidan är hyran hög, och det finns mycket buller på grund av den täta trafiken. På landet är det lugnare och luften är friskare. Sammanfattningsvis föredrar jag ändå stan framför landet, eftersom allt är nära.\n\nStadsbo i Helsingfors"
+      "help": "Många tycker att … · Jag håller (delvis / inte) med. · Enligt mig … · För det första … · För det andra … · Dessutom … · så … · Därför … · eftersom … · Å andra sidan … · En annan nackdel är att … · Sammanfattningsvis föredrar jag … framför …",
+      "model": "Många tycker att livet på landet är bättre än livet i stan. Jag håller inte med. Enligt mig är det bekvämare att bo i stan.\n\nFör det första är allt nära, så jag kan promenera till jobbet. För det andra går metron och bussarna ofta. Därför behöver jag ingen bil. Dessutom finns det många kaféer och bibliotek, så det är lätt att träffa vänner.\n\nÅ andra sidan är hyran hög, eftersom många vill bo i stan. En annan nackdel är att det finns mycket buller på grund av den täta trafiken. Ibland är det svårt att sova.\n\nSammanfattningsvis föredrar jag ändå stan framför landet."
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Describe an ideal home in six to eight spoken lines, then write an 80–120-word insändare about town and countryside.",
-    "transferPrompt": "Give the same balanced argument about a different choice, such as flat or house, and change both examples.",
+    "expectedOutput": "Tell about your ideal home for about a minute, as in the YKI berätta task. Then answer a survey in writing: town or countryside, with three good points and two bad points, each with a reason (70–110 words).",
+    "transferPrompt": "Nu säger din vän: Många tycker att det är bättre att bo i stan. Håller du med? Svara med Jag håller med, Jag håller delvis med eller Jag håller inte med, och ge två skäl från ditt idealiska hem. (Your friend says many people think town is better. Give your position and two reasons from your ideal home.)",
     "returnPrompt": "Without looking, describe your ideal home and give one advantage of town and one of the countryside.",
     "successChecks": [
-      "Describe the ideal home with six to eight connected lines and two reasons.",
-      "Use tillräckligt, delvis or mestadels accurately.",
-      "Organise the writing with a headline, an introduction, three reasons, the other side and a conclusion.",
-      "State a clear personal view and support it with a concrete example.",
-      "Write 80–120 words and answer every point."
+      "Answer the guiding questions: where it is, what it looks like, which rooms, why, and one drawback.",
+      "Use tillräckligt with the right ending: stor, stort or stora.",
+      "Use delvis or mestadels.",
+      "Give two reasons with eftersom or dessutom, with the verb right after dessutom.",
+      "Speak for about a minute in connected lines."
     ],
     "requiredSkills": [
       "speaking",
