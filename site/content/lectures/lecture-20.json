@@ -5,7 +5,7 @@
     "Discuss work, stress and work–life balance.",
     "Weigh two sides with å ena sidan and å andra sidan.",
     "Order food, explain a dietary need and solve a restaurant problem.",
-    "Write a short argued paragraph about money and happiness."
+    "Answer a survey about money and happiness: two sides, each with a reason."
   ],
   "focusSkills": [
     "speaking",
@@ -22,7 +22,9 @@
     "verb-second",
     "negation",
     "reflexive",
-    "modal-verb"
+    "modal-verb",
+    "imperative",
+    "article"
   ],
   "presentation": {
     "template": "conversation-first",
@@ -39,14 +41,14 @@
     "opening": {
       "teacherNote": {
         "title": "Listen for the problem",
-        "body": "First catch why Elin is tired and what Alex needs at the restaurant."
+        "body": "First catch the two sides of Elin’s choice and what Alex needs at the restaurant."
       },
       "questionIntro": "Answer from the conversation.",
       "dialogue": {
         "part": "recall",
         "eyebrow": "START WITH THE STORY",
         "title": "Dinner after a long workday",
-        "instructions": "Listen once without text. Then open it and find the two sides of Elin’s choice.",
+        "instructions": "Listen once without text. Then open it and check the two sides of Elin’s choice.",
         "initiallyOpen": false
       }
     },
@@ -114,17 +116,17 @@
   "recall": [
     {
       "id": "sv-20-recall-work",
-      "prompt": "Why is Elin tired?",
+      "prompt": "What are the two sides of Elin’s choice?",
       "answers": [
-        "She has worked overtime all week."
+        "She likes her job, but she does not want to burn out."
       ],
       "options": [
-        "She has worked overtime all week.",
-        "She has travelled all week.",
-        "She is ill."
+        "She likes her job, but she does not want to burn out.",
+        "She likes her boss, but the pay is too low.",
+        "She wants more money, but she dislikes her colleague."
       ],
-      "hint": "Listen for jobbat över.",
-      "explanation": "Elin says that she has worked overtime all week."
+      "hint": "Listen for Å ena sidan … Å andra sidan …",
+      "explanation": "Å ena sidan gillar jag mitt jobb. Å andra sidan vill jag inte bli utbränd."
     },
     {
       "id": "sv-20-recall-food",
@@ -184,13 +186,18 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Ja, jag tar grönsakssoppan. Men jag tål inte gluten. Är brödet glutenfritt?",
-      "en": "Yes, I’ll have the vegetable soup. But I cannot tolerate gluten. Is the bread gluten-free?"
+      "fi": "Ja. Jag tål inte gluten. Är grönsakssoppan glutenfri?",
+      "en": "Yes. I cannot tolerate gluten. Is the vegetable soup gluten-free?"
     },
     {
       "speaker": "Servitör",
-      "fi": "Nej, men vi har glutenfritt knäckebröd. Allt med G på menyn är glutenfritt.",
-      "en": "No, but we have gluten-free crispbread. Everything marked G on the menu is gluten-free."
+      "fi": "Ja, men brödet är inte glutenfritt. Du kan få glutenfritt knäckebröd i stället. Allt med G på menyn är glutenfritt.",
+      "en": "Yes, but the bread is not gluten-free. You can have gluten-free crispbread instead. Everything marked G on the menu is gluten-free."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Bra, då tar jag soppan och knäckebröd, tack.",
+      "en": "Good, then I’ll have the soup and crispbread, please."
     },
     {
       "speaker": "Elin",
@@ -657,7 +664,7 @@
               {
                 "word": "sig",
                 "mark": "sig",
-                "rule": "Säga upp sig: resign. Sig changes with the person: jag säger upp mig, du säger upp dig."
+                "rule": "Säga upp sig: resign. Sig changes with the person: jag säger upp mig, du säger upp dig. Without sig, the employer säger upp you: you lose your job."
               },
               {
                 "word": "eget",
@@ -906,11 +913,11 @@
       "kind": "scene",
       "title": "Arbete, ansvar och hälsa · work, responsibility and health",
       "body": [
-        "Lön: pay. You tjänar (earn) it. Din arbetsgivare (your employer) has anställda (employees), and din chef is your boss. Heltid: full-time. Deltid: part-time. Flextid: you choose when your day starts and ends.",
-        "Too much work: jobba över (work overtime), en stor arbetsbörda (a heavy workload), bli utbränd (burn out). People also say gå in i väggen, “walk into the wall”. Prestera: perform, do well at work.",
-        "Time off: Jag är ledig på söndagar (I am off on Sundays). Semester is paid holiday; many people in Finland take it in July. Mammaledig, pappaledig and föräldraledig mean on parental leave. Gå i pension: retire.",
-        "Sick leave: in Sweden people say Jag är sjukskriven. In Finland you will also hear and read sjukledig; Kela’s Swedish pages use it. Both are understood.",
-        "Leaving a job: säga upp sig (resign) is your choice; få sparken (get fired) is not. Sig changes with the person: Jag ska säga upp mig. Du borde säga upp dig."
+        "Lön: pay. You tjänar (earn) it. Din arbetsgivare (your employer) has anställda (employees); din chef is your boss. Heltid: full-time. Deltid: part-time. Flextid: you choose when your day starts and ends.",
+        "Too much work: jobba över (work overtime), en stor arbetsbörda (a heavy workload), bli utbränd or gå in i väggen (burn out, “walk into the wall”). Prestera: perform, do well at work.",
+        "Time off: Jag är ledig på söndagar (I am off on Sundays). Semester is paid holiday; in Finland most people take it in July. Mammaledig, pappaledig, föräldraledig: on parental leave. Gå i pension: retire.",
+        "Sick leave: Jag är sjukskriven. In Finland you also hear and read sjukledig; Kela’s Swedish pages use it.",
+        "Säga upp sig (resign) is your choice; få sparken (get fired) is not. Sig changes with the person (Lecture 15): Jag ska säga upp mig. Du borde säga upp dig. Without sig, the employer ends the job: Företaget säger upp 20 anställda (lays off 20 employees)."
       ],
       "examples": [
         {
@@ -936,6 +943,10 @@
         {
           "fi": "Jag ska säga upp mig. Jag vill starta eget.",
           "en": "I am going to resign. I want to start my own business."
+        },
+        {
+          "fi": "Företaget måste spara pengar och säger upp tjugo anställda.",
+          "en": "The company has to save money and is laying off twenty employees."
         }
       ],
       "memoryTip": "Jobba över = extra hours. Arbetsbörda = how much work. Säga upp sig = you leave; få sparken = they make you leave.",
@@ -959,7 +970,7 @@
           {
             "id": "health",
             "label": "Health warning",
-            "hint": "what too much stress does"
+            "hint": "what too much work does to you"
           }
         ],
         "items": [
@@ -1025,14 +1036,20 @@
       "kind": "scene",
       "title": "Prata om ditt jobb · talking about your job",
       "body": [
-        "The teacher’s four questions are typical YKI speaking questions: Vad jobbar du med? Gillar du ditt jobb? Vad ogillar du med ditt jobb? Vad är bäst: distansarbete eller kontorsarbete?",
-        "Answer with a frame and a reason. Det som jag gillar med mitt jobb är att … (what I like about my job is that …). Jag ogillar när … (I dislike it when …). Then add eftersom + a reason.",
-        "English trap: you like something med a job, not om. Ogillar is gillar with o- for the opposite, like säker and osäker."
+        "Work and education is one of the YKI topic areas. The teacher’s four questions: Vad jobbar du med? Gillar du ditt jobb? Vad ogillar du med ditt jobb? Vad är bäst: distansarbete eller kontorsarbete?",
+        "Answer with a frame and a reason: Det som jag gillar med mitt jobb är att … Jag ogillar när … Then add eftersom + a reason (Lecture 19).",
+        "What you like about a job takes med (not om); about a person, hos (Lecture 17). Ogillar = dislike: o- makes the opposite, as in osäker (Lecture 16).",
+        "Stress changes the meaning: Tycker du OM ditt jobb? (do you like it?) but Vad TYCKER du om ditt jobb? (what do you think of it?)"
       ],
       "examples": [
         {
           "fi": "Jag jobbar som programmerare. Jag jobbar mestadels hemifrån.",
           "en": "I work as a programmer. I mostly work from home."
+        },
+        {
+          "fi": "Tycker du om ditt jobb? Vad tycker du om ditt jobb?",
+          "en": "Do you like your job? What do you think of your job?",
+          "note": "First question: stress om. Second question: stress tycker."
         },
         {
           "fi": "Det som jag gillar med mitt jobb är att jag kan jobba hemifrån.",
@@ -1070,21 +1087,21 @@
             "options": [
               "Vad jobbar du med?",
               "Vem jobbar du med?",
-              "Vad jobbar du som?"
+              "Vad gör du?"
             ],
             "answer": "Vad jobbar du med?",
             "reply": {
               "fi": "Jag jobbar som programmerare.",
               "en": "I work as a programmer."
             },
-            "why": "Vad jobbar du med? asks for the job. Vem jobbar du med? asks who your colleagues are. The answer uses som: Jag jobbar som …"
+            "why": "Vad jobbar du med? asks for the job. Vem jobbar du med? asks who your colleagues are. Vad gör du? usually means What are you doing (right now)? The answer uses som: Jag jobbar som …"
           },
           {
             "about": "Alex",
             "field": "Where he works",
             "options": [
               "Var jobbar du?",
-              "Vem jobbar du?",
+              "Vart jobbar du?",
               "När jobbar du?"
             ],
             "answer": "Var jobbar du?",
@@ -1092,7 +1109,7 @@
               "fi": "Jag jobbar mestadels hemifrån, här i Helsingfors.",
               "en": "I mostly work from home, here in Helsinki."
             },
-            "why": "Var asks for a place. Vem asks for a person and när for a time."
+            "why": "Var asks for a place. Vart asks where to, for movement: Vart åker du? När asks for a time."
           },
           {
             "about": "Alex",
@@ -1147,9 +1164,9 @@
       "kind": "rule",
       "title": "Å ena sidan, å andra sidan · on the one hand, on the other",
       "body": [
-        "Å ena sidan … Å andra sidan … weighs two sides of one question. Each phrase fills the first place in the sentence, so the verb comes next: Å ena sidan är lönen hög. Å andra sidan har jag lite fritid.",
-        "English-speaker trap: it is å, not på. På andra sidan means on the other side of a place: på andra sidan gatan.",
-        "List points with en fördel (an advantage) and en nackdel (a disadvantage): En fördel med att jobba hemifrån är att man inte behöver pendla. After att, inte comes before the verb."
+        "Å ena sidan … Å andra sidan … weighs two sides. Each phrase takes first place, so the verb comes next, as after i dag (Lecture 3): Å ena sidan är lönen hög. Å andra sidan har jag lite fritid. The English order (Å andra sidan jag har …) is the slip learners keep longest.",
+        "Å, not på: på andra sidan means on the other side of a place (på andra sidan gatan).",
+        "En fördel (advantage), en nackdel (disadvantage): En fördel med att jobba hemifrån är att man inte behöver pendla. After att, inte goes before the verb (Lecture 19); in a main clause it follows the verb: Jobbet är inte välbetalt."
       ],
       "examples": [
         {
@@ -1224,25 +1241,37 @@
             "why": "The phrase is å andra sidan. På andra sidan means on the other side of a place."
           },
           {
+            "fi": "Jobbet är inte välbetalt.",
+            "en": "The job is not well-paid.",
+            "bucket": "right",
+            "why": "A main clause: the verb är, then inte."
+          },
+          {
+            "fi": "Jobbet inte är välbetalt.",
+            "en": "The job is not well-paid.",
+            "bucket": "fix",
+            "why": "Inte goes before the verb only after att, eftersom or om. In a main clause: Jobbet är inte välbetalt. Hindi puts nahin before the verb, so this slip is common."
+          },
+          {
             "fi": "Å ena sidan är lönen hög.",
             "en": "On one hand, the salary is high.",
             "bucket": "right",
             "why": "Å ena sidan, then the verb är, then the subject lönen."
           }
         ],
-        "summary": "Verb second after å ena/andra sidan; inte before the verb after att."
+        "summary": "Verb second after å ena/andra sidan. Inte before the verb after att; after the verb in a main clause.",
+        "audio": false
       }
     },
     {
       "kind": "scene",
       "title": "På restaurang · at a restaurant",
       "body": [
-        "Order: Jag tar … (I’ll have …) or, more politely, Jag skulle vilja ha …. Ask for advice: Vad kan du rekommendera?",
-        "Diet: say it before you order. Jag tål inte gluten or laktos (my body cannot take it). Jag är allergisk mot nötter (an allergy). A vegan eats no animal products at all; a vegetarian eats no meat or fish. The Amira video plays with that difference.",
-        "Finnish menus mark dishes with letters: G = glutenfri, L = laktosfri, M = mjölkfri (milk-free), VL = laktosfattig (low-lactose), VEG = vegan. Ask anyway if you are unsure: Är den här rätten glutenfri?",
-        "A problem: Ursäkta + the problem + Kan ni …? Paying: Kan vi få notan? Notan is the restaurant bill; räkningen is a bill for rent or electricity; kvittot is the receipt.",
-        "Tipping in Finland: service is included in the price, so dricks (a tip) is never expected. Some people round up or leave a little for very good service.",
-        "Two look-alikes: ett glas (a glass) and en glass (an ice cream)."
+        "Order: Jag tar … (I’ll have …), Kan jag få …? or Jag skulle vilja ha … Swedish has no word for please; the frame plus tack is polite. A bare command form (Ge mig soppan) sounds rude, though Hindi dijiye and Marathi dya are polite. And vill needs ha: Jag vill ha soppan (Lecture 3).",
+        "Diet need first: Jag tål inte gluten (my body cannot take it). Jag är allergisk mot nötter (Lecture 19). Jag är vegan or vegetarian, with no article, like Jag är lärare (Lecture 4). Vegan: no animal products; vegetarian: no meat or fish (the Amira video turns on this).",
+        "Menu letters, as a City of Helsinki menu explains them: G = glutenfri, L = laktosfri, VL = laktosfattig (low-lactose), M = mjölkfri, VEG = vegan. Ask anyway if you are unsure: Är den här rätten glutenfri?",
+        "Problem: Ursäkta + the problem + Kan ni …? Paying: Kan vi få notan? Notan is the restaurant bill, kvittot the receipt; räkningen is mostly for rent or electricity. Ett glas = a glass; en glass = an ice cream.",
+        "Tipping: in Finland service is included in the price, so dricks (a tip) is not expected. Some people round up for very good service."
       ],
       "examples": [
         {
@@ -1254,8 +1283,8 @@
           "en": "I cannot tolerate lactose. Is the soup lactose-free?"
         },
         {
-          "fi": "Jag är vegan. Finns det mjölk eller ägg i såsen?",
-          "en": "I am vegan. Is there milk or egg in the sauce?"
+          "fi": "Jag är vegetarian. Finns det kött i soppan?",
+          "en": "I am a vegetarian. Is there meat in the soup?"
         },
         {
           "fi": "Ursäkta, maten är kall. Kan ni värma den?",
@@ -1270,86 +1299,43 @@
           "en": "Can we have the bill, please? Can I pay by card?"
         }
       ],
-      "memoryTip": "Need first, then order. Problem: Ursäkta + problem + Kan ni …? At the end: Kan vi få notan? No tip is needed in Finland.",
+      "memoryTip": "Need first, then order with tack. Problem: Ursäkta + problem + Kan ni …? At the end: Kan vi få notan? No tip is needed in Finland.",
       "tryIt": "Order one dish, state one diet need, solve one problem, then ask for the bill.",
       "activity": {
-        "type": "sort",
-        "label": "What are you doing?",
-        "title": "What are you doing?",
-        "instructions": "Sort each sentence by what it does at the table, then say it aloud.",
-        "buckets": [
+        "type": "match",
+        "label": "Problem and request",
+        "title": "Which request solves each problem?",
+        "instructions": "Read each problem, then find the polite request that solves it. Only one request fits each problem. Then say the whole line to the waiter.",
+        "leftLabel": "Ursäkta, …",
+        "rightLabel": "Polite request",
+        "pairs": [
           {
-            "id": "order",
-            "label": "Order",
-            "hint": "choose or ask for advice"
+            "left": "maten är kall.",
+            "right": "Kan ni värma den?"
           },
           {
-            "id": "need",
-            "label": "Diet need",
-            "hint": "what your body cannot take"
+            "left": "glaset är smutsigt.",
+            "right": "Kan jag få ett nytt glas?"
           },
           {
-            "id": "solve",
-            "label": "Problem",
-            "hint": "something is wrong"
+            "left": "barnen vid bordet bredvid skriker.",
+            "right": "Kan vi byta bord?"
           },
           {
-            "id": "pay",
-            "label": "Paying",
-            "hint": "the end of the visit"
+            "left": "jag beställde soppan, inte pastan.",
+            "right": "Kan jag få soppan i stället?"
+          },
+          {
+            "left": "jag tål inte laktos.",
+            "right": "Finns det något laktosfritt?"
+          },
+          {
+            "left": "vi är klara.",
+            "right": "Kan vi få notan, tack?"
           }
         ],
-        "items": [
-          {
-            "fi": "Jag tar ett glas vatten.",
-            "en": "I’ll have a glass of water.",
-            "bucket": "order",
-            "why": "This orders a drink."
-          },
-          {
-            "fi": "Vad kan du rekommendera?",
-            "en": "What can you recommend?",
-            "bucket": "order",
-            "why": "You ask the waiter to help you choose."
-          },
-          {
-            "fi": "Är den här rätten glutenfri?",
-            "en": "Is this dish gluten-free?",
-            "bucket": "need",
-            "why": "You check a diet need before you order."
-          },
-          {
-            "fi": "Jag tål inte laktos.",
-            "en": "I cannot tolerate lactose.",
-            "bucket": "need",
-            "why": "This states a diet need."
-          },
-          {
-            "fi": "Kan ni sänka musiken lite?",
-            "en": "Can you turn the music down a little?",
-            "bucket": "solve",
-            "why": "The music is too loud, so you ask for a change."
-          },
-          {
-            "fi": "Kan vi byta bord?",
-            "en": "Can we change tables?",
-            "bucket": "solve",
-            "why": "Something is wrong with the table, so you ask to move."
-          },
-          {
-            "fi": "Kan vi få notan?",
-            "en": "Can we have the bill?",
-            "bucket": "pay",
-            "why": "You ask for the bill at the end."
-          },
-          {
-            "fi": "Kan jag betala med kort?",
-            "en": "Can I pay by card?",
-            "bucket": "pay",
-            "why": "You ask how to pay."
-          }
-        ],
-        "summary": "Say one sentence from each group as one short visit."
+        "pattern": "Ursäkta + the problem + a question with Kan ni …? or Kan jag/vi få …? A question with tack is polite; a command is not.",
+        "sentence": "Ursäkta, {left} {right}"
       }
     }
   ],
@@ -1362,7 +1348,7 @@
         "Jag arbetar ofta över."
       ],
       "hint": "Jobba över is one phrase; ofta sits between the two parts.",
-      "explanation": "Jag jobbar ofta över."
+      "explanation": "Jag jobbar ofta över. Ofta stands right after the verb, like inte (Lecture 3); över comes last."
     },
     {
       "id": "sv-20-g2",
@@ -1372,32 +1358,41 @@
       ],
       "options": [
         "Å ena sidan / Å andra sidan",
-        "Eftersom / Om",
-        "Först / I går"
+        "På ena sidan / På andra sidan",
+        "Först / Sedan"
       ],
-      "hint": "Show two sides.",
-      "explanation": "Å ena sidan … å andra sidan …"
+      "hint": "Show two sides of one question.",
+      "explanation": "Å ena sidan … Å andra sidan … weighs two sides. På andra sidan is a place (på andra sidan gatan). Först … sedan puts events in order (Lecture 8)."
     },
     {
       "id": "sv-20-g3",
-      "prompt": "I work part-time because the workload is too heavy.",
+      "prompt": "I want to work part-time because I do not want to burn out.",
       "answers": [
-        "Jag jobbar deltid eftersom arbetsbördan är för stor.",
-        "Jag arbetar deltid eftersom arbetsbördan är för stor.",
-        "Jag jobbar deltid eftersom min arbetsbörda är för stor.",
-        "Jag jobbar deltid för att arbetsbördan är för stor."
+        "Jag vill jobba deltid eftersom jag inte vill bli utbränd.",
+        "Jag vill jobba deltid därför att jag inte vill bli utbränd.",
+        "Jag vill jobba deltid för att jag inte vill bli utbränd.",
+        "Jag vill arbeta deltid eftersom jag inte vill bli utbränd.",
+        "Jag vill arbeta deltid därför att jag inte vill bli utbränd.",
+        "Jag vill arbeta deltid för att jag inte vill bli utbränd.",
+        "Jag vill jobba deltid, för jag vill inte bli utbränd.",
+        "Jag vill arbeta deltid, för jag vill inte bli utbränd."
       ],
-      "hint": "Because = eftersom. The workload = arbetsbördan; too heavy = för stor.",
-      "explanation": "Jag jobbar deltid eftersom arbetsbördan är för stor."
+      "hint": "Two parts joined by eftersom. After eftersom, inte goes before the verb.",
+      "explanation": "Jag vill jobba deltid eftersom jag inte vill bli utbränd. This mixes vill + infinitive (Lecture 3) with inte before the verb after eftersom (Lecture 19)."
     },
     {
       "id": "sv-20-g4",
-      "prompt": "How do you say “I cannot tolerate gluten”?",
+      "prompt": "You want the vegetable soup. What do you say to the waiter?",
       "answers": [
-        "Jag tål inte gluten."
+        "Jag tar grönsakssoppan, tack."
       ],
-      "hint": "Use tål inte.",
-      "explanation": "Jag tål inte gluten."
+      "hint": "Politeness comes from the frame and tack.",
+      "explanation": "Jag tar …, tack is polite. Jag vill needs ha before a thing (Jag vill ha kaffe, Lecture 3). Ge mig … is a bare command. Hindi dijiye is polite, but a command sounds rude in Swedish.",
+      "options": [
+        "Jag tar grönsakssoppan, tack.",
+        "Jag vill grönsakssoppan.",
+        "Ge mig grönsakssoppan."
+      ]
     },
     {
       "id": "sv-20-g5",
@@ -1405,7 +1400,9 @@
       "answers": [
         "Har ni några veganska alternativ?",
         "Har ni veganska alternativ?",
-        "Har ni något veganskt alternativ?"
+        "Har ni något veganskt alternativ?",
+        "Finns det några veganska alternativ?",
+        "Finns det något veganskt alternativ?"
       ],
       "hint": "Use ni to address the restaurant.",
       "explanation": "Har ni några veganska alternativ?"
@@ -1430,10 +1427,11 @@
       "answers": [
         "Å andra sidan tjänar man mindre pengar.",
         "Å andra sidan tjänar man mindre.",
-        "Å andra sidan tjänar du mindre pengar."
+        "Å andra sidan tjänar du mindre pengar.",
+        "Å andra sidan tjänar du mindre."
       ],
       "hint": "The most common mistake: after Å andra sidan, the verb comes next.",
-      "explanation": "Å andra sidan tjänar man mindre pengar. Not: Å andra sidan man tjänar …"
+      "explanation": "Å andra sidan tjänar man mindre pengar. The verb comes next, as after i dag (Lecture 3). Not: Å andra sidan man tjänar …"
     },
     {
       "id": "sv-20-g8",
@@ -1441,25 +1439,19 @@
       "answers": [
         "En fördel är att man inte behöver pendla.",
         "En fördel är att du inte behöver pendla.",
-        "En fördel är att man inte måste pendla."
+        "En fördel är att man slipper pendla."
       ],
       "hint": "After att, inte comes before the verb.",
-      "explanation": "En fördel är att man inte behöver pendla."
+      "explanation": "En fördel är att man inte behöver pendla. After att, inte goes before the verb (Lecture 19). For “do not have to”, say behöver inte, not måste inte (Lecture 13)."
     }
   ],
   "sittingBreakAfter": "guided",
   "missionPlan": {
-    "title": "Plan your restaurant conversation",
-    "intro": "Prepare 6–8 lines: order, dietary need, question, problem, response, bill, and one opinion with a reason.",
+    "title": "Plan your restaurant visit",
+    "intro": "Prepare 7 lines: your diet need, a question, your order, a problem, a request, two sides of the restaurant for your friend, and the bill. In line 6, start your words with the verb.",
     "lines": [
       {
-        "label": "Order",
-        "before": "Jag tar",
-        "after": ".",
-        "placeholder": "grönsakssoppan"
-      },
-      {
-        "label": "Dietary need",
+        "label": "Diet need",
         "before": "Jag tål inte",
         "after": ".",
         "placeholder": "gluten"
@@ -1469,6 +1461,12 @@
         "before": "Har ni",
         "after": "?",
         "placeholder": "något glutenfritt bröd"
+      },
+      {
+        "label": "Order",
+        "before": "Då tar jag",
+        "after": ", tack.",
+        "placeholder": "grönsakssoppan"
       },
       {
         "label": "Problem",
@@ -1483,15 +1481,15 @@
         "placeholder": "värma maten"
       },
       {
-        "label": "Opinion and reason",
-        "before": "Jag tycker att restaurangen är bra eftersom",
+        "label": "Two sides (to your friend)",
+        "before": "Å ena sidan är maten god. Å andra sidan",
         "after": ".",
-        "placeholder": "personalen hjälper oss"
+        "placeholder": "är det lite dyrt"
       },
       {
         "label": "Bill",
         "before": "Kan vi få",
-        "after": "?",
+        "after": ", tack?",
         "placeholder": "notan"
       }
     ]
@@ -1596,7 +1594,7 @@
       },
       {
         "id": "sv-20-word-13",
-        "fi": "välbetalt",
+        "fi": "välbetald / välbetalt",
         "en": "well-paid",
         "example": "Jobbet är välbetalt.",
         "translation": "The job is well-paid.",
@@ -1774,8 +1772,8 @@
         "id": "sv-20-word-35",
         "fi": "en räkning",
         "en": "a bill (rent, electricity)",
-        "example": "Jag betalar räkningen för elen.",
-        "translation": "I pay the electricity bill.",
+        "example": "Jag betalar elräkningen i dag.",
+        "translation": "I am paying the electricity bill today.",
         "level": "A2"
       },
       {
@@ -1862,8 +1860,8 @@
         "id": "sv-20-word-46",
         "fi": "en vegetarian",
         "en": "a vegetarian",
-        "example": "Hon är vegetarian men äter ost.",
-        "translation": "She is a vegetarian but eats cheese.",
+        "example": "Hon är vegetarian och äter inte kött.",
+        "translation": "She is a vegetarian and does not eat meat.",
         "level": "A2"
       },
       {
@@ -1881,22 +1879,30 @@
         "example": "I Finland behöver man inte ge dricks.",
         "translation": "In Finland you do not need to give a tip.",
         "level": "A2"
+      },
+      {
+        "id": "sv-20-word-49",
+        "fi": "en strejk",
+        "en": "a strike",
+        "example": "I dag är det strejk i matbutikerna.",
+        "translation": "Today there is a strike in the food shops.",
+        "level": "A2"
       }
     ],
     "pronunciation": {
-      "text": "Å ena sidan. Å andra sidan. Arbetsgivare, arbetsbörda, sjukskriven. Jag tål inte gluten. Kan vi få notan?",
-      "tip": "Keep å ena sidan and å andra sidan as steady chunks. Stress the first part of compound work words."
+      "text": "Jag jobbar ofta över. Jag ska säga upp mig. Tycker du om ditt jobb? Vad tycker du om ditt jobb? Arbetsgivare, arbetsbörda.",
+      "tip": "In a verb + small word, stress the small word: jobbar ÖVER, säger UPP mig, tycker OM (like), as in English give UP. In Vad tycker du om …? om is weak. Compounds stress their first part: ARbetsgivare. The Sweden-Swedish voices add a falling-rising tune to compounds; Finland-Swedish has none, so you do not need it."
     },
     "listening": {
-      "text": "Majas mamma jobbar som sjukskötare på ett sjukhus i Helsingfors. Hon gillar sitt jobb och sina kollegor. Men just nu är två kollegor sjukskrivna, så hon jobbar ofta över. Å ena sidan är lönen okej. Å andra sidan är hon trött varje kväll och har lite tid med Maja och hennes syster. Nu vill hon prata med sin chef om att jobba deltid i ett halvår. Då tjänar hon mindre, men hon tror att hälsan kommer först. Hon vill inte gå in i väggen.",
-      "question": "Why does Maja’s mum want to talk to her boss about part-time work?",
+      "text": "Majas mamma jobbar som sjukskötare på ett sjukhus i Helsingfors. Hon gillar sitt jobb och sina kollegor, och hon tycker om att hjälpa människor. Men just nu är två kollegor sjukskrivna, så hon jobbar ofta över, också på helgen. Å ena sidan är lönen okej, och hon får extra betalt för kvällarna. Å andra sidan är hon trött varje kväll och har lite tid med Maja och hennes syster. I går pratade hon med sin chef. Hon vill jobba deltid i ett halvår. Då tjänar hon mindre, men hon tror att hälsan kommer först. Hon vill inte gå in i väggen. Chefen ska svara nästa vecka.",
+      "question": "Why does Maja’s mum want to work part-time?",
       "options": [
         "She is tired every evening and wants to protect her health.",
         "She dislikes her colleagues.",
         "She wants a higher salary."
       ],
       "answer": 0,
-      "explanation": "Hon är trött varje kväll, och hon tror att hälsan kommer först."
+      "explanation": "Hon är trött varje kväll, och hon tror att hälsan kommer först. She likes her colleagues, and part-time means less money."
     },
     "reading": {
       "text": "Elin arbetar på ett stort företag i Helsingfors. Jobbet är välbetalt och hon tycker om sina kollegor. Å ena sidan är hon nöjd, eftersom hon får intressanta arbetsuppgifter och kan jobba hemifrån två dagar i veckan. Å andra sidan har arbetsbördan blivit för stor. Förra månaden blev en kollega sjukskriven, och då fick Elin ännu mer ansvar. Hon jobbar ofta över och tänker på jobbet även på kvällen. Hennes chef säger att alla måste prestera, men Elin vill inte bli utbränd. Därför ska hon föreslå flextid och kanske deltid under hösten. Då tjänar hon mindre pengar, men hon får mer tid med Mikko och sina vänner. För Elin är hälsan viktigare än en hög lön. Pengar kan göra vardagen tryggare, men de kan inte köpa tid, vänskap eller hälsa. I fredags åt hon middag med Alex. På menyn stod det G efter några rätter. Det betyder glutenfri, och det var bra, eftersom Alex inte tål gluten. Efter maten bad de om notan. De gav ingen dricks, eftersom servicen ingår i priset i Finland. Men de tackade servitören och lovade att komma tillbaka.",
@@ -1933,38 +1939,38 @@
       }
     },
     "speaking": {
-      "prompt": "YKI-style situation: you are having lunch with a friend in a Helsinki restaurant. Order a meal, state one diet need, ask one question about the menu, report one problem politely, ask for a solution, give one opinion with a reason, and ask for the bill.",
-      "help": "Jag tar … · Jag tål inte … · Har ni …? · Ursäkta, … · Kan ni …? · Kan vi få notan? · Jag tycker … eftersom …",
-      "model": "Jag tar grönsakssoppan, tack. Jag tål inte gluten. Är brödet glutenfritt? Ursäkta, soppan är kall. Kan ni värma den? Jag tycker att servicen är bra eftersom ni hjälper oss snabbt. Kan vi få notan, tack?"
+      "prompt": "Du äter lunch med en vän på en restaurang i Helsingfors. Berätta om din specialkost, fråga om maten och beställ. Säg vad som är fel och be om hjälp. Säg till din vän vad som är bra och dåligt med restaurangen. Be om notan. (You are having lunch with a friend in a Helsinki restaurant. State your diet need, ask about the food and order. Say what is wrong and ask for help. Tell your friend one good and one bad side of the restaurant, then ask for the bill. YKI speaking tasks use everyday situations like this, with the instructions in Swedish.)",
+      "help": "Jag tål inte … · Har ni …? · Då tar jag …, tack. · Ursäkta, … · Kan ni …? · Å ena sidan … Å andra sidan … · Kan vi få notan, tack?",
+      "model": "Jag tål inte gluten. Har ni något glutenfritt bröd? Då tar jag grönsakssoppan, tack. Ursäkta, soppan är kall. Kan ni värma den? Å ena sidan är maten god. Å andra sidan är det lite dyrt. Kan vi få notan, tack?"
     },
     "writing": {
-      "prompt": "Write a comment on a reader’s letter: Gör pengar oss lyckliga? Kan pengar köpa lyckan?",
-      "situation": "On a Helsinki newspaper’s opinion page, a reader writes: “En hög lön gör oss lyckliga.” Write a short comment to the newspaper. Weigh both sides and give your own view. In YKI, this kind of task asks you to justify your opinion.",
+      "prompt": "Svara på en enkät: Gör pengar oss lyckliga? Kan pengar köpa lyckan? (Answer a survey: Does money make us happy? Can money buy happiness?)",
+      "situation": "En tidning i Helsingfors gör en enkät: Gör pengar oss lyckliga? Svara på enkäten. Skriv vad pengar kan ge (minst två saker) och vad pengar inte kan ge (minst två saker). Säg varför. Skriv till sist vad du tycker. (A Helsinki newspaper is running a survey. Write at least two things money can give and at least two it cannot give, each with a reason, then your own view. This is the YKI basic-level “response” task: the real test asks for good and bad sides of something, each with a reason, and gives the instructions in Swedish.)",
       "points": [
-        "Say which letter you are answering and give your view.",
-        "Give one positive side of money with Å ena sidan.",
-        "Give one negative side with Å andra sidan.",
-        "Support your view with at least one reason using eftersom.",
-        "End with a clear final sentence, for example with Därför."
+        "Give at least two things money can give, each with a reason (Å ena sidan … eftersom …).",
+        "Give at least two things money cannot give, each with a reason (Å andra sidan …).",
+        "Put the verb straight after Å ena sidan, Å andra sidan and Därför.",
+        "After att and eftersom, put inte before the verb: att pengar inte kan …",
+        "End with your own view: Därför tycker jag att …"
       ],
       "wordRange": [
         70,
         110
       ],
-      "help": "Jag håller med / Jag håller inte med · Å ena sidan … · Å andra sidan … · Pengar kan … · Pengar kan inte … · eftersom … · Därför …",
-      "model": "Jag läste insändaren ”En hög lön gör oss lyckliga”, och jag håller delvis med. Å ena sidan ger pengar trygghet. Man kan betala hyran, köpa mat och resa till sin familj. Å andra sidan kan en hög lön betyda mycket övertid och lite fritid. Pengar kan inte köpa hälsa, kärlek eller goda vänner. Jag känner en person som blev utbränd trots att hon hade en bra lön. För mig är balans viktigast eftersom jag behöver både trygghet och tid med människor som jag tycker om. Därför vill jag ha en rimlig lön, men jag vill inte jobba över hela tiden."
+      "help": "Pengar kan ge … · Pengar kan inte köpa … · Å ena sidan … · Å andra sidan … · eftersom … · Om man … kan man … · Därför tycker jag att …",
+      "model": "Jag tycker att pengar är viktiga, men de är inte allt. Å ena sidan ger pengar trygghet, eftersom man kan betala hyran och köpa mat. Pengar ger också frihet: man kan resa och hälsa på sin familj. Å andra sidan kan pengar inte köpa hälsa. Om man jobbar över hela tiden kan man bli utbränd. Pengar kan inte heller köpa vänner, eftersom vänskap tar tid. Jag känner en person som har en hög lön men som inte är lycklig. Därför tycker jag att en rimlig lön och mycket fritid är bäst."
     }
   },
   "route": {
-    "expectedOutput": "First, perform a 6–8-line restaurant visit with an order, a diet need, a problem and a request. Then write a 70–110-word comment on whether money makes us happy.",
-    "transferPrompt": "Change your dietary need or restaurant complaint and perform the conversation again.",
+    "expectedOutput": "First, perform a 7-line restaurant visit: a diet need, an order, a problem with a polite request, two sides of the restaurant and the bill. Then answer a survey on whether money makes us happy (70–110 words).",
+    "transferPrompt": "Change your diet need and your problem, then perform the visit again.",
     "returnPrompt": "Tomorrow, explain one advantage and one disadvantage of your work or studies without looking.",
     "successChecks": [
-      "I can order politely and state a dietary need.",
-      "I can explain a problem and ask for a solution.",
-      "I can use å ena sidan and å andra sidan to weigh two sides.",
-      "My spoken answer has 6–8 lines and one opinion with a reason.",
-      "My written comment covers both sides, gives a reason and is 70–110 words."
+      "I say my diet need first and order politely with tack.",
+      "I explain a problem and ask for a solution with Kan ni …?",
+      "After Å ena sidan and Å andra sidan, my verb comes next.",
+      "My spoken visit has about 7 lines and ends with the bill.",
+      "My survey answer gives two things money can give and two it cannot, each with a reason, in 70–110 words."
     ],
     "primarySkill": "speaking",
     "requiredSkills": [
@@ -1981,15 +1987,15 @@
     },
     {
       "id": "sv-20-question-2",
-      "fi": "Vad är en nackdel med distansarbete?",
-      "en": "What is one disadvantage of remote work?",
-      "sample": "En nackdel är att man träffar färre människor."
+      "fi": "Vad är en fördel och en nackdel med distansarbete?",
+      "en": "What is one advantage and one disadvantage of remote work?",
+      "sample": "En fördel är att man inte behöver pendla. En nackdel är att man träffar färre människor."
     },
     {
       "id": "sv-20-question-3",
-      "fi": "Är en hög lön viktig för dig?",
-      "en": "Is a high salary important to you?",
-      "sample": "Ja, men fritid är också viktig."
+      "fi": "Är det viktigt att man gillar sitt jobb? Varför?",
+      "en": "Is it important to like your job? Why?",
+      "sample": "Ja, det är viktigt eftersom man mår bättre om man trivs på jobbet."
     },
     {
       "id": "sv-20-question-4",
@@ -2023,13 +2029,13 @@
     },
     {
       "id": "sv-20-review-3",
-      "en": "On one hand …",
-      "fi": "Å ena sidan …"
+      "en": "On one hand the salary is high. On the other hand I have little free time.",
+      "fi": "Å ena sidan är lönen hög. Å andra sidan har jag lite fritid."
     },
     {
       "id": "sv-20-review-4",
-      "en": "On the other hand …",
-      "fi": "Å andra sidan …"
+      "en": "What I like about my job is that …",
+      "fi": "Det som jag gillar med mitt jobb är att …"
     },
     {
       "id": "sv-20-review-5",
@@ -2043,13 +2049,13 @@
     },
     {
       "id": "sv-20-review-7",
-      "en": "Do you have vegan options?",
-      "fi": "Har ni några veganska alternativ?"
+      "en": "Excuse me, the food is cold. Can you heat it up?",
+      "fi": "Ursäkta, maten är kall. Kan ni värma den?"
     },
     {
       "id": "sv-20-review-8",
-      "en": "Can we have the bill?",
-      "fi": "Kan vi få notan?"
+      "en": "Can we have the bill, please?",
+      "fi": "Kan vi få notan, tack?"
     }
   ],
   "checkpoint": [
@@ -2058,38 +2064,50 @@
       "prompt": "Produce in Swedish: “On one hand the salary is good. On the other hand the job is stressful.”",
       "answers": [
         "Å ena sidan är lönen bra. Å andra sidan är jobbet stressigt.",
-        "Å ena sidan är lönen bra. Å andra sidan är arbetet stressigt."
+        "Å ena sidan är lönen bra. Å andra sidan är jobbet stressande.",
+        "Å ena sidan är lönen bra. Å andra sidan är arbetet stressigt.",
+        "Å ena sidan är lönen bra. Å andra sidan är arbetet stressande."
       ],
       "hint": "Remember verb-second after each opening phrase.",
       "explanation": "Å ena sidan är lönen bra. Å andra sidan är jobbet stressigt."
     },
     {
       "id": "sv-20-check-diet",
-      "prompt": "Which sentence states a dietary intolerance?",
+      "prompt": "Alex tells the waiter that he cannot tolerate gluten. Which sentence is correct?",
       "answers": [
         "Jag tål inte gluten."
       ],
       "options": [
         "Jag tål inte gluten.",
-        "Jag gillar inte notan.",
-        "Jag dricksar inte gluten."
+        "Jag inte tål gluten.",
+        "Jag tål gluten inte."
       ],
-      "hint": "Tål means tolerate.",
-      "explanation": "Jag tål inte gluten."
+      "hint": "Is this a main clause, or a part after att or eftersom?",
+      "explanation": "Jag tål inte gluten. In a main clause inte comes after the verb (Lecture 3). It goes before the verb only after att, eftersom or om (Lecture 19). Hindi puts nahin before the verb, so Jag inte tål is a typical slip. Inte does not go at the end either."
     },
     {
       "id": "sv-20-check-work",
-      "prompt": "What does jobba över mean?",
+      "prompt": "News: Företaget måste spara pengar och ska säga upp tjugo anställda. What will happen?",
       "answers": [
-        "work overtime"
+        "The company will lay off twenty employees."
       ],
       "options": [
-        "work overtime",
-        "work from home",
-        "resign"
+        "The company will lay off twenty employees.",
+        "Twenty employees will resign.",
+        "Twenty employees will retire."
       ],
-      "hint": "It means work beyond normal hours.",
-      "explanation": "Jobba över means work overtime."
+      "hint": "There is no sig after säga upp.",
+      "explanation": "Säga upp + people: the employer ends their jobs. Säga upp sig: you resign yourself. Gå i pension: retire."
+    },
+    {
+      "id": "sv-20-check-advice",
+      "prompt": "Your friend hates her job and wants to leave. Give advice in Swedish: “You should resign.”",
+      "answers": [
+        "Du borde säga upp dig.",
+        "Du bör säga upp dig."
+      ],
+      "hint": "Advice: borde (Lecture 13). Sig changes with the person (Lecture 15).",
+      "explanation": "Du borde säga upp dig. Borde gives advice (Lecture 13), and sig becomes dig after du (Lecture 15). This is your teacher’s own example."
     },
     {
       "id": "sv-20-check-tip",
@@ -2100,31 +2118,35 @@
       "options": [
         "Man behöver inte ge dricks. Servicen ingår i priset.",
         "Man måste alltid ge tjugo procent.",
-        "Man ger dricks bara till kocken."
+        "Det är förbjudet att ge dricks."
       ],
       "hint": "Think about tipping in Finland.",
-      "explanation": "In Finland service is included in the price. A tip is never expected, but you may round up for very good service."
+      "explanation": "Service is included in the price, so a tip is not expected. It is not forbidden: some people round up for very good service."
     },
     {
       "id": "sv-20-check-bill",
       "prompt": "Produce in Swedish: “Can we have the bill?”",
       "answers": [
         "Kan vi få notan?",
-        "Kan vi få notan, tack?"
+        "Kan vi få notan, tack?",
+        "Kan jag få notan?",
+        "Kan jag få notan, tack?",
+        "Kan vi få räkningen?",
+        "Kan vi få räkningen, tack?"
       ],
       "hint": "Use få + notan.",
-      "explanation": "Kan vi få notan?"
+      "explanation": "Kan vi få notan? Räkningen is understood too, but notan is the usual restaurant word."
     }
   ],
   "assignment": {
     "title": "Episode 20 mission: Work and dinner",
-    "instructions": "CORE: Perform your restaurant conversation with an order, a diet need, one problem and a polite solution. Then explain two sides of one work choice with å ena sidan and å andra sidan.\n\nVIDEO: Watch the 3-minute UR Play episode Amira är här – med stödord: Vegan (link under resources) and answer the teacher’s four questions in Swedish.\n\nRETURN: Tomorrow, repeat your two-sided opinion from memory.",
-    "model": "Jag tar grönsakssoppan, tack. Jag tål inte gluten. Är brödet glutenfritt? Ursäkta, soppan är kall. Kan ni värma den? Jag tycker ändå att servicen är bra eftersom ni hjälper oss snabbt. Kan vi få notan, tack?"
+    "instructions": "CORE: Perform your restaurant visit: a diet need, an order, one problem with a polite request, two sides of the restaurant and the bill. Then explain two sides of one work choice with å ena sidan and å andra sidan.\n\nVIDEO: Watch the 3-minute UR Play episode Amira är här – med stödord: Vegan (link under resources) and answer the teacher’s four questions in Swedish.\n\nNEWS: Listen to news 1 and 3 in the teacher’s Yle Nyheter på lätt svenska episode (link under resources), first without the text. Answer the questions there in Swedish.\n\nRETURN: Tomorrow, repeat your two-sided opinion from memory.",
+    "model": "Jag tål inte gluten. Har ni något glutenfritt bröd? Då tar jag grönsakssoppan, tack. Ursäkta, soppan är kall. Kan ni värma den? Å ena sidan är maten god. Å andra sidan är det lite dyrt. Kan vi få notan, tack?"
   },
   "takeaways": [
-    "Use clear work words to explain workload, health and choices: jobba över, arbetsbörda, utbränd, sjukskriven (in Finland also sjukledig).",
-    "Use å ena sidan and å andra sidan with the verb next; after att, inte comes before the verb.",
-    "State diet needs with Jag tål inte … and read the G, L, M and VEG letters on Finnish menus.",
+    "Work words: jobba över, arbetsbörda, utbränd, sjukskriven (in Finland also sjukledig). Säga upp sig = resign; säga upp någon = lay someone off.",
+    "After å ena sidan and å andra sidan the verb comes next; after att and eftersom, inte goes before the verb (Lecture 19).",
+    "Order with Jag tar … or Kan jag få …? plus tack, never a bare command. Say your diet need first, and read G, L, VL, M and VEG on Finnish menus.",
     "Ask for the bill with Kan vi få notan? In Finland a tip is not expected."
   ],
   "resources": [
@@ -2132,6 +2154,11 @@
       "label": "Video homework: Amira är här – med stödord: Vegan (UR Play, 3 min)",
       "url": "https://urplay.se/program/199763-amira-ar-har-med-stodord-vegan",
       "description": "A short sitcom for learners of Swedish, with on-screen support words. Watch once for the story, then answer in Swedish: Varför var Amira sen? Vad hade de för problem på restaurangen? Vad rekommenderade servitören? Hur reagerade de? Listen for vegan and vegetarian."
+    },
+    {
+      "label": "News homework: Yle Nyheter på lätt svenska, 19 February 2025 (Svenska Yle)",
+      "url": "https://arenan.yle.fi/poddar/1-73102281",
+      "description": "Your teacher’s news listening: real Finland-Swedish news read slowly. Listen to news 1 (a strike) and news 3 (Åbo Akademi) without the text, then open the text under the episode. Listen for: Vilka strejkar, och hur länge? Är de flesta butiker öppna eller stängda? Varför måste Åbo Akademi säga upp anställda?"
     },
     {
       "label": "Svenska Akademiens ordböcker (svenska.se)",
