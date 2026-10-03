@@ -1032,6 +1032,14 @@ theme ranges in section 2.1.
 
 ### 5.4 Lecture 52 and the mock
 
+**Decision (October 3, 2026, during the build):** Lecture 52 is a standard
+seven-step lecture, not the legacy `yki-mock` route (untested with the current
+presentation and in need of validator exceptions). Its `yki-speaking` step holds
+a full speaking mock at exam timings (Berätta, two dialogues, five Reagera
+situations, Din åsikt); listening, reading and writing follow Classroom items
+37-39 with original texts. The text below records the original proposal.
+
+
 - Use the existing route; add set C to `content/yki-mocks.json` (shape
   `YkiMockSet`, `totalMinutes: 60`, original texts). No type change.
 - The validator today demands standard-lecture fields from every lecture
