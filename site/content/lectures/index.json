@@ -105,8 +105,8 @@
         "lede": "Hear it, understand it, then make it yours. Grammar names can wait.",
         "startLine": {
           "label": "START WITH ONE LINE",
-          "fi": "Hej! Jag heter Alex.",
-          "en": "Hello! My name is Alex.",
+          "fi": "Hej! Jag heter Alex. Vad heter du?",
+          "en": "Hello! My name is Alex. What is your name?",
           "audioText": "Hej! Jag heter Alex. Vad heter du?"
         },
         "speakers": [
@@ -120,7 +120,7 @@
           }
         ],
         "connector": "HEJ!",
-        "encounterLabel": "Elin and Alex meet for the first time",
+        "encounterLabel": "Elin and Alex meet at their first class",
         "chunks": [
           {
             "label": "NAME",
@@ -540,15 +540,15 @@
         "id": "sv-01-notice-home",
         "prompt": "Which line tells where Alex lives now?",
         "answers": [
-          "Jag bor i Finland."
+          "… men jag bor i Finland nu."
         ],
         "options": [
-          "Jag bor i Finland.",
-          "Jag kommer från Indien.",
+          "… men jag bor i Finland nu.",
+          "Jag kommer från Indien …",
           "Jag heter Alex."
         ],
         "hint": "Bor i means lives in.",
-        "explanation": "Jag bor i Finland tells Alex's home now. Jag kommer från Indien tells his origin."
+        "explanation": "Men jag bor i Finland nu: but I live in Finland now. Jag kommer från Indien tells his origin, not his home."
       }
     ],
     "sections": [
@@ -558,7 +558,8 @@
         "body": [
           "Copy whole chunks before studying grammar: Jag heter … · Jag bor i … · Jag kommer från … · Jag talar …",
           "Jag bor i tells where you live now. Jag kommer från tells where you come from. The places can be different.",
-          "Use och before the last language. Put lite directly before a language you speak only a little."
+          "In Swedish, use the Swedish names of places in Finland: Helsingfors (Helsinki), Esbo (Espoo), Vanda (Vantaa), Åbo (Turku).",
+          "Use och before the last language, with no comma before och (English often puts one there). Put lite directly before each language you speak only a little, as your teacher did: Jag talar engelska, svenska, lite ryska och lite portugisiska."
         ],
         "examples": [
           {
@@ -567,9 +568,9 @@
             "note": "Replace Alex with your own name."
           },
           {
-            "fi": "Jag bor i Finland.",
-            "en": "I live in Finland.",
-            "note": "This is your home now."
+            "fi": "Jag bor i Helsingfors.",
+            "en": "I live in Helsinki.",
+            "note": "This is your home now. Helsingfors is the Swedish name for Helsinki."
           },
           {
             "fi": "Jag kommer från Indien.",
@@ -577,9 +578,9 @@
             "note": "This is your origin."
           },
           {
-            "fi": "Jag talar hindi, engelska och lite svenska.",
-            "en": "I speak Hindi, English, and a little Swedish.",
-            "note": "Use och before the last item."
+            "fi": "Jag talar marathi, hindi, engelska och lite svenska.",
+            "en": "I speak Marathi, Hindi, English and a little Swedish.",
+            "note": "Och before the last item, no comma before it. Language names take a small letter."
           }
         ],
         "table": {
@@ -597,7 +598,7 @@
             [
               "home now",
               "Jag bor i …",
-              "Jag bor i Finland."
+              "Jag bor i Helsingfors."
             ],
             [
               "origin",
@@ -612,7 +613,7 @@
           ]
         },
         "memoryTip": "Home now and origin are two boxes: bor i = live in; kommer från = come from.",
-        "tryIt": "Say your four real lines once slowly. Then say them again without looking. If the language line trips you up, build it from the end: svenska → lite svenska → och lite svenska → Jag talar hindi, engelska och lite svenska.",
+        "tryIt": "Say your four real lines once slowly. Then say them again without looking. If the language line trips you up, build it from the end: svenska → lite svenska → och lite svenska → engelska och lite svenska → Jag talar hindi, engelska och lite svenska.",
         "activity": {
           "type": "match",
           "label": "Countries & languages",
@@ -650,7 +651,7 @@
             {
               "left": "Indien",
               "right": "hindi",
-              "note": "One of many languages in India; add yours."
+              "note": "One of many languages in India. Marathi is marathi in Swedish too."
             },
             {
               "left": "Pakistan",
@@ -675,8 +676,9 @@
         "title": "Nine vowels: copy the mouth first",
         "kind": "rule",
         "body": [
-          "Swedish has nine vowel letters: A, O, U, Y, I, E, Ö, Ä, Å. First copy the lip and tongue position; then copy the audio.",
+          "The Swedish alphabet is the English one plus three letters at the end: å, ä, ö (29 letters; a dictionary lists them after z). Swedish has nine vowel letters: A, O, U, Y, I, E, Ö, Ä, Å. First copy the lip and tongue position; then copy the audio.",
           "English, Hindi, and Marathi examples are memory bridges, not exact Swedish pronunciation. The Swedish recording is the final model.",
+          "Two surprises for a Hindi speaker: Swedish O usually sounds close to ऊ (bok, bor), and the ओ sound you know is usually written Å (från, hår). U, Y and Ö have no Hindi or Marathi match. If you have heard Finnish around Helsinki, Finnish y, ö and ä are close to the Swedish ones.",
           "Rounded lips: O, U, Y, Ö, Å. Front tongue: I, E, Y, Ä, Ö. Notice that Y and Ö belong to both groups."
         ],
         "examples": [
@@ -710,7 +712,7 @@
             ],
             [
               "O",
-              "Round lips; often near long oo in these words",
+              "Round lips; long O is near ऊ / oo in boots",
               "bok, bor"
             ],
             [
@@ -726,7 +728,7 @@
             [
               "I",
               "Wide smile; ई is a starting bridge",
-              "Indien"
+              "Kina, Indien"
             ],
             [
               "E",
@@ -740,13 +742,13 @@
             ],
             [
               "Ä",
-              "Relaxed open front sound; near e in bed",
+              "Open front sound; near Hindi ऐ in है (not Marathi ai)",
               "bär"
             ],
             [
               "Å",
-              "Deep rounded sound; ऑ/aw is a starting bridge",
-              "från"
+              "Deep rounded sound; long Å is near ओ",
+              "från, hår"
             ]
           ]
         },
@@ -786,7 +788,7 @@
             },
             {
               "symbol": "O",
-              "cue": "Round the lips as in boots. In these words Swedish O sounds close to a long oo.",
+              "cue": "Round the lips as in boots. In these words Swedish O sounds close to a long oo or ऊ, with tighter lips.",
               "features": [
                 "rounded"
               ],
@@ -894,7 +896,7 @@
             },
             {
               "symbol": "Ä",
-              "cue": "Drop the jaw as for A, but aim for E. Near the e in bed.",
+              "cue": "Drop the jaw as for A, but aim for E. Near Hindi ऐ in है (not the Marathi ai). Before r, as in bär, it opens even more.",
               "features": [
                 "front"
               ],
@@ -915,7 +917,7 @@
             },
             {
               "symbol": "Å",
-              "cue": "The real O: deep and round. ऑ or English aw is a starting bridge.",
+              "cue": "The real O: deep and round. Long å, as in från and hår, is near Hindi ओ. A short å, as in och, is more open, near ऑ.",
               "features": [
                 "rounded"
               ],
@@ -945,7 +947,7 @@
             {
               "label": "O → Å",
               "audio": "bok, bor. från, hår.",
-              "cue": "Swedish O often sounds like oo. The O you know from English is usually written Å."
+              "cue": "Swedish O often sounds like oo (ऊ). The O you know from Hindi ओ is usually written Å."
             }
           ],
           "quizPrompt": "RECIPE CHECK · WHICH VOWEL DO THESE MAKE?"
@@ -955,8 +957,9 @@
         "title": "Long or short: stretch one part",
         "kind": "rule",
         "body": [
+          "Stress first: most Swedish words are stressed on the first syllable (SVEN-ska, MAM-ma, HEL-sing-fors). Loanwords often keep a late stress: ka-FÉ, pa-ra-PLY. Stress and length help people understand you more than a perfect vowel does.",
           "In a stressed Swedish syllable, either the vowel is long or the consonant after it is long. Hear both parts, not only the vowel.",
-          "A common spelling clue is: one consonant letter after the stressed vowel often means a longer vowel; a doubled consonant often means a short vowel and longer consonant. It is a clue, not a rule without exceptions.",
+          "A common spelling clue is: one consonant letter after the stressed vowel often means a longer vowel; a doubled consonant often means a short vowel and longer consonant. Your teacher's English bridge works the same way: write (long i) and written (short i before tt). It is a clue, not a rule without exceptions.",
           "Use the routine: find the stressed vowel → look right → listen → copy the whole word."
         ],
         "examples": [
@@ -968,7 +971,7 @@
           {
             "fi": "kafé — kaffe",
             "en": "café — coffee",
-            "note": "Hear the stressed final é in kafé and the short a plus long f in kaffe."
+            "note": "Stress moves: ka-FÉ (a loanword) but KAF-fe, with a short a and a long f."
           },
           {
             "fi": "bor — mamma · pappa · pluggar",
@@ -1114,7 +1117,8 @@
         "body": [
           "The spelling group E, I, Y, Ä, Ö often softens the consonant immediately before it. These are front vowels because the tongue is forward; Y and Ö still use rounded lips.",
           "G usually becomes the Swedish j sound, K usually becomes the tj sound /ɕ/, and SK usually becomes the sj sound /ɧ/ before this group.",
-          "TJ is not exactly English ch, and SJ is not exactly English sh. Use the shortcut to predict, then use audio to learn the actual sound. Some loanwords are exceptions."
+          "Two accents, both correct. In Finland-Swedish, the Swedish you hear in Helsinki, tj sounds close to ch in chai (your teacher's ciao) and sj sounds close to English sh (श). The app's voices are from Sweden: their tj is a soft hiss with no t, and their sj is a breathier, rounder sound. Copy whichever you hear around you; people understand both.",
+          "Use the shortcut to predict, then use audio to learn the actual sound. Some loanwords are exceptions. One habit to avoid: do not put an i before sk, as in iskärm. Say skärm, ska, skuld straight away."
         ],
         "examples": [
           {
@@ -1125,12 +1129,12 @@
           {
             "fi": "Kina · köper · kött · tjej · tjuv",
             "en": "soft K/TJ → /ɕ/",
-            "note": "Swedes call it the tjugo sound (tjugo = 20): a small, sharp hiss with the tongue forward. Do not add an English t + ch."
+            "note": "Swedes call it the tjugo sound (tjugo = 20). Sweden-Swedish: a small, sharp hiss with the tongue forward. Finland-Swedish: close to ch in chai."
           },
           {
             "fi": "skärm · skiner · sjuk · skjorta",
             "en": "SK/SJ/SKJ → sj sound /ɧ/",
-            "note": "The sju sound (sju = 7): deeper and further back than tj. It varies by region and speaker."
+            "note": "The sju sound (sju = 7). Sweden-Swedish: deeper and breathier than tj. Finland-Swedish: close to English sh."
           },
           {
             "fi": "ska · skuld",
@@ -1172,7 +1176,7 @@
             ]
           ]
         },
-        "memoryTip": "Same five soft vowels, three different results: G → J, K → TJ, SK → SJ. Tjugo (20) is the small, sharp sound; sju (7) is the big, deep one. Do not call them both ‘sh’.",
+        "memoryTip": "Same five soft vowels, three different results: G → J, K → TJ, SK → SJ. In Helsinki: tjugo starts like chai, sju starts like shoe. Keep the two apart: Kina and skiner must not sound the same.",
         "tryIt": "Underline the first vowel in gillar, kött, and skärm. Predict the sound, listen, then repeat each word twice.",
         "activity": {
           "type": "sort",
@@ -1183,22 +1187,22 @@
             {
               "id": "j",
               "label": "j sound",
-              "hint": "as in ja · g + soft vowel"
+              "hint": "as in ja"
             },
             {
               "id": "tj",
               "label": "tj sound",
-              "hint": "as in tjugo · k + soft vowel, or tj"
+              "hint": "as in tjugo"
             },
             {
               "id": "sj",
               "label": "sj sound",
-              "hint": "as in sju · sk + soft vowel, sj, skj"
+              "hint": "as in sju"
             },
             {
               "id": "hard",
               "label": "No change",
-              "hint": "a hard vowel (a, o, u, å) follows"
+              "hint": "g, k, sk stay hard"
             }
           ],
           "items": [
@@ -1308,8 +1312,9 @@
         "title": "Recognise the remaining Lesson 1 spellings",
         "kind": "rule",
         "body": [
-          "Recognition only today: SJ and SKJ normally use the sj sound, as in sjuk and skjorta. Initial HJ and LJ normally begin with the Swedish j sound, as in hjälp and ljus.",
-          "Dialect matters in Finland: Sweden-Swedish often merges RS in kurs into a retroflex sound, while Finland-Swedish usually keeps R + S. Many Finland-Swedish speakers also keep a clear D in djur.",
+          "Recognition only today: SJ and SKJ normally use the sj sound, as in sjuk and skjorta. At the start of a word, HJ, DJ and LJ are said as the Swedish j alone: hjälp sounds like yelp, djur like yoor, ljus like yoos.",
+          "RS is where the two accents differ. In Sweden the r melts into the s, giving a sh made with the tongue tip curled back, as for Hindi ट or ड. That is your teacher's sh in kurs and mars. Finland-Swedish usually keeps R + S separate. Both are correct; the app's voices use the Sweden sound.",
+          "Plain Swedish t and d are dental, like Hindi त and द: the tongue touches the back of the top teeth. Say tack with त, not with the ट that Indian English often uses for t.",
           "Och is /ɔk/ in careful speech and is often shorter in conversation. Skönt normally means pleasant or comfortable; say fint hår or snyggt hår for a natural compliment."
         ],
         "examples": [
@@ -1326,12 +1331,12 @@
           {
             "fi": "djur",
             "en": "animal",
-            "note": "You may hear j alone in Sweden or a retained d in Finland-Swedish."
+            "note": "The d is silent: say yoor, with the Swedish long u."
           },
           {
             "fi": "kurs · mars",
             "en": "course · March/Mars",
-            "note": "Keep r + s separate for a Finland-Swedish target."
+            "note": "Sweden: one curled-tongue sh. Finland-Swedish: r + s kept apart. Choose one and be consistent."
           },
           {
             "fi": "Jag gillar din rosa skjorta. Du har fint hår.",
@@ -1339,8 +1344,8 @@
             "note": "The textbook uses skönt hår; fint hår is the natural compliment to produce."
           }
         ],
-        "memoryTip": "These are recognition words, not a second test. Your target is to notice the spelling and accept dialect variation.",
-        "tryIt": "Listen once to sjuk, skjorta, hjälp, ljus, djur, kurs, and mars. Copy the Finland-Swedish model you want to use; do not force every word into one accent."
+        "memoryTip": "These are recognition words, not a second test. Notice the spelling, and accept that Sweden and Finland say rs differently.",
+        "tryIt": "Listen once to sjuk, skjorta, hjälp, ljus, djur, kurs, and mars. Say hjälp, djur and ljus with a j start. Then say tack twice with a dental त-like t."
       }
     ],
     "guided": [
@@ -1387,6 +1392,17 @@
         "explanation": "Svenska is the language Swedish."
       },
       {
+        "id": "sv-01-guided-type-home",
+        "prompt": "Type in Swedish: I come from India, but I live in Helsinki now.",
+        "answers": [
+          "Jag kommer från Indien, men jag bor i Helsingfors nu.",
+          "Jag kommer från Indien, men nu bor jag i Helsingfors.",
+          "Jag kommer från Indien, men jag bor i Helsinki nu."
+        ],
+        "hint": "Origin with kommer från, then men, then home with bor i. Use the Swedish name for Helsinki.",
+        "explanation": "Jag kommer från Indien, men jag bor i Helsingfors nu. In Swedish, Helsinki is Helsingfors."
+      },
+      {
         "id": "sv-01-guided-length",
         "prompt": "Which word normally has the longer stressed vowel?",
         "answers": [
@@ -1420,38 +1436,41 @@
         "id": "sv-01-check-intro",
         "prompt": "Produce: ‘Hello! My name is Alex. I live in Finland. I come from India. I speak Hindi and English.’",
         "answers": [
-          "Hej! Jag heter Alex. Jag bor i Finland. Jag kommer från Indien. Jag talar hindi och engelska."
+          "Hej! Jag heter Alex. Jag bor i Finland. Jag kommer från Indien. Jag talar hindi och engelska.",
+          "Hej! Jag heter Alex. Jag bor i Finland. Jag kommer från Indien. Jag talar engelska och hindi.",
+          "Hej! Jag heter Alex. Jag bor i Finland. Jag kommer från Indien. Jag pratar hindi och engelska.",
+          "Hej! Jag heter Alex. Jag bor i Finland. Jag kommer från Indien. Jag pratar engelska och hindi."
         ],
         "hint": "Use the four introduction chunks in order.",
         "explanation": "Model: Hej! Jag heter Alex. Jag bor i Finland. Jag kommer från Indien. Jag talar hindi och engelska."
       },
       {
         "id": "sv-01-check-sounds",
-        "prompt": "Which row groups the normal soft sounds correctly?",
+        "prompt": "New words, same rule. Which word starts with the tj sound?",
         "answers": [
-          "gäst - j sound; kött - tj sound; skärm - sj sound"
+          "kör (drives)"
         ],
         "options": [
-          "gäst - j sound; kött - tj sound; skärm - sj sound",
-          "gäst - hard g; kött - hard k; skärm - hard sk",
-          "gäst - sj sound; kött - j sound; skärm - tj sound"
+          "kör (drives)",
+          "kan (can)",
+          "god (good)"
         ],
-        "hint": "Front vowels often soften g, k, and sk.",
-        "explanation": "G, k, and sk have three different softened sounds in these words."
+        "hint": "Look at the vowel right after the first consonant. Is it e, i, y, ä or ö?",
+        "explanation": "K + ö, a soft vowel, gives the tj sound: kör. In kan and god a hard vowel follows, so k and g stay hard."
       },
       {
         "id": "sv-01-check-length",
-        "prompt": "Which instruction produces the tak/tack contrast?",
+        "prompt": "New words, same clue. Which one has a long, stretched vowel?",
         "answers": [
-          "Stretch the a in tak; cut the a and hold the k in tack"
+          "hus (house)"
         ],
         "options": [
-          "Stretch the a in tak; cut the a and hold the k in tack",
-          "Say both words with exactly the same timing",
-          "Stretch the a in tack and remove the k"
+          "hus (house)",
+          "buss (bus)",
+          "kaffe (coffee)"
         ],
-        "hint": "In the stressed syllable, either the vowel or the following consonant is long.",
-        "explanation": "Tak has a long vowel; tack has a short vowel followed by a longer k sound."
+        "hint": "Look right after the stressed vowel: one consonant letter or two?",
+        "explanation": "Hus has one s, so the u is long. Buss and kaffe have a double consonant, so the vowel is short, just like tak and tack."
       }
     ],
     "assignment": {
@@ -1462,7 +1481,8 @@
     "takeaways": [
       "Core: say Jag heter … · Jag bor i … · Jag kommer från … · Jag talar … as four complete chunks.",
       "Mouth first, audio second: use the Hindi/Marathi/English bridge to find the shape, then copy the Swedish model.",
-      "Practise one contrast at a time: tak/tack or the g → j, k → tj, sk → sj pattern."
+      "Practise one contrast at a time: tak/tack or the g → j, k → tj, sk → sj pattern.",
+      "Two accents, both correct: in Helsinki tj sounds like ch and sj like sh; the app's Sweden voices say them more softly."
     ],
     "dialogue": [
       {
@@ -1472,8 +1492,8 @@
       },
       {
         "speaker": "Alex",
-        "fi": "Hej! Jag heter Alex. Jag gillar din rosa skjorta!",
-        "en": "Hello! My name is Alex. I like your pink shirt!"
+        "fi": "Hej! Jag heter Alex. Jag gillar din tröja!",
+        "en": "Hello! My name is Alex. I like your sweater!"
       },
       {
         "speaker": "Elin",
@@ -1560,7 +1580,7 @@
         {
           "id": "sv-01-word-5",
           "fi": "Jag talar …",
-          "en": "I speak …",
+          "en": "I speak … (in speech you also hear Jag pratar …)",
           "example": "Jag talar svenska.",
           "translation": "I speak Swedish.",
           "level": "A0"
@@ -1676,11 +1696,27 @@
           "example": "Var kommer du ifrån? Jag kommer från Kina.",
           "translation": "Where are you from? I come from China.",
           "level": "A0"
+        },
+        {
+          "id": "sv-01-word-20",
+          "fi": "tröja",
+          "en": "sweater; jumper",
+          "example": "Jag gillar din tröja!",
+          "translation": "I like your sweater!",
+          "level": "A0"
+        },
+        {
+          "id": "sv-01-word-21",
+          "fi": "Helsingfors",
+          "en": "Helsinki (its Swedish name)",
+          "example": "Jag bor i Helsingfors.",
+          "translation": "I live in Helsinki.",
+          "level": "A0"
         }
       ],
       "pronunciation": {
         "text": "Jag. Ja. Bok. Bor. Du. Dum. By. Paraply. Le. Ö. Bär. Från. Tak. Tack. Gäst. Gillar. Kina. Kött. Skärm. Skiner. Sjuk. Skjorta. Kurs. Mars. Hjälp. Djur. Ljus.",
-        "tip": "Do not repeat the whole list at once. Choose one group: the nine vowel words, tak/tack, or gillar/kött/skärm. For kurs, mars, and djur, follow the Finland-Swedish variation explained above."
+        "tip": "Do not repeat the whole list at once. Choose one group: the nine vowel words, tak/tack, or gillar/kött/skärm. Hjälp, djur and ljus start with j. For kurs and mars, the voice uses the Sweden sound; Finland-Swedish keeps r + s apart."
       },
       "reading_passage": {
         "text": "Hej! Jag heter Alex.\nJag bor i Helsingfors.\nJag kommer från Indien.\nJag talar hindi, engelska och lite svenska.",
@@ -2570,7 +2606,7 @@
           "Two classmates"
         ],
         "hint": "Listen for syster and bror.",
-        "explanation": "Det är min syster. Hon heter Priya. Han är min bror, Rohan."
+        "explanation": "Titta, det är min syster. Hon heter Priya. … Han är min bror, Rohan."
       }
     ],
     "sections": [
@@ -2906,8 +2942,10 @@
         "kind": "rule",
         "body": [
           "Swedish subject pronouns: jag (I), du (you, one person), han (he), hon (she), hen (they, one person), vi (we), ni (you, two or more), de (they).",
-          "Count the people for you: du is singular (one person), ni is plural (two or more). Modern Swedish uses du with almost everyone, including teachers and shop staff.",
-          "Hen means one person without saying he or she. Use it when you do not know or it does not matter (En ny elev kommer. Hen heter Kim.), and for people who are neither he nor she. It works like Finnish hän. De is written de but said dom.",
+          "English has one word, you. Swedish counts the people: du is singular (one person), ni is plural (two or more).",
+          "Swedish has no polite you like Hindi आप or Marathi तुम्ही. Say du to one person, even a teacher, a doctor or a shop assistant. In Finland you may hear ni to one older stranger as extra politeness, but du is the normal choice.",
+          "Hen means one person without saying he or she, like English singular they. Use it when you do not know or it does not matter (En ny elev kommer. Hen heter Kim.), and for people who are neither he nor she. It works like Finnish hän. De (they, two or more) is written de but said dom.",
+          "Things are not han or hon. A thing is den or det (it): on page 6 the milk is den (Den är slut).",
           "A common trap: someone and I together is vi (we). Anna och jag bor i Esbo. Vi talar svenska. When you talk to two people, use ni: Hej Sara och Peter! Talar ni svenska?"
         ],
         "examples": [
@@ -2961,8 +2999,8 @@
             ],
             [
               "du",
-              "you, one person",
-              "तू / तुम · तू"
+              "you, one person (anyone, even a teacher)",
+              "तू · तुम · आप: all of them are du"
             ],
             [
               "han",
@@ -2976,8 +3014,8 @@
             ],
             [
               "hen",
-              "they, one person, no he/she",
-              "like Finnish hän"
+              "one person, not he or she",
+              "like Finnish hän, and like Hindi वह (he or she)"
             ],
             [
               "vi",
@@ -2987,16 +3025,16 @@
             [
               "ni",
               "you, two or more",
-              "तुम लोग · तुम्ही"
+              "आप लोग / तुम लोग · तुम्ही सगळे"
             ],
             [
               "de (said dom)",
               "they, two or more",
-              "वे · ते"
+              "वे · ते / त्या"
             ]
           ]
         },
-        "memoryTip": "Ni is like Marathi तुम्ही: more than one person. Hen is like Finnish hän: one word when he or she is unknown, unimportant, or not right for the person.",
+        "memoryTip": "Count heads, not respect. Hindi आप and Marathi तुम्ही can be polite to one person; Swedish ni is not. One person is du, two or more is ni. Hen is like Finnish hän: one word when he or she is unknown, unimportant, or not right for the person.",
         "tryIt": "Look at three photos on your phone. For each, say one pronoun sentence aloud: Hon heter … · Han bor i … · De bor i …",
         "activity": {
           "type": "match",
@@ -3046,7 +3084,7 @@
         "title": "People in your life: family and relationships",
         "kind": "scene",
         "body": [
-          "Family words are nouns: syster, bror, barn. Build sentences with the verbs har (have) and är (am): Jag har en syster. Jag är gift.",
+          "Family words are nouns: syster, bror, barn. Build sentences with the verbs har (have) and är (am, is, are): Jag har en syster. Jag är gift.",
           "Swedish glues words together into compound words: pojke + vän = pojkvän (boyfriend), flicka + vän = flickvän (girlfriend). Bo means live, as in Jag bor i: a sambo lives together with a partner, a särbo lives apart.",
           "Useful status words: gift (married), sambo, singel, skild (divorced; skilja sig = to get divorced), and Jag bor ensam (I live alone). Barn means child or children; syskon means brothers and sisters together."
         ],
@@ -3074,7 +3112,7 @@
           {
             "fi": "De har två barn, en son och en dotter.",
             "en": "They have two children, a son and a daughter.",
-            "note": "Barn is both child and children."
+            "note": "Barn is both child and children. One child is ett barn, not en barn (en and ett come in a later lesson)."
           }
         ],
         "table": {
@@ -3097,7 +3135,7 @@
             [
               "sambo",
               "partner you live with",
-              "Jag är sambo med Mikko."
+              "Jag är sambo med Mikko. · Jag har en sambo."
             ],
             [
               "särbo",
@@ -3170,8 +3208,9 @@
         "kind": "rule",
         "body": [
           "Vad = what, hur = how, var = where, varifrån = where from, när = when, varför = why, vem = who.",
-          "Word order: question word → verb → subject (the person). Var bor du? När kommer de? The verb always comes second.",
-          "A yes/no question starts with the verb itself: Är du gift? Har du syskon? Talar du svenska? Vilken, vilket and vilka (which) come in a later lesson."
+          "Word order: question word → verb → subject (the person). Var bor du? När kommer de? The verb comes second. If the question part is two words, like hur gammal, the verb comes right after both: Hur gammal är du?",
+          "English adds do: Where do you live? Swedish has no do. Var bor du? is word for word 'where live you'. Hindi puts the verb last (तुम कहाँ रहते हो?), but Swedish moves it up to second place. So never Var du bor?",
+          "A yes/no question starts with the verb itself: Är du gift? Har du syskon? Talar du svenska? You met Vilka språk talar du? in Lesson 1; vilken, vilket and vilka (which) come back in a later lesson."
         ],
         "examples": [
           {
@@ -3230,7 +3269,7 @@
             [
               "var",
               "a place",
-              "Var bor du?"
+              "Var bor du? · Var ligger …? (where a thing or town is)"
             ],
             [
               "varifrån",
@@ -3408,7 +3447,7 @@
                 "fi": "Jag heter Priya.",
                 "en": "My name is Priya.",
                 "bucket": "vad",
-                "why": "It answers Vad heter du? A name is a thing you ask for with vad."
+                "why": "It answers Vad heter du? Swedish asks for a name with vad (what), just like English."
               },
               {
                 "fi": "Jag mår bra, tack.",
@@ -3573,7 +3612,7 @@
       },
       {
         "id": "sv-02-guided-vi",
-        "prompt": "Alex says: Priya och jag bor i Helsingfors. ___ gillar kaffe.",
+        "prompt": "Alex says: Elin och jag pluggar svenska. ___ gillar kaffe.",
         "answers": [
           "Vi"
         ],
@@ -3636,7 +3675,14 @@
           "Hur mår du? Jag mår bra, tack. Och du?",
           "Hur mår du? Jag mår bra. Och du?",
           "Hur är det? Det är bra, tack. Och du?",
-          "Hur är det? Det är bra. Och du?"
+          "Hur är det? Det är bra. Och du?",
+          "Hur mår du? Bra, tack. Och du?",
+          "Hur mår du? Bra. Och du?",
+          "Hur är det? Bra, tack. Och du?",
+          "Hur är det? Jag mår bra, tack. Och du?",
+          "Hur mår du? Jag mår bra, tack. Hur mår du?",
+          "Hur är det med dig? Det är bra, tack. Och du?",
+          "Hur är det med dig? Jag mår bra, tack. Och du?"
         ],
         "hint": "Ask with mår, answer with the same verb, then ask back.",
         "explanation": "Model: Hur mår du? Jag mår bra, tack. Och du?"
@@ -3668,6 +3714,31 @@
         ],
         "hint": "Write it full, hear it short.",
         "explanation": "Write de, say dom. Dom is common in speech and chat, but de is the standard written form. Den means it."
+      },
+      {
+        "id": "sv-02-check-ni",
+        "prompt": "Type the question: you ask Priya and Rohan together, ‘Where do you live?’",
+        "answers": [
+          "Var bor ni?"
+        ],
+        "hint": "Two listeners. Question word, then the verb.",
+        "explanation": "Var bor ni? Two people you talk to are ni, and the verb bor comes second. There is no do in Swedish."
+      },
+      {
+        "id": "sv-02-check-du",
+        "prompt": "Type the question: you ask your teacher Henrik (one person), ‘How are you?’",
+        "answers": [
+          "Hur mår du?",
+          "Hur är det?",
+          "Hur är det med dig?",
+          "Hur mår du Henrik?",
+          "Henrik hur mår du?",
+          "Hej Henrik hur mår du?",
+          "Hej hur mår du?",
+          "Hur är det Henrik?"
+        ],
+        "hint": "One person, even a teacher.",
+        "explanation": "Hur mår du? Swedish has no polite you like Hindi आप: one person, even a teacher, is du. Ni would mean two or more people."
       }
     ],
     "assignment": {
@@ -3698,8 +3769,8 @@
       },
       {
         "speaker": "Alex",
-        "fi": "Det är min syster. Hon heter Priya.",
-        "en": "That's my sister. Her name is Priya."
+        "fi": "Oj då. Titta, det är min syster. Hon heter Priya.",
+        "en": "Oh dear. Look, that's my sister. Her name is Priya."
       },
       {
         "speaker": "Elin",
@@ -4034,7 +4105,7 @@
         "tip": "Choose one group. Hear the long, round å in mår and så, the open ä in är and när, and the ö in varför and trött. Say de as dom."
       },
       "reading_passage": {
-        "text": "Hej Priya!\nHur mår du? Jag mår bra, men jag är lite trött.\nJag har en ny vän. Hon heter Elin. Hon är sambo och hon bor i Helsingfors.\nNär kommer ni till Finland?\nAlex",
+        "text": "Hej Priya!\nHur mår du? Jag mår bra, men jag är lite trött.\nJag har en ny vän. Hon heter Elin. Hon är sambo och hon bor i Helsingfors.\nKommer ni nästa vecka?\nAlex",
         "gist": {
           "prompt": "What is the main purpose of this message?",
           "options": [
@@ -4043,7 +4114,7 @@
             "Order food"
           ],
           "answer": 0,
-          "explanation": "Alex says how he feels, tells Priya about Elin, and asks when they are coming."
+          "explanation": "Alex says how he feels, tells Priya about Elin, and asks if she and Rohan (ni) are coming next week."
         },
         "detail": {
           "prompt": "How does Alex feel?",
@@ -4057,7 +4128,7 @@
         }
       },
       "reading": {
-        "text": "Hej Priya!\nHur mår du? Jag mår bra, men jag är lite trött.\nJag har en ny vän. Hon heter Elin. Hon är sambo och hon bor i Helsingfors.\nNär kommer ni till Finland?\nAlex",
+        "text": "Hej Priya!\nHur mår du? Jag mår bra, men jag är lite trött.\nJag har en ny vän. Hon heter Elin. Hon är sambo och hon bor i Helsingfors.\nKommer ni nästa vecka?\nAlex",
         "question": "Where does Elin live?",
         "options": [
           "Helsinki",

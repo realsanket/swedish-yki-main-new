@@ -67,11 +67,11 @@ Only this source scope was used for the current curriculum change.
 | Nine vowels | Full nine-vowel table and pronunciation drill | Expanded from the previous partial treatment |
 | `tak` / `tack`, `kaffe`, `kafé`, `mamma`, `pappa`, `pluggar` | Stress and vowel-length section | Taught as spelling/length clues |
 | g + front vowel | Soft-g cue with `gäst`, `gissar`, `gillar` | Included with exceptions caveat |
-| k + front vowel | Tj-sound cue with `Kina`, `köper`, `kött` | Described as /ɕ/, not simply English “ch” |
-| sk + front vowel; sj/skj | Sj-sound cue with `skärm`, `skiner`, `sjuk`, `skjorta` | Described as /ɧ/, not simply English “sh” |
+| k + front vowel | Tj-sound cue with `Kina`, `köper`, `kött` | Sweden-Swedish /ɕ/ (the app's voices); Finland-Swedish close to “ch” in chai. Both taught as correct |
+| sk + front vowel; sj/skj | Sj-sound cue with `skärm`, `skiner`, `sjuk`, `skjorta` | Sweden-Swedish /ɧ/ (the app's voices); Finland-Swedish close to English “sh”. Both taught as correct |
 | `ska`, `skuld` | Back-vowel contrast | Preserved as hard-sk examples |
 | rs | `kurs`, `mars` | Regional caveat added, especially for Finland-Swedish |
-| initial hj/dj/lj | `hjälp`, `djur`, `ljus` | `hj`/`lj` begin with /j/; `djur` includes the Finland-Swedish retained-`d` variation |
+| initial hj/dj/lj | `hjälp`, `djur`, `ljus` | `hj`/`lj` begin with /j/; `hj`, `dj`, `lj` at the start of a word are said as /j/ alone, as the teacher teaches |
 | `skönt`, `hår`, `och`, `gillar`, `rosa` | Vocabulary and original dialogue | Meanings and natural usage corrected where needed |
 
 ### Accuracy decisions
@@ -79,10 +79,10 @@ Only this source scope was used for the current curriculum change.
 - The teacher heading **Sound harmony** is retained only as a source label. Swedish does not have a general vowel-harmony rule; Episode 1 teaches stress, vowel length, and spelling cues.
 - The language name is **hindi**, not `hindu`.
 - `Skönt hår` is not taught as a natural compliment. Episode 1 uses `fint hår` or `snyggt hår`; `skönt` is explained as pleasant or comfortable.
-- Tj /ɕ/ and sj /ɧ/ are Swedish sounds, not exact copies of English/Italian “ch” and English “sh”.
+- Tj and sj: the app's Sweden-Swedish voices say /ɕ/ and /ɧ/; Finland-Swedish says them close to “ch” and “sh”. Lecture 1 teaches both as correct (review, October 3); the voices stay Sweden-Swedish (AGENTS.md backlog 3a).
 - The rs merger varies by dialect. Finland-Swedish often keeps r and s more separate than central Swedish.
 - **Front vowel** describes tongue position, not lip shape. `y` and `ö` are front vowels with rounded lips, so “front vowels = smiling sounds” is not used as a rule.
-- In Finland-Swedish, `djur` may retain a clearly pronounced `d`; Episode 1 no longer presents silent `d` as universal.
+- Initial `dj` in `djur` is said /j/, as the teacher teaches. An earlier note that Finland-Swedish keeps the `d` had no source and was removed (review, October 3).
 - `Och` is /ɔk/ in careful speech and is often reduced in ordinary conversation.
 
 ### Episode 1 teaching pattern
@@ -896,3 +896,16 @@ activities only). Story facts relied on: Alex lives alone and works from home,
 wants a tvåa with a desk space and bike storage, and the Hertonäs flat was too
 small; Maja's favourite subject is chemistry. Pictures for Lectures 17-22 are in
 `docs/image-prompts/episodes.md`.
+
+## Lectures 1-2 review — October 3, 2026
+
+The same independent review as Lectures 3-22, one reviewer per lecture. All
+teacher items in Lessons 1-2 are taught, and the page 4-6 lines match the scans.
+
+| Lecture | Correctness fixes | Improvements | For the teacher |
+|---:|---|---|---|
+| 1 | Alex praised Elin's "rosa skjorta" while the art shows a rust-red sweater (now `din tröja`); the unsourced `djur` retained-d claim; text that told the learner not to use ch/sh although that is the Finland-Swedish sound; Hindi vowel bridges (long å ≈ ओ, o ≈ ऊ, ä ≈ ऐ in है, Marathi ऐ warning); sort hints that stated the rule; checkpoint items that repeated the guided ones; hero text not matching its audio. Teacher's "lite ryska och lite portugisiska" and the write/written length bridge added. | Stress first (first syllable; kafé, paraply at the end); dental t/d like त/द, not Indian-English ट; the "iskärm" trap; Swedish place names (Helsingfors, Esbo, Vanda, Åbo); `pratar`; no comma before och; 29 letters; a typed "I come from India, but I live in Helsinki now". | Should the learner aim for the Finland-Swedish ch, sh and r+s rather than the app's Sweden sounds? |
+| 2 | "Ni is like Marathi तुम्ही" invited ni to one polite person (now "count heads, not respect": तू, तुम, आप → du); Priya placed in Helsinki; Alex asking "När kommer ni" after he knew; "vilken comes later" though Lecture 1 uses Vilka; är = am only; an abrupt dialogue turn; narrow greeting answers. | hen beside English singular they and Hindi वह; den/det for things (page 6 "Den är slut"); two causes of "Var du bor?" (English do, Hindi verb-last); `Var ligger …?`; `ett barn`; `Jag har en sambo`; two typed checkpoint items (ni to two people, du to teacher Henrik). `Moi` not added (no Finland-Swedish source). | `Oj då. Titta, det är min syster.`; ni to one older stranger in Helsinki; `Morjens` |
+
+Swedish input: about 670 (L1) and 910 (L2) words counted broadly with the word
+bank and repeats; connected text about 245 and 400 words.
