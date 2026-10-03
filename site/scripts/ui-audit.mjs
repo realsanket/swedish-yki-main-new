@@ -108,7 +108,7 @@ async function completeActivity(page, activity) {
       const item = activity.items.find(item => norm(item.fi) === text);
       assert.ok(item,`Unknown sort card: ${text}`);
       const bucket = activity.buckets.find(b => b.id === item.bucket);
-      await root.getByRole('group',{name:'Choose a group'}).getByRole('button',{name:new RegExp(`^${esc(bucket.label)}`)}).click();
+      await root.getByRole('group',{name:'Choose a group'}).getByRole('button',{name:new RegExp(`^${esc(bucket.label)}(?!\\p{L})`,'u')}).click();
       await root.getByRole('button',{name:/^(Next card|See my result)/}).click();
     }
     assert.ok(await root.getByText(`${activity.items.length} of ${activity.items.length} on the first try`,{exact:true}).isVisible());

@@ -823,3 +823,27 @@ reports were kept with the session; the outcome:
 Swedish input after the review: about 660 (L3), 850 (L4), 1,080 (L6) and 1,180
 (L7) words; Lectures 3-4 stay above the A0 band, as already noted. Pictures for
 these lectures are planned in `docs/image-prompts/episodes.md`.
+
+## Lectures 3-10 review round 2 — October 3, 2026
+
+One reviewer per lecture re-checked correctness and then improved the teaching
+using online sources (SAOL/svenska.se, Språkrådet, Institutet för de inhemska
+språken, hel.fi, Svenska Yle, YKI test pages, sfi and learner-error research).
+Lectures 8-10 had their first full review in this round.
+
+| Lecture | Correctness fixes | Improvements | For the teacher |
+|---:|---|---|---|
+| 3 | `vet` added to the present-tense exceptions; word-order table gets its own second-verb column and the teacher's `I dag ska vi inte ha en paus` row. | Negation and time-first clues for Hindi/Marathi speakers; the `måste inte` trap (→ `får inte` / `behöver inte`); Helsinki `hälsostationen`; typed command and present items; a taught unplanned question. | `Kan du komma på kaffe i kväll?` |
+| 4 | Maja's evening habit no longer contradicts the listening text; odd model line and weak guided option replaced; Mikko in Elin's plans. | En/ett ending clues with honest exceptions; en/ett is not male/female; `inom IT`, Finland-Swedish `sjukskötare`; `brukar` without `att`, not "used to"; på-habit vs i-once sort; a third typed checkpoint item. | `sjukskötare` |
+| 5 | Teacher's missing `en snäll kollega`; `mitt intresse` warning; a listening cause/result fixed; more accepted answers. | Link-word sort with the link missing; predict-the-ending sort for the definite form (kafé → kaféet); för/så compared with Hindi/Marathi; `intresserad av`; -t adjectives that stay; `Det är roligt`. | `Kollegan kommer från Sverige`; `jag ska riskera`; `går i gymnasiet` |
+| 6 | False `började` trap removed; hem/hemma sort no longer shows its answers; party wording. | Past questions and negatives without "did"; unchanging past form vs Hindi/English; `i lördags`, `för … sedan`; `Vad tråkigt!`; irregular verbs in sound families. | `jag klarade matteprovet` (or `hade klarat`) |
+| 7 | Maths-test note; a contradictory sample answer; `pengar` is plural; `bok → böcker` taught; wider accepted answers. | Final-stress clue for group 3 with a predict item; många/mycket for English/Hindi/Marathi speakers; några/lite; counting with en/ett. | Source page 23 lines (unchanged) |
+| 8 | Page 20 spelling `kafe`; a false hunt claim; ambiguous match; the `handlar om` tip; rejected typed answers; a reading text that made Elin a newcomer. | Untaught teacher topics added (time phrases, `för … sedan`, breakfast words, `vänta på / arg på / berätta för`, dates, `Jag finns här för dig`) in a new section; verb-second sort; YKI card-to-a-friend writing task; story continues from Lecture 7. | Source lines only |
+| 9 | Speech tags restored on pages 24-25; red-word hunts completed; the promised shop scene added to the dialogue; give-away sorts; the -are note; `hälsostation` for Helsinki. | Body and symptom words; a nurse-question activity; Hindi `sir mein dard` bridge; plural adjectives after `är`, den/det + adjective; a clothes and colours section with `tycker om`; YKI-style call to the health station. | Teacher's notes stress `tycker om` the other way; source `går bra med`; `Var gör det ont?` |
+| 10 | Wrong number hunt; tjugoen/tjugoett note; a male line in a female voice; `Titta, en regnbåge!`; ambiguous food pairs; give-away number cards; texts that contradicted the dialogue. | Missing `ingen/inget/inga` and `Det kommer att regna`; spoken numbers, addresses and phone numbers; prices in euros; Hindi/Marathi kinship hooks (mama trap); the `halv sex` trap; `Det regnar` vs `Det är regnar`; minus degrees. | `tre och femtio` for €3.50 in Finland-Swedish shops |
+
+Swedish input after round 2: about 685 (L3), 900 (L4), 960 (L5), 1,110 (L6),
+1,250 (L7), 920 (L8), 1,100 (L9) and 1,200 (L10) words. The teacher's
+`Förföräldrar` is not a word; Lecture 10 teaches far- och morföräldrar. The
+earlier note that page 29's printed number labels are preserved is no longer
+accurate. Pictures for Lectures 8-10 are added to `docs/image-prompts/episodes.md`.
