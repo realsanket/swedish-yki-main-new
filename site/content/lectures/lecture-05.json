@@ -772,7 +772,7 @@
       "kind": "scene",
       "body": [
         "A dream can be a job, a home or something you want to learn. Use Jag drömmer om + a thing: Jag drömmer om ett hus. Use Jag vill bli + a job when you mean “I want to become”. After bli, a job has no en or ett: Jag vill bli fotograf.",
-        "Blir is the present tense of bli: När jag blir stor means when I grow up. Some words always bring the same small word with them, so learn them as chunks: intresserad av (interested in), ser upp till (look up to), trött på (tired of).",
+        "Blir is the present tense of bli: När jag blir stor means when I grow up. Some words always bring the same small word with them, so learn them as chunks: intresserad av (interested in), ser upp till (look up to), trött på (tired of). English “interested in” tempts you to say intresserad i. Swedish always says intresserad av.",
         "Byta jobb means change jobs; byta kläder means change clothes. The present tense is byter: Jag byter jobb. Går en kurs means takes or attends a course."
       ],
       "examples": [
@@ -838,6 +838,7 @@
       "body": [
         "A conjunction is a small linking word. Och adds. Eller gives a choice. Men makes a contrast. Så gives a result. För gives a reason: here it means because.",
         "After och, men, så and för, keep the normal order: the person, then the verb (så jag är trött). In writing, put a comma before men, så and för when a whole sentence follows.",
+        "Put the för part after the main idea: Jag kan inte träna, för jag är trött. English often starts with “Because …”, but Swedish för cannot start a sentence that way. Another word, eftersom, does that job later in the course.",
         "Sedan (then) is a time adverb, not a conjunction. When it starts a sentence, the verb comes second, so the verb goes before the person: Sedan åker jag till jobbet. In speech, sedan is often shortened to sen. That is a spoken form."
       ],
       "examples": [
@@ -905,47 +906,94 @@
           ]
         ]
       },
-      "memoryTip": "Reason → så → result. Result → för → reason.",
+      "memoryTip": "Reason → så → result. Result → för → reason. Your other languages help: för is like Hindi kyunki and Marathi karan (because); så is like Hindi isliye and Marathi mhanun (so).",
       "tryIt": "Join aloud with men: Jag är trött. Jag vill prova. → Jag är trött, men jag vill prova.",
       "activity": {
-        "type": "match",
+        "type": "sort",
         "label": "Join the ideas",
-        "title": "Choose the link that makes the meaning clear",
-        "instructions": "Match each first idea to its continuation. Then say the whole linked sentence.",
-        "leftLabel": "First idea",
-        "rightLabel": "Continuation",
-        "pairs": [
+        "title": "Which link makes sense?",
+        "instructions": "The linking word is missing. Read both ideas and choose the link that makes sense. Then say the whole sentence aloud with the link and a comma.",
+        "buckets": [
           {
-            "left": "Jag jobbar mycket,",
-            "right": "så jag är trött."
+            "id": "sa",
+            "label": "så",
+            "hint": "result: … so …"
           },
           {
-            "left": "Jag gillar kaffe,",
-            "right": "men te är bättre."
+            "id": "for",
+            "label": "för",
+            "hint": "reason: … because …"
           },
           {
-            "left": "Jag kan inte träna,",
-            "right": "för jag är trött."
+            "id": "men",
+            "label": "men",
+            "hint": "contrast: … but …"
           },
           {
-            "left": "Vi kan dricka",
-            "right": "kaffe eller te."
-          },
-          {
-            "left": "Jag äter frukost,",
-            "right": "och sedan åker jag till jobbet."
+            "id": "eller",
+            "label": "eller",
+            "hint": "choice: … or …"
           }
         ],
-        "pattern": "Så gives the result; för gives the reason; men turns the idea; eller offers a choice; och sedan moves to the next action.",
-        "sentence": "{left} {right}"
+        "items": [
+          {
+            "fi": "Jag jobbar mycket … jag är trött.",
+            "en": "I work a lot … I am tired.",
+            "bucket": "sa",
+            "why": "Tired is the result of a lot of work: Jag jobbar mycket, så jag är trött."
+          },
+          {
+            "fi": "Jag är trött … jag jobbar mycket.",
+            "en": "I am tired … I work a lot.",
+            "bucket": "for",
+            "why": "Now the reason comes second: Jag är trött, för jag jobbar mycket."
+          },
+          {
+            "fi": "Jag vill träna … jag hinner inte i dag.",
+            "en": "I want to exercise … I do not have time today.",
+            "bucket": "men",
+            "why": "The second idea turns against the first: Jag vill träna, men jag hinner inte i dag."
+          },
+          {
+            "fi": "Vi kan dricka kaffe … te.",
+            "en": "We can drink coffee … tea.",
+            "bucket": "eller",
+            "why": "You choose one of two: kaffe eller te."
+          },
+          {
+            "fi": "Jag pluggar svenska … jag vill klara YKI-testet.",
+            "en": "I study Swedish … I want to pass the YKI test.",
+            "bucket": "for",
+            "why": "Passing YKI is the reason you study: Jag pluggar svenska, för jag vill klara YKI-testet."
+          },
+          {
+            "fi": "Jag har ett prov snart … jag pluggar mycket.",
+            "en": "I have a test soon … I study a lot.",
+            "bucket": "sa",
+            "why": "Studying a lot is the result of the test: Jag har ett prov snart, så jag pluggar mycket."
+          },
+          {
+            "fi": "Jag gillar kaffe … te är bättre.",
+            "en": "I like coffee … tea is better.",
+            "bucket": "men",
+            "why": "A contrast: Jag gillar kaffe, men te är bättre."
+          },
+          {
+            "fi": "Jag vill byta jobb … chefen är sträng.",
+            "en": "I want to change jobs … the boss is strict.",
+            "bucket": "for",
+            "why": "The strict boss is the reason: Jag vill byta jobb, för chefen är sträng."
+          }
+        ],
+        "summary": "Ask: is the second idea the result (så) or the reason (för)? Swap the two ideas and så becomes för."
       }
     },
     {
       "title": "Put “the” on the end",
       "kind": "rule",
       "body": [
-        "English puts the article “the” in front of a noun. Swedish usually adds it to the end of the noun instead. This is the definite form. An en-word adds -en or -n. An ett-word adds -et or -t.",
-        "Learn each noun as a pair: en bok → boken, ett hus → huset. A word that already ends in a vowel adds only -n or -t: kvinna → kvinnan, äpple → äpplet.",
+        "English puts the article “the” in front of a noun. Swedish usually adds it to the end of the noun instead. This is the definite form. An en-word adds -en or -n. An ett-word adds -et or -t. Hindi and Marathi have no words for “a” and “the”, so it is easy to leave them out. Check every noun: en or ett, or the ending?",
+        "Learn each noun as a pair: en bok → boken, ett hus → huset. A word that already ends in a vowel adds only -n or -t: kvinna → kvinnan, äpple → äpplet. A few words that end in -el or -er also add only -n: en cykel → cykeln, en vinter → vintern.",
         "When do you use it? Use en or ett the first time you mention something. Use the definite form when you both know which one you mean: Jag har en bil. Bilen är tysk. Some words are almost always definite: på jobbet (at work), i skolan (at school), livet (life) and världen (the world)."
       ],
       "examples": [
@@ -954,8 +1002,8 @@
           "en": "I have a car. The car is German."
         },
         {
-          "fi": "En bok ligger på bordet. Boken är rolig.",
-          "en": "A book is on the table. The book is fun."
+          "fi": "Jag har en snäll kollega på jobbet. Kollegan kommer från Sverige.",
+          "en": "I have a kind colleague at work. The colleague comes from Sweden."
         },
         {
           "fi": "På jobbet arbetar jag mycket.",
@@ -1004,8 +1052,8 @@
       "activity": {
         "type": "sort",
         "label": "Ending sort",
-        "title": "Sort each “the” form by its ending",
-        "instructions": "Start from the plain noun. Sort by the ending added to make “the”, then say both forms.",
+        "title": "Predict the ending for “the”",
+        "instructions": "Each card shows a noun with en or ett. Say the “the” form aloud first, then choose the ending you added.",
         "buckets": [
           {
             "id": "en",
@@ -1026,56 +1074,63 @@
         ],
         "items": [
           {
-            "fi": "boken",
-            "en": "the book",
+            "fi": "en bok",
+            "en": "a book",
             "bucket": "en",
             "mark": "en",
-            "why": "en bok → boken"
+            "why": "En-word that ends in a consonant: en bok → boken."
           },
           {
-            "fi": "huset",
-            "en": "the house",
+            "fi": "ett hus",
+            "en": "a house",
             "bucket": "et",
-            "mark": "et",
-            "why": "ett hus → huset"
+            "mark": "ett",
+            "why": "Ett-word that ends in a consonant: ett hus → huset."
           },
           {
-            "fi": "kameran",
-            "en": "the camera",
+            "fi": "en kamera",
+            "en": "a camera",
             "bucket": "n",
-            "mark": "n",
-            "why": "en kamera → kameran: it already ends in a vowel"
+            "mark": "en",
+            "why": "En-word that already ends in a vowel: en kamera → kameran."
           },
           {
-            "fi": "äpplet",
-            "en": "the apple",
+            "fi": "ett äpple",
+            "en": "an apple",
             "bucket": "t",
-            "mark": "t",
-            "why": "ett äpple → äpplet: it already ends in a vowel"
+            "mark": "ett",
+            "why": "Ett-word that already ends in a vowel: ett äpple → äpplet."
           },
           {
-            "fi": "jobbet",
-            "en": "the job",
+            "fi": "ett jobb",
+            "en": "a job",
             "bucket": "et",
-            "mark": "et",
-            "why": "ett jobb → jobbet"
+            "mark": "ett",
+            "why": "ett jobb → jobbet, as in på jobbet."
           },
           {
-            "fi": "skolan",
-            "en": "the school",
+            "fi": "en skola",
+            "en": "a school",
             "bucket": "n",
-            "mark": "n",
-            "why": "en skola → skolan"
+            "mark": "en",
+            "why": "Ends in a vowel: en skola → skolan, as in i skolan."
           },
           {
-            "fi": "världen",
-            "en": "the world",
+            "fi": "en värld",
+            "en": "a world",
             "bucket": "en",
             "mark": "en",
-            "why": "en värld → världen"
+            "why": "en värld → världen."
+          },
+          {
+            "fi": "ett kafé",
+            "en": "a café",
+            "bucket": "et",
+            "mark": "ett",
+            "why": "An exception to the vowel clue: kafé ends in a stressed é, so it adds -et: kaféet, as on page 15."
           }
         ],
-        "summary": "Do not guess from English. Learn each noun with en or ett, then the ending follows that gender."
+        "summary": "En-word → -en or -n. Ett-word → -et or -t. Ending in a vowel → just -n or -t (but kaféet). Learn every noun with en or ett."
       }
     },
     {
@@ -1083,8 +1138,8 @@
       "kind": "rule",
       "body": [
         "An adjective describes a noun: a fun film, a fun job. In Swedish the adjective changes to fit the noun’s group. This is called agreement. Use rolig with an en-word and roligt with an ett-word.",
-        "Most adjectives just add -t for an ett-word: rolig → roligt, stor → stort, gammal → gammalt, vacker → vackert. Two common ones change more: ny → nytt (double t) and liten → litet. A few never change, such as bra: en bra film, ett bra jobb.",
-        "The same ending comes after är: Boken är rolig. Huset är stort. Kaféet är fullt. These forms are for one thing (singular); plural forms come later.",
+        "Most adjectives just add -t for an ett-word: rolig → roligt, stor → stort, gammal → gammalt, vacker → vackert. Two common ones change more: ny → nytt (double t) and liten → litet. Adjectives that already end in -t stay the same: ett lätt jobb, ett trött barn. A few never change, such as bra: en bra film, ett bra jobb.",
+        "The same ending comes after är: Boken är rolig. Huset är stort. Kaféet är fullt. After det är, use the -t form too: Det är roligt! Det är inte lätt. These forms are for one thing (singular); plural forms come later.",
         "Lite (a little) is a different word. It is an adverb: it tells how much, and it never changes. Jag pratar lite svenska. Never say liten svenska."
       ],
       "examples": [
@@ -1103,6 +1158,10 @@
         {
           "fi": "Huset är stort.",
           "en": "The house is big."
+        },
+        {
+          "fi": "Det är inte lätt, men det är roligt.",
+          "en": "It is not easy, but it is fun."
         },
         {
           "fi": "Jag pratar lite svenska.",
@@ -1312,26 +1371,32 @@
     },
     {
       "id": "sv-05-guided-ett",
-      "prompt": "Choose the correct phrase for “a charming house”.",
+      "prompt": "Produce: “a charming house in the countryside”.",
       "answers": [
-        "ett charmigt hus"
+        "ett charmigt hus på landet"
       ],
-      "options": [
-        "ett charmigt hus",
-        "ett charmig hus",
-        "en charmigt hus"
+      "hint": "Hus is an ett-word, so charmig takes -t. In the countryside: på landet.",
+      "explanation": "Ett charmigt hus på landet: the adjective adds -t before the ett-word hus, as on page 15."
+    },
+    {
+      "id": "sv-05-guided-det",
+      "prompt": "Produce: “It is fun!” (Start with Det är …)",
+      "answers": [
+        "Det är roligt!",
+        "Det är kul!"
       ],
-      "hint": "Hus is an ett-word.",
-      "explanation": "The adjective adds -t before ett hus."
+      "hint": "After det är, the adjective takes its -t form.",
+      "explanation": "Det är roligt: det works like an ett-word, so rolig takes -t. Kul never changes, so Det är kul is also right."
     },
     {
       "id": "sv-05-guided-lite",
       "prompt": "Produce: “I speak a little Swedish.”",
       "answers": [
         "Jag pratar lite svenska.",
-        "Jag talar lite svenska."
+        "Jag talar lite svenska.",
+        "Jag kan lite svenska."
       ],
-      "hint": "Use the amount word lite, not the adjective liten. Pratar or talar both work.",
+      "hint": "Use the amount word lite, not the adjective liten. Pratar, talar or kan all work.",
       "explanation": "Lite describes the amount. Liten would describe a small noun."
     },
     {
@@ -1356,7 +1421,10 @@
       "id": "sv-05-check-produce",
       "prompt": "Write in Swedish: “The job is boring, so I want a new job.”",
       "answers": [
-        "Jobbet är tråkigt, så jag vill ha ett nytt jobb."
+        "Jobbet är tråkigt, så jag vill ha ett nytt jobb.",
+        "Jobbet är tråkigt, så jag vill ha ett nytt arbete.",
+        "Arbetet är tråkigt, så jag vill ha ett nytt arbete.",
+        "Arbetet är tråkigt, så jag vill ha ett nytt jobb."
       ],
       "hint": "Start with “the job” (definite form). Jobb is an ett-word, so both adjectives take -t. Link with så.",
       "explanation": "Jobbet är tråkigt, så jag vill ha ett nytt jobb: jobbet means the job, tråkigt and nytt fit the ett-word jobb, and så gives the result."
@@ -1421,7 +1489,7 @@
   "takeaways": [
     "Link ideas: och adds, eller offers a choice, men contrasts, så gives a result, för gives a reason, and sedan moves to the next action.",
     "Put “the” on the noun: en bok → boken, ett hus → huset, en kvinna → kvinnan, ett äpple → äpplet.",
-    "Let the adjective follow en or ett: en rolig film but ett roligt jobb; ny → nytt and liten → litet. Lite (a little) never changes."
+    "Let the adjective follow en or ett: en rolig film but ett roligt jobb; ny → nytt and liten → litet; after det är: Det är roligt. Lite (a little) never changes."
   ],
   "dialogue": [
     {
@@ -1539,7 +1607,7 @@
       {
         "id": "sv-05-word-5",
         "fi": "ett intresse",
-        "en": "an interest",
+        "en": "an interest (an ett-word, so: mitt intresse)",
         "example": "Mitt intresse är fotografering.",
         "translation": "My interest is photography.",
         "level": "A0"
@@ -1628,8 +1696,8 @@
         "id": "sv-05-word-16",
         "fi": "för",
         "en": "because",
-        "example": "Jag går en kurs, för jag vill lära mig.",
-        "translation": "I take a course because I want to learn.",
+        "example": "Jag går en kurs, för jag vill lära mig mer.",
+        "translation": "I take a course because I want to learn more.",
         "level": "A0"
       },
       {
@@ -1758,7 +1826,7 @@
       "tip": "Make the final -t audible in roligt, stort and litet. In roligt the g is soft or silent, so it sounds like “rolit”. Ny has a long y, but nytt has a short y and a long t. Then contrast liten, litet and lite."
     },
     "listening": {
-      "text": "Alex kommer från Indien, men nu bor han i Helsingfors. Han jobbar som programmerare. Jobbet är bra, men han sitter vid datorn hela dagen. Alex är intresserad av natur och fotografering. Han drömmer om ett litet hus på landet. Där kan han ta bilder varje dag. Kameran är gammal, så han vill köpa en ny kamera. Först går han en kurs i fotografering. Alex jobbar mycket, så kursen är på lördag. Sedan vill han ta bilder i skogen.",
+      "text": "Alex kommer från Indien, men nu bor han i Helsingfors. Han jobbar som programmerare. Jobbet är bra, men han sitter vid datorn hela dagen. Alex är intresserad av natur och fotografering. Han drömmer om ett litet hus på landet. Där kan han ta bilder varje dag. Kameran är gammal, så han vill köpa en ny kamera. Först går han en kurs i fotografering. Alex jobbar mycket, så han går kursen på lördagar. Sedan vill han ta bilder i skogen.",
       "question": "What does Alex dream about?",
       "options": [
         "A small house in the countryside",
