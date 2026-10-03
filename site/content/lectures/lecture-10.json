@@ -2,10 +2,10 @@
   "number": 10,
   "routeProfile": "standard",
   "objectives": [
-    "Shop for food with quantities and prices.",
-    "Say numbers to 1,000 and give ages and clock times.",
-    "Present close family members and where they live.",
-    "Describe today's weather and a simple forecast."
+    "Shop for food with quantities and ask and give prices in euros.",
+    "Say numbers to 1,000, ages, phone numbers and clock times.",
+    "Present close family members with names, ages and where they live.",
+    "Describe today's weather and give a simple forecast."
   ],
   "focusSkills": [
     "speaking",
@@ -16,13 +16,16 @@
   "grammarTerms": [
     "noun",
     "singular-plural",
+    "gender",
     "adjective",
     "ordinal-number",
     "word-order",
     "adverb",
     "verb-second",
     "subject",
-    "pronoun"
+    "pronoun",
+    "spoken-form",
+    "chunk"
   ],
   "presentation": {
     "opening": {
@@ -34,7 +37,7 @@
         "part": "recall",
         "title": "A picnic plan",
         "eyebrow": "Elin and Alex",
-        "instructions": "Listen once for the day, time and weather. Then show the Swedish.",
+        "instructions": "Listen once for the day, the time, the price and the weather. Then show the Swedish.",
         "initiallyOpen": false
       },
       "questionIntro": "Use the picnic conversation to check the time and the forecast."
@@ -74,7 +77,7 @@
       "speakers": [
         {
           "name": "Elin",
-          "fi": "Ska vi ha picknick på lördag?"
+          "fi": "Ska vi ha picknick i Brunnsparken på lördag?"
         },
         {
           "name": "Alex",
@@ -82,7 +85,7 @@
         }
       ],
       "connector": "NÄR?",
-      "encounterLabel": "Elin and Alex plan food and a meeting time for a picnic",
+      "encounterLabel": "Elin and Alex plan the food, the time and the weather for a picnic in Helsinki",
       "chunks": [
         {
           "label": "SHOP",
@@ -138,54 +141,64 @@
         "Snow"
       ],
       "hint": "Listen to Elin’s forecast.",
-      "explanation": "Elin says that it will be sunny and warm."
+      "explanation": "Elin says: Det blir soligt och varmt, ungefär tjugo grader."
     }
   ],
   "dialogue": [
     {
       "speaker": "Elin",
-      "fi": "Hej Alex! Ska vi ha picknick på lördag?",
-      "en": "Hi Alex! Shall we have a picnic on Saturday?"
+      "fi": "Hej Alex! Mår du bättre nu?",
+      "en": "Hi Alex! Are you feeling better now?"
     },
     {
       "speaker": "Alex",
-      "fi": "Ja, gärna! Hur många personer kommer?",
-      "en": "Yes, gladly! How many people are coming?"
+      "fi": "Ja, tack. Jag är frisk igen.",
+      "en": "Yes, thanks. I am healthy again."
     },
     {
       "speaker": "Elin",
-      "fi": "Sex personer. Min syster och hennes två barn kommer också.",
-      "en": "Six people. My sister and her two children are coming too."
+      "fi": "Vad skönt! Ska vi ha picknick i Brunnsparken på lördag?",
+      "en": "How nice! Shall we have a picnic in Brunnsparken (Kaivopuisto) on Saturday?"
     },
     {
       "speaker": "Alex",
-      "fi": "Bra. Jag köper två påsar äpplen, ett kilo ost och tre flaskor juice.",
-      "en": "Good. I'll buy two bags of apples, one kilo of cheese and three bottles of juice."
+      "fi": "Ja, gärna! Hur många blir vi?",
+      "en": "Yes, gladly! How many of us will there be?"
     },
     {
       "speaker": "Elin",
-      "fi": "Köp också åtta korvar och en burk tomatsås, tack.",
-      "en": "Also buy eight sausages and a jar of tomato sauce, please."
+      "fi": "Vi blir sex. Mikko, min syster och hennes två barn kommer också.",
+      "en": "There will be six of us. Mikko, my sister and her two children are coming too."
     },
     {
       "speaker": "Alex",
-      "fi": "När börjar vi?",
-      "en": "When do we start?"
+      "fi": "Bra. Jag kan handla. Vad ska jag köpa?",
+      "en": "Good. I can do the shopping. What should I buy?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Två påsar äpplen, tre hekto ost och tre flaskor juice. Och åtta korvar!",
+      "en": "Two bags of apples, three hundred grams of cheese and three bottles of juice. And eight sausages!"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Okej. Det blir ungefär tjugofem euro. När börjar vi?",
+      "en": "OK. That will be about twenty-five euros. When do we start?"
     },
     {
       "speaker": "Elin",
       "fi": "Vi börjar klockan två. Min syster kommer kvart över två.",
-      "en": "We start at two. My sister comes at quarter past two."
+      "en": "We start at two. My sister is coming at quarter past two."
     },
     {
       "speaker": "Alex",
-      "fi": "Vad blir det för väder?",
-      "en": "What will the weather be like?"
+      "fi": "Vad säger väderprognosen?",
+      "en": "What does the weather forecast say?"
     },
     {
       "speaker": "Elin",
-      "fi": "Solen skiner och det blir varmt, ungefär tjugo grader.",
-      "en": "The sun will shine and it will be warm, about twenty degrees."
+      "fi": "Det blir soligt och varmt, ungefär tjugo grader.",
+      "en": "It will be sunny and warm, about twenty degrees."
     },
     {
       "speaker": "Alex",
@@ -206,7 +219,7 @@
         {
           "title": "Textbook page practice: Inköpslista",
           "tabLabel": "Page 27 · Shopping",
-          "intro": "Peter's list turns the numbers one to twelve into useful food quantities.",
+          "intro": "Peter's list turns the numbers one to twelve into useful food quantities. Notice that Swedish has no word for 'of': en burk tomatsås.",
           "image": "/images/source/textbook-lesson-10-page-27.png",
           "imageAlt": "Textbook page 27, Inköpslista, with Peter's grocery list",
           "pageLabel": "textbook physical page 27",
@@ -227,7 +240,7 @@
           ],
           "lines": [
             {
-              "speaker": "Peter",
+              "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "Peter är på en mataffär. Han ska laga middag ikväll så han köper ingredienser. Han måste också köpa saker som är slut. Här är hans lista:",
               "en": "Peter is in a grocery shop. He will cook dinner tonight, so he buys ingredients. He must also buy things that have run out. Here is his list:",
@@ -239,7 +252,7 @@
               ]
             },
             {
-              "speaker": "Peter",
+              "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "en burk tomatsås, två kilo mjöl, tre paket mjölk, fyra hekto svamp",
               "en": "one jar of tomato sauce, two kilos of flour, three cartons of milk, four hectograms of mushrooms",
@@ -255,7 +268,7 @@
               ]
             },
             {
-              "speaker": "Peter",
+              "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "fem hekto lök, sex bananer, sju hekto ost, åtta flaskor jus",
               "en": "five hectograms of onions, six bananas, seven hectograms of cheese, eight bottles of juice",
@@ -267,7 +280,7 @@
               ]
             },
             {
-              "speaker": "Peter",
+              "speaker": "Berättare",
               "voice": "Henrik",
               "fi": "nio korvar, tio toarullar, elva potatisar, tolv påsar godis",
               "en": "nine sausages, ten toilet rolls, eleven potatoes, twelve bags of sweets",
@@ -328,29 +341,29 @@
           },
           "hunt": {
             "label": "Number hunt",
-            "title": "Find the bold numbers.",
-            "instructions": "Match each quantity to the food after it.",
-            "missHint": "The list counts from one to twelve.",
+            "title": "Find four bold numbers in the list.",
+            "instructions": "Tap två, fyra, åtta and tolv. Each time, say the whole quantity aloud: två kilo mjöl.",
+            "missHint": "Look in the shopping list, not in the first sentences.",
             "spots": [
               {
-                "word": "en",
-                "mark": "en",
-                "rule": "en burk: one jar"
+                "word": "två",
+                "mark": "två",
+                "rule": "två kilo mjöl: two kilos of flour. No word for 'of'."
               },
               {
                 "word": "fyra",
                 "mark": "fyra",
-                "rule": "fyra hekto: 400 grams"
+                "rule": "fyra hekto svamp: 400 grams of mushrooms."
               },
               {
                 "word": "åtta",
                 "mark": "åtta",
-                "rule": "åtta flaskor: eight bottles"
+                "rule": "åtta flaskor jus: eight bottles of juice."
               },
               {
                 "word": "tolv",
                 "mark": "tolv",
-                "rule": "tolv påsar: twelve bags"
+                "rule": "tolv påsar godis: twelve bags of sweets."
               }
             ]
           }
@@ -382,7 +395,7 @@
               "speaker": "Berättare",
               "voice": "Maja",
               "fi": "Peter och Maria är gifta och har två döttrar, Sara och Jenny. De var sambo i många år men de gifte sig för åtta år sedan. Peter är 45 (fyrtiofem) år gammal och Maria är 42 (fyrtiotvå). Sara är 15 (femton) och Jenny är 9 år.",
-              "en": "Peter and Maria are married and have two daughters, Sara and Jenny. They lived together for many years but married eight years ago. Peter is 45 and Maria is 42. Sara is 15 and Jenny is 9.",
+              "en": "Peter and Maria are married and have two daughters, Sara and Jenny. They lived together for many years, but they got married eight years ago. Peter is 45 (forty-five) years old and Maria is 42 (forty-two). Sara is 15 (fifteen) and Jenny is 9.",
               "glossary": [
                 {
                   "fi": "gifte sig",
@@ -394,8 +407,12 @@
               "speaker": "Berättare",
               "voice": "Maja",
               "fi": "Lena och Andreas har två söner, Nils och Jonas, som går i grundskolan. Andreas föräldrar är deras farmor och farfar. Lenas föräldrar är deras mormor och morfar. De är mycket gamla, ungefär 70 (sjuttio) år.",
-              "en": "Lena and Andreas have two sons who attend comprehensive school. Andreas's parents are their paternal grandparents; Lena's are their maternal grandparents. They are about 70.",
+              "en": "Lena and Andreas have two sons, Nils and Jonas, who go to comprehensive school. Andreas's parents are their paternal grandparents (farmor and farfar). Lena's parents are their maternal grandparents (mormor and morfar). They are very old, about 70 (seventy).",
               "glossary": [
+                {
+                  "fi": "grundskolan",
+                  "en": "comprehensive school (ages 7-16)"
+                },
                 {
                   "fi": "ungefär",
                   "en": "about"
@@ -418,7 +435,7 @@
               "speaker": "Berättare",
               "voice": "Maja",
               "fi": "Nora har inga barn för hon är ung. Hon är 32 (trettiotvå) år. Dessutom gillar hon att vara barnfri.",
-              "en": "Nora has no children because she is young. She is 32. In addition, she likes being child-free.",
+              "en": "Nora has no children because she is young. She is 32 (thirty-two). In addition, she likes being child-free.",
               "glossary": [
                 {
                   "fi": "dessutom",
@@ -589,8 +606,8 @@
             },
             {
               "source": "21 – tjugoen",
-              "natural": "tjugoen personer; tjugoett äpplen",
-              "note": "The last part follows the noun’s en/ett gender. The page gives the en form."
+              "natural": "tjugoett; tjugoen personer or tjugoett personer",
+              "note": "When you just count, say tjugoett. Before an en-word both tjugoen and tjugoett are correct; before an ett-word say tjugoett: tjugoett äpplen."
             }
           ],
           "backchain": {
@@ -655,7 +672,7 @@
           "lines": [
             {
               "speaker": "Jonas",
-              "voice": "Maja",
+              "voice": "Alex",
               "fi": "Klockan är fem prick, jag tänker på henne.",
               "en": "It is exactly five; I think of her.",
               "glossary": [
@@ -667,7 +684,7 @@
             },
             {
               "speaker": "Jonas",
-              "voice": "Maja",
+              "voice": "Alex",
               "fi": "Tio över fem tänker jag på henne. Kvart över fem tänker jag på henne. Halv sex tänker jag på henne.",
               "en": "At ten past five, quarter past five and half past five, I think of her.",
               "glossary": [
@@ -679,7 +696,7 @@
             },
             {
               "speaker": "Jonas",
-              "voice": "Maja",
+              "voice": "Alex",
               "fi": "Kvart i sex tänker jag på henne. Fem i sex tänker jag på henne.",
               "en": "At quarter to six I think of her. At five to six I think of her.",
               "glossary": [
@@ -733,6 +750,11 @@
               "source": "Halv sex",
               "natural": "Klockan är halv sex.",
               "note": "Say the full model while learning. Swedish halv sex means halfway toward six: 5:30."
+            },
+            {
+              "source": "Ibland köper han choklad till henne.",
+              "natural": "Ibland köper han choklad till henne.",
+              "note": "When ibland starts the sentence, the verb köper still comes second, before han."
             }
           ],
           "backchain": {
@@ -745,8 +767,8 @@
           },
           "hunt": {
             "label": "Frequency hunt",
-            "title": "Find the coloured frequency words.",
-            "instructions": "Put the frequency words from most often to least often.",
+            "title": "Find the highlighted frequency words.",
+            "instructions": "Tap alltid, ofta, ibland, sällan and aldrig. Then say them in order, from always to never.",
             "missHint": "Look for always, often, sometimes, rarely and never.",
             "spots": [
               {
@@ -884,8 +906,8 @@
             },
             {
               "source": "en regnbåge",
-              "natural": "Det finns en regnbåge.",
-              "note": "The page gives a noun label. This is a full sentence: there is a rainbow."
+              "natural": "Titta, en regnbåge!",
+              "note": "The page gives a noun label. Point and say this when you see one."
             }
           ],
           "backchain": {
@@ -931,66 +953,194 @@
   "sections": [
     {
       "id": "food",
-      "title": "Food and quantities",
+      "title": "Food, quantities and prices",
       "kind": "scene",
       "body": [
-        "Put a container or weight before food: en burk tomatsås, en påse godis, ett kilo potatis and tre flaskor juice. Countable foods often take a plural: två äpplen, sex bananer, åtta korvar."
+        "Put the quantity straight before the food. Swedish has no word for 'of': en påse godis, två kilo mjöl, tre paket mjölk. Hindi works the same way (do kilo aloo), so copy Hindi here, not English.",
+        "Foods you count take a plural: sex bananer, elva potatisar. Foods you weigh or pour stay singular: ett kilo potatis, fyra hekto svamp, tre flaskor juice. Ett hekto is 100 grams.",
+        "Ask the price with Vad kostar …? or Hur mycket kostar …? Say 3,50 € as tre euro och femtio cent, or in quick speech tre och femtio. At the counter, Kan jag få …? is a polite way to ask for something."
       ],
       "examples": [
         {
-          "fi": "Jag vill ha ett kilo potatis och två påsar äpplen.",
-          "en": "I would like one kilo of potatoes and two bags of apples.",
-          "note": "The quantity comes before the food."
+          "fi": "Kan jag få fyra hekto ost, tack?",
+          "en": "Can I have 400 grams of cheese, please?",
+          "note": "Polite and natural at a cheese or meat counter."
         },
         {
-          "fi": "Vad kostar osten? Den kostar åtta euro.",
-          "en": "How much is the cheese? It costs eight euros.",
-          "note": "Use kostar for a price."
+          "fi": "Hur mycket kostar en liter jordgubbar? Fem euro.",
+          "en": "How much is a litre of strawberries? Five euros.",
+          "note": "At Finnish market squares, berries are often sold by the litre."
+        },
+        {
+          "fi": "Hur mycket blir det? Det blir tolv euro och femtio cent.",
+          "en": "How much is that? That's twelve euros fifty.",
+          "note": "Hur mycket blir det? asks for the total at the till."
         }
       ],
-      "memoryTip": "Picture the package: burk, påse, paket or flaska.",
-      "tryIt": "Make a four-item picnic list aloud.",
-      "activity": {
-        "type": "match",
-        "label": "Build quantities",
-        "title": "Match food to a useful quantity",
-        "instructions": "Make natural shopping-list chunks, then say them.",
-        "leftLabel": "Quantity",
-        "rightLabel": "Food",
-        "pairs": [
-          {
-            "left": "en burk",
-            "right": "tomatsås"
-          },
-          {
-            "left": "ett kilo",
-            "right": "potatis"
-          },
-          {
-            "left": "tre flaskor",
-            "right": "juice"
-          },
-          {
-            "left": "två påsar",
-            "right": "äpplen"
-          }
+      "table": {
+        "headings": [
+          "Group",
+          "Swedish",
+          "English"
         ],
-        "pattern": "quantity + food: en burk tomatsås"
-      }
+        "rows": [
+          [
+            "kött",
+            "kyckling, fläsk, nötkött, korv",
+            "chicken, pork, beef, sausage"
+          ],
+          [
+            "frukt",
+            "äpplen, apelsiner, druvor, ananas, jordgubbar, blåbär, lingon",
+            "apples, oranges, grapes, pineapple, strawberries, blueberries, lingonberries"
+          ],
+          [
+            "grönsaker",
+            "lök, vitlök, potatis, sötpotatis, gurka, morot, kål, blomkål, ingefära",
+            "onion, garlic, potato, sweet potato, cucumber, carrot, cabbage, cauliflower, ginger"
+          ],
+          [
+            "annat",
+            "mjölk, mjöl, ost, svamp, godis, juice",
+            "milk, flour, cheese, mushrooms, sweets, juice"
+          ]
+        ]
+      },
+      "memoryTip": "No 'of' in Swedish: en påse godis, like Hindi do kilo aloo. Mjöl (flour) has no k; mjölk (milk) has one.",
+      "tryIt": "Say a four-item picnic list with quantities, then ask what one item costs.",
+      "activities": [
+        {
+          "type": "match",
+          "label": "Quantity words",
+          "title": "Match each quantity word to its meaning",
+          "instructions": "Pair the Swedish with the meaning, then say each one with a food: en burk tomatsås.",
+          "leftLabel": "Swedish",
+          "rightLabel": "Meaning",
+          "pairs": [
+            {
+              "left": "en burk",
+              "right": "a jar or tin"
+            },
+            {
+              "left": "en påse",
+              "right": "a bag"
+            },
+            {
+              "left": "ett paket",
+              "right": "a carton or packet"
+            },
+            {
+              "left": "en flaska",
+              "right": "a bottle"
+            },
+            {
+              "left": "ett hekto",
+              "right": "100 grams"
+            },
+            {
+              "left": "ett kilo",
+              "right": "1,000 grams"
+            }
+          ],
+          "pattern": "quantity + food, with no word for 'of': en burk tomatsås, ett hekto ost."
+        },
+        {
+          "type": "question-gap",
+          "label": "Ask about the shopping",
+          "title": "Ask Alex about the picnic shopping",
+          "instructions": "Choose the question that really gets each fact. Then listen to Alex's answer.",
+          "card": {
+            "title": "Alex's picnic shopping",
+            "subtitle": "Four facts are hidden."
+          },
+          "answerer": "Alex",
+          "gaps": [
+            {
+              "about": "Osten",
+              "field": "price",
+              "options": [
+                "Vad kostar osten?",
+                "Var kostar osten?",
+                "Hur många kostar osten?"
+              ],
+              "answer": "Vad kostar osten?",
+              "reply": {
+                "fi": "Den kostar fyra euro och femtio cent.",
+                "en": "It costs four euros fifty."
+              },
+              "why": "Vad kostar …? asks for a price. Osten is an en-word, so Alex answers with den."
+            },
+            {
+              "about": "Äpplen",
+              "field": "how many bags",
+              "options": [
+                "Hur många påsar äpplen köper du?",
+                "Hur mycket påsar äpplen köper du?",
+                "Hur många påsar av äpplen köper du?"
+              ],
+              "answer": "Hur många påsar äpplen köper du?",
+              "reply": {
+                "fi": "Jag köper två påsar äpplen.",
+                "en": "I am buying two bags of apples."
+              },
+              "why": "Bags can be counted, so use hur många. Swedish has no av ('of') between påsar and äpplen."
+            },
+            {
+              "about": "Juice",
+              "field": "how much",
+              "options": [
+                "Hur mycket juice köper du?",
+                "Hur många juice köper du?",
+                "När juice köper du?"
+              ],
+              "answer": "Hur mycket juice köper du?",
+              "reply": {
+                "fi": "Tre flaskor.",
+                "en": "Three bottles."
+              },
+              "why": "You do not count juice one by one, so use hur mycket (Lecture 7: många for things you count, mycket for things you do not)."
+            },
+            {
+              "about": "Allt",
+              "field": "total",
+              "options": [
+                "Hur mycket blir det?",
+                "Hur gammal blir det?",
+                "Vem blir det?"
+              ],
+              "answer": "Hur mycket blir det?",
+              "reply": {
+                "fi": "Det blir tjugotre euro och femtio cent.",
+                "en": "That comes to twenty-three euros fifty."
+              },
+              "why": "Hur mycket blir det? asks for the total price."
+            }
+          ],
+          "summary": "Vad kostar …? for one price, hur många for things you count, hur mycket for amounts and the total."
+        }
+      ]
     },
     {
       "id": "numbers",
       "title": "Numbers and order numbers",
       "kind": "rule",
       "body": [
-        "Counting numbers answer how many: tjugo, fyrtiotvå, hundra. An ordinal number gives a place in order: första, andra, tredje. Dates use order numbers too: den elfte maj.",
-        "Build larger numbers from the parts: 21 tjugoett, 42 fyrtiotvå, 100 hundra, 125 hundratjugofem, 1,000 tusen. Before an en-word, one becomes en: tjugoen personer. For a phone number, say one digit at a time."
+        "Learn 1-12 as single words. 13-19 end in -ton, like English -teen (tonåring = teenager): tretton, femton, sexton. Tens end in -tio: trettio, femtio, sextio. Watch three odd spellings: 14 fjorton, 18 arton, 40 fyrtio.",
+        "In speech, nio and tio often sound like nie and tie, tjugo like tjugi, and fyrtio like förti. Always write the full forms.",
+        "Bigger numbers are one word, tens first: 21 tjugoett, 42 fyrtiotvå, 125 hundratjugofem, 1 000 tusen. Before an en-word, 21 can also be tjugoen: tjugoen personer.",
+        "An ordinal number gives a place in order: första, andra, tredje. Dates use them: den elfte maj.",
+        "For a phone number, one digit at a time is always clear. You will also hear pairs, as in the teacher's example 04 23 78 45: noll fyra, tjugotre, sjuttioåtta, fyrtiofem."
       ],
       "examples": [
         {
-          "fi": "Jag är trettiofyra år.",
-          "en": "I am 34 years old.",
-          "note": "År gammal is also possible."
+          "fi": "Hur gammal är du? Jag är trettiofyra år.",
+          "en": "How old are you? I am 34.",
+          "note": "Jag är trettiofyra år gammal and Jag är trettiofyra are also correct."
+        },
+        {
+          "fi": "Jag bor på Skolgatan tolv.",
+          "en": "I live at Skolgatan 12.",
+          "note": "Bo på + street name + number."
         },
         {
           "fi": "Vi ses den tjugoförsta maj.",
@@ -1003,52 +1153,78 @@
           "note": "An invented number for speaking practice. Say every digit, including zero."
         }
       ],
-      "memoryTip": "14 fjorton and 40 fyrtio are easy to mix up. Say both slowly.",
-      "tryIt": "Say your age, house number and today's date.",
+      "memoryTip": "-ton is a teen, -tio is a ten, -de/-a is an order: fjorton 14, fyrtio 40, fjärde 4th.",
+      "tryIt": "Say your age, your house number and today's date.",
       "activity": {
         "type": "sort",
-        "label": "Count or order?",
-        "title": "Is it a quantity or a position?",
-        "instructions": "Sort each number word.",
+        "label": "Teen, ten or order?",
+        "title": "Which kind of number is it?",
+        "instructions": "Listen and look at each word. Is it a teen (13-19), a ten (30-90) or an order number?",
         "buckets": [
           {
-            "id": "count",
-            "label": "How many?",
-            "hint": "cardinal number"
+            "id": "teen",
+            "label": "A teen",
+            "hint": "13-19"
+          },
+          {
+            "id": "ten",
+            "label": "A ten",
+            "hint": "30-90"
           },
           {
             "id": "order",
-            "label": "Which place?",
-            "hint": "ordinal number"
+            "label": "An order number",
+            "hint": "1st, 2nd, 3rd …"
           }
         ],
         "items": [
           {
             "fi": "fjorton",
-            "en": "fourteen",
-            "bucket": "count",
-            "why": "It counts fourteen things."
-          },
-          {
-            "fi": "fjärde",
-            "en": "fourth",
-            "bucket": "order",
-            "why": "It gives position four."
+            "bucket": "teen",
+            "why": "fjorton = 14. The -ton ending makes a teen."
           },
           {
             "fi": "fyrtio",
-            "en": "forty",
-            "bucket": "count",
-            "why": "It counts forty."
+            "bucket": "ten",
+            "why": "fyrtio = 40, often said förti. The -tio ending makes a ten."
           },
           {
-            "fi": "första",
-            "en": "first",
+            "fi": "fjärde",
             "bucket": "order",
-            "why": "It gives position one."
+            "why": "fjärde = 4th, as in den fjärde maj."
+          },
+          {
+            "fi": "sjutton",
+            "bucket": "teen",
+            "why": "sjutton = 17. Double t, then -ton."
+          },
+          {
+            "fi": "sjuttio",
+            "bucket": "ten",
+            "why": "sjuttio = 70. Only the ending differs from sjutton."
+          },
+          {
+            "fi": "sjunde",
+            "bucket": "order",
+            "why": "sjunde = 7th."
+          },
+          {
+            "fi": "arton",
+            "bucket": "teen",
+            "why": "arton = 18: not 'åtton'."
+          },
+          {
+            "fi": "åttio",
+            "bucket": "ten",
+            "why": "åttio = 80."
+          },
+          {
+            "fi": "åttonde",
+            "bucket": "order",
+            "why": "åttonde = 8th."
           }
         ],
-        "summary": "Counting and order numbers answer different questions."
+        "summary": "-ton means 13-19, -tio means 30-90, and -de or -a gives an order number."
       }
     },
     {
@@ -1056,8 +1232,11 @@
       "title": "Present your family",
       "kind": "scene",
       "body": [
-        "Start with the relationship, then add a name, age and home. Swedish has exact grandparent words: farmor and farfar are your father's parents; mormor and morfar are your mother's parents. Inga means no before a plural noun.",
-        "Moster is your mother’s sister and morbror her brother. Faster is your father’s sister and farbror his brother. Bror and syster become bröder and systrar. Barnfri usually describes choosing not to have children; barnlös means without children, often when that is not a choice."
+        "Grandparents are built from two words: far (father) or mor (mother) + the person. Farmor is your father's mother, mormor your mother's mother. Hindi makes the same split: dadi and nani.",
+        "Aunts and uncles follow the same idea: moster and morbror on your mother's side (Hindi mausi and mama), faster and farbror on your father's side (bua and chacha). Marathi has maushi, mama, atya and kaka. Careful: Hindi mama is an uncle, but Swedish mamma is your mum.",
+        "Plurals: bror → bröder, syster → systrar. Syskon means brothers and sisters together. Grandparents in general are far- och morföräldrar.",
+        "To say 'no': ingen before an en-word, inget before an ett-word, inga before a plural: Jag har ingen bil, inget husdjur och inga syskon.",
+        "Barnfri usually means choosing not to have children; barnlös means without children, often not by choice."
       ],
       "examples": [
         {
@@ -1066,36 +1245,49 @@
           "note": "After the first sentence, hon avoids repeating min syster."
         },
         {
+          "fi": "Min moster är ungefär sextio år. Dessutom har hon fyra barnbarn.",
+          "en": "My aunt (mother's sister) is about sixty. On top of that, she has four grandchildren.",
+          "note": "Dessutom starts the sentence, so the verb har comes second."
+        },
+        {
           "fi": "Jag har inga syskon, men jag har många kusiner.",
           "en": "I have no siblings, but I have many cousins.",
           "note": "Inga comes before plural nouns."
         }
       ],
-      "memoryTip": "far- points to your father's side; mor- points to your mother's side.",
-      "tryIt": "Present two real or invented relatives in four sentences.",
+      "memoryTip": "far- = father's side (dadi, bua, chacha); mor- = mother's side (nani, mausi, mama).",
+      "tryIt": "Present two real or invented relatives in four sentences: relationship, name, age, home.",
       "activity": {
         "type": "match",
         "label": "Family links",
         "title": "Match the relative to the family link",
-        "instructions": "Pair each Swedish word with its plain meaning.",
+        "instructions": "Pair each Swedish word with the family link. The Hindi word is there to help you.",
         "leftLabel": "Swedish",
         "rightLabel": "Family link",
         "pairs": [
           {
             "left": "farmor",
-            "right": "father's mother"
+            "right": "father's mother (dadi)"
           },
           {
             "left": "morfar",
-            "right": "mother's father"
+            "right": "mother's father (nana)"
           },
           {
             "left": "moster",
-            "right": "mother's sister"
+            "right": "mother's sister (mausi)"
+          },
+          {
+            "left": "faster",
+            "right": "father's sister (bua)"
+          },
+          {
+            "left": "morbror",
+            "right": "mother's brother (mama)"
           },
           {
             "left": "farbror",
-            "right": "father's brother"
+            "right": "father's brother (chacha)"
           }
         ],
         "pattern": "far- = father's side; mor- = mother's side."
@@ -1135,7 +1327,10 @@
       "title": "Clock time and frequency",
       "kind": "rule",
       "body": [
-        "Ask Vad är klockan? Say klockan fem, kvart över fem, halv sex and kvart i sex. Halv sex is 5:30 because Swedish looks forward to six. Frequency words tell how often: alltid, ofta, ibland, sällan, aldrig."
+        "Ask Vad är klockan? Answer Klockan är … Över means past and i means to: tio över fem is 17:10, kvart i sex is 17:45. Prick means exactly.",
+        "Halv points to the next hour: halv sex is 5:30. English speakers often say halv fem, thinking of 'half five'. Hindi can help: paune chhe (5:45) already names six; Swedish names the next hour from 5:30.",
+        "You will also hear fem i halv sex (17:25) and fem över halv sex (17:35). Timetables use the 24-hour clock: 17.30.",
+        "Frequency words say how often: alltid, ofta, ibland, sällan, aldrig. In a statement they come right after the verb: Jag tränar ofta. If one starts the sentence, the verb still comes second: Ibland köper han choklad."
       ],
       "examples": [
         {
@@ -1146,11 +1341,16 @@
         {
           "fi": "Jag tränar ofta, men jag simmar sällan.",
           "en": "I often exercise, but I rarely swim.",
-          "note": "The frequency word follows the verb here."
+          "note": "The frequency word follows the verb."
+        },
+        {
+          "fi": "Ibland handlar jag på Hagnäs torg.",
+          "en": "Sometimes I shop at Hakaniemi market square.",
+          "note": "Ibland first, then the verb handlar, then jag."
         }
       ],
-      "memoryTip": "At :30, name the coming hour: 17:30 = halv sex.",
-      "tryIt": "Say 17:00, 17:15, 17:30 and 17:45.",
+      "memoryTip": "At :30, name the coming hour: 17:30 = halv sex. And never 'Jag ofta …': the verb comes first, then ofta.",
+      "tryIt": "Say 17:00, 17:10, 17:15, 17:30, 17:45 and 17:55.",
       "activity": {
         "type": "match",
         "label": "Read the clock",
@@ -1164,6 +1364,10 @@
             "right": "fem prick"
           },
           {
+            "left": "17:10",
+            "right": "tio över fem"
+          },
+          {
             "left": "17:15",
             "right": "kvart över fem"
           },
@@ -1174,6 +1378,10 @@
           {
             "left": "17:45",
             "right": "kvart i sex"
+          },
+          {
+            "left": "17:55",
+            "right": "fem i sex"
           }
         ],
         "pattern": "över is past; i is to; halv points to the next hour."
@@ -1184,89 +1392,142 @@
       "title": "A short weather report",
       "kind": "scene",
       "body": [
-        "Many weather phrases start with det: Det regnar. Det snöar. Det är soligt. Two useful noun subjects are Solen skiner and Vinden blåser. Add a temperature with Det är tjugo grader."
+        "Weather verbs need only det: Det regnar, Det snöar, Det blåser, Det åskar. Do not add är: never Det är regnar.",
+        "Describing words need det är: Det är soligt, molnigt, mulet, varmt, kallt. Mulet is a dark grey sky; molnigt is just cloudy. With a noun subject: Solen skiner, Vinden blåser.",
+        "Give the temperature with grader: Det är tjugo grader. In a Helsinki winter: Det är minus tio grader.",
+        "Use whole chunks for past and future: I går var det kallt. I morgon blir det soligt. The teacher's Det kommer att regna i morgon also means it is going to rain tomorrow."
       ],
       "examples": [
         {
-          "fi": "I dag är det molnigt och kallt. Det blåser lite.",
-          "en": "Today it is cloudy and cold. It is a little windy.",
-          "note": "One short sentence per weather fact."
+          "fi": "I dag var det jättevarmt. Det var soligt och ungefär tjugosex grader.",
+          "en": "Today it was really warm. It was sunny and about 26 degrees.",
+          "note": "Var is the past of är (Lecture 6)."
         },
         {
-          "fi": "I morgon blir det soligt och varmt.",
-          "en": "Tomorrow it will be sunny and warm.",
-          "note": "Blir gives a simple forecast."
+          "fi": "Det kommer att regna i morgon, och det kommer att blåsa lite.",
+          "en": "It is going to rain tomorrow, and it is going to be a little windy.",
+          "note": "Kommer att + verb: what is going to happen."
+        },
+        {
+          "fi": "I Helsingfors är det ofta mulet i november.",
+          "en": "In Helsinki it is often overcast in November.",
+          "note": "I Helsingfors starts the sentence, so är comes before det."
         }
       ],
-      "memoryTip": "Use det for regnar, snöar and är; use solen or vinden when you name them.",
-      "tryIt": "Look outside and give a three-sentence report.",
+      "memoryTip": "Det + verb (Det regnar) or Det är + describing word (Det är soligt). Never both.",
+      "tryIt": "Look outside and give a three-sentence report with a temperature.",
       "activity": {
-        "type": "match",
-        "label": "Weather report",
-        "title": "Match each weather phrase",
-        "instructions": "Pair the Swedish report with its meaning.",
-        "leftLabel": "Swedish",
-        "rightLabel": "Meaning",
-        "pairs": [
+        "type": "sort",
+        "label": "Det or det är?",
+        "title": "Which frame does each weather word need?",
+        "instructions": "Decide whether the word fits Det ___ or Det är ___.",
+        "buckets": [
           {
-            "left": "Det regnar.",
-            "right": "It is raining."
+            "id": "verb",
+            "label": "Det ___.",
+            "hint": "a weather verb"
           },
           {
-            "left": "Det är mulet.",
-            "right": "It is overcast."
-          },
-          {
-            "left": "Solen skiner.",
-            "right": "The sun is shining."
-          },
-          {
-            "left": "Vinden blåser.",
-            "right": "The wind is blowing."
+            "id": "adj",
+            "label": "Det är ___.",
+            "hint": "a describing word"
           }
         ],
-        "pattern": "Learn each weather report as a whole chunk."
+        "items": [
+          {
+            "fi": "regnar",
+            "bucket": "verb",
+            "why": "Regnar is a verb: Det regnar."
+          },
+          {
+            "fi": "soligt",
+            "bucket": "adj",
+            "why": "Soligt describes the day: Det är soligt."
+          },
+          {
+            "fi": "snöar",
+            "bucket": "verb",
+            "why": "Snöar is a verb: Det snöar."
+          },
+          {
+            "fi": "kallt",
+            "bucket": "adj",
+            "why": "Kallt describes: Det är kallt."
+          },
+          {
+            "fi": "blåser",
+            "bucket": "verb",
+            "why": "Blåser is a verb: Det blåser."
+          },
+          {
+            "fi": "mulet",
+            "bucket": "adj",
+            "why": "Mulet describes a dark sky: Det är mulet."
+          },
+          {
+            "fi": "åskar",
+            "bucket": "verb",
+            "why": "Åskar is a verb: Det åskar."
+          },
+          {
+            "fi": "varmt",
+            "bucket": "adj",
+            "why": "Varmt describes: Det är varmt."
+          }
+        ],
+        "summary": "A weather verb takes Det alone; a describing word takes Det är."
       }
     }
   ],
   "guided": [
     {
       "id": "sv-10-guided-quantity",
-      "prompt": "Complete the shopping list with bottles: tre ___ juice",
+      "prompt": "Choose the correct Swedish for ‘a bag of sweets’.",
       "answers": [
-        "flaskor"
+        "en påse godis"
       ],
       "options": [
-        "flaskor",
-        "kilo",
-        "burk"
+        "en påse godis",
+        "en påse av godis",
+        "ett påse godis"
       ],
-      "hint": "Juice can come in bottles.",
-      "explanation": "Tre flaskor juice."
+      "hint": "No word for 'of'; påse is an en-word.",
+      "explanation": "En påse godis: quantity straight before the food."
+    },
+    {
+      "id": "sv-10-guided-price",
+      "prompt": "Ask in Swedish: ‘How much does the cheese cost?’",
+      "answers": [
+        "Vad kostar osten?",
+        "Hur mycket kostar osten?"
+      ],
+      "hint": "Vad kostar … ? + the cheese (osten).",
+      "explanation": "Vad kostar osten? or Hur mycket kostar osten?"
     },
     {
       "id": "sv-10-guided-age",
       "prompt": "Produce: ‘My sister is 42 years old.’",
       "answers": [
         "Min syster är fyrtiotvå år.",
-        "Min syster är fyrtiotvå år gammal."
+        "Min syster är fyrtiotvå år gammal.",
+        "Min syster är fyrtiotvå."
       ],
       "hint": "42 is one word: fyrtiotvå.",
-      "explanation": "Min syster är fyrtiotvå år."
+      "explanation": "Min syster är fyrtiotvå år (gammal)."
     },
     {
       "id": "sv-10-guided-family",
-      "prompt": "Your father's mother is your ___.",
+      "prompt": "Your mother's sister is your ___.",
       "answers": [
-        "farmor"
-      ],
-      "options": [
-        "farmor",
-        "mormor",
         "moster"
       ],
-      "hint": "far + mor",
-      "explanation": "Farmor is your father's mother."
+      "options": [
+        "moster",
+        "faster",
+        "mormor"
+      ],
+      "hint": "mor + syster",
+      "explanation": "Moster is your mother's sister (Hindi mausi). Faster is your father's sister."
     },
     {
       "id": "sv-10-guided-half",
@@ -1280,7 +1541,7 @@
         "kvart i sex"
       ],
       "hint": "Swedish looks toward the next hour.",
-      "explanation": "17:30 is halv sex."
+      "explanation": "17:30 is halv sex. Halv fem would be 16:30."
     },
     {
       "id": "sv-10-guided-weather",
@@ -1293,22 +1554,19 @@
         "Det är regnar.",
         "Är regn."
       ],
-      "hint": "No är is needed.",
+      "hint": "Regnar is a verb, so no är.",
       "explanation": "Say Det regnar, not Det är regnar."
     },
     {
       "id": "sv-10-guided-frequency",
-      "prompt": "Put “often” in the gap: Jag handlar ___ på lördagar.",
+      "prompt": "Produce: ‘I often shop on Saturdays.’",
       "answers": [
-        "ofta"
+        "Jag handlar ofta på lördagar.",
+        "På lördagar handlar jag ofta.",
+        "Jag handlar ofta på lördagarna."
       ],
-      "options": [
-        "ofta",
-        "aldrig",
-        "första"
-      ],
-      "hint": "The sentence says this happens frequently.",
-      "explanation": "Jag handlar ofta på lördagar. In this statement, ofta follows the verb handlar."
+      "hint": "Verb first, then ofta: not Jag ofta handlar.",
+      "explanation": "Jag handlar ofta på lördagar. The frequency word comes after the verb."
     }
   ],
   "sittingBreakAfter": "guided",
@@ -1416,8 +1674,8 @@
         "id": "sv-10-word-8",
         "fi": "hundra",
         "en": "one hundred",
-        "example": "Hundra kronor.",
-        "translation": "One hundred kronor.",
+        "example": "Det kostar hundra euro.",
+        "translation": "It costs a hundred euros.",
         "level": "A1"
       },
       {
@@ -1571,6 +1829,46 @@
         "example": "Det blåser lite.",
         "translation": "It is a little windy.",
         "level": "A1"
+      },
+      {
+        "id": "sv-10-word-28",
+        "fi": "ett hekto",
+        "en": "100 grams",
+        "example": "tre hekto ost",
+        "translation": "300 grams of cheese",
+        "level": "A1"
+      },
+      {
+        "id": "sv-10-word-29",
+        "fi": "Vad kostar …?",
+        "en": "How much is …?",
+        "example": "Vad kostar osten?",
+        "translation": "How much is the cheese?",
+        "level": "A1"
+      },
+      {
+        "id": "sv-10-word-30",
+        "fi": "moster",
+        "en": "aunt (mother's sister)",
+        "example": "Min moster bor i Mumbai.",
+        "translation": "My aunt lives in Mumbai.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-10-word-31",
+        "fi": "farbror",
+        "en": "uncle (father's brother)",
+        "example": "Min farbror är femtio år.",
+        "translation": "My uncle is fifty.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-10-word-32",
+        "fi": "grader",
+        "en": "degrees",
+        "example": "Det är minus tio grader.",
+        "translation": "It is minus ten degrees.",
+        "level": "A1"
       }
     ],
     "pronunciation": {
@@ -1578,54 +1876,54 @@
       "tip": "Keep teen -ton separate from tens -tio. Say the clock phrases as whole chunks."
     },
     "listening": {
-      "text": "Hej! Picknicken börjar klockan halv två på lördag. Ta med två flaskor vatten och en påse äpplen. Vi blir åtta personer. Det blir ungefär arton grader och växlande molnighet, men det regnar inte.",
-      "question": "What should the listener bring?",
+      "text": "Hej Alex, det är Elin. Vi ändrar tiden lite. Picknicken börjar klockan halv tre, inte klockan två. Min syster kommer kvart i tre. Kan du ta med två flaskor vatten också? Det blir ungefär arton grader och växlande molnighet, men det regnar inte. Hej då!",
+      "question": "What is the new start time?",
       "options": [
-        "Two bottles of water and a bag of apples",
-        "Eight sausages and cheese",
-        "One bottle of juice"
+        "14:30",
+        "14:00",
+        "14:45"
       ],
       "answer": 0,
-      "explanation": "Ta med två flaskor vatten och en påse äpplen."
+      "explanation": "Picknicken börjar klockan halv tre: halfway to three, 14:30. Kvart i tre (14:45) is when her sister comes."
     },
     "reading_passage": {
-      "text": "Hej Elin! Jag kommer gärna på picknicken. Min syster Priya kommer också. Hon är trettio år och bor i Indien. Nu hälsar hon på i Finland. Vi kommer klockan kvart över två. Jag tar med ett kilo jordgubbar och tre flaskor juice. Prognosen säger att solen skiner, men det blåser lite. Vi ses på lördag! Alex",
+      "text": "Hej Elin! Tack för meddelandet. Halv tre passar bra. I dag köpte jag två påsar äpplen, tre hekto ost, tre flaskor juice och två flaskor vatten. Allt kostade tjugotre euro och femtio cent. Men jag glömde att köpa korv, förlåt! Kan du köpa åtta korvar? Prognosen säger att det blir soligt, men det blåser lite. Ta med en tröja! Vi ses på lördag. Alex",
       "gist": {
         "prompt": "Why does Alex write?",
         "options": [
-          "To accept a picnic invitation and give details",
-          "To cancel a family dinner",
-          "To report a storm"
+          "To accept the new time and report on the shopping",
+          "To cancel the picnic",
+          "To invite Elin's family to dinner"
         ],
         "answer": 0,
-        "explanation": "He says who comes, when they arrive, what they bring and the forecast."
+        "explanation": "Halv tre passar bra, and he lists what he bought."
       },
       "detail": {
-        "prompt": "When do Alex and Priya arrive?",
+        "prompt": "What did Alex forget?",
         "options": [
-          "Quarter past two",
-          "Half past two",
-          "Quarter to two"
+          "The sausages",
+          "The juice",
+          "The cheese"
         ],
         "answer": 0,
-        "explanation": "Vi kommer klockan kvart över två."
+        "explanation": "Men jag glömde att köpa korv, förlåt!"
       }
     },
     "reading": {
-      "text": "Hej Elin! Jag kommer gärna på picknicken. Min syster Priya kommer också. Hon är trettio år och bor i Indien. Nu hälsar hon på i Finland. Vi kommer klockan kvart över två. Jag tar med ett kilo jordgubbar och tre flaskor juice. Prognosen säger att solen skiner, men det blåser lite. Vi ses på lördag! Alex",
-      "question": "What will Alex bring?",
+      "text": "Hej Elin! Tack för meddelandet. Halv tre passar bra. I dag köpte jag två påsar äpplen, tre hekto ost, tre flaskor juice och två flaskor vatten. Allt kostade tjugotre euro och femtio cent. Men jag glömde att köpa korv, förlåt! Kan du köpa åtta korvar? Prognosen säger att det blir soligt, men det blåser lite. Ta med en tröja! Vi ses på lördag. Alex",
+      "question": "How much did the shopping cost?",
       "options": [
-        "Strawberries and juice",
-        "Potatoes and cheese",
-        "Sausages and sweets"
+        "€23.50",
+        "€25.30",
+        "€3.50"
       ],
       "answer": 0,
-      "explanation": "Ett kilo jordgubbar och tre flaskor juice."
+      "explanation": "Allt kostade tjugotre euro och femtio cent."
     },
     "speaking": {
       "prompt": "Present two or three people in your family: their relationship to you, names, ages and where they live.",
-      "help": "Jag vill berätta om … · Jag har en syster / en bror / två syskon. · Hon/Han heter … · är … år · bor i … · Dessutom … · Vi brukar …",
-      "model": "Jag vill berätta om min familj. Jag har en syster som heter Priya. Hon är trettio år och bor i Indien. Dessutom har jag en bror som heter Rohan. Han är tjugosju år och bor i Indien. Vi pratar ofta i telefon."
+      "help": "Jag vill berätta om … · Mina föräldrar bor i … · Jag har en syster / en bror / inga syskon. · Hon/Han heter … · är … år · bor i … · Dessutom … · Vi pratar ofta / ibland …",
+      "model": "Jag vill berätta om min familj. Mina föräldrar bor i Pune i Indien. Min pappa är sextiotvå år och min mamma är ungefär sextio. Jag har en syster som heter Priya. Hon är trettio år och bor också i Pune. Dessutom har jag en bror som heter Rohan. Han är tjugosju och bor i Mumbai. Vi pratar ofta i telefon."
     },
     "writing": {
       "prompt": "Invite a friend to a picnic and include every practical detail.",
@@ -1641,7 +1939,7 @@
         40,
         70
       ],
-      "help": "Hej Elin! · Vill du komma på picknick …? · Vi träffas klockan … vid … · Jag tar med … · Kan du ta med …? · Det blir soligt / molnigt / varmt. · Vi ses!",
+      "help": "Hej Elin! · Vill du komma på picknick …? · Vi träffas klockan … i Brunnsparken (Kaivopuisto). · Jag tar med … · Kan du ta med …? · Det blir soligt / molnigt / varmt, ungefär … grader. · Vi ses!",
       "model": "Hej Elin! Vill du komma på picknick på lördag? Vi träffas klockan två i Brunnsparken. Jag tar med smörgåsar, ett kilo jordgubbar och två flaskor vatten. Kan du ta med juice? Det blir soligt och ungefär tjugo grader, men det blåser lite. Hoppas att du kan komma! Vi ses, Alex"
     }
   },
@@ -1694,9 +1992,9 @@
     },
     {
       "id": "sv-10-q6",
-      "fi": "Vad köper du till en picknick?",
-      "en": "What do you buy for a picnic?",
-      "sample": "Jag köper frukt, ost och juice."
+      "fi": "Hur ofta pratar du med din familj?",
+      "en": "How often do you talk with your family?",
+      "sample": "Jag pratar ofta med min familj, nästan varje söndag."
     }
   ],
   "reviewPhrases": [
@@ -1726,14 +2024,14 @@
       "fi": "klockan halv sex"
     },
     {
-      "id": "sv-10-review-6",
-      "en": "It is raining.",
-      "fi": "Det regnar."
+      "id": "sv-10-review-price",
+      "en": "How much does the cheese cost?",
+      "fi": "Vad kostar osten?"
     },
     {
-      "id": "sv-10-review-7",
-      "en": "The sun is shining.",
-      "fi": "Solen skiner."
+      "id": "sv-10-review-forecast",
+      "en": "Tomorrow it will be sunny.",
+      "fi": "I morgon blir det soligt."
     },
     {
       "id": "sv-10-review-8",
@@ -1778,34 +2076,40 @@
         "Snöar det är."
       ],
       "hint": "The weather verb does not need är.",
-      "explanation": "Det snöar."
+      "explanation": "Det snöar. Snöar is a verb, so no är."
     },
     {
-      "id": "sv-10-check-number",
-      "prompt": "Produce the number 42 in Swedish.",
+      "id": "sv-10-check-price",
+      "prompt": "Produce: ‘It costs 14 euros.’",
       "answers": [
-        "fyrtiotvå"
+        "Det kostar fjorton euro.",
+        "Den kostar fjorton euro."
       ],
-      "hint": "40 + 2, written as one word.",
-      "explanation": "42 is fyrtiotvå."
+      "hint": "14 is fjorton, not fyrtio (40).",
+      "explanation": "Det kostar fjorton euro."
     }
   ],
   "assignment": {
     "title": "Lecture 10 mission: My family and a picnic",
     "instructions": "CORE: Present two or three people in your family. Give their names, ages and where they live. Add one thing you often do together.\n\nWRITE: Invite a friend to a picnic. Include day, time, place, food to bring and weather.\n\nRETURN: Present two people from memory in under 30 seconds.",
-    "model": "Jag vill berätta om min familj. Jag har en syster som heter Priya. Hon är trettio år och bor i Indien. Dessutom har jag en bror som heter Rohan. Han är tjugosju år och bor i Indien. Vi pratar ofta i telefon."
+    "model": "Jag vill berätta om min familj. Mina föräldrar bor i Pune i Indien. Min pappa är sextiotvå år och min mamma är ungefär sextio. Jag har en syster som heter Priya. Hon är trettio år och bor också i Pune. Dessutom har jag en bror som heter Rohan. Han är tjugosju och bor i Mumbai. Vi pratar ofta i telefon."
   },
   "takeaways": [
-    "Build a shopping quantity with a container or weight: två påsar äpplen, ett kilo ost.",
-    "Use counting numbers for ages and prices; use ordinal numbers for order and dates.",
-    "Present family with relationship, name, age and home.",
-    "Remember that halv sex is 5:30, and learn weather reports as whole chunks."
+    "Put the quantity straight before the food, with no 'of': två påsar äpplen, tre hekto ost. Ask Vad kostar …?",
+    "-ton is 13-19, -tio is 30-90; ordinal numbers (första, andra) give order and dates.",
+    "Present family with relationship, name, age and home: far- is your father's side, mor- your mother's.",
+    "Halv sex is 5:30; the frequency word follows the verb; say Det regnar but Det är soligt."
   ],
   "resources": [
     {
       "label": "Svenska Akademiens ordböcker (svenska.se)",
       "url": "https://svenska.se/",
       "description": "Check a family, food or weather word and listen to its pronunciation."
+    },
+    {
+      "label": "Meteorologiska institutet (Finnish Meteorological Institute, in Swedish)",
+      "url": "https://sv.ilmatieteenlaitos.fi/",
+      "description": "Read today's forecast for Helsingfors in Swedish and find words like växlande molnighet."
     }
   ],
   "story": {
