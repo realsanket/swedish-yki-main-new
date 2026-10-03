@@ -350,13 +350,13 @@ function DialoguePractice({ part }: { part: YkiDialoguePart }) {
         {stage === "speak" && (
           <>
             <StageIntro eyebrow="STAGE 3 · TIMED RUN" title="Answer each turn before the time runs out">
-              The {part.partner.role.toLowerCase()} speaks, then your time starts. Each answer is recorded in this browser so you can compare it afterwards.
+              Your partner ({part.partner.role}) speaks, then your time starts. Each answer is recorded in this browser so you can compare it afterwards.
             </StageIntro>
             {run === "idle" && (
               <div className={styles.card}>
                 <label className={styles.toggle}>
                   <input type="checkbox" checked={hideText} onChange={(event) => setHideText(event.target.checked)} />
-                  Exam style: hide the {part.partner.role.toLowerCase()}&apos;s words
+                  Exam style: hide your partner&apos;s words
                 </label>
                 <button type="button" className="primary" onClick={() => void startRun()}>
                   <Mic size={16} aria-hidden="true" /> Start the dialogue
