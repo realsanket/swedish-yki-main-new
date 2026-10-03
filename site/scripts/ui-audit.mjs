@@ -17,7 +17,7 @@ const lectures = all.filter(l => selected ? selected.includes(l.number) : !refer
 const widths = (process.env.AUDIT_WIDTHS ?? '1440,390').split(',').map(Number);
 const failures = [];
 const records = [];
-const stats = { routeViews: 0, textbookStages: 0, teachingBeats: 0, completedActivities: 0, missionStages: 0, checks: 0 };
+const stats = { routeViews: 0, textbookStages: 0, ykiStages: 0, teachingBeats: 0, completedActivities: 0, missionStages: 0, checks: 0 };
 const norm = s => s.replace(/\s+/gu, ' ').trim();
 const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const idFor = n => `lecture-${String(n).padStart(2, '0')}`;
@@ -29,7 +29,7 @@ if (!reference) {
   // Static checks complement the browser: bad JSON fields previously passed type casts.
   for (const lecture of all) {
     const plan = plans.find(p => p.number === lecture.number);
-    const pages = (lecture.extraSteps ?? []).flatMap(s => s.pages);
+    const pages = (lecture.extraSteps ?? []).flatMap(s => s.pages ?? []);
     assert.deepEqual(pages.map(p => Number(p.pageLabel.match(/\d+/)[0])).sort((a,b) => a-b), plan.pages, `${idFor(lecture.number)} mapped pages`);
     assert.equal(lecture.presentation?.template, 'conversation-first');
     const hero = lecture.presentation?.hero;
@@ -38,7 +38,7 @@ if (!reference) {
     assert.equal(hero.speakers.length, 2);
     assert.equal(hero.chunks.length, 4);
     assert.equal(hero.meta[0], `LEKTION ${lecture.number}`);
-    const months = { APRIL:'04', MAY:'05', JUNE:'06' }; // English month names, as in Lectures 1-2
+    const months = { APRIL:'04', MAY:'05', JUNE:'06', JULY:'07', AUGUST:'08' }; // English month names, as in Lectures 1-2
     const [day, month, year] = hero.meta[1].split(' ');
     assert.equal(`${year}-${months[month]}-${day.padStart(2,'0')}`, plan.date, `L${lecture.number}: teacher date`);
     assert.equal(lecture.presentation.opening.dialogue.part, 'recall');
@@ -173,7 +173,18 @@ try {
           }
         }
         const extra=(lecture.extraSteps??[]).find(s=>s.id===sequence[step]);
-        if(extra) {
+        if(extra?.kind==='yki-speaking') {
+          for(let pi=0;pi<extra.parts.length;pi++) {
+            if(extra.parts.length>1) await page.getByRole('group',{name:'YKI tasks for this lesson'}).getByRole('button').nth(pi).click();
+            const stages=page.getByRole('navigation',{name:'YKI task stages'}).getByRole('button');
+            assert.equal(await stages.count(),extra.parts[pi].type==='dialogue'?4:3,`${label}: YKI task stages`);
+            for(let stage=0;stage<await stages.count();stage++) {
+              await stages.nth(stage).click();
+              await inspect(page,`${label}/part-${pi+1}/stage-${stage+1}`,lecture,errors);
+              stats.ykiStages++;
+            }
+          }
+        } else if(extra) {
           for(let pi=0;pi<extra.pages.length;pi++) {
             if(extra.pages.length>1) await page.getByRole('group',{name:'Textbook pages for this lesson'}).getByRole('button').nth(pi).click();
             const stages=page.getByRole('navigation',{name:'Textbook page practice stages'}).getByRole('button');
@@ -240,5 +251,5 @@ try {
 } finally { await browser.close(); }
 const report={base,reference,revision:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),stats,records,failures};
 await fs.writeFile(path.join(out,'report.json'),JSON.stringify(report,null,2)+'\n');
-console.log(`UI AUDIT ${failures.length?'FAIL':'PASS'}: ${stats.routeViews} route views; ${stats.textbookStages} textbook stages; ${stats.teachingBeats} teaching beats; ${stats.completedActivities} completed activities; ${stats.missionStages} mission stages; ${failures.length} failures.`);
+console.log(`UI AUDIT ${failures.length?'FAIL':'PASS'}: ${stats.routeViews} route views; ${stats.textbookStages} textbook stages; ${stats.ykiStages} YKI task stages; ${stats.teachingBeats} teaching beats; ${stats.completedActivities} completed activities; ${stats.missionStages} mission stages; ${failures.length} failures.`);
 if(failures.length) process.exitCode=1;

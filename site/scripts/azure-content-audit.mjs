@@ -30,7 +30,7 @@ async function audio(button,expected,name) {
   const responsePromise=page.waitForResponse(r=>r.url().endsWith('/api/speech') && r.request().method()==='POST',{timeout:40000});
   await button.click();const response=await responsePromise;
   assert.equal(response.status(),200,`${name}: speech status ${response.status()}`);
-  const sent=response.request().postDataJSON();assert.deepEqual(sent.segments,expected,`${name}: requested speakers/text`);
+  const sent=response.request().postDataJSON();assert.deepEqual(sent.segments??[{text:sent.text,speaker:sent.speaker,language:sent.language}],expected,`${name}: requested speakers/text`);
   // Chromium's CDP body retrieval can be empty for a consumed audio response.
   // Read the identical request from the app's in-memory TTS cache; playback is
   // still the actual AudioButton request above, and must reach its ended event.
@@ -58,15 +58,27 @@ try {
     } catch(e) {report.failures.push(`${id}: ${e.message}`);console.error(`FAIL Azure ${id}: ${e.message}`);}
   }
   for(const chapter of modules) {
-    const lecture=lectures.find(l=>l.number>=Math.max(3,chapter.first) && l.number<=chapter.last && l.extraSteps?.length);
+    const inChapter=l=>l.number>=Math.max(3,chapter.first) && l.number<=chapter.last;
+    const lecture=lectures.find(l=>inChapter(l) && l.extraSteps?.some(s=>s.kind==='source-practice'))
+      ?? lectures.find(l=>inChapter(l) && l.extraSteps?.some(s=>s.kind==='yki-speaking'));
+    if(!lecture) continue;
     const id=`lecture-${String(lecture.number).padStart(2,'0')}`;
     try {
       await page.goto(`${base}/#lecture/${id}`);await page.locator('.lecture-workspace').waitFor();
       await page.locator('.episode-route-panel nav').getByRole('button',{name:/^Step 2:/}).click();
-      const source=lecture.extraSteps[0].pages[0];
-      const expected=source.lines.map(l=>({text:l.fi,speaker:l.voice,language:'sv'}));
-      const result=await audio(page.getByRole('button',{name:'Hear the textbook dialogue',exact:true}),expected,`chapter-${chapter.number}-textbook`);
-      report.pages.push({...result,page:source.pageLabel});console.log(`PASS Azure chapter ${chapter.number}: ${source.pageLabel}, playback ended`);
+      const step=lecture.extraSteps[0];
+      if(step.kind==='source-practice') {
+        const source=step.pages[0];
+        const expected=source.lines.map(l=>({text:l.fi,speaker:l.voice,language:'sv'}));
+        const result=await audio(page.getByRole('button',{name:'Hear the textbook dialogue',exact:true}),expected,`chapter-${chapter.number}-textbook`);
+        report.pages.push({...result,page:source.pageLabel});console.log(`PASS Azure chapter ${chapter.number}: ${source.pageLabel}, playback ended`);
+      } else {
+        // The speaking step's compare stage: play the first model answer in Alex's voice.
+        await page.getByRole('navigation',{name:'YKI task stages'}).getByRole('button',{name:/Compare$/}).click();
+        const model=await page.locator('[class*="model"] > span[lang="sv"]').first().innerText();
+        const result=await audio(page.getByRole('button',{name:'Hear the model'}).first(),[{text:model,speaker:'Alex',language:'sv'}],`chapter-${chapter.number}-yki-model`);
+        report.pages.push({...result,page:'yki-speaking model'});console.log(`PASS Azure chapter ${chapter.number}: YKI speaking model, playback ended`);
+      }
       const response=await page.request.post(`${base}/api/feedback`,{headers:{Origin:base},data:{taskId:id,skill:'writing',text:lecture.practice.writing.model},timeout:180000});
       const data=await response.json();assert.equal(response.status(),200,`Feedback status ${response.status()}: ${data.error??''}`);assert.equal(data.source,'ai');assert.ok(data.feedback);
       await fs.writeFile(path.join(out,`chapter-${chapter.number}-feedback.json`),JSON.stringify(data,null,2));

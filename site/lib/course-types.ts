@@ -113,7 +113,71 @@ export type LectureExtraStep = {
       kind: "source-practice";
       pages: SourcePagePractice[];
     }
+  | {
+      /** Original YKI speaking tasks: timed dialogues and timed prompt sets. */
+      kind: "yki-speaking";
+      parts: YkiSpeakingPart[];
+    }
 );
+
+/** The four recurring native voices; a one-scene role borrows one of them. */
+export type YkiVoice = "Alex" | "Elin" | "Henrik" | "Maja";
+
+/**
+ * A YKI dialogue: read the situation, then answer each partner turn within
+ * its time, guided by a cue such as "(Svara nekande och förklara varför.)".
+ * Every line is original; `bookRef` only points to the book page.
+ */
+export type YkiDialoguePart = {
+  type: "dialogue";
+  id: string;
+  title: string;
+  intro?: string;
+  bookRef?: string;
+  situation: { fi: string; en: string };
+  /** Seconds to read the situation card (the exam gives 15). */
+  readSeconds: number;
+  partner: { role: string; voice: YkiVoice };
+  turns: Array<
+    | { who: "partner"; fi: string; en: string }
+    | {
+        who: "learner";
+        cue: { fi: string; en: string };
+        /** Answer time for this turn, as stored in content (10-40). */
+        seconds: number;
+        /** One or two model answers: a short safe one, then a fuller one. */
+        models: string[];
+        tip?: string;
+      }
+  >;
+  phrases?: { fi: string; en: string }[];
+};
+
+/** A timed set of YKI situations (react), topics (tell) or statements (opinion). */
+export type YkiPromptSetPart = {
+  type: "prompts";
+  id: string;
+  format: "react" | "tell" | "opinion";
+  title: string;
+  intro?: string;
+  bookRef?: string;
+  prepSeconds: number;
+  speakSeconds: number;
+  /** How many prompts one round asks, picked at random; default all, in order. */
+  roundSize?: number;
+  rules?: string[];
+  frames?: { fi: string; en: string }[];
+  prompts: Array<{
+    id: string;
+    fi: string;
+    en: string;
+    bullets?: string[];
+    model: string;
+    modelEn: string;
+  }>;
+};
+
+export type YkiSpeakingPart = YkiDialoguePart | YkiPromptSetPart;
 
 /**
  * A fill-in plan for the "Do the task" step: the learner writes their own

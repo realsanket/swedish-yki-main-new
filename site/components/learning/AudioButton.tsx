@@ -21,6 +21,8 @@ type AudioButtonProps = {
   language?: SpeechLanguage;
   speaker?: StoryCharacterName;
   segments?: AudioSegment[];
+  /** Play once on mount; for timed tasks where the next line follows a click. */
+  autoPlay?: boolean;
 };
 
 export default function AudioButton({
@@ -31,6 +33,7 @@ export default function AudioButton({
   language = "sv",
   speaker = "Henrik",
   segments,
+  autoPlay = false,
 }: AudioButtonProps) {
   const [speaking, setSpeaking] = useState(false);
   const [error, setError] = useState("");
@@ -157,6 +160,15 @@ export default function AudioButton({
         }
       });
   }
+
+  const autoPlayed = useRef(false);
+  useEffect(() => {
+    if (!autoPlay || autoPlayed.current) return;
+    autoPlayed.current = true;
+    play();
+    // play() is recreated each render; this runs once on mount.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoPlay]);
 
   return (
     <span

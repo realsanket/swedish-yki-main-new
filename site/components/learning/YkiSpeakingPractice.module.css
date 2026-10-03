@@ -1,0 +1,217 @@
+.work {
+  display: grid;
+  gap: 16px;
+  padding: 22px 25px 26px;
+}
+.card {
+  display: grid;
+  justify-items: start;
+  gap: 12px;
+  padding: 18px 20px;
+  border: 1px solid #e3e8ec;
+  border-radius: 14px;
+  background: #fff;
+}
+.situation {
+  margin: 0;
+  color: #173f6d;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.situation small,
+.cue small,
+.partnerLine small {
+  display: block;
+  margin-top: 2px;
+  color: #6b7c72;
+  font-size: 12px;
+}
+.meaning {
+  margin: 0;
+  color: #586b61;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.cues,
+.rules,
+.bullets {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+.cues li {
+  display: grid;
+  gap: 2px;
+}
+.cues small {
+  color: #6b7c72;
+  font-size: 12px;
+}
+.rules li,
+.bullets li {
+  color: #34483e;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.phrases {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.phrases li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 2px 12px;
+  padding: 10px 14px;
+  border: 1px solid #e9e2cf;
+  border-radius: 12px;
+  background: #fffaf0;
+}
+.phrases li > span {
+  color: #173f6d;
+  font-weight: 650;
+}
+.phrases li > small {
+  grid-column: 1;
+  color: #6b7c72;
+  font-size: 12px;
+}
+.phrases li > :last-child {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: #173f6d;
+}
+.timer b {
+  font-size: 26px;
+  font-variant-numeric: tabular-nums;
+}
+.timer span {
+  color: #6b7c72;
+  font-size: 13px;
+}
+.turn {
+  display: grid;
+  justify-items: start;
+  gap: 12px;
+  width: 100%;
+}
+.cue {
+  margin: 0;
+  color: #52665b;
+  font-size: 16px;
+  font-weight: 650;
+}
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #34483e;
+  font-size: 14px;
+}
+.compare {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.compare > li {
+  display: grid;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1px solid #e3e8ec;
+  border-radius: 14px;
+  background: #fff;
+}
+.compare > li.partnerLine {
+  display: block;
+  padding: 8px 16px;
+  border-style: dashed;
+  background: #fafbf8;
+  color: #52665b;
+  font-size: 14px;
+}
+.model {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 2px 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #edf3f9;
+}
+.model > small {
+  grid-column: 1;
+  color: #5d7083;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.model > span {
+  grid-column: 1;
+  color: #173f6d;
+}
+.model > :last-child {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+}
+.take {
+  display: grid;
+  gap: 6px;
+}
+.take audio {
+  width: min(100%, 320px);
+}
+.take p {
+  margin: 0;
+  color: #34483e;
+}
+.take small {
+  color: #6b7c72;
+}
+.noTake {
+  margin: 0;
+  color: #95632e;
+  font-size: 13px;
+}
+.tip {
+  margin: 0;
+  color: #52665b;
+  font-size: 13px;
+}
+.bookRef {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #8b6417 !important;
+  font-size: 12px !important;
+}
+
+@media (max-width: 640px) {
+  .work {
+    padding: 16px;
+  }
+  .card {
+    padding: 14px;
+  }
+  .phrases li,
+  .model {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .phrases li > :last-child,
+  .model > :last-child {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}

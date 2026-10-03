@@ -18,6 +18,56 @@ for prev,current in zip(mods['modules'],mods['modules'][1:]):
 for l in L:
     for tid in l.get('grammarTerms',[]):
         if tid not in gloss: errs.append(f"{l['number']}: unknown grammar term {tid}")
+VOICES=('Alex','Elin','Henrik','Maja')
+def words(text): return len(re.findall(r"[\wåäöÅÄÖé'-]+",text))
+def check_yki_speaking(n,st):
+    """Original YKI speaking tasks: timing bounds, voices, and models that fit their time (about 2 words a second)."""
+    e=[]; parts=st.get('parts') or []
+    if not parts: e.append(f"{n}: yki-speaking step {st['id']} has no parts")
+    if len({p.get('id') for p in parts})!=len(parts): e.append(f"{n}: duplicate yki part id")
+    prompt_ids=set()
+    for p in parts:
+        pid=p.get('id','?')
+        if not p.get('title','').strip(): e.append(f"{n}: yki part {pid} needs a title")
+        for first,last in re.findall(r's\.\s*(\d+)(?:\s*[–-]\s*(\d+))?',p.get('bookRef','')):
+            if not all(7<=int(x)<=125 for x in (first,last or first)): e.append(f"{n}: yki part {pid} bookRef page outside the book (7-125)")
+        if p.get('type')=='dialogue':
+            partner=p.get('partner',{})
+            if partner.get('voice') not in VOICES or not partner.get('role','').strip(): e.append(f"{n}: yki dialogue {pid} partner needs a role and a native voice")
+            if not 10<=p.get('readSeconds',0)<=20: e.append(f"{n}: yki dialogue {pid} readSeconds must be 10-20")
+            if not (p.get('situation',{}).get('fi') and p.get('situation',{}).get('en')): e.append(f"{n}: yki dialogue {pid} situation needs fi and en")
+            turns=p.get('turns',[])
+            if not any(t.get('who')=='learner' for t in turns) or not any(t.get('who')=='partner' for t in turns): e.append(f"{n}: yki dialogue {pid} needs partner and learner turns")
+            for t in turns:
+                if t.get('who')=='partner':
+                    if not (t.get('fi') and t.get('en')): e.append(f"{n}: yki dialogue {pid} partner turn needs fi and en")
+                elif t.get('who')=='learner':
+                    if not (t.get('cue',{}).get('fi') and t.get('cue',{}).get('en')): e.append(f"{n}: yki dialogue {pid} learner cue needs fi and en")
+                    sec=t.get('seconds',0)
+                    if not 5<=sec<=40: e.append(f"{n}: yki dialogue {pid} turn seconds must be 5-40")
+                    models=t.get('models') or []
+                    if not models or not all(isinstance(m,str) and m.strip() for m in models): e.append(f"{n}: yki dialogue {pid} learner turn needs a model")
+                    for m in models:
+                        if words(m)>sec*2.5: e.append(f"{n}: yki dialogue {pid} model too long for {sec} s: {m[:40]}")
+                else: e.append(f"{n}: yki dialogue {pid} turn who must be partner or learner")
+            for ph in p.get('phrases',[]):
+                if not (ph.get('fi') and ph.get('en')): e.append(f"{n}: yki dialogue {pid} phrase needs fi and en")
+        elif p.get('type')=='prompts':
+            if p.get('format') not in ('react','tell','opinion'): e.append(f"{n}: yki prompts {pid} format must be react, tell or opinion")
+            for key in ('prepSeconds','speakSeconds'):
+                if not 10<=p.get(key,0)<=120: e.append(f"{n}: yki prompts {pid} {key} must be 10-120")
+            prompts=p.get('prompts') or []
+            if not prompts: e.append(f"{n}: yki prompts {pid} has no prompts")
+            if p.get('format')=='react' and len(prompts)<5: e.append(f"{n}: yki react set {pid} needs at least 5 prompts")
+            size=p.get('roundSize')
+            if size is not None and not 1<=size<=len(prompts): e.append(f"{n}: yki prompts {pid} roundSize out of range")
+            for q in prompts:
+                if q.get('id') in prompt_ids: e.append(f"{n}: duplicate yki prompt id {q.get('id')}")
+                prompt_ids.add(q.get('id'))
+                if not all(q.get(k,'').strip() for k in ('id','fi','en','model','modelEn')): e.append(f"{n}: yki prompt {q.get('id')} needs id, fi, en, model and modelEn")
+                if words(q.get('model',''))>p.get('speakSeconds',0)*2.5: e.append(f"{n}: yki prompt {q.get('id')} model too long for {p.get('speakSeconds')} s")
+        else: e.append(f"{n}: yki part {pid} type must be dialogue or prompts")
+    return e
 for l in L:
     n=l['number']
     if not set(l.get('focusSkills',[])) <= {'listening','reading','speaking','writing'}: errs.append(f'{n}: invalid focus skill')
@@ -117,13 +167,15 @@ for l in L:
     for st in steps:
         if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,60}',st['id']): errs.append(f"{n}: bad extra step id {st['id']}")
         if st['after'] not in parts: errs.append(f"{n}: extra step {st['id']} follows unknown part {st['after']}")
-        if st['kind'] not in ('source-practice',): errs.append(f"{n}: unknown extra step kind {st['kind']}")
+        if st['kind'] not in ('source-practice','yki-speaking'): errs.append(f"{n}: unknown extra step kind {st['kind']}")
         if not (isinstance(st['minutes'],int) and 1<=st['minutes']<=60): errs.append(f"{n}: extra step minutes {st['id']}")
         for k in ('label','description','action'):
             if not st.get(k,'').strip(): errs.append(f"{n}: extra step {st['id']} missing {k}")
         if st['kind']=='source-practice':
             if not st.get('pages'): errs.append(f"{n}: extra step {st['id']} has no pages")
             pages+=st.get('pages',[])
+        if st['kind']=='yki-speaking':
+            errs+=check_yki_speaking(n,st)
     for sp in pages:
         import os
         if not os.path.exists('public'+sp['image']): errs.append('missing image '+sp['image'])

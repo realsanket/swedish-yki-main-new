@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import type { LectureExtraStep } from "@/lib/course-types";
 import { SourcePagePracticeSet } from "./SourcePagePractice";
+import { YkiSpeakingPracticeSet } from "./YkiSpeakingPractice";
 
 type StepOfKind<K extends LectureExtraStep["kind"]> = Extract<LectureExtraStep, { kind: K }>;
 
@@ -12,6 +13,7 @@ type StepOfKind<K extends LectureExtraStep["kind"]> = Extract<LectureExtraStep, 
  */
 const renderers: { [K in LectureExtraStep["kind"]]: (step: StepOfKind<K>) => ReactNode } = {
   "source-practice": (step) => <SourcePagePracticeSet pages={step.pages} />,
+  "yki-speaking": (step) => <YkiSpeakingPracticeSet parts={step.parts} />,
 };
 
 export default function ExtraStep({ step }: { step: LectureExtraStep }) {
