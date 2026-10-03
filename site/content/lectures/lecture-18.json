@@ -5,8 +5,8 @@
   "objectives": [
     "Talk about your school years and the subjects you studied.",
     "Join complete ideas with och, men, eller, så and för.",
-    "Keep normal main-clause word order after an independent linker.",
-    "Describe a subject and a teacher you remember."
+    "Keep normal main-clause word order after a linker, and put the verb second when a time word follows it.",
+    "Compare school in Finland with school in your home country."
   ],
   "focusSkills": [
     "speaking",
@@ -21,6 +21,7 @@
     "verb-second",
     "subject",
     "verb",
+    "negation",
     "present-perfect",
     "supine"
   ],
@@ -28,14 +29,14 @@
     "opening": {
       "teacherNote": {
         "title": "Listen for a school memory",
-        "body": "First hear Maja and Alex compare their school years. Notice how each linker connects two complete ideas."
+        "body": "It is Alex’s birthday party. Elin, Maja and Alex compare school in Finland and India. Notice how och, men, eller, så and för join two complete ideas."
       },
-      "questionIntro": "Answer from the story. Listen for the reason and the contrast.",
+      "questionIntro": "Answer from the story. Listen for the reason (för) and the result (så).",
       "dialogue": {
         "part": "recall",
         "eyebrow": "START WITH THE STORY",
-        "title": "Two school memories",
-        "instructions": "Listen once for a favourite subject and one difference.",
+        "title": "School in Finland and India",
+        "instructions": "Listen once for Maja’s favourite subject and one difference between the two countries.",
         "initiallyOpen": false
       }
     },
@@ -43,11 +44,11 @@
     "routeSteps": {
       "recall": {
         "label": "Hear the conversation",
-        "description": "Listen for the situation and the speakers’ plans, then answer two meaning checks."
+        "description": "Listen to the party conversation about school, then answer two meaning checks."
       },
       "teach": {
         "label": "Build it step by step",
-        "description": "Connect main clauses, check the word order and describe school memories."
+        "description": "Join main clauses, check the word order after the linker and compare school systems."
       }
     },
     "teaching": {
@@ -63,26 +64,26 @@
         "29 MAY 2026"
       ],
       "kicker": "LINK YOUR SCHOOL MEMORIES",
-      "title": "Mitt favoritämne var historia.",
-      "lede": "Compare school experiences with Maja and Alex. Connect a memory, a contrast and a reason without losing the word order.",
+      "title": "Mitt favoritämne var matte.",
+      "lede": "At Alex’s birthday party, Maja and Alex compare school in Finland and India. Join a memory, a contrast and a reason without losing the word order.",
       "startLine": {
         "label": "START WITH ONE LINE",
-        "fi": "Jag övade mycket, så mina betyg blev bättre.",
-        "en": "I practised a lot, so my grades improved.",
-        "audioText": "Jag övade mycket, så mina betyg blev bättre."
+        "fi": "Jag älskade matte, så nu är jag programmerare!",
+        "en": "I loved maths, so now I am a programmer!",
+        "audioText": "Jag älskade matte, så nu är jag programmerare!"
       },
       "speakers": [
         {
           "name": "Maja",
-          "fi": "Jag tyckte mycket om historia."
+          "fi": "Jag tycker bäst om kemi."
         },
         {
           "name": "Alex",
-          "fi": "Jag gillade matematik."
+          "fi": "Mitt favoritämne var matte."
         }
       ],
-      "connector": "OCH? MEN?",
-      "encounterLabel": "Maja recalls school in Finland and Alex compares his school years in India",
+      "connector": "OCH? MEN? SÅ?",
+      "encounterLabel": "At Alex’s birthday party, Maja and Alex compare school in Finland and India",
       "chunks": [
         {
           "label": "ADD",
@@ -110,83 +111,103 @@
   "recall": [
     {
       "id": "sv-18-r1",
-      "prompt": "Which subject did Maja like best?",
+      "prompt": "Which subject does Maja like best now?",
       "answers": [
-        "History"
+        "Chemistry"
       ],
       "options": [
+        "Chemistry",
         "History",
-        "Mathematics",
-        "Physics"
+        "Maths"
       ],
-      "hint": "Listen for mitt favoritämne.",
-      "explanation": "History was Maja’s favourite subject."
+      "hint": "Listen for Vilket ämne tycker du bäst om? and the word after it.",
+      "explanation": "Kemi, för vi gör experiment varje vecka: chemistry, because they do experiments every week."
     },
     {
       "id": "sv-18-r2",
-      "prompt": "Why was Alex nervous on his first Swedish-course day in Finland?",
+      "prompt": "Why did Alex study every evening in India?",
       "answers": [
-        "He understood only a little Swedish"
+        "He had a big exam after year ten"
       ],
       "options": [
-        "He understood only a little Swedish",
-        "He had no books",
-        "He missed the bus"
+        "He had a big exam after year ten",
+        "His class had fifty pupils",
+        "He wanted to move to Finland"
       ],
-      "hint": "Listen for för.",
-      "explanation": "He was nervous because he understood only a little Swedish."
+      "hint": "Listen for så: the result comes after it, the cause comes before it.",
+      "explanation": "Efter tionde klass skrev vi ett stort prov, så jag pluggade varje kväll."
     }
   ],
   "dialogue": [
     {
-      "speaker": "Maja",
-      "fi": "När jag gick i grundskolan tyckte jag mycket om historia.",
-      "en": "When I was in comprehensive school, I really liked history."
+      "speaker": "Elin",
+      "fi": "Grattis i efterskott, Alex! Jag har bakat två kakor till festen.",
+      "en": "Happy belated birthday, Alex! I have baked two cakes for the party."
     },
     {
       "speaker": "Alex",
-      "fi": "Jag gillade matematik, men historia var också intressant.",
-      "en": "I liked mathematics, but history was also interesting."
+      "fi": "Tack, Elin! Maja, hur går det i gymnasiet?",
+      "en": "Thank you, Elin! Maja, how is upper secondary school going?"
     },
     {
       "speaker": "Maja",
-      "fi": "Min historielärare berättade bra historier, så lektionerna gick fort.",
-      "en": "My history teacher told good stories, so the lessons passed quickly."
+      "fi": "Bra! Jag har haft många prov i vår, men nu är terminen nästan slut.",
+      "en": "Good! I have had a lot of tests this spring, but now the term is almost over."
     },
     {
       "speaker": "Alex",
-      "fi": "Var läraren sträng eller fick ni prata mycket?",
-      "en": "Was the teacher strict, or were you allowed to talk a lot?"
+      "fi": "Vilket ämne tycker du bäst om?",
+      "en": "Which subject do you like best?"
     },
     {
       "speaker": "Maja",
-      "fi": "Hon var tydlig och snäll, men vi måste arbeta ordentligt.",
-      "en": "She was clear and kind, but we had to work properly."
+      "fi": "Kemi, för vi gör experiment varje vecka. Vilket ämne tyckte du bäst om?",
+      "en": "Chemistry, because we do experiments every week. Which subject did you like best?"
     },
     {
       "speaker": "Alex",
-      "fi": "Jag gick i skolan i Indien och jag studerade många ämnen.",
-      "en": "I went to school in India, and I studied many subjects."
+      "fi": "Matte. Jag älskade matte, så nu är jag programmerare!",
+      "en": "Maths. I loved maths, so now I am a programmer!"
     },
     {
       "speaker": "Maja",
-      "fi": "Hur var din första dag på svenskkursen i Finland?",
-      "en": "What was your first day on the Swedish course in Finland like?"
+      "fi": "Var skolan i Indien som skolan här?",
+      "en": "Was school in India like school here?"
     },
     {
       "speaker": "Alex",
-      "fi": "Jag var nervös, för jag förstod bara lite svenska.",
-      "en": "I was nervous because I understood only a little Swedish."
+      "fi": "Inte riktigt. Vi hade skoluniform, och min klass hade nästan femtio elever.",
+      "en": "Not really. We had a school uniform, and my class had almost fifty pupils."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Här har eleverna ingen uniform, men alla får gratis skolmat.",
+      "en": "Here the pupils have no uniform, but everyone gets free school lunch."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Vad bra! I Pune hade vi matlåda med oss hemifrån.",
+      "en": "How good! In Pune we brought a lunch box from home."
     },
     {
       "speaker": "Maja",
-      "fi": "Du övade varje dag, så svenskan blev lättare.",
-      "en": "You practised every day, so Swedish became easier."
+      "fi": "Var proven svåra?",
+      "en": "Were the exams difficult?"
     },
     {
       "speaker": "Alex",
-      "fi": "Ja, och nu kan jag berätta om mina skolår på svenska.",
-      "en": "Yes, and now I can talk about my school years in Swedish."
+      "fi": "Ja. Efter tionde klass skrev vi ett stort prov, så jag pluggade varje kväll.",
+      "en": "Yes. After year ten we wrote a big exam, so I studied every evening."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Men i kväll pluggar ingen! Ska vi äta kaka nu, eller vill ni vänta lite?",
+      "en": "But tonight nobody studies! Shall we eat cake now, or do you want to wait a little?"
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Nu, för jag är jättehungrig!",
+      "en": "Now, because I am really hungry!"
     }
   ],
   "extraSteps": [
@@ -330,14 +351,19 @@
           ],
           "naturalNotes": [
             {
+              "source": "Ja, förstås!",
+              "note": "Förstås, såklart, självklart and naturligtvis all mean “of course”. Såklart is the most everyday one.",
+              "natural": "Ja, såklart!"
+            },
+            {
               "source": "plugghäst",
               "note": "Plugghäst can be playful or critical. The longer phrase is neutral.",
               "natural": "en elev som pluggar mycket"
             },
             {
               "source": "ta studenten",
-              "note": "In this school context, studenten is graduation from gymnasium with the student examination.",
-              "natural": "ta studenten"
+              "note": "Studenten here means the student examination at the end of gymnasium. Sweden says ta studenten; in Finland people usually say bli student.",
+              "natural": "Jag blev student i juni."
             },
             {
               "source": "eftersom mina klasskompisar mobbade mig",
@@ -363,27 +389,27 @@
               {
                 "word": "och",
                 "mark": "och",
-                "rule": "Adds another idea."
+                "rule": "Adds another idea: … och i grundskolan hade jag höga betyg. In matte och fysik, och only joins two words."
               },
               {
                 "word": "men",
                 "mark": "men",
-                "rule": "Contrasts two ideas."
+                "rule": "Contrasts two ideas. After men till slut, the verb tog comes next: the time phrase takes first place."
               },
               {
                 "word": "så",
                 "mark": "så",
-                "rule": "Gives the result."
+                "rule": "Gives the result: … så jag kom in på KTH. In inte så mycket, så means “so much”, not a linker."
               },
               {
                 "word": "för",
                 "mark": "för",
-                "rule": "Gives a reason as a main clause."
+                "rule": "Gives a reason as a full main clause: för lärarna var mycket stränga."
               },
               {
                 "word": "eller",
                 "mark": "eller",
-                "rule": "Offers another choice."
+                "rule": "Offers another choice: komma in på ett bra universitet eller ta ett sabbatsår."
               }
             ]
           }
@@ -396,30 +422,37 @@
       "title": "Fem länkar mellan hela meningar · five links between whole sentences",
       "kind": "rule",
       "body": [
-        "Jag gillade skolan, men matte var svårt. Each side can stand alone as a main clause. A main clause is a complete sentence that can work by itself.",
-        "Och adds, men contrasts, eller offers a choice, så gives a result, and för gives a reason. Do not confuse för with för att: here för connects two complete sentences.",
-        "Jag har lärt mig mycket och jag vill lära mig mer. Today’s teacher lesson also reviews har + supine. Use it for experience up to now; use a past form for a finished day. If the subject stays the same after och, you can leave it out: Jag läste och skrev."
+        "Jag gillade skolan, men matte var svårt. Each side could stand alone as a sentence. A main clause is a complete sentence that can work by itself. Och, men, eller, så and för join two of them.",
+        "Och adds, men contrasts, eller offers a choice, så gives a result, and för gives a reason. Hindi has the same five: aur, lekin, ya, isliye, kyonki.",
+        "Jag stannade hemma, för jag var sjuk. Do not mix för with för att: för + a full sentence is a reason; för att + a verb is a purpose (Jag pluggade för att klara provet).",
+        "Jag läste och skrev. If both parts have the same subject, you can drop it after och. In writing, a comma before men, så and för is usual; before och and eller it is often left out.",
+        "Jag har jobbat på Nokia i tre år. Today’s lesson also reviews har + supine: experience up to now. For a finished time use the past: Jag jobbade på Nokia för tre år sedan (ago)."
       ],
       "examples": [
         {
-          "fi": "Jag läste svenska och jag tränade varje dag.",
-          "en": "I studied Swedish and I practised every day.",
-          "note": "Och adds another complete idea."
+          "fi": "Jag gillar filmer och jag tittar ofta på dem.",
+          "en": "I like films and I often watch them.",
+          "note": "Och adds a second complete idea (teacher’s example)."
         },
         {
-          "fi": "Jag var trött, men jag gick till lektionen.",
-          "en": "I was tired, but I went to the lesson.",
+          "fi": "Min vän pratar finska, men jag förstår inte.",
+          "en": "My friend speaks Finnish, but I don’t understand.",
           "note": "Men introduces a contrast."
         },
         {
           "fi": "Bussen var sen, så jag kom för sent.",
           "en": "The bus was late, so I arrived late.",
-          "note": "Så introduces a result."
+          "note": "Så introduces the result."
         },
         {
           "fi": "Jag stannade hemma, för jag var sjuk.",
           "en": "I stayed home because I was ill.",
           "note": "För introduces the reason."
+        },
+        {
+          "fi": "Ska vi äta nu, eller vill ni vänta lite?",
+          "en": "Shall we eat now, or do you want to wait a little?",
+          "note": "Eller offers a choice between two whole questions."
         }
       ],
       "table": {
@@ -456,35 +489,35 @@
           ]
         ]
       },
-      "memoryTip": "SO/result = så. BECAUSE/reason between two full sentences = för.",
+      "memoryTip": "Cause first, then så. Result first, then för. Jag var sjuk, så jag stannade hemma = Jag stannade hemma, för jag var sjuk.",
       "tryIt": "Say one school memory, then add a contrast with men and a reason with för.",
       "activity": {
         "type": "match",
         "label": "Connect the ideas",
-        "title": "Match a beginning with its natural ending",
-        "instructions": "Make five logical school sentences, then say each complete sentence aloud.",
+        "title": "Match a beginning with its ending",
+        "instructions": "Each ending fits only one beginning. Find it, then say the complete sentence aloud.",
         "leftLabel": "First idea",
         "rightLabel": "Connected idea",
         "pairs": [
           {
-            "left": "Jag gillade historia",
-            "right": "och jag läste många böcker."
+            "left": "Bussen var sen",
+            "right": "så jag kom för sent till lektionen."
           },
           {
             "left": "Matte var svårt",
             "right": "men läraren hjälpte mig."
           },
           {
-            "left": "Vi kunde välja musik",
-            "right": "eller vi kunde välja bild."
+            "left": "Vill du plugga i kväll",
+            "right": "eller ska vi göra det i morgon?"
           },
           {
-            "left": "Jag övade mycket",
-            "right": "så jag fick ett bra betyg."
+            "left": "Jag har läst svenska i ett år",
+            "right": "och nu kan jag prata lite."
           },
           {
-            "left": "Jag minns läraren",
-            "right": "för hon var mycket snäll."
+            "left": "Jag stannade hemma",
+            "right": "för jag hade feber."
           }
         ],
         "pattern": "Say each complete sentence and explain whether the linker adds, contrasts, offers a choice, gives a result or gives a reason.",
@@ -495,33 +528,41 @@
       "title": "Ordföljden börjar om · word order after the link",
       "kind": "rule",
       "body": [
-        "Efter och, men, eller, så and för, start a new main clause. Normal word order starts again: subject, then verb. Jag var trött, men jag gick till skolan.",
-        "If the new clause begins with a time phrase, the verb is second: Jag var trött, men nästa dag gick jag till skolan. Do not copy English order and say nästa dag jag gick."
+        "Jag var trött, men jag gick till skolan. The linker stands outside the new sentence and takes no place in it. After it, build a fresh main clause.",
+        "Cover the linker and check: is the rest a correct sentence by itself? Men | jag gick till skolan. Yes.",
+        "Min familj brukar resa på sommaren, men i år bestämde vi oss för att stanna hemma. When a time word comes first after the linker, the normal verb-second rule works: i år + bestämde + vi. English says “but this year we decided”; Swedish cannot.",
+        "Jag var trött, för jag hade inte tid att sova. In a main clause inte comes after the verb, so after för too: jag hade inte. Next lecture, after eftersom, inte moves before the verb.",
+        "In speech you will also hear så gick vi hem. Then så means “then” and works like a time word, so the verb comes next. For “so” (a result), say så vi gick hem."
       ],
       "examples": [
         {
           "fi": "Jag var nervös, men jag svarade på frågan.",
           "en": "I was nervous, but I answered the question.",
-          "note": "Jag is the subject; svarade is the verb."
+          "note": "Jag (subject), then svarade (verb): normal order."
         },
         {
-          "fi": "Jag var sjuk, så nästa dag stannade jag hemma.",
-          "en": "I was ill, so the next day I stayed home.",
-          "note": "After nästa dag, stannade takes second position."
+          "fi": "Min vän gillar godis, så i går gick vi till Lidl.",
+          "en": "My friend likes sweets, so yesterday we went to Lidl.",
+          "note": "Teacher’s example: i går takes first place, then the verb gick."
         },
         {
           "fi": "Jag gillade läraren, för hon förklarade tydligt.",
           "en": "I liked the teacher because she explained clearly.",
           "note": "The reason has normal main-clause order."
+        },
+        {
+          "fi": "Jag kom inte, för jag hade inte tid.",
+          "en": "I didn’t come because I didn’t have time.",
+          "note": "Inte after the verb hade, as in any main clause."
         }
       ],
-      "memoryTip": "After the linker, build a fresh sentence. If time comes first, put the verb next.",
-      "tryIt": "Complete: Jag tyckte om svenska, men …",
+      "memoryTip": "Cover the linker: the rest must work alone. Time word first? Verb next.",
+      "tryIt": "Complete twice: Jag tyckte om svenska, men … and Jag tyckte om svenska, men nästa år …",
       "activity": {
         "type": "sort",
         "label": "Order after the linker",
         "title": "Which word order works?",
-        "instructions": "Sort each continuation into natural or needs a fix.",
+        "instructions": "Sort each continuation: natural Swedish, or needs a fix? Cover the linker and test the rest.",
         "buckets": [
           {
             "id": "natural",
@@ -539,180 +580,188 @@
             "fi": "men jag förstod inte allt",
             "en": "but I did not understand everything",
             "bucket": "natural",
-            "why": "Subject jag comes before the verb in neutral order."
+            "why": "Subject jag, verb förstod, then inte: normal main-clause order."
           },
           {
             "fi": "så nästa dag övade jag mer",
             "en": "so the next day I practised more",
             "bucket": "natural",
-            "why": "The time phrase is first and the verb is second."
+            "why": "The time phrase is first and the verb övade is second."
           },
           {
             "fi": "men nästa dag jag stannade hemma",
             "en": "but the next day I stayed home",
             "bucket": "fix",
-            "why": "Say: men nästa dag stannade jag hemma."
+            "why": "Say: men nästa dag stannade jag hemma. After a time word, the verb comes next."
           },
           {
             "fi": "för var läraren snäll",
             "en": "because the teacher was kind",
             "bucket": "fix",
-            "why": "Say: för läraren var snäll."
+            "why": "Say: för läraren var snäll. För takes no place, so the subject can come first."
+          },
+          {
+            "fi": "för jag inte hade tid",
+            "en": "because I didn’t have time",
+            "bucket": "fix",
+            "why": "Say: för jag hade inte tid. After för, inte follows the verb as in any main clause."
+          },
+          {
+            "fi": "och i dag pluggar jag svenska",
+            "en": "and today I study Swedish",
+            "bucket": "natural",
+            "why": "I dag is first, so the verb pluggar comes before jag."
           }
         ],
-        "summary": "A linker does not remove the normal word-order rule."
+        "summary": "A linker does not change the word order. The sentence after it follows the normal rules."
       }
     },
     {
-      "title": "Skolår, ämnen och personer · school years, subjects and people",
+      "title": "Skolan i Finland och i Indien · school in Finland and India",
       "kind": "scene",
       "body": [
-        "Förskola, grundskola, gymnasium, högskola och universitet. These words describe stages of education. In Finland, grundskola covers years 1–9. Ta studenten refers to finishing gymnasium with the student examination. Ta examen means complete a degree or qualification.",
-        "An ämne is a school subject. Common subjects include svenska, finska, engelska, matematik or matte, historia, fysik, kemi, biologi, musik, bild and idrott.",
-        "Talk about people and memories with en elev, en lärare, en klasskompis, ett betyg, en lektion and en rast. Say Jag gick i skolan…, Mitt favoritämne var…, and Jag minns en lärare som…",
-        "Dagis is an everyday word for daycare; the fuller Finland-Swedish word is daghem. Förstås, såklart, självklart and naturligtvis all mean of course. Plugghäst describes someone who studies a lot and can sound teasing. Lumpen is an informal word for military service, not a school stage."
+        "Barn börjar skolan det år de fyller sju. Before that, every six-year-old in Finland goes to förskola for one year. Daycare for younger children is daghem; the everyday word is dagis.",
+        "Grundskolan har årskurs 1–9 (ages 7–16), and it is free. Pupils get free skolmat every school day, and most schools have no skoluniform.",
+        "Gymnasiet usually takes three years. It ends with studentexamen, a national exam. In Finland you say Hon blev student; in Sweden, Hon tog studenten. New students wear a white cap, studentmössan.",
+        "Efter gymnasiet: universitet or yrkeshögskola (university of applied sciences). Ta examen means complete a degree. For India, say tionde klass and tolfte klass for class 10 and class 12.",
+        "Ett ämne is a school subject: svenska, finska, engelska, matte (matematik), historia, fysik, kemi, biologi, musik, bild (art) and idrott (sport). People: en elev, en lärare, en klasskompis.",
+        "Words ending in -is are informal: dagis, kändis (celebrity). Tjockis (chubby person) can hurt, so do not use it about people. Plugghäst (someone who studies a lot) can sound teasing. Lumpen is informal for military service; in Finland you also hear gå i armén."
       ],
       "examples": [
         {
           "fi": "Jag gick i skolan i Pune.",
           "en": "I went to school in Pune.",
-          "note": "Use gick i skolan for attended school."
+          "note": "Gå i skolan = attend school."
         },
         {
-          "fi": "Mitt favoritämne var matematik, för jag tyckte om problemlösning.",
-          "en": "My favourite subject was mathematics because I liked problem-solving.",
-          "note": "A complete reason follows för."
+          "fi": "Efter tionde klass skrev vi ett stort prov.",
+          "en": "After class ten we wrote a big exam.",
+          "note": "Efter tionde klass takes first place, so the verb skrev comes next."
         },
         {
-          "fi": "Jag minns min engelsklärare, för hon förklarade tydligt.",
-          "en": "I remember my English teacher because she explained clearly.",
-          "note": "Add one concrete reason."
+          "fi": "Min dotter blev student i juni.",
+          "en": "My daughter finished upper secondary school in June.",
+          "note": "Finland-Swedish: bli student."
         },
         {
-          "fi": "Efter gymnasiet tog jag ett sabbatsår.",
-          "en": "After upper secondary school, I took a gap year.",
-          "note": "Sabbatsår is a gap year."
+          "fi": "I Finland får eleverna gratis skolmat, men vi hade matlåda med oss.",
+          "en": "In Finland pupils get free school lunch, but we brought lunch boxes.",
+          "note": "A useful comparison for speaking tasks."
         }
       ],
       "table": {
         "headings": [
-          "Stage or word",
-          "Plain meaning",
+          "Stage",
+          "In Finland",
           "Useful phrase"
         ],
         "rows": [
           [
             "förskola",
-            "preschool",
-            "Jag gick i förskolan."
+            "one year at age 6",
+            "Hon går i förskolan."
           ],
           [
             "grundskola",
-            "years 1–9",
+            "årskurs 1–9, ages 7–16",
             "I grundskolan hade jag …"
           ],
           [
             "gymnasium",
-            "upper secondary school",
+            "about 3 years, ends with studentexamen",
             "Efter gymnasiet …"
           ],
           [
-            "högskola / universitet",
-            "higher education",
-            "Jag studerade vid …"
+            "bli student / ta studenten",
+            "pass studentexamen",
+            "Jag blev student 2010."
           ],
           [
-            "ta studenten",
-            "finish gymnasium with the student examination",
-            "Jag tog studenten …"
+            "universitet / yrkeshögskola",
+            "higher education",
+            "Jag studerade vid universitetet."
           ],
           [
             "ta examen",
-            "complete a degree or qualification",
-            "Jag tog examen …"
+            "complete a degree",
+            "Till slut tog jag examen."
           ]
         ]
       },
-      "memoryTip": "Skola is the institution; ett ämne is something you study there.",
-      "tryIt": "Name three subjects you studied and say which one you liked best.",
+      "memoryTip": "Skolan is the place; ett ämne is what you study there. Finland: bli student. Sweden: ta studenten.",
+      "tryIt": "Say two things that are the same and one thing that is different in Finland and your home country. Use men.",
       "activity": {
         "type": "sort",
-        "label": "School word bank",
-        "title": "Sort the school words",
-        "instructions": "Put each word with a stage, subject, person, or school event.",
+        "label": "Which stage?",
+        "title": "Read each sentence and find the school stage",
+        "instructions": "Each sentence describes school in Finland. Put it with the right stage.",
         "buckets": [
           {
-            "id": "stage",
-            "label": "Stage",
-            "hint": "part of the education path"
+            "id": "forskola",
+            "label": "Förskola",
+            "hint": "before school"
           },
           {
-            "id": "subject",
-            "label": "Subject",
-            "hint": "something you study"
+            "id": "grundskola",
+            "label": "Grundskola",
+            "hint": "the first nine years"
           },
           {
-            "id": "person",
-            "label": "Person",
-            "hint": "someone at school"
+            "id": "gymnasium",
+            "label": "Gymnasium",
+            "hint": "after year nine"
           },
           {
-            "id": "event",
-            "label": "Event or result",
-            "hint": "something that happens"
+            "id": "hogre",
+            "label": "Universitet / yrkeshögskola",
+            "hint": "after studentexamen"
           }
         ],
         "items": [
           {
-            "fi": "grundskola",
-            "en": "comprehensive school",
-            "bucket": "stage",
-            "why": "It is a stage of school."
+            "fi": "Sexåringar går här i ett år.",
+            "en": "Six-year-olds go here for one year.",
+            "bucket": "forskola",
+            "why": "Förskola is one year at age six, before school starts."
           },
           {
-            "fi": "gymnasium",
-            "en": "upper secondary school",
-            "bucket": "stage",
-            "why": "It is a stage after comprehensive school."
+            "fi": "Eleverna går här i årskurs ett till nio.",
+            "en": "Pupils go here in years one to nine.",
+            "bucket": "grundskola",
+            "why": "Grundskolan has years 1–9."
           },
           {
-            "fi": "fysik",
-            "en": "physics",
-            "bucket": "subject",
-            "why": "It is a school subject."
+            "fi": "Barn börjar här det år de fyller sju.",
+            "en": "Children start here the year they turn seven.",
+            "bucket": "grundskola",
+            "why": "School starts at seven, in year one of grundskolan."
           },
           {
-            "fi": "historia",
-            "en": "history",
-            "bucket": "subject",
-            "why": "It is a school subject."
+            "fi": "I slutet skriver man studentexamen.",
+            "en": "At the end you write the national final exam.",
+            "bucket": "gymnasium",
+            "why": "Gymnasiet ends with studentexamen."
           },
           {
-            "fi": "klasskompis",
-            "en": "classmate",
-            "bucket": "person",
-            "why": "This is a person in your class."
+            "fi": "Eleverna är ungefär 16–19 år.",
+            "en": "The students are about 16–19.",
+            "bucket": "gymnasium",
+            "why": "Gymnasiet follows year nine and usually takes three years."
           },
           {
-            "fi": "lärare",
-            "en": "teacher",
-            "bucket": "person",
-            "why": "This person teaches."
+            "fi": "Man söker hit efter studenten.",
+            "en": "You apply here after the final exam.",
+            "bucket": "hogre",
+            "why": "Universities and universities of applied sciences come after gymnasiet."
           },
           {
-            "fi": "rast",
-            "en": "break",
-            "bucket": "event",
-            "why": "A break happens during the school day."
-          },
-          {
-            "fi": "examen",
-            "en": "degree; graduation",
-            "bucket": "event",
-            "why": "It marks completed studies."
+            "fi": "Här tar man examen efter flera års studier.",
+            "en": "Here you complete a degree after several years of study.",
+            "bucket": "hogre",
+            "why": "Ta examen = complete a degree."
           }
         ],
-        "summary": "Use the words to build a personal school story, not only a list."
+        "summary": "Förskola, grundskola, gymnasium, then universitet or yrkeshögskola: now you can explain the Finnish path."
       }
     }
   ],
@@ -760,22 +809,8 @@
       "explanation": "För connects a reason as a complete main clause."
     },
     {
-      "id": "sv-18-g4",
-      "prompt": "Complete naturally: Jag läste svenska ___ engelska.",
-      "answers": [
-        "och"
-      ],
-      "options": [
-        "och",
-        "men",
-        "så"
-      ],
-      "hint": "Add another subject.",
-      "explanation": "Och adds information."
-    },
-    {
       "id": "sv-18-g5",
-      "prompt": "Choose the correct order after men.",
+      "prompt": "Choose the correct order after men: “but the next day I went to school”.",
       "answers": [
         "men nästa dag gick jag till skolan"
       ],
@@ -788,20 +823,65 @@
       "explanation": "Nästa dag + gick + jag."
     },
     {
-      "id": "sv-18-g6",
-      "prompt": "Write in Swedish: “My favourite subject was history.”",
+      "id": "sv-18-g9",
+      "prompt": "Choose the correct reason: Jag ringde inte, för …",
       "answers": [
-        "Mitt favoritämne var historia."
+        "jag hade inte tid"
+      ],
+      "options": [
+        "jag hade inte tid",
+        "jag inte hade tid",
+        "hade jag inte tid"
+      ],
+      "hint": "After för comes a normal main clause. Where does inte go in a main clause?",
+      "explanation": "För jag hade inte tid: subject, verb, then inte. Next lecture, after eftersom, inte moves before the verb."
+    },
+    {
+      "id": "sv-18-g8",
+      "prompt": "Write in Swedish (teacher’s practice): “I want to go on holiday, but it is hectic at work.”",
+      "answers": [
+        "Jag vill åka på semester, men det är hektiskt på jobbet.",
+        "Jag vill åka på semester, men det är hektiskt på arbetet.",
+        "Jag vill resa på semester, men det är hektiskt på jobbet."
+      ],
+      "hint": "Åka på semester; hektiskt like English hectic; på jobbet.",
+      "explanation": "Jag vill åka på semester, men det är hektiskt på jobbet. After men, det (subject) and är (verb) come in normal order."
+    },
+    {
+      "id": "sv-18-g6",
+      "prompt": "Write in Swedish: “My favourite subject was maths.”",
+      "answers": [
+        "Mitt favoritämne var matte.",
+        "Mitt favoritämne var matematik."
       ],
       "hint": "Use mitt with ett favoritämne, and var for the past.",
-      "explanation": "Mitt favoritämne var historia. The subject name has no capital letter."
+      "explanation": "Mitt favoritämne var matte. Ämne is an ett-word, so mitt. Subject names have no capital letter."
+    },
+    {
+      "id": "sv-18-g10",
+      "prompt": "Which sentence means “He worked at Nokia three years ago” (he has left)?",
+      "answers": [
+        "Han jobbade på Nokia för tre år sedan."
+      ],
+      "options": [
+        "Han jobbade på Nokia för tre år sedan.",
+        "Han har jobbat på Nokia i tre år.",
+        "Han har jobbat på Nokia för tre år sedan."
+      ],
+      "hint": "För … sedan means “ago”: a finished time.",
+      "explanation": "A finished time takes the past form jobbade. Han har jobbat på Nokia i tre år means he still works there."
     },
     {
       "id": "sv-18-g7",
       "prompt": "Carry-over practice: “I have studied Swedish for two years, and I still practise.”",
       "answers": [
         "Jag har studerat svenska i två år och jag övar fortfarande.",
-        "Jag har pluggat svenska i två år och jag övar fortfarande."
+        "Jag har pluggat svenska i två år och jag övar fortfarande.",
+        "Jag har läst svenska i två år och jag övar fortfarande.",
+        "Jag har studerat svenska i två år och jag tränar fortfarande.",
+        "Jag har pluggat svenska i två år och jag tränar fortfarande.",
+        "Jag har studerat svenska i två år och övar fortfarande.",
+        "Jag har pluggat svenska i två år och övar fortfarande."
       ],
       "hint": "Har + supine for the continuing experience; och links another complete idea.",
       "explanation": "Jag har studerat svenska i två år och jag övar fortfarande."
@@ -810,7 +890,7 @@
   "sittingBreakAfter": "guided",
   "missionPlan": {
     "title": "Plan six linked lines about your school years",
-    "intro": "Build a clear memory with at least three linkers and one reason.",
+    "intro": "Use at least three linkers, one reason with för and one comparison with Finland.",
     "lines": [
       {
         "label": "School",
@@ -819,34 +899,34 @@
         "placeholder": "Pune"
       },
       {
-        "label": "Subjects",
-        "before": "Jag studerade",
-        "after": ".",
-        "placeholder": "matematik, engelska och historia"
-      },
-      {
-        "label": "Favourite",
+        "label": "Favourite and reason",
         "before": "Mitt favoritämne var",
         "after": ".",
-        "placeholder": "historia"
+        "placeholder": "matte, för jag tyckte om att lösa problem"
       },
       {
         "label": "Contrast",
         "before": "Jag tyckte om skolan, men",
         "after": ".",
-        "placeholder": "matte var svårt"
+        "placeholder": "biologi var svårt"
       },
       {
         "label": "Result",
-        "before": "Jag övade mycket, så",
+        "before": "Jag pluggade mycket, så",
         "after": ".",
-        "placeholder": "jag fick bättre betyg"
+        "placeholder": "jag fick bra betyg"
       },
       {
         "label": "Teacher and reason",
         "before": "Jag minns min lärare, för",
         "after": ".",
         "placeholder": "hon förklarade tydligt"
+      },
+      {
+        "label": "Compare with Finland",
+        "before": "I Finland",
+        "after": ".",
+        "placeholder": "får eleverna gratis skolmat, men vi hade matlåda med oss"
       }
     ]
   },
@@ -902,15 +982,15 @@
       },
       {
         "id": "sv-18-word-7",
-        "fi": "förskola",
-        "en": "preschool",
-        "example": "Hon går i förskolan.",
-        "translation": "She attends preschool.",
+        "fi": "en förskola",
+        "en": "preschool (in Finland: one year at age 6)",
+        "example": "Alla sexåringar går i förskolan.",
+        "translation": "All six-year-olds go to preschool.",
         "level": "A2"
       },
       {
         "id": "sv-18-word-8",
-        "fi": "grundskola",
+        "fi": "en grundskola",
         "en": "comprehensive school",
         "example": "Jag gick i grundskolan i nio år.",
         "translation": "I attended comprehensive school for nine years.",
@@ -918,7 +998,7 @@
       },
       {
         "id": "sv-18-word-9",
-        "fi": "gymnasium",
+        "fi": "ett gymnasium",
         "en": "upper secondary school",
         "example": "Efter grundskolan började jag på gymnasiet.",
         "translation": "After comprehensive school I began upper secondary school.",
@@ -983,7 +1063,7 @@
       {
         "id": "sv-18-word-17",
         "fi": "ta studenten",
-        "en": "finish upper secondary school",
+        "en": "finish upper secondary school (Sweden; Finland says bli student)",
         "example": "Hon tog studenten i juni.",
         "translation": "She graduated from upper secondary school in June.",
         "level": "A2"
@@ -1075,91 +1155,123 @@
         "example": "Jag stannade hemma, för jag var sjuk.",
         "translation": "I stayed home because I was ill.",
         "level": "A2"
+      },
+      {
+        "id": "sv-18-word-29",
+        "fi": "bli student",
+        "en": "pass the final exam of gymnasium (Finland)",
+        "example": "Maja vill bli student med bra betyg.",
+        "translation": "Maja wants to graduate with good grades.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-18-word-30",
+        "fi": "studentexamen",
+        "en": "the national exam at the end of gymnasium",
+        "example": "Studentexamen är ett nationellt prov.",
+        "translation": "The student examination is a national exam.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-18-word-31",
+        "fi": "skolmat",
+        "en": "school lunch",
+        "example": "I Finland är skolmaten gratis.",
+        "translation": "In Finland school lunch is free.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-18-word-32",
+        "fi": "en skoluniform",
+        "en": "a school uniform",
+        "example": "Vi hade skoluniform i Indien.",
+        "translation": "We had a school uniform in India.",
+        "level": "A2"
       }
     ],
     "pronunciation": {
       "text": "Jag gillade historia, men matte var svårt, så jag bad läraren om hjälp.",
-      "tip": "Give och, men, eller, så and för a light beat, then continue smoothly into the new clause."
+      "tip": "Make a short pause at each comma, then say men and så lightly and run on into the new clause. The stress falls on the content words: historia, matte, svårt, hjälp."
     },
     "reading_passage": {
-      "text": "När jag var barn gick jag i en liten grundskola nära mitt hem. Jag promenerade dit med min syster varje morgon, och vi pratade om dagens lektioner. Mitt favoritämne var historia, för läraren berättade levande historier om människor och platser. Jag tyckte också om engelska, men matematik var svårare för mig. Ibland förstod jag inte en uppgift, så jag bad läraren om hjälp. Hon förklarade lugnt och tydligt, och sedan kunde jag fortsätta själv. På rasterna spelade mina klasskompisar och jag fotboll eller satt under ett träd och pratade. Jag var ganska blyg, men jag hade två nära vänner. Efter grundskolan började jag på gymnasiet i en större stad. Resan dit tog längre tid, så jag måste vakna tidigt. Gymnasiet var mer krävande, men jag lärde mig att planera min tid. Jag minns särskilt en svensklärare, för hon uppmuntrade alla att våga tala. Nu använder jag samma råd: jag talar även när allt inte är perfekt.",
+      "text": "I Finland börjar barn skolan det år de fyller sju. Före skolan går alla sexåringar i förskola i ett år. Grundskolan har nio årskurser, och den är gratis. Eleverna får också gratis skolmat varje skoldag, så ingen behöver ta med matlåda. De flesta skolor har ingen skoluniform. Efter grundskolan kan unga välja gymnasiet eller en yrkesutbildning. Gymnasiet tar ofta tre år, och i slutet skriver eleverna studentexamen. När de blir studenter får de en vit studentmössa, och familjen firar ofta med kaffe och tårta. Efter gymnasiet kan man söka till ett universitet eller en yrkeshögskola. Många unga tar först ett sabbatsår, för de vill arbeta eller resa. I Finland finns både finskspråkiga och svenskspråkiga skolor, så i Helsingfors kan barn gå i skolan på svenska.",
       "gist": {
         "prompt": "What is the text mainly about?",
         "options": [
-          "A learner’s school years and memories",
-          "A new flat",
-          "A restaurant visit"
+          "How school works in Finland",
+          "One pupil’s favourite teacher",
+          "A school party"
         ],
         "answer": 0,
-        "explanation": "The writer describes school stages, subjects, friends, and a teacher."
+        "explanation": "The text follows the Finnish path from förskola to university."
       },
       "detail": {
-        "prompt": "Why did the writer like history?",
+        "prompt": "Why does nobody need to bring a lunch box?",
         "options": [
-          "The teacher told vivid stories",
-          "There was no homework",
-          "It was always outdoors"
+          "Pupils get free school lunch",
+          "School ends before lunch",
+          "Parents bring food at noon"
         ],
         "answer": 0,
-        "explanation": "The history teacher told vivid stories."
+        "explanation": "Eleverna får gratis skolmat varje skoldag, så ingen behöver ta med matlåda."
       }
     },
     "reading": {
-      "text": "När jag var barn gick jag i en liten grundskola nära mitt hem. Jag promenerade dit med min syster varje morgon, och vi pratade om dagens lektioner. Mitt favoritämne var historia, för läraren berättade levande historier om människor och platser. Jag tyckte också om engelska, men matematik var svårare för mig. Ibland förstod jag inte en uppgift, så jag bad läraren om hjälp. Hon förklarade lugnt och tydligt, och sedan kunde jag fortsätta själv. På rasterna spelade mina klasskompisar och jag fotboll eller satt under ett träd och pratade. Jag var ganska blyg, men jag hade två nära vänner. Efter grundskolan började jag på gymnasiet i en större stad. Resan dit tog längre tid, så jag måste vakna tidigt. Gymnasiet var mer krävande, men jag lärde mig att planera min tid. Jag minns särskilt en svensklärare, för hon uppmuntrade alla att våga tala. Nu använder jag samma råd: jag talar även när allt inte är perfekt.",
-      "question": "What did the Swedish teacher encourage everyone to do?",
+      "text": "I Finland börjar barn skolan det år de fyller sju. Före skolan går alla sexåringar i förskola i ett år. Grundskolan har nio årskurser, och den är gratis. Eleverna får också gratis skolmat varje skoldag, så ingen behöver ta med matlåda. De flesta skolor har ingen skoluniform. Efter grundskolan kan unga välja gymnasiet eller en yrkesutbildning. Gymnasiet tar ofta tre år, och i slutet skriver eleverna studentexamen. När de blir studenter får de en vit studentmössa, och familjen firar ofta med kaffe och tårta. Efter gymnasiet kan man söka till ett universitet eller en yrkeshögskola. Många unga tar först ett sabbatsår, för de vill arbeta eller resa. I Finland finns både finskspråkiga och svenskspråkiga skolor, så i Helsingfors kan barn gå i skolan på svenska.",
+      "question": "What happens at the end of gymnasiet?",
       "options": [
-        "Dare to speak",
-        "Write only perfect sentences",
-        "Study alone"
+        "The students write studentexamen",
+        "The students start year one",
+        "The students take a gap year"
       ],
       "answer": 0,
-      "explanation": "She encouraged everyone to dare to speak."
+      "explanation": "I slutet skriver eleverna studentexamen. A gap year is a choice for some, not the end of gymnasiet."
     },
     "listening": {
-      "text": "Elin berättar om sin skoltid för Alex. Hon gick i förskolan nära sin mormors hem, och mormor hämtade henne ofta på eftermiddagen. I grundskolan tyckte Elin bäst om musik och bild, men hon gillade inte idrott. Hon kunde sjunga eller spela piano på musiklektionerna, så hon väntade alltid på dem. Hennes musiklärare var sträng, men han gav tydliga råd och lyssnade på varje elev. På gymnasiet valde Elin många språk, för hon ville resa och tala med människor. Engelska var lätt, men finskan kändes först svår. Hon övade med en vän varje vecka, och så småningom blev hon säkrare. Efter studenten tog hon ett sabbatsår och arbetade på ett café. Året gav henne tid att tänka, och sedan sökte hon till universitetet. Hon kom in på sin utbildning, men hon fortsatte arbeta på helgerna. Elin tycker att skolan gav henne kunskap, men vännerna och lärarna gav henne också mod.",
+      "text": "Elin berättar om sin skoltid för Alex. Hon växte upp i Vasa, och där gick hon i förskolan när hon var sex år. I grundskolan tyckte hon bäst om historia, för läraren berättade spännande historier. Hon gillade inte fysik, för hon förstod inte alltid lektionerna, så hon frågade ofta sin pappa om hjälp. På gymnasiet valde hon många språk, för hon ville resa och tala med människor. Engelska var lätt, men finskan kändes först svår. Hon övade med en finskspråkig vän varje vecka, och så småningom blev hon säkrare. När hon blev student fick hon den vita studentmössan, och hela familjen firade. Efter studenten tog hon ett sabbatsår och arbetade på ett café. Sedan flyttade hon till Helsingfors och började på universitetet.",
       "question": "Why did Elin choose many languages in upper secondary school?",
       "options": [
         "She wanted to travel and speak with people",
-        "Her music teacher told her to",
+        "Her physics teacher told her to",
         "She wanted shorter days"
       ],
       "answer": 0,
       "explanation": "Hon valde många språk, för hon ville resa och tala med människor."
     },
     "speaking": {
-      "prompt": "Tell the story of your school years in six to eight lines. Mention a school stage, subjects, a teacher or classmate, and an opinion with a reason. Link ideas with at least three of och, men, eller, så and för.",
-      "help": "Jag gick i skolan i … · Mitt favoritämne var … · Jag tyckte om …, men … · Jag övade, så … · Jag minns …, för …",
-      "model": "Jag gick i skolan i Pune och jag studerade många ämnen. Mitt favoritämne var historia, för jag tyckte om berättelser. Matematik var nyttigt, men några uppgifter var svåra. Jag övade mycket, så mina betyg blev bättre. Jag minns min historielärare, för hon förklarade tydligt. Skolan var ibland stressig, men jag hade goda vänner."
+      "prompt": "Tell the story of your school years in six to eight lines. Mention where you went to school, a favourite subject with a reason, a teacher, and one difference from school in Finland. Link ideas with at least three of och, men, eller, så and för.",
+      "help": "Jag gick i skolan i … · Mitt favoritämne var …, för … · … var svårt, men … · Jag pluggade, så … · Jag minns …, för … · I Finland …, men hemma …",
+      "model": "Jag gick i skolan i Pune, och jag studerade många ämnen. Mitt favoritämne var matte, för jag tyckte om att lösa problem. Biologi var intressant, men det var svårt. Vi hade skoluniform, och klasserna var stora. Efter tionde klass skrev vi ett stort prov, så jag pluggade varje kväll. Jag minns min mattelärare, för hon var sträng men rättvis. I Finland får eleverna gratis skolmat, men vi hade matlåda med oss hemifrån."
     },
     "writing": {
-      "prompt": "Write a short text for the class blog about your school years. Describe your school, a favourite subject, and a teacher you remember.",
-      "situation": "Your Swedish class has a blog called “Mina skolår”. Your classmates want to learn about your school experience.",
+      "prompt": "Write a short text for the class blog about your school years: your school, a favourite subject, a teacher you remember, and one difference from school in Finland.",
+      "situation": "Your Swedish class in Helsinki has a blog called “Mina skolår”. Your classmates come from many countries and want to know what school was like where you grew up.",
       "points": [
-        "Say where or when you went to school.",
-        "Name your favourite subject and explain why.",
+        "Say where you went to school.",
+        "Name your favourite subject and explain why (för …).",
         "Describe a teacher you remember.",
-        "Use at least three linkers: och, men, eller, så, för.",
-        "Finish with what you learned or how you feel now."
+        "Compare one thing with school in Finland.",
+        "Use at least three linkers: och, men, eller, så, för."
       ],
       "wordRange": [
         60,
         100
       ],
-      "help": "Jag gick i skolan … · Mitt favoritämne var …, för … · Läraren var … · Jag tyckte om …, men … · Jag övade, så … · Nu tycker jag …",
-      "model": "Jag gick i skolan i Pune och jag studerade många ämnen. Mitt favoritämne var historia, för läraren berättade spännande historier. Jag tyckte också om engelska, men matematik var ibland svårt. Då bad jag läraren om hjälp, så jag lärde mig mer. Jag minns särskilt min engelsklärare, för hon var snäll och tydlig. På rasterna spelade jag fotboll eller pratade med mina vänner. Skolan var ibland stressig, men jag lärde mig att arbeta tillsammans med andra."
+      "help": "Jag gick i skolan i … · Mitt favoritämne var …, för … · Jag minns …, för … · Efter … klass … · I Finland …, men hos oss …",
+      "model": "Jag gick i skolan i Pune i Indien. Vi hade skoluniform, och min klass hade nästan femtio elever. Mitt favoritämne var matte, för jag tyckte om att lösa problem. Engelska var också lätt, men biologi var svårt för mig. Jag minns min mattelärare, för hon var sträng men rättvis. Efter tionde klass skrev vi ett stort prov, så jag pluggade varje kväll. I Finland får eleverna gratis skolmat, men vi hade matlåda med oss hemifrån. Skolan var jobbig ibland, men jag lärde mig mycket."
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Tell a six-to-eight-line story about your school years, then write a 60–100-word class-blog text about your school, a favourite subject, and a teacher.",
-    "transferPrompt": "Tell the story again, changing the favourite subject and adding one new contrast.",
+    "expectedOutput": "Tell a six-to-eight-line story about your school years, then write a 60–100-word class-blog text about your school, a favourite subject, a teacher and one difference from Finland.",
+    "transferPrompt": "Tell the story again: change the favourite subject and add one new comparison with Finland.",
     "returnPrompt": "Without looking, describe your school years with och, men, så and för.",
     "successChecks": [
       "Give six to eight connected lines about your school years.",
-      "Use at least three independent linkers correctly.",
-      "Keep normal main-clause word order after each linker.",
-      "Name a favourite subject and explain why.",
-      "Give one opinion with a reason."
+      "Use at least three linkers (och, men, eller, så, för) correctly.",
+      "Keep normal word order after each linker, and put the verb next after a time word.",
+      "Name a favourite subject and explain why with för.",
+      "Compare one thing with school in Finland."
     ],
     "requiredSkills": [
       "speaking",
@@ -1177,31 +1289,31 @@
       "id": "subject",
       "fi": "Vilket ämne tyckte du bäst om?",
       "en": "Which subject did you like best?",
-      "sample": "Jag tyckte bäst om historia."
+      "sample": "Jag tyckte bäst om matte, för jag gillade siffror."
     },
     {
       "id": "hard",
       "fi": "Vilket ämne var svårt?",
       "en": "Which subject was difficult?",
-      "sample": "Fysik var svårt, men läraren hjälpte mig."
+      "sample": "Biologi var svårt, men läraren hjälpte mig."
     },
     {
       "id": "teacher",
       "fi": "Minns du någon lärare?",
       "en": "Do you remember a teacher?",
-      "sample": "Ja, jag minns min engelsklärare."
+      "sample": "Ja, jag minns min mattelärare, för hon var sträng men rättvis."
     },
     {
       "id": "friends",
       "fi": "Hade du många vänner i skolan?",
       "en": "Did you have many friends at school?",
-      "sample": "Ja, jag hade flera goda vänner."
+      "sample": "Ja, jag hade flera goda vänner, och vi spelade cricket på rasterna."
     },
     {
-      "id": "change",
-      "fi": "Vad skulle du vilja ändra i skolan?",
-      "en": "What would you like to change at school?",
-      "sample": "Jag skulle vilja ha fler praktiska lektioner."
+      "id": "different",
+      "fi": "Är skolan i Finland annorlunda än i ditt hemland?",
+      "en": "Is school in Finland different from school in your home country?",
+      "sample": "Ja. Här får eleverna gratis skolmat, men i Indien hade vi matlåda."
     }
   ],
   "reviewPhrases": [
@@ -1241,9 +1353,9 @@
       "fi": "Till slut tog jag examen."
     },
     {
-      "id": "gap",
-      "en": "After school I took a gap year.",
-      "fi": "Efter skolan tog jag ett sabbatsår."
+      "id": "next-day",
+      "en": "I was tired, but the next day I went to school.",
+      "fi": "Jag var trött, men nästa dag gick jag till skolan."
     }
   ],
   "checkpoint": [
@@ -1251,10 +1363,13 @@
       "id": "sv-18-c1",
       "prompt": "Write in Swedish: “I liked school, but maths was difficult.”",
       "answers": [
-        "Jag tyckte om skolan, men matte var svårt."
+        "Jag tyckte om skolan, men matte var svårt.",
+        "Jag tyckte om skolan, men matematik var svårt.",
+        "Jag gillade skolan, men matte var svårt.",
+        "Jag gillade skolan, men matematik var svårt."
       ],
-      "hint": "Use tyckte om for liked, then men for the contrast.",
-      "explanation": "Jag tyckte om skolan, men matte var svårt. The linker starts a new main clause with normal word order."
+      "hint": "Tyckte om (or gillade) for liked, then men for the contrast.",
+      "explanation": "Jag tyckte om skolan, men matte var svårt. After men, a fresh main clause: matte (subject), var (verb)."
     },
     {
       "id": "sv-18-c2",
@@ -1289,30 +1404,63 @@
       "prompt": "Write in Swedish: “My favourite subject was history because the teacher was good.”",
       "answers": [
         "Mitt favoritämne var historia, för läraren var bra.",
-        "Mitt favoritämne var historia för läraren var bra."
+        "Mitt favoritämne var historia, för läraren var duktig.",
+        "Mitt favoritämne var historia, för min lärare var bra."
       ],
       "hint": "Use för to introduce a reason as a complete main clause.",
-      "explanation": "Mitt favoritämne var historia, för läraren var bra. The linker starts a new main clause with normal word order."
+      "explanation": "Mitt favoritämne var historia, för läraren var bra. After för: subject läraren, then the verb var."
+    },
+    {
+      "id": "sv-18-c5",
+      "prompt": "Write in Swedish: “My friend speaks Finnish, but I don’t understand.”",
+      "answers": [
+        "Min vän pratar finska, men jag förstår inte.",
+        "Min vän talar finska, men jag förstår inte.",
+        "Min kompis pratar finska, men jag förstår inte.",
+        "Min vän pratar finska, men jag förstår det inte.",
+        "Min vän talar finska, men jag förstår det inte."
+      ],
+      "hint": "After men comes a full main clause: subject, verb, then inte.",
+      "explanation": "Min vän pratar finska, men jag förstår inte. Inte follows the verb förstår."
+    },
+    {
+      "id": "sv-18-c6",
+      "prompt": "In Finland, how do people usually say that Maja passed studentexamen?",
+      "answers": [
+        "Maja blev student."
+      ],
+      "options": [
+        "Maja blev student.",
+        "Maja blev elev.",
+        "Maja tog sabbatsår."
+      ],
+      "hint": "Finland-Swedish uses bli.",
+      "explanation": "Maja blev student. In Sweden people say Maja tog studenten."
     }
   ],
   "assignment": {
     "title": "Lecture 18 mission: Mina skolår",
-    "instructions": "CORE: Tell your school story in six to eight lines. Name your school, subjects, one teacher, and one memory.\n\nNOTICE: Link complete ideas with och, men, eller, så and för. Keep normal word order after each linker.\n\nRETURN: Tomorrow, retell it and change one subject or memory.",
-    "model": "Jag gick i skolan i Pune och jag studerade många ämnen. Mitt favoritämne var historia, för jag tyckte om berättelser. Matematik var nyttigt, men några uppgifter var svåra. Jag övade mycket, så mina betyg blev bättre. Jag minns min historielärare, för hon förklarade tydligt. Skolan var ibland stressig, men jag hade goda vänner."
+    "instructions": "CORE: Tell your school story in six to eight lines. Name your school, a favourite subject, one teacher, and one difference from school in Finland.\n\nNOTICE: Link complete ideas with och, men, eller, så and för. Cover the linker: the rest must work as a sentence. After a time word, put the verb next.\n\nRETURN: Tomorrow, retell it and change one subject or memory.",
+    "model": "Jag gick i skolan i Pune, och jag studerade många ämnen. Mitt favoritämne var matte, för jag tyckte om att lösa problem. Biologi var intressant, men det var svårt. Vi hade skoluniform, och klasserna var stora. Efter tionde klass skrev vi ett stort prov, så jag pluggade varje kväll. Jag minns min mattelärare, för hon var sträng men rättvis. I Finland får eleverna gratis skolmat, men vi hade matlåda med oss hemifrån."
   },
   "takeaways": [
     "Och adds, men contrasts, eller offers a choice, så gives a result, and för gives a reason.",
-    "After an independent linker, start a fresh main clause with normal word order.",
-    "Use school stages, subjects, people, and one clear reason to make a personal school memory."
+    "The linker takes no place: after it comes a normal main clause, and a time word first still puts the verb next.",
+    "Finland: förskola at six, grundskola 1–9, gymnasium, then bli student with studentexamen."
   ],
   "resources": [
     {
       "label": "Svenska Akademiens ordböcker",
       "url": "https://svenska.se/",
       "description": "Check school words such as ämne, betyg, sabbatsår and examen."
+    },
+    {
+      "label": "Utbildningsstyrelsen: grundläggande utbildning",
+      "url": "https://www.oph.fi/sv/utbildning-och-examina/vad-ar-grundlaggande-utbildning",
+      "description": "The Finnish authority’s own Swedish page about grundskolan."
     }
   ],
   "story": {
-    "object": "school memories"
+    "object": "school memories at Alex’s party"
   }
 }
