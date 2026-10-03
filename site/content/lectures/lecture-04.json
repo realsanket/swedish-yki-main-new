@@ -23,7 +23,9 @@
     "infinitive",
     "adverb",
     "word-order",
-    "verb-second"
+    "verb-second",
+    "preposition",
+    "negation"
   ],
   "presentation": {
     "routeSteps": {
@@ -257,8 +259,8 @@
     },
     {
       "speaker": "Elin",
-      "fi": "På helgen brukar jag läsa en bok eller gå på bio.",
-      "en": "At the weekend I usually read a book or go to the cinema."
+      "fi": "På helgen brukar jag läsa en bok eller gå på bio med Mikko.",
+      "en": "At the weekend I usually read a book or go to the cinema with Mikko."
     },
     {
       "speaker": "Alex",
@@ -277,8 +279,8 @@
     },
     {
       "speaker": "Elin",
-      "fi": "Vill du gå på bio i stället?",
-      "en": "Do you want to go to the cinema instead?"
+      "fi": "Vill du gå på bio med mig och Mikko i helgen?",
+      "en": "Do you want to go to the cinema with me and Mikko this weekend?"
     },
     {
       "speaker": "Alex",
@@ -1096,9 +1098,11 @@
       "title": "En or ett: every thing has a partner",
       "kind": "rule",
       "body": [
-        "Every Swedish noun belongs to one of two groups: en words and ett words. This is called noun gender. En and ett are articles: both mean a or an. En dator is a computer; ett jobb is a job.",
+        "Every Swedish noun belongs to one of two groups: en words and ett words. This is called noun gender. En and ett are articles: both mean a or an. En dator is a computer; ett jobb is a job. The group matters later too: it decides the word for “the” and the ending of describing words (Lecture 5).",
         "The word itself rarely shows its group, so learn the article together with the noun. Most nouns, roughly 75–80%, are en words, so en is the better guess when you are not sure. Words for people are usually en words: en kvinna, en läkare. A useful exception is ett barn (a child).",
-        "A compound word is two words joined into one. The last part decides the gender. Dator is an en word, but spel is an ett word, so datorspel is an ett word: ett datorspel. Lista is an en word, so önskelista is too: en önskelista."
+        "Some endings give a clue. Nouns that end in -a are nearly always en words: en lista, en vecka (exceptions: ett öga, an eye; ett hjärta, a heart). Nouns that end in -are, -ing or -het are en words too: en lärare, en tidning (a newspaper), en frihet (freedom). Nouns that end in -um are ett words: ett museum, ett gymnasium.",
+        "A compound word is two words joined into one. The last part decides the gender. Dator is an en word, but spel is an ett word, so datorspel is an ett word: ett datorspel. Lista is an en word, so önskelista is too: en önskelista.",
+        "Hindi and Marathi also give every noun a gender, so the idea is not new to you. But en and ett are not male and female: en pojke (a boy) and en flicka (a girl) are both en words. Do not carry a gender over from Hindi or Marathi; learn the Swedish article."
       ],
       "examples": [
         {
@@ -1110,6 +1114,11 @@
           "fi": "en kvinna · en läkare · en programmerare",
           "en": "a woman · a doctor · a programmer",
           "note": "Words for people are usually en words."
+        },
+        {
+          "fi": "en lista · en tidning · en lärare · ett museum",
+          "en": "a list · a newspaper · a teacher · a museum",
+          "note": "Endings that help: -a, -ing and -are are en; -um is ett."
         },
         {
           "fi": "ett jobb · ett företag · ett kontor",
@@ -1147,12 +1156,12 @@
           {
             "id": "en",
             "label": "en words",
-            "hint": "most nouns; usually people"
+            "hint": "most nouns; people; -a, -ing, -are"
           },
           {
             "id": "ett",
             "label": "ett words",
-            "hint": "learn these by heart"
+            "hint": "learn these by heart; -um"
           }
         ],
         "items": [
@@ -1181,16 +1190,22 @@
             "why": "It is ett företag."
           },
           {
-            "fi": "bok",
-            "en": "book",
+            "fi": "tidning",
+            "en": "newspaper",
             "bucket": "en",
-            "why": "It is en bok."
+            "why": "It ends in -ing, so it is an en word: en tidning."
           },
           {
             "fi": "språk",
             "en": "language",
             "bucket": "ett",
             "why": "It is ett språk."
+          },
+          {
+            "fi": "museum",
+            "en": "museum",
+            "bucket": "ett",
+            "why": "It ends in -um, so it is an ett word: ett museum."
           },
           {
             "fi": "datorspel",
@@ -1217,7 +1232,7 @@
             "why": "The last part kurs is an en word: en matlagningskurs."
           }
         ],
-        "summary": "Learn article + noun together. Most nouns are en words. In a compound word, the last part decides."
+        "summary": "Learn article + noun together. Most nouns are en words. Endings help (-a, -ing, -are: en; -um: ett). In a compound word, the last part decides."
       }
     },
     {
@@ -1226,7 +1241,7 @@
       "body": [
         "Ask Vad jobbar du med? (What do you do for work?). The question ends in med, but the answer usually uses jobbar som plus the job: Jag jobbar som lärare. Do not put en or ett before the job. The same is true after är: Jag är lärare. English needs a; Swedish does not.",
         "Use jobbar på plus the workplace. The workplace keeps its article: på en skola, på ett sjukhus, på ett kontor i stan (in town). A company name needs no article: på Ikea. Arbetar means the same as jobbar; it is a little more formal.",
-        "Hemifrån (from home) and mestadels (mostly) are adverbs: they say where from and how much. På distans means remotely. Not working at the moment? Say Jag studerar or Jag söker jobb (I am looking for a job)."
+        "Hemifrån (from home) and mestadels (mostly) are adverbs: they say where from and how much. På distans means remotely. To name your field, use inom: Jag jobbar inom IT. Not working at the moment? Say Jag studerar or Jag söker jobb (I am looking for a job)."
       ],
       "examples": [
         {
@@ -1248,6 +1263,11 @@
           "fi": "Jag jobbar mestadels hemifrån. Ibland arbetar jag i stan.",
           "en": "I work mostly from home. Sometimes I work in town.",
           "note": "Jobbar and arbetar mean the same."
+        },
+        {
+          "fi": "Jag jobbar inom IT. Hon jobbar som sjukskötare.",
+          "en": "I work in IT. She works as a nurse.",
+          "note": "Inom + a field. Sjukskötare is the word for a nurse in Finland; in Sweden it is sjuksköterska."
         },
         {
           "fi": "lärare · läkare · ingenjör · advokat · servitör · bokförare · musiker · målare · politiker",
@@ -1444,10 +1464,10 @@
       "title": "Habits: brukar and time phrases",
       "kind": "rule",
       "body": [
-        "Brukar means usually: it says that something is a habit, something you do regularly. Brukar is itself a verb in the present tense. The action after it stays in the infinitive (the basic form): brukar läsa, brukar spela, brukar gå.",
-        "A time phrase can come first. Then the verb comes second and the subject comes after it: På helgen brukar jag läsa. This is the same word order as I dag ska jag träna in Lecture 3.",
+        "Brukar means usually: it says that something is a habit, something you do regularly. Brukar is itself a verb in the present tense. The action after it stays in the infinitive (the basic form), with no att: brukar läsa, not brukar att läsa. Careful: brukar is not English used to, which is about the past. Jag brukar läsa means I usually read, now.",
+        "A time phrase can come first. Then the verb comes second and the subject comes after it: På helgen brukar jag läsa. This is the same word order as I dag ska jag träna in Lecture 3. For a negative, put inte right after brukar and the subject: Jag brukar inte träna. På helgen brukar jag inte träna.",
         "Useful time phrases: på fritiden (in your free time), på helgen (at the weekend), på morgonen (in the morning), på eftermiddagen (in the afternoon), på kvällen (in the evening) and då och då (now and then, the same as ibland). Så fort som möjligt means as soon as possible.",
-        "In Finland you will often hear på veckoslutet (at the weekend) instead of på helgen; both are correct. Careful: i helgen means this weekend, not every weekend."
+        "Watch the small preposition before the time. På + kvällen, helgen, morgonen often describes a habit: på kvällen = in the evening, any evening. I + the time points to one particular time: i kväll = tonight, i helgen = this weekend. A trap: i morgon (Lecture 3) means tomorrow; in the morning is på morgonen. In Finland you will often hear på veckoslutet instead of på helgen; both are correct."
       ],
       "examples": [
         {
@@ -1461,9 +1481,14 @@
           "note": "The time can also come last."
         },
         {
-          "fi": "Då och då går jag på bio.",
-          "en": "Now and then I go to the cinema.",
-          "note": "A habit can be expressed without brukar too."
+          "fi": "Jag brukar inte jobba på helgen.",
+          "en": "I do not usually work at the weekend.",
+          "note": "Inte comes right after brukar jag."
+        },
+        {
+          "fi": "På kvällen brukar jag läsa, men i kväll går jag på bio.",
+          "en": "In the evening I usually read, but tonight I am going to the cinema.",
+          "note": "På kvällen = a habit; i kväll = this one evening."
         }
       ],
       "table": {
@@ -1486,71 +1511,134 @@
           ],
           [
             "Då och då",
-            "går jag en matlagningskurs."
+            "lagar jag indisk mat."
           ]
         ]
       },
-      "memoryTip": "Brukar is already the present-tense verb. The next verb stays in the basic form: brukar spela, not brukar spelar.",
+      "memoryTip": "Brukar is already the present-tense verb. The next verb stays in the basic form, with no att: brukar spela, not brukar spelar or brukar att spela. På helgen = every weekend; i helgen = this weekend.",
       "tryIt": "Say three honest habits with three different time phrases.",
-      "activity": {
-        "type": "question-gap",
-        "label": "Ask about habits",
-        "title": "Ask Elin about her week and Maja’s habits",
-        "instructions": "Choose the question that gets each hidden fact.",
-        "card": {
-          "title": "Elin and Maja’s free time",
-          "subtitle": "Maja is a student and Elin’s friend. Ask what they usually do, and when."
+      "activities": [
+        {
+          "type": "sort",
+          "label": "Habit or one time?",
+          "title": "Usually, or one particular time?",
+          "instructions": "Say each time phrase aloud. Does it describe a habit, or one particular time?",
+          "buckets": [
+            {
+              "id": "habit",
+              "label": "a habit",
+              "hint": "again and again"
+            },
+            {
+              "id": "once",
+              "label": "one particular time",
+              "hint": "this one, or tomorrow"
+            }
+          ],
+          "items": [
+            {
+              "fi": "på kvällen",
+              "bucket": "habit",
+              "why": "På kvällen = in the evening, any evening: På kvällen brukar jag läsa."
+            },
+            {
+              "fi": "i kväll",
+              "bucket": "once",
+              "why": "I kväll = tonight, this one evening: I kväll går jag på bio."
+            },
+            {
+              "fi": "på helgen",
+              "bucket": "habit",
+              "why": "På helgen = at the weekend, every weekend: På helgen brukar jag vila."
+            },
+            {
+              "fi": "i helgen",
+              "bucket": "once",
+              "why": "I helgen = this weekend: Vill du gå på bio i helgen?"
+            },
+            {
+              "fi": "i morgon",
+              "bucket": "once",
+              "why": "I morgon = tomorrow (Lecture 3). In the morning is på morgonen."
+            },
+            {
+              "fi": "på morgonen",
+              "bucket": "habit",
+              "why": "På morgonen = in the morning, as a habit: På morgonen tränar jag."
+            },
+            {
+              "fi": "då och då",
+              "bucket": "habit",
+              "why": "Då och då = now and then: again and again, like ibland."
+            },
+            {
+              "fi": "varje dag",
+              "bucket": "habit",
+              "why": "Varje dag = every day (Lecture 3): Du pluggar varje dag."
+            }
+          ],
+          "summary": "På + kvällen/helgen/morgonen often describes a habit. I kväll, i helgen and i morgon point to one particular time."
         },
-        "answerer": "Elin",
-        "gaps": [
-          {
-            "about": "Elin",
-            "field": "Weekend habit",
-            "options": [
-              "Vad brukar du göra på helgen?",
-              "Var jobbar du?",
-              "Vad du brukar göra?"
-            ],
-            "answer": "Vad brukar du göra på helgen?",
-            "reply": {
-              "fi": "På helgen brukar jag läsa en bok.",
-              "en": "At the weekend I usually read a book."
-            },
-            "why": "Vad asks what, and brukar comes before du."
+        {
+          "type": "question-gap",
+          "label": "Ask about habits",
+          "title": "Ask Elin about her week and Maja’s habits",
+          "instructions": "Choose the question that gets each hidden fact.",
+          "card": {
+            "title": "Elin and Maja’s free time",
+            "subtitle": "Maja is a student and Elin’s friend. Ask what they usually do, and when."
           },
-          {
-            "about": "Maja",
-            "field": "Evening habit",
-            "options": [
-              "Vad brukar Maja göra på kvällen?",
-              "Vad Maja brukar göra?",
-              "När jobbar Maja?"
-            ],
-            "answer": "Vad brukar Maja göra på kvällen?",
-            "reply": {
-              "fi": "På kvällen brukar hon spela datorspel.",
-              "en": "In the evening she usually plays video games."
+          "answerer": "Elin",
+          "gaps": [
+            {
+              "about": "Elin",
+              "field": "Weekend habit",
+              "options": [
+                "Vad brukar du göra på helgen?",
+                "Var jobbar du?",
+                "Vad du brukar göra?"
+              ],
+              "answer": "Vad brukar du göra på helgen?",
+              "reply": {
+                "fi": "På helgen brukar jag läsa en bok.",
+                "en": "At the weekend I usually read a book."
+              },
+              "why": "Vad asks what, and brukar comes before du."
             },
-            "why": "Vad asks what, and the verb brukar comes second, before Maja."
-          },
-          {
-            "about": "Elin",
-            "field": "Exercise time",
-            "options": [
-              "När brukar du träna?",
-              "Var brukar du träna?",
-              "När du brukar träna?"
-            ],
-            "answer": "När brukar du träna?",
-            "reply": {
-              "fi": "Jag brukar träna på morgonen.",
-              "en": "I usually work out in the morning."
+            {
+              "about": "Maja",
+              "field": "Evening habit",
+              "options": [
+                "Vad brukar Maja göra på kvällen?",
+                "Vad Maja brukar göra?",
+                "När jobbar Maja?"
+              ],
+              "answer": "Vad brukar Maja göra på kvällen?",
+              "reply": {
+                "fi": "På kvällen brukar hon läsa en bok.",
+                "en": "In the evening she usually reads a book."
+              },
+              "why": "Vad asks what, and the verb brukar comes second, before Maja."
             },
-            "why": "När asks for a time; var asks for a place. The verb brukar comes second."
-          }
-        ],
-        "summary": "Ask Vad brukar du göra …? Answer with a time phrase + brukar + person + infinitive."
-      }
+            {
+              "about": "Elin",
+              "field": "Exercise time",
+              "options": [
+                "När brukar du träna?",
+                "Var brukar du träna?",
+                "När du brukar träna?"
+              ],
+              "answer": "När brukar du träna?",
+              "reply": {
+                "fi": "Jag brukar träna på morgonen.",
+                "en": "I usually work out in the morning."
+              },
+              "why": "När asks for a time; var asks for a place. The verb brukar comes second."
+            }
+          ],
+          "summary": "Ask Vad brukar du göra …? Answer with a time phrase + brukar + person + infinitive."
+        }
+      ]
     }
   ],
   "guided": [
@@ -1614,10 +1702,10 @@
       "options": [
         "läser",
         "läsa",
-        "läs"
+        "att läsa"
       ],
-      "hint": "After brukar, use the infinitive.",
-      "explanation": "Brukar läsa, not brukar läser."
+      "hint": "After brukar, use the infinitive, with no att.",
+      "explanation": "Brukar läsa, not brukar läser or brukar att läsa."
     },
     {
       "id": "sv-04-guided-play",
@@ -1908,6 +1996,22 @@
         "example": "På helgen stannar jag hemma.",
         "translation": "At the weekend I stay at home.",
         "level": "A0"
+      },
+      {
+        "id": "sv-04-word-34",
+        "fi": "i kväll",
+        "en": "tonight (this one evening)",
+        "example": "I kväll går jag på bio.",
+        "translation": "Tonight I am going to the cinema.",
+        "level": "A0"
+      },
+      {
+        "id": "sv-04-word-35",
+        "fi": "i helgen",
+        "en": "this weekend",
+        "example": "Vill du gå på bio i helgen?",
+        "translation": "Do you want to go to the cinema this weekend?",
+        "level": "A0"
       }
     ],
     "pronunciation": {
@@ -2026,6 +2130,30 @@
       "explanation": "På fritiden brukar jag spela fotboll. (Also correct: Jag brukar spela fotboll på fritiden.)"
     },
     {
+      "id": "sv-04-check-not-usually",
+      "prompt": "Produce: “I do not usually work at the weekend.”",
+      "answers": [
+        "Jag brukar inte jobba på helgen.",
+        "På helgen brukar jag inte jobba.",
+        "Jag brukar inte jobba på helgerna.",
+        "På helgerna brukar jag inte jobba.",
+        "Jag brukar inte jobba på veckoslutet.",
+        "På veckoslutet brukar jag inte jobba.",
+        "Jag brukar inte jobba på veckosluten.",
+        "På veckosluten brukar jag inte jobba.",
+        "Jag brukar inte arbeta på helgen.",
+        "På helgen brukar jag inte arbeta.",
+        "Jag brukar inte arbeta på helgerna.",
+        "På helgerna brukar jag inte arbeta.",
+        "Jag brukar inte arbeta på veckoslutet.",
+        "På veckoslutet brukar jag inte arbeta.",
+        "Jag brukar inte arbeta på veckosluten.",
+        "På veckosluten brukar jag inte arbeta."
+      ],
+      "hint": "Brukar + inte + infinitive. If the time comes first, the verb comes second.",
+      "explanation": "Jag brukar inte jobba på helgen. (Also correct: På helgen brukar jag inte jobba, or på veckoslutet.)"
+    },
+    {
       "id": "sv-04-check-habit",
       "prompt": "Which sentence is correct?",
       "answers": [
@@ -2060,10 +2188,10 @@
     "model": "Jag jobbar som programmerare. Jag jobbar på ett företag i Helsingfors, men jag jobbar mestadels hemifrån. På helgen brukar jag läsa en bok. På kvällen lyssnar jag på musik. Då och då går jag på bio."
   },
   "takeaways": [
-    "Learn a noun with its article: en dator, ett jobb. Most nouns are en words. The last part decides a compound word: ett datorspel.",
+    "Learn a noun with its article: en dator, ett jobb. Most nouns are en words, and endings help (-a, -ing, -are: en; -um: ett). The last part decides a compound word: ett datorspel.",
     "Work: jobbar som + profession without an article; jobbar på + workplace with its article.",
     "Free time: spelar for games, sports and instruments; leker for free play with children and pets.",
-    "Habits: brukar + infinitive. Put a time first and keep the verb second: På helgen brukar jag läsa."
+    "Habits: brukar + infinitive, with no att. Put a time first and keep the verb second: På helgen brukar jag läsa. På helgen = every weekend; i helgen = this weekend."
   ],
   "resources": [
     {
