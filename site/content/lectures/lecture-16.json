@@ -4,7 +4,7 @@
   "title": "Next year, and what you think",
   "objectives": [
     "Talk about the future four ways: present + time word, ska, tänker and kommer att.",
-    "Choose ska or kommer att by control (can I decide it?), not by English “will” or “going to”.",
+    "Choose ska or kommer att by control (can I decide it?), not by English “will” or “going to”, and never use vill for will.",
     "Use tycker for an opinion from experience, tror for a guess, and tänker for an intention or a thought.",
     "Say how sure you are with kanske, säker and osäker, and give an opinion with a reason, YKI style."
   ],
@@ -26,21 +26,22 @@
     "adjective",
     "subject",
     "verb-second",
-    "negation"
+    "negation",
+    "spoken-form"
   ],
   "presentation": {
     "template": "conversation-first",
     "opening": {
       "teacherNote": {
         "title": "Listen for plans, guesses and opinions",
-        "body": "Hear what Elin, Alex and Maja decide (ska) and what they only predict (kommer att). Then notice who says tycker, because she has been there, and who says tror, because he has not."
+        "body": "Hear what Elin, Alex and Maja decide (ska) and what they only predict (kommer att). Who says tycker about Vasa, and who says tror? Today’s three traps: vill means want, not will; English “I think” splits into tycker and tror; after Nästa år or Kanske, the verb comes second."
       },
       "questionIntro": "Answer from the story. Do not translate every word.",
       "dialogue": {
         "part": "recall",
         "eyebrow": "START WITH THE STORY",
-        "title": "Plans for next summer",
-        "instructions": "Listen once. Find one plan, one prediction, and one tycker or tror.",
+        "title": "Plans for the summer",
+        "instructions": "Guess first: who will say tycker about Vasa, Elin or Alex? Then listen once and find one plan, one prediction, one tycker and one tror.",
         "initiallyOpen": false
       }
     },
@@ -62,7 +63,7 @@
       "speakers": [
         {
           "name": "Elin",
-          "fi": "Vad ska du göra nästa sommar?"
+          "fi": "Vad ska du göra i sommar?"
         },
         {
           "name": "Alex",
@@ -70,7 +71,7 @@
         }
       ],
       "connector": "SEDAN",
-      "encounterLabel": "Elin, Alex and Maja talk about next summer",
+      "encounterLabel": "Elin, Alex and Maja talk about the summer",
       "chunks": [
         {
           "label": "PLAN",
@@ -85,7 +86,7 @@
         {
           "label": "OPINION",
           "fi": "Jag tycker att …",
-          "en": "I think … (I know it)"
+          "en": "I think … (I have tried it)"
         },
         {
           "label": "GUESS",
@@ -130,10 +131,10 @@
       "sample": "Jag tänker träffa en vän."
     },
     {
-      "id": "weather",
-      "fi": "Tror du att det kommer att regna imorgon?",
-      "en": "Do you think it will rain tomorrow?",
-      "sample": "Ja, jag tror att det kommer att regna."
+      "id": "react-move",
+      "fi": "Din vän säger: ”Jag ska flytta till Vasa i augusti.” Vad säger du?",
+      "en": "Your friend says: “I’m moving to Vaasa in August.” What do you say?",
+      "sample": "Oj, vad roligt! När flyttar du? Jag tror att du kommer att gilla Vasa."
     },
     {
       "id": "swedish",
@@ -157,7 +158,7 @@
   "reviewPhrases": [
     {
       "id": "plan",
-      "en": "Next year I will study Swedish.",
+      "en": "Next year I’m going to study Swedish.",
       "fi": "Nästa år ska jag plugga svenska."
     },
     {
@@ -198,7 +199,7 @@
   ],
   "missionPlan": {
     "title": "Plan six to eight lines about next year",
-    "intro": "Include two controllable plans, one intention, one scheduled event, one prediction, and one opinion with a reason.",
+    "intro": "Answer the card: two plans, one intention for next summer, one scheduled event, one prediction, and one opinion with a reason. After Nästa år, Nästa sommar or I januari, the verb comes next.",
     "lines": [
       {
         "label": "Plan 1",
@@ -214,9 +215,9 @@
       },
       {
         "label": "Intention",
-        "before": "Jag tänker",
+        "before": "Nästa sommar tänker jag",
         "after": ".",
-        "placeholder": "träna mer"
+        "placeholder": "resa till Lappland"
       },
       {
         "label": "Schedule",
@@ -342,7 +343,7 @@
             {
               "source": "Jag tänker det skulle bli fint om jag skaffade mig en ny hobby.",
               "natural": "Jag tror att det skulle vara roligt att skaffa en ny hobby.",
-              "note": "Here the page uses tänker for an opinion. Standard Swedish uses tror or tycker for that, and tänker for a plan (tänker + verb) or a thought (tänker på). The first tänker on the page, tänker inte sitta hemma, is the normal plan meaning."
+              "note": "Here tänker means “my thought is that …”. Native speakers do say Jag tänker att … when they think aloud, but the meaning to learn now is tänker + verb (tänker inte sitta hemma). For your own opinion or guess, tycker or tror is clearer."
             }
           ],
           "backchain": {
@@ -372,7 +373,7 @@
               {
                 "word": "tänker",
                 "mark": "tänker",
-                "rule": "Tänker + infinitive is an intention (tänker inte sitta hemma). The second tänker is the page’s unusual opinion use; see the note."
+                "rule": "Tänker + infinitive is an intention (tänker inte sitta hemma). The second tänker means “I am thinking that …”, thinking aloud; see the note."
               },
               {
                 "word": "börjar",
@@ -553,7 +554,7 @@
   "recall": [
     {
       "id": "sv-16-r1",
-      "prompt": "What does Alex intend to do next summer?",
+      "prompt": "What does Alex intend to do this summer?",
       "answers": [
         "Travel in Finland, starting with the train to Turku"
       ],
@@ -585,12 +586,12 @@
       "title": "Fyra sätt att tala om framtiden · four ways to talk about the future",
       "kind": "rule",
       "body": [
-        "Bussen går klockan åtta i morgon. A verb in the present tense plus a time word (i morgon, på måndag, nästa år) is enough for timetables, appointments and fixed facts. The time word does the future work.",
-        "Jag ska ringa Kela i morgon. Ska + infinitive is a plan you have decided and can control. Ska is a modal verb, so the next verb has no att.",
-        "Jag tänker byta jobb. Tänker + infinitive is something you are thinking of doing: your intention. Often there is no fixed date yet.",
-        "Det kommer att regna. Kommer att + infinitive is a prediction: weather, prices, feelings, results. Nobody decides them. In speech att is often dropped (det kommer regna), but keep att when you write, and on YKI.",
-        "English “will” and “going to” fit all four, and so does the Hindi ending -gā (करूँगा, karū̃gā, “I will do”). So do not translate. Ask: can I decide it? Yes: ska. No, I only expect it: kommer att.",
-        "The same event can wear different forms. The teacher’s set below is about one kitchen: each form says something different about it."
+        "Bussen går klockan åtta i morgon. The present tense + a time word (i morgon, på måndag, i sommar, nästa år) is enough for timetables, bookings and fixed facts: Jag fyller 30 nästa år.",
+        "Jag ska ringa Kela i morgon. Ska + infinitive: a plan you have decided and control. Ska is a help verb (Lecture 3), so no att: ska ringa, never ska att ringa.",
+        "Jag tänker byta jobb. Tänker + infinitive: an idea you are thinking of, often with no date. No att here either.",
+        "Det kommer att regna. Kommer att + infinitive: a prediction nobody controls, like weather, prices or results. Det blir kallt (Lecture 10) is the short everyday way. Spoken Swedish often drops att; keep it when you write.",
+        "English “will” and “going to” fit all four, and so does Hindi -gā (करूँगा, karū̃gā). So ask: can I decide it? Yes: ska. No: kommer att. And vill is not will: Jag vill resa = I want to travel (Lecture 3).",
+        "Listening tip: Det ska regna i morgon means it is supposed to rain (the forecast says so). For your own guess, use kommer att."
       ],
       "examples": [
         {
@@ -654,12 +655,12 @@
         "type": "sort",
         "label": "Four futures",
         "title": "Which future fits the gap?",
-        "instructions": "Read the situation in brackets, then choose the form that fits the gap. Say the full sentence aloud before you check.",
+        "instructions": "Read the Swedish card, clue included, then choose the form that fits the gap. Say the full sentence aloud before you check.",
         "buckets": [
           {
             "id": "schedule",
             "label": "Present (går, börjar)",
-            "hint": "timetable or fixed fact"
+            "hint": "timetable or booked"
           },
           {
             "id": "plan",
@@ -669,7 +670,7 @@
           {
             "id": "intention",
             "label": "tänker + verb",
-            "hint": "an idea I am thinking of"
+            "hint": "an idea, maybe"
           },
           {
             "id": "prediction",
@@ -679,52 +680,52 @@
         ],
         "items": [
           {
-            "fi": "Bussen ___ klockan 7.40 i morgon. (It says so in the HSL app.)",
+            "fi": "Bussen ___ klockan 7.40 i morgon. (HSL app)",
             "en": "The bus ___ at 7.40 tomorrow.",
             "bucket": "schedule",
-            "why": "A timetable: Bussen går klockan 7.40 i morgon."
+            "why": "The HSL app shows a timetable: Bussen går klockan 7.40 i morgon."
           },
           {
-            "fi": "Jag ___ ringa hälsostationen i morgon bitti. (You have decided.)",
-            "en": "I ___ call the health station tomorrow morning.",
+            "fi": "Jag har bestämt mig: jag ___ ringa hälsostationen i morgon.",
+            "en": "I ___ call the health station tomorrow.",
             "bucket": "plan",
-            "why": "Your own decision: Jag ska ringa hälsostationen."
+            "why": "Your own decision: Jag ska ringa hälsostationen i morgon."
           },
           {
-            "fi": "Det ___ bli kallt i natt. (The weather app says so.)",
+            "fi": "Det ___ bli kallt i natt.",
             "en": "It ___ get cold tonight.",
             "bucket": "prediction",
             "why": "Nobody controls the weather: Det kommer att bli kallt i natt."
           },
           {
-            "fi": "Jag ___ söka ett nytt jobb, men jag vet inte när. (Only an idea.)",
-            "en": "I ___ apply for a new job, but I do not know when.",
+            "fi": "Jag ___ söka ett nytt jobb, men jag vet inte när.",
+            "en": "I ___ apply for a new job.",
             "bucket": "intention",
             "why": "An idea with no date: Jag tänker söka ett nytt jobb."
           },
           {
-            "fi": "Min svenskkurs ___ den åttonde januari. (It is in the course calendar.)",
+            "fi": "Min svenskkurs ___ den åttonde januari. (course calendar)",
             "en": "My Swedish course ___ on 8 January.",
             "bucket": "schedule",
             "why": "A fixed date: Min svenskkurs börjar den åttonde januari."
           },
           {
-            "fi": "Maja ___ bli trött efter provet. (Your guess.)",
+            "fi": "Maja ___ bli trött efter provet.",
             "en": "Maja ___ be tired after the test.",
             "bucket": "prediction",
             "why": "Maja cannot decide to be tired: Maja kommer att bli trött efter provet."
           },
           {
-            "fi": "Vi ___ äta middag hos Elin på lördag. (We have agreed and decided.)",
+            "fi": "Vi ___ äta middag hos Elin på lördag. Vi bestämde det i går.",
             "en": "We ___ have dinner at Elin’s on Saturday.",
             "bucket": "plan",
             "why": "A decided plan: Vi ska äta middag hos Elin på lördag."
           },
           {
-            "fi": "Jag ___ måla köket i sommar. (You are thinking about it.)",
+            "fi": "Jag ___ måla köket i sommar, om jag hinner.",
             "en": "I ___ paint the kitchen this summer.",
             "bucket": "intention",
-            "why": "Your intention: Jag tänker måla köket i sommar."
+            "why": "Only an idea (om jag hinner): Jag tänker måla köket i sommar."
           }
         ],
         "summary": "Choose the form by meaning: timetable, decision, idea or prediction. English will and going to do not tell you."
@@ -734,12 +735,12 @@
       "title": "Tycker, tror och tänker · three verbs for think",
       "kind": "rule",
       "body": [
-        "Jag tycker att filmen var bra. Tycker att is your opinion about something you know or have tried: food, a film, a town, a job. Ask: Vad tycker du om …?",
-        "Jag tror att filmen är bra. Tror att is a belief or guess: you have not tried it, or you cannot know for sure. Guesses about the future use tror: Jag tror att bussen kommer snart.",
-        "The test: have you experienced it? Yes: tycker. No, or not sure: tror. In the story Elin lived in Vasa, so she says Jag tycker att Vasa är jättefint. Alex has never been there, so he says Jag tror att det är en fin stad.",
-        "Jag tänker resa. Jag tänker på dig. Tänker + infinitive means intend. Tänker på + a noun or a person means think about; keep the preposition på. Do not use tänker att for an opinion; use tycker or tror.",
-        "Hindi मुझे लगता है (mujhe lagtā hai) and Marathi मला वाटतं (malā vāṭta) cover both tycker and tror, like English “I think”. Split them with the experience test. सोचना (sochnā) is closer to tänker: मैं जाने की सोच रहा हूँ = Jag tänker åka. Tro på is विश्वास करना (vishvās karnā): Tror du på mig?",
-        "Jag tyckte att filmen var bra. Jag trodde att tomten fanns. Jag tänkte på dig. The past tense forms are tyckte, trodde and tänkte. Trodde often means “I believed it then, but now I know better”."
+        "Jag tycker att filmen var bra. Tycker att is your opinion about something you know or have tried: food, a film, a town, a job. Ask: Vad tycker du om …? (Lecture 9).",
+        "Jag tror att filmen är bra. Tror att is a belief or a guess: you have not tried it, or nobody can know yet, as with the future.",
+        "The test: have you experienced it? Yes: tycker. No: tror. Elin lived in Vasa, so she says Jag tycker att Vasa är jättefint. Alex has never been there, so he says Jag tror att det är en fin stad.",
+        "Jag tänker resa. Jag tänker på dig. Tänker + infinitive means intend. Tänker på means think about: the preposition is på, not om (English “about”). Native speakers also say Jag tänker att … when they think aloud, but for your opinion tycker is clearer.",
+        "Hindi मुझे लगता है (mujhe lagtā hai) and Marathi मला वाटतं (malā vāṭta) cover both tycker and tror, like English “I think”, so use the test. Indian English “I am thinking to go” (मैं जाने की सोच रहा हूँ) is tänker with no att: Jag tänker åka.",
+        "Past tense: tyckte, trodde, tänkte, with the -te and -de endings from Lecture 6. Jag trodde att … often means I believed it then, but not now."
       ],
       "examples": [
         {
@@ -759,7 +760,7 @@
         },
         {
           "fi": "Jag tänker laga indisk mat i kväll.",
-          "en": "I am going to cook Indian food tonight.",
+          "en": "I am planning to cook Indian food tonight.",
           "note": "Tänker + infinitive: an intention."
         },
         {
@@ -873,11 +874,11 @@
       "title": "Kanske, säker och osäker · how sure are you?",
       "kind": "rule",
       "body": [
-        "Jag vet att … · Jag är säker på att … · Jag tror att … · Kanske … · Jag vet inte. This is a scale from very sure to not sure at all. Use it to make a prediction sound honest.",
-        "Kanske kommer jag att bli nervös. Kanske (maybe) is an adverb. When it starts the sentence, the textbook and the teacher put the verb second and the subject after it: Kanske kommer jag … You will also hear Jag kanske kommer … Both are fine.",
+        "Jag vet att … · Jag är säker på att … · Jag tror att … · Kanske … · Jag vet inte. This scale goes from very sure to not sure at all. Use it to make a prediction sound honest.",
+        "Kanske kommer jag att bli nervös. Kanske (maybe) is an adverb. When it starts the sentence, the verb comes second and the subject after it, as after Nästa år. You will also hear Jag kanske kommer … Both are fine.",
         "Kanske kommer några vänner till oss. Kanske kommer några vänner att besöka oss. Kommer alone means come. Kommer att + another verb means will. Look for att and a second verb.",
-        "Säker → osäker. The letter o- in front of an adjective means not, like English un-: klar → oklar, lik → olik, modern → omodern. On a noun it can change the meaning: ett ljud (a sound) → ett oljud (a noise), ett djur (an animal) → ett odjur (a monster).",
-        "Jag tror inte att det regnar. In a negative guess, Swedish puts inte after tror, just like English “I don’t think it is raining”. Short answers: Jag tror det. Jag tror inte det."
+        "Säker → osäker. O- in front of an adjective means not, like English un-: klar → oklar, lik → olik, modern → omodern. On a noun it can change the meaning: ett ljud (a sound) → ett oljud (a noise), ett djur (an animal) → ett odjur (a monster).",
+        "Jag tror inte att det regnar. In a negative guess, inte goes after tror, just like English “I don’t think it is raining”. Short answers: Jag tror det. Jag tror inte det."
       ],
       "examples": [
         {
@@ -907,7 +908,7 @@
         }
       ],
       "memoryTip": "Kommer + att + verb = will. Kommer alone = come. O- in front = not.",
-      "tryIt": "Make one prediction for tomorrow at three levels: Jag är säker på att … · Jag tror att … · Kanske …",
+      "tryIt": "Make one prediction for tomorrow at three levels: Jag är säker på att … · Jag tror att … · Kanske … (say KAN-sje)",
       "activity": {
         "type": "match",
         "label": "The o- words",
@@ -955,10 +956,9 @@
       "title": "Vad tycker du? · give an opinion with a reason",
       "kind": "scene",
       "body": [
-        "Vad tycker du om kollektivtrafiken? In YKI speaking the examiner asks questions like this, and the writing part can ask what is good and bad about something, with reasons. Answer in two steps: opinion, then reason. Jag tycker att … eftersom …",
-        "Jag tycker att bussarna är bra, eftersom de går ofta. A short answer like Bra or Ja is too thin. One reason with eftersom makes your answer much stronger.",
-        "Det tycker jag också. Jag håller med. Jag håller inte med. Jag tycker inte det. Use these to react to someone else’s opinion. After a guess, react with tror: Det tror jag också. Jag tror inte det.",
-        "Hur tror du att det går? Use tror in questions about the future, and tycker in questions about something the other person knows: Vad tycker du om ditt nya jobb?"
+        "Vad tycker du om kollektivtrafiken? YKI speaking and writing tasks ask for your opinion and your reasons. Answer in two steps, as in Lecture 13: Jag tycker att bussarna är bra, eftersom de går ofta. One word like Bra is too thin.",
+        "Det tycker jag också. Jag håller med. Jag håller inte med. React to an opinion with these (Lecture 12). After a guess, react with tror: Det tror jag också. Jag tror inte det.",
+        "Hur tror du att det går? Ask with tror about the future, and with tycker about something the other person knows: Vad tycker du om ditt nya jobb?"
       ],
       "examples": [
         {
@@ -984,101 +984,165 @@
       ],
       "memoryTip": "Opinion + eftersom + reason. React with Det tycker jag också or Jag håller inte med.",
       "tryIt": "Answer aloud: Vad tycker du om vintern i Finland? Give one reason with eftersom.",
-      "activity": {
-        "type": "question-gap",
-        "label": "Interview Maja",
-        "title": "Ask Maja the right question",
-        "instructions": "Each fact about Maja is hidden. Choose the question that really gets it: tycker for an opinion, tror for a guess, tänker for a plan or a thought. Maja answers aloud.",
-        "card": {
-          "title": "Maja, 17",
-          "subtitle": "Before her maths test"
+      "activities": [
+        {
+          "type": "question-gap",
+          "label": "Interview Maja",
+          "title": "Ask Maja the right question",
+          "instructions": "Each fact about Maja is hidden. Choose the question that really gets it. Some questions are wrong, others ask for something else. Maja answers aloud.",
+          "card": {
+            "title": "Maja, 17",
+            "subtitle": "Before her maths test"
+          },
+          "answerer": "Maja",
+          "gaps": [
+            {
+              "about": "Maja",
+              "field": "Her opinion of maths",
+              "options": [
+                "Vad tycker du om matte?",
+                "Tror du på matte?",
+                "Vad tycker du matte?"
+              ],
+              "answer": "Vad tycker du om matte?",
+              "reply": {
+                "fi": "Jag tycker att matte är kul, eftersom jag gillar svåra uppgifter.",
+                "en": "I think maths is fun, because I like hard problems."
+              },
+              "why": "An opinion question: Vad tycker du om …? Keep om. Tror du på matte? asks if she believes in maths."
+            },
+            {
+              "about": "Maja",
+              "field": "Her guess about the test",
+              "options": [
+                "Hur tror du att det går på provet?",
+                "Hur tycker du att det går på provet?",
+                "Hur gick det på provet?"
+              ],
+              "answer": "Hur tror du att det går på provet?",
+              "reply": {
+                "fi": "Jag tror att det kommer att gå bra.",
+                "en": "I think it will go well."
+              },
+              "why": "The test is on Friday, so nobody knows yet: a guess takes tror. Hur gick det? asks about a test that is over."
+            },
+            {
+              "about": "Maja",
+              "field": "Her plan after the test",
+              "options": [
+                "Vad ska du göra efter provet?",
+                "Vad tycker du om provet?",
+                "Vad ska du att göra efter provet?"
+              ],
+              "answer": "Vad ska du göra efter provet?",
+              "reply": {
+                "fi": "Jag ska fira med Elin och Alex.",
+                "en": "I am going to celebrate with Elin and Alex."
+              },
+              "why": "A plan she decides: ska + infinitive, with no att. Vad tycker du om provet? gets her opinion of the test."
+            },
+            {
+              "about": "Maja",
+              "field": "What is on her mind",
+              "options": [
+                "Vad tänker du på just nu?",
+                "Vad tänker du göra just nu?",
+                "Vad tycker du om just nu?"
+              ],
+              "answer": "Vad tänker du på just nu?",
+              "reply": {
+                "fi": "Jag tänker på sommarlovet!",
+                "en": "I am thinking about the summer holiday!"
+              },
+              "why": "Think about = tänker på. Tänker göra asks for a plan, and tycker om asks what she likes (Lecture 9)."
+            },
+            {
+              "about": "Maja",
+              "field": "Her summer idea",
+              "options": [
+                "Vad tänker du göra i sommar?",
+                "Vad tänker du att göra i sommar?",
+                "Vad gjorde du förra sommaren?"
+              ],
+              "answer": "Vad tänker du göra i sommar?",
+              "reply": {
+                "fi": "Jag tänker jobba på ett kafé och spara pengar.",
+                "en": "I am thinking of working in a café and saving money."
+              },
+              "why": "Tänker + infinitive, with no att, asks about an intention. Vad gjorde du förra sommaren? asks about last summer."
+            }
+          ],
+          "summary": "Opinion: Vad tycker du om …? Guess: Hur tror du att …? Plan: Vad ska du / tänker du göra? Thought: Vad tänker du på?"
         },
-        "answerer": "Maja",
-        "gaps": [
-          {
-            "about": "Maja",
-            "field": "Her opinion of maths",
-            "options": [
-              "Vad tycker du om matte?",
-              "Vad tänker du på matte?",
-              "Vad tycker du matte?"
-            ],
-            "answer": "Vad tycker du om matte?",
-            "reply": {
-              "fi": "Jag tycker att matte är kul, eftersom jag gillar svåra uppgifter.",
-              "en": "I think maths is fun, because I like hard problems."
+        {
+          "type": "sort",
+          "label": "Right or fix it?",
+          "title": "Spot today’s traps",
+          "instructions": "Decide for each sentence. If it needs a fix, say the fixed sentence aloud before you check.",
+          "buckets": [
+            {
+              "id": "ok",
+              "label": "Right",
+              "hint": "say it aloud"
             },
-            "why": "An opinion question: Vad tycker du om …? Keep om."
-          },
-          {
-            "about": "Maja",
-            "field": "Her guess about the test",
-            "options": [
-              "Hur tror du att det går på provet?",
-              "Hur tycker du att det går på provet?",
-              "Hur tänker du att det går på provet?"
-            ],
-            "answer": "Hur tror du att det går på provet?",
-            "reply": {
-              "fi": "Jag tror att det kommer att gå bra.",
-              "en": "I think it will go well."
+            {
+              "id": "fix",
+              "label": "Fix it",
+              "hint": "order, word or meaning"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Nästa år jag ska plugga svenska.",
+              "bucket": "fix",
+              "why": "A time word first, so the verb comes next (Lecture 3). Fix: Nästa år ska jag plugga svenska."
             },
-            "why": "The test is on Friday, so nobody knows yet: a guess takes tror."
-          },
-          {
-            "about": "Maja",
-            "field": "Her plan after the test",
-            "options": [
-              "Vad ska du göra efter provet?",
-              "Vad tycker du göra efter provet?",
-              "Vad tror du göra efter provet?"
-            ],
-            "answer": "Vad ska du göra efter provet?",
-            "reply": {
-              "fi": "Jag ska fira med Elin och Alex.",
-              "en": "I am going to celebrate with Elin and Alex."
+            {
+              "fi": "Jag vill ringa dig i kväll. (You mean: I will call you.)",
+              "bucket": "fix",
+              "why": "Vill means want (Lecture 3). For a promise: Jag ska ringa dig i kväll."
             },
-            "why": "A plan she decides: ska + infinitive."
-          },
-          {
-            "about": "Maja",
-            "field": "What is on her mind",
-            "options": [
-              "Vad tänker du på just nu?",
-              "Vad tänker du om just nu?",
-              "Vad tycker du på just nu?"
-            ],
-            "answer": "Vad tänker du på just nu?",
-            "reply": {
-              "fi": "Jag tänker på sommarlovet!",
-              "en": "I am thinking about the summer holiday!"
+            {
+              "fi": "Kanske kommer det att snöa i natt.",
+              "bucket": "ok",
+              "why": "Kanske first, then the verb kommer, then det. Correct."
             },
-            "why": "Think about = tänker på."
-          },
-          {
-            "about": "Maja",
-            "field": "Her summer idea",
-            "options": [
-              "Vad tänker du göra i sommar?",
-              "Vad tänker du på göra i sommar?",
-              "Vad tror du göra i sommar?"
-            ],
-            "answer": "Vad tänker du göra i sommar?",
-            "reply": {
-              "fi": "Jag tänker jobba på ett kafé och spara pengar.",
-              "en": "I am thinking of working in a café and saving money."
+            {
+              "fi": "Jag tänker att resa till Vasa i sommar.",
+              "bucket": "fix",
+              "why": "No att after tänker + verb, just as after ska. Fix: Jag tänker resa till Vasa i sommar."
             },
-            "why": "Tänker + infinitive, with no på, asks about an intention."
-          }
-        ],
-        "summary": "Opinion: Vad tycker du om …? Guess: Hur tror du att …? Plan: Vad ska du / tänker du göra? Thought: Vad tänker du på?"
-      }
+            {
+              "fi": "Jag tycker att Maja kommer att klara provet. (A guess about Friday.)",
+              "bucket": "fix",
+              "why": "Nobody knows yet, so it is a guess. Fix: Jag tror att Maja kommer att klara provet."
+            },
+            {
+              "fi": "I januari börjar min kurs.",
+              "bucket": "ok",
+              "why": "Present + time word for a fixed date, and the verb börjar is second. Correct."
+            },
+            {
+              "fi": "Jag tänker ofta om min familj.",
+              "bucket": "fix",
+              "why": "Think about = tänker på, not om. Fix: Jag tänker ofta på min familj."
+            },
+            {
+              "fi": "Jag tror inte att det kommer att regna.",
+              "bucket": "ok",
+              "why": "Inte goes after tror, and kommer att makes the prediction. Correct."
+            }
+          ],
+          "audio": false,
+          "summary": "Verb second after Nästa år or Kanske. Vill = want. No att after ska or tänker. A guess takes tror. Think about = tänker på."
+        }
+      ]
     }
   ],
   "guided": [
     {
       "id": "sv-16-g1",
-      "prompt": "“We’re going to be hungry after the trip.” (Nobody decides that.) Vi ___ bli hungriga efter resan.",
+      "prompt": "“We’re going to be hungry after the trip.” Vi ___ bli hungriga efter resan.",
       "answers": [
         "kommer att"
       ],
@@ -1092,63 +1156,63 @@
     },
     {
       "id": "sv-16-g2",
-      "prompt": "A controlled decision: Jag ___ ringa läkaren efter jobbet.",
+      "prompt": "You promise Elin: “I will call you after work.” Jag ___ ringa dig efter jobbet.",
       "answers": [
         "ska"
       ],
       "options": [
         "ska",
-        "kommer att",
+        "vill",
         "tror"
       ],
-      "hint": "You control this action.",
-      "explanation": "Ska fits a decided plan."
+      "hint": "Will is not vill. Who decides here?",
+      "explanation": "Ska: you decide. Vill means want (Lecture 3): Jag vill ringa dig = I want to call you."
     },
     {
       "id": "sv-16-g3",
-      "prompt": "A personal intention: Jag ___ lära mig mer svenska.",
+      "prompt": "An intention: Jag ___ lära mig mer svenska.",
       "answers": [
         "tänker"
       ],
       "options": [
         "tänker",
-        "tycker",
-        "tror"
+        "tänker att",
+        "tycker att"
       ],
-      "hint": "Use tänker plus infinitive.",
-      "explanation": "Tänker lära marks an intention."
+      "hint": "Like ska, tänker + verb takes no att.",
+      "explanation": "Jag tänker lära mig mer svenska. Tänker att and tycker att introduce a whole sentence, not a verb."
     },
     {
       "id": "sv-16-g4",
-      "prompt": "A fixed schedule: Kursen ___ på måndag.",
+      "prompt": "The course starts next Monday: Kursen börjar ___.",
       "answers": [
-        "börjar"
+        "på måndag"
       ],
       "options": [
-        "börjar",
-        "ska börja att",
-        "tycker"
+        "på måndag",
+        "i måndags",
+        "på måndagar"
       ],
-      "hint": "Present plus a future time.",
-      "explanation": "Kursen börjar på måndag is a scheduled fact."
+      "hint": "Present + a time word for the coming Monday.",
+      "explanation": "Present + på måndag is enough for a fixed date. Lecture 12: i måndags = last Monday, på måndagar = every Monday."
     },
     {
       "id": "sv-16-g5",
-      "prompt": "Your opinion: Jag ___ att kaffet här är gott.",
+      "prompt": "Review from Lecture 9: “I like Vaasa.” Jag ___ Vasa.",
       "answers": [
-        "tycker"
+        "tycker om"
       ],
       "options": [
-        "tycker",
-        "tror",
-        "tänker"
+        "tycker om",
+        "tycker att",
+        "tror på"
       ],
-      "hint": "You drink it every day.",
-      "explanation": "Tycker introduces an opinion or evaluation."
+      "hint": "Like = tycker om, with om stressed.",
+      "explanation": "Tycker OM = like (Lecture 9). Tycker att needs a whole sentence: Jag tycker att Vasa är fint. Tror på = believe in."
     },
     {
       "id": "sv-16-g6",
-      "prompt": "An uncertain guess: Jag ___ att Elin kommer snart.",
+      "prompt": "You cannot see Elin yet: Jag ___ att Elin kommer snart.",
       "answers": [
         "tror"
       ],
@@ -1192,16 +1256,14 @@
         "Kanske kommer det regna i morgon.",
         "Kanske kommer det regna imorgon.",
         "Kanske regnar det i morgon.",
-        "Kanske regnar det imorgon.",
-        "Kanske det kommer att regna i morgon.",
-        "Kanske det kommer att regna imorgon."
+        "Kanske regnar det imorgon."
       ],
       "hint": "Kanske, then the verb kommer, then det att regna.",
-      "explanation": "Kanske kommer det att regna i morgon. After kanske the verb comes second, and att goes before the second verb."
+      "explanation": "Kanske kommer det att regna i morgon. After kanske the verb comes second, and att goes before the second verb. In speech you may hear Kanske det kommer …; write the verb second."
     },
     {
       "id": "sv-16-g10",
-      "prompt": "Review from Lecture 15: Alex ska träffa Elin och ___ familj i Vasa. (Elin’s family)",
+      "prompt": "Review from Lecture 15: Alex frågar Elin om ___ familj i Vasa. (Elin’s family)",
       "answers": [
         "hennes"
       ],
@@ -1211,23 +1273,20 @@
         "hans"
       ],
       "hint": "The subject is Alex, but the family is Elin’s.",
-      "explanation": "Hennes: the family belongs to Elin, not to the subject Alex. Compare: Elin ska hälsa på sin familj."
+      "explanation": "Alex frågar Elin om hennes familj. Hennes: the family belongs to Elin, not to the subject Alex. Compare: Elin firar midsommar med sin familj."
     }
   ],
   "checkpoint": [
     {
       "id": "sv-16-c1",
-      "prompt": "Write in Swedish: “Next year I will study Swedish.”",
+      "prompt": "Write in Swedish: “Next year I am going to study Swedish.” (your plan) Start with Nästa år.",
       "answers": [
         "Nästa år ska jag plugga svenska.",
         "Nästa år ska jag studera svenska.",
-        "Nästa år ska jag läsa svenska.",
-        "Jag ska plugga svenska nästa år.",
-        "Jag ska studera svenska nästa år.",
-        "Jag ska läsa svenska nästa år."
+        "Nästa år ska jag läsa svenska."
       ],
-      "hint": "Use ska + infinitive.",
-      "explanation": "Nästa år ska jag plugga svenska."
+      "hint": "A time word first, then the verb, then jag.",
+      "explanation": "Nästa år ska jag plugga svenska. The time word comes first, so ska is second and jag third, like I dag ska jag träna (Lecture 3)."
     },
     {
       "id": "sv-16-c2",
@@ -1248,24 +1307,22 @@
       "prompt": "Write: “I think Swedish is interesting.” (your opinion)",
       "answers": [
         "Jag tycker att svenska är intressant.",
-        "Jag tycker svenska är intressant."
+        "Jag tycker svenska är intressant.",
+        "Svenska är intressant, tycker jag."
       ],
       "hint": "Use tycker att.",
       "explanation": "Tycker is right for an evaluation."
     },
     {
-      "id": "sv-16-c4",
-      "prompt": "Which line means “I am thinking about the exam”?",
+      "id": "sv-16-c7",
+      "prompt": "Write in Swedish: “I often think about her.”",
       "answers": [
-        "Jag tänker på provet."
+        "Jag tänker ofta på henne.",
+        "Jag tänker på henne ofta.",
+        "Ofta tänker jag på henne."
       ],
-      "options": [
-        "Jag tänker på provet.",
-        "Jag tänker skriva provet.",
-        "Jag tycker om provet."
-      ],
-      "hint": "Thinking about needs på.",
-      "explanation": "Tänker på + noun means think about."
+      "hint": "Tänker på + the object form of hon. Ofta goes after the verb, like inte.",
+      "explanation": "Jag tänker ofta på henne. Henne is the object form of hon (Lecture 11); ofta sits after the verb, like inte (Lectures 3 and 10)."
     },
     {
       "id": "sv-16-c5",
@@ -1294,30 +1351,30 @@
   ],
   "assignment": {
     "title": "Lecture 16 mission: Nästa år",
-    "instructions": "CORE: Speak for six to eight lines about next year. Give two plans, one intention, one scheduled event, one prediction, and one opinion with a reason.\n\nNOTICE: Use ska for what you decide, kommer att for what you only expect, and tycker only for things you know.\n\nRETURN: Tomorrow, say the plans again and change one detail.",
-    "model": "Nästa år ska jag fortsätta plugga svenska. Jag ska också resa till Åbo med en vän. Jag tänker träna mer och laga mat hemma oftare. I januari börjar min nya kurs. Jag tror att det kommer att bli ett spännande år. Jag tycker att planer är bra, eftersom de ger mig energi."
+    "instructions": "CORE: Speak for six to eight lines about next year. Give two plans, one intention, one scheduled event, one prediction, and one opinion with a reason.\n\nNOTICE: Use ska for what you decide, kommer att for what you only expect, and tycker only for things you know. After Nästa år, put the verb second.\n\nRETURN: Tomorrow, say the plans again and change one detail.",
+    "model": "Nästa år ska jag fortsätta plugga svenska. Jag ska också resa till Åbo med en vän. Nästa sommar tänker jag resa till Lappland. I januari börjar min nya kurs. Jag tror att det kommer att bli ett spännande år. Jag tycker att planer är viktiga, eftersom de ger mig energi."
   },
   "takeaways": [
-    "Present + time word for a timetable; ska for a decision; tänker + verb for an intention; kommer att for a prediction nobody controls.",
+    "Present + time word for a timetable; ska for a decision; tänker + verb for an intention; kommer att for a prediction. Vill means want, not will.",
     "Tycker = opinion from experience; tror = belief or guess; tänker + verb = intend; tänker på = think about.",
-    "Kanske kommer … puts the verb second. Kommer att + verb = will; kommer alone = come. O- in front means not: osäker.",
+    "After Nästa år, I januari or Kanske, the verb comes second. Kommer att + verb = will; kommer alone = come. O- in front means not: osäker.",
     "Give an opinion with a reason: Jag tycker att … eftersom … React with Det tycker jag också or Jag håller inte med."
   ],
   "dialogue": [
     {
       "speaker": "Elin",
-      "fi": "Vad ska du göra nästa sommar, Alex?",
-      "en": "What are you going to do next summer, Alex?"
+      "fi": "Vad ska du göra i sommar, Alex?",
+      "en": "What are you going to do this summer, Alex?"
     },
     {
       "speaker": "Alex",
       "fi": "Jag tänker resa i Finland. Först ska jag ta tåget till Åbo.",
-      "en": "I intend to travel in Finland. First I am going to take the train to Turku."
+      "en": "I am planning to travel in Finland. First I am going to take the train to Turku."
     },
     {
       "speaker": "Elin",
-      "fi": "Vad roligt! Jag ska hälsa på min familj i Vasa.",
-      "en": "How nice! I am going to visit my family in Vaasa."
+      "fi": "Vad roligt! Jag ska fira midsommar med min familj i Vasa.",
+      "en": "How nice! I am going to celebrate Midsummer with my family in Vaasa."
     },
     {
       "speaker": "Alex",
@@ -1336,8 +1393,8 @@
     },
     {
       "speaker": "Elin",
-      "fi": "Tåget går den femte juli klockan nio.",
-      "en": "The train leaves on 5 July at nine."
+      "fi": "Tåget går den artonde juni klockan nio.",
+      "en": "The train leaves on 18 June at nine."
     },
     {
       "speaker": "Maja",
@@ -1361,8 +1418,8 @@
     },
     {
       "speaker": "Maja",
-      "fi": "Ja! Då tänker jag bara på sommaren.",
-      "en": "Yes! Then I will only think about the summer."
+      "fi": "Ja! Då tänker jag bara på sommarlovet.",
+      "en": "Yes! Then I will only think about the summer holiday."
     },
     {
       "speaker": "Alex",
@@ -1377,14 +1434,19 @@
   ],
   "resources": [
     {
-      "label": "Svenska Akademiens ordböcker",
-      "url": "https://svenska.se/",
-      "description": "Compare the entries for tycka, tro and tänka."
-    },
-    {
       "label": "YKI Swedish basic level: speaking",
       "url": "https://ykitesti2.solki.jyu.fi/ykitesti2/web/en/tutustu-testiin/svenska/grundniva-talproduktion/",
       "description": "Real basic-level speaking tasks: you answer guiding questions and give your view."
+    },
+    {
+      "label": "YKI Swedish basic level: writing",
+      "url": "https://ykitesti2.solki.jyu.fi/ykitesti2/web/sv/node/42",
+      "description": "The real postcard task (Kort) asks what else you will do on the trip: vad annat du ska göra."
+    },
+    {
+      "label": "Yle Nyheter på lätt svenska",
+      "url": "https://arenan.yle.fi/poddar/1-50362086",
+      "description": "Finland-Swedish news in easy Swedish. Listen to one item and catch one ska or kommer att: what will happen?"
     }
   ],
   "practice": {
@@ -1459,14 +1521,6 @@
         "en": "a plan",
         "example": "Jag har en plan.",
         "translation": "I have a plan.",
-        "level": "A2"
-      },
-      {
-        "id": "sv-16-word-10",
-        "fi": "en förutsägelse",
-        "en": "a prediction",
-        "example": "Det är en förutsägelse.",
-        "translation": "It is a prediction.",
         "level": "A2"
       },
       {
@@ -1652,14 +1706,30 @@
         "example": "Kanske kommer vi att ha gäster.",
         "translation": "Maybe we will have guests.",
         "level": "A2"
+      },
+      {
+        "id": "sv-16-word-34",
+        "fi": "i sommar",
+        "en": "this summer (i somras = last summer)",
+        "example": "Vad ska du göra i sommar?",
+        "translation": "What are you going to do this summer?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-16-word-35",
+        "fi": "midsommar",
+        "en": "Midsummer (late June)",
+        "example": "Vi firar midsommar på landet.",
+        "translation": "We celebrate Midsummer in the countryside.",
+        "level": "A2"
       }
     ],
     "pronunciation": {
-      "text": "Nästa år ska jag resa. Det kommer att bli roligt. Jag tycker, jag tror, jag tänker.",
-      "tip": "In ska resa and kommer att bli, the main verb carries the stress: ska RESA, kommer att BLI. In speech att sounds like a short “o” (kommer å bli). Tänker has the same ng-k sound as English “think”; tror has a long Swedish o, close to “troor”; tycker has the rounded y and a short vowel before ck."
+      "text": "Kanske kommer jag att resa. Nästa år ska jag plugga. Tänker du göra några resor i sommar?",
+      "tip": "Kanske: sk before e is the sj sound of sju (Lecture 1): KAN-sje, not kan-ske. In Helsinki it is close to English sh. In ska plugga and kommer att resa, stress the main verb; att is light, often just å. In the question the Sweden-Swedish voices stress only RESor; Helsinki speakers also stress TÄNker and GÖra, so help verbs sound clearer there."
     },
     "reading_passage": {
-      "text": "Hej Elin! Jag har börjat planera nästa år. I januari börjar min kvällskurs igen, och lektionerna är på tisdagar och torsdagar. Jag ska fortsätta plugga svenska eftersom jag vill klara YKI-provet. Jag tänker läsa en lätt svensk bok varje månad och lyssna på radio när jag lagar mat. I mars ska jag hälsa på en vän i Åbo. Tåget går tidigt på lördagsmorgonen, så jag måste packa kvällen före. På sommaren tänker jag resa norrut och vandra några dagar. Jag har inte bestämt platsen ännu. Jag tror att resan kommer att bli dyr, men jag ska spara pengar varje månad. Jag tycker att resor är viktiga eftersom jag lär mig mycket när jag ser nya platser. Kanske kommer vädret att vara kallt, men det gör ingenting. På hösten ska jag söka ett nytt jobb. Jag är lite osäker, men jag tror att mina språkkunskaper kommer att hjälpa mig. Vad ska du göra nästa år? Har du redan en plan? Hälsningar, Alex",
+      "text": "Hej Elin! Jag har börjat planera nästa år. I januari börjar min kvällskurs igen, och lektionerna är på tisdagar och torsdagar. Jag ska fortsätta plugga svenska eftersom jag vill klara YKI-provet. Jag tänker läsa en lätt svensk bok varje månad och lyssna på Yle Vega när jag lagar mat. I mars ska jag hälsa på en vän i Åbo. Tåget går tidigt på lördagsmorgonen, så jag måste packa kvällen före. På sommaren tänker jag resa norrut och vandra några dagar. Jag har inte bestämt platsen ännu. Jag tror att resan kommer att bli dyr, men jag ska spara pengar varje månad. Jag tycker att resor är viktiga eftersom jag lär mig mycket när jag ser nya platser. Kanske kommer vädret att vara kallt, men det gör ingenting. På hösten ska jag söka ett nytt jobb. Jag är lite osäker, men jag tror att mina språkkunskaper kommer att hjälpa mig. Vad ska du göra nästa år? Har du redan en plan? Hälsningar, Alex",
       "gist": {
         "prompt": "What is Alex mainly doing?",
         "options": [
@@ -1682,7 +1752,7 @@
       }
     },
     "reading": {
-      "text": "Hej Elin! Jag har börjat planera nästa år. I januari börjar min kvällskurs igen, och lektionerna är på tisdagar och torsdagar. Jag ska fortsätta plugga svenska eftersom jag vill klara YKI-provet. Jag tänker läsa en lätt svensk bok varje månad och lyssna på radio när jag lagar mat. I mars ska jag hälsa på en vän i Åbo. Tåget går tidigt på lördagsmorgonen, så jag måste packa kvällen före. På sommaren tänker jag resa norrut och vandra några dagar. Jag har inte bestämt platsen ännu. Jag tror att resan kommer att bli dyr, men jag ska spara pengar varje månad. Jag tycker att resor är viktiga eftersom jag lär mig mycket när jag ser nya platser. Kanske kommer vädret att vara kallt, men det gör ingenting. På hösten ska jag söka ett nytt jobb. Jag är lite osäker, men jag tror att mina språkkunskaper kommer att hjälpa mig. Vad ska du göra nästa år? Har du redan en plan? Hälsningar, Alex",
+      "text": "Hej Elin! Jag har börjat planera nästa år. I januari börjar min kvällskurs igen, och lektionerna är på tisdagar och torsdagar. Jag ska fortsätta plugga svenska eftersom jag vill klara YKI-provet. Jag tänker läsa en lätt svensk bok varje månad och lyssna på Yle Vega när jag lagar mat. I mars ska jag hälsa på en vän i Åbo. Tåget går tidigt på lördagsmorgonen, så jag måste packa kvällen före. På sommaren tänker jag resa norrut och vandra några dagar. Jag har inte bestämt platsen ännu. Jag tror att resan kommer att bli dyr, men jag ska spara pengar varje månad. Jag tycker att resor är viktiga eftersom jag lär mig mycket när jag ser nya platser. Kanske kommer vädret att vara kallt, men det gör ingenting. På hösten ska jag söka ett nytt jobb. Jag är lite osäker, men jag tror att mina språkkunskaper kommer att hjälpa mig. Vad ska du göra nästa år? Har du redan en plan? Hälsningar, Alex",
       "question": "When does Alex plan to apply for a new job?",
       "options": [
         "In autumn",
@@ -1693,7 +1763,7 @@
       "explanation": "På hösten ska jag söka ett nytt jobb."
     },
     "listening": {
-      "text": "Nästa år blir annorlunda för Elin. I februari börjar hon en ny kurs på universitetet. Hon ska läsa på kvällarna och arbeta på dagarna. Hon tänker cykla till arbetet när vädret är bra. Hon tror att våren kommer att bli stressig, men hon tycker att ämnet är mycket intressant. I juni ska hon ta ett viktigt prov. Efter provet tänker hon och hennes syster resa till Sverige. Färjan går från Helsingfors på fredagskvällen. De ska vara i Stockholm i fyra dagar och träffa en gammal vän. Elin tror att de kommer att ha roligt, även om det kanske regnar. Hon tycker att Stockholm är en vacker stad eftersom det finns vatten och gamla hus överallt. Efter resan börjar hennes semester. Då tänker hon sova länge, läsa romaner och bada i havet. Hon ska inte läsa jobbmejl varje dag. Hon tror att vilan kommer att ge henne ny energi inför hösten.",
+      "text": "Nästa år blir annorlunda för Elin. I februari börjar hon en ny kurs på universitetet. Hon ska läsa på kvällarna och arbeta på dagarna. Hon tänker cykla till arbetet när vädret är bra. Hon tror att våren kommer att bli stressig, men hon tycker att ämnet är mycket intressant. I juni ska hon ta ett viktigt prov. Efter provet tänker hon och Mikko resa till Sverige. Färjan går från Helsingfors på fredagskvällen. De ska vara i Stockholm i fyra dagar och träffa en gammal vän. Elin tror att de kommer att ha roligt, även om det kanske regnar. Hon tycker att Stockholm är en vacker stad eftersom det finns vatten och gamla hus överallt. Efter resan börjar hennes semester. Då tänker hon sova länge, läsa romaner och bada i havet. Hon ska inte läsa jobbmejl varje dag. Hon tror att vilan kommer att ge henne ny energi inför hösten.",
       "question": "What does Elin predict about spring?",
       "options": [
         "It will be stressful",
@@ -1704,37 +1774,37 @@
       "explanation": "Hon tror att våren kommer att bli stressig."
     },
     "speaking": {
-      "prompt": "YKI style: the examiner says “Berätta om dina planer för nästa år.” Speak for six to eight lines and answer the questions on your card: Vad ska du göra? Vad börjar när? Vad tänker du göra på sommaren? Hur tror du att året kommer att bli? Vad tycker du är viktigt, och varför?",
-      "help": "Nästa år ska jag … · I januari börjar … · Jag tänker … · Jag tror att … kommer att … · Jag tycker att … eftersom …",
-      "model": "Nästa år ska jag fortsätta plugga svenska. Jag ska också resa till Åbo med en vän. Jag tänker träna mer och laga mat hemma oftare. I januari börjar min nya kurs. Jag tror att det kommer att bli ett spännande år. Jag tycker att planer är bra, eftersom de ger mig energi."
+      "prompt": "Berätta om dina planer för nästa år. Du kan svara på frågorna: Vad ska du göra? Vad börjar när? Vad tänker du göra nästa sommar? Hur tror du att året kommer att bli? Vad tycker du är viktigt, och varför? (Tell about your plans for next year; the questions can guide you. As in the YKI basic speaking test, plan for one minute, then speak for about one and a half minutes.)",
+      "help": "Nästa år ska jag … · I januari börjar … · Nästa sommar tänker jag … · Jag tror att … kommer att … · Jag tycker att … eftersom …",
+      "model": "Nästa år ska jag fortsätta plugga svenska. Jag ska också resa till Åbo med en vän. Nästa sommar tänker jag resa till Lappland. I januari börjar min nya kurs. Jag tror att det kommer att bli ett spännande år. Jag tycker att planer är viktiga, eftersom de ger mig energi."
     },
     "writing": {
-      "prompt": "Write a short blog post called “Nästa år”. Give two plans, one prediction and one opinion with a reason.",
-      "situation": "Your Swedish course has a blog. This week’s question is “Vad ska du göra nästa år?” Write a short post for the other learners. Open and close it in a suitable way, as in the YKI writing test.",
+      "prompt": "Skriv ett kort till din vän. (Write a postcard to a friend from a summer trip.)",
+      "situation": "Du är på semesterresa i Finland, till exempel i Åbo. Skriv ett kort till Leena från din svenskkurs. Berätta var du är, vad du gjorde i går, vad du tycker om staden och varför, vad du ska göra i morgon och hur du tror att vädret blir. Kom ihåg att inleda och avsluta kortet på lämpligt sätt. (You are on holiday in Finland, for example in Turku. Write a postcard to Leena from your Swedish course: where you are, what you did yesterday, your opinion of the town and why, your plan for tomorrow and your guess about the weather. Open and close it in a suitable way. This is the YKI basic-level postcard task.)",
       "points": [
-        "Open with a greeting to the readers.",
-        "Describe at least two plans with ska or tänker.",
-        "Include one scheduled event with present tense and a time word.",
-        "Make one prediction with kommer att.",
-        "Give one opinion with tycker and a reason with eftersom.",
-        "Finish with a question to the readers."
+        "Open and close the card in a suitable way (Hej Leena! … Vi ses! Kram, …).",
+        "Say where you are and one thing you did yesterday (past tense, Lecture 6).",
+        "Say what you think of the place with tycker att, and give a reason with eftersom.",
+        "Say what you are going to do tomorrow with ska or tänker, and give one fixed time in the present tense (Tåget hem går …).",
+        "Make one guess with tror att … kommer att."
       ],
       "wordRange": [
-        60,
-        100
+        40,
+        80
       ],
-      "help": "Hej alla! · Nästa år ska jag … · I januari börjar … · Jag tänker … · Jag tror att det kommer att … · Jag tycker att … eftersom … · Vad ska ni göra?",
-      "model": "Hej alla! Nästa år ska jag fortsätta plugga svenska, eftersom jag vill klara YKI-provet. I januari börjar min nya kvällskurs. Jag tänker också läsa en lätt svensk bok varje månad. På sommaren ska jag resa till Vasa och Åbo med tåg. Jag tror att kursen kommer att vara svår, men jag tycker att det är roligt att lära sig nya ord. Kanske kommer jag att träffa nya vänner på resan. Vad ska ni göra nästa år?"
+      "help": "Hej …! · Nu är jag i … · I går … · Jag tycker att … eftersom … · I morgon ska jag … · Tåget hem går … · Jag tror att det kommer att … · Vi ses! Kram, …",
+      "model": "Hej Leena! Nu är jag i Åbo. I går besökte jag Åbo slott och åt glass i en park. Jag tycker att Åbo är en mysig stad, eftersom det finns många små kaféer. I morgon ska jag hyra en cykel och åka till havet. Jag tror att det kommer att regna på eftermiddagen, men det gör ingenting. Tåget hem går på söndag klockan tre. Vi ses på kursen! Kram, Alex"
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Give six to eight spoken lines about next year, then write a 60–100-word blog post with plans, a prediction and an opinion.",
+    "expectedOutput": "Give six to eight spoken lines about next year, then write a 40–80-word postcard from a summer trip with a plan, a guess and an opinion.",
     "transferPrompt": "Say the plan again for next month instead, changing the time words and one prediction.",
     "returnPrompt": "Without looking, say one schedule, one controlled plan, one intention, one prediction and one opinion.",
     "successChecks": [
       "Use present plus a time word for a schedule.",
-      "Use ska for a plan you decide and tänker for an intention.",
+      "Use ska for a plan you decide and tänker for an intention, with no att after them.",
+      "Put the verb second after Nästa år, I januari or Kanske.",
       "Use kommer att for one prediction.",
       "Use tycker only for an opinion from experience, and tror for a guess.",
       "Give one opinion with a reason (eftersom)."
