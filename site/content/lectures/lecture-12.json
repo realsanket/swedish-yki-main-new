@@ -32,9 +32,9 @@
       },
       "dialogue": {
         "part": "recall",
-        "title": "Which film was better?",
+        "title": "Sunday’s film and Thursday’s plan",
         "eyebrow": "Elin, Maja and Alex",
-        "instructions": "Listen for which film Maja prefers and what Alex does on Wednesdays.",
+        "instructions": "Listen for what Maja thinks of Sunday’s film, why Alex disagrees and what Alex does on Wednesdays.",
         "initiallyOpen": false
       },
       "questionIntro": "Use the story you just heard. Answer both checks from its meaning."
@@ -74,15 +74,15 @@
       "speakers": [
         {
           "name": "Elin",
-          "fi": "Vad tyckte du om filmerna?"
+          "fi": "Hur var bion i söndags?"
         },
         {
           "name": "Maja",
-          "fi": "Den kortare filmen var bättre."
+          "fi": "Filmen var roligare än boken!"
         }
       ],
       "connector": "BÄTTRE?",
-      "encounterLabel": "Elin and Maja compare films while Alex checks his weekly routine",
+      "encounterLabel": "Elin hears about Sunday’s film, and the friends choose a cheaper cinema for Thursday",
       "chunks": [
         {
           "label": "COMPARE",
@@ -110,17 +110,17 @@
   "recall": [
     {
       "id": "sv-12-recall-film",
-      "prompt": "Which film does Maja prefer?",
+      "prompt": "What does Maja think of Sunday’s film?",
       "answers": [
-        "The shorter film"
+        "It was funnier than last month’s film"
       ],
       "options": [
-        "The shorter film",
-        "The longer film",
-        "She likes neither film"
+        "It was funnier than last month’s film",
+        "It was worse than the book",
+        "It was too long"
       ],
-      "hint": "Listen for bättre.",
-      "explanation": "Maja says the shorter film was better."
+      "hint": "Listen for roligare än.",
+      "explanation": "Maja says the film was roligare än filmen vi såg förra månaden."
     },
     {
       "id": "sv-12-recall-day",
@@ -131,7 +131,7 @@
       "options": [
         "He studies Swedish",
         "He goes to the cinema",
-        "He works from home"
+        "He trains at the gym"
       ],
       "hint": "Listen for på onsdagar.",
       "explanation": "Alex says På onsdagar pluggar jag svenska."
@@ -140,33 +140,33 @@
   "dialogue": [
     {
       "speaker": "Elin",
-      "fi": "Vad tyckte du om filmerna, Maja?",
-      "en": "What did you think of the films, Maja?"
+      "fi": "Hej! Hur var bion i söndags?",
+      "en": "Hi! How was the cinema last Sunday?"
     },
     {
       "speaker": "Maja",
-      "fi": "Båda var roliga, men den kortare filmen var bättre.",
-      "en": "Both were funny, but the shorter film was better."
-    },
-    {
-      "speaker": "Elin",
-      "fi": "Jag håller med. Den andra filmen var längre och lite tråkigare.",
-      "en": "I agree. The other film was longer and a little more boring."
+      "fi": "Bra! Filmen var roligare än filmen vi såg förra månaden.",
+      "en": "Good! The film was funnier than the film we saw last month."
     },
     {
       "speaker": "Alex",
+      "fi": "Jag håller inte med. Den var rolig, men boken är bättre.",
+      "en": "I disagree. It was funny, but the book is better."
+    },
+    {
+      "speaker": "Elin",
       "fi": "Vilken skådespelare var bäst?",
       "en": "Which actor was best?"
     },
     {
       "speaker": "Maja",
-      "fi": "Jag tycker att Elins favorit var bäst, för hennes roll var mest intressant.",
-      "en": "I think Elin’s favourite was best, because her role was the most interesting."
+      "fi": "Den yngsta. Hennes roll var mest intressant.",
+      "en": "The youngest one. Her role was the most interesting."
     },
     {
       "speaker": "Elin",
-      "fi": "Ska vi se en ny film på onsdag?",
-      "en": "Shall we see a new film on Wednesday?"
+      "fi": "Nästa gång vill jag följa med. Kan vi gå på onsdag?",
+      "en": "Next time I want to come along. Can we go on Wednesday?"
     },
     {
       "speaker": "Alex",
@@ -175,18 +175,18 @@
     },
     {
       "speaker": "Maja",
-      "fi": "Bra! I torsdags var jag trött, men den här torsdagen orkar jag.",
-      "en": "Good! Last Thursday I was tired, but this Thursday I have the energy."
+      "fi": "Torsdag passar mig också. Den lilla bion i Berghäll är billigare än den stora i centrum.",
+      "en": "Thursday suits me too. The small cinema in Kallio is cheaper than the big one in the centre."
     },
     {
       "speaker": "Elin",
-      "fi": "Då ses vi på torsdag. Den billigaste visningen börjar klockan sju.",
-      "en": "Then we’ll meet on Thursday. The cheapest screening starts at seven."
+      "fi": "Och mysigare! Den billigaste visningen börjar klockan sju.",
+      "en": "And cosier! The cheapest screening starts at seven."
     },
     {
       "speaker": "Alex",
-      "fi": "Perfekt. Den tiden är bättre för mig.",
-      "en": "Perfect. That time is better for me."
+      "fi": "Perfekt. Klockan sju är bättre för mig än klockan nio. Vi ses på torsdag!",
+      "en": "Perfect. Seven o’clock is better for me than nine. See you on Thursday!"
     }
   ],
   "extraSteps": [
@@ -389,6 +389,21 @@
                 "word": "bäst",
                 "mark": "bäst",
                 "rule": "bra changes to bäst."
+              },
+              {
+                "word": "kortare",
+                "mark": "kortare",
+                "rule": "kort + are compares two films."
+              },
+              {
+                "word": "snyggast",
+                "mark": "snyggast",
+                "rule": "snygg + ast: the best-looking of all."
+              },
+              {
+                "word": "tråkigare",
+                "mark": "tråkigare",
+                "rule": "tråkig + are: a more boring role."
               }
             ]
           }
@@ -690,6 +705,11 @@
               "source": "kafe",
               "natural": "kafé",
               "note": "The printed page omits the accent; use kafé in your own writing."
+            },
+            {
+              "source": "Vad gjorde du i helgen?",
+              "natural": "Vad gjorde du i helgen? / Vad ska du göra i helgen?",
+              "note": "i helgen can mean last weekend or the coming weekend. The verb tells you which: gjorde looks back, ska göra looks forward."
             }
           ],
           "backchain": {
@@ -703,7 +723,7 @@
           "hunt": {
             "label": "Time hunt",
             "title": "Find the red weekday phrases.",
-            "instructions": "Sort each phrase by past, one coming day or repeated habit.",
+            "instructions": "Tap each red weekday phrase. The note tells you if it points back, forward or means every week.",
             "missHint": "Look at i, på and the plural ending.",
             "spots": [
               {
@@ -738,14 +758,21 @@
       "title": "Compare with -are and -ast",
       "kind": "rule",
       "body": [
-        "The base form only describes: dyr. The comparative puts two things side by side: dyrare än. The superlative marks the highest degree: dyrast. Longer adjectives often use mer and mest instead: mer intressant, mest intressant.",
-        "Vänlig means friendly; vanlig means usual or ordinary. For the taste of food, use god: Maten är godare här. These are opinions you can explain with a reason."
+        "To compare two things, add -are and use än: dyr → dyrare än. For the top one of all, add -ast: dyrast. Before a noun with den, det or de, use -aste: den billigaste lunchen.",
+        "Use mer and mest with words ending in -isk (praktisk → mer praktisk), words ending in -e (spännande → mer spännande) and long words like intressant. Never use both: say billigare, not mer billigare.",
+        "Hindi says Stockholm se bada, and Marathi uses -peksha the same way: the little word sits on the other thing and the adjective does not change. Swedish is like English: the adjective changes (större) and än comes before the other thing: större än Stockholm.",
+        "Two words the teacher used for opinions: vänlig means friendly; vanlig means usual. For the taste of food, use god: Maten är godare här. Vad gott! means How tasty!"
       ],
       "examples": [
         {
           "fi": "Det här kaféet är billigare än det andra.",
           "en": "This café is cheaper than the other one.",
           "note": "än introduces the second thing."
+        },
+        {
+          "fi": "Det är billigare att åka spårvagn än att ta taxi.",
+          "en": "It is cheaper to take the tram than a taxi.",
+          "note": "Det är + comparative + att … än att … compares two actions."
         },
         {
           "fi": "Den billigaste lunchen kostar tio euro.",
@@ -755,7 +782,7 @@
         {
           "fi": "Filmen är mer intressant än boken.",
           "en": "The film is more interesting than the book.",
-          "note": "For this long adjective, practise the teacher’s mer/mest pattern."
+          "note": "Long word: mer, not -are."
         }
       ],
       "table": {
@@ -771,8 +798,13 @@
             "roligast"
           ],
           [
+            "praktisk",
+            "mer praktisk än",
+            "mest praktisk"
+          ],
+          [
             "intressant",
-            "mer intressant",
+            "mer intressant än",
             "mest intressant"
           ]
         ],
@@ -782,37 +814,43 @@
           "Highest"
         ]
       },
-      "memoryTip": "Two things: -are än. The top one: -ast.",
-      "tryIt": "Compare two cafés by price and atmosphere.",
+      "memoryTip": "Two things: -are än. The top one: -ast. Long or -isk word: mer and mest.",
+      "tryIt": "Compare two ways to get to work in Helsinki: by tram and by bike.",
       "activity": {
         "type": "sort",
         "label": "Choose the form",
         "title": "Which comparison do you need?",
-        "instructions": "Choose the best group for each item.",
+        "instructions": "Read the clue in each sentence, then choose base, compare two or highest.",
         "items": [
           {
-            "fi": "Den här filmen är ___ än den andra. (rolig)",
-            "en": "This film is ___ than the other. (fun)",
+            "fi": "Spårvagnen är ___ än taxin. (billig)",
+            "en": "The tram is ___ than the taxi. (cheap)",
             "bucket": "compare-two",
-            "why": "Two films require roligare än."
+            "why": "Two things joined by än: billigare än."
           },
           {
-            "fi": "Vilken film är ___? (rolig)",
-            "en": "Which film is ___? (fun)",
+            "fi": "Vilken buss till Kampen är ___? (snabb)",
+            "en": "Which bus to Kamppi is ___? (fast)",
             "bucket": "highest",
-            "why": "The question asks for the top film: roligast."
+            "why": "Vilken … asks for the top one among several buses: snabbast."
           },
           {
-            "fi": "Filmen är ___. (rolig)",
-            "en": "The film is ___. (fun)",
+            "fi": "Kaféet vid stranden är ___. (mysig)",
+            "en": "The café by the beach is ___. (cosy)",
             "bucket": "base",
-            "why": "There is no comparison."
+            "why": "Nothing is compared, so keep mysigt (ett kafé)."
           },
           {
-            "fi": "Boken är ___ än filmen. (intressant)",
-            "en": "The book is ___ than the film. (interesting)",
+            "fi": "Den här kursen är ___ än den förra. (intressant)",
+            "en": "This course is ___ than the last one. (interesting)",
             "bucket": "compare-two",
-            "why": "Use mer intressant än."
+            "why": "än compares two courses; long word: mer intressant än."
+          },
+          {
+            "fi": "Det är den ___ lägenheten i huset. (ljus)",
+            "en": "It is the ___ flat in the building. (bright)",
+            "bucket": "highest",
+            "why": "den + definite noun needs the top form: den ljusaste lägenheten."
           }
         ],
         "buckets": [
@@ -829,7 +867,7 @@
             "label": "highest"
           }
         ],
-        "summary": "-are än compares two; -ast marks the highest."
+        "summary": "än means compare two (-are or mer); vilken or den … -aste asks for the highest."
       }
     },
     {
@@ -837,7 +875,8 @@
       "title": "Learn the special families",
       "kind": "rule",
       "body": [
-        "Some very common words change shape. Learn all three forms as one chunk: bra–bättre–bäst. Keep countable and uncountable amounts separate: många böcker → fler böcker, but mycket kaffe → mer kaffe."
+        "Some very common words change shape. Learn all three forms as one chunk: bra–bättre–bäst. Never say mer bra or gammalare.",
+        "Count or measure? Things you can count take många–fler–flest: fler bussar. Amounts take mycket–mer–mest: mer kaffe, mer tid. Mindre means smaller or less: mindre tid."
       ],
       "examples": [
         {
@@ -851,9 +890,9 @@
           "note": "liten → mindre → minst."
         },
         {
-          "fi": "Jag har fler böcker men mindre tid.",
-          "en": "I have more books but less time.",
-          "note": "Count books with fler; time uses mindre."
+          "fi": "Det finns fler människor i Mumbai, men mer natur i Helsingfors.",
+          "en": "There are more people in Mumbai, but more nature in Helsinki.",
+          "note": "People are counted: fler. Nature is an amount: mer."
         }
       ],
       "table": {
@@ -912,61 +951,129 @@
       },
       "memoryTip": "Say the three-part families aloud, without translating between each word.",
       "tryIt": "Say one sentence with bättre and one with fler.",
-      "activity": {
-        "type": "match",
-        "label": "Special families",
-        "title": "Match each base word to its comparison",
-        "instructions": "Pair the base word with its two special forms.",
-        "leftLabel": "Base",
-        "rightLabel": "Comparison family",
-        "pairs": [
-          {
-            "left": "bra",
-            "right": "bättre – bäst"
-          },
-          {
-            "left": "dålig",
-            "right": "sämre – sämst"
-          },
-          {
-            "left": "stor",
-            "right": "större – störst"
-          },
-          {
-            "left": "många",
-            "right": "fler – flest"
-          },
-          {
-            "left": "mycket",
-            "right": "mer – mest"
-          },
-          {
-            "left": "gammal",
-            "right": "äldre – äldst"
-          },
-          {
-            "left": "ung",
-            "right": "yngre – yngst"
-          },
-          {
-            "left": "liten",
-            "right": "mindre – minst"
-          },
-          {
-            "left": "lång",
-            "right": "längre – längst"
-          }
-        ],
-        "pattern": "Learn each family as a three-beat chunk."
-      }
+      "activities": [
+        {
+          "type": "match",
+          "label": "Special families",
+          "title": "Match each base word to its comparison",
+          "instructions": "Pair the base word with its two special forms.",
+          "leftLabel": "Base",
+          "rightLabel": "Comparison family",
+          "pairs": [
+            {
+              "left": "bra",
+              "right": "bättre – bäst"
+            },
+            {
+              "left": "dålig",
+              "right": "sämre – sämst"
+            },
+            {
+              "left": "stor",
+              "right": "större – störst"
+            },
+            {
+              "left": "många",
+              "right": "fler – flest"
+            },
+            {
+              "left": "mycket",
+              "right": "mer – mest"
+            },
+            {
+              "left": "gammal",
+              "right": "äldre – äldst"
+            },
+            {
+              "left": "ung",
+              "right": "yngre – yngst"
+            },
+            {
+              "left": "liten",
+              "right": "mindre – minst"
+            },
+            {
+              "left": "lång",
+              "right": "längre – längst"
+            }
+          ],
+          "pattern": "Learn each family as a three-beat chunk."
+        },
+        {
+          "type": "sort",
+          "label": "Which pattern?",
+          "title": "How does each word compare?",
+          "instructions": "Decide how each word makes its comparison before you open the answer.",
+          "items": [
+            {
+              "fi": "billig",
+              "en": "cheap",
+              "bucket": "endings",
+              "why": "Short regular word: billigare, billigast."
+            },
+            {
+              "fi": "mörk",
+              "en": "dark",
+              "bucket": "endings",
+              "why": "Regular: mörkare, mörkast. Det är mörkare på vintern."
+            },
+            {
+              "fi": "praktisk",
+              "en": "practical",
+              "bucket": "mer-mest",
+              "why": "Words ending in -isk take mer praktisk, mest praktisk."
+            },
+            {
+              "fi": "spännande",
+              "en": "exciting",
+              "bucket": "mer-mest",
+              "why": "Ends in -e, so no ending fits: mer spännande."
+            },
+            {
+              "fi": "gammal",
+              "en": "old",
+              "bucket": "special",
+              "why": "It changes shape: äldre, äldst."
+            },
+            {
+              "fi": "ung",
+              "en": "young",
+              "bucket": "special",
+              "why": "The vowel changes: yngre, yngst."
+            },
+            {
+              "fi": "viktig",
+              "en": "important",
+              "bucket": "endings",
+              "why": "Regular: viktigare, viktigast."
+            }
+          ],
+          "buckets": [
+            {
+              "id": "endings",
+              "label": "-are / -ast"
+            },
+            {
+              "id": "mer-mest",
+              "label": "mer / mest"
+            },
+            {
+              "id": "special",
+              "label": "changes shape"
+            }
+          ],
+          "summary": "Most words add -are/-ast; -isk, -e and long words use mer/mest; a few common words change shape."
+        }
+      ]
     },
     {
       "id": "weekday-time",
       "title": "One weekday, last weekday or every week",
       "kind": "rule",
       "body": [
-        "A weekday changes meaning with its small time word. På måndag means the coming Monday. I måndags means last Monday. På måndagar, with plural -ar, means Mondays as a habit. The same pattern works across the week.",
-        "Går usually means goes on foot; åker means travels by transport: I fredags gick jag till jobbet, men på måndag åker jag buss."
+        "A weekday changes meaning with its small time word. På måndag means the coming Monday. I måndags means last Monday. På måndagar, with plural -ar, means Mondays as a habit.",
+        "Look at the verb for a clue: ska or present tense often goes with på måndag, the past (hade, var) with i måndags, and brukar or alltid with på måndagar.",
+        "Weekdays start with a small letter in Swedish: måndag, not Måndag. Går usually means goes on foot; åker means travels by bus, tram or train."
       ],
       "examples": [
         {
@@ -980,9 +1087,14 @@
           "note": "The most recent Friday."
         },
         {
-          "fi": "Jag går på bio på fredagar.",
-          "en": "I go to the cinema on Fridays.",
+          "fi": "Jag arbetar hemifrån på fredagar.",
+          "en": "I work from home on Fridays.",
           "note": "A repeated habit."
+        },
+        {
+          "fi": "I fredags gick jag till jobbet, men på måndag åker jag buss.",
+          "en": "Last Friday I walked to work, but on Monday I will take the bus.",
+          "note": "gick = on foot; åker = by transport."
         },
         {
           "fi": "Måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag.",
@@ -1018,67 +1130,73 @@
       "activity": {
         "type": "sort",
         "label": "Time sorter",
-        "title": "When does it happen?",
-        "instructions": "Choose the best group for each item.",
+        "title": "Which Tuesday fits?",
+        "instructions": "Use the verb and the small words as clues, then choose the right phrase for the gap.",
         "items": [
           {
-            "fi": "i tisdags",
-            "en": "last Tuesday",
+            "fi": "___ hade jag ett möte med chefen.",
+            "en": "___ I had a meeting with my boss. (Tuesday)",
             "bucket": "past-day",
-            "why": "i + day + s points back."
+            "why": "hade is past, so point back: I tisdags hade jag …"
           },
           {
-            "fi": "på tisdag",
-            "en": "this coming Tuesday",
+            "fi": "Kan vi ses ___?",
+            "en": "Can we meet ___? (Tuesday)",
             "bucket": "coming-day",
-            "why": "Singular after på is one coming day."
+            "why": "A plan for one coming day: på tisdag."
           },
           {
-            "fi": "på tisdagar",
-            "en": "on Tuesdays",
+            "fi": "Jag brukar simma ___.",
+            "en": "I usually swim ___. (Tuesday)",
             "bucket": "weekly-habit",
-            "why": "Plural -ar means a repeated habit."
+            "why": "brukar shows a habit: på tisdagar."
           },
           {
-            "fi": "i söndags",
-            "en": "last Sunday",
+            "fi": "___ ska jag till hälsocentralen.",
+            "en": "___ I am going to the health centre. (Tuesday)",
+            "bucket": "coming-day",
+            "why": "ska points forward to one day: på tisdag."
+          },
+          {
+            "fi": "Vi åkte till Borgå ___.",
+            "en": "We went to Porvoo ___. (Tuesday)",
             "bucket": "past-day",
-            "why": "This means last Sunday."
+            "why": "åkte is past: i tisdags."
           },
           {
-            "fi": "på söndagar",
-            "en": "on Sundays",
+            "fi": "Jag arbetar alltid hemifrån ___.",
+            "en": "I always work from home ___. (Tuesday)",
             "bucket": "weekly-habit",
-            "why": "This means on Sundays generally."
+            "why": "alltid means every week: på tisdagar."
           }
         ],
         "buckets": [
           {
             "id": "coming-day",
-            "label": "coming day"
+            "label": "på tisdag"
           },
           {
             "id": "past-day",
-            "label": "past day"
+            "label": "i tisdags"
           },
           {
             "id": "weekly-habit",
-            "label": "weekly habit"
+            "label": "på tisdagar"
           }
         ],
-        "summary": "på + singular looks forward; i ... -s looks back; på + plural repeats."
+        "summary": "Past verb → i tisdags; plan → på tisdag; habit (brukar, alltid) → på tisdagar."
       }
     }
   ],
   "guided": [
     {
       "id": "sv-12-guided-regular",
-      "prompt": "Complete: Det här kaféet är ___ än det andra. (billig)",
+      "prompt": "Complete: Det är ___ att åka spårvagn än att ta taxi. (billig)",
       "answers": [
         "billigare"
       ],
       "hint": "Compare two with -are.",
-      "explanation": "billig → billigare än."
+      "explanation": "billig → billigare än. Two actions are compared with att … än att."
     },
     {
       "id": "sv-12-guided-long",
@@ -1093,6 +1211,15 @@
       ],
       "hint": "Two things and a longer adjective.",
       "explanation": "Use mer intressant än."
+    },
+    {
+      "id": "sv-12-guided-cheapest",
+      "prompt": "Complete: Det här är den ___ lunchen i Kampen. (billig)",
+      "answers": [
+        "billigaste"
+      ],
+      "hint": "den + noun with -en needs -aste.",
+      "explanation": "den billigaste lunchen: the top form gets -e before a definite noun."
     },
     {
       "id": "sv-12-guided-good",
@@ -1127,7 +1254,9 @@
       "prompt": "Produce: “We will meet on Monday.”",
       "answers": [
         "Vi ses på måndag.",
-        "Vi ska ses på måndag."
+        "Vi ska ses på måndag.",
+        "Vi träffas på måndag.",
+        "Vi ska träffas på måndag."
       ],
       "hint": "One coming day uses på + singular.",
       "explanation": "Vi ses på måndag."
@@ -1153,55 +1282,58 @@
         "Jag pluggar svenska på onsdagar.",
         "Jag studerar svenska på onsdagar.",
         "På onsdagar pluggar jag svenska.",
-        "På onsdagar studerar jag svenska."
+        "På onsdagar studerar jag svenska.",
+        "Jag läser svenska på onsdagar.",
+        "På onsdagar läser jag svenska."
       ],
       "hint": "A habit uses på + plural weekday.",
-      "explanation": "Jag pluggar svenska på onsdagar."
+      "explanation": "Jag pluggar svenska på onsdagar. In Finland, läser svenska also means studies Swedish."
     },
     {
       "id": "sv-12-guided-review",
       "prompt": "Review: “The teachers are here. I am talking with them.”",
       "answers": [
-        "Lärarna är här. Jag pratar med dem."
+        "Lärarna är här. Jag pratar med dem.",
+        "Lärarna är här. Jag talar med dem."
       ],
       "hint": "Use the definite plural, then the object pronoun after med.",
-      "explanation": "Lärarna är här. Jag pratar med dem. The teacher revisits these forms before comparisons."
+      "explanation": "Lärarna är här. Jag pratar med dem. Lecture 11’s definite plural and object pronoun return here."
     }
   ],
   "sittingBreakAfter": "guided",
   "missionPlan": {
     "title": "Plan your comparison",
-    "intro": "Choose two films or two cities. Compare them and give clear reasons.",
+    "intro": "Choose two cities, for example your home city and Helsinki, or two films. Compare them and give clear reasons.",
     "lines": [
       {
         "label": "Name them",
         "before": "Jag vill jämföra ",
         "after": ".",
-        "placeholder": "Helsingfors och Stockholm"
+        "placeholder": "Helsingfors och Mumbai"
       },
       {
         "label": "First contrast",
         "before": "",
         "after": ".",
-        "placeholder": "Helsingfors är mindre än Stockholm"
+        "placeholder": "Mumbai är mycket större och varmare än Helsingfors"
       },
       {
         "label": "Second contrast",
         "before": "",
         "after": ".",
-        "placeholder": "Stockholm är dyrare, men Helsingfors är lugnare"
+        "placeholder": "Det finns fler människor i Mumbai, men mer natur i Helsingfors"
       },
       {
         "label": "Best point",
         "before": "Det bästa med ",
         "after": ".",
-        "placeholder": "Helsingfors är havet"
+        "placeholder": "Helsingfors är havet nära centrum"
       },
       {
         "label": "Reason",
         "before": "Jag tycker att ",
         "after": ".",
-        "placeholder": "Helsingfors är bättre för mig, för mina vänner bor här"
+        "placeholder": "Helsingfors är bättre för mig just nu, för livet här är lugnare"
       },
       {
         "label": "Finish",
@@ -1225,8 +1357,8 @@
         "id": "sv-12-word-2",
         "fi": "dyrare än",
         "en": "more expensive than",
-        "example": "Stockholm är dyrare än Helsingfors.",
-        "translation": "Stockholm is more expensive than Helsinki.",
+        "example": "Taxi är dyrare än spårvagn.",
+        "translation": "A taxi is more expensive than the tram.",
         "level": "A1"
       },
       {
@@ -1255,10 +1387,10 @@
       },
       {
         "id": "sv-12-word-6",
-        "fi": "kortare",
-        "en": "shorter",
-        "example": "Boken är kortare än filmen.",
-        "translation": "The book is shorter than the film.",
+        "fi": "godare än",
+        "en": "tastier than",
+        "example": "Maten är godare här.",
+        "translation": "The food is tastier here.",
         "level": "A1"
       },
       {
@@ -1319,10 +1451,10 @@
       },
       {
         "id": "sv-12-word-14",
-        "fi": "flest",
-        "en": "most, countable",
-        "example": "Hon har flest böcker.",
-        "translation": "She has the most books.",
+        "fi": "en trea",
+        "en": "a three-room flat",
+        "example": "Vi letar efter en trea i Helsingfors.",
+        "translation": "We are looking for a three-room flat in Helsinki.",
         "level": "A1"
       },
       {
@@ -1456,31 +1588,31 @@
       "explanation": "Norrsken är kortare."
     },
     "speaking": {
-      "prompt": "Compare two cities or two films in five to seven lines. Give at least two comparisons, name the best feature and give a reason for your choice.",
-      "help": "Jag vill jämföra … och … · … är större/mindre/roligare än … · … är mer intressant · Det bästa med … är … · Jag tycker att … är bättre, för … · Därför väljer jag …",
-      "model": "Jag vill jämföra Helsingfors och Stockholm. Stockholm är större och livligare än Helsingfors. Det finns fler butiker där, men Helsingfors är lugnare. Stockholm är mer intressant för en helg. Det bästa med Helsingfors är havet nära centrum. Jag tycker ändå att Helsingfors är bättre för mig, för mina vänner bor här."
+      "prompt": "Compare two cities (for example your home city and Helsinki) or two films in five to seven lines. Give at least two comparisons, name the best feature and give a reason for your choice.",
+      "help": "Jag vill jämföra … och … · … är större/varmare/lugnare än … · Det finns fler … men mer … · Det bästa med … är … · Jag tycker att … är bättre, för … · Därför väljer jag …",
+      "model": "Jag vill jämföra Helsingfors och Mumbai. Mumbai är mycket större och varmare än Helsingfors. Det finns fler människor i Mumbai, men det finns mer natur i Helsingfors. Maten är godare i Mumbai, tycker jag. Det bästa med Helsingfors är havet nära centrum. Jag tycker ändå att Helsingfors är bättre för mig just nu, för livet här är lugnare."
     },
     "writing": {
-      "prompt": "Write a short review that compares one film or café with another.",
-      "situation": "A friend asks which of two films or cafés you recommend. Write a short review and make a clear choice.",
+      "prompt": "Write a short message that compares two cafés or films and recommends one.",
+      "situation": "A friend from your Swedish course asks which of two cafés near you is better for a weekend fika (or which of two films to see). Write a short message and make a clear choice.",
       "points": [
-        "Name both films or cafés.",
+        "Name both cafés or films.",
         "Make at least two correct comparisons.",
         "Name the best or worst feature.",
-        "Give your opinion and one reason.",
-        "Recommend one choice and close naturally."
+        "Say when you usually go, with a weekday (for example på lördagar).",
+        "Recommend one choice and suggest a day to meet."
       ],
       "wordRange": [
         50,
         80
       ],
-      "help": "Jag vill jämföra … med … · … är billigare/roligare än … · … är mer intressant · Det bästa/sämsta är … · Jag tycker att … är bättre, för … · Jag rekommenderar …",
-      "model": "Hej! Jag har besökt Kafé Sol och Kafé Hav. Kafé Sol är mindre och billigare, men Kafé Hav är ljusare och har fler bord. Kaffet är bättre på Kafé Sol. Maten är däremot mer intressant på Kafé Hav. Det bästa med Kafé Sol är den vänliga personalen. Jag rekommenderar Kafé Sol, för det är lugnare och passar mig bäst. Hälsningar, Alex"
+      "help": "Jag har varit på både … och … · … är billigare/mindre än … · … är godare · Det bästa/sämsta är … · Jag går dit på lördagar · Jag rekommenderar … · Ska vi ses där på lördag?",
+      "model": "Hej! Jag har varit på både Kafé Sol och Kafé Hav. Kafé Sol är mindre och billigare, men Kafé Hav är ljusare och har fler bord. Kaffet är bättre på Kafé Sol, men maten är godare på Kafé Hav. Det bästa med Kafé Sol är den vänliga personalen. Jag går dit på lördagar. Jag rekommenderar Kafé Sol, för det är lugnast. Ska vi ses där på lördag? Hälsningar, Alex"
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Compare two cities or films and justify your choice. Then write a 50–80-word comparative review.",
+    "expectedOutput": "Compare two cities or films and justify your choice. Then write a 50–80-word message that compares two cafés or films.",
     "transferPrompt": "Change your choice and give one new reason why the other option is better.",
     "returnPrompt": "From memory, compare two familiar places with two comparative forms and one superlative.",
     "successChecks": [
@@ -1497,21 +1629,21 @@
   "unplannedQuestions": [
     {
       "id": "sv-12-q1",
-      "fi": "Vilken stad är större: Helsingfors eller Stockholm?",
-      "en": "Which city is bigger: Helsinki or Stockholm?",
-      "sample": "Stockholm är större än Helsingfors."
+      "fi": "Vilken stad är större, din hemstad eller Helsingfors?",
+      "en": "Which city is bigger, your home city or Helsinki?",
+      "sample": "Min hemstad är mycket större än Helsingfors."
     },
     {
       "id": "sv-12-q2",
-      "fi": "Vad är bäst med din hemstad?",
-      "en": "What is best about your home city?",
-      "sample": "Det bästa är mina vänner och min familj."
+      "fi": "Vad är bäst med Helsingfors?",
+      "en": "What is best about Helsinki?",
+      "sample": "Det bästa är havet och naturen."
     },
     {
       "id": "sv-12-q3",
-      "fi": "Vilken film är roligast?",
-      "en": "Which film is funniest?",
-      "sample": "Jag tycker att … är roligast."
+      "fi": "Vilken mat tycker du är godast?",
+      "en": "Which food do you think is tastiest?",
+      "sample": "Jag tycker att indisk mat är godast."
     },
     {
       "id": "sv-12-q4",
@@ -1540,8 +1672,8 @@
     },
     {
       "id": "sv-12-review-2",
-      "en": "This film is best.",
-      "fi": "Den här filmen är bäst."
+      "en": "Which one is cheapest?",
+      "fi": "Vilken är billigast?"
     },
     {
       "id": "sv-12-review-3",
@@ -1599,6 +1731,16 @@
       "explanation": "Use fler with countable plural nouns."
     },
     {
+      "id": "sv-12-check-more",
+      "prompt": "Type the missing word: Jag dricker ___ te än kaffe. (mycket)",
+      "answers": [
+        "mer",
+        "mera"
+      ],
+      "hint": "Tea is an amount, not something you count.",
+      "explanation": "mycket → mer → mest: Jag dricker mer te än kaffe."
+    },
+    {
       "id": "sv-12-check-weekday",
       "prompt": "Which phrase means “on Fridays” as a repeated habit?",
       "answers": [
@@ -1616,21 +1758,38 @@
       "id": "sv-12-check-best",
       "prompt": "Produce: “Which film is best?”",
       "answers": [
-        "Vilken film är bäst?"
+        "Vilken film är bäst?",
+        "Vilken film är den bästa?"
       ],
       "hint": "bra → bättre → bäst.",
       "explanation": "Vilken film är bäst?"
+    },
+    {
+      "id": "sv-12-check-past-day",
+      "prompt": "Produce: “Last Monday I worked from home.”",
+      "answers": [
+        "I måndags arbetade jag hemifrån.",
+        "Jag arbetade hemifrån i måndags.",
+        "I måndags jobbade jag hemifrån.",
+        "Jag jobbade hemifrån i måndags.",
+        "I måndags arbetade jag hemma.",
+        "Jag arbetade hemma i måndags.",
+        "I måndags jobbade jag hemma.",
+        "Jag jobbade hemma i måndags."
+      ],
+      "hint": "Past day: i + weekday + s. If the time comes first, the verb comes second.",
+      "explanation": "I måndags arbetade jag hemifrån. Time first, then the verb (V2)."
     }
   ],
   "assignment": {
     "title": "Lecture 12 mission: Compare and choose",
-    "instructions": "CORE: Compare two cities or films in five to seven lines. Use two comparisons, one special form, the best feature and a reason.\n\nWRITE: Write a 50–80-word review comparing two films or cafés and recommend one.\n\nRETURN: Tomorrow, compare two familiar places from memory.",
-    "model": "Jag vill jämföra Helsingfors och Stockholm. Stockholm är större och livligare än Helsingfors. Det finns fler butiker där, men Helsingfors är lugnare. Stockholm är mer intressant för en helg. Det bästa med Helsingfors är havet nära centrum. Jag tycker ändå att Helsingfors är bättre för mig, för mina vänner bor här."
+    "instructions": "CORE: Compare two cities or films in five to seven lines. Use two comparisons, one special form, the best feature and a reason.\n\nWRITE: Write a 50–80-word message comparing two cafés or films and recommend one.\n\nRETURN: Tomorrow, compare two familiar places from memory.",
+    "model": "Jag vill jämföra Helsingfors och Mumbai. Mumbai är mycket större och varmare än Helsingfors. Det finns fler människor i Mumbai, men det finns mer natur i Helsingfors. Maten är godare i Mumbai, tycker jag. Det bästa med Helsingfors är havet nära centrum. Jag tycker ändå att Helsingfors är bättre för mig just nu, för livet här är lugnare."
   },
   "takeaways": [
-    "Use -are än to compare two and -ast for the highest degree.",
-    "Use mer/mest with longer adjectives such as intressant.",
-    "Learn common special families: bra–bättre–bäst and många–fler–flest.",
+    "Use -are än to compare two and -ast for the highest; use -aste after den/det/de: den billigaste lunchen.",
+    "Use mer/mest with -isk words, -e words and long words such as intressant.",
+    "Learn the special families as chunks: bra–bättre–bäst; count with fler, measure with mer.",
     "Use på måndag for the coming day, i måndags for the past day and på måndagar for a habit."
   ],
   "resources": [
@@ -1638,9 +1797,14 @@
       "label": "Svenska Akademiens ordböcker (svenska.se)",
       "url": "https://svenska.se/",
       "description": "Check an adjective and hear its pronunciation before comparing."
+    },
+    {
+      "label": "Vårdsvenska: Adjectives’ comparison",
+      "url": "https://vardsvenska.fi/en/swedish-on-line-course/grammar-explanations/adjectives/adjectives-comparison",
+      "description": "A short Finland-made English explanation of -are/-ast, mer/mest and the special forms."
     }
   ],
   "story": {
-    "object": "two film choices and a weekly routine"
+    "object": "two cinema tickets beside a weekly planner"
   }
 }
