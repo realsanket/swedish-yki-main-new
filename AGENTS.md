@@ -367,8 +367,9 @@ selected only by optional `ykiMockId`; no current lecture selects it.
 
 1. Easy listening stories per lecture (new `extraSteps` kind, 90% known words,
    native voices) and a "listen today" list on the home screen.
-2. Real Finland-Swedish audio links from the A1 stage (for example Svenska Yle
-   Klartext) with gist questions.
+2. Real Finland-Swedish audio links from the A1 stage (Yle Nyheter på lätt
+   svenska; Klartext is Sveriges Radio's, from Sweden) with gist questions.
+   Started in round 3: Lectures 16, 19 and 20 link an Yle easy-Swedish episode.
 3. Home screen: "Resume Part 2 today" when a lecture is mid-way.
 3a. **Decided (keep as is):** the sj-sound stays as Azure's Sweden-Swedish
     voices say it (breathy [ɧ]), even though Finland-Swedish says "sh". The

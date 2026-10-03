@@ -28,7 +28,8 @@ the lecture, including listening and reading texts.
    words from earlier lectures, so old words keep being met in new sentences.
 3. **Real Finland-Swedish audio.** No Finland-Swedish synthetic voice exists, so
    from the A1 stage each lecture links one short real clip at the right level
-   (for example Svenska Yle's easy-Swedish news, Klartext) with a listen-for-gist
+   (for example Yle Nyheter på lätt svenska, Svenska Yle's easy-Swedish news;
+   Klartext is Sveriges Radio's, from Sweden) with a listen-for-gist
    question.
 4. **Daily listening outside lectures.** A short "listen today" list on the home
    screen: the learner's due stories replayed at normal and then natural speed.
