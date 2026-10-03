@@ -2,10 +2,10 @@
   "number": 14,
   "routeProfile": "standard",
   "objectives": [
-    "Write a clear formal complaint with a greeting, problem, requested solution and closing.",
-    "Address a company with ni and er and connect details with eftersom, dessutom and men.",
-    "Give and follow walking and public-transport directions.",
-    "Review borde, får, måste and behöver inte when discussing solutions and rules."
+    "Write a clear formal complaint: greeting, who you are, the problem, the solution you want, evidence, contact details and closing.",
+    "Address a company with ni, er and ert, and link facts with eftersom, men and dessutom.",
+    "Give and follow walking, tram, metro and bus directions in Helsinki, using gå/åka, till höger/på din högra sida and hit/dit.",
+    "Review kan, får, borde, måste, behöver inte and får inte when you ask, advise or explain rules."
   ],
   "focusSkills": [
     "speaking",
@@ -13,25 +13,28 @@
   ],
   "grammarTerms": [
     "verb",
+    "infinitive",
     "imperative",
     "modal-verb",
     "formal-informal",
     "pronoun",
     "conjunction",
-    "word-order"
+    "verb-second",
+    "word-order",
+    "gender"
   ],
   "presentation": {
     "opening": {
       "teacherNote": {
         "title": "Two practical problems",
-        "body": "First, hear how Maja prepares a polite complaint. Then follow her directions from the station. Listen for the problem, the requested solution and the route words."
+        "body": "First, hear how Henrik helps Maja plan a polite complaint. Then follow Elin’s directions to the shop in Kampen. Listen for the problem, the solution Maja wants and the route words."
       },
       "questionIntro": "Check the purpose and the route, not every word.",
       "dialogue": {
         "part": "recall",
         "eyebrow": "START WITH THE STORY",
         "title": "A broken laptop and a useful route",
-        "instructions": "Listen once with the text closed. What does Maja want, and where is the shop?",
+        "instructions": "Listen once with the text closed. What does Maja want from the shop, and where is the shop?",
         "initiallyOpen": false
       }
     },
@@ -109,7 +112,7 @@
       "id": "start",
       "fi": "Var börjar vägen?",
       "en": "Where does the route begin?",
-      "sample": "Vägen börjar vid järnvägsstationen."
+      "sample": "Den börjar vid metrostationen i Kampen."
     },
     {
       "id": "time",
@@ -125,15 +128,15 @@
     },
     {
       "id": "transport",
-      "fi": "Kan jag åka buss dit?",
-      "en": "Can I go there by bus?",
-      "sample": "Ja, ta buss nummer fem."
+      "fi": "Kan jag åka spårvagn dit?",
+      "en": "Can I take the tram there?",
+      "sample": "Ja, ta spårvagn nummer sju och gå av vid torget."
     },
     {
       "id": "landmark",
-      "fi": "Vad ser jag på höger sida?",
-      "en": "What will I see on the right?",
-      "sample": "Du ser ett bibliotek på höger sida."
+      "fi": "Vad ser jag på min högra sida?",
+      "en": "What will I see on my right?",
+      "sample": "Du ser ett bibliotek på din högra sida."
     },
     {
       "id": "opinion",
@@ -169,9 +172,9 @@
       "fi": "Tack på förhand!"
     },
     {
-      "id": "straight",
-      "en": "Go straight ahead.",
-      "fi": "Gå rakt fram."
+      "id": "reply",
+      "en": "I look forward to your reply. (to a company)",
+      "fi": "Jag ser fram emot ert svar."
     },
     {
       "id": "turn-left",
@@ -186,19 +189,19 @@
   ],
   "missionPlan": {
     "title": "Plan the route in six clear moves",
-    "intro": "Start at a known place, give ordered directions, add one landmark, travel time and your opinion with a reason.",
+    "intro": "Start at a known stop, give the moves in order, add one landmark, the travel time and your opinion with a reason. After Först and Sedan, the verb comes second.",
     "lines": [
       {
         "label": "Start",
-        "before": "Börja vid",
+        "before": "Du börjar vid",
         "after": ".",
-        "placeholder": "järnvägsstationen"
+        "placeholder": "metrostationen i Kampen"
       },
       {
         "label": "First move",
-        "before": "Först ska du",
+        "before": "Först",
         "after": ".",
-        "placeholder": "gå rakt fram till korsningen"
+        "placeholder": "går du rakt fram till korsningen"
       },
       {
         "label": "Turn",
@@ -210,7 +213,7 @@
         "label": "Landmark",
         "before": "Du går förbi",
         "after": ".",
-        "placeholder": "biblioteket på höger sida"
+        "placeholder": "biblioteket på din högra sida"
       },
       {
         "label": "Arrival",
@@ -254,7 +257,7 @@
             "Tack på förhand"
           ],
           "recallCues": [
-            "Peter bought Jonas a new laptop a few days ago, but it does not work. Something is wrong with the charger. There is also a scratch on the screen. Peter writes customer service.",
+            "Peter bought Jonas a new laptop a few days ago, but it does not work. Something is wrong with the charger. There is also a scratch on the screen. Peter writes an email to customer service.",
             "Hello,",
             "I am writing because I am very disappointed with the product I bought from you. It is an HP laptop from their Elitebook series. Something is wrong with the charger. There is also a scratch on the screen. Can you repair the computer or refund the money? The warranty is still valid. The receipt is attached. Thank you in advance!",
             "Best regards, Peter Malmgren"
@@ -283,8 +286,8 @@
               "en": "Hello,",
               "glossary": [
                 {
-                  "fi": "Hej",
-                  "en": "Hello"
+                  "fi": "Hej,",
+                  "en": "Hello, (a formal email can open with just Hej,)"
                 }
               ]
             },
@@ -294,6 +297,10 @@
               "fi": "Jag skriver eftersom jag är mycket besviken på produkten jag köpte från er. Det är en bärbar av märket HP från deras Elitebook serie. Något är fel med laddaren. Dessutom finns det en repa på skärmen. Kan ni laga datorn eller ge pengarna tillbaka? Garantin gäller fortfarande. Kvittot är bifogat. Tack på förhand!",
               "en": "I am writing because I am very disappointed with the product I bought from you. It is an HP laptop from their Elitebook series. Something is wrong with the charger. There is also a scratch on the screen. Can you repair the computer or refund the money? The warranty is still valid. The receipt is attached. Thank you in advance!",
               "glossary": [
+                {
+                  "fi": "produkten jag köpte från er",
+                  "en": "the product I bought from you (er = formal you)"
+                },
                 {
                   "fi": "kundtjänst",
                   "en": "customer service"
@@ -349,14 +356,14 @@
           ],
           "naturalNotes": [
             {
-              "source": "bärbar dator",
-              "note": "Learn this as a useful complete chunk.",
-              "natural": "bärbar dator"
+              "source": "Kvittot är bifogat.",
+              "natural": "Jag bifogar kvittot.",
+              "note": "Both are correct. The second is the active form the teacher’s handout uses: Jag bifogar en bild."
             },
             {
-              "source": "Tack på förhand",
-              "note": "Keep the preposition with the phrase.",
-              "natural": "Tack på förhand"
+              "source": "Vänliga hälsningar,",
+              "natural": "Med vänliga hälsningar,",
+              "note": "Both close a formal email. Then write your first name and surname."
             },
             {
               "source": "en bärbar av märket HP från deras Elitebook serie",
@@ -376,27 +383,37 @@
             "label": "Phrase hunt",
             "title": "Find useful phrases on the page",
             "instructions": "Tap a marked word, then say the complete phrase it belongs to.",
-            "missHint": "Look at the route or complaint phrases in the focus list.",
+            "missHint": "Look for the red complaint words on the page.",
             "spots": [
               {
                 "word": "bärbar",
                 "mark": "bärbar",
-                "rule": "A portable computer: en bärbar dator."
+                "rule": "Portable: en bärbar dator = a laptop."
               },
               {
                 "word": "fungerar",
                 "mark": "fungerar",
-                "rule": "Fungerar inte means does not work."
+                "rule": "Fungerar inte = does not work."
               },
               {
                 "word": "besviken",
                 "mark": "besviken",
-                "rule": "Keep på with besviken: disappointed with."
+                "rule": "Keep på with it: besviken på = disappointed with."
+              },
+              {
+                "word": "laga",
+                "mark": "laga",
+                "rule": "Laga = repair: Kan ni laga datorn?"
+              },
+              {
+                "word": "gäller",
+                "mark": "gäller",
+                "rule": "Garantin gäller = the warranty is valid."
               },
               {
                 "word": "bifogat",
                 "mark": "bifogat",
-                "rule": "Ett kvitto → kvittot är bifogat."
+                "rule": "Ett kvitto, so -t: kvittot är bifogat."
               }
             ]
           }
@@ -433,6 +450,10 @@
               "en": "Hello Google, how can I walk to the new sushi restaurant?",
               "glossary": [
                 {
+                  "fi": "gå",
+                  "en": "go on foot, walk"
+                },
+                {
                   "fi": "sushirestaurangen",
                   "en": "the sushi restaurant"
                 }
@@ -453,8 +474,12 @@
                   "en": "on your left"
                 },
                 {
-                  "fi": "framme",
-                  "en": "at the destination"
+                  "fi": "efter två korsningar",
+                  "en": "after two crossings"
+                },
+                {
+                  "fi": "Det tar 40 minuter att gå dit",
+                  "en": "It takes 40 minutes to walk there"
                 }
               ]
             },
@@ -476,6 +501,10 @@
               "fi": "Du kan också åka buss. Först tar du buss nummer 5 som går från hållplatsen Glass. Vid hållplatsen Rött hus måste du byta till buss nummer 7. Gå av efter två stationer. Gå rakt fram i 200 meter.",
               "en": "You can also go by bus. First take bus 5 from the Glass stop. At the Rött hus stop, change to bus 7. Get off after two stops. Walk straight for 200 metres.",
               "glossary": [
+                {
+                  "fi": "åka buss",
+                  "en": "go by bus"
+                },
                 {
                   "fi": "byta till",
                   "en": "change to"
@@ -523,14 +552,19 @@
           ],
           "naturalNotes": [
             {
-              "source": "gå",
-              "note": "Learn this as a useful complete chunk.",
-              "natural": "gå"
+              "source": "Du kan också åka buss.",
+              "natural": "Jag åker buss, spårvagn eller metro.",
+              "note": "Gå = on foot. Åka = by bus, tram, metro or train. In Helsinki people say metro for the underground."
             },
             {
-              "source": "på din vänstra sida",
-              "note": "Keep the preposition with the phrase.",
-              "natural": "på din vänstra sida"
+              "source": "Det tar 40 minuter att gå dit.",
+              "natural": "Det är en 40 minuters promenad.",
+              "note": "Two ways to give walking time. Dit = to there (movement)."
+            },
+            {
+              "source": "hållplatsen Glass",
+              "natural": "en glass – ett glas",
+              "note": "The stop names are made up (the map shows an ice cream and a red house). Glass with double s is ice cream; glas is a glass."
             },
             {
               "source": "Gå av efter två stationer.",
@@ -550,12 +584,17 @@
             "label": "Phrase hunt",
             "title": "Find useful phrases on the page",
             "instructions": "Tap a marked word, then say the complete phrase it belongs to.",
-            "missHint": "Look at the route or complaint phrases in the focus list.",
+            "missHint": "Look for the red and bold route words on the page.",
             "spots": [
               {
                 "word": "Gå",
                 "mark": "Gå",
-                "rule": "The command form: go on foot."
+                "rule": "Go on foot. Also the command form: Gå rakt fram!"
+              },
+              {
+                "word": "åka",
+                "mark": "åka",
+                "rule": "Go by transport: åka buss, åka metro."
               },
               {
                 "word": "sväng",
@@ -565,22 +604,27 @@
               {
                 "word": "förbi",
                 "mark": "förbi",
-                "rule": "Gå förbi means pass."
+                "rule": "Gå förbi = pass."
               },
               {
                 "word": "vänstra",
                 "mark": "vänstra",
-                "rule": "On your left: på din vänstra sida."
+                "rule": "A place you see: på din vänstra sida."
+              },
+              {
+                "word": "korsningar",
+                "mark": "korsningar",
+                "rule": "En korsning, två korsningar = crossings."
               },
               {
                 "word": "byta",
                 "mark": "byta",
-                "rule": "Byta till means change to another bus."
+                "rule": "Byta till = change to another bus."
               },
               {
                 "word": "av",
                 "mark": "av",
-                "rule": "Gå av means get off."
+                "rule": "Gå av = get off."
               }
             ]
           }
@@ -614,8 +658,8 @@
         "Behind the station",
         "Beside Maja’s home"
       ],
-      "hint": "Listen for högra sida.",
-      "explanation": "After turning at the pharmacy and passing the café, the shop is on the right after the crossing."
+      "hint": "Listen for högra sida near the end.",
+      "explanation": "Take the metro to Kampen, turn left at the pharmacy and pass a café. The shop is on your right after the crossing."
     }
   ],
   "sections": [
@@ -623,8 +667,10 @@
       "title": "Help verbs: choose the strength",
       "kind": "rule",
       "body": [
-        "A help verb changes how strong a message is. Borde gives advice, måste marks necessity, får asks permission, and behöver inte says something is optional.",
-        "In a complaint, use kan ni …? as a polite request. The next verb stays in the infinitive: kan ni laga, måste byta, behöver inte betala."
+        "A help verb sets how strong a message is. Kan ni …? asks politely. Får jag …? asks for permission. Borde gives advice. Måste means there is no choice.",
+        "Two negatives are easy to mix up. Behöver inte = not necessary. Får inte = not allowed. Do not say måste inte for English must not.",
+        "After a help verb, the next verb stays in the infinitive: kan ni laga, måste visa, behöver inte betala.",
+        "Tycker om has two jobs. Jag tycker om sushi = I like sushi. Vad tycker du om vägen? = What do you think of the route?"
       ],
       "examples": [
         {
@@ -633,92 +679,126 @@
           "note": "A polite request."
         },
         {
-          "fi": "Ni måste byta laddaren.",
-          "en": "You must replace the charger.",
-          "note": "A strong requirement."
+          "fi": "Får jag skicka kvittot i morgon?",
+          "en": "May I send the receipt tomorrow?",
+          "note": "Asking for permission."
         },
         {
-          "fi": "Jag borde bifoga kvittot.",
-          "en": "I should attach the receipt.",
+          "fi": "Du borde bifoga kvittot.",
+          "en": "You should attach the receipt.",
           "note": "Advice."
         },
         {
-          "fi": "Jag behöver inte köpa en ny dator.",
-          "en": "I do not have to buy a new computer.",
+          "fi": "På restaurang A måste du boka bord.",
+          "en": "At restaurant A you must book a table.",
+          "note": "No choice."
+        },
+        {
+          "fi": "På restaurang B behöver du inte boka bord.",
+          "en": "At restaurant B you do not need to book a table.",
           "note": "Not necessary."
+        },
+        {
+          "fi": "Du får inte öppna datorn själv.",
+          "en": "You are not allowed to open the computer yourself.",
+          "note": "Not allowed, for example by the warranty rules."
         }
       ],
-      "memoryTip": "Help verb + plain infinitive: kan laga, måste byta.",
-      "tryIt": "Ask politely for a repair, then say what the company must do.",
+      "memoryTip": "Behöver inte = no need. Får inte = not allowed. Never måste inte.",
+      "tryIt": "Ask a company politely for a repair. Then tell a friend one thing they should do and one thing they must not do.",
       "activity": {
         "type": "sort",
         "label": "How strong?",
-        "title": "Sort the help verbs by purpose",
-        "instructions": "Decide whether each line requests, requires, advises or removes necessity.",
+        "title": "Sort each line by what it does",
+        "instructions": "Read the help verb, then decide: asking, no choice, good idea, no need or not allowed.",
         "buckets": [
           {
-            "id": "request",
-            "label": "Polite request",
-            "hint": "kan ni?"
+            "id": "ask",
+            "label": "Asking politely",
+            "hint": "a request or permission"
           },
           {
-            "id": "require",
-            "label": "Necessary",
-            "hint": "måste"
+            "id": "must",
+            "label": "No choice",
+            "hint": "it is necessary"
           },
           {
             "id": "advice",
-            "label": "Advice",
-            "hint": "borde"
+            "label": "Good idea",
+            "hint": "advice"
           },
           {
             "id": "optional",
-            "label": "Not necessary",
-            "hint": "behöver inte"
+            "label": "No need",
+            "hint": "you can skip it"
+          },
+          {
+            "id": "forbidden",
+            "label": "Not allowed",
+            "hint": "a rule says no"
           }
         ],
         "items": [
           {
-            "fi": "Kan ni svara snart?",
-            "en": "Can you reply soon?",
-            "bucket": "request",
-            "why": "Kan ni makes a courteous request."
+            "fi": "Kan ni svara senast på fredag?",
+            "en": "Can you reply by Friday at the latest?",
+            "bucket": "ask",
+            "why": "Kan ni …? is a polite request."
           },
           {
-            "fi": "Ni måste laga felet.",
-            "en": "You must repair the fault.",
-            "bucket": "require",
-            "why": "Måste is strong necessity."
+            "fi": "Får jag betala med kort?",
+            "en": "May I pay by card?",
+            "bucket": "ask",
+            "why": "Får jag …? asks for permission."
           },
           {
-            "fi": "Du borde spara kvittot.",
-            "en": "You should keep the receipt.",
+            "fi": "Du måste visa kvittot.",
+            "en": "You must show the receipt.",
+            "bucket": "must",
+            "why": "Måste: it is necessary; there is no choice."
+          },
+          {
+            "fi": "Du borde ringa kundtjänsten.",
+            "en": "You should call customer service.",
             "bucket": "advice",
             "why": "Borde gives advice."
           },
           {
-            "fi": "Du behöver inte ringa.",
-            "en": "You need not call.",
+            "fi": "Du behöver inte köpa en ny laddare.",
+            "en": "You do not need to buy a new charger.",
             "bucket": "optional",
-            "why": "It is optional."
+            "why": "Behöver inte: it is not necessary."
+          },
+          {
+            "fi": "Du får inte röka här.",
+            "en": "You are not allowed to smoke here.",
+            "bucket": "forbidden",
+            "why": "Får inte: a rule forbids it. Not måste inte."
           }
         ],
-        "summary": "Choose the help verb by meaning, then use an infinitive."
+        "summary": "Choose the help verb by meaning. The next verb stays in the infinitive."
       }
     },
     {
       "title": "A formal complaint that gets a useful answer",
       "kind": "rule",
       "body": [
-        "A clear formal email has a greeting, the reason for writing, precise facts, the solution you want, thanks and a closing. The recipient should understand the problem without guessing.",
-        "Use ni and er when addressing the company, as the teacher’s complaint handout does. You are writing to the organisation. Link ideas with eftersom, men and dessutom. Be polite and direct: Jag skriver eftersom … Kan ni …?",
-        "The teacher’s seven rubric areas become seven checks: fit the reader and purpose; link ideas; use precise words; check grammar; describe events clearly; follow the text type; explain your view and requested solution. Use clear everyday sentences."
+        "A formal email to a company or an office (a shop, Kela, Migri, a housing company) follows a fixed order: greeting, who you are and why you write, the facts, the solution you want, evidence and contact details, thanks and closing.",
+        "Write ni, er and ert, not du, dig and ditt. Even if one person reads it, that person speaks for the company: Jag ser fram emot ert svar.",
+        "Start with Hej, on its own line. End with Tack på förhand! and Vänliga hälsningar (or Med vänliga hälsningar), then your first name and surname.",
+        "Link the facts with eftersom (because), men (but) and dessutom (also). Say when with för … sedan: för två veckor sedan = two weeks ago.",
+        "A YKI writing task gives a short situation and a list of points. Cover every point: the rater checks that the task is done as well as the language. The teacher’s seven rubric areas are the seven points of this lecture’s writing task."
       ],
       "examples": [
         {
-          "fi": "Hej, jag skriver eftersom jag är besviken på arbetet.",
-          "en": "Hello, I am writing because I am disappointed with the work.",
+          "fi": "Hej, jag skriver eftersom jag är besviken på arbetet i mitt kök.",
+          "en": "Hello, I am writing because I am disappointed with the work in my kitchen.",
           "note": "Greeting plus purpose."
+        },
+        {
+          "fi": "Jag köpte datorn för två veckor sedan, men den fungerar inte.",
+          "en": "I bought the computer two weeks ago, but it does not work.",
+          "note": "För … sedan = … ago."
         },
         {
           "fi": "Arbetet blev klart en vecka för sent. Dessutom är skåpet skadat.",
@@ -726,19 +806,24 @@
           "note": "Two precise facts."
         },
         {
-          "fi": "Kan ni laga skåpet eller sänka priset?",
-          "en": "Can you repair the cupboard or lower the price?",
-          "note": "A concrete requested solution."
+          "fi": "Kan ni laga skåpet? Om det inte går, vill jag ha pengarna tillbaka.",
+          "en": "Can you repair the cupboard? If that is not possible, I want my money back.",
+          "note": "A clear solution and a second choice."
         },
         {
-          "fi": "Tack på förhand! Vänliga hälsningar, Alex Khan",
-          "en": "Thank you in advance! Best regards, Alex Khan",
-          "note": "Formal closing and full name."
+          "fi": "Jag ser fram emot ert svar.",
+          "en": "I look forward to your reply.",
+          "note": "Ert, not ditt: formal."
         },
         {
           "fi": "Kvittot är bifogat. Inbjudan är bifogad. Bilderna är bifogade.",
           "en": "The receipt is attached. The invitation is attached. The pictures are attached.",
           "note": "The ending matches an ett-word, an en-word or a plural."
+        },
+        {
+          "fi": "Tack på förhand! Vänliga hälsningar, Alex Khan",
+          "en": "Thank you in advance! Best regards, Alex Khan",
+          "note": "Formal closing and full name."
         }
       ],
       "table": {
@@ -754,29 +839,34 @@
             "Open politely"
           ],
           [
-            "Purpose",
-            "Jag skriver eftersom …",
-            "Say why"
+            "Who and why",
+            "Jag heter … Jag skriver eftersom …",
+            "Introduce the problem"
           ],
           [
             "Facts",
-            "Problemet är … Dessutom …",
-            "Describe"
+            "Jag köpte … för … sedan. Dessutom …",
+            "Describe exactly"
           ],
           [
             "Request",
-            "Kan ni …?",
+            "Kan ni …? Om det inte går, …",
             "Ask for action"
           ],
           [
+            "Evidence and contact",
+            "Jag bifogar … Ni kan nå mig på …",
+            "Help them act"
+          ],
+          [
             "Closing",
-            "Vänliga hälsningar, …",
+            "Tack på förhand! Vänliga hälsningar, first name + surname",
             "Finish formally"
           ]
         ]
       },
       "memoryTip": "Problem + evidence + wanted solution = a complaint the reader can act on.",
-      "tryIt": "Say a two-sentence complaint about late kitchen work.",
+      "tryIt": "Say a three-sentence complaint about late kitchen work: purpose, one fact, one request.",
       "activity": {
         "type": "sort",
         "label": "Build the email",
@@ -790,8 +880,8 @@
           },
           {
             "id": "detail",
-            "label": "Problem details",
-            "hint": "what happened"
+            "label": "Facts and evidence",
+            "hint": "what happened, what you attach"
           },
           {
             "id": "solution",
@@ -807,13 +897,13 @@
         "items": [
           {
             "fi": "Jag skriver eftersom jag är besviken på arbetet.",
-            "en": "I write because I am disappointed with the work.",
+            "en": "I am writing because I am disappointed with the work.",
             "bucket": "purpose",
             "why": "It states why the email exists."
           },
           {
             "fi": "Arbetet blev klart för sent.",
-            "en": "The work was completed late.",
+            "en": "The work was finished late.",
             "bucket": "detail",
             "why": "It gives a concrete fact."
           },
@@ -828,6 +918,24 @@
             "en": "Best regards, Alex Khan",
             "bucket": "closing",
             "why": "It ends formally."
+          },
+          {
+            "fi": "Jag bifogar kvittot och två bilder.",
+            "en": "I am attaching the receipt and two photos.",
+            "bucket": "detail",
+            "why": "Evidence supports the facts."
+          },
+          {
+            "fi": "Om det inte går, vill jag ha pengarna tillbaka.",
+            "en": "If that is not possible, I want my money back.",
+            "bucket": "solution",
+            "why": "A second solution if the first is impossible."
+          },
+          {
+            "fi": "Jag ser fram emot ert svar.",
+            "en": "I look forward to your reply.",
+            "bucket": "closing",
+            "why": "A polite formal ending before the signature."
           }
         ],
         "summary": "Every sentence should help the recipient see the purpose, facts or desired solution."
@@ -837,15 +945,17 @@
       "title": "Give directions one move at a time",
       "kind": "rule",
       "body": [
-        "Use the imperative for direct route instructions: gå, sväng, ta, byt and gå av. One instruction per sentence is easier to follow.",
-        "Say where a turn happens with vid: sväng vid apoteket. Use till vänster or till höger for the movement, but på din vänstra/högra sida for a place you see.",
-        "Order the route with först, sedan and efter det. Add a landmark and an estimated time so the listener can check the route.",
-        "Use här/där for a place and hit/dit for movement: Jag är här. Kom hit! Apoteket ligger där. Gå dit! Compare gå (on foot) with åka (by transport). Korsa gatan means cross the street; krossa means smash. Väg is a road; vägg is a wall."
+        "Use the command form for each move: gå, sväng, ta, åk, byt, gå av. One move per sentence is easier to follow. Gå is on foot; åka is by bus, tram, metro or train.",
+        "Till vänster or till höger is a movement: sväng till vänster. På din vänstra or högra sida is a place you see: kaféet ligger på din högra sida. Say where with vid: sväng vid apoteket.",
+        "Order the route with först, sedan and efter det. After these words the verb comes second: Sedan går du rakt fram, not Sedan du går.",
+        "Place or movement: här/hit, där/dit, uppe/upp, nere/ner. Jag är här. Kom hit! Apoteket ligger där. Gå dit!",
+        "In Helsinki, people say metro (åka metro) and spårvagn for the tram; tunnelbana is the word in Sweden. Bus and tram stops are hållplatser.",
+        "Watch the look-alikes: väg (road) and vägg (wall), korsa gatan (cross the street) and krossa (smash), glass (ice cream) and glas (a glass), det låter (it sounds) and en låt (a song)."
       ],
       "examples": [
         {
           "fi": "Gå rakt fram och sväng till vänster vid korsningen.",
-          "en": "Go straight and turn left at the crossing.",
+          "en": "Go straight on and turn left at the crossing.",
           "note": "Two ordered commands."
         },
         {
@@ -854,13 +964,23 @@
           "note": "Location uses högra with sida."
         },
         {
-          "fi": "Ta buss nummer fem och byt vid torget.",
-          "en": "Take bus five and change at the square.",
+          "fi": "Åk metro från Järnvägstorget till Kampen.",
+          "en": "Take the metro from Railway Square to Kamppi.",
+          "note": "Åka: by transport. Helsinki’s Swedish place names."
+        },
+        {
+          "fi": "Ta buss nummer fem och byt till spårvagn sju vid torget.",
+          "en": "Take bus five and change to tram seven at the square.",
           "note": "Transport directions."
         },
         {
-          "fi": "Gå av efter två hållplatser.",
-          "en": "Get off after two stops.",
+          "fi": "Sedan går du förbi apoteket. Efter det svänger du till höger.",
+          "en": "Then you pass the pharmacy. After that you turn right.",
+          "note": "After sedan and efter det, the verb comes second."
+        },
+        {
+          "fi": "Gå av efter två hållplatser. Det är en fem minuters promenad.",
+          "en": "Get off after two stops. It is a five-minute walk.",
           "note": "Gå av is a fixed phrase."
         },
         {
@@ -870,38 +990,113 @@
         }
       ],
       "memoryTip": "Turn: till höger. Location: på din högra sida.",
-      "tryIt": "Give three instructions from your nearest stop to your door.",
-      "activity": {
-        "type": "match",
-        "label": "Route pairs",
-        "title": "Match each direction to its meaning",
-        "instructions": "Match, then say the Swedish instruction aloud.",
-        "leftLabel": "Swedish",
-        "rightLabel": "Meaning",
-        "pairs": [
-          {
-            "left": "Gå rakt fram.",
-            "right": "Continue straight."
-          },
-          {
-            "left": "Sväng till vänster.",
-            "right": "Turn left."
-          },
-          {
-            "left": "Gå förbi apoteket.",
-            "right": "Pass the pharmacy."
-          },
-          {
-            "left": "Gå av vid torget.",
-            "right": "Get off at the square."
-          },
-          {
-            "left": "Byt till buss sju.",
-            "right": "Change to bus seven."
-          }
-        ],
-        "pattern": "Use a short imperative first, then add where."
-      }
+      "tryIt": "Give three instructions from your nearest stop to your door. Use one place word and one movement word.",
+      "activities": [
+        {
+          "type": "match",
+          "label": "Route pairs",
+          "title": "Match each direction to its meaning",
+          "instructions": "Match, then say the Swedish instruction aloud.",
+          "leftLabel": "Swedish",
+          "rightLabel": "Meaning",
+          "pairs": [
+            {
+              "left": "Gå rakt fram.",
+              "right": "Go straight on."
+            },
+            {
+              "left": "Sväng till vänster.",
+              "right": "Turn left."
+            },
+            {
+              "left": "Gå förbi apoteket.",
+              "right": "Pass the pharmacy."
+            },
+            {
+              "left": "Gå av vid torget.",
+              "right": "Get off at the square."
+            },
+            {
+              "left": "Byt till buss sju.",
+              "right": "Change to bus seven."
+            },
+            {
+              "left": "Åk metro till Kampen.",
+              "right": "Take the metro to Kamppi."
+            }
+          ],
+          "pattern": "Use a short imperative first, then add where."
+        },
+        {
+          "type": "sort",
+          "label": "Place or movement?",
+          "title": "Is it where something is, or where you go?",
+          "instructions": "Sort each line. Then say one place line and one movement line about your own street.",
+          "buckets": [
+            {
+              "id": "place",
+              "label": "Place",
+              "hint": "where someone or something is"
+            },
+            {
+              "id": "move",
+              "label": "Movement",
+              "hint": "where you go"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Kom hit!",
+              "en": "Come here!",
+              "bucket": "move",
+              "why": "Hit = to this place."
+            },
+            {
+              "fi": "Jag väntar här.",
+              "en": "I am waiting here.",
+              "bucket": "place",
+              "why": "Här = at this place."
+            },
+            {
+              "fi": "Gå dit!",
+              "en": "Go there!",
+              "bucket": "move",
+              "why": "Dit = to that place."
+            },
+            {
+              "fi": "Butiken ligger där.",
+              "en": "The shop is there.",
+              "bucket": "place",
+              "why": "Där = at that place."
+            },
+            {
+              "fi": "Sväng till höger.",
+              "en": "Turn right.",
+              "bucket": "move",
+              "why": "Till höger: you move."
+            },
+            {
+              "fi": "Kaféet ligger på din högra sida.",
+              "en": "The café is on your right.",
+              "bucket": "place",
+              "why": "På din högra sida: where it is."
+            },
+            {
+              "fi": "Ta rulltrappan upp.",
+              "en": "Take the escalator up.",
+              "bucket": "move",
+              "why": "Upp = direction."
+            },
+            {
+              "fi": "Jag väntar uppe.",
+              "en": "I am waiting upstairs.",
+              "bucket": "place",
+              "why": "Uppe = location."
+            }
+          ],
+          "summary": "Här, där, uppe and på … sida tell where. Hit, dit, upp and till höger tell where you go."
+        }
+      ]
     }
   ],
   "guided": [
@@ -990,18 +1185,46 @@
       "explanation": "På din högra sida is the fixed route phrase."
     },
     {
-      "id": "sv-14-g7",
-      "prompt": "Tell the passenger to leave the bus: ___ av vid torget.",
+      "id": "sv-14-g8",
+      "prompt": "After Sedan, the verb comes second: Sedan ___ du till höger vid banken.",
       "answers": [
-        "Gå"
+        "svänger"
       ],
       "options": [
-        "Gå",
-        "Åk",
-        "Byt"
+        "svänger",
+        "sväng",
+        "att svänga"
       ],
-      "hint": "The phrase is gå av.",
-      "explanation": "Gå av means get off."
+      "hint": "A statement, not a command: present tense.",
+      "explanation": "Sedan svänger du till höger. The verb stands in second place, before du."
+    },
+    {
+      "id": "sv-14-g9",
+      "prompt": "Jag väntar vid porten. Kan du komma ___?",
+      "answers": [
+        "hit"
+      ],
+      "options": [
+        "hit",
+        "här",
+        "dit"
+      ],
+      "hint": "Komma is movement towards me.",
+      "explanation": "Kom hit = come here (movement). Här is a place: Jag är här."
+    },
+    {
+      "id": "sv-14-g10",
+      "prompt": "End a formal email to a company: Jag ser fram emot ___ svar.",
+      "answers": [
+        "ert"
+      ],
+      "options": [
+        "ert",
+        "ditt",
+        "din"
+      ],
+      "hint": "Formal you, and svar is an ett-word.",
+      "explanation": "Ert svar: formal er/ert, with -t for the ett-word svar."
     }
   ],
   "checkpoint": [
@@ -1009,7 +1232,14 @@
       "id": "sv-14-check-write",
       "prompt": "Write in Swedish: “Can you repair the computer or refund the money?”",
       "answers": [
-        "Kan ni laga datorn eller ge pengarna tillbaka?"
+        "Kan ni laga datorn eller ge pengarna tillbaka?",
+        "Kan ni laga datorn eller ge tillbaka pengarna?",
+        "Kan ni reparera datorn eller ge pengarna tillbaka?",
+        "Kan ni reparera datorn eller ge tillbaka pengarna?",
+        "Kan ni laga datorn eller betala tillbaka pengarna?",
+        "Kan ni laga min dator eller ge pengarna tillbaka?",
+        "Kan ni laga min dator eller ge mig pengarna tillbaka?",
+        "Kan ni laga datorn eller ge mig pengarna tillbaka?"
       ],
       "hint": "Start Kan ni …?",
       "explanation": "Kan ni laga datorn eller ge pengarna tillbaka?"
@@ -1029,14 +1259,26 @@
       "explanation": "På din vänstra sida describes location."
     },
     {
+      "id": "sv-14-check-turn",
+      "prompt": "Write in Swedish: “Then you turn right at the pharmacy.” Start with Sedan.",
+      "answers": [
+        "Sedan svänger du till höger vid apoteket.",
+        "Sedan svänger du höger vid apoteket."
+      ],
+      "hint": "After Sedan, the verb comes second.",
+      "explanation": "Sedan svänger du till höger vid apoteket."
+    },
+    {
       "id": "sv-14-check-close",
       "prompt": "Produce a formal Swedish closing meaning “Best regards”.",
       "answers": [
         "Vänliga hälsningar",
-        "Vänliga hälsningar,"
+        "Med vänliga hälsningar",
+        "Vänlig hälsning",
+        "Med vänlig hälsning"
       ],
-      "hint": "Two words.",
-      "explanation": "Vänliga hälsningar is a standard closing."
+      "hint": "Two words, or three with Med.",
+      "explanation": "Vänliga hälsningar (or Med vänliga hälsningar) is the standard closing. Then add your full name."
     },
     {
       "id": "sv-14-check-route",
@@ -1051,23 +1293,38 @@
       ],
       "hint": "Byt till means change to.",
       "explanation": "Byt till buss nummer sju vid torget."
+    },
+    {
+      "id": "sv-14-check-formal",
+      "prompt": "Which line fits a formal email to a company?",
+      "answers": [
+        "Jag ser fram emot ert svar."
+      ],
+      "options": [
+        "Jag ser fram emot ert svar.",
+        "Jag ser fram emot ditt svar, kompis!",
+        "Svara snabbt!"
+      ],
+      "hint": "Look for the formal you.",
+      "explanation": "Ert is the formal your; the other lines are informal or rude."
     }
   ],
   "assignment": {
     "title": "Lecture 14 mission: Find my home",
-    "instructions": "CORE: Explain the way from a station or stop to your home in six to eight lines. Include ordered moves, a landmark, travel time, and one opinion with a reason.\n\nNOTICE: Use till vänster for a turn and på din vänstra sida for a location.\n\nRETURN: Tomorrow, give the route again without your notes.",
-    "model": "Börja vid järnvägsstationen. Först går du rakt fram till apoteket. Sväng sedan till vänster vid korsningen. Gå förbi biblioteket på din högra sida. Ta den andra gatan till höger. Mitt hus ligger bredvid hållplatsen. Det tar ungefär tio minuter. Jag tycker att vägen är lätt eftersom huset ligger nära stationen."
+    "instructions": "CORE: Explain the way from a metro, tram or bus stop to your home in six to eight lines. Include ordered moves, a landmark, travel time and one opinion with a reason.\n\nNOTICE: Use till vänster for a turn and på din vänstra sida for a place. After Sedan, put the verb second: Sedan går du …\n\nRETURN: Tomorrow, give the route again without your notes.",
+    "model": "Du börjar vid metrostationen i Kampen. Gå ut och sväng till vänster. Gå rakt fram till korsningen. Sedan svänger du till höger vid apoteket. Du går förbi ett bibliotek på din vänstra sida. Jag bor i det gula huset efter biblioteket. Det är en fem minuters promenad. Jag tycker att vägen är lätt eftersom det bara finns en korsning."
   },
   "takeaways": [
-    "A formal complaint states the purpose, exact problem, requested solution and a polite closing.",
-    "Use ni/er formally and link clear facts with eftersom, men and dessutom.",
-    "Directions use short imperatives, landmarks, left/right phrases and ordered steps."
+    "A formal complaint says who you are, the exact problem, the solution you want, your evidence and contact details, then closes politely.",
+    "Write ni/er/ert to a company and link facts with eftersom, men and dessutom.",
+    "Directions use short commands, landmarks and ordered steps: gå on foot, åka by transport, till höger to turn, på din högra sida for a place.",
+    "Behöver inte = no need; får inte = not allowed. Never måste inte."
   ],
   "dialogue": [
     {
       "speaker": "Maja",
-      "fi": "Min nya bärbara dator fungerar inte, och det finns en repa på skärmen.",
-      "en": "My new laptop does not work, and there is a scratch on the screen."
+      "fi": "Jag köpte en ny bärbar dator för två veckor sedan, men den fungerar inte.",
+      "en": "I bought a new laptop two weeks ago, but it does not work."
     },
     {
       "speaker": "Henrik",
@@ -1076,48 +1333,63 @@
     },
     {
       "speaker": "Maja",
-      "fi": "Jag skriver eftersom jag är mycket besviken på produkten.",
-      "en": "I am writing because I am very disappointed with the product."
+      "fi": "Ska jag skriva du eller ni?",
+      "en": "Should I write du or ni?"
     },
     {
       "speaker": "Henrik",
-      "fi": "Bra. Beskriv felet tydligt och fråga vad de kan göra.",
-      "en": "Good. Describe the fault clearly and ask what they can do."
+      "fi": "Skriv ni. Du skriver till ett företag, inte till en kompis.",
+      "en": "Write ni. You are writing to a company, not to a friend."
     },
     {
       "speaker": "Maja",
-      "fi": "Kan ni laga datorn eller ge pengarna tillbaka?",
-      "en": "Can you repair the computer or refund the money?"
+      "fi": "Jag skriver eftersom jag är mycket besviken på produkten. Laddaren fungerar inte, och det finns en repa på skärmen.",
+      "en": "I am writing because I am very disappointed with the product. The charger does not work, and there is a scratch on the screen."
     },
     {
       "speaker": "Henrik",
-      "fi": "Perfekt. Avsluta med “Tack på förhand” och “Vänliga hälsningar”.",
-      "en": "Perfect. End with “Thank you in advance” and “Best regards”."
-    },
-    {
-      "speaker": "Elin",
-      "fi": "Butiken ligger nära stationen. Vill du ha en vägbeskrivning?",
-      "en": "The shop is near the station. Would you like directions?"
+      "fi": "Bra. Skriv nu vad du vill att de ska göra.",
+      "en": "Good. Now write what you want them to do."
     },
     {
       "speaker": "Maja",
-      "fi": "Ja tack. Jag kan inte hitta dit.",
-      "en": "Yes, please. I cannot find my way there."
+      "fi": "Kan ni laga datorn eller ge pengarna tillbaka? Garantin gäller fortfarande.",
+      "en": "Can you repair the computer or refund the money? The warranty is still valid."
+    },
+    {
+      "speaker": "Henrik",
+      "fi": "Perfekt. Avsluta med ”Tack på förhand” och ”Vänliga hälsningar” och ditt för- och efternamn.",
+      "en": "Perfect. End with “Thank you in advance”, “Best regards” and your first name and surname."
     },
     {
       "speaker": "Elin",
-      "fi": "Gå rakt fram från stationen och sväng till vänster vid apoteket.",
-      "en": "Go straight from the station and turn left at the pharmacy."
-    },
-    {
-      "speaker": "Elin",
-      "fi": "Gå förbi kaféet. Butiken ligger på din högra sida efter korsningen.",
-      "en": "Pass the café. The shop is on your right after the crossing."
+      "fi": "Butiken ligger i Kampen. Vill du ha en vägbeskrivning?",
+      "en": "The shop is in Kamppi. Would you like directions?"
     },
     {
       "speaker": "Maja",
-      "fi": "Tack! Jag tycker att vägen låter enkel eftersom butiken ligger nära.",
-      "en": "Thanks! I think the route sounds easy because the shop is nearby."
+      "fi": "Ja tack. Jag vet inte hur jag kommer dit.",
+      "en": "Yes, please. I do not know how to get there."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Åk metro från Järnvägstorget till Kampen. Det är bara en station.",
+      "en": "Take the metro from Railway Square to Kamppi. It is only one stop."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Gå ut från metrostationen, gå rakt fram och sväng till vänster vid apoteket.",
+      "en": "Leave the metro station, go straight on and turn left at the pharmacy."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Sedan går du förbi ett kafé. Butiken ligger på din högra sida efter korsningen.",
+      "en": "Then you pass a café. The shop is on your right after the crossing."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Tack! Det låter enkelt. Då går jag dit efter skolan.",
+      "en": "Thanks! That sounds easy. Then I will go there after school."
     }
   ],
   "resources": [
@@ -1125,6 +1397,16 @@
       "label": "Svenska Akademiens ordböcker (svenska.se)",
       "url": "https://svenska.se/",
       "description": "Check the meanings and examples for klagomål, bifoga and korsning."
+    },
+    {
+      "label": "YKI intermediate writing tasks (ykitesti.solki.jyu.fi)",
+      "url": "https://ykitesti.solki.jyu.fi/sv/tutustu-testiin/in-english/intermediate-level-writing/",
+      "description": "See how a real YKI email task lists the points to cover: who you are, what happened, how it should be settled, details."
+    },
+    {
+      "label": "Att röra sig i Helsingfors (MyHelsinki)",
+      "url": "https://www.myhelsinki.fi/sv/besok/res-och-bo-i-helsingfors/att-rora-sig-i-helsingfors/",
+      "description": "Helsinki’s own Swedish words for metro, spårvagn, buss and färja."
     }
   ],
   "practice": {
@@ -1328,37 +1610,61 @@
         "example": "Kan du ge en vägbeskrivning?",
         "translation": "Can you give directions?",
         "level": "A1"
+      },
+      {
+        "id": "sv-14-word-26",
+        "fi": "åka",
+        "en": "go (by bus, tram, metro or train)",
+        "example": "Jag åker metro till jobbet.",
+        "translation": "I take the metro to work.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-14-word-27",
+        "fi": "hit / dit",
+        "en": "here / there (movement)",
+        "example": "Kom hit! Gå dit!",
+        "translation": "Come here! Go there!",
+        "level": "A1"
+      },
+      {
+        "id": "sv-14-word-28",
+        "fi": "en spårvagn",
+        "en": "a tram",
+        "example": "Spårvagnen stannar vid torget.",
+        "translation": "The tram stops at the square.",
+        "level": "A1"
       }
     ],
     "pronunciation": {
       "text": "Klagomål, kundtjänst, kvittot är bifogat. Gå rakt fram, sväng till vänster, gå av vid hållplatsen.",
-      "tip": "Stress the first part of compound words such as kundtjänst and vägbeskrivning. Keep höger and högra distinct."
+      "tip": "Stress the first part of compound words such as kundtjänst and vägbeskrivning. Tj in kundtjänst is the soft tje-sound, as in tjugo. Keep höger and högra distinct."
     },
     "reading_passage": {
-      "text": "Hej, jag skriver eftersom jag är besviken på arbetet i mitt kök. Ni lovade att arbetet skulle bli klart i fredags, men det blev klart tre dagar för sent. Dessutom fungerar inte den nya kranen och det finns en repa på skåpet. Jag bifogar bilder och kvittot. Kan ni laga kranen och skåpet nästa vecka eller sänka priset? Garantin gäller fortfarande. Jag vill gärna få ett skriftligt svar senast på fredag. Ni kan ringa mig på eftermiddagen, men jag föredrar ett mejl eftersom jag vill spara all information. Om ni behöver se skadorna kan en hantverkare komma på tisdag eller torsdag. Jag hoppas att vi kan lösa problemet snabbt och enkelt. Köket kostade mycket pengar, och därför förväntar jag mig att allt fungerar och att arbetet är snyggt utfört.\n\nTack på förhand!\nVänliga hälsningar,\nAlex Khan",
+      "text": "Hej,\n\nJag heter Elin Berg och bor i lägenhet A 12. Jag skriver eftersom tvättmaskinen i tvättstugan inte fungerar. Den gick sönder för två veckor sedan. Jag ringde er kundtjänst i måndags, men ingen svarade. Dessutom är dörren till tvättstugan trasig, så den går inte att låsa. Det är ett stort problem eftersom många familjer i huset behöver tvätta varje vecka. Kan ni skicka någon som kan laga maskinen och dörren senast på fredag? Om ni behöver komma in i tvättstugan kan ni ringa mig på 040 123 4567. Jag är hemma efter klockan fyra. Jag bifogar en bild på maskinen.\n\nTack på förhand! Jag ser fram emot ert svar.\n\nVänliga hälsningar,\nElin Berg",
       "gist": {
-        "prompt": "Why does Alex write?",
+        "prompt": "Why does Elin write?",
         "options": [
-          "To complain about kitchen work",
-          "To invite a worker",
-          "To ask for directions"
+          "Things in her building’s laundry room are broken",
+          "She wants to rent a new flat",
+          "She invites her neighbours to a party"
         ],
         "answer": 0,
-        "explanation": "She describes late and faulty kitchen work."
+        "explanation": "The washing machine does not work and the laundry-room door cannot be locked."
       },
       "detail": {
-        "prompt": "What two solutions does she suggest?",
+        "prompt": "What does Elin ask the housing company to do?",
         "options": [
-          "Repair the faults or lower the price",
-          "Build a new home or refund a bus ticket",
-          "Send food or close the shop"
+          "Send someone to repair the machine and the door by Friday",
+          "Give her money back for the washing machine",
+          "Call her before nine in the morning"
         ],
         "answer": 0,
-        "explanation": "She asks for repairs next week or a lower price."
+        "explanation": "Kan ni skicka någon som kan laga maskinen och dörren senast på fredag?"
       }
     },
     "reading": {
-      "text": "Från stationen går du rakt fram till torget. Sväng till höger vid banken och gå förbi apoteket. Biblioteket ligger på din vänstra sida. Hållplatsen ligger framför biblioteket. Ta buss nummer fyra och gå av efter tre hållplatser. Fortsätt sedan längs parken och korsa den stora gatan vid trafikljusen. Där ser du ett bageri och en liten blomsterbutik. Gå mellan butikerna och ta den första gatan till vänster. Om du ser en skola har du gått för långt. Vänd då tillbaka till bageriet. Den här resan med buss och promenad tar ungefär femton minuter.",
+      "text": "Från stationen går du rakt fram till torget. Sväng till höger vid banken och gå förbi apoteket. Biblioteket ligger på din vänstra sida. Hållplatsen ligger framför biblioteket. Ta buss nummer fyra och gå av efter tre hållplatser. Fortsätt sedan längs parken och korsa den stora gatan vid trafikljusen. Där ser du ett bageri och en liten blomsterbutik. Gå mellan butikerna och ta den första gatan till vänster. Om du ser en skola har du gått för långt. Gå då tillbaka till bageriet. Hela vägen med buss och promenad tar ungefär femton minuter.",
       "question": "Where is the bus stop?",
       "options": [
         "In front of the library",
@@ -1369,7 +1675,7 @@
       "explanation": "Hållplatsen ligger framför biblioteket."
     },
     "listening": {
-      "text": "Först går du ut från stationen och svänger till vänster. Gå rakt fram i ungefär hundra meter. Du ser ett apotek på din högra sida. Sväng till höger efter apoteket och gå förbi ett kafé. Mitt hus är det gula huset bredvid parken. Det tar cirka åtta minuter. Om du kommer med buss kan du ta buss nummer fem från centrum. Byt till buss nummer sju vid salutorget och gå av vid biblioteket. Därifrån ser du parken. Korsa gatan försiktigt och följ vägen längs parken. När du ser en liten mataffär ska du svänga till vänster. Ring mig om du inte hittar, så möter jag dig utanför huset.",
+      "text": "Först går du ut från stationen och svänger till vänster. Gå rakt fram i ungefär hundra meter. Du ser ett apotek på din högra sida. Sväng till höger efter apoteket och gå förbi ett kafé. Mitt hus är det gula huset bredvid parken. Det tar cirka åtta minuter. Om du kommer med buss kan du ta buss nummer fem från centrum. Byt till buss nummer sju vid Salutorget och gå av vid biblioteket. Därifrån ser du parken. Korsa gatan försiktigt och följ vägen längs parken. När du ser en liten mataffär ska du svänga till vänster. Ring mig om du inte hittar, så möter jag dig utanför huset.",
       "question": "On the walking route from the station, what do you pass after the pharmacy?",
       "options": [
         "A café",
@@ -1380,33 +1686,33 @@
       "explanation": "On that walking route, you pass a café after turning right at the pharmacy."
     },
     "speaking": {
-      "prompt": "Explain the way from a station or public-transport stop to your home. Give six to eight lines, include one landmark, travel time, and an opinion with a reason.",
-      "help": "Börja vid … · Först … · Gå rakt fram · Sväng till … · Gå förbi … · på din … sida · Det tar … · Jag tycker att … eftersom …",
-      "model": "Börja vid järnvägsstationen. Först går du rakt fram till apoteket. Sväng sedan till vänster vid korsningen. Gå förbi biblioteket på din högra sida. Ta den andra gatan till höger. Mitt hus ligger bredvid hållplatsen. Det tar ungefär tio minuter. Jag tycker att vägen är lätt eftersom huset ligger nära stationen."
+      "prompt": "Explain the way from a metro, tram or bus stop to your home. Give six to eight lines, include one landmark, the travel time and an opinion with a reason.",
+      "help": "Du börjar vid … · Gå rakt fram · Sväng till … vid … · Sedan går du … · Gå förbi … · på din … sida · Det tar … / Det är en … minuters promenad · Jag tycker att … eftersom …",
+      "model": "Du börjar vid metrostationen i Kampen. Gå ut och sväng till vänster. Gå rakt fram till korsningen. Sedan svänger du till höger vid apoteket. Du går förbi ett bibliotek på din vänstra sida. Jag bor i det gula huset efter biblioteket. Det är en fem minuters promenad. Jag tycker att vägen är lätt eftersom det bara finns en korsning."
     },
     "writing": {
-      "prompt": "Write a formal complaint to a company about unsatisfactory kitchen work.",
-      "situation": "A company renovated your kitchen. The work finished late, one item does not work and another is damaged. Email the company privately and ask for a solution.",
+      "prompt": "Write a formal complaint to a company about kitchen work (the teacher’s homework, topic 1).",
+      "situation": "You live in Helsingfors. In May, a company renovated your kitchen. The work finished a week late, the new tap does not work and a cupboard has a big scratch. You called them last week, but nobody answered. Write an email to the company. Say who you are, what happened, how you want it settled, and give your evidence and contact details.",
       "points": [
-        "Fit the recipient: greet the company and use ni/er with a full-name closing.",
-        "Link the facts with eftersom, men or dessutom.",
-        "Use precise words for the faulty item and the damage.",
-        "Check simple grammar, spelling and word order.",
-        "Describe what happened, including when the work finished.",
-        "Follow the complaint shape: purpose, facts, evidence, request and closing.",
-        "Explain why you are dissatisfied and request a reasonable solution."
+        "Who you are and what work the company did, and when (communicating).",
+        "What went wrong: two problems in precise words, such as kranen and skåpet (precision).",
+        "Why you are disappointed and one clear solution, with a second choice if it is not possible (opinion).",
+        "Evidence and contact: Jag bifogar … and Ni kan nå mig på … (task and text type).",
+        "Formal style: Hej, ni/er/ert, Tack på förhand, Vänliga hälsningar and your first name and surname (fit the reader).",
+        "Link your ideas with eftersom, men, dessutom or om (cohesion).",
+        "Check verb forms and word order: Dessutom fungerar inte kranen (grammar)."
       ],
       "wordRange": [
         60,
         100
       ],
-      "help": "Hej, · Jag skriver eftersom … · Jag är besviken på … · Dessutom … · Kan ni …? · Jag bifogar … · Tack på förhand! · Vänliga hälsningar, …",
-      "model": "Hej, jag skriver eftersom jag är besviken på arbetet i mitt kök. Ni blev klara en vecka för sent. Dessutom fungerar inte kranen och det finns en repa på skåpet. Jag bifogar bilder och kvittot. Kan ni laga kranen och skåpet nästa vecka eller sänka priset? Garantin gäller fortfarande. Jag ser fram emot ert svar. Tack på förhand! Vänliga hälsningar, Alex Khan"
+      "help": "Hej, · Jag heter … · Ni renoverade … i maj · Jag skriver eftersom … · Dessutom … · Jag ringde er …, men … · Kan ni …? · Om det inte går, … · Jag bifogar … · Ni kan nå mig på … · Tack på förhand! · Vänliga hälsningar, …",
+      "model": "Hej,\n\nJag heter Alex Khan. Ni renoverade mitt kök på Tavastvägen 12 i maj. Jag skriver eftersom jag är besviken på arbetet. Ni blev klara en vecka för sent. Dessutom fungerar inte den nya kranen, och det finns en stor repa på ett skåp. Jag ringde er två gånger förra veckan, men ingen svarade. Kan ni laga kranen och skåpet nästa vecka? Om det inte går, vill jag att ni sänker priset. Jag bifogar bilder och kvittot. Ni kan nå mig på 040 765 4321.\n\nTack på förhand!\n\nVänliga hälsningar,\nAlex Khan"
     }
   },
   "route": {
     "primarySkill": "speaking",
-    "expectedOutput": "Give six to eight spoken lines explaining a route from a station to your home. Then write a 60–100-word formal complaint that follows the seven plain-English rubric checks.",
+    "expectedOutput": "Give six to eight spoken lines explaining a route from a stop to your home. Then write a 60–100-word formal complaint that covers the seven points.",
     "transferPrompt": "Give the route again, but change the starting point or the transport and keep every step easy to follow.",
     "returnPrompt": "Without looking, give four route instructions and recall the opening and closing of a formal complaint.",
     "successChecks": [
@@ -1414,8 +1720,8 @@
       "Put events or route moves in a clear order with simple links.",
       "Use precise everyday words for landmarks, faults and requested actions.",
       "Use understandable grammar: clear imperatives for the route and full sentences for the email.",
-      "Give concrete details: a route landmark and time, or the work date and damage.",
-      "Complete the task shape: start and arrival for the route; greeting, problem, request and closing for the email.",
+      "Give concrete details: a route landmark and time, or the dates, the damage and your contact details.",
+      "Complete the task shape: start and arrival for the route; greeting, who you are, problem, request, evidence and closing for the email.",
       "Give your view with a reason: why the route is easy or why you want a repair."
     ],
     "requiredSkills": [
