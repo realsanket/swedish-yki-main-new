@@ -847,3 +847,26 @@ Swedish input after round 2: about 685 (L3), 900 (L4), 960 (L5), 1,110 (L6),
 `Förföräldrar` is not a word; Lecture 10 teaches far- och morföräldrar. The
 earlier note that page 29's printed number labels are preserved is no longer
 accurate. Pictures for Lectures 8-10 are added to `docs/image-prompts/episodes.md`.
+
+## Lectures 11-16 review — October 3, 2026
+
+First full review of these lectures, one reviewer per lecture, with the same
+brief as round 2 (correctness first, then improvements from online sources:
+SAOL/svenska.se, Språkrådet, Institutet för de inhemska språken, hel.fi, HSL,
+oph.fi and ykitesti.solki.jyu.fi YKI task pages, MyHelsinki, sfi/Folkuniversitetet
+handouts, Hindi grammar notes).
+
+| Lecture | Correctness fixes | Improvements | For the teacher |
+|---:|---|---|---|
+| 11 | Three typos against the scans; a missing page-33 translation; real note cards; page-29 hunt now practises the ordinals it marks; give-away plural sort; wrong rules on group-5 definite plurals and on ordinals in -te; a suggestion filed under "decline"; odd lines replaced. Keeps the 24 May (Sunday) cinema and Elin's refusal. | Name-to-pronoun swap; Hindi `mujhe` / Marathi `malā` = mig; dig vs er; henne vs hennes; ordinal traps (åttonde/arton, elfte, tolfte, :a/:e) and Finnish short dates; a kind no with `i stället`; YKI party invitation using ni/er. | Source `Det fanns många barn som ville ha dem`; teacher's `skynda dem` (taught as `skynda sig`) |
+| 12 | Dialogue no longer has Elin discussing a film she skipped; weekday and comparison sorts no longer show the answer; tap (not sort) instructions; more accepted answers; the vague mer/mest rule replaced by named groups and the `mer billigare` trap. | -are/mer/irregular sort; fler vs mer; den + -aste; `Det är billigare att … än att …`; weekday clues; home-city vs Helsinki comparison mission; YKI-style café message. | Source `i hans tidigare filmer`; `Vilken buss till Kampen är snabbast?` |
+| 13 | Teacher's discussion questions, `hinner` and `man` in rules added; sorts no longer show English answers and gain a "Not allowed" group; the dialogue becomes one coherent exam-eve scene; all/allt/alla rule narrowed. | `får inte` vs `behöver inte` (not `måste inte`) with a typed check; polite requests (Kan jag få, Skulle du kunna); real Finnish rules (HSL, library, health station, work); `bör` on signs; reading based on YKI test-day rules (oph.fi). | `läsesalen` |
+| 14 | Untaught topics added (tycker om two ways, för … sedan, gå vs åka, glass/glas, här/hit, där/dit); a wrong recall cue; empty notes; incomplete hunts; `på höger sida` vs the taught `högra sida`; give-away sort hints; narrow typed answers; a reading that called Alex "she". | Writing in the YKI email shape with one point per rubric criterion; a new reading (Elin's laundry-room email); formal email rebuilt from the teacher's handout (ni to one person, six parts); Helsinki metro and spårvagn (Sweden: tunnelbana); `Sedan går du` word order. | Source `en bärbar av märket HP …`, `två stationer`; `en fem minuters promenad`; `lägenhet A 12`. Invented names `Alex Khan` and `Elin Berg` appear only in this lecture's formal emails. |
+| 15 | Items copied from homework 15 replaced; sin/hans sort no longer shows the answer; the man match is unambiguous; dialogue logic and Maja's family fixed (she lives with her mum and sister); a reading that copied the writing model; clothes take the definite form. | Swedish-first explanations; Hindi apna bridge and its "sin for jag" trap; `sin` never inside the subject; `känner mig`; på grund av vs eftersom; the teacher's reflexive verbs; egen/eget/egna. | `mitt eget` (written) vs `mitt egna` (spoken); source `känner mig dåligt`, `Våra dejtar` |
+| 16 | Missing teacher topics added (kanske word order, kommer vs kommer att, the o- prefix, going to, sin/hennes, ha roligt, ser ut, tro på); page-45 quotation marks and hunts; give-away sorts replaced by gap sorts; wrong stress tip; dialogue rewritten (Elin grew up in Vasa; Maja's test on Friday). | Four sections: futures by "Can I decide it?", tycker/tror/tänker by an experience test with Hindi/Marathi contrasts, certainty (kanske, säker, osäker), opinions with reasons (YKI); YKI-format speaking and writing tasks. | Source `Jag tänker det skulle bli fint …`; whether to accept `Kanske det kommer att regna` |
+
+Swedish input: about 1,150 (L11), 1,050 (L12), 1,210 (L13), 1,450 (L14),
+1,860 (L15, broader count) and 1,480 (L16) words. Story facts now relied on
+later: Alex's birthday is 28 May with a party on Saturday 30 May (Lecture 11's
+writing model); Elin grew up in Vasa (Lecture 16). Pictures for Lectures 11-16
+are in `docs/image-prompts/episodes.md`.

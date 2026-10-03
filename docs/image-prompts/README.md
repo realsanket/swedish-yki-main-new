@@ -7,7 +7,7 @@ them.
 | File | What it is | Where it shows |
 |---|---|---|
 | [`chapters.md`](chapters.md) | One picture per chapter, Chapters 2-6 | Home screen "next scene" card and the chapter cards on the Story path |
-| [`episodes.md`](episodes.md) | One picture per lecture, Lectures 3-10 | Story notebook cards |
+| [`episodes.md`](episodes.md) | One picture per lecture, Lectures 3-16 | Story notebook cards |
 
 ## How to make one
 
