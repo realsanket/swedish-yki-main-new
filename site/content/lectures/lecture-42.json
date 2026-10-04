@@ -1,0 +1,2382 @@
+{
+  "number": 42,
+  "routeProfile": "standard",
+  "objectives": [
+    "Handle a cancelled train at the information desk: ask why, explain your meeting, complain politely, ask for compensation and the customer-service address.",
+    "Use the s-passive of service talk: har ställts in, bokades, kan bytas, and the participle inställd.",
+    "Answer a survey call and change theatre tickets on the phone, disagreeing politely with a reason and a request.",
+    "React in 25 seconds in free-time situations: råkade, medlemskort, Ursäkta, jag tror att …, Har du tänkt på att …?",
+    "Write an application or a course registration in three parts: introduction, experience and reasons with a question, a formal close."
+  ],
+  "focusSkills": [
+    "speaking",
+    "writing"
+  ],
+  "grammarTerms": [
+    "noun",
+    "verb",
+    "adjective",
+    "adverb",
+    "agreement",
+    "verb-second",
+    "word-order",
+    "past-tense",
+    "present-perfect",
+    "s-verb",
+    "participle",
+    "particle-verb",
+    "conditional",
+    "subordinate-clause",
+    "indirect-question",
+    "preposition",
+    "formal-informal",
+    "compound-word",
+    "consonant",
+    "front-vowel"
+  ],
+  "presentation": {
+    "template": "conversation-first",
+    "opening": {
+      "teacherNote": {
+        "title": "Listen for a cancelled train and two applications",
+        "body": "Monday evening, 27 July. Maja comes to help Alex pack before his move on Saturday. Alex tells her why he never got to Vasa this morning, and Maja shows him the first lines of her job application. Listen for what happened to the train and what Alex tells Maja to add."
+      },
+      "questionIntro": "Answer from the conversation: Alex's train, and Maja's application.",
+      "dialogue": {
+        "part": "recall",
+        "eyebrow": "START WITH THE STORY",
+        "title": "Flyttlådor och ansökningar",
+        "instructions": "Predict first: what can go wrong on a train trip? Then listen once without the text.",
+        "initiallyOpen": false
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 42",
+        "27 JULY 2026"
+      ],
+      "kicker": "A CANCELLED TRAIN AND AN APPLICATION",
+      "title": "Inställt tåg och en ansökan",
+      "lede": "Alex's train to Vasa is cancelled, so he learns to complain at the desk and ask for his money back. That evening he and Maja write their first applications: a course for him, a weekend job for her.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Ursäkta, varför har tåget ställts in?",
+        "en": "Excuse me, why has the train been cancelled?",
+        "audioText": "Ursäkta, varför har tåget till Vasa ställts in?"
+      },
+      "speakers": [
+        {
+          "name": "Alex",
+          "fi": "Mitt tåg syntes inte på skärmen. Det hade ställts in."
+        },
+        {
+          "name": "Maja",
+          "fi": "En bokhandel söker helgpersonal, och jag vill söka jobbet."
+        }
+      ],
+      "connector": "OCH",
+      "encounterLabel": "Maja helps Alex pack and hears about his day",
+      "chunks": [
+        {
+          "label": "THE PROBLEM",
+          "fi": "Tåget har ställts in.",
+          "en": "The train has been cancelled."
+        },
+        {
+          "label": "YOUR SITUATION",
+          "fi": "Jag har ett viktigt möte och kan inte vänta.",
+          "en": "I have an important meeting and cannot wait."
+        },
+        {
+          "label": "APPLY",
+          "fi": "Jag skriver angående er kurs i svenska.",
+          "en": "I am writing regarding your Swedish course."
+        },
+        {
+          "label": "CLOSE",
+          "fi": "Jag ser fram emot ert svar.",
+          "en": "I look forward to your reply."
+        }
+      ],
+      "footerTags": [
+        "Complain about a cancelled train",
+        "Write an application"
+      ]
+    },
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen for what happened to Alex's train and what Maja's application needs."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Talk about a cancelled train, use the s-passive, handle two phone calls, react in free-time situations, and build an application."
+      }
+    },
+    "teaching": {
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the Lesson 42 word bank"
+      }
+    }
+  },
+  "sittingBreakAfter": "guided",
+  "unplannedQuestions": [
+    {
+      "id": "sv-42-u-travel",
+      "fi": "Hur brukar du resa när du åker till en annan stad?",
+      "en": "How do you usually travel when you go to another town?",
+      "sample": "Oftast med tåg. Det är bekvämt, och jag kan jobba under resan."
+    },
+    {
+      "id": "sv-42-u-missed",
+      "fi": "Har du någon gång missat ett tåg, en buss eller ett flyg?",
+      "en": "Have you ever missed a train, a bus or a flight?",
+      "sample": "Ja, en gång missade jag bussen till flygplatsen. Jag fick ta en dyr taxi."
+    },
+    {
+      "id": "sv-42-u-complain",
+      "fi": "Har du någon gång klagat skriftligt? Vad gällde det?",
+      "en": "Have you ever complained in writing? What was it about?",
+      "sample": "Ja, i somras. En soffa kom utan skruvar, så jag skrev en reklamation till butiken."
+    },
+    {
+      "id": "sv-42-u-course",
+      "fi": "Vilken kurs skulle du vilja gå i höst?",
+      "en": "Which course would you like to take this autumn?",
+      "sample": "En kurs i svenska, förstås. Kanske också en kurs i matlagning."
+    },
+    {
+      "id": "sv-42-u-dreamjob",
+      "fi": "Vad är ditt drömjobb, och varför?",
+      "en": "What is your dream job, and why?",
+      "sample": "Jag skulle vilja jobba med spel. Det är kreativt, och jag älskar att lösa problem."
+    },
+    {
+      "id": "sv-42-u-unknown",
+      "fi": "Svarar du när ett okänt nummer ringer?",
+      "en": "Do you answer when an unknown number calls?",
+      "sample": "Nej, sällan. Om det är viktigt, lämnar de nog ett meddelande."
+    }
+  ],
+  "reviewPhrases": [
+    {
+      "id": "sv-42-cancelled",
+      "en": "The train has been cancelled.",
+      "fi": "Tåget har ställts in."
+    },
+    {
+      "id": "sv-42-valid",
+      "en": "Is my ticket valid on the next train?",
+      "fi": "Är min biljett giltig på nästa tåg?"
+    },
+    {
+      "id": "sv-42-meeting",
+      "en": "I have an important meeting and cannot wait.",
+      "fi": "Jag har ett viktigt möte och kan inte vänta."
+    },
+    {
+      "id": "sv-42-compensation",
+      "en": "I would like compensation for the ticket.",
+      "fi": "Jag skulle vilja ha ersättning för biljetten."
+    },
+    {
+      "id": "sv-42-my-name",
+      "en": "The tickets were booked in my name.",
+      "fi": "Biljetterna bokades i mitt namn."
+    },
+    {
+      "id": "sv-42-accident",
+      "en": "I accidentally spilled coffee on the book.",
+      "fi": "Jag råkade spilla kaffe på boken."
+    },
+    {
+      "id": "sv-42-regarding",
+      "en": "I am writing regarding the position as a shop assistant.",
+      "fi": "Jag skriver angående tjänsten som butiksbiträde."
+    },
+    {
+      "id": "sv-42-look-forward",
+      "en": "I look forward to your reply.",
+      "fi": "Jag ser fram emot ert svar."
+    }
+  ],
+  "missionPlan": {
+    "title": "Plan your side of the call: a cancelled train",
+    "intro": "You are at the information desk. Make eight short lines: ask about your train, react, explain your meeting, complain, ask for compensation, ask how to contact customer service, and thank.",
+    "lines": [
+      {
+        "label": "Ask for help",
+        "before": "Hej! Jag ska ta tåget till",
+        "after": ".",
+        "placeholder": "Vasa klockan fem över sju, men jag hittar det inte på skärmen"
+      },
+      {
+        "label": "Ask which track",
+        "before": "Från vilket spår",
+        "after": "?",
+        "placeholder": "går det"
+      },
+      {
+        "label": "React and ask why",
+        "before": "",
+        "placeholder": "Va, har det ställts in? Vad är det som har hänt?"
+      },
+      {
+        "label": "Your meeting",
+        "before": "Jag har",
+        "after": ".",
+        "placeholder": "ett möte med en kund klockan tolv"
+      },
+      {
+        "label": "Complain",
+        "before": "",
+        "placeholder": "Med nästa tåg kommer jag för sent, och jag kan inte vänta i tre timmar."
+      },
+      {
+        "label": "Ask for compensation",
+        "before": "Jag skulle vilja ha",
+        "after": ".",
+        "placeholder": "pengarna för biljetten tillbaka"
+      },
+      {
+        "label": "Customer service",
+        "before": "Kan jag få",
+        "after": "?",
+        "placeholder": "kundtjänstens e-postadress"
+      },
+      {
+        "label": "Thank and end",
+        "before": "",
+        "placeholder": "Tack för hjälpen! Ha en bra dag."
+      }
+    ]
+  },
+  "recall": [
+    {
+      "id": "sv-42-r1",
+      "prompt": "What happened to Alex's train, and what did he do?",
+      "answers": [
+        "It was cancelled, so he held his meeting by video from a station café"
+      ],
+      "options": [
+        "It was cancelled, so he held his meeting by video from a station café",
+        "It was three hours late, so he took a bus to Vasa",
+        "He missed it, so he took the next train and was late"
+      ],
+      "hint": "Listen for ställts in and på video.",
+      "explanation": "I informationen sa de att det hade ställts in (a brake fault). The next train was three hours later, so Alex satte sig på ett kafé på stationen och höll mötet på video."
+    },
+    {
+      "id": "sv-42-r2",
+      "prompt": "What does Alex tell Maja to add to her application?",
+      "answers": [
+        "Her experience from the café, and why she fits the job"
+      ],
+      "options": [
+        "Her experience from the café, and why she fits the job",
+        "A photo and her school grades",
+        "Only her phone number, because short is best"
+      ],
+      "hint": "Listen for erfarenheter and passar.",
+      "explanation": "Berätta om dina erfarenheter: Maja has worked at a café for almost a month. Then skriv varför du passar för jobbet: she reads a lot. That is the main paragraph of the teacher's structure."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Tåget har ställts in · problems on a journey",
+      "kind": "scene",
+      "body": [
+        "På stationen: Tåget avgår (departs) från spår 7 och ankommer (arrives) till Vasa klockan elva. Skärmen eller tavlan visar avgångarna.",
+        "Problem: Tåget är försenat (late). Tåget har ställts in, or Tåget är inställt (cancelled). Orsaken är ett bromsfel, ett signalfel eller ett tekniskt fel.",
+        "Lösningar: Nästa tåg går 10.05. Biljetten är giltig på nästa tåg, or Biljetten gäller på nästa tåg. Det går en ersättningsbuss (replacement bus).",
+        "Dina rättigheter i EU (your rights): om du inte reser alls får du hela biljettpriset tillbaka. Om du kommer fram 1–2 timmar för sent får du 25 procent av priset, efter mer än 2 timmar 50 procent.",
+        "Klaga skriftligt: ett skriftligt klagomål till kundtjänsten, via ett formulär på nätet eller per e-post. Spara biljetten och kvittona.",
+        "Var, vart eller varifrån? (Lecture 14.) Var ligger stationen? Vart ska du? Varifrån går tåget? In a station, the most natural question is: Från vilket spår går tåget?"
+      ],
+      "examples": [
+        {
+          "fi": "Tåget till Vasa har ställts in på grund av ett bromsfel.",
+          "en": "The train to Vaasa has been cancelled because of a brake fault.",
+          "note": "på grund av = because of (+ a noun)"
+        },
+        {
+          "fi": "Från vilket spår går tåget till Åbo?",
+          "en": "Which track does the train to Turku leave from?",
+          "note": "Preposition first: från vilket spår"
+        },
+        {
+          "fi": "Min biljett gäller också på nästa tåg.",
+          "en": "My ticket is also valid on the next train.",
+          "note": "gäller = är giltig"
+        },
+        {
+          "fi": "Det här är verkligen inte bra. Jag har ett viktigt möte.",
+          "en": "This is really not good. I have an important meeting.",
+          "note": "Complain about the situation, not the person."
+        },
+        {
+          "fi": "Jag vill ha ersättning för bussbiljetten.",
+          "en": "I want compensation for the bus ticket.",
+          "note": "ersättning för något"
+        },
+        {
+          "fi": "Kan jag få kundtjänstens e-postadress?",
+          "en": "Can I have customer service's e-mail address?",
+          "note": "kundtjänstens: the owner gets -s"
+        }
+      ],
+      "table": {
+        "headings": [
+          "Problem",
+          "Vad du kan säga"
+        ],
+        "rows": [
+          [
+            "Tåget syns inte på skärmen.",
+            "Ursäkta, från vilket spår går tåget till …?"
+          ],
+          [
+            "Tåget har ställts in.",
+            "Varför har det ställts in? När går nästa tåg?"
+          ],
+          [
+            "Du kommer för sent.",
+            "Jag har ett möte klockan … och kan inte vänta."
+          ],
+          [
+            "Du har betalat för biljetten.",
+            "Kan jag få pengarna tillbaka? Jag vill ha ersättning."
+          ],
+          [
+            "Du vill klaga skriftligt.",
+            "Kan jag få kundtjänstens e-postadress?"
+          ]
+        ]
+      },
+      "memoryTip": "Problem, your situation, your request: Tåget har ställts in – jag har ett möte – jag vill ha ersättning.",
+      "tryIt": "Say three sentences to a clerk: your train, why you cannot wait, and what you want.",
+      "activity": {
+        "type": "question-gap",
+        "label": "Ask Alex",
+        "title": "Maja asks Alex about his train",
+        "instructions": "You are Maja. Choose the question that is correct Swedish; Alex answers aloud.",
+        "card": {
+          "title": "Det inställda tåget",
+          "subtitle": "Måndag 27 juli · Helsingfors–Vasa"
+        },
+        "answerer": "Alex",
+        "gaps": [
+          {
+            "about": "when the train was leaving",
+            "field": "Departure",
+            "options": [
+              "När skulle tåget gå?",
+              "När tåget skulle gå?",
+              "När skulle gå tåget?"
+            ],
+            "answer": "När skulle tåget gå?",
+            "reply": {
+              "fi": "Fem över sju i morse.",
+              "en": "At five past seven this morning."
+            },
+            "why": "A direct question: question word, then the verb (skulle), then the subject. När tåget skulle gå is the word order of an indirect question."
+          },
+          {
+            "about": "why it was cancelled",
+            "field": "Reason",
+            "options": [
+              "Varför ställdes det in?",
+              "Varför ställde det in?",
+              "Varför det ställdes in?"
+            ],
+            "answer": "Varför ställdes det in?",
+            "reply": {
+              "fi": "På grund av ett bromsfel.",
+              "en": "Because of a brake fault."
+            },
+            "why": "The train did not cancel itself: someone cancelled it, so use the s-form ställdes. Det replaces tåget (an ett-word)."
+          },
+          {
+            "about": "the next train",
+            "field": "Next train",
+            "options": [
+              "När gick nästa tåg?",
+              "När gick det nästa tåget?",
+              "När nästa tåg gick?"
+            ],
+            "answer": "När gick nästa tåg?",
+            "reply": {
+              "fi": "Först tre timmar senare.",
+              "en": "Not until three hours later."
+            },
+            "why": "Nästa takes no definite ending and no article: nästa tåg, nästa vecka."
+          },
+          {
+            "about": "what he did instead",
+            "field": "Instead",
+            "options": [
+              "Vad gjorde du i stället?",
+              "Vad gjorde du i stället för?",
+              "Vad du gjorde i stället?"
+            ],
+            "answer": "Vad gjorde du i stället?",
+            "reply": {
+              "fi": "Jag höll mötet på video från ett kafé.",
+              "en": "I held the meeting by video from a café."
+            },
+            "why": "I stället = instead. I stället för needs something after it: i stället för tåget."
+          },
+          {
+            "about": "the money",
+            "field": "Money back",
+            "options": [
+              "Får du pengarna tillbaka?",
+              "Får pengarna du tillbaka?",
+              "Du får tillbaka pengar?"
+            ],
+            "answer": "Får du pengarna tillbaka?",
+            "reply": {
+              "fi": "Ja, hela biljettpriset, eftersom jag inte reste alls.",
+              "en": "Yes, the whole ticket price, because I didn't travel at all."
+            },
+            "why": "A yes/no question starts with the verb, then the subject: Får du …?"
+          }
+        ],
+        "summary": "Questions about a past problem: question word + verb + subject, the s-form for something someone else did (ställdes in), and nästa without an ending."
+      }
+    },
+    {
+      "title": "Ställts in, bokades, kan bytas · the s-passive in service talk",
+      "kind": "rule",
+      "body": [
+        "When the doer is not important, Swedish adds -s to the verb. Tåget ställs in = the train is cancelled (someone cancels it; we don't say who). This is the s-form you met in Lecture 27 (levereras).",
+        "The forms: ställs in (now), ställdes in (past), har ställts in (has been), kan ställas in (after kan, måste, ska). In the same way: bokas – bokades – har bokats; bytas – byttes – har bytts.",
+        "Particle verbs keep the particle after the s-form: ställas in, fyllas i, lämnas tillbaka. Formuläret måste fyllas i senast fredag.",
+        "Or use a participle after är (Lecture 32: bifogad – bifogat – bifogade): Tåget är inställt. Biljetterna är bokade. Föreställningen är slutsåld.",
+        "Teacher's fix: Biljetterna bokades i mitt namn, not för mitt namn. Swedish uses i: i mitt namn, i Alex namn.",
+        "Two typical slips: Tåget har inställt (no -s, so the train did the cancelling) and Tåget är ställts in (two verb forms mixed). Say Tåget har ställts in, or Tåget är inställt."
+      ],
+      "examples": [
+        {
+          "fi": "Tåget har ställts in.",
+          "en": "The train has been cancelled.",
+          "note": "har + ställts (s-form)"
+        },
+        {
+          "fi": "Tåget är inställt.",
+          "en": "The train is cancelled.",
+          "note": "är + participle"
+        },
+        {
+          "fi": "Biljetterna bokades i mitt namn.",
+          "en": "The tickets were booked in my name.",
+          "note": "past s-form; i mitt namn"
+        },
+        {
+          "fi": "Kan biljetterna bytas till en annan dag?",
+          "en": "Can the tickets be changed to another day?",
+          "note": "kan + bytas"
+        },
+        {
+          "fi": "Formuläret måste fyllas i inom tre månader.",
+          "en": "The form must be filled in within three months.",
+          "note": "particle after the s-form"
+        },
+        {
+          "fi": "Ansökan ska skickas senast den 7 augusti.",
+          "en": "The application must be sent by 7 August.",
+          "note": "ska + skickas"
+        }
+      ],
+      "table": {
+        "headings": [
+          "Active (who does it)",
+          "s-form (it is done)",
+          "Participle"
+        ],
+        "rows": [
+          [
+            "Tågbolaget ställer in tåget.",
+            "Tåget ställs in.",
+            "Tåget är inställt."
+          ],
+          [
+            "Jag bokade biljetterna.",
+            "Biljetterna bokades.",
+            "Biljetterna är bokade."
+          ],
+          [
+            "Vi byter biljetterna.",
+            "Biljetterna kan bytas.",
+            "Biljetterna är bytta."
+          ],
+          [
+            "Du skickar ansökan.",
+            "Ansökan skickas.",
+            "Ansökan är skickad."
+          ]
+        ]
+      },
+      "memoryTip": "Har ställts in, or är inställt: never har inställt, never är ställts in.",
+      "tryIt": "Say what has happened, without saying who did it: the concert, the bus, your tickets.",
+      "activity": {
+        "type": "sort",
+        "label": "Ready or fix?",
+        "title": "Check the service sentences",
+        "instructions": "These lines come from learners' answers. Is each one ready, or does it need a fix? Say the correct version before you go on.",
+        "audio": false,
+        "buckets": [
+          {
+            "id": "ok",
+            "label": "Ready",
+            "hint": "Correct Swedish"
+          },
+          {
+            "id": "fix",
+            "label": "Needs a fix",
+            "hint": "Verb form, word or ending"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Tåget har inställt på grund av ett bromsfel.",
+            "en": "The train has been cancelled because of a brake fault.",
+            "bucket": "fix",
+            "why": "The train did not cancel anything: Tåget har ställts in, or Tåget är inställt."
+          },
+          {
+            "fi": "Konserten har ställts in på grund av regnet.",
+            "en": "The concert has been cancelled because of the rain.",
+            "bucket": "ok",
+            "why": "Har + the s-form ställts, particle in after it."
+          },
+          {
+            "fi": "Biljetterna bokades för mitt namn.",
+            "en": "The tickets were booked in my name.",
+            "bucket": "fix",
+            "why": "The teacher's fix: i mitt namn."
+          },
+          {
+            "fi": "Föreställningen på lördag är slutsåld.",
+            "en": "The show on Saturday is sold out.",
+            "bucket": "ok",
+            "why": "Är + participle; slutsåld agrees with föreställningen (an en-word)."
+          },
+          {
+            "fi": "Min biljett är giltigt på nästa tåg.",
+            "en": "My ticket is valid on the next train.",
+            "bucket": "fix",
+            "why": "Biljett is an en-word: Min biljett är giltig. Giltigt goes with ett-words: kortet är giltigt."
+          },
+          {
+            "fi": "Kursen kan sökas fram till den 7 augusti.",
+            "en": "You can apply for the course until 7 August.",
+            "bucket": "ok",
+            "why": "Kan + the s-form sökas."
+          },
+          {
+            "fi": "Tåget är ställts in.",
+            "en": "The train has been cancelled.",
+            "bucket": "fix",
+            "why": "Two forms are mixed. Choose one: Tåget har ställts in, or Tåget är inställt."
+          },
+          {
+            "fi": "Klagomålet måste skickas skriftligt.",
+            "en": "The complaint must be sent in writing.",
+            "bucket": "ok",
+            "why": "Måste + skickas: the s-form after a help verb."
+          }
+        ],
+        "summary": "Har ställts in or är inställt. I mitt namn. The participle agrees: giltig biljett, giltigt kort."
+      }
+    },
+    {
+      "title": "Två samtal i telefon · a survey and a ticket change",
+      "kind": "scene",
+      "body": [
+        "En undersökning: Vi gör (or genomför, carry out) en undersökning om … Har du tid att svara på några frågor? Besvara frågorna means the same, but besvara takes no på.",
+        "Be careful first if you like: Får jag fråga hur ni har fått mitt nummer? Svaren är anonyma. Numret valdes slumpmässigt (at random).",
+        "Hur ofta? varje dag, en gång i veckan, två gånger i månaden, sällan, aldrig. Jämför: Jag rör på mig mer nu än för fem år sedan.",
+        "Avsluta artigt när du måste gå: Förlåt, nu kommer min buss. Jag måste lägga på (hang up). Lycka till med undersökningen!",
+        "Byta biljetter: en föreställning (a show), biljettkassan (the box office), rad 3, plats 10, lediga platser, slutsåld, mellanskillnaden (the price difference). Swedish says på rad 16, not i rad 16.",
+        "Säg nej artigt, med ett skäl och en begäran: Det tycker jag inte är rimligt. Platserna var dyrare. Kan ni betala tillbaka mellanskillnaden? Then accept a fair offer: Det är en bra lösning."
+      ],
+      "examples": [
+        {
+          "fi": "Har du tid att svara på några korta frågor?",
+          "en": "Do you have time to answer a few short questions?",
+          "note": "svara på frågor = besvara frågor"
+        },
+        {
+          "fi": "Får jag fråga hur ni har fått mitt nummer?",
+          "en": "May I ask how you got my number?",
+          "note": "Inside the sentence: hur ni har fått"
+        },
+        {
+          "fi": "Jag spelar badminton en gång i veckan.",
+          "en": "I play badminton once a week.",
+          "note": "i veckan = per week"
+        },
+        {
+          "fi": "Förlåt, nu kommer min spårvagn, så jag måste lägga på.",
+          "en": "Sorry, my tram is coming now, so I have to hang up.",
+          "note": "a reason before you go"
+        },
+        {
+          "fi": "Det finns bara lediga platser på rad 16.",
+          "en": "There are only free seats in row 16.",
+          "note": "på rad 16"
+        },
+        {
+          "fi": "Det tycker jag inte är rimligt.",
+          "en": "I don't think that is reasonable.",
+          "note": "Det first, then the verb: Det tycker jag …"
+        }
+      ],
+      "memoryTip": "A polite no = a reason + a request: Det tycker jag inte är rimligt, eftersom … Kan ni …?",
+      "tryIt": "The box office offers you seats at the back. Say no politely and make one request.",
+      "activity": {
+        "type": "match",
+        "label": "Answer the caller",
+        "title": "Survey or box office: what do you answer?",
+        "instructions": "Match each line from the caller to the best answer, then say the answer aloud.",
+        "leftLabel": "The caller says",
+        "rightLabel": "You answer",
+        "pairs": [
+          {
+            "left": "Har du tid att svara på några frågor?",
+            "right": "Ja, men jag har bara fem minuter."
+          },
+          {
+            "left": "Hur ofta håller du på med din hobby?",
+            "right": "Två gånger i veckan, oftast på kvällen."
+          },
+          {
+            "left": "I vilket namn är biljetterna bokade?",
+            "right": "I mitt namn, Ravi Kumar."
+          },
+          {
+            "left": "Vill du ha föreställningen på dagen eller på kvällen?",
+            "right": "Den på kvällen, eftersom jag jobbar på dagen."
+          },
+          {
+            "left": "Vi kan tyvärr inte betala tillbaka pengarna.",
+            "right": "Det tycker jag inte är rimligt. Platserna var mycket dyrare."
+          }
+        ],
+        "pattern": "Answer the question that was asked, and add one detail: a time, a name, a reason.",
+        "sentence": "{left} – {right}"
+      }
+    },
+    {
+      "title": "Reagera på fritiden · library, gym, train and shop",
+      "kind": "rule",
+      "body": [
+        "Råkade + basic form = did by accident: Jag råkade spilla kaffe på boken. (råka – råkade – har råkat; no att after it.)",
+        "Tell what happened in the past tense, and the problem now in the present: I går glömde jag mina hörlurar på gymmet. Nu hittar jag dem inte.",
+        "På gymmet: Mitt medlemskort fungerade inte i dörren. Kan ni kontrollera mitt medlemskap? (Teacher's fix: medlemskort, not simkort, which is the card in a phone.)",
+        "Påpeka artigt (point out politely): Ursäkta, jag tror att du sitter på min plats. Förlåt, men jag stod faktiskt före dig i kön.",
+        "Föreslå (suggest): Har du tänkt på att börja simma? Du borde prova padel. Jag kan följa med första gången. (Borde + basic form: Lecture 13.)",
+        "Lämna tillbaka: Jag köpte de här kängorna för en vecka sedan. Sulan lossnade redan första dagen. Här är kvittot. Jag skulle vilja ha ett nytt par eller pengarna tillbaka."
+      ],
+      "examples": [
+        {
+          "fi": "Jag råkade spilla te på boken.",
+          "en": "I accidentally spilled tea on the book.",
+          "note": "råkade + spilla, no att"
+        },
+        {
+          "fi": "Jag glömde min vattenflaska i omklädningsrummet i går.",
+          "en": "I left my water bottle in the changing room yesterday.",
+          "note": "glömma = forget, also leave behind"
+        },
+        {
+          "fi": "Mitt medlemskort fungerade inte i dörren i morse.",
+          "en": "My membership card didn't work in the door this morning.",
+          "note": "i morse = this morning (already past)"
+        },
+        {
+          "fi": "Ursäkta, jag tror att du sitter på min plats.",
+          "en": "Excuse me, I think you are sitting in my seat.",
+          "note": "jag tror att … softens it"
+        },
+        {
+          "fi": "Har du tänkt på att börja simma?",
+          "en": "Have you thought about starting to swim?",
+          "note": "a soft suggestion"
+        },
+        {
+          "fi": "Skulle ni kunna beställa en taxi åt mig till klockan sex?",
+          "en": "Could you order a taxi for me for six o'clock?",
+          "note": "Lecture 24: skulle kunna"
+        }
+      ],
+      "memoryTip": "Ursäkta + the fact + your request + one detail. Råkade for an accident.",
+      "tryIt": "You left your phone charger at the gym yesterday. Call and say what it looks like.",
+      "activity": {
+        "type": "sort",
+        "label": "What does it do?",
+        "title": "Four jobs in a Reagera answer",
+        "instructions": "Read each line. Is it explaining an accident, pointing something out, suggesting, or asking for a service?",
+        "buckets": [
+          {
+            "id": "explain",
+            "label": "Explain what happened",
+            "hint": "an accident or a mistake"
+          },
+          {
+            "id": "point",
+            "label": "Point something out",
+            "hint": "politely, to a stranger"
+          },
+          {
+            "id": "suggest",
+            "label": "Suggest",
+            "hint": "an idea for a friend"
+          },
+          {
+            "id": "ask",
+            "label": "Ask for a service",
+            "hint": "staff, reception, a shop"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Jag råkade tappa boken i badkaret.",
+            "en": "I accidentally dropped the book in the bath.",
+            "bucket": "explain",
+            "why": "Råkade tells about an accident."
+          },
+          {
+            "fi": "I går glömde jag mina hörlurar på yogapasset.",
+            "en": "Yesterday I left my earphones at the yoga class.",
+            "bucket": "explain",
+            "why": "What happened, in the past tense."
+          },
+          {
+            "fi": "Ursäkta, jag tror att du sitter på min plats.",
+            "en": "Excuse me, I think you are sitting in my seat.",
+            "bucket": "point",
+            "why": "A polite correction to a stranger."
+          },
+          {
+            "fi": "Förlåt, men jag stod faktiskt före dig i kön.",
+            "en": "Sorry, but actually I was before you in the queue.",
+            "bucket": "point",
+            "why": "Faktiskt makes it clear but polite."
+          },
+          {
+            "fi": "Har du tänkt på att börja med padel?",
+            "en": "Have you thought about taking up padel?",
+            "bucket": "suggest",
+            "why": "An idea for a friend, as a question."
+          },
+          {
+            "fi": "Du borde prova simning, det är skonsamt för ryggen.",
+            "en": "You should try swimming, it is gentle on the back.",
+            "bucket": "suggest",
+            "why": "Borde + a reason."
+          },
+          {
+            "fi": "Skulle ni kunna beställa en taxi åt mig till klockan sex?",
+            "en": "Could you order a taxi for me for six o'clock?",
+            "bucket": "ask",
+            "why": "A request to reception."
+          },
+          {
+            "fi": "Kan ni kontrollera om mitt medlemskort är aktivt?",
+            "en": "Can you check whether my membership card is active?",
+            "bucket": "ask",
+            "why": "A request to the gym staff."
+          }
+        ],
+        "summary": "Know the job first: explain, point out, suggest or ask. Then choose the phrase."
+      }
+    },
+    {
+      "title": "Ansökan och anmälan · applying for a job or a course",
+      "kind": "register",
+      "body": [
+        "En ansökan (an application): they choose, for example a job or a course with few places. Söka ett jobb, ansöka om en plats. En anmälan (a registration): you sign up. Anmäla sig till en kurs.",
+        "Struktur (the teacher's structure, Classroom item 35). 1 Inledning: hälsa, presentera dig, säg varför du skriver och hänvisa (refer) till annonsen eller informationen.",
+        "2 Huvudparagraf: berätta om din erfarenhet, din kompetens eller ditt mål, och förklara varför just du passar. Ställ gärna en fråga om kursen eller villkoren (conditions).",
+        "3 Avslutning: tacka, säg att du hoppas på ett svar, och avsluta formellt: Med vänliga hälsningar + förnamn och efternamn.",
+        "Fraser: Jag skriver angående tjänsten som … / er kurs i … · Jag såg er annons på … · Jag har erfarenhet av … · Jag är övertygad om att … · Jag kan bidra med … · Mitt mål är att … · Jag vill utveckla min svenska.",
+        "Frågor inne i en mening (Lecture 32): Jag undrar när kursen börjar, not när börjar kursen. Use ni to an office, add a number or a fact, and no Kram. In Finland a formal e-mail can start with Hej!"
+      ],
+      "examples": [
+        {
+          "fi": "Jag skriver angående tjänsten som butiksbiträde i er bokhandel.",
+          "en": "I am writing regarding the position as a shop assistant in your bookshop.",
+          "note": "angående = regarding"
+        },
+        {
+          "fi": "Jag såg er annons på stadens webbplats.",
+          "en": "I saw your ad on the city's website.",
+          "note": "refer to the ad"
+        },
+        {
+          "fi": "Jag har jobbat på ett kafé i fyra veckor och är van vid att ta hand om kunder.",
+          "en": "I have worked at a café for four weeks and I am used to looking after customers.",
+          "note": "experience with a number"
+        },
+        {
+          "fi": "Jag är övertygad om att jag kan bidra med nya idéer i butiken.",
+          "en": "I am convinced that I can contribute new ideas in the shop.",
+          "note": "övertygad om att + clause"
+        },
+        {
+          "fi": "Jag undrar när kursen börjar och hur många deltagare det finns.",
+          "en": "I wonder when the course starts and how many participants there are.",
+          "note": "subject before verb inside the sentence"
+        },
+        {
+          "fi": "Tack för att ni läser min ansökan. Jag ser fram emot ert svar.",
+          "en": "Thank you for reading my application. I look forward to your reply.",
+          "note": "a formal close"
+        }
+      ],
+      "table": {
+        "headings": [
+          "Del",
+          "Vad du skriver",
+          "Exempel"
+        ],
+        "rows": [
+          [
+            "1 Inledning",
+            "Who you are, why you write, the ad",
+            "Jag heter … och skriver angående …"
+          ],
+          [
+            "2 Huvudparagraf",
+            "Experience, skills or goal; why you fit; a question",
+            "Jag har erfarenhet av … Jag undrar om …"
+          ],
+          [
+            "3 Avslutning",
+            "Thanks, looking forward, a formal close",
+            "Jag ser fram emot ert svar. Med vänliga hälsningar"
+          ]
+        ]
+      },
+      "memoryTip": "Who and why · what you bring · thanks and full name.",
+      "tryIt": "Say the first two sentences of an application for a job you would like.",
+      "activities": [
+        {
+          "type": "sort",
+          "label": "Which part?",
+          "title": "Build Maja's application",
+          "instructions": "Each line comes from an application. Put it in the part where it belongs.",
+          "buckets": [
+            {
+              "id": "inledning",
+              "label": "Inledning",
+              "hint": "who, why, the ad"
+            },
+            {
+              "id": "huvud",
+              "label": "Huvudparagraf",
+              "hint": "experience, reasons, questions"
+            },
+            {
+              "id": "avslutning",
+              "label": "Avslutning",
+              "hint": "thanks and a formal close"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Jag heter Maja och skriver angående helgjobbet i er bokhandel.",
+              "en": "My name is Maja and I am writing regarding the weekend job in your bookshop.",
+              "bucket": "inledning",
+              "why": "Who she is and why she writes."
+            },
+            {
+              "fi": "Jag såg er annons på anslagstavlan i skolan.",
+              "en": "I saw your ad on the notice board at school.",
+              "bucket": "inledning",
+              "why": "It refers to the ad."
+            },
+            {
+              "fi": "I juli jobbade jag på ett kafé, så jag är van vid att ta hand om kunder.",
+              "en": "In July I worked at a café, so I am used to looking after customers.",
+              "bucket": "huvud",
+              "why": "Experience, with a time."
+            },
+            {
+              "fi": "Jag läser mycket och kan ge tips om böcker för unga.",
+              "en": "I read a lot and can give tips about books for young people.",
+              "bucket": "huvud",
+              "why": "Why she fits the job."
+            },
+            {
+              "fi": "Jag undrar hur många timmar man jobbar per helg.",
+              "en": "I wonder how many hours you work per weekend.",
+              "bucket": "huvud",
+              "why": "A question about the conditions."
+            },
+            {
+              "fi": "Tack för att ni läser min ansökan.",
+              "en": "Thank you for reading my application.",
+              "bucket": "avslutning",
+              "why": "Thanks at the end."
+            },
+            {
+              "fi": "Jag hoppas få höra från er snart.",
+              "en": "I hope to hear from you soon.",
+              "bucket": "avslutning",
+              "why": "Looking forward to a reply."
+            },
+            {
+              "fi": "Med vänliga hälsningar",
+              "en": "Kind regards",
+              "bucket": "avslutning",
+              "why": "The formal close, then the full name."
+            }
+          ],
+          "summary": "Who and why, then what you bring and a question, then thanks and your full name."
+        },
+        {
+          "type": "match",
+          "label": "Make it formal",
+          "title": "From chat to application",
+          "instructions": "Each line on the left is too casual for an application. Match it to the formal version.",
+          "leftLabel": "Too casual",
+          "rightLabel": "Formal",
+          "pairs": [
+            {
+              "left": "Jag vill ha jobbet.",
+              "right": "Jag skriver angående tjänsten som butiksbiträde."
+            },
+            {
+              "left": "Jag är bra på kunder.",
+              "right": "Jag har erfarenhet av kundservice."
+            },
+            {
+              "left": "Hur mycket kostar det?",
+              "right": "Jag undrar också vad kursen kostar."
+            },
+            {
+              "left": "Svara snabbt!",
+              "right": "Jag ser fram emot ert svar."
+            },
+            {
+              "left": "Kram, Maja",
+              "right": "Med vänliga hälsningar, förnamn och efternamn"
+            }
+          ],
+          "pattern": "A formal text uses full facts, polite questions inside a sentence, and a neutral close with your full name.",
+          "sentence": "{right}"
+        }
+      ]
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-42-g1",
+      "prompt": "The train has been cancelled: Tåget har ___ in.",
+      "answers": [
+        "ställts"
+      ],
+      "options": [
+        "ställts",
+        "ställt",
+        "ställas"
+      ],
+      "hint": "Someone cancelled it: you need the s-form.",
+      "explanation": "Har + ställts (the s-form): Tåget har ställts in. Har ställt in would mean the train cancelled something, and ställas is the form after kan or måste."
+    },
+    {
+      "id": "sv-42-g2",
+      "prompt": "Biljetten är ___ på nästa tåg.",
+      "answers": [
+        "giltig"
+      ],
+      "options": [
+        "giltig",
+        "giltigt",
+        "gäller"
+      ],
+      "hint": "Biljett is an en-word.",
+      "explanation": "Biljetten är giltig. Giltigt is for ett-words (kortet är giltigt). Gäller is a verb, so it cannot follow är: Biljetten gäller på nästa tåg."
+    },
+    {
+      "id": "sv-42-g3",
+      "prompt": "Write in Swedish: “Is my ticket valid on the next train?”",
+      "answers": [
+        "Är min biljett giltig på nästa tåg?",
+        "Gäller min biljett på nästa tåg?",
+        "Är biljetten giltig på nästa tåg?",
+        "Gäller biljetten på nästa tåg?",
+        "Är min biljett giltig för nästa tåg?",
+        "Gäller min biljett för nästa tåg?",
+        "Gäller min biljett också på nästa tåg?",
+        "Är min biljett också giltig på nästa tåg?"
+      ],
+      "hint": "A yes/no question starts with the verb.",
+      "explanation": "Model: Är min biljett giltig på nästa tåg? or Gäller min biljett på nästa tåg? Nästa takes no ending: nästa tåg."
+    },
+    {
+      "id": "sv-42-g4",
+      "prompt": "Jag tar bussen, eftersom jag ___ med nästa tåg.",
+      "answers": [
+        "inte hinner fram i tid"
+      ],
+      "options": [
+        "inte hinner fram i tid",
+        "hinner inte fram i tid",
+        "hinner fram inte i tid"
+      ],
+      "hint": "After eftersom: subject, inte, verb.",
+      "explanation": "Eftersom starts a subordinate clause, so inte comes before the verb, as in Lecture 19: eftersom jag inte hinner fram i tid."
+    },
+    {
+      "id": "sv-42-g5",
+      "prompt": "I would like compensation: Jag skulle vilja ha ___ för biljetten.",
+      "answers": [
+        "ersättning"
+      ],
+      "options": [
+        "ersättning",
+        "ersätta",
+        "ersatt"
+      ],
+      "hint": "After ha you need a noun.",
+      "explanation": "Ersättning is the noun (compensation). Ersätta is the verb (to replace, to compensate), and ersatt is its participle. Skulle vilja is the polite want from Lecture 24."
+    },
+    {
+      "id": "sv-42-g6",
+      "prompt": "The survey caller asks: Har du tid att ___ några frågor?",
+      "answers": [
+        "svara på"
+      ],
+      "options": [
+        "svara på",
+        "svara",
+        "besvara på"
+      ],
+      "hint": "Svara needs a small word before what you answer.",
+      "explanation": "Svara på frågor, or besvara frågor without på. Besvara på mixes the two."
+    },
+    {
+      "id": "sv-42-g7",
+      "prompt": "Det finns bara lediga platser ___ rad 16.",
+      "answers": [
+        "på"
+      ],
+      "options": [
+        "på",
+        "i",
+        "vid"
+      ],
+      "hint": "Seats are on a row in Swedish.",
+      "explanation": "På rad 16, på första raden. The teacher's note says i rad 12; på is the usual preposition."
+    },
+    {
+      "id": "sv-42-g8",
+      "prompt": "I accidentally spilled coffee on the book: Jag ___ spilla kaffe på boken.",
+      "answers": [
+        "råkade"
+      ],
+      "options": [
+        "råkade",
+        "råkade att",
+        "hände att"
+      ],
+      "hint": "The teacher's word for accidents, without att.",
+      "explanation": "Råkade + basic form: Jag råkade spilla kaffe. Like brukar (Lecture 4), it takes no att. Hände is used with a thing as subject: Det hände en olycka."
+    },
+    {
+      "id": "sv-42-g9",
+      "prompt": "At the gym: Mitt ___ fungerade inte i dörren.",
+      "answers": [
+        "medlemskort"
+      ],
+      "options": [
+        "medlemskort",
+        "simkort",
+        "medlemskap"
+      ],
+      "hint": "The card that opens the door.",
+      "explanation": "Medlemskort = membership card (the teacher's fix). A simkort is the small card in a phone, and medlemskap is the membership itself: Kan ni kontrollera mitt medlemskap?"
+    },
+    {
+      "id": "sv-42-g10",
+      "prompt": "Write in Swedish: “I am writing regarding the position as a waiter.”",
+      "answers": [
+        "Jag skriver angående tjänsten som servitör.",
+        "Jag skriver angående jobbet som servitör.",
+        "Jag skriver angående platsen som servitör.",
+        "Jag skriver angående arbetet som servitör.",
+        "Jag skriver angående tjänsten som servitris.",
+        "Jag skriver angående jobbet som servitris.",
+        "Jag skriver angående er tjänst som servitör."
+      ],
+      "hint": "angående + the position + som + the job",
+      "explanation": "Model: Jag skriver angående tjänsten som servitör. No article before the job after som: som servitör, som programmerare."
+    },
+    {
+      "id": "sv-42-g11",
+      "prompt": "Jag är övertygad om att jag ___ bidra med något nytt i er bokhandel.",
+      "answers": [
+        "kan"
+      ],
+      "options": [
+        "kan",
+        "kunna",
+        "att kan"
+      ],
+      "hint": "After att comes a whole clause: subject + verb.",
+      "explanation": "Övertygad om att + a full clause: att jag kan bidra. Kunna is the basic form and needs a help verb before it."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-42-c1",
+      "prompt": "Write in Swedish: “The train has been cancelled.”",
+      "answers": [
+        "Tåget har ställts in.",
+        "Tåget är inställt.",
+        "Tåget har blivit inställt.",
+        "Tåget har ställts in idag.",
+        "Tåget har ställts in i dag."
+      ],
+      "hint": "har + s-form, or är + participle",
+      "explanation": "Model: Tåget har ställts in. Or: Tåget är inställt. Never Tåget har inställt."
+    },
+    {
+      "id": "sv-42-c2",
+      "prompt": "The box office asks for the name. Choose: Biljetterna bokades ___ mitt namn.",
+      "answers": [
+        "i"
+      ],
+      "options": [
+        "i",
+        "för",
+        "med"
+      ],
+      "hint": "The teacher corrected this one.",
+      "explanation": "I mitt namn (the teacher's fix). För mitt namn and med mitt namn are direct translations from English. You hear på mitt namn in Sweden too, but i mitt namn is the safe choice."
+    },
+    {
+      "id": "sv-42-c3",
+      "prompt": "Write in Swedish: “I look forward to your reply.” (formal, to an office)",
+      "answers": [
+        "Jag ser fram emot ert svar.",
+        "Jag ser fram emot att höra från er.",
+        "Jag ser fram emot svar.",
+        "Jag ser fram emot ert svar!",
+        "Jag ser fram emot att få ert svar.",
+        "Jag ser fram emot att få svar från er."
+      ],
+      "hint": "se fram emot + ert",
+      "explanation": "Model: Jag ser fram emot ert svar. Ert (not ditt) because you write to an office or a company: ni-form."
+    },
+    {
+      "id": "sv-42-c4",
+      "prompt": "Put a question inside a sentence: Jag undrar när ___.",
+      "answers": [
+        "kursen börjar"
+      ],
+      "options": [
+        "kursen börjar",
+        "börjar kursen",
+        "kursen börjar inte"
+      ],
+      "hint": "Inside a sentence the subject comes before the verb.",
+      "explanation": "An indirect question keeps the subject before the verb, as in Lecture 32 (Vet du var den ligger?): Jag undrar när kursen börjar."
+    },
+    {
+      "id": "sv-42-c5",
+      "prompt": "Which line belongs in the introduction (inledning) of an application?",
+      "answers": [
+        "Jag skriver angående er kurs i svenska, som jag läste om på er webbplats."
+      ],
+      "options": [
+        "Jag skriver angående er kurs i svenska, som jag läste om på er webbplats.",
+        "Jag har bott i Finland i två år och jobbar som programmerare.",
+        "Tack för att ni läser min ansökan."
+      ],
+      "hint": "Why you write, and where you saw the information.",
+      "explanation": "The introduction says why you write and refers to the ad or the information. Your background belongs in the main paragraph, and the thanks belong in the close."
+    },
+    {
+      "id": "sv-42-c6",
+      "prompt": "Write in Swedish: “I accidentally forgot my membership card.”",
+      "answers": [
+        "Jag råkade glömma mitt medlemskort.",
+        "Jag råkade glömma mitt medlemskort hemma.",
+        "Jag råkade glömma bort mitt medlemskort.",
+        "Jag råkade glömma kvar mitt medlemskort."
+      ],
+      "hint": "råkade + basic form; medlemskort is an ett-word",
+      "explanation": "Model: Jag råkade glömma mitt medlemskort. Råkade takes the basic form without att, and kort is an ett-word, so mitt."
+    },
+    {
+      "id": "sv-42-c7",
+      "prompt": "At the station you ask where your train leaves from. Choose the most natural question.",
+      "answers": [
+        "Från vilket spår går tåget till Vasa?"
+      ],
+      "options": [
+        "Från vilket spår går tåget till Vasa?",
+        "Vart går tåget till Vasa från?",
+        "Var tåget till Vasa går från?"
+      ],
+      "hint": "Lecture 14: var is a place, vart is a direction.",
+      "explanation": "Från vilket spår …? puts the preposition first. Vart is for where something is going (Vart ska du?), and Var tåget … går has the word order of an indirect question."
+    }
+  ],
+  "assignment": {
+    "title": "Lecture 42 mission: Klaga på ett inställt tåg och skriv en ansökan",
+    "instructions": "CORE: Your train has been cancelled. At the information desk, ask about the train, ask why, explain your meeting and complain, ask for compensation and for customer service's e-mail address, and thank the clerk.\n\nWRITE: An application or registration of 70–110 words in three parts: introduction, experience or goal with a question, and a formal close with your full name.\n\nRETURN: Tomorrow, from memory: call a box office and change two tickets to another day. Give the name and the booking number, and disagree politely when the new seats are worse.",
+    "model": "Hej, jag heter Ravi Kumar. Jag ringer angående två biljetter till den 6 augusti, men jag måste jobba då. – Biljetterna bokades i mitt namn, och bokningsnumret är 4471. – Går det att byta till den 13 augusti, på kvällen? – Det tycker jag inte är rimligt, för våra gamla platser var mycket bättre. Kan ni betala tillbaka mellanskillnaden? – Okej, det är en bra lösning. Tack för hjälpen!"
+  },
+  "takeaways": [
+    "A cancelled train: Från vilket spår går …? Varför har det ställts in? Jag har ett möte och kan inte vänta. Jag vill ha ersättning. Kan jag få kundtjänstens e-postadress?",
+    "The s-passive: har ställts in, bokades, kan bytas; or är inställt. I mitt namn. Råkade + basic form. Medlemskort, not simkort.",
+    "An application: inledning (who, why, the ad), huvudparagraf (experience, why you fit, a question inside a sentence), avslutning (thanks, ser fram emot ert svar, Med vänliga hälsningar + full name)."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Maja",
+      "fi": "Hej Alex! Oj, vad många flyttlådor. Behöver du hjälp?",
+      "en": "Hi Alex! Wow, so many moving boxes. Do you need help?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Hej Maja! Ja, gärna. Kan du packa böckerna? Jag har haft en jobbig dag.",
+      "en": "Hi Maja! Yes, please. Can you pack the books? I've had a tough day."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Vad hände? Du skulle ju till Vasa i morse.",
+      "en": "What happened? You were going to Vaasa this morning, weren't you?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Det var planen. Men mitt tåg syntes inte på skärmen, och vid informationsdisken sa de att det hade ställts in.",
+      "en": "That was the plan. But my train wasn't on the screen, and at the information desk they said it had been cancelled."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Varför då?",
+      "en": "Why?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Ett bromsfel. Nästa tåg gick först tre timmar senare, och jag hade ett möte med en kund klockan tolv.",
+      "en": "A brake fault. The next train didn't leave until three hours later, and I had a meeting with a client at twelve."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Vad gjorde du då?",
+      "en": "What did you do then?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Jag satte mig på ett kafé på stationen och höll mötet på video. Det gick faktiskt bra.",
+      "en": "I sat down in a café at the station and held the meeting by video. It actually went well."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Får du pengarna för biljetten tillbaka?",
+      "en": "Do you get the money for the ticket back?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Ja, eftersom jag inte reste alls. Jag har redan fyllt i formuläret på nätet.",
+      "en": "Yes, because I didn't travel at all. I've already filled in the form online."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Bra. Jag håller också på med ett mejl. En bokhandel i centrum söker helgpersonal, och jag vill söka jobbet.",
+      "en": "Good. I'm working on an e-mail too. A bookshop in the centre is looking for weekend staff, and I want to apply for the job."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Vad roligt! Vad har du skrivit hittills?",
+      "en": "How nice! What have you written so far?"
+    },
+    {
+      "speaker": "Maja",
+      "fi": "”Hej, jag heter Maja och jag vill ha jobbet. Jag gillar böcker.” Det är allt.",
+      "en": "“Hi, my name is Maja and I want the job. I like books.” That's all."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Henrik skulle säga: berätta om dina erfarenheter. Du har ju jobbat på kaféet i nästan en månad.",
+      "en": "Henrik would say: tell them about your experience. You've been working at the café for almost a month, after all."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Det är sant. Jag kan ta hand om kunder och jobba snabbt, även när det är kö.",
+      "en": "That's true. I can look after customers and work fast, even when there's a queue."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Precis. Och skriv varför du passar för just det här jobbet. Du läser ju jättemycket.",
+      "en": "Exactly. And write why you suit this particular job. You read a huge amount, after all."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Okej. Och sist tackar jag och skriver att jag ser fram emot svar. Räcker det med Maja?",
+      "en": "OK. And at the end I thank them and write that I look forward to a reply. Is Maja enough?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Nej, i en ansökan skriver man hela namnet. Jag ska förresten också skicka en ansökan i kväll.",
+      "en": "No, in an application you write your full name. By the way, I'm also sending an application tonight."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Till vad då?",
+      "en": "For what?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Till höstkursen i svenska på Arbis, Svenska B1 – mot YKI. Det finns bara sexton platser, så man ska skriva några rader om sig själv.",
+      "en": "For the autumn Swedish course at the adult education centre, Swedish B1 – towards YKI. There are only sixteen places, so you have to write a few lines about yourself."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Då skriver vi tillsammans. Först ansökningarna, sedan böckerna!",
+      "en": "Then we'll write together. First the applications, then the books!"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Det låter som en plan.",
+      "en": "That sounds like a plan."
+    }
+  ],
+  "resources": [
+    {
+      "label": "Passagerarrättigheter vid tågresor (Your Europe, EU)",
+      "url": "https://europa.eu/youreurope/citizens/travel/passenger-rights/rail/index_sv.htm",
+      "description": "The EU's own page in Swedish: what you can get when a train is cancelled or late (25 or 50 percent of the ticket price, or the money back). Read the part Ersättning – inställt tåg. Link checked on 4 October 2026."
+    },
+    {
+      "label": "YKI practice site: Swedish, intermediate speaking (University of Jyväskylä)",
+      "url": "https://ykitesti.solki.jyu.fi/tutustu-testiin/svenska/mellanniva-talproduktion/",
+      "description": "The official dialogues are phone calls to companies, like this lecture's box-office call. Answer each turn in 10–25 seconds."
+    },
+    {
+      "label": "YKI practice site: Swedish, intermediate writing (University of Jyväskylä)",
+      "url": "https://ykitesti.solki.jyu.fi/tutustu-testiin/svenska/mellanniva-skriftlig-framstallning/",
+      "description": "See how the real writing tasks list what to include. An application is one of the text types the YKI writing test can ask for."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-42-word-1",
+        "fi": "ett tåg / en tågresa",
+        "en": "a train / a train journey",
+        "example": "Tågresan till Vasa tar ungefär fyra timmar.",
+        "translation": "The train journey to Vaasa takes about four hours.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-42-word-2",
+        "fi": "avgå (avgick, avgått)",
+        "en": "depart",
+        "example": "Tåget avgår från spår 7.",
+        "translation": "The train departs from track 7.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-42-word-3",
+        "fi": "ett spår",
+        "en": "a track, a platform",
+        "example": "Från vilket spår går tåget?",
+        "translation": "Which track does the train leave from?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-42-word-4",
+        "fi": "ställa in / ställas in",
+        "en": "cancel / be cancelled",
+        "example": "Tåget har ställts in.",
+        "translation": "The train has been cancelled.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-5",
+        "fi": "inställd (inställt, inställda)",
+        "en": "cancelled",
+        "example": "Konserten är inställd på grund av regn.",
+        "translation": "The concert is cancelled because of rain.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-6",
+        "fi": "försenad",
+        "en": "delayed, late",
+        "example": "Bussen är tjugo minuter försenad.",
+        "translation": "The bus is twenty minutes late.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-42-word-7",
+        "fi": "giltig",
+        "en": "valid",
+        "example": "Biljetten är giltig på nästa tåg.",
+        "translation": "The ticket is valid on the next train.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-8",
+        "fi": "gälla (gällde, gällt)",
+        "en": "be valid, apply",
+        "example": "Presentkortet gäller i ett år.",
+        "translation": "The gift card is valid for a year.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-9",
+        "fi": "ett bromsfel / ett tekniskt fel",
+        "en": "a brake fault / a technical fault",
+        "example": "Tåget fick ett bromsfel strax före Tammerfors.",
+        "translation": "The train had a brake fault just before Tampere.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-10",
+        "fi": "en ersättningsbuss",
+        "en": "a replacement bus",
+        "example": "En ersättningsbuss går från stationen.",
+        "translation": "A replacement bus leaves from the station.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-11",
+        "fi": "en ersättning / kompensation",
+        "en": "compensation",
+        "example": "Jag vill ha ersättning för biljetten.",
+        "translation": "I want compensation for the ticket.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-12",
+        "fi": "betala tillbaka",
+        "en": "pay back, refund",
+        "example": "De betalade tillbaka hela biljettpriset.",
+        "translation": "They refunded the whole ticket price.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-42-word-13",
+        "fi": "kundtjänst",
+        "en": "customer service",
+        "example": "Kontakta kundtjänsten via formuläret.",
+        "translation": "Contact customer service through the form.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-42-word-14",
+        "fi": "ett skriftligt klagomål",
+        "en": "a written complaint",
+        "example": "Jag skickade ett skriftligt klagomål.",
+        "translation": "I sent a written complaint.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-15",
+        "fi": "besvärlig",
+        "en": "inconvenient, difficult",
+        "example": "Det var en besvärlig morgon.",
+        "translation": "It was a difficult morning.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-16",
+        "fi": "en undersökning / en enkät",
+        "en": "a survey, a study / a questionnaire",
+        "example": "Vi gör en undersökning om fritid.",
+        "translation": "We are doing a survey about free time.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-17",
+        "fi": "genomföra",
+        "en": "carry out",
+        "example": "Företaget genomför undersökningen i augusti.",
+        "translation": "The company carries out the survey in August.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-18",
+        "fi": "slumpmässigt",
+        "en": "at random",
+        "example": "Numren väljs slumpmässigt.",
+        "translation": "The numbers are chosen at random.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-19",
+        "fi": "anonym",
+        "en": "anonymous",
+        "example": "Alla svar är anonyma.",
+        "translation": "All answers are anonymous.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-20",
+        "fi": "lägga på",
+        "en": "hang up",
+        "example": "Förlåt, jag måste lägga på nu.",
+        "translation": "Sorry, I have to hang up now.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-21",
+        "fi": "en föreställning",
+        "en": "a show, a performance",
+        "example": "Föreställningen börjar klockan sju.",
+        "translation": "The show starts at seven.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-22",
+        "fi": "en biljettkassa",
+        "en": "a box office",
+        "example": "Ring biljettkassan före klockan fyra.",
+        "translation": "Call the box office before four.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-23",
+        "fi": "en rad / en plats",
+        "en": "a row / a seat",
+        "example": "Vi sitter på rad 3, plats 10 och 11.",
+        "translation": "We are sitting in row 3, seats 10 and 11.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-42-word-24",
+        "fi": "ledig / slutsåld",
+        "en": "free, available / sold out",
+        "example": "Det finns inga lediga platser. Det är slutsålt.",
+        "translation": "There are no free seats. It is sold out.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-25",
+        "fi": "mellanskillnaden",
+        "en": "the price difference",
+        "example": "Kan ni betala tillbaka mellanskillnaden?",
+        "translation": "Can you pay back the difference?",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-26",
+        "fi": "rimlig",
+        "en": "reasonable",
+        "example": "Det tycker jag inte är rimligt.",
+        "translation": "I don't think that is reasonable.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-27",
+        "fi": "råka + verb",
+        "en": "do something by accident",
+        "example": "Jag råkade tappa telefonen.",
+        "translation": "I accidentally dropped my phone.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-28",
+        "fi": "ett medlemskort / ett medlemskap",
+        "en": "a membership card / a membership",
+        "example": "Mitt medlemskort fungerar inte.",
+        "translation": "My membership card doesn't work.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-42-word-29",
+        "fi": "ett omklädningsrum",
+        "en": "a changing room",
+        "example": "Jag glömde handduken i omklädningsrummet.",
+        "translation": "I left my towel in the changing room.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-42-word-30",
+        "fi": "en platsbiljett",
+        "en": "a seat reservation",
+        "example": "Jag har en platsbiljett vid fönstret.",
+        "translation": "I have a seat reservation by the window.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-31",
+        "fi": "lämna tillbaka",
+        "en": "return, give back",
+        "example": "Jag vill lämna tillbaka skorna.",
+        "translation": "I want to return the shoes.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-42-word-32",
+        "fi": "en ansökan / söka",
+        "en": "an application / apply for",
+        "example": "Maja söker ett helgjobb.",
+        "translation": "Maja is applying for a weekend job.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-33",
+        "fi": "en anmälan / anmäla sig",
+        "en": "a registration / sign up",
+        "example": "Jag anmälde mig till kursen i går.",
+        "translation": "I signed up for the course yesterday.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-34",
+        "fi": "angående",
+        "en": "regarding",
+        "example": "Jag skriver angående tjänsten som butiksbiträde.",
+        "translation": "I am writing regarding the position as a shop assistant.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-35",
+        "fi": "en tjänst",
+        "en": "a position; a service",
+        "example": "Tjänsten passar mig bra.",
+        "translation": "The position suits me well.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-36",
+        "fi": "en erfarenhet",
+        "en": "an experience",
+        "example": "Jag har erfarenhet av kundservice.",
+        "translation": "I have experience of customer service.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-37",
+        "fi": "vara övertygad om att",
+        "en": "be convinced that",
+        "example": "Jag är övertygad om att kursen hjälper mig.",
+        "translation": "I am convinced that the course will help me.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-38",
+        "fi": "bidra med",
+        "en": "contribute",
+        "example": "Jag kan bidra med mina språkkunskaper.",
+        "translation": "I can contribute my language skills.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-39",
+        "fi": "utveckla (sig)",
+        "en": "develop (oneself)",
+        "example": "Jag vill utveckla min svenska.",
+        "translation": "I want to develop my Swedish.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-42-word-40",
+        "fi": "se fram emot",
+        "en": "look forward to",
+        "example": "Jag ser fram emot ert svar.",
+        "translation": "I look forward to your reply.",
+        "level": "B1"
+      }
+    ],
+    "pronunciation": {
+      "text": "Biljetten är giltig. Jag går till gymmet. Kön till kiosken var lång. Jag ringer kundtjänsten.",
+      "tip": "Before a front vowel (e, i, y, ä, ö), g is said like j and k like a soft tj-sound: giltig = JILL-tig, gymmet = JYM-met, kö and kiosken start with tj. The second g in giltig is hard, because no front vowel follows it. Kundtjänst has the tj-sound too. Many Finland-Swedes say it with a light t in front, close to English “ch”; both are understood everywhere."
+    },
+    "reading_passage": {
+      "text": "Tåget inställt? Det här gäller\n\nDet är sommar, och många reser med tåg till stugan, till festivaler eller till släkten. Men ibland blir tåget försenat, och ibland ställs det in helt. Vad har resenären rätt till då?\n\nOm ett fjärrtåg ställs in eller blir mer än en timme försenat kan du välja. Du kan avbryta resan och få hela biljettpriset tillbaka. Du kan också fortsätta med nästa tåg eller en ersättningsbuss, och då gäller din gamla biljett. Om du ändå kommer fram för sent får du ersättning i efterhand: 25 procent av biljettpriset om förseningen är en till två timmar, och 50 procent om den är längre än två timmar.\n\nReglerna kommer från EU och gäller i alla medlemsländer. Tågbolaget ska betala senast en månad efter att du har bett om pengarna. Det finns ett undantag: om förseningen beror på något som bolaget inte kan påverka, till exempel en storm, behöver det inte betala ersättning för förseningen.\n\nHur gör man? Det enklaste är att fylla i ett formulär på tågbolagets webbplats. Skriv biljettnumret, datumet och vad som hände. Spara alla kvitton, till exempel för en buss eller en taxi som du var tvungen att ta. ”Många vet inte att de har rätt till pengar, och därför söker de aldrig”, säger en konsumentrådgivare.\n\nSka du hinna till ett viktigt möte? Välj gärna ett tidigare tåg, så har du marginal om något går fel.",
+      "gist": {
+        "prompt": "What is the text mainly about?",
+        "options": [
+          "What a passenger can get when a train is cancelled or late, and how to ask for it",
+          "Why trains in Finland are often late in summer",
+          "A new law that makes train tickets cheaper"
+        ],
+        "answer": 0,
+        "explanation": "The text explains the choices (money back or the next train), the 25 and 50 percent rule, the exception, and how to ask: fyll i ett formulär på tågbolagets webbplats."
+      },
+      "detail": {
+        "prompt": "Your train is cancelled and you decide not to travel at all. What do you get?",
+        "options": [
+          "The whole ticket price back",
+          "25 percent of the ticket price",
+          "Nothing, because you did not travel"
+        ],
+        "answer": 0,
+        "explanation": "Du kan avbryta resan och få hela biljettpriset tillbaka. The 25 and 50 percent rule is for people who travel but arrive late."
+      }
+    },
+    "reading": {
+      "text": "BOKHANDELN BOKSTAVEN SÖKER HELGPERSONAL\n\nTycker du om böcker och människor? Vi är en liten bokhandel i centrum av Helsingfors, och från september behöver vi två nya medarbetare på helgerna.\n\nArbetstid: lördagar 10–16, varannan söndag 12–16.\nDu: är minst 16 år, talar svenska och finska, och är van vid att ta hand om kunder. Erfarenhet från butik eller kafé är ett plus.\nVi erbjuder: en trevlig arbetsplats, 20 procents rabatt på alla böcker och en introduktion i augusti.\n\nSkicka en kort ansökan per e-post senast fredagen den 7 augusti. Berätta vem du är, vilken erfarenhet du har och varför du vill jobba hos oss. Vi kallar till intervju vecka 33.\n\nFrågor? Ring Sofia på 040 765 1234 på vardagar efter kl. 12.",
+      "question": "Maja is 17 and has worked at a café in July. What must she do, and by when?",
+      "options": [
+        "Send a short e-mail application by Friday 7 August",
+        "Call Sofia on a Saturday to book an interview",
+        "Come to the shop for an introduction in September"
+      ],
+      "answer": 0,
+      "explanation": "Skicka en kort ansökan per e-post senast fredagen den 7 augusti. Interviews are in week 33, and the introduction is in August. Café experience är ett plus."
+    },
+    "listening": {
+      "text": "Det är måndag morgon den 27 juli på Helsingfors centralstation. Först hör du tre utrop i stationshallen. Sedan hör du ett meddelande på Alex röstbrevlåda.\n\nUtrop ett: Information till resenärer på fjärrtåg 41 till Vasa via Tammerfors och Seinäjoki, med planerad avgång klockan 7.05. Tåget har tyvärr ställts in på grund av ett bromsfel. Resenärer till Tammerfors kan ta tåget som avgår klockan 7.12 från spår 9. Nästa direkta tåg till Vasa avgår klockan 10.05. Biljetterna gäller på det tåget. Vi beklagar.\n\nUtrop två: Fjärrtåg 27 till Åbo avgår i dag från spår 4, inte från spår 6. Jag upprepar: tåget till Åbo avgår från spår 4.\n\nUtrop tre: Närtåget till Kervo är cirka femton minuter försenat på grund av ett signalfel vid Böle. Tåget beräknas avgå klockan 7.40.\n\nMeddelande på röstbrevlådan, klockan 15.30: Hej Alex, det här är Mira från tågbolagets kundtjänst. Jag ringer angående formuläret som du skickade i dag. Ditt tåg till Vasa ställdes in, och du reste inte alls, så du får hela biljettpriset tillbaka, alltså 52 euro. Pengarna kommer till ditt bankkonto inom två veckor. Du skrev också att du köpte en kaffe och en smörgås på stationen medan du väntade. Det kan vi tyvärr inte ersätta, eftersom du valde att inte resa. Om du har fler frågor kan du svara på mejlet som vi skickade, eller ringa oss på vardagar mellan åtta och sexton. Ha en bra kväll!",
+      "question": "What does customer service tell Alex in the voicemail?",
+      "options": [
+        "He gets the whole ticket price, 52 euros, within two weeks, but not money for his coffee",
+        "He gets half the ticket price, because the next train left at 10.05",
+        "He must send the receipt for his coffee before they can pay anything"
+      ],
+      "answer": 0,
+      "explanation": "Du får hela biljettpriset tillbaka, alltså 52 euro … inom två veckor. The coffee and sandwich kan vi tyvärr inte ersätta, eftersom du valde att inte resa."
+    },
+    "speaking": {
+      "prompt": "Du står vid informationsdisken på stationen. Ditt tåg har ställts in, och du har ett viktigt möte. Säg din del av samtalet: fråga om ditt tåg, fråga varför det har ställts in, förklara ditt möte och klaga, be om ersättning och om kundtjänstens e-postadress, och tacka. (You are at the station's information desk. Your train has been cancelled and you have an important meeting. Say your side of the conversation: ask about your train, ask why it was cancelled, explain your meeting and complain, ask for compensation and customer service's e-mail address, and thank the clerk. It is a YKI dialogue type.)",
+      "help": "Hej! Jag ska ta tåget till … klockan … · Från vilket spår går det? · Va, har det ställts in? Varför då? · Jag har ett viktigt möte klockan … · Med nästa tåg kommer jag för sent. · Det här är verkligen inte bra. · Jag skulle vilja ha pengarna tillbaka / ersättning för … · Kan jag få kundtjänstens e-postadress? · Tack för hjälpen!",
+      "model": "Hej! Jag ska ta tåget till Vasa klockan fem över sju, men jag hittar det inte på skärmen. Från vilket spår går det? – Va, har det ställts in? Vad är det som har hänt? – Det här är verkligen inte bra. Jag har ett möte med en kund i Vasa klockan tolv, och med nästa tåg kommer jag fram först efter två. Jag kan inte vänta i tre timmar. – Okej, då håller jag mötet på video i stället. Men jag har betalat 52 euro för biljetten, så jag skulle vilja ha pengarna tillbaka. Kan jag få kundtjänstens e-postadress? – Tack för hjälpen. Ha en bra dag!"
+    },
+    "writing": {
+      "prompt": "Skriv en ansökan eller en anmälan. (Write an application or a registration, like Classroom item 35.)",
+      "situation": "Välj ett av ämnena och skriv ett formellt mejl. 1) Du har sett en annons om ditt drömjobb. Sök jobbet. 2) Ett språkinstitut eller en hobbyverksamhet har en kurs som intresserar dig. Anmäl ditt intresse och ställ frågor om kursen. 3) Du har anmält dig till en kurs, men du kan inte komma till den första lektionen. Skriv till läraren och förklara situationen. Berätta vem du är, varför du skriver och vad du vill fråga eller be om. Kom ihåg att inleda och avsluta meddelandet på lämpligt sätt. (Choose one topic and write a formal e-mail: apply for your dream job; tell a language school or hobby centre that you are interested in a course and ask questions; or explain to a course teacher that you cannot come to the first lesson. Say who you are, why you write and what you want. Use ni and your full name.)",
+      "points": [
+        "Inledning: presentera dig, säg varför du skriver och hänvisa till annonsen eller informationen. (Introduction: who you are, why you write, and where you saw the ad. The rubric's flexibility: the text fits its purpose.)",
+        "Huvudparagraf: berätta om din erfarenhet, kompetens eller ditt mål, och förklara varför du passar, gärna med ett faktum eller en siffra. (Main paragraph: experience or goal and why you fit. Communicating: describe aims and give reasons.)",
+        "Ställ minst en fråga om kursen, jobbet eller villkoren, gärna inne i en mening: Jag undrar när … (At least one question; an indirect question keeps the subject before the verb.)",
+        "Bind ihop meningarna med eftersom, därför, dessutom, men eller så att, och använd minst en bisats. (Cohesion: linkers and a subordinate clause, the step to level 3.)",
+        "Formell ton: ni, ett tack, Jag ser fram emot ert svar, Med vänliga hälsningar + för- och efternamn. (A formal close, no Kram.)"
+      ],
+      "wordRange": [
+        70,
+        110
+      ],
+      "help": "Ärende: … · Hej! · Jag heter … och skriver angående … · Jag såg er annons på … / Jag läste om kursen på … · Jag har erfarenhet av … · Mitt mål är att … · Jag är övertygad om att … · Jag undrar när / hur mycket / om … · Tyvärr kan jag inte komma …, eftersom … · Tack för att ni läser min ansökan. · Jag ser fram emot ert svar. · Med vänliga hälsningar",
+      "model": "Ärende: Ansökan, Svenska B1 – mot YKI\n\nHej!\n\nJag heter Alex Khan och skriver angående er kvällskurs Svenska B1 – mot YKI i höst, som jag läste om på er webbplats.\n\nJag kommer från Indien och har bott i Helsingfors i två år. Jag jobbar som programmerare och har studerat svenska sedan april. Mitt mål är att klara YKI-provet på mellannivå, eftersom jag vill använda svenska mer i jobbet. Jag är övertygad om att kursen kan hjälpa mig att tala mer flytande.\n\nJag undrar hur många deltagare det finns i gruppen.\n\nTack för att ni läser min ansökan. Jag ser fram emot ert svar.\n\nMed vänliga hälsningar\nAlex Khan"
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Your side of a call at the information desk about a cancelled train: ask about the train, ask why, explain your meeting and complain, ask for compensation and the customer-service address, and thank. Then a written application or registration (70–110 words) in three parts.",
+    "transferPrompt": "Ring nu kundtjänsten i stället. Säg ditt namn och biljettnumret, förklara vad som hände och be om pengarna tillbaka. (One change: tell the same story on the phone to customer service, in the past tense.)",
+    "returnPrompt": "Without looking, tell a clerk that your train has been cancelled, why you cannot wait, and what you want.",
+    "successChecks": [
+      "Ask about the train with Från vilket spår …? and react with Varför har det ställts in?",
+      "Explain your situation with a time: Jag har ett möte klockan …",
+      "Complain politely about the situation, not the person: Det här är verkligen inte bra.",
+      "Make a clear request: Jag skulle vilja ha ersättning / pengarna tillbaka. Kan jag få kundtjänstens e-postadress?",
+      "Use the s-passive or the participle correctly: har ställts in, är inställt."
+    ],
+    "requiredSkills": [
+      "speaking",
+      "writing"
+    ]
+  },
+  "extraSteps": [
+    {
+      "id": "yki-tasks",
+      "after": "recall",
+      "kind": "yki-speaking",
+      "label": "YKI tasks",
+      "description": "Three YKI dialogues (a cancelled train, a survey call, changing theatre tickets) and eight Reagera situations from free time and travel, five per round.",
+      "minutes": 20,
+      "action": "Read each card in 15 seconds and answer every turn before the time runs out. In Reagera, get ready in 20 seconds and speak for 25.",
+      "parts": [
+        {
+          "type": "dialogue",
+          "id": "sv-42-yki-tag",
+          "title": "Samtal · Tåget har ställts in",
+          "intro": "Henrik's rules: read the card in 15 seconds, answer within the time, do what the cue asks, and use your own words, not the cue's. Inventing details is fine. Here the clerk speaks first. The hard turns are the third and fourth: complain clearly but politely, then ask for compensation. Turns have the real test time (10-25 seconds).",
+          "bookRef": "Förbered dig, Dialog 5 (Fritid), s. 104–105",
+          "situation": {
+            "fi": "Du ska åka tåg till Åbo klockan 8.05. Där har du ett viktigt möte klockan halv elva. Ditt tåg syns inte på skärmen i stationshallen, och du vet inte från vilket spår det går. Gå till informationsdisken och be om hjälp.",
+            "en": "You are taking the 8.05 train to Turku. You have an important meeting there at half past ten. Your train is not on the screen in the station hall, and you do not know which track it leaves from. Go to the information desk and ask for help."
+          },
+          "readSeconds": 15,
+          "partner": {
+            "role": "Informationsdisken",
+            "voice": "Henrik"
+          },
+          "turns": [
+            {
+              "who": "partner",
+              "fi": "God morgon! Vad kan jag hjälpa till med?",
+              "en": "Good morning! How can I help?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Be om hjälp. Säg vart och när du ska resa.)",
+                "en": "(Ask for help. Say where and when you are travelling.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Hej! Jag ska ta tåget till Åbo klockan 8.05. Från vilket spår går det?",
+                "God morgon! Jag har en biljett till tåget som går till Åbo fem över åtta, men jag hittar det inte på skärmen. Kan du hjälpa mig?"
+              ],
+              "tip": "Från vilket spår går det? Swedish asks “from which track”, with the preposition first."
+            },
+            {
+              "who": "partner",
+              "fi": "Jag ska titta. Jaha, tyvärr har det tåget ställts in. Nästa tåg till Åbo går klockan 10.05, och din biljett gäller också på det.",
+              "en": "Let me look. I see, unfortunately that train has been cancelled. The next train to Turku leaves at 10.05, and your ticket is also valid on it."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Du blir förvånad. Fråga vad som har hänt.)",
+                "en": "(You are surprised. Ask what has happened.)"
+              },
+              "seconds": 10,
+              "models": [
+                "Oj! Varför har det ställts in?",
+                "Va, har det ställts in? Vad är det som har hänt?"
+              ],
+              "tip": "Har ställts in = has been cancelled. Keep the -s form: ställts."
+            },
+            {
+              "who": "partner",
+              "fi": "Det är ett tekniskt fel på loket, och vi har inget annat tåg som kan ersätta det med så kort varsel. Jag är ledsen för det.",
+              "en": "There is a technical fault with the locomotive, and we have no other train that can replace it at such short notice. I'm sorry about that."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Du är inte nöjd. Förklara varför du inte kan vänta, och klaga.)",
+                "en": "(You are not happy. Explain why you cannot wait, and complain.)"
+              },
+              "seconds": 25,
+              "models": [
+                "Det är ett stort problem. Jag har ett viktigt möte i Åbo klockan halv elva. Med nästa tåg kommer jag för sent.",
+                "Det här är verkligen inte bra. Jag har ett möte med en kund halv elva, och med nästa tåg är jag framme först efter tolv. Jag kan inte vänta i två timmar."
+              ],
+              "tip": "Complain about the situation, not the person: Det här är verkligen inte bra."
+            },
+            {
+              "who": "partner",
+              "fi": "Jag förstår att det är besvärligt. En buss till Åbo går klockan 8.15 från Kampens busstation. Den är framme ungefär tjugo över tio.",
+              "en": "I understand that it is inconvenient. A bus to Turku leaves at 8.15 from Kamppi bus station. It arrives at about twenty past ten."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Säg att du tar bussen, men be om ersättning.)",
+                "en": "(Say you will take the bus, but ask for compensation.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Okej, då tar jag bussen. Men jag har redan betalat för tåget. Kan jag få pengarna tillbaka?",
+                "Då tar jag bussen, så jag hinner till mötet. Men jag betalade 39 euro för tågbiljetten, och nu måste jag köpa en bussbiljett också. Jag vill ha ersättning."
+              ],
+              "tip": "Give the price: formal complaints love numbers (Lesson 23)."
+            },
+            {
+              "who": "partner",
+              "fi": "Om du inte reser med tåget får du hela biljettpriset tillbaka. Ersättning för bussbiljetten kan du söka skriftligt hos kundtjänsten.",
+              "en": "If you don't travel by train, you get the whole ticket price back. You can apply in writing to customer service for compensation for the bus ticket."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Fråga hur du kan kontakta kundtjänsten.)",
+                "en": "(Ask how you can contact customer service.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Okej. Vad är kundtjänstens e-postadress?",
+                "Okej, det ska jag göra. Kan du ge mig kundtjänstens e-postadress, eller finns det ett formulär på nätet?"
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Det finns ett formulär på vår webbplats, men du kan också mejla till kundtjanst@exempel.fi. Spara kvittot från bussen.",
+              "en": "There is a form on our website, but you can also e-mail kundtjanst@exempel.fi. Keep the receipt from the bus."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Tacka och avsluta samtalet.)",
+                "en": "(Thank the clerk and end the conversation.)"
+              },
+              "seconds": 10,
+              "models": [
+                "Tack för hjälpen! Hej då.",
+                "Tack så mycket, nu vet jag vad jag ska göra. Ha en bra dag!"
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Detsamma, och lycka till med mötet!",
+              "en": "Same to you, and good luck with the meeting!"
+            }
+          ],
+          "phrases": [
+            {
+              "fi": "Från vilket spår går tåget till …?",
+              "en": "Which track does the train to … leave from?"
+            },
+            {
+              "fi": "Varför har tåget ställts in?",
+              "en": "Why has the train been cancelled?"
+            },
+            {
+              "fi": "Är biljetten giltig på nästa tåg?",
+              "en": "Is the ticket valid on the next train?"
+            },
+            {
+              "fi": "Jag har ett viktigt möte och kan inte vänta.",
+              "en": "I have an important meeting and cannot wait."
+            },
+            {
+              "fi": "Det här är verkligen inte bra.",
+              "en": "This is really not good."
+            },
+            {
+              "fi": "Jag vill ha ersättning för biljetten.",
+              "en": "I want compensation for the ticket."
+            },
+            {
+              "fi": "Kan jag få kundtjänstens e-postadress?",
+              "en": "Can I have customer service's e-mail address?"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "id": "sv-42-yki-enkat",
+          "title": "Samtal · En undersökning i telefon",
+          "intro": "Henrik's rules: read the card in 15 seconds, answer within the time, do what the cue asks, and use your own words, not the cue's. Inventing details is fine. An unknown number calls you. You may be careful first: ask how they got your number. Then answer each question with one detail, and end politely when your tram comes.",
+          "bookRef": "Förbered dig, Dialog 6 (Fritid), s. 106–107",
+          "situation": {
+            "fi": "Du väntar på spårvagnen efter jobbet när din telefon ringer. Det är ett nummer som du inte känner igen. Den som ringer gör en undersökning om fritid.",
+            "en": "You are waiting for the tram after work when your phone rings. It is a number you do not recognise. The caller is doing a survey about free time."
+          },
+          "readSeconds": 15,
+          "partner": {
+            "role": "Forskare",
+            "voice": "Elin"
+          },
+          "turns": [
+            {
+              "who": "partner",
+              "fi": "Hej, jag heter Sanna Lind och ringer från ett undersökningsföretag. Vi gör en undersökning om hur människor i huvudstadsregionen använder sin fritid.",
+              "en": "Hi, my name is Sanna Lind and I'm calling from a research company. We are doing a survey about how people in the capital region use their free time."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Du är lite misstänksam. Fråga hur hon har fått ditt nummer.)",
+                "en": "(You are a little suspicious. Ask how she got your number.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Hej. Hur har du fått mitt nummer?",
+                "Jaha, hej. Får jag fråga först hur ni har fått mitt telefonnummer?"
+              ],
+              "tip": "Får jag fråga …? is a polite way to ask a direct question."
+            },
+            {
+              "who": "partner",
+              "fi": "Numret valdes slumpmässigt av en dator, och alla svar är anonyma. Har du tid att svara på några korta frågor?",
+              "en": "The number was chosen at random by a computer, and all answers are anonymous. Do you have time to answer a few short questions?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara ja, men säg hur mycket tid du har.)",
+                "en": "(Say yes, but say how much time you have.)"
+              },
+              "seconds": 10,
+              "models": [
+                "Ja, okej. Jag har en liten stund.",
+                "Ja, gärna, men jag väntar på spårvagnen, så jag har bara fem minuter."
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Tack, det räcker gott. Hur mycket fritid har du en vanlig vardag, och vad gör du då?",
+              "en": "Thanks, that is plenty. How much free time do you have on an ordinary weekday, and what do you do then?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara och ge ett exempel.)",
+                "en": "(Answer and give an example.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Ungefär tre timmar. Jag brukar laga mat och läsa.",
+                "Kanske tre timmar på kvällen. Då brukar jag laga mat, ringa min familj eller gå en promenad vid havet."
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Har du någon hobby som du håller på med varje vecka?",
+              "en": "Do you have a hobby that you do every week?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara och säg hur ofta.)",
+                "en": "(Answer and say how often.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Ja, jag spelar badminton en gång i veckan.",
+                "Ja, jag spelar badminton med några kollegor varje onsdag. Dessutom går jag på en kurs i svenska två kvällar i veckan."
+              ],
+              "tip": "En gång i veckan, två gånger i månaden: i + the time word in its definite form."
+            },
+            {
+              "who": "partner",
+              "fi": "Rör du på dig mer eller mindre nu än för fem år sedan?",
+              "en": "Do you exercise more or less now than five years ago?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Jämför och förklara varför.)",
+                "en": "(Compare and explain why.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Mer nu. Här cyklar jag överallt.",
+                "Mycket mer nu, faktiskt. För fem år sedan satt jag i bussen två timmar om dagen. Här cyklar jag nästan överallt."
+              ],
+              "tip": "För fem år sedan = five years ago (Lecture 17)."
+            },
+            {
+              "who": "partner",
+              "fi": "Och den sista frågan: vad saknar du på fritiden i ditt bostadsområde?",
+              "en": "And the last question: what do you miss in your free time where you live?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara kort. Du ser spårvagnen komma. Avsluta samtalet artigt.)",
+                "en": "(Answer briefly. You see the tram coming. End the call politely.)"
+              },
+              "seconds": 20,
+              "models": [
+                "En simhall, tror jag. Förlåt, nu kommer min spårvagn. Hej då!",
+                "Kanske ett utegym i parken. Men förlåt, nu kommer min spårvagn, så jag måste lägga på. Lycka till med undersökningen!"
+              ],
+              "tip": "Lägga på = hang up. Say sorry and give the reason before you go."
+            },
+            {
+              "who": "partner",
+              "fi": "Inga problem. Tack för dina svar och ha en trevlig kväll!",
+              "en": "No problem. Thanks for your answers and have a nice evening!"
+            }
+          ],
+          "phrases": [
+            {
+              "fi": "Får jag fråga hur ni har fått mitt nummer?",
+              "en": "May I ask how you got my number?"
+            },
+            {
+              "fi": "Ja, det går bra, men jag har bara fem minuter.",
+              "en": "Yes, that's fine, but I only have five minutes."
+            },
+            {
+              "fi": "en gång i veckan / två gånger i månaden",
+              "en": "once a week / twice a month"
+            },
+            {
+              "fi": "Jag rör på mig mer nu än förut.",
+              "en": "I exercise more now than before."
+            },
+            {
+              "fi": "Förlåt, nu kommer min spårvagn.",
+              "en": "Sorry, my tram is coming now."
+            },
+            {
+              "fi": "Jag måste lägga på.",
+              "en": "I have to hang up."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "id": "sv-42-yki-teater",
+          "title": "Samtal · Byt datum för biljetterna",
+          "intro": "Henrik's rules: read the card in 15 seconds, answer within the time, do what the cue asks, and use your own words, not the cue's. Inventing details is fine. You call the box office. Give the facts the clerk needs (name, booking number, the new day), then disagree politely when the new seats are worse. The models use an example name, Ravi Kumar: say your own.",
+          "bookRef": "Förbered dig, Dialog 7 (Fritid), s. 108–109",
+          "situation": {
+            "fi": "Du har köpt två biljetter till en föreställning på en sommarteater torsdagen den 6 augusti. Nu har du fått veta att du måste jobba den kvällen. Ring biljettkassan och försök byta till en annan dag.",
+            "en": "You have bought two tickets for a show at a summer theatre on Thursday 6 August. Now you have found out that you have to work that evening. Call the box office and try to change to another day."
+          },
+          "readSeconds": 15,
+          "partner": {
+            "role": "Biljettkassan",
+            "voice": "Maja"
+          },
+          "turns": [
+            {
+              "who": "partner",
+              "fi": "Sommarteatern vid stranden, biljettkassan, Linda här.",
+              "en": "The Summer Theatre by the Shore, box office, Linda speaking."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Presentera dig och säg varför du ringer.)",
+                "en": "(Say who you are and why you are calling.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Hej, jag heter Ravi Kumar. Jag har två biljetter till den 6 augusti, men jag kan inte komma. Kan jag byta dem?",
+                "Hej, det här är Ravi Kumar. Jag ringer angående två biljetter till torsdagen den 6 augusti. Jag måste tyvärr jobba då. Går det att byta till en annan dag?"
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Det ska vi nog kunna ordna. I vilket namn är biljetterna bokade, och har du bokningsnumret?",
+              "en": "We should be able to arrange that. Whose name are the tickets booked in, and do you have the booking number?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara. Ge namnet och bokningsnumret.)",
+                "en": "(Answer. Give the name and the booking number.)"
+              },
+              "seconds": 15,
+              "models": [
+                "De är bokade i mitt namn, Ravi Kumar. Numret är 4471.",
+                "Biljetterna bokades i mitt namn, Ravi Kumar. Bokningsnumret är 4471, alltså fyra fyra sju ett."
+              ],
+              "tip": "I mitt namn, not för mitt namn (the teacher's fix). Read numbers digit by digit."
+            },
+            {
+              "who": "partner",
+              "fi": "Tack, nu hittade jag bokningen. Till vilken dag vill du byta?",
+              "en": "Thanks, now I've found the booking. Which day do you want to change to?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara och föreslå en dag.)",
+                "en": "(Answer and suggest a day.)"
+              },
+              "seconds": 10,
+              "models": [
+                "Går det att byta till den 13 augusti?",
+                "Helst till nästa torsdag, den 13 augusti. Annars passar fredagen också."
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Den 13 augusti har vi två föreställningar, en klockan 14 och en klockan 19. Vilken passar dig bäst?",
+              "en": "On 13 August we have two shows, one at 2 pm and one at 7 pm. Which suits you best?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Välj och förklara varför.)",
+                "en": "(Choose and explain why.)"
+              },
+              "seconds": 10,
+              "models": [
+                "Klockan 19, tack. På dagen jobbar jag.",
+                "Kvällsföreställningen, tack, eftersom jag jobbar till fyra."
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Bra. Men dina gamla platser var på tredje raden, och på kvällen finns det bara lediga platser längst bak, på rad 16. De är fem euro billigare.",
+              "en": "Good. But your old seats were in the third row, and in the evening there are only free seats at the very back, in row 16. They are five euros cheaper."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Säg att de nya platserna inte duger, och be att få tillbaka skillnaden i pris.)",
+                "en": "(Say the new seats are not good enough, and ask to get the price difference back.)"
+              },
+              "seconds": 25,
+              "models": [
+                "Det är inte så bra. Våra platser var dyrare och mycket bättre. Kan jag få tillbaka mellanskillnaden?",
+                "Det tycker jag inte är rimligt. Jag betalade för platser på tredje raden, och längst bak ser man mycket sämre. Kan ni betala tillbaka mellanskillnaden?"
+              ],
+              "tip": "Disagree with a reason, then make a clear request."
+            },
+            {
+              "who": "partner",
+              "fi": "Jag förstår. Pengar kan vi tyvärr inte betala tillbaka, men jag kan ge dig ett presentkort på tio euro. Det gäller till nästa sommar.",
+              "en": "I understand. Unfortunately we can't pay money back, but I can give you a gift card for ten euros. It is valid until next summer."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Du är nöjd. Tacka och avsluta samtalet.)",
+                "en": "(You are satisfied. Thank her and end the call.)"
+              },
+              "seconds": 10,
+              "models": [
+                "Okej, det låter bra. Tack för hjälpen!",
+                "Det är en bra lösning. Tack så mycket, och ha en trevlig dag!"
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Detsamma! De nya biljetterna kommer till din e-post om en stund.",
+              "en": "Same to you! The new tickets will come to your e-mail in a moment."
+            }
+          ],
+          "phrases": [
+            {
+              "fi": "Jag ringer angående två biljetter till …",
+              "en": "I'm calling about two tickets for …"
+            },
+            {
+              "fi": "Går det att byta till en annan dag?",
+              "en": "Is it possible to change to another day?"
+            },
+            {
+              "fi": "Biljetterna är bokade i mitt namn.",
+              "en": "The tickets are booked in my name."
+            },
+            {
+              "fi": "Kvällsföreställningen, tack.",
+              "en": "The evening show, please."
+            },
+            {
+              "fi": "Det tycker jag inte är rimligt.",
+              "en": "I don't think that is reasonable."
+            },
+            {
+              "fi": "Kan ni betala tillbaka mellanskillnaden?",
+              "en": "Can you pay back the price difference?"
+            },
+            {
+              "fi": "Det är en bra lösning.",
+              "en": "That is a good solution."
+            }
+          ]
+        },
+        {
+          "type": "prompts",
+          "id": "sv-42-yki-reagera",
+          "format": "react",
+          "title": "Reagera · På fritiden och på resa",
+          "intro": "Eight situations from the library, the gym, a festival, a hotel, a train and a sports shop. Each round picks five at random, as in the test: 20 seconds to get ready, then 25 seconds to speak to the person.",
+          "bookRef": "Förbered dig, Fritid och hobbyer, Reagera, s. 112–113",
+          "prepSeconds": 20,
+          "speakSeconds": 25,
+          "roundSize": 5,
+          "rules": [
+            "You get 20 seconds to get ready and 25 seconds to speak: about three or four short sentences.",
+            "Do what the situation asks: explain, complain, suggest, ask or return something.",
+            "Talk to the person in the situation (du or ni). Do not describe it (not “I would say that …”).",
+            "Use your own words, not the card's, and be more specific than the card: a time, a number, a colour, a reason.",
+            "Inventing details is fine: a seat number, a brand, a day.",
+            "A good shape: Ursäkta / Hej + what happened + what you want + one detail or a thank-you."
+          ],
+          "frames": [
+            {
+              "fi": "Jag råkade …",
+              "en": "I accidentally …"
+            },
+            {
+              "fi": "Ursäkta, jag tror att …",
+              "en": "Excuse me, I think that …"
+            },
+            {
+              "fi": "Jag stod faktiskt före …",
+              "en": "Actually I was before … (in the queue)"
+            },
+            {
+              "fi": "Har du tänkt på att …?",
+              "en": "Have you thought about …?"
+            },
+            {
+              "fi": "Skulle ni kunna … åt mig?",
+              "en": "Could you … for me?"
+            },
+            {
+              "fi": "Kan ni kontrollera …?",
+              "en": "Can you check …?"
+            },
+            {
+              "fi": "Jag har kvittot kvar.",
+              "en": "I still have the receipt."
+            },
+            {
+              "fi": "Jag skulle vilja lämna tillbaka …",
+              "en": "I would like to return …"
+            }
+          ],
+          "prompts": [
+            {
+              "id": "sv-42-react-book",
+              "fi": "Du lånade en kokbok på biblioteket. Hemma råkade du spilla te på den, och nu sitter flera sidor ihop. Lämna tillbaka boken och förklara vad som hände.",
+              "en": "You borrowed a cookbook from the library. At home you accidentally spilled tea on it, and now several pages are stuck together. Return the book and explain what happened.",
+              "model": "Hej, här är en kokbok som jag lånade, men tyvärr är den skadad. Jag råkade spilla te på den i söndags, och nu sitter några sidor ihop. Förlåt! Vad kostar det att ersätta den?",
+              "modelEn": "Hi, I want to return this cookbook, but unfortunately it is damaged. I accidentally spilled tea on it on Sunday, and now some pages are stuck together. Sorry! How much does it cost to replace it?"
+            },
+            {
+              "id": "sv-42-react-queue",
+              "fi": "Du har stått i kö vid en matkiosk på en festival i tio minuter. En kvinna går förbi dig och beställer direkt, och personalen serverar henne. Vad säger du till personalen?",
+              "en": "You have been queuing at a food stall at a festival for ten minutes. A woman walks past you and orders straight away, and the staff serve her. What do you say to the staff?",
+              "model": "Ursäkta, jag har stått i kön i tio minuter, och jag stod faktiskt före henne. Kan jag få beställa nu? En vegetarisk wrap, tack.",
+              "modelEn": "Excuse me, I have been in the queue for ten minutes, and actually I was before her. Can I order now? A vegetarian wrap, please."
+            },
+            {
+              "id": "sv-42-react-sport",
+              "fi": "Din kollega har ont i ryggen efter långa dagar vid datorn. Hen vill börja med en ny sport men vet inte vilken. Föreslå en lämplig sport och säg varför.",
+              "en": "Your colleague has back pain after long days at the computer. They want to start a new sport but don't know which. Suggest a suitable sport and say why.",
+              "model": "Har du tänkt på att börja simma? Det är bra för ryggen, och du kan simma i din egen takt. Simhallen nära jobbet öppnar redan klockan sex. Jag kan följa med första gången!",
+              "modelEn": "Have you thought about starting swimming? It's good for the back, and you can swim at your own pace. The swimming hall near work opens already at six. I can come along the first time!"
+            },
+            {
+              "id": "sv-42-react-gym",
+              "fi": "Du kom till gymmet klockan sex på morgonen, men dörren öppnades inte med ditt medlemskort. Du fick gå hem utan att träna. Ring gymmet och anmäl problemet.",
+              "en": "You came to the gym at six in the morning, but the door did not open with your membership card. You had to go home without training. Call the gym and report the problem.",
+              "model": "Hej, jag heter Alex Khan och är medlem hos er. I morse fungerade inte mitt medlemskort i dörren, så jag kunde inte träna. Kan ni kontrollera mitt medlemskap? Jag har betalat för hela året.",
+              "modelEn": "Hi, my name is Alex Khan and I'm a member with you. This morning my membership card didn't work in the door, so I couldn't train. Can you check my membership? I have paid for the whole year."
+            },
+            {
+              "id": "sv-42-react-forgot",
+              "fi": "I går kväll var du på ett yogapass. När du kom hem märkte du att du hade glömt något i omklädningsrummet. Ring och berätta vad du glömde och hur det ser ut.",
+              "en": "Last night you went to a yoga class. When you got home, you noticed that you had left something in the changing room. Call and say what you forgot and what it looks like.",
+              "model": "Hej, jag var på yogapasset i går klockan sju. Jag tror att jag glömde mina hörlurar i omklädningsrummet. De är vita och ligger i ett litet svart fodral. Har någon lämnat in dem?",
+              "modelEn": "Hi, I was at the yoga class yesterday at seven. I think I left my earphones in the changing room. They are white and in a small black case. Has anyone handed them in?"
+            },
+            {
+              "id": "sv-42-react-taxi",
+              "fi": "Du bor på ett hotell i Uleåborg. Ditt flyg hem går i morgon bitti. Be receptionen om hjälp att beställa en taxi, och berätta när flyget går.",
+              "en": "You are staying at a hotel in Oulu. Your flight home leaves early tomorrow morning. Ask reception for help to order a taxi, and say when the flight leaves.",
+              "model": "God kväll! Skulle ni kunna beställa en taxi till flygplatsen åt mig? Mitt flyg till Helsingfors går klockan 7.40 i morgon, så jag behöver åka härifrån klockan sex. Tack, det vore snällt.",
+              "modelEn": "Good evening! Could you order a taxi to the airport for me? My flight to Helsinki leaves at 7.40 tomorrow, so I need to leave here at six. Thanks, that would be kind."
+            },
+            {
+              "id": "sv-42-react-seat",
+              "fi": "Du har en platsbiljett på tåget till Joensuu: vagn 3, plats 46 vid fönstret. När du kommer fram sitter en ung man på din plats med sin dator. Vad säger du?",
+              "en": "You have a seat reservation on the train to Joensuu: carriage 3, seat 46 by the window. When you get there, a young man is sitting in your seat with his laptop. What do you say?",
+              "model": "Förlåt, men jag tror att det här är min plats. Jag har plats 46 i vagn 3, vid fönstret. Här är min biljett. Kan du kolla din? Det kanske är fel vagn.",
+              "modelEn": "Excuse me, I think you are sitting in my seat. I have seat 46 in carriage 3, by the window. Here is my ticket. Can you check yours? Maybe it's the wrong carriage."
+            },
+            {
+              "id": "sv-42-react-return",
+              "fi": "För en vecka sedan köpte du ett par vandringskängor i en sportaffär. På din första vandring lossnade sulan på den ena kängan. Gå tillbaka till affären och förklara varför du vill lämna tillbaka dem.",
+              "en": "A week ago you bought a pair of hiking boots in a sports shop. On your first hike, the sole came off one boot. Go back to the shop and explain why you want to return them.",
+              "model": "Hej, jag köpte de här kängorna här för en vecka sedan. Redan på första vandringen lossnade sulan på den högra kängan. Här är kvittot. Jag skulle vilja ha ett nytt par eller pengarna tillbaka.",
+              "modelEn": "Hi, I bought these boots here a week ago. Already on the first hike the sole came off the right boot. Here is the receipt. I would like a new pair or my money back."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "story": {
+    "object": "moving boxes, a cancelled train ticket and a laptop with an open application"
+  }
+}
