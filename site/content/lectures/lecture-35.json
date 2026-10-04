@@ -2295,6 +2295,543 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A radio news item about new trees, two neighbours sorting rubbish, a library swap day and a reader's letter on buying less: YKI-style listening and reading with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-35-listen-1",
+          "title": "Nya träd i östra Helsingfors",
+          "textType": "Nyhet på radio",
+          "situation": {
+            "fi": "Du hör en kort nyhet på radio.",
+            "en": "You hear a short news item on the radio."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Det är fredag den åttonde maj, och här är nyheterna på svenska.",
+              "en": "It is Friday 8 May, and here is the news in Swedish."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Helsingfors stad ska plantera ungefär tvåtusen nya träd under de närmaste två åren.",
+              "en": "The City of Helsinki is going to plant about two thousand new trees over the next two years."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "De flesta träden ska planteras i östra Helsingfors, framför allt i nya bostadsområden där många gamla träd har huggits ner.",
+              "en": "Most of the trees will be planted in eastern Helsinki, above all in new housing areas where many old trees have been cut down."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Enligt staden finns det ett stort behov av mer grönska. Träden ger skugga på sommaren, renar luften och minskar risken för översvämningar när det regnar mycket.",
+              "en": "According to the city there is a great need for more greenery. The trees give shade in summer, clean the air and reduce the risk of flooding when it rains a lot."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Det blir både lövträd, som björk och lind, och barrträd, som tall och gran.",
+              "en": "There will be both broadleaf trees, like birch and lime, and conifers, like pine and spruce."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Invånarna får vara med och bestämma. På stadens hemsida kan man föreslå platser för nya träd fram till den sista maj.",
+              "en": "Residents can take part in deciding. On the city's website you can suggest places for new trees until the end of May."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Projektet kostar totalt cirka en miljon euro.",
+              "en": "The project costs about one million euros in total."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar nyheten om?",
+              "translation": "What is the news item about?",
+              "options": [
+                "Staden ska plantera nya träd",
+                "Staden ska hugga ner gamla träd",
+                "Staden ska bygga nya bostadsområden"
+              ],
+              "answers": [
+                "Staden ska plantera nya träd"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Var ska de flesta träden planteras?",
+              "translation": "Where will most of the trees be planted?",
+              "answers": [
+                "i östra Helsingfors",
+                "östra Helsingfors",
+                "i östra delen av Helsingfors",
+                "östra delen av Helsingfors",
+                "i nya bostadsområden i östra Helsingfors",
+                "i östra Helsingfors i nya bostadsområden"
+              ],
+              "hint": "Svara med en plats i staden."
+            },
+            {
+              "id": "q3",
+              "prompt": "Man kan föreslå platser för nya träd hela sommaren.",
+              "translation": "You can suggest places for new trees all summer.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför har många gamla träd huggits ner i östra Helsingfors, tror du?",
+              "translation": "Why have many old trees been cut down in eastern Helsinki, do you think?",
+              "options": [
+                "Man har byggt nya bostäder där",
+                "Träden var sjuka",
+                "Träden gav för mycket skugga"
+              ],
+              "answers": [
+                "Man har byggt nya bostäder där"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur mycket kostar projektet?",
+              "translation": "How much does the project cost?",
+              "answers": [
+                "en miljon euro",
+                "1 miljon euro",
+                "cirka en miljon euro",
+                "ungefär en miljon euro",
+                "cirka 1 miljon euro",
+                "en miljon",
+                "1 miljon",
+                "1000000 euro",
+                "1 000 000 euro"
+              ],
+              "hint": "Skriv summan."
+            }
+          ],
+          "words": [
+            {
+              "fi": "plantera",
+              "en": "to plant"
+            },
+            {
+              "fi": "grönska",
+              "en": "greenery"
+            },
+            {
+              "fi": "en skugga",
+              "en": "a shade, a shadow"
+            },
+            {
+              "fi": "en översvämning",
+              "en": "a flood"
+            },
+            {
+              "fi": "ett lövträd – ett barrträd",
+              "en": "a broadleaf tree – a conifer"
+            },
+            {
+              "fi": "föreslå (föreslog, har föreslagit)",
+              "en": "to suggest"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-35-listen-2",
+          "title": "Vid sopskjulet",
+          "textType": "Samtal mellan grannar",
+          "situation": {
+            "fi": "Två grannar pratar vid sopskjulet på gården.",
+            "en": "Two neighbours talk by the bin shelter in the courtyard."
+          },
+          "lines": [
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Hej! Du, vet du var man ska slänga gamla batterier? Jag hittar ingen behållare här i sopskjulet.",
+              "en": "Hi! Do you know where you're supposed to throw away old batteries? I can't find a container here in the bin shelter."
+            },
+            {
+              "speaker": "Patrik",
+              "voice": "Alex",
+              "fi": "Batterier tar man inte hit. Det finns en låda för dem i butiken vid hörnet, bredvid pantautomaten.",
+              "en": "You don't bring batteries here. There's a box for them in the shop on the corner, next to the bottle return machine."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Jaha, det visste jag inte. Och de här gamla lamporna, då?",
+              "en": "Oh, I didn't know that. And what about these old lamps?"
+            },
+            {
+              "speaker": "Patrik",
+              "voice": "Alex",
+              "fi": "Lampor och elektronik ska till återvinningscentralen. Jag kör dit på lördag, så jag kan ta dem med mig om du vill.",
+              "en": "Lamps and electronics go to the recycling centre. I'm driving there on Saturday, so I can take them with me if you like."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Åh, gärna! Tack. Förresten, varför är kärlet för bioavfall alltid så fullt och smutsigt?",
+              "en": "Oh, yes please! Thanks. By the way, why is the bin for biowaste always so full and dirty?"
+            },
+            {
+              "speaker": "Patrik",
+              "voice": "Alex",
+              "fi": "Många lägger matresterna i vanliga plastpåsar, och det får man inte. Plasten förstör komposten. Man ska använda papperspåsar.",
+              "en": "Lots of people put their food scraps in ordinary plastic bags, and you're not allowed to. The plastic ruins the compost. You're supposed to use paper bags."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Det borde stå någonstans. Inte alla vet det, särskilt inte de som har flyttat hit nyligen.",
+              "en": "That should be written somewhere. Not everyone knows it, especially not people who have moved here recently."
+            },
+            {
+              "speaker": "Patrik",
+              "voice": "Alex",
+              "fi": "Precis. Styrelsen ska sätta upp en ny skylt nästa vecka, på finska, svenska och engelska.",
+              "en": "Exactly. The board is putting up a new sign next week, in Finnish, Swedish and English."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Bra! Ses vi på gårdstalkot den tjugotredje?",
+              "en": "Good! See you at the courtyard clean-up on the twenty-third?"
+            },
+            {
+              "speaker": "Patrik",
+              "voice": "Alex",
+              "fi": "Absolut. Jag tar med kaffe och bullar.",
+              "en": "Absolutely. I'll bring coffee and buns."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Var ska Sanna lämna sina gamla batterier?",
+              "translation": "Where should Sanna leave her old batteries?",
+              "options": [
+                "I butiken vid hörnet",
+                "I sopskjulet",
+                "På återvinningscentralen"
+              ],
+              "answers": [
+                "I butiken vid hörnet"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Patrik ska köra Sannas lampor till återvinningscentralen.",
+              "translation": "Patrik will drive Sanna's lamps to the recycling centre.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad ska man lägga matresterna i?",
+              "translation": "What should you put the food scraps in?",
+              "answers": [
+                "papperspåsar",
+                "i papperspåsar",
+                "papperspåse",
+                "en papperspåse",
+                "i en papperspåse",
+                "påsar av papper",
+                "i påsar av papper"
+              ],
+              "hint": "Ett eller två ord."
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför tror Sanna att en del grannar gör fel?",
+              "translation": "Why does Sanna think some neighbours do it wrong?",
+              "options": [
+                "De känner inte till reglerna",
+                "De bryr sig inte om miljön",
+                "De har inte tid att sortera"
+              ],
+              "answers": [
+                "De känner inte till reglerna"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilket datum är gårdstalkot?",
+              "translation": "What date is the courtyard clean-up?",
+              "answers": [
+                "den tjugotredje",
+                "tjugotredje",
+                "den 23",
+                "23",
+                "den 23e",
+                "23e",
+                "den 23:e",
+                "23:e"
+              ],
+              "hint": "Skriv bara dagen."
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett sopskjul",
+              "en": "a bin shelter"
+            },
+            {
+              "fi": "en behållare",
+              "en": "a container"
+            },
+            {
+              "fi": "en pantautomat",
+              "en": "a bottle and can return machine"
+            },
+            {
+              "fi": "en återvinningscentral",
+              "en": "a recycling centre (for big items and electronics)"
+            },
+            {
+              "fi": "ett kärl för bioavfall",
+              "en": "a biowaste bin"
+            },
+            {
+              "fi": "nyligen",
+              "en": "recently"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-35-read-1",
+          "title": "Bytesdag på biblioteket",
+          "textType": "Anslag",
+          "minutes": 5,
+          "text": "BYTESDAG PÅ BIBLIOTEKET\n\nHar du kläder, böcker eller leksaker som du inte längre använder? Ta med dem till Berghälls bibliotek lördagen den 16 maj kl. 11–15 och byt dem mot något som du behöver. Allt är gratis!\n\nSÅ HÄR FUNGERAR DET\nDu kan lämna högst tio saker. Sakerna ska vara rena och hela. Vi tar inte emot möbler, elektronik eller underkläder.\n\nDu behöver inte lämna något för att få ta något. Alla är välkomna att titta och ta med sig det de vill ha.\n\nSaker som blir kvar efter klockan 15 skänker vi till en loppis som stöder barnfamiljer i Helsingfors.\n\nLAGA I STÄLLET FÖR ATT KASTA\nKlockan 13 visar sömmerskan Anna Lind hur du lagar ett hål i jeansen eller syr i en knapp. Ta gärna med ett eget plagg som behöver lagas.\n\nArrangörer: Berghälls bibliotek och föreningen Hållbart Berghäll. Mer information får du vid bibliotekets informationsdisk.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är syftet med bytesdagen?",
+              "translation": "What is the purpose of the swap day?",
+              "options": [
+                "Att återanvända saker i stället för att köpa nya",
+                "Att sälja gamla saker billigt",
+                "Att samla in pengar till biblioteket"
+              ],
+              "answers": [
+                "Att återanvända saker i stället för att köpa nya"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Man kan lämna en gammal soffa på bytesdagen.",
+              "translation": "You can leave an old sofa at the swap day.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Man måste lämna något för att få ta något.",
+              "translation": "You have to leave something in order to take something.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur många saker får man lämna som mest?",
+              "translation": "How many things can you leave at most?",
+              "answers": [
+                "tio",
+                "10",
+                "högst tio",
+                "högst 10",
+                "tio saker",
+                "10 saker",
+                "högst tio saker",
+                "högst 10 saker"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad kan man lära sig klockan 13?",
+              "translation": "What can you learn at 1 pm?",
+              "options": [
+                "Att laga kläder",
+                "Att sälja på loppis",
+                "Att sortera elektronik"
+              ],
+              "answers": [
+                "Att laga kläder"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en bytesdag",
+              "en": "a swap day"
+            },
+            {
+              "fi": "byta något mot något",
+              "en": "to swap something for something"
+            },
+            {
+              "fi": "skänka",
+              "en": "to give away, to donate"
+            },
+            {
+              "fi": "en sömmerska",
+              "en": "a seamstress"
+            },
+            {
+              "fi": "laga ett hål",
+              "en": "to mend a hole"
+            },
+            {
+              "fi": "ett plagg",
+              "en": "a piece of clothing"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-35-read-2",
+          "title": "Vi köper för mycket",
+          "textType": "Insändare i en tidning",
+          "minutes": 6,
+          "text": "VI KÖPER FÖR MYCKET – INTE FÖR LITE\n\nJag har bott i Helsingfors i snart tjugo år, och jag har sett hur sopkärlen på vår gård blir fulla allt snabbare. Vi sorterar flitigt: papper, kartong, glas, metall, plast och bioavfall. Det är bra, men jag tror att vi har glömt det viktigaste.\n\nDet bästa avfallet är det som aldrig uppstår. När jag var barn lagade min mamma våra kläder, och en cykel användes tills den inte gick att reparera längre. I dag köper många en ny jacka varje höst, fast den gamla fortfarande är hel. Återvinning är bra, men den kräver också energi och transporter. Att återanvända är nästan alltid bättre för miljön.\n\nJag föreslår tre enkla saker. Låna i stället för att köpa: biblioteket lånar ut både verktyg och symaskiner, och grannar kan låna av varandra. Köp begagnat när det går. Och fråga dig själv i butiken: behöver jag verkligen det här?\n\nGivetvis kan en enskild person inte rädda klimatet. Men om alla minskade sin konsumtion lite grann, skulle det märkas. Det handlar inte om att leva sämre, utan om att leva smartare.\n\nGunilla Berg, pensionär, Munksnäs",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är skribentens viktigaste åsikt?",
+              "translation": "What is the writer's main opinion?",
+              "options": [
+                "Vi borde köpa mindre och återanvända mer",
+                "Vi borde sortera plasten bättre",
+                "Biblioteket borde låna ut fler saker"
+              ],
+              "answers": [
+                "Vi borde köpa mindre och återanvända mer"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Skribenten tycker att sopsortering är onödig.",
+              "translation": "The writer thinks that sorting rubbish is unnecessary.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad kan man låna på biblioteket, enligt texten? Nämn en sak.",
+              "translation": "What can you borrow at the library, according to the text? Name one thing.",
+              "answers": [
+                "verktyg",
+                "symaskiner",
+                "symaskin",
+                "en symaskin",
+                "verktyg och symaskiner",
+                "både verktyg och symaskiner"
+              ],
+              "hint": "Ett ord räcker."
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur var det när skribenten var barn?",
+              "translation": "What was it like when the writer was a child?",
+              "options": [
+                "Man lagade saker oftare",
+                "Man sorterade mer avfall",
+                "Man köpte fler kläder"
+              ],
+              "answers": [
+                "Man lagade saker oftare"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Skribenten tror att en person ensam kan lösa klimatproblemet.",
+              "translation": "The writer thinks that one person alone can solve the climate problem.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en insändare",
+              "en": "a reader's letter (to a newspaper)"
+            },
+            {
+              "fi": "uppstå (uppstod, har uppstått)",
+              "en": "to arise, to come into being"
+            },
+            {
+              "fi": "kräva",
+              "en": "to require, to demand"
+            },
+            {
+              "fi": "begagnad",
+              "en": "second-hand, used"
+            },
+            {
+              "fi": "givetvis",
+              "en": "of course"
+            },
+            {
+              "fi": "en enskild person",
+              "en": "an individual person"
+            },
+            {
+              "fi": "konsumtion",
+              "en": "consumption, what we buy and use"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

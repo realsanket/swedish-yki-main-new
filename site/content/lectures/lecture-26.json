@@ -1910,6 +1910,567 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about sleep and a midsummer trip: a radio interview with a sleep researcher, an announcement on the train to Vasa, a health centre leaflet and an email from a cottage owner.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read each text once quickly and once carefully, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-26-listen-1",
+          "title": "Varför sover vi dåligt på sommaren?",
+          "textType": "Intervju på radio",
+          "situation": {
+            "fi": "Du hör en intervju i ett hälsoprogram på radion.",
+            "en": "You hear an interview on a health programme on the radio."
+          },
+          "lines": [
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Många finländare sover dåligt på sommaren. Med mig i studion har jag sömnforskaren Lars Holm. Varför är det så, Lars?",
+              "en": "Many Finns sleep badly in summer. With me in the studio is the sleep researcher Lars Holm. Why is that, Lars?"
+            },
+            {
+              "speaker": "Sömnforskaren",
+              "voice": "Henrik",
+              "fi": "Det beror framför allt på ljuset. När det är ljust nästan hela natten tror kroppen att det är dag, och då blir det svårare att somna.",
+              "en": "It's mainly because of the light. When it's light almost all night, the body thinks it's daytime, and then it's harder to fall asleep."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Vad kan man göra åt det?",
+              "en": "What can you do about it?"
+            },
+            {
+              "speaker": "Sömnforskaren",
+              "voice": "Henrik",
+              "fi": "Det viktigaste är att sovrummet är mörkt. En mörkläggningsgardin eller en sovmask hjälper de flesta. Rummet ska också vara svalt, helst runt arton grader.",
+              "en": "The most important thing is that the bedroom is dark. A blackout curtain or a sleep mask helps most people. The room should also be cool, ideally around eighteen degrees."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Och om man ändå inte kan somna?",
+              "en": "And if you still can't fall asleep?"
+            },
+            {
+              "speaker": "Sömnforskaren",
+              "voice": "Henrik",
+              "fi": "Ligg inte kvar i sängen och titta på klockan. Gå upp, läs något lugnt i svagt ljus och lägg dig igen när du blir sömnig. Kika inte på mobilen, för skärmen gör dig piggare.",
+              "en": "Don't stay in bed looking at the clock. Get up, read something calm in dim light and go back to bed when you get sleepy. Don't peek at your phone, because the screen makes you more alert."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Många sover länge på helgerna för att ta igen sömnen. Är det en bra idé?",
+              "en": "Many people sleep late at the weekend to catch up on sleep. Is that a good idea?"
+            },
+            {
+              "speaker": "Sömnforskaren",
+              "voice": "Henrik",
+              "fi": "Inte riktigt. Kroppen tycker om regelbundna tider. Om du går upp klockan sju på vardagarna ska du inte sova till tolv på lördag. En timme extra går bra.",
+              "en": "Not really. The body likes regular times. If you get up at seven on weekdays, you shouldn't sleep until twelve on Saturday. One extra hour is fine."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Och om man har sovit dåligt i flera veckor?",
+              "en": "And if you have slept badly for several weeks?"
+            },
+            {
+              "speaker": "Sömnforskaren",
+              "voice": "Henrik",
+              "fi": "Då ska man kontakta sin hälsostation. Långvarig sömnbrist påverkar både humöret och hälsan, och det finns bra hjälp att få.",
+              "en": "Then you should contact your health centre. Long-term lack of sleep affects both your mood and your health, and good help is available."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Tack, Lars Holm, för att du kom hit.",
+              "en": "Thank you, Lars Holm, for coming in."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar intervjun om?",
+              "translation": "What is the interview about?",
+              "options": [
+                "Varför man sover dåligt på sommaren och vad man kan göra åt det",
+                "Hur man blir sömnforskare",
+                "Varför barn behöver mer sömn än vuxna"
+              ],
+              "answers": [
+                "Varför man sover dåligt på sommaren och vad man kan göra åt det"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken temperatur är bäst i sovrummet, enligt Lars Holm?",
+              "translation": "Which temperature is best in the bedroom, according to Lars Holm?",
+              "answers": [
+                "18 grader",
+                "arton grader",
+                "18",
+                "arton",
+                "runt 18 grader",
+                "runt arton grader",
+                "ungefär 18 grader",
+                "cirka 18 grader"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Om man inte kan somna ska man ligga kvar i sängen och vänta.",
+              "translation": "If you can't fall asleep, you should stay in bed and wait.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Maria går upp klockan sju på vardagarna. Vilken tid passar bäst för henne att gå upp på lördag?",
+              "translation": "Maria gets up at seven on weekdays. Which time suits her best for getting up on Saturday?",
+              "options": [
+                "Klockan åtta",
+                "Klockan tio",
+                "Klockan tolv"
+              ],
+              "answers": [
+                "Klockan åtta"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad kan långvarig sömnbrist påverka? Nämn en sak.",
+              "translation": "What can long-term lack of sleep affect? Name one thing.",
+              "answers": [
+                "humöret",
+                "hälsan",
+                "humöret och hälsan",
+                "både humöret och hälsan",
+                "humör",
+                "hälsa"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "framför allt",
+              "en": "above all, mainly"
+            },
+            {
+              "fi": "en mörkläggningsgardin",
+              "en": "a blackout curtain"
+            },
+            {
+              "fi": "svag",
+              "en": "weak, dim (light)"
+            },
+            {
+              "fi": "kika",
+              "en": "to peek, take a quick look"
+            },
+            {
+              "fi": "ta igen",
+              "en": "to catch up on, make up for"
+            },
+            {
+              "fi": "regelbunden",
+              "en": "regular"
+            },
+            {
+              "fi": "sömnbrist",
+              "en": "lack of sleep"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-26-listen-2",
+          "title": "Ombord på tåget till Vasa",
+          "textType": "Meddelande på tåget",
+          "situation": {
+            "fi": "Det är dagen före midsommarafton. Du sitter på tåget från Helsingfors till Vasa och hör ett meddelande.",
+            "en": "It is the day before Midsummer Eve. You are on the train from Helsinki to Vaasa and hear an announcement."
+          },
+          "lines": [
+            {
+              "speaker": "Tågvärden",
+              "voice": "Henrik",
+              "fi": "Bästa passagerare, välkomna ombord på InterCity-tåget från Helsingfors till Vasa.",
+              "en": "Dear passengers, welcome aboard the InterCity train from Helsinki to Vaasa."
+            },
+            {
+              "speaker": "Tågvärden",
+              "voice": "Henrik",
+              "fi": "Enligt tidtabellen skulle vi anlända till Vasa klockan 13.40, men på grund av ett signalfel vid Tavastehus är vi tyvärr cirka tjugo minuter försenade.",
+              "en": "According to the timetable we were due to arrive in Vaasa at 13.40, but because of a signal fault near Hämeenlinna we are unfortunately about twenty minutes late."
+            },
+            {
+              "speaker": "Tågvärden",
+              "voice": "Henrik",
+              "fi": "Restaurangvagnen finns i vagn fyra, mitt i tåget. Där serveras kaffe, smörgåsar och varm mat fram till Östermyra.",
+              "en": "The restaurant car is in carriage four, in the middle of the train. Coffee, sandwiches and hot food are served there as far as Seinäjoki."
+            },
+            {
+              "speaker": "Tågvärden",
+              "voice": "Henrik",
+              "fi": "Observera att tåget är mycket fullt i dag. Ställ era väskor på hyllorna och inte i gången, så att alla kommer fram.",
+              "en": "Please note that the train is very full today. Put your bags on the racks and not in the aisle, so that everyone can get past."
+            },
+            {
+              "speaker": "Tågvärden",
+              "voice": "Henrik",
+              "fi": "Passagerare som ska vidare mot Karleby byter tåg i Östermyra. Anslutningståget väntar på oss.",
+              "en": "Passengers continuing towards Kokkola change trains in Seinäjoki. The connecting train is waiting for us."
+            },
+            {
+              "speaker": "Tågvärden",
+              "voice": "Henrik",
+              "fi": "Biljetterna kontrolleras snart. Ha gärna biljetten redo i mobilen.",
+              "en": "Tickets will be checked soon. Please have your ticket ready on your phone."
+            },
+            {
+              "speaker": "Tågvärden",
+              "voice": "Henrik",
+              "fi": "Vi önskar er en trevlig resa och en riktigt glad midsommar!",
+              "en": "We wish you a pleasant journey and a really happy midsummer!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför är tåget försenat?",
+              "translation": "Why is the train late?",
+              "options": [
+                "Det har varit ett signalfel",
+                "Det är många passagerare på tåget",
+                "Tåget väntar på ett annat tåg"
+              ],
+              "answers": [
+                "Det har varit ett signalfel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Ungefär hur dags kommer tåget fram till Vasa i dag?",
+              "translation": "Roughly what time does the train arrive in Vaasa today?",
+              "hint": "Räkna själv.",
+              "answers": [
+                "14",
+                "14.00",
+                "kl 14",
+                "kl 14.00",
+                "klockan 14",
+                "klockan 14.00",
+                "1400",
+                "kl 1400",
+                "klockan två",
+                "två",
+                "14:00"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "I vilken vagn finns restaurangen?",
+              "translation": "Which carriage is the restaurant in?",
+              "answers": [
+                "4",
+                "fyra",
+                "vagn 4",
+                "vagn fyra",
+                "i vagn 4",
+                "i vagn fyra"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Man kan köpa varm mat i restaurangvagnen hela vägen till Vasa.",
+              "translation": "You can buy hot food in the restaurant car all the way to Vaasa.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad ska du göra med din resväska?",
+              "translation": "What should you do with your suitcase?",
+              "options": [
+                "Lägga den på hyllan",
+                "Ställa den i gången",
+                "Lämna den i restaurangvagnen"
+              ],
+              "answers": [
+                "Lägga den på hyllan"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en passagerare",
+              "en": "a passenger"
+            },
+            {
+              "fi": "ombord",
+              "en": "on board"
+            },
+            {
+              "fi": "anlända",
+              "en": "to arrive"
+            },
+            {
+              "fi": "ett signalfel",
+              "en": "a signal fault"
+            },
+            {
+              "fi": "gången",
+              "en": "the aisle"
+            },
+            {
+              "fi": "ett anslutningståg",
+              "en": "a connecting train"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-26-read-1",
+          "title": "Sov bättre",
+          "textType": "Informationsblad från hälsostationen",
+          "minutes": 6,
+          "text": "SOV BÄTTRE – RÅD FRÅN HÄLSOSTATIONEN\n\nMånga vuxna sover dåligt ibland. Oftast går det över av sig självt, men vanorna under dagen spelar stor roll. Här är våra råd.\n\nRÖR PÅ DIG DAGLIGEN\nEn promenad på trettio minuter gör det lättare att somna. Motionera gärna utomhus på förmiddagen. Undvik hård träning de sista två timmarna innan du lägger dig.\n\nTÄNK PÅ VAD DU DRICKER\nDrick inte kaffe, te eller energidryck efter klockan tre på eftermiddagen. Alkohol kan göra dig sömnig, men du sover sämre och vaknar oftare under natten.\n\nÄT LAGOM PÅ KVÄLLEN\nEn stor middag sent på kvällen kan störa sömnen. Ät hellre ett lätt kvällsmål, till exempel en smörgås eller en yoghurt.\n\nVILA KORT\nOm du behöver vila under dagen ska du inte sova längre än tjugo minuter, och helst före klockan tre.\n\nGE DET TID\nNya vanor tar tid. Kroppen behöver troligtvis två till tre veckor för att vänja sig. Ge inte upp om det inte hjälper genast.\n\nOm du fortfarande sover dåligt efter en månad, eller om du är så trött att du inte orkar arbeta, kan du boka en tid hos en sjukskötare på din hälsostation. Ring rådgivningen vardagar kl. 8–16.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vem är texten skriven för?",
+              "translation": "Who is the text written for?",
+              "options": [
+                "Personer som har problem med sömnen",
+                "Sjukskötare på hälsostationen",
+                "Personer som vill börja träna hårt"
+              ],
+              "answers": [
+                "Personer som har problem med sömnen"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur länge ska man promenera, enligt texten?",
+              "translation": "How long should you walk, according to the text?",
+              "answers": [
+                "30 minuter",
+                "trettio minuter",
+                "30",
+                "trettio",
+                "30 min",
+                "en halvtimme",
+                "en halv timme"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Ett glas vin på kvällen hjälper dig att sova bättre hela natten.",
+              "translation": "A glass of wine in the evening helps you sleep better all night.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad är ett bra kvällsmål, enligt texten? Nämn en sak.",
+              "translation": "What is a good evening snack, according to the text? Name one thing.",
+              "answers": [
+                "en smörgås",
+                "smörgås",
+                "yoghurt",
+                "en yoghurt",
+                "en smörgås eller en yoghurt",
+                "smörgås eller yoghurt",
+                "en smörgås eller yoghurt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Anna har följt råden i fem dagar men sover fortfarande dåligt. Vad borde hon göra, enligt texten?",
+              "translation": "Anna has followed the advice for five days but still sleeps badly. What should she do, according to the text?",
+              "options": [
+                "Fortsätta några veckor till",
+                "Ringa hälsostationen genast",
+                "Sluta följa råden"
+              ],
+              "answers": [
+                "Fortsätta några veckor till"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "dagligen",
+              "en": "daily, every day"
+            },
+            {
+              "fi": "röra på sig",
+              "en": "to move about, be active"
+            },
+            {
+              "fi": "undvika",
+              "en": "to avoid"
+            },
+            {
+              "fi": "lagom",
+              "en": "just the right amount"
+            },
+            {
+              "fi": "ett kvällsmål",
+              "en": "an evening snack, a light supper"
+            },
+            {
+              "fi": "troligtvis",
+              "en": "probably"
+            },
+            {
+              "fi": "vänja sig",
+              "en": "to get used to it"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-26-read-2",
+          "title": "Välkomna till stugan i Nagu",
+          "textType": "E-post",
+          "minutes": 7,
+          "text": "Ämne: Välkomna till stugan i Nagu!\n\nHej Laura och Ahmed,\n\nVad roligt att ni har hyrt vår stuga över midsommar! Här kommer lite praktisk information.\n\nVÄGEN HIT\nFrån Åbo kör ni söderut mot Pargas. Efter Pargas tar ni färjan till Nagu. Färjan går ofta på sommaren och är gratis. Räkna med att resan tar sammanlagt ungefär en och en halv timme. Stugan ligger intill en röd lada, två kilometer efter kyrkan.\n\nNYCKELN\nNyckeln hänger i ett litet skåp på väggen bredvid dörren. Koden är 1956.\n\nBASTUN OCH BÅTEN\nVedbastun står nere vid stranden, och ved finns i boden. Lämna aldrig bastun när det brinner i kaminen. Vattnet är ungefär arton grader just nu, alltså ganska behagligt. Roddbåten får ni gärna låna, men använd alltid flytväst. Västarna hänger i boden.\n\nELD UTOMHUS\nNär det är varning för skogsbrand får man inte göra upp eld utomhus. Då vill vi inte heller att ni grillar med kol. Gasgrillen på terrassen går bra att använda.\n\nGRANNEN\nVår granne Bertil kommer möjligtvis förbi på lördag för att klippa gräset. Han är mycket trevlig och berättar gärna om fiske. Han tröttnar aldrig på det!\n\nAVRESA\nLämna stugan senast klockan 12 på söndag och lägg tillbaka nyckeln i skåpet.\n\nRing om något är oklart: 044 321 9876.\n\nGlad midsommar!\nGunilla",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skriver Gunilla?",
+              "translation": "Why is Gunilla writing?",
+              "options": [
+                "Hon ger information till dem som har hyrt hennes stuga",
+                "Hon bjuder in till en midsommarfest",
+                "Hon vill sälja sin stuga"
+              ],
+              "answers": [
+                "Hon ger information till dem som har hyrt hennes stuga"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Var finns nyckeln?",
+              "translation": "Where is the key?",
+              "hint": "Svara kort.",
+              "answers": [
+                "i ett skåp",
+                "i ett litet skåp",
+                "i skåpet",
+                "i ett skåp på väggen",
+                "i ett litet skåp på väggen",
+                "i ett skåp bredvid dörren",
+                "i ett litet skåp bredvid dörren",
+                "i ett litet skåp på väggen bredvid dörren",
+                "i skåpet bredvid dörren",
+                "bredvid dörren",
+                "på väggen bredvid dörren",
+                "ett skåp",
+                "skåpet"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Man måste betala för färjan till Nagu.",
+              "translation": "You have to pay for the ferry to Nagu.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska man ha på sig i roddbåten?",
+              "translation": "What must you wear in the rowing boat?",
+              "options": [
+                "En flytväst",
+                "En regnjacka",
+                "Badkläder"
+              ],
+              "answers": [
+                "En flytväst"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Det är varning för skogsbrand. Hur kan Laura och Ahmed laga mat utomhus?",
+              "translation": "There is a forest fire warning. How can Laura and Ahmed cook outdoors?",
+              "options": [
+                "På gasgrillen",
+                "På en kolgrill vid stranden",
+                "Över en eld på stranden"
+              ],
+              "answers": [
+                "På gasgrillen"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "söderut",
+              "en": "southwards"
+            },
+            {
+              "fi": "en färja",
+              "en": "a ferry"
+            },
+            {
+              "fi": "intill",
+              "en": "next to, right by"
+            },
+            {
+              "fi": "ved",
+              "en": "firewood"
+            },
+            {
+              "fi": "behaglig",
+              "en": "pleasant, comfortable"
+            },
+            {
+              "fi": "en flytväst",
+              "en": "a life jacket"
+            },
+            {
+              "fi": "varning för skogsbrand",
+              "en": "forest fire warning"
+            },
+            {
+              "fi": "tröttna på",
+              "en": "to get tired of"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

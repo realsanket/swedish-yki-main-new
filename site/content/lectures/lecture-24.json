@@ -478,106 +478,89 @@
       "after": "practice",
       "kind": "yki-comprehension",
       "label": "Listen and read",
-      "description": "Two short recordings and two texts of the kinds the YKI test uses, with questions you can check.",
-      "minutes": 15,
-      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "description": "Two recordings and two texts about homes and family: the shop calls back about the coffee machine, a grandfather plans a golden wedding, a flat advert and a reader's letter about a mother-in-law.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read each text once quickly and once carefully, then check your answers.",
       "parts": [
         {
           "type": "listening",
           "id": "sv-24-listen-1",
-          "title": "Ett meddelande från fastighetsskötaren",
+          "title": "Butiken ringer tillbaka",
           "textType": "Telefonmeddelande",
           "situation": {
-            "fi": "Du hör ett meddelande på din telefonsvarare.",
-            "en": "You hear a message on your voicemail."
+            "fi": "Alex har mejlat en butik och frågat om en kaffemaskin. Nu hör han ett meddelande på sin telefonsvarare.",
+            "en": "Alex has emailed a shop to ask about a coffee machine. Now he hears a message on his voicemail."
           },
           "lines": [
             {
-              "speaker": "Fastighetsskötaren",
-              "voice": "Henrik",
-              "fi": "Hej, det här är Mats från fastighetsservice. Jag ringer om nyckeln till din nya lägenhet på Rönngatan.",
-              "en": "Hi, this is Mats from property services. I'm calling about the key to your new flat on Rönngatan."
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Hej Alex, det här är Sanna från Hushållsboden i Kampen. Jag ringer angående ditt mejl om kaffemaskinen Nordbrygg 300.",
+              "en": "Hi Alex, this is Sanna from Hushållsboden in Kamppi. I'm calling about your email about the Nordbrygg 300 coffee machine."
             },
             {
-              "speaker": "Fastighetsskötaren",
-              "voice": "Henrik",
-              "fi": "Du kan hämta den på vårt kontor torsdagen den trettionde juli, mellan klockan nio och tre. Kom ihåg att ta med ett identitetsbevis.",
-              "en": "You can pick it up at our office on Thursday 30 July, between nine and three. Remember to bring an ID."
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Tack för dina frågor! Vi har tyvärr inga maskiner i lager just nu, men vi får in fem nya nästa onsdag.",
+              "en": "Thanks for your questions! Unfortunately we don't have any machines in stock right now, but we're getting five new ones next Wednesday."
             },
             {
-              "speaker": "Fastighetsskötaren",
-              "voice": "Henrik",
-              "fi": "Om tiden inte passar, ring mig på nummer 040 112 3344. Ha en bra dag!",
-              "en": "If the time doesn't suit you, call me on 040 112 3344. Have a good day!"
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Priset är 189 euro. För närvarande har vi också ett erbjudande: om du köper maskinen före månadsskiftet får du ett paket kaffebönor på köpet.",
+              "en": "The price is 189 euros. At the moment we also have an offer: if you buy the machine before the end of the month, you get a packet of coffee beans thrown in."
+            },
+            {
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Du frågade också om garantin. Den gäller i två år, och om något går sönder skickar vi maskinen på reparation utan kostnad.",
+              "en": "You also asked about the guarantee. It lasts two years, and if something breaks, we send the machine for repair free of charge."
+            },
+            {
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Om du vill kan jag reservera en maskin åt dig. Då ligger den här vid kassan till fredagen den tredje juli. Ring eller skicka ett sms till noll fem noll, sju sex fem, fyra tre två ett.",
+              "en": "If you like, I can reserve a machine for you. Then it will wait here at the till until Friday the third of July. Call or send a text to 050 765 4321."
+            },
+            {
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Ha en fin dag, hej då!",
+              "en": "Have a nice day, bye!"
             }
           ],
           "questions": [
             {
               "id": "q1",
-              "prompt": "Varför ringer Mats?",
-              "translation": "Why is Mats calling?",
+              "prompt": "Varför ringer Sanna?",
+              "translation": "Why is Sanna calling?",
               "options": [
-                "Om hyran",
-                "Om nyckeln",
-                "Om en vattenskada"
+                "Hon svarar på Alex frågor om en kaffemaskin",
+                "Hon vill sälja en ny diskmaskin till Alex",
+                "Hon påminner Alex om en obetald räkning"
               ],
               "answers": [
-                "Om nyckeln"
+                "Hon svarar på Alex frågor om en kaffemaskin"
               ]
             },
             {
               "id": "q2",
-              "prompt": "När kan du hämta nyckeln?",
-              "translation": "When can you pick up the key?",
-              "options": [
-                "Torsdag 30 juli kl. 9–15",
-                "Tisdag 30 juli kl. 9–15",
-                "Torsdag 30 juli kl. 15–19"
-              ],
+              "prompt": "Hur mycket kostar maskinen?",
+              "translation": "How much does the machine cost?",
+              "hint": "Skriv summan.",
               "answers": [
-                "Torsdag 30 juli kl. 9–15"
+                "189 euro",
+                "189",
+                "189 €",
+                "etthundraåttionio euro",
+                "hundraåttionio euro",
+                "hundraåttionio"
               ]
             },
             {
               "id": "q3",
-              "prompt": "Vad måste du ta med?",
-              "translation": "What must you bring?",
-              "answers": [
-                "ett identitetsbevis",
-                "identitetsbevis",
-                "id",
-                "ett id",
-                "id-kort",
-                "ett id-kort",
-                "pass",
-                "passet"
-              ],
-              "hint": "Skriv ett eller två ord."
-            }
-          ],
-          "words": [
-            {
-              "fi": "fastighetsservice",
-              "en": "property services"
-            },
-            {
-              "fi": "ett identitetsbevis",
-              "en": "a proof of identity, an ID"
-            }
-          ]
-        },
-        {
-          "type": "reading",
-          "id": "sv-24-read-1",
-          "title": "Meddelande till de boende",
-          "textType": "Anslag i trappuppgången",
-          "minutes": 4,
-          "text": "MEDDELANDE TILL DE BOENDE\n\nTvättstugan är stängd måndagen den 3 augusti på grund av reparation. Från tisdagen den 4 augusti kan du boka tvättider som vanligt på bokningstavlan.\n\nNytt: Torkrummet får inte användas efter klockan 22. Tänk på dina grannar!\n\nFrågor? Kontakta fastighetsservice, tfn 040 112 3344.",
-          "questions": [
-            {
-              "id": "q1",
-              "prompt": "Tvättstugan är stängd hela augusti.",
-              "translation": "The laundry room is closed all of August.",
+              "prompt": "Butiken har maskinen i lager i dag.",
+              "translation": "The shop has the machine in stock today.",
               "options": [
                 "Rätt",
                 "Fel"
@@ -587,40 +570,451 @@
               ]
             },
             {
-              "id": "q2",
-              "prompt": "Varför är tvättstugan stängd?",
-              "translation": "Why is the laundry room closed?",
+              "id": "q4",
+              "prompt": "Vad får man på köpet om man köper maskinen före månadsskiftet?",
+              "translation": "What do you get as a bonus if you buy the machine before the end of the month?",
               "options": [
-                "Den ska repareras",
-                "Den ska städas",
-                "Den ska målas"
+                "Ett paket kaffebönor",
+                "Ett års längre garanti",
+                "Gratis hemleverans"
               ],
               "answers": [
-                "Den ska repareras"
+                "Ett paket kaffebönor"
               ]
             },
             {
-              "id": "q3",
-              "prompt": "Vad är nytt för torkrummet?",
-              "translation": "What is new about the drying room?",
-              "model": "Man får inte använda det efter klockan 22.",
-              "answers": [
-                "efter klockan 22",
-                "inte efter klockan 22",
-                "inte efter 22",
-                "efter 22"
+              "id": "q5",
+              "prompt": "Vad bör Alex göra om han vill vara säker på att få en maskin?",
+              "translation": "What should Alex do if he wants to be sure to get a machine?",
+              "options": [
+                "Kontakta Sanna och be henne reservera en",
+                "Gå till butiken tidigt på onsdag morgon",
+                "Skicka ett nytt mejl med samma frågor"
               ],
-              "hint": "Svara kort."
+              "answers": [
+                "Kontakta Sanna och be henne reservera en"
+              ]
             }
           ],
           "words": [
             {
-              "fi": "tvättstugan",
-              "en": "the laundry room"
+              "fi": "i lager",
+              "en": "in stock"
             },
             {
-              "fi": "torkrummet",
-              "en": "the drying room"
+              "fi": "för närvarande",
+              "en": "at present, at the moment"
+            },
+            {
+              "fi": "månadsskiftet",
+              "en": "the turn of the month"
+            },
+            {
+              "fi": "på köpet",
+              "en": "thrown in, as a bonus"
+            },
+            {
+              "fi": "en garanti",
+              "en": "a guarantee, a warranty"
+            },
+            {
+              "fi": "reservera",
+              "en": "to reserve, hold"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-24-listen-2",
+          "title": "Morfar planerar en fest",
+          "textType": "Telefonsamtal",
+          "situation": {
+            "fi": "Ida, sexton år, pratar i telefon med sin morfar.",
+            "en": "Ida, sixteen, is talking on the phone with her grandfather (her mother's father)."
+          },
+          "lines": [
+            {
+              "speaker": "Ida",
+              "voice": "Maja",
+              "fi": "Hej morfar! Mamma sa att du ville prata med mig.",
+              "en": "Hi Grandpa! Mum said you wanted to talk to me."
+            },
+            {
+              "speaker": "Morfar",
+              "voice": "Henrik",
+              "fi": "Hej Ida! Ja, du vet ju att mormor och jag har varit gifta i femtio år nu i augusti.",
+              "en": "Hi Ida! Yes, you know that Grandma and I will have been married for fifty years in August."
+            },
+            {
+              "speaker": "Ida",
+              "voice": "Maja",
+              "fi": "Guldbröllop! Vad häftigt. Ska ni ha fest?",
+              "en": "A golden wedding! How cool. Are you having a party?"
+            },
+            {
+              "speaker": "Morfar",
+              "voice": "Henrik",
+              "fi": "Ja, men det är en överraskning för mormor, så säg ingenting till henne. Festen blir lördagen den åttonde augusti på vår sommarstuga i Ingå.",
+              "en": "Yes, but it's a surprise for Grandma, so don't say anything to her. The party will be on Saturday the eighth of August at our summer cottage in Inkoo."
+            },
+            {
+              "speaker": "Ida",
+              "voice": "Maja",
+              "fi": "Jag lovar. Hur många gäster kommer?",
+              "en": "I promise. How many guests are coming?"
+            },
+            {
+              "speaker": "Morfar",
+              "voice": "Henrik",
+              "fi": "Ungefär fyrtio. Hela släkten och några gamla vänner från Åbo. Men jag behöver hjälp. Kan du göra inbjudningarna? Du är så bra på datorn.",
+              "en": "About forty. The whole family and some old friends from Turku. But I need help. Can you make the invitations? You're so good with the computer."
+            },
+            {
+              "speaker": "Ida",
+              "voice": "Maja",
+              "fi": "Klart jag kan! Ska jag skicka dem per e-post?",
+              "en": "Of course I can! Shall I send them by email?"
+            },
+            {
+              "speaker": "Morfar",
+              "voice": "Henrik",
+              "fi": "Helst per post. Många av våra vänner har ingen e-post. Mormors syster Kerstin är till exempel nittio år.",
+              "en": "By post, preferably. Many of our friends don't have email. Grandma's sister Kerstin, for example, is ninety."
+            },
+            {
+              "speaker": "Ida",
+              "voice": "Maja",
+              "fi": "Okej, jag fixar fina kort. Vad ska det stå om presenter?",
+              "en": "OK, I'll sort out some nice cards. What should it say about presents?"
+            },
+            {
+              "speaker": "Morfar",
+              "voice": "Henrik",
+              "fi": "Att vi inte vill ha några. Vi har allt vi behöver. Den som vill kan ge en gåva till Finlands Röda Kors i stället.",
+              "en": "That we don't want any. We have everything we need. Anyone who wants to can give a donation to the Finnish Red Cross instead."
+            },
+            {
+              "speaker": "Ida",
+              "voice": "Maja",
+              "fi": "Vad fint. Och maten?",
+              "en": "That's nice. And the food?"
+            },
+            {
+              "speaker": "Morfar",
+              "voice": "Henrik",
+              "fi": "Din moster lagar en rejäl middag, och jag grillar. Men tårtan beställer vi från ett bageri.",
+              "en": "Your aunt is cooking a proper dinner, and I'll do the barbecue. But we're ordering the cake from a bakery."
+            },
+            {
+              "speaker": "Ida",
+              "voice": "Maja",
+              "fi": "Då kan jag hämta tårtan på morgonen.",
+              "en": "Then I can pick up the cake in the morning."
+            },
+            {
+              "speaker": "Morfar",
+              "voice": "Henrik",
+              "fi": "Tack, gumman. Du är min favorit, men säg inte det till dina kusiner!",
+              "en": "Thanks, love. You're my favourite, but don't tell your cousins!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer morfar till Ida?",
+              "translation": "Why does Grandpa call Ida?",
+              "options": [
+                "Han vill ha hjälp med en fest",
+                "Han vill bjuda henne på middag",
+                "Han vill höra hur det går i skolan"
+              ],
+              "answers": [
+                "Han vill ha hjälp med en fest"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Mormor vet redan om festen.",
+              "translation": "Grandma already knows about the party.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur många gäster kommer ungefär?",
+              "translation": "About how many guests are coming?",
+              "answers": [
+                "40",
+                "fyrtio",
+                "ungefär 40",
+                "ungefär fyrtio",
+                "cirka 40",
+                "ca 40",
+                "40 gäster",
+                "fyrtio gäster"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad vill morfar och mormor inte få?",
+              "translation": "What do Grandpa and Grandma not want to receive?",
+              "hint": "Ett ord räcker.",
+              "answers": [
+                "presenter",
+                "några presenter",
+                "inga presenter",
+                "present",
+                "en present"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad kan man förstå om morfars och mormors vänner?",
+              "translation": "What can you tell about Grandpa and Grandma's friends?",
+              "options": [
+                "Många av dem är ganska gamla",
+                "De flesta bor i Ingå",
+                "De kan inte komma på festen"
+              ],
+              "answers": [
+                "Många av dem är ganska gamla"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett guldbröllop",
+              "en": "a golden wedding (50 years)"
+            },
+            {
+              "fi": "en överraskning",
+              "en": "a surprise"
+            },
+            {
+              "fi": "släkten",
+              "en": "the (extended) family, relatives"
+            },
+            {
+              "fi": "en gåva",
+              "en": "a gift, a donation"
+            },
+            {
+              "fi": "rejäl",
+              "en": "proper, substantial"
+            },
+            {
+              "fi": "gumman",
+              "en": "(affectionate) love, dear (to a girl or woman)"
+            },
+            {
+              "fi": "en moster",
+              "en": "an aunt (mother's sister)"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-24-read-1",
+          "title": "Ljus trea i Hagnäs",
+          "textType": "Bostadsannons",
+          "minutes": 5,
+          "text": "UTHYRES: LJUS TREA I HAGNÄS\n\nTrevlig trea (3 rum och kök) på 68 kvadratmeter i ett lugnt hus från 1950-talet. Lägenheten ligger på fjärde våningen, och huset har hiss. Två sovrum och ett stort vardagsrum med fönster mot gården. Köket renoverades förra året och har diskmaskin. Badrummet är litet men har plats för tvättmaskin.\n\nI huset finns bastu (gemensam bastutur på lördagar), cykelrum och ett förråd i källaren för varje lägenhet. Det tar fem minuter att gå till metron och torget.\n\nHyra: 1 290 € i månaden. Vatten 25 € per person och månad. El ingår inte.\nHyresgaranti: två månadshyror.\nLedig från månadsskiftet augusti–september (1.9.2026).\nHusdjur är inte tillåtna. Rökfritt hus.\n\nLägenheten passar ett par eller en liten familj.\n\nVisning söndag 9.8 kl. 13–14. Ingen föranmälan behövs.\nAnsvarig: Fastighets Ab Linden, tfn 09 876 5432 (vardagar kl. 9–16).",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar annonsen om?",
+              "translation": "What is the advert about?",
+              "options": [
+                "En lägenhet som man kan hyra",
+                "En lägenhet som är till salu",
+                "Ett rum i ett studenthem"
+              ],
+              "answers": [
+                "En lägenhet som man kan hyra"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur stor är lägenheten?",
+              "translation": "How big is the flat?",
+              "answers": [
+                "68 kvadratmeter",
+                "68",
+                "68 m2",
+                "68 kvm",
+                "68 kvadrat",
+                "sextioåtta kvadratmeter",
+                "sextioåtta"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Elen ingår i hyran.",
+              "translation": "Electricity is included in the rent.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Man måste ringa och anmäla sig före visningen.",
+              "translation": "You must phone and sign up before the viewing.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vem kan INTE hyra lägenheten?",
+              "translation": "Who can NOT rent the flat?",
+              "options": [
+                "En person som har en hund",
+                "En familj med ett litet barn",
+                "Ett par som cyklar mycket"
+              ],
+              "answers": [
+                "En person som har en hund"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "uthyres",
+              "en": "to let, for rent"
+            },
+            {
+              "fi": "ett förråd",
+              "en": "a storage room"
+            },
+            {
+              "fi": "ingå",
+              "en": "to be included"
+            },
+            {
+              "fi": "en hyresgaranti",
+              "en": "a rent deposit"
+            },
+            {
+              "fi": "en visning",
+              "en": "a viewing"
+            },
+            {
+              "fi": "ansvarig",
+              "en": "responsible, the person in charge"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-24-read-2",
+          "title": "Fråga Karin",
+          "textType": "Läsarbrev och svar i en tidning",
+          "minutes": 7,
+          "text": "FRÅGA KARIN\n\nHej Karin!\nMin sambo och jag flyttade ihop för ett år sedan. Vi är väldigt lyckliga, men det finns ett problem: hans mamma. Hon har en egen nyckel till vår lägenhet och kommer på besök nästan varje söndag, utan att ringa först. Ibland sover vi fortfarande när hon kommer! Hon är snäll och tar alltid med sig mat, men jag vill kunna vara ensam med min sambo på helgen. Min sambo säger att det inte är något problem. Vad ska jag göra?\nTrött på söndagsbesök\n\nHej Trött!\nDu är inte ensam. Många par har en förälder som gärna hälsar på lite för ofta. Det är fint att din svärmor vill ta hand om er, men ni behöver också tid på tumanhand.\n\nBörja med att prata med din sambo, inte med hans mamma. Förklara hur du känner, och kom överens om vad ni vill. Kanske passar det bra med besök varannan söndag, om hon ringer dagen innan?\n\nSedan bör din sambo prata med sin mamma. Det är ju hans mamma, så det är naturligt att han tar det samtalet. Han kan börja med något positivt: ”Vi tycker om när du kommer, och maten är jättegod.” Sedan kommer önskemålet. Han kan också be att få tillbaka nyckeln, eller säga att den bara är till för nödfall.\n\nMitt intryck är att din svärmor inte vill störa. Hon vet förmodligen inte att besöken är jobbiga för dig. När hon får veta det blir allt säkert lättare.\n\nLycka till!\nKarin",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är problemet för den som skriver brevet?",
+              "translation": "What is the letter writer's problem?",
+              "options": [
+                "Svärmor kommer på besök för ofta utan att ringa",
+                "Svärmor tycker inte om parets mat",
+                "Sambon vill flytta hem till sin mamma"
+              ],
+              "answers": [
+                "Svärmor kommer på besök för ofta utan att ringa"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Sambon tycker också att besöken är ett problem.",
+              "translation": "The partner also thinks the visits are a problem.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vem ska prata med svärmor, enligt Karin?",
+              "translation": "Who should talk to the mother-in-law, according to Karin?",
+              "options": [
+                "Sambon",
+                "Brevskrivaren",
+                "Karin själv"
+              ],
+              "answers": [
+                "Sambon"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska svärmor göra dagen innan hon kommer, i Karins förslag?",
+              "translation": "What should the mother-in-law do the day before she comes, in Karin's suggestion?",
+              "hint": "Ett eller två ord.",
+              "answers": [
+                "ringa",
+                "ringa först",
+                "ringa dagen innan",
+                "hon ska ringa",
+                "ringa och fråga",
+                "ringa före"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad tror Karin om svärmor?",
+              "translation": "What does Karin think about the mother-in-law?",
+              "options": [
+                "Hon menar inget illa",
+                "Hon vill bestämma över paret",
+                "Hon känner sig ensam och har tråkigt"
+              ],
+              "answers": [
+                "Hon menar inget illa"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "komma överens",
+              "en": "to agree"
+            },
+            {
+              "fi": "naturlig",
+              "en": "natural"
+            },
+            {
+              "fi": "ett önskemål",
+              "en": "a wish, a request"
+            },
+            {
+              "fi": "ett nödfall",
+              "en": "an emergency"
+            },
+            {
+              "fi": "ett intryck",
+              "en": "an impression"
+            },
+            {
+              "fi": "störa",
+              "en": "to disturb, bother"
             }
           ]
         }

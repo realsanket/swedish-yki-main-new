@@ -2178,6 +2178,560 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about good and bad news and dressing for a party: radio news, buying a suit, a birthday invitation with a dress code and a newspaper column about showing sympathy.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read each text once quickly and once carefully, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-25-listen-1",
+          "title": "Morgonens nyheter",
+          "textType": "Nyheter på radio",
+          "situation": {
+            "fi": "Du lyssnar på nyheterna på radion en morgon i juni.",
+            "en": "You are listening to the news on the radio one morning in June."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Klockan är åtta, här är nyheterna.",
+              "en": "It is eight o'clock, here is the news."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "I natt inträffade en brand i tvättstugan i ett hyreshus i Berghäll. Räddningsverket kom till platsen strax efter klockan två. Alla boende kunde lämna huset, och ingen skadades.",
+              "en": "Last night a fire broke out in the laundry room of a block of flats in Kallio. The rescue department arrived just after two o'clock. All the residents were able to leave the building, and nobody was hurt."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Enligt räddningsverket började branden troligen i en torktumlare. Elva lägenheter fick skador av röken, och familjerna bor tillfälligt på hotell.",
+              "en": "According to the rescue department, the fire probably started in a tumble dryer. Eleven flats were damaged by the smoke, and the families are staying in a hotel for the time being."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Räddningsverket påminner om att man ska rengöra filtret i torktumlaren efter varje tvätt.",
+              "en": "The rescue department reminds people to clean the tumble dryer's filter after every wash."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Och så en gladare nyhet. Det nya badhuset i Fiskehamnen öppnar på lördag. Bygget har tagit tre år och kostat sammanlagt fyrtio miljoner euro.",
+              "en": "And now some happier news. The new swimming baths in Kalasatama open on Saturday. The building work has taken three years and cost forty million euros in total."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Den första veckan är inträdet gratis för alla barn och unga under sjutton år.",
+              "en": "In the first week, entry is free for all children and young people under seventeen."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Till sist vädret. I dag blir det soligt i södra Finland, med upp till tjugofem grader. I morgon eftermiddag kommer kraftigt regn och åska från väster, och det fortsätter hela kvällen.",
+              "en": "Finally, the weather. Today it will be sunny in southern Finland, with up to twenty-five degrees. Tomorrow afternoon heavy rain and thunder will come in from the west, and it will continue all evening."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Några personer skadades i branden.",
+              "translation": "Some people were hurt in the fire.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Var började branden troligen?",
+              "translation": "Where did the fire probably start?",
+              "options": [
+                "I en torktumlare",
+                "I ett kök",
+                "I en bastu"
+              ],
+              "answers": [
+                "I en torktumlare"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur många lägenheter fick skador?",
+              "translation": "How many flats were damaged?",
+              "answers": [
+                "11",
+                "elva",
+                "11 lägenheter",
+                "elva lägenheter"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vem får bada gratis den första veckan?",
+              "translation": "Who can swim for free in the first week?",
+              "options": [
+                "Barn och unga under 17 år",
+                "Alla som bor i Fiskehamnen",
+                "Familjerna från huset i Berghäll"
+              ],
+              "answers": [
+                "Barn och unga under 17 år"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilken plan passar bäst i morgon kväll?",
+              "translation": "Which plan suits tomorrow evening best?",
+              "options": [
+                "Att gå på bio",
+                "Att grilla i parken",
+                "Att bada i havet"
+              ],
+              "answers": [
+                "Att gå på bio"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "inträffa",
+              "en": "to happen, occur"
+            },
+            {
+              "fi": "en brand",
+              "en": "a fire (that destroys things)"
+            },
+            {
+              "fi": "räddningsverket",
+              "en": "the rescue department (fire brigade) in Finland"
+            },
+            {
+              "fi": "en torktumlare",
+              "en": "a tumble dryer"
+            },
+            {
+              "fi": "tillfälligt",
+              "en": "temporarily"
+            },
+            {
+              "fi": "sammanlagt",
+              "en": "in total"
+            },
+            {
+              "fi": "åska",
+              "en": "thunder"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-25-listen-2",
+          "title": "En kostym till bröllopet",
+          "textType": "Samtal i en butik",
+          "situation": {
+            "fi": "En man behöver en kostym och frågar en försäljare i en klädaffär.",
+            "en": "A man needs a suit and asks a shop assistant in a clothes shop."
+          },
+          "lines": [
+            {
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Hej! Kan jag hjälpa dig med något?",
+              "en": "Hi! Can I help you with anything?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Ja, gärna. Jag ska på bröllop om två veckor, och på inbjudan står det mörk kostym. Jag har ingen kostym alls.",
+              "en": "Yes, please. I'm going to a wedding in two weeks, and the invitation says dark suit. I don't have a suit at all."
+            },
+            {
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Vad roligt med bröllop! Vilken storlek har du?",
+              "en": "How nice, a wedding! What size are you?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Jag tror att jag har femtio, men jag är inte säker.",
+              "en": "I think I'm a fifty, but I'm not sure."
+            },
+            {
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Vi kan mäta. Vilken färg tänkte du dig? Mörkblått är populärt i år, och det passar till nästan allt.",
+              "en": "We can measure. What colour were you thinking of? Dark blue is popular this year, and it goes with almost everything."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Mörkblått låter bra. Men den får inte vara för varm. Bröllopet är utomhus i juli.",
+              "en": "Dark blue sounds good. But it mustn't be too warm. The wedding is outdoors in July."
+            },
+            {
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Då är min rekommendation den här. Tyget är tunn ull, så den är skön även när det är varmt. Prova gärna, provrummet är där borta.",
+              "en": "Then my recommendation is this one. The fabric is thin wool, so it's comfortable even when it's warm. Do try it on, the fitting room is over there."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Kavajen sitter perfekt, men byxorna är lite för långa.",
+              "en": "The jacket fits perfectly, but the trousers are a bit too long."
+            },
+            {
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Det fixar vi. Vår skräddare kan korta dem till på torsdag. Det kostar tjugo euro.",
+              "en": "We'll fix that. Our tailor can shorten them by Thursday. It costs twenty euros."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Bra. Och vad kostar kostymen?",
+              "en": "Good. And how much is the suit?"
+            },
+            {
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Den kostar 349 euro, men just nu har vi tjugo procents rabatt på alla kostymer.",
+              "en": "It costs 349 euros, but right now we have twenty per cent off all suits."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Vad bra, då tar jag den. Behöver jag slips också?",
+              "en": "Great, then I'll take it. Do I need a tie as well?"
+            },
+            {
+              "speaker": "Försäljaren",
+              "voice": "Elin",
+              "fi": "Ja, till mörk kostym har man slips. Slipsar och skjortor hittar du på andra våningen.",
+              "en": "Yes, with a dark suit you wear a tie. You'll find ties and shirts on the second floor."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför behöver kunden en kostym?",
+              "translation": "Why does the customer need a suit?",
+              "options": [
+                "Han ska gå på ett bröllop",
+                "Han ska börja på ett nytt jobb",
+                "Han ska på en jobbintervju"
+              ],
+              "answers": [
+                "Han ska gå på ett bröllop"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Varför rekommenderar försäljaren en kostym av tunn ull?",
+              "translation": "Why does the assistant recommend a suit made of thin wool?",
+              "options": [
+                "Bröllopet är utomhus på sommaren",
+                "Den är billigast i butiken",
+                "Den är populärast i år"
+              ],
+              "answers": [
+                "Bröllopet är utomhus på sommaren"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "När är byxorna klara?",
+              "translation": "When will the trousers be ready?",
+              "answers": [
+                "på torsdag",
+                "torsdag",
+                "till på torsdag",
+                "på torsdagen",
+                "torsdagen",
+                "till torsdag"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Kunden betalar mindre än 349 euro för kostymen.",
+              "translation": "The customer pays less than 349 euros for the suit.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad ska kunden leta efter på andra våningen?",
+              "translation": "What is the customer going to look for on the second floor?",
+              "hint": "Ett ord räcker.",
+              "answers": [
+                "en slips",
+                "slips",
+                "slipsar",
+                "en slips och en skjorta",
+                "slips och skjorta",
+                "en skjorta och en slips",
+                "skjorta och slips"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en rekommendation",
+              "en": "a recommendation"
+            },
+            {
+              "fi": "ett tyg",
+              "en": "a fabric, material"
+            },
+            {
+              "fi": "ull",
+              "en": "wool"
+            },
+            {
+              "fi": "ett provrum",
+              "en": "a fitting room"
+            },
+            {
+              "fi": "en skräddare",
+              "en": "a tailor"
+            },
+            {
+              "fi": "korta",
+              "en": "to shorten"
+            },
+            {
+              "fi": "en rabatt",
+              "en": "a discount"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-25-read-1",
+          "title": "Välkommen på 40-årsfest!",
+          "textType": "Inbjudan",
+          "minutes": 5,
+          "text": "Kära vänner!\n\nDen 22 augusti fyller jag 40 år, och det vill jag fira tillsammans med er!\n\nNÄR: lördagen den 22 augusti kl. 18.00\nVAR: Restaurang Sjöboden, Brunnsparken, Helsingfors. Närmaste spårvagnshållplats är Brunnsparken.\n\nKLÄDSEL: Kavaj. Det betyder kostym eller kavaj och byxor för herrarna och klänning eller byxdress för damerna. Ingen behöver köpa nya kläder – kom i det som du känner dig fin i!\n\nVi bjuder på middag, dryck och musik. Säg till om du har någon allergi eller äter vegetariskt. Förhoppningsvis blir vädret fint, så att vi kan sitta ute på terrassen.\n\nPRESENTER: Jag har allt jag behöver. Om du ändå vill ge något, tar jag gärna emot ett bidrag till min resa till Japan i höst. Kontonumret får du av min syster Hanna.\n\nBARN: Festen på lördagen är för vuxna. Ni som har barn är varmt välkomna på brunch hemma hos oss på söndagen kl. 11–14, tillsammans med barnen.\n\nOSA senast den 8 augusti till Hanna, tfn 040 555 7788 eller hanna.berg@exempel.fi.\n\nVarmt välkomna!\nKram, Johanna",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför har Johanna skrivit texten?",
+              "translation": "Why has Johanna written the text?",
+              "options": [
+                "Hon bjuder in till sin födelsedagsfest",
+                "Hon bjuder in till sitt bröllop",
+                "Hon tackar för en fest"
+              ],
+              "answers": [
+                "Hon bjuder in till sin födelsedagsfest"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vad kan en man ha på sig enligt klädkoden? Nämn ett plagg.",
+              "translation": "What can a man wear according to the dress code? Name one item.",
+              "answers": [
+                "kostym",
+                "en kostym",
+                "kavaj",
+                "en kavaj",
+                "kostym eller kavaj",
+                "kavaj eller kostym",
+                "kavaj och byxor",
+                "en kavaj och byxor"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Barn är välkomna på festen på lördagskvällen.",
+              "translation": "Children are welcome at the party on Saturday evening.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vem ska man svara till?",
+              "translation": "Who should you reply to?",
+              "hint": "Skriv namnet.",
+              "answers": [
+                "hanna",
+                "till hanna",
+                "hanna berg",
+                "till hanna berg",
+                "johannas syster",
+                "till johannas syster",
+                "hennes syster",
+                "systern"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilken present blir Johanna troligen gladast för?",
+              "translation": "Which present will Johanna probably be happiest with?",
+              "options": [
+                "Pengar till resan",
+                "En ny klänning",
+                "En bok om Japan"
+              ],
+              "answers": [
+                "Pengar till resan"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "klädsel",
+              "en": "dress code (on an invitation)"
+            },
+            {
+              "fi": "en byxdress",
+              "en": "a trouser suit"
+            },
+            {
+              "fi": "förhoppningsvis",
+              "en": "hopefully"
+            },
+            {
+              "fi": "ett bidrag",
+              "en": "a contribution"
+            },
+            {
+              "fi": "en brunch",
+              "en": "a brunch"
+            },
+            {
+              "fi": "OSA (om svar anhålles)",
+              "en": "RSVP, please reply"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-25-read-2",
+          "title": "Säg något – vad som helst",
+          "textType": "Kolumn i en tidning",
+          "minutes": 7,
+          "text": "SÄG NÅGOT – VAD SOM HELST\n\nFör två år sedan dog min pappa. Det var en tung tid, men det jag minns bäst i dag är inte sorgen. Det är hur människorna runt mig reagerade.\n\nNågra ringde omedelbart och frågade om de kunde hjälpa till. En granne kom med en gryta och sa bara: ”Jag beklagar sorgen. Jag ställer maten här.” Det var allt, men det betydde mycket.\n\nAndra sa ingenting alls. En kollega som jag hade ätit lunch med i flera år gick åt andra hållet när hon såg mig i korridoren. Jag blev både ledsen och arg. Först senare förstod jag att hon inte var elak. Hon var rädd för att säga fel sak.\n\nDärför vill jag ge ett enkelt råd: säg något. Det behöver inte vara klokt eller vackert. ”Jag vet inte vad jag ska säga, men jag tänker på dig” räcker långt. Den som sörjer vill inte att du ska lösa problemet. Hen vill bara inte känna sig ensam.\n\nFråga gärna om personen som har dött. Jag pratade gärna om pappa och hans lustiga historier, och ett leende mitt i allt det tunga kändes som en befrielse.\n\nOch glöm inte personen efter några veckor. Dessvärre är det då som många slutar höra av sig, fast det ofta är då man är som mest olycklig. Ett sms efter tre månader kan vara det finaste man får.\n\nMaria Lindholm",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är skribentens viktigaste budskap?",
+              "translation": "What is the writer's most important message?",
+              "options": [
+                "Säg något till den som sörjer, även om det är enkelt",
+                "Ta alltid med mat till den som sörjer",
+                "Prata inte om den som har dött"
+              ],
+              "answers": [
+                "Säg något till den som sörjer, även om det är enkelt"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vad tog grannen med sig?",
+              "translation": "What did the neighbour bring?",
+              "hint": "Ett eller två ord.",
+              "answers": [
+                "en gryta",
+                "gryta",
+                "mat",
+                "en gryta med mat"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Kollegan gick åt andra hållet eftersom hon inte tyckte om skribenten.",
+              "translation": "The colleague walked the other way because she did not like the writer.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Skribenten ville helst inte prata om sin pappa.",
+              "translation": "The writer preferred not to talk about her father.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "När behöver den som sörjer kanske mest stöd, enligt texten?",
+              "translation": "When does someone who is grieving perhaps need the most support, according to the text?",
+              "options": [
+                "Några veckor eller månader efter dödsfallet",
+                "Samma dag som dödsfallet",
+                "På begravningen"
+              ],
+              "answers": [
+                "Några veckor eller månader efter dödsfallet"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "omedelbart",
+              "en": "immediately"
+            },
+            {
+              "fi": "en gryta",
+              "en": "a stew, a casserole"
+            },
+            {
+              "fi": "gå åt andra hållet",
+              "en": "to walk the other way"
+            },
+            {
+              "fi": "sörja",
+              "en": "to grieve, mourn"
+            },
+            {
+              "fi": "ett leende",
+              "en": "a smile"
+            },
+            {
+              "fi": "dessvärre",
+              "en": "unfortunately"
+            },
+            {
+              "fi": "olycklig",
+              "en": "unhappy"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

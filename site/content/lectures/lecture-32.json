@@ -2150,6 +2150,543 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about finding the way and making complaints, of the kinds the YKI test uses, with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-32-listen-1",
+          "title": "Vet du var Kela ligger?",
+          "textType": "Samtal på gatan",
+          "situation": {
+            "fi": "En kvinna frågar en äldre man om vägen.",
+            "en": "A woman asks an older man the way."
+          },
+          "lines": [
+            {
+              "speaker": "Kvinnan",
+              "voice": "Elin",
+              "fi": "Ursäkta, får jag fråga en sak? Vet du var Kelas byrå ligger? Jag tror att jag har gått åt fel riktning.",
+              "en": "Excuse me, may I ask something? Do you know where the Kela office is? I think I've gone in the wrong direction."
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Henrik",
+              "fi": "Kela, ja. Den har flyttat, vet du. Förut låg den vid torget, men nu finns den i det nya köpcentret.",
+              "en": "Kela, yes. It has moved, you know. It used to be by the square, but now it's in the new shopping centre."
+            },
+            {
+              "speaker": "Kvinnan",
+              "voice": "Elin",
+              "fi": "Jaså! Är det långt härifrån?",
+              "en": "Oh! Is it far from here?"
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Henrik",
+              "fi": "Nej då, ungefär fem minuter till fots. Du går rakt fram längs den här gatan, förbi apoteket och biblioteket.",
+              "en": "Not at all, about five minutes on foot. You go straight ahead along this street, past the pharmacy and the library."
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Henrik",
+              "fi": "Vid trafikljusen korsar du gatan. Köpcentret är den stora byggnaden i glas, mittemot busstationen.",
+              "en": "At the traffic lights you cross the street. The shopping centre is the big glass building opposite the bus station."
+            },
+            {
+              "speaker": "Kvinnan",
+              "voice": "Elin",
+              "fi": "Så jag ska gå rakt fram, förbi biblioteket, och korsa gatan vid trafikljusen?",
+              "en": "So I go straight ahead, past the library, and cross the street at the traffic lights?"
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Henrik",
+              "fi": "Just det. Kela finns på andra våningen. Ta rulltrappan, så ser du skylten direkt till vänster.",
+              "en": "That's right. Kela is on floor 2 (in Finland the ground floor is floor 1). Take the escalator and you'll see the sign straight away on the left."
+            },
+            {
+              "speaker": "Kvinnan",
+              "voice": "Elin",
+              "fi": "Vet du om det finns en hiss också? Min mamma har svårt att gå i trappor, och hon ska dit nästa vecka.",
+              "en": "Do you know if there's a lift too? My mother finds stairs difficult, and she's going there next week."
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Henrik",
+              "fi": "Javisst, hissen ligger vid huvudingången, bredvid kaféet.",
+              "en": "Of course, the lift is by the main entrance, next to the café."
+            },
+            {
+              "speaker": "Kvinnan",
+              "voice": "Elin",
+              "fi": "Tack så mycket! Jag har en tid klockan tio, så jag måste skynda mig.",
+              "en": "Thank you so much! I have an appointment at ten, so I have to hurry."
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Henrik",
+              "fi": "Ingen panik. Klockan är bara tjugo över nio, så du hinner till och med dricka en kopp kaffe först.",
+              "en": "No panic. It's only twenty past nine, so you even have time for a cup of coffee first."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vart är kvinnan på väg?",
+              "translation": "Where is the woman going?",
+              "options": [
+                "Till biblioteket",
+                "Till Kelas byrå",
+                "Till busstationen"
+              ],
+              "answers": [
+                "Till Kelas byrå"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Kelas byrå ligger fortfarande vid torget.",
+              "translation": "The Kela office is still by the square.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Var ska kvinnan korsa gatan?",
+              "translation": "Where should the woman cross the street?",
+              "options": [
+                "Vid apoteket",
+                "Vid busstationen",
+                "Vid trafikljusen"
+              ],
+              "answers": [
+                "Vid trafikljusen"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "På vilken våning finns Kela?",
+              "translation": "On which floor is Kela?",
+              "answers": [
+                "andra",
+                "på andra",
+                "andra våningen",
+                "på andra våningen",
+                "2",
+                "2a",
+                "2a våningen",
+                "på 2a våningen",
+                "två",
+                "våning 2",
+                "våning två"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur många minuter har kvinnan på sig innan hennes tid hos Kela börjar?",
+              "translation": "How many minutes does the woman have before her Kela appointment starts?",
+              "answers": [
+                "40",
+                "fyrtio",
+                "40 minuter",
+                "fyrtio minuter",
+                "40 min"
+              ],
+              "hint": "Räkna själv."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en riktning",
+              "en": "a direction"
+            },
+            {
+              "fi": "en byrå",
+              "en": "an office (Kelas byrå)"
+            },
+            {
+              "fi": "ett trafikljus",
+              "en": "a traffic light"
+            },
+            {
+              "fi": "en rulltrappa",
+              "en": "an escalator"
+            },
+            {
+              "fi": "en huvudingång",
+              "en": "a main entrance"
+            },
+            {
+              "fi": "hinna",
+              "en": "have time to"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-32-listen-2",
+          "title": "Ingen metro till Östra centrum",
+          "textType": "Meddelande i högtalarna",
+          "situation": {
+            "fi": "Du står på en metrostation i Helsingfors och hör ett meddelande.",
+            "en": "You are at a metro station in Helsinki and hear an announcement."
+          },
+          "lines": [
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Bästa resenärer. På grund av ett tekniskt fel på spåret går metron i dag inte mellan Sörnäs och Östra centrum.",
+              "en": "Dear passengers. Because of a technical fault on the track, the metro is not running between Sörnäs and Östra centrum today."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Felet inträffade strax efter klockan sju i morse. Det blir antagligen lagat under eftermiddagen.",
+              "en": "The fault happened shortly after seven this morning. It will probably be repaired during the afternoon."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Ersättande bussar går från Sörnäs till Östra centrum var femte minut. Bussarna stannar vid alla metrostationer på sträckan.",
+              "en": "Replacement buses run from Sörnäs to Östra centrum every five minutes. The buses stop at all metro stations on the route."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Busshållplatsen ligger på Tavastvägen, cirka hundra meter från metrostationen. Följ de gula skyltarna.",
+              "en": "The bus stop is on Tavastvägen, about a hundred metres from the metro station. Follow the yellow signs."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Ska du till Mellungsbacka eller Nordsjö? Byt tillbaka till metron i Östra centrum. Resan tar ungefär tjugo minuter längre än vanligt.",
+              "en": "Are you going to Mellungsbacka or Nordsjö? Change back to the metro at Östra centrum. The journey takes about twenty minutes longer than usual."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Mellan Mattby och Sörnäs går metron som vanligt. Aktuell information finns på HSL:s hemsida och i appen. Vi ber om ursäkt för besväret.",
+              "en": "Between Mattby and Sörnäs the metro runs as usual. Current information is on HSL's website and in the app. We apologise for the inconvenience."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför hör man meddelandet?",
+              "translation": "Why is the announcement being made?",
+              "options": [
+                "Metron är försenad på hela linjen",
+                "Metron går inte på en del av sträckan",
+                "Biljettpriserna ändras i dag"
+              ],
+              "answers": [
+                "Metron går inte på en del av sträckan"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur ofta går de ersättande bussarna?",
+              "translation": "How often do the replacement buses run?",
+              "answers": [
+                "var femte minut",
+                "var 5 minut",
+                "var 5e minut",
+                "varje femte minut",
+                "var femte minuter",
+                "fem minuter",
+                "5 minuter",
+                "5 min",
+                "var 5 min"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q3",
+              "prompt": "Mellan Mattby och Sörnäs går metron som vanligt.",
+              "translation": "Between Mattby and Sörnäs the metro runs as usual.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska man göra om man ska till Nordsjö?",
+              "translation": "What should you do if you are going to Nordsjö?",
+              "options": [
+                "Ta bussen hela vägen till Nordsjö",
+                "Vänta i Sörnäs tills felet är lagat",
+                "Ta bussen och byta till metron i Östra centrum"
+              ],
+              "answers": [
+                "Ta bussen och byta till metron i Östra centrum"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Metron går troligen normalt igen på kvällen.",
+              "translation": "The metro will probably run normally again in the evening.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "inträffa",
+              "en": "happen, occur"
+            },
+            {
+              "fi": "antagligen",
+              "en": "probably"
+            },
+            {
+              "fi": "ersättande bussar",
+              "en": "replacement buses"
+            },
+            {
+              "fi": "en sträcka",
+              "en": "a stretch, a route"
+            },
+            {
+              "fi": "aktuell",
+              "en": "current, up to date"
+            },
+            {
+              "fi": "en hemsida",
+              "en": "a website"
+            },
+            {
+              "fi": "besväret",
+              "en": "the inconvenience"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-32-read-1",
+          "title": "Svar på en reklamation",
+          "textType": "E-post från kundtjänst",
+          "minutes": 6,
+          "text": "Ämne: Din reklamation, order nr 48213\n\nHej Sara,\n\nTack för ditt mejl och för bilderna. Vi beklagar verkligen att golvlampans skärm var sönder när paketet kom. Skadan har antagligen inträffat under transporten. Det är givetvis inte ditt fel, och du behöver inte betala något extra.\n\nDu kan välja mellan två alternativ:\n\n1. Vi skickar en ny lampskärm till dig utan kostnad. Den kommer inom fem arbetsdagar. Du behöver inte skicka tillbaka den trasiga skärmen, men släng den försiktigt, eftersom glaset är vasst.\n\n2. Du returnerar hela lampan och får pengarna tillbaka. Vi skickar en returetikett per e-post. Lämna paketet på närmaste utlämningsställe inom 14 dagar. Hela beloppet, 129 euro, betalas tillbaka till ditt konto senast tio dagar efter att vi har fått paketet.\n\nSvara på det här mejlet och berätta vilket alternativ du väljer. Kontrollera också att din adress är korrekt: Sjömansgatan 7 A 4, 00150 Helsingfors.\n\nFörhoppningsvis kan du snart njuta av din nya lampa.\n\nVänliga hälsningar\nMikael Holm\nKundtjänst, Ljushuset",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skriver Mikael till Sara?",
+              "translation": "Why is Mikael writing to Sara?",
+              "options": [
+                "Han svarar på en reklamation",
+                "Han bekräftar en ny beställning",
+                "Han påminner om en obetald faktura"
+              ],
+              "answers": [
+                "Han svarar på en reklamation"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Sara måste skicka tillbaka den trasiga lampskärmen.",
+              "translation": "Sara has to send back the broken lampshade.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur mycket pengar får Sara tillbaka om hon returnerar lampan?",
+              "translation": "How much money does Sara get back if she returns the lamp?",
+              "answers": [
+                "129",
+                "129 euro",
+                "129 €",
+                "129 e",
+                "hundratjugonio",
+                "hundratjugonio euro",
+                "etthundratjugonio",
+                "etthundratjugonio euro"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska Sara göra nu?",
+              "translation": "What should Sara do now?",
+              "options": [
+                "Svara och välja ett alternativ",
+                "Ringa kundtjänsten",
+                "Lämna lampan i butiken"
+              ],
+              "answers": [
+                "Svara och välja ett alternativ"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Butiken tror att Sara själv har haft sönder lampan.",
+              "translation": "The shop thinks that Sara broke the lamp herself.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "beklaga",
+              "en": "be sorry about, regret"
+            },
+            {
+              "fi": "givetvis",
+              "en": "of course"
+            },
+            {
+              "fi": "ett alternativ",
+              "en": "an option"
+            },
+            {
+              "fi": "vass",
+              "en": "sharp"
+            },
+            {
+              "fi": "ett utlämningsställe",
+              "en": "a parcel pickup point"
+            },
+            {
+              "fi": "korrekt",
+              "en": "correct"
+            },
+            {
+              "fi": "förhoppningsvis",
+              "en": "hopefully"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-32-read-2",
+          "title": "Paketet kom aldrig",
+          "textType": "Inlägg på ett diskussionsforum",
+          "minutes": 6,
+          "text": "FORUM › BO I HUVUDSTADSREGIONEN › Paketet kom aldrig – vad gör jag?\n\nnyihfors skrev:\nHej! Jag beställde en jacka från en nätbutik för tre veckor sedan. Enligt spårningen kom paketet till ett utlämningsställe i Berghäll den 2 juli, men där säger de att det inte finns något paket med mitt nummer. Butiken svarar inte på mina mejl. Har någon varit med om samma sak? Ska jag göra en polisanmälan?\n\nKerstin_62 svarade:\nJag hade samma problem i våras. Kontakta först fraktbolaget och be dem undersöka var paketet är. Det tog en vecka, men sedan hittade de det på fel hylla! Polisen behöver du knappast kontakta.\n\nMehdi.H svarade:\nEnligt konsumentskyddslagen ansvarar säljaren för varan tills du har fått den. Det är alltså butikens problem, inte ditt. Skicka en skriftlig reklamation och kräv antingen en ny jacka eller pengarna tillbaka. Om butiken inte svarar inom två veckor kan du kontakta konsumentrådgivningen. Den är gratis.\n\nnyihfors svarade:\nTack, båda två! Jag ringde fraktbolaget i morse, och de hittade paketet efter en timme. Det hade skickats till Borgå i stället för Berghäll. Nu kommer det till rätt ställe i morgon.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är skribentens problem?",
+              "translation": "What is the writer's problem?",
+              "options": [
+                "En jacka har fel storlek",
+                "Ett paket har inte kommit fram",
+                "Butiken har skickat två paket"
+              ],
+              "answers": [
+                "Ett paket har inte kommit fram"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Kerstin tycker att man ska kontakta polisen.",
+              "translation": "Kerstin thinks you should contact the police.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vem ansvarar för varan enligt Mehdi?",
+              "translation": "According to Mehdi, who is responsible for the item?",
+              "options": [
+                "Fraktbolaget",
+                "Köparen",
+                "Säljaren"
+              ],
+              "answers": [
+                "Säljaren"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vart hade paketet skickats?",
+              "translation": "Where had the parcel been sent?",
+              "answers": [
+                "borgå",
+                "till borgå",
+                "i borgå"
+              ],
+              "hint": "Skriv en ort."
+            },
+            {
+              "id": "q5",
+              "prompt": "Kerstins råd hjälpte skribenten.",
+              "translation": "Kerstin's advice helped the writer.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "spårningen",
+              "en": "the tracking"
+            },
+            {
+              "fi": "en polisanmälan",
+              "en": "a police report"
+            },
+            {
+              "fi": "ett fraktbolag",
+              "en": "a delivery company"
+            },
+            {
+              "fi": "undersöka",
+              "en": "look into, investigate"
+            },
+            {
+              "fi": "ansvara för",
+              "en": "be responsible for"
+            },
+            {
+              "fi": "konsumentrådgivningen",
+              "en": "the consumer advice service"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

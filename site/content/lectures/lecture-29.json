@@ -2101,6 +2101,575 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "An invitation and a shellfish allergy, an old man's story about the sea ice, a party invitation and a column about saying no: YKI-style texts with questions you can check. The story uses the pluperfect (hade + supine).",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers. In the radio story, listen for hade + supine: what had already happened?",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-29-listen-1",
+          "title": "En inbjudan till kräftskiva",
+          "textType": "Samtal mellan kolleger",
+          "situation": {
+            "fi": "Petra bjuder sin kollega Samir på fest. Samir har en allergi.",
+            "en": "Petra invites her colleague Samir to a party. Samir has an allergy."
+          },
+          "lines": [
+            {
+              "speaker": "Petra",
+              "voice": "Elin",
+              "fi": "Hej Samir! Vi ordnar kräftskiva hemma hos oss i Esbo, lördagen den tjugonde augusti. Vill du komma?",
+              "en": "Hi Samir! We're having a crayfish party at our place in Espoo on Saturday the twentieth of August. Would you like to come?"
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Tack, vad roligt att du frågar! Men jag måste säga en sak: jag är allergisk mot skaldjur.",
+              "en": "Thanks, how nice of you to ask! But I have to tell you something: I'm allergic to shellfish."
+            },
+            {
+              "speaker": "Petra",
+              "voice": "Elin",
+              "fi": "Oj, det visste jag inte. Är det farligt?",
+              "en": "Oh, I didn't know that. Is it dangerous?"
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Ja, ganska. Jag får svårt att andas om jag äter räkor eller kräftor.",
+              "en": "Yes, quite. I find it hard to breathe if I eat prawns or crayfish."
+            },
+            {
+              "speaker": "Petra",
+              "voice": "Elin",
+              "fi": "Då gör vi så här: vi har också grillad lax och potatissallad, och kräftorna står på ett eget bord ute på terrassen.",
+              "en": "Then let's do this: we'll also have grilled salmon and potato salad, and the crayfish will be on a separate table out on the terrace."
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Vad snällt av dig! Men vänta, den tjugonde… Då har min syster sin examensfest i Tammerfors. Det lovade jag henne redan i våras.",
+              "en": "How kind of you! But wait, the twentieth… That's my sister's graduation party in Tampere. I promised her that back in the spring."
+            },
+            {
+              "speaker": "Petra",
+              "voice": "Elin",
+              "fi": "Synd! Men vi har en grillkväll i september också. Då blir det inga skaldjur alls.",
+              "en": "Shame! But we're also having a barbecue evening in September. There won't be any shellfish at all then."
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Den kommer jag gärna på. Vilket datum?",
+              "en": "I'd love to come to that. What date?"
+            },
+            {
+              "speaker": "Petra",
+              "voice": "Elin",
+              "fi": "Fredagen den femte september, från klockan sex.",
+              "en": "Friday the fifth of September, from six o'clock."
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Toppen. Ska jag ta med något?",
+              "en": "Great. Shall I bring something?"
+            },
+            {
+              "speaker": "Petra",
+              "voice": "Elin",
+              "fi": "Gärna en sallad. Men inga nötter, för min man tål inte nötter.",
+              "en": "A salad would be nice. But no nuts, because my husband can't eat nuts."
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Haha, okej, då är vi två med allergier. Jag gör en stor portion grekisk sallad.",
+              "en": "Haha, okay, so there are two of us with allergies. I'll make a big portion of Greek salad."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar samtalet om?",
+              "translation": "What is the conversation about?",
+              "options": [
+                "En inbjudan till fest",
+                "En resa till Tammerfors",
+                "En kurs i matlagning"
+              ],
+              "answers": [
+                "En inbjudan till fest"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vad är Samir allergisk mot?",
+              "translation": "What is Samir allergic to?",
+              "answers": [
+                "skaldjur",
+                "mot skaldjur",
+                "han är allergisk mot skaldjur",
+                "räkor och kräftor",
+                "kräftor och räkor",
+                "kräftor",
+                "räkor"
+              ],
+              "hint": "Ett ord räcker."
+            },
+            {
+              "id": "q3",
+              "prompt": "Varför kommer Samir inte på kräftskivan?",
+              "translation": "Why won't Samir come to the crayfish party?",
+              "options": [
+                "Han ska på sin systers fest",
+                "Han är rädd för kräftorna",
+                "Han måste jobba på lördag"
+              ],
+              "answers": [
+                "Han ska på sin systers fest"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilket datum är grillkvällen?",
+              "translation": "What date is the barbecue evening?",
+              "answers": [
+                "5 september",
+                "den 5 september",
+                "femte september",
+                "den femte september",
+                "fredagen den femte september",
+                "fredagen den 5 september",
+                "fredag 5 september",
+                "fredag den 5 september",
+                "fredag den femte september",
+                "5.9",
+                "5.9."
+              ],
+              "hint": "Dag och månad."
+            },
+            {
+              "id": "q5",
+              "prompt": "Samir ska ta med en sallad med nötter.",
+              "translation": "Samir is going to bring a salad with nuts.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en kräftskiva",
+              "en": "a crayfish party (August tradition)"
+            },
+            {
+              "fi": "skaldjur",
+              "en": "shellfish"
+            },
+            {
+              "fi": "andas",
+              "en": "breathe"
+            },
+            {
+              "fi": "en examensfest",
+              "en": "a graduation party"
+            },
+            {
+              "fi": "tåla (tål)",
+              "en": "tolerate, be able to eat"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-29-listen-2",
+          "title": "Isen hade spruckit",
+          "textType": "Berättelse i radio",
+          "situation": {
+            "fi": "Du hör ett radioprogram där äldre människor berättar om sina minnen.",
+            "en": "You hear a radio programme in which older people tell their memories."
+          },
+          "lines": [
+            {
+              "speaker": "Programledaren",
+              "voice": "Elin",
+              "fi": "Välkommen till Minnenas timme. I dag berättar Göran, sjuttioåtta år, om en vinter i skärgården.",
+              "en": "Welcome to The Hour of Memories. Today Göran, seventy-eight, tells us about a winter in the archipelago."
+            },
+            {
+              "speaker": "Göran",
+              "voice": "Henrik",
+              "fi": "Jag växte upp på en liten ö utanför Nagu. Det fanns ingen bro, så på vintern gick vi över isen till skolan. Det tog ungefär fyrtio minuter.",
+              "en": "I grew up on a small island off Nagu. There was no bridge, so in winter we walked across the ice to school. It took about forty minutes."
+            },
+            {
+              "speaker": "Göran",
+              "voice": "Henrik",
+              "fi": "Vintern när jag var elva var mycket kall. Redan i januari hade isen blivit tjock, och vi barn gick tillsammans varje morgon.",
+              "en": "The winter when I was eleven was very cold. Already in January the ice had become thick, and we children walked together every morning."
+            },
+            {
+              "speaker": "Göran",
+              "voice": "Henrik",
+              "fi": "Men en dag i mars försov jag mig. När jag kom ut hade de andra redan gått, så jag gick ensam. Pappa hade sagt många gånger att man aldrig ska gå ensam på isen på våren.",
+              "en": "But one day in March I overslept. When I came out, the others had already left, so I went alone. Dad had said many times that you must never walk alone on the ice in spring."
+            },
+            {
+              "speaker": "Göran",
+              "voice": "Henrik",
+              "fi": "Mitt på fjärden hörde jag ett konstigt ljud, och plötsligt stod jag i vatten upp till knäna. Isen hade spruckit.",
+              "en": "In the middle of the bay I heard a strange sound, and suddenly I was standing in water up to my knees. The ice had cracked."
+            },
+            {
+              "speaker": "Göran",
+              "voice": "Henrik",
+              "fi": "Men jag kom ihåg vad pappa hade lärt mig: lägg dig ner, gör dig bred och kryp tillbaka samma väg som du kom.",
+              "en": "But I remembered what Dad had taught me: lie down, make yourself wide and crawl back the same way you came."
+            },
+            {
+              "speaker": "Göran",
+              "voice": "Henrik",
+              "fi": "När jag kom hem var jag blöt och kall. Mamma blev inte arg. Hon gav mig varm saft och en filt, och sedan grät hon lite.",
+              "en": "When I got home I was wet and cold. Mum didn't get angry. She gave me hot juice and a blanket, and then she cried a little."
+            },
+            {
+              "speaker": "Göran",
+              "voice": "Henrik",
+              "fi": "Nu bor jag i Åbo, och isen i skärgården är inte lika tjock längre. Mina barnbarn åker båt till skolan nästan hela året. Men den dagen kommer jag aldrig att glömma.",
+              "en": "Now I live in Turku, and the ice in the archipelago isn't as thick any more. My grandchildren go to school by boat almost all year. But I will never forget that day."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar berättelsen om?",
+              "translation": "What is the story about?",
+              "options": [
+                "En farlig händelse på isen",
+                "En båtresa till Åbo",
+                "Görans första skoldag"
+              ],
+              "answers": [
+                "En farlig händelse på isen"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur lång tid tog det att gå till skolan?",
+              "translation": "How long did it take to walk to school?",
+              "answers": [
+                "40 minuter",
+                "fyrtio minuter",
+                "ungefär 40 minuter",
+                "ungefär fyrtio minuter",
+                "cirka 40 minuter",
+                "ca 40 minuter",
+                "40 min",
+                "40",
+                "fyrtio"
+              ],
+              "hint": "Skriv hur många minuter."
+            },
+            {
+              "id": "q3",
+              "prompt": "Varför gick Göran ensam den dagen?",
+              "translation": "Why did Göran walk alone that day?",
+              "options": [
+                "De andra barnen hade redan gått",
+                "Pappa hade sagt att han skulle gå ensam",
+                "Skolan började senare den dagen"
+              ],
+              "answers": [
+                "De andra barnen hade redan gått"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Görans mamma blev arg när han kom hem.",
+              "translation": "Göran's mother got angry when he came home.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur kommer Görans barnbarn till skolan i dag?",
+              "translation": "How do Göran's grandchildren get to school today?",
+              "answers": [
+                "med båt",
+                "båt",
+                "de åker båt",
+                "åker båt",
+                "med båten",
+                "båten",
+                "de åker båt till skolan"
+              ],
+              "hint": "Ett eller två ord."
+            }
+          ],
+          "words": [
+            {
+              "fi": "skärgården",
+              "en": "the archipelago"
+            },
+            {
+              "fi": "försova sig (försov sig)",
+              "en": "oversleep"
+            },
+            {
+              "fi": "en fjärd",
+              "en": "an open bay between islands"
+            },
+            {
+              "fi": "spricka (sprack, har spruckit)",
+              "en": "crack, break"
+            },
+            {
+              "fi": "krypa (kröp, har krupit)",
+              "en": "crawl"
+            },
+            {
+              "fi": "plötsligt",
+              "en": "suddenly"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-29-read-1",
+          "title": "Välkommen på 50-årsfest",
+          "textType": "Inbjudan per e-post",
+          "minutes": 5,
+          "text": "Ämne: Inbjudan – Kristina fyller 50!\n\nKära vänner, grannar och kolleger!\n\nDen 12 september fyller jag 50 år, och det vill jag fira tillsammans med er. Välkomna på fest i vår trädgård i Kyrkslätt lördagen den 13 september kl. 15.\n\nVi börjar med kaffe och tårta och fortsätter med middag kl. 18. Mina syskon lagar en enkel men rejäl middag, och det blir både fisk och vegetariskt. Sedan dansar vi så länge vi orkar.\n\nPresenter behöver ni inte ta med, för jag har allt jag behöver. Om ni ändå vill ge något, stöd hellre Röda Korsets insamling för barn.\n\nOSA senast den 31 augusti, och berätta samtidigt om du har någon allergi eller specialdiet. Skriv också om du behöver skjuts från tågstationen. Min man Pekka hämtar gäster med bil kl. 14.30.\n\nKlädsel: sommarfin. Om det regnar flyttar vi in i huset, så det blir trångt men mysigt.\n\nHjärtliga hälsningar\nKristina\ntfn 050 765 4321",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ordnar Kristina en fest?",
+              "translation": "Why is Kristina having a party?",
+              "options": [
+                "Hon fyller 50 år",
+                "Hon har gift sig",
+                "Hon har flyttat till Kyrkslätt"
+              ],
+              "answers": [
+                "Hon fyller 50 år"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken dag är festen?",
+              "translation": "What day is the party?",
+              "answers": [
+                "lördag",
+                "på lördag",
+                "lördagen",
+                "13 september",
+                "den 13 september",
+                "lördagen den 13 september",
+                "lördag den 13 september",
+                "lördag 13 september",
+                "trettonde september",
+                "den trettonde september",
+                "lördagen den trettonde september",
+                "13.9",
+                "13.9."
+              ],
+              "hint": "Veckodag eller datum."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad vill Kristina veta senast den 31 augusti?",
+              "translation": "What does Kristina want to know by 31 August?",
+              "options": [
+                "Om gästerna kommer och vad de inte kan äta",
+                "Vilken present gästerna köper",
+                "Vem som kan hjälpa till med maten"
+              ],
+              "answers": [
+                "Om gästerna kommer och vad de inte kan äta"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Gästerna ska ta med en present till Kristina.",
+              "translation": "The guests should bring Kristina a present.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Du har ingen bil och kommer med tåg. Vem kan hämta dig vid stationen?",
+              "translation": "You have no car and are coming by train. Who can pick you up at the station?",
+              "answers": [
+                "Pekka",
+                "hennes man",
+                "Kristinas man",
+                "hennes man Pekka",
+                "Kristinas man Pekka",
+                "mannen",
+                "Pekka hämtar mig",
+                "hennes make",
+                "Kristinas make"
+              ],
+              "hint": "En person."
+            }
+          ],
+          "words": [
+            {
+              "fi": "OSA (om svar anhålles)",
+              "en": "please reply (RSVP)"
+            },
+            {
+              "fi": "en specialdiet",
+              "en": "a special diet"
+            },
+            {
+              "fi": "en insamling",
+              "en": "a fundraiser, a collection"
+            },
+            {
+              "fi": "orka",
+              "en": "have the energy to"
+            },
+            {
+              "fi": "trångt",
+              "en": "crowded, cramped"
+            },
+            {
+              "fi": "rejäl",
+              "en": "proper, hearty"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-29-read-2",
+          "title": "Lär dig säga nej",
+          "textType": "Kolumn i en tidning",
+          "minutes": 7,
+          "text": "LÄR DIG SÄGA NEJ – UTAN DÅLIGT SAMVETE\n\nHur många gånger har du sagt ja fast du egentligen ville säga nej? Jag har slutat räkna. Under många år sa jag ja till allt: till extra arbetspass, till att baka till skolans basar och till att hjälpa grannen att flytta en lördag när jag själv var helt slut. Jag var ständigt trött.\n\nProblemet är inte att man hjälper andra. Problemet börjar när ja-sägandet tar all ens tid och energi. Till slut hade jag ingen kraft kvar till min egen familj. Det var min läkare som sa det rakt ut: ”Du måste börja säga nej, annars blir du sjuk.”\n\nDet var inte lätt. Jag var rädd att folk skulle bli besvikna på mig. Men jag lärde mig en enkel modell: tacka först, säg nej tydligt och ge gärna ett annat förslag. ”Tack för att du frågar! Tyvärr hinner jag inte den här veckan, men jag kan hjälpa till nästa månad.”\n\nDet märkliga var att nästan ingen blev arg. De flesta förstod direkt. En kollega sa till och med att hon respekterade mig mer efteråt.\n\nI Finland säger man ofta att ett nej är ett nej, och det är en styrka. Ett tydligt nej är faktiskt artigare än ett ja som man sedan ångrar. Så nästa gång någon frågar dig: ta en paus, andas och tänk efter innan du svarar.\n\nMarika Lind är journalist och mamma till tre barn.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad vill skribenten säga med kolumnen?",
+              "translation": "What does the writer want to say with the column?",
+              "options": [
+                "Det är okej att säga nej",
+                "Man ska alltid hjälpa sina grannar",
+                "Läkare arbetar för mycket"
+              ],
+              "answers": [
+                "Det är okej att säga nej"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vem sa att hon måste börja säga nej?",
+              "translation": "Who said she had to start saying no?",
+              "options": [
+                "Hennes läkare",
+                "Hennes kollega",
+                "Hennes granne"
+              ],
+              "answers": [
+                "Hennes läkare"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Modellen har tre steg. Vad gör man först?",
+              "translation": "The model has three steps. What do you do first?",
+              "answers": [
+                "tackar",
+                "tacka",
+                "man tackar",
+                "tacka först",
+                "man tackar först",
+                "säger tack",
+                "säga tack",
+                "man säger tack",
+                "tack"
+              ],
+              "hint": "Ett verb från texten."
+            },
+            {
+              "id": "q4",
+              "prompt": "De flesta blev arga när skribenten sa nej.",
+              "translation": "Most people got angry when the writer said no.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad tycker skribenten om ett ja som man ångrar?",
+              "translation": "What does the writer think of a yes that you regret?",
+              "options": [
+                "Det är sämre än ett tydligt nej",
+                "Det är det artigaste svaret",
+                "Det är det vanligaste svaret i Finland"
+              ],
+              "answers": [
+                "Det är sämre än ett tydligt nej"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "egentligen",
+              "en": "actually, really"
+            },
+            {
+              "fi": "ett arbetspass",
+              "en": "a work shift"
+            },
+            {
+              "fi": "en kraft",
+              "en": "strength, energy"
+            },
+            {
+              "fi": "rakt ut",
+              "en": "straight out, bluntly"
+            },
+            {
+              "fi": "märklig",
+              "en": "strange, remarkable"
+            },
+            {
+              "fi": "en styrka",
+              "en": "a strength"
+            },
+            {
+              "fi": "ständigt",
+              "en": "constantly, all the time"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

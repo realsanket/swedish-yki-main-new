@@ -2181,6 +2181,583 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A 112 call after a fall, a radio health minute about icy streets, an ad for a first-aid course and a news story about a brave twelve-year-old: YKI-style listening and reading with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-37-listen-1",
+          "title": "Ett samtal till 112",
+          "textType": "Nödsamtal",
+          "situation": {
+            "fi": "En man ringer till Nödcentralen. Lyssna på samtalet.",
+            "en": "A man calls the Emergency Response Centre. Listen to the call."
+          },
+          "lines": [
+            {
+              "speaker": "Nödcentralen",
+              "voice": "Elin",
+              "fi": "Nödcentralen, vad har hänt?",
+              "en": "Emergency Response Centre, what has happened?"
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Alex",
+              "fi": "Hej, en äldre kvinna har ramlat i trappan i vårt hus. Hon ligger på golvet och kan inte resa sig.",
+              "en": "Hi, an elderly woman has fallen on the stairs in our building. She's lying on the floor and can't get up."
+            },
+            {
+              "speaker": "Nödcentralen",
+              "voice": "Elin",
+              "fi": "Var befinner ni er? Säg adressen.",
+              "en": "Where are you? Tell me the address."
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Alex",
+              "fi": "Mannerheimvägen fyrtiofem B, i Helsingfors. Vi är i trappan mellan andra och tredje våningen.",
+              "en": "Mannerheimintie 45 B, in Helsinki. We're on the stairs between the second and third floor."
+            },
+            {
+              "speaker": "Nödcentralen",
+              "voice": "Elin",
+              "fi": "Är hon vaken? Kan hon prata?",
+              "en": "Is she conscious? Can she talk?"
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Alex",
+              "fi": "Ja, hon är vaken och pratar, men hon säger att hon har väldigt ont i höften.",
+              "en": "Yes, she's awake and talking, but she says her hip hurts a lot."
+            },
+            {
+              "speaker": "Nödcentralen",
+              "voice": "Elin",
+              "fi": "Andas hon normalt?",
+              "en": "Is she breathing normally?"
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Alex",
+              "fi": "Ja, det gör hon.",
+              "en": "Yes, she is."
+            },
+            {
+              "speaker": "Nödcentralen",
+              "voice": "Elin",
+              "fi": "Blöder hon någonstans?",
+              "en": "Is she bleeding anywhere?"
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Alex",
+              "fi": "Lite från ena handen, men inte mycket.",
+              "en": "A little from one hand, but not much."
+            },
+            {
+              "speaker": "Nödcentralen",
+              "voice": "Elin",
+              "fi": "Okej. Jag skickar en ambulans. Flytta henne inte. Lägg en jacka eller en filt över henne, så att hon inte fryser.",
+              "en": "OK. I'm sending an ambulance. Don't move her. Put a jacket or a blanket over her so that she doesn't get cold."
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Alex",
+              "fi": "Ytterdörren är låst. Ska jag gå ner och öppna?",
+              "en": "The front door is locked. Should I go down and open it?"
+            },
+            {
+              "speaker": "Nödcentralen",
+              "voice": "Elin",
+              "fi": "Bara om någon annan kan stanna hos henne. Lägg inte på, jag stannar i telefonen tills ambulansen kommer.",
+              "en": "Only if someone else can stay with her. Don't hang up, I'll stay on the line until the ambulance arrives."
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Alex",
+              "fi": "Hennes granne är här också. Han kan gå ner och öppna dörren.",
+              "en": "Her neighbour is here too. He can go down and open the door."
+            },
+            {
+              "speaker": "Nödcentralen",
+              "voice": "Elin",
+              "fi": "Bra. Hur gammal är kvinnan ungefär?",
+              "en": "Good. About how old is the woman?"
+            },
+            {
+              "speaker": "Mannen",
+              "voice": "Alex",
+              "fi": "Kanske åttio år.",
+              "en": "Maybe eighty."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad har hänt?",
+              "translation": "What has happened?",
+              "options": [
+                "En kvinna har ramlat i en trappa",
+                "En kvinna har halkat på gatan",
+                "En kvinna har svimmat i hissen"
+              ],
+              "answers": [
+                "En kvinna har ramlat i en trappa"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Var har kvinnan ont?",
+              "translation": "Where does the woman hurt?",
+              "answers": [
+                "i höften",
+                "höften",
+                "höft",
+                "hon har ont i höften",
+                "i höften och handen",
+                "höften och handen"
+              ],
+              "hint": "En kroppsdel."
+            },
+            {
+              "id": "q3",
+              "prompt": "Kvinnan andas inte normalt.",
+              "translation": "The woman is not breathing normally.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad säger Nödcentralen att mannen ska göra?",
+              "translation": "What does the Emergency Response Centre tell the man to do?",
+              "options": [
+                "Låta kvinnan ligga och hålla henne varm",
+                "Hjälpa kvinnan att resa sig",
+                "Ge kvinnan något att dricka"
+              ],
+              "answers": [
+                "Låta kvinnan ligga och hålla henne varm"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vem öppnar ytterdörren för ambulansen?",
+              "translation": "Who opens the front door for the ambulance?",
+              "answers": [
+                "grannen",
+                "hennes granne",
+                "kvinnans granne",
+                "en granne",
+                "granne",
+                "grannen öppnar"
+              ],
+              "hint": "Ett eller två ord."
+            }
+          ],
+          "words": [
+            {
+              "fi": "resa sig (reste sig)",
+              "en": "to get up, to stand up"
+            },
+            {
+              "fi": "höften",
+              "en": "the hip"
+            },
+            {
+              "fi": "en filt",
+              "en": "a blanket"
+            },
+            {
+              "fi": "frysa (frös, har frusit)",
+              "en": "to be cold, to freeze"
+            },
+            {
+              "fi": "ytterdörren",
+              "en": "the front door (of the building)"
+            },
+            {
+              "fi": "låst",
+              "en": "locked"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-37-listen-2",
+          "title": "Hälsominuten: halka",
+          "textType": "Radioprogram",
+          "situation": {
+            "fi": "Du hör ett kort hälsoprogram på radio.",
+            "en": "You hear a short health programme on the radio."
+          },
+          "lines": [
+            {
+              "speaker": "Läkaren i radio",
+              "voice": "Henrik",
+              "fi": "Hej och välkomna till Hälsominuten. I dag talar vi om halka.",
+              "en": "Hello and welcome to the Health Minute. Today we're talking about slippery streets."
+            },
+            {
+              "speaker": "Läkaren i radio",
+              "voice": "Henrik",
+              "fi": "Varje vinter drabbas tusentals finländare av skador när de halkar på isen. Förra veckan, när det plötsligt frös efter regnet, tog jouren i Helsingfors emot nästan dubbelt så många patienter som vanligt.",
+              "en": "Every winter thousands of Finns get injured when they slip on the ice. Last week, when it suddenly froze after the rain, the emergency clinic in Helsinki received almost twice as many patients as usual."
+            },
+            {
+              "speaker": "Läkaren i radio",
+              "voice": "Henrik",
+              "fi": "Den vanligaste skadan är en bruten handled, eftersom man försöker ta emot sig med händerna när man faller. Äldre personer bryter också ofta höften.",
+              "en": "The most common injury is a broken wrist, because people try to break their fall with their hands. Older people also often break a hip."
+            },
+            {
+              "speaker": "Läkaren i radio",
+              "voice": "Henrik",
+              "fi": "Jag har tre enkla råd. Det första: använd broddar under skorna. Du kan köpa dem i de flesta sport- och skoaffärer för tio till trettio euro.",
+              "en": "I have three simple tips. The first: use ice grips under your shoes. You can buy them in most sports and shoe shops for ten to thirty euros."
+            },
+            {
+              "speaker": "Läkaren i radio",
+              "voice": "Henrik",
+              "fi": "Det andra: gå långsamt och ta korta steg. Akta dig särskilt tidigt på morgonen, när det ofta är som halast.",
+              "en": "The second: walk slowly and take short steps. Be especially careful early in the morning, when it is often at its most slippery."
+            },
+            {
+              "speaker": "Läkaren i radio",
+              "voice": "Henrik",
+              "fi": "Det tredje: gå inte med händerna i fickorna. Då har du svårare att skydda dig om du faller.",
+              "en": "The third: don't walk with your hands in your pockets. Then it's harder to protect yourself if you fall."
+            },
+            {
+              "speaker": "Läkaren i radio",
+              "voice": "Henrik",
+              "fi": "Om du har ramlat och har mycket ont, kan du ringa Jourhjälpen på 116 117. De berättar om du behöver åka till jouren omedelbart, eller om det räcker att kontakta hälsostationen senare.",
+              "en": "If you have fallen and are in a lot of pain, you can call the medical helpline on 116 117. They tell you if you need to go to the emergency clinic straight away, or if it is enough to contact the health centre later."
+            },
+            {
+              "speaker": "Läkaren i radio",
+              "voice": "Henrik",
+              "fi": "Ring 112 bara i nödfall, till exempel om någon har slagit huvudet och inte vaknar. Ta hand om er, och gå försiktigt!",
+              "en": "Call 112 only in an emergency, for example if someone has hit their head and doesn't wake up. Take care, and walk carefully!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar programmet om?",
+              "translation": "What is the programme about?",
+              "options": [
+                "Hur man undviker att halka och skada sig",
+                "Hur man väljer bra vinterskor",
+                "Varför jouren har för lite personal"
+              ],
+              "answers": [
+                "Hur man undviker att halka och skada sig"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken skada är vanligast, enligt läkaren?",
+              "translation": "Which injury is the most common, according to the doctor?",
+              "answers": [
+                "en bruten handled",
+                "bruten handled",
+                "brutna handleder",
+                "handleden",
+                "handled",
+                "handlederna"
+              ],
+              "hint": "Två eller tre ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad kostar broddar ungefär?",
+              "translation": "About how much do ice grips cost?",
+              "options": [
+                "10–30 euro",
+                "30–50 euro",
+                "3–10 euro"
+              ],
+              "answers": [
+                "10–30 euro"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Enligt läkaren är det ofta halast på eftermiddagen.",
+              "translation": "According to the doctor it is often most slippery in the afternoon.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Din kollega har halkat och har mycket ont i handleden, men hon är vaken och pratar. Vilket nummer ska hon ringa, enligt läkaren?",
+              "translation": "Your colleague has slipped and her wrist hurts a lot, but she is awake and talking. Which number should she call, according to the doctor?",
+              "options": [
+                "116 117",
+                "112",
+                "Inget, det går över"
+              ],
+              "answers": [
+                "116 117"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "halka, halt (halare, halast)",
+              "en": "slipperiness, slippery"
+            },
+            {
+              "fi": "dubbelt så många",
+              "en": "twice as many"
+            },
+            {
+              "fi": "ta emot sig",
+              "en": "to break your fall (with your hands)"
+            },
+            {
+              "fi": "broddar",
+              "en": "ice grips, shoe spikes"
+            },
+            {
+              "fi": "ett nödfall",
+              "en": "an emergency"
+            },
+            {
+              "fi": "slå huvudet",
+              "en": "to hit your head"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-37-read-1",
+          "title": "Kurs i första hjälp",
+          "textType": "Annons",
+          "minutes": 5,
+          "text": "KURS I FÖRSTA HJÄLP – PÅ SVENSKA\n\nVet du vad du ska göra om någon plötsligt faller ihop på bussen, eller om ditt barn får något i halsen? Med rätt kunskap kan du rädda liv.\n\nPå den här grundkursen lär du dig bland annat\n– hur du ringer ett nödsamtal till 112\n– hur du kontrollerar om en person andas\n– hjärt-lungräddning och hur du använder en hjärtstartare\n– hur du tar hand om sår, brännskador och benbrott.\n\nTid: lördag 7.11 och söndag 8.11 kl. 9–16 (sammanlagt 14 timmar)\nPlats: Kursgården Tölö, Runebergsgatan 30, andra våningen\nPris: 120 euro. Studerande och arbetslösa betalar 80 euro. Lunch ingår.\n\nKursen passar alla från 16 år, och du behöver inga förkunskaper. Efter kursen får du ett intyg som gäller i tre år. Många arbetsgivare kräver ett giltigt intyg, till exempel inom vården och på daghem.\n\nAnmäl dig senast 30.10 på vår hemsida. Gruppen tar högst 16 deltagare. Frågor? Ring 09 123 4567 vardagar kl. 10–14.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vem är kursen till för?",
+              "translation": "Who is the course for?",
+              "options": [
+                "Alla som är minst 16 år",
+                "Bara de som jobbar inom vården",
+                "Bara föräldrar till små barn"
+              ],
+              "answers": [
+                "Alla som är minst 16 år"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket betalar en studerande?",
+              "translation": "How much does a student pay?",
+              "answers": [
+                "80 euro",
+                "80",
+                "åttio euro",
+                "åttio",
+                "80 €",
+                "80€"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q3",
+              "prompt": "Kursen är bara en dag lång.",
+              "translation": "The course is only one day long.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Du gick kursen för fyra år sedan. Ditt intyg gäller inte längre.",
+              "translation": "You took the course four years ago. Your certificate is no longer valid.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilket datum måste du anmäla dig senast?",
+              "translation": "By what date must you sign up at the latest?",
+              "answers": [
+                "30.10",
+                "30.10.",
+                "den 30 oktober",
+                "30 oktober",
+                "den trettionde oktober",
+                "trettionde oktober",
+                "30/10",
+                "den 30.10"
+              ],
+              "hint": "Skriv datumet."
+            }
+          ],
+          "words": [
+            {
+              "fi": "falla ihop",
+              "en": "to collapse"
+            },
+            {
+              "fi": "hjärt-lungräddning",
+              "en": "CPR"
+            },
+            {
+              "fi": "en hjärtstartare",
+              "en": "a defibrillator"
+            },
+            {
+              "fi": "en brännskada, ett benbrott",
+              "en": "a burn, a broken bone"
+            },
+            {
+              "fi": "sammanlagt",
+              "en": "in total"
+            },
+            {
+              "fi": "förkunskaper",
+              "en": "previous knowledge"
+            },
+            {
+              "fi": "giltig",
+              "en": "valid"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-37-read-2",
+          "title": "Tolvåring hjälpte sin morfar",
+          "textType": "Kort nyhet",
+          "minutes": 6,
+          "text": "TOLVÅRING HJÄLPTE SIN MORFAR EFTER FALL\n\nEn tolvårig flicka från Esbo fick beröm av ambulanspersonalen i söndags. Hon var ensam hemma med sin morfar när olyckan inträffade: han halkade i badrummet och slog huvudet i golvet.\n\n– Först blev jag jätterädd, för han svarade inte när jag pratade med honom. Men sedan kom jag ihåg vad vi hade lärt oss i skolan, berättar Ella.\n\nElla ringde 112 och gjorde som operatören sa. Hon kontrollerade att morfar andades, lade honom i stabilt sidoläge och höll honom varm med en filt. Efter några minuter vaknade han. Ambulansen kom tolv minuter efter samtalet.\n\n– Hon gjorde precis rätt. Många vuxna får panik i en sådan situation, men hon var lugn och svarade tydligt på alla frågor, säger sjukskötaren Johan Holm, som var med i ambulansen.\n\nMorfadern, 74, fick stanna på sjukhuset en natt för säkerhets skull. Han har en lätt hjärnskakning men mår redan bättre.\n\n– Det var ju jag som skulle passa henne den dagen. Nu skrattar vi åt det, säger han med ett leende.\n\nI finländska skolor lär sig eleverna grunderna i första hjälp, men hur mycket tid skolorna lägger på det varierar. Läkare påminner också om att många olyckor i hemmet går att förebygga, till exempel med en halkmatta i duschen.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar nyheten om?",
+              "translation": "What is the news story about?",
+              "options": [
+                "En flicka som hjälpte sin morfar efter en olycka",
+                "En flicka som skadade sig i badrummet",
+                "En ambulans som kom för sent"
+              ],
+              "answers": [
+                "En flicka som hjälpte sin morfar efter en olycka"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Var föll morfadern?",
+              "translation": "Where did the grandfather fall?",
+              "answers": [
+                "i badrummet",
+                "badrummet",
+                "badrum",
+                "i badrum",
+                "hemma i badrummet"
+              ],
+              "hint": "Ett rum."
+            },
+            {
+              "id": "q3",
+              "prompt": "Morfadern vaknade innan ambulansen kom.",
+              "translation": "The grandfather woke up before the ambulance came.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur länge stannade morfadern på sjukhuset?",
+              "translation": "How long did the grandfather stay in hospital?",
+              "answers": [
+                "en natt",
+                "1 natt",
+                "i en natt",
+                "en natt för säkerhets skull",
+                "i 1 natt"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför skrattar morfadern åt det som hände?",
+              "translation": "Why does the grandfather laugh about what happened?",
+              "options": [
+                "Han skulle ta hand om Ella, men hon tog hand om honom",
+                "Olyckan var inte farlig alls",
+                "Ella fick panik och ringde fel nummer"
+              ],
+              "answers": [
+                "Han skulle ta hand om Ella, men hon tog hand om honom"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "få beröm",
+              "en": "to be praised"
+            },
+            {
+              "fi": "stabilt sidoläge",
+              "en": "the recovery position"
+            },
+            {
+              "fi": "få panik",
+              "en": "to panic"
+            },
+            {
+              "fi": "en hjärnskakning",
+              "en": "a concussion"
+            },
+            {
+              "fi": "passa någon",
+              "en": "to look after someone (a child)"
+            },
+            {
+              "fi": "variera",
+              "en": "to vary"
+            },
+            {
+              "fi": "förebygga",
+              "en": "to prevent"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

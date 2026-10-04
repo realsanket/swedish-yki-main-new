@@ -2545,6 +2545,548 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about free time and services, of the kinds the YKI test uses: a library announcement, a phone call about a lost backpack, a hotel's reply to a complaint, and weekend tips from a newspaper.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-41-listen-1",
+          "title": "Biblioteket stänger snart",
+          "textType": "Meddelande i högtalare",
+          "situation": {
+            "fi": "Du är på biblioteket en fredag kväll och hör ett meddelande i högtalaren.",
+            "en": "You are at the library on a Friday evening and hear an announcement over the loudspeaker."
+          },
+          "lines": [
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Elin",
+              "fi": "Bästa kunder, biblioteket stänger om femton minuter, klockan åtta.",
+              "en": "Dear customers, the library closes in fifteen minutes, at eight o'clock."
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Elin",
+              "fi": "Kom ihåg att låna dina böcker i automaten vid ingången innan du går. Böcker som ska lämnas tillbaka kan du lägga i returluckan till höger om dörren, också när biblioteket är stängt.",
+              "en": "Remember to borrow your books at the machine by the entrance before you leave. Books to be returned can go in the return slot to the right of the door, also when the library is closed."
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Elin",
+              "fi": "I morgon, lördag, är biblioteket öppet med personal mellan klockan tio och fyra. Efter det är biblioteket meröppet till klockan åtta på kvällen. Då kommer du in med ditt bibliotekskort och din pinkod.",
+              "en": "Tomorrow, Saturday, the library is open with staff between ten and four. After that it is self-service until eight in the evening. Then you get in with your library card and your PIN code."
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Elin",
+              "fi": "Har du tappat något i dag? Saker som har lämnats in finns vid informationsdisken på första våningen. Just nu har vi bland annat ett par blå vantar, ett paraply och en svart mobiltelefon.",
+              "en": "Have you lost something today? Things that have been handed in are at the information desk on the ground floor. Right now we have, among other things, a pair of blue mittens, an umbrella and a black mobile phone."
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Elin",
+              "fi": "Glöm inte heller vår bokcirkel på svenska nästa onsdag klockan sex. Den här gången diskuterar vi en kort roman av en finlandssvensk författare. Alla är välkomna, och du behöver inte anmäla dig.",
+              "en": "Don't forget our Swedish book circle next Wednesday at six either. This time we discuss a short novel by a Finland-Swedish author. Everyone is welcome, and you don't need to sign up."
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Elin",
+              "fi": "Tack för i dag, och välkommen tillbaka!",
+              "en": "Thank you for today, and welcome back!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "När stänger biblioteket i dag?",
+              "translation": "When does the library close today?",
+              "options": [
+                "Klockan åtta",
+                "Klockan fyra",
+                "Klockan sex"
+              ],
+              "answers": [
+                "Klockan åtta"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Man kan lämna tillbaka böcker också när biblioteket är stängt.",
+              "translation": "You can return books also when the library is closed.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad behöver man för att komma in när biblioteket är meröppet? Nämn en sak.",
+              "translation": "What do you need to get in when the library is in self-service mode? Name one thing.",
+              "answers": [
+                "bibliotekskort",
+                "ett bibliotekskort",
+                "bibliotekskortet",
+                "sitt bibliotekskort",
+                "ditt bibliotekskort",
+                "pinkod",
+                "pin-kod",
+                "en pinkod",
+                "pinkoden",
+                "pin-koden",
+                "bibliotekskort och pinkod",
+                "bibliotekskortet och pinkoden",
+                "kort och pinkod"
+              ],
+              "hint": "Ett eller två ord."
+            },
+            {
+              "id": "q4",
+              "prompt": "Var finns sakerna som någon har tappat?",
+              "translation": "Where are the things someone has lost?",
+              "options": [
+                "Vid informationsdisken på första våningen",
+                "I automaten vid ingången",
+                "Till höger om dörren"
+              ],
+              "answers": [
+                "Vid informationsdisken på första våningen"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad behöver man göra för att vara med i bokcirkeln?",
+              "translation": "What do you need to do to take part in the book circle?",
+              "options": [
+                "Bara komma dit på onsdag",
+                "Anmäla sig vid informationsdisken",
+                "Låna boken på finska"
+              ],
+              "answers": [
+                "Bara komma dit på onsdag"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en returlucka",
+              "en": "a return slot (for books)"
+            },
+            {
+              "fi": "meröppet",
+              "en": "open without staff (you get in with your card)"
+            },
+            {
+              "fi": "en pinkod",
+              "en": "a PIN code"
+            },
+            {
+              "fi": "en vante, vantar",
+              "en": "a mitten, mittens (also gloves in Finland)"
+            },
+            {
+              "fi": "en bokcirkel",
+              "en": "a book circle, a reading group"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-41-listen-2",
+          "title": "Ryggsäcken i spårvagnen",
+          "textType": "Telefonsamtal",
+          "situation": {
+            "fi": "En man ringer till hittegodskontoret.",
+            "en": "A man calls the lost property office."
+          },
+          "lines": [
+            {
+              "speaker": "Hittegodskontoret",
+              "voice": "Elin",
+              "fi": "Hittegods, god dag. Hur kan jag hjälpa?",
+              "en": "Lost property, good day. How can I help?"
+            },
+            {
+              "speaker": "Jonas",
+              "voice": "Alex",
+              "fi": "Hej. Jag glömde min ryggsäck i en spårvagn i går kväll, och jag undrar om någon har lämnat in den.",
+              "en": "Hi. I left my backpack on a tram last night, and I wonder whether someone has handed it in."
+            },
+            {
+              "speaker": "Hittegodskontoret",
+              "voice": "Elin",
+              "fi": "Okej. Vilken linje var det, och ungefär när?",
+              "en": "Okay. Which line was it, and roughly when?"
+            },
+            {
+              "speaker": "Jonas",
+              "voice": "Alex",
+              "fi": "Linje fyra, kanske halv tio. Jag steg av i centrum, nära Stockmann.",
+              "en": "Line four, maybe half past nine. I got off in the centre, near Stockmann."
+            },
+            {
+              "speaker": "Hittegodskontoret",
+              "voice": "Elin",
+              "fi": "Kan du beskriva ryggsäcken?",
+              "en": "Can you describe the backpack?"
+            },
+            {
+              "speaker": "Jonas",
+              "voice": "Alex",
+              "fi": "Den är mörkgrå och ganska liten, med ett rött band på sidan. I den finns en dator och en matlåda.",
+              "en": "It is dark grey and quite small, with a red strap on the side. In it there is a computer and a lunch box."
+            },
+            {
+              "speaker": "Hittegodskontoret",
+              "voice": "Elin",
+              "fi": "Finns det något med ditt namn?",
+              "en": "Is there anything with your name on it?"
+            },
+            {
+              "speaker": "Jonas",
+              "voice": "Alex",
+              "fi": "Ja, på datorn sitter en lapp med mitt namn, Jonas Berg. Och i ytterfickan finns ett kvitto från ett apotek.",
+              "en": "Yes, there is a label with my name on the computer, Jonas Berg. And in the outer pocket there is a receipt from a pharmacy."
+            },
+            {
+              "speaker": "Hittegodskontoret",
+              "voice": "Elin",
+              "fi": "Ett ögonblick, jag kollar … Jo, vi har fått in en grå ryggsäck från linje fyra i morse. Den låg under ett säte. Men jag ser ingen dator i listan, bara en matlåda.",
+              "en": "One moment, I'll check … Yes, we received a grey backpack from line four this morning. It was under a seat. But I see no computer on the list, only a lunch box."
+            },
+            {
+              "speaker": "Jonas",
+              "voice": "Alex",
+              "fi": "Oj nej. Är du säker?",
+              "en": "Oh no. Are you sure?"
+            },
+            {
+              "speaker": "Hittegodskontoret",
+              "voice": "Elin",
+              "fi": "Datorn kan ha registrerats för sig, det händer ibland. Jag frågar mina kolleger och ringer upp dig inom en timme.",
+              "en": "The computer may have been registered separately, that sometimes happens. I'll ask my colleagues and call you back within an hour."
+            },
+            {
+              "speaker": "Jonas",
+              "voice": "Alex",
+              "fi": "Tack. Var kan jag hämta ryggsäcken?",
+              "en": "Thanks. Where can I pick up the backpack?"
+            },
+            {
+              "speaker": "Hittegodskontoret",
+              "voice": "Elin",
+              "fi": "På vårt kontor i Sörnäs, vardagar mellan nio och fem. Ta med ett identitetsbevis. Avgiften är tio euro.",
+              "en": "At our office in Sörnäinen, on weekdays between nine and five. Bring an ID. The fee is ten euros."
+            },
+            {
+              "speaker": "Jonas",
+              "voice": "Alex",
+              "fi": "Okej. Då väntar jag på ditt samtal.",
+              "en": "Okay. Then I'll wait for your call."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Jonas?",
+              "translation": "Why is Jonas calling?",
+              "options": [
+                "Han har glömt sin ryggsäck i spårvagnen",
+                "Han har hittat en ryggsäck i spårvagnen",
+                "Hans dator har blivit stulen hemma"
+              ],
+              "answers": [
+                "Han har glömt sin ryggsäck i spårvagnen"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken färg har bandet på ryggsäcken?",
+              "translation": "What colour is the strap on the backpack?",
+              "answers": [
+                "röd",
+                "rött",
+                "rött band",
+                "ett rött band",
+                "det är rött",
+                "den är röd"
+              ],
+              "hint": "Ett ord räcker."
+            },
+            {
+              "id": "q3",
+              "prompt": "Datorn finns med i hittegodskontorets lista.",
+              "translation": "The computer is on the lost property office's list.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska Jonas ta med när han hämtar ryggsäcken?",
+              "translation": "What must Jonas bring when he picks up the backpack?",
+              "options": [
+                "Ett identitetsbevis",
+                "Kvittot från apoteket",
+                "Sitt resekort"
+              ],
+              "answers": [
+                "Ett identitetsbevis"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Jonas vet ännu inte om han får tillbaka sin dator.",
+              "translation": "Jonas does not yet know if he will get his computer back.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "hittegods",
+              "en": "lost property"
+            },
+            {
+              "fi": "lämna in",
+              "en": "to hand in"
+            },
+            {
+              "fi": "en matlåda",
+              "en": "a lunch box"
+            },
+            {
+              "fi": "en ytterficka",
+              "en": "an outer pocket"
+            },
+            {
+              "fi": "registrera",
+              "en": "to register, to record"
+            },
+            {
+              "fi": "ett säte",
+              "en": "a seat (in a vehicle)"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-41-read-1",
+          "title": "Svar från hotellet",
+          "textType": "E-post",
+          "minutes": 6,
+          "text": "Ämne: Angående er vistelse den 14–16 juli\n\nBästa Anna Korhonen,\n\nTack för ert mejl och för att ni berättade om problemen medan ni vistades hos oss. Vi beklagar verkligen att rummet inte motsvarade era förväntningar.\n\nVi har kontrollerat saken. Ni har rätt i att luftkonditioneringen i rum 312 inte fungerade, och att ingen reparatör kom trots att ni kontaktade receptionen två gånger. Det är inte den service vi vill ge våra gäster. Felet har nu reparerats.\n\nSom ersättning betalar vi tillbaka kostnaden för en natt, det vill säga 129 euro. Beloppet syns på ert kort inom fem bankdagar. Vi vill också bjuda er på en kväll i vårt spa vid ert nästa besök. Presentkortet finns som bilaga till det här mejlet och gäller i ett år.\n\nNär det gäller frukosten kan vi tyvärr inte ge någon ersättning. Den serverades som vanligt, men vi förstår att utbudet var mindre än vanligt på söndagen på grund av ett stort bröllop på hotellet.\n\nVi hoppas att få välkomna er tillbaka.\n\nMed vänliga hälsningar\nJohan Lind\nreceptionschef, Hotell Strandudden, Borgå",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skriver Johan Lind?",
+              "translation": "Why does Johan Lind write?",
+              "options": [
+                "Han svarar på ett klagomål från en gäst",
+                "Han bjuder in gäster till ett bröllop",
+                "Han berättar om nya priser på hotellet"
+              ],
+              "answers": [
+                "Han svarar på ett klagomål från en gäst"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hotellet håller med om att luftkonditioneringen inte fungerade.",
+              "translation": "The hotel agrees that the air conditioning did not work.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur mycket pengar får Anna tillbaka?",
+              "translation": "How much money does Anna get back?",
+              "answers": [
+                "129 euro",
+                "129",
+                "129 €",
+                "hundratjugonio euro",
+                "etthundratjugonio euro"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad får Anna förutom pengarna?",
+              "translation": "What does Anna get besides the money?",
+              "options": [
+                "En kväll i hotellets spa",
+                "En gratis frukost",
+                "En natt till på hotellet"
+              ],
+              "answers": [
+                "En kväll i hotellets spa"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Anna klagade också på frukosten i sitt mejl.",
+              "translation": "Anna also complained about the breakfast in her email.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ],
+              "hint": "Varför skriver Johan om frukosten?"
+            }
+          ],
+          "words": [
+            {
+              "fi": "vistas",
+              "en": "to stay (somewhere)"
+            },
+            {
+              "fi": "beklaga",
+              "en": "to be sorry about, to regret"
+            },
+            {
+              "fi": "motsvara förväntningarna",
+              "en": "to meet the expectations"
+            },
+            {
+              "fi": "det vill säga (dvs.)",
+              "en": "that is, in other words"
+            },
+            {
+              "fi": "en bilaga",
+              "en": "an attachment"
+            },
+            {
+              "fi": "ett utbud",
+              "en": "a selection, a range"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-41-read-2",
+          "title": "Helgtips för augusti",
+          "textType": "Tips i en tidning",
+          "minutes": 6,
+          "text": "HELGTIPS: TRE SÄTT ATT NJUTA AV AUGUSTI\n\nSommaren är inte slut än! Här är veckans tips för dig som vill göra något annat än att sitta hemma.\n\nVandra i Noux\nNoux nationalpark i Esbo ligger ungefär en timme med kollektivtrafik från Helsingfors centrum. På lördag klockan 10 ordnar en naturförening en guidad vandring på sju kilometer. Turen passar också nybörjare, men ta med bra skor och matsäck. Gratis, ingen anmälan.\n\nBastu vid havet\nDen offentliga bastun vid Sandviksstranden har längre öppettider i augusti: nu är den öppen varje dag kl. 7–22. En tur kostar 15 euro, studerande och pensionärer betalar 10 euro. Handdukar kan hyras för 5 euro. Boka tid på bastuns hemsida, för på helgerna är det ofta fullt.\n\nTeater under bar himmel\nSommarteatern på Sveaborg spelar en komedi om en familj som hyr en sommarstuga och får grannar som de inte hade väntat sig. Sista föreställningen är söndagen den 23 augusti klockan 18. Biljetterna kostar 28 euro och säljs bara i förväg på nätet. Ta med en filt, det kan bli kallt på kvällen!",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vilket tips passar den som vill röra på sig i naturen?",
+              "translation": "Which tip suits someone who wants to move about in nature?",
+              "options": [
+                "Vandringen i Noux",
+                "Bastun vid Sandviksstranden",
+                "Teatern på Sveaborg"
+              ],
+              "answers": [
+                "Vandringen i Noux"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket betalar en studerande för en tur i bastun?",
+              "translation": "How much does a student pay for one session in the sauna?",
+              "answers": [
+                "10 euro",
+                "10",
+                "10 €",
+                "tio euro",
+                "tio"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q3",
+              "prompt": "Man måste anmäla sig till vandringen i förväg.",
+              "translation": "You have to sign up for the hike in advance.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Man kan köpa teaterbiljetter vid ingången samma kväll.",
+              "translation": "You can buy theatre tickets at the entrance the same evening.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad är det bäst att göra innan man går till bastun en lördag?",
+              "translation": "What is best to do before you go to the sauna on a Saturday?",
+              "options": [
+                "Boka tid på nätet",
+                "Köpa en handduk",
+                "Anmäla sig till naturföreningen"
+              ],
+              "answers": [
+                "Boka tid på nätet"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en matsäck",
+              "en": "a packed lunch"
+            },
+            {
+              "fi": "offentlig",
+              "en": "public"
+            },
+            {
+              "fi": "en hemsida",
+              "en": "a website, a home page"
+            },
+            {
+              "fi": "under bar himmel",
+              "en": "in the open air"
+            },
+            {
+              "fi": "i förväg",
+              "en": "in advance"
+            },
+            {
+              "fi": "en filt",
+              "en": "a blanket"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

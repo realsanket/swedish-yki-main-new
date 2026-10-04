@@ -2077,6 +2077,558 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about furniture, moving in and putting things in place, of the kinds the YKI test uses, with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-33-listen-1",
+          "title": "Var ska soffan stå?",
+          "textType": "Samtal hemma",
+          "situation": {
+            "fi": "Sofia och Emil har just flyttat och möblerar sitt nya vardagsrum.",
+            "en": "Sofia and Emil have just moved and are furnishing their new living room."
+          },
+          "lines": [
+            {
+              "speaker": "Sofia",
+              "voice": "Elin",
+              "fi": "Var ska vi ställa soffan? Mot väggen under fönstret?",
+              "en": "Where shall we put the sofa? Against the wall under the window?"
+            },
+            {
+              "speaker": "Emil",
+              "voice": "Alex",
+              "fi": "Nej, där sitter ju elementet. Ställ den hellre mot den långa väggen, mittemot tv:n.",
+              "en": "No, the radiator is there. Put it against the long wall instead, opposite the TV."
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Elin",
+              "fi": "Okej. Och mattan? Ska den ligga i hallen eller under soffbordet?",
+              "en": "OK. And the rug? Should it be in the hall or under the coffee table?"
+            },
+            {
+              "speaker": "Emil",
+              "voice": "Alex",
+              "fi": "Under soffbordet. Då syns det fina mönstret.",
+              "en": "Under the coffee table. Then the nice pattern shows."
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Elin",
+              "fi": "Bra. Har du sett skruvarna till bokhyllan? Jag lade dem på köksbänken i går.",
+              "en": "Good. Have you seen the screws for the bookcase? I put them on the kitchen counter yesterday."
+            },
+            {
+              "speaker": "Emil",
+              "voice": "Alex",
+              "fi": "De ligger inte där längre. Jag lade dem i en burk, så att de inte skulle försvinna. Burken står i köksfönstret.",
+              "en": "They're not there any more. I put them in a jar so they wouldn't disappear. The jar is on the kitchen windowsill."
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Elin",
+              "fi": "Tack. Men vänta, det saknas ett hyllplan. Vi har bara fyra, och det ska vara fem.",
+              "en": "Thanks. But wait, a shelf is missing. We only have four, and there should be five."
+            },
+            {
+              "speaker": "Emil",
+              "voice": "Alex",
+              "fi": "Nej, titta, det femte sitter redan fast längst ner.",
+              "en": "No, look, the fifth is already fixed at the bottom."
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Elin",
+              "fi": "Jaså! Då är det bara att sätta ihop resten. Kan du hålla i båda sidorna medan jag skruvar? Hyllan lutar lite.",
+              "en": "Oh! Then we just have to put the rest together. Can you hold both sides while I screw? The bookcase is leaning a bit."
+            },
+            {
+              "speaker": "Emil",
+              "voice": "Alex",
+              "fi": "Visst. Och tavlan från din mormor, var ska den sitta?",
+              "en": "Sure. And the painting from your grandmother, where should it go?"
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Elin",
+              "fi": "Över soffan. Men vi kan inte sätta upp den i kväll. Man får inte borra efter klockan nio här i huset.",
+              "en": "Above the sofa. But we can't put it up tonight. You're not allowed to drill after nine o'clock in this building."
+            },
+            {
+              "speaker": "Emil",
+              "voice": "Alex",
+              "fi": "Då ställer vi den på golvet mot väggen så länge.",
+              "en": "Then we'll stand it on the floor against the wall for now."
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Elin",
+              "fi": "Och sedan sätter vi oss i soffan och äter pizza. Jag är helt slut!",
+              "en": "And then we'll sit down on the sofa and eat pizza. I'm completely worn out!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad gör Sofia och Emil?",
+              "translation": "What are Sofia and Emil doing?",
+              "options": [
+                "De köper möbler i en butik",
+                "De möblerar sitt nya hem",
+                "De säljer sina gamla möbler"
+              ],
+              "answers": [
+                "De möblerar sitt nya hem"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Var ställer de soffan?",
+              "translation": "Where do they put the sofa?",
+              "options": [
+                "Under fönstret",
+                "Bredvid elementet",
+                "Mot den långa väggen"
+              ],
+              "answers": [
+                "Mot den långa väggen"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Var är skruvarna nu?",
+              "translation": "Where are the screws now?",
+              "answers": [
+                "i en burk",
+                "i burken",
+                "i en burk i köksfönstret",
+                "i burken i köksfönstret",
+                "i köksfönstret",
+                "i en burk i fönstret",
+                "i fönstret",
+                "i en burk i köket",
+                "i köket",
+                "i köksfönstret i en burk"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q4",
+              "prompt": "Ett hyllplan saknas.",
+              "translation": "A shelf is missing.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför sätter de inte upp tavlan i kväll?",
+              "translation": "Why don't they put up the painting tonight?",
+              "options": [
+                "Det är för sent att borra",
+                "De har inga skruvar",
+                "De vet inte var den ska sitta"
+              ],
+              "answers": [
+                "Det är för sent att borra"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett element",
+              "en": "a radiator"
+            },
+            {
+              "fi": "en matta",
+              "en": "a rug, a carpet"
+            },
+            {
+              "fi": "ett mönster",
+              "en": "a pattern"
+            },
+            {
+              "fi": "luta",
+              "en": "lean"
+            },
+            {
+              "fi": "borra",
+              "en": "drill"
+            },
+            {
+              "fi": "så länge",
+              "en": "for now, in the meantime"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-33-listen-2",
+          "title": "Leveransen kommer på torsdag",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Du har köpt möbler och hör ett meddelande på din telefonsvarare.",
+            "en": "You have bought furniture and hear a message on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Jari",
+              "voice": "Henrik",
+              "fi": "Hej, det här är Jari på Huvudstadens Möbeltransport. Jag ringer om din beställning, alltså en säng och ett matbord med fyra stolar.",
+              "en": "Hi, this is Jari at Huvudstadens Möbeltransport. I'm calling about your order, that is a bed and a dining table with four chairs."
+            },
+            {
+              "speaker": "Jari",
+              "voice": "Henrik",
+              "fi": "Vi levererar möblerna på torsdag den sextonde juli, någon gång mellan klockan åtta och tolv. Chauffören ringer dig ungefär en halvtimme innan han kommer.",
+              "en": "We'll deliver the furniture on Thursday 16 July, some time between eight and twelve. The driver will call you about half an hour before he arrives."
+            },
+            {
+              "speaker": "Jari",
+              "voice": "Henrik",
+              "fi": "Vi bär in möblerna och ställer dem i det rum som du vill. Men observera att vi inte monterar dem.",
+              "en": "We carry the furniture in and put it in the room you want. But please note that we don't assemble it."
+            },
+            {
+              "speaker": "Jari",
+              "voice": "Henrik",
+              "fi": "Om du vill ha hjälp med monteringen kostar det fyrtionio euro extra, och då måste du beställa den senast i morgon.",
+              "en": "If you want help with the assembly, it costs forty-nine euros extra, and then you have to order it tomorrow at the latest."
+            },
+            {
+              "speaker": "Jari",
+              "voice": "Henrik",
+              "fi": "Vill du att vi tar med oss din gamla säng? Det går bra, men den måste stå färdig i hallen när vi kommer, och det kostar trettio euro.",
+              "en": "Would you like us to take your old bed away? That's fine, but it has to be ready in the hall when we come, and it costs thirty euros."
+            },
+            {
+              "speaker": "Jari",
+              "voice": "Henrik",
+              "fi": "Om tiden inte passar, ring oss på nummer 09 456 7700, vardagar mellan nio och fyra. Tack och hej!",
+              "en": "If the time doesn't suit you, call us on 09 456 7700, weekdays between nine and four. Thanks, bye!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad har kunden beställt?",
+              "translation": "What has the customer ordered?",
+              "options": [
+                "En soffa och ett matbord",
+                "En säng och ett matbord med stolar",
+                "En säng och en bokhylla"
+              ],
+              "answers": [
+                "En säng och ett matbord med stolar"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken dag kommer leveransen?",
+              "translation": "On which day does the delivery come?",
+              "answers": [
+                "torsdag",
+                "på torsdag",
+                "torsdagen",
+                "torsdag den 16 juli",
+                "torsdag 16 juli",
+                "torsdagen den 16 juli",
+                "torsdag den sextonde juli",
+                "torsdagen den sextonde juli",
+                "den 16 juli",
+                "16 juli",
+                "den sextonde juli",
+                "sextonde juli",
+                "167",
+                "16 7"
+              ],
+              "hint": "Skriv dagen."
+            },
+            {
+              "id": "q3",
+              "prompt": "Chauffören monterar möblerna utan extra kostnad.",
+              "translation": "The driver assembles the furniture at no extra cost.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad kostar det att bli av med den gamla sängen?",
+              "translation": "What does it cost to get rid of the old bed?",
+              "answers": [
+                "30",
+                "30 euro",
+                "30 €",
+                "30 e",
+                "trettio",
+                "trettio euro"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad måste kunden göra för att få hjälp med monteringen?",
+              "translation": "What must the customer do to get help with the assembly?",
+              "options": [
+                "Ringa chauffören på torsdag",
+                "Ställa sängen i hallen",
+                "Beställa hjälpen senast i morgon"
+              ],
+              "answers": [
+                "Beställa hjälpen senast i morgon"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en leverans",
+              "en": "a delivery"
+            },
+            {
+              "fi": "ett matbord",
+              "en": "a dining table"
+            },
+            {
+              "fi": "observera",
+              "en": "note, please note"
+            },
+            {
+              "fi": "monteringen",
+              "en": "the assembly"
+            },
+            {
+              "fi": "bli av med",
+              "en": "get rid of"
+            },
+            {
+              "fi": "färdig",
+              "en": "ready"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-33-read-1",
+          "title": "Så sätter du ihop bokhyllan",
+          "textType": "Monteringsanvisning",
+          "minutes": 6,
+          "text": "MONTERINGSANVISNING – BOKHYLLA ”STINA”, 180 × 80 CM\n\nInnan du börjar: Kontrollera att alla delar finns: 2 sidor, 5 hyllplan, 1 bakstycke, 20 skruvar och 16 små träpinnar. Om någon del saknas, kontakta butiken omedelbart. Monteringen tar ungefär en timme. Vi rekommenderar att ni är två personer.\n\n1. Lägg en filt eller en kartong på golvet, så att hyllans yta inte får repor.\n2. Lägg den ena sidan på filten. Sätt träpinnarna i de små hålen.\n3. Sätt hyllplanen på pinnarna. Skruva fast det översta och det nedersta hyllplanet.\n4. Lägg den andra sidan ovanpå och skruva fast den.\n5. Vänd hyllan försiktigt, så att framsidan ligger mot golvet. Spika fast bakstycket längs den bakre kanten.\n6. Ställ upp hyllan och placera den mot väggen.\n\nVIKTIGT: Bokhyllan måste fästas i väggen, annars kan den välta. Använd metallbiten som ligger i påsen. Skruvar till väggen ingår inte, eftersom olika väggar behöver olika skruvar. Fråga i en järnhandel.\n\nStäll tunga böcker på de nedersta hyllorna. Varje hyllplan tål högst 15 kilo.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Hur många hyllplan ska det finnas i paketet?",
+              "translation": "How many shelves should there be in the package?",
+              "answers": [
+                "5",
+                "fem",
+                "5 hyllplan",
+                "fem hyllplan"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q2",
+              "prompt": "Varför ska man lägga en filt på golvet?",
+              "translation": "Why should you put a blanket on the floor?",
+              "options": [
+                "Så att golvet inte blir smutsigt",
+                "Så att hyllan inte får repor",
+                "Så att skruvarna inte försvinner"
+              ],
+              "answers": [
+                "Så att hyllan inte får repor"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Skruvarna till väggen finns i paketet.",
+              "translation": "The screws for the wall are in the package.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Var ska de tunga böckerna stå?",
+              "translation": "Where should the heavy books go?",
+              "options": [
+                "På den översta hyllan",
+                "Mitt i hyllan",
+                "På de nedersta hyllorna"
+              ],
+              "answers": [
+                "På de nedersta hyllorna"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hyllan kan vara farlig om man inte fäster den i väggen.",
+              "translation": "The bookcase can be dangerous if you don't fix it to the wall.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en monteringsanvisning",
+              "en": "assembly instructions"
+            },
+            {
+              "fi": "ett bakstycke",
+              "en": "a back panel"
+            },
+            {
+              "fi": "omedelbart",
+              "en": "immediately"
+            },
+            {
+              "fi": "en yta",
+              "en": "a surface"
+            },
+            {
+              "fi": "vända",
+              "en": "turn (over)"
+            },
+            {
+              "fi": "placera",
+              "en": "place, put"
+            },
+            {
+              "fi": "välta",
+              "en": "fall over, tip over"
+            },
+            {
+              "fi": "tåla",
+              "en": "withstand, take"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-33-read-2",
+          "title": "Bli av med gamla möbler",
+          "textType": "Anslag i trappuppgången",
+          "minutes": 6,
+          "text": "TILL ALLA BOENDE I BOSTADS AB TALLBACKEN\n\nINSAMLING AV GROVAVFALL LÖRDAGEN DEN 25 JULI\n\nHar du gamla möbler eller andra stora saker som du inte behöver längre? Lördagen den 25 juli kl. 9–15 står en stor container på gården vid hus C.\n\nI containern får du lägga:\n– möbler, till exempel stolar, bord, sängar och mattor\n– cyklar och barnvagnar\n– stora leksaker och sportutrustning\n\nI containern får du inte lägga:\n– kylskåp, spisar, tv-apparater eller annan elektronik\n– färg, batterier eller kemikalier\n– vanligt hushållsavfall\n\nElektronik och farligt avfall tar du till en återvinningsstation.\n\nStäll inga saker på gården före lördag morgon. Möbler som står i trappuppgången eller i cykelrummet är en brandrisk. Bostadsbolaget tar bort dem, och ägaren får betala för det.\n\nHar du en hel och ren möbel? Ställ den hellre bredvid containern med en lapp där det står ”Gratis”. Kanske vill en granne ha den!\n\nEventuella frågor: disponent Anna Berg, tfn 050 321 4567.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar anslaget om?",
+              "translation": "What is the notice about?",
+              "options": [
+                "En chans att bli av med stora saker",
+                "En loppis på gården",
+                "En ny regel för cykelrummet"
+              ],
+              "answers": [
+                "En chans att bli av med stora saker"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Man får lägga en gammal tv i containern.",
+              "translation": "You may put an old TV in the container.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vid vilket hus står containern?",
+              "translation": "By which building is the container?",
+              "answers": [
+                "c",
+                "hus c",
+                "vid hus c",
+                "huset c"
+              ],
+              "hint": "Skriv en bokstav."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad händer med möbler som står i trappuppgången?",
+              "translation": "What happens to furniture left in the stairwell?",
+              "options": [
+                "Grannarna får ta dem gratis",
+                "Bostadsbolaget tar bort dem och ägaren betalar",
+                "De står kvar tills containern kommer"
+              ],
+              "answers": [
+                "Bostadsbolaget tar bort dem och ägaren betalar"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Bostadsbolaget vill att bra möbler ska få en ny ägare.",
+              "translation": "The housing company wants good furniture to get a new owner.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "grovavfall",
+              "en": "bulky waste"
+            },
+            {
+              "fi": "en container",
+              "en": "a skip, a large container"
+            },
+            {
+              "fi": "farligt avfall",
+              "en": "hazardous waste"
+            },
+            {
+              "fi": "en återvinningsstation",
+              "en": "a recycling station"
+            },
+            {
+              "fi": "en brandrisk",
+              "en": "a fire risk"
+            },
+            {
+              "fi": "eventuell",
+              "en": "possible, any"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

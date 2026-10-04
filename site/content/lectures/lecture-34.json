@@ -2004,6 +2004,574 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about everyday routines, time and eating out, of the kinds the YKI test uses, with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-34-listen-1",
+          "title": "Ett bord för sex personer",
+          "textType": "Telefonsamtal",
+          "situation": {
+            "fi": "En man ringer till en restaurang i Helsingfors.",
+            "en": "A man calls a restaurant in Helsinki."
+          },
+          "lines": [
+            {
+              "speaker": "Ronja",
+              "voice": "Maja",
+              "fi": "Restaurang Fyren, det är Ronja. Vad kan jag hjälpa till med?",
+              "en": "Restaurant Fyren, this is Ronja. How can I help?"
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Hej, jag skulle vilja boka ett bord på lördag kväll. Vi är sex personer.",
+              "en": "Hi, I'd like to book a table for Saturday evening. There are six of us."
+            },
+            {
+              "speaker": "Ronja",
+              "voice": "Maja",
+              "fi": "Lördag den elfte? Vilken tid hade ni tänkt er?",
+              "en": "Saturday the eleventh? What time were you thinking of?"
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Helst klockan sju.",
+              "en": "Seven o'clock, preferably."
+            },
+            {
+              "speaker": "Ronja",
+              "voice": "Maja",
+              "fi": "Tyvärr är det fullbokat klockan sju. Men vi har ett bord klockan halv sex eller klockan åtta.",
+              "en": "Unfortunately we're fully booked at seven. But we have a table at half past five or at eight."
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Halv sex är lite tidigt. Vi tar klockan åtta. Kan vi sitta på terrassen?",
+              "en": "Half past five is a bit early. We'll take eight o'clock. Can we sit on the terrace?"
+            },
+            {
+              "speaker": "Ronja",
+              "voice": "Maja",
+              "fi": "Terrassen går tyvärr inte att boka. Men jag kan ge er ett bord vid fönstret med utsikt över havet.",
+              "en": "Unfortunately the terrace can't be booked. But I can give you a table by the window with a view of the sea."
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Det låter bra. En sak till: min fru äter glutenfritt, och en av gästerna är vegan.",
+              "en": "That sounds good. One more thing: my wife eats gluten-free, and one of the guests is vegan."
+            },
+            {
+              "speaker": "Ronja",
+              "voice": "Maja",
+              "fi": "Inga problem. Alla rätter med bokstaven G på menyn är glutenfria, och vi har alltid två veganska huvudrätter. Jag skriver det i bokningen.",
+              "en": "No problem. All dishes with the letter G on the menu are gluten-free, and we always have two vegan main courses. I'll write it in the booking."
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Toppen. Vi firar nämligen min svärfars åttioårsdag, så det får gärna vara lite festlig stämning.",
+              "en": "Great. You see, we're celebrating my father-in-law's eightieth birthday, so a bit of a festive atmosphere would be nice."
+            },
+            {
+              "speaker": "Ronja",
+              "voice": "Maja",
+              "fi": "Då ställer vi blommor på bordet. Vill ni beställa en tårta också? Den måste beställas tre dagar i förväg.",
+              "en": "Then we'll put flowers on the table. Would you like to order a cake too? It has to be ordered three days in advance."
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Ja, gärna en liten tårta för sex. Glutenfri, förstås.",
+              "en": "Yes, a small cake for six, please. Gluten-free, of course."
+            },
+            {
+              "speaker": "Ronja",
+              "voice": "Maja",
+              "fi": "Absolut. Kan jag få ditt namn och telefonnummer?",
+              "en": "Certainly. Can I have your name and phone number?"
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Pekka Lindholm, 040 778 1290.",
+              "en": "Pekka Lindholm, 040 778 1290."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Pekka?",
+              "translation": "Why is Pekka calling?",
+              "options": [
+                "För att boka ett bord",
+                "För att beställa mat hem",
+                "För att klaga på maten"
+              ],
+              "answers": [
+                "För att boka ett bord"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken tid ska sällskapet äta?",
+              "translation": "What time will the group eat?",
+              "answers": [
+                "klockan åtta",
+                "åtta",
+                "kl åtta",
+                "klockan 8",
+                "kl 8",
+                "8",
+                "klockan 20",
+                "kl 20",
+                "20",
+                "2000",
+                "20 00",
+                "klockan 2000"
+              ],
+              "hint": "Skriv tiden."
+            },
+            {
+              "id": "q3",
+              "prompt": "Sällskapet får sitta på terrassen.",
+              "translation": "The group gets to sit on the terrace.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad firar de?",
+              "translation": "What are they celebrating?",
+              "options": [
+                "En bröllopsdag",
+                "En examen",
+                "En åttioårsdag"
+              ],
+              "answers": [
+                "En åttioårsdag"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Restaurangen kan ordna mat som passar alla gäster i sällskapet.",
+              "translation": "The restaurant can arrange food that suits all the guests in the group.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "fullbokat",
+              "en": "fully booked"
+            },
+            {
+              "fi": "en utsikt",
+              "en": "a view"
+            },
+            {
+              "fi": "glutenfri",
+              "en": "gluten-free"
+            },
+            {
+              "fi": "en huvudrätt",
+              "en": "a main course"
+            },
+            {
+              "fi": "en svärfar",
+              "en": "a father-in-law"
+            },
+            {
+              "fi": "i förväg",
+              "en": "in advance"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-34-listen-2",
+          "title": "Vart tar tiden vägen?",
+          "textType": "Nyhet i radion",
+          "situation": {
+            "fi": "Du hör en nyhet om vardagen på radion.",
+            "en": "You hear a news item about everyday life on the radio."
+          },
+          "lines": [
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Och nu en nyhet om vår vardag. Många finländare tror att de har mindre tid än förr, men det stämmer inte riktigt. Det visar en ny undersökning.",
+              "en": "And now a news item about our everyday life. Many Finns think they have less time than before, but that isn't quite true. A new study shows this."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Forskarna har jämfört hur vuxna använde sin tid för trettio år sedan och i dag. Vi arbetar ungefär lika mycket som förr, och vi sover nästan lika länge, i genomsnitt sju och en halv timme per natt.",
+              "en": "The researchers have compared how adults used their time thirty years ago and today. We work about as much as before, and we sleep almost as long, on average seven and a half hours a night."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Den stora skillnaden är skärmarna. I dag tittar en vuxen på mobilen nästan tre timmar om dagen, och ökningen är störst bland personer över sextio. Samtidigt läser vi betydligt färre böcker och tidningar på papper.",
+              "en": "The big difference is screens. Today an adult looks at their phone almost three hours a day, and the increase is biggest among people over sixty. At the same time we read considerably fewer books and newspapers on paper."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Många känner sig stressade, men det handlar inte om brist på tid, säger en av forskarna. Det handlar om att tiden delas upp i små bitar.",
+              "en": "Many people feel stressed, but it's not about a lack of time, says one of the researchers. It's about time being split into small pieces."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Vi kollar mobilen medan vi äter, medan vi tittar på tv och till och med medan vi pratar med varandra.",
+              "en": "We check our phones while we eat, while we watch TV and even while we talk to each other."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Forskarnas råd är att välja en stund varje dag utan skärm, till exempel vid kvällsmålet.",
+              "en": "The researchers' advice is to choose a moment every day without a screen, for example at the evening meal."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar nyheten om?",
+              "translation": "What is the news item about?",
+              "options": [
+                "Hur mycket finländare arbetar",
+                "Hur finländare använder sin tid",
+                "Varför finländare sover dåligt"
+              ],
+              "answers": [
+                "Hur finländare använder sin tid"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur länge sover en vuxen i genomsnitt per natt?",
+              "translation": "How long does an adult sleep per night on average?",
+              "answers": [
+                "sju och en halv timme",
+                "sju och en halv timmar",
+                "sju och en halv",
+                "7 och en halv timme",
+                "7 och en halv timmar",
+                "7 och en halv",
+                "75 timmar",
+                "75",
+                "7,5 timmar",
+                "7,5",
+                "7.5"
+              ],
+              "hint": "Skriv antalet timmar."
+            },
+            {
+              "id": "q3",
+              "prompt": "Personer över sextio har ökat sin tid med mobilen mest.",
+              "translation": "People over sixty have increased their phone time the most.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad är problemet enligt forskaren?",
+              "translation": "What is the problem according to the researcher?",
+              "options": [
+                "Vi har för lite tid",
+                "Tiden delas upp i små bitar",
+                "Vi arbetar mer än förr"
+              ],
+              "answers": [
+                "Tiden delas upp i små bitar"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Forskarna vill att man slutar använda mobilen helt.",
+              "translation": "The researchers want people to stop using their phones completely.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "jämföra",
+              "en": "compare"
+            },
+            {
+              "fi": "i genomsnitt",
+              "en": "on average"
+            },
+            {
+              "fi": "en ökning",
+              "en": "an increase"
+            },
+            {
+              "fi": "betydligt",
+              "en": "considerably"
+            },
+            {
+              "fi": "en brist på",
+              "en": "a lack of"
+            },
+            {
+              "fi": "varandra",
+              "en": "each other"
+            },
+            {
+              "fi": "ett kvällsmål",
+              "en": "an evening meal, supper"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-34-read-1",
+          "title": "Veckans lunch på Kvarnen",
+          "textType": "Lunchmeny",
+          "minutes": 4,
+          "text": "LUNCHRESTAURANG KVARNEN, DICKURSBY\nLunch vardagar kl. 10.30–14.00\n\nVECKANS LUNCH 13–17 JULI\nMåndag: Laxsoppa med rågbröd (L, G*)\nTisdag: Kycklingcurry med ris (M, G) eller linsgryta (VEG, G)\nOnsdag: Köttbullar med potatismos och lingonsylt (L)\nTorsdag: Ärtsoppa och pannkaka med sylt (M)\nFredag: Stekt sik med dillsås och potatis (L, G)\n\nPRISER\nLunchbuffé med dagens rätt, salladsbord, bröd, kaffe och kaka 12,90 €\nSoppa och salladsbord 10,50 €\nBarn under 12 år 6,50 €\nPensionärer och studerande får 1 euro rabatt.\n\nLUNCHKORTET: Varje elfte lunch är gratis. Fråga i kassan!\n\nG = glutenfri, L = laktosfri, M = mjölkfri, VEG = vegansk\n* Glutenfritt bröd finns på begäran.\n\nVi lagar all mat själva varje morgon, av finländska råvaror.\n\nOBS! Sommarstängt 20.7–9.8. Välkomna tillbaka måndagen den 10 augusti!",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vilken dag kan en vegan äta dagens rätt på Kvarnen?",
+              "translation": "On which day can a vegan eat the dish of the day at Kvarnen?",
+              "answers": [
+                "tisdag",
+                "på tisdag",
+                "tisdagen",
+                "på tisdagen"
+              ],
+              "hint": "Skriv en dag."
+            },
+            {
+              "id": "q2",
+              "prompt": "Laxsoppan innehåller laktos.",
+              "translation": "The salmon soup contains lactose.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad kostar lunchbuffén för en studerande?",
+              "translation": "What does the lunch buffet cost for a student?",
+              "answers": [
+                "11,90",
+                "11.90",
+                "1190",
+                "11,90 euro",
+                "11.90 euro",
+                "1190 euro",
+                "11,90 €",
+                "11 90",
+                "11 euro 90 cent",
+                "elva euro nittio",
+                "elva och nittio"
+              ],
+              "hint": "Skriv priset."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad får man med lunchkortet?",
+              "translation": "What do you get with the lunch card?",
+              "options": [
+                "En euro rabatt på varje lunch",
+                "Gratis kaffe varje dag",
+                "Var elfte lunch gratis"
+              ],
+              "answers": [
+                "Var elfte lunch gratis"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Man kan äta lunch på Kvarnen måndagen den 3 augusti.",
+              "translation": "You can have lunch at Kvarnen on Monday 3 August.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "dagens rätt",
+              "en": "the dish of the day"
+            },
+            {
+              "fi": "laktosfri / mjölkfri",
+              "en": "lactose-free / dairy-free"
+            },
+            {
+              "fi": "en pensionär",
+              "en": "a pensioner"
+            },
+            {
+              "fi": "på begäran",
+              "en": "on request"
+            },
+            {
+              "fi": "en råvara",
+              "en": "an ingredient, raw material"
+            },
+            {
+              "fi": "sommarstängt",
+              "en": "closed for the summer"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-34-read-2",
+          "title": "Mina nya morgnar",
+          "textType": "Blogginlägg",
+          "minutes": 7,
+          "text": "LIVET I VANDA – MINA NYA MORGNAR\n\nFör ett år sedan var mina morgnar rena kaoset. Väckarklockan ringde klockan sju, men jag tryckte på snooze tre eller fyra gånger. Sedan sprang jag runt i lägenheten, letade efter nycklarna och åt frukost stående medan jag läste mejl på mobilen. Jag kom nästan alltid för sent till tåget, och på jobbet var jag trött redan klockan tio.\n\nI januari bestämde jag mig för att ändra på det. Det var inte lätt, men i dag ser mina morgnar helt annorlunda ut. Jag lägger mig klockan elva och går upp klockan sex, även på helgerna. Mobilen ligger i hallen hela natten, och jag har köpt en vanlig väckarklocka. Kvällen innan lägger jag fram kläderna och ställer väskan vid dörren.\n\nPå morgonen ägnar jag tjugo minuter åt en promenad runt kvarteret. Sedan äter jag frukost vid bordet, i lugn och ro. Jämfört med förr har jag betydligt mer energi, och jag har inte missat tåget en enda gång sedan februari.\n\nMåste alla bli morgonmänniskor? Givetvis inte. Min sambo jobbar kvällar och sover till nio, och det fungerar bra för honom. Men om du ständigt känner dig stressad på morgonen kan du prova en liten förändring i taget. Börja till exempel med att lägga mobilen i ett annat rum.\n\n/ Leila",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar blogginlägget om?",
+              "translation": "What is the blog post about?",
+              "options": [
+                "Varför Leila bytte jobb",
+                "Hur Leila lärde sig sova längre",
+                "Hur Leila ändrade sina morgnar"
+              ],
+              "answers": [
+                "Hur Leila ändrade sina morgnar"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Leila använder mobilen som väckarklocka.",
+              "translation": "Leila uses her phone as an alarm clock.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad gör Leila i tjugo minuter varje morgon?",
+              "translation": "What does Leila do for twenty minutes every morning?",
+              "answers": [
+                "går en promenad",
+                "hon går en promenad",
+                "tar en promenad",
+                "hon tar en promenad",
+                "promenerar",
+                "hon promenerar",
+                "en promenad",
+                "promenad",
+                "går på promenad",
+                "går ut och går",
+                "en promenad runt kvarteret",
+                "går en promenad runt kvarteret"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad säger Leila om sin sambo?",
+              "translation": "What does Leila say about her partner?",
+              "options": [
+                "Han borde också gå upp klockan sex",
+                "Hans rutin fungerar bra för honom",
+                "Han hjälper henne på morgnarna"
+              ],
+              "answers": [
+                "Hans rutin fungerar bra för honom"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Leila tycker att man ska ändra allt på en gång.",
+              "translation": "Leila thinks you should change everything at once.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett kaos",
+              "en": "chaos"
+            },
+            {
+              "fi": "en väckarklocka",
+              "en": "an alarm clock"
+            },
+            {
+              "fi": "ägna tid åt",
+              "en": "spend time on"
+            },
+            {
+              "fi": "i lugn och ro",
+              "en": "in peace and quiet"
+            },
+            {
+              "fi": "jämfört med",
+              "en": "compared with"
+            },
+            {
+              "fi": "ständigt",
+              "en": "constantly"
+            },
+            {
+              "fi": "en förändring",
+              "en": "a change"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

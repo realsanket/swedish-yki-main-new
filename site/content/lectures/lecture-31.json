@@ -2193,6 +2193,554 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about presents, cafés and returns, of the kinds the YKI test uses, with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-31-listen-1",
+          "title": "En present från hela avdelningen",
+          "textType": "Samtal på jobbet",
+          "situation": {
+            "fi": "Två kolleger på ett kontor i Helsingfors pratar om en present.",
+            "en": "Two colleagues at an office in Helsinki talk about a present."
+          },
+          "lines": [
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Hej Jonne, har du en minut? Riitta fyller sextio på fredag, och vi vill ge henne en present från hela avdelningen.",
+              "en": "Hi Jonne, have you got a minute? Riitta turns sixty on Friday, and we want to give her a present from the whole department."
+            },
+            {
+              "speaker": "Jonne",
+              "voice": "Alex",
+              "fi": "Javisst. Hur mycket pengar har vi samlat?",
+              "en": "Sure. How much money have we collected?"
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Totalt hundrafyrtio euro. Fjorton personer har gett tio euro var.",
+              "en": "A hundred and forty euros in total. Fourteen people have given ten euros each."
+            },
+            {
+              "speaker": "Jonne",
+              "voice": "Alex",
+              "fi": "Bra! Vad tänkte du köpa? Ett smycke?",
+              "en": "Good! What were you thinking of buying? A piece of jewellery?"
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Nej, hon bär varken halsband eller ringar. Och bara blommor känns för lite för ett så stort belopp.",
+              "en": "No, she wears neither necklaces nor rings. And just flowers feel too little for such a big sum."
+            },
+            {
+              "speaker": "Jonne",
+              "voice": "Alex",
+              "fi": "Då kan vi antingen köpa ett presentkort eller något till hennes sommarstuga.",
+              "en": "Then we can either buy a gift card or something for her summer cottage."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Ett presentkort är lite tråkigt. Hon pratar ju hela tiden om stugan i Ekenäs, framför allt om trädgården.",
+              "en": "A gift card is a bit boring. She talks about the cottage in Ekenäs all the time, above all about the garden."
+            },
+            {
+              "speaker": "Jonne",
+              "voice": "Alex",
+              "fi": "Ja, och hon har nämligen klagat på att hennes gamla grill är trasig.",
+              "en": "Yes, and actually she has complained that her old grill is broken."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "En grill! Det är både praktiskt och personligt. Men vi kan väl inte bära en grill till kontoret?",
+              "en": "A grill! That's both practical and personal. But we can't really carry a grill to the office, can we?"
+            },
+            {
+              "speaker": "Jonne",
+              "voice": "Alex",
+              "fi": "Vi ger henne ett kort med en bild, och sedan levererar butiken grillen till stugan.",
+              "en": "We give her a card with a picture, and then the shop delivers the grill to the cottage."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Perfekt. Kan du ringa butiken i dag? Jag ordnar kortet och tårtan till kaffet på fredag.",
+              "en": "Perfect. Can you call the shop today? I'll arrange the card and the cake for the coffee on Friday."
+            },
+            {
+              "speaker": "Jonne",
+              "voice": "Alex",
+              "fi": "Visst, jag ringer efter lunch.",
+              "en": "Sure, I'll call after lunch."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad pratar Sanna och Jonne om?",
+              "translation": "What are Sanna and Jonne talking about?",
+              "options": [
+                "En fest i Riittas sommarstuga",
+                "En present till en kollega som fyller år",
+                "En ny grill till kontoret"
+              ],
+              "answers": [
+                "En present till en kollega som fyller år"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket pengar har kollegerna samlat?",
+              "translation": "How much money have the colleagues collected?",
+              "answers": [
+                "140",
+                "140 euro",
+                "140 €",
+                "140 e",
+                "hundrafyrtio",
+                "hundrafyrtio euro",
+                "etthundrafyrtio",
+                "etthundrafyrtio euro"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q3",
+              "prompt": "Riitta bär ofta smycken.",
+              "translation": "Riitta often wears jewellery.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför bestämmer de sig för en grill?",
+              "translation": "Why do they decide on a grill?",
+              "options": [
+                "Riitta har bett om en grill",
+                "Ett presentkort är för dyrt",
+                "Riitta älskar stugan och hennes grill är trasig"
+              ],
+              "answers": [
+                "Riitta älskar stugan och hennes grill är trasig"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilken dag ska kollegerna dricka kaffe och äta tårta med Riitta?",
+              "translation": "On which day will the colleagues have coffee and cake with Riitta?",
+              "answers": [
+                "fredag",
+                "på fredag",
+                "fredagen",
+                "på fredagen"
+              ],
+              "hint": "Skriv en dag."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en avdelning",
+              "en": "a department"
+            },
+            {
+              "fi": "totalt",
+              "en": "in total"
+            },
+            {
+              "fi": "ett belopp",
+              "en": "a sum, an amount"
+            },
+            {
+              "fi": "framför allt",
+              "en": "above all"
+            },
+            {
+              "fi": "nämligen",
+              "en": "you see, actually (gives the reason)"
+            },
+            {
+              "fi": "leverera",
+              "en": "deliver"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-31-listen-2",
+          "title": "Presenter som ingen vill ha",
+          "textType": "Nyhet i radion",
+          "situation": {
+            "fi": "Du hör ett kort konsumentinslag i nyheterna på radion.",
+            "en": "You hear a short consumer item in the radio news."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Och så konsumentnytt. Nästan varannan finländare har fått en present som de inte vill ha. Det visar en ny enkät där tusen personer svarade.",
+              "en": "And now consumer news. Almost every second Finn has received a present they don't want. That is what a new survey shows, which a thousand people answered."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Vanligast är kläder, prydnadssaker och smycken. Var femte säger att de har gett bort presenten till någon annan, och nästan lika många har sålt den på nätet.",
+              "en": "The most common are clothes, ornaments and jewellery. One in five says they have given the present away to someone else, and almost as many have sold it online."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Bara några få lämnar tillbaka presenten i butiken. Många vet nämligen inte att det ofta går utan vanligt kvitto, om man har ett presentkvitto.",
+              "en": "Only a few return the present to the shop. Many people don't know that it often works without an ordinary receipt, if you have a gift receipt."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Konsumentrådgivarna påminner om att en butik inte måste ta tillbaka en vara som är hel. Öppet köp är en förmån som butiken själv bestämmer över.",
+              "en": "The consumer advisers remind us that a shop does not have to take back an item that is not faulty. A return policy is a benefit the shop decides on itself."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Om varan har ett fel är det annorlunda. Då gäller konsumentskyddslagen, och du har alltid rätt att reklamera.",
+              "en": "If the item is faulty, it's different. Then the Consumer Protection Act applies, and you always have the right to make a complaint."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Rådet är enkelt: be om ett presentkvitto när du köper en present. Det kostar ingenting, och den som får presenten kan byta den utan att se priset.",
+              "en": "The advice is simple: ask for a gift receipt when you buy a present. It costs nothing, and the person who gets the present can exchange it without seeing the price."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar nyheten om?",
+              "translation": "What is the news item about?",
+              "options": [
+                "Presenter som man inte vill ha",
+                "Nya regler för presentkort",
+                "Butiker som säljer begagnade presenter"
+              ],
+              "answers": [
+                "Presenter som man inte vill ha"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många personer svarade på enkäten?",
+              "translation": "How many people answered the survey?",
+              "answers": [
+                "1000",
+                "1 000",
+                "tusen",
+                "ettusen",
+                "ett tusen",
+                "tusen personer",
+                "1000 personer"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad gör var femte person med presenten?",
+              "translation": "What does one person in five do with the present?",
+              "options": [
+                "Säljer den på nätet",
+                "Ger bort den till någon annan",
+                "Lämnar tillbaka den i butiken"
+              ],
+              "answers": [
+                "Ger bort den till någon annan"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "En butik måste alltid ta tillbaka en vara som är hel.",
+              "translation": "A shop always has to take back an item that is not faulty.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför är ett presentkvitto bra för den som ger presenten?",
+              "translation": "Why is a gift receipt good for the person who gives the present?",
+              "options": [
+                "Presenten blir billigare",
+                "Man får alltid pengarna tillbaka",
+                "Mottagaren får inte veta vad presenten kostade"
+              ],
+              "answers": [
+                "Mottagaren får inte veta vad presenten kostade"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en enkät",
+              "en": "a survey, a questionnaire"
+            },
+            {
+              "fi": "varannan",
+              "en": "every second (one in two)"
+            },
+            {
+              "fi": "var femte",
+              "en": "one in five"
+            },
+            {
+              "fi": "en prydnadssak",
+              "en": "an ornament"
+            },
+            {
+              "fi": "ett presentkvitto",
+              "en": "a gift receipt"
+            },
+            {
+              "fi": "en förmån",
+              "en": "a benefit"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-31-read-1",
+          "title": "Vad tycker gästerna om Kafé Lyktan?",
+          "textType": "Recensioner på nätet",
+          "minutes": 5,
+          "text": "KAFÉ LYKTAN, KRONOHAGEN – GÄSTERNAS RECENSIONER\n\n★★★★★ Mia, 54\nMitt favoritkafé i Helsingfors! Kanelbullarna är både stora och färska, och kaffet är alltid varmt. I lördags spillde jag ut mitt kaffe på bordet. Personalen torkade genast av det och gav mig en ny kopp utan att jag bad om den. Sådan service hittar man knappast någon annanstans.\n\n★★☆☆☆ Ville, 31\nFin miljö, men tyvärr motsvarade besöket inte mina förväntningar. Jag beställde en sallad med kyckling och fick en sallad utan kyckling. När jag sa till fick jag vänta i tjugo minuter till, och ingen bad om ursäkt. Priset var dessutom högt: 16,50 euro. Kvaliteten på maten måste bli bättre.\n\n★★★☆☆ Aino, 40\nVarken bäst eller sämst. Kaffet är gott och terrassen är härlig när solen skiner, men på helgerna är det alldeles för mycket folk. Kom antingen tidigt på morgonen eller på en vardag, så får du i alla fall en plats. Till barnfamiljer: det finns tyvärr inget skötbord.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vilken gäst är mest nöjd med kaféet?",
+              "translation": "Which guest is most satisfied with the café?",
+              "options": [
+                "Ville",
+                "Aino",
+                "Mia"
+              ],
+              "answers": [
+                "Mia"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Ville fick en ursäkt av personalen.",
+              "translation": "Ville got an apology from the staff.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur mycket kostade Villes sallad?",
+              "translation": "How much did Ville's salad cost?",
+              "answers": [
+                "16,50",
+                "16.50",
+                "1650",
+                "16,50 euro",
+                "16.50 euro",
+                "1650 euro",
+                "16,50 €",
+                "16 50",
+                "16 euro 50 cent",
+                "sexton euro femtio",
+                "sexton och femtio"
+              ],
+              "hint": "Skriv priset."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad är Ainos råd till andra gäster?",
+              "translation": "What is Aino's advice to other guests?",
+              "options": [
+                "Boka ett bord på helgen",
+                "Kom tidigt eller på en vardag",
+                "Sitt inne när solen skiner"
+              ],
+              "answers": [
+                "Kom tidigt eller på en vardag"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Kafé Lyktan passar bra för en familj med en baby.",
+              "translation": "Kafé Lyktan suits a family with a baby well.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en recension",
+              "en": "a review"
+            },
+            {
+              "fi": "ett favoritkafé",
+              "en": "a favourite café"
+            },
+            {
+              "fi": "spilla ut",
+              "en": "spill"
+            },
+            {
+              "fi": "knappast",
+              "en": "hardly"
+            },
+            {
+              "fi": "en kvalitet",
+              "en": "a quality"
+            },
+            {
+              "fi": "i alla fall",
+              "en": "at least, anyway"
+            },
+            {
+              "fi": "ett skötbord",
+              "en": "a baby-changing table"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-31-read-2",
+          "title": "Ge bort tid i stället för saker",
+          "textType": "Kolumn i en tidning",
+          "minutes": 7,
+          "text": "KOLUMN: GE BORT TID I STÄLLET FÖR SAKER\n\nVarje år ställer jag mig samma fråga: vad ska jag ge min mamma när hon fyller år? Hon har redan allt hon behöver. Hon vill varken ha fler prydnadssaker eller en ny kofta. Ändå köper jag något, eftersom det känns konstigt att komma tomhänt.\n\nI år gjorde jag på ett annat sätt. Jag gav henne ett kort där det stod: ”En dag med mig – du bestämmer vad vi gör.” Hon valde en båttur till Sveaborg och lunch på en restaurang. Vi pratade i flera timmar, och efteråt sa hon att det var den bästa gåvan hon hade fått på länge.\n\nJag tror att många av oss köper presenter av gammal vana. Vi stressar i köpcentren och betalar för saker som snart hamnar i ett skåp eller på en loppis. Det är både dyrt och dåligt för miljön.\n\nSjälvklart finns det undantag. Barn blir glada av paket, och en bra bok är nästan alltid en fin present. Men vuxna har sällan behov av fler saker. De behöver snarare tid tillsammans med människor som de tycker om.\n\nMitt förslag är därför enkelt: nästa gång någon i din närhet fyller år, ge bort en upplevelse eller några timmar av din tid. Det kostar kanske ingenting, men det är det mest värdefulla du har.\n\nPia Sundström",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är skribentens viktigaste tanke?",
+              "translation": "What is the writer's main idea?",
+              "options": [
+                "Man ska inte köpa presenter till barn",
+                "Vuxna blir gladare av tid än av saker",
+                "Presenter ska köpas på loppis"
+              ],
+              "answers": [
+                "Vuxna blir gladare av tid än av saker"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Skribentens mamma behöver nya kläder.",
+              "translation": "The writer's mother needs new clothes.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vart åkte skribenten och hennes mamma?",
+              "translation": "Where did the writer and her mother go?",
+              "answers": [
+                "till sveaborg",
+                "sveaborg",
+                "på en båttur till sveaborg",
+                "en båttur till sveaborg",
+                "båttur till sveaborg",
+                "på båttur till sveaborg"
+              ],
+              "hint": "Skriv en plats."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilka problem ser skribenten med vanliga presenter?",
+              "translation": "What problems does the writer see with ordinary presents?",
+              "options": [
+                "De är svåra att lämna tillbaka",
+                "De tar lång tid att slå in",
+                "De är dyra och dåliga för miljön"
+              ],
+              "answers": [
+                "De är dyra och dåliga för miljön"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Skribenten kommer antagligen att ge bort tid igen.",
+              "translation": "The writer will probably give away time again.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "tomhänt",
+              "en": "empty-handed"
+            },
+            {
+              "fi": "en gåva",
+              "en": "a gift (a little formal)"
+            },
+            {
+              "fi": "av gammal vana",
+              "en": "out of old habit"
+            },
+            {
+              "fi": "ett undantag",
+              "en": "an exception"
+            },
+            {
+              "fi": "ett behov",
+              "en": "a need"
+            },
+            {
+              "fi": "snarare",
+              "en": "rather"
+            },
+            {
+              "fi": "en upplevelse",
+              "en": "an experience"
+            },
+            {
+              "fi": "värdefull",
+              "en": "valuable"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

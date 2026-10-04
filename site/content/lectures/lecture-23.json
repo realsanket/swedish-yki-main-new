@@ -2201,6 +2201,544 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about the YKI test itself: instructions on the test day, two course mates signing up, a confirmation email and a forum thread with tips.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read each text once quickly and once carefully, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-23-listen-1",
+          "title": "Före provet",
+          "textType": "Information (monolog)",
+          "situation": {
+            "fi": "Det är provdag. Du sitter i provsalen och hör information innan provet börjar.",
+            "en": "It is test day. You are sitting in the exam room and hear some information before the test starts."
+          },
+          "lines": [
+            {
+              "speaker": "Provövervakaren",
+              "voice": "Henrik",
+              "fi": "God morgon och välkomna till YKI-provet i svenska på mellannivå. Jag heter Göran, och jag övervakar provet här i dag.",
+              "en": "Good morning and welcome to the YKI test in Swedish at the intermediate level. My name is Göran, and I am supervising the test here today."
+            },
+            {
+              "speaker": "Provövervakaren",
+              "voice": "Henrik",
+              "fi": "Innan vi börjar vill jag ge er lite praktisk information. Stäng av era telefoner och lägg dem i väskan. Väskorna ställer ni längst bak i salen.",
+              "en": "Before we start, I want to give you some practical information. Switch off your phones and put them in your bag. Put the bags at the very back of the room."
+            },
+            {
+              "speaker": "Provövervakaren",
+              "voice": "Henrik",
+              "fi": "Vi börjar med läsförståelsen klockan nio. Den tar sextio minuter. Efter den har vi en paus på femton minuter, och sedan fortsätter vi med hörförståelsen.",
+              "en": "We start with reading comprehension at nine o'clock. It takes sixty minutes. After that we have a fifteen-minute break, and then we continue with listening comprehension."
+            },
+            {
+              "speaker": "Provövervakaren",
+              "voice": "Henrik",
+              "fi": "Ni skriver bara med blyertspenna. Om ni har glömt pennan finns det ytterligare pennor på bordet vid dörren.",
+              "en": "You write only in pencil. If you have forgotten your pencil, there are more pencils on the table by the door."
+            },
+            {
+              "speaker": "Provövervakaren",
+              "voice": "Henrik",
+              "fi": "Vattenflaskor är givetvis tillåtna, men inte mat. Lunchen äter vi klockan tolv, innan taldelen börjar i språkstudion på andra våningen.",
+              "en": "Water bottles are of course allowed, but not food. We have lunch at twelve, before the speaking part starts in the language studio on the second floor."
+            },
+            {
+              "speaker": "Provövervakaren",
+              "voice": "Henrik",
+              "fi": "Om ni behöver gå på toaletten under provet, räck upp handen, så följer någon av oss med er. Har ni några frågor? Nej? Då börjar vi. Lycka till!",
+              "en": "If you need to go to the toilet during the test, raise your hand and one of us will go with you. Do you have any questions? No? Then we'll start. Good luck!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är syftet med meddelandet?",
+              "translation": "What is the purpose of the announcement?",
+              "options": [
+                "Att ge praktisk information före provet",
+                "Att berätta om resultaten från provet",
+                "Att presentera lärarna på kursen"
+              ],
+              "answers": [
+                "Att ge praktisk information före provet"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur lång är pausen efter läsförståelsen?",
+              "translation": "How long is the break after reading comprehension?",
+              "hint": "Skriv ett tal och ett ord.",
+              "answers": [
+                "15 minuter",
+                "femton minuter",
+                "15",
+                "femton",
+                "15 min",
+                "en kvart"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Man får äta en smörgås i salen under provet.",
+              "translation": "You may eat a sandwich in the room during the test.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Var ligger språkstudion?",
+              "translation": "Where is the language studio?",
+              "hint": "Svara kort.",
+              "answers": [
+                "på andra våningen",
+                "andra våningen",
+                "på våning två",
+                "våning två",
+                "på våning 2",
+                "våning 2",
+                "på 2 våningen",
+                "2 våningen"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilken del gör deltagarna sist på dagen?",
+              "translation": "Which part do the test-takers do last in the day?",
+              "options": [
+                "Läsförståelsen",
+                "Hörförståelsen",
+                "Taldelen"
+              ],
+              "answers": [
+                "Taldelen"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "övervaka",
+              "en": "to supervise, watch over"
+            },
+            {
+              "fi": "en blyertspenna",
+              "en": "a pencil"
+            },
+            {
+              "fi": "ytterligare",
+              "en": "more, additional"
+            },
+            {
+              "fi": "givetvis",
+              "en": "of course"
+            },
+            {
+              "fi": "tillåten (tillåtna)",
+              "en": "allowed"
+            },
+            {
+              "fi": "räcka upp handen",
+              "en": "to raise your hand"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-23-listen-2",
+          "title": "Har du anmält dig?",
+          "textType": "Samtal",
+          "situation": {
+            "fi": "Nora och Samir går på samma svenskkurs. De pratar efter lektionen.",
+            "en": "Nora and Samir are on the same Swedish course. They talk after the lesson."
+          },
+          "lines": [
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Hej Nora! Har du redan anmält dig till YKI-provet?",
+              "en": "Hi Nora! Have you already signed up for the YKI test?"
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Inte än. Anmälan öppnar nämligen först på måndag klockan tio. Jag har ställt ett alarm i telefonen.",
+              "en": "Not yet. You see, registration only opens on Monday at ten. I've set an alarm on my phone."
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Smart. Jag har hört att platserna tar slut på några minuter.",
+              "en": "Smart. I've heard that the places run out in a few minutes."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Ja, förra omgången var allt fullt efter en kvart. Vilket datum vill du ha?",
+              "en": "Yes, last round everything was full after a quarter of an hour. Which date do you want?"
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Helst den tjugosjätte september, för då har jag semester. Och du?",
+              "en": "Preferably the twenty-sixth of September, because I'm on holiday then. And you?"
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Samma dag, om det går. Annars tar jag provet i november. Jag behöver intyget för medborgarskapet.",
+              "en": "The same day, if possible. Otherwise I'll take the test in November. I need the certificate for citizenship."
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Måste du klara alla fyra delar då?",
+              "en": "Do you have to pass all four parts then?"
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Nej, bara två, till exempel tal och skrivande. Men jag är tveksam när det gäller skrivandet. Jag gör fortfarande många fel med ordföljden.",
+              "en": "No, only two, for example speaking and writing. But I'm unsure about the writing. I still make lots of word-order mistakes."
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Då kan du satsa på läsförståelse och tal i stället. Det paret räknas också.",
+              "en": "Then you can go for reading and speaking instead. That pair counts too."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Just det! Läsning går mycket bättre för mig. Men jag gör förstås hela provet ändå.",
+              "en": "That's right! Reading goes much better for me. But of course I'll do the whole test anyway."
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Jag också. Ska vi träna tillsammans på torsdagar?",
+              "en": "Me too. Shall we practise together on Thursdays?"
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Gärna! Vad sägs om centrumbiblioteket Ode klockan fem?",
+              "en": "Gladly! How about the Ode central library at five?"
+            },
+            {
+              "speaker": "Samir",
+              "voice": "Alex",
+              "fi": "Perfekt. Då ses vi där.",
+              "en": "Perfect. See you there then."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad pratar Nora och Samir mest om?",
+              "translation": "What do Nora and Samir mostly talk about?",
+              "options": [
+                "Att anmäla sig till YKI-provet",
+                "Resultaten från YKI-provet",
+                "En ny kurs på biblioteket"
+              ],
+              "answers": [
+                "Att anmäla sig till YKI-provet"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "När öppnar anmälan?",
+              "translation": "When does registration open?",
+              "hint": "Dag och klockslag.",
+              "answers": [
+                "på måndag klockan tio",
+                "måndag klockan tio",
+                "på måndag klockan 10",
+                "måndag klockan 10",
+                "måndag kl 10",
+                "på måndag kl 10",
+                "måndag kl tio",
+                "måndag 10",
+                "måndag tio"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Samir vill helst ta provet i november.",
+              "translation": "Samir would prefer to take the test in November.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilka två delar kommer Nora antagligen att satsa mest på för medborgarskapet?",
+              "translation": "Which two parts will Nora probably focus on most for citizenship?",
+              "options": [
+                "Tal och skrivande",
+                "Läsförståelse och tal",
+                "Hörförståelse och läsförståelse"
+              ],
+              "answers": [
+                "Läsförståelse och tal"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför har Nora ställt ett alarm i telefonen?",
+              "translation": "Why has Nora set an alarm on her phone?",
+              "model": "För att anmälan öppnar på måndag klockan tio och platserna tar slut snabbt."
+            }
+          ],
+          "words": [
+            {
+              "fi": "anmäla sig",
+              "en": "to sign up, register"
+            },
+            {
+              "fi": "nämligen",
+              "en": "you see, namely (explains why)"
+            },
+            {
+              "fi": "en omgång",
+              "en": "a round, a session"
+            },
+            {
+              "fi": "ett intyg",
+              "en": "a certificate"
+            },
+            {
+              "fi": "tveksam",
+              "en": "unsure, doubtful"
+            },
+            {
+              "fi": "satsa på",
+              "en": "to go for, put your effort into"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-23-read-1",
+          "title": "Bekräftelse på din anmälan",
+          "textType": "E-post från provanordnaren",
+          "minutes": 6,
+          "text": "Ämne: Bekräftelse på din anmälan – YKI, svenska, mellannivå\n\nHej Ravi Kumar,\n\nTack för din anmälan till den allmänna språkexamen i svenska på mellannivå. Provet ordnas lördagen den 26 september 2026 på Språkskolan Norrsken, Fredriksgatan 20, Helsingfors. Din anmälan är nu registrerad.\n\nPROVDAGEN\nKom senast klockan 8.30, alltså en halv timme innan provet börjar. Den som kommer för sent får inte delta i den första delen. Ta med ett giltigt identitetsbevis med foto, till exempel pass eller id-kort. Körkort duger också. Ett bibliotekskort räcker inte.\n\nAVGIFT\nDu får en faktura per e-post inom ett par dagar. Avgiften ska betalas senast den 10 september. Om du inte betalar i tid förlorar du din plats.\n\nOM DU INTE KAN KOMMA\nDu kan avboka provet utan kostnad fram till den 10 september. Efter det får du pengarna tillbaka bara om du är sjuk och har ett läkarintyg.\n\nRESULTAT\nResultaten skickas hem till dig ungefär åtta veckor efter provet. Du kan också se dem på vår hemsida.\n\nHar du frågor, eller ett eventuellt behov av specialarrangemang, till exempel extra tid, ska du kontakta oss senast den 1 september.\n\nMed vänliga hälsningar\nKansliet, Språkskolan Norrsken\ntfn 09 123 4567",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför har Ravi fått mejlet?",
+              "translation": "Why has Ravi received the email?",
+              "options": [
+                "Han har anmält sig till ett prov",
+                "Han har klarat provet",
+                "Han har glömt att betala avgiften"
+              ],
+              "answers": [
+                "Han har anmält sig till ett prov"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur dags måste man vara på plats senast?",
+              "translation": "What time must you be there at the latest?",
+              "hint": "Skriv klockslaget.",
+              "answers": [
+                "8.30",
+                "kl 8.30",
+                "klockan 8.30",
+                "8:30",
+                "kl 8:30",
+                "830",
+                "halv nio",
+                "klockan halv nio",
+                "kl halv nio"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Man kan visa sitt körkort som identitetsbevis.",
+              "translation": "You can show your driving licence as ID.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Den som avbokar den 20 september får alltid pengarna tillbaka.",
+              "translation": "Anyone who cancels on 20 September always gets the money back.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vem behöver kontakta kansliet före den 1 september?",
+              "translation": "Who needs to contact the office before 1 September?",
+              "options": [
+                "En person som behöver mer tid på provet",
+                "En person som vill se sitt resultat",
+                "En person som har glömt sitt pass"
+              ],
+              "answers": [
+                "En person som behöver mer tid på provet"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en bekräftelse",
+              "en": "a confirmation"
+            },
+            {
+              "fi": "giltig",
+              "en": "valid"
+            },
+            {
+              "fi": "duga",
+              "en": "to do, be good enough"
+            },
+            {
+              "fi": "en faktura",
+              "en": "an invoice, a bill"
+            },
+            {
+              "fi": "avboka",
+              "en": "to cancel (a booking)"
+            },
+            {
+              "fi": "ett läkarintyg",
+              "en": "a doctor's certificate"
+            },
+            {
+              "fi": "ett behov",
+              "en": "a need"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-23-read-2",
+          "title": "Hur förberedde ni er?",
+          "textType": "Diskussionsforum",
+          "minutes": 6,
+          "text": "FORUM: Leva i Finland › Språk och studier\n\nTråd: Hur förberedde ni er inför YKI?\n\nMira_88 skriver:\nHej! Jag ska göra YKI-provet på mellannivå i oktober och är lite nervös. Jag förstår det mesta när jag läser, men när folk pratar snabbt hänger jag inte med. Har ni några tips? Hur förberedde ni er?\n\nTomas_K svarar:\nJag hade samma problem. Det som hjälpte mig mest var att lyssna på radio varje dag, till exempel Yle Vega i bilen på väg till jobbet. I början förstod jag kanske en tredjedel, men efter ett par månader gick det mycket bättre. Lyssna regelbundet hellre än länge!\n\nAnu_S svarar:\nGör gamla övningsuppgifter med klocka. Själva provet är ju långt, och det är lätt att bli trött. Första gången hann jag inte svara på alla frågor i läsförståelsen. Nästa gång läste jag frågorna först och texten sedan. Det fungerade mycket bättre, och jag fick trean i alla delar!\n\nMira_88 svarar:\nTack båda två! Jag ska prova radion redan i morgon. Anu, vad menar du med trean?\n\nAnu_S svarar:\nNivå tre, alltså den nivå som man behöver för medborgarskap. Lycka till!",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är Miras problem?",
+              "translation": "What is Mira's problem?",
+              "options": [
+                "Hon har svårt att förstå när folk pratar snabbt",
+                "Hon har svårt att läsa långa texter",
+                "Hon har inte hunnit anmäla sig till provet"
+              ],
+              "answers": [
+                "Hon har svårt att förstå när folk pratar snabbt"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket förstod Tomas av radion i början?",
+              "translation": "How much of the radio did Tomas understand at first?",
+              "hint": "Svara med två ord.",
+              "answers": [
+                "en tredjedel",
+                "kanske en tredjedel",
+                "ungefär en tredjedel",
+                "en tredje del",
+                "1/3"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Första gången läste Anu frågorna före texten.",
+              "translation": "The first time, Anu read the questions before the text.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilken radiokanal lyssnade Tomas på?",
+              "translation": "Which radio channel did Tomas listen to?",
+              "answers": [
+                "yle vega",
+                "vega",
+                "radio vega"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför frågar Mira vad ”trean” betyder?",
+              "translation": "Why does Mira ask what \"trean\" means?",
+              "options": [
+                "Hon känner inte till det vardagliga ordet för nivå tre",
+                "Hon vill veta vilket datum provet är",
+                "Hon har inte förstått Tomas råd"
+              ],
+              "answers": [
+                "Hon känner inte till det vardagliga ordet för nivå tre"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en tråd",
+              "en": "a thread (on a forum)"
+            },
+            {
+              "fi": "hänga med",
+              "en": "to keep up, follow"
+            },
+            {
+              "fi": "en tredjedel",
+              "en": "a third"
+            },
+            {
+              "fi": "regelbundet",
+              "en": "regularly"
+            },
+            {
+              "fi": "hinna",
+              "en": "to have time to, manage"
+            },
+            {
+              "fi": "trean",
+              "en": "(informal) a three, level 3"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

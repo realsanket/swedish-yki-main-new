@@ -593,6 +593,123 @@
       }
     },
     {
+      "title": "Blev inställt, blev uppringd · the bli-passive next to the s-passive",
+      "kind": "rule",
+      "body": [
+        "B1 extra (not from the class notes): Swedish has a second passive: bli + participle. Tåget blev inställt = the train got cancelled. Jag blev uppringd = I got a phone call (someone rang me).",
+        "The forms of bli: blir (now), blev (past), har blivit (has been), kan bli or ska bli (after a help verb). Tåget har blivit inställt means the same as Tåget har ställts in.",
+        "The participle agrees with the subject, as after är: resan blev inställd (en-word), tåget blev inställt (ett-word), tågen blev inställda (plural). When you talk about yourself, use the en-form: jag blev uppringd, jag blev antagen.",
+        "In particle verbs the small word moves to the front of the participle: ställa in → inställd, ringa upp → uppringd, boka om → ombokad, bjuda in → inbjuden.",
+        "Which one to use? The s-passive is the normal choice in writing, rules and announcements, and for things that happen again and again: Biljetter kan köpas i appen. Ansökan skickas senast fredag.",
+        "The bli-passive is common in speech, about one event that happened to someone, often a change or a surprise: Jag blev ombokad till nästa tåg. Vi blev försenade. In the YKI speaking test it sounds natural when you tell what happened to you.",
+        "Är or blev? Tåget är inställt says how things are now. Tåget blev inställt tells that it happened. To say who did it, add av with either passive: Jag blev uppringd av en kvinna från ett företag."
+      ],
+      "examples": [
+        {
+          "fi": "Tåget blev inställt på grund av ett bromsfel.",
+          "en": "The train was cancelled because of a brake fault.",
+          "note": "blev + inställt (tåget is an ett-word)"
+        },
+        {
+          "fi": "Jag blev uppringd av ett undersökningsföretag i går.",
+          "en": "I got a call from a survey company yesterday.",
+          "note": "ringa upp → uppringd; av = by"
+        },
+        {
+          "fi": "Vi blev ombokade till tåget klockan tre.",
+          "en": "We were rebooked onto the three o'clock train.",
+          "note": "plural: ombokade"
+        },
+        {
+          "fi": "Hon har blivit antagen till kursen.",
+          "en": "She has been accepted onto the course.",
+          "note": "har blivit + antagen"
+        },
+        {
+          "fi": "Konserten blev flyttad till söndag.",
+          "en": "The concert was moved to Sunday.",
+          "note": "one event, told in speech; a notice would say Konserten flyttas till söndag"
+        },
+        {
+          "fi": "Biljetter kan köpas i appen.",
+          "en": "Tickets can be bought in the app.",
+          "note": "a general rule: s-passive"
+        }
+      ],
+      "table": {
+        "headings": [
+          "Active (who does it)",
+          "s-passive (writing, rules)",
+          "bli-passive (speech, one event)"
+        ],
+        "rows": [
+          [
+            "Tågbolaget ställde in tåget.",
+            "Tåget ställdes in.",
+            "Tåget blev inställt."
+          ],
+          [
+            "De bokade om oss till nästa tåg.",
+            "Vi bokades om till nästa tåg.",
+            "Vi blev ombokade till nästa tåg."
+          ],
+          [
+            "Kursbyrån antog henne.",
+            "Hon antogs till kursen.",
+            "Hon blev antagen till kursen."
+          ],
+          [
+            "Man säljer biljetter i appen.",
+            "Biljetter säljs i appen.",
+            "(not used for a general rule)"
+          ]
+        ]
+      },
+      "memoryTip": "The notice says Tåget ställs in. Your friend says Tåget blev inställt.",
+      "tryIt": "Tell a friend about a bad travel day with bli: what happened to your train, to you and to your ticket.",
+      "activity": {
+        "type": "match",
+        "label": "Match it",
+        "title": "From verb to bli-passive",
+        "instructions": "Match each verb to its bli-passive sentence. Watch where the small word goes and how the ending agrees with the subject.",
+        "leftLabel": "Verb",
+        "rightLabel": "With bli",
+        "pairs": [
+          {
+            "left": "ställa in",
+            "right": "Tåget blev inställt.",
+            "note": "ett-word: inställt"
+          },
+          {
+            "left": "ringa upp",
+            "right": "Jag blev uppringd i går kväll.",
+            "note": "the small word first: uppringd"
+          },
+          {
+            "left": "boka om",
+            "right": "Vi blev ombokade till nästa tåg.",
+            "note": "plural: ombokade"
+          },
+          {
+            "left": "försena",
+            "right": "Bussen blev försenad på grund av snön.",
+            "note": "en-word: försenad"
+          },
+          {
+            "left": "anta",
+            "right": "Hon har blivit antagen till kursen.",
+            "note": "anta → antagen"
+          },
+          {
+            "left": "bjuda in",
+            "right": "Vi blev inbjudna till ett bröllop.",
+            "note": "inbjuden → plural inbjudna"
+          }
+        ],
+        "pattern": "bli + participle. The small word goes first (inställd, uppringd, ombokad), and the ending follows the subject: inställd, inställt, inställda."
+      }
+    },
+    {
       "title": "Två samtal i telefon · a survey and a ticket change",
       "kind": "scene",
       "body": [
@@ -1131,6 +1248,34 @@
       ],
       "hint": "After att comes a whole clause: subject + verb.",
       "explanation": "Övertygad om att + a full clause: att jag kan bidra. Kunna is the basic form and needs a help verb before it."
+    },
+    {
+      "id": "sv-42-g12",
+      "prompt": "You tell a friend what happened this morning: Mitt tåg ___ inställt i morse.",
+      "answers": [
+        "blev"
+      ],
+      "options": [
+        "blev",
+        "blir",
+        "har"
+      ],
+      "hint": "One event in the past, told in speech: bli + participle.",
+      "explanation": "Mitt tåg blev inställt i morse: blev (past of bli) + the participle. Blir is now or future, and har inställt would mean the train cancelled something."
+    },
+    {
+      "id": "sv-42-g13",
+      "prompt": "Jag blev ___ av en kvinna från ett undersökningsföretag.",
+      "answers": [
+        "uppringd"
+      ],
+      "options": [
+        "uppringd",
+        "ringd upp",
+        "uppringt"
+      ],
+      "hint": "In the participle the small word comes first, and jag takes the en-form.",
+      "explanation": "Ringa upp → uppringd: the particle moves to the front. Jag takes the en-form uppringd; uppringt is the ett-form (barnet blev uppringt)."
     }
   ],
   "checkpoint": [
@@ -1228,6 +1373,21 @@
       ],
       "hint": "Lecture 14: var is a place, vart is a direction.",
       "explanation": "Från vilket spår …? puts the preposition first. Vart is for where something is going (Vart ska du?), and Var tåget … går has the word order of an indirect question."
+    },
+    {
+      "id": "sv-42-c8",
+      "prompt": "Write in Swedish with bli: “Our flight was cancelled.”",
+      "answers": [
+        "Vårt flyg blev inställt.",
+        "Flyget blev inställt.",
+        "Vårt flyg har blivit inställt.",
+        "Flyget har blivit inställt.",
+        "Vår flygning blev inställd.",
+        "Vårt flyg blev inställt i dag.",
+        "Vårt flyg blev inställt idag."
+      ],
+      "hint": "bli + participle; flyg is an ett-word",
+      "explanation": "Model: Vårt flyg blev inställt. Flyg is an ett-word, so vårt and inställt. With the s-passive you can also write Vårt flyg ställdes in."
     }
   ],
   "assignment": {
@@ -2459,6 +2619,539 @@
                 ]
               },
               "model": "Hej!\n\nJag heter Ravi Patil och jag har anmält mig till kursen i svenska som börjar den 1 september. Tyvärr kan jag inte komma till den första lektionen, eftersom jag måste göra en arbetsresa till Tammerfors. Skulle ni kunna skicka materialet från lektionen till mig per e-post? Jag kommer till den andra lektionen.\n\nTack för förståelsen. Jag ser fram emot kursen.\n\nMed vänliga hälsningar,\nRavi Patil"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about travel problems and applications, of the kinds the YKI test uses: a station announcement, a phone call about a cancelled ferry, rules for compensation when a train is late, and an email from a course office. Listen and look for both passives: ställs in and blev inställd.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-42-listen-1",
+          "title": "Meddelande på stationen",
+          "textType": "Meddelande i högtalare",
+          "situation": {
+            "fi": "Du står på järnvägsstationen i Helsingfors och ska åka till Åbo. Du hör ett meddelande i högtalaren.",
+            "en": "You are at Helsinki railway station and are going to Turku. You hear an announcement over the loudspeaker."
+          },
+          "lines": [
+            {
+              "speaker": "Högtalarrösten",
+              "voice": "Henrik",
+              "fi": "Bästa resenärer. Intercitytåget till Åbo, med planerad avgång klockan 14.12, har ställts in på grund av ett signalfel vid Karis.",
+              "en": "Dear passengers. The InterCity train to Turku, scheduled to leave at 14.12, has been cancelled because of a signal fault near Karjaa."
+            },
+            {
+              "speaker": "Högtalarrösten",
+              "voice": "Henrik",
+              "fi": "Resenärerna ombeds ta ersättningsbussen, som avgår från hållplatsen framför stationens västra ingång klockan 14.30.",
+              "en": "Passengers are asked to take the replacement bus, which leaves from the stop in front of the station's west entrance at 14.30."
+            },
+            {
+              "speaker": "Högtalarrösten",
+              "voice": "Henrik",
+              "fi": "Bussen stannar i Esbo och Salo. Beräknad ankomst till Åbo är klockan 17.15.",
+              "en": "The bus stops in Espoo and Salo. Estimated arrival in Turku is at 17.15."
+            },
+            {
+              "speaker": "Högtalarrösten",
+              "voice": "Henrik",
+              "fi": "Biljetter till det inställda tåget gäller i bussen. Passagerare med cykel kan tyvärr inte åka med bussen. De kan resa med nästa tåg, som avgår klockan 15.12 från spår 9.",
+              "en": "Tickets for the cancelled train are valid on the bus. Unfortunately, passengers with a bicycle cannot travel on the bus. They can take the next train, which leaves at 15.12 from track 9."
+            },
+            {
+              "speaker": "Högtalarrösten",
+              "voice": "Henrik",
+              "fi": "Om din resa blir försenad med mer än en timme kan du ansöka om ersättning på vår webbplats.",
+              "en": "If your journey is delayed by more than an hour, you can apply for compensation on our website."
+            },
+            {
+              "speaker": "Högtalarrösten",
+              "voice": "Henrik",
+              "fi": "Vi ber om ursäkt för störningen.",
+              "en": "We apologise for the disruption."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför har tåget ställts in?",
+              "translation": "Why has the train been cancelled?",
+              "options": [
+                "Ett signalfel",
+                "Ett bromsfel",
+                "En storm"
+              ],
+              "answers": [
+                "Ett signalfel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Var avgår ersättningsbussen?",
+              "translation": "Where does the replacement bus leave from?",
+              "answers": [
+                "framför stationens västra ingång",
+                "framför västra ingången",
+                "vid västra ingången",
+                "västra ingången",
+                "stationens västra ingång",
+                "vid stationens västra ingång",
+                "hållplatsen framför stationens västra ingång",
+                "från hållplatsen framför västra ingången"
+              ],
+              "hint": "Svara med några ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "När är bussen beräknad att komma fram till Åbo?",
+              "translation": "When is the bus estimated to arrive in Turku?",
+              "answers": [
+                "17.15",
+                "kl. 17.15",
+                "klockan 17.15",
+                "kvart över fem",
+                "klockan kvart över fem"
+              ],
+              "hint": "Skriv tiden."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska man göra om man har en cykel med sig?",
+              "translation": "What should you do if you have a bicycle with you?",
+              "options": [
+                "Ta nästa tåg från spår 9",
+                "Ta ersättningsbussen",
+                "Ansöka om ersättning på webbplatsen"
+              ],
+              "answers": [
+                "Ta nästa tåg från spår 9"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Den som tar bussen behöver inte köpa en ny biljett.",
+              "translation": "Anyone who takes the bus does not need to buy a new ticket.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett signalfel",
+              "en": "a signal fault"
+            },
+            {
+              "fi": "ombedas",
+              "en": "to be asked (formal, in announcements)"
+            },
+            {
+              "fi": "en ersättningsbuss",
+              "en": "a replacement bus"
+            },
+            {
+              "fi": "beräknad ankomst",
+              "en": "estimated arrival"
+            },
+            {
+              "fi": "en passagerare",
+              "en": "a passenger"
+            },
+            {
+              "fi": "en störning",
+              "en": "a disruption"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-42-listen-2",
+          "title": "Färjan till Tallinn",
+          "textType": "Telefonsamtal",
+          "situation": {
+            "fi": "Sofia ringer till rederiets kundtjänst.",
+            "en": "Sofia calls the ferry company's customer service."
+          },
+          "lines": [
+            {
+              "speaker": "Kundtjänst",
+              "voice": "Alex",
+              "fi": "Kundtjänst, det här är Oskar. Hur kan jag hjälpa?",
+              "en": "Customer service, this is Oskar. How can I help?"
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Maja",
+              "fi": "Hej, jag heter Sofia Nyström. Jag skulle ha åkt till Tallinn med färjan halv åtta i morse, men den blev inställd på grund av stormen.",
+              "en": "Hi, my name is Sofia Nyström. I was supposed to go to Tallinn on the ferry at half past seven this morning, but it was cancelled because of the storm."
+            },
+            {
+              "speaker": "Kundtjänst",
+              "voice": "Alex",
+              "fi": "Ja, tyvärr. Alla morgonavgångar blev inställda. Har du fått vårt sms?",
+              "en": "Yes, unfortunately. All the morning departures were cancelled. Have you received our text message?"
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Maja",
+              "fi": "Ja, där stod det att jag har blivit ombokad till klockan sex i kväll. Men det passar inte alls. Jag ska på ett bröllop i Tallinn klockan tre.",
+              "en": "Yes, it said I have been rebooked to six o'clock this evening. But that doesn't suit me at all. I'm going to a wedding in Tallinn at three."
+            },
+            {
+              "speaker": "Kundtjänst",
+              "voice": "Alex",
+              "fi": "Jag förstår. Det finns en avgång klockan tio, om vinden har blivit svagare. Den är framme vid tolv.",
+              "en": "I understand. There is a departure at ten, if the wind has got weaker. It arrives around twelve."
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Maja",
+              "fi": "Klockan tio, då hinner jag. Kostar det något extra?",
+              "en": "Ten o'clock, then I'll make it. Does it cost anything extra?"
+            },
+            {
+              "speaker": "Kundtjänst",
+              "voice": "Alex",
+              "fi": "Nej, ombokningen är gratis när vi har ställt in en avgång. Men det finns bara några få platser kvar, så jag bokar den direkt om du vill.",
+              "en": "No, the rebooking is free when we have cancelled a departure. But there are only a few seats left, so I'll book it straight away if you like."
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Maja",
+              "fi": "Ja, gärna. Och om den avgången också ställs in?",
+              "en": "Yes, please. And if that departure is also cancelled?"
+            },
+            {
+              "speaker": "Kundtjänst",
+              "voice": "Alex",
+              "fi": "Då kan du välja mellan att boka om till en annan dag och att få pengarna tillbaka. Ansökan görs på vår hemsida inom trettio dagar.",
+              "en": "Then you can choose between rebooking for another day and getting the money back. The application is made on our website within thirty days."
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Maja",
+              "fi": "Okej. Kan du skicka den nya bokningen till min e-post?",
+              "en": "Okay. Can you send the new booking to my email?"
+            },
+            {
+              "speaker": "Kundtjänst",
+              "voice": "Alex",
+              "fi": "Visst, du får den om några minuter. Kom till terminalen senast trettio minuter före avgång.",
+              "en": "Sure, you'll get it in a few minutes. Come to the terminal at least thirty minutes before departure."
+            },
+            {
+              "speaker": "Sofia",
+              "voice": "Maja",
+              "fi": "Tack så mycket, du räddade min dag!",
+              "en": "Thank you so much, you saved my day!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Sofia?",
+              "translation": "Why is Sofia calling?",
+              "options": [
+                "Hon vill byta till en tidigare avgång",
+                "Hon vill klaga på sms:et",
+                "Hon vill ha pengarna tillbaka direkt"
+              ],
+              "answers": [
+                "Hon vill byta till en tidigare avgång"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken tid går den nya färjan som Sofia väljer?",
+              "translation": "What time does the new ferry that Sofia chooses leave?",
+              "answers": [
+                "klockan tio",
+                "kl. 10",
+                "klockan 10",
+                "10",
+                "10.00",
+                "tio"
+              ],
+              "hint": "Skriv tiden."
+            },
+            {
+              "id": "q3",
+              "prompt": "Sofia måste betala extra för den nya avgången.",
+              "translation": "Sofia has to pay extra for the new departure.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad kan Sofia göra om också den nya avgången ställs in?",
+              "translation": "What can Sofia do if the new departure is also cancelled?",
+              "options": [
+                "Boka om till en annan dag eller få pengarna tillbaka",
+                "Åka med en annan färja samma kväll",
+                "Få en gratis hytt nästa gång"
+              ],
+              "answers": [
+                "Boka om till en annan dag eller få pengarna tillbaka"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Med avgången klockan sex hade Sofia kommit för sent till bröllopet.",
+              "translation": "With the six o'clock departure, Sofia would have been late for the wedding.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett rederi",
+              "en": "a shipping company, a ferry line"
+            },
+            {
+              "fi": "en avgång",
+              "en": "a departure"
+            },
+            {
+              "fi": "bli ombokad",
+              "en": "to be rebooked"
+            },
+            {
+              "fi": "en ombokning",
+              "en": "a rebooking"
+            },
+            {
+              "fi": "hinna",
+              "en": "to make it in time"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-42-read-1",
+          "title": "Ersättning vid försening",
+          "textType": "Information på en webbplats",
+          "minutes": 7,
+          "text": "ERSÄTTNING VID FÖRSENING ELLER INSTÄLLT TÅG\n\nHar ditt tåg blivit försenat eller inställt? Då kan du ha rätt till ersättning. Så här fungerar det.\n\nHur mycket får jag?\nOm du kommer fram 60–119 minuter för sent, får du tillbaka 25 procent av biljettpriset. Om förseningen är två timmar eller mer, får du 50 procent. Ersättningen räknas på priset för den aktuella resan, inte på hela tur- och returbiljetten. Belopp under fyra euro betalas inte ut.\n\nOm tåget ställs in och du väljer att inte resa alls, betalas hela biljettpriset tillbaka.\n\nHur ansöker jag?\nAnsökan görs på vår webbplats under Kundservice. Fyll i formuläret och bifoga en bild av biljetten. Ansökan måste skickas inom tre månader efter resan. Ansökningar som kommer in senare behandlas inte.\n\nNär får jag pengarna?\nErsättningen betalas till samma kort som du använde när du köpte biljetten, vanligen inom två veckor. Om du betalade kontant, behöver vi ditt kontonummer.\n\nViktigt att veta\nOm förseningen beror på extremt väder, till exempel en svår storm, betalas ingen ersättning för förseningen. Om du då väljer att inte resa, får du ändå tillbaka pengarna för biljetten.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Om tåget är 90 minuter försenat får man tillbaka halva biljettpriset.",
+              "translation": "If the train is 90 minutes late, you get half the ticket price back.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Inom hur lång tid måste ansökan skickas?",
+              "translation": "Within how long must the application be sent?",
+              "answers": [
+                "tre månader",
+                "3 månader",
+                "inom tre månader",
+                "inom 3 månader",
+                "tre månader efter resan",
+                "inom tre månader efter resan",
+                "inom 3 månader efter resan"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad behöver tågbolaget om man betalade biljetten kontant?",
+              "translation": "What does the train company need if you paid for the ticket in cash?",
+              "options": [
+                "Ens kontonummer",
+                "En ny bild av biljetten",
+                "Ens kortnummer"
+              ],
+              "answers": [
+                "Ens kontonummer"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Liisa betalade 18 euro för en enkel resa. Tåget kom fram två och en halv timme för sent på grund av ett tekniskt fel. Hur mycket får hon tillbaka?",
+              "translation": "Liisa paid 18 euros for a one-way trip. The train arrived two and a half hours late because of a technical fault. How much does she get back?",
+              "options": [
+                "9 euro",
+                "4,50 euro",
+                "18 euro"
+              ],
+              "answers": [
+                "9 euro"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Om en svår storm försenar tåget får man ingen ersättning för förseningen.",
+              "translation": "If a severe storm delays the train, you get no compensation for the delay.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en försening",
+              "en": "a delay"
+            },
+            {
+              "fi": "aktuell",
+              "en": "in question, current"
+            },
+            {
+              "fi": "ett belopp",
+              "en": "an amount (of money)"
+            },
+            {
+              "fi": "behandla",
+              "en": "to process, to deal with"
+            },
+            {
+              "fi": "vanligen",
+              "en": "usually"
+            },
+            {
+              "fi": "kontant",
+              "en": "(in) cash"
+            },
+            {
+              "fi": "extremt",
+              "en": "extremely; extreme (weather)"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-42-read-2",
+          "title": "Du har blivit antagen",
+          "textType": "E-post",
+          "minutes": 6,
+          "text": "Ämne: Din ansökan till kursen Svenska i arbetslivet (B1)\n\nHej Fatima Ali,\n\nTack för din ansökan. Vi har glädjen att meddela att du har blivit antagen till kursen Svenska i arbetslivet (B1), som börjar tisdagen den 8 september.\n\nSammanlagt kom det in 54 ansökningar till kursens 18 platser, så intresset var stort. Alla sökande blev intervjuade per telefon, och platserna fördelades efter nivå och motivation.\n\nKursen hålls på tisdagar och torsdagar kl. 17.30–19.00 i rum 204 och pågår till mitten av december. Kursboken ingår i avgiften, som är 145 euro. Avgiften ska betalas senast den 1 september. En faktura skickas till dig per e-post nästa vecka.\n\nBekräfta din plats genom att svara på det här mejlet senast den 21 augusti. Om vi inte har fått något svar då, går platsen till nästa person på reservlistan.\n\nOm du blir sjuk eller av någon annan orsak inte kan fortsätta kursen, kontakta läraren så snart som möjligt. Avgiften betalas tyvärr inte tillbaka efter den andra lektionen.\n\nVälkommen!\n\nMed vänliga hälsningar\nKursbyrån, medborgarinstitutet",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför har Fatima fått mejlet?",
+              "translation": "Why has Fatima received the email?",
+              "options": [
+                "Hon har fått en plats på kursen",
+                "Hon står på reservlistan",
+                "Kursen har ställts in"
+              ],
+              "answers": [
+                "Hon har fått en plats på kursen"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många platser finns det på kursen?",
+              "translation": "How many places are there on the course?",
+              "answers": [
+                "18",
+                "arton",
+                "18 platser",
+                "arton platser"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q3",
+              "prompt": "Kursboken kostar extra.",
+              "translation": "The course book costs extra.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad måste Fatima göra senast den 21 augusti?",
+              "translation": "What must Fatima do by 21 August?",
+              "answers": [
+                "bekräfta sin plats",
+                "bekräfta platsen",
+                "bekräfta",
+                "svara på mejlet",
+                "svara på e-posten",
+                "svara",
+                "bekräfta sin plats genom att svara på mejlet",
+                "bekräfta platsen genom att svara på mejlet"
+              ],
+              "hint": "Svara med några ord."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad händer om Fatima slutar efter den tredje lektionen?",
+              "translation": "What happens if Fatima stops after the third lesson?",
+              "options": [
+                "Hon får inte tillbaka avgiften",
+                "Hon får tillbaka halva avgiften",
+                "Hon får tillbaka hela avgiften"
+              ],
+              "answers": [
+                "Hon får inte tillbaka avgiften"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "bli antagen",
+              "en": "to be accepted (to a course or school)"
+            },
+            {
+              "fi": "sammanlagt",
+              "en": "in total"
+            },
+            {
+              "fi": "fördela",
+              "en": "to distribute, to share out"
+            },
+            {
+              "fi": "ingå i",
+              "en": "to be included in"
+            },
+            {
+              "fi": "en faktura",
+              "en": "an invoice"
+            },
+            {
+              "fi": "en reservlista",
+              "en": "a waiting list"
             }
           ]
         }

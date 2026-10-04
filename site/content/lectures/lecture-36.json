@@ -1960,6 +1960,553 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A voicemail from the health centre, a visit to the pharmacy, the instructions for a fever medicine and a forum thread on free public transport: YKI-style listening and reading with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-36-listen-1",
+          "title": "Hälsostationen ringer",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Du hör ett meddelande från hälsostationen på din telefonsvarare.",
+            "en": "You hear a message from the health centre on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Karin på hälsostationen",
+              "voice": "Elin",
+              "fi": "Hej, det här är Karin från Drumsö hälsostation. Jag ringer om din läkartid på tisdag den tolfte.",
+              "en": "Hi, this is Karin from Lauttasaari health centre. I'm calling about your doctor's appointment on Tuesday the twelfth."
+            },
+            {
+              "speaker": "Karin på hälsostationen",
+              "voice": "Elin",
+              "fi": "Tyvärr är läkaren sjuk den dagen, så vi måste flytta din tid. Den nya tiden är torsdag den fjortonde klockan kvart över tio.",
+              "en": "Unfortunately the doctor is ill that day, so we have to move your appointment. The new time is Thursday the fourteenth at quarter past ten."
+            },
+            {
+              "speaker": "Karin på hälsostationen",
+              "voice": "Elin",
+              "fi": "Om den tiden inte passar, kan du boka en annan tid på vår hemsida eller ringa oss vardagar mellan klockan åtta och fyra.",
+              "en": "If that time doesn't suit you, you can book another time on our website or call us on weekdays between eight and four."
+            },
+            {
+              "speaker": "Karin på hälsostationen",
+              "voice": "Elin",
+              "fi": "Kom ihåg att ta med ditt FPA-kort.",
+              "en": "Remember to bring your Kela card."
+            },
+            {
+              "speaker": "Karin på hälsostationen",
+              "voice": "Elin",
+              "fi": "Om du blir sämre innan dess, till exempel om febern stiger över trettionio grader, ring Jourhjälpen på 116 117.",
+              "en": "If you get worse before then, for example if your fever goes above thirty-nine degrees, call the medical helpline on 116 117."
+            },
+            {
+              "speaker": "Karin på hälsostationen",
+              "voice": "Elin",
+              "fi": "Och observera: om du inte kan komma, måste du avboka senast dagen innan. Annars får du betala en avgift på drygt femtio euro. Ha det bra!",
+              "en": "And please note: if you can't come, you must cancel by the day before at the latest. Otherwise you have to pay a fee of just over fifty euros. Take care!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Karin?",
+              "translation": "Why is Karin calling?",
+              "options": [
+                "Din läkartid måste flyttas",
+                "Dina provsvar har kommit",
+                "Du har glömt din tid"
+              ],
+              "answers": [
+                "Din läkartid måste flyttas"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "När är den nya tiden?",
+              "translation": "When is the new appointment?",
+              "options": [
+                "Torsdag kl. 10.15",
+                "Tisdag kl. 10.15",
+                "Torsdag kl. 10.45"
+              ],
+              "answers": [
+                "Torsdag kl. 10.15"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad ska du ta med dig?",
+              "translation": "What should you bring with you?",
+              "answers": [
+                "FPA-kortet",
+                "ditt FPA-kort",
+                "mitt FPA-kort",
+                "FPA-kort",
+                "ett FPA-kort",
+                "FPA kortet",
+                "FPA kort",
+                "FPAkortet",
+                "Kela-kortet",
+                "Kelakortet",
+                "Kela-kort",
+                "Kela kortet"
+              ],
+              "hint": "Ett eller två ord."
+            },
+            {
+              "id": "q4",
+              "prompt": "Man kan bara boka en annan tid per telefon.",
+              "translation": "You can only book another time by phone.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "När ska du ringa 116 117, enligt meddelandet?",
+              "translation": "When should you call 116 117, according to the message?",
+              "options": [
+                "Om du får hög feber",
+                "Om du vill boka en ny tid",
+                "Om du inte kan komma"
+              ],
+              "answers": [
+                "Om du får hög feber"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en läkartid",
+              "en": "a doctor's appointment"
+            },
+            {
+              "fi": "FPA-kortet",
+              "en": "the Kela card (FPA = Kela in Finland-Swedish)"
+            },
+            {
+              "fi": "innan dess",
+              "en": "before then"
+            },
+            {
+              "fi": "stiga (steg, har stigit)",
+              "en": "to rise, to go up"
+            },
+            {
+              "fi": "observera",
+              "en": "please note"
+            },
+            {
+              "fi": "avboka",
+              "en": "to cancel (a booking)"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-36-listen-2",
+          "title": "På apoteket",
+          "textType": "Samtal i en butik",
+          "situation": {
+            "fi": "En man är på apoteket och pratar med farmaceuten.",
+            "en": "A man is at the pharmacy, talking to the pharmacist."
+          },
+          "lines": [
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Hej, vad kan jag hjälpa till med?",
+              "en": "Hi, how can I help?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Henrik",
+              "fi": "Hej. Jag har hostat i nästan en vecka nu, och på nätterna kan jag knappt sova.",
+              "en": "Hi. I've been coughing for almost a week now, and at night I can hardly sleep."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Oj, det låter jobbigt. Är det en torr hosta, eller får du upp slem?",
+              "en": "Oh, that sounds tough. Is it a dry cough, or are you bringing up phlegm?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Henrik",
+              "fi": "Den är mest torr. Och halsen är lite öm.",
+              "en": "It's mostly dry. And my throat is a bit sore."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Har du feber?",
+              "en": "Do you have a fever?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Henrik",
+              "fi": "Inte längre. Jag hade lite feber i början av veckan.",
+              "en": "Not any more. I had a slight fever at the beginning of the week."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Då kan du prova den här hostmedicinen. Den lindrar torrhosta, men man kan bli sömnig av den.",
+              "en": "Then you can try this cough medicine. It relieves a dry cough, but it can make you sleepy."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Henrik",
+              "fi": "Sömnig? Det går inte. Jag kör nämligen buss, och jag börjar klockan sex i morgon.",
+              "en": "Sleepy? That won't work. You see, I drive a bus, and I start at six tomorrow."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Då tar vi den här i stället. Den gör dig inte trött. Ta tio milliliter tre gånger om dagen.",
+              "en": "Then we'll take this one instead. It doesn't make you tired. Take ten millilitres three times a day."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Henrik",
+              "fi": "Okej. Och om det inte blir bättre?",
+              "en": "OK. And if it doesn't get better?"
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Om du fortfarande hostar om en vecka, eller om du får feber igen eller svårt att andas, ska du kontakta hälsostationen. Och drick mycket varmt, till exempel te med honung.",
+              "en": "If you're still coughing in a week, or if you get a fever again or find it hard to breathe, you should contact the health centre. And drink lots of warm drinks, for example tea with honey."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Henrik",
+              "fi": "Tack så mycket för hjälpen.",
+              "en": "Thank you very much for your help."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Varsågod, och krya på dig!",
+              "en": "You're welcome, and get well soon!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vilket problem har kunden?",
+              "translation": "What problem does the customer have?",
+              "options": [
+                "Torr hosta",
+                "Hög feber",
+                "Täppt näsa"
+              ],
+              "answers": [
+                "Torr hosta"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur länge har han hostat?",
+              "translation": "How long has he been coughing?",
+              "answers": [
+                "nästan en vecka",
+                "i nästan en vecka",
+                "en vecka",
+                "i en vecka",
+                "1 vecka",
+                "nästan 1 vecka",
+                "sju dagar",
+                "nästan sju dagar",
+                "7 dagar"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q3",
+              "prompt": "Varför väljer farmaceuten en annan medicin?",
+              "translation": "Why does the pharmacist choose a different medicine?",
+              "options": [
+                "Kunden kör buss och får inte bli trött",
+                "Den första medicinen var för dyr",
+                "Kunden är allergisk mot den första"
+              ],
+              "answers": [
+                "Kunden kör buss och får inte bli trött"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur mycket ska han ta av medicinen varje gång?",
+              "translation": "How much of the medicine should he take each time?",
+              "answers": [
+                "tio milliliter",
+                "10 milliliter",
+                "10 ml",
+                "10ml",
+                "tio ml"
+              ],
+              "hint": "Skriv mängden."
+            },
+            {
+              "id": "q5",
+              "prompt": "Kunden ska kontakta hälsostationen om han får svårt att andas.",
+              "translation": "The customer should contact the health centre if he finds it hard to breathe.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en farmaceut",
+              "en": "a pharmacist"
+            },
+            {
+              "fi": "knappt",
+              "en": "hardly, barely"
+            },
+            {
+              "fi": "slem",
+              "en": "phlegm, mucus"
+            },
+            {
+              "fi": "lindra",
+              "en": "to relieve, to ease"
+            },
+            {
+              "fi": "sömnig",
+              "en": "sleepy"
+            },
+            {
+              "fi": "nämligen",
+              "en": "you see, namely (gives the reason)"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-36-read-1",
+          "title": "Febrinol 500 mg",
+          "textType": "Bruksanvisning",
+          "minutes": 5,
+          "text": "FEBRINOL 500 MG TABLETTER\nLäs bruksanvisningen noga innan du börjar använda medicinen.\n\nVAD ANVÄNDS FEBRINOL FÖR?\nFebrinol lindrar värk, till exempel huvudvärk och tandvärk, och sänker feber vid förkylning.\n\nDOSERING\nVuxna och barn över 12 år: 1–2 tabletter (500–1 000 milligram) högst tre gånger per dygn. Det ska gå minst sex timmar mellan doserna. Ta inte mer än sex tabletter per dygn.\nBarn under 12 år: fråga läkare eller farmaceut.\n\nSÅ HÄR TAR DU TABLETTEN\nSvälj tabletten hel med ett glas vatten. Du kan ta den med eller utan mat.\n\nVARNING\nTa inte Febrinol tillsammans med andra läkemedel som innehåller samma ämne. Drick inte alkohol under behandlingen.\n\nKONTAKTA LÄKARE OM\n– febern varar längre än tre dagar\n– värken inte blir bättre inom fem dagar\n– du får utslag eller svårt att andas.\n\nFÖRVARING\nFörvaras utom syn- och räckhåll för barn.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad hjälper Febrinol mot?",
+              "translation": "What does Febrinol help against?",
+              "options": [
+                "Feber och värk",
+                "Hosta och täppt näsa",
+                "Allergi mot pollen"
+              ],
+              "answers": [
+                "Feber och värk"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många tabletter får en vuxen ta som mest per dygn?",
+              "translation": "How many tablets can an adult take at most per 24 hours?",
+              "answers": [
+                "sex",
+                "6",
+                "sex tabletter",
+                "6 tabletter",
+                "högst sex",
+                "högst 6",
+                "högst sex tabletter",
+                "högst 6 tabletter"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur länge måste man vänta mellan två doser?",
+              "translation": "How long must you wait between two doses?",
+              "answers": [
+                "sex timmar",
+                "6 timmar",
+                "minst sex timmar",
+                "minst 6 timmar",
+                "6 h",
+                "6h"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q4",
+              "prompt": "En tioåring kan ta en tablett utan att fråga någon.",
+              "translation": "A ten-year-old can take a tablet without asking anyone.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Du har haft feber i fyra dagar fast du tar Febrinol. Du ska kontakta läkare.",
+              "translation": "You have had a fever for four days although you take Febrinol. You should contact a doctor.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en dosering, en dos",
+              "en": "dosage, a dose"
+            },
+            {
+              "fi": "ett dygn",
+              "en": "24 hours, a day and a night"
+            },
+            {
+              "fi": "svälja (svalde, har svalt)",
+              "en": "to swallow"
+            },
+            {
+              "fi": "ett läkemedel",
+              "en": "a medicine (formal word)"
+            },
+            {
+              "fi": "utslag",
+              "en": "a rash"
+            },
+            {
+              "fi": "utom räckhåll för barn",
+              "en": "out of children's reach"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-36-read-2",
+          "title": "Borde HSL vara gratis?",
+          "textType": "Diskussionsforum på nätet",
+          "minutes": 6,
+          "text": "FORUMET HELSINGFORSLIV › TRAFIK\nTråd: Borde kollektivtrafiken vara gratis för alla?\n\nKalle_83 skrev:\nI Tallinn har kollektivtrafiken varit gratis för stadens invånare sedan 2013. Varför kan vi inte göra samma sak i Helsingfors? Färre skulle ta bilen, luften skulle bli renare och familjer med låga inkomster skulle spara pengar.\n\nMirja skrev:\nLåter fint, men någon måste ju betala. Om biljetterna försvinner, måste pengarna komma från skatterna. Jag skulle hellre se att man satsar på fler avgångar. På kvällarna går min buss bara en gång i timmen, och det är problemet, inte priset.\n\nStuderande_Amir skrev:\nJag håller delvis med Mirja. Gratis för alla blir kanske för dyrt, men varför inte gratis för pensionärer och skolbarn? Själv får jag studierabatt, men mitt månadskort tar ändå en stor del av min budget.\n\nKalle_83 skrev:\nBra poäng om turtätheten, Mirja. Men i Tallinn såg man en ökning av resandet med buss och spårvagn efter reformen. Det visar att priset spelar roll för många, särskilt för dem som har lite pengar.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad vill Mirja hellre?",
+              "translation": "What would Mirja prefer?",
+              "options": [
+                "Att bussarna går oftare",
+                "Att biljetterna blir gratis för alla",
+                "Att färre tar bilen"
+              ],
+              "answers": [
+                "Att bussarna går oftare"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Kollektivtrafiken i Tallinn är gratis för stadens invånare.",
+              "translation": "Public transport in Tallinn is free for the city's residents.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vilka grupper tycker Amir kunde åka gratis? Nämn en.",
+              "translation": "Which groups does Amir think could travel for free? Name one.",
+              "answers": [
+                "pensionärer",
+                "pensionärerna",
+                "skolbarn",
+                "skolbarnen",
+                "pensionärer och skolbarn",
+                "skolbarn och pensionärer"
+              ],
+              "hint": "Ett ord räcker."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad menar Kalle i sitt andra inlägg?",
+              "translation": "What does Kalle mean in his second post?",
+              "options": [
+                "Billigare resor får fler att åka kollektivt",
+                "Turtätheten är inte viktig",
+                "Bussarna i Tallinn är bättre än i Helsingfors"
+              ],
+              "answers": [
+                "Billigare resor får fler att åka kollektivt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Mirja tycker att biljetterna är för dyra.",
+              "translation": "Mirja thinks that the tickets are too expensive.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en tråd, ett inlägg",
+              "en": "a thread, a post (in a forum)"
+            },
+            {
+              "fi": "en inkomst",
+              "en": "an income"
+            },
+            {
+              "fi": "satsa på",
+              "en": "to invest in, to put money into"
+            },
+            {
+              "fi": "en avgång, turtäthet",
+              "en": "a departure, how often buses run"
+            },
+            {
+              "fi": "delvis",
+              "en": "partly"
+            },
+            {
+              "fi": "en reform",
+              "en": "a reform, a big change in the rules"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

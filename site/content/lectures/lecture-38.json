@@ -2120,6 +2120,557 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A voicemail from occupational health, two colleagues covering for a sick workmate, an HR e-mail about calling in sick and a column on waiting for healthcare: YKI-style listening and reading with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-38-listen-1",
+          "title": "Företagshälsovården ringer",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Du är sjukskriven. Du hör ett meddelande från företagshälsovården på din telefonsvarare.",
+            "en": "You are on sick leave. You hear a message from occupational health care on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "Hej, det här är sjukskötaren Laura Nyström från företagshälsovården. Jag ringer om dina provsvar.",
+              "en": "Hi, this is nurse Laura Nyström from occupational health care. I'm calling about your test results."
+            },
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "Proverna som vi tog i måndags ser bra ut. Det är alltså inte en bakterieinfektion, så du behöver ingen antibiotika.",
+              "en": "The tests we took on Monday look good. So it isn't a bacterial infection, and you don't need any antibiotics."
+            },
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "Ditt sjukintyg gäller till och med fredag den nittonde. Om du inte är frisk till dess, ring oss, så bokar vi en ny tid hos läkaren.",
+              "en": "Your sick note is valid up to and including Friday the nineteenth. If you aren't well by then, call us and we'll book a new appointment with the doctor."
+            },
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "Och en sak till: vi håller på att flytta till nya lokaler. Från och med den första mars hittar du oss på Bulevarden tjugotvå, tredje våningen. Telefonnumret är detsamma som förut.",
+              "en": "And one more thing: we're in the middle of moving to new premises. From the first of March you'll find us at Bulevardi 22, third floor. The phone number is the same as before."
+            },
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "Kom ihåg att du själv måste skicka intyget till din chef. Vila nu ordentligt, och krya på dig!",
+              "en": "Remember that you have to send the note to your manager yourself. Rest properly now, and get well soon!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer sjukskötaren?",
+              "translation": "Why is the nurse calling?",
+              "options": [
+                "Om dina provsvar",
+                "Om en ny läkartid",
+                "Om en faktura"
+              ],
+              "answers": [
+                "Om dina provsvar"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Du behöver antibiotika.",
+              "translation": "You need antibiotics.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Till och med vilken veckodag gäller sjukintyget?",
+              "translation": "Up to and including which weekday is the sick note valid?",
+              "answers": [
+                "fredag",
+                "fredagen",
+                "på fredag",
+                "till och med fredag",
+                "fredag den nittonde",
+                "fredagen den nittonde",
+                "fredag den 19",
+                "fredag 19"
+              ],
+              "hint": "Skriv veckodagen."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ändras från den första mars?",
+              "translation": "What changes from the first of March?",
+              "options": [
+                "Adressen",
+                "Telefonnumret",
+                "Öppettiderna"
+              ],
+              "answers": [
+                "Adressen"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vem ska skicka sjukintyget till chefen?",
+              "translation": "Who should send the sick note to the manager?",
+              "answers": [
+                "du",
+                "du själv",
+                "jag",
+                "jag själv",
+                "patienten",
+                "den som är sjuk"
+              ],
+              "hint": "Ett eller två ord."
+            }
+          ],
+          "words": [
+            {
+              "fi": "provsvar",
+              "en": "test results"
+            },
+            {
+              "fi": "en bakterieinfektion",
+              "en": "a bacterial infection"
+            },
+            {
+              "fi": "antibiotika",
+              "en": "antibiotics"
+            },
+            {
+              "fi": "till dess",
+              "en": "by then, until then"
+            },
+            {
+              "fi": "lokaler",
+              "en": "premises, rooms for a business"
+            },
+            {
+              "fi": "detsamma som förut",
+              "en": "the same as before"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-38-listen-2",
+          "title": "Vem tar torsdagen?",
+          "textType": "Samtal på jobbet",
+          "situation": {
+            "fi": "Två kolleger pratar på kontoret. En kollega är sjuk.",
+            "en": "Two colleagues talk at the office. A colleague is ill."
+          },
+          "lines": [
+            {
+              "speaker": "Hanna",
+              "voice": "Elin",
+              "fi": "Hej Daniel, har du en minut?",
+              "en": "Hi Daniel, have you got a minute?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Inte riktigt, jag håller på att skriva kvartalsrapporten. Den ska vara klar i morgon. Är det bråttom?",
+              "en": "Not really, I'm in the middle of writing the quarterly report. It has to be ready tomorrow. Is it urgent?"
+            },
+            {
+              "speaker": "Hanna",
+              "voice": "Elin",
+              "fi": "Lite. Pekka är sjukskriven resten av veckan, så någon måste ta hans introduktion för de nya praktikanterna på torsdag.",
+              "en": "A bit. Pekka is on sick leave for the rest of the week, so someone has to take his introduction for the new trainees on Thursday."
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Oj, vad har hänt?",
+              "en": "Oh, what's happened?"
+            },
+            {
+              "speaker": "Hanna",
+              "voice": "Elin",
+              "fi": "Han höll på att ramla ner från en stege när han målade taket hemma. Han klarade sig, men nu har han jätteont i ryggen.",
+              "en": "He nearly fell off a ladder when he was painting the ceiling at home. He was all right, but now his back really hurts."
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Stackars honom. Men torsdag passar inte mig. Jag håller på med en utbildning för våra kunder hela dagen.",
+              "en": "Poor him. But Thursday doesn't suit me. I'm busy with a training course for our customers all day."
+            },
+            {
+              "speaker": "Hanna",
+              "voice": "Elin",
+              "fi": "Jag vet. Jag kan ta förmiddagen, men inte eftermiddagen. Då har jag ett möte som jag inte kan flytta.",
+              "en": "I know. I can take the morning, but not the afternoon. I have a meeting then that I can't move."
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Fråga Leo. Han kom tillbaka från semestern i går, och han har inte så mycket att göra än.",
+              "en": "Ask Leo. He came back from his holiday yesterday, and he doesn't have that much to do yet."
+            },
+            {
+              "speaker": "Hanna",
+              "voice": "Elin",
+              "fi": "Bra idé. Vet du var Pekkas material finns?",
+              "en": "Good idea. Do you know where Pekka's material is?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "I den gemensamma mappen, under Introduktion. Han höll på att uppdatera presentationen, men den gamla versionen fungerar också.",
+              "en": "In the shared folder, under Introduction. He was in the middle of updating the presentation, but the old version works too."
+            },
+            {
+              "speaker": "Hanna",
+              "voice": "Elin",
+              "fi": "Perfekt. Tack, och lycka till med rapporten!",
+              "en": "Perfect. Thanks, and good luck with the report!"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Tack, det behövs.",
+              "en": "Thanks, I need it."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad gör Daniel när Hanna kommer?",
+              "translation": "What is Daniel doing when Hanna comes?",
+              "options": [
+                "Han skriver en rapport",
+                "Han har ett kundmöte",
+                "Han målar taket"
+              ],
+              "answers": [
+                "Han skriver en rapport"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Varför är Pekka sjukskriven?",
+              "translation": "Why is Pekka on sick leave?",
+              "answers": [
+                "han har ont i ryggen",
+                "ont i ryggen",
+                "han har jätteont i ryggen",
+                "ryggen",
+                "ryggont",
+                "han har ryggont",
+                "för att han har ont i ryggen",
+                "han har skadat ryggen"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q3",
+              "prompt": "Pekka ramlade ner från stegen.",
+              "translation": "Pekka fell off the ladder.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför föreslår Daniel att Hanna frågar Leo?",
+              "translation": "Why does Daniel suggest that Hanna asks Leo?",
+              "options": [
+                "Leo har tid just nu",
+                "Leo har haft introduktionen förut",
+                "Leo är Pekkas chef"
+              ],
+              "answers": [
+                "Leo har tid just nu"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Var finns Pekkas material?",
+              "translation": "Where is Pekka's material?",
+              "answers": [
+                "i den gemensamma mappen",
+                "den gemensamma mappen",
+                "gemensamma mappen",
+                "i mappen",
+                "i den gemensamma mappen under introduktion",
+                "under introduktion",
+                "i mappen introduktion"
+              ],
+              "hint": "Var på datorn?"
+            }
+          ],
+          "words": [
+            {
+              "fi": "en kvartalsrapport",
+              "en": "a quarterly report"
+            },
+            {
+              "fi": "bråttom",
+              "en": "urgent, in a hurry"
+            },
+            {
+              "fi": "en praktikant",
+              "en": "a trainee, an intern"
+            },
+            {
+              "fi": "en stege",
+              "en": "a ladder"
+            },
+            {
+              "fi": "höll på att ramla",
+              "en": "nearly fell"
+            },
+            {
+              "fi": "uppdatera",
+              "en": "to update"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-38-read-1",
+          "title": "Nya rutiner för sjukanmälan",
+          "textType": "E-post från arbetsplatsen",
+          "minutes": 6,
+          "text": "Ämne: Nya rutiner för sjukanmälan från och med 1.3\n\nHej alla,\n\nfrån och med den 1 mars ändrar vi rutinerna för sjukanmälan. Vi vill minska onödiga besök på företagshälsovården och samtidigt veta bättre vem som är borta.\n\nSÅ HÄR GÖR DU\n1. Ring din närmaste chef senast klockan 9 den första sjukdagen. Ett sms eller e-postmeddelande räcker inte. Chefen är ansvarig för att någon annan tar över dina viktigaste uppgifter, och det är lättare att planera i telefon.\n2. Du får vara sjuk upp till tre dagar utan intyg. Det kallas egenanmälan. Fyll i blanketten på intranätet när du är tillbaka.\n3. Om du är sjuk längre än tre dagar behöver du ett sjukintyg från en läkare eller sjukskötare. Skicka det till din chef och till personalavdelningen inom en vecka.\n4. Om ditt barn under tio år blir sjukt, kan du stanna hemma upp till fyra dagar för att ta hand om barnet. Ring din chef på samma sätt.\n\nKom ihåg att också uppdatera din status i kalendern, så att dina kolleger ser att du är borta.\n\nHör av dig om du har frågor.\n\nVänliga hälsningar\nMarja Koskinen\nPersonalchef",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skickar Marja e-postmeddelandet?",
+              "translation": "Why does Marja send the e-mail?",
+              "options": [
+                "Reglerna för sjukanmälan ändras",
+                "Företagshälsovården flyttar",
+                "Många i personalen är sjuka"
+              ],
+              "answers": [
+                "Reglerna för sjukanmälan ändras"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Det räcker att skicka ett sms till chefen när man är sjuk.",
+              "translation": "It is enough to send a text message to your manager when you are ill.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur många dagar får man vara sjuk utan intyg?",
+              "translation": "How many days can you be ill without a sick note?",
+              "answers": [
+                "tre",
+                "3",
+                "tre dagar",
+                "3 dagar",
+                "upp till tre dagar",
+                "upp till 3 dagar",
+                "högst tre dagar",
+                "högst 3 dagar"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vem ska få sjukintyget? Nämn en.",
+              "translation": "Who should receive the sick note? Name one.",
+              "answers": [
+                "chefen",
+                "din chef",
+                "min chef",
+                "närmaste chefen",
+                "den närmaste chefen",
+                "personalavdelningen",
+                "chefen och personalavdelningen",
+                "till chefen",
+                "till personalavdelningen",
+                "till chefen och personalavdelningen"
+              ],
+              "hint": "En person eller en avdelning."
+            },
+            {
+              "id": "q5",
+              "prompt": "Din dotter är sju år och har feber i två dagar. Vad gäller för dig?",
+              "translation": "Your daughter is seven and has a fever for two days. What applies to you?",
+              "options": [
+                "Du kan stanna hemma med henne",
+                "Du behöver ett sjukintyg från första dagen",
+                "Du måste ta semester"
+              ],
+              "answers": [
+                "Du kan stanna hemma med henne"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en rutin",
+              "en": "a routine, a procedure"
+            },
+            {
+              "fi": "en sjukanmälan",
+              "en": "a report that you are ill"
+            },
+            {
+              "fi": "närmaste chef",
+              "en": "line manager, your direct boss"
+            },
+            {
+              "fi": "en egenanmälan",
+              "en": "a self-reported sick leave (no doctor's note)"
+            },
+            {
+              "fi": "en blankett",
+              "en": "a form (to fill in)"
+            },
+            {
+              "fi": "personalavdelningen",
+              "en": "the HR department"
+            },
+            {
+              "fi": "ansvarig för",
+              "en": "responsible for"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-38-read-2",
+          "title": "Varför måste vi vänta så länge?",
+          "textType": "Kolumn i en tidning",
+          "minutes": 7,
+          "text": "VARFÖR MÅSTE VI VÄNTA SÅ LÄNGE?\n\nFörra månaden fick jag ont i axeln. Jag ringde hälsostationen klockan åtta på morgonen, men först efter fyrtio minuter i kö fick jag prata med en sjukskötare. Hon var vänlig och kunnig, men den första lediga läkartiden var om tre veckor.\n\nJag vet att jag inte är ensam. Många välfärdsområden i Finland har brist på läkare, och personalen på hälsostationerna har för mycket att göra. Samtidigt blir befolkningen äldre, och behovet av vård ökar varje år.\n\nMina kolleger gick till företagshälsovården och fick en tid samma dag. Det är bra för dem, men det betyder också att den som har jobb ofta får vård snabbare än den som är arbetslös eller pensionär. Är det rättvist?\n\nJag vill inte bara klaga. Mycket fungerar bra. När min pappa fick en hjärtinfarkt förra året fick han fantastisk vård direkt. Den akuta sjukvården i Finland håller hög kvalitet.\n\nMen den vanliga, vardagliga vården måste bli lättare att få. Jag tror att fler chattjänster, fler sjukskötare som får skriva ut vissa mediciner och bättre löner kunde hjälpa. Det kostar pengar, men det är antagligen billigare än att låta folk bli sjukare medan de väntar. Förhoppningsvis lyssnar politikerna nu.\n\nPetra Lindholm är frilansjournalist och bor i Vanda.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är skribentens viktigaste åsikt?",
+              "translation": "What is the writer's main opinion?",
+              "options": [
+                "Det är för svårt att snabbt få vanlig vård",
+                "Den akuta vården fungerar dåligt",
+                "Företagshälsovården borde stängas"
+              ],
+              "answers": [
+                "Det är för svårt att snabbt få vanlig vård"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur länge väntade hon i telefonkön?",
+              "translation": "How long did she wait in the phone queue?",
+              "answers": [
+                "fyrtio minuter",
+                "40 minuter",
+                "40 min",
+                "i fyrtio minuter",
+                "i 40 minuter",
+                "40",
+                "fyrtio"
+              ],
+              "hint": "Skriv tiden."
+            },
+            {
+              "id": "q3",
+              "prompt": "Skribenten är missnöjd med vården som hennes pappa fick.",
+              "translation": "The writer is unhappy with the care her father got.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför tycker skribenten att systemet inte är rättvist?",
+              "translation": "Why does the writer think that the system is not fair?",
+              "options": [
+                "De som har jobb får ofta vård snabbare",
+                "Pensionärer får gratis vård",
+                "Läkarna har för höga löner"
+              ],
+              "answers": [
+                "De som har jobb får ofta vård snabbare"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Nämn en sak som skribenten tror kunde hjälpa.",
+              "translation": "Name one thing the writer thinks could help.",
+              "answers": [
+                "chattjänster",
+                "fler chattjänster",
+                "fler sjukskötare",
+                "fler sjukskötare som får skriva ut mediciner",
+                "bättre löner",
+                "högre löner",
+                "sjukskötare som får skriva ut mediciner",
+                "sjukskötare som skriver ut mediciner"
+              ],
+              "hint": "Två eller tre ord."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en kolumn",
+              "en": "a newspaper column"
+            },
+            {
+              "fi": "ett välfärdsområde",
+              "en": "a wellbeing services county (runs healthcare in Finland)"
+            },
+            {
+              "fi": "brist på",
+              "en": "a shortage of"
+            },
+            {
+              "fi": "befolkningen",
+              "en": "the population"
+            },
+            {
+              "fi": "rättvis",
+              "en": "fair"
+            },
+            {
+              "fi": "skriva ut en medicin",
+              "en": "to prescribe a medicine"
+            },
+            {
+              "fi": "antagligen",
+              "en": "probably"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

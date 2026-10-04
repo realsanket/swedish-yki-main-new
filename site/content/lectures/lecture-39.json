@@ -2038,6 +2038,538 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about working life, of the kinds the YKI test uses: booking a business trip, a radio news item about pay and remote work, new rules for travel expenses, and a forum debate about talking about your salary.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-39-listen-1",
+          "title": "Resan till Tammerfors",
+          "textType": "Samtal på arbetsplatsen",
+          "situation": {
+            "fi": "Du hör ett samtal på en arbetsplats. Daniel pratar med kontorets sekreterare om en tjänsteresa.",
+            "en": "You hear a conversation at a workplace. Daniel talks to the office secretary about a business trip."
+          },
+          "lines": [
+            {
+              "speaker": "Sekreteraren",
+              "voice": "Elin",
+              "fi": "Hej Daniel! Du ville prata om resan till Tammerfors nästa vecka?",
+              "en": "Hi Daniel! You wanted to talk about the trip to Tampere next week?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Ja, precis. Mötet med kunden har flyttats från tisdag till onsdag, så jag behöver nya biljetter.",
+              "en": "Yes, exactly. The meeting with the client has been moved from Tuesday to Wednesday, so I need new tickets."
+            },
+            {
+              "speaker": "Sekreteraren",
+              "voice": "Elin",
+              "fi": "Okej. Vill du åka på onsdag morgon, eller redan på tisdag kväll?",
+              "en": "Okay. Do you want to go on Wednesday morning, or already on Tuesday evening?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Helst på morgonen. Mötet börjar först klockan elva, och tåget tar ungefär en och en halv timme.",
+              "en": "Preferably in the morning. The meeting doesn't start until eleven, and the train takes about an hour and a half."
+            },
+            {
+              "speaker": "Sekreteraren",
+              "voice": "Elin",
+              "fi": "Då finns det ett tåg som går tjugo över sju. Det är framme i Tammerfors fem i nio.",
+              "en": "Then there is a train that leaves at twenty past seven. It arrives in Tampere at five to nine."
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Perfekt. Och tillbaka samma dag, med tåget efter fem.",
+              "en": "Perfect. And back the same day, on the train after five."
+            },
+            {
+              "speaker": "Sekreteraren",
+              "voice": "Elin",
+              "fi": "Så du behöver inget hotell den här gången?",
+              "en": "So you don't need a hotel this time?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Nej. Men min kollega Sanna följer med. Kan du boka en biljett åt henne också?",
+              "en": "No. But my colleague Sanna is coming along. Can you book a ticket for her too?"
+            },
+            {
+              "speaker": "Sekreteraren",
+              "voice": "Elin",
+              "fi": "Visst. Men hon måste själv fylla i reseräkningen efteråt. Vi har nya regler sedan i maj.",
+              "en": "Sure. But she has to fill in the travel expense claim herself afterwards. We have new rules since May."
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Jaha, vad är nytt?",
+              "en": "Oh, what is new?"
+            },
+            {
+              "speaker": "Sekreteraren",
+              "voice": "Elin",
+              "fi": "Alla kvitton ska laddas upp i appen inom två veckor. Annars får man inte tillbaka pengarna.",
+              "en": "All receipts must be uploaded in the app within two weeks. Otherwise you don't get the money back."
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Två veckor, okej. Det ska jag säga till henne. Tack för hjälpen!",
+              "en": "Two weeks, okay. I'll tell her that. Thanks for the help!"
+            },
+            {
+              "speaker": "Sekreteraren",
+              "voice": "Elin",
+              "fi": "Ingen orsak. Jag skickar biljetterna per e-post i eftermiddag.",
+              "en": "You're welcome. I'll send the tickets by email this afternoon."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför behöver Daniel nya biljetter?",
+              "translation": "Why does Daniel need new tickets?",
+              "options": [
+                "Mötet har flyttats till en annan dag",
+                "Kunden har ställt in mötet",
+                "Tåget på tisdag är fullt"
+              ],
+              "answers": [
+                "Mötet har flyttats till en annan dag"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken tid går tåget till Tammerfors?",
+              "translation": "What time does the train to Tampere leave?",
+              "answers": [
+                "7.20",
+                "07.20",
+                "kl. 7.20",
+                "klockan 7.20",
+                "tjugo över sju",
+                "klockan tjugo över sju",
+                "kl. tjugo över sju"
+              ],
+              "hint": "Skriv tiden med siffror eller ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "Daniel ska sova på hotell i Tammerfors.",
+              "translation": "Daniel is going to sleep at a hotel in Tampere.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad gör Daniel antagligen efter samtalet?",
+              "translation": "What will Daniel probably do after the conversation?",
+              "options": [
+                "Berättar för Sanna om de nya reglerna för kvitton",
+                "Bokar ett hotell åt Sanna",
+                "Laddar upp sina kvitton från maj"
+              ],
+              "answers": [
+                "Berättar för Sanna om de nya reglerna för kvitton"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en tjänsteresa",
+              "en": "a business trip"
+            },
+            {
+              "fi": "en sekreterare",
+              "en": "a secretary"
+            },
+            {
+              "fi": "en reseräkning",
+              "en": "a travel expense claim"
+            },
+            {
+              "fi": "ett kvitto",
+              "en": "a receipt"
+            },
+            {
+              "fi": "ladda upp",
+              "en": "to upload"
+            },
+            {
+              "fi": "Ingen orsak.",
+              "en": "You're welcome. (common in Finland)"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-39-listen-2",
+          "title": "Nyheter: lönen och distansjobbet",
+          "textType": "Radionyhet",
+          "situation": {
+            "fi": "Du hör en kort nyhet på radio.",
+            "en": "You hear a short news item on the radio."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Klockan är tolv, och här är nyheterna.",
+              "en": "It is twelve o'clock, and here is the news."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "En ny undersökning visar att finländska löntagare är mindre nöjda med sina löner än för fem år sedan. Undersökningen gjordes av en fackförening i våras, och sammanlagt svarade drygt fyratusen personer.",
+              "en": "A new survey shows that Finnish employees are less satisfied with their pay than five years ago. The survey was carried out by a trade union in the spring, and in total just over four thousand people answered."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Var tredje svarade att lönen inte räcker till alla dagliga kostnader. Framför allt unga under trettio år och de som jobbar inom sjukvården är missnöjda.",
+              "en": "One in three answered that their pay does not cover all daily costs. Above all, young people under thirty and those who work in health care are dissatisfied."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Samtidigt vill allt fler jobba hemifrån. Sex av tio säger att de helst jobbar på distans minst två dagar i veckan. Men enligt fackföreningen är det dessvärre bara knappt hälften av arbetsgivarna som erbjuder det.",
+              "en": "At the same time, more and more people want to work from home. Six out of ten say they would prefer to work remotely at least two days a week. But according to the union, unfortunately only just under half of employers offer it."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Fackföreningen påminner om att den som vill ha högre lön ska förbereda sig väl: samla fakta om sina uppgifter och jämföra med andra i samma bransch.",
+              "en": "The union reminds people that anyone who wants higher pay should prepare well: collect facts about their tasks and compare with others in the same field."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Och så vädret: i dag blir det soligt i hela södra Finland, med upp till tjugotre grader i Helsingfors.",
+              "en": "And now the weather: today it will be sunny in all of southern Finland, with up to twenty-three degrees in Helsinki."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar nyheten främst om?",
+              "translation": "What is the news item mainly about?",
+              "options": [
+                "Hur nöjda löntagare är med lönen och arbetssättet",
+                "Nya skatteregler för unga",
+                "En strejk inom sjukvården"
+              ],
+              "answers": [
+                "Hur nöjda löntagare är med lönen och arbetssättet"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många personer svarade ungefär på undersökningen?",
+              "translation": "About how many people answered the survey?",
+              "answers": [
+                "4000",
+                "4 000",
+                "fyratusen",
+                "drygt 4000",
+                "drygt 4 000",
+                "drygt fyratusen",
+                "över 4000",
+                "över fyratusen",
+                "mer än 4000",
+                "mer än fyratusen"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vilka är mest missnöjda med lönen?",
+              "translation": "Who are most dissatisfied with their pay?",
+              "options": [
+                "Unga och de som jobbar inom sjukvården",
+                "Äldre och de som jobbar hemifrån",
+                "Chefer och de som bor i södra Finland"
+              ],
+              "answers": [
+                "Unga och de som jobbar inom sjukvården"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Många som vill jobba hemifrån kan inte göra det.",
+              "translation": "Many people who want to work from home cannot do so.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ],
+              "hint": "Jämför vad de anställda vill och vad arbetsgivarna erbjuder."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad ska man göra innan man ber om högre lön, enligt fackföreningen? Nämn en sak.",
+              "translation": "What should you do before you ask for higher pay, according to the union? Name one thing.",
+              "answers": [
+                "samla fakta",
+                "samla fakta om sina uppgifter",
+                "jämföra med andra",
+                "jämföra med andra i samma bransch",
+                "jämföra lönen med andra",
+                "förbereda sig",
+                "förbereda sig väl"
+              ],
+              "hint": "Två eller tre ord räcker."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en löntagare",
+              "en": "an employee, a wage earner"
+            },
+            {
+              "fi": "en fackförening",
+              "en": "a trade union"
+            },
+            {
+              "fi": "sammanlagt",
+              "en": "in total"
+            },
+            {
+              "fi": "daglig",
+              "en": "daily"
+            },
+            {
+              "fi": "framför allt",
+              "en": "above all"
+            },
+            {
+              "fi": "dessvärre",
+              "en": "unfortunately"
+            },
+            {
+              "fi": "en bransch",
+              "en": "a field, an industry"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-39-read-1",
+          "title": "Nya regler för reseräkningar",
+          "textType": "E-post från arbetsplatsen",
+          "minutes": 6,
+          "text": "Ämne: Nya regler för reseräkningar från och med den 1 september\n\nHej alla,\n\nVi har märkt att många reseräkningar kommer in för sent eller saknar kvitton. Därför inför vi några nya regler från och med den 1 september.\n\n1. Reseräkningen ska göras i appen senast två veckor efter resan. Reseräkningar som kommer in senare blir inte godkända.\n\n2. Fotografera alla kvitton och ladda upp dem i appen. Pappersversionen behöver du inte spara.\n\n3. Taxi får användas bara om det inte går någon buss eller något tåg, eller om du reser efter klockan 23. Skriv alltid en kort förklaring.\n\n4. Om du har betalat något med ditt eget kort, betalas beloppet tillbaka med lönen månaden efter.\n\nOm du har frågor, kontakta mig snarast, gärna per e-post. Jag sitter också i receptionen på tisdagar och torsdagar mellan klockan 9 och 11, om du hellre vill fråga direkt.\n\nTack för att ni hjälper oss att sköta det här effektivt!\n\nHälsningar\nMarja Lindholm\nekonomiassistent",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skriver Marja mejlet?",
+              "translation": "Why does Marja write the email?",
+              "options": [
+                "Reseräkningar kommer ofta in för sent eller utan kvitton",
+                "Företaget ska byta app för reseräkningar",
+                "Alla tjänsteresor ställs in i september"
+              ],
+              "answers": [
+                "Reseräkningar kommer ofta in för sent eller utan kvitton"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Man måste spara alla kvitton på papper.",
+              "translation": "You must keep all receipts on paper.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur lång tid efter resan har man på sig att göra reseräkningen?",
+              "translation": "How long after the trip do you have to make the travel expense claim?",
+              "answers": [
+                "två veckor",
+                "2 veckor",
+                "senast två veckor",
+                "senast 2 veckor",
+                "två veckor efter resan",
+                "senast två veckor efter resan",
+                "14 dagar",
+                "fjorton dagar"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q4",
+              "prompt": "När får man ta taxi?",
+              "translation": "When are you allowed to take a taxi?",
+              "options": [
+                "När det inte går någon buss eller något tåg",
+                "När resan är kortare än två timmar",
+                "När man reser före klockan 23"
+              ],
+              "answers": [
+                "När det inte går någon buss eller något tåg"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Den som vill prata med Marja ansikte mot ansikte kan göra det en tisdag förmiddag.",
+              "translation": "Anyone who wants to talk to Marja face to face can do it on a Tuesday morning.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "införa",
+              "en": "to introduce (rules)"
+            },
+            {
+              "fi": "godkänd",
+              "en": "approved, accepted"
+            },
+            {
+              "fi": "ett belopp",
+              "en": "an amount (of money)"
+            },
+            {
+              "fi": "snarast",
+              "en": "as soon as possible"
+            },
+            {
+              "fi": "effektivt",
+              "en": "efficiently"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-39-read-2",
+          "title": "Ska man berätta vad man tjänar?",
+          "textType": "Diskussionsforum",
+          "minutes": 7,
+          "text": "FORUM: ARBETSLIV\nÄmne: Ska man berätta vad man tjänar?\n\nNina_88 skrev:\nI går frågade en ny kollega mig rakt ut hur mycket jag tjänar. Jag blev helt ställd och svarade inte. Hemma i Sverige pratade vi aldrig om lön, men här i Finland kan ju vem som helst se andras inkomster när skatteuppgifterna blir offentliga varje höst. Hur gör ni? Berättar ni för era kolleger?\n\nRasmus skrev:\nJa, alltid. Så upptäckte jag att jag hade betydligt lägre lön än två kolleger som gör exakt samma jobb. När jag tog upp det med chefen fick jag en löneförhöjning på 300 euro i månaden. Utan öppenhet hade jag aldrig vetat det. Hemligheter gynnar bara arbetsgivaren.\n\nKaisa_H skrev:\nJag förstår poängen, men för mig är lönen en privat sak. Det blir lätt avundsjuka och dålig stämning på jobbet. Om jag vill veta vad som är en rimlig lön, kollar jag fackets statistik i stället.\n\nTomas skrev:\nJag håller med Kaisa till en viss del. Jag skulle knappast fråga en kollega rakt ut, det känns för personligt. Men om någon frågar mig, svarar jag ärligt. Nina, det var inte fel av dig att låta bli att svara. Nästa gång kan du ju säga att du vill tänka på saken först.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad vill Nina veta?",
+              "translation": "What does Nina want to know?",
+              "options": [
+                "Om andra berättar för sina kolleger vad de tjänar",
+                "Hur hon kan få högre lön",
+                "Var man kan se skatteuppgifter"
+              ],
+              "answers": [
+                "Om andra berättar för sina kolleger vad de tjänar"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket mer fick Rasmus i lön per månad?",
+              "translation": "How much more pay did Rasmus get per month?",
+              "answers": [
+                "300 euro",
+                "300",
+                "300 €",
+                "trehundra euro",
+                "trehundra"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q3",
+              "prompt": "Kaisa tycker att alla ska vara öppna med sin lön.",
+              "translation": "Kaisa thinks everyone should be open about their pay.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad gör Tomas om en kollega frågar om hans lön?",
+              "translation": "What does Tomas do if a colleague asks about his pay?",
+              "options": [
+                "Han svarar ärligt",
+                "Han säger att han vill tänka först",
+                "Han vägrar svara"
+              ],
+              "answers": [
+                "Han svarar ärligt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vem är mest positiv till öppenhet om lön?",
+              "translation": "Who is most positive about openness about pay?",
+              "options": [
+                "Rasmus",
+                "Kaisa",
+                "Tomas"
+              ],
+              "answers": [
+                "Rasmus"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "bli ställd",
+              "en": "to be taken aback"
+            },
+            {
+              "fi": "betydligt",
+              "en": "considerably"
+            },
+            {
+              "fi": "gynna",
+              "en": "to favour, to benefit"
+            },
+            {
+              "fi": "statistik",
+              "en": "statistics"
+            },
+            {
+              "fi": "knappast",
+              "en": "hardly"
+            },
+            {
+              "fi": "låta bli att",
+              "en": "to not do something, to refrain from"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

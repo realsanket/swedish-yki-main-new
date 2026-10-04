@@ -1956,6 +1956,539 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts about school and work, of the kinds the YKI test uses: a phone message from a study counsellor, a radio interview about AI and jobs, a news text about adults who study again, and an ad for volunteer homework helpers.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers. In the news text, watch the small words drygt, knappt and var femte.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-40-listen-1",
+          "title": "Ett meddelande från studiehandledaren",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Du är förälder till en gymnasieelev. Du hör ett meddelande på din telefonsvarare.",
+            "en": "You are the parent of an upper secondary school student. You hear a message on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Henrik",
+              "fi": "Hej, det här är Peter Holm, studiehandledare på Gymnasiet Söderstrand. Jag ringer till er som är föräldrar till Emil Virtanen i första årskursen.",
+              "en": "Hi, this is Peter Holm, study counsellor at Söderstrand Upper Secondary School. I am calling you as the parents of Emil Virtanen in the first year."
+            },
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Henrik",
+              "fi": "Emil har inte valt sina kurser för nästa period ännu. Valet ska göras i Wilma senast på fredag klockan fyra.",
+              "en": "Emil has not chosen his courses for the next period yet. The choice must be made in Wilma by Friday at four o'clock."
+            },
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Henrik",
+              "fi": "Om valet inte är gjort då, får Emil bara de kurser som finns kvar, och då kan det bli svårt att hinna med alla obligatoriska kurser före studentexamen.",
+              "en": "If the choice has not been made by then, Emil only gets the courses that are left, and then it can be hard to fit in all the compulsory courses before the matriculation exam."
+            },
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Henrik",
+              "fi": "Jag vet att många har fullt upp i början av terminen, så jag har extra mottagning på torsdag mellan klockan tolv och två. Emil kan komma då utan att boka tid.",
+              "en": "I know that many people are very busy at the start of term, so I have extra office hours on Thursday between twelve and two. Emil can come then without booking a time."
+            },
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Henrik",
+              "fi": "Dessutom vill jag påminna om föräldramötet nästa tisdag klockan sex i skolans aula. Då berättar vi om studentexamen och om studier efter gymnasiet.",
+              "en": "I also want to remind you about the parents' meeting next Tuesday at six in the school hall. Then we will talk about the matriculation exam and about studies after upper secondary school."
+            },
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Henrik",
+              "fi": "Om ni har frågor kan ni skicka ett meddelande i Wilma eller ringa mig på 050 384 2216. Tack och hej!",
+              "en": "If you have questions, you can send a message in Wilma or call me on 050 384 2216. Thanks and bye!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Peter Holm?",
+              "translation": "Why is Peter Holm calling?",
+              "options": [
+                "Emil har inte valt sina kurser ännu",
+                "Emil har varit borta från lektionerna",
+                "Emil har inte klarat ett prov"
+              ],
+              "answers": [
+                "Emil har inte valt sina kurser ännu"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken dag är sista dagen att välja kurser?",
+              "translation": "Which day is the last day to choose courses?",
+              "answers": [
+                "fredag",
+                "på fredag",
+                "senast på fredag",
+                "fredag klockan fyra",
+                "fredag klockan 16",
+                "fredag kl. 16",
+                "på fredag klockan fyra"
+              ],
+              "hint": "Skriv dagen."
+            },
+            {
+              "id": "q3",
+              "prompt": "Emil måste boka en tid för att träffa studiehandledaren på torsdag.",
+              "translation": "Emil has to book a time to meet the study counsellor on Thursday.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Var hålls föräldramötet?",
+              "translation": "Where is the parents' meeting held?",
+              "options": [
+                "I skolans aula",
+                "I studiehandledarens rum",
+                "På nätet i Wilma"
+              ],
+              "answers": [
+                "I skolans aula"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Om Emil väljer för sent kan han få problem att bli klar med gymnasiet i tid.",
+              "translation": "If Emil chooses too late, he may have trouble finishing upper secondary school on time.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en studiehandledare",
+              "en": "a study counsellor"
+            },
+            {
+              "fi": "obligatorisk",
+              "en": "compulsory"
+            },
+            {
+              "fi": "en mottagning",
+              "en": "office hours, a drop-in time"
+            },
+            {
+              "fi": "ett föräldramöte",
+              "en": "a parents' meeting"
+            },
+            {
+              "fi": "Wilma",
+              "en": "the online system Finnish schools use for messages and course choices"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-40-listen-2",
+          "title": "Kommer AI att ta våra jobb?",
+          "textType": "Radiointervju",
+          "situation": {
+            "fi": "Du hör en intervju i ett radioprogram om arbetsliv.",
+            "en": "You hear an interview in a radio programme about working life."
+          },
+          "lines": [
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "I dag har vi besök av Lars Ekholm, som forskar i arbetsliv och ny teknik. Välkommen!",
+              "en": "Today we are visited by Lars Ekholm, who researches working life and new technology. Welcome!"
+            },
+            {
+              "speaker": "Lars Ekholm",
+              "voice": "Henrik",
+              "fi": "Tack, roligt att vara här.",
+              "en": "Thank you, nice to be here."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Många är oroliga för att AI ska ta deras jobb. Har de rätt att vara oroliga?",
+              "en": "Many people are worried that AI will take their jobs. Are they right to be worried?"
+            },
+            {
+              "speaker": "Lars Ekholm",
+              "voice": "Henrik",
+              "fi": "Både ja och nej. Vissa arbetsuppgifter försvinner, det är helt klart. Till exempel att skriva enkla texter eller sortera dokument. Men hela yrken försvinner mycket mer sällan.",
+              "en": "Both yes and no. Some work tasks will disappear, that is quite clear. For example writing simple texts or sorting documents. But whole professions disappear much more rarely."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Vilka jobb är säkrast, enligt dig?",
+              "en": "Which jobs are safest, in your view?"
+            },
+            {
+              "speaker": "Lars Ekholm",
+              "voice": "Henrik",
+              "fi": "Jobb där man möter människor och måste förstå vad de egentligen behöver. Tänk på sjukskötare, lärare eller frisörer. Där är AI ett verktyg, inte en ersättare.",
+              "en": "Jobs where you meet people and have to understand what they really need. Think of nurses, teachers or hairdressers. There AI is a tool, not a replacement."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Och vad ska unga välja att studera i dag?",
+              "en": "And what should young people choose to study today?"
+            },
+            {
+              "speaker": "Lars Ekholm",
+              "voice": "Henrik",
+              "fi": "Det viktigaste är inte ämnet, utan förmågan att lära sig nytt hela livet. Den som kan anpassa sig klarar sig bäst.",
+              "en": "The most important thing is not the subject, but the ability to learn new things all your life. Whoever can adapt manages best."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Men vad säger du till en fyrtioåring som redan har ett jobb?",
+              "en": "But what do you say to a forty-year-old who already has a job?"
+            },
+            {
+              "speaker": "Lars Ekholm",
+              "voice": "Henrik",
+              "fi": "Pröva verktygen själv, gärna en liten stund varje dag. Många blir förvånade över hur mycket tid de sparar. Och fråga arbetsgivaren om utbildning. Det är en utmaning, men också en möjlighet.",
+              "en": "Try the tools yourself, ideally for a little while every day. Many people are surprised at how much time they save. And ask your employer about training. It is a challenge, but also an opportunity."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Så ditt råd är alltså: var inte rädd, var nyfiken?",
+              "en": "So your advice is: don't be afraid, be curious?"
+            },
+            {
+              "speaker": "Lars Ekholm",
+              "voice": "Henrik",
+              "fi": "Precis. Tekniken utvecklas snabbt, men människor behövs fortfarande.",
+              "en": "Exactly. Technology develops fast, but people are still needed."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad tycker Lars Ekholm om AI och jobb?",
+              "translation": "What does Lars Ekholm think about AI and jobs?",
+              "options": [
+                "Vissa uppgifter försvinner, men de flesta yrken finns kvar",
+                "De flesta yrken kommer att försvinna snart",
+                "AI påverkar inte arbetslivet alls"
+              ],
+              "answers": [
+                "Vissa uppgifter försvinner, men de flesta yrken finns kvar"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Nämn ett yrke som Lars Ekholm tycker är säkert.",
+              "translation": "Name one profession that Lars Ekholm thinks is safe.",
+              "answers": [
+                "sjukskötare",
+                "en sjukskötare",
+                "sjukskötaren",
+                "lärare",
+                "en lärare",
+                "läraren",
+                "frisör",
+                "en frisör",
+                "frisörer",
+                "frisören"
+              ],
+              "hint": "Ett ord räcker."
+            },
+            {
+              "id": "q3",
+              "prompt": "Enligt Lars Ekholm är det viktigaste att unga studerar teknik.",
+              "translation": "According to Lars Ekholm, the most important thing is that young people study technology.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad råder han en fyrtioåring att göra?",
+              "translation": "What does he advise a forty-year-old to do?",
+              "options": [
+                "Pröva AI-verktygen själv och fråga om utbildning",
+                "Byta yrke så snart som möjligt",
+                "Vänta tills arbetsgivaren tar upp saken"
+              ],
+              "answers": [
+                "Pröva AI-verktygen själv och fråga om utbildning"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur kan man beskriva hans inställning till AI?",
+              "translation": "How can you describe his attitude to AI?",
+              "options": [
+                "Positiv men realistisk",
+                "Mycket orolig",
+                "Helt ointresserad"
+              ],
+              "answers": [
+                "Positiv men realistisk"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "forska",
+              "en": "to do research"
+            },
+            {
+              "fi": "en sjukskötare",
+              "en": "a nurse (Finland-Swedish; sjuksköterska in Sweden)"
+            },
+            {
+              "fi": "en ersättare",
+              "en": "a replacement (a person or thing that replaces)"
+            },
+            {
+              "fi": "en förmåga",
+              "en": "an ability"
+            },
+            {
+              "fi": "pröva",
+              "en": "to try"
+            },
+            {
+              "fi": "en utmaning",
+              "en": "a challenge"
+            },
+            {
+              "fi": "en inställning",
+              "en": "an attitude"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-40-read-1",
+          "title": "Allt fler vuxna börjar studera igen",
+          "textType": "Nyhet",
+          "minutes": 6,
+          "text": "ALLT FLER VUXNA BÖRJAR STUDERA IGEN\n\nAntalet vuxna som studerar vid sidan av jobbet har ökat kraftigt i Finland. Enligt en ny undersökning från en studieorganisation deltog drygt 40 procent av alla mellan 30 och 60 år i någon form av utbildning i fjol. För tio år sedan var siffran knappt 30 procent.\n\nDen vanligaste orsaken är arbetet. Var femte deltagare säger att de studerar för att deras arbetsuppgifter har förändrats, ofta på grund av ny teknik. Många tar kurser på kvällen vid ett medborgarinstitut, medan andra studerar på distans vid ett universitet eller en yrkeshögskola.\n\n– Jag ägnar två kvällar i veckan åt en kurs i programmering. Det är tungt, men jag vill inte bli utan jobb om fem år, säger 47-åriga Sari Mäkinen, som arbetar på en bank i Esbo.\n\nUndersökningen visar också problem. Nästan hälften av dem som inte studerar säger att de inte har tid, och var tredje tycker att kurserna är för dyra. Organisationen vill därför att arbetsgivarna satsar mer på utbildning under arbetstid.\n\n– Det lönar sig för alla. En anställd som får lära sig nytt stannar ofta längre på arbetsplatsen, säger organisationens ordförande.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar texten om?",
+              "translation": "What is the text about?",
+              "options": [
+                "Att fler vuxna studerar, och varför",
+                "Att kurserna vid medborgarinstituten blir dyrare",
+                "Att banker söker programmerare"
+              ],
+              "answers": [
+                "Att fler vuxna studerar, och varför"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "För tio år sedan studerade mer än 30 procent av de vuxna.",
+              "translation": "Ten years ago, more than 30 per cent of adults studied.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ],
+              "hint": "Knappt = a little less than."
+            },
+            {
+              "id": "q3",
+              "prompt": "Ungefär 20 procent av deltagarna studerar för att deras arbete har förändrats.",
+              "translation": "About 20 per cent of the participants study because their work has changed.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur många kvällar i veckan studerar Sari Mäkinen?",
+              "translation": "How many evenings a week does Sari Mäkinen study?",
+              "answers": [
+                "två",
+                "2",
+                "två kvällar",
+                "2 kvällar",
+                "två kvällar i veckan",
+                "2 kvällar i veckan"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad vinner arbetsgivarna på att satsa på utbildning, enligt organisationen?",
+              "translation": "What do employers gain from investing in training, according to the organisation?",
+              "options": [
+                "De anställda stannar längre",
+                "De kan betala lägre löner",
+                "De behöver färre chefer"
+              ],
+              "answers": [
+                "De anställda stannar längre"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "antalet",
+              "en": "the number (of)"
+            },
+            {
+              "fi": "i fjol",
+              "en": "last year"
+            },
+            {
+              "fi": "ägna tid åt",
+              "en": "to spend time on, to devote time to"
+            },
+            {
+              "fi": "satsa på",
+              "en": "to invest in, to put effort into"
+            },
+            {
+              "fi": "ett medborgarinstitut",
+              "en": "an adult education centre"
+            },
+            {
+              "fi": "en ordförande",
+              "en": "a chair, a president (of an organisation)"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-40-read-2",
+          "title": "Bli läxhjälpare på biblioteket!",
+          "textType": "Annons",
+          "minutes": 6,
+          "text": "BLI LÄXHJÄLPARE PÅ BIBLIOTEKET!\n\nÄr du bra på matte, svenska eller engelska? Vill du göra något meningsfullt på fritiden? Vi söker frivilliga som vill hjälpa skolelever i årskurs 7–9 med läxorna.\n\nLäxhjälpen ordnas på biblioteket i Böle varje måndag och onsdag kl. 15–17 under hela läsåret, från september till maj. Du väljer själv om du kommer en eller två gånger i veckan.\n\nVem kan söka?\nDu är minst 18 år och har gått ut gymnasiet eller en yrkesskola. Du behöver inte vara lärare, men du ska tycka om att jobba med unga och kunna förklara saker lugnt och tydligt. Det är ett plus om du talar finska eller något annat språk förutom svenska, eftersom många elever har ett annat modersmål.\n\nVad får du?\nArbetet är frivilligt och obetalt. Men du får en kort utbildning i augusti, kaffe och mellanmål vid varje träff och ett intyg som du kan visa när du söker jobb eller studieplats.\n\nLåter det intressant? Skicka några rader om dig själv till läxhjälpen senast den 20 augusti. Vi kontaktar alla sökande före månadsskiftet.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vem söker biblioteket?",
+              "translation": "Who is the library looking for?",
+              "options": [
+                "Frivilliga som hjälper elever med läxor",
+                "Lärare som vill ha extra lön",
+                "Elever som behöver hjälp med matte"
+              ],
+              "answers": [
+                "Frivilliga som hjälper elever med läxor"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilka dagar ordnas läxhjälpen?",
+              "translation": "On which days is the homework help held?",
+              "answers": [
+                "måndag och onsdag",
+                "måndagar och onsdagar",
+                "på måndagar och onsdagar",
+                "varje måndag och onsdag",
+                "onsdag och måndag"
+              ],
+              "hint": "Skriv två dagar."
+            },
+            {
+              "id": "q3",
+              "prompt": "Man måste vara utbildad lärare för att söka.",
+              "translation": "You have to be a trained teacher to apply.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Läxhjälparna får ett papper om sitt arbete som de kan använda senare.",
+              "translation": "The homework helpers get a paper about their work that they can use later.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför är det bra om man talar finska eller ett annat språk?",
+              "translation": "Why is it good if you speak Finnish or another language?",
+              "options": [
+                "Många elever har ett annat modersmål än svenska",
+                "Utbildningen i augusti är på finska",
+                "Biblioteket söker också översättare"
+              ],
+              "answers": [
+                "Många elever har ett annat modersmål än svenska"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en läxhjälpare",
+              "en": "a homework helper"
+            },
+            {
+              "fi": "frivillig",
+              "en": "voluntary; a volunteer"
+            },
+            {
+              "fi": "förutom",
+              "en": "apart from, besides"
+            },
+            {
+              "fi": "ett modersmål",
+              "en": "a mother tongue"
+            },
+            {
+              "fi": "ett intyg",
+              "en": "a certificate"
+            },
+            {
+              "fi": "ett månadsskifte",
+              "en": "the turn of the month"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {
