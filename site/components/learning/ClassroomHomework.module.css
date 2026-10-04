@@ -78,6 +78,39 @@
   color: #6b7c72;
   font-size: 12px;
 }
+.translation {
+  white-space: pre-line;
+}
+.englishBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin: 16px 25px 0;
+  padding: 10px 14px;
+  border: 1px dashed #d9e0e6;
+  border-radius: 12px;
+  color: #52665b;
+  font-size: 13px;
+}
+.englishBar button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+}
+.englishPeek {
+  justify-self: start;
+  width: fit-content;
+  padding: 2px 10px;
+  border: 1px solid #e3e8ec;
+  border-radius: 999px;
+  background: #fafbf8;
+  color: #52665b;
+  font-size: 12px;
+  font-weight: 650;
+}
 .hint {
   color: #8b6417;
   font-weight: 650;
@@ -239,6 +272,9 @@
   }
   .fixes {
     margin: 0 16px 16px;
+  }
+  .englishBar {
+    margin: 12px 16px 0;
   }
   .text {
     margin: 16px 16px 0;

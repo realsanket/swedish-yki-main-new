@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { BookOpen, Check, Headphones, Timer } from "lucide-react";
 import type { ComprehensionPart } from "@/lib/course-types";
 import AudioButton from "./AudioButton";
+import { useShowEnglish } from "./useShowEnglish";
 import { QuestionList, emptySaved, loadSaved, scoreQuestions, storeSaved, type Saved } from "./ClassroomHomework";
 import sourceStyles from "./SourcePagePractice.module.css";
 import homeworkStyles from "./ClassroomHomework.module.css";
@@ -43,12 +44,15 @@ function ExamTimer({ minutes }: { minutes: number }) {
 }
 
 function ListeningPart({ part, plays, onPlay }: { part: Extract<ComprehensionPart, { type: "listening" }>; plays: number; onPlay: () => void }) {
+  const [showEnglish] = useShowEnglish();
   return (
     <>
       <p className={styles.situation} lang="sv">
         {part.situation.fi}
       </p>
-      <small className={homeworkStyles.translation}>{part.situation.en}</small>
+      {showEnglish ? (
+        <small className={homeworkStyles.translation}>{part.situation.en}</small>
+      ) : null}
       <p className={styles.tip}>Read the questions first. Then listen. In the YKI test you hear each recording twice.</p>
       <div className={styles.player} onClickCapture={onPlay}>
         <AudioButton

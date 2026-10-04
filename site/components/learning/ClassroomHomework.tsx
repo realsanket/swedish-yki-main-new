@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Check, ClipboardList, ExternalLink, PenLine, RotateCcw, X } from "lucide-react";
+import { Check, ClipboardList, ExternalLink, Languages, PenLine, RotateCcw, X } from "lucide-react";
 import type { ClassroomHomework as Homework, ClassroomHomeworkQuestion as Question } from "@/lib/course-types";
 import { normalizeCourseAnswer } from "@/lib/course-progress";
+import { useShowEnglish } from "./useShowEnglish";
 import sourceStyles from "./SourcePagePractice.module.css";
 import styles from "./ClassroomHomework.module.css";
 
@@ -192,9 +193,20 @@ export function QuestionList({
   const total = questions.length;
   const result = scoreQuestions(questions, saved);
   const set = (id: string, value: string) => onChange({ answers: { ...saved.answers, [id]: value }, checked: false });
+  const [showEnglish, setShowEnglish] = useShowEnglish();
+  const [opened, setOpened] = useState<string[]>([]);
+  const hasEnglish = questions.some((question) => question.translation);
 
   return (
     <>
+      {hasEnglish && (
+        <div className={styles.englishBar}>
+          <span>{showEnglish ? "English is shown under each question." : "English is hidden. Try the Swedish first."}</span>
+          <button type="button" className="secondary" aria-pressed={showEnglish} onClick={() => setShowEnglish(!showEnglish)}>
+            <Languages size={15} aria-hidden="true" /> {showEnglish ? "Hide English" : "Show English"}
+          </button>
+        </div>
+      )}
       <ol className={styles.questions}>
         {questions.map((question, index) => {
           const answer = saved.answers[question.id] ?? "";
@@ -208,7 +220,18 @@ export function QuestionList({
                 <p className={styles.prompt} lang="sv">
                   {question.prompt}
                 </p>
-                {question.translation && <small className={styles.translation}>{question.translation}</small>}
+                {question.translation &&
+                  (showEnglish || opened.includes(question.id) ? (
+                    <small className={styles.translation}>{question.translation}</small>
+                  ) : (
+                    <button
+                      type="button"
+                      className={styles.englishPeek}
+                      onClick={() => setOpened((ids) => [...ids, question.id])}
+                    >
+                      English
+                    </button>
+                  ))}
                 {question.hint && <small className={styles.hint}>{question.hint}</small>}
                 <Answer
                   question={question}
