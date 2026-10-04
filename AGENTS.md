@@ -244,6 +244,7 @@ Viewing any step is always allowed.
 | Lecture player, route, navigation, sittings | `components/learning/LecturePlayer.tsx`, `app/course.css`, `app/responsive.css` |
 | Textbook page practice | `components/learning/SourcePagePractice.tsx`, `ExtraStep.tsx` |
 | Teacher's homework (Google Forms) | `components/learning/ClassroomHomework.tsx` (step kind `classroom-homework`; its `QuestionList` is shared) |
+| English support (hidden by default, "Show English" switch) | `components/learning/useShowEnglish.ts`, used by the homework and listen-read questions |
 | Listen and read, mock tests | `components/learning/YkiComprehension.tsx` (step kind `yki-comprehension`); checked scores go to the progress API as practice attempts |
 | Listening/reading score tracker | `components/learning/CourseViews.tsx` (`CourseProgress`, "Listening and reading scores over time") |
 | Core words deck (Kelly list, 3,640 A1-B1 words) | `content/core-words.json`, `lib/core-words.ts`, `components/learning/WordBank.tsx` |

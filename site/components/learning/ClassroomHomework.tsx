@@ -220,6 +220,11 @@ export function QuestionList({
                 <p className={styles.prompt} lang="sv">
                   {question.prompt}
                 </p>
+                {question.given && (
+                  <p className={styles.given}>
+                    <span>The sentence:</span> {question.given}
+                  </p>
+                )}
                 {question.translation &&
                   (showEnglish || opened.includes(question.id) ? (
                     <small className={styles.translation}>{question.translation}</small>

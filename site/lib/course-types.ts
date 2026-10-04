@@ -174,6 +174,9 @@ export type ClassroomHomeworkQuestion = {
   /** A heading shown when a new part of the form starts ("Del 2: Rätt eller fel"). */
   part?: string;
   prompt: string;
+  /** English that is part of the task (e.g. "put this sentence into Swedish"); always shown. */
+  given?: string;
+  /** English help, hidden behind "Show English" by default. */
   translation?: string;
   hint?: string;
   options?: string[];
