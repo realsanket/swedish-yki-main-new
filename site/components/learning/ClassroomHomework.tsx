@@ -7,22 +7,22 @@ import { normalizeCourseAnswer } from "@/lib/course-progress";
 import sourceStyles from "./SourcePagePractice.module.css";
 import styles from "./ClassroomHomework.module.css";
 
-type Saved = { answers: Record<string, string>; checked: boolean };
-const empty: Saved = { answers: {}, checked: false };
+export type Saved = { answers: Record<string, string>; checked: boolean };
+export const emptySaved: Saved = { answers: {}, checked: false };
 const storageKey = (id: string) => `stigen:homework:${id}`;
 /** Ticked options of a `multiple` question are saved as one string, one option per line. */
 const SEPARATOR = "\n";
 
-function load(id: string): Saved {
+export function loadSaved(id: string): Saved {
   try {
     const raw = window.localStorage.getItem(storageKey(id));
-    return raw ? { ...empty, ...(JSON.parse(raw) as Saved) } : empty;
+    return raw ? { ...emptySaved, ...(JSON.parse(raw) as Saved) } : emptySaved;
   } catch {
-    return empty;
+    return emptySaved;
   }
 }
 
-function save(id: string, value: Saved) {
+export function storeSaved(id: string, value: Saved) {
   try {
     window.localStorage.setItem(storageKey(id), JSON.stringify(value));
   } catch {
@@ -44,8 +44,8 @@ function isRight(question: Question, answer = "") {
   return answers.some((value) => normalizeCourseAnswer(value) === normalizeCourseAnswer(answer));
 }
 
-function score(homework: Homework, saved: Saved) {
-  const markable = homework.questions.filter(marked);
+export function scoreQuestions(questions: Question[], saved: Saved) {
+  const markable = questions.filter(marked);
   return { right: markable.filter((question) => isRight(question, saved.answers[question.id])).length, total: markable.length };
 }
 
@@ -178,57 +178,28 @@ function Answer({
   );
 }
 
-function HomeworkForm({
-  homework,
+/** Numbered questions with Check, score and Start again; shared by homework and listening/reading parts. */
+export function QuestionList({
+  questions,
   saved,
   onChange,
 }: {
-  homework: Homework;
+  questions: Question[];
   saved: Saved;
   onChange: (value: Saved) => void;
 }) {
-  const answered = homework.questions.filter((question) => normalizeCourseAnswer(saved.answers[question.id] ?? "")).length;
-  const total = homework.questions.length;
-  const result = score(homework, saved);
+  const answered = questions.filter((question) => normalizeCourseAnswer(saved.answers[question.id] ?? "")).length;
+  const total = questions.length;
+  const result = scoreQuestions(questions, saved);
   const set = (id: string, value: string) => onChange({ answers: { ...saved.answers, [id]: value }, checked: false });
 
   return (
-    <section className={styles.form} aria-labelledby={`${homework.id}-title`}>
-      <header className={styles.header}>
-        <ClipboardList size={26} aria-hidden="true" />
-        <div>
-          <span className={sourceStyles.eyebrow}>
-            CLASSROOM HOMEWORK {homework.item} · POSTED {homework.posted.toUpperCase()}
-          </span>
-          <h3 id={`${homework.id}-title`}>{homework.title}</h3>
-          <p>{homework.instructions}</p>
-          {homework.note && <p className={styles.note}>{homework.note}</p>}
-          {homework.links?.length ? (
-            <ul className={styles.links}>
-              {homework.links.map((link) => (
-                <li key={link.url}>
-                  <a href={link.url} target="_blank" rel="noreferrer">
-                    <ExternalLink size={14} aria-hidden="true" /> {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          ) : null}
-        </div>
-      </header>
-
-      {homework.texts?.map((text, index) => (
-        <article key={index} className={styles.text} lang="sv">
-          {text.title && <h4>{text.title}</h4>}
-          <p>{text.body}</p>
-        </article>
-      ))}
-
+    <>
       <ol className={styles.questions}>
-        {homework.questions.map((question, index) => {
+        {questions.map((question, index) => {
           const answer = saved.answers[question.id] ?? "";
           const state = !saved.checked || !marked(question) ? "" : isRight(question, answer) ? styles.right : styles.wrong;
-          const heading = question.part && question.part !== homework.questions[index - 1]?.part;
+          const heading = question.part && question.part !== questions[index - 1]?.part;
           return (
             <li key={question.id} className={`${state} ${heading ? styles.withPart : ""}`}>
               {heading && <h4 className={styles.part}>{question.part}</h4>}
@@ -265,7 +236,7 @@ function HomeworkForm({
             <button type="button" className="secondary" onClick={() => onChange({ ...saved, checked: false })}>
               <PenLine size={15} aria-hidden="true" /> Edit my answers
             </button>
-            <button type="button" className="secondary" onClick={() => onChange(empty)}>
+            <button type="button" className="secondary" onClick={() => onChange(emptySaved)}>
               <RotateCcw size={15} aria-hidden="true" /> Start again
             </button>
           </>
@@ -285,6 +256,52 @@ function HomeworkForm({
           </>
         )}
       </footer>
+    </>
+  );
+}
+
+function HomeworkForm({
+  homework,
+  saved,
+  onChange,
+}: {
+  homework: Homework;
+  saved: Saved;
+  onChange: (value: Saved) => void;
+}) {
+  return (
+    <section className={styles.form} aria-labelledby={`${homework.id}-title`}>
+      <header className={styles.header}>
+        <ClipboardList size={26} aria-hidden="true" />
+        <div>
+          <span className={sourceStyles.eyebrow}>
+            CLASSROOM HOMEWORK {homework.item} · POSTED {homework.posted.toUpperCase()}
+          </span>
+          <h3 id={`${homework.id}-title`}>{homework.title}</h3>
+          <p>{homework.instructions}</p>
+          {homework.note && <p className={styles.note}>{homework.note}</p>}
+          {homework.links?.length ? (
+            <ul className={styles.links}>
+              {homework.links.map((link) => (
+                <li key={link.url}>
+                  <a href={link.url} target="_blank" rel="noreferrer">
+                    <ExternalLink size={14} aria-hidden="true" /> {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      </header>
+
+      {homework.texts?.map((text, index) => (
+        <article key={index} className={styles.text} lang="sv">
+          {text.title && <h4>{text.title}</h4>}
+          <p>{text.body}</p>
+        </article>
+      ))}
+
+      <QuestionList questions={homework.questions} saved={saved} onChange={onChange} />
       {homework.fixes?.length ? (
         <details className={styles.fixes}>
           <summary>Small fixes to the original form</summary>
@@ -306,12 +323,12 @@ export function ClassroomHomeworkSet({ homework }: { homework: Homework[] }) {
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- browser storage is read once after hydration
-    setSaved(Object.fromEntries(homework.map((item) => [item.id, load(item.id)])));
+    setSaved(Object.fromEntries(homework.map((item) => [item.id, loadSaved(item.id)])));
   }, [homework]);
 
   const update = (id: string, value: Saved) => {
     setSaved((current) => ({ ...current, [id]: value }));
-    save(id, value);
+    storeSaved(id, value);
   };
   const current = homework[index];
 
@@ -321,8 +338,8 @@ export function ClassroomHomeworkSet({ homework }: { homework: Homework[] }) {
         <div className={sourceStyles.pageTabs} role="group" aria-label="Teacher's homework for this lesson">
           <span className={sourceStyles.eyebrow}>TEACHER&apos;S HOMEWORK FOR THIS LESSON</span>
           {homework.map((item, itemIndex) => {
-            const state = saved[item.id] ?? empty;
-            const result = score(item, state);
+            const state = saved[item.id] ?? emptySaved;
+            const result = scoreQuestions(item.questions, state);
             return (
               <button
                 type="button"
@@ -346,7 +363,7 @@ export function ClassroomHomeworkSet({ homework }: { homework: Homework[] }) {
       <HomeworkForm
         key={current.id}
         homework={current}
-        saved={saved[current.id] ?? empty}
+        saved={saved[current.id] ?? emptySaved}
         onChange={(value) => update(current.id, value)}
       />
       {homework.length > 1 && index < homework.length - 1 && (

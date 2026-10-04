@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { lessons } from "@/lib/curriculum";
-import { courseWords as words, lectures } from "@/lib/course";
+import { courseWords as words, coreWords, lectures } from "@/lib/course";
 import type { CourseProgressData } from "@/lib/course-progress";
 import type { ProgressData } from "@/lib/progress";
 import AudioButton from "./AudioButton";
@@ -36,7 +36,8 @@ export default function WordBank({
     [session, setSession] = useState<string[]>([]),
     [index, setIndex] = useState(0),
     [busy, setBusy] = useState(false),
-    [error, setError] = useState("");
+    [error, setError] = useState(""),
+    [theme, setTheme] = useState("all");
   const [now, setNow] = useState(() => Date.now());
   useEffect(() => { const timer = setInterval(() => setNow(Date.now()), 60000); return () => clearInterval(timer); }, []);
   const requestId = useRef<string | null>(null);
@@ -64,6 +65,10 @@ export default function WordBank({
       [w.fi, w.en].some((x) => x.toLowerCase().includes(query.toLowerCase())),
   );
   const current = words.find((w) => w.id === session[index]);
+  const coreThemes = [...new Set(coreWords.map((w) => w.theme))].sort();
+  const coreStarted = coreWords.filter((w) => data.reviews[w.id]).length;
+  const coreFresh = coreWords.filter((w) => !data.reviews[w.id] && (theme === "all" || w.theme === theme));
+  const LIST_LIMIT = 200;
   function begin(ids: string[]) {
     requestId.current = null;
     setSession(ids);
@@ -273,6 +278,39 @@ export default function WordBank({
               <ArrowRight size={17} />
             </button>
           </div>
+          {coreWords.length > 0 && (
+            <section className="panel core-words-panel" aria-labelledby="core-words-heading">
+              <p className="eyebrow">CORE WORDS · A1-B1 FREQUENCY LIST</p>
+              <h2 id="core-words-heading">
+                {coreStarted} of {coreWords.length} core words started
+              </h2>
+              <p className="help-text">
+                Frequent Swedish words that the lectures do not teach, from the Swedish Kelly list
+                (Språkbanken). Ten new words a day takes you through the list in about a year; started
+                words come back with your other reviews. Easier words come first.
+              </p>
+              <div className="core-words-controls">
+                <label>
+                  Topic{" "}
+                  <select value={theme} onChange={(event) => setTheme(event.target.value)}>
+                    <option value="all">All topics</option>
+                    {coreThemes.map((value) => (
+                      <option value={value} key={value}>
+                        {value}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <button
+                  className="primary"
+                  disabled={!coreFresh.length}
+                  onClick={() => begin(coreFresh.slice(0, 10).map((w) => w.id))}
+                >
+                  Learn 10 new core words <ArrowRight size={17} />
+                </button>
+              </div>
+            </section>
+          )}
           <div className="filter-bar">
             <Tabs value={level} onValueChange={setLevel}>
               <TabsList>
@@ -295,9 +333,10 @@ export default function WordBank({
           </div>
           <p className="help-text result-count">
             {filtered.length} words · {learned.size} introduced in your learning
+            {filtered.length > LIST_LIMIT && ` · showing the first ${LIST_LIMIT}; search to find any word`}
           </p>
           <div className="word-list">
-            {filtered.map((w) => (
+            {filtered.slice(0, LIST_LIMIT).map((w) => (
               <article className="word-row" key={w.id}>
                 <div>
                   <span className="badge">{w.level}</span>

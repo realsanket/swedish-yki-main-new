@@ -190,6 +190,13 @@ try {
             assert.equal(await page.locator('ol[class*="questions"] > li').count(),extra.homework[hi].questions.length,`${label}: homework questions`);
             await inspect(page,`${label}/homework-${hi+1}`,lecture,errors);
           }
+        } else if(extra?.kind==='yki-comprehension') {
+          for(let ci=0;ci<extra.parts.length;ci++) {
+            if(extra.parts.length>1) await page.getByRole('group',{name:'Listening and reading for this lesson'}).getByRole('button').nth(ci).click();
+            assert.equal(await page.locator('ol[class*="questions"] > li').count(),extra.parts[ci].questions.length,`${label}: comprehension questions`);
+            await inspect(page,`${label}/comprehension-${ci+1}`,lecture,errors);
+            stats.comprehensionParts=(stats.comprehensionParts??0)+1;
+          }
         } else if(extra) {
           for(let pi=0;pi<extra.pages.length;pi++) {
             if(extra.pages.length>1) await page.getByRole('group',{name:'Textbook pages for this lesson'}).getByRole('button').nth(pi).click();

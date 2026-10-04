@@ -1,4 +1,5 @@
 import type { Level, Skill, Word, Lesson } from "./curriculum.ts";
+import type { StoryCharacterName } from "./story-world.ts";
 
 export type ReadingPassage = {
   text: string;
@@ -123,7 +124,40 @@ export type LectureExtraStep = {
       kind: "classroom-homework";
       homework: ClassroomHomework[];
     }
+  | {
+      /** Original YKI-style listening clips and reading texts with checkable questions. */
+      kind: "yki-comprehension";
+      parts: ComprehensionPart[];
+      /** Exam-style set: one timer for the whole step (a mock test). */
+      examMinutes?: number;
+    }
 );
+
+export type ComprehensionWord = { fi: string; en: string };
+export type ComprehensionPart =
+  | {
+      type: "listening";
+      id: string;
+      title: string;
+      /** The YKI text type, in Swedish ("Telefonmeddelande", "Nyhet", "Samtal"). */
+      textType: string;
+      situation: { fi: string; en: string };
+      /** Up to 24 lines; `voice` is one of the four native voices, `speaker` the role shown in the transcript. */
+      lines: Array<{ speaker: string; voice: StoryCharacterName; fi: string; en: string }>;
+      questions: ClassroomHomeworkQuestion[];
+      words?: ComprehensionWord[];
+    }
+  | {
+      type: "reading";
+      id: string;
+      title: string;
+      textType: string;
+      text: string;
+      /** Suggested reading time in minutes, as in the test. */
+      minutes?: number;
+      questions: ClassroomHomeworkQuestion[];
+      words?: ComprehensionWord[];
+    };
 
 /**
  * One Classroom homework item from the teacher, kept as the teacher wrote it

@@ -827,6 +827,60 @@ export function CourseProgress({
           })}
         </div>
       </section>
+      <section className="panel skill-tracker" aria-labelledby="skill-tracker-heading">
+        <h2 id="skill-tracker-heading">Listening and reading scores over time</h2>
+        <p className="help-text">
+          Each checked set of listening or reading questions is saved here, newest on the right. YKI level 3
+          usually needs most answers right on texts of this kind, but Stigen&rsquo;s questions are not
+          calibrated against the real test: use the trend, and an official practice test, to judge readiness.
+        </p>
+        <div className="skill-tracker-rows">
+          {(["listening", "reading"] as const).map((skill) => {
+            const scores = progress.attempts
+              .filter((attempt) => attempt.skill === skill && attempt.score !== null)
+              .slice()
+              .sort((a, b) => a.date.localeCompare(b.date))
+              .map((attempt) => attempt.score as number);
+            const recent = scores.slice(-5);
+            const earlier = scores.slice(-10, -5);
+            const average = (values: number[]) =>
+              values.length ? Math.round(values.reduce((sum, value) => sum + value, 0) / values.length) : null;
+            const now = average(recent);
+            const before = average(earlier);
+            return (
+              <div key={skill} className="skill-tracker-row">
+                <h3 className="capitalize">{skill}</h3>
+                {scores.length ? (
+                  <>
+                    <p>
+                      <b>{now}%</b> average of the last {recent.length}
+                      {before !== null && now !== null && (
+                        <span>
+                          {" "}
+                          · {now >= before ? "up" : "down"} from {before}% before
+                        </span>
+                      )}
+                      <span> · {scores.length} sets checked</span>
+                    </p>
+                    <ol className="skill-tracker-chips" aria-label={`Last ${Math.min(10, scores.length)} ${skill} scores`}>
+                      {scores.slice(-10).map((score, index) => (
+                        <li key={index} className={score >= 70 ? "good" : score >= 50 ? "near" : "low"}>
+                          {score}
+                        </li>
+                      ))}
+                    </ol>
+                  </>
+                ) : (
+                  <p className="help-text">
+                    No checked sets yet. The &ldquo;Listen and read&rdquo; step in Lectures 13-51 and the mock tests
+                    in Lectures 46, 50 and 52 save a score here.
+                  </p>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </section>
       <section className="panel">
         <h2>Your story, chapter by chapter</h2>
         {availableCourseModules.map((m) => {

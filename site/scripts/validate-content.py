@@ -20,6 +20,24 @@ for l in L:
         if tid not in gloss: errs.append(f"{l['number']}: unknown grammar term {tid}")
 VOICES=('Alex','Elin','Henrik','Maja')
 def words(text): return len(re.findall(r"[\wåäöÅÄÖé'-]+",text))
+def check_questions(n,hid,qs):
+    errs=[]
+    if len({q['id'] for q in qs})!=len(qs): errs.append(f'{n}: {hid} repeats a question id')
+    for q in qs:
+        qid=q.get('id')
+        if not q.get('prompt','').strip(): errs.append(f"{n}: {hid} question {qid} needs a prompt")
+        answers=q.get('answers')
+        if answers is not None and (not answers or not all(a.strip() for a in answers)): errs.append(f"{n}: {hid} question {qid} has an empty answer")
+        opts=q.get('options')
+        if q.get('multiple') and not opts: errs.append(f"{n}: {hid} question {qid} is multiple without options")
+        if q.get('writing') is not None and opts: errs.append(f"{n}: {hid} question {qid} mixes writing and options")
+        wr=(q.get('writing') or {}).get('wordRange')
+        if wr is not None and not (len(wr)==2 and 0<wr[0]<wr[1]): errs.append(f"{n}: {hid} question {qid} bad wordRange")
+        if opts is not None:
+            if len(opts)<2 or len(set(opts))!=len(opts): errs.append(f"{n}: {hid} question {qid} needs distinct options")
+            if answers and not set(answers)<=set(opts): errs.append(f"{n}: {hid} question {qid} answer is not an option")
+    return errs
+
 homework_ids=set()
 def check_homework(n,st):
     """The teacher's Classroom forms: each needs questions whose answers can be checked."""
@@ -39,19 +57,38 @@ def check_homework(n,st):
             if not link.get('label','').strip() or not link.get('url','').startswith('https://'): errs.append(f'{n}: homework {hid} has a bad link')
         for text in hw.get('texts',[]):
             if not text.get('body','').strip(): errs.append(f'{n}: homework {hid} has an empty text')
-        for q in qs:
-            qid=q.get('id')
-            if not q.get('prompt','').strip(): errs.append(f"{n}: homework {hid} question {qid} needs a prompt")
-            answers=q.get('answers')
-            if answers is not None and (not answers or not all(a.strip() for a in answers)): errs.append(f"{n}: homework {hid} question {qid} has an empty answer")
-            opts=q.get('options')
-            if q.get('multiple') and not opts: errs.append(f"{n}: homework {hid} question {qid} is multiple without options")
-            if q.get('writing') is not None and opts: errs.append(f"{n}: homework {hid} question {qid} mixes writing and options")
-            wr=(q.get('writing') or {}).get('wordRange')
-            if wr is not None and not (len(wr)==2 and 0<wr[0]<wr[1]): errs.append(f"{n}: homework {hid} question {qid} bad wordRange")
-            if opts is not None:
-                if len(opts)<2 or len(set(opts))!=len(opts): errs.append(f"{n}: homework {hid} question {qid} needs distinct options")
-                if answers and not set(answers)<=set(opts): errs.append(f"{n}: homework {hid} question {qid} answer is not an option")
+        errs+=check_questions(n,'homework '+hid,qs)
+    return errs
+
+comprehension_ids=set()
+def check_comprehension(n,st):
+    """Listening clips and reading texts: playable audio, a text, and at least one checkable question."""
+    errs=[]
+    if not st.get('parts'): return [f"{n}: extra step {st['id']} has no parts"]
+    em=st.get('examMinutes')
+    if em is not None and not (isinstance(em,int) and 5<=em<=120): errs.append(f"{n}: {st['id']} examMinutes 5-120")
+    for part in st['parts']:
+        pid=part.get('id','')
+        if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,60}',pid) or pid in comprehension_ids: errs.append(f'{n}: bad or duplicate comprehension id {pid}')
+        comprehension_ids.add(pid)
+        for k in ('title','textType'):
+            if not str(part.get(k,'')).strip(): errs.append(f'{n}: {pid} missing {k}')
+        if part.get('type')=='listening':
+            lines=part.get('lines',[])
+            if not 1<=len(lines)<=24: errs.append(f'{n}: {pid} needs 1-24 lines (the speech API limit)')
+            if sum(len(l.get('fi','')) for l in lines)>3900: errs.append(f'{n}: {pid} is over the 4,000-character speech limit')
+            for l in lines:
+                if l.get('voice') not in ('Alex','Elin','Henrik','Maja'): errs.append(f'{n}: {pid} bad voice {l.get("voice")}')
+                if not all(str(l.get(k,'')).strip() for k in ('speaker','fi','en')): errs.append(f'{n}: {pid} line needs speaker, fi and en')
+            sit=part.get('situation') or {}
+            if not (sit.get('fi') and sit.get('en')): errs.append(f'{n}: {pid} needs a situation in fi and en')
+        elif part.get('type')=='reading':
+            if not part.get('text','').strip(): errs.append(f'{n}: {pid} has no text')
+        else: errs.append(f'{n}: {pid} unknown part type')
+        qs=part.get('questions',[])
+        if len(qs)<2: errs.append(f'{n}: {pid} needs at least 2 questions')
+        if not any(q.get('answers') and not q.get('writing') for q in qs): errs.append(f'{n}: {pid} needs at least one checkable question')
+        errs+=check_questions(n,pid,qs)
     return errs
 
 def check_yki_speaking(n,st):
@@ -201,7 +238,7 @@ for l in L:
     for st in steps:
         if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,60}',st['id']): errs.append(f"{n}: bad extra step id {st['id']}")
         if st['after'] not in parts: errs.append(f"{n}: extra step {st['id']} follows unknown part {st['after']}")
-        if st['kind'] not in ('source-practice','yki-speaking','classroom-homework'): errs.append(f"{n}: unknown extra step kind {st['kind']}")
+        if st['kind'] not in ('source-practice','yki-speaking','classroom-homework','yki-comprehension'): errs.append(f"{n}: unknown extra step kind {st['kind']}")
         if not (isinstance(st['minutes'],int) and 1<=st['minutes']<=60): errs.append(f"{n}: extra step minutes {st['id']}")
         for k in ('label','description','action'):
             if not st.get(k,'').strip(): errs.append(f"{n}: extra step {st['id']} missing {k}")
@@ -212,6 +249,8 @@ for l in L:
             errs+=check_yki_speaking(n,st)
         if st['kind']=='classroom-homework':
             errs+=check_homework(n,st)
+        if st['kind']=='yki-comprehension':
+            errs+=check_comprehension(n,st)
     for sp in pages:
         import os
         if not os.path.exists('public'+sp['image']): errs.append('missing image '+sp['image'])

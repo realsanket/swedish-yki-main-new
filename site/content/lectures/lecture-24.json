@@ -472,6 +472,159 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two short recordings and two texts of the kinds the YKI test uses, with questions you can check.",
+      "minutes": 15,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-24-listen-1",
+          "title": "Ett meddelande från fastighetsskötaren",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Du hör ett meddelande på din telefonsvarare.",
+            "en": "You hear a message on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Fastighetsskötaren",
+              "voice": "Henrik",
+              "fi": "Hej, det här är Mats från fastighetsservice. Jag ringer om nyckeln till din nya lägenhet på Rönngatan.",
+              "en": "Hi, this is Mats from property services. I'm calling about the key to your new flat on Rönngatan."
+            },
+            {
+              "speaker": "Fastighetsskötaren",
+              "voice": "Henrik",
+              "fi": "Du kan hämta den på vårt kontor torsdagen den trettionde juli, mellan klockan nio och tre. Kom ihåg att ta med ett identitetsbevis.",
+              "en": "You can pick it up at our office on Thursday 30 July, between nine and three. Remember to bring an ID."
+            },
+            {
+              "speaker": "Fastighetsskötaren",
+              "voice": "Henrik",
+              "fi": "Om tiden inte passar, ring mig på nummer 040 112 3344. Ha en bra dag!",
+              "en": "If the time doesn't suit you, call me on 040 112 3344. Have a good day!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Mats?",
+              "translation": "Why is Mats calling?",
+              "options": [
+                "Om hyran",
+                "Om nyckeln",
+                "Om en vattenskada"
+              ],
+              "answers": [
+                "Om nyckeln"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "När kan du hämta nyckeln?",
+              "translation": "When can you pick up the key?",
+              "options": [
+                "Torsdag 30 juli kl. 9–15",
+                "Tisdag 30 juli kl. 9–15",
+                "Torsdag 30 juli kl. 15–19"
+              ],
+              "answers": [
+                "Torsdag 30 juli kl. 9–15"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad måste du ta med?",
+              "translation": "What must you bring?",
+              "answers": [
+                "ett identitetsbevis",
+                "identitetsbevis",
+                "id",
+                "ett id",
+                "id-kort",
+                "ett id-kort",
+                "pass",
+                "passet"
+              ],
+              "hint": "Skriv ett eller två ord."
+            }
+          ],
+          "words": [
+            {
+              "fi": "fastighetsservice",
+              "en": "property services"
+            },
+            {
+              "fi": "ett identitetsbevis",
+              "en": "a proof of identity, an ID"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-24-read-1",
+          "title": "Meddelande till de boende",
+          "textType": "Anslag i trappuppgången",
+          "minutes": 4,
+          "text": "MEDDELANDE TILL DE BOENDE\n\nTvättstugan är stängd måndagen den 3 augusti på grund av reparation. Från tisdagen den 4 augusti kan du boka tvättider som vanligt på bokningstavlan.\n\nNytt: Torkrummet får inte användas efter klockan 22. Tänk på dina grannar!\n\nFrågor? Kontakta fastighetsservice, tfn 040 112 3344.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Tvättstugan är stängd hela augusti.",
+              "translation": "The laundry room is closed all of August.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Varför är tvättstugan stängd?",
+              "translation": "Why is the laundry room closed?",
+              "options": [
+                "Den ska repareras",
+                "Den ska städas",
+                "Den ska målas"
+              ],
+              "answers": [
+                "Den ska repareras"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad är nytt för torkrummet?",
+              "translation": "What is new about the drying room?",
+              "model": "Man får inte använda det efter klockan 22.",
+              "answers": [
+                "efter klockan 22",
+                "inte efter klockan 22",
+                "inte efter 22",
+                "efter 22"
+              ],
+              "hint": "Svara kort."
+            }
+          ],
+          "words": [
+            {
+              "fi": "tvättstugan",
+              "en": "the laundry room"
+            },
+            {
+              "fi": "torkrummet",
+              "en": "the drying room"
+            }
+          ]
+        }
+      ]
     }
   ],
   "unplannedQuestions": [

@@ -1,4 +1,4 @@
-import { words } from "./curriculum.ts";
+import { words, type Word } from "./curriculum.ts";
 import type {
   CourseLecture,
   CourseModule,
@@ -18,6 +18,7 @@ export type {
 
 import lectureData from "../content/lectures/index.json";
 import modulesData from "../content/modules.json";
+import coreWordsData from "../content/core-words.json";
 
 const courseModules = modulesData.modules as CourseModule[];
 const lectureTitles = modulesData.titles as string[];
@@ -182,8 +183,15 @@ export function getLecture(id: string): CourseLecture | undefined {
   return lectures.find((lecture) => lecture.id === id);
 }
 
+/**
+ * Frequent A1-B1 words the lectures do not teach, from the Swedish Kelly list
+ * (Språkbanken, CC BY-SA). They enter review only when the learner starts them.
+ */
+export type CoreWord = Word & { theme: string };
+export const coreWords = coreWordsData as CoreWord[];
+
 export const courseWords = [
   ...new Map(
-    [...words, ...lectures.flatMap((l) => l.words)].map((w) => [w.id, w]),
+    [...words, ...lectures.flatMap((l) => l.words), ...coreWords].map((w) => [w.id, w]),
   ).values(),
 ];

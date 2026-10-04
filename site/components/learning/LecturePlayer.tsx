@@ -61,6 +61,7 @@ import { grammarTermsFor, termsInText } from "@/lib/grammar-terms";
 import StoryScene from "./StoryScene";
 import { StoryAvatar } from "./StoryAvatar";
 import YkiMockFlow from "./YkiMockFlow";
+import type { SkillScoreHandler } from "./YkiComprehension";
 import YkiWorkshopFirstAttempt from "./YkiWorkshopFirstAttempt";
 
 type Props = {
@@ -73,6 +74,8 @@ type Props = {
   onNext: () => void;
   last: boolean;
   onPracticeSaved: () => void;
+  /** Saves a listening or reading score from an extra step to the learner's skill record. */
+  onSkillScore?: SkillScoreHandler;
   onOpenChapterReview: (chapterNumber: number) => void;
   /** Whole-course progress and review schedule, for the warm-up retrieval. */
   course?: CourseProgressData;
@@ -248,6 +251,7 @@ export default function LecturePlayer({
   onNext,
   last,
   onPracticeSaved,
+  onSkillScore,
   onOpenChapterReview,
   course,
   reviews,
@@ -935,7 +939,7 @@ export default function LecturePlayer({
               </button>
             </div>
           )}
-          {activeExtra && <ExtraStep step={activeExtra} />}
+          {activeExtra && <ExtraStep step={activeExtra} onScore={onSkillScore} />}
           {view === "recall" && (
             <>
               {warmUp.length > 0 && onReview && (

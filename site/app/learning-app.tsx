@@ -557,6 +557,11 @@ function AppContent({ userId }: { userId: string }) {
                 }}
                 last={lecture.id === lectures.at(-1)?.id}
                 onPracticeSaved={() => void load(true)}
+                onSkillScore={(skill, score, minutes) => {
+                  savePractice(skill, score, minutes).catch(() => {
+                    /* The answers stay in the browser; a lost score is not worth an error banner. */
+                  });
+                }}
                 onOpenChapterReview={(number) =>
                   openChapterReview(number, lecture.id)
                 }

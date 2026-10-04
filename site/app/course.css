@@ -8813,3 +8813,68 @@
   background: linear-gradient(135deg, #e8f0e5, #fff2cb);
 }
 .story-portraits .story-avatar { flex: 0 0 auto; }
+
+/* Core words deck (Kelly list) in the word bank */
+.core-words-panel {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.core-words-panel h2 {
+  margin: 0;
+}
+.core-words-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.core-words-controls select {
+  min-height: 40px;
+  padding: 6px 10px;
+  border: 1px solid #d9e0e6;
+  border-radius: 10px;
+  background: #fff;
+  text-transform: capitalize;
+}
+
+/* Listening and reading score tracker on My progress */
+.skill-tracker-rows {
+  display: grid;
+  gap: 14px;
+  margin-top: 12px;
+}
+.skill-tracker-row h3 {
+  margin: 0 0 4px;
+}
+.skill-tracker-row p {
+  margin: 0;
+}
+.skill-tracker-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.skill-tracker-chips li {
+  min-width: 40px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 750;
+  text-align: center;
+}
+.skill-tracker-chips .good {
+  background: #e3f3ea;
+  color: #1d5c45;
+}
+.skill-tracker-chips .near {
+  background: #fff4ce;
+  color: #8b6417;
+}
+.skill-tracker-chips .low {
+  background: #fde9e1;
+  color: #9a3d1c;
+}
