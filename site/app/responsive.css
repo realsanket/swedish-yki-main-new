@@ -134,6 +134,14 @@
     white-space: nowrap;
     scroll-snap-align: start;
   }
+  /* YKI tasks have only three or four stages: wrap them so all stay visible. */
+  .yki-speaking-practice > nav {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+  .yki-speaking-practice > nav button {
+    flex: 1 1 40%;
+  }
   .source-page-practice-layout {
     grid-template-columns: minmax(0, 1fr) !important;
     min-height: 0;

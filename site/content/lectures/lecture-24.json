@@ -1,0 +1,2121 @@
+{
+  "number": 24,
+  "routeProfile": "standard",
+  "objectives": [
+    "Answer two YKI dialogues as the host: welcome a friend, offer a drink and describe your home, then say no to a date politely and offer a lift.",
+    "Describe a home: size in kvadratmeter, the rooms, för … sedan, and what skulle kunna vara bättre.",
+    "Use relationship words (sambo, morföräldrar, gifta sig) and particle verbs (komma ihåg, flytta ihop, hälsa på) with inte in the right place.",
+    "Write a formal email to a shop: full name, facts and numbers, three questions and a polite ending."
+  ],
+  "focusSkills": [
+    "speaking",
+    "writing"
+  ],
+  "grammarTerms": [
+    "noun",
+    "verb",
+    "particle-verb",
+    "conditional",
+    "infinitive",
+    "reflexive",
+    "past-tense",
+    "present-perfect",
+    "word-order",
+    "verb-second",
+    "subordinate-clause",
+    "possessive",
+    "formal-informal",
+    "stress"
+  ],
+  "presentation": {
+    "template": "conversation-first",
+    "opening": {
+      "teacherNote": {
+        "title": "Listen for the visit, the news and the goodbye",
+        "body": "Alex comes to dinner at Elin and Mikko's. Listen for why he is late, how big their flat is and what news Alex brings. At the end, notice how Elin insists."
+      },
+      "questionIntro": "Answer from the conversation. Listen for the reason, the flat and the news.",
+      "dialogue": {
+        "part": "recall",
+        "eyebrow": "START WITH THE STORY",
+        "title": "Dinner at Elin and Mikko's",
+        "instructions": "Predict first: what news might Alex bring to dinner? Then listen once without the text.",
+        "initiallyOpen": false
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 24",
+        "12 JUNE 2026"
+      ],
+      "kicker": "A VISIT AND A GOODBYE",
+      "title": "Välkommen på besök",
+      "lede": "Welcome a guest, describe a home with its good and not-so-good sides, and say no politely with a reason.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Lägenheten är … kvadratmeter, och det bästa är att …",
+        "en": "The flat is … square metres, and the best thing is that …",
+        "audioText": "Lägenheten är fyrtioåtta kvadratmeter, och det bästa är att den är ljus."
+      },
+      "speakers": [
+        {
+          "name": "Alex",
+          "fi": "Vilken fin lägenhet ni har! Hur stor är den?"
+        },
+        {
+          "name": "Elin",
+          "fi": "Den är 74 kvadratmeter. Vi har tre rum och kök."
+        }
+      ],
+      "connector": "OCH",
+      "encounterLabel": "Alex visits Elin and Mikko for dinner",
+      "chunks": [
+        {
+          "label": "SIZE",
+          "fi": "Den är 74 kvadratmeter.",
+          "en": "It is 74 square metres."
+        },
+        {
+          "label": "AGO",
+          "fi": "för tre år sedan",
+          "en": "three years ago"
+        },
+        {
+          "label": "COULD BE",
+          "fi": "skulle kunna vara större",
+          "en": "could be bigger"
+        },
+        {
+          "label": "NO, SORRY",
+          "fi": "Tyvärr kan jag inte …",
+          "en": "Unfortunately I can't …"
+        }
+      ],
+      "footerTags": [
+        "Two YKI dialogues",
+        "Formal email to a shop"
+      ]
+    },
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen to a dinner visit: a late guest, a flat, big news and a goodbye in the rain."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Relationship words, particle verbs, describing a home, saying no politely and a formal email to a shop."
+      }
+    },
+    "teaching": {
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the Lesson 24 word bank"
+      }
+    }
+  },
+  "sittingBreakAfter": "guided",
+  "extraSteps": [
+    {
+      "id": "yki-tasks",
+      "after": "recall",
+      "kind": "yki-speaking",
+      "label": "YKI tasks",
+      "description": "Two timed YKI dialogues: a friend comes to dinner at your home, then the friend leaves.",
+      "minutes": 15,
+      "action": "Read each card, answer every cue in your own words within the time, then compare with the models.",
+      "parts": [
+        {
+          "type": "dialogue",
+          "id": "sv-24-yki-visit",
+          "title": "Samtal · En vän hälsar på",
+          "intro": "You are the host. Do what each cue asks, in your own words; inventing details is fine. The times are the exam's plus half (15–37 seconds), as in all of Chapter 7.",
+          "bookRef": "Förbered dig, Dialog 1, s. 12–13",
+          "situation": {
+            "fi": "Du har bjudit en vän på middag. Det är första gången vännen är hemma hos dig. Nu ringer det på dörren.",
+            "en": "You have invited a friend to dinner. It is the first time your friend is at your home. Now the doorbell rings."
+          },
+          "readSeconds": 15,
+          "partner": {
+            "role": "Vän",
+            "voice": "Henrik"
+          },
+          "turns": [
+            {
+              "who": "partner",
+              "fi": "Hej! Förlåt att jag kommer så sent. Trafiken var helt kaotisk i regnet.",
+              "en": "Hi! Sorry I am so late. The traffic was completely chaotic in the rain."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Hälsa och säg att det inte gör något.)",
+                "en": "(Greet your friend and say that it does not matter.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Hej! Det gör inget. Välkommen!",
+                "Hej, vad roligt att du kom! Ingen fara, maten är inte klar än. Välkommen in!"
+              ],
+              "tip": "Det gör inget, Ingen fara and Inga problem all work. Do not repeat your friend's words about the traffic."
+            },
+            {
+              "who": "partner",
+              "fi": "Tack! Här, jag har med mig lite blommor till dig. Oj, vad mysigt det är här!",
+              "en": "Thanks! Here, I have brought you some flowers. Oh, how cosy it is here!"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Tacka, be vännen komma in och fråga vad hen vill dricka.)",
+                "en": "(Say thank you, ask your friend to come in and ask what they would like to drink.)"
+              },
+              "seconds": 30,
+              "models": [
+                "Tack, vad snällt! Kom in och sätt dig. Vad vill du dricka?",
+                "Åh, tack så mycket, vilka fina blommor! Du kan hänga jackan här och sätta dig i soffan. Vill du ha något att dricka? Jag har kaffe, te och saft."
+              ],
+              "tip": "The cue says hen (he or she), but you talk to your friend: Vad vill du dricka?"
+            },
+            {
+              "who": "partner",
+              "fi": "Gärna en kopp kaffe, om det inte är för mycket besvär.",
+              "en": "A cup of coffee would be lovely, if it is not too much trouble."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara jakande.)",
+                "en": "(Say yes.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Inga problem! Kaffet är redan klart.",
+                "Absolut, det är inget besvär alls. Kaffet kommer strax. Vill du ha mjölk i?"
+              ],
+              "tip": "Kaffe is an ett-word: kaffet, ditt kaffe. Strax = in a moment."
+            },
+            {
+              "who": "partner",
+              "fi": "Vilken fin lägenhet du har! Hur stor är den egentligen?",
+              "en": "What a nice flat you have! How big is it, actually?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Tacka och berätta hur stor lägenheten är och vilka rum den har.)",
+                "en": "(Say thank you, then tell how big the flat is and which rooms it has.)"
+              },
+              "seconds": 37,
+              "models": [
+                "Tack! Den är 48 kvadratmeter. Det finns ett sovrum, ett vardagsrum, ett kök och ett badrum.",
+                "Tack så mycket! Den är 48 kvadratmeter, alltså en tvåa. Det finns ett sovrum, ett vardagsrum, ett litet kök och ett badrum med bastu. Från vardagsrummet ser man parken."
+              ],
+              "tip": "Den är … kvadratmeter: den, because lägenhet is an en-word."
+            },
+            {
+              "who": "partner",
+              "fi": "Har du bott här länge? Jag minns inte när du flyttade.",
+              "en": "Have you lived here long? I do not remember when you moved."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara och säg när du flyttade in.)",
+                "en": "(Answer and say when you moved in.)"
+              },
+              "seconds": 22,
+              "models": [
+                "Nej, inte så länge. Jag flyttade in för ett år sedan.",
+                "Nej, inte så länge. Jag flyttade in för ungefär ett år sedan, i augusti. Innan dess bodde jag i en etta i Vanda."
+              ],
+              "tip": "För … sedan = ago, with a past verb: flyttade."
+            },
+            {
+              "who": "partner",
+              "fi": "Och hur trivs du? Är du nöjd med lägenheten?",
+              "en": "And how do you like it? Are you happy with the flat?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara: nämn en sak som du gillar och en sak som kunde vara bättre.)",
+                "en": "(Answer: name one thing you like and one thing that could be better.)"
+              },
+              "seconds": 37,
+              "models": [
+                "Ja, ganska nöjd. Lägenheten är ljus och nära metron. Men köket skulle kunna vara större.",
+                "Ja, jag trivs bra. Det bästa är att lägenheten är ljus och ligger bara fem minuter från metron. Men köket skulle kunna vara större, och jag skulle gärna vilja ha en balkong."
+              ],
+              "tip": "Skulle kunna vara = could be. It sounds kinder than Köket är för litet."
+            }
+          ],
+          "phrases": [
+            {
+              "fi": "Det gör inget. / Ingen fara.",
+              "en": "It does not matter. / No problem."
+            },
+            {
+              "fi": "Kom in och sätt dig!",
+              "en": "Come in and sit down!"
+            },
+            {
+              "fi": "Vill du ha något att dricka?",
+              "en": "Would you like something to drink?"
+            },
+            {
+              "fi": "Den är … kvadratmeter.",
+              "en": "It is … square metres."
+            },
+            {
+              "fi": "Det finns ett sovrum, ett vardagsrum och ett kök.",
+              "en": "There is a bedroom, a living room and a kitchen."
+            },
+            {
+              "fi": "Jag flyttade in för … sedan.",
+              "en": "I moved in … ago."
+            },
+            {
+              "fi": "Det bästa är att …",
+              "en": "The best thing is that …"
+            },
+            {
+              "fi": "… skulle kunna vara större.",
+              "en": "… could be bigger."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "id": "sv-24-yki-goodbye",
+          "title": "Samtal · Vännen ska åka hem",
+          "intro": "The same friend has eaten and wants to go home. Say no with a reason and a new suggestion, then offer a lift and insist. Times: the exam's plus half (15–37 seconds).",
+          "bookRef": "Förbered dig, Dialog 2, s. 14–15",
+          "situation": {
+            "fi": "Din vän har ätit middag hos dig. Det är sent på kvällen, och vännen vill åka hem. Du har en bil.",
+            "en": "Your friend has had dinner at your place. It is late in the evening, and your friend wants to go home. You have a car."
+          },
+          "readSeconds": 15,
+          "partner": {
+            "role": "Vän",
+            "voice": "Henrik"
+          },
+          "turns": [
+            {
+              "who": "partner",
+              "fi": "Oj, titta vad klockan är! Nu måste jag nog börja gå hem.",
+              "en": "Oh, look at the time! Now I really should start going home."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara och fråga vad vännen ska göra de närmaste dagarna.)",
+                "en": "(Answer and ask what your friend is doing in the next few days.)"
+              },
+              "seconds": 22,
+              "models": [
+                "Redan? Vad ska du göra i morgon?",
+                "Vad synd, tiden går så fort! Har du några planer för helgen?"
+              ],
+              "tip": "Vad har du för planer? and Vad har du för dig i helgen? work too."
+            },
+            {
+              "who": "partner",
+              "fi": "I morgon ska jag hjälpa min syster att flytta, och vi börjar klockan åtta. Men tack för i kväll, maten var supergod! Nu vill jag bjuda dig på middag. Passar det på lördag?",
+              "en": "Tomorrow I am helping my sister move, and we start at eight. But thanks for tonight, the food was super good! Now I want to treat you to dinner. Does Saturday suit you?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara nekande, förklara varför lördag inte passar och föreslå en annan dag.)",
+                "en": "(Say no, explain why Saturday does not suit you and suggest another day.)"
+              },
+              "seconds": 37,
+              "models": [
+                "Tack, men tyvärr kan jag inte på lördag. Jag jobbar då. Kan vi ses på söndag i stället?",
+                "Vad snällt, tack! Men tyvärr passar lördag inte så bra, eftersom min bror kommer på besök och stannar hela helgen. Vad sägs om fredag nästa vecka?"
+              ],
+              "tip": "No + why + a new day: the three parts of a YKI refusal. After tyvärr the verb comes next."
+            },
+            {
+              "who": "partner",
+              "fi": "Okej, då säger vi så. Vet du förresten om spårvagnen går så här sent?",
+              "en": "Okay, it is a deal. By the way, do you know if the tram runs this late?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara och erbjud dig att skjutsa vännen hem.)",
+                "en": "(Answer and offer to drive your friend home.)"
+              },
+              "seconds": 22,
+              "models": [
+                "Jag tror inte det. Men jag kan skjutsa dig hem.",
+                "Den slutar nog snart. Men det är inga problem, jag har bilen här. Jag kan skjutsa dig hem."
+              ],
+              "tip": "Skjutsa = drive someone somewhere. Jag kan ge dig skjuts means the same."
+            },
+            {
+              "who": "partner",
+              "fi": "Är du säker? Det är ju sent, och du måste köra ända till Esbo. Jag kan lika gärna ta en taxi.",
+              "en": "Are you sure? It is late, and you would have to drive all the way to Espoo. I can just as well take a taxi."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Säg att det inte är något besvär och håll fast vid ditt erbjudande.)",
+                "en": "(Say it is no trouble and stick to your offer.)"
+              },
+              "seconds": 30,
+              "models": [
+                "Oroa dig inte. Jag kör gärna.",
+                "Oroa dig inte, det är inget besvär alls. Det tar bara tjugo minuter, och en taxi är dyr så här sent. Jag hämtar bilnycklarna."
+              ],
+              "tip": "Give one more reason to show you mean it: it is quick, a taxi is expensive."
+            },
+            {
+              "who": "partner",
+              "fi": "Tack, vad snällt av dig. Då tar jag på mig jackan.",
+              "en": "Thanks, that is kind of you. Then I will put my jacket on."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara kort och avsluta artigt.)",
+                "en": "(Answer briefly and end politely.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Det var så lite. Kom, vi går!",
+                "Det var så lite! Tack själv för att du kom. Bilen står på gården."
+              ],
+              "tip": "Det var så lite = it was nothing. Tack själv = thank you too."
+            }
+          ],
+          "phrases": [
+            {
+              "fi": "Har du några planer för helgen?",
+              "en": "Do you have any plans for the weekend?"
+            },
+            {
+              "fi": "Tyvärr kan jag inte på lördag.",
+              "en": "Unfortunately I cannot on Saturday."
+            },
+            {
+              "fi": "Jag jobbar då. / Min bror kommer på besök.",
+              "en": "I am working then. / My brother is visiting."
+            },
+            {
+              "fi": "Vad sägs om …? / Kan vi ses … i stället?",
+              "en": "What about …? / Can we meet … instead?"
+            },
+            {
+              "fi": "Jag kan skjutsa dig hem.",
+              "en": "I can drive you home."
+            },
+            {
+              "fi": "Oroa dig inte, det är inget besvär.",
+              "en": "Do not worry, it is no trouble."
+            },
+            {
+              "fi": "Jag kör gärna.",
+              "en": "I am happy to drive."
+            },
+            {
+              "fi": "Det var så lite.",
+              "en": "It was nothing."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unplannedQuestions": [
+    {
+      "id": "sv-24-u-livewith",
+      "fi": "Vem bor du med?",
+      "en": "Who do you live with?",
+      "sample": "Jag bor ensam i en tvåa. / Jag bor med min sambo och vår dotter."
+    },
+    {
+      "id": "sv-24-u-room",
+      "fi": "Vilket rum hemma tycker du mest om? Varför?",
+      "en": "Which room at home do you like best? Why?",
+      "sample": "Vardagsrummet, eftersom det är ljust och jag kan läsa där i lugn och ro."
+    },
+    {
+      "id": "sv-24-u-change",
+      "fi": "Vad skulle du vilja ändra i ditt hem?",
+      "en": "What would you like to change in your home?",
+      "sample": "Köket skulle kunna vara större. Jag skulle också vilja ha en balkong."
+    },
+    {
+      "id": "sv-24-u-guests",
+      "fi": "Vad bjuder du på när du får gäster?",
+      "en": "What do you offer when you have guests?",
+      "sample": "Jag bjuder ofta på kaffe och något sött. Ibland lagar jag indisk mat."
+    },
+    {
+      "id": "sv-24-u-firsthome",
+      "fi": "Kommer du ihåg ditt första hem i Finland? Hur var det?",
+      "en": "Do you remember your first home in Finland? What was it like?",
+      "sample": "Ja, det var en liten etta. Den var mysig men ganska mörk."
+    },
+    {
+      "id": "sv-24-u-sambo",
+      "fi": "Är det vanligt i ditt hemland att par bor ihop utan att vara gifta?",
+      "en": "In your home country, is it common for couples to live together without being married?",
+      "sample": "Nej, inte så vanligt. De flesta gifter sig först. / Ja, det blir vanligare i städerna."
+    }
+  ],
+  "reviewPhrases": [
+    {
+      "id": "sv-24-drink",
+      "en": "Would you like something to drink?",
+      "fi": "Vill du ha något att dricka?"
+    },
+    {
+      "id": "sv-24-size",
+      "en": "The flat is fifty square metres.",
+      "fi": "Lägenheten är femtio kvadratmeter."
+    },
+    {
+      "id": "sv-24-moved",
+      "en": "I moved in two years ago.",
+      "fi": "Jag flyttade in för två år sedan."
+    },
+    {
+      "id": "sv-24-could-be",
+      "en": "The kitchen could be bigger.",
+      "fi": "Köket skulle kunna vara större."
+    },
+    {
+      "id": "sv-24-remember",
+      "en": "I don't remember when you moved here.",
+      "fi": "Jag kommer inte ihåg när ni flyttade hit."
+    },
+    {
+      "id": "sv-24-refuse",
+      "en": "Unfortunately I can't on Saturday, because I'm working then.",
+      "fi": "Tyvärr kan jag inte på lördag, för då jobbar jag."
+    },
+    {
+      "id": "sv-24-lift",
+      "en": "Don't worry, I can drive you home.",
+      "fi": "Oroa dig inte, jag kan skjutsa dig hem."
+    },
+    {
+      "id": "sv-24-regarding",
+      "en": "My name is … and I am writing regarding … (formal email)",
+      "fi": "Jag heter … och skriver angående …"
+    }
+  ],
+  "missionPlan": {
+    "title": "Plan your home tour",
+    "intro": "Make six or seven lines for a friend who visits you: offer a drink, then the size, the rooms, when you moved in, the best thing and one thing that could be better.",
+    "lines": [
+      {
+        "label": "Welcome",
+        "before": "Välkommen! Vill du ha",
+        "after": "?",
+        "placeholder": "en kopp kaffe"
+      },
+      {
+        "label": "Size",
+        "before": "Lägenheten är",
+        "after": "kvadratmeter.",
+        "placeholder": "48"
+      },
+      {
+        "label": "Rooms",
+        "before": "Det finns",
+        "after": ".",
+        "placeholder": "ett sovrum, ett vardagsrum, ett kök och ett badrum"
+      },
+      {
+        "label": "When you moved in",
+        "before": "Jag flyttade in för",
+        "after": "sedan.",
+        "placeholder": "ett och ett halvt år"
+      },
+      {
+        "label": "The best thing",
+        "before": "Det bästa är att",
+        "after": ".",
+        "placeholder": "den ligger nära metron"
+      },
+      {
+        "label": "Could be better",
+        "before": "Men",
+        "after": ".",
+        "placeholder": "köket skulle kunna vara större"
+      },
+      {
+        "label": "A wish",
+        "before": "Jag skulle gärna vilja ha",
+        "after": ".",
+        "placeholder": "en balkong"
+      }
+    ]
+  },
+  "recall": [
+    {
+      "id": "sv-24-r1",
+      "prompt": "Why is Alex late?",
+      "answers": [
+        "It was raining and the tram was late"
+      ],
+      "options": [
+        "It was raining and the tram was late",
+        "He forgot the time at home",
+        "He came by car and could not find a parking space"
+      ],
+      "hint": "Listen for regnar and spårvagnen.",
+      "explanation": "Det regnar hela tiden, och spårvagnen var försenad. Elin says Ingen fara: Alex sent a text message to say he was late."
+    },
+    {
+      "id": "sv-24-r2",
+      "prompt": "What is Alex's news?",
+      "answers": [
+        "He has signed a lease for a two-room flat in Vallgård"
+      ],
+      "options": [
+        "He has signed a lease for a two-room flat in Vallgård",
+        "He has bought the same coffee machine as Elin and Mikko",
+        "He moved into a new flat last week"
+      ],
+      "hint": "Listen for hyresavtal and tvåa.",
+      "explanation": "I onsdags skrev jag på ett hyresavtal för en tvåa i Vallgård. The lease starts on 1 August, and he gets the keys at the end of July. He wants the coffee machine, but he has not bought it yet."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Familj och relationer · words for relationships",
+      "kind": "scene",
+      "body": [
+        "En sambo bor ihop med sin partner utan att vara gift. Elin och Mikko är sambor. (Sam + bo = live together; very common in Finland.)",
+        "Mormor och morfar är mammas föräldrar: morföräldrar. Farmor och farfar är pappas föräldrar: farföräldrar. (Read from the left: mor = mother, far = father. Like Hindi नानी-नाना and दादी-दादा.)",
+        "Gifta sig, förlova sig och skilja sig tar alltid sig: De gifte sig i juni. (Reflexive verbs, like känna sig in Lecture 15. De gifte i juni is missing a word.)",
+        "Ensam eller singel? Jag bor ensam = I live alone. Jag är singel = I have no partner. Jag är ensam often means I am lonely. (Hindi अकेला also covers both alone and lonely.)",
+        "Fler ord: ett par (a couple), make och maka (husband and wife, formal), en svärmor (a mother-in-law, सास), en kärnfamilj (a nuclear family), en ensamstående förälder (a single parent), sällskapa (= dejta, be seeing someone), på tumanhand (just the two of you), fria till någon (propose).",
+        "Ord om livet: gift, ogift, skild (married, not married, divorced), gravid (pregnant), barnlös (without children), en änka och en änkling (a widow and a widower), ett bröllop (a wedding), en ny familj (a new family with a new partner)."
+      ],
+      "examples": [
+        {
+          "fi": "Elin och Mikko är sambor. De flyttade ihop för tre år sedan.",
+          "en": "Elin and Mikko live together. They moved in together three years ago.",
+          "note": "En sambo, två sambor."
+        },
+        {
+          "fi": "Mormor är mammas mamma, och farfar är pappas pappa.",
+          "en": "Mormor is your mother's mother, and farfar is your father's father.",
+          "note": "Read the word from the left."
+        },
+        {
+          "fi": "De förlovade sig i maj och ska gifta sig nästa sommar.",
+          "en": "They got engaged in May and will get married next summer.",
+          "note": "Förlova sig, gifta sig: always with sig."
+        },
+        {
+          "fi": "Jag bor ensam, men jag är inte ensam. Jag har många vänner.",
+          "en": "I live alone, but I am not lonely. I have many friends.",
+          "note": "Ensam = alone, or lonely."
+        },
+        {
+          "fi": "Han är singel och trivs med det.",
+          "en": "He is single and happy with it.",
+          "note": "Singel = no partner."
+        },
+        {
+          "fi": "Vem tar hand om barnen när ni är på bröllopet?",
+          "en": "Who takes care of the children when you are at the wedding?",
+          "note": "Ta hand om = take care of."
+        },
+        {
+          "fi": "I kväll vill de äta middag på tumanhand.",
+          "en": "Tonight they want to have dinner just the two of them.",
+          "note": "På tumanhand: no one else there."
+        }
+      ],
+      "memoryTip": "Mor = mother, far = father: mormor is your mother's mother, farfar your father's father.",
+      "tryIt": "Say three lines about a family you know, real or invented: who is sambo or married, and who the grandparents are on each side.",
+      "activities": [
+        {
+          "type": "match",
+          "label": "Vem är vem?",
+          "title": "Match each word to its explanation in easy Swedish",
+          "instructions": "Explaining a word in easy Swedish is a YKI skill: it helps when you forget a word.",
+          "leftLabel": "Ordet",
+          "rightLabel": "Förklaringen",
+          "pairs": [
+            {
+              "left": "morfar",
+              "right": "mammas pappa"
+            },
+            {
+              "left": "farmor",
+              "right": "pappas mamma"
+            },
+            {
+              "left": "en sambo",
+              "right": "någon som bor ihop med sin partner utan att vara gift"
+            },
+            {
+              "left": "en svärmor",
+              "right": "mamman till ens man eller fru"
+            },
+            {
+              "left": "en ensamstående förälder",
+              "right": "någon som bor ensam med sina barn"
+            },
+            {
+              "left": "ett par",
+              "right": "två personer som är tillsammans"
+            }
+          ],
+          "pattern": "Say each pair as a definition. When you forget a word in YKI, explain it like this: det är någon som …",
+          "sentence": "{left} – det är {right}."
+        },
+        {
+          "type": "sort",
+          "label": "Rätt eller fixa?",
+          "title": "Find the slips in relationship talk",
+          "instructions": "Each card is a learner's line. Is it right, or does it need a fix? Say the correct version before you go on.",
+          "audio": false,
+          "buckets": [
+            {
+              "id": "ok",
+              "label": "Rätt",
+              "hint": "Correct Swedish"
+            },
+            {
+              "id": "fix",
+              "label": "Fixa",
+              "hint": "A missing word or a wrong word"
+            }
+          ],
+          "items": [
+            {
+              "fi": "De gifte i juni.",
+              "en": "They got married in June.",
+              "bucket": "fix",
+              "why": "Gifta sig always takes sig: De gifte sig i juni."
+            },
+            {
+              "fi": "Jag bor ensam i en etta.",
+              "en": "I live alone in a one-room flat.",
+              "bucket": "ok",
+              "why": "Bo ensam = live alone. Correct."
+            },
+            {
+              "fi": "Jag är ensam, jag har ingen flickvän.",
+              "en": "I am single, I do not have a girlfriend.",
+              "bucket": "fix",
+              "why": "Jag är ensam sounds like I am lonely. For no partner, say Jag är singel."
+            },
+            {
+              "fi": "Hon förlovade sig med Jonas i maj.",
+              "en": "She got engaged to Jonas in May.",
+              "bucket": "ok",
+              "why": "Förlova sig med någon: sig is there, and med names the partner."
+            },
+            {
+              "fi": "Mormor är min pappas mamma.",
+              "en": "My father's mother is my grandmother.",
+              "bucket": "fix",
+              "why": "Your father's mother is farmor: far = father. Mormor is your mother's mother."
+            },
+            {
+              "fi": "De har varit gifta sedan 2019.",
+              "en": "They have been married since 2019.",
+              "bucket": "ok",
+              "why": "Har varit + sedan + a point in time, as in Lecture 17."
+            },
+            {
+              "fi": "Han tar hand av sin mormor.",
+              "en": "He takes care of his grandmother.",
+              "bucket": "fix",
+              "why": "The fixed chunk is ta hand om: Han tar hand om sin mormor (Lecture 15: sin for his own)."
+            }
+          ],
+          "summary": "Sig with gifta, förlova and skilja; singel for no partner; mor and far tell you which side of the family."
+        }
+      ]
+    },
+    {
+      "title": "Partikelverb · komma ihåg, flytta ihop, hälsa på",
+      "kind": "rule",
+      "body": [
+        "A particle verb is a verb plus a small word, the particle, that together get a new meaning. Komma = come, but komma ihåg = remember. You already know tycka om (Lecture 9), se ut and hålla med (Lecture 12).",
+        "Säg det lilla ordet med betoning: komma iHÅG, flytta iHOP, hälsa PÅ. (The stress is on the small word.)",
+        "Inte står efter verbet, före det lilla ordet: Jag kommer inte ihåg. (The same place as in Jag håller inte med, Lecture 12.)",
+        "Flytta in = move into a home. Flytta ut = move out. Flytta ihop = move in together with someone.",
+        "Hälsa PÅ någon = visit someone. HÄLSA på någon, with the stress on hälsa, = greet someone. Mikko hälsar! = Mikko says hi.",
+        "Bjuda på = treat someone to food or drink: Jag bjuder på kaffe. Bjuda in = invite: Tack för att du bjöd in mig. Ta hand om = take care of (Lecture 15). Få in = get in stock: När får ni in den igen?"
+      ],
+      "examples": [
+        {
+          "fi": "Förlåt, jag kommer inte ihåg ditt efternamn.",
+          "en": "Sorry, I do not remember your surname.",
+          "note": "Inte before ihåg."
+        },
+        {
+          "fi": "Elin och Mikko flyttade ihop för tre år sedan.",
+          "en": "Elin and Mikko moved in together three years ago.",
+          "note": "Ihop = together."
+        },
+        {
+          "fi": "Alex flyttar in i sin nya lägenhet i slutet av juli.",
+          "en": "Alex moves into his new flat at the end of July.",
+          "note": "Flytta in i + a home."
+        },
+        {
+          "fi": "På lördag hälsar jag på en vän i Åbo.",
+          "en": "On Saturday I am visiting a friend in Turku.",
+          "note": "Stress på: visit."
+        },
+        {
+          "fi": "Mikko hälsar!",
+          "en": "Mikko says hi!",
+          "note": "No particle: hälsa = greet."
+        },
+        {
+          "fi": "Vem tar hand om din katt när du reser?",
+          "en": "Who takes care of your cat when you travel?",
+          "note": "Ta hand om someone or something."
+        },
+        {
+          "fi": "Kom ihåg att köpa mjölk!",
+          "en": "Remember to buy milk!",
+          "note": "Komma ihåg att + a verb."
+        },
+        {
+          "fi": "När får ni in den igen?",
+          "en": "When will you have it in stock again?",
+          "note": "Få in: shop language for your email."
+        }
+      ],
+      "memoryTip": "Stress the small word, and put inte in front of it: Jag kommer inte iHÅG.",
+      "tryIt": "Say: Jag kommer inte ihåg när ni flyttade hit. Then answer the same question about your own home: Jag flyttade hit för … sedan.",
+      "activity": {
+        "type": "sort",
+        "label": "Vilket litet ord?",
+        "title": "Give each verb its particle",
+        "instructions": "Read the meaning, then choose the small word that completes the verb. Say the whole line with the stress on the small word.",
+        "buckets": [
+          {
+            "id": "ihag",
+            "label": "ihåg",
+            "hint": "komma ihåg = remember"
+          },
+          {
+            "id": "ihop",
+            "label": "ihop",
+            "hint": "flytta ihop = move in together"
+          },
+          {
+            "id": "in",
+            "label": "in",
+            "hint": "into a place"
+          },
+          {
+            "id": "pa",
+            "label": "på",
+            "hint": "hälsa på, bjuda på"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Förlåt, jag kommer inte ___ vad du heter.",
+            "en": "Sorry, I do not remember your name.",
+            "bucket": "ihag",
+            "why": "Komma ihåg = remember. Inte stands before the particle."
+          },
+          {
+            "fi": "Kan du komma ___ att köpa bröd?",
+            "en": "Can you remember to buy bread?",
+            "bucket": "ihag",
+            "why": "Komma ihåg att + a verb = remember to do something."
+          },
+          {
+            "fi": "Två kompisar vill flytta ___ och dela en lägenhet.",
+            "en": "Two friends want to move in together and share a flat.",
+            "bucket": "ihop",
+            "why": "Flytta ihop = start living together."
+          },
+          {
+            "fi": "Elin och Mikko flyttade ___ när de hade varit tillsammans i två år.",
+            "en": "Elin and Mikko moved in together when they had been a couple for two years.",
+            "bucket": "ihop",
+            "why": "Two people who start sharing a home: flytta ihop."
+          },
+          {
+            "fi": "Kom ___ och sätt dig i soffan!",
+            "en": "Come in and sit down on the sofa!",
+            "bucket": "in",
+            "why": "Komma in = come in, into the room."
+          },
+          {
+            "fi": "Alex får flytta ___ i slutet av juli.",
+            "en": "Alex can move in at the end of July.",
+            "bucket": "in",
+            "why": "Flytta in = move into a home."
+          },
+          {
+            "fi": "Kom och hälsa ___ oss snart igen!",
+            "en": "Come and visit us again soon!",
+            "bucket": "pa",
+            "why": "Hälsa på = visit. The stress is on på."
+          },
+          {
+            "fi": "I dag bjuder jag ___ kaffe och bulle.",
+            "en": "Today I am treating you to coffee and a bun.",
+            "bucket": "pa",
+            "why": "Bjuda på = treat someone to food or drink."
+          }
+        ],
+        "summary": "The small word changes the meaning: komma ihåg, flytta ihop, flytta in, hälsa på. Stress it, and put inte before it."
+      }
+    },
+    {
+      "title": "Hur ser ditt hem ut? · size, rooms and could be better",
+      "kind": "scene",
+      "body": [
+        "Hur stor är lägenheten? Den är 48 kvadratmeter. (Den, because lägenhet is an en-word, Lecture 2. Write 48 m², say fyrtioåtta kvadratmeter.)",
+        "En etta, en tvåa, en trea (Lecture 21): the number of rooms, plus a kitchen. Det är en tvåa = två rum och kök. (Finnish ads write 2h+k.)",
+        "Det finns ett sovrum, ett vardagsrum, ett kök och ett badrum. Många lägenheter i Finland har också en bastu, en balkong och ett förråd i källaren.",
+        "Något bra: Det bästa är att … / Jag gillar att … Något som kunde vara bättre: Köket skulle kunna vara större. (Skulle kunna vara = could be: kinder than Köket är för litet.)",
+        "The conditional is the 'would' form: skulle + a verb in its base form. Use it for polite wishes and for things that are not real: Jag skulle vilja ha en balkong. Det vore skönt med en balkong (vore = skulle vara). In Lecture 13 skulle reported a past plan; here it means would.",
+        "När flyttade du in? Jag flyttade in för två år sedan. Hur länge har du bott där? Jag har bott där i två år. (För … sedan = ago, with a past verb; i två år with har, Lecture 17.)",
+        "Ja eller jag? In speech jag often sounds like ja, but write them apart: Ja, den är fin. (Yes, it is nice.)"
+      ],
+      "examples": [
+        {
+          "fi": "Lägenheten är 48 kvadratmeter. Det är en tvåa.",
+          "en": "The flat is 48 square metres. It is a two-room flat.",
+          "note": "Det är presents the flat; den är describes it."
+        },
+        {
+          "fi": "Det finns ett sovrum, ett vardagsrum, ett litet kök och ett badrum med bastu.",
+          "en": "There is a bedroom, a living room, a small kitchen and a bathroom with a sauna.",
+          "note": "Det finns + the rooms."
+        },
+        {
+          "fi": "Det bästa är att den ligger nära metron.",
+          "en": "The best thing is that it is close to the metro.",
+          "note": "Det bästa är att + a full sentence."
+        },
+        {
+          "fi": "Köket skulle kunna vara större.",
+          "en": "The kitchen could be bigger.",
+          "note": "Skulle + kunna + vara."
+        },
+        {
+          "fi": "Jag skulle gärna vilja ha en balkong.",
+          "en": "I would really like to have a balcony.",
+          "note": "A polite wish."
+        },
+        {
+          "fi": "Den enda nackdelen är att man inte får ha husdjur.",
+          "en": "The only drawback is that you are not allowed to have pets.",
+          "note": "After att: inte before får (Lecture 19)."
+        },
+        {
+          "fi": "Jag flyttade in för ett och ett halvt år sedan.",
+          "en": "I moved in a year and a half ago.",
+          "note": "För … sedan + flyttade."
+        },
+        {
+          "fi": "Jag är ganska nöjd, men det är lite trångt.",
+          "en": "I am fairly happy with it, but it is a bit cramped.",
+          "note": "Nöjd med = satisfied with."
+        }
+      ],
+      "memoryTip": "Size → rooms → best thing → could be better. Skulle kunna vara makes criticism polite.",
+      "tryIt": "Describe your own home in four lines: the size, the rooms, the best thing and one thing that skulle kunna vara bättre.",
+      "activity": {
+        "type": "question-gap",
+        "label": "Fråga Alex",
+        "title": "Ask Alex the right questions about his new flat",
+        "instructions": "Each fact on the card is hidden. Choose the question that would really get it: the right question word and the verb in second place. Alex answers aloud.",
+        "card": {
+          "title": "Alex's new flat",
+          "subtitle": "A two-room flat in Vallgård. Ask Alex what it is like."
+        },
+        "answerer": "Alex",
+        "gaps": [
+          {
+            "about": "The flat",
+            "field": "Size",
+            "options": [
+              "Hur stor är den?",
+              "Hur mycket stor är den?",
+              "Hur stor den är?"
+            ],
+            "answer": "Hur stor är den?",
+            "reply": {
+              "fi": "Den är 51 kvadratmeter.",
+              "en": "It is 51 square metres."
+            },
+            "why": "Hur stor asks about size, and the verb är comes right after it. Hur mycket asks about an amount or a price."
+          },
+          {
+            "about": "The flat",
+            "field": "Rooms",
+            "options": [
+              "Hur många rum har den?",
+              "Hur mycket rum har den?",
+              "Hur många rum den har?"
+            ],
+            "answer": "Hur många rum har den?",
+            "reply": {
+              "fi": "Två rum och kök: ett sovrum och ett vardagsrum.",
+              "en": "Two rooms and a kitchen: a bedroom and a living room."
+            },
+            "why": "Rooms can be counted, so hur många, and the verb har comes next."
+          },
+          {
+            "about": "The flat",
+            "field": "Where it is",
+            "options": [
+              "Var ligger den?",
+              "Vart ligger den?",
+              "Var den ligger?"
+            ],
+            "answer": "Var ligger den?",
+            "reply": {
+              "fi": "I Vallgård, nära spårvagnen. Det tar en kvart till centrum.",
+              "en": "In Vallgård, near the tram. It takes a quarter of an hour to the centre."
+            },
+            "why": "Var asks where something is; vart asks where to, a direction (Lecture 14)."
+          },
+          {
+            "about": "Moving in",
+            "field": "When",
+            "options": [
+              "När flyttar du in?",
+              "När du flyttar in?",
+              "Hur länge flyttar du in?"
+            ],
+            "answer": "När flyttar du in?",
+            "reply": {
+              "fi": "Hyresavtalet börjar den första augusti, men jag får nycklarna i slutet av juli.",
+              "en": "The lease starts on the first of August, but I get the keys at the end of July."
+            },
+            "why": "När asks for a time, and the verb flyttar comes straight after it."
+          },
+          {
+            "about": "The flat",
+            "field": "The best thing",
+            "options": [
+              "Vad är det bästa med den?",
+              "Vad det bästa är med den?",
+              "Vilken är bäst med den?"
+            ],
+            "answer": "Vad är det bästa med den?",
+            "reply": {
+              "fi": "Det finns ett cykelrum i källaren, och området är tyst.",
+              "en": "There is a bike room in the basement, and the area is quiet."
+            },
+            "why": "Vad + är + det bästa: the verb is second, and det bästa med … = the best thing about …"
+          },
+          {
+            "about": "The flat",
+            "field": "Could be better",
+            "options": [
+              "Vad skulle kunna vara bättre?",
+              "Vad skulle kan vara bättre?",
+              "Vad kunde skulle vara bättre?"
+            ],
+            "answer": "Vad skulle kunna vara bättre?",
+            "reply": {
+              "fi": "Köket skulle kunna vara större. Det är ganska trångt.",
+              "en": "The kitchen could be bigger. It is quite cramped."
+            },
+            "why": "After skulle the next verb is in its base form: kunna, then vara."
+          }
+        ],
+        "summary": "Hur stor, hur många, var, när, vad: each question word gets one fact, and the verb always comes next."
+      }
+    },
+    {
+      "title": "Svara jakande eller nekande · yes, no and a lift",
+      "kind": "register",
+      "body": [
+        "Svara jakande = say yes: Ja, gärna! / Javisst! / Självklart! / Absolut! (Javisst, självklart, förstås and naturligtvis all mean of course.)",
+        "Svara nekande = say no. In YKI, add a reason and a suggestion: Tack, men tyvärr kan jag inte på lördag. Jag jobbar då. Vad sägs om söndag? (Tyvärr takes first place, so the verb comes next, Lecture 3.)",
+        "Skäl: Jag har ett möte. / Min syster kommer på besök. / Jag är på affärsresa nästa vecka. Förslag: Kan vi ses … i stället? / Gärna en annan gång! (A short reason is enough, and in YKI you may invent one.)",
+        "Erbjuda skjuts: Jag kan skjutsa dig hem = Jag kan ge dig skjuts. (Skjutsa is the verb, skjuts the noun. Both start with the sj-sound.)",
+        "Hålla fast vid erbjudandet: Oroa dig inte. / Det är inget besvär. / Jag gör det gärna. (One of these, plus a reason, is enough to insist.)",
+        "Tack! – Det var så lite. or Ingen orsak. (Both mean it was nothing. Du är välkommen means you are welcome to come, so it is not a reply to thanks. Hindi कोई बात नहीं is closer to Det gör inget or Ingen fara.)"
+      ],
+      "examples": [
+        {
+          "fi": "Tack för inbjudan, men tyvärr kan jag inte på lördag.",
+          "en": "Thanks for the invitation, but unfortunately I cannot on Saturday.",
+          "note": "Tyvärr + kan + jag."
+        },
+        {
+          "fi": "Jag har ett möte på lördag. Vad sägs om söndag i stället?",
+          "en": "I have a meeting on Saturday. What about Sunday instead?",
+          "note": "A reason, then a suggestion."
+        },
+        {
+          "fi": "Nästa vecka är jag på affärsresa. Gärna en annan gång!",
+          "en": "Next week I am on a business trip. Another time, gladly!",
+          "note": "Gärna keeps the no friendly."
+        },
+        {
+          "fi": "Spårvagnen går inte så här sent, men jag kan skjutsa dig.",
+          "en": "The tram does not run this late, but I can drive you.",
+          "note": "A problem, then an offer."
+        },
+        {
+          "fi": "Oroa dig inte, det är inget besvär. Jag kör gärna.",
+          "en": "Do not worry, it is no trouble. I am happy to drive.",
+          "note": "Oroa dig inte: inte after dig."
+        },
+        {
+          "fi": "Tack för skjutsen! – Det var så lite.",
+          "en": "Thanks for the lift! – It was nothing.",
+          "note": "The standard reply to thanks."
+        }
+      ],
+      "memoryTip": "Nej + varför + förslag: Tyvärr kan jag inte … Jag … Vad sägs om …?",
+      "tryIt": "A friend asks: Kan du komma på lördag? Say no, give a reason and suggest another day, in three short lines.",
+      "activities": [
+        {
+          "type": "match",
+          "label": "Svara på repliken",
+          "title": "Match each line to a natural reply",
+          "instructions": "Your friend says something; choose the reply that does what a YKI cue would ask.",
+          "leftLabel": "Din vän säger",
+          "rightLabel": "Du svarar",
+          "pairs": [
+            {
+              "left": "Förlåt att jag är sen!",
+              "right": "Ingen fara, kom in!"
+            },
+            {
+              "left": "Kan du komma på lördag?",
+              "right": "Tyvärr inte, jag jobbar då. Vad sägs om söndag?"
+            },
+            {
+              "left": "Hur kommer jag hem härifrån?",
+              "right": "Jag kan skjutsa dig."
+            },
+            {
+              "left": "Det är för mycket besvär för dig.",
+              "right": "Oroa dig inte, jag gör det gärna."
+            },
+            {
+              "left": "Tack för en jättegod middag!",
+              "right": "Det var så lite. Kul att du kom!"
+            }
+          ],
+          "pattern": "Each reply does one job: welcome, refuse with a reason and a suggestion, offer, insist, or answer thanks.",
+          "sentence": "– {left} – {right}"
+        },
+        {
+          "type": "sort",
+          "label": "Klar att säga?",
+          "title": "Fix the slips from class",
+          "instructions": "These are typical slips from real class answers. Is the line ready to say, or does it need a fix? Say the correct version.",
+          "audio": false,
+          "buckets": [
+            {
+              "id": "ok",
+              "label": "Klar",
+              "hint": "Ready to say"
+            },
+            {
+              "id": "fix",
+              "label": "Fixa",
+              "hint": "Word order, a form or the wrong phrase"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Tyvärr jag kan inte på lördag.",
+              "en": "Unfortunately I cannot on Saturday.",
+              "bucket": "fix",
+              "why": "Tyvärr takes first place, so the verb comes next: Tyvärr kan jag inte på lördag (Lecture 3)."
+            },
+            {
+              "fi": "Vi träffade inte varandra på ett halvår.",
+              "en": "We have not seen each other for half a year.",
+              "bucket": "fix",
+              "why": "Up to now, so har: Vi har inte träffats på ett halvår. Träffas = meet each other; inte … på + a time, as in Lecture 17."
+            },
+            {
+              "fi": "Vill du ha din kaffe med mjölk?",
+              "en": "Do you want your coffee with milk?",
+              "bucket": "fix",
+              "why": "Kaffe is an ett-word: ditt kaffe (Lecture 15: din, ditt, dina)."
+            },
+            {
+              "fi": "Jag kan skjutsa dig till stan.",
+              "en": "I can drive you into town.",
+              "bucket": "ok",
+              "why": "Skjutsa någon + till + a place. Stan = staden, spoken."
+            },
+            {
+              "fi": "Jag flyttade hit sedan två år.",
+              "en": "I moved here two years ago.",
+              "bucket": "fix",
+              "why": "Ago is för … sedan: Jag flyttade hit för två år sedan (Lecture 17)."
+            },
+            {
+              "fi": "Oroa dig inte, jag kör gärna.",
+              "en": "Do not worry, I am happy to drive.",
+              "bucket": "ok",
+              "why": "Oroa dig inte: dig, then inte. Correct."
+            },
+            {
+              "fi": "Tack för hjälpen! – Du är välkommen.",
+              "en": "Thanks for the help! – You are welcome.",
+              "bucket": "fix",
+              "why": "Du är välkommen means you are welcome to come. Answer thanks with Det var så lite or Ingen orsak."
+            },
+            {
+              "fi": "Vad sägs om fredag i stället?",
+              "en": "What about Friday instead?",
+              "bucket": "ok",
+              "why": "Vad sägs om + a day: a friendly suggestion."
+            }
+          ],
+          "summary": "Verb next after tyvärr, har for up to now, ditt kaffe, för … sedan, and Det var så lite after thanks."
+        }
+      ]
+    },
+    {
+      "title": "Formellt mejl till en butik · ask about a product",
+      "kind": "rule",
+      "body": [
+        "Ärende: en kort rad om vad det gäller, till exempel Fråga om kaffemaskinen Nordbrygg 300. (The subject line.)",
+        "Inledning: Hej! Jag heter Alex Khan och skriver angående … (Your full name and the reason, in the first two lines, as in Lecture 23.)",
+        "Fakta: modellen, priset, ett datum, ett ordernummer. (Your teacher's rule: formal style loves numbers and facts.)",
+        "Frågor med ni: Finns den i lager? Vad kostar den? När får ni in den igen? Skulle ni kunna meddela mig? (Ni and er to a company; Skulle ni kunna … is the polite form from Lecture 14.)",
+        "Bakgrund för nivå 3: Eftersom jag flyttar den 1 augusti, skulle jag vilja veta … / Jag undrar om ni kan leverera den. (In a subordinate clause the subject comes before the verb, Lecture 19. After a whole subordinate clause at the start, the verb comes next: …, skulle jag vilja.)",
+        "Avslutning: Tack på förhand! / Jag ser fram emot ert svar. Med vänliga hälsningar + förnamn och efternamn + telefonnummer. (Never Kram, and never only your first name.)"
+      ],
+      "examples": [
+        {
+          "fi": "Ärende: Fråga om kaffemaskinen Nordbrygg 300",
+          "en": "Subject: Question about the Nordbrygg 300 coffee machine",
+          "note": "Short and concrete."
+        },
+        {
+          "fi": "Jag heter Alex Khan och skriver angående en kaffemaskin i er webbutik.",
+          "en": "My name is Alex Khan and I am writing about a coffee machine in your online shop.",
+          "note": "Full name + why."
+        },
+        {
+          "fi": "På er webbplats står det att modellen är tillfälligt slut.",
+          "en": "Your website says that the model is temporarily out of stock.",
+          "note": "A fact first."
+        },
+        {
+          "fi": "När får ni in den igen, och kostar den fortfarande 249 euro?",
+          "en": "When will you have it in stock again, and does it still cost 249 euros?",
+          "note": "Two questions, one number."
+        },
+        {
+          "fi": "Eftersom jag flyttar den 1 augusti, skulle jag vilja veta om ni kan leverera den till min nya adress.",
+          "en": "Because I am moving on 1 August, I would like to know if you can deliver it to my new address.",
+          "note": "Subordinate clause first, then skulle jag."
+        },
+        {
+          "fi": "Tack på förhand! Med vänliga hälsningar, Alex Khan, 040 123 4567",
+          "en": "Thank you in advance! Best regards, Alex Khan, 040 123 4567",
+          "note": "Full name and a phone number."
+        }
+      ],
+      "memoryTip": "Who and why → facts and numbers → questions with ni → thanks and your full name.",
+      "tryIt": "Write the first two lines of an email to a shop: your full name and what you are writing about, with the product's name.",
+      "activities": [
+        {
+          "type": "sort",
+          "label": "Var hör raden hemma?",
+          "title": "Put the lines of a formal email in their part",
+          "instructions": "These lines come from another customer's email about a winter jacket. Sort them into the three parts of a formal email.",
+          "buckets": [
+            {
+              "id": "start",
+              "label": "Inledning",
+              "hint": "Who you are and why you write"
+            },
+            {
+              "id": "body",
+              "label": "Huvuddel",
+              "hint": "Facts, background and questions"
+            },
+            {
+              "id": "end",
+              "label": "Avslutning",
+              "hint": "Thanks and your name"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Jag heter Ravi Kumar och skriver angående en vinterjacka i er webbutik.",
+              "en": "My name is Ravi Kumar and I am writing about a winter jacket in your online shop.",
+              "bucket": "start",
+              "why": "Full name and the reason: that is how a formal email opens."
+            },
+            {
+              "fi": "Jackan heter Polar och kostar 189 euro.",
+              "en": "The jacket is called Polar and costs 189 euros.",
+              "bucket": "body",
+              "why": "A fact with a number belongs in the main part."
+            },
+            {
+              "fi": "På webbplatsen står det att storlek M är slut.",
+              "en": "The website says that size M is sold out.",
+              "bucket": "body",
+              "why": "It explains the situation with a fact."
+            },
+            {
+              "fi": "Eftersom jag reser till Lappland i december, behöver jag jackan i tid.",
+              "en": "Because I am travelling to Lapland in December, I need the jacket in time.",
+              "bucket": "body",
+              "why": "Background with eftersom: the level 3 detail goes in the main part."
+            },
+            {
+              "fi": "Får ni in storlek M före november?",
+              "en": "Will you get size M in stock before November?",
+              "bucket": "body",
+              "why": "The question the customer needs answered."
+            },
+            {
+              "fi": "Jag vore tacksam för svar så snart som möjligt.",
+              "en": "I would be grateful for an answer as soon as possible.",
+              "bucket": "end",
+              "why": "What you want to happen next closes the email."
+            },
+            {
+              "fi": "Med vänliga hälsningar, Ravi Kumar",
+              "en": "Best regards, Ravi Kumar",
+              "bucket": "end",
+              "why": "A formal ending with first name and surname."
+            }
+          ],
+          "summary": "Inledning: who and why. Huvuddel: facts, background, questions. Avslutning: what you want next, thanks and your full name."
+        },
+        {
+          "type": "sort",
+          "label": "Formell eller informell?",
+          "title": "To a shop or to a friend?",
+          "instructions": "Would you write this line to a shop or to a friend? Lecture 23 compared the two styles.",
+          "buckets": [
+            {
+              "id": "formal",
+              "label": "Formell",
+              "hint": "To a shop, an office or a company"
+            },
+            {
+              "id": "informal",
+              "label": "Informell",
+              "hint": "To a friend"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Hej Elin!",
+              "en": "Hi Elin!",
+              "bucket": "informal",
+              "why": "A first name in the greeting: a friend."
+            },
+            {
+              "fi": "Skulle ni kunna skicka mer information?",
+              "en": "Could you send more information?",
+              "bucket": "formal",
+              "why": "Ni and Skulle ni kunna: polite and formal."
+            },
+            {
+              "fi": "Kram!",
+              "en": "Hugs!",
+              "bucket": "informal",
+              "why": "Only to people you know well."
+            },
+            {
+              "fi": "Tack på förhand.",
+              "en": "Thank you in advance.",
+              "bucket": "formal",
+              "why": "A typical closing line in a request to a company."
+            },
+            {
+              "fi": "Vad sägs om lördag?",
+              "en": "What about Saturday?",
+              "bucket": "informal",
+              "why": "Suggesting a day to meet: a friend."
+            },
+            {
+              "fi": "Jag skriver angående min beställning.",
+              "en": "I am writing regarding my order.",
+              "bucket": "formal",
+              "why": "Angående and a fact: formal style."
+            },
+            {
+              "fi": "Med vänliga hälsningar",
+              "en": "Best regards",
+              "bucket": "formal",
+              "why": "The standard formal ending, followed by your full name."
+            },
+            {
+              "fi": "Vi hörs!",
+              "en": "Talk soon!",
+              "bucket": "informal",
+              "why": "A friendly ending for someone you know."
+            }
+          ],
+          "summary": "To a shop: ni, angående, facts, Tack på förhand, Med vänliga hälsningar and your full name. To a friend: du, a first name, Kram or Vi hörs."
+        }
+      ]
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-24-g1",
+      "prompt": "Förlåt, jag kommer inte ___ när ni flyttade hit.",
+      "answers": [
+        "ihåg"
+      ],
+      "options": [
+        "ihåg",
+        "ihop",
+        "in"
+      ],
+      "hint": "Komma ___ = remember.",
+      "explanation": "Komma ihåg = remember. Inte stands after the verb and before the particle: Jag kommer inte ihåg."
+    },
+    {
+      "id": "sv-24-g2",
+      "prompt": "Elin and Mikko moved in together three years ago: Elin och Mikko flyttade ___ för tre år sedan.",
+      "answers": [
+        "ihop"
+      ],
+      "options": [
+        "ihop",
+        "ihåg",
+        "ut"
+      ],
+      "hint": "Together.",
+      "explanation": "Flytta ihop = start living together. Flytta ut = move out."
+    },
+    {
+      "id": "sv-24-g3",
+      "prompt": "I moved in a year ago: Jag flyttade in ___.",
+      "answers": [
+        "för ett år sedan"
+      ],
+      "options": [
+        "för ett år sedan",
+        "sedan ett år",
+        "i ett år"
+      ],
+      "hint": "Ago, with a past verb.",
+      "explanation": "Ago is för … sedan with a past verb (Lecture 17). I ett år tells how long and goes with har: Jag har bott här i ett år."
+    },
+    {
+      "id": "sv-24-g4",
+      "prompt": "Vill du ha ___ kaffe med mjölk?",
+      "answers": [
+        "ditt"
+      ],
+      "options": [
+        "ditt",
+        "din",
+        "dina"
+      ],
+      "hint": "Is kaffe an en-word or an ett-word?",
+      "explanation": "Kaffe is an ett-word (kaffet), so ditt, as in Lecture 15: din stol, ditt bord, dina böcker. The class notes said din kaffe."
+    },
+    {
+      "id": "sv-24-g5",
+      "prompt": "The kitchen could be bigger: Köket ___ större.",
+      "answers": [
+        "skulle kunna vara"
+      ],
+      "options": [
+        "skulle kunna vara",
+        "skulle kan vara",
+        "kunde skulle vara"
+      ],
+      "hint": "Skulle + base form + base form.",
+      "explanation": "After skulle the next verb is in its base form: skulle kunna vara. In Lecture 13 skulle reported a past plan; here it means would."
+    },
+    {
+      "id": "sv-24-g6",
+      "prompt": "Your friend invites you for Saturday. Choose the correct refusal.",
+      "answers": [
+        "Tyvärr kan jag inte på lördag."
+      ],
+      "options": [
+        "Tyvärr kan jag inte på lördag.",
+        "Tyvärr jag kan inte på lördag.",
+        "Tyvärr jag inte kan på lördag."
+      ],
+      "hint": "What comes right after tyvärr?",
+      "explanation": "Tyvärr takes first place, so the verb kan comes next, then jag, then inte (Lecture 3: Tyvärr kan jag inte komma i kväll)."
+    },
+    {
+      "id": "sv-24-g7",
+      "prompt": "Your friend says Jag tar en taxi, det är för mycket besvär för dig. You insist:",
+      "answers": [
+        "Oroa dig inte, jag skjutsar dig gärna."
+      ],
+      "options": [
+        "Oroa dig inte, jag skjutsar dig gärna.",
+        "Oroa inte dig, jag skjutsar dig gärna.",
+        "Inte oroa dig, jag skjutsar dig gärna."
+      ],
+      "hint": "Oroa dig is one unit; where does inte go?",
+      "explanation": "Oroa dig inte: the verb, then dig, then inte. English don't worry puts not first, but Swedish never starts a command with inte."
+    },
+    {
+      "id": "sv-24-g8",
+      "prompt": "Your friend asks: Hur stor är lägenheten? Answer:",
+      "answers": [
+        "Den är 48 kvadratmeter."
+      ],
+      "options": [
+        "Den är 48 kvadratmeter.",
+        "Hon är 48 kvadratmeter.",
+        "Den har 48 kvadratmeter stor."
+      ],
+      "hint": "A flat is a thing, and lägenhet is an en-word.",
+      "explanation": "Things are den or det, never han or hon (Lecture 2). Lägenhet is an en-word: Den är 48 kvadratmeter."
+    },
+    {
+      "id": "sv-24-g9",
+      "prompt": "Fix the word order: Jag kommer ihåg inte hans namn.",
+      "answers": [
+        "Jag kommer inte ihåg hans namn.",
+        "Jag kommer inte ihåg vad han heter."
+      ],
+      "hint": "Where does inte go in Jag håller inte med?",
+      "explanation": "Inte goes after the verb and before the particle: Jag kommer inte ihåg hans namn, like Jag håller inte med (Lecture 12)."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-24-c1",
+      "prompt": "Write in Swedish: “I moved in two years ago.”",
+      "answers": [
+        "Jag flyttade in för två år sedan.",
+        "Jag flyttade in för 2 år sedan.",
+        "Jag flyttade hit för två år sedan.",
+        "Jag flyttade hit för 2 år sedan.",
+        "För två år sedan flyttade jag in.",
+        "För två år sedan flyttade jag hit.",
+        "Jag flyttade in för två år sen.",
+        "Jag flyttade hit för två år sen."
+      ],
+      "hint": "För … sedan + a past verb.",
+      "explanation": "Model: Jag flyttade in för två år sedan. Ago is för … sedan with the past form flyttade (Lecture 17). Sedan två år is the English and Hindi word order, not Swedish."
+    },
+    {
+      "id": "sv-24-c2",
+      "prompt": "Write in Swedish: “Unfortunately I can't on Saturday.”",
+      "answers": [
+        "Tyvärr kan jag inte på lördag.",
+        "Jag kan tyvärr inte på lördag.",
+        "Tyvärr kan jag inte komma på lördag.",
+        "Jag kan tyvärr inte komma på lördag.",
+        "Tyvärr kan jag inte på lördagen.",
+        "Tyvärr kan jag inte i lördags."
+      ],
+      "hint": "Tyvärr first, then the verb.",
+      "explanation": "Model: Tyvärr kan jag inte på lördag. After tyvärr the verb comes next (Lecture 3). Jag kan tyvärr inte … is also right."
+    },
+    {
+      "id": "sv-24-c3",
+      "prompt": "Write the opening of a formal email: “My name is Alex Khan and I am writing regarding my order.”",
+      "answers": [
+        "Jag heter Alex Khan och skriver angående min beställning.",
+        "Jag heter Alex Khan och jag skriver angående min beställning.",
+        "Mitt namn är Alex Khan och jag skriver angående min beställning.",
+        "Jag heter Alex Khan och skriver om min beställning.",
+        "Jag heter Alex Khan och jag skriver om min beställning."
+      ],
+      "hint": "Jag heter … och skriver angående …",
+      "explanation": "Model: Jag heter Alex Khan och skriver angående min beställning. Full name and the reason in the first line, as in the formal email of Lecture 23."
+    },
+    {
+      "id": "sv-24-c4",
+      "prompt": "Which sentence means “The kitchen could be bigger”?",
+      "answers": [
+        "Köket skulle kunna vara större."
+      ],
+      "options": [
+        "Köket skulle kunna vara större.",
+        "Köket kan vara större.",
+        "Köket skulle kan vara större."
+      ],
+      "hint": "Could be = would be able to be.",
+      "explanation": "Skulle kunna vara = could be. Köket kan vara större means the kitchen can be bigger, a fact, not a wish. After skulle use the base form kunna, never kan."
+    },
+    {
+      "id": "sv-24-c5",
+      "prompt": "Your friend says Tack för skjutsen! You answer:",
+      "answers": [
+        "Det var så lite."
+      ],
+      "options": [
+        "Det var så lite.",
+        "Du är välkommen.",
+        "Det är lite."
+      ],
+      "hint": "It was nothing.",
+      "explanation": "Det var så lite = it was nothing. Du är välkommen is English you're welcome word for word, but in Swedish it means you are welcome to come."
+    },
+    {
+      "id": "sv-24-c6",
+      "prompt": "Write in Swedish: “I don't remember his name.”",
+      "answers": [
+        "Jag kommer inte ihåg hans namn.",
+        "Jag minns inte hans namn.",
+        "Jag kommer inte ihåg vad han heter.",
+        "Jag minns inte vad han heter."
+      ],
+      "hint": "Komma ihåg, with inte in the middle.",
+      "explanation": "Model: Jag kommer inte ihåg hans namn. Inte goes between the verb and the particle, as in Jag håller inte med (Lecture 12). Jag minns inte is also right."
+    }
+  ],
+  "assignment": {
+    "title": "Lecture 24 mission: Välkommen hem till mig",
+    "instructions": "CORE: A friend visits you for the first time. Welcome them, offer a drink, and describe your home: the size, the rooms, when you moved in, the best thing and one thing that could be better.\n\nWRITE: Send a formal email to a shop about a product you want: who you are, facts and numbers, three questions (in stock? price? back when?) and a polite ending (50–80 words).\n\nRETURN: Tomorrow, do the goodbye dialogue from memory: ask about plans, say no with tyvärr + a reason + a suggestion, and offer a lift.",
+    "model": "Hej, välkommen in! Häng jackan här. Vill du ha kaffe eller te? Det här är min lägenhet. Den är 36 kvadratmeter, alltså en etta med ett litet kök. Jag flyttade in för två år sedan, när jag började mitt nya jobb. Det bästa är att det är tyst här, och bussen stannar precis utanför. Men köket skulle kunna vara större, och jag skulle gärna vilja ha en bastu. Kom, sätt dig vid fönstret, där är utsikten finast."
+  },
+  "takeaways": [
+    "Describe a home: Den är … kvadratmeter. Det finns … Jag flyttade in för … sedan. Det bästa är att …, men … skulle kunna vara större.",
+    "Particle verbs: stress the small word and put inte before it: Jag kommer inte ihåg. Gifta sig, förlova sig and skilja sig always take sig.",
+    "Say no politely: Tyvärr kan jag inte + a reason + Vad sägs om …? A formal email: full name, facts and numbers, questions with ni, Tack på förhand."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Elin",
+      "fi": "Hej Alex! Kom in. Oj, du är alldeles blöt!",
+      "en": "Hi Alex! Come in. Oh, you are soaking wet!"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Hej! Förlåt att jag är sen. Det regnar hela tiden, och spårvagnen var försenad.",
+      "en": "Hi! Sorry I am late. It is raining all the time, and the tram was late."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Ingen fara, du skickade ju ett sms. Mikko lagar fortfarande maten. Vad vill du dricka?",
+      "en": "No problem, you sent a text after all. Mikko is still cooking. What would you like to drink?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "En kopp kaffe, tack. Vilken fin lägenhet ni har! Hur stor är den?",
+      "en": "A cup of coffee, please. What a nice flat you have! How big is it?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Den är 74 kvadratmeter. Vi har tre rum och kök: ett sovrum, ett vardagsrum och ett litet arbetsrum.",
+      "en": "It is 74 square metres. We have three rooms and a kitchen: a bedroom, a living room and a small study."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Förlåt, jag kommer inte ihåg. När flyttade ni hit?",
+      "en": "Sorry, I do not remember. When did you move here?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "För tre år sedan, när Mikko och jag flyttade ihop.",
+      "en": "Three years ago, when Mikko and I moved in together."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Och är ni nöjda med den?",
+      "en": "And are you happy with it?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Ja, den är ljus och ligger nära mitt jobb. Men badrummet skulle kunna vara större.",
+      "en": "Yes, it is bright and close to my work. But the bathroom could be bigger."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Jag har också nyheter. I onsdags skrev jag på ett hyresavtal för en tvåa i Vallgård!",
+      "en": "I have news too. On Wednesday I signed a lease for a two-room flat in Vallgård!"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Grattis! Från när gäller det?",
+      "en": "Congratulations! From when does it run?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Från den första augusti, men jag får nycklarna redan i slutet av juli. Den är 51 kvadratmeter, och i källaren finns ett cykelrum.",
+      "en": "From the first of August, but I get the keys already at the end of July. It is 51 square metres, and there is a bike room in the basement."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Perfekt! Då får du plats med både skrivbordet och cykeln.",
+      "en": "Perfect! Then you have room for both the desk and the bike."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Precis. Förresten, ert kaffe är jättegott. Vilken kaffemaskin har ni?",
+      "en": "Exactly. By the way, your coffee is really good. Which coffee machine do you have?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "En Nordbrygg 300. Vi köpte den i en butik i stan, men jag tror att den är slut just nu.",
+      "en": "A Nordbrygg 300. We bought it in a shop in town, but I think it is sold out right now."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Då skickar jag ett mejl till butiken och frågar när de får in den igen.",
+      "en": "Then I will send the shop an email and ask when they will have it in stock again."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Oj, är klockan redan elva? Tack för en jättegod middag! Nästa gång bjuder jag er på middag i Vallgård.",
+      "en": "Oh, is it already eleven? Thank you for a really good dinner! Next time I will treat you to dinner in Vallgård."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Gärna! Men det regnar fortfarande. Ta mitt paraply.",
+      "en": "We would love to! But it is still raining. Take my umbrella."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Är du säker? Behöver du det inte själv?",
+      "en": "Are you sure? Don't you need it yourself?"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Oroa dig inte, vi har två. Du kan ge tillbaka det nästa gång vi ses.",
+      "en": "Do not worry, we have two. You can give it back the next time we meet."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Tack, vad snällt av dig!",
+      "en": "Thanks, that is kind of you!"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Det var så lite. Kom och hälsa på snart igen!",
+      "en": "It was nothing. Come and visit again soon!"
+    }
+  ],
+  "resources": [
+    {
+      "label": "Teacher's link: the book's dialogue audio for theme 1 (Gimara on SoundCloud)",
+      "url": "https://soundcloud.com/gi-mara/sets/manniskan-och-omgivningen",
+      "description": "The book's own recordings for Människan och omgivningen (11 tracks). After the app's two dialogues, open your book at pages 12–15, play Dialog 1 and Dialog 2, and answer each cue in the pauses."
+    },
+    {
+      "label": "News homework: Yle Nyheter på lätt svenska, 19 February 2025 (Svenska Yle)",
+      "url": "https://arenan.yle.fi/poddar/1-73102281",
+      "description": "Classroom item 20, your teacher's first news listening (you met this episode in Lecture 20). This time listen for numbers, as a formal email needs them: write down every number you hear in news 1 and news 3, then say in Swedish what each one counts (butiker, anställda, dagar, fakulteter). Then open the text under the episode and check. Link checked 3 October 2026."
+    },
+    {
+      "label": "YKI practice site: Swedish, intermediate speaking (University of Jyväskylä)",
+      "url": "https://ykitesti.solki.jyu.fi/tutustu-testiin/svenska/mellanniva-talproduktion/",
+      "description": "Look at the two Samtal tasks: the cue for each turn is in brackets, and each turn has 10–25 seconds. This lecture's dialogues give you half as much time again."
+    },
+    {
+      "label": "Svenska Akademiens ordböcker (svenska.se)",
+      "url": "https://svenska.se/",
+      "description": "Look up skjutsa, sambo or angående, then use the word in a sentence of your own."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-24-word-1",
+        "fi": "en sambo",
+        "en": "a partner you live with (not married)",
+        "example": "Elin och Mikko är sambor.",
+        "translation": "Elin and Mikko live together.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-2",
+        "fi": "flytta ihop",
+        "en": "move in together",
+        "example": "De flyttade ihop för tre år sedan.",
+        "translation": "They moved in together three years ago.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-3",
+        "fi": "gifta sig",
+        "en": "get married",
+        "example": "De ska gifta sig i augusti.",
+        "translation": "They are getting married in August.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-4",
+        "fi": "förlova sig",
+        "en": "get engaged",
+        "example": "Min kollega förlovade sig i maj.",
+        "translation": "My colleague got engaged in May.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-5",
+        "fi": "skilja sig, skild",
+        "en": "get divorced, divorced",
+        "example": "Hon är skild och har två vuxna barn.",
+        "translation": "She is divorced and has two grown-up children.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-6",
+        "fi": "en ensamstående förälder",
+        "en": "a single parent",
+        "example": "Han är ensamstående förälder till en son.",
+        "translation": "He is a single parent to a son.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-7",
+        "fi": "en kärnfamilj",
+        "en": "a nuclear family",
+        "example": "En kärnfamilj är föräldrar och deras barn.",
+        "translation": "A nuclear family is parents and their children.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-8",
+        "fi": "morföräldrar",
+        "en": "grandparents on your mother's side",
+        "example": "Mina morföräldrar bor på landet.",
+        "translation": "My mother's parents live in the countryside.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-9",
+        "fi": "farföräldrar",
+        "en": "grandparents on your father's side",
+        "example": "Hans farföräldrar kommer från Vasa.",
+        "translation": "His father's parents come from Vaasa.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-10",
+        "fi": "en svärmor",
+        "en": "a mother-in-law",
+        "example": "Hennes svärmor lagar fantastisk mat.",
+        "translation": "Her mother-in-law cooks fantastic food.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-11",
+        "fi": "singel",
+        "en": "single (no partner)",
+        "example": "Han är singel och trivs med det.",
+        "translation": "He is single and happy with it.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-12",
+        "fi": "ensam",
+        "en": "alone; lonely",
+        "example": "Jag bor ensam, men jag är sällan ensam.",
+        "translation": "I live alone, but I am rarely lonely.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-13",
+        "fi": "ett bröllop",
+        "en": "a wedding",
+        "example": "Bröllopet är på en gård utanför Borgå.",
+        "translation": "The wedding is at a farm outside Porvoo.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-14",
+        "fi": "på tumanhand",
+        "en": "just the two of you",
+        "example": "De åt middag på tumanhand.",
+        "translation": "They had dinner just the two of them.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-15",
+        "fi": "komma ihåg",
+        "en": "remember",
+        "example": "Jag kommer inte ihåg hans namn.",
+        "translation": "I do not remember his name.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-16",
+        "fi": "ta hand om",
+        "en": "take care of",
+        "example": "Vem tar hand om katten när ni reser?",
+        "translation": "Who takes care of the cat when you travel?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-17",
+        "fi": "hälsa på",
+        "en": "visit (someone)",
+        "example": "Kom och hälsa på snart igen!",
+        "translation": "Come and visit again soon!",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-18",
+        "fi": "bjuda på",
+        "en": "treat someone to, offer (food or drink)",
+        "example": "I dag bjuder jag på kaffe.",
+        "translation": "Today the coffee is on me.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-19",
+        "fi": "en inbjudan",
+        "en": "an invitation",
+        "example": "Tack för inbjudan!",
+        "translation": "Thank you for the invitation!",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-20",
+        "fi": "en kvadratmeter",
+        "en": "a square metre",
+        "example": "Lägenheten är 51 kvadratmeter.",
+        "translation": "The flat is 51 square metres.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-21",
+        "fi": "ett hyresavtal",
+        "en": "a lease (also ett hyreskontrakt)",
+        "example": "Jag skrev på hyresavtalet i onsdags.",
+        "translation": "I signed the lease on Wednesday.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-22",
+        "fi": "nöjd med",
+        "en": "satisfied with, happy with",
+        "example": "Är du nöjd med lägenheten?",
+        "translation": "Are you happy with the flat?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-23",
+        "fi": "trång",
+        "en": "cramped, narrow",
+        "example": "Köket är lite trångt.",
+        "translation": "The kitchen is a bit cramped.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-24",
+        "fi": "skulle kunna vara",
+        "en": "could be",
+        "example": "Badrummet skulle kunna vara större.",
+        "translation": "The bathroom could be bigger.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-25",
+        "fi": "för … sedan",
+        "en": "… ago",
+        "example": "Jag flyttade hit för två år sedan.",
+        "translation": "I moved here two years ago.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-26",
+        "fi": "tyvärr",
+        "en": "unfortunately",
+        "example": "Tyvärr kan jag inte på lördag.",
+        "translation": "Unfortunately I cannot on Saturday.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-27",
+        "fi": "Vad sägs om …?",
+        "en": "What about …?",
+        "example": "Vad sägs om söndag i stället?",
+        "translation": "What about Sunday instead?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-28",
+        "fi": "en lämplig tidpunkt",
+        "en": "a suitable time",
+        "example": "Lördag är ingen lämplig tidpunkt för mig.",
+        "translation": "Saturday is not a suitable time for me.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-29",
+        "fi": "skjutsa",
+        "en": "drive someone, give someone a lift",
+        "example": "Jag kan skjutsa dig hem.",
+        "translation": "I can drive you home.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-30",
+        "fi": "skjuts",
+        "en": "a lift, a ride",
+        "example": "Vill du ha skjuts till stationen?",
+        "translation": "Do you want a lift to the station?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-31",
+        "fi": "ett besvär",
+        "en": "trouble, bother",
+        "example": "Det är inget besvär alls.",
+        "translation": "It is no trouble at all.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-32",
+        "fi": "oroa sig",
+        "en": "worry",
+        "example": "Oroa dig inte, jag kör gärna.",
+        "translation": "Do not worry, I am happy to drive.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-33",
+        "fi": "Det var så lite.",
+        "en": "It was nothing. (reply to thanks)",
+        "example": "Tack för hjälpen! – Det var så lite.",
+        "translation": "Thanks for the help! – It was nothing.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-24-word-34",
+        "fi": "angående",
+        "en": "regarding, about (formal)",
+        "example": "Jag skriver angående min beställning.",
+        "translation": "I am writing regarding my order.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-35",
+        "fi": "i lager",
+        "en": "in stock",
+        "example": "Finns jackan i lager?",
+        "translation": "Is the jacket in stock?",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-36",
+        "fi": "få in",
+        "en": "get in (stock)",
+        "example": "När får ni in den igen?",
+        "translation": "When will you have it in stock again?",
+        "level": "B1"
+      },
+      {
+        "id": "sv-24-word-37",
+        "fi": "Tack på förhand.",
+        "en": "Thank you in advance.",
+        "example": "Tack på förhand för ert svar.",
+        "translation": "Thank you in advance for your answer.",
+        "level": "B1"
+      }
+    ],
+    "pronunciation": {
+      "text": "Jag kan skjutsa dig hem. Tack för skjutsen! Skicka ett sms när du är hemma.",
+      "tip": "Skj in skjuts and skjutsa, and sk before i in skicka, give the sj-sound, as in sju (Lecture 1). In Finland-Swedish it is close to English sh (श); the app's Sweden voices make a breathier, rounder sound. Both are understood. Never say s + k here: skicka is not s-kicka."
+    },
+    "reading_passage": {
+      "text": "Att vara gäst – och värd – i Finland\n\nHar du blivit hembjuden till finländare? Då är det bra att känna till några vanor. Den första är enkel: ta av dig skorna i hallen. Nästan alla gör det, både på vintern och på sommaren. Om du är osäker kan du fråga: ”Ska jag ta av mig skorna?”\n\nKom gärna i tid. Finländare är ofta punktliga, och maten kan vara färdig när du kommer. Om du blir sen, skicka ett sms till värden. Det räcker med en kort rad: ”Förlåt, bussen är försenad. Jag är där om tio minuter.”\n\nMånga gäster tar med sig något litet, till exempel blommor, choklad eller något gott till kaffet. Det behöver inte vara dyrt. Värden bjuder ofta på kaffe efter maten, och det är inte konstigt. Finländarna dricker mest kaffe i världen per person.\n\nUnder kvällen visar värden kanske lägenheten. Då är det artigt att säga något positivt: ”Vilket ljust kök!” eller ”Vad mysigt ni har det!” Det är däremot inte så vanligt att fråga vad lägenheten kostar.\n\nNär det är dags att gå, tackar du för maten och för kvällen. Kanske erbjuder värden skjuts eller följer dig till hållplatsen. Säg gärna ja om det känns bra, men det är också helt okej att ta bussen eller en taxi.\n\nNästa gång ni träffas säger du ”Tack för senast!”. Det betyder ungefär ”tack för förra gången”, och det är ett vanligt och vänligt sätt att börja ett samtal. Värden svarar ofta: ”Tack själv!”",
+      "gist": {
+        "prompt": "What is the text mainly about?",
+        "options": [
+          "Habits that help when you visit someone at home in Finland",
+          "How to find and rent a flat in Finland",
+          "Why Finns drink so much coffee"
+        ],
+        "answer": 0,
+        "explanation": "The text goes through a home visit from the shoes in the hall to Tack för senast the next time you meet. Coffee is only one detail."
+      },
+      "detail": {
+        "prompt": "When do you say Tack för senast?",
+        "options": [
+          "The next time you meet the person who invited you",
+          "When you arrive at the door",
+          "When the host offers you coffee"
+        ],
+        "answer": 0,
+        "explanation": "Nästa gång ni träffas säger du ”Tack för senast!”: it thanks the host for the last time you met."
+      }
+    },
+    "reading": {
+      "text": "NORDBRYGG 300 – HELAUTOMATISK KAFFEMASKIN\n\nPris: 249 euro (ordinarie pris 299 euro)\nTillfälligt slut i webbutiken.\n\nMaskinen maler bönorna precis före bryggningen och gör kaffe, espresso och cappuccino. Vattentanken rymmer 1,8 liter. Två års garanti.\n\nLeverans: 7,90 euro, gratis för beställningar över 300 euro. Du kan också hämta varan i vår butik i centrum utan kostnad.\n\nVill du veta när produkten finns i lager igen? Skicka en fråga till vår kundtjänst via kontaktformuläret. Vi svarar inom två vardagar.",
+      "question": "What should a customer do to find out when the machine is back in stock?",
+      "options": [
+        "Send a question to customer service",
+        "Phone the shop in the centre",
+        "Order it now and wait for delivery"
+      ],
+      "answer": 0,
+      "explanation": "Vill du veta när produkten finns i lager igen? Skicka en fråga till vår kundtjänst. That is why Alex writes an email: the page gives no date."
+    },
+    "listening": {
+      "text": "Hej Alex, det här är Sanna Lindqvist från fastighetsbolaget. Jag ringer om din nya lägenhet i Vallgård. Först vill jag tacka för att du skrev på hyresavtalet så snabbt. Avtalet börjar den första augusti, men den förra hyresgästen flyttar redan i mitten av juli. Därför kan du hämta nycklarna tidigare, från och med torsdag den trettionde juli. Vårt kontor är öppet från klockan nio till fyra, och på torsdagar till klockan sex. Ta med ett id-kort, till exempel pass eller körkort.\n\nInnan du får nycklarna behöver vi två saker. För det första måste du ha en hemförsäkring som gäller från den dag du flyttar in. För det andra ska du göra ett eget elavtal. Du kan välja vilket elbolag du vill. Skicka gärna en kopia av försäkringen till mig per e-post.\n\nSedan lite praktisk information. Lägenheten målas i juli, så det kan lukta lite färg de första dagarna. Cykelrummet ligger i källaren, och där finns också ett förråd till varje lägenhet. Ditt förråd har samma nummer som lägenheten, alltså tjugofyra. Bastun bokar du på en lista bredvid hissen. Om du kommer med en flyttbil kan den stå på gården i två timmar. Hissen är tyvärr ganska liten, så stora möbler måste bäras i trappan.\n\nOch kom ihåg att göra en flyttanmälan när du flyttar. Det gör du på nätet, och då får posten också din nya adress.\n\nOm du har frågor kan du ringa mig på nummer 09 123 4567 eller skicka ett mejl. Ha en fin sommar, och välkommen till Vallgård!",
+      "question": "From when can Alex collect the keys?",
+      "options": [
+        "From Thursday 30 July",
+        "On 1 August, when the lease starts",
+        "In the middle of July, when the old tenant moves"
+      ],
+      "answer": 0,
+      "explanation": "Du kan hämta nycklarna tidigare, från och med torsdag den trettionde juli. The lease starts on 1 August, and the old tenant leaves in the middle of July, but the keys come on the 30th."
+    },
+    "speaking": {
+      "prompt": "En vän hälsar på hos dig för första gången. Välkomna vännen och berätta om ditt hem: Hur stort är det? Vilka rum finns det? När flyttade du in? Vad är det bästa? Vad skulle kunna vara bättre? (A friend visits you for the first time. Welcome them and tell about your home; the questions can guide you. Speak for about a minute, as in a YKI berätta task.)",
+      "help": "Välkommen in! · Vill du ha något att dricka? · Lägenheten är … kvadratmeter. · Det är en etta / tvåa / trea. · Det finns … · Jag flyttade in för … sedan. · Det bästa är att … · Men … skulle kunna vara större. · Jag skulle gärna vilja ha …",
+      "model": "Välkommen in! Vill du ha något att dricka? Jag har kaffe och te. Det här är min lägenhet. Den är 48 kvadratmeter, alltså en tvåa. Det finns ett sovrum, ett vardagsrum, ett litet kök och ett badrum med bastu. Jag flyttade in för ett och ett halvt år sedan. Det bästa är att lägenheten är ljus och ligger nära metron. Men köket skulle kunna vara större, och jag skulle gärna vilja ha en balkong."
+    },
+    "writing": {
+      "prompt": "Skriv ett formellt mejl till en butik och fråga om en produkt: finns den i lager, vad kostar den och när kommer den tillbaka? (Write a formal email to a shop about a product: is it in stock, what does it cost, and when will it be back?)",
+      "situation": "Du har druckit gott kaffe hemma hos en vän och vill köpa samma kaffemaskin, Nordbrygg 300. På butikens webbplats står det: ”Tillfälligt slut”. Skriv ett mejl till butikens kundtjänst. Kom ihåg att inleda och avsluta meddelandet på lämpligt sätt. (You had good coffee at a friend's home and want the same coffee machine. The shop's website says it is temporarily out of stock. Write to customer service. This is your teacher's Classroom item 19, topic 1, and a YKI formal message.)",
+      "points": [
+        "Hälsa formellt och presentera dig med förnamn och efternamn. (Greet formally and give your first name and surname.)",
+        "Säg varför du skriver: vilken produkt det gäller, med namn eller modellnummer. (Say why you write: name the product or its model.)",
+        "Ställ frågor om tre saker: finns den i lager, vad kostar den och när får ni in den igen? (Ask about three things: in stock, price, back when.)",
+        "Ge bakgrund med eftersom eller när, och minst ett faktum: ett datum, ett pris eller en siffra. (Give background with eftersom or när, and at least one fact or number.)",
+        "Skriv ni och er, och avsluta med Tack på förhand, Med vänliga hälsningar och ditt fullständiga namn. (Use ni and er, and end politely with your full name.)"
+      ],
+      "wordRange": [
+        50,
+        80
+      ],
+      "help": "Ärende: Fråga om … · Hej! · Jag heter … och skriver angående … · På er webbplats står det att … · Finns den i lager? · Vad kostar den? · När får ni in den igen? · Eftersom jag …, skulle jag vilja veta om … · Skulle ni kunna …? · Tack på förhand! · Med vänliga hälsningar + förnamn, efternamn och telefonnummer",
+      "model": "Ärende: Fråga om kaffemaskinen Nordbrygg 300\n\nHej!\n\nJag heter Alex Khan och skriver angående kaffemaskinen Nordbrygg 300. På er webbplats står det att den är tillfälligt slut. Finns den kanske i er butik i centrum? När får ni in den igen, och kostar den fortfarande 249 euro? Eftersom jag flyttar till en ny lägenhet den 1 augusti, skulle jag också vilja veta om ni kan leverera den dit.\n\nTack på förhand!\n\nMed vänliga hälsningar\nAlex Khan\n040 123 4567"
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "Describe your home to a visiting friend for about a minute: the size, the rooms, when you moved in, one good thing and one thing that could be better. Then write a formal email to a shop about a product (50–80 words).",
+    "transferPrompt": "Nu ska vännen gå hem. Fråga om hens planer, säg nej till en dag som inte passar (tyvärr + varför + ett förslag) och erbjud skjuts. (Now your friend is leaving. Ask about their plans, say no to a day that does not suit you with a reason and a suggestion, and offer a lift.)",
+    "returnPrompt": "Without looking, describe your home in four lines: the size, the rooms, the best thing and one thing that could be better.",
+    "successChecks": [
+      "Give the size with kvadratmeter and name the rooms with Det finns …",
+      "Say when you moved in with för … sedan and the past form flyttade.",
+      "Name one good thing: Det bästa är att … or Jag gillar att …",
+      "Name one thing that could be better with skulle kunna vara or Jag skulle vilja ha …",
+      "Sound like a host: welcome your friend, offer a drink and use du."
+    ],
+    "requiredSkills": [
+      "speaking",
+      "writing"
+    ]
+  },
+  "story": {
+    "object": "Alex's wet jacket in the hall and the coffee machine on the kitchen counter"
+  }
+}
