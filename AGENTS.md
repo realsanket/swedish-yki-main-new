@@ -115,6 +115,7 @@ From `site/` with Node 22.13+:
 ```bash
 npm install
 npm run dev              # http://localhost:3000 (custom server.mjs, needed for live voice)
+npm run fresh            # after git pull: rebuild the lecture index, clear .next, then start dev
 npm run content:index    # after editing any lecture JSON
 npm run check            # content validator + typecheck + lint + progress tests
 npm run build            # production build (stop and restart `npm run dev` afterwards;

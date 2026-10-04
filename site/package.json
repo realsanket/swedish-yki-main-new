@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "node server.mjs",
+    "fresh": "npm run content:index && node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\" && npm run dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",

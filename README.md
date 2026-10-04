@@ -19,6 +19,7 @@ cd site
 npm install
 cp .env.example .env    # add the Azure key for voices, live coach and scoring
 npm run dev             # http://localhost:3000
+npm run fresh           # after git pull: rebuild the lecture list, clear the cache, start
 ```
 
 Checks before pushing:
