@@ -890,7 +890,7 @@
       "body": [
         "Bifogad = attached. It works like an adjective (a participle), so it agrees with the noun: en bild är bifogad, ett kvitto är bifogat, två foton är bifogade. Before a definite noun: det bifogade kvittot. Fixed phrase: Se bifogad fil.",
         "Or say it with the verb: Jag bifogar kvittot. Kvittot bifogas (s-form, Lecture 27).",
-        "Inte bara … utan också = not only … but also. Paketet kom inte bara sent, utan det var också trasigt. Use utan, not men. In a subordinate clause, inte bara comes before the verb: ett paket som inte bara kom sent utan också var trasigt (the teacher's model needs this order).",
+        "Inte bara … utan också = not only … but also. Paketet kom inte bara sent, utan det var också trasigt. Use utan, not men. In a subordinate clause, the safe place for inte bara is before the verb: ett paket som inte bara kom sent utan också var trasigt.",
         "Strong but polite words: Jag är besviken på kvaliteten. Produkten uppfyller inte mina förväntningar. Jag vill kräva ersättning för … (demand compensation). Jag känner mig lurad (tricked) is very strong; use it only when it is true.",
         "Request words: en återbetalning (a refund), byta (exchange), ersätta (replace), avbryta beställningen (cancel the order), häva köpet (cancel the purchase)."
       ],
@@ -966,17 +966,17 @@
           "buckets": [
             {
               "id": "ad",
-              "label": "bifogad",
+              "label": "En-word: bifogad",
               "hint": "an en-word"
             },
             {
               "id": "at",
-              "label": "bifogat",
+              "label": "Ett-word: bifogat",
               "hint": "an ett-word"
             },
             {
               "id": "ade",
-              "label": "bifogade",
+              "label": "Plural or definite: bifogade",
               "hint": "plural or definite"
             }
           ],
@@ -1202,11 +1202,11 @@
       ],
       "options": [
         "Jag fick ett paket som inte bara kom sent utan också var trasigt.",
-        "Jag fick ett paket som kom inte bara sent utan också trasigt.",
+        "Jag fick ett paket som inte bara kom sent utan också var trasig.",
         "Jag fick ett paket som inte bara kom sent men också var trasigt."
       ],
       "hint": "A som-clause is a subordinate clause, and the pair is inte bara … utan också.",
-      "explanation": "In a subordinate clause inte (and inte bara) comes before the verb, as in Lecture 19: som inte bara kom. The pair is inte bara … utan också, never men också."
+      "explanation": "In a subordinate clause the safe place for inte bara is before the verb, as with inte in Lecture 19: som inte bara kom. Paket is an ett-word, so trasigt, not trasig. The pair is inte bara … utan också, never men också."
     }
   ],
   "checkpoint": [
@@ -1220,7 +1220,8 @@
         "Vet ni var torget är?",
         "Vet du var salutorget ligger?",
         "Vet du var salutorget är?",
-        "Vet du var marknadstorget ligger?"
+        "Vet du var marknadstorget ligger?",
+        "Vet du var torget finns?"
       ],
       "hint": "Vet du var … + subject + verb",
       "explanation": "Model: Vet du var torget ligger? Inside Vet du …, torget comes before the verb."
@@ -1235,7 +1236,9 @@
         "Sen svänger jag vänster vid hotellet.",
         "Sedan ska jag svänga till vänster vid hotellet.",
         "Sen ska jag svänga till vänster vid hotellet.",
-        "Vid hotellet svänger jag sedan till vänster."
+        "Vid hotellet svänger jag sedan till vänster.",
+        "Sedan svänger jag åt vänster vid hotellet.",
+        "Sen svänger jag åt vänster vid hotellet."
       ],
       "hint": "Sedan first, then the verb.",
       "explanation": "Model: Sedan svänger jag till vänster vid hotellet. Sedan takes first place, so the verb comes second (Lecture 8), not Sedan jag svänger."
@@ -1252,7 +1255,7 @@
         "Gå rakt fram och ta andra gatan till höger."
       ],
       "hint": "Your words, the stranger's facts, and the basic form after ska.",
-      "explanation": "Så jag ska gå … och ta … keeps the facts and turns the commands into your plan. The second needs ta after borde … och. The third reads the commands back, as if you gave him orders."
+      "explanation": "Så jag ska gå … och ta … keeps the facts and turns the commands into your plan. The second needs ta after borde … och. The third reads the commands back, as if you were giving the stranger orders."
     },
     {
       "id": "sv-32-c4",
@@ -1795,7 +1798,7 @@
       "explanation": "Lördag 10–16, so it is open at 15.30. Vid rondellen svänger du till höger, and the building is på din vänstra sida."
     },
     "listening": {
-      "text": "Du hör två texter. Den första är ett utrop på stationen i Vasa på tisdagseftermiddagen, när Alex väntar på tåget hem. Den andra är ett meddelande på Alex röstbrevlåda på torsdagen.\n\nUtrop på stationen i Vasa: Information till resenärer på InterCity-tåget till Helsingfors, avgång klockan 17.32. Tåget avgår i dag från spår två i stället för spår ett. Avgångstiden är densamma. Vagn fem, restaurangvagnen, är tyvärr stängd på grund av ett tekniskt fel. Kaffe och smörgåsar säljs i stället i vagn tre. Vi ber om ursäkt för besväret och önskar alla en trevlig resa.\n\nMeddelande på röstbrevlådan: Hej Alex Khan, det här är Johanna från Möbelhuset Linneas kundtjänst. Tack för ditt mejl och för att du ringde i går. Det var verkligen tråkigt att påsen med skruvar saknades i kartongen. Vi har kontrollerat din beställning, nummer 48213, och du har helt rätt. Vi skickade en ny påse med skruvar och beslag i dag med posten. Den kommer till ditt utlämningsställe på två till tre vardagar, alltså senast på tisdag. Du får ett sms när du kan hämta den. Om du hellre vill hämta skruvarna själv, finns de också i vår butik i Vanda från och med i morgon. Ta med orderbekräftelsen. Som tack för ditt tålamod får du dessutom tio procent rabatt på ditt nästa köp. Rabattkoden står i mejlet som vi skickar i dag. Om något annat saknas när du monterar soffan, ring oss på 09 876 5432, vardagar mellan nio och sjutton. Ha en fin dag!",
+      "text": "Du hör två texter. Den första är ett utrop på stationen i Vasa på tisdagseftermiddagen, när Alex väntar på tåget hem. Den andra är ett meddelande på Alex röstbrevlåda på torsdagen.\n\nUtrop på stationen i Vasa: Information till resenärer på InterCity-tåget till Helsingfors, avgång klockan 17.32. Tåget avgår i dag från spår två i stället för spår ett. Avgångstiden är densamma. Vagn fem, restaurangvagnen, är tyvärr stängd på grund av ett tekniskt fel. Kaffe och smörgåsar säljs i stället i vagn tre. Vi ber om ursäkt för besväret och önskar alla en trevlig resa.\n\nMeddelande på röstbrevlådan: Hej Alex Khan, det här är Linda från Möbelhuset Linneas kundtjänst. Tack för ditt mejl och för att du ringde i går. Det var verkligen tråkigt att påsen med skruvar saknades i kartongen. Vi har kontrollerat din beställning, nummer 48213, och du har helt rätt. Vi skickade en ny påse med skruvar och beslag i dag med posten. Den kommer till ditt utlämningsställe på två till tre vardagar, alltså senast på tisdag. Du får ett sms när du kan hämta den. Om du hellre vill hämta skruvarna själv, finns de också i vår butik i Vanda från och med i morgon. Ta med orderbekräftelsen. Som tack för ditt tålamod får du dessutom tio procent rabatt på ditt nästa köp. Rabattkoden står i mejlet som vi skickar i dag. Om något annat saknas när du monterar soffan, ring oss på 09 876 5432, vardagar mellan nio och sjutton. Ha en fin dag!",
       "question": "When will the screws reach Alex's pickup point at the latest?",
       "options": [
         "On Tuesday",
