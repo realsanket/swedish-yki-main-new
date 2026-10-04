@@ -1836,6 +1836,548 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A radio interview about children's screen time, a news item about people leaving Helsinki, an opinion piece about a car-free centre and a forum thread about local food: listen and read for opinions and arguments, with questions you can check.",
+      "minutes": 20,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers. In each text, find the opinion and the reasons behind it.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-30-listen-1",
+          "title": "Barn och skärmtid",
+          "textType": "Intervju i radio",
+          "situation": {
+            "fi": "Du hör en intervju i radio med en forskare som undersöker barns vanor.",
+            "en": "You hear a radio interview with a researcher who studies children's habits."
+          },
+          "lines": [
+            {
+              "speaker": "Programledaren",
+              "voice": "Elin",
+              "fi": "I dag pratar vi om barn och skärmtid. I studion har jag forskaren Johan Ek. Välkommen!",
+              "en": "Today we're talking about children and screen time. In the studio I have the researcher Johan Ek. Welcome!"
+            },
+            {
+              "speaker": "Johan Ek",
+              "voice": "Henrik",
+              "fi": "Tack, roligt att vara här.",
+              "en": "Thanks, nice to be here."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Elin",
+              "fi": "Hur mycket tid tillbringar barn framför skärmar i dag?",
+              "en": "How much time do children spend in front of screens today?"
+            },
+            {
+              "speaker": "Johan Ek",
+              "voice": "Henrik",
+              "fi": "I vår undersökning svarade föräldrarna att barn mellan tio och tolv år använder skärmar i genomsnitt fyra timmar om dagen på fritiden. Det är en timme mer än för fem år sedan.",
+              "en": "In our survey, parents answered that children between ten and twelve use screens for an average of four hours a day in their free time. That's an hour more than five years ago."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Elin",
+              "fi": "Är det farligt?",
+              "en": "Is that dangerous?"
+            },
+            {
+              "speaker": "Johan Ek",
+              "voice": "Henrik",
+              "fi": "Inte nödvändigtvis. Det beror på vad barnen gör. Att spela ett spel med kompisar eller titta på en dokumentär är något annat än att scrolla ensam i flera timmar.",
+              "en": "Not necessarily. It depends on what the children do. Playing a game with friends or watching a documentary is different from scrolling alone for hours."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Elin",
+              "fi": "Vad är det största problemet, enligt dig?",
+              "en": "What is the biggest problem, in your view?"
+            },
+            {
+              "speaker": "Johan Ek",
+              "voice": "Henrik",
+              "fi": "Sömnen. Många barn har mobilen i sängen, och de somnar betydligt senare än förr. Det påverkar både humöret och skolarbetet.",
+              "en": "Sleep. Many children have their phone in bed, and they fall asleep much later than before. It affects both their mood and their schoolwork."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Elin",
+              "fi": "Vad ska föräldrarna göra då?",
+              "en": "So what should parents do?"
+            },
+            {
+              "speaker": "Johan Ek",
+              "voice": "Henrik",
+              "fi": "Mitt bästa råd är enkelt: alla mobiler laddas i köket på natten, även föräldrarnas. Barn gör som vi gör, inte som vi säger.",
+              "en": "My best advice is simple: all phones are charged in the kitchen at night, the parents' phones too. Children do as we do, not as we say."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Elin",
+              "fi": "Och skolan? Ska man förbjuda mobiler där?",
+              "en": "And school? Should phones be banned there?"
+            },
+            {
+              "speaker": "Johan Ek",
+              "voice": "Henrik",
+              "fi": "Under lektionerna, ja. Men på rasterna tror jag mer på att lära barnen att använda mobilen på ett vettigt sätt.",
+              "en": "During lessons, yes. But at break time I believe more in teaching children to use their phones sensibly."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Elin",
+              "fi": "Johan Ek, tack för att du kom hit.",
+              "en": "Johan Ek, thank you for coming."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar intervjun om?",
+              "translation": "What is the interview about?",
+              "options": [
+                "Barns skärmtid",
+                "Läxor i skolan",
+                "Nya mobiltelefoner"
+              ],
+              "answers": [
+                "Barns skärmtid"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många timmar om dagen använder barnen skärmar på fritiden?",
+              "translation": "How many hours a day do the children use screens in their free time?",
+              "answers": [
+                "4",
+                "fyra",
+                "4 timmar",
+                "fyra timmar",
+                "i genomsnitt fyra timmar",
+                "i genomsnitt 4 timmar",
+                "ungefär fyra timmar",
+                "ungefär 4 timmar",
+                "4 h"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad är det största problemet enligt forskaren?",
+              "translation": "What is the biggest problem according to the researcher?",
+              "options": [
+                "Barnen sover för lite",
+                "Barnen spelar för mycket med kompisar",
+                "Barnen tittar på för många dokumentärer"
+              ],
+              "answers": [
+                "Barnen sover för lite"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Var ska alla mobiler laddas på natten?",
+              "translation": "Where should all phones be charged at night?",
+              "answers": [
+                "i köket",
+                "köket",
+                "i köket på natten",
+                "ute i köket"
+              ],
+              "hint": "Ett rum."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad tycker forskaren om mobilförbud i skolan?",
+              "translation": "What does the researcher think about banning phones at school?",
+              "options": [
+                "Bra under lektionerna, men inte på rasterna",
+                "Mobiler ska förbjudas hela skoldagen",
+                "Skolan ska inte ha några regler alls"
+              ],
+              "answers": [
+                "Bra under lektionerna, men inte på rasterna"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "tillbringa",
+              "en": "spend (time)"
+            },
+            {
+              "fi": "i genomsnitt",
+              "en": "on average"
+            },
+            {
+              "fi": "inte nödvändigtvis",
+              "en": "not necessarily"
+            },
+            {
+              "fi": "betydligt",
+              "en": "considerably, much"
+            },
+            {
+              "fi": "humöret",
+              "en": "the mood"
+            },
+            {
+              "fi": "vettig",
+              "en": "sensible"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-30-listen-2",
+          "title": "Allt fler flyttar från huvudstaden",
+          "textType": "Nyheter i radio",
+          "situation": {
+            "fi": "Du hör nyheterna i radio på morgonen.",
+            "en": "You hear the news on the radio in the morning."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Nyheter klockan åtta. Allt fler människor flyttar från huvudstadsregionen till mindre orter. Det visar ny statistik som publicerades i dag.",
+              "en": "The news at eight o'clock. More and more people are moving from the capital region to smaller towns. That is what new statistics published today show."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "I fjol flyttade nästan fyra tusen fler personer från Helsingfors till andra delar av landet än tvärtom. Den största gruppen är barnfamiljer.",
+              "en": "Last year almost four thousand more people moved from Helsinki to other parts of the country than the other way round. The largest group is families with children."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Enligt forskarna är distansarbetet en viktig orsak. Många jobbar hemifrån två eller tre dagar i veckan och behöver inte längre åka till kontoret varje dag.",
+              "en": "According to researchers, remote work is an important reason. Many people work from home two or three days a week and no longer need to travel to the office every day."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Billigare bostäder lockar också. I Lojo kostar en trea ungefär hälften så mycket som i Helsingfors.",
+              "en": "Cheaper homes are also an attraction. In Lohja a three-room flat costs about half as much as in Helsinki."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Men det finns också problem. Kommunerna utanför huvudstadsregionen säger att de behöver fler daghemsplatser och bättre bussförbindelser för att de nya invånarna ska stanna.",
+              "en": "But there are also problems. The municipalities outside the capital region say they need more daycare places and better bus connections so that the new residents will stay."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Och så vädret: i dag blir det mulet och regnigt i södra Finland, med temperaturer runt femton grader. I norra Lappland kan det bli frost i natt.",
+              "en": "And now the weather: today it will be cloudy and rainy in southern Finland, with temperatures around fifteen degrees. In northern Lapland there may be frost tonight."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar nyheten om?",
+              "translation": "What is the news item about?",
+              "options": [
+                "Människor som flyttar bort från huvudstadsregionen",
+                "Nya bostäder i Helsingfors centrum",
+                "Bussbiljetter som blir dyrare"
+              ],
+              "answers": [
+                "Människor som flyttar bort från huvudstadsregionen"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken grupp flyttar mest?",
+              "translation": "Which group moves most?",
+              "answers": [
+                "barnfamiljer",
+                "barnfamiljerna",
+                "familjer med barn",
+                "familjer"
+              ],
+              "hint": "Ett ord från nyheten."
+            },
+            {
+              "id": "q3",
+              "prompt": "Varför kan många bo längre bort från jobbet nu?",
+              "translation": "Why can many people live further from work now?",
+              "options": [
+                "De jobbar hemifrån några dagar i veckan",
+                "Tågen har blivit snabbare",
+                "Kontoren har flyttat till Lojo"
+              ],
+              "answers": [
+                "De jobbar hemifrån några dagar i veckan"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Kommunerna utanför huvudstadsregionen har redan tillräckligt med daghemsplatser.",
+              "translation": "The municipalities outside the capital region already have enough daycare places.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur blir vädret i södra Finland i dag?",
+              "translation": "What will the weather be like in southern Finland today?",
+              "answers": [
+                "mulet och regnigt",
+                "regnigt och mulet",
+                "det blir mulet och regnigt",
+                "mulet och regn",
+                "regnigt",
+                "regn",
+                "mulet"
+              ],
+              "hint": "Ett eller två ord."
+            }
+          ],
+          "words": [
+            {
+              "fi": "huvudstadsregionen",
+              "en": "the capital region (Helsinki, Espoo, Vantaa, Kauniainen)"
+            },
+            {
+              "fi": "en ort",
+              "en": "a town, a place"
+            },
+            {
+              "fi": "i fjol",
+              "en": "last year"
+            },
+            {
+              "fi": "tvärtom",
+              "en": "the other way round"
+            },
+            {
+              "fi": "en orsak",
+              "en": "a reason, a cause"
+            },
+            {
+              "fi": "statistik",
+              "en": "statistics"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-30-read-1",
+          "title": "Gör centrum bilfritt",
+          "textType": "Debattartikel",
+          "minutes": 7,
+          "text": "DEBATT: GÖR CENTRUM BILFRITT\n\nTrots att många tycker att bilen behövs i stadens centrum, anser jag att Helsingfors borde stänga fler gator för biltrafik. Jag har två argument.\n\nFör det första blir staden trevligare för människor. När några gator i centrum stängdes för bilar i somras fick vi plats för kaféer, bänkar och gatumusikanter. Barnfamiljer och äldre kunde röra sig tryggt, och luften blev renare.\n\nFör det andra har vi redan bra alternativ. Kollektivtrafiken i huvudstadsregionen fungerar bra, och spårvagnar, metro och stadscyklar tar dig nästan överallt. Den som bor i Helsingfors behöver knappast en egen bil för att handla i centrum.\n\nDet sägs ofta att affärerna förlorar kunder om bilarna försvinner. Erfarenheter från andra städer, exempelvis Köpenhamn, visar ändå ofta motsatsen: fotgängare stannar längre och kommer tillbaka oftare.\n\nNaturligtvis måste det finnas undantag. Taxi, färdtjänst och varutransporter ska få köra in, och parkeringshus vid stadens kant behövs för dem som kommer långväga ifrån.\n\nSammanfattningsvis tror jag att ett bilfritt centrum skulle förbättra livet för de flesta helsingforsare. Det är dags att våga.\n\nLaura Niemi, Tölö",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad vill skribenten?",
+              "translation": "What does the writer want?",
+              "options": [
+                "Att fler gator i centrum stängs för bilar",
+                "Att det byggs fler parkeringshus mitt i centrum",
+                "Att kollektivtrafiken blir billigare"
+              ],
+              "answers": [
+                "Att fler gator i centrum stängs för bilar"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Skribenten anser att inga bilar alls ska få köra i centrum.",
+              "translation": "The writer thinks that no cars at all should be allowed to drive in the centre.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vilken stad nämner skribenten som exempel?",
+              "translation": "Which city does the writer mention as an example?",
+              "answers": [
+                "Köpenhamn"
+              ],
+              "hint": "Ett namn."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad är skribentens andra argument?",
+              "translation": "What is the writer's second argument?",
+              "options": [
+                "Det finns redan bra kollektivtrafik",
+                "Luften blir renare",
+                "Affärerna får fler kunder"
+              ],
+              "answers": [
+                "Det finns redan bra kollektivtrafik"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vem får ändå köra in i centrum? Skriv en sak från texten.",
+              "translation": "Who may still drive into the centre? Write one thing from the text.",
+              "answers": [
+                "taxi",
+                "taxin",
+                "taxibilar",
+                "taxibilarna",
+                "färdtjänst",
+                "färdtjänsten",
+                "varutransporter",
+                "varutransporterna",
+                "taxi och färdtjänst",
+                "taxi färdtjänst och varutransporter",
+                "taxi färdtjänst varutransporter"
+              ],
+              "hint": "Ett ord från texten."
+            }
+          ],
+          "words": [
+            {
+              "fi": "knappast",
+              "en": "hardly"
+            },
+            {
+              "fi": "motsatsen",
+              "en": "the opposite"
+            },
+            {
+              "fi": "en fotgängare",
+              "en": "a pedestrian"
+            },
+            {
+              "fi": "ett undantag",
+              "en": "an exception"
+            },
+            {
+              "fi": "färdtjänst",
+              "en": "transport service for people with disabilities"
+            },
+            {
+              "fi": "långväga ifrån",
+              "en": "from far away"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-30-read-2",
+          "title": "Är närproducerat värt priset?",
+          "textType": "Diskussionsforum",
+          "minutes": 6,
+          "text": "FORUM: MAT OCH HÄLSA\nTråd: Är närproducerad mat värd priset?\n\nSaara88:\nJag handlar ofta på Salutorget och i Saluhallen. Potatisen och jordgubbarna kommer från gårdar i Nyland, och man vet vem som har odlat dem. Visst kostar det mer, men kvaliteten är mycket bättre och pengarna stannar i Finland.\n\nPekka_K:\nJag håller inte med. För en barnfamilj med små inkomster är närproducerat lyx. Jag köper det som är billigast i butiken. Dessutom är det inte alltid bättre för miljön: tomater från ett uppvärmt växthus i Finland kan ge större utsläpp än tomater från Spanien.\n\nHanna_i_Borgå:\nÅ ena sidan förstår jag Pekka. Å andra sidan behöver vi egna bönder om det blir kris i världen. Jag har hittat en mellanväg: jag köper närproducerat när det är säsong, till exempel jordgubbar i juli och svamp på hösten, och resten av året handlar jag som vanligt.\n\nSaara88:\nBra idé, Hanna! Jag tror ändå att det viktigaste är att slänga mindre mat, oavsett var den kommer ifrån.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad diskuterar de i tråden?",
+              "translation": "What are they discussing in the thread?",
+              "options": [
+                "Om närproducerad mat är värd sitt pris",
+                "Var man hittar billiga tomater",
+                "Hur man odlar jordgubbar hemma"
+              ],
+              "answers": [
+                "Om närproducerad mat är värd sitt pris"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vem tycker att närproducerad mat är för dyr?",
+              "translation": "Who thinks local food is too expensive?",
+              "options": [
+                "Pekka_K",
+                "Saara88",
+                "Hanna_i_Borgå"
+              ],
+              "answers": [
+                "Pekka_K"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Pekka menar att finska tomater alltid är bättre för miljön.",
+              "translation": "Pekka means that Finnish tomatoes are always better for the environment.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "När köper Hanna närproducerad mat?",
+              "translation": "When does Hanna buy local food?",
+              "answers": [
+                "när det är säsong",
+                "på säsongen",
+                "under säsongen",
+                "när det är säsong för den",
+                "säsong",
+                "i säsong",
+                "när det är säsong för maten"
+              ],
+              "hint": "Läs Hannas inlägg."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad tycker Saara är viktigast i sitt sista inlägg?",
+              "translation": "What does Saara think is most important in her last post?",
+              "options": [
+                "Att slänga mindre mat",
+                "Att alla handlar i Saluhallen",
+                "Att köpa tomater från Spanien"
+              ],
+              "answers": [
+                "Att slänga mindre mat"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "odla",
+              "en": "grow (plants)"
+            },
+            {
+              "fi": "kvaliteten",
+              "en": "the quality"
+            },
+            {
+              "fi": "en inkomst",
+              "en": "an income"
+            },
+            {
+              "fi": "ett utsläpp",
+              "en": "an emission"
+            },
+            {
+              "fi": "en bonde, bönder",
+              "en": "a farmer"
+            },
+            {
+              "fi": "oavsett",
+              "en": "regardless of"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

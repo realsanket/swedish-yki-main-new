@@ -15,6 +15,7 @@
   "grammarTerms": [
     "noun",
     "verb",
+    "object",
     "gender",
     "singular-plural",
     "s-verb",
@@ -649,6 +650,191 @@
       }
     },
     {
+      "title": "Ligger eller lägger? · where a thing is, where you put it",
+      "kind": "rule",
+      "body": [
+        "B1 extra (not from the class notes): Swedish has three pairs of verbs for where things are. One verb says where a thing is. The other says that someone puts it there.",
+        "Ligga = lie, be lying flat. Lägga = put something down flat, lay. Kniven ligger på bordet (the knife is there). Jag lägger kniven på bordet (I put it there).",
+        "Stå = stand. Ställa = put something so that it stands. Lampan står i hörnet. Jag ställer lampan i hörnet. Things on legs or on a bottom stand: bord, stolar, soffor, lampor, glas, koppar, flaskor.",
+        "Sitta = sit, or be fixed in place. Sätta = put, fix, attach. Tavlan sitter på väggen. Skruven sitter i benet. Jag sätter upp tavlan. Jag sätter i skruven.",
+        "The test: does a thing (an object) come right after the verb? Jag ställer lampan … → ställa. Nothing comes after it, the thing is just there: Lampan står … → stå.",
+        "People too: Maja sitter i fåtöljen. Alex står vid fönstret. With sig you go into the position: sätta sig (sit down), lägga sig (lie down, go to bed), ställa sig (go and stand). Sätt dig! = Sit down!",
+        "Past forms: ligga – låg – har legat; lägga – la (written lade) – har lagt; stå – stod – har stått; ställa – ställde – har ställt; sitta – satt – har suttit; sätta – satte – har satt. Satt is two words: Jag satt (I sat) and Jag har satt (I have put).",
+        "English trap: English says put for all three, and is for where things are. Swedish chooses by the shape: Tallriken står på bordet? No: a plate lies flat, Tallriken ligger på bordet. A glass stands: Glaset står på bordet."
+      ],
+      "examples": [
+        {
+          "fi": "Gafflarna ligger till vänster om tallriken.",
+          "en": "The forks are to the left of the plate.",
+          "note": "Ligga: they are there, flat."
+        },
+        {
+          "fi": "Kan du lägga knivarna till höger om tallrikarna?",
+          "en": "Can you put the knives to the right of the plates?",
+          "note": "Lägga + a thing: you put them there."
+        },
+        {
+          "fi": "Bokhyllan står i hallen.",
+          "en": "The bookcase is in the hall.",
+          "note": "Stå: it stands on its own."
+        },
+        {
+          "fi": "Vi ställer soffan mot den långa väggen.",
+          "en": "We are putting the sofa against the long wall.",
+          "note": "Ställa + a thing."
+        },
+        {
+          "fi": "Tavlan sitter över soffan.",
+          "en": "The picture is above the sofa.",
+          "note": "Sitta: fixed on the wall."
+        },
+        {
+          "fi": "Jag satte upp tavlan i går och satte mig sedan i soffan.",
+          "en": "I put up the picture yesterday and then sat down on the sofa.",
+          "note": "Sätta upp = put up; sätta sig = sit down."
+        }
+      ],
+      "table": {
+        "headings": [
+          "It is there (nothing after the verb)",
+          "You put it there (+ a thing)",
+          "Typical things"
+        ],
+        "rows": [
+          [
+            "ligga · ligger, låg, legat",
+            "lägga · lägger, la, lagt",
+            "knivar, gafflar, skedar, böcker, mattor, kuddar"
+          ],
+          [
+            "stå · står, stod, stått",
+            "ställa · ställer, ställde, ställt",
+            "bord, stolar, lampor, glas, koppar, flaskor"
+          ],
+          [
+            "sitta · sitter, satt, suttit",
+            "sätta · sätter, satte, satt",
+            "tavlor, skruvar, handtag; people who sit"
+          ]
+        ]
+      },
+      "memoryTip": "Ask \"what?\" after the verb. Jag lägger … what? Boken. A thing follows, so lägga, ställa or sätta. If nothing follows (Boken ligger på bordet), take ligga, stå or sitta.",
+      "tryIt": "Look around the room. Say where three things are (ligger, står, sitter), then say where you put one of them yesterday (la, ställde, satte).",
+      "activity": {
+        "type": "sort",
+        "label": "Position verbs",
+        "title": "Duka bordet och möblera",
+        "instructions": "Which verb goes in the gap? Ask: is the thing just there, or does someone put it there? Say the sentence aloud with the verb.",
+        "buckets": [
+          {
+            "id": "ligger",
+            "label": "ligger",
+            "hint": "is there, flat"
+          },
+          {
+            "id": "lagger",
+            "label": "lägger",
+            "hint": "puts it down flat"
+          },
+          {
+            "id": "star",
+            "label": "står",
+            "hint": "is there, standing"
+          },
+          {
+            "id": "staller",
+            "label": "ställer",
+            "hint": "puts it standing"
+          },
+          {
+            "id": "sitter",
+            "label": "sitter",
+            "hint": "sits, or is fixed"
+          },
+          {
+            "id": "satter",
+            "label": "sätter",
+            "hint": "puts, fixes"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Kniven ___ till höger om tallriken.",
+            "en": "The knife is to the right of the plate.",
+            "bucket": "ligger",
+            "why": "Nothing comes after the verb, and a knife lies flat: ligger."
+          },
+          {
+            "fi": "En stor kudde ___ i soffan.",
+            "en": "A big cushion is (lying) on the sofa.",
+            "bucket": "ligger",
+            "why": "The cushion is just there, lying: ligger."
+          },
+          {
+            "fi": "Jag ___ gafflarna till vänster om tallrikarna.",
+            "en": "I put the forks to the left of the plates.",
+            "bucket": "lagger",
+            "why": "Gafflarna comes after the verb, and forks lie flat: lägger."
+          },
+          {
+            "fi": "Maja ___ en filt över soffan.",
+            "en": "Maja puts a blanket over the sofa.",
+            "bucket": "lagger",
+            "why": "Someone puts a flat thing there: lägger."
+          },
+          {
+            "fi": "Glasen ___ redan på bordet.",
+            "en": "The glasses are already on the table.",
+            "bucket": "star",
+            "why": "Glasses stand on their bottom, and nothing follows the verb: står."
+          },
+          {
+            "fi": "Bokhyllan ___ i hallen.",
+            "en": "The bookcase is in the hall.",
+            "bucket": "star",
+            "why": "A bookcase stands on its own: står."
+          },
+          {
+            "fi": "Vi ___ soffan mot den långa väggen.",
+            "en": "We put the sofa against the long wall.",
+            "bucket": "staller",
+            "why": "Soffan follows the verb, and a sofa stands: ställer."
+          },
+          {
+            "fi": "Alex ___ en vas med blommor på bordet.",
+            "en": "Alex puts a vase of flowers on the table.",
+            "bucket": "staller",
+            "why": "A vase stands, and Alex puts it there: ställer."
+          },
+          {
+            "fi": "Tavlan ___ över soffan.",
+            "en": "The picture is above the sofa.",
+            "bucket": "sitter",
+            "why": "A picture is fixed on the wall: sitter. (Hänger, hangs, is also right in real life.)"
+          },
+          {
+            "fi": "Morfar ___ i fåtöljen och läser.",
+            "en": "Grandad is sitting in the armchair, reading.",
+            "bucket": "sitter",
+            "why": "A person who sits, with nothing after the verb: sitter."
+          },
+          {
+            "fi": "Jag ___ upp en lampa över skrivbordet.",
+            "en": "I put up a lamp above the desk.",
+            "bucket": "satter",
+            "why": "Sätta upp = fix something on a wall or ceiling."
+          },
+          {
+            "fi": "Jag ___ mig vid bordet och äter.",
+            "en": "I sit down at the table and eat.",
+            "bucket": "satter",
+            "why": "Sätta sig = sit down. Mig is the thing after the verb."
+          }
+        ],
+        "summary": "Ligger, står and sitter say where a thing is: nothing comes after the verb. Lägger, ställer and sätter say that someone puts it there: a thing (or mig, dig, sig) follows. Flat things lie, things on legs or a bottom stand, fixed things and people sit."
+      }
+    },
+    {
       "title": "Klaga och kräva ersättning · firm but polite",
       "kind": "register",
       "body": [
@@ -1132,6 +1318,34 @@
       ],
       "hint": "Lend = låna ut … till …",
       "explanation": "Lend = låna ut till. Nästa gång takes first place, so the verb comes next: lånar jag. The second breaks verb second; the third uses låna like English lend (the teacher's fix)."
+    },
+    {
+      "id": "sv-33-g11",
+      "prompt": "Lay the table. Put the forks on the left: ___ gafflarna till vänster om tallriken.",
+      "answers": [
+        "Lägg"
+      ],
+      "options": [
+        "Ligg",
+        "Lägg",
+        "Ställ"
+      ],
+      "hint": "You put flat things down.",
+      "explanation": "Forks lie flat, and you put them there, so lägga. The command form is lägg. Ligg! tells a dog to lie down. Ställ is for things that stand, like glasses."
+    },
+    {
+      "id": "sv-33-g12",
+      "prompt": "Describe the room: The desk is by the window: Skrivbordet ___ vid fönstret.",
+      "answers": [
+        "står"
+      ],
+      "options": [
+        "ligger",
+        "ställer",
+        "står"
+      ],
+      "hint": "Nothing comes after the verb. A desk has legs.",
+      "explanation": "The desk is just there, so stå, and furniture on legs stands: Skrivbordet står vid fönstret. Ställer needs a thing after it: Vi ställer skrivbordet vid fönstret."
     }
   ],
   "checkpoint": [
@@ -1303,6 +1517,19 @@
       ],
       "hint": "ett ben, saknas",
       "explanation": "Model: Ett bordsben saknas. Det saknas ett ben is also right: det saknas puts the missing thing last."
+    },
+    {
+      "id": "sv-33-c8",
+      "prompt": "Write in Swedish: “I put the lamp on the desk.” (Now, present tense. A lamp stands on its foot.)",
+      "answers": [
+        "Jag ställer lampan på skrivbordet",
+        "Jag ställer lampan på skrivbordet nu",
+        "Nu ställer jag lampan på skrivbordet",
+        "Jag placerar lampan på skrivbordet",
+        "Jag ställer bordslampan på skrivbordet"
+      ],
+      "hint": "lampan, skrivbordet: which verb puts something standing?",
+      "explanation": "Model: Jag ställer lampan på skrivbordet. A lamp stands, and you put it there, so ställa. Lampan står på skrivbordet says where it is afterwards."
     }
   ],
   "assignment": {
