@@ -145,6 +145,90 @@
   font-weight: 750;
 }
 
+.note {
+  color: #8b6417 !important;
+  font-weight: 650;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #274f72;
+  font-size: 13px;
+  font-weight: 700;
+}
+.text {
+  margin: 20px 25px 0;
+  padding: 18px 20px;
+  border-left: 4px solid #e2c46f;
+  border-radius: 12px;
+  background: #fff;
+}
+.text h4 {
+  margin: 0 0 8px;
+  color: #173f6d;
+  font: 700 18px/1.3 Georgia, serif;
+}
+.text p {
+  margin: 0;
+  color: #24382e;
+  font-size: 15px;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+.part {
+  grid-column: 1 / -1;
+  margin: 0 0 4px;
+  color: #8b6417;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.body textarea {
+  width: 100%;
+  resize: vertical;
+}
+.selfCheck {
+  display: grid;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f4f6f2;
+  color: #34483e;
+  font-size: 13px;
+}
+.points {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.points label {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+.model {
+  margin: 0;
+  line-height: 1.55;
+  white-space: pre-line;
+}
+.score small {
+  color: #6b7c72;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 @media (max-width: 640px) {
   .header,
   .questions {
@@ -155,5 +239,9 @@
   }
   .fixes {
     margin: 0 16px 16px;
+  }
+  .text {
+    margin: 16px 16px 0;
+    padding: 14px;
   }
 }

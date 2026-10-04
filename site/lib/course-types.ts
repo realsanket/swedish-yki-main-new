@@ -126,11 +126,30 @@ export type LectureExtraStep = {
 );
 
 /**
- * One Classroom homework form from the teacher, kept as the teacher wrote it
- * (obvious typos fixed and listed in `fixes`). A question with `options` is
- * pick-one; without them the learner types the answer. Answers are compared
- * like every typed answer: lower-case, punctuation removed.
+ * One Classroom homework item from the teacher, kept as the teacher wrote it
+ * (obvious typos fixed and listed in `fixes`). Question shapes:
+ * - `options`: pick one (with `multiple`, tick every right one);
+ * - no `options`: the learner types a short answer;
+ * - `writing`: a longer text with a word count and a checklist.
+ * `answers` are compared like every typed answer (lower-case, punctuation
+ * removed). Leave `answers` out when there is no answer key: the question is
+ * then self-checked against `model`, the text or the linked episode.
  */
+export type ClassroomHomeworkQuestion = {
+  id: string;
+  /** A heading shown when a new part of the form starts ("Del 2: Rätt eller fel"). */
+  part?: string;
+  prompt: string;
+  translation?: string;
+  hint?: string;
+  options?: string[];
+  multiple?: boolean;
+  answers?: string[];
+  /** A sample answer shown after checking (open and writing questions). */
+  model?: string;
+  writing?: { wordRange?: [number, number]; points?: string[] };
+};
+
 export type ClassroomHomework = {
   id: string;
   /** The Classroom item number in docs/excercise. */
@@ -138,14 +157,13 @@ export type ClassroomHomework = {
   title: string;
   posted: string;
   instructions: string;
-  questions: Array<{
-    id: string;
-    prompt: string;
-    translation?: string;
-    hint?: string;
-    options?: string[];
-    answers: string[];
-  }>;
+  /** Short reading texts shown above the questions. */
+  texts?: Array<{ title?: string; body: string }>;
+  /** Where to listen or read: an Yle episode, the teacher's original form. */
+  links?: Array<{ label: string; url: string }>;
+  /** A plain-English note, for example why some questions have no answer key. */
+  note?: string;
+  questions: ClassroomHomeworkQuestion[];
   fixes?: string[];
 };
 

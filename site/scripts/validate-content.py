@@ -35,12 +35,24 @@ def check_homework(n,st):
         qs=hw.get('questions',[])
         if not qs: errs.append(f'{n}: homework {hid} has no questions')
         if len({q['id'] for q in qs})!=len(qs): errs.append(f'{n}: homework {hid} repeats a question id')
+        for link in hw.get('links',[]):
+            if not link.get('label','').strip() or not link.get('url','').startswith('https://'): errs.append(f'{n}: homework {hid} has a bad link')
+        for text in hw.get('texts',[]):
+            if not text.get('body','').strip(): errs.append(f'{n}: homework {hid} has an empty text')
         for q in qs:
-            if not q.get('prompt','').strip() or not q.get('answers') or not all(a.strip() for a in q['answers']): errs.append(f"{n}: homework {hid} question {q.get('id')} needs a prompt and answers")
+            qid=q.get('id')
+            if not q.get('prompt','').strip(): errs.append(f"{n}: homework {hid} question {qid} needs a prompt")
+            answers=q.get('answers')
+            if answers is not None and (not answers or not all(a.strip() for a in answers)): errs.append(f"{n}: homework {hid} question {qid} has an empty answer")
             opts=q.get('options')
+            if q.get('multiple') and not opts: errs.append(f"{n}: homework {hid} question {qid} is multiple without options")
+            if q.get('writing') is not None and opts: errs.append(f"{n}: homework {hid} question {qid} mixes writing and options")
+            wr=(q.get('writing') or {}).get('wordRange')
+            if wr is not None and not (len(wr)==2 and 0<wr[0]<wr[1]): errs.append(f"{n}: homework {hid} question {qid} bad wordRange")
             if opts is not None:
-                if len(opts)<2 or len(set(opts))!=len(opts): errs.append(f"{n}: homework {hid} question {q['id']} needs distinct options")
-                if not set(q['answers'])<=set(opts): errs.append(f"{n}: homework {hid} question {q['id']} answer is not an option")
+                if len(opts)<2 or len(set(opts))!=len(opts): errs.append(f"{n}: homework {hid} question {qid} needs distinct options")
+                if answers and not set(answers)<=set(opts): errs.append(f"{n}: homework {hid} question {qid} answer is not an option")
+                if answers and not q.get('multiple') and len(answers)!=1: errs.append(f"{n}: homework {hid} question {qid} pick-one needs one answer")
     return errs
 
 def check_yki_speaking(n,st):
