@@ -428,6 +428,50 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Nyheter 1: strejk + arbetslöshet.",
+      "minutes": 5,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-20-nyheter-strejk",
+          "item": 20,
+          "title": "Nyheter 1: strejk + arbetslöshet",
+          "posted": "12 Jun",
+          "instructions": "Lyssna på nyhet 1 och nyhet 3 och svara på frågorna. Listen to news items 1 and 3 in the Yle episode and answer the two questions. Press the white “Starta” button at the top left of the Yle page to play (the player bar may play the last thing you heard instead).",
+          "note": "There is no answer key for these listening questions: listen again and check your answers against the episode.",
+          "links": [
+            {
+              "label": "Yle Arenan: the news episode (nyhet 1 and 3)",
+              "url": "https://arenan.yle.fi/poddar/1-73102281"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Nyhet 1",
+              "prompt": "Butikerna är stängda eftersom det är strejk.",
+              "translation": "The shops are closed because there is a strike. True or false?",
+              "options": [
+                "RÄTT",
+                "FEL"
+              ]
+            },
+            {
+              "id": "q2",
+              "part": "Nyhet 3",
+              "prompt": "Hur många anställda kommer att förlora sina jobb?",
+              "translation": "How many employees will lose their jobs?",
+              "hint": "Write only the digits of the number."
+            }
+          ]
+        }
+      ]
     }
   ],
   "unplannedQuestions": [

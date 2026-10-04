@@ -549,6 +549,384 @@
           }
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Ska vs kommer att and Tycker vs tror.",
+      "minutes": 13,
+      "action": "Do each item, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-16-ska-kommer-att",
+          "item": 16,
+          "title": "Ska vs kommer att",
+          "posted": "25 May",
+          "instructions": "Välj ska eller kommer att. Use ska for a plan you decide yourself (Jag ska plugga). Use kommer att for a prediction you cannot control (Det kommer att regna).",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Har du hört att Anna ______ byta jobb?",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "ska"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Anna är så duktig. Ett bättre jobb _____ passa henne bra.",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "kommer att"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Jag _____ gå till bageriet och köpa några smörgåsar.",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "ska"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Jag köpte smörgåsar som vi ____ ta med oss på vår picknick.",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "ska"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Barnen ______ bli så glada när de hör att vi ska ha en picknick.",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "kommer att"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Jag tror att Tyskland ______ vinna över Spanien i fotbollsmatchen.",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "kommer att"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Jag hörde på nyheterna att det _____ regna imorgon.",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "kommer att"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Jag tycker att vi ____ packa varma kläder till vår resa till Alperna.",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "ska"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "A: Vi måste packa varmare kläder.\nB: Det låter bra. Vi _____ behöva dem i Alperna.",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "kommer att"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "Mamma, jag tycker att matteprovet nästa vecka _______ bli jättesvårt. Jag måste plugga!",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "kommer att"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "Jag har ett prov på måndag så jag ____ plugga hela helgen.",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "ska"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "Vi _____ flytta till Finland nästa vecka. Vi måste ordna många saker.",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "ska"
+              ]
+            },
+            {
+              "id": "q13",
+              "prompt": "Vi flyttar nästa månad. Det ______ bli så jobbigt!",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "kommer att"
+              ]
+            },
+            {
+              "id": "q14",
+              "prompt": "Du borde sluta röka! Du _____ bli sjuk av cigaretter!",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "kommer att"
+              ]
+            },
+            {
+              "id": "q15",
+              "prompt": "Jag _____ sluta dricka alkohol på måndag!",
+              "options": [
+                "ska",
+                "kommer att"
+              ],
+              "answers": [
+                "ska"
+              ]
+            }
+          ],
+          "fixes": [
+            "A full stop is added at the end of question 5 (“… en picknick.”).",
+            "“på Alperna” is written “i Alperna” in question 9 (in the Alps), with a full stop at the end."
+          ]
+        },
+        {
+          "id": "teacher-17-tycker-tror",
+          "item": 17,
+          "title": "Tycker vs tror",
+          "posted": "25 May",
+          "instructions": "Välj tycker eller tror (eller tyckte, trodde). Use tycker for an opinion from your own experience; use tror for a guess or a belief when you do not know. Tyckte and trodde are the past forms.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Anna: Har du sett \"Barbie\"? Alla pratar om den här filmen.\nPeter: Ja, jag _____ att den var jättespännande.",
+              "options": [
+                "tror",
+                "tycker",
+                "tyckte",
+                "trodde"
+              ],
+              "answers": [
+                "tyckte",
+                "tycker"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Jag _____ inte att svensk mat är god.",
+              "options": [
+                "tror",
+                "tycker"
+              ],
+              "answers": [
+                "tycker"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Jag vet inte hur surströmming smakar men jag ____ att det måste vara äckligt.",
+              "options": [
+                "tror",
+                "tycker"
+              ],
+              "answers": [
+                "tror"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Anna: När kommer tåget?\nPeter: Om 5 minuter, _____ jag.",
+              "options": [
+                "tror",
+                "tycker"
+              ],
+              "answers": [
+                "tror"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Anna: När kommer Sara hem?\nPeter: Jag ____ att hon kommer om en timme.",
+              "options": [
+                "tycker",
+                "tror"
+              ],
+              "answers": [
+                "tror"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Anna: Ska vi gå på bio och titta på Persona?\nPeter: Jag har inte sett filmen men jag _____ att den är bra.",
+              "options": [
+                "tror",
+                "tycker"
+              ],
+              "answers": [
+                "tror"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Anna: Vill du ha en vaniljbulle eller en kanelbulle?\nPeter: Jag _____ att kanelbullar är bättre än vaniljbullar, så jag väljer alltid kanelbullar.",
+              "options": [
+                "tycker",
+                "tror"
+              ],
+              "answers": [
+                "tycker"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Mormor: När jag träffade din morfar för 50 år sedan _____ jag att han var mycket snygg.",
+              "options": [
+                "tycker",
+                "tror",
+                "tyckte",
+                "trodde"
+              ],
+              "answers": [
+                "tyckte"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Jag brukar äta lunch med mina kollegor. Jag ____ att det är mysigt.",
+              "options": [
+                "tror",
+                "tycker",
+                "trodde",
+                "tyckte"
+              ],
+              "answers": [
+                "tycker"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "När jag var barn _____ jag att tomten (Santa Claus) fanns på riktigt.",
+              "options": [
+                "trodde",
+                "tycker",
+                "tror",
+                "tyckte"
+              ],
+              "answers": [
+                "trodde"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "Jag vill inte göra hemläxor. Jag ____ att det är tråkigt.",
+              "options": [
+                "tyckte",
+                "tycker",
+                "trodde",
+                "tror"
+              ],
+              "answers": [
+                "tycker"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "Jag är inte säker men jag ____ att finländare dricker mycket kaffe.",
+              "options": [
+                "trodde",
+                "tycker",
+                "tyckte",
+                "tror"
+              ],
+              "answers": [
+                "tror"
+              ]
+            },
+            {
+              "id": "q13",
+              "prompt": "När jag bodde i mitt land ____ jag att vintern var härlig. Nu ____ jag att sommaren är bäst eftersom finsk vinter är mycket kall.",
+              "options": [
+                "tycker, tror",
+                "tyckte, tycker",
+                "tycker, tyckte",
+                "trodde, tror",
+                "tror, tycker"
+              ],
+              "answers": [
+                "tyckte, tycker"
+              ]
+            },
+            {
+              "id": "q14",
+              "prompt": "Jag _____ att vuxna kunde göra vad de än ville när jag var liten.",
+              "options": [
+                "trodde",
+                "tror",
+                "tycker",
+                "tyckte"
+              ],
+              "answers": [
+                "trodde"
+              ]
+            }
+          ],
+          "fixes": [
+            "“jätte spännande” is written “jättespännande” (question 1).",
+            "“svensk mat är gott” is written “svensk mat är god” (mat is an en-word; question 2).",
+            "“Santa Clause” is written “Santa Claus” (question 10).",
+            "“Finländare” is written with a small letter, “finländare” (question 12).",
+            "“vintern var härligt” is written “vintern var härlig” (question 13).",
+            "“vad än de ville” is written “vad de än ville” (question 14)."
+          ]
+        }
+      ]
     }
   ],
   "recall": [

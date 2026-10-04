@@ -1971,6 +1971,123 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Nyheter 9: etanol, barn och Louvre.",
+      "minutes": 12,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-36-nyheter-etanol-barn-louvre",
+          "item": 36,
+          "title": "Nyheter 9: etanol, barn och Louvre",
+          "posted": "29 Jul",
+          "instructions": "Lyssna på nyhet 1, 3 och 5 och svara på frågorna. Listen to news items 1, 3 and 5 in the Yle episode, then answer. Number words matter here: nästan and knappt = a little under, drygt = a little over.",
+          "note": "There is no answer key: the teacher's form was never submitted, and the answers are in the audio. Listen to the episode (twice, like in YKI) and check your answers against it.",
+          "links": [
+            {
+              "label": "Yle Arenan: the news episode (news 1, 3 and 5)",
+              "url": "https://arenan.yle.fi/1-76094116"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Nyhet 1 · Vad är problemet med etanol? Rätt eller fel?",
+              "prompt": "Den är dålig på att desinficera händer.",
+              "translation": "It is bad at disinfecting hands.",
+              "options": [
+                "rätt",
+                "fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "part": "Nyhet 1 · Vad är problemet med etanol? Rätt eller fel?",
+              "prompt": "Den kan förknippas med cancer.",
+              "translation": "It can be linked to cancer.",
+              "options": [
+                "rätt",
+                "fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "part": "Nyhet 1 · Vad är problemet med etanol? Rätt eller fel?",
+              "prompt": "Den kan förorsaka problem med ens reproduktiva hälsa.",
+              "translation": "It can cause problems with your reproductive health.",
+              "options": [
+                "rätt",
+                "fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "part": "Nyhet 3 · Barn",
+              "prompt": "Hur många av de som deltog i enkäten vill ha ett barn till?",
+              "translation": "How many of those who took part in the survey want one more child?",
+              "options": [
+                "bara 2-3%",
+                "knappt 70%",
+                "drygt 26%"
+              ]
+            },
+            {
+              "id": "q5",
+              "part": "Nyhet 3 · Barn",
+              "prompt": "Hur många av 12 000 var helt säkra på att de inte ville ha fler barn?",
+              "translation": "How many of the 12,000 were completely sure that they did not want more children?",
+              "options": [
+                "17%",
+                "7%",
+                "26%"
+              ]
+            },
+            {
+              "id": "q6",
+              "part": "Nyhet 3 · Barn: rätt eller fel?",
+              "prompt": "Allt fler människor i Finland vill ha fler barn.",
+              "translation": "More and more people in Finland want more children.",
+              "options": [
+                "rätt",
+                "fel"
+              ]
+            },
+            {
+              "id": "q7",
+              "part": "Nyhet 3 · Barn: rätt eller fel?",
+              "prompt": "Många föräldrar tvekar om att skaffa ett barn till.",
+              "translation": "Many parents are unsure about having one more child.",
+              "options": [
+                "rätt",
+                "fel"
+              ]
+            },
+            {
+              "id": "q8",
+              "part": "Nyhet 5 · Louvre",
+              "prompt": "Hur många poliser arbetar med att lösa fallet?",
+              "translation": "How many police officers are working to solve the case?",
+              "options": [
+                "nästan 100",
+                "drygt 100",
+                "knappt 100"
+              ]
+            }
+          ],
+          "fixes": [
+            "“etnol” is written “etanol”.",
+            "“förknipas” is written “förknippas”.",
+            "“12000” is written “12 000”, and “helt säkra att” is written “helt säkra på att”.",
+            "“Många föräldrar är tvekar om” is written “Många föräldrar tvekar om” (one verb only).",
+            "Question marks are added to the “Rätt eller fel” headings, and the statements start with a capital letter and end with a full stop."
+          ]
+        }
+      ]
     }
   ],
   "story": {

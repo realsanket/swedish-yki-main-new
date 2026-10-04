@@ -2071,6 +2071,113 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Festivalen Bravo.",
+      "minutes": 6,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-21-festivalen-bravo",
+          "item": 21,
+          "title": "Festivalen Bravo",
+          "posted": "16 Jun",
+          "instructions": "Läs texten och svara på frågorna. Read the short text about the Bravo! festival and answer the questions. Look for the exact words in the text: vartannat år, tolfte gången.",
+          "texts": [
+            {
+              "title": "Festivalen Bravo",
+              "body": "Den internationella festivalen för scenkonst, Bravo!, som riktar sig till barn och unga, sprider sig till huvudstadsregionens kulturcentrum och övriga stadslokaler den 15–24 mars 2026. Festivalen gästas av flera internationella grupper inom scenkonsten, och repertoaren innehåller fördomsfria föreställningar från pop-punk-jonglering till känslig sensorisk teater.\n\nBravo!, som förverkligas vartannat år, är den enda internationella scenkonstfestivalen i huvudstadsregionen som uteslutande fokuserar på program riktat till barn, unga och familjer. Det är den största internationella festivalen för scenkonst för barn och unga i Finland.\n\nBravo!-festivalen arrangeras nu för tolfte gången i samarbete med scenkonstorganisationen Assitej Finland och huvudstadsregionens kommuner."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Frågor om texten",
+              "prompt": "Vem är festivalens målgrupp?",
+              "translation": "Who is the festival's target group?",
+              "model": "Barn, unga och familjer."
+            },
+            {
+              "id": "q2",
+              "part": "Frågor om texten",
+              "prompt": "Hur ofta kan man gå på Festivalen Bravo?",
+              "translation": "How often can you go to the Bravo festival?",
+              "options": [
+                "Två gånger om året",
+                "Varje år",
+                "En gång om två år"
+              ],
+              "answers": [
+                "En gång om två år"
+              ]
+            },
+            {
+              "id": "q3",
+              "part": "Frågor om texten",
+              "prompt": "Vilken typ av föreställningar kan man se på festivalen?",
+              "translation": "What kind of performances can you see at the festival?",
+              "model": "Fördomsfria scenkonstföreställningar för barn och unga, från pop-punk-jonglering till känslig sensorisk teater."
+            },
+            {
+              "id": "q4",
+              "part": "Frågor om texten",
+              "prompt": "Hur många gånger har man organiserat festivalen Bravo, inklusive detta år?",
+              "translation": "How many times has the Bravo festival been organised, including this year?",
+              "options": [
+                "11",
+                "12",
+                "13"
+              ],
+              "answers": [
+                "12"
+              ]
+            },
+            {
+              "id": "q5",
+              "part": "Rätt eller fel",
+              "prompt": "Festivalen Bravo är en filmfestival.",
+              "translation": "The Bravo festival is a film festival.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q6",
+              "part": "Rätt eller fel",
+              "prompt": "Festivalen organiseras inte bara i Finland utan också i några andra länder.",
+              "translation": "The festival is held not only in Finland but also in some other countries.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q7",
+              "part": "Rätt eller fel",
+              "prompt": "Deltagare kommer från olika länder.",
+              "translation": "Participants come from different countries.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

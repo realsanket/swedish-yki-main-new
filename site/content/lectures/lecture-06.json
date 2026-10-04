@@ -931,6 +931,132 @@
           }
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Preteritum (regular verbs) and Diary.",
+      "minutes": 20,
+      "action": "Do each item, check your answers, and check your text against the list. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-07-preteritum-regular-verbs",
+          "item": 7,
+          "title": "Preteritum (regular verbs)",
+          "posted": "27 Apr",
+          "instructions": "Skriv verbet i preteritum. Write only the missing verb in the past tense, not the whole sentence, and use å, ä, ö. -ar verbs add -ade (gillar → gillade); most -er verbs add -de, or -te after k, p, s, t (ringer → ringde, köper → köpte); short verbs add -dde (bor → bodde).",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Igår _______ (TRÄFFAR) jag min syster.",
+              "answers": [
+                "träffade"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vi _______ (PROMENERAR) i parken nära mitt hus.",
+              "answers": [
+                "promenerade"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Efter det _______ (FIRAR) vi min födelsedag på en restaurang.",
+              "answers": [
+                "firade"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Tårtan _______ (SMAKAR) fantastiskt!",
+              "answers": [
+                "smakade"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hon _______ (KÖPER) också en liten present till mig.",
+              "answers": [
+                "köpte"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Presenten _______ (GILLAR) jag mycket. Det var min favoritparfym.",
+              "answers": [
+                "gillade"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Hon _______ (LÄSER) i nyheterna att denna parfym var mycket populär.",
+              "answers": [
+                "läste"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Min syster vet mycket om mode eftersom hon _______ (BOR) i Paris när hon var yngre.",
+              "answers": [
+                "bodde"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Hon _______ (REKOMMENDERAR) att vi går och shoppar lite imorgon.",
+              "answers": [
+                "rekommenderade"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "Vi brukar shoppa för kläder varje november så jag _______ (SPARAR) mycket pengar.",
+              "answers": [
+                "sparade"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "Då _______ (RINGER) min man.",
+              "answers": [
+                "ringde"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "teacher-08-diary",
+          "item": 8,
+          "title": "Diary",
+          "posted": "27 Apr",
+          "instructions": "Skriv dagbok varje dag, 5–10 minuter. Write a few lines about your day in the past tense, especially with irregular verbs (åt, drack, gick, såg). After a time word the verb comes second: Igår vaknade jag tidigt.",
+          "note": "This is a recurring task with no due date: write a new short entry every day. There is no answer key; check your entry against the points and the model.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Skriv om ditt vardagsliv. Vad gjorde du igår? Använd preteritum, särskilt oregelbundna verb. Skriv om dig själv, dina vanor, vad du gillar och inte gillar och om människor i ditt liv.",
+              "translation": "Write about your daily life. What did you do yesterday? Use the past tense, especially irregular verbs. Write about yourself, your habits, your likes and dislikes, and the people in your life.",
+              "writing": {
+                "wordRange": [
+                  40,
+                  100
+                ],
+                "points": [
+                  "I wrote what I did, in the past tense (preteritum).",
+                  "I used at least three irregular verbs (for example åt, drack, gick, såg, fick, var, hade).",
+                  "I used time words (igår, imorse, förra veckan) and put the verb second after them: Igår vaknade jag…",
+                  "I said something I like or do not like.",
+                  "I wrote about a person in my life (a friend, a colleague, my family)."
+                ]
+              },
+              "model": "Igår vaknade jag tidigt. Jag drack te och åt en smörgås till frukost. Sedan åkte jag till jobbet med buss. På jobbet hade jag många möten. Efter jobbet träffade jag min vän på ett kafé i Helsingfors. Vi pratade länge. Jag älskar kaffe, men jag dricker inte kaffe på kvällarna. Hemma lagade jag mat och läste en bok. Jag gick och lade mig klockan elva."
+            }
+          ]
+        }
+      ]
     }
   ],
   "recall": [

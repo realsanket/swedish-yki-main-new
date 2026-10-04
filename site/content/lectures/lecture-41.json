@@ -2349,6 +2349,200 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Nyheter 7: Autism och TikTok and Nyheter 8: turister, Island och bokmässan.",
+      "minutes": 21,
+      "action": "Do each item, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-33-nyheter-autism-tiktok",
+          "item": 33,
+          "title": "Nyheter 7: Autism och TikTok",
+          "posted": "25 Jul",
+          "instructions": "Lyssna på nyhet 2 och nyhet 3 och svara på frågorna. Listen to news items 2 and 3 in the Yle episode, then answer the questions. Listen for the reason (varför) and the number.",
+          "note": "There is no answer key: the teacher's form was never submitted, and the answers are in the audio. Listen to the episode (twice, like in YKI) and check your answers against it.",
+          "links": [
+            {
+              "label": "Yle Arenan: the news episode (news 2 and 3)",
+              "url": "https://arenan.yle.fi/poddar/1-72858530"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Nyhet 2 · Autism",
+              "prompt": "Varför flyttade familjen till Åland?",
+              "translation": "Why did the family move to Åland?",
+              "options": [
+                "barnen hade autism",
+                "de ville att barnen går i skola hemma",
+                "de ville inte att deras barn går i skolan"
+              ]
+            },
+            {
+              "id": "q2",
+              "part": "Nyhet 3 · TikTok",
+              "prompt": "Vad kan man göra på TikTok?",
+              "translation": "What can you do on TikTok?",
+              "hint": "Write a short answer with the words you heard."
+            },
+            {
+              "id": "q3",
+              "part": "Nyhet 3 · TikTok",
+              "prompt": "Appen används av 117 miljoner.",
+              "translation": "The app is used by 117 million (people).",
+              "options": [
+                "JA",
+                "NEJ"
+              ]
+            },
+            {
+              "id": "q4",
+              "part": "Nyhet 3 · TikTok",
+              "prompt": "Varför skulle man inte förbjuda TikTok?",
+              "translation": "Why should TikTok not be banned?",
+              "options": [
+                "man får information där",
+                "man tjänar pengar genom den",
+                "det påverkar åsikter"
+              ]
+            }
+          ],
+          "fixes": [
+            "A question mark is added to “Vad kan man göra på TikTok”."
+          ]
+        },
+        {
+          "id": "teacher-34-nyheter-turister-island-bokmassan",
+          "item": 34,
+          "title": "Nyheter 8: turister, Island och bokmässan",
+          "posted": "25 Jul",
+          "instructions": "Lyssna på nyhet 3, 4 och 5 och svara på frågorna. Listen to news items 3, 4 and 5 in the Yle episode. Decide whether each statement is right (Rätt) or wrong (Fel), and pick the best answer. Listen carefully for numbers.",
+          "note": "There is no answer key: the teacher's form was never submitted, and the answers are in the audio. Listen to the episode (twice, like in YKI) and check your answers against it.",
+          "links": [
+            {
+              "label": "Yle Arenan: the news episode (news 3, 4 and 5)",
+              "url": "https://arenan.yle.fi/1-76094987"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Nyhet 3 · Turister: Rätt eller fel?",
+              "prompt": "Turister förväntas spendera 1,3 miljoner euro i Finland i år.",
+              "translation": "Tourists are expected to spend 1.3 million euros in Finland this year.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "part": "Nyhet 3 · Turister: Rätt eller fel?",
+              "prompt": "1,3 miljoner turister kommer till Finland i vinter.",
+              "translation": "1.3 million tourists are coming to Finland this winter.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "part": "Nyhet 3 · Turister: Rätt eller fel?",
+              "prompt": "De mest besökta platserna i Finland är Lappland, Vasa och Helsingfors.",
+              "translation": "The most visited places in Finland are Lapland, Vaasa and Helsinki.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "part": "Nyhet 3 · Turister: Rätt eller fel?",
+              "prompt": "Lika många utlänningar kommer till andra delar av Finland, som östra Finland.",
+              "translation": "As many foreigners come to other parts of Finland, such as eastern Finland.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "part": "Nyhet 3 · Turister: Rätt eller fel?",
+              "prompt": "Många ryssar kommer till Finland i vinter.",
+              "translation": "Many Russians are coming to Finland this winter.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q6",
+              "part": "Nyhet 4 · Island",
+              "prompt": "Vad hittade man på Island?",
+              "translation": "What was found in Iceland?",
+              "options": [
+                "myror",
+                "myggor",
+                "insekter som heter \"kjos\""
+              ]
+            },
+            {
+              "id": "q7",
+              "part": "Nyhet 4 · Island",
+              "prompt": "Hur är det möjligt att dessa insekter finns på Island?",
+              "translation": "How is it possible that these insects are in Iceland?",
+              "options": [
+                "De kan komma dit på grund av klimatförändringarna.",
+                "De är en typ av insekt som alltid har funnits på Island.",
+                "Människor tog dem med sig när de kom hem från sina semestrar i Afrika."
+              ]
+            },
+            {
+              "id": "q8",
+              "part": "Nyhet 5 · Bokmässan: Rätt eller fel?",
+              "prompt": "Bokmässan är 5 dagar lång.",
+              "translation": "The book fair is 5 days long.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q9",
+              "part": "Nyhet 5 · Bokmässan: Rätt eller fel?",
+              "prompt": "Den första bokmässan i Helsingfors ordnades 2001.",
+              "translation": "The first book fair in Helsinki was held in 2001.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q10",
+              "part": "Nyhet 5 · Bokmässan: Rätt eller fel?",
+              "prompt": "Bokmässan har organiserats 24 gånger hittills.",
+              "translation": "The book fair has been organised 24 times so far.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            }
+          ],
+          "fixes": [
+            "“1.3 miljoner” is written “1,3 miljoner” (Swedish uses a decimal comma).",
+            "“Helsigngfors” is written “Helsingfors”.",
+            "“De mest besökta platser” is written “De mest besökta platserna” (definite form after “de mest”).",
+            "“Människor tog de med sig” is written “Människor tog dem med sig” (object form).",
+            "“Bokmässan organiserades 24 gånger hittills” is written “Bokmässan har organiserats 24 gånger hittills” (“hittills” needs the perfect tense)."
+          ]
+        }
+      ]
     }
   ],
   "story": {

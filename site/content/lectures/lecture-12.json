@@ -753,6 +753,138 @@
           }
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Komparation.",
+      "minutes": 7,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-12-komparation",
+          "item": 12,
+          "title": "Komparation",
+          "posted": "15 May",
+          "instructions": "Skriv adjektivet i komparativ, bara ett ord: Tom är (LÅNG) än Jonas → längre. Most adjectives add -are (kort → kortare). Learn the special ones: bra → bättre, liten → mindre, lång → längre, mycket → mer, många → fler.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Teveserien \"Game of Thrones\" är (KORT) än \"Grey's Anatomy\".",
+              "answers": [
+                "kortare"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Jag tycker att Jonas är (SNYGG) än Tom.",
+              "answers": [
+                "snyggare"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Filmen \"Persona\" är (BRA) än \"Smultronstället\".",
+              "answers": [
+                "bättre"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Katter brukar vara (LITEN) än hundar.",
+              "answers": [
+                "mindre"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Finländare dricker (MYCKET) kaffe än italienare.",
+              "answers": [
+                "mer",
+                "mera"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Annas presentation är (TRÅKIG) än Lenas presentation. Det finns inga bilder!",
+              "answers": [
+                "tråkigare"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Det brukar vara (MÖRK) på vintern än på sommaren.",
+              "answers": [
+                "mörkare"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Det är (DYR) att köra bil än att cykla.",
+              "answers": [
+                "dyrare"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Godis är (BILLIG) än psykoterapi.",
+              "answers": [
+                "billigare"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "Min syster har (MÅNGA) vänner än jag.",
+              "answers": [
+                "fler"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "Jag tycker att kött är (GOD) än fisk.",
+              "answers": [
+                "godare"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "Det är (VIKTIG) att vara en bra person än att vara rik.",
+              "answers": [
+                "viktigare"
+              ]
+            },
+            {
+              "id": "q13",
+              "prompt": "Elon Musk är (RIK) än Jeff Bezos.",
+              "answers": [
+                "rikare"
+              ]
+            },
+            {
+              "id": "q14",
+              "prompt": "Hulk är (STARK) än Batman.",
+              "answers": [
+                "starkare"
+              ]
+            },
+            {
+              "id": "q15",
+              "prompt": "Folk i mitt hemland är (VÄNLIG) än folk i Finland.",
+              "answers": [
+                "vänligare"
+              ]
+            }
+          ],
+          "fixes": [
+            "“Der brukar vara” is written “Det brukar vara”.",
+            "“Italienare” is written “italienare” (nationalities take a small letter in Swedish).",
+            "The missing verb in “Folk i mitt hemland (VÄNLIG) än folk i Finland” is added: “Folk i mitt hemland är (VÄNLIG) …”.",
+            "The missing full stop after “Hulk är (STARK) än Batman” is added."
+          ]
+        }
+      ]
     }
   ],
   "sections": [

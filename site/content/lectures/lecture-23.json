@@ -2118,6 +2118,89 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Informal email and Formal email.",
+      "minutes": 30,
+      "action": "Do each item, check your answers, and check your text against the list. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-18-informal-email",
+          "item": 18,
+          "title": "Informal email",
+          "posted": "10 Jun",
+          "instructions": "Skriv ett informellt mejl om ett av ämnena. Write one email to a friend on one of the three topics, 50-80 words. Greet, ask how they are, react with feeling, suggest something concrete and end in a friendly way.",
+          "texts": [
+            {
+              "title": "Struktur för ett informellt mejl (the teacher's sheet)",
+              "body": "1. Hälsning: Hej Anna, / Hejsan Johan,\n2. Huvuddel: ställ en fråga (Hur mår du?), reagera (Vad kul att du ska resa! / Vad tråkigt att …), föreslå att ses med detaljer (Vad sägs om en fika på fredag?), berätta något nytt (Förresten har jag …).\n3. Avslutning: Kram / Vi ses / Vi hörs + ditt namn"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Skriv ett informellt mejl. Välj ett ämne:\n1. Bjud in en vän att prova din nya hobby tillsammans med dig.\n2. Du är sjuk. Be en vän om hjälp.\n3. En vän har förlorat sitt jobb. Reagera och erbjud hjälp.",
+              "translation": "Write an informal email. Choose one topic:\n1. Invite your friend to join in on your new hobby.\n2. You are sick. Ask your friend for help.\n3. A friend lost their job. React and offer help.",
+              "writing": {
+                "wordRange": [
+                  50,
+                  80
+                ],
+                "points": [
+                  "Informal greeting: “Hej” or “Hejsan” + the friend's name.",
+                  "Ask how they are: “Hur mår du?” or “Hur är det med dig?”.",
+                  "React with a feeling or say why you are writing: “Vad kul att …!” or “Vad tråkigt att …!”.",
+                  "Take the initiative: suggest a meeting with a day and a place, or offer concrete help.",
+                  "Give a little background and use subjunctions such as att, eftersom, när and om (B1 level).",
+                  "Informal ending: “Kram”, “Vi ses” or “Vi hörs” + your first name.",
+                  "Check verb tenses, word choice and prepositions."
+                ]
+              },
+              "model": "Hej Lena,\n\nHur mår du? Jag hörde att du har förlorat ditt jobb. Vad tråkigt! Jag vet att du tyckte mycket om dina kollegor. Men du är så duktig, så jag tror att du kommer att hitta ett nytt jobb snart. Kan jag hjälpa dig? Jag kan läsa ditt CV, eftersom jag har skrivit många ansökningar själv. Vad sägs om en fika på lördag på vårt favoritkafé? Jag bjuder!\n\nKram,\nFörnamn"
+            }
+          ]
+        },
+        {
+          "id": "teacher-19-formal-email",
+          "item": 19,
+          "title": "Formal email",
+          "posted": "10 Jun",
+          "instructions": "Skriv ett formellt mejl om ett av ämnena. Write one formal email on one of the three topics, 50-80 words. Present yourself, give facts and numbers, say clearly what you want, and write ni / er.",
+          "texts": [
+            {
+              "title": "Struktur för ett formellt mejl (the teacher's sheet)",
+              "body": "1. Inledning: säg varför du skriver. Gå rakt på sak. (Jag skriver angående …)\n2. Huvuddel: förklara situationen kort. Beskriv fakta: datum, plats, ordernummer, spårnummer. (Jag bifogar …)\n3. Avslutning: skriv vad du vill ska hända nu. (Skulle ni kunna … / Jag vore tacksam för svar så snart som möjligt.)\nMed vänliga hälsningar + förnamn och efternamn"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Skriv ett formellt mejl. Välj ett ämne:\n1. Skriv till en butik och fråga om en produkt (finns den, vad kostar den, när kommer den tillbaka till hyllorna?).\n2. Skriv till Migri och fråga varför du har väntat på ett nytt pass i ett år.\n3. Skriv till posten och klaga på att ditt paket är skadat.",
+              "translation": "Write a formal email. Choose one topic:\n1. Write to a store to ask about a product (availability, price, back on the shelves).\n2. Write to Migri to ask why you have been waiting for a new passport for a year.\n3. Write to the post office to complain about your parcel being damaged.",
+              "writing": {
+                "wordRange": [
+                  50,
+                  80
+                ],
+                "points": [
+                  "Start with “Hej,” and present yourself with your first and last name.",
+                  "Say at once why you are writing: “Jag skriver angående …”.",
+                  "Give facts and numbers: dates, place, order or parcel number, price.",
+                  "Say clearly what you want: “Skulle ni kunna …?” or “Jag vill därför …”, and attach proof: “Jag bifogar …”.",
+                  "Use ni / er, a polite tone, and subjunctions such as att, eftersom and när for background.",
+                  "End with “Med vänliga hälsningar” + your first name, last name and contact details.",
+                  "Check verb tenses, word choice and prepositions."
+                ]
+              },
+              "model": "Hej,\n\nJag heter Förnamn Efternamn och bor på Gamlagatan 23 i Helsingfors. Jag skriver angående mitt paket med paketnummer AB 123456789. Jag hämtade det på ert postkontor den 8 juni. Tyvärr var kartongen trasig och vasen inuti var sönder. Jag bifogar två bilder på paketet. Vasen kostade 45 euro. Skulle ni kunna ersätta skadan? Jag ser fram emot ert svar.\n\nMed vänliga hälsningar,\nFörnamn Efternamn\nTel. 040 123 4567"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

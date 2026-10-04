@@ -394,10 +394,10 @@ selected only by optional `ykiMockId`; no current lecture selects it.
     voice?
 4. Save the mission plan and the unexpected-questions result to the server (both
    are browser-only now).
-4a. **In progress:** the teacher's Google Forms homework as a "Teacher's
-    homework" last step (`classroom-homework`). Forms 1-6 are in Lectures 2, 3
-    and 5 (Lectures 1 and 4 have none); forms 7-39 are still to map. Answers
-    are kept in the browser only.
+4a. **Done (October 4, 2026):** all 39 teacher Classroom items appear as a
+    "Teacher's homework" last step (`classroom-homework`) in the 28 lectures
+    that have one (see "Teacher's homework" in `docs/mapping.md`). Open: answers
+    are browser-only, and the listening forms have no answer key.
 5. **Done (October 4, 2026):** the YKI-book phase, Lectures 23-52 (see the
    last section of `docs/mapping.md`). Next for it: a teacher's glance at the
    doubtful lines, pictures (`docs/image-prompts/yki-episodes.md`), and an

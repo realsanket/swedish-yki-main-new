@@ -1854,6 +1854,103 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Fusket.",
+      "minutes": 5,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-32-cheating",
+          "item": 32,
+          "title": "Fusket",
+          "posted": "22 Jul",
+          "instructions": "Läs texten. Är påståendena rätt eller fel? Read the text and decide if each sentence is true (Rätt) or false (Fel). Read carefully: one word like minst (least) or mindre (less) can make a sentence false.",
+          "texts": [
+            {
+              "title": "Fusket",
+              "body": "Det blir vanligare att studerande inte gör alla sina skoluppgifter själva. Istället betalar de för att någon annan gör uppgifterna för dem.\n\nProblemet är störst i högskolor, men fusket görs också i till exempel gymnasier. I en undersökning berättade drygt 15 procent av studerandena, att de har betalat någon annan för att skriva deras skolarbete.\n\nDet finns till och med företag som förtjänar stora pengar på den här verksamheten. Dem hittar man på internet.\n\nEn professor, som har undersökt saken, säger att skoluppgifterna ska fungera som ett bevis för att man lärt sig någonting i skolan. Till exempel vid Helsingfors universitet säger man att det är omöjligt att lämna in en uppgift, som man inte själv skrivit. Där måste man delta i diskussioner och göra flera olika versioner av skolarbetet innan det lämnas in."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Rätt eller fel? · True or false?",
+              "prompt": "Rätt eller fel?\nProblemet är minst i gymnasier.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "translation": "The problem is smallest in upper secondary schools.",
+              "answers": [
+                "Fel"
+              ],
+              "hint": "The text says the problem is biggest in högskolor; gymnasier are only an example of other schools."
+            },
+            {
+              "id": "q2",
+              "part": "Rätt eller fel? · True or false?",
+              "prompt": "Rätt eller fel?\nMindre än 15% av studenterna betalade någon att göra uppgifter istället för dem.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "translation": "Less than 15% of the students paid someone to do assignments for them.",
+              "answers": [
+                "Fel"
+              ],
+              "hint": "drygt 15 procent = a little more than 15 per cent."
+            },
+            {
+              "id": "q3",
+              "part": "Rätt eller fel? · True or false?",
+              "prompt": "Rätt eller fel?\nDet finns ett bolag som tjänar på den här tjänsten.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "translation": "There is a company that earns money from this service.",
+              "answers": [
+                "Rätt"
+              ],
+              "hint": "ett bolag = ett företag; tjäna = förtjäna (earn)."
+            },
+            {
+              "id": "q4",
+              "part": "Rätt eller fel? · True or false?",
+              "prompt": "Rätt eller fel?\nPå Helsingfors universitet förstår man om du har gjort en uppgift själv eller inte.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "translation": "At the University of Helsinki they can tell whether you did an assignment yourself or not.",
+              "answers": [
+                "Rätt"
+              ],
+              "hint": "omöjligt att lämna in en uppgift som man inte själv skrivit."
+            },
+            {
+              "id": "q5",
+              "part": "Rätt eller fel? · True or false?",
+              "prompt": "Rätt eller fel?\nStudenterna lämnar in flera versioner av sin uppgift.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "translation": "The students hand in several versions of their assignment.",
+              "model": "Look at the last sentence: students 'göra flera olika versioner av skolarbetet innan det lämnas in'. They write several versions; the text does not say they hand each one in. The most likely answer is Fel."
+            }
+          ],
+          "fixes": [
+            "“Helsingfors Universitet” is written “Helsingfors universitet”.",
+            "“Helsingfors universitetet” (statement 4) is written “Helsingfors universitet”."
+          ]
+        }
+      ]
     }
   ],
   "story": {

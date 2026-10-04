@@ -2019,6 +2019,154 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Nyheter 6: ojämlikhet, Temu och valet.",
+      "minutes": 18,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-31-news-inequality-temu-election",
+          "item": 31,
+          "title": "Nyheter 6: ojämlikhet, Temu och valet",
+          "posted": "16 Jul",
+          "instructions": "Lyssna på nyhet 1, 2 och 3 och svara på frågorna. Listen to news 1, 2 and 3 in the episode and answer the questions. Write short answers in Swedish where there are no options.",
+          "note": "There is no answer key for these listening questions: check your answers against the episode.",
+          "links": [
+            {
+              "label": "The news episode on Yle Arenan",
+              "url": "https://arenan.yle.fi/poddar/1-71854624"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Nyhet 1 · Ojämlikhet",
+              "prompt": "Varför kallas Sverige för det mest ojämlika landet i Norden?",
+              "translation": "Why is Sweden called the most unequal country in the Nordic region?",
+              "options": [
+                "det finns få rika människor och många fattiga",
+                "det finns många som är superrika och många som är superfattiga",
+                "det finns antingen rika eller fattiga människor, medelklass finns inte längre"
+              ]
+            },
+            {
+              "id": "q2",
+              "part": "Nyhet 1 · Ojämlikhet",
+              "prompt": "Vilka åldersgrupper är mest påverkade?",
+              "translation": "Which age groups are most affected?",
+              "hint": "Answer with a short phrase in Swedish."
+            },
+            {
+              "id": "q3",
+              "part": "Nyhet 1 · Ojämlikhet",
+              "prompt": "Vilka är de möjliga följderna av ojämlikhet? Rätt eller fel?\nmer våld",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "Possible results of inequality: more violence."
+            },
+            {
+              "id": "q4",
+              "part": "Nyhet 1 · Ojämlikhet",
+              "prompt": "Vilka är de möjliga följderna av ojämlikhet? Rätt eller fel?\nfler lån tas ut från banken",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "More loans are taken from the bank."
+            },
+            {
+              "id": "q5",
+              "part": "Nyhet 1 · Ojämlikhet",
+              "prompt": "Vilka är de möjliga följderna av ojämlikhet? Rätt eller fel?\nfler brott kommer att begås",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "More crimes will be committed."
+            },
+            {
+              "id": "q6",
+              "part": "Nyhet 1 · Ojämlikhet",
+              "prompt": "Vilka är de möjliga följderna av ojämlikhet? Rätt eller fel?\nmånga föräldrar kommer att förlora sina jobb",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "Many parents will lose their jobs."
+            },
+            {
+              "id": "q7",
+              "part": "Nyhet 2 · Temu",
+              "prompt": "Hur många använder Temu varje månad?",
+              "translation": "How many people use Temu every month?",
+              "options": [
+                "92 miljoner i hela världen",
+                "2 miljoner i EU",
+                "92 miljoner i EU"
+              ]
+            },
+            {
+              "id": "q8",
+              "part": "Nyhet 2 · Temu",
+              "prompt": "Varför kan Temu tvingas betala böter? Rätt eller fel?\nde säljer några giftiga produkter",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "Why might Temu have to pay fines? They sell some poisonous products."
+            },
+            {
+              "id": "q9",
+              "part": "Nyhet 2 · Temu",
+              "prompt": "Varför kan Temu tvingas betala böter? Rätt eller fel?\nde vill inte stoppa olagliga saker från att säljas",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "They do not want to stop illegal things from being sold."
+            },
+            {
+              "id": "q10",
+              "part": "Nyhet 2 · Temu",
+              "prompt": "Varför kan Temu tvingas betala böter? Rätt eller fel?\nde skyddar inte kundinformation",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "They do not protect customer information."
+            },
+            {
+              "id": "q11",
+              "part": "Nyhet 3 · Valet",
+              "prompt": "Vad handlar kursen om?",
+              "translation": "What is the course about?",
+              "hint": "Answer with a short phrase in Swedish."
+            },
+            {
+              "id": "q12",
+              "part": "Nyhet 3 · Valet",
+              "prompt": "Varför är kursen intressant enligt kursdeltagarna?",
+              "translation": "Why is the course interesting, according to the participants?",
+              "options": [
+                "eftersom man tittar på nyheterna på lektionerna",
+                "amerikanerna väljer president på ett annorlunda sätt",
+                "det finns 40 deltagare"
+              ]
+            }
+          ],
+          "fixes": [
+            "“fins” is written “finns”.",
+            "“antngen” is written “antingen”."
+          ]
+        }
+      ]
     }
   ],
   "story": {

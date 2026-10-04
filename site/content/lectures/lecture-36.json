@@ -1842,6 +1842,119 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Barn och mat.",
+      "minutes": 5,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-30-children-food",
+          "item": 30,
+          "title": "Barn och mat",
+          "posted": "14 Jul",
+          "instructions": "Läs texten och välj rätt svar. Read the text and choose the right answer. The answer is in the text, often in other words.",
+          "texts": [
+            {
+              "title": "Barn och mat",
+              "body": "Över 22 miljoner barn i Europa väger för mycket. Det visar en studie av 12 700 barn mellan 2 och 10 år från Sverige och sju andra länder i Europa. Studien visar också att fetma bland barn är tre gånger vanligare i sydliga länder, som Italien och Spanien, än i Sverige och andra nordliga länder. I Italien räknas 41,9 % av barnen som överviktiga och i Sverige är siffran 9,5 %.\n\nEn kvinnlig forskare från Sahlgrenska Akademin i Göteborg har medverkat i studien. Hon säger att det finns ett samband mellan att vara ensambarn och att vara överviktig. Att det är vanligare att barn som inte har syskon väger för mycket och att risken ökar ju längre man har varit ensambarn. Barn som växer upp utan syskon löper ungefär dubbelt så stor risk att bli överviktiga eller feta än barn med syskon.\n\nForskarna vet inte säkert vad som ligger bakom skillnaderna. Men de pekar på några saker som kan ge en förklaring. Ensambarn leker mindre tid utomhus, ser mer på tv och äter mer socker än barn med syskon, visar studien.\n\nDessutom ger föräldrar till ensambarn oftare sitt barn mat som belöning än vad flerbarnsföräldrar gör.\n\nEn amerikansk kvinna, Pamela Druckerman, har bott i Frankrike i många år. Hon har skrivit en bok om skillnaderna mellan amerikanska och franska föräldrar när det gäller barn och mat. Boken är ingen studie utan handlar om vad hon som mamma sett och upplevt i Frankrike. När hon var ute på restaurang till exempel, såg hon ofta hur de franska barnen satt fint vid bordet och åt av alla rätter, medan hennes eget barn bråkade och inte ville äta av maten.\n\nHon märkte också att de franska barnen fick mat på bestämda tider redan när de var mycket små och att det kanske är en orsak till att franska barn är mindre feta än amerikanska barn. Över hela världen finns många åsikter om barn och mat. Vissa föräldrar tycker att barn ska lära sig att äta all mat och andra tycker att det är viktigast att barnen blir mätta. Därför låter de barnen själva välja om de vill ha fisk, pannkakor eller hamburgare."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad stämmer om studien om överviktiga barn?",
+              "translation": "What is true about the study of overweight children?",
+              "options": [
+                "12 700 barn i åldern 2-10 har studerats i 7 länder.",
+                "12 700 barn i åldern 2-10 har studerats i 8 länder.",
+                "22 miljoner barn i åldern 2-10 har studerats i 8 länder."
+              ],
+              "answers": [
+                "12 700 barn i åldern 2-10 har studerats i 8 länder."
+              ],
+              "hint": "Sverige och sju andra länder: count Sweden too."
+            },
+            {
+              "id": "q2",
+              "prompt": "Var i Europa är barnfetma vanligast?",
+              "translation": "Where in Europe is obesity in children most common?",
+              "options": [
+                "i södra Europa",
+                "i norra Europa",
+                "lika vanligt i hela Europa"
+              ],
+              "answers": [
+                "i södra Europa"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur mycket vanligare är barnfetma hos ensambarn än hos barn med syskon?",
+              "translation": "How much more common is obesity in only children than in children with brothers and sisters?",
+              "options": [
+                "ungefär 9% vanligare",
+                "ungefär 41% vanligare",
+                "ungefär 100% vanligare"
+              ],
+              "answers": [
+                "ungefär 100% vanligare"
+              ],
+              "hint": "dubbelt så stor = twice as big."
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför blir ensambarn oftare feta än barn med syskon?",
+              "translation": "Why do only children become obese more often than children with brothers and sisters?",
+              "options": [
+                "De äter ofta på restaurang.",
+                "De sitter mer stilla.",
+                "De får ofta bestämma sin mat."
+              ],
+              "answers": [
+                "De sitter mer stilla."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad märkte den amerikanska författaren när hon jämförde franska och amerikanska barn?",
+              "translation": "What did the American writer notice when she compared French and American children?",
+              "options": [
+                "Att amerikanska barn har sämre bordskick.",
+                "Att amerikanska barn leker mer utomhus.",
+                "Att amerikanska barn äter fler hamburgare."
+              ],
+              "answers": [
+                "Att amerikanska barn har sämre bordskick."
+              ],
+              "hint": "bordskick = table manners."
+            },
+            {
+              "id": "q6",
+              "prompt": "Vad tror hon att det beror på att franska barn är mindre feta än amerikanska barn?",
+              "translation": "What does she think is the reason why French children are less obese than American children?",
+              "options": [
+                "De får själva välja vad de vill äta.",
+                "De får aldrig mat som belöning.",
+                "De äter på regelbundna tider från tidig ålder."
+              ],
+              "answers": [
+                "De äter på regelbundna tider från tidig ålder."
+              ]
+            }
+          ],
+          "fixes": [
+            "“baren” is written “barnen”.",
+            "“skillnadema” is written “skillnaderna”.",
+            "“vanlgare” is written “vanligare”.",
+            "The author's name “Duckerman” is written “Druckerman”."
+          ]
+        }
+      ]
     }
   ],
   "story": {

@@ -52,7 +52,6 @@ def check_homework(n,st):
             if opts is not None:
                 if len(opts)<2 or len(set(opts))!=len(opts): errs.append(f"{n}: homework {hid} question {qid} needs distinct options")
                 if answers and not set(answers)<=set(opts): errs.append(f"{n}: homework {hid} question {qid} answer is not an option")
-                if answers and not q.get('multiple') and len(answers)!=1: errs.append(f"{n}: homework {hid} question {qid} pick-one needs one answer")
     return errs
 
 def check_yki_speaking(n,st):

@@ -492,6 +492,307 @@
           }
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Hjälpverb 2.",
+      "minutes": 7,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-13-hjalpverb-2",
+          "item": 13,
+          "title": "Hjälpverb 2",
+          "posted": "18 May",
+          "instructions": "Välj rätt hjälpverb. borde = should (advice), får = may, are allowed to, måste = must, behöver = need to, hinner = have time to. Never say “måste inte”: “you don't have to” is “behöver inte”.",
+          "note": "Some sentences have more than one good answer; every correct verb is accepted, and the answer shown is the one the lesson practises.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Jag har så mycket att göra. Jag ____ inte hjälpa dig nu.",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste"
+              ],
+              "answers": [
+                "hinner"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Jag har prov på måndag. Jag ____ gå hem och plugga.",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste"
+              ],
+              "answers": [
+                "måste",
+                "behöver",
+                "borde"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Man ____ inte parkera här. Det är bara för hotellets gäster.",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste"
+              ],
+              "answers": [
+                "får"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "På den här restaurangen ____ man inte boka bord. De har alltid lediga bord.",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste"
+              ],
+              "answers": [
+                "behöver"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Jag har inte tränat så mycket på sistone. Jag _____ börja igen.",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste"
+              ],
+              "answers": [
+                "borde",
+                "behöver",
+                "måste"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Jag glömde min historiebok hemma. ____ jag läsa läxan från din bok?",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste"
+              ],
+              "answers": [
+                "får"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Du ____ inte laga mat idag. Jag har redan gjort det så vi kan titta på Netflix och chilla när du kommer hem.",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste"
+              ],
+              "answers": [
+                "behöver"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Filmen börjar snart. Vi ______ inte fika nu.",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste"
+              ],
+              "answers": [
+                "hinner"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Det är soligt ute på sommaren! Du _____ köpa solkräm.",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste"
+              ],
+              "answers": [
+                "borde",
+                "behöver",
+                "måste"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "A: ____ du tala tyska?\nB: Inte så bra.",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste",
+                "brukar",
+                "kan",
+                "ska",
+                "vill"
+              ],
+              "answers": [
+                "kan"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "A: Varför ____ du plugga till ingenjör?\nB: Det är så spännande!",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste",
+                "brukar",
+                "kan",
+                "ska",
+                "vill"
+              ],
+              "answers": [
+                "vill"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "____ man göra mycket läxor på din kurs?",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste",
+                "kan",
+                "ska",
+                "vill"
+              ],
+              "answers": [
+                "måste",
+                "behöver"
+              ]
+            },
+            {
+              "id": "q13",
+              "prompt": "______ du gifta dig med mig?",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste",
+                "brukar",
+                "kan",
+                "ska",
+                "vill"
+              ],
+              "answers": [
+                "vill"
+              ]
+            },
+            {
+              "id": "q14",
+              "prompt": "A: ____ man äta glass på bussen?\nB: Nej, det finns regler!",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste",
+                "brukar",
+                "kan",
+                "ska",
+                "vill"
+              ],
+              "answers": [
+                "får"
+              ]
+            },
+            {
+              "id": "q15",
+              "prompt": "Var ____ man köpa biljetter?",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste",
+                "brukar",
+                "kan",
+                "ska",
+                "vill"
+              ],
+              "answers": [
+                "kan",
+                "ska"
+              ]
+            },
+            {
+              "id": "q16",
+              "prompt": "Du ______ träna mer!",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste",
+                "brukar",
+                "kan",
+                "ska",
+                "vill"
+              ],
+              "answers": [
+                "borde",
+                "måste",
+                "behöver"
+              ]
+            },
+            {
+              "id": "q17",
+              "prompt": "_____ vi gå och träna på gymmet imorgon?",
+              "options": [
+                "behöver",
+                "borde",
+                "får",
+                "hinner",
+                "måste",
+                "brukar",
+                "kan",
+                "ska",
+                "vill"
+              ],
+              "answers": [
+                "ska",
+                "kan"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "recall": [

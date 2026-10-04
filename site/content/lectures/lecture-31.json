@@ -2079,6 +2079,120 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Nyheter 3: mobbning + jobb för invandrare.",
+      "minutes": 12,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-25-nyheter-mobbning-jobb",
+          "item": 25,
+          "title": "Nyheter 3: mobbning + jobb för invandrare",
+          "posted": "29 Jun",
+          "instructions": "Lyssna på nyhet 1 och nyhet 2 och svara på frågorna. Listen to the first two news items in the Yle episode and answer. Press the white “Starta” button at the top left of the Yle page to play (the player bar may play the last thing you heard instead).",
+          "note": "There is no answer key for these listening questions: listen again and check your answers against the episode.",
+          "links": [
+            {
+              "label": "Yle Arenan: the news episode (nyhet 1 and 2)",
+              "url": "https://arenan.yle.fi/poddar/1-71767056"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Nyhet 1",
+              "prompt": "Vilka 2 anledningar nämns till varför barn blir mobbade?",
+              "translation": "Which two reasons are given for why children are bullied?",
+              "options": [
+                "deras föräldrar är invandrare och de kan inte tala svenska",
+                "deras hudfärg och det att de inte har pengar",
+                "deras dyra kläder och föräldrarna som är invandrare"
+              ]
+            },
+            {
+              "id": "q2",
+              "part": "Nyhet 1",
+              "prompt": "Är mobbning ett stort problem i Finland?",
+              "translation": "Is bullying a big problem in Finland?",
+              "options": [
+                "JA",
+                "NEJ"
+              ]
+            },
+            {
+              "id": "q3",
+              "part": "Nyhet 2",
+              "prompt": "Vad hade företaget för problem?",
+              "translation": "What problem did the company have?",
+              "options": [
+                "de kunde inte börja jobba i andra länder",
+                "de kunde inte locka arbetare från andra länder",
+                "de kunde inte lära sina arbetare varken svenska eller finska"
+              ]
+            },
+            {
+              "id": "q4",
+              "part": "Nyhet 2 · Hur löste de problemet?",
+              "prompt": "de anställde fler personer",
+              "translation": "How did they solve the problem? They hired more people.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "part": "Nyhet 2 · Hur löste de problemet?",
+              "prompt": "de skrev annonserna på engelska",
+              "translation": "They wrote the job ads in English.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q6",
+              "part": "Nyhet 2 · Hur löste de problemet?",
+              "prompt": "de ändrade sina språkkrav",
+              "translation": "They changed their language requirements.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q7",
+              "part": "Nyhet 2 · Hur löste de problemet?",
+              "prompt": "de bestämde att man måste tala bara ett av Finlands officiella språk, inte båda två",
+              "translation": "They decided you only need to speak one of Finland's official languages, not both.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q8",
+              "part": "Nyhet 2",
+              "prompt": "Hur många människor ansökte därefter?",
+              "translation": "How many people applied after that?",
+              "options": [
+                "300",
+                "50",
+                "360",
+                "350",
+                "35",
+                "340",
+                "34"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

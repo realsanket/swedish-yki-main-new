@@ -783,6 +783,274 @@
           }
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Definite plural of nouns and Objektspronomen.",
+      "minutes": 10,
+      "action": "Do each item, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-10-definite-plural",
+          "item": 10,
+          "title": "Definite plural of nouns",
+          "posted": "13 May",
+          "instructions": "Skriv substantivet i bestämd form plural. Choose or write the plural with “the”: the plural ending gets -na (bilar → bilarna, veckor → veckorna, bananer → bananerna), plurals ending in -n get -a (möten → mötena), and ett-words with no plural ending get -en (hus → husen).",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Anita ska ha en fest. Hon gick till en butik och vill köpa kläder. _______ i butiken är mycket dyra. (KLÄNNING)",
+              "options": [
+                "klänningarna",
+                "klänningerna",
+                "klänningorna"
+              ],
+              "answers": [
+                "klänningarna"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Ahmed vill laga mat. Han är på Lidl och köper ingredienser. ______ är söta så han tänker laga tårta. (JORDGUBBE)",
+              "options": [
+                "jordgubbena",
+                "jordgubbarna",
+                "jordgubberna"
+              ],
+              "answers": [
+                "jordgubbarna"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Yasmin vill baka bananbröd. ______ på Lidl är ganska gröna så hon måste gå till en annan affär. (BANAN)",
+              "options": [
+                "bananen",
+                "bananarna",
+                "bananerna"
+              ],
+              "answers": [
+                "bananerna"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Ola och Ulla vill flytta till landet. _____ i stan är för dyra. (HUS)",
+              "options": [
+                "husarna",
+                "husen",
+                "huserna",
+                "hus"
+              ],
+              "answers": [
+                "husen"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vi har så mycket att göra på jobbet så vi hade många möten. _____ är ganska tråkiga. (MÖTE)",
+              "options": [
+                "möten",
+                "mötena",
+                "möter",
+                "möterna"
+              ],
+              "answers": [
+                "mötena"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Usama har två bilar hemma. _____ är tyska och svarta.",
+              "hint": "Write the noun in the definite plural (the …s).",
+              "answers": [
+                "bilarna"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Mira köpte många väskor. ______ var inte billiga.",
+              "hint": "Write the noun in the definite plural (the …s).",
+              "answers": [
+                "väskorna"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Restaurangen \"Lyx\" är mycket populär och har många kunder på kvällen. _____ beställer ofta laxsoppan och kötbullarna.",
+              "hint": "Write the noun in the definite plural (the …s).",
+              "answers": [
+                "kunderna"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Barn: Mamma, min äppeljuice är grön!\nMamma: Ja, den är gjord av äpplen. Och _____ var gröna!",
+              "hint": "Write the noun in the definite plural (the …s).",
+              "answers": [
+                "äpplena"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "Sara hade några problem med sin mentala hälsa. Hon bokade tid hos en terapeut och löste ________.",
+              "hint": "Write the noun in the definite plural (the …s).",
+              "answers": [
+                "problemen"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "teacher-11-objektspronomen",
+          "item": 11,
+          "title": "Objektspronomen",
+          "posted": "13 May",
+          "instructions": "Välj subjektspronomen eller objektspronomen. The subject form (jag, du, han, hon, vi, ni) is the person who does the action. The object form (mig, dig, honom, henne, oss, er) receives the action or comes after a preposition such as med, till, för, på.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vill du fika med ___ på fredag?",
+              "options": [
+                "oss",
+                "vi"
+              ],
+              "answers": [
+                "oss"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur kan jag hjälpa ____?",
+              "options": [
+                "du",
+                "dig"
+              ],
+              "answers": [
+                "dig"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Känner ____ Anna?",
+              "options": [
+                "du",
+                "dig"
+              ],
+              "answers": [
+                "du"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Kan ___ berätta hur jag kan betala?",
+              "options": [
+                "ni",
+                "er"
+              ],
+              "answers": [
+                "ni"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Barn, kom nu! Jag ska berätta en historia för ___!",
+              "options": [
+                "ni",
+                "er"
+              ],
+              "answers": [
+                "er"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Nora fick veta att Andreas har en fru. Därför gjorde hon slut med ____.",
+              "options": [
+                "han",
+                "honom"
+              ],
+              "answers": [
+                "honom"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Lena fick veta att Andreas gick ut med Nora. Hon är mycket besviken på ____.",
+              "options": [
+                "han",
+                "honom"
+              ],
+              "answers": [
+                "honom"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Peter, vet du var Anna är? Jag vill prata med _____.",
+              "options": [
+                "hon",
+                "henne",
+                "honom"
+              ],
+              "answers": [
+                "henne"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Det är Saras födelsedag idag. Jag köpte en present till _____.",
+              "options": [
+                "hon",
+                "honom",
+                "henne"
+              ],
+              "answers": [
+                "henne"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "Ring ___ ikväll, jag vill gärna diskutera mer.",
+              "options": [
+                "jag",
+                "mig"
+              ],
+              "answers": [
+                "mig"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "Grattis! Jag är så stolt över ____.",
+              "options": [
+                "du",
+                "dig"
+              ],
+              "answers": [
+                "dig"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "Jag kan promenera med ___ på helgen om du vill.",
+              "options": [
+                "dig",
+                "du"
+              ],
+              "answers": [
+                "dig"
+              ]
+            }
+          ],
+          "fixes": [
+            "The missing full stop after “Därför gjorde hon slut med ____” is added."
+          ]
+        }
+      ]
     }
   ],
   "sections": [

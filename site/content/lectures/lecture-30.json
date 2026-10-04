@@ -1794,6 +1794,47 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Opinion piece.",
+      "minutes": 15,
+      "action": "Do the homework, check your answers, and check your text against the list. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-24-opinion-piece",
+          "item": 24,
+          "title": "Opinion piece",
+          "posted": "26 Jun",
+          "instructions": "Välj ett ämne och skriv en argumenterande text (100–150 ord). Choose ONE of the seven topics and write an opinion text of about 120 words. Use three parts: say what you think, give at least two arguments, then sum up.",
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Argumenterande text",
+              "prompt": "Välj ett ämne och skriv en argumenterande text:\n1. Sociala medier är dåliga för våra relationer.\n2. Är stil viktigt?\n3. Är husdjur bra terapeuter?\n4. Är det lätt att hålla sig i form i Finland?\n5. Maten är dyr i Finland.\n6. Gör pengar oss lyckliga?\n7. Elbilar eller dieselbilar?",
+              "translation": "Choose one topic and write an opinion piece: 1. Social media is bad for our relationships. 2. Is style important? 3. Are pets good therapists? 4. Is it easy to be fit in Finland? 5. Food is expensive in Finland. 6. Does money make us happy? 7. Electric cars or diesel cars?",
+              "writing": {
+                "wordRange": [
+                  100,
+                  150
+                ],
+                "points": [
+                  "Introduction: present the topic and say clearly what you think (Jag tycker att…, Enligt mig…, Många tycker att… men…).",
+                  "Give at least two arguments: two on the same side, or one for and one against (Å ena sidan… Å andra sidan…).",
+                  "Explain each argument with a reason or an example (eftersom…, till exempel…).",
+                  "Link your ideas with connecting words (för det första, för det andra, dessutom, däremot).",
+                  "End by summing up your opinion (Sammanfattningsvis…, Avslutningsvis…, Till sist tycker jag att…).",
+                  "Write 100-150 words, ideally about 120."
+                ]
+              },
+              "model": "Gör pengar oss lyckliga?\n\nDet sägs ofta att pengar inte kan köpa lycka. Personligen tycker jag att pengar kan göra oss lite lyckligare, men bara upp till en viss gräns.\n\nÅ ena sidan behöver alla pengar för att leva ett tryggt liv. Om man har tillräckligt med pengar kan man betala hyran, köpa bra mat och resa hem och hälsa på sin familj. Då slipper man oroa sig varje månad, och det är skönt.\n\nÅ andra sidan blir man inte lyckligare för varje extra euro. Det finns många rika människor som är stressade och ensamma. Enligt mig är vänner, hälsa och ett meningsfullt jobb viktigare än en hög lön.\n\nSammanfattningsvis gör pengar livet lättare, men de kan inte ersätta människorna som vi älskar. Därför ska vi inte jaga pengar hela tiden."
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

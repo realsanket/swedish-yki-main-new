@@ -2374,6 +2374,95 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Formal email: application.",
+      "minutes": 15,
+      "action": "Do the homework, check your answers, and check your text against the list. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-35-formal-email-application",
+          "item": 35,
+          "title": "Formal email: application",
+          "posted": "27 Jul",
+          "instructions": "Välj ett ämne och skriv ett formellt mejl: en ansökan eller en anmälan. Choose one topic and write a formal email. Follow the teacher's structure: introduction (who you are, why you write, the ad), main part (experience, why you fit, questions), ending (thanks, looking forward to an answer, Med vänliga hälsningar + name).",
+          "note": "Write only one of the three topics. The models are examples of one good answer; yours can be different.",
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Välj ett ämne · Write one topic",
+              "prompt": "Skriv en ansökan till ditt drömjobb.",
+              "translation": "Write an application for your dream job.",
+              "hint": "Choose one of the three topics and write only that one.",
+              "writing": {
+                "wordRange": [
+                  50,
+                  110
+                ],
+                "points": [
+                  "Start: Hej! + who you are + why you write (jag skriver angående tjänsten som …).",
+                  "Refer to the job ad: where you saw it.",
+                  "Tell about your experience or skills, and why you fit the job (eftersom …).",
+                  "Add a question, for example when the job starts.",
+                  "End politely: thank them and say you look forward to an answer (Jag ser fram emot …).",
+                  "Close formally: Med vänliga hälsningar + your name.",
+                  "Formal style: no slang, use facts and numbers (dates, years), and join ideas with att, eftersom, när."
+                ]
+              },
+              "model": "Hej!\n\nJag heter Ravi Patil och jag skriver angående tjänsten som guide hos er. Jag såg er annons på er webbplats. Jag har jobbat med turister i tre år och talar engelska, hindi och lite svenska. Jag passar för jobbet eftersom jag tycker om att träffa nya människor. Kan ni berätta när jobbet börjar?\n\nTack för möjligheten. Jag ser fram emot att höra från er.\n\nMed vänliga hälsningar,\nRavi Patil"
+            },
+            {
+              "id": "q2",
+              "part": "Välj ett ämne · Write one topic",
+              "prompt": "Skriv till en språkskola eller ett hobbycenter och berätta att du är intresserad av deras kurser.",
+              "translation": "Write to a language school or a hobby centre and say that you are interested in their courses.",
+              "hint": "Choose one of the three topics and write only that one.",
+              "writing": {
+                "wordRange": [
+                  50,
+                  110
+                ],
+                "points": [
+                  "Start: Hej! + who you are + which course you want (jag vill gärna anmäla mig till …).",
+                  "Refer to the information: where you read about the course.",
+                  "Tell your goal or experience, and why the course fits you.",
+                  "Ask about the course or the conditions: price, start date, lessons per week.",
+                  "End politely: thank them and say you look forward to an answer (Jag ser fram emot …).",
+                  "Close formally: Med vänliga hälsningar + your name.",
+                  "Formal style: no slang, use facts and numbers (dates, years), and join ideas with att, eftersom, när."
+                ]
+              },
+              "model": "Hej!\n\nJag heter Ravi Patil och jag vill gärna anmäla mig till er kvällskurs i svenska. Jag läste om kursen på er webbplats. Jag bor i Helsingfors och mitt mål är att klara YKI-provet på nivå 3 i höst. Skulle ni kunna berätta hur mycket kursen kostar och hur många lektioner det är per vecka?\n\nTack för möjligheten. Jag ser fram emot ert svar.\n\nMed vänliga hälsningar,\nRavi Patil"
+            },
+            {
+              "id": "q3",
+              "part": "Välj ett ämne · Write one topic",
+              "prompt": "Du har anmält dig till en kurs men kan inte vara med på den första lektionen. Skriv ett mejl och förklara situationen.",
+              "translation": "You have signed up for a course but cannot be at the first lesson. Write an email and explain the situation.",
+              "hint": "Choose one of the three topics and write only that one.",
+              "writing": {
+                "wordRange": [
+                  50,
+                  110
+                ],
+                "points": [
+                  "Start: Hej! + who you are + which course you signed up for, and when it starts.",
+                  "Explain the problem with a reason: Tyvärr kan jag inte … eftersom …",
+                  "Ask for a solution, for example the lesson material by email.",
+                  "Say what you will do next (I come to the second lesson).",
+                  "End politely (Tack för förståelsen) and close formally: Med vänliga hälsningar + your name.",
+                  "Formal style: no slang, use facts and numbers (dates, years), and join ideas with att, eftersom, när."
+                ]
+              },
+              "model": "Hej!\n\nJag heter Ravi Patil och jag har anmält mig till kursen i svenska som börjar den 1 september. Tyvärr kan jag inte komma till den första lektionen, eftersom jag måste göra en arbetsresa till Tammerfors. Skulle ni kunna skicka materialet från lektionen till mig per e-post? Jag kommer till den andra lektionen.\n\nTack för förståelsen. Jag ser fram emot kursen.\n\nMed vänliga hälsningar,\nRavi Patil"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

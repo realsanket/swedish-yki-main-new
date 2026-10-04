@@ -2416,6 +2416,649 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Talförståelse (Listening mock test), Writing mock test 2 and Läsförståelse (Reading mock test, 60 minutes).",
+      "minutes": 60,
+      "action": "Do each item, check your answers, and check your text against the list. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-37-mock-listening",
+          "item": 37,
+          "title": "Talförståelse (Listening mock test)",
+          "posted": "24 Aug",
+          "instructions": "Lyssna på inspelningarna och svara på frågorna. Du hör varje inspelning två gånger. Listen to each recording twice and answer: pick A, B or C in part 1, Rätt (true) or Fel (false) in part 2, and write short answers in Swedish in part 3.",
+          "note": "The teacher played the recordings in class, so they are not linked here, and there is no answer key. Use this as a model of the YKI listening test (multiple choice, true or false, open questions), or ask the teacher for the audio and check your answers with them.",
+          "links": [
+            {
+              "label": "The teacher's original form",
+              "url": "https://docs.google.com/forms/d/e/1FAIpQLSeQ4oW9nVeNTdBFi_ZCKG2-nJ9yVPXdLdQHYIyDtFvpyG9O9w/viewform"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Del 1 · Flervalsuppgifter",
+              "prompt": "1. Varför är det fortfarande många fall av influensa?",
+              "translation": "Why are there still many cases of flu?",
+              "options": [
+                "A. Influensan började senare än vanligt.",
+                "B. Influensavirusen har förändrats.",
+                "C. Fler människor har rest utomlands."
+              ]
+            },
+            {
+              "id": "q2",
+              "part": "Del 1 · Flervalsuppgifter",
+              "prompt": "2. Vad säger experterna om vaccinet?",
+              "translation": "What do the experts say about the vaccine?",
+              "options": [
+                "A. Vaccinet hjälper till att skydda mot svår sjukdom.",
+                "B. Vaccinet fungerar inte alls längre.",
+                "C. Vaccinet används inte längre."
+              ]
+            },
+            {
+              "id": "q3",
+              "part": "Del 1 · Flervalsuppgifter",
+              "prompt": "3. Varför är Finlands statsminister i Indien?",
+              "translation": "Why is Finland's prime minister in India?",
+              "options": [
+                "A. För att diskutera artificiell intelligens och samarbeten.",
+                "B. För att träffa turister från Finland.",
+                "C. För att utveckla en ny AI-modell."
+              ]
+            },
+            {
+              "id": "q4",
+              "part": "Del 1 · Flervalsuppgifter",
+              "prompt": "4. Hur förändrades antalet hotellövernattningar i Finland i fjol?",
+              "translation": "How did the number of hotel nights in Finland change last year?",
+              "options": [
+                "A. De blev 12 procent färre.",
+                "B. De blev 12 procent fler.",
+                "C. Antalet förändrades inte jämfört med året innan."
+              ]
+            },
+            {
+              "id": "q5",
+              "part": "Del 1 · Flervalsuppgifter",
+              "prompt": "5. Vad kan hända med kunder som köpte möbler från Asko och Sotka?",
+              "translation": "What can happen to customers who bought furniture from Asko and Sotka?",
+              "options": [
+                "A. De kan behöva betala extra pengar.",
+                "B. Leveransen kan bli mycket försenad.",
+                "C. Det är möjligt att de aldrig får sina möbler."
+              ]
+            },
+            {
+              "id": "q6",
+              "part": "Del 1 · Flervalsuppgifter",
+              "prompt": "6. Hur många medaljer vann Ilkka Herola?",
+              "translation": "How many medals did Ilkka Herola win?",
+              "options": [
+                "A. Fem bronsmedaljer.",
+                "B. Fyra bronsmedaljer.",
+                "C. En bronsmedalj."
+              ]
+            },
+            {
+              "id": "q7",
+              "part": "Del 2 · Rätt eller fel: Bilköp",
+              "prompt": "A. Bosses mamma ringer för att få råd.",
+              "translation": "Bosse's mother calls to get advice.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q8",
+              "part": "Del 2 · Rätt eller fel: Bilköp",
+              "prompt": "B. Hon tänker köpa en bil som är begagnad.",
+              "translation": "She is thinking of buying a used car.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q9",
+              "part": "Del 2 · Rätt eller fel: Bilköp",
+              "prompt": "C. Helst vill hon ha en BMW.",
+              "translation": "Most of all she wants a BMW.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q10",
+              "part": "Del 2 · Rätt eller fel: Bilköp",
+              "prompt": "D. Bosse har varit sjuk så han har inte orkat fundera på bilköp.",
+              "translation": "Bosse has been ill, so he has not had the energy to think about buying a car.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q11",
+              "part": "Del 2 · Rätt eller fel: Bilköp",
+              "prompt": "E. Bosse ska ringa en kompis för att höra om han har en bil att sälja.",
+              "translation": "Bosse will call a friend to ask if he has a car to sell.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q12",
+              "part": "Del 2 · Rätt eller fel: Bilköp",
+              "prompt": "F. Mamman är missnöjd med sin son.",
+              "translation": "The mother is unhappy with her son.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ]
+            },
+            {
+              "id": "q13",
+              "part": "Del 3 · Öppna frågor",
+              "prompt": "Vad kan vara en möjlig förklaring till att fler dör av alkohol?",
+              "translation": "What could be one explanation for why more people die from alcohol?",
+              "hint": "Svara kort på svenska. (Answer briefly in Swedish.)"
+            },
+            {
+              "id": "q14",
+              "part": "Del 3 · Öppna frågor",
+              "prompt": "Vad står det på den rosa lappen som cykelägaren får?",
+              "translation": "What does the pink note that the bike owner gets say?",
+              "hint": "Svara kort på svenska. (Answer briefly in Swedish.)"
+            },
+            {
+              "id": "q15",
+              "part": "Del 3 · Öppna frågor",
+              "prompt": "Varför blir vissa sjukdomar svårare att behandla enligt Världshälsoorganisationen?",
+              "translation": "According to the World Health Organization, why are some diseases getting harder to treat?",
+              "hint": "Svara kort på svenska. (Answer briefly in Swedish.)"
+            },
+            {
+              "id": "q16",
+              "part": "Del 3 · Öppna frågor",
+              "prompt": "Hur stor andel av flyktingarna vill regeringen att ska integreras på svenska?",
+              "translation": "What share of the refugees does the government want to be integrated in Swedish?",
+              "hint": "Svara kort på svenska. (Answer briefly in Swedish.)"
+            },
+            {
+              "id": "q17",
+              "part": "Del 3 · Öppna frågor",
+              "prompt": "Vad var D’Angelos största prestationer enligt texten?",
+              "translation": "What were D'Angelo's greatest achievements, according to the recording?",
+              "hint": "Svara kort på svenska. (Answer briefly in Swedish.)"
+            }
+          ],
+          "fixes": [
+            "The option “A Vaccinet hjälper …” is written “A. Vaccinet hjälper …” like the other options.",
+            "The true-or-false statements get a full stop after their letter (“A Bosses mamma …” → “A. Bosses mamma …”)."
+          ]
+        },
+        {
+          "id": "teacher-38-mock-writing",
+          "item": 38,
+          "title": "Writing mock test 2",
+          "posted": "26 Aug",
+          "instructions": "Skriv tre texter på 55 minuter. Write three texts in 55 minutes, as in the YKI writing test: an informal blog post, a complaint and an opinion text (choose topic A or B). Cover every point in each task.",
+          "note": "There is no answer key. Check each text against its points, count your words, and then compare it with the model.",
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Uppgift 1 · Informell text",
+              "prompt": "Min drömresa: skriv en blogg om en resa som du aldrig kommer att glömma. Berätta:\n– vem var med dig\n– när du reste och vart du reste\n– åtminstone två saker som du gjorde\n– ett speciellt minne",
+              "translation": "My dream trip: write a blog post about a trip you will never forget. Tell who was with you, when and where you went, at least two things you did, and one special memory.",
+              "writing": {
+                "wordRange": [
+                  50,
+                  80
+                ],
+                "points": [
+                  "A title and a friendly start for your readers (Hej alla!).",
+                  "Who was with you, when you travelled and where you went.",
+                  "At least two things you did, in the past tense (reste, åkte, såg).",
+                  "One special memory and how you felt.",
+                  "An informal ending, for example a question to your readers or Kram!"
+                ]
+              },
+              "model": "Min drömresa\n\nHej alla! För två år sedan, i december, reste jag till Rovaniemi med min bästa vän. Vi åkte nattåg från Helsingfors. På dagarna åkte vi hundspann, och en natt sov vi i ett snöhotell. Mitt speciella minne är den sista kvällen. Det var minus trettio grader när vi plötsligt såg norrsken på himlen. Jag blev så glad att jag nästan grät. Har ni sett norrsken?\n\nKram!"
+            },
+            {
+              "id": "q2",
+              "part": "Uppgift 2 · Formell text",
+              "prompt": "Klaga på problem i din bostadsrättsförening (till exempel i tvättstugan eller på gården).\n– berätta om problemen: var och när uppstod de?\n– säg vad du vill att disponenten eller grannarna gör\n– föreslå åtgärder",
+              "translation": "Complain about problems in your housing company (for example in the laundry room or the yard). Describe the problems (where and when they began), say what you want the property manager or the neighbours to do, and suggest what should be done.",
+              "writing": {
+                "wordRange": [
+                  50,
+                  110
+                ],
+                "points": [
+                  "A subject line (Ärende) and a polite greeting.",
+                  "Why you are writing: your flat and the place the problem is.",
+                  "The problems: what is wrong, where, and since when.",
+                  "What you want the property manager or the neighbours to do.",
+                  "At least one suggestion of your own (Jag föreslår att …).",
+                  "A polite ending (Med vänliga hälsningar) with your full name."
+                ]
+              },
+              "model": "Ärende: Problem i tvättstugan\n\nHej!\n\nJag bor i lägenhet B 12 och skriver för att klaga på problemen i tvättstugan. Sedan början av september har en av tvättmaskinerna varit trasig. Dessutom lämnar några grannar smutsiga kläder i torkrummet, och golvet är ofta blött på kvällarna.\n\nJag vill att disponenten ringer en reparatör så snart som möjligt. Jag önskar också att grannarna städar efter sig. Jag föreslår att vi sätter upp tydliga regler på dörren och att alla bokar en tvättid.\n\nMed vänliga hälsningar\n(ditt förnamn och efternamn), B 12"
+            },
+            {
+              "id": "q3",
+              "part": "Uppgift 3 · Argumenterande text",
+              "prompt": "Välj ett av dessa två ämnen och skriv en argumenterande text.\nA. Elbilar eller dieselbilar: vad är bäst?\nB. Blir vi lyckliga av att ha pengar?",
+              "translation": "Choose one of these two topics and write an argumentative (opinion) text. A: Electric cars or diesel cars: which is best? B: Does having money make us happy?",
+              "writing": {
+                "wordRange": [
+                  100,
+                  150
+                ],
+                "points": [
+                  "A title and an introduction that names the topic.",
+                  "Arguments for and against (Å ena sidan … Å andra sidan …).",
+                  "Your own opinion with a reason (Jag tycker att … eftersom …, Enligt min mening …).",
+                  "Linking words between ideas: dessutom, men, därför.",
+                  "A short conclusion (Sammanfattningsvis …)."
+                ]
+              },
+              "model": "Blir vi lyckliga av pengar?\n\nMånga tror att mer pengar ger ett lyckligare liv. Jag håller delvis med.\n\nÅ ena sidan behöver alla tillräckligt med pengar. Om man inte kan betala hyran eller maten blir man stressad och orolig. Pengar ger trygghet, och man kan resa och träffa vänner.\n\nÅ andra sidan blir man inte automatiskt lyckligare av en högre lön. En person med mycket pengar kan ändå vara ensam eller sjuk. Dessutom arbetar många så mycket att de inte har tid för sin familj.\n\nEnligt min mening gör pengar oss lyckliga bara upp till en viss gräns. Efter det är hälsa, vänner och ett meningsfullt arbete viktigare. Därför tycker jag att man inte ska jaga pengar hela livet.\n\nSammanfattningsvis kan pengar lösa många problem, men de kan inte köpa lycka."
+            }
+          ],
+          "fixes": [
+            "“diesel bilar” is written as one word: “dieselbilar”.",
+            "“Klaga om problem” is written “Klaga på problem” (you complain på something)."
+          ]
+        },
+        {
+          "id": "teacher-39-mock-reading",
+          "item": 39,
+          "title": "Läsförståelse (Reading mock test, 60 minutes)",
+          "posted": "26 Aug",
+          "instructions": "Läs texterna och svara på frågorna. Du har 60 minuter för sex uppgifter. Open the texts in the teacher's form, then answer here: Rätt (true) or Fel (false) in tasks 1-2, A, B or C in tasks 4-5, and short Swedish answers in tasks 3 and 6. Give yourself 60 minutes, as in the YKI reading test.",
+          "note": "The texts are long, so they are not copied here: read them in the teacher's form. The true-or-false and A-B-C answers were worked out from the texts (the teacher gave no key). The open questions have model answers only; your answer may use other words.",
+          "links": [
+            {
+              "label": "Open the texts in the teacher's form",
+              "url": "https://docs.google.com/forms/d/e/1FAIpQLSfQ-Pl_isIRuxaI2YzROYgz_y5l9hnHkE_VuKU1fM_u4zwQMw/viewform"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Uppgift 1 · Korta nyheter (rätt eller fel)",
+              "hint": "Nyhet 1: 100 lastbilar fast i halkan",
+              "prompt": "Många lastbilar körde för fort i Stenungsund.",
+              "translation": "Many lorries drove too fast in Stenungsund.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "part": "Uppgift 1 · Korta nyheter (rätt eller fel)",
+              "hint": "Nyhet 1: 100 lastbilar fast i halkan",
+              "prompt": "En buss med skolbarn krockade allvarligt.",
+              "translation": "A bus with schoolchildren crashed badly.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "part": "Uppgift 1 · Korta nyheter (rätt eller fel)",
+              "hint": "Nyhet 2: Brand stoppade tågen",
+              "prompt": "Centralstationen var stängd i flera timmar eftersom stationen hade blivit spränghotad.",
+              "translation": "The central station was closed for several hours because of a bomb threat.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "part": "Uppgift 1 · Korta nyheter (rätt eller fel)",
+              "hint": "Nyhet 2: Brand stoppade tågen",
+              "prompt": "En brand började i ventilationssystemet på en restaurang.",
+              "translation": "A fire started in a restaurant's ventilation system.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q5",
+              "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+              "hint": "Text 1: Mer skräp i svenska städer",
+              "prompt": "Mängden avfall på Sveriges gator ökar.",
+              "translation": "The amount of litter on Sweden's streets is growing.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q6",
+              "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+              "hint": "Text 1: Mer skräp i svenska städer",
+              "prompt": "Människor ska tänka på om de behöver en mugg till sin läsk.",
+              "translation": "People should think about whether they need a cup for their soft drink.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q7",
+              "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+              "hint": "Text 1: Mer skräp i svenska städer",
+              "prompt": "En enskild person kan inte förändra mycket för att minska skräpet.",
+              "translation": "One person alone cannot change much to reduce litter.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q8",
+              "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+              "hint": "Text 2: Elbilar skadar klimatet",
+              "prompt": "Elbilar avger gaser som kan skada klimatet.",
+              "translation": "Electric cars give off gases that can harm the climate.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q9",
+              "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+              "hint": "Text 2: Elbilar skadar klimatet",
+              "prompt": "Det kommer ut mycket farliga ämnen från batteritillverkningen.",
+              "translation": "Battery production releases a lot of harmful substances.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q10",
+              "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+              "hint": "Text 2: Elbilar skadar klimatet",
+              "prompt": "Elbilar är ändå bra eftersom de inte förorenar atmosfären.",
+              "translation": "Electric cars are still good because they do not pollute the air.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q11",
+              "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+              "hint": "Text 3: Stora problem med råttor",
+              "prompt": "Företagen som bekämpar råttor blomstrar för tillfället.",
+              "translation": "Rat-control companies are doing very well at the moment.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q12",
+              "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+              "hint": "Text 3: Stora problem med råttor",
+              "prompt": "Det värsta problemet är att människorna matar råttorna.",
+              "translation": "The worst problem is that people feed the rats.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q13",
+              "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+              "hint": "Text 3: Stora problem med råttor",
+              "prompt": "Kjellberg vill att de som inte hanterar sopor på rätt sätt ska få betala.",
+              "translation": "Kjellberg wants people who do not handle rubbish properly to pay.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q14",
+              "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+              "hint": "Text 3: Stora problem med råttor",
+              "prompt": "Råttor kan inte orsaka omfattande problem inne i husen.",
+              "translation": "Rats cannot cause big problems inside houses.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q15",
+              "part": "Uppgift 3 · Blogg: Rika tillsammans (öppna frågor)",
+              "prompt": "Vilken är den viktigaste frågan när det gäller att välja investeringsform enligt Jan Bolmeson?",
+              "translation": "According to Jan Bolmeson, what is the most important question when you choose how to invest?",
+              "model": "När pengarna ska användas."
+            },
+            {
+              "id": "q16",
+              "part": "Uppgift 3 · Blogg: Rika tillsammans (öppna frågor)",
+              "prompt": "Vad är problemet med sparkontona idag?",
+              "translation": "What is the problem with savings accounts today?",
+              "model": "Sparräntorna är mycket låga, så man får nästan ingen ränta."
+            },
+            {
+              "id": "q17",
+              "part": "Uppgift 3 · Blogg: Rika tillsammans (öppna frågor)",
+              "prompt": "Vilken attityd tycker Bolmeson att man ska ha till sparandet på sparkontot?",
+              "translation": "What attitude does Bolmeson think you should have to the money in your savings account?",
+              "model": "Man ska inte stressa eller ha dåligt samvete för en låg ränta, utan fokusera på det som gör störst skillnad i ekonomin."
+            },
+            {
+              "id": "q18",
+              "part": "Uppgift 4 · Annons: Bokförare (A, B eller C)",
+              "prompt": "Arbetsuppgifterna omfattar:",
+              "translation": "The duties include:",
+              "options": [
+                "bokförsäljning och löneförhandling",
+                "nedtecknande av intäkter och utgifter samt rapportering av ekonomiskt resultat",
+                "aktiehandel och skatteplanering"
+              ],
+              "answers": [
+                "nedtecknande av intäkter och utgifter samt rapportering av ekonomiskt resultat"
+              ]
+            },
+            {
+              "id": "q19",
+              "part": "Uppgift 4 · Annons: Bokförare (A, B eller C)",
+              "prompt": "Jobbet är en:",
+              "translation": "The job is a:",
+              "options": [
+                "visstidsanställning",
+                "fast anställning",
+                "praktikplats"
+              ],
+              "answers": [
+                "visstidsanställning"
+              ]
+            },
+            {
+              "id": "q20",
+              "part": "Uppgift 4 · Annons: Bokförare (A, B eller C)",
+              "prompt": "På jobbet krävs:",
+              "translation": "The job requires:",
+              "options": [
+                "att du har jobbat med samma typ av arbete tidigare",
+                "att du kan undervisa kunder",
+                "att du har en lägre utbildning"
+              ],
+              "answers": [
+                "att du har jobbat med samma typ av arbete tidigare"
+              ]
+            },
+            {
+              "id": "q21",
+              "part": "Uppgift 4 · Annons: Bokförare (A, B eller C)",
+              "prompt": "Det är viktigt att du kan tala:",
+              "translation": "It is important that you can speak:",
+              "options": [
+                "engelska och svenska",
+                "finska och svenska",
+                "norska, danska och svenska"
+              ],
+              "answers": [
+                "finska och svenska"
+              ]
+            },
+            {
+              "id": "q22",
+              "part": "Uppgift 5 · Åsikt: Låt andra slippa dina mobilsamtal! (A, B eller C)",
+              "prompt": "Hurdana diskussioner kan man höra på tåget?",
+              "translation": "What kind of conversations can you hear on the train?",
+              "options": [
+                "Redogörelser för dejter och missade möten",
+                "Berättelser om kärleksbekymmer och nya klädinköp",
+                "Diskussioner om tidsplanering och bråk på jobbet"
+              ],
+              "answers": [
+                "Diskussioner om tidsplanering och bråk på jobbet"
+              ]
+            },
+            {
+              "id": "q23",
+              "part": "Uppgift 5 · Åsikt: Låt andra slippa dina mobilsamtal! (A, B eller C)",
+              "prompt": "Vad vill skribenten göra med pappan som pratar med sitt barn?",
+              "translation": "What does the writer want to do about the father who is talking to his child?",
+              "options": [
+                "Slänga hans telefon",
+                "Avsluta deras samtal",
+                "Trösta barnet"
+              ],
+              "answers": [
+                "Avsluta deras samtal"
+              ]
+            },
+            {
+              "id": "q24",
+              "part": "Uppgift 5 · Åsikt: Låt andra slippa dina mobilsamtal! (A, B eller C)",
+              "prompt": "Vad hade skribentens kollega varit tvungen att lyssna på på jobbet?",
+              "translation": "What had the writer's colleague had to listen to at work?",
+              "options": [
+                "Arbetskompisens släktings familjeproblem",
+                "Sekreterarens systers arbetsresa",
+                "Grannens mammas penningproblem"
+              ],
+              "answers": [
+                "Arbetskompisens släktings familjeproblem"
+              ]
+            },
+            {
+              "id": "q25",
+              "part": "Uppgift 5 · Åsikt: Låt andra slippa dina mobilsamtal! (A, B eller C)",
+              "prompt": "Hur föreslår skribenten att vi hanterar problemet med mobiltelefoni?",
+              "translation": "How does the writer suggest we deal with the problem of phone calls?",
+              "options": [
+                "Vi ska ge böter åt dem som pratar för länge",
+                "Vi ska sluta bry oss om de andra och koncentrera oss på våra egna saker",
+                "Vi ska skrika åt de andra att tala kortare"
+              ],
+              "answers": [
+                "Vi ska sluta bry oss om de andra och koncentrera oss på våra egna saker"
+              ]
+            },
+            {
+              "id": "q26",
+              "part": "Uppgift 6 · Fakta: Sömnapné (öppna frågor)",
+              "prompt": "Vad händer i kroppen vid ett sömnapnésyndrom och hurdana besvär leder det till?",
+              "translation": "What happens in the body with sleep apnoea, and what problems does it lead to?",
+              "model": "Man slutar andas en kort stund många gånger när man sover. Det leder till trötthet, sömnighet, huvudvärk eller koncentrationssvårigheter."
+            },
+            {
+              "id": "q27",
+              "part": "Uppgift 6 · Fakta: Sömnapné (öppna frågor)",
+              "prompt": "Vilken vård kan man erbjuda en person som har sömnapné? (2 alternativ)",
+              "translation": "What treatment can be offered to a person with sleep apnoea? (2 options)",
+              "model": "En bettskena som drar fram underkäken, eller CPAP-behandling där man sover med en mask."
+            },
+            {
+              "id": "q28",
+              "part": "Uppgift 6 · Fakta: Sömnapné (öppna frågor)",
+              "prompt": "På vilket sätt hjälper CPAP-behandlingen en person som lider av sömnapné?",
+              "translation": "How does CPAP treatment help a person with sleep apnoea?",
+              "model": "Masken ger ett lätt övertryck som håller de övre luftvägarna öppna."
+            },
+            {
+              "id": "q29",
+              "part": "Uppgift 6 · Fakta: Sömnapné (öppna frågor)",
+              "prompt": "Varför är det inte bra att dricka alkohol om man lider av sömnapné?",
+              "translation": "Why is it not good to drink alcohol if you have sleep apnoea?",
+              "model": "Alkohol kan göra musklerna onormalt avslappnade, och det ökar risken för andningsuppehåll."
+            }
+          ],
+          "fixes": [
+            "The opinion article's title “Låt andra silla dina mobilsamtal!” is written “Låt andra slippa dina mobilsamtal!”."
+          ]
+        }
+      ]
     }
   ],
   "story": {

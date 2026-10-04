@@ -630,6 +630,53 @@
           }
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Formal email: complaint.",
+      "minutes": 15,
+      "action": "Do the homework, check your answers, and check your text against the list. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-14-formal-complaint",
+          "item": 14,
+          "title": "Formal email: complaint",
+          "posted": "20 May",
+          "instructions": "Skriv ett formellt klagomål om ett av ämnena. Write one formal complaint email on one of the three topics. To a company or an organisation you write ni / er (the formal “you”), never du / dig.",
+          "note": "The teacher gave no word count. The YKI formal message is 50-80 words and the teacher's model is about 100, so aim for 50-110 words.",
+          "texts": [
+            {
+              "title": "Struktur för ett klagomål (the teacher's sheet)",
+              "body": "1. Hälsning: Hej,\n2. Inledning: varför du skriver.\n3. Problembeskrivning: vad hände? Datum, pris, ordernummer.\n4. Lösning: vad du vill ska hända. Jag bifogar …\n5. Avslutning och tack: Tack på förhand. Jag ser fram emot ert svar.\nMed vänliga hälsningar,\nförnamn + efternamn"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Skriv ett formellt mejl med ett klagomål. Välj ett ämne:\n1. Klaga på ett arbete i ditt kök eller din trädgård (pris, dåligt arbete, försenat arbete osv.).\n2. Klaga på servicen eller maten i ett mejl till restaurangen (inte en offentlig recension!).\n3. Klaga på något i ditt område som är i dåligt skick och ordna talko med dina grannar.",
+              "translation": "Write a formal complaint email. Choose one topic:\n1. Complain about work done in your kitchen or garden (price, bad work, late work etc.).\n2. Complain about the service or food in a restaurant in an email to the restaurant (not a public review!).\n3. Complain about the bad state of something in the neighbourhood and organise a “talko” (a volunteer work day) with your neighbours.",
+              "writing": {
+                "wordRange": [
+                  50,
+                  110
+                ],
+                "points": [
+                  "Start with “Hej,” (no first name) and say why you are writing.",
+                  "Describe the problem with facts: the date, the price, an order or receipt number.",
+                  "Use ni / er / ert for the company or organisation, never du / dig.",
+                  "Say what you want them to do (fix it, give the money back, a new date) and attach proof: “Jag bifogar …”.",
+                  "Link your sentences with words like men, eftersom, så and tyvärr.",
+                  "End with “Tack på förhand” or “Jag ser fram emot ert svar”, then “Med vänliga hälsningar” and your first name and last name."
+                ]
+              },
+              "model": "Hej,\n\nJag heter Förnamn Efternamn och jag åt middag på er restaurang i lördags, den 16 maj. Tyvärr var jag mycket besviken. Vi väntade en timme på maten, och när den kom var min fisk kall. Jag sa det till servitören, men han bad inte om ursäkt. Notan var 86 euro för två personer, så jag hade väntat mig bättre service. Jag bifogar kvittot. Skulle ni kunna betala tillbaka pengarna för fisken? Tack på förhand. Jag ser fram emot ert svar.\n\nMed vänliga hälsningar,\nFörnamn Efternamn"
+            }
+          ]
+        }
+      ]
     }
   ],
   "recall": [

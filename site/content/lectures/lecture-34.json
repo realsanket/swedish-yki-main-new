@@ -1908,6 +1908,102 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Formal writing: ad.",
+      "minutes": 15,
+      "action": "Do the homework, check your answers, and check your text against the list. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-27-formal-ad",
+          "item": 27,
+          "title": "Formal writing: ad",
+          "posted": "8 Jul",
+          "instructions": "Skriv en annons. Välj ett av de tre ämnena. Write a formal ad, or a message to a seller, about ONE of the three topics. Follow the teacher's structure: heading, opening, details, contact and a polite ending.",
+          "note": "Pick one topic and write only that one. There is no answer key: check your text against the points, and compare with the model for topic 1.",
+          "links": [
+            {
+              "label": "The teacher's structure sheet (PDF)",
+              "url": "https://drive.google.com/file/d/1JQbLzcQz9iCPMIntHQowGpu8rDUQa_Zk/view"
+            }
+          ],
+          "texts": [
+            {
+              "title": "Struktur för annons (the teacher's outline)",
+              "body": "1. Rubrik / titel: lockande och informativ. Säger vad som erbjuds eller säljs.\n2. Inledning: presentera objektet (lägenhet, möbel, maskin …). Skriv varför den är bra.\n3. Huvuddel / beskrivning: beskriv detaljer. För en lägenhet: läge, antal rum, kök, badrum, tvättmaskin, ljus, möbler. För saker: märke, funktion, skick, ålder, användning. Ange villkor: hyresvillkor, pris, regler (husdjur, rökfritt), leverans.\n4. Kontaktinformation och avslut: hur intresserade kan kontakta dig. Vänliga hälsningar."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Välj ett ämne · Choose one topic",
+              "prompt": "Ämne 1: Du säljer något, till exempel en telefon, en cykel eller en tvättmaskin. Skriv en annons.",
+              "translation": "Topic 1: You are selling something (a phone, a bicycle, a washing machine). Write an ad.",
+              "hint": "Useful words: i gott skick (in good condition), av märket … (of the brand …), vi kan förhandla om priset, hämta själv (pick up yourself).",
+              "writing": {
+                "wordRange": [
+                  50,
+                  110
+                ],
+                "points": [
+                  "A heading that says what you sell (for example: Cykel till salu).",
+                  "An opening: say what you sell and why it is good.",
+                  "Details: brand, condition, age and what it can do.",
+                  "The price, and how the buyer gets it (pick up or delivery).",
+                  "How to contact you, and a polite ending: Vänliga hälsningar.",
+                  "Formal and polite: facts and numbers, link sentences with och, men, eftersom."
+                ]
+              },
+              "model": "Cykel till salu\n\nHej! Jag säljer min gamla cykel eftersom jag har köpt en ny. Cykeln är av märket Crescent och har sju växlar. Den är fem år gammal men i mycket gott skick och fungerar precis som den ska. Priset är 120 euro, men vi kan förhandla om priset. Du kan hämta cykeln själv i Esbo. Om du är intresserad kan du ringa mig, gärna efter klockan 16.\n\nVänliga hälsningar,\nAlex"
+            },
+            {
+              "id": "q2",
+              "part": "Välj ett ämne · Choose one topic",
+              "prompt": "Ämne 2: Du vill hyra en lägenhet: hyra ut din egen lägenhet eller hitta en lägenhet att hyra. Skriv en annons.",
+              "translation": "Topic 2: You want to rent an apartment (rent out your own flat, like the teacher's model, or find one to rent). Write an ad.",
+              "hint": "Useful words: en pålitlig hyresgäst (a reliable tenant), en trea på 80 kvm (a three-room flat of 80 m²), hyran är … euro per månad, husdjur är tillåtna, rökfritt.",
+              "writing": {
+                "wordRange": [
+                  50,
+                  110
+                ],
+                "points": [
+                  "A heading that says what you offer or look for.",
+                  "An opening: present the flat (or yourself) and why it is good.",
+                  "Details: where it is, how many rooms and square metres, kitchen, bathroom, light.",
+                  "Conditions: rent, deposit, rules (pets, no smoking).",
+                  "How to contact you or book a viewing, and a polite ending: Vänliga hälsningar.",
+                  "Formal and polite: facts and numbers, link sentences with och, men, eftersom."
+                ]
+              }
+            },
+            {
+              "id": "q3",
+              "part": "Välj ett ämne · Choose one topic",
+              "prompt": "Ämne 3: Du har sett en annons och vill ställa fler frågor till säljaren. Skriv ett meddelande.",
+              "translation": "Topic 3: You saw an ad and want to ask the seller more questions. Write a message.",
+              "hint": "Useful phrases: Jag skriver angående din annons om … (I am writing about your ad for …), Finns den fortfarande kvar?, Jag undrar om …, Kan man förhandla om priset?",
+              "writing": {
+                "wordRange": [
+                  50,
+                  110
+                ],
+                "points": [
+                  "A polite greeting, and say which ad you mean.",
+                  "Two or three clear questions (condition, age, price, delivery or viewing).",
+                  "Say why you are interested.",
+                  "How the seller can contact you, and a polite ending: Vänliga hälsningar.",
+                  "Formal and polite: facts and numbers, link sentences with och, men, eftersom."
+                ]
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

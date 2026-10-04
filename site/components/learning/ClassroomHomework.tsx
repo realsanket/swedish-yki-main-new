@@ -57,10 +57,16 @@ function Feedback({ question, answer }: { question: Question; answer: string }) 
         {isRight(question, answer) ? (
           <>
             <Check size={15} aria-hidden="true" /> Right
+            {question.options && !question.multiple && answers.length > 1 && (
+              <span lang="sv"> (also right: {answers.filter((value) => value !== answer).join(", ")})</span>
+            )}
           </>
         ) : (
           <>
             <X size={15} aria-hidden="true" /> Answer: <b lang="sv">{question.multiple ? answers.join(", ") : answers[0]}</b>
+            {!question.multiple && question.options && answers.length > 1 && (
+              <span lang="sv"> (also right: {answers.slice(1).join(", ")})</span>
+            )}
           </>
         )}
       </p>

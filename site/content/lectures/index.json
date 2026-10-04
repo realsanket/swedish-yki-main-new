@@ -12708,6 +12708,132 @@
             }
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Preteritum (regular verbs) and Diary.",
+        "minutes": 20,
+        "action": "Do each item, check your answers, and check your text against the list. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-07-preteritum-regular-verbs",
+            "item": 7,
+            "title": "Preteritum (regular verbs)",
+            "posted": "27 Apr",
+            "instructions": "Skriv verbet i preteritum. Write only the missing verb in the past tense, not the whole sentence, and use å, ä, ö. -ar verbs add -ade (gillar → gillade); most -er verbs add -de, or -te after k, p, s, t (ringer → ringde, köper → köpte); short verbs add -dde (bor → bodde).",
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Igår _______ (TRÄFFAR) jag min syster.",
+                "answers": [
+                  "träffade"
+                ]
+              },
+              {
+                "id": "q2",
+                "prompt": "Vi _______ (PROMENERAR) i parken nära mitt hus.",
+                "answers": [
+                  "promenerade"
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Efter det _______ (FIRAR) vi min födelsedag på en restaurang.",
+                "answers": [
+                  "firade"
+                ]
+              },
+              {
+                "id": "q4",
+                "prompt": "Tårtan _______ (SMAKAR) fantastiskt!",
+                "answers": [
+                  "smakade"
+                ]
+              },
+              {
+                "id": "q5",
+                "prompt": "Hon _______ (KÖPER) också en liten present till mig.",
+                "answers": [
+                  "köpte"
+                ]
+              },
+              {
+                "id": "q6",
+                "prompt": "Presenten _______ (GILLAR) jag mycket. Det var min favoritparfym.",
+                "answers": [
+                  "gillade"
+                ]
+              },
+              {
+                "id": "q7",
+                "prompt": "Hon _______ (LÄSER) i nyheterna att denna parfym var mycket populär.",
+                "answers": [
+                  "läste"
+                ]
+              },
+              {
+                "id": "q8",
+                "prompt": "Min syster vet mycket om mode eftersom hon _______ (BOR) i Paris när hon var yngre.",
+                "answers": [
+                  "bodde"
+                ]
+              },
+              {
+                "id": "q9",
+                "prompt": "Hon _______ (REKOMMENDERAR) att vi går och shoppar lite imorgon.",
+                "answers": [
+                  "rekommenderade"
+                ]
+              },
+              {
+                "id": "q10",
+                "prompt": "Vi brukar shoppa för kläder varje november så jag _______ (SPARAR) mycket pengar.",
+                "answers": [
+                  "sparade"
+                ]
+              },
+              {
+                "id": "q11",
+                "prompt": "Då _______ (RINGER) min man.",
+                "answers": [
+                  "ringde"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "teacher-08-diary",
+            "item": 8,
+            "title": "Diary",
+            "posted": "27 Apr",
+            "instructions": "Skriv dagbok varje dag, 5–10 minuter. Write a few lines about your day in the past tense, especially with irregular verbs (åt, drack, gick, såg). After a time word the verb comes second: Igår vaknade jag tidigt.",
+            "note": "This is a recurring task with no due date: write a new short entry every day. There is no answer key; check your entry against the points and the model.",
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Skriv om ditt vardagsliv. Vad gjorde du igår? Använd preteritum, särskilt oregelbundna verb. Skriv om dig själv, dina vanor, vad du gillar och inte gillar och om människor i ditt liv.",
+                "translation": "Write about your daily life. What did you do yesterday? Use the past tense, especially irregular verbs. Write about yourself, your habits, your likes and dislikes, and the people in your life.",
+                "writing": {
+                  "wordRange": [
+                    40,
+                    100
+                  ],
+                  "points": [
+                    "I wrote what I did, in the past tense (preteritum).",
+                    "I used at least three irregular verbs (for example åt, drack, gick, såg, fick, var, hade).",
+                    "I used time words (igår, imorse, förra veckan) and put the verb second after them: Igår vaknade jag…",
+                    "I said something I like or do not like.",
+                    "I wrote about a person in my life (a friend, a colleague, my family)."
+                  ]
+                },
+                "model": "Igår vaknade jag tidigt. Jag drack te och åt en smörgås till frukost. Sedan åkte jag till jobbet med buss. På jobbet hade jag många möten. Efter jobbet träffade jag min vän på ett kafé i Helsingfors. Vi pratade länge. Jag älskar kaffe, men jag dricker inte kaffe på kvällarna. Hemma lagade jag mat och läste en bok. Jag gick och lade mig klockan elva."
+              }
+            ]
+          }
+        ]
       }
     ],
     "recall": [
@@ -14641,6 +14767,148 @@
                 }
               ]
             }
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Noun plurals.",
+        "minutes": 5,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-09-noun-plurals",
+            "item": 9,
+            "title": "Noun plurals",
+            "posted": "29 Apr",
+            "instructions": "Skriv substantivet i plural. Put the nouns in the plural; where it says so, write the full sentence. En-words ending in -a take -or (mamma → mammor); most short en-words take -ar (bil → bilar); foreign words take -er (banan → bananer); ett-words ending in a vowel take -n (möte → möten); ett-words ending in a consonant do not change (liv → liv).",
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Våra ____ är _____.",
+                "translation": "Our moms are friends.",
+                "options": [
+                  "mammar, vännar",
+                  "mammor, vännar",
+                  "mammor, vänner",
+                  "mammer, vännor"
+                ],
+                "answers": [
+                  "mammor, vänner"
+                ]
+              },
+              {
+                "id": "q2",
+                "prompt": "Jag var på 2 _____ och köpte ______ och ______.",
+                "translation": "I was in 2 stores and bought oranges and bananas.",
+                "hint": "Write the full sentence.",
+                "answers": [
+                  "Jag var på 2 affärer och köpte apelsiner och bananer.",
+                  "Jag var på 2 butiker och köpte apelsiner och bananer.",
+                  "Jag var på två affärer och köpte apelsiner och bananer.",
+                  "Jag var på två butiker och köpte apelsiner och bananer."
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Jag är rädd för _____.",
+                "translation": "I am afraid of dogs.",
+                "options": [
+                  "hundra",
+                  "hundar",
+                  "hunder"
+                ],
+                "answers": [
+                  "hundar"
+                ]
+              },
+              {
+                "id": "q4",
+                "prompt": "Mina _____ har 2 _____ i lägenheten.",
+                "translation": "My friends have 2 cats in the apartment.",
+                "hint": "Write the full sentence. \"My\" is \"Mina\" here because the noun is plural.",
+                "answers": [
+                  "Mina vänner har 2 katter i lägenheten.",
+                  "Mina vänner har två katter i lägenheten.",
+                  "Mina kompisar har 2 katter i lägenheten.",
+                  "Mina kompisar har två katter i lägenheten."
+                ]
+              },
+              {
+                "id": "q5",
+                "prompt": "_____ är dåliga för miljön.",
+                "translation": "Cars are bad for the environment.",
+                "options": [
+                  "Bil",
+                  "Bilar",
+                  "Biler"
+                ],
+                "answers": [
+                  "Bilar"
+                ]
+              },
+              {
+                "id": "q6",
+                "prompt": "Läkaren ____ att jag ___ _____ ______.",
+                "translation": "The doctor said that I must eat vitamins.",
+                "hint": "Write the full sentence.",
+                "answers": [
+                  "Läkaren sa att jag måste äta vitaminer.",
+                  "Läkaren sade att jag måste äta vitaminer."
+                ]
+              },
+              {
+                "id": "q7",
+                "prompt": "Ingen ________ nuförtiden.",
+                "translation": "Nobody reads newspapers nowadays.",
+                "options": [
+                  "läsar tidningar",
+                  "läser tidningar",
+                  "läser tidninger",
+                  "läsa tidning"
+                ],
+                "answers": [
+                  "läser tidningar"
+                ]
+              },
+              {
+                "id": "q8",
+                "prompt": "Jag går gärna ___ _______ när jag ____ ____ ______.",
+                "translation": "I like to go to museums when I am on holiday.",
+                "hint": "Write the full sentence. Remember which preposition goes with institutions (på).",
+                "answers": [
+                  "Jag går gärna på museer när jag är på semester."
+                ]
+              },
+              {
+                "id": "q9",
+                "prompt": "Jag har alltid två ________ när jag vandrar i skogen.",
+                "translation": "I always have two bottles of water when I hike in the woods.",
+                "options": [
+                  "flaskor vatten",
+                  "flasker vatter",
+                  "flaska vatten"
+                ],
+                "answers": [
+                  "flaskor vatten"
+                ]
+              },
+              {
+                "id": "q10",
+                "prompt": "Hur många ____ har en katt?",
+                "translation": "How many lives does a cat have?",
+                "hint": "Write the full sentence.",
+                "answers": [
+                  "Hur många liv har en katt?"
+                ]
+              }
+            ],
+            "fixes": [
+              "The space before the full stop in “Läkaren ____ att jag ___ _____ ______ .” is removed."
+            ]
           }
         ]
       }
@@ -23439,6 +23707,274 @@
             }
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Definite plural of nouns and Objektspronomen.",
+        "minutes": 10,
+        "action": "Do each item, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-10-definite-plural",
+            "item": 10,
+            "title": "Definite plural of nouns",
+            "posted": "13 May",
+            "instructions": "Skriv substantivet i bestämd form plural. Choose or write the plural with “the”: the plural ending gets -na (bilar → bilarna, veckor → veckorna, bananer → bananerna), plurals ending in -n get -a (möten → mötena), and ett-words with no plural ending get -en (hus → husen).",
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Anita ska ha en fest. Hon gick till en butik och vill köpa kläder. _______ i butiken är mycket dyra. (KLÄNNING)",
+                "options": [
+                  "klänningarna",
+                  "klänningerna",
+                  "klänningorna"
+                ],
+                "answers": [
+                  "klänningarna"
+                ]
+              },
+              {
+                "id": "q2",
+                "prompt": "Ahmed vill laga mat. Han är på Lidl och köper ingredienser. ______ är söta så han tänker laga tårta. (JORDGUBBE)",
+                "options": [
+                  "jordgubbena",
+                  "jordgubbarna",
+                  "jordgubberna"
+                ],
+                "answers": [
+                  "jordgubbarna"
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Yasmin vill baka bananbröd. ______ på Lidl är ganska gröna så hon måste gå till en annan affär. (BANAN)",
+                "options": [
+                  "bananen",
+                  "bananarna",
+                  "bananerna"
+                ],
+                "answers": [
+                  "bananerna"
+                ]
+              },
+              {
+                "id": "q4",
+                "prompt": "Ola och Ulla vill flytta till landet. _____ i stan är för dyra. (HUS)",
+                "options": [
+                  "husarna",
+                  "husen",
+                  "huserna",
+                  "hus"
+                ],
+                "answers": [
+                  "husen"
+                ]
+              },
+              {
+                "id": "q5",
+                "prompt": "Vi har så mycket att göra på jobbet så vi hade många möten. _____ är ganska tråkiga. (MÖTE)",
+                "options": [
+                  "möten",
+                  "mötena",
+                  "möter",
+                  "möterna"
+                ],
+                "answers": [
+                  "mötena"
+                ]
+              },
+              {
+                "id": "q6",
+                "prompt": "Usama har två bilar hemma. _____ är tyska och svarta.",
+                "hint": "Write the noun in the definite plural (the …s).",
+                "answers": [
+                  "bilarna"
+                ]
+              },
+              {
+                "id": "q7",
+                "prompt": "Mira köpte många väskor. ______ var inte billiga.",
+                "hint": "Write the noun in the definite plural (the …s).",
+                "answers": [
+                  "väskorna"
+                ]
+              },
+              {
+                "id": "q8",
+                "prompt": "Restaurangen \"Lyx\" är mycket populär och har många kunder på kvällen. _____ beställer ofta laxsoppan och kötbullarna.",
+                "hint": "Write the noun in the definite plural (the …s).",
+                "answers": [
+                  "kunderna"
+                ]
+              },
+              {
+                "id": "q9",
+                "prompt": "Barn: Mamma, min äppeljuice är grön!\nMamma: Ja, den är gjord av äpplen. Och _____ var gröna!",
+                "hint": "Write the noun in the definite plural (the …s).",
+                "answers": [
+                  "äpplena"
+                ]
+              },
+              {
+                "id": "q10",
+                "prompt": "Sara hade några problem med sin mentala hälsa. Hon bokade tid hos en terapeut och löste ________.",
+                "hint": "Write the noun in the definite plural (the …s).",
+                "answers": [
+                  "problemen"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "teacher-11-objektspronomen",
+            "item": 11,
+            "title": "Objektspronomen",
+            "posted": "13 May",
+            "instructions": "Välj subjektspronomen eller objektspronomen. The subject form (jag, du, han, hon, vi, ni) is the person who does the action. The object form (mig, dig, honom, henne, oss, er) receives the action or comes after a preposition such as med, till, för, på.",
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Vill du fika med ___ på fredag?",
+                "options": [
+                  "oss",
+                  "vi"
+                ],
+                "answers": [
+                  "oss"
+                ]
+              },
+              {
+                "id": "q2",
+                "prompt": "Hur kan jag hjälpa ____?",
+                "options": [
+                  "du",
+                  "dig"
+                ],
+                "answers": [
+                  "dig"
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Känner ____ Anna?",
+                "options": [
+                  "du",
+                  "dig"
+                ],
+                "answers": [
+                  "du"
+                ]
+              },
+              {
+                "id": "q4",
+                "prompt": "Kan ___ berätta hur jag kan betala?",
+                "options": [
+                  "ni",
+                  "er"
+                ],
+                "answers": [
+                  "ni"
+                ]
+              },
+              {
+                "id": "q5",
+                "prompt": "Barn, kom nu! Jag ska berätta en historia för ___!",
+                "options": [
+                  "ni",
+                  "er"
+                ],
+                "answers": [
+                  "er"
+                ]
+              },
+              {
+                "id": "q6",
+                "prompt": "Nora fick veta att Andreas har en fru. Därför gjorde hon slut med ____.",
+                "options": [
+                  "han",
+                  "honom"
+                ],
+                "answers": [
+                  "honom"
+                ]
+              },
+              {
+                "id": "q7",
+                "prompt": "Lena fick veta att Andreas gick ut med Nora. Hon är mycket besviken på ____.",
+                "options": [
+                  "han",
+                  "honom"
+                ],
+                "answers": [
+                  "honom"
+                ]
+              },
+              {
+                "id": "q8",
+                "prompt": "Peter, vet du var Anna är? Jag vill prata med _____.",
+                "options": [
+                  "hon",
+                  "henne",
+                  "honom"
+                ],
+                "answers": [
+                  "henne"
+                ]
+              },
+              {
+                "id": "q9",
+                "prompt": "Det är Saras födelsedag idag. Jag köpte en present till _____.",
+                "options": [
+                  "hon",
+                  "honom",
+                  "henne"
+                ],
+                "answers": [
+                  "henne"
+                ]
+              },
+              {
+                "id": "q10",
+                "prompt": "Ring ___ ikväll, jag vill gärna diskutera mer.",
+                "options": [
+                  "jag",
+                  "mig"
+                ],
+                "answers": [
+                  "mig"
+                ]
+              },
+              {
+                "id": "q11",
+                "prompt": "Grattis! Jag är så stolt över ____.",
+                "options": [
+                  "du",
+                  "dig"
+                ],
+                "answers": [
+                  "dig"
+                ]
+              },
+              {
+                "id": "q12",
+                "prompt": "Jag kan promenera med ___ på helgen om du vill.",
+                "options": [
+                  "dig",
+                  "du"
+                ],
+                "answers": [
+                  "dig"
+                ]
+              }
+            ],
+            "fixes": [
+              "The missing full stop after “Därför gjorde hon slut med ____” is added."
+            ]
+          }
+        ]
       }
     ],
     "sections": [
@@ -25350,6 +25886,138 @@
             }
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Komparation.",
+        "minutes": 7,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-12-komparation",
+            "item": 12,
+            "title": "Komparation",
+            "posted": "15 May",
+            "instructions": "Skriv adjektivet i komparativ, bara ett ord: Tom är (LÅNG) än Jonas → längre. Most adjectives add -are (kort → kortare). Learn the special ones: bra → bättre, liten → mindre, lång → längre, mycket → mer, många → fler.",
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Teveserien \"Game of Thrones\" är (KORT) än \"Grey's Anatomy\".",
+                "answers": [
+                  "kortare"
+                ]
+              },
+              {
+                "id": "q2",
+                "prompt": "Jag tycker att Jonas är (SNYGG) än Tom.",
+                "answers": [
+                  "snyggare"
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Filmen \"Persona\" är (BRA) än \"Smultronstället\".",
+                "answers": [
+                  "bättre"
+                ]
+              },
+              {
+                "id": "q4",
+                "prompt": "Katter brukar vara (LITEN) än hundar.",
+                "answers": [
+                  "mindre"
+                ]
+              },
+              {
+                "id": "q5",
+                "prompt": "Finländare dricker (MYCKET) kaffe än italienare.",
+                "answers": [
+                  "mer",
+                  "mera"
+                ]
+              },
+              {
+                "id": "q6",
+                "prompt": "Annas presentation är (TRÅKIG) än Lenas presentation. Det finns inga bilder!",
+                "answers": [
+                  "tråkigare"
+                ]
+              },
+              {
+                "id": "q7",
+                "prompt": "Det brukar vara (MÖRK) på vintern än på sommaren.",
+                "answers": [
+                  "mörkare"
+                ]
+              },
+              {
+                "id": "q8",
+                "prompt": "Det är (DYR) att köra bil än att cykla.",
+                "answers": [
+                  "dyrare"
+                ]
+              },
+              {
+                "id": "q9",
+                "prompt": "Godis är (BILLIG) än psykoterapi.",
+                "answers": [
+                  "billigare"
+                ]
+              },
+              {
+                "id": "q10",
+                "prompt": "Min syster har (MÅNGA) vänner än jag.",
+                "answers": [
+                  "fler"
+                ]
+              },
+              {
+                "id": "q11",
+                "prompt": "Jag tycker att kött är (GOD) än fisk.",
+                "answers": [
+                  "godare"
+                ]
+              },
+              {
+                "id": "q12",
+                "prompt": "Det är (VIKTIG) att vara en bra person än att vara rik.",
+                "answers": [
+                  "viktigare"
+                ]
+              },
+              {
+                "id": "q13",
+                "prompt": "Elon Musk är (RIK) än Jeff Bezos.",
+                "answers": [
+                  "rikare"
+                ]
+              },
+              {
+                "id": "q14",
+                "prompt": "Hulk är (STARK) än Batman.",
+                "answers": [
+                  "starkare"
+                ]
+              },
+              {
+                "id": "q15",
+                "prompt": "Folk i mitt hemland är (VÄNLIG) än folk i Finland.",
+                "answers": [
+                  "vänligare"
+                ]
+              }
+            ],
+            "fixes": [
+              "“Der brukar vara” is written “Det brukar vara”.",
+              "“Italienare” is written “italienare” (nationalities take a small letter in Swedish).",
+              "The missing verb in “Folk i mitt hemland (VÄNLIG) än folk i Finland” is added: “Folk i mitt hemland är (VÄNLIG) …”.",
+              "The missing full stop after “Hulk är (STARK) än Batman” is added."
+            ]
+          }
+        ]
       }
     ],
     "sections": [
@@ -27005,6 +27673,307 @@
                 }
               ]
             }
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Hjälpverb 2.",
+        "minutes": 7,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-13-hjalpverb-2",
+            "item": 13,
+            "title": "Hjälpverb 2",
+            "posted": "18 May",
+            "instructions": "Välj rätt hjälpverb. borde = should (advice), får = may, are allowed to, måste = must, behöver = need to, hinner = have time to. Never say “måste inte”: “you don't have to” is “behöver inte”.",
+            "note": "Some sentences have more than one good answer; every correct verb is accepted, and the answer shown is the one the lesson practises.",
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Jag har så mycket att göra. Jag ____ inte hjälpa dig nu.",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste"
+                ],
+                "answers": [
+                  "hinner"
+                ]
+              },
+              {
+                "id": "q2",
+                "prompt": "Jag har prov på måndag. Jag ____ gå hem och plugga.",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste"
+                ],
+                "answers": [
+                  "måste",
+                  "behöver",
+                  "borde"
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Man ____ inte parkera här. Det är bara för hotellets gäster.",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste"
+                ],
+                "answers": [
+                  "får"
+                ]
+              },
+              {
+                "id": "q4",
+                "prompt": "På den här restaurangen ____ man inte boka bord. De har alltid lediga bord.",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste"
+                ],
+                "answers": [
+                  "behöver"
+                ]
+              },
+              {
+                "id": "q5",
+                "prompt": "Jag har inte tränat så mycket på sistone. Jag _____ börja igen.",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste"
+                ],
+                "answers": [
+                  "borde",
+                  "behöver",
+                  "måste"
+                ]
+              },
+              {
+                "id": "q6",
+                "prompt": "Jag glömde min historiebok hemma. ____ jag läsa läxan från din bok?",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste"
+                ],
+                "answers": [
+                  "får"
+                ]
+              },
+              {
+                "id": "q7",
+                "prompt": "Du ____ inte laga mat idag. Jag har redan gjort det så vi kan titta på Netflix och chilla när du kommer hem.",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste"
+                ],
+                "answers": [
+                  "behöver"
+                ]
+              },
+              {
+                "id": "q8",
+                "prompt": "Filmen börjar snart. Vi ______ inte fika nu.",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste"
+                ],
+                "answers": [
+                  "hinner"
+                ]
+              },
+              {
+                "id": "q9",
+                "prompt": "Det är soligt ute på sommaren! Du _____ köpa solkräm.",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste"
+                ],
+                "answers": [
+                  "borde",
+                  "behöver",
+                  "måste"
+                ]
+              },
+              {
+                "id": "q10",
+                "prompt": "A: ____ du tala tyska?\nB: Inte så bra.",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste",
+                  "brukar",
+                  "kan",
+                  "ska",
+                  "vill"
+                ],
+                "answers": [
+                  "kan"
+                ]
+              },
+              {
+                "id": "q11",
+                "prompt": "A: Varför ____ du plugga till ingenjör?\nB: Det är så spännande!",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste",
+                  "brukar",
+                  "kan",
+                  "ska",
+                  "vill"
+                ],
+                "answers": [
+                  "vill"
+                ]
+              },
+              {
+                "id": "q12",
+                "prompt": "____ man göra mycket läxor på din kurs?",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste",
+                  "kan",
+                  "ska",
+                  "vill"
+                ],
+                "answers": [
+                  "måste",
+                  "behöver"
+                ]
+              },
+              {
+                "id": "q13",
+                "prompt": "______ du gifta dig med mig?",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste",
+                  "brukar",
+                  "kan",
+                  "ska",
+                  "vill"
+                ],
+                "answers": [
+                  "vill"
+                ]
+              },
+              {
+                "id": "q14",
+                "prompt": "A: ____ man äta glass på bussen?\nB: Nej, det finns regler!",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste",
+                  "brukar",
+                  "kan",
+                  "ska",
+                  "vill"
+                ],
+                "answers": [
+                  "får"
+                ]
+              },
+              {
+                "id": "q15",
+                "prompt": "Var ____ man köpa biljetter?",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste",
+                  "brukar",
+                  "kan",
+                  "ska",
+                  "vill"
+                ],
+                "answers": [
+                  "kan",
+                  "ska"
+                ]
+              },
+              {
+                "id": "q16",
+                "prompt": "Du ______ träna mer!",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste",
+                  "brukar",
+                  "kan",
+                  "ska",
+                  "vill"
+                ],
+                "answers": [
+                  "borde",
+                  "måste",
+                  "behöver"
+                ]
+              },
+              {
+                "id": "q17",
+                "prompt": "_____ vi gå och träna på gymmet imorgon?",
+                "options": [
+                  "behöver",
+                  "borde",
+                  "får",
+                  "hinner",
+                  "måste",
+                  "brukar",
+                  "kan",
+                  "ska",
+                  "vill"
+                ],
+                "answers": [
+                  "ska",
+                  "kan"
+                ]
+              }
+            ]
           }
         ]
       }
@@ -28802,6 +29771,53 @@
                 }
               ]
             }
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Formal email: complaint.",
+        "minutes": 15,
+        "action": "Do the homework, check your answers, and check your text against the list. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-14-formal-complaint",
+            "item": 14,
+            "title": "Formal email: complaint",
+            "posted": "20 May",
+            "instructions": "Skriv ett formellt klagomål om ett av ämnena. Write one formal complaint email on one of the three topics. To a company or an organisation you write ni / er (the formal “you”), never du / dig.",
+            "note": "The teacher gave no word count. The YKI formal message is 50-80 words and the teacher's model is about 100, so aim for 50-110 words.",
+            "texts": [
+              {
+                "title": "Struktur för ett klagomål (the teacher's sheet)",
+                "body": "1. Hälsning: Hej,\n2. Inledning: varför du skriver.\n3. Problembeskrivning: vad hände? Datum, pris, ordernummer.\n4. Lösning: vad du vill ska hända. Jag bifogar …\n5. Avslutning och tack: Tack på förhand. Jag ser fram emot ert svar.\nMed vänliga hälsningar,\nförnamn + efternamn"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Skriv ett formellt mejl med ett klagomål. Välj ett ämne:\n1. Klaga på ett arbete i ditt kök eller din trädgård (pris, dåligt arbete, försenat arbete osv.).\n2. Klaga på servicen eller maten i ett mejl till restaurangen (inte en offentlig recension!).\n3. Klaga på något i ditt område som är i dåligt skick och ordna talko med dina grannar.",
+                "translation": "Write a formal complaint email. Choose one topic:\n1. Complain about work done in your kitchen or garden (price, bad work, late work etc.).\n2. Complain about the service or food in a restaurant in an email to the restaurant (not a public review!).\n3. Complain about the bad state of something in the neighbourhood and organise a “talko” (a volunteer work day) with your neighbours.",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    110
+                  ],
+                  "points": [
+                    "Start with “Hej,” (no first name) and say why you are writing.",
+                    "Describe the problem with facts: the date, the price, an order or receipt number.",
+                    "Use ni / er / ert for the company or organisation, never du / dig.",
+                    "Say what you want them to do (fix it, give the money back, a new date) and attach proof: “Jag bifogar …”.",
+                    "Link your sentences with words like men, eftersom, så and tyvärr.",
+                    "End with “Tack på förhand” or “Jag ser fram emot ert svar”, then “Med vänliga hälsningar” and your first name and last name."
+                  ]
+                },
+                "model": "Hej,\n\nJag heter Förnamn Efternamn och jag åt middag på er restaurang i lördags, den 16 maj. Tyvärr var jag mycket besviken. Vi väntade en timme på maten, och när den kom var min fisk kall. Jag sa det till servitören, men han bad inte om ursäkt. Notan var 86 euro för två personer, så jag hade väntat mig bättre service. Jag bifogar kvittot. Skulle ni kunna betala tillbaka pengarna för fisken? Tack på förhand. Jag ser fram emot ert svar.\n\nMed vänliga hälsningar,\nFörnamn Efternamn"
+              }
+            ]
           }
         ]
       }
@@ -30799,6 +31815,194 @@
             }
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Possessiva pronomen.",
+        "minutes": 6,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-15-possessiva-pronomen",
+            "item": 15,
+            "title": "Possessiva pronomen",
+            "posted": "22 May",
+            "instructions": "Välj rätt possessivt pronomen. Choose the right word for my, your, his, her, our or their. Min, din, vår and er change with the noun: min bil (en-word), mitt namn (ett-word), mina vänner (plural). Hans, hennes and deras never change.",
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Jag måste ringa ___ mamma.",
+                "options": [
+                  "min",
+                  "mitt",
+                  "mina"
+                ],
+                "answers": [
+                  "min"
+                ]
+              },
+              {
+                "id": "q2",
+                "prompt": "___ vänner kommer från Sverige.",
+                "options": [
+                  "vår",
+                  "vårt",
+                  "våra"
+                ],
+                "answers": [
+                  "våra"
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Hur stavar man ____ namn?",
+                "options": [
+                  "din",
+                  "ditt",
+                  "dina"
+                ],
+                "answers": [
+                  "ditt"
+                ]
+              },
+              {
+                "id": "q4",
+                "prompt": "Känner du ____ chef? (han)",
+                "options": [
+                  "han",
+                  "hans",
+                  "hennes"
+                ],
+                "answers": [
+                  "hans"
+                ]
+              },
+              {
+                "id": "q5",
+                "prompt": "Jag älskar ____ musik!",
+                "options": [
+                  "de",
+                  "dem",
+                  "deras"
+                ],
+                "answers": [
+                  "deras"
+                ]
+              },
+              {
+                "id": "q6",
+                "prompt": "Vad heter ___ hund? Den är så gosig!",
+                "options": [
+                  "er",
+                  "ert",
+                  "era"
+                ],
+                "answers": [
+                  "er"
+                ]
+              },
+              {
+                "id": "q7",
+                "prompt": "Jag träffade ____ man i affären igår.",
+                "options": [
+                  "henne",
+                  "hennes",
+                  "hon"
+                ],
+                "answers": [
+                  "hennes"
+                ]
+              },
+              {
+                "id": "q8",
+                "prompt": "Nu ska vi äta ____ middag!",
+                "options": [
+                  "vår",
+                  "vårt",
+                  "våra"
+                ],
+                "answers": [
+                  "vår"
+                ]
+              },
+              {
+                "id": "q9",
+                "prompt": "Imorgon ska vi fika med ____ familj.",
+                "options": [
+                  "min",
+                  "mitt",
+                  "mina"
+                ],
+                "answers": [
+                  "min"
+                ]
+              },
+              {
+                "id": "q10",
+                "prompt": "Var är ____ systrar?",
+                "options": [
+                  "din",
+                  "ditt",
+                  "dina"
+                ],
+                "answers": [
+                  "dina"
+                ]
+              },
+              {
+                "id": "q11",
+                "prompt": "___ bil är gammal.",
+                "options": [
+                  "vår",
+                  "vårt",
+                  "våra"
+                ],
+                "answers": [
+                  "vår"
+                ]
+              },
+              {
+                "id": "q12",
+                "prompt": "Nästa vecka går jag på semester med _____ vänner.",
+                "options": [
+                  "min",
+                  "mitt",
+                  "mina"
+                ],
+                "answers": [
+                  "mina"
+                ]
+              },
+              {
+                "id": "q13",
+                "prompt": "Kommer du på festen i ____ nya skor?",
+                "options": [
+                  "din",
+                  "ditt",
+                  "dina"
+                ],
+                "answers": [
+                  "dina"
+                ]
+              },
+              {
+                "id": "q14",
+                "prompt": "Jag vill gärna träffa ____ bästa vän.",
+                "options": [
+                  "din",
+                  "ditt",
+                  "dina"
+                ],
+                "answers": [
+                  "din"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "recall": [
@@ -32511,6 +33715,384 @@
                 }
               ]
             }
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Ska vs kommer att and Tycker vs tror.",
+        "minutes": 13,
+        "action": "Do each item, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-16-ska-kommer-att",
+            "item": 16,
+            "title": "Ska vs kommer att",
+            "posted": "25 May",
+            "instructions": "Välj ska eller kommer att. Use ska for a plan you decide yourself (Jag ska plugga). Use kommer att for a prediction you cannot control (Det kommer att regna).",
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Har du hört att Anna ______ byta jobb?",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "ska"
+                ]
+              },
+              {
+                "id": "q2",
+                "prompt": "Anna är så duktig. Ett bättre jobb _____ passa henne bra.",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "kommer att"
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Jag _____ gå till bageriet och köpa några smörgåsar.",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "ska"
+                ]
+              },
+              {
+                "id": "q4",
+                "prompt": "Jag köpte smörgåsar som vi ____ ta med oss på vår picknick.",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "ska"
+                ]
+              },
+              {
+                "id": "q5",
+                "prompt": "Barnen ______ bli så glada när de hör att vi ska ha en picknick.",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "kommer att"
+                ]
+              },
+              {
+                "id": "q6",
+                "prompt": "Jag tror att Tyskland ______ vinna över Spanien i fotbollsmatchen.",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "kommer att"
+                ]
+              },
+              {
+                "id": "q7",
+                "prompt": "Jag hörde på nyheterna att det _____ regna imorgon.",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "kommer att"
+                ]
+              },
+              {
+                "id": "q8",
+                "prompt": "Jag tycker att vi ____ packa varma kläder till vår resa till Alperna.",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "ska"
+                ]
+              },
+              {
+                "id": "q9",
+                "prompt": "A: Vi måste packa varmare kläder.\nB: Det låter bra. Vi _____ behöva dem i Alperna.",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "kommer att"
+                ]
+              },
+              {
+                "id": "q10",
+                "prompt": "Mamma, jag tycker att matteprovet nästa vecka _______ bli jättesvårt. Jag måste plugga!",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "kommer att"
+                ]
+              },
+              {
+                "id": "q11",
+                "prompt": "Jag har ett prov på måndag så jag ____ plugga hela helgen.",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "ska"
+                ]
+              },
+              {
+                "id": "q12",
+                "prompt": "Vi _____ flytta till Finland nästa vecka. Vi måste ordna många saker.",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "ska"
+                ]
+              },
+              {
+                "id": "q13",
+                "prompt": "Vi flyttar nästa månad. Det ______ bli så jobbigt!",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "kommer att"
+                ]
+              },
+              {
+                "id": "q14",
+                "prompt": "Du borde sluta röka! Du _____ bli sjuk av cigaretter!",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "kommer att"
+                ]
+              },
+              {
+                "id": "q15",
+                "prompt": "Jag _____ sluta dricka alkohol på måndag!",
+                "options": [
+                  "ska",
+                  "kommer att"
+                ],
+                "answers": [
+                  "ska"
+                ]
+              }
+            ],
+            "fixes": [
+              "A full stop is added at the end of question 5 (“… en picknick.”).",
+              "“på Alperna” is written “i Alperna” in question 9 (in the Alps), with a full stop at the end."
+            ]
+          },
+          {
+            "id": "teacher-17-tycker-tror",
+            "item": 17,
+            "title": "Tycker vs tror",
+            "posted": "25 May",
+            "instructions": "Välj tycker eller tror (eller tyckte, trodde). Use tycker for an opinion from your own experience; use tror for a guess or a belief when you do not know. Tyckte and trodde are the past forms.",
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Anna: Har du sett \"Barbie\"? Alla pratar om den här filmen.\nPeter: Ja, jag _____ att den var jättespännande.",
+                "options": [
+                  "tror",
+                  "tycker",
+                  "tyckte",
+                  "trodde"
+                ],
+                "answers": [
+                  "tyckte",
+                  "tycker"
+                ]
+              },
+              {
+                "id": "q2",
+                "prompt": "Jag _____ inte att svensk mat är god.",
+                "options": [
+                  "tror",
+                  "tycker"
+                ],
+                "answers": [
+                  "tycker"
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Jag vet inte hur surströmming smakar men jag ____ att det måste vara äckligt.",
+                "options": [
+                  "tror",
+                  "tycker"
+                ],
+                "answers": [
+                  "tror"
+                ]
+              },
+              {
+                "id": "q4",
+                "prompt": "Anna: När kommer tåget?\nPeter: Om 5 minuter, _____ jag.",
+                "options": [
+                  "tror",
+                  "tycker"
+                ],
+                "answers": [
+                  "tror"
+                ]
+              },
+              {
+                "id": "q5",
+                "prompt": "Anna: När kommer Sara hem?\nPeter: Jag ____ att hon kommer om en timme.",
+                "options": [
+                  "tycker",
+                  "tror"
+                ],
+                "answers": [
+                  "tror"
+                ]
+              },
+              {
+                "id": "q6",
+                "prompt": "Anna: Ska vi gå på bio och titta på Persona?\nPeter: Jag har inte sett filmen men jag _____ att den är bra.",
+                "options": [
+                  "tror",
+                  "tycker"
+                ],
+                "answers": [
+                  "tror"
+                ]
+              },
+              {
+                "id": "q7",
+                "prompt": "Anna: Vill du ha en vaniljbulle eller en kanelbulle?\nPeter: Jag _____ att kanelbullar är bättre än vaniljbullar, så jag väljer alltid kanelbullar.",
+                "options": [
+                  "tycker",
+                  "tror"
+                ],
+                "answers": [
+                  "tycker"
+                ]
+              },
+              {
+                "id": "q8",
+                "prompt": "Mormor: När jag träffade din morfar för 50 år sedan _____ jag att han var mycket snygg.",
+                "options": [
+                  "tycker",
+                  "tror",
+                  "tyckte",
+                  "trodde"
+                ],
+                "answers": [
+                  "tyckte"
+                ]
+              },
+              {
+                "id": "q9",
+                "prompt": "Jag brukar äta lunch med mina kollegor. Jag ____ att det är mysigt.",
+                "options": [
+                  "tror",
+                  "tycker",
+                  "trodde",
+                  "tyckte"
+                ],
+                "answers": [
+                  "tycker"
+                ]
+              },
+              {
+                "id": "q10",
+                "prompt": "När jag var barn _____ jag att tomten (Santa Claus) fanns på riktigt.",
+                "options": [
+                  "trodde",
+                  "tycker",
+                  "tror",
+                  "tyckte"
+                ],
+                "answers": [
+                  "trodde"
+                ]
+              },
+              {
+                "id": "q11",
+                "prompt": "Jag vill inte göra hemläxor. Jag ____ att det är tråkigt.",
+                "options": [
+                  "tyckte",
+                  "tycker",
+                  "trodde",
+                  "tror"
+                ],
+                "answers": [
+                  "tycker"
+                ]
+              },
+              {
+                "id": "q12",
+                "prompt": "Jag är inte säker men jag ____ att finländare dricker mycket kaffe.",
+                "options": [
+                  "trodde",
+                  "tycker",
+                  "tyckte",
+                  "tror"
+                ],
+                "answers": [
+                  "tror"
+                ]
+              },
+              {
+                "id": "q13",
+                "prompt": "När jag bodde i mitt land ____ jag att vintern var härlig. Nu ____ jag att sommaren är bäst eftersom finsk vinter är mycket kall.",
+                "options": [
+                  "tycker, tror",
+                  "tyckte, tycker",
+                  "tycker, tyckte",
+                  "trodde, tror",
+                  "tror, tycker"
+                ],
+                "answers": [
+                  "tyckte, tycker"
+                ]
+              },
+              {
+                "id": "q14",
+                "prompt": "Jag _____ att vuxna kunde göra vad de än ville när jag var liten.",
+                "options": [
+                  "trodde",
+                  "tror",
+                  "tycker",
+                  "tyckte"
+                ],
+                "answers": [
+                  "trodde"
+                ]
+              }
+            ],
+            "fixes": [
+              "“jätte spännande” is written “jättespännande” (question 1).",
+              "“svensk mat är gott” is written “svensk mat är god” (mat is an en-word; question 2).",
+              "“Santa Clause” is written “Santa Claus” (question 10).",
+              "“Finländare” is written with a small letter, “finländare” (question 12).",
+              "“vintern var härligt” is written “vintern var härlig” (question 13).",
+              "“vad än de ville” is written “vad de än ville” (question 14)."
+            ]
           }
         ]
       }
@@ -47028,6 +48610,89 @@
             ]
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Informal email and Formal email.",
+        "minutes": 30,
+        "action": "Do each item, check your answers, and check your text against the list. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-18-informal-email",
+            "item": 18,
+            "title": "Informal email",
+            "posted": "10 Jun",
+            "instructions": "Skriv ett informellt mejl om ett av ämnena. Write one email to a friend on one of the three topics, 50-80 words. Greet, ask how they are, react with feeling, suggest something concrete and end in a friendly way.",
+            "texts": [
+              {
+                "title": "Struktur för ett informellt mejl (the teacher's sheet)",
+                "body": "1. Hälsning: Hej Anna, / Hejsan Johan,\n2. Huvuddel: ställ en fråga (Hur mår du?), reagera (Vad kul att du ska resa! / Vad tråkigt att …), föreslå att ses med detaljer (Vad sägs om en fika på fredag?), berätta något nytt (Förresten har jag …).\n3. Avslutning: Kram / Vi ses / Vi hörs + ditt namn"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Skriv ett informellt mejl. Välj ett ämne:\n1. Bjud in en vän att prova din nya hobby tillsammans med dig.\n2. Du är sjuk. Be en vän om hjälp.\n3. En vän har förlorat sitt jobb. Reagera och erbjud hjälp.",
+                "translation": "Write an informal email. Choose one topic:\n1. Invite your friend to join in on your new hobby.\n2. You are sick. Ask your friend for help.\n3. A friend lost their job. React and offer help.",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    80
+                  ],
+                  "points": [
+                    "Informal greeting: “Hej” or “Hejsan” + the friend's name.",
+                    "Ask how they are: “Hur mår du?” or “Hur är det med dig?”.",
+                    "React with a feeling or say why you are writing: “Vad kul att …!” or “Vad tråkigt att …!”.",
+                    "Take the initiative: suggest a meeting with a day and a place, or offer concrete help.",
+                    "Give a little background and use subjunctions such as att, eftersom, när and om (B1 level).",
+                    "Informal ending: “Kram”, “Vi ses” or “Vi hörs” + your first name.",
+                    "Check verb tenses, word choice and prepositions."
+                  ]
+                },
+                "model": "Hej Lena,\n\nHur mår du? Jag hörde att du har förlorat ditt jobb. Vad tråkigt! Jag vet att du tyckte mycket om dina kollegor. Men du är så duktig, så jag tror att du kommer att hitta ett nytt jobb snart. Kan jag hjälpa dig? Jag kan läsa ditt CV, eftersom jag har skrivit många ansökningar själv. Vad sägs om en fika på lördag på vårt favoritkafé? Jag bjuder!\n\nKram,\nFörnamn"
+              }
+            ]
+          },
+          {
+            "id": "teacher-19-formal-email",
+            "item": 19,
+            "title": "Formal email",
+            "posted": "10 Jun",
+            "instructions": "Skriv ett formellt mejl om ett av ämnena. Write one formal email on one of the three topics, 50-80 words. Present yourself, give facts and numbers, say clearly what you want, and write ni / er.",
+            "texts": [
+              {
+                "title": "Struktur för ett formellt mejl (the teacher's sheet)",
+                "body": "1. Inledning: säg varför du skriver. Gå rakt på sak. (Jag skriver angående …)\n2. Huvuddel: förklara situationen kort. Beskriv fakta: datum, plats, ordernummer, spårnummer. (Jag bifogar …)\n3. Avslutning: skriv vad du vill ska hända nu. (Skulle ni kunna … / Jag vore tacksam för svar så snart som möjligt.)\nMed vänliga hälsningar + förnamn och efternamn"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Skriv ett formellt mejl. Välj ett ämne:\n1. Skriv till en butik och fråga om en produkt (finns den, vad kostar den, när kommer den tillbaka till hyllorna?).\n2. Skriv till Migri och fråga varför du har väntat på ett nytt pass i ett år.\n3. Skriv till posten och klaga på att ditt paket är skadat.",
+                "translation": "Write a formal email. Choose one topic:\n1. Write to a store to ask about a product (availability, price, back on the shelves).\n2. Write to Migri to ask why you have been waiting for a new passport for a year.\n3. Write to the post office to complain about your parcel being damaged.",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    80
+                  ],
+                  "points": [
+                    "Start with “Hej,” and present yourself with your first and last name.",
+                    "Say at once why you are writing: “Jag skriver angående …”.",
+                    "Give facts and numbers: dates, place, order or parcel number, price.",
+                    "Say clearly what you want: “Skulle ni kunna …?” or “Jag vill därför …”, and attach proof: “Jag bifogar …”.",
+                    "Use ni / er, a polite tone, and subjunctions such as att, eftersom and när for background.",
+                    "End with “Med vänliga hälsningar” + your first name, last name and contact details.",
+                    "Check verb tenses, word choice and prepositions."
+                  ]
+                },
+                "model": "Hej,\n\nJag heter Förnamn Efternamn och bor på Gamlagatan 23 i Helsingfors. Jag skriver angående mitt paket med paketnummer AB 123456789. Jag hämtade det på ert postkontor den 8 juni. Tyvärr var kartongen trasig och vasen inuti var sönder. Jag bifogar två bilder på paketet. Vasen kostade 45 euro. Skulle ni kunna ersätta skadan? Jag ser fram emot ert svar.\n\nMed vänliga hälsningar,\nFörnamn Efternamn\nTel. 040 123 4567"
+              }
+            ]
+          }
+        ]
       }
     ],
     "story": {
@@ -47460,6 +49125,50 @@
               {
                 "fi": "Det var så lite.",
                 "en": "It was nothing."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Nyheter 1: strejk + arbetslöshet.",
+        "minutes": 5,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-20-nyheter-strejk",
+            "item": 20,
+            "title": "Nyheter 1: strejk + arbetslöshet",
+            "posted": "12 Jun",
+            "instructions": "Lyssna på nyhet 1 och nyhet 3 och svara på frågorna. Listen to news items 1 and 3 in the Yle episode and answer the two questions. Press the white “Starta” button at the top left of the Yle page to play (the player bar may play the last thing you heard instead).",
+            "note": "There is no answer key for these listening questions: listen again and check your answers against the episode.",
+            "links": [
+              {
+                "label": "Yle Arenan: the news episode (nyhet 1 and 3)",
+                "url": "https://arenan.yle.fi/poddar/1-73102281"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Nyhet 1",
+                "prompt": "Butikerna är stängda eftersom det är strejk.",
+                "translation": "The shops are closed because there is a strike. True or false?",
+                "options": [
+                  "RÄTT",
+                  "FEL"
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Nyhet 3",
+                "prompt": "Hur många anställda kommer att förlora sina jobb?",
+                "translation": "How many employees will lose their jobs?",
+                "hint": "Write only the digits of the number."
               }
             ]
           }
@@ -51224,6 +52933,113 @@
               {
                 "fi": "Skicka bilder till mig!",
                 "en": "Send me photos!"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Festivalen Bravo.",
+        "minutes": 6,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-21-festivalen-bravo",
+            "item": 21,
+            "title": "Festivalen Bravo",
+            "posted": "16 Jun",
+            "instructions": "Läs texten och svara på frågorna. Read the short text about the Bravo! festival and answer the questions. Look for the exact words in the text: vartannat år, tolfte gången.",
+            "texts": [
+              {
+                "title": "Festivalen Bravo",
+                "body": "Den internationella festivalen för scenkonst, Bravo!, som riktar sig till barn och unga, sprider sig till huvudstadsregionens kulturcentrum och övriga stadslokaler den 15–24 mars 2026. Festivalen gästas av flera internationella grupper inom scenkonsten, och repertoaren innehåller fördomsfria föreställningar från pop-punk-jonglering till känslig sensorisk teater.\n\nBravo!, som förverkligas vartannat år, är den enda internationella scenkonstfestivalen i huvudstadsregionen som uteslutande fokuserar på program riktat till barn, unga och familjer. Det är den största internationella festivalen för scenkonst för barn och unga i Finland.\n\nBravo!-festivalen arrangeras nu för tolfte gången i samarbete med scenkonstorganisationen Assitej Finland och huvudstadsregionens kommuner."
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Frågor om texten",
+                "prompt": "Vem är festivalens målgrupp?",
+                "translation": "Who is the festival's target group?",
+                "model": "Barn, unga och familjer."
+              },
+              {
+                "id": "q2",
+                "part": "Frågor om texten",
+                "prompt": "Hur ofta kan man gå på Festivalen Bravo?",
+                "translation": "How often can you go to the Bravo festival?",
+                "options": [
+                  "Två gånger om året",
+                  "Varje år",
+                  "En gång om två år"
+                ],
+                "answers": [
+                  "En gång om två år"
+                ]
+              },
+              {
+                "id": "q3",
+                "part": "Frågor om texten",
+                "prompt": "Vilken typ av föreställningar kan man se på festivalen?",
+                "translation": "What kind of performances can you see at the festival?",
+                "model": "Fördomsfria scenkonstföreställningar för barn och unga, från pop-punk-jonglering till känslig sensorisk teater."
+              },
+              {
+                "id": "q4",
+                "part": "Frågor om texten",
+                "prompt": "Hur många gånger har man organiserat festivalen Bravo, inklusive detta år?",
+                "translation": "How many times has the Bravo festival been organised, including this year?",
+                "options": [
+                  "11",
+                  "12",
+                  "13"
+                ],
+                "answers": [
+                  "12"
+                ]
+              },
+              {
+                "id": "q5",
+                "part": "Rätt eller fel",
+                "prompt": "Festivalen Bravo är en filmfestival.",
+                "translation": "The Bravo festival is a film festival.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q6",
+                "part": "Rätt eller fel",
+                "prompt": "Festivalen organiseras inte bara i Finland utan också i några andra länder.",
+                "translation": "The festival is held not only in Finland but also in some other countries.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q7",
+                "part": "Rätt eller fel",
+                "prompt": "Deltagare kommer från olika länder.",
+                "translation": "Participants come from different countries.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Rätt"
+                ]
               }
             ]
           }
@@ -57319,6 +59135,66 @@
             ]
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Nyheter 2: regering.",
+        "minutes": 5,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-22-nyheter-regering",
+            "item": 22,
+            "title": "Nyheter 2: regering",
+            "posted": "22 Jun",
+            "instructions": "Lyssna på nyhet 1 och svara på frågorna. Listen to the first news item in the Yle episode and pick the right number. Press the white “Starta” button at the top left of the Yle page to play (the player bar may play the last thing you heard instead).",
+            "note": "There is no answer key for these listening questions: listen again and check your answers against the episode.",
+            "links": [
+              {
+                "label": "Yle Arenan: the news episode (nyhet 1)",
+                "url": "https://arenan.yle.fi/poddar/1-71847489"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Nyhet 1",
+                "prompt": "Hur många finländare är missnöjda med regeringen?",
+                "translation": "How many Finns are unhappy with the government?",
+                "options": [
+                  "60%",
+                  "40%",
+                  "6000"
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Nyhet 1",
+                "prompt": "Hur många finländare är nöjda med oppositionen?",
+                "translation": "How many Finns are happy with the opposition?",
+                "options": [
+                  "60%",
+                  "40%",
+                  "1800"
+                ]
+              },
+              {
+                "id": "q3",
+                "part": "Nyhet 1",
+                "prompt": "Hur många deltog i enkäten?",
+                "translation": "How many people took part in the survey?",
+                "options": [
+                  "6000",
+                  "1800",
+                  "18000"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "story": {
@@ -59317,6 +61193,108 @@
             ]
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Köttfri dag.",
+        "minutes": 5,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-23-kottfri-dag",
+            "item": 23,
+            "title": "Köttfri dag",
+            "posted": "24 Jun",
+            "instructions": "Läs texten och svara på frågorna. Read the opinion text (a school letter asking for a meat-free day) and answer. Notice its structure: opinion first, then för det första, för det andra, för det tredje, and a closing wish.",
+            "texts": [
+              {
+                "title": "Köttfri dag",
+                "body": "Inför köttfri dag i skolan!\n\nPå vår skola serveras det varje dag någon typ av kött i matsalen. Är det inte hamburgare eller bacon så är det köttbullar och korvar av olika slag. Men behöver vi verkligen ha kött varje dag? Nej, vi vill att skolan inför minst en köttfri dag en gång i veckan.\n\nVarför?\n\nFör det första är det inte miljövänligt att äta kött. Det krävs tio gånger mer energi för att producera kött än vad det krävs för att producera grönsaker.\n\nFör det andra är det nyttigt att ha en köttfri dag. Enligt Livsmedelsverket kan vi sänka vårt intag av kött med hälften och fortfarande må bra.\n\nFör det tredje skulle en köttfri dag i veckan leda till att efterfrågan på kött skulle minska. Detta skulle i sin tur leda till bättre djurhållning och mindre lidande för djuren. En köttfri dag leder alltså till tre goda ting: Bättre miljö, bättre hälsa och bättre djurhållning. Nu kanske några menar att det räcker med att använda ekologiskt kött istället för importerat. Men fakta kvarstår fortfarande. En köttfri dag i veckan är bättre! Däremot får skolan gärna servera ekologiskt kött de andra fyra dagarna!\n\nVår förhoppning är att alla skolor i kommunen från och med nästa termin inför en köttfri dag. Vi uppmanar alla elevråd i kommunen att kräva en köttfri dag i skolan!"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Frågor om texten",
+                "prompt": "Hur ofta skulle man ha en köttfri dag i skolan, enligt författaren?",
+                "translation": "According to the writer, how often should the school have a meat-free day?",
+                "answers": [
+                  "En gång i veckan",
+                  "Minst en gång i veckan",
+                  "En dag i veckan",
+                  "Minst en dag i veckan",
+                  "En köttfri dag i veckan",
+                  "Minst en köttfri dag i veckan",
+                  "Minst en köttfri dag en gång i veckan",
+                  "En gång per vecka",
+                  "Minst en gång per vecka",
+                  "En dag per vecka",
+                  "Minst en dag per vecka",
+                  "1 gång i veckan",
+                  "1 dag i veckan"
+                ],
+                "model": "Minst en gång i veckan."
+              },
+              {
+                "id": "q2",
+                "part": "Frågor om texten",
+                "prompt": "Svara i procent (%): Hur många procent köttkonsumtion kan vi sänka och ändå må bra?",
+                "translation": "Answer in percent: by how many percent can we cut how much meat we eat and still feel well?",
+                "hint": "The text says “med hälften” (by half).",
+                "answers": [
+                  "50",
+                  "50%",
+                  "50 %",
+                  "50 procent",
+                  "femtio",
+                  "femtio procent"
+                ]
+              },
+              {
+                "id": "q3",
+                "part": "Rätt eller fel",
+                "prompt": "En förbättrad djurhållning betyder att djuren får det bättre och inte lider så mycket.",
+                "translation": "Better animal husbandry means the animals are better off and do not suffer so much.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Rätt"
+                ]
+              },
+              {
+                "id": "q4",
+                "part": "Rätt eller fel",
+                "prompt": "Det krävs färre resurser för att producera grönsaker än för att producera kött.",
+                "translation": "It takes fewer resources to produce vegetables than to produce meat.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Rätt"
+                ]
+              },
+              {
+                "id": "q5",
+                "part": "Rätt eller fel",
+                "prompt": "Författaren hoppas på att en köttfri dag ska påbörjas vid kommande termin.",
+                "translation": "The writer hopes a meat-free day will start next term.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Rätt"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "story": {
@@ -61115,6 +63093,47 @@
                 ],
                 "model": "Många anser att pengar gör oss lyckliga. För min del är det bara delvis sant. Det är klart att man behöver tillräckligt med pengar för hyra och mat, annars blir livet stressigt. Men först och främst kommer lyckan från människorna omkring oss. Till exempel är jag som gladast när jag lagar mat med mina vänner, och det kostar nästan ingenting. Dessutom blir man inte mycket lyckligare av en dyrare bil eller en större lägenhet. Sammanfattningsvis tror jag att hälsa och relationer är viktigare än pengar.",
                 "modelEn": "Many people believe money makes us happy. For my part, that is only partly true. Of course you need enough money for rent and food, otherwise life gets stressful. But first of all, happiness comes from the people around us. For example, I am happiest when I cook with my friends, and that costs almost nothing. Also, a more expensive car or a bigger flat does not make you much happier. To sum up, I think health and relationships are more important than money."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Opinion piece.",
+        "minutes": 15,
+        "action": "Do the homework, check your answers, and check your text against the list. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-24-opinion-piece",
+            "item": 24,
+            "title": "Opinion piece",
+            "posted": "26 Jun",
+            "instructions": "Välj ett ämne och skriv en argumenterande text (100–150 ord). Choose ONE of the seven topics and write an opinion text of about 120 words. Use three parts: say what you think, give at least two arguments, then sum up.",
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Argumenterande text",
+                "prompt": "Välj ett ämne och skriv en argumenterande text:\n1. Sociala medier är dåliga för våra relationer.\n2. Är stil viktigt?\n3. Är husdjur bra terapeuter?\n4. Är det lätt att hålla sig i form i Finland?\n5. Maten är dyr i Finland.\n6. Gör pengar oss lyckliga?\n7. Elbilar eller dieselbilar?",
+                "translation": "Choose one topic and write an opinion piece: 1. Social media is bad for our relationships. 2. Is style important? 3. Are pets good therapists? 4. Is it easy to be fit in Finland? 5. Food is expensive in Finland. 6. Does money make us happy? 7. Electric cars or diesel cars?",
+                "writing": {
+                  "wordRange": [
+                    100,
+                    150
+                  ],
+                  "points": [
+                    "Introduction: present the topic and say clearly what you think (Jag tycker att…, Enligt mig…, Många tycker att… men…).",
+                    "Give at least two arguments: two on the same side, or one for and one against (Å ena sidan… Å andra sidan…).",
+                    "Explain each argument with a reason or an example (eftersom…, till exempel…).",
+                    "Link your ideas with connecting words (för det första, för det andra, dessutom, däremot).",
+                    "End by summing up your opinion (Sammanfattningsvis…, Avslutningsvis…, Till sist tycker jag att…).",
+                    "Write 100-150 words, ideally about 120."
+                  ]
+                },
+                "model": "Gör pengar oss lyckliga?\n\nDet sägs ofta att pengar inte kan köpa lycka. Personligen tycker jag att pengar kan göra oss lite lyckligare, men bara upp till en viss gräns.\n\nÅ ena sidan behöver alla pengar för att leva ett tryggt liv. Om man har tillräckligt med pengar kan man betala hyran, köpa bra mat och resa hem och hälsa på sin familj. Då slipper man oroa sig varje månad, och det är skönt.\n\nÅ andra sidan blir man inte lyckligare för varje extra euro. Det finns många rika människor som är stressade och ensamma. Enligt mig är vänner, hälsa och ett meningsfullt jobb viktigare än en hög lön.\n\nSammanfattningsvis gör pengar livet lättare, men de kan inte ersätta människorna som vi älskar. Därför ska vi inte jaga pengar hela tiden."
               }
             ]
           }
@@ -63202,6 +65221,120 @@
                 ],
                 "model": "Många tycker att man aldrig får glömma en födelsedag. Jag håller delvis med. Å ena sidan blir en vän glad när man kommer ihåg dagen. Det räcker med ett kort meddelande eller ett samtal, och det kostar ingenting. Å andra sidan har vi många vänner och kolleger i dag, och det är svårt att komma ihåg alla datum. Dessutom slutar många vuxna fira sin födelsedag. Sammanfattningsvis ska man komma ihåg sina nära och käras födelsedagar, men det är ingen katastrof om man glömmer en kollegas.",
                 "modelEn": "Many people think you must never forget a birthday. I partly agree. On the one hand, a friend is happy when you remember the day. A short message or a call is enough, and it costs nothing. On the other hand, we have many friends and colleagues today, and it is hard to remember all the dates. Besides, many adults stop celebrating their birthday. To sum up, you should remember your loved ones' birthdays, but it is no disaster if you forget a colleague's."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Nyheter 3: mobbning + jobb för invandrare.",
+        "minutes": 12,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-25-nyheter-mobbning-jobb",
+            "item": 25,
+            "title": "Nyheter 3: mobbning + jobb för invandrare",
+            "posted": "29 Jun",
+            "instructions": "Lyssna på nyhet 1 och nyhet 2 och svara på frågorna. Listen to the first two news items in the Yle episode and answer. Press the white “Starta” button at the top left of the Yle page to play (the player bar may play the last thing you heard instead).",
+            "note": "There is no answer key for these listening questions: listen again and check your answers against the episode.",
+            "links": [
+              {
+                "label": "Yle Arenan: the news episode (nyhet 1 and 2)",
+                "url": "https://arenan.yle.fi/poddar/1-71767056"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Nyhet 1",
+                "prompt": "Vilka 2 anledningar nämns till varför barn blir mobbade?",
+                "translation": "Which two reasons are given for why children are bullied?",
+                "options": [
+                  "deras föräldrar är invandrare och de kan inte tala svenska",
+                  "deras hudfärg och det att de inte har pengar",
+                  "deras dyra kläder och föräldrarna som är invandrare"
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Nyhet 1",
+                "prompt": "Är mobbning ett stort problem i Finland?",
+                "translation": "Is bullying a big problem in Finland?",
+                "options": [
+                  "JA",
+                  "NEJ"
+                ]
+              },
+              {
+                "id": "q3",
+                "part": "Nyhet 2",
+                "prompt": "Vad hade företaget för problem?",
+                "translation": "What problem did the company have?",
+                "options": [
+                  "de kunde inte börja jobba i andra länder",
+                  "de kunde inte locka arbetare från andra länder",
+                  "de kunde inte lära sina arbetare varken svenska eller finska"
+                ]
+              },
+              {
+                "id": "q4",
+                "part": "Nyhet 2 · Hur löste de problemet?",
+                "prompt": "de anställde fler personer",
+                "translation": "How did they solve the problem? They hired more people.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q5",
+                "part": "Nyhet 2 · Hur löste de problemet?",
+                "prompt": "de skrev annonserna på engelska",
+                "translation": "They wrote the job ads in English.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q6",
+                "part": "Nyhet 2 · Hur löste de problemet?",
+                "prompt": "de ändrade sina språkkrav",
+                "translation": "They changed their language requirements.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q7",
+                "part": "Nyhet 2 · Hur löste de problemet?",
+                "prompt": "de bestämde att man måste tala bara ett av Finlands officiella språk, inte båda två",
+                "translation": "They decided you only need to speak one of Finland's official languages, not both.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q8",
+                "part": "Nyhet 2",
+                "prompt": "Hur många människor ansökte därefter?",
+                "translation": "How many people applied after that?",
+                "options": [
+                  "300",
+                  "50",
+                  "360",
+                  "350",
+                  "35",
+                  "340",
+                  "34"
+                ]
               }
             ]
           }
@@ -67380,6 +69513,71 @@
             ]
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Ulf Unge.",
+        "minutes": 5,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-26-ulf-unge",
+            "item": 26,
+            "title": "Ulf Unge",
+            "posted": "3 Jul",
+            "instructions": "Läs insändaren och välj rätt svar. Read the reader's letter (a complaint in a newspaper) and pick the best answer to each question.",
+            "texts": [
+              {
+                "title": "Insändare",
+                "body": "Kan någon förklara för mig varför pensionärer måste åka tunnelbana i rusningstrafik? De står mitt i en överfull tunnelbanevagn och gnäller om att gamla människor ska få företräde av och på vagnen och att de ska få sitta. Det är illa att övriga resenärer, som inte kan välja vilken tid de ska åka, måste lyssna på gnäll från människor som har hela dagen att åka på. När man väl har tagit sig hem går man in i mataffären för att handla. Då står det en pensionär längst fram vid kassan och gnäller om några rabattkuponger. Där står jag längst bak och kastar mördande blickar, men vad hjälper det? Kvinnan framför mig hoppar nästan jämfota, hon skulle ha varit på dagis och hämtat sina barn för 15 minuter sedan. Pensionärer, tänk lite! Åk kollektivt och handla på andra tider än i rusningstid. Jag tror att alla skulle tjäna på det.\n\nUlf Unge"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Ulf Unge tycker att pensionärer",
+                "translation": "Ulf Unge thinks that pensioners…",
+                "options": [
+                  "a. borde tänka mer på andra.",
+                  "b. inte ska få åka tunnelbana.",
+                  "c. ska få sittplats på tunnelbanan."
+                ],
+                "answers": [
+                  "a. borde tänka mer på andra."
+                ]
+              },
+              {
+                "id": "q2",
+                "prompt": "Vilket alternativ passar som rubrik för Ulf Unges text?",
+                "translation": "Which option fits as a headline for Ulf Unge's text?",
+                "options": [
+                  "a. Lyssna på pensionärerna",
+                  "b. Pensionärer har alternativ",
+                  "c. Pensionärsrabatt"
+                ],
+                "answers": [
+                  "b. Pensionärer har alternativ"
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Varför klagar Ulf Unge på pensionärernas gnäll?",
+                "translation": "Why does Ulf Unge complain about the pensioners' moaning?",
+                "options": [
+                  "a. eftersom för mycket gnäll saktar ner saker",
+                  "b. eftersom det sprids negativ energi",
+                  "c. eftersom det är ohälsosamt"
+                ],
+                "answers": [
+                  "a. eftersom för mycket gnäll saktar ner saker"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "story": {
@@ -69292,6 +71490,102 @@
                 ],
                 "model": "Jag håller delvis med. Å ena sidan fungerar det mesta bra här. Bussarna går i tid, och man kan sköta nästan allt på nätet, till exempel banken och skatten. Jämfört med Pune är vardagen mycket lugnare. Å andra sidan var de första månaderna inte enkla. Jag förstod inte breven från myndigheterna, och det var svårt att hitta en lägenhet. Jag löste det med hjälp av en kollega. Dessutom är vintern mörk och lång. Sammanfattningsvis är vardagen enkel när man väl har lärt sig systemet.",
                 "modelEn": "I partly agree. On the one hand, most things work well here. The buses run on time, and you can handle almost everything online, for example the bank and taxes. Compared with Pune, everyday life is much calmer. On the other hand, the first months were not simple. I did not understand the letters from the authorities, and it was hard to find a flat. I solved it with the help of a colleague. Moreover, the winter is dark and long. To sum up, everyday life is simple once you have learnt the system."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Formal writing: ad.",
+        "minutes": 15,
+        "action": "Do the homework, check your answers, and check your text against the list. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-27-formal-ad",
+            "item": 27,
+            "title": "Formal writing: ad",
+            "posted": "8 Jul",
+            "instructions": "Skriv en annons. Välj ett av de tre ämnena. Write a formal ad, or a message to a seller, about ONE of the three topics. Follow the teacher's structure: heading, opening, details, contact and a polite ending.",
+            "note": "Pick one topic and write only that one. There is no answer key: check your text against the points, and compare with the model for topic 1.",
+            "links": [
+              {
+                "label": "The teacher's structure sheet (PDF)",
+                "url": "https://drive.google.com/file/d/1JQbLzcQz9iCPMIntHQowGpu8rDUQa_Zk/view"
+              }
+            ],
+            "texts": [
+              {
+                "title": "Struktur för annons (the teacher's outline)",
+                "body": "1. Rubrik / titel: lockande och informativ. Säger vad som erbjuds eller säljs.\n2. Inledning: presentera objektet (lägenhet, möbel, maskin …). Skriv varför den är bra.\n3. Huvuddel / beskrivning: beskriv detaljer. För en lägenhet: läge, antal rum, kök, badrum, tvättmaskin, ljus, möbler. För saker: märke, funktion, skick, ålder, användning. Ange villkor: hyresvillkor, pris, regler (husdjur, rökfritt), leverans.\n4. Kontaktinformation och avslut: hur intresserade kan kontakta dig. Vänliga hälsningar."
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Välj ett ämne · Choose one topic",
+                "prompt": "Ämne 1: Du säljer något, till exempel en telefon, en cykel eller en tvättmaskin. Skriv en annons.",
+                "translation": "Topic 1: You are selling something (a phone, a bicycle, a washing machine). Write an ad.",
+                "hint": "Useful words: i gott skick (in good condition), av märket … (of the brand …), vi kan förhandla om priset, hämta själv (pick up yourself).",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    110
+                  ],
+                  "points": [
+                    "A heading that says what you sell (for example: Cykel till salu).",
+                    "An opening: say what you sell and why it is good.",
+                    "Details: brand, condition, age and what it can do.",
+                    "The price, and how the buyer gets it (pick up or delivery).",
+                    "How to contact you, and a polite ending: Vänliga hälsningar.",
+                    "Formal and polite: facts and numbers, link sentences with och, men, eftersom."
+                  ]
+                },
+                "model": "Cykel till salu\n\nHej! Jag säljer min gamla cykel eftersom jag har köpt en ny. Cykeln är av märket Crescent och har sju växlar. Den är fem år gammal men i mycket gott skick och fungerar precis som den ska. Priset är 120 euro, men vi kan förhandla om priset. Du kan hämta cykeln själv i Esbo. Om du är intresserad kan du ringa mig, gärna efter klockan 16.\n\nVänliga hälsningar,\nAlex"
+              },
+              {
+                "id": "q2",
+                "part": "Välj ett ämne · Choose one topic",
+                "prompt": "Ämne 2: Du vill hyra en lägenhet: hyra ut din egen lägenhet eller hitta en lägenhet att hyra. Skriv en annons.",
+                "translation": "Topic 2: You want to rent an apartment (rent out your own flat, like the teacher's model, or find one to rent). Write an ad.",
+                "hint": "Useful words: en pålitlig hyresgäst (a reliable tenant), en trea på 80 kvm (a three-room flat of 80 m²), hyran är … euro per månad, husdjur är tillåtna, rökfritt.",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    110
+                  ],
+                  "points": [
+                    "A heading that says what you offer or look for.",
+                    "An opening: present the flat (or yourself) and why it is good.",
+                    "Details: where it is, how many rooms and square metres, kitchen, bathroom, light.",
+                    "Conditions: rent, deposit, rules (pets, no smoking).",
+                    "How to contact you or book a viewing, and a polite ending: Vänliga hälsningar.",
+                    "Formal and polite: facts and numbers, link sentences with och, men, eftersom."
+                  ]
+                }
+              },
+              {
+                "id": "q3",
+                "part": "Välj ett ämne · Choose one topic",
+                "prompt": "Ämne 3: Du har sett en annons och vill ställa fler frågor till säljaren. Skriv ett meddelande.",
+                "translation": "Topic 3: You saw an ad and want to ask the seller more questions. Write a message.",
+                "hint": "Useful phrases: Jag skriver angående din annons om … (I am writing about your ad for …), Finns den fortfarande kvar?, Jag undrar om …, Kan man förhandla om priset?",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    110
+                  ],
+                  "points": [
+                    "A polite greeting, and say which ad you mean.",
+                    "Two or three clear questions (condition, age, price, delivery or viewing).",
+                    "Say why you are interested.",
+                    "How the seller can contact you, and a polite ending: Vänliga hälsningar.",
+                    "Formal and polite: facts and numbers, link sentences with och, men, eftersom."
+                  ]
+                }
               }
             ]
           }
@@ -71414,6 +73708,191 @@
             ]
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Nyheter 4: Shein + djurpark and Nyheter 5: skolan och kyrkan.",
+        "minutes": 20,
+        "action": "Do each item, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-28-news-shein-zoo",
+            "item": 28,
+            "title": "Nyheter 4: Shein + djurpark",
+            "posted": "8 Jul",
+            "instructions": "Lyssna på nyhet 2 och nyhet 3 och svara på frågorna. Listen to news 2 and news 3 in the episode and answer the questions.",
+            "note": "There is no answer key for these listening questions: check your answers against the episode. On Yle Arenan, use the white \"Starta\" button at the top left to play this episode (the player at the bottom plays the last thing you listened to).",
+            "links": [
+              {
+                "label": "The news episode on Yle Arenan",
+                "url": "https://arenan.yle.fi/poddar/1-71845075"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Nyhet 2 · Shein",
+                "prompt": "Vad kommer att hända med kläderna från Shein?",
+                "translation": "What will happen to the clothes from Shein?",
+                "options": [
+                  "Det kommer att bli förbjudet att köpa kläder från Shein",
+                  "De kommer att doneras",
+                  "De kommer att brännas upp"
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Nyhet 2 · Shein",
+                "prompt": "Vad är problemet med Shein enligt nyheterna? Rätt eller fel?\nde innehåller ett ämne som irriterar huden",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "What is the problem with Shein? They (the clothes) contain a substance that irritates the skin."
+              },
+              {
+                "id": "q3",
+                "part": "Nyhet 2 · Shein",
+                "prompt": "Vad är problemet med Shein enligt nyheterna? Rätt eller fel?\nde kan förorsaka allvarliga sjukdomar",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "They can cause serious illnesses."
+              },
+              {
+                "id": "q4",
+                "part": "Nyhet 2 · Shein",
+                "prompt": "Vad är problemet med Shein enligt nyheterna? Rätt eller fel?\nShein behandlar kundernas bankinformation på ett dåligt sätt",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "Shein handles customers' bank details badly."
+              },
+              {
+                "id": "q5",
+                "part": "Nyhet 2 · Shein",
+                "prompt": "Vad är problemet med Shein enligt nyheterna? Rätt eller fel?\nbanken varnade om säkerhetsproblem med att köpa på Sheins webbsida",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "The bank warned about security problems when buying on Shein's website."
+              },
+              {
+                "id": "q6",
+                "part": "Nyhet 3 · Djurparken",
+                "prompt": "Varför var det rekordmånga besökare på djurparken?",
+                "translation": "Why did the zoo have a record number of visitors?",
+                "options": [
+                  "pandorna Lumi och Pyry fick bebisar",
+                  "pandorna flyttar till Kina",
+                  "parken har ekonomiska problem så den behöver fler besökare"
+                ]
+              },
+              {
+                "id": "q7",
+                "part": "Nyhet 3 · Djurparken",
+                "prompt": "Varför skickas pandorna till Kina?",
+                "translation": "Why are the pandas being sent to China?",
+                "options": [
+                  "de behöver sättas i karantän",
+                  "djurparken har inte råd med att ta hand om pandorna",
+                  "pandorna var ledsna i Finland och ville flytta hem till Kina"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "teacher-29-news-school-church",
+            "item": 29,
+            "title": "Nyheter 5: skolan och kyrkan",
+            "posted": "8 Jul",
+            "instructions": "Lyssna på nyhet 1 och nyhet 2 och svara på frågorna. Listen to news 1 and news 2 in the episode and answer the questions. Listen for numbers carefully.",
+            "note": "There is no answer key for these listening questions: check your answers against the episode.",
+            "links": [
+              {
+                "label": "The news episode on Yle Arenan",
+                "url": "https://arenan.yle.fi/poddar/1-71105018"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Nyhet 1 · Skolan",
+                "prompt": "Hur många barn börjar skolan i år?",
+                "translation": "How many children start school this year?",
+                "options": [
+                  "50 000",
+                  "4 000",
+                  "5 000",
+                  "45 000",
+                  "54 000"
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Nyhet 1 · Skolan",
+                "prompt": "Varför stänger småskolor? Rätt eller fel?\nantalet barn minskar",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "Why are small schools closing? The number of children is falling."
+              },
+              {
+                "id": "q3",
+                "part": "Nyhet 1 · Skolan",
+                "prompt": "Varför stänger småskolor? Rätt eller fel?\nskolor har ont om pengar",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "Schools are short of money."
+              },
+              {
+                "id": "q4",
+                "part": "Nyhet 1 · Skolan",
+                "prompt": "Varför stänger småskolor? Rätt eller fel?\nbarns föräldrar har inte pengar",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "Children's parents have no money."
+              },
+              {
+                "id": "q5",
+                "part": "Nyhet 2 · Kyrkan",
+                "prompt": "Varför höjer kyrkan priset på begravningar?",
+                "translation": "Why is the church raising the price of funerals?",
+                "options": [
+                  "De har inte tillräckligt med präster så det blir dyrare",
+                  "Kyrkan får mindre pengar av staten",
+                  "Inte så många är religiösa nuförtiden och kyrkan behöver pengar"
+                ]
+              },
+              {
+                "id": "q6",
+                "part": "Nyhet 2 · Kyrkan",
+                "prompt": "Hur mycket kommer en begravningsplats att kosta nästa år?",
+                "translation": "How much will a burial plot cost next year?",
+                "options": [
+                  "100",
+                  "400",
+                  "500",
+                  "600"
+                ]
+              }
+            ],
+            "fixes": [
+              "“höje r” is written “höjer”."
+            ]
+          }
+        ]
       }
     ],
     "story": {
@@ -73261,6 +75740,119 @@
                 "model": "Frågan är om bussar, spårvagnar och metro ska vara gratis. Jag håller med. För det första kostar en enkelbiljett i Helsingfors över tre euro, och för en familj blir det mycket pengar varje månad. För det andra skulle fler lämna bilen hemma om resorna var gratis, vilket skulle vara bra för miljön. I Luxemburg har kollektivtrafiken varit gratis sedan 2020. Det är klart att någon måste betala, men skatterna kunde täcka det. Sammanfattningsvis tror jag att alla skulle vinna på det.",
                 "modelEn": "The question is whether buses, trams and the metro should be free. I agree. First, a single ticket in Helsinki costs over three euros, and for a family that becomes a lot of money every month. Second, more people would leave the car at home if travel were free, which would be good for the environment. In Luxembourg public transport has been free since 2020. Of course someone has to pay, but taxes could cover it. To sum up, I think everyone would gain from it."
               }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Barn och mat.",
+        "minutes": 5,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-30-children-food",
+            "item": 30,
+            "title": "Barn och mat",
+            "posted": "14 Jul",
+            "instructions": "Läs texten och välj rätt svar. Read the text and choose the right answer. The answer is in the text, often in other words.",
+            "texts": [
+              {
+                "title": "Barn och mat",
+                "body": "Över 22 miljoner barn i Europa väger för mycket. Det visar en studie av 12 700 barn mellan 2 och 10 år från Sverige och sju andra länder i Europa. Studien visar också att fetma bland barn är tre gånger vanligare i sydliga länder, som Italien och Spanien, än i Sverige och andra nordliga länder. I Italien räknas 41,9 % av barnen som överviktiga och i Sverige är siffran 9,5 %.\n\nEn kvinnlig forskare från Sahlgrenska Akademin i Göteborg har medverkat i studien. Hon säger att det finns ett samband mellan att vara ensambarn och att vara överviktig. Att det är vanligare att barn som inte har syskon väger för mycket och att risken ökar ju längre man har varit ensambarn. Barn som växer upp utan syskon löper ungefär dubbelt så stor risk att bli överviktiga eller feta än barn med syskon.\n\nForskarna vet inte säkert vad som ligger bakom skillnaderna. Men de pekar på några saker som kan ge en förklaring. Ensambarn leker mindre tid utomhus, ser mer på tv och äter mer socker än barn med syskon, visar studien.\n\nDessutom ger föräldrar till ensambarn oftare sitt barn mat som belöning än vad flerbarnsföräldrar gör.\n\nEn amerikansk kvinna, Pamela Druckerman, har bott i Frankrike i många år. Hon har skrivit en bok om skillnaderna mellan amerikanska och franska föräldrar när det gäller barn och mat. Boken är ingen studie utan handlar om vad hon som mamma sett och upplevt i Frankrike. När hon var ute på restaurang till exempel, såg hon ofta hur de franska barnen satt fint vid bordet och åt av alla rätter, medan hennes eget barn bråkade och inte ville äta av maten.\n\nHon märkte också att de franska barnen fick mat på bestämda tider redan när de var mycket små och att det kanske är en orsak till att franska barn är mindre feta än amerikanska barn. Över hela världen finns många åsikter om barn och mat. Vissa föräldrar tycker att barn ska lära sig att äta all mat och andra tycker att det är viktigast att barnen blir mätta. Därför låter de barnen själva välja om de vill ha fisk, pannkakor eller hamburgare."
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "prompt": "Vad stämmer om studien om överviktiga barn?",
+                "translation": "What is true about the study of overweight children?",
+                "options": [
+                  "12 700 barn i åldern 2-10 har studerats i 7 länder.",
+                  "12 700 barn i åldern 2-10 har studerats i 8 länder.",
+                  "22 miljoner barn i åldern 2-10 har studerats i 8 länder."
+                ],
+                "answers": [
+                  "12 700 barn i åldern 2-10 har studerats i 8 länder."
+                ],
+                "hint": "Sverige och sju andra länder: count Sweden too."
+              },
+              {
+                "id": "q2",
+                "prompt": "Var i Europa är barnfetma vanligast?",
+                "translation": "Where in Europe is obesity in children most common?",
+                "options": [
+                  "i södra Europa",
+                  "i norra Europa",
+                  "lika vanligt i hela Europa"
+                ],
+                "answers": [
+                  "i södra Europa"
+                ]
+              },
+              {
+                "id": "q3",
+                "prompt": "Hur mycket vanligare är barnfetma hos ensambarn än hos barn med syskon?",
+                "translation": "How much more common is obesity in only children than in children with brothers and sisters?",
+                "options": [
+                  "ungefär 9% vanligare",
+                  "ungefär 41% vanligare",
+                  "ungefär 100% vanligare"
+                ],
+                "answers": [
+                  "ungefär 100% vanligare"
+                ],
+                "hint": "dubbelt så stor = twice as big."
+              },
+              {
+                "id": "q4",
+                "prompt": "Varför blir ensambarn oftare feta än barn med syskon?",
+                "translation": "Why do only children become obese more often than children with brothers and sisters?",
+                "options": [
+                  "De äter ofta på restaurang.",
+                  "De sitter mer stilla.",
+                  "De får ofta bestämma sin mat."
+                ],
+                "answers": [
+                  "De sitter mer stilla."
+                ]
+              },
+              {
+                "id": "q5",
+                "prompt": "Vad märkte den amerikanska författaren när hon jämförde franska och amerikanska barn?",
+                "translation": "What did the American writer notice when she compared French and American children?",
+                "options": [
+                  "Att amerikanska barn har sämre bordskick.",
+                  "Att amerikanska barn leker mer utomhus.",
+                  "Att amerikanska barn äter fler hamburgare."
+                ],
+                "answers": [
+                  "Att amerikanska barn har sämre bordskick."
+                ],
+                "hint": "bordskick = table manners."
+              },
+              {
+                "id": "q6",
+                "prompt": "Vad tror hon att det beror på att franska barn är mindre feta än amerikanska barn?",
+                "translation": "What does she think is the reason why French children are less obese than American children?",
+                "options": [
+                  "De får själva välja vad de vill äta.",
+                  "De får aldrig mat som belöning.",
+                  "De äter på regelbundna tider från tidig ålder."
+                ],
+                "answers": [
+                  "De äter på regelbundna tider från tidig ålder."
+                ]
+              }
+            ],
+            "fixes": [
+              "“baren” is written “barnen”.",
+              "“skillnadema” is written “skillnaderna”.",
+              "“vanlgare” is written “vanligare”.",
+              "The author's name “Duckerman” is written “Druckerman”."
             ]
           }
         ]
@@ -75288,6 +77880,154 @@
                 "model": "För att hålla mig frisk cyklar jag nästan varje dag och lagar mat hemma. Senast jag var sjuk var i mars, när jag hade influensa. Då drack jag mycket te och vilade i fyra dagar. I Pune gick jag sällan ut och motionerade, för det var för varmt. Men här i Finland har jag börjat gå i bastu och promenera i skogen. Jag mår bättre nu än förut.",
                 "modelEn": "To stay healthy I cycle almost every day and cook at home. The last time I was ill was in March, when I had flu. Then I drank lots of tea and rested for four days. In Pune I rarely went out to exercise, because it was too hot. But here in Finland I have started going to the sauna and walking in the forest. I feel better now than before."
               }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Nyheter 6: ojämlikhet, Temu och valet.",
+        "minutes": 18,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-31-news-inequality-temu-election",
+            "item": 31,
+            "title": "Nyheter 6: ojämlikhet, Temu och valet",
+            "posted": "16 Jul",
+            "instructions": "Lyssna på nyhet 1, 2 och 3 och svara på frågorna. Listen to news 1, 2 and 3 in the episode and answer the questions. Write short answers in Swedish where there are no options.",
+            "note": "There is no answer key for these listening questions: check your answers against the episode.",
+            "links": [
+              {
+                "label": "The news episode on Yle Arenan",
+                "url": "https://arenan.yle.fi/poddar/1-71854624"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Nyhet 1 · Ojämlikhet",
+                "prompt": "Varför kallas Sverige för det mest ojämlika landet i Norden?",
+                "translation": "Why is Sweden called the most unequal country in the Nordic region?",
+                "options": [
+                  "det finns få rika människor och många fattiga",
+                  "det finns många som är superrika och många som är superfattiga",
+                  "det finns antingen rika eller fattiga människor, medelklass finns inte längre"
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Nyhet 1 · Ojämlikhet",
+                "prompt": "Vilka åldersgrupper är mest påverkade?",
+                "translation": "Which age groups are most affected?",
+                "hint": "Answer with a short phrase in Swedish."
+              },
+              {
+                "id": "q3",
+                "part": "Nyhet 1 · Ojämlikhet",
+                "prompt": "Vilka är de möjliga följderna av ojämlikhet? Rätt eller fel?\nmer våld",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "Possible results of inequality: more violence."
+              },
+              {
+                "id": "q4",
+                "part": "Nyhet 1 · Ojämlikhet",
+                "prompt": "Vilka är de möjliga följderna av ojämlikhet? Rätt eller fel?\nfler lån tas ut från banken",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "More loans are taken from the bank."
+              },
+              {
+                "id": "q5",
+                "part": "Nyhet 1 · Ojämlikhet",
+                "prompt": "Vilka är de möjliga följderna av ojämlikhet? Rätt eller fel?\nfler brott kommer att begås",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "More crimes will be committed."
+              },
+              {
+                "id": "q6",
+                "part": "Nyhet 1 · Ojämlikhet",
+                "prompt": "Vilka är de möjliga följderna av ojämlikhet? Rätt eller fel?\nmånga föräldrar kommer att förlora sina jobb",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "Many parents will lose their jobs."
+              },
+              {
+                "id": "q7",
+                "part": "Nyhet 2 · Temu",
+                "prompt": "Hur många använder Temu varje månad?",
+                "translation": "How many people use Temu every month?",
+                "options": [
+                  "92 miljoner i hela världen",
+                  "2 miljoner i EU",
+                  "92 miljoner i EU"
+                ]
+              },
+              {
+                "id": "q8",
+                "part": "Nyhet 2 · Temu",
+                "prompt": "Varför kan Temu tvingas betala böter? Rätt eller fel?\nde säljer några giftiga produkter",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "Why might Temu have to pay fines? They sell some poisonous products."
+              },
+              {
+                "id": "q9",
+                "part": "Nyhet 2 · Temu",
+                "prompt": "Varför kan Temu tvingas betala böter? Rätt eller fel?\nde vill inte stoppa olagliga saker från att säljas",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "They do not want to stop illegal things from being sold."
+              },
+              {
+                "id": "q10",
+                "part": "Nyhet 2 · Temu",
+                "prompt": "Varför kan Temu tvingas betala böter? Rätt eller fel?\nde skyddar inte kundinformation",
+                "options": [
+                  "rätt",
+                  "fel"
+                ],
+                "translation": "They do not protect customer information."
+              },
+              {
+                "id": "q11",
+                "part": "Nyhet 3 · Valet",
+                "prompt": "Vad handlar kursen om?",
+                "translation": "What is the course about?",
+                "hint": "Answer with a short phrase in Swedish."
+              },
+              {
+                "id": "q12",
+                "part": "Nyhet 3 · Valet",
+                "prompt": "Varför är kursen intressant enligt kursdeltagarna?",
+                "translation": "Why is the course interesting, according to the participants?",
+                "options": [
+                  "eftersom man tittar på nyheterna på lektionerna",
+                  "amerikanerna väljer president på ett annorlunda sätt",
+                  "det finns 40 deltagare"
+                ]
+              }
+            ],
+            "fixes": [
+              "“fins” is written “finns”.",
+              "“antngen” is written “antingen”."
             ]
           }
         ]
@@ -81321,6 +84061,103 @@
             ]
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Fusket.",
+        "minutes": 5,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-32-cheating",
+            "item": 32,
+            "title": "Fusket",
+            "posted": "22 Jul",
+            "instructions": "Läs texten. Är påståendena rätt eller fel? Read the text and decide if each sentence is true (Rätt) or false (Fel). Read carefully: one word like minst (least) or mindre (less) can make a sentence false.",
+            "texts": [
+              {
+                "title": "Fusket",
+                "body": "Det blir vanligare att studerande inte gör alla sina skoluppgifter själva. Istället betalar de för att någon annan gör uppgifterna för dem.\n\nProblemet är störst i högskolor, men fusket görs också i till exempel gymnasier. I en undersökning berättade drygt 15 procent av studerandena, att de har betalat någon annan för att skriva deras skolarbete.\n\nDet finns till och med företag som förtjänar stora pengar på den här verksamheten. Dem hittar man på internet.\n\nEn professor, som har undersökt saken, säger att skoluppgifterna ska fungera som ett bevis för att man lärt sig någonting i skolan. Till exempel vid Helsingfors universitet säger man att det är omöjligt att lämna in en uppgift, som man inte själv skrivit. Där måste man delta i diskussioner och göra flera olika versioner av skolarbetet innan det lämnas in."
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Rätt eller fel? · True or false?",
+                "prompt": "Rätt eller fel?\nProblemet är minst i gymnasier.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "translation": "The problem is smallest in upper secondary schools.",
+                "answers": [
+                  "Fel"
+                ],
+                "hint": "The text says the problem is biggest in högskolor; gymnasier are only an example of other schools."
+              },
+              {
+                "id": "q2",
+                "part": "Rätt eller fel? · True or false?",
+                "prompt": "Rätt eller fel?\nMindre än 15% av studenterna betalade någon att göra uppgifter istället för dem.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "translation": "Less than 15% of the students paid someone to do assignments for them.",
+                "answers": [
+                  "Fel"
+                ],
+                "hint": "drygt 15 procent = a little more than 15 per cent."
+              },
+              {
+                "id": "q3",
+                "part": "Rätt eller fel? · True or false?",
+                "prompt": "Rätt eller fel?\nDet finns ett bolag som tjänar på den här tjänsten.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "translation": "There is a company that earns money from this service.",
+                "answers": [
+                  "Rätt"
+                ],
+                "hint": "ett bolag = ett företag; tjäna = förtjäna (earn)."
+              },
+              {
+                "id": "q4",
+                "part": "Rätt eller fel? · True or false?",
+                "prompt": "Rätt eller fel?\nPå Helsingfors universitet förstår man om du har gjort en uppgift själv eller inte.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "translation": "At the University of Helsinki they can tell whether you did an assignment yourself or not.",
+                "answers": [
+                  "Rätt"
+                ],
+                "hint": "omöjligt att lämna in en uppgift som man inte själv skrivit."
+              },
+              {
+                "id": "q5",
+                "part": "Rätt eller fel? · True or false?",
+                "prompt": "Rätt eller fel?\nStudenterna lämnar in flera versioner av sin uppgift.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "translation": "The students hand in several versions of their assignment.",
+                "model": "Look at the last sentence: students 'göra flera olika versioner av skolarbetet innan det lämnas in'. They write several versions; the text does not say they hand each one in. The most likely answer is Fel."
+              }
+            ],
+            "fixes": [
+              "“Helsingfors Universitet” is written “Helsingfors universitet”.",
+              "“Helsingfors universitetet” (statement 4) is written “Helsingfors universitet”."
+            ]
+          }
+        ]
       }
     ],
     "story": {
@@ -83675,6 +86512,200 @@
                 "fi": "Jag skulle vilja ha en delvis återbetalning.",
                 "en": "I would like a partial refund."
               }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Nyheter 7: Autism och TikTok and Nyheter 8: turister, Island och bokmässan.",
+        "minutes": 21,
+        "action": "Do each item, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-33-nyheter-autism-tiktok",
+            "item": 33,
+            "title": "Nyheter 7: Autism och TikTok",
+            "posted": "25 Jul",
+            "instructions": "Lyssna på nyhet 2 och nyhet 3 och svara på frågorna. Listen to news items 2 and 3 in the Yle episode, then answer the questions. Listen for the reason (varför) and the number.",
+            "note": "There is no answer key: the teacher's form was never submitted, and the answers are in the audio. Listen to the episode (twice, like in YKI) and check your answers against it.",
+            "links": [
+              {
+                "label": "Yle Arenan: the news episode (news 2 and 3)",
+                "url": "https://arenan.yle.fi/poddar/1-72858530"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Nyhet 2 · Autism",
+                "prompt": "Varför flyttade familjen till Åland?",
+                "translation": "Why did the family move to Åland?",
+                "options": [
+                  "barnen hade autism",
+                  "de ville att barnen går i skola hemma",
+                  "de ville inte att deras barn går i skolan"
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Nyhet 3 · TikTok",
+                "prompt": "Vad kan man göra på TikTok?",
+                "translation": "What can you do on TikTok?",
+                "hint": "Write a short answer with the words you heard."
+              },
+              {
+                "id": "q3",
+                "part": "Nyhet 3 · TikTok",
+                "prompt": "Appen används av 117 miljoner.",
+                "translation": "The app is used by 117 million (people).",
+                "options": [
+                  "JA",
+                  "NEJ"
+                ]
+              },
+              {
+                "id": "q4",
+                "part": "Nyhet 3 · TikTok",
+                "prompt": "Varför skulle man inte förbjuda TikTok?",
+                "translation": "Why should TikTok not be banned?",
+                "options": [
+                  "man får information där",
+                  "man tjänar pengar genom den",
+                  "det påverkar åsikter"
+                ]
+              }
+            ],
+            "fixes": [
+              "A question mark is added to “Vad kan man göra på TikTok”."
+            ]
+          },
+          {
+            "id": "teacher-34-nyheter-turister-island-bokmassan",
+            "item": 34,
+            "title": "Nyheter 8: turister, Island och bokmässan",
+            "posted": "25 Jul",
+            "instructions": "Lyssna på nyhet 3, 4 och 5 och svara på frågorna. Listen to news items 3, 4 and 5 in the Yle episode. Decide whether each statement is right (Rätt) or wrong (Fel), and pick the best answer. Listen carefully for numbers.",
+            "note": "There is no answer key: the teacher's form was never submitted, and the answers are in the audio. Listen to the episode (twice, like in YKI) and check your answers against it.",
+            "links": [
+              {
+                "label": "Yle Arenan: the news episode (news 3, 4 and 5)",
+                "url": "https://arenan.yle.fi/1-76094987"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Nyhet 3 · Turister: Rätt eller fel?",
+                "prompt": "Turister förväntas spendera 1,3 miljoner euro i Finland i år.",
+                "translation": "Tourists are expected to spend 1.3 million euros in Finland this year.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Nyhet 3 · Turister: Rätt eller fel?",
+                "prompt": "1,3 miljoner turister kommer till Finland i vinter.",
+                "translation": "1.3 million tourists are coming to Finland this winter.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q3",
+                "part": "Nyhet 3 · Turister: Rätt eller fel?",
+                "prompt": "De mest besökta platserna i Finland är Lappland, Vasa och Helsingfors.",
+                "translation": "The most visited places in Finland are Lapland, Vaasa and Helsinki.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q4",
+                "part": "Nyhet 3 · Turister: Rätt eller fel?",
+                "prompt": "Lika många utlänningar kommer till andra delar av Finland, som östra Finland.",
+                "translation": "As many foreigners come to other parts of Finland, such as eastern Finland.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q5",
+                "part": "Nyhet 3 · Turister: Rätt eller fel?",
+                "prompt": "Många ryssar kommer till Finland i vinter.",
+                "translation": "Many Russians are coming to Finland this winter.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q6",
+                "part": "Nyhet 4 · Island",
+                "prompt": "Vad hittade man på Island?",
+                "translation": "What was found in Iceland?",
+                "options": [
+                  "myror",
+                  "myggor",
+                  "insekter som heter \"kjos\""
+                ]
+              },
+              {
+                "id": "q7",
+                "part": "Nyhet 4 · Island",
+                "prompt": "Hur är det möjligt att dessa insekter finns på Island?",
+                "translation": "How is it possible that these insects are in Iceland?",
+                "options": [
+                  "De kan komma dit på grund av klimatförändringarna.",
+                  "De är en typ av insekt som alltid har funnits på Island.",
+                  "Människor tog dem med sig när de kom hem från sina semestrar i Afrika."
+                ]
+              },
+              {
+                "id": "q8",
+                "part": "Nyhet 5 · Bokmässan: Rätt eller fel?",
+                "prompt": "Bokmässan är 5 dagar lång.",
+                "translation": "The book fair is 5 days long.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q9",
+                "part": "Nyhet 5 · Bokmässan: Rätt eller fel?",
+                "prompt": "Den första bokmässan i Helsingfors ordnades 2001.",
+                "translation": "The first book fair in Helsinki was held in 2001.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q10",
+                "part": "Nyhet 5 · Bokmässan: Rätt eller fel?",
+                "prompt": "Bokmässan har organiserats 24 gånger hittills.",
+                "translation": "The book fair has been organised 24 times so far.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              }
+            ],
+            "fixes": [
+              "“1.3 miljoner” is written “1,3 miljoner” (Swedish uses a decimal comma).",
+              "“Helsigngfors” is written “Helsingfors”.",
+              "“De mest besökta platser” is written “De mest besökta platserna” (definite form after “de mest”).",
+              "“Människor tog de med sig” is written “Människor tog dem med sig” (object form).",
+              "“Bokmässan organiserades 24 gånger hittills” is written “Bokmässan har organiserats 24 gånger hittills” (“hittills” needs the perfect tense)."
             ]
           }
         ]
@@ -86060,6 +89091,95 @@
             ]
           }
         ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Formal email: application.",
+        "minutes": 15,
+        "action": "Do the homework, check your answers, and check your text against the list. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-35-formal-email-application",
+            "item": 35,
+            "title": "Formal email: application",
+            "posted": "27 Jul",
+            "instructions": "Välj ett ämne och skriv ett formellt mejl: en ansökan eller en anmälan. Choose one topic and write a formal email. Follow the teacher's structure: introduction (who you are, why you write, the ad), main part (experience, why you fit, questions), ending (thanks, looking forward to an answer, Med vänliga hälsningar + name).",
+            "note": "Write only one of the three topics. The models are examples of one good answer; yours can be different.",
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Välj ett ämne · Write one topic",
+                "prompt": "Skriv en ansökan till ditt drömjobb.",
+                "translation": "Write an application for your dream job.",
+                "hint": "Choose one of the three topics and write only that one.",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    110
+                  ],
+                  "points": [
+                    "Start: Hej! + who you are + why you write (jag skriver angående tjänsten som …).",
+                    "Refer to the job ad: where you saw it.",
+                    "Tell about your experience or skills, and why you fit the job (eftersom …).",
+                    "Add a question, for example when the job starts.",
+                    "End politely: thank them and say you look forward to an answer (Jag ser fram emot …).",
+                    "Close formally: Med vänliga hälsningar + your name.",
+                    "Formal style: no slang, use facts and numbers (dates, years), and join ideas with att, eftersom, när."
+                  ]
+                },
+                "model": "Hej!\n\nJag heter Ravi Patil och jag skriver angående tjänsten som guide hos er. Jag såg er annons på er webbplats. Jag har jobbat med turister i tre år och talar engelska, hindi och lite svenska. Jag passar för jobbet eftersom jag tycker om att träffa nya människor. Kan ni berätta när jobbet börjar?\n\nTack för möjligheten. Jag ser fram emot att höra från er.\n\nMed vänliga hälsningar,\nRavi Patil"
+              },
+              {
+                "id": "q2",
+                "part": "Välj ett ämne · Write one topic",
+                "prompt": "Skriv till en språkskola eller ett hobbycenter och berätta att du är intresserad av deras kurser.",
+                "translation": "Write to a language school or a hobby centre and say that you are interested in their courses.",
+                "hint": "Choose one of the three topics and write only that one.",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    110
+                  ],
+                  "points": [
+                    "Start: Hej! + who you are + which course you want (jag vill gärna anmäla mig till …).",
+                    "Refer to the information: where you read about the course.",
+                    "Tell your goal or experience, and why the course fits you.",
+                    "Ask about the course or the conditions: price, start date, lessons per week.",
+                    "End politely: thank them and say you look forward to an answer (Jag ser fram emot …).",
+                    "Close formally: Med vänliga hälsningar + your name.",
+                    "Formal style: no slang, use facts and numbers (dates, years), and join ideas with att, eftersom, när."
+                  ]
+                },
+                "model": "Hej!\n\nJag heter Ravi Patil och jag vill gärna anmäla mig till er kvällskurs i svenska. Jag läste om kursen på er webbplats. Jag bor i Helsingfors och mitt mål är att klara YKI-provet på nivå 3 i höst. Skulle ni kunna berätta hur mycket kursen kostar och hur många lektioner det är per vecka?\n\nTack för möjligheten. Jag ser fram emot ert svar.\n\nMed vänliga hälsningar,\nRavi Patil"
+              },
+              {
+                "id": "q3",
+                "part": "Välj ett ämne · Write one topic",
+                "prompt": "Du har anmält dig till en kurs men kan inte vara med på den första lektionen. Skriv ett mejl och förklara situationen.",
+                "translation": "You have signed up for a course but cannot be at the first lesson. Write an email and explain the situation.",
+                "hint": "Choose one of the three topics and write only that one.",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    110
+                  ],
+                  "points": [
+                    "Start: Hej! + who you are + which course you signed up for, and when it starts.",
+                    "Explain the problem with a reason: Tyvärr kan jag inte … eftersom …",
+                    "Ask for a solution, for example the lesson material by email.",
+                    "Say what you will do next (I come to the second lesson).",
+                    "End politely (Tack för förståelsen) and close formally: Med vänliga hälsningar + your name.",
+                    "Formal style: no slang, use facts and numbers (dates, years), and join ideas with att, eftersom, när."
+                  ]
+                },
+                "model": "Hej!\n\nJag heter Ravi Patil och jag har anmält mig till kursen i svenska som börjar den 1 september. Tyvärr kan jag inte komma till den första lektionen, eftersom jag måste göra en arbetsresa till Tammerfors. Skulle ni kunna skicka materialet från lektionen till mig per e-post? Jag kommer till den andra lektionen.\n\nTack för förståelsen. Jag ser fram emot kursen.\n\nMed vänliga hälsningar,\nRavi Patil"
+              }
+            ]
+          }
+        ]
       }
     ],
     "story": {
@@ -88036,6 +91156,123 @@
                 "model": "Min hobby är fotografering, särskilt naturbilder. Jag började för tre år sedan i Pune, med en enkel kamera. I våras gick jag en fotokurs på Arbis, och nu har jag en begagnad systemkamera. Den kostade ungefär fyrahundra euro. Det bästa är att jag kommer ut i naturen och glömmer datorn. Det jobbiga är att utrustningen är tung. Jag skulle rekommendera fotografering till alla som gillar att vara ute.",
                 "modelEn": "My hobby is photography, especially nature photos. I started three years ago in Pune, with a simple camera. In the spring I took a photography course at Arbis, and now I have a second-hand system camera. It cost about four hundred euros. The best thing is that I get out into nature and forget the computer. The tiring thing is that the equipment is heavy. I would recommend photography to everyone who likes being outdoors."
               }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Nyheter 9: etanol, barn och Louvre.",
+        "minutes": 12,
+        "action": "Do the homework, check your answers. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-36-nyheter-etanol-barn-louvre",
+            "item": 36,
+            "title": "Nyheter 9: etanol, barn och Louvre",
+            "posted": "29 Jul",
+            "instructions": "Lyssna på nyhet 1, 3 och 5 och svara på frågorna. Listen to news items 1, 3 and 5 in the Yle episode, then answer. Number words matter here: nästan and knappt = a little under, drygt = a little over.",
+            "note": "There is no answer key: the teacher's form was never submitted, and the answers are in the audio. Listen to the episode (twice, like in YKI) and check your answers against it.",
+            "links": [
+              {
+                "label": "Yle Arenan: the news episode (news 1, 3 and 5)",
+                "url": "https://arenan.yle.fi/1-76094116"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Nyhet 1 · Vad är problemet med etanol? Rätt eller fel?",
+                "prompt": "Den är dålig på att desinficera händer.",
+                "translation": "It is bad at disinfecting hands.",
+                "options": [
+                  "rätt",
+                  "fel"
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Nyhet 1 · Vad är problemet med etanol? Rätt eller fel?",
+                "prompt": "Den kan förknippas med cancer.",
+                "translation": "It can be linked to cancer.",
+                "options": [
+                  "rätt",
+                  "fel"
+                ]
+              },
+              {
+                "id": "q3",
+                "part": "Nyhet 1 · Vad är problemet med etanol? Rätt eller fel?",
+                "prompt": "Den kan förorsaka problem med ens reproduktiva hälsa.",
+                "translation": "It can cause problems with your reproductive health.",
+                "options": [
+                  "rätt",
+                  "fel"
+                ]
+              },
+              {
+                "id": "q4",
+                "part": "Nyhet 3 · Barn",
+                "prompt": "Hur många av de som deltog i enkäten vill ha ett barn till?",
+                "translation": "How many of those who took part in the survey want one more child?",
+                "options": [
+                  "bara 2-3%",
+                  "knappt 70%",
+                  "drygt 26%"
+                ]
+              },
+              {
+                "id": "q5",
+                "part": "Nyhet 3 · Barn",
+                "prompt": "Hur många av 12 000 var helt säkra på att de inte ville ha fler barn?",
+                "translation": "How many of the 12,000 were completely sure that they did not want more children?",
+                "options": [
+                  "17%",
+                  "7%",
+                  "26%"
+                ]
+              },
+              {
+                "id": "q6",
+                "part": "Nyhet 3 · Barn: rätt eller fel?",
+                "prompt": "Allt fler människor i Finland vill ha fler barn.",
+                "translation": "More and more people in Finland want more children.",
+                "options": [
+                  "rätt",
+                  "fel"
+                ]
+              },
+              {
+                "id": "q7",
+                "part": "Nyhet 3 · Barn: rätt eller fel?",
+                "prompt": "Många föräldrar tvekar om att skaffa ett barn till.",
+                "translation": "Many parents are unsure about having one more child.",
+                "options": [
+                  "rätt",
+                  "fel"
+                ]
+              },
+              {
+                "id": "q8",
+                "part": "Nyhet 5 · Louvre",
+                "prompt": "Hur många poliser arbetar med att lösa fallet?",
+                "translation": "How many police officers are working to solve the case?",
+                "options": [
+                  "nästan 100",
+                  "drygt 100",
+                  "knappt 100"
+                ]
+              }
+            ],
+            "fixes": [
+              "“etnol” is written “etanol”.",
+              "“förknipas” is written “förknippas”.",
+              "“12000” is written “12 000”, and “helt säkra att” is written “helt säkra på att”.",
+              "“Många föräldrar är tvekar om” is written “Många föräldrar tvekar om” (one verb only).",
+              "Question marks are added to the “Rätt eller fel” headings, and the statements start with a capital letter and end with a full stop."
             ]
           }
         ]
@@ -107064,6 +110301,649 @@
                 "model": "Jag håller delvis med. Å ena sidan kostar turismen mycket för en stad. Gatorna måste städas oftare, och i vissa städer har hyrorna stigit så mycket att de som bor där måste flytta. En liten avgift på ett par euro per natt skulle kunna betala för städning och kollektivtrafik. Å andra sidan behöver många städer turisterna, eftersom de ger jobb åt hotell, restauranger och museer. Om resan blir för dyr, åker kanske familjerna någon annanstans. Sammanfattningsvis tycker jag att en avgift är rättvis, men den måste vara låg och användas till något som syns.",
                 "modelEn": "I partly agree. On the one hand, tourism costs a city a lot. The streets have to be cleaned more often, and in some cities rents have risen so much that the people who live there have to move. A small fee of a couple of euros a night could pay for cleaning and public transport. On the other hand, many cities need tourists, because they give work to hotels, restaurants and museums. If the trip gets too expensive, families may go somewhere else. To sum up, I think a fee is fair, but it must be low and used for something visible."
               }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "teacher-homework",
+        "after": "assignment",
+        "kind": "classroom-homework",
+        "label": "Teacher's homework",
+        "description": "The teacher's Classroom homework for this lesson: Talförståelse (Listening mock test), Writing mock test 2 and Läsförståelse (Reading mock test, 60 minutes).",
+        "minutes": 60,
+        "action": "Do each item, check your answers, and check your text against the list. Fix what you missed.",
+        "homework": [
+          {
+            "id": "teacher-37-mock-listening",
+            "item": 37,
+            "title": "Talförståelse (Listening mock test)",
+            "posted": "24 Aug",
+            "instructions": "Lyssna på inspelningarna och svara på frågorna. Du hör varje inspelning två gånger. Listen to each recording twice and answer: pick A, B or C in part 1, Rätt (true) or Fel (false) in part 2, and write short answers in Swedish in part 3.",
+            "note": "The teacher played the recordings in class, so they are not linked here, and there is no answer key. Use this as a model of the YKI listening test (multiple choice, true or false, open questions), or ask the teacher for the audio and check your answers with them.",
+            "links": [
+              {
+                "label": "The teacher's original form",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSeQ4oW9nVeNTdBFi_ZCKG2-nJ9yVPXdLdQHYIyDtFvpyG9O9w/viewform"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Del 1 · Flervalsuppgifter",
+                "prompt": "1. Varför är det fortfarande många fall av influensa?",
+                "translation": "Why are there still many cases of flu?",
+                "options": [
+                  "A. Influensan började senare än vanligt.",
+                  "B. Influensavirusen har förändrats.",
+                  "C. Fler människor har rest utomlands."
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Del 1 · Flervalsuppgifter",
+                "prompt": "2. Vad säger experterna om vaccinet?",
+                "translation": "What do the experts say about the vaccine?",
+                "options": [
+                  "A. Vaccinet hjälper till att skydda mot svår sjukdom.",
+                  "B. Vaccinet fungerar inte alls längre.",
+                  "C. Vaccinet används inte längre."
+                ]
+              },
+              {
+                "id": "q3",
+                "part": "Del 1 · Flervalsuppgifter",
+                "prompt": "3. Varför är Finlands statsminister i Indien?",
+                "translation": "Why is Finland's prime minister in India?",
+                "options": [
+                  "A. För att diskutera artificiell intelligens och samarbeten.",
+                  "B. För att träffa turister från Finland.",
+                  "C. För att utveckla en ny AI-modell."
+                ]
+              },
+              {
+                "id": "q4",
+                "part": "Del 1 · Flervalsuppgifter",
+                "prompt": "4. Hur förändrades antalet hotellövernattningar i Finland i fjol?",
+                "translation": "How did the number of hotel nights in Finland change last year?",
+                "options": [
+                  "A. De blev 12 procent färre.",
+                  "B. De blev 12 procent fler.",
+                  "C. Antalet förändrades inte jämfört med året innan."
+                ]
+              },
+              {
+                "id": "q5",
+                "part": "Del 1 · Flervalsuppgifter",
+                "prompt": "5. Vad kan hända med kunder som köpte möbler från Asko och Sotka?",
+                "translation": "What can happen to customers who bought furniture from Asko and Sotka?",
+                "options": [
+                  "A. De kan behöva betala extra pengar.",
+                  "B. Leveransen kan bli mycket försenad.",
+                  "C. Det är möjligt att de aldrig får sina möbler."
+                ]
+              },
+              {
+                "id": "q6",
+                "part": "Del 1 · Flervalsuppgifter",
+                "prompt": "6. Hur många medaljer vann Ilkka Herola?",
+                "translation": "How many medals did Ilkka Herola win?",
+                "options": [
+                  "A. Fem bronsmedaljer.",
+                  "B. Fyra bronsmedaljer.",
+                  "C. En bronsmedalj."
+                ]
+              },
+              {
+                "id": "q7",
+                "part": "Del 2 · Rätt eller fel: Bilköp",
+                "prompt": "A. Bosses mamma ringer för att få råd.",
+                "translation": "Bosse's mother calls to get advice.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q8",
+                "part": "Del 2 · Rätt eller fel: Bilköp",
+                "prompt": "B. Hon tänker köpa en bil som är begagnad.",
+                "translation": "She is thinking of buying a used car.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q9",
+                "part": "Del 2 · Rätt eller fel: Bilköp",
+                "prompt": "C. Helst vill hon ha en BMW.",
+                "translation": "Most of all she wants a BMW.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q10",
+                "part": "Del 2 · Rätt eller fel: Bilköp",
+                "prompt": "D. Bosse har varit sjuk så han har inte orkat fundera på bilköp.",
+                "translation": "Bosse has been ill, so he has not had the energy to think about buying a car.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q11",
+                "part": "Del 2 · Rätt eller fel: Bilköp",
+                "prompt": "E. Bosse ska ringa en kompis för att höra om han har en bil att sälja.",
+                "translation": "Bosse will call a friend to ask if he has a car to sell.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q12",
+                "part": "Del 2 · Rätt eller fel: Bilköp",
+                "prompt": "F. Mamman är missnöjd med sin son.",
+                "translation": "The mother is unhappy with her son.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q13",
+                "part": "Del 3 · Öppna frågor",
+                "prompt": "Vad kan vara en möjlig förklaring till att fler dör av alkohol?",
+                "translation": "What could be one explanation for why more people die from alcohol?",
+                "hint": "Svara kort på svenska. (Answer briefly in Swedish.)"
+              },
+              {
+                "id": "q14",
+                "part": "Del 3 · Öppna frågor",
+                "prompt": "Vad står det på den rosa lappen som cykelägaren får?",
+                "translation": "What does the pink note that the bike owner gets say?",
+                "hint": "Svara kort på svenska. (Answer briefly in Swedish.)"
+              },
+              {
+                "id": "q15",
+                "part": "Del 3 · Öppna frågor",
+                "prompt": "Varför blir vissa sjukdomar svårare att behandla enligt Världshälsoorganisationen?",
+                "translation": "According to the World Health Organization, why are some diseases getting harder to treat?",
+                "hint": "Svara kort på svenska. (Answer briefly in Swedish.)"
+              },
+              {
+                "id": "q16",
+                "part": "Del 3 · Öppna frågor",
+                "prompt": "Hur stor andel av flyktingarna vill regeringen att ska integreras på svenska?",
+                "translation": "What share of the refugees does the government want to be integrated in Swedish?",
+                "hint": "Svara kort på svenska. (Answer briefly in Swedish.)"
+              },
+              {
+                "id": "q17",
+                "part": "Del 3 · Öppna frågor",
+                "prompt": "Vad var D’Angelos största prestationer enligt texten?",
+                "translation": "What were D'Angelo's greatest achievements, according to the recording?",
+                "hint": "Svara kort på svenska. (Answer briefly in Swedish.)"
+              }
+            ],
+            "fixes": [
+              "The option “A Vaccinet hjälper …” is written “A. Vaccinet hjälper …” like the other options.",
+              "The true-or-false statements get a full stop after their letter (“A Bosses mamma …” → “A. Bosses mamma …”)."
+            ]
+          },
+          {
+            "id": "teacher-38-mock-writing",
+            "item": 38,
+            "title": "Writing mock test 2",
+            "posted": "26 Aug",
+            "instructions": "Skriv tre texter på 55 minuter. Write three texts in 55 minutes, as in the YKI writing test: an informal blog post, a complaint and an opinion text (choose topic A or B). Cover every point in each task.",
+            "note": "There is no answer key. Check each text against its points, count your words, and then compare it with the model.",
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Uppgift 1 · Informell text",
+                "prompt": "Min drömresa: skriv en blogg om en resa som du aldrig kommer att glömma. Berätta:\n– vem var med dig\n– när du reste och vart du reste\n– åtminstone två saker som du gjorde\n– ett speciellt minne",
+                "translation": "My dream trip: write a blog post about a trip you will never forget. Tell who was with you, when and where you went, at least two things you did, and one special memory.",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    80
+                  ],
+                  "points": [
+                    "A title and a friendly start for your readers (Hej alla!).",
+                    "Who was with you, when you travelled and where you went.",
+                    "At least two things you did, in the past tense (reste, åkte, såg).",
+                    "One special memory and how you felt.",
+                    "An informal ending, for example a question to your readers or Kram!"
+                  ]
+                },
+                "model": "Min drömresa\n\nHej alla! För två år sedan, i december, reste jag till Rovaniemi med min bästa vän. Vi åkte nattåg från Helsingfors. På dagarna åkte vi hundspann, och en natt sov vi i ett snöhotell. Mitt speciella minne är den sista kvällen. Det var minus trettio grader när vi plötsligt såg norrsken på himlen. Jag blev så glad att jag nästan grät. Har ni sett norrsken?\n\nKram!"
+              },
+              {
+                "id": "q2",
+                "part": "Uppgift 2 · Formell text",
+                "prompt": "Klaga på problem i din bostadsrättsförening (till exempel i tvättstugan eller på gården).\n– berätta om problemen: var och när uppstod de?\n– säg vad du vill att disponenten eller grannarna gör\n– föreslå åtgärder",
+                "translation": "Complain about problems in your housing company (for example in the laundry room or the yard). Describe the problems (where and when they began), say what you want the property manager or the neighbours to do, and suggest what should be done.",
+                "writing": {
+                  "wordRange": [
+                    50,
+                    110
+                  ],
+                  "points": [
+                    "A subject line (Ärende) and a polite greeting.",
+                    "Why you are writing: your flat and the place the problem is.",
+                    "The problems: what is wrong, where, and since when.",
+                    "What you want the property manager or the neighbours to do.",
+                    "At least one suggestion of your own (Jag föreslår att …).",
+                    "A polite ending (Med vänliga hälsningar) with your full name."
+                  ]
+                },
+                "model": "Ärende: Problem i tvättstugan\n\nHej!\n\nJag bor i lägenhet B 12 och skriver för att klaga på problemen i tvättstugan. Sedan början av september har en av tvättmaskinerna varit trasig. Dessutom lämnar några grannar smutsiga kläder i torkrummet, och golvet är ofta blött på kvällarna.\n\nJag vill att disponenten ringer en reparatör så snart som möjligt. Jag önskar också att grannarna städar efter sig. Jag föreslår att vi sätter upp tydliga regler på dörren och att alla bokar en tvättid.\n\nMed vänliga hälsningar\n(ditt förnamn och efternamn), B 12"
+              },
+              {
+                "id": "q3",
+                "part": "Uppgift 3 · Argumenterande text",
+                "prompt": "Välj ett av dessa två ämnen och skriv en argumenterande text.\nA. Elbilar eller dieselbilar: vad är bäst?\nB. Blir vi lyckliga av att ha pengar?",
+                "translation": "Choose one of these two topics and write an argumentative (opinion) text. A: Electric cars or diesel cars: which is best? B: Does having money make us happy?",
+                "writing": {
+                  "wordRange": [
+                    100,
+                    150
+                  ],
+                  "points": [
+                    "A title and an introduction that names the topic.",
+                    "Arguments for and against (Å ena sidan … Å andra sidan …).",
+                    "Your own opinion with a reason (Jag tycker att … eftersom …, Enligt min mening …).",
+                    "Linking words between ideas: dessutom, men, därför.",
+                    "A short conclusion (Sammanfattningsvis …)."
+                  ]
+                },
+                "model": "Blir vi lyckliga av pengar?\n\nMånga tror att mer pengar ger ett lyckligare liv. Jag håller delvis med.\n\nÅ ena sidan behöver alla tillräckligt med pengar. Om man inte kan betala hyran eller maten blir man stressad och orolig. Pengar ger trygghet, och man kan resa och träffa vänner.\n\nÅ andra sidan blir man inte automatiskt lyckligare av en högre lön. En person med mycket pengar kan ändå vara ensam eller sjuk. Dessutom arbetar många så mycket att de inte har tid för sin familj.\n\nEnligt min mening gör pengar oss lyckliga bara upp till en viss gräns. Efter det är hälsa, vänner och ett meningsfullt arbete viktigare. Därför tycker jag att man inte ska jaga pengar hela livet.\n\nSammanfattningsvis kan pengar lösa många problem, men de kan inte köpa lycka."
+              }
+            ],
+            "fixes": [
+              "“diesel bilar” is written as one word: “dieselbilar”.",
+              "“Klaga om problem” is written “Klaga på problem” (you complain på something)."
+            ]
+          },
+          {
+            "id": "teacher-39-mock-reading",
+            "item": 39,
+            "title": "Läsförståelse (Reading mock test, 60 minutes)",
+            "posted": "26 Aug",
+            "instructions": "Läs texterna och svara på frågorna. Du har 60 minuter för sex uppgifter. Open the texts in the teacher's form, then answer here: Rätt (true) or Fel (false) in tasks 1-2, A, B or C in tasks 4-5, and short Swedish answers in tasks 3 and 6. Give yourself 60 minutes, as in the YKI reading test.",
+            "note": "The texts are long, so they are not copied here: read them in the teacher's form. The true-or-false and A-B-C answers were worked out from the texts (the teacher gave no key). The open questions have model answers only; your answer may use other words.",
+            "links": [
+              {
+                "label": "Open the texts in the teacher's form",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSfQ-Pl_isIRuxaI2YzROYgz_y5l9hnHkE_VuKU1fM_u4zwQMw/viewform"
+              }
+            ],
+            "questions": [
+              {
+                "id": "q1",
+                "part": "Uppgift 1 · Korta nyheter (rätt eller fel)",
+                "hint": "Nyhet 1: 100 lastbilar fast i halkan",
+                "prompt": "Många lastbilar körde för fort i Stenungsund.",
+                "translation": "Many lorries drove too fast in Stenungsund.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q2",
+                "part": "Uppgift 1 · Korta nyheter (rätt eller fel)",
+                "hint": "Nyhet 1: 100 lastbilar fast i halkan",
+                "prompt": "En buss med skolbarn krockade allvarligt.",
+                "translation": "A bus with schoolchildren crashed badly.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q3",
+                "part": "Uppgift 1 · Korta nyheter (rätt eller fel)",
+                "hint": "Nyhet 2: Brand stoppade tågen",
+                "prompt": "Centralstationen var stängd i flera timmar eftersom stationen hade blivit spränghotad.",
+                "translation": "The central station was closed for several hours because of a bomb threat.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q4",
+                "part": "Uppgift 1 · Korta nyheter (rätt eller fel)",
+                "hint": "Nyhet 2: Brand stoppade tågen",
+                "prompt": "En brand började i ventilationssystemet på en restaurang.",
+                "translation": "A fire started in a restaurant's ventilation system.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Rätt"
+                ]
+              },
+              {
+                "id": "q5",
+                "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+                "hint": "Text 1: Mer skräp i svenska städer",
+                "prompt": "Mängden avfall på Sveriges gator ökar.",
+                "translation": "The amount of litter on Sweden's streets is growing.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Rätt"
+                ]
+              },
+              {
+                "id": "q6",
+                "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+                "hint": "Text 1: Mer skräp i svenska städer",
+                "prompt": "Människor ska tänka på om de behöver en mugg till sin läsk.",
+                "translation": "People should think about whether they need a cup for their soft drink.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q7",
+                "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+                "hint": "Text 1: Mer skräp i svenska städer",
+                "prompt": "En enskild person kan inte förändra mycket för att minska skräpet.",
+                "translation": "One person alone cannot change much to reduce litter.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q8",
+                "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+                "hint": "Text 2: Elbilar skadar klimatet",
+                "prompt": "Elbilar avger gaser som kan skada klimatet.",
+                "translation": "Electric cars give off gases that can harm the climate.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q9",
+                "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+                "hint": "Text 2: Elbilar skadar klimatet",
+                "prompt": "Det kommer ut mycket farliga ämnen från batteritillverkningen.",
+                "translation": "Battery production releases a lot of harmful substances.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Rätt"
+                ]
+              },
+              {
+                "id": "q10",
+                "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+                "hint": "Text 2: Elbilar skadar klimatet",
+                "prompt": "Elbilar är ändå bra eftersom de inte förorenar atmosfären.",
+                "translation": "Electric cars are still good because they do not pollute the air.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Rätt"
+                ]
+              },
+              {
+                "id": "q11",
+                "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+                "hint": "Text 3: Stora problem med råttor",
+                "prompt": "Företagen som bekämpar råttor blomstrar för tillfället.",
+                "translation": "Rat-control companies are doing very well at the moment.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Rätt"
+                ]
+              },
+              {
+                "id": "q12",
+                "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+                "hint": "Text 3: Stora problem med råttor",
+                "prompt": "Det värsta problemet är att människorna matar råttorna.",
+                "translation": "The worst problem is that people feed the rats.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q13",
+                "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+                "hint": "Text 3: Stora problem med råttor",
+                "prompt": "Kjellberg vill att de som inte hanterar sopor på rätt sätt ska få betala.",
+                "translation": "Kjellberg wants people who do not handle rubbish properly to pay.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Rätt"
+                ]
+              },
+              {
+                "id": "q14",
+                "part": "Uppgift 2 · Korta texter (rätt eller fel)",
+                "hint": "Text 3: Stora problem med råttor",
+                "prompt": "Råttor kan inte orsaka omfattande problem inne i husen.",
+                "translation": "Rats cannot cause big problems inside houses.",
+                "options": [
+                  "Rätt",
+                  "Fel"
+                ],
+                "answers": [
+                  "Fel"
+                ]
+              },
+              {
+                "id": "q15",
+                "part": "Uppgift 3 · Blogg: Rika tillsammans (öppna frågor)",
+                "prompt": "Vilken är den viktigaste frågan när det gäller att välja investeringsform enligt Jan Bolmeson?",
+                "translation": "According to Jan Bolmeson, what is the most important question when you choose how to invest?",
+                "model": "När pengarna ska användas."
+              },
+              {
+                "id": "q16",
+                "part": "Uppgift 3 · Blogg: Rika tillsammans (öppna frågor)",
+                "prompt": "Vad är problemet med sparkontona idag?",
+                "translation": "What is the problem with savings accounts today?",
+                "model": "Sparräntorna är mycket låga, så man får nästan ingen ränta."
+              },
+              {
+                "id": "q17",
+                "part": "Uppgift 3 · Blogg: Rika tillsammans (öppna frågor)",
+                "prompt": "Vilken attityd tycker Bolmeson att man ska ha till sparandet på sparkontot?",
+                "translation": "What attitude does Bolmeson think you should have to the money in your savings account?",
+                "model": "Man ska inte stressa eller ha dåligt samvete för en låg ränta, utan fokusera på det som gör störst skillnad i ekonomin."
+              },
+              {
+                "id": "q18",
+                "part": "Uppgift 4 · Annons: Bokförare (A, B eller C)",
+                "prompt": "Arbetsuppgifterna omfattar:",
+                "translation": "The duties include:",
+                "options": [
+                  "bokförsäljning och löneförhandling",
+                  "nedtecknande av intäkter och utgifter samt rapportering av ekonomiskt resultat",
+                  "aktiehandel och skatteplanering"
+                ],
+                "answers": [
+                  "nedtecknande av intäkter och utgifter samt rapportering av ekonomiskt resultat"
+                ]
+              },
+              {
+                "id": "q19",
+                "part": "Uppgift 4 · Annons: Bokförare (A, B eller C)",
+                "prompt": "Jobbet är en:",
+                "translation": "The job is a:",
+                "options": [
+                  "visstidsanställning",
+                  "fast anställning",
+                  "praktikplats"
+                ],
+                "answers": [
+                  "visstidsanställning"
+                ]
+              },
+              {
+                "id": "q20",
+                "part": "Uppgift 4 · Annons: Bokförare (A, B eller C)",
+                "prompt": "På jobbet krävs:",
+                "translation": "The job requires:",
+                "options": [
+                  "att du har jobbat med samma typ av arbete tidigare",
+                  "att du kan undervisa kunder",
+                  "att du har en lägre utbildning"
+                ],
+                "answers": [
+                  "att du har jobbat med samma typ av arbete tidigare"
+                ]
+              },
+              {
+                "id": "q21",
+                "part": "Uppgift 4 · Annons: Bokförare (A, B eller C)",
+                "prompt": "Det är viktigt att du kan tala:",
+                "translation": "It is important that you can speak:",
+                "options": [
+                  "engelska och svenska",
+                  "finska och svenska",
+                  "norska, danska och svenska"
+                ],
+                "answers": [
+                  "finska och svenska"
+                ]
+              },
+              {
+                "id": "q22",
+                "part": "Uppgift 5 · Åsikt: Låt andra slippa dina mobilsamtal! (A, B eller C)",
+                "prompt": "Hurdana diskussioner kan man höra på tåget?",
+                "translation": "What kind of conversations can you hear on the train?",
+                "options": [
+                  "Redogörelser för dejter och missade möten",
+                  "Berättelser om kärleksbekymmer och nya klädinköp",
+                  "Diskussioner om tidsplanering och bråk på jobbet"
+                ],
+                "answers": [
+                  "Diskussioner om tidsplanering och bråk på jobbet"
+                ]
+              },
+              {
+                "id": "q23",
+                "part": "Uppgift 5 · Åsikt: Låt andra slippa dina mobilsamtal! (A, B eller C)",
+                "prompt": "Vad vill skribenten göra med pappan som pratar med sitt barn?",
+                "translation": "What does the writer want to do about the father who is talking to his child?",
+                "options": [
+                  "Slänga hans telefon",
+                  "Avsluta deras samtal",
+                  "Trösta barnet"
+                ],
+                "answers": [
+                  "Avsluta deras samtal"
+                ]
+              },
+              {
+                "id": "q24",
+                "part": "Uppgift 5 · Åsikt: Låt andra slippa dina mobilsamtal! (A, B eller C)",
+                "prompt": "Vad hade skribentens kollega varit tvungen att lyssna på på jobbet?",
+                "translation": "What had the writer's colleague had to listen to at work?",
+                "options": [
+                  "Arbetskompisens släktings familjeproblem",
+                  "Sekreterarens systers arbetsresa",
+                  "Grannens mammas penningproblem"
+                ],
+                "answers": [
+                  "Arbetskompisens släktings familjeproblem"
+                ]
+              },
+              {
+                "id": "q25",
+                "part": "Uppgift 5 · Åsikt: Låt andra slippa dina mobilsamtal! (A, B eller C)",
+                "prompt": "Hur föreslår skribenten att vi hanterar problemet med mobiltelefoni?",
+                "translation": "How does the writer suggest we deal with the problem of phone calls?",
+                "options": [
+                  "Vi ska ge böter åt dem som pratar för länge",
+                  "Vi ska sluta bry oss om de andra och koncentrera oss på våra egna saker",
+                  "Vi ska skrika åt de andra att tala kortare"
+                ],
+                "answers": [
+                  "Vi ska sluta bry oss om de andra och koncentrera oss på våra egna saker"
+                ]
+              },
+              {
+                "id": "q26",
+                "part": "Uppgift 6 · Fakta: Sömnapné (öppna frågor)",
+                "prompt": "Vad händer i kroppen vid ett sömnapnésyndrom och hurdana besvär leder det till?",
+                "translation": "What happens in the body with sleep apnoea, and what problems does it lead to?",
+                "model": "Man slutar andas en kort stund många gånger när man sover. Det leder till trötthet, sömnighet, huvudvärk eller koncentrationssvårigheter."
+              },
+              {
+                "id": "q27",
+                "part": "Uppgift 6 · Fakta: Sömnapné (öppna frågor)",
+                "prompt": "Vilken vård kan man erbjuda en person som har sömnapné? (2 alternativ)",
+                "translation": "What treatment can be offered to a person with sleep apnoea? (2 options)",
+                "model": "En bettskena som drar fram underkäken, eller CPAP-behandling där man sover med en mask."
+              },
+              {
+                "id": "q28",
+                "part": "Uppgift 6 · Fakta: Sömnapné (öppna frågor)",
+                "prompt": "På vilket sätt hjälper CPAP-behandlingen en person som lider av sömnapné?",
+                "translation": "How does CPAP treatment help a person with sleep apnoea?",
+                "model": "Masken ger ett lätt övertryck som håller de övre luftvägarna öppna."
+              },
+              {
+                "id": "q29",
+                "part": "Uppgift 6 · Fakta: Sömnapné (öppna frågor)",
+                "prompt": "Varför är det inte bra att dricka alkohol om man lider av sömnapné?",
+                "translation": "Why is it not good to drink alcohol if you have sleep apnoea?",
+                "model": "Alkohol kan göra musklerna onormalt avslappnade, och det ökar risken för andningsuppehåll."
+              }
+            ],
+            "fixes": [
+              "The opinion article's title “Låt andra silla dina mobilsamtal!” is written “Låt andra slippa dina mobilsamtal!”."
             ]
           }
         ]

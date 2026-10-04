@@ -682,6 +682,194 @@
           }
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Possessiva pronomen.",
+      "minutes": 6,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-15-possessiva-pronomen",
+          "item": 15,
+          "title": "Possessiva pronomen",
+          "posted": "22 May",
+          "instructions": "Välj rätt possessivt pronomen. Choose the right word for my, your, his, her, our or their. Min, din, vår and er change with the noun: min bil (en-word), mitt namn (ett-word), mina vänner (plural). Hans, hennes and deras never change.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Jag måste ringa ___ mamma.",
+              "options": [
+                "min",
+                "mitt",
+                "mina"
+              ],
+              "answers": [
+                "min"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "___ vänner kommer från Sverige.",
+              "options": [
+                "vår",
+                "vårt",
+                "våra"
+              ],
+              "answers": [
+                "våra"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur stavar man ____ namn?",
+              "options": [
+                "din",
+                "ditt",
+                "dina"
+              ],
+              "answers": [
+                "ditt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Känner du ____ chef? (han)",
+              "options": [
+                "han",
+                "hans",
+                "hennes"
+              ],
+              "answers": [
+                "hans"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Jag älskar ____ musik!",
+              "options": [
+                "de",
+                "dem",
+                "deras"
+              ],
+              "answers": [
+                "deras"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Vad heter ___ hund? Den är så gosig!",
+              "options": [
+                "er",
+                "ert",
+                "era"
+              ],
+              "answers": [
+                "er"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Jag träffade ____ man i affären igår.",
+              "options": [
+                "henne",
+                "hennes",
+                "hon"
+              ],
+              "answers": [
+                "hennes"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Nu ska vi äta ____ middag!",
+              "options": [
+                "vår",
+                "vårt",
+                "våra"
+              ],
+              "answers": [
+                "vår"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Imorgon ska vi fika med ____ familj.",
+              "options": [
+                "min",
+                "mitt",
+                "mina"
+              ],
+              "answers": [
+                "min"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "Var är ____ systrar?",
+              "options": [
+                "din",
+                "ditt",
+                "dina"
+              ],
+              "answers": [
+                "dina"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "___ bil är gammal.",
+              "options": [
+                "vår",
+                "vårt",
+                "våra"
+              ],
+              "answers": [
+                "vår"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "Nästa vecka går jag på semester med _____ vänner.",
+              "options": [
+                "min",
+                "mitt",
+                "mina"
+              ],
+              "answers": [
+                "mina"
+              ]
+            },
+            {
+              "id": "q13",
+              "prompt": "Kommer du på festen i ____ nya skor?",
+              "options": [
+                "din",
+                "ditt",
+                "dina"
+              ],
+              "answers": [
+                "dina"
+              ]
+            },
+            {
+              "id": "q14",
+              "prompt": "Jag vill gärna träffa ____ bästa vän.",
+              "options": [
+                "din",
+                "ditt",
+                "dina"
+              ],
+              "answers": [
+                "din"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "recall": [

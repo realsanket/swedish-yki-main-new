@@ -2110,6 +2110,191 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Nyheter 4: Shein + djurpark and Nyheter 5: skolan och kyrkan.",
+      "minutes": 20,
+      "action": "Do each item, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-28-news-shein-zoo",
+          "item": 28,
+          "title": "Nyheter 4: Shein + djurpark",
+          "posted": "8 Jul",
+          "instructions": "Lyssna på nyhet 2 och nyhet 3 och svara på frågorna. Listen to news 2 and news 3 in the episode and answer the questions.",
+          "note": "There is no answer key for these listening questions: check your answers against the episode. On Yle Arenan, use the white \"Starta\" button at the top left to play this episode (the player at the bottom plays the last thing you listened to).",
+          "links": [
+            {
+              "label": "The news episode on Yle Arenan",
+              "url": "https://arenan.yle.fi/poddar/1-71845075"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Nyhet 2 · Shein",
+              "prompt": "Vad kommer att hända med kläderna från Shein?",
+              "translation": "What will happen to the clothes from Shein?",
+              "options": [
+                "Det kommer att bli förbjudet att köpa kläder från Shein",
+                "De kommer att doneras",
+                "De kommer att brännas upp"
+              ]
+            },
+            {
+              "id": "q2",
+              "part": "Nyhet 2 · Shein",
+              "prompt": "Vad är problemet med Shein enligt nyheterna? Rätt eller fel?\nde innehåller ett ämne som irriterar huden",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "What is the problem with Shein? They (the clothes) contain a substance that irritates the skin."
+            },
+            {
+              "id": "q3",
+              "part": "Nyhet 2 · Shein",
+              "prompt": "Vad är problemet med Shein enligt nyheterna? Rätt eller fel?\nde kan förorsaka allvarliga sjukdomar",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "They can cause serious illnesses."
+            },
+            {
+              "id": "q4",
+              "part": "Nyhet 2 · Shein",
+              "prompt": "Vad är problemet med Shein enligt nyheterna? Rätt eller fel?\nShein behandlar kundernas bankinformation på ett dåligt sätt",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "Shein handles customers' bank details badly."
+            },
+            {
+              "id": "q5",
+              "part": "Nyhet 2 · Shein",
+              "prompt": "Vad är problemet med Shein enligt nyheterna? Rätt eller fel?\nbanken varnade om säkerhetsproblem med att köpa på Sheins webbsida",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "The bank warned about security problems when buying on Shein's website."
+            },
+            {
+              "id": "q6",
+              "part": "Nyhet 3 · Djurparken",
+              "prompt": "Varför var det rekordmånga besökare på djurparken?",
+              "translation": "Why did the zoo have a record number of visitors?",
+              "options": [
+                "pandorna Lumi och Pyry fick bebisar",
+                "pandorna flyttar till Kina",
+                "parken har ekonomiska problem så den behöver fler besökare"
+              ]
+            },
+            {
+              "id": "q7",
+              "part": "Nyhet 3 · Djurparken",
+              "prompt": "Varför skickas pandorna till Kina?",
+              "translation": "Why are the pandas being sent to China?",
+              "options": [
+                "de behöver sättas i karantän",
+                "djurparken har inte råd med att ta hand om pandorna",
+                "pandorna var ledsna i Finland och ville flytta hem till Kina"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "teacher-29-news-school-church",
+          "item": 29,
+          "title": "Nyheter 5: skolan och kyrkan",
+          "posted": "8 Jul",
+          "instructions": "Lyssna på nyhet 1 och nyhet 2 och svara på frågorna. Listen to news 1 and news 2 in the episode and answer the questions. Listen for numbers carefully.",
+          "note": "There is no answer key for these listening questions: check your answers against the episode.",
+          "links": [
+            {
+              "label": "The news episode on Yle Arenan",
+              "url": "https://arenan.yle.fi/poddar/1-71105018"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Nyhet 1 · Skolan",
+              "prompt": "Hur många barn börjar skolan i år?",
+              "translation": "How many children start school this year?",
+              "options": [
+                "50 000",
+                "4 000",
+                "5 000",
+                "45 000",
+                "54 000"
+              ]
+            },
+            {
+              "id": "q2",
+              "part": "Nyhet 1 · Skolan",
+              "prompt": "Varför stänger småskolor? Rätt eller fel?\nantalet barn minskar",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "Why are small schools closing? The number of children is falling."
+            },
+            {
+              "id": "q3",
+              "part": "Nyhet 1 · Skolan",
+              "prompt": "Varför stänger småskolor? Rätt eller fel?\nskolor har ont om pengar",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "Schools are short of money."
+            },
+            {
+              "id": "q4",
+              "part": "Nyhet 1 · Skolan",
+              "prompt": "Varför stänger småskolor? Rätt eller fel?\nbarns föräldrar har inte pengar",
+              "options": [
+                "rätt",
+                "fel"
+              ],
+              "translation": "Children's parents have no money."
+            },
+            {
+              "id": "q5",
+              "part": "Nyhet 2 · Kyrkan",
+              "prompt": "Varför höjer kyrkan priset på begravningar?",
+              "translation": "Why is the church raising the price of funerals?",
+              "options": [
+                "De har inte tillräckligt med präster så det blir dyrare",
+                "Kyrkan får mindre pengar av staten",
+                "Inte så många är religiösa nuförtiden och kyrkan behöver pengar"
+              ]
+            },
+            {
+              "id": "q6",
+              "part": "Nyhet 2 · Kyrkan",
+              "prompt": "Hur mycket kommer en begravningsplats att kosta nästa år?",
+              "translation": "How much will a burial plot cost next year?",
+              "options": [
+                "100",
+                "400",
+                "500",
+                "600"
+              ]
+            }
+          ],
+          "fixes": [
+            "“höje r” is written “höjer”."
+          ]
+        }
+      ]
     }
   ],
   "story": {

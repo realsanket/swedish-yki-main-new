@@ -1062,5 +1062,67 @@ key (where the export showed the owner's own wrong choice, the key's answer is
 used: Form 2 item 6 *kan*, Form 5 items 1 and 10, Form 6 *favoritkafé* and
 *en burk*). Typos fixed and listed under each form: *kafé*, *Netflix*, *Vill du
 gå på*. Form 4 accepts answers with or without capitals and "!". Form 5's export
-lost the bold start word, so each question shows "Start with". Forms 7-39 are
-not mapped yet.
+lost the bold start word, so each question shows "Start with".
+
+### Items 7-39 (added October 4, 2026)
+
+Six agents converted the rest, one file per item, following the posted date,
+the lesson content and the "Classroom after it" column of
+`docs/yki-phase-plan.md`. Item 27 (the ad) goes to Lecture 34, which teaches the
+ad, although it was posted on Lesson 35's day.
+
+| Item | Lecture | Shape |
+|---|---|---|
+| 7 Preteritum (regular verbs) (27 Apr) | 6 | 11 questions, 11 with a key |
+| 8 Diary (27 Apr) | 6 | writing |
+| 9 Noun plurals (29 Apr) | 7 | 10 questions, 10 with a key |
+| 10 Definite plural of nouns (13 May) | 11 | 10 questions, 10 with a key |
+| 11 Objektspronomen (13 May) | 11 | 12 questions, 12 with a key |
+| 12 Komparation (15 May) | 12 | 15 questions, 15 with a key |
+| 13 Hjälpverb 2 (18 May) | 13 | 17 questions, 17 with a key |
+| 14 Formal email: complaint (20 May) | 14 | writing |
+| 15 Possessiva pronomen (22 May) | 15 | 14 questions, 14 with a key |
+| 16 Ska vs kommer att (25 May) | 16 | 15 questions, 15 with a key |
+| 17 Tycker vs tror (25 May) | 16 | 14 questions, 14 with a key |
+| 18 Informal email (10 Jun) | 23 | writing |
+| 19 Formal email (10 Jun) | 23 | writing |
+| 20 Nyheter 1: strejk + arbetslöshet (12 Jun) | 24 | 2 questions, 0 with a key |
+| 21 Festivalen Bravo (16 Jun) | 25 | 7 questions, 5 with a key |
+| 22 Nyheter 2: regering (22 Jun) | 28 | 3 questions, 0 with a key |
+| 23 Köttfri dag (24 Jun) | 29 | 5 questions, 5 with a key |
+| 24 Opinion piece (26 Jun) | 30 | writing |
+| 25 Nyheter 3: mobbning + jobb för invandrare (29 Jun) | 31 | 8 questions, 0 with a key |
+| 26 Ulf Unge (3 Jul) | 33 | 3 questions, 3 with a key |
+| 27 Formal writing: ad (8 Jul) | 34 | writing |
+| 28 Nyheter 4: Shein + djurpark (8 Jul) | 35 | 7 questions, 0 with a key |
+| 29 Nyheter 5: skolan och kyrkan (8 Jul) | 35 | 6 questions, 0 with a key |
+| 30 Barn och mat (14 Jul) | 36 | 6 questions, 6 with a key |
+| 31 Nyheter 6: ojämlikhet, Temu och valet (16 Jul) | 37 | 12 questions, 0 with a key |
+| 32 Fusket (22 Jul) | 40 | 5 questions, 4 with a key |
+| 33 Nyheter 7: Autism och TikTok (25 Jul) | 41 | 4 questions, 0 with a key |
+| 34 Nyheter 8: turister, Island och bokmässan (25 Jul) | 41 | 10 questions, 0 with a key |
+| 35 Formal email: application (27 Jul) | 42 | writing |
+| 36 Nyheter 9: etanol, barn och Louvre (29 Jul) | 43 | 8 questions, 0 with a key |
+| 37 Talförståelse (Listening mock test) (24 Aug) | 52 | 17 questions, 0 with a key |
+| 38 Writing mock test 2 (26 Aug) | 52 | writing |
+| 39 Läsförståelse (Reading mock test, 60 minutes) (26 Aug) | 52 | 29 questions, 22 with a key |
+
+Question shapes: pick one, tick all, Rätt/Fel grids (split into one question
+per statement), short typed answers, open answers (self-checked against a model)
+and writing tasks (word count plus the teacher's rubric as a checklist, with an
+original model). 163 of 264 questions have an answer key.
+
+**Honest limits.** None of items 7-39 was submitted with an answer key.
+Grammar and reading keys were worked out by the agents from the teacher's rules
+and the texts. Doubtful ones: item 7 q10 (only *sparade* accepted), item 13
+(seven items accept two verbs), item 17 q1 (*tyckte* or *tycker*), item 21
+"held in other countries" (Fel), item 32 statements 1 and 3 (5 left open), item
+39 text 2 statement 2 and the title "silla", read as *slippa*. The Yle *Nyheter*
+listening questions (items 20, 22, 25, 28, 29, 31, 33, 34, 36) and the mock
+listening test (37, played in class, no recording) have no key: they are
+self-checked against the episode. Reading texts over about 350 words (item 39)
+are not copied; the item links to the teacher's form. Writing ranges: informal
+and formal messages 50-80, complaint, ad and application 50-110, opinion
+100-150. Teacher typos are fixed and listed under each form. Models and the
+Swedish versions of tasks the teacher gave in English are authored and need a
+native speaker's glance.

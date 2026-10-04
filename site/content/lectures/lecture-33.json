@@ -2011,6 +2011,71 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Ulf Unge.",
+      "minutes": 5,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-26-ulf-unge",
+          "item": 26,
+          "title": "Ulf Unge",
+          "posted": "3 Jul",
+          "instructions": "Läs insändaren och välj rätt svar. Read the reader's letter (a complaint in a newspaper) and pick the best answer to each question.",
+          "texts": [
+            {
+              "title": "Insändare",
+              "body": "Kan någon förklara för mig varför pensionärer måste åka tunnelbana i rusningstrafik? De står mitt i en överfull tunnelbanevagn och gnäller om att gamla människor ska få företräde av och på vagnen och att de ska få sitta. Det är illa att övriga resenärer, som inte kan välja vilken tid de ska åka, måste lyssna på gnäll från människor som har hela dagen att åka på. När man väl har tagit sig hem går man in i mataffären för att handla. Då står det en pensionär längst fram vid kassan och gnäller om några rabattkuponger. Där står jag längst bak och kastar mördande blickar, men vad hjälper det? Kvinnan framför mig hoppar nästan jämfota, hon skulle ha varit på dagis och hämtat sina barn för 15 minuter sedan. Pensionärer, tänk lite! Åk kollektivt och handla på andra tider än i rusningstid. Jag tror att alla skulle tjäna på det.\n\nUlf Unge"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Ulf Unge tycker att pensionärer",
+              "translation": "Ulf Unge thinks that pensioners…",
+              "options": [
+                "a. borde tänka mer på andra.",
+                "b. inte ska få åka tunnelbana.",
+                "c. ska få sittplats på tunnelbanan."
+              ],
+              "answers": [
+                "a. borde tänka mer på andra."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilket alternativ passar som rubrik för Ulf Unges text?",
+              "translation": "Which option fits as a headline for Ulf Unge's text?",
+              "options": [
+                "a. Lyssna på pensionärerna",
+                "b. Pensionärer har alternativ",
+                "c. Pensionärsrabatt"
+              ],
+              "answers": [
+                "b. Pensionärer har alternativ"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Varför klagar Ulf Unge på pensionärernas gnäll?",
+              "translation": "Why does Ulf Unge complain about the pensioners' moaning?",
+              "options": [
+                "a. eftersom för mycket gnäll saktar ner saker",
+                "b. eftersom det sprids negativ energi",
+                "c. eftersom det är ohälsosamt"
+              ],
+              "answers": [
+                "a. eftersom för mycket gnäll saktar ner saker"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

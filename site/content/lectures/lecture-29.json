@@ -1990,6 +1990,108 @@
           ]
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom homework for this lesson: Köttfri dag.",
+      "minutes": 5,
+      "action": "Do the homework, check your answers. Fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-23-kottfri-dag",
+          "item": 23,
+          "title": "Köttfri dag",
+          "posted": "24 Jun",
+          "instructions": "Läs texten och svara på frågorna. Read the opinion text (a school letter asking for a meat-free day) and answer. Notice its structure: opinion first, then för det första, för det andra, för det tredje, and a closing wish.",
+          "texts": [
+            {
+              "title": "Köttfri dag",
+              "body": "Inför köttfri dag i skolan!\n\nPå vår skola serveras det varje dag någon typ av kött i matsalen. Är det inte hamburgare eller bacon så är det köttbullar och korvar av olika slag. Men behöver vi verkligen ha kött varje dag? Nej, vi vill att skolan inför minst en köttfri dag en gång i veckan.\n\nVarför?\n\nFör det första är det inte miljövänligt att äta kött. Det krävs tio gånger mer energi för att producera kött än vad det krävs för att producera grönsaker.\n\nFör det andra är det nyttigt att ha en köttfri dag. Enligt Livsmedelsverket kan vi sänka vårt intag av kött med hälften och fortfarande må bra.\n\nFör det tredje skulle en köttfri dag i veckan leda till att efterfrågan på kött skulle minska. Detta skulle i sin tur leda till bättre djurhållning och mindre lidande för djuren. En köttfri dag leder alltså till tre goda ting: Bättre miljö, bättre hälsa och bättre djurhållning. Nu kanske några menar att det räcker med att använda ekologiskt kött istället för importerat. Men fakta kvarstår fortfarande. En köttfri dag i veckan är bättre! Däremot får skolan gärna servera ekologiskt kött de andra fyra dagarna!\n\nVår förhoppning är att alla skolor i kommunen från och med nästa termin inför en köttfri dag. Vi uppmanar alla elevråd i kommunen att kräva en köttfri dag i skolan!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "part": "Frågor om texten",
+              "prompt": "Hur ofta skulle man ha en köttfri dag i skolan, enligt författaren?",
+              "translation": "According to the writer, how often should the school have a meat-free day?",
+              "answers": [
+                "En gång i veckan",
+                "Minst en gång i veckan",
+                "En dag i veckan",
+                "Minst en dag i veckan",
+                "En köttfri dag i veckan",
+                "Minst en köttfri dag i veckan",
+                "Minst en köttfri dag en gång i veckan",
+                "En gång per vecka",
+                "Minst en gång per vecka",
+                "En dag per vecka",
+                "Minst en dag per vecka",
+                "1 gång i veckan",
+                "1 dag i veckan"
+              ],
+              "model": "Minst en gång i veckan."
+            },
+            {
+              "id": "q2",
+              "part": "Frågor om texten",
+              "prompt": "Svara i procent (%): Hur många procent köttkonsumtion kan vi sänka och ändå må bra?",
+              "translation": "Answer in percent: by how many percent can we cut how much meat we eat and still feel well?",
+              "hint": "The text says “med hälften” (by half).",
+              "answers": [
+                "50",
+                "50%",
+                "50 %",
+                "50 procent",
+                "femtio",
+                "femtio procent"
+              ]
+            },
+            {
+              "id": "q3",
+              "part": "Rätt eller fel",
+              "prompt": "En förbättrad djurhållning betyder att djuren får det bättre och inte lider så mycket.",
+              "translation": "Better animal husbandry means the animals are better off and do not suffer so much.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "part": "Rätt eller fel",
+              "prompt": "Det krävs färre resurser för att producera grönsaker än för att producera kött.",
+              "translation": "It takes fewer resources to produce vegetables than to produce meat.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q5",
+              "part": "Rätt eller fel",
+              "prompt": "Författaren hoppas på att en köttfri dag ska påbörjas vid kommande termin.",
+              "translation": "The writer hopes a meat-free day will start next term.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {
