@@ -1892,6 +1892,504 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Exercise and children's hobbies: radio news about how often Finns exercise, an interview with a hockey dad, a newspaper column and a notice about the swimming halls, with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-44-listen-1",
+          "title": "Finländarna rör på sig mer",
+          "textType": "Radionyheter",
+          "situation": {
+            "fi": "Du hör en nyhet på radion.",
+            "en": "You hear a news item on the radio."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Nyheter. Finländarna motionerar mer än tidigare. Det visar en ny undersökning där drygt tvåtusen vuxna svarade på frågor om sina vanor.",
+              "en": "The news. Finns are exercising more than before. That is shown by a new survey in which just over two thousand adults answered questions about their habits."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Enligt undersökningen rör sig fyrtio procent av de vuxna minst tre gånger i veckan. För fem år sedan var siffran trettiotvå procent. Ökningen är störst bland personer som är över sextiofem.",
+              "en": "According to the survey, forty per cent of adults are active at least three times a week. Five years ago the figure was thirty-two per cent. The increase is largest among people over sixty-five."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Den populäraste motionsformen är fortfarande promenader, före cykling och gym. Allt fler säger också att de motionerar tillsammans med vänner eller med hunden.",
+              "en": "The most popular form of exercise is still walking, ahead of cycling and the gym. More and more people also say that they exercise with friends or with the dog."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Men det finns också en mindre positiv trend. Unga vuxna mellan tjugo och trettio år rör sig mindre än förut. Många säger att de inte har tid, eller att gymmet är för dyrt. Minskningen är tydligast bland män.",
+              "en": "But there is also a less positive trend. Young adults between twenty and thirty are less active than before. Many say that they don't have time, or that the gym is too expensive. The drop is clearest among men."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Forskarna påminner om att det inte behöver kosta något att röra på sig. En rask promenad på en halvtimme om dagen räcker långt. Och nu till vädret.",
+              "en": "The researchers remind us that being active doesn't have to cost anything. A brisk walk of half an hour a day goes a long way. And now the weather."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar nyheten om?",
+              "translation": "What is the news item about?",
+              "options": [
+                "Hur mycket finländarna motionerar",
+                "Nya gym i Helsingfors",
+                "Priset på gymkort"
+              ],
+              "answers": [
+                "Hur mycket finländarna motionerar"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många procent av de vuxna motionerar nu minst tre gånger i veckan?",
+              "translation": "What percentage of adults now exercise at least three times a week?",
+              "answers": [
+                "40",
+                "fyrtio",
+                "40 procent",
+                "fyrtio procent",
+                "40 %",
+                "40%"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vilken grupp rör sig mindre än förut?",
+              "translation": "Which group is less active than before?",
+              "options": [
+                "Vuxna mellan 20 och 30 år",
+                "Personer över 65 år",
+                "Personer som har hund"
+              ],
+              "answers": [
+                "Vuxna mellan 20 och 30 år"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Enligt forskarna behöver man ett gymkort för att hålla sig i form.",
+              "translation": "According to the researchers, you need a gym card to keep fit.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en undersökning",
+              "en": "a survey, a study"
+            },
+            {
+              "fi": "en ökning",
+              "en": "an increase"
+            },
+            {
+              "fi": "en minskning",
+              "en": "a decrease, a drop"
+            },
+            {
+              "fi": "en trend",
+              "en": "a trend"
+            },
+            {
+              "fi": "rask",
+              "en": "brisk, quick"
+            },
+            {
+              "fi": "det räcker långt",
+              "en": "it goes a long way"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-44-listen-2",
+          "title": "Vad kostar en hockeyspelare?",
+          "textType": "Intervju",
+          "situation": {
+            "fi": "En reporter intervjuar en pappa i en ishall i Esbo.",
+            "en": "A reporter interviews a father in an ice rink in Espoo."
+          },
+          "lines": [
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Barnens hobbyer blir allt dyrare. Jag har träffat Kim Holm i en ishall i Esbo. Hans son spelar ishockey. Kim, vad kostar hobbyn egentligen?",
+              "en": "Children's hobbies are getting more and more expensive. I've met Kim Holm in an ice rink in Espoo. His son plays ice hockey. Kim, what does the hobby actually cost?"
+            },
+            {
+              "speaker": "Kim",
+              "voice": "Henrik",
+              "fi": "Det är faktiskt mycket pengar. Bara avgiften till föreningen är ungefär tvåtusen euro per säsong. Sedan kommer utrustningen och resorna till matcherna. Totalt blir det nog över tretusen euro om året.",
+              "en": "It's actually a lot of money. The club fee alone is about two thousand euros a season. Then come the equipment and the trips to matches. In total it's probably over three thousand euros a year."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Hur ofta tränar han?",
+              "en": "How often does he train?"
+            },
+            {
+              "speaker": "Kim",
+              "voice": "Henrik",
+              "fi": "Fyra gånger i veckan, och så har de match nästan varje helg. Så vi föräldrar sitter också här i ishallen flera gånger i veckan.",
+              "en": "Four times a week, and then they have a match almost every weekend. So we parents also sit here in the rink several times a week."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Är det värt det?",
+              "en": "Is it worth it?"
+            },
+            {
+              "speaker": "Kim",
+              "voice": "Henrik",
+              "fi": "Å ena sidan, ja. Han älskar att spela, och han har fått många vänner. Å andra sidan har inte alla familjer råd. Hans bästa kompis slutade förra året, eftersom familjen inte kunde betala.",
+              "en": "On the one hand, yes. He loves playing, and he has made lots of friends. On the other hand, not all families can afford it. His best friend stopped last year because the family couldn't pay."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Vad borde man göra åt det?",
+              "en": "What should be done about it?"
+            },
+            {
+              "speaker": "Kim",
+              "voice": "Henrik",
+              "fi": "Jag tycker att kommunen borde stödja föreningarna mer, så att avgifterna blir lägre. Och man kan köpa begagnat. Vi köper nästan all utrustning begagnad, och då sparar man hundratals euro.",
+              "en": "I think the municipality should support the clubs more, so that the fees get lower. And you can buy second-hand. We buy almost all the equipment second-hand, and that saves you hundreds of euros."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Tack, Kim, och lycka till i kvällens match!",
+              "en": "Thank you, Kim, and good luck in tonight's match!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Hur mycket kostar hockeyn totalt per år, enligt Kim?",
+              "translation": "How much does the hockey cost in total per year, according to Kim?",
+              "answers": [
+                "över 3000 euro",
+                "över tretusen euro",
+                "mer än 3000 euro",
+                "mer än tretusen euro",
+                "över 3 000 euro",
+                "mer än 3 000 euro",
+                "3000 euro",
+                "3 000 euro",
+                "tretusen euro",
+                "över 3000",
+                "över 3 000",
+                "över tretusen",
+                "3000",
+                "3 000",
+                "tretusen"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur ofta tränar sonen?",
+              "translation": "How often does the son train?",
+              "options": [
+                "Fyra gånger i veckan",
+                "En gång i veckan",
+                "Varje helg"
+              ],
+              "answers": [
+                "Fyra gånger i veckan"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Kim tycker att hockeyn bara har fördelar.",
+              "translation": "Kim thinks that hockey only has advantages.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur sparar familjen pengar?",
+              "translation": "How does the family save money?",
+              "options": [
+                "De köper begagnad utrustning",
+                "Sonen spelar färre matcher",
+                "Föreningen ger dem rabatt"
+              ],
+              "answers": [
+                "De köper begagnad utrustning"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vem borde stödja föreningarna mer, enligt Kim?",
+              "translation": "Who should support the clubs more, according to Kim?",
+              "answers": [
+                "kommunen",
+                "kommunerna",
+                "staden"
+              ],
+              "hint": "Ett ord."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en förening",
+              "en": "a club, an association"
+            },
+            {
+              "fi": "en avgift",
+              "en": "a fee"
+            },
+            {
+              "fi": "totalt",
+              "en": "in total"
+            },
+            {
+              "fi": "ha råd",
+              "en": "can afford"
+            },
+            {
+              "fi": "stödja",
+              "en": "support"
+            },
+            {
+              "fi": "hundratals",
+              "en": "hundreds of"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-44-read-1",
+          "title": "Låt barnen ha tråkigt",
+          "textType": "Krönika i en tidning",
+          "minutes": 8,
+          "text": "LÅT BARNEN HA TRÅKIGT\n\nNär jag var tio år hade jag en enda hobby: jag spelade fotboll en gång i veckan. Resten av tiden cyklade jag runt med kompisarna, läste serietidningar eller låg på golvet och hade tråkigt. I dag ser veckan helt annorlunda ut för många barn. Min grannes dotter är nio och har simning två gånger i veckan, piano på tisdagar, scouterna varannan torsdag och kör på lördagar. Hennes kalender är fullare än min.\n\nDet är klart att hobbyer är bra. Barn får röra på sig, lära sig nya saker och träffa vänner. Men jag tror att min generation av föräldrar har glömt hur viktigt det är att inte göra någonting. När ett barn har tråkigt måste det själv hitta på något att göra. Då behöver barnet sin fantasi, och det är just så kreativitet föds. Barn har ett behov av fri tid, precis som vi vuxna.\n\nDessutom blir familjerna stressade. Föräldrarna kör från den ena hallen till den andra, och middagen äter man i bilen. Det blir dyrt också, och alla familjer har inte råd.\n\nJag vill inte förbjuda hobbyer. Men jag föreslår en enkel regel: högst två organiserade hobbyer per barn, och minst en helt fri eftermiddag i veckan. Utan skärmar, förstås. Barnen kommer kanske att klaga i början. Men låt dem klaga, och låt dem ha tråkigt.\n\nPia Lund",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är skribentens viktigaste åsikt?",
+              "translation": "What is the writer's main opinion?",
+              "options": [
+                "Barn behöver också fri tid utan planerade aktiviteter",
+                "Barn borde inte ha några hobbyer alls",
+                "Barn borde spela mer fotboll"
+              ],
+              "answers": [
+                "Barn behöver också fri tid utan planerade aktiviteter"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur ofta går grannens dotter på scouterna?",
+              "translation": "How often does the neighbour's daughter go to scouts?",
+              "answers": [
+                "varannan torsdag",
+                "varannan vecka",
+                "på torsdagar varannan vecka",
+                "varannan vecka på torsdagar",
+                "en gång varannan vecka",
+                "två gånger i månaden"
+              ],
+              "hint": "Två ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "Skribenten vill förbjuda organiserade hobbyer.",
+              "translation": "The writer wants to ban organised hobbies.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför är det bra att ha tråkigt, enligt texten?",
+              "translation": "Why is it good to be bored, according to the text?",
+              "options": [
+                "Barnet måste använda sin fantasi",
+                "Familjen sparar pengar",
+                "Barnet sover bättre"
+              ],
+              "answers": [
+                "Barnet måste använda sin fantasi"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur många organiserade hobbyer per barn tycker skribenten är max?",
+              "translation": "How many organised hobbies per child does the writer think is the maximum?",
+              "answers": [
+                "två",
+                "2",
+                "högst två",
+                "högst 2",
+                "två hobbyer",
+                "2 hobbyer"
+              ],
+              "hint": "Ett tal."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en serietidning",
+              "en": "a comic (magazine)"
+            },
+            {
+              "fi": "varannan",
+              "en": "every other"
+            },
+            {
+              "fi": "en generation",
+              "en": "a generation"
+            },
+            {
+              "fi": "fantasi",
+              "en": "imagination"
+            },
+            {
+              "fi": "ett behov",
+              "en": "a need"
+            },
+            {
+              "fi": "organiserad",
+              "en": "organised"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-44-read-2",
+          "title": "Simhallarna i sommar",
+          "textType": "Meddelande på stadens webbplats",
+          "minutes": 6,
+          "text": "SIMHALLARNA I SOMMAR\n\nUnder sommaren har stadens simhallar kortare öppettider. Simhallen i Östra centrum stängs helt för renovering från den 1 juni till den 15 augusti. Under den tiden är du välkommen till någon av stadens andra simhallar.\n\nÖPPETTIDER 1.6–15.8\nMåndag–fredag kl. 7–20\nLördag och söndag kl. 10–18\n\nPRISER\nEngångsbiljett: vuxen 6,50 euro, barn och studerande 3 euro\nTiokort: vuxen 58 euro\nSäsongskort (juni–augusti): vuxen 95 euro\n\nVILKET KORT LÖNAR SIG?\nOm du simmar två gånger i veckan eller oftare hela sommaren, lönar sig säsongskortet. Om du simmar mer sällan, till exempel varannan vecka, är tiokortet ett bättre val. Tiokortet gäller i ett år.\n\nNYTT I SOMMAR\nGratis vattengympa för seniorer (över 65 år) på onsdagar kl. 10. Du behöver inte anmäla dig i förväg, men kom gärna en kvart före.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Alla stadens simhallar är stängda i sommar.",
+              "translation": "All the city's swimming halls are closed this summer.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket kostar en engångsbiljett för en studerande?",
+              "translation": "How much does a single ticket cost for a student?",
+              "answers": [
+                "3 euro",
+                "tre euro",
+                "3",
+                "tre",
+                "3 €",
+                "3e"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q3",
+              "prompt": "Du vill simma tre gånger i veckan hela sommaren. Vad rekommenderar texten?",
+              "translation": "You want to swim three times a week all summer. What does the text recommend?",
+              "options": [
+                "Säsongskort",
+                "Tiokort",
+                "Engångsbiljetter"
+              ],
+              "answers": [
+                "Säsongskort"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilken veckodag är vattengympan för seniorer?",
+              "translation": "Which day of the week is the water aerobics for seniors?",
+              "answers": [
+                "onsdag",
+                "onsdagar",
+                "på onsdagar",
+                "på onsdag",
+                "onsdagen"
+              ],
+              "hint": "Ett ord."
+            },
+            {
+              "id": "q5",
+              "prompt": "När är simhallarna öppna på söndagar i sommar?",
+              "translation": "When are the swimming halls open on Sundays this summer?",
+              "options": [
+                "Kl. 10–18",
+                "Kl. 7–20",
+                "Kl. 10–20"
+              ],
+              "answers": [
+                "Kl. 10–18"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en simhall",
+              "en": "an indoor swimming pool"
+            },
+            {
+              "fi": "en engångsbiljett",
+              "en": "a single ticket"
+            },
+            {
+              "fi": "det lönar sig",
+              "en": "it pays off, it is worth it"
+            },
+            {
+              "fi": "vattengympa",
+              "en": "water aerobics"
+            },
+            {
+              "fi": "i förväg",
+              "en": "in advance"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

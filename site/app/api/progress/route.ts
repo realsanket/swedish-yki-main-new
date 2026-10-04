@@ -1,5 +1,6 @@
 import { lessons, words } from "@/lib/curriculum";
 import { courseWords } from "@/lib/course";
+import { coreWords } from "@/lib/core-words";
 import { reviewCardIds } from "@/lib/review-cards";
 import { assertSameOrigin, parseProgressAction, ProgressError } from "@/lib/progress";
 import { applyProgress, readProgress } from "@/lib/server-db";
@@ -50,7 +51,7 @@ export async function POST(request: Request): Promise<Response> {
     assertSameOrigin(request);
     const action = parseProgressAction(await readBoundedJson(request));
     if (action.action === "complete" && !lessons.some((lesson) => lesson.id === action.lessonId)) throw new ProgressError(400, "This lesson was not found in the curriculum.");
-    if (action.action === "review" && ![...words, ...courseWords].some((word) => word.id === action.wordId) && !reviewCardIds.has(action.wordId)) throw new ProgressError(400, "This word was not found in your vocabulary library.");
+    if (action.action === "review" && ![...words, ...courseWords, ...coreWords].some((word) => word.id === action.wordId) && !reviewCardIds.has(action.wordId)) throw new ProgressError(400, "This word was not found in your vocabulary library.");
     await applyProgress(USER_ID, action);
     return Response.json(await readProgress(USER_ID), { headers: responseHeaders });
   } catch (error) { return errorResponse(error); }

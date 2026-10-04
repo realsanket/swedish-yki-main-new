@@ -9,13 +9,16 @@ import {
 } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { lessons } from "@/lib/curriculum";
-import { courseWords as words, coreWords, lectures } from "@/lib/course";
+import { courseWords, lectures } from "@/lib/course";
+import { coreWords } from "@/lib/core-words";
 import type { CourseProgressData } from "@/lib/course-progress";
 import type { ProgressData } from "@/lib/progress";
 import AudioButton from "./AudioButton";
 import PhraseReview from "./PhraseReview";
 import MemoryChart from "./MemoryChart";
 import { cardUnlocked, dueCards, memoryByLecture, phraseCardsByLecture, type ReviewCard } from "@/lib/review-cards";
+const words = [...courseWords, ...coreWords];
+
 export default function WordBank({
   data,
   course,

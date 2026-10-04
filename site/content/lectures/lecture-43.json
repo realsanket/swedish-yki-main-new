@@ -2088,6 +2088,519 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Free time in Helsinki: a radio culture tip, two friends planning a weekend, a course advert and a forum post about social media, with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-43-listen-1",
+          "title": "Kulturtipset för helgen",
+          "textType": "Radioprogram",
+          "situation": {
+            "fi": "Du lyssnar på ett kulturprogram på radion en fredagsmorgon.",
+            "en": "You are listening to a culture programme on the radio on a Friday morning."
+          },
+          "lines": [
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Hej och välkommen till Kulturtipset! Som vanligt på fredagar berättar jag vad som händer i Helsingfors under helgen. Utbudet är stort, så lyssna noga.",
+              "en": "Hello and welcome to the Culture Tip! As usual on Fridays, I tell you what is happening in Helsinki over the weekend. There is a lot on offer, so listen carefully."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Först en utställning för alla som gillar fotografi. På huvudbiblioteket Ode visar fem unga fotografer bilder från skärgården. Utställningen heter Ljus över havet, och den är gratis. Den pågår till den trettionde november.",
+              "en": "First an exhibition for everyone who likes photography. At the Oodi central library, five young photographers are showing pictures from the archipelago. The exhibition is called Light over the Sea, and it is free. It runs until 30 November."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Sedan teater. På Svenska Teatern spelas en ny komedi om en familj som ska fira jul tillsammans för första gången på tio år. Kritikerna säger att pjäsen är både rolig och rörande. Biljetterna kostar mellan tjugofem och fyrtiofem euro, och studerande får tio euro rabatt.",
+              "en": "Then theatre. At Svenska Teatern a new comedy is playing about a family who will celebrate Christmas together for the first time in ten years. The critics say the play is both funny and moving. Tickets cost between twenty-five and forty-five euros, and students get ten euros off."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Och till sist musik. På lördag kväll spelar ett gäng jazzmusiker från Åbo på det lilla kaféet Bönan i Berghäll. Konserten börjar klockan åtta, och inträdet är tolv euro. Det blir levande musik i en lugn och avkopplande miljö, så ta gärna med en vän.",
+              "en": "And finally music. On Saturday evening a group of jazz musicians from Turku plays at the little café Bönan in Kallio. The concert starts at eight, and entry is twelve euros. It will be live music in a calm and relaxing setting, so do bring a friend."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Fler tips hittar du på vår hemsida. Trevlig helg!",
+              "en": "You can find more tips on our website. Have a nice weekend!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vilket evenemang kostar ingenting?",
+              "translation": "Which event costs nothing?",
+              "options": [
+                "Fotoutställningen",
+                "Komedin",
+                "Jazzkonserten"
+              ],
+              "answers": [
+                "Fotoutställningen"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket rabatt får studerande på teatern?",
+              "translation": "How much discount do students get at the theatre?",
+              "answers": [
+                "10 euro",
+                "tio euro",
+                "10",
+                "tio",
+                "10 €",
+                "10e",
+                "10 e"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q3",
+              "prompt": "När börjar konserten?",
+              "translation": "When does the concert start?",
+              "options": [
+                "Lördag klockan 20",
+                "Fredag klockan 20",
+                "Lördag klockan 12"
+              ],
+              "answers": [
+                "Lördag klockan 20"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Enligt kritikerna kan publiken både skratta och bli berörd av komedin.",
+              "translation": "According to the critics, the audience can both laugh and be moved by the comedy.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Var kan man hitta fler tips?",
+              "translation": "Where can you find more tips?",
+              "answers": [
+                "på hemsidan",
+                "hemsidan",
+                "på deras hemsida",
+                "på programmets hemsida",
+                "på radions hemsida",
+                "på er hemsida",
+                "på nätet",
+                "på internet",
+                "på webben"
+              ],
+              "hint": "Två ord."
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett utbud",
+              "en": "a range of things on offer"
+            },
+            {
+              "fi": "en kritiker",
+              "en": "a critic (who reviews films, books, plays)"
+            },
+            {
+              "fi": "rörande",
+              "en": "moving, touching"
+            },
+            {
+              "fi": "inträdet",
+              "en": "the entry fee"
+            },
+            {
+              "fi": "levande musik",
+              "en": "live music"
+            },
+            {
+              "fi": "en hemsida",
+              "en": "a website"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-43-listen-2",
+          "title": "Bio eller promenad?",
+          "textType": "Samtal mellan vänner",
+          "situation": {
+            "fi": "Sanna ringer sin vän Tobias. De planerar helgen.",
+            "en": "Sanna calls her friend Tobias. They are planning the weekend."
+          },
+          "lines": [
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Hej Tobias, det är Sanna! Har du sett att den nya finska filmen har kommit på bio? Den ska vara jättespännande. Ska vi gå på fredag?",
+              "en": "Hi Tobias, it's Sanna! Have you seen that the new Finnish film is out at the cinema? It's supposed to be really exciting. Shall we go on Friday?"
+            },
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Hej! Jo, jag har läst om den. Men på fredag går det tyvärr inte. Jag tar nämligen hand om grannens hund hela helgen. De är på stugan till söndag.",
+              "en": "Hi! Yes, I've read about it. But Friday doesn't work, unfortunately. You see, I'm looking after the neighbours' dog all weekend. They're at their cottage until Sunday."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Åh, vad gulligt! Vad heter hunden?",
+              "en": "Oh, how sweet! What's the dog called?"
+            },
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Hon heter Nala. Hon är jättesnäll, men hon klarar inte att vara ensam mer än tre, fyra timmar. Så jag kan inte vara borta en hel kväll.",
+              "en": "She's called Nala. She's very sweet, but she can't cope with being alone for more than three or four hours. So I can't be away a whole evening."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Okej. Men vi kan väl ses på lördag i stället? Vi kan ta med Nala på en promenad i Centralparken. Jag behöver i alla fall röra på mig.",
+              "en": "Okay. But we could meet on Saturday instead, couldn't we? We can take Nala for a walk in Central Park. I need to move about anyway."
+            },
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Gärna! Säg klockan två vid Olympiastadion? Och filmen kan vi se på söndag kväll, när grannarna har kommit tillbaka.",
+              "en": "Sure! Shall we say two o'clock by the Olympic Stadium? And we can see the film on Sunday evening, when the neighbours have come back."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Perfekt. På söndag går den klockan halv sju och klockan nio. Vilken tid passar dig bäst?",
+              "en": "Perfect. On Sunday it's on at half past six and at nine. Which time suits you best?"
+            },
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Halv sju, absolut. Jag börjar jobba tidigt på måndag. Jag köper biljetterna i appen i kväll.",
+              "en": "Half past six, definitely. I start work early on Monday. I'll buy the tickets in the app tonight."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Toppen, då bjuder jag på popcorn. Vi ses på lördag!",
+              "en": "Great, then the popcorn is on me. See you on Saturday!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför kan Tobias inte gå på bio på fredag?",
+              "translation": "Why can't Tobias go to the cinema on Friday?",
+              "options": [
+                "Han tar hand om en hund",
+                "Han är på stugan",
+                "Han börjar jobba tidigt"
+              ],
+              "answers": [
+                "Han tar hand om en hund"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vad ska de göra på lördag?",
+              "translation": "What are they going to do on Saturday?",
+              "answers": [
+                "gå på promenad",
+                "gå på en promenad",
+                "ta en promenad",
+                "promenera",
+                "promenad",
+                "en promenad",
+                "gå ut med hunden",
+                "gå ut med nala",
+                "gå på promenad med hunden",
+                "gå på en promenad med hunden",
+                "ta en promenad med hunden",
+                "promenera med hunden",
+                "gå på promenad med nala",
+                "gå på en promenad med nala",
+                "promenera med nala",
+                "gå på promenad i centralparken",
+                "gå på en promenad i centralparken",
+                "promenera i centralparken",
+                "ta en promenad i centralparken"
+              ],
+              "hint": "Skriv två eller tre ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "När ska de se filmen?",
+              "translation": "When are they going to see the film?",
+              "options": [
+                "Söndag kl. 18.30",
+                "Söndag kl. 21",
+                "Lördag kl. 14"
+              ],
+              "answers": [
+                "Söndag kl. 18.30"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hunden klarar sig ensam en hel kväll.",
+              "translation": "The dog is fine alone for a whole evening.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "nämligen",
+              "en": "you see, namely (gives the reason)"
+            },
+            {
+              "fi": "ta hand om",
+              "en": "look after"
+            },
+            {
+              "fi": "klara att",
+              "en": "manage to, cope with"
+            },
+            {
+              "fi": "i alla fall",
+              "en": "anyway, at any rate"
+            },
+            {
+              "fi": "bjuda på",
+              "en": "treat someone to, pay for"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-43-read-1",
+          "title": "Vårens kurser på Arbis",
+          "textType": "Kursannons",
+          "minutes": 6,
+          "text": "VÅRENS KURSER PÅ ARBIS – ANMÄL DIG NU!\n\nFOTOGRAFERING FÖR NYBÖRJARE\nVill du ta bättre bilder? På kursen lär du dig grunderna: ljus, komposition och hur man använder kameran manuellt. Du behöver en egen kamera, men den kan gärna vara begagnad. Kursen passar inte för mobilkameror. Tisdagar kl. 18–20.15, 14.1–18.3. Pris 89 euro.\n\nSJUNG I KÖR!\nVår glada kör söker nya sångare i alla åldrar. Du behöver inte kunna läsa noter, men du ska tycka om att sjunga tillsammans med andra. Vi sjunger både finlandssvenska visor och populära låtar. Torsdagar kl. 17.30–19, hela våren. Pris 65 euro.\n\nSKRIV DIN EGEN BERÄTTELSE\nPå den här kursen skriver vi korta texter om våra egna liv, och vi läser och kommenterar varandras texter. Läraren är en författare som har gett ut sex böcker. Lördagar kl. 10–13, sex gånger. Pris 75 euro. Högst 12 deltagare.\n\nAnmälan senast den 7 januari på vår hemsida eller per telefon. Pensionärer och arbetslösa får 20 procent rabatt på alla kurser.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Du arbetar på vardagarna, också på kvällarna. Vilken kurs passar dig?",
+              "translation": "You work on weekdays, evenings too. Which course suits you?",
+              "options": [
+                "Fotografering för nybörjare",
+                "Sjung i kör",
+                "Skriv din egen berättelse"
+              ],
+              "answers": [
+                "Skriv din egen berättelse"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "På fotokursen kan du använda mobilen som kamera.",
+              "translation": "On the photo course you can use your phone as a camera.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Deltagarna på skrivkursen läser varandras texter.",
+              "translation": "The participants on the writing course read each other's texts.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilket datum måste man anmäla sig senast?",
+              "translation": "By what date must you sign up?",
+              "answers": [
+                "7 januari",
+                "den 7 januari",
+                "sjunde januari",
+                "den sjunde januari",
+                "7.1",
+                "den 7.1",
+                "senast den 7 januari",
+                "senast 7 januari"
+              ],
+              "hint": "Skriv datumet."
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur stor rabatt får pensionärer?",
+              "translation": "How big a discount do pensioners get?",
+              "answers": [
+                "20 procent",
+                "tjugo procent",
+                "20 %",
+                "20%",
+                "20",
+                "tjugo"
+              ],
+              "hint": "Skriv ett tal."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en nybörjare",
+              "en": "a beginner"
+            },
+            {
+              "fi": "begagnad",
+              "en": "second-hand"
+            },
+            {
+              "fi": "noter",
+              "en": "sheet music, (musical) notes"
+            },
+            {
+              "fi": "varandras",
+              "en": "each other's"
+            },
+            {
+              "fi": "en deltagare",
+              "en": "a participant"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-43-read-2",
+          "title": "En månad utan Instagram",
+          "textType": "Inlägg på ett diskussionsforum",
+          "minutes": 7,
+          "text": "Forum > Fritid > Sociala medier\n\nEN MÅNAD UTAN INSTAGRAM – VAR DET VÄRT DET?\nSkrivet av: Kaffetanten\n\nFör en månad sedan räknade jag ut hur mycket tid jag lägger på sociala medier. Svaret chockade mig: nästan tre timmar dagligen! Jag är 52 år, och jag har alltid trott att det bara är ungdomar som sitter med mobilen hela tiden. Så jag tog bort Instagram och Facebook från telefonen i 30 dagar.\n\nDe första dagarna var jobbiga. Jag tog upp mobilen säkert femtio gånger om dagen, bara av gammal vana. Men efter en vecka blev det lättare. Jag började läsa igen, och på en månad hann jag läsa fyra romaner. Jag sover också bättre, eftersom jag inte sitter med skärmen i sängen längre.\n\nDet enda negativa var att jag missade en del nyheter från vänner och släkt. Min syster blev lite sur när jag inte hade sett bilderna från hennes resa till Portugal.\n\nNu har jag installerat apparna igen, men jag har bestämt mig för två regler: högst en halvtimme om dagen, och aldrig efter klockan nio på kvällen. Har någon annan provat något liknande? Hur gick det för er?\n\nSvar från Pelle_83:\nBra jobbat! Jag har stängt av alla notiser i telefonen, och det hjälper också mycket.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skriver Kaffetanten inlägget?",
+              "translation": "Why does Kaffetanten write the post?",
+              "options": [
+                "Hon vill berätta om sin paus och höra om andras erfarenheter",
+                "Hon klagar på att ungdomar använder mobilen för mycket",
+                "Hon vill ha tips på bra romaner"
+              ],
+              "answers": [
+                "Hon vill berätta om sin paus och höra om andras erfarenheter"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket tid lade hon på sociala medier före pausen?",
+              "translation": "How much time did she spend on social media before the break?",
+              "answers": [
+                "nästan tre timmar om dagen",
+                "tre timmar om dagen",
+                "nästan tre timmar dagligen",
+                "tre timmar dagligen",
+                "nästan tre timmar",
+                "tre timmar",
+                "3 timmar",
+                "nästan 3 timmar",
+                "3 timmar om dagen",
+                "nästan 3 timmar om dagen",
+                "tre timmar per dag",
+                "3 timmar per dag",
+                "nästan tre timmar per dag",
+                "nästan 3 timmar per dag"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q3",
+              "prompt": "Det var lätt att låta bli mobilen redan från första dagen.",
+              "translation": "It was easy to leave the phone alone right from the first day.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad var negativt med pausen?",
+              "translation": "What was negative about the break?",
+              "options": [
+                "Hon missade nyheter från vänner och släkt",
+                "Hon sov sämre",
+                "Hon hann läsa mindre"
+              ],
+              "answers": [
+                "Hon missade nyheter från vänner och släkt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Kaffetanten har slutat helt med sociala medier.",
+              "translation": "Kaffetanten has stopped using social media completely.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "dagligen",
+              "en": "daily, every day"
+            },
+            {
+              "fi": "ungdomar",
+              "en": "young people"
+            },
+            {
+              "fi": "av gammal vana",
+              "en": "out of old habit"
+            },
+            {
+              "fi": "släkt",
+              "en": "relatives, family"
+            },
+            {
+              "fi": "installera",
+              "en": "install"
+            },
+            {
+              "fi": "en notis",
+              "en": "a notification; a short news item"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

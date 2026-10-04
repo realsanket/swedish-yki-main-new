@@ -276,6 +276,10 @@ for l in L:
         for spot in sp.get('hunt',{}).get('spots',[]):
             if spot['word'].lower() not in toks: errs.append(f"{n}: spot not on page "+spot['word'])
             if spot['mark'].lower() not in spot['word'].lower(): errs.append(f"{n}: spot mark "+spot['word'])
+core=json.load(open('content/core-words.json'))
+if len({c['id'] for c in core})!=len(core): errs.append('core-words: duplicate id')
+for c in core:
+    if c.get('level') not in ('A1','A2','B1') or not all(str(c.get(k,'')).strip() for k in ('id','fi','en','example','translation','theme')): errs.append('core-words: incomplete card '+str(c.get('id')))
 for module in mods['modules']:
     story=module.get('story',{})
     for key in ('title','setting','summary','cast'):

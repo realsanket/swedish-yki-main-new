@@ -1937,6 +1937,1142 @@
           ]
         }
       ]
+    },
+    {
+      "id": "mock-test",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Mock test: listening and reading",
+      "description": "Stigen's own practice test, not an official YKI test: five recordings and four texts at intermediate level (B1), at natural speed, with one 50-minute timer.",
+      "examMinutes": 50,
+      "minutes": 50,
+      "action": "Do it in one go, like the real test: read the questions before each recording, listen at most twice, then read the texts. Check your answers only at the end.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-46-mock-listen-1",
+          "title": "Ditt läkemedel har kommit",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Du har beställt ett läkemedel på apoteket. Du hör ett meddelande på din telefonsvarare.",
+            "en": "You have ordered a medicine at the pharmacy. You hear a message on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Hej, det här är Anna från apoteket vid Hagnäs torg. Jag ringer om läkemedlen som du beställde i måndags.",
+              "en": "Hi, this is Anna from the pharmacy at Hakaniemi square. I'm calling about the medicines you ordered on Monday."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Allergimedicinen har nu kommit, och vi har reserverat den åt dig i en vecka, alltså till och med fredag den fjortonde. Ögondropparna har tyvärr inte kommit ännu. De kommer förhoppningsvis på tisdag nästa vecka.",
+              "en": "The allergy medicine has now arrived, and we have reserved it for you for a week, that is, up to and including Friday the fourteenth. Unfortunately the eye drops haven't arrived yet. Hopefully they will come on Tuesday next week."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Ditt recept är elektroniskt, så du behöver inget papper från läkaren. Men ta med ditt FPA-kort, så får du ersättningen direkt i kassan.",
+              "en": "Your prescription is electronic, so you don't need any paper from the doctor. But bring your Kela card, and you'll get the reimbursement straight away at the till."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Elin",
+              "fi": "Vi har öppet vardagar från åtta till åtta och på lördagar från nio till fyra. På söndagar är vi stängda. Välkommen!",
+              "en": "We are open on weekdays from eight to eight and on Saturdays from nine to four. On Sundays we are closed. Welcome!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vilket läkemedel kan du hämta nu?",
+              "translation": "Which medicine can you pick up now?",
+              "options": [
+                "Allergimedicinen",
+                "Ögondropparna",
+                "Båda läkemedlen"
+              ],
+              "answers": [
+                "Allergimedicinen"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Till vilken dag är läkemedlet reserverat?",
+              "translation": "Until which day is the medicine reserved?",
+              "answers": [
+                "fredag",
+                "till fredag",
+                "fredag den fjortonde",
+                "fredag den 14",
+                "till och med fredag",
+                "den fjortonde",
+                "den 14",
+                "14",
+                "fjortonde",
+                "fredag 14",
+                "till fredag den 14",
+                "till och med fredag den fjortonde",
+                "till och med fredag den 14"
+              ],
+              "hint": "Skriv dagen eller datumet."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad ska du ta med till apoteket?",
+              "translation": "What should you take with you to the pharmacy?",
+              "answers": [
+                "fpa-kortet",
+                "fpa kortet",
+                "fpa-kort",
+                "fpa kort",
+                "mitt fpa-kort",
+                "ditt fpa-kort",
+                "kela-kortet",
+                "kela kortet",
+                "kelakortet",
+                "kela-kort",
+                "kelakort",
+                "fpakortet",
+                "fpakort"
+              ],
+              "hint": "Ett kort."
+            },
+            {
+              "id": "q4",
+              "prompt": "Du kan hämta läkemedlet på söndag.",
+              "translation": "You can pick up the medicine on Sunday.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett läkemedel",
+              "en": "a medicine"
+            },
+            {
+              "fi": "till och med",
+              "en": "up to and including; even"
+            },
+            {
+              "fi": "förhoppningsvis",
+              "en": "hopefully"
+            },
+            {
+              "fi": "ett recept",
+              "en": "a prescription (also: a recipe)"
+            },
+            {
+              "fi": "FPA-kortet",
+              "en": "the Kela card (FPA is Kela's Swedish name)"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-46-mock-listen-2",
+          "title": "Tåget till Åbo är inställt",
+          "textType": "Meddelande på järnvägsstationen",
+          "situation": {
+            "fi": "Du står på järnvägsstationen i Helsingfors och hör ett meddelande i högtalarna.",
+            "en": "You are at Helsinki railway station and hear an announcement over the loudspeakers."
+          },
+          "lines": [
+            {
+              "speaker": "Högtalarrösten",
+              "voice": "Henrik",
+              "fi": "Ett meddelande till resenärer mot Åbo. Intercitytåg nittioåtta, som skulle avgå klockan fjorton och tolv, är inställt på grund av ett tekniskt fel.",
+              "en": "An announcement for passengers towards Turku. Intercity train ninety-eight, which was due to leave at 14.12, is cancelled because of a technical fault."
+            },
+            {
+              "speaker": "Högtalarrösten",
+              "voice": "Henrik",
+              "fi": "Resenärerna ombeds ta nästa tåg mot Åbo, som avgår klockan femton och tolv. Observera att tåget avgår från spår sju, inte från spår fem som vanligt. Biljetter till det inställda tåget gäller på det tåget utan extra kostnad.",
+              "en": "Passengers are asked to take the next train towards Turku, which leaves at 15.12. Please note that the train leaves from track seven, not from track five as usual. Tickets for the cancelled train are valid on that train at no extra cost."
+            },
+            {
+              "speaker": "Högtalarrösten",
+              "voice": "Henrik",
+              "fi": "Resenärer till Esbo och Kyrkslätt kan också ta lokaltåget som avgår om tio minuter från spår två.",
+              "en": "Passengers to Espoo and Kirkkonummi can also take the local train that leaves in ten minutes from track two."
+            },
+            {
+              "speaker": "Högtalarrösten",
+              "voice": "Henrik",
+              "fi": "Om du har en sittplatsbiljett och vill ha pengarna tillbaka, kan du ansöka om ersättning på vår webbplats. Vi ber om ursäkt för förseningen.",
+              "en": "If you have a seat ticket and want your money back, you can apply for compensation on our website. We apologise for the delay."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför är tåget inställt?",
+              "translation": "Why is the train cancelled?",
+              "options": [
+                "Det har ett tekniskt fel",
+                "Det är för många resenärer",
+                "Spår fem repareras"
+              ],
+              "answers": [
+                "Det har ett tekniskt fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Från vilket spår går nästa tåg till Åbo?",
+              "translation": "From which track does the next train to Turku leave?",
+              "answers": [
+                "7",
+                "sju",
+                "spår 7",
+                "spår sju",
+                "från spår 7",
+                "från spår sju"
+              ],
+              "hint": "Skriv numret."
+            },
+            {
+              "id": "q3",
+              "prompt": "Du måste köpa en ny biljett för att åka med nästa tåg.",
+              "translation": "You have to buy a new ticket to travel on the next train.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Du ska till Kyrkslätt. Vad är snabbast?",
+              "translation": "You are going to Kirkkonummi. What is quickest?",
+              "options": [
+                "Lokaltåget från spår 2",
+                "Tåget klockan 15.12",
+                "Tåget klockan 14.12"
+              ],
+              "answers": [
+                "Lokaltåget från spår 2"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "inställd",
+              "en": "cancelled"
+            },
+            {
+              "fi": "en resenär",
+              "en": "a passenger, a traveller"
+            },
+            {
+              "fi": "ombeds",
+              "en": "are asked (formal)"
+            },
+            {
+              "fi": "ett spår",
+              "en": "a track, a platform"
+            },
+            {
+              "fi": "en försening",
+              "en": "a delay"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-46-mock-listen-3",
+          "title": "Dags för vinterdäck",
+          "textType": "Telefonsamtal",
+          "situation": {
+            "fi": "En kvinna ringer till en bilverkstad för att boka ett däckbyte.",
+            "en": "A woman calls a garage to book a tyre change."
+          },
+          "lines": [
+            {
+              "speaker": "Mekanikern",
+              "voice": "Alex",
+              "fi": "Bilservice Malmsten, hej, det är Jonne.",
+              "en": "Malmsten Car Service, hello, this is Jonne."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "Hej, jag skulle vilja boka ett däckbyte. Det har ju börjat bli halt på morgnarna.",
+              "en": "Hi, I'd like to book a tyre change. It's started getting slippery in the mornings."
+            },
+            {
+              "speaker": "Mekanikern",
+              "voice": "Alex",
+              "fi": "Ja, alla vill byta just nu. Den första lediga tiden är på torsdag klockan halv nio. Annars har jag måndag klockan fyra.",
+              "en": "Yes, everyone wants to change right now. The first free time is on Thursday at half past eight. Otherwise I have Monday at four."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "Torsdag passar bra. Jag kan lämna bilen och ta bussen till jobbet. Vad kostar det?",
+              "en": "Thursday suits me. I can leave the car and take the bus to work. What does it cost?"
+            },
+            {
+              "speaker": "Mekanikern",
+              "voice": "Alex",
+              "fi": "Ett vanligt däckbyte kostar fyrtiofem euro. Har du vinterdäcken hemma, eller förvarar vi dem på vårt däckhotell?",
+              "en": "A normal tyre change costs forty-five euros. Do you have the winter tyres at home, or do we store them at our tyre hotel?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "De ligger i mitt förråd. Men kan ni förvara sommardäcken i vinter? Jag har inte plats för båda.",
+              "en": "They're in my storage room. But can you store the summer tyres over the winter? I don't have room for both."
+            },
+            {
+              "speaker": "Mekanikern",
+              "voice": "Alex",
+              "fi": "Absolut. Däckhotellet kostar åttionio euro per säsong, och då tvättar vi däcken också. Hur gamla är vinterdäcken, förresten?",
+              "en": "Of course. The tyre hotel costs eighty-nine euros a season, and then we wash the tyres too. How old are the winter tyres, by the way?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "Oj, jag vet inte riktigt. Kanske sex, sju år.",
+              "en": "Oh, I don't really know. Maybe six or seven years."
+            },
+            {
+              "speaker": "Mekanikern",
+              "voice": "Alex",
+              "fi": "Då kontrollerar vi mönsterdjupet när du kommer. Om de är slitna ringer jag dig innan vi gör något, så kan du bestämma om du vill köpa nya.",
+              "en": "Then we'll check the tread depth when you come. If they're worn I'll call you before we do anything, so you can decide whether you want to buy new ones."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "Bra, tack. Då ses vi på torsdag.",
+              "en": "Good, thanks. See you on Thursday, then."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "När ska kunden komma till verkstaden?",
+              "translation": "When will the customer come to the garage?",
+              "options": [
+                "Torsdag kl. 8.30",
+                "Måndag kl. 16",
+                "Torsdag kl. 16"
+              ],
+              "answers": [
+                "Torsdag kl. 8.30"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket kostar ett vanligt däckbyte?",
+              "translation": "How much does a normal tyre change cost?",
+              "answers": [
+                "45 euro",
+                "fyrtiofem euro",
+                "45",
+                "fyrtiofem",
+                "45 €",
+                "45e"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad ska verkstaden förvara på däckhotellet?",
+              "translation": "What will the garage store at the tyre hotel?",
+              "options": [
+                "Sommardäcken",
+                "Vinterdäcken",
+                "Båda däcksatserna"
+              ],
+              "answers": [
+                "Sommardäcken"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad kontrollerar mekanikern, eftersom vinterdäcken är gamla?",
+              "translation": "What does the mechanic check, because the winter tyres are old?",
+              "options": [
+                "Om däcken är slitna",
+                "Om bilen behöver tvättas",
+                "Om förrådet är för litet"
+              ],
+              "answers": [
+                "Om däcken är slitna"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Mekanikern byter till nya däck utan att fråga kunden.",
+              "translation": "The mechanic changes to new tyres without asking the customer.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett däckbyte",
+              "en": "a tyre change"
+            },
+            {
+              "fi": "halt",
+              "en": "slippery"
+            },
+            {
+              "fi": "förvara",
+              "en": "store, keep"
+            },
+            {
+              "fi": "ett förråd",
+              "en": "a storage room"
+            },
+            {
+              "fi": "mönsterdjupet",
+              "en": "the tread depth"
+            },
+            {
+              "fi": "sliten",
+              "en": "worn"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-46-mock-listen-4",
+          "title": "Ett år mellan skolan och studierna",
+          "textType": "Radiointervju",
+          "situation": {
+            "fi": "I ett radioprogram berättar en ung kvinna om sitt mellanår.",
+            "en": "In a radio programme a young woman talks about her gap year."
+          },
+          "lines": [
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "I studion har jag Ella, som är tjugo år. Ella, du tog ett mellanår efter gymnasiet. Varför?",
+              "en": "In the studio I have Ella, who is twenty. Ella, you took a gap year after upper secondary school. Why?"
+            },
+            {
+              "speaker": "Ella",
+              "voice": "Maja",
+              "fi": "Ärligt talat för att jag inte kom in på universitetet. Jag sökte till juridiken, men mina poäng räckte inte. Först var jag jättebesviken.",
+              "en": "Honestly, because I didn't get into university. I applied to study law, but my points weren't enough. At first I was really disappointed."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Vad gjorde du i stället?",
+              "en": "What did you do instead?"
+            },
+            {
+              "speaker": "Ella",
+              "voice": "Maja",
+              "fi": "Jag fick jobb på ett hotell i Saariselkä och bodde där i fyra månader, från december till mars. Jag städade rum och jobbade i receptionen. Det var tungt ibland, men jag lärde mig att ta ansvar.",
+              "en": "I got a job at a hotel in Saariselkä and lived there for four months, from December to March. I cleaned rooms and worked at reception. It was hard sometimes, but I learnt to take responsibility."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Och sedan?",
+              "en": "And then?"
+            },
+            {
+              "speaker": "Ella",
+              "voice": "Maja",
+              "fi": "Jag hade sparat nästan alla pengar, så i april åkte jag till Portugal och gick en surfkurs. Sedan reste jag runt med tåg i sex veckor.",
+              "en": "I had saved almost all the money, so in April I went to Portugal and did a surfing course. Then I travelled around by train for six weeks."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Vad tyckte dina föräldrar?",
+              "en": "What did your parents think?"
+            },
+            {
+              "speaker": "Ella",
+              "voice": "Maja",
+              "fi": "Pappa var orolig i början. Han trodde att jag aldrig skulle börja studera. Men nu säger han att jag har vuxit mycket.",
+              "en": "Dad was worried at first. He thought I would never start studying. But now he says I've grown a lot."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Och nu?",
+              "en": "And now?"
+            },
+            {
+              "speaker": "Ella",
+              "voice": "Maja",
+              "fi": "Nu vet jag att juridik inte är något för mig. I höst börjar jag studera turism i Rovaniemi. Jag ångrar ingenting.",
+              "en": "Now I know that law isn't for me. This autumn I start studying tourism in Rovaniemi. I don't regret anything."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför tog Ella ett mellanår?",
+              "translation": "Why did Ella take a gap year?",
+              "options": [
+                "Hon kom inte in på universitetet",
+                "Hon ville lära sig surfa",
+                "Hennes pappa tyckte att hon skulle jobba"
+              ],
+              "answers": [
+                "Hon kom inte in på universitetet"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur länge jobbade Ella i Saariselkä?",
+              "translation": "How long did Ella work in Saariselkä?",
+              "answers": [
+                "fyra månader",
+                "4 månader",
+                "i fyra månader",
+                "i 4 månader",
+                "från december till mars"
+              ],
+              "hint": "Två ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur kunde Ella betala resan till Portugal?",
+              "translation": "How could Ella pay for the trip to Portugal?",
+              "options": [
+                "Hon hade sparat sin lön",
+                "Hennes föräldrar betalade",
+                "Hon jobbade på ett hotell i Portugal"
+              ],
+              "answers": [
+                "Hon hade sparat sin lön"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad tycker Ellas pappa nu?",
+              "translation": "What does Ella's dad think now?",
+              "options": [
+                "Att hon har mognat",
+                "Att hon borde studera juridik",
+                "Att hon aldrig kommer att studera"
+              ],
+              "answers": [
+                "Att hon har mognat"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Ella tycker att mellanåret var ett misstag.",
+              "translation": "Ella thinks the gap year was a mistake.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett mellanår",
+              "en": "a gap year"
+            },
+            {
+              "fi": "ärligt talat",
+              "en": "honestly speaking"
+            },
+            {
+              "fi": "besviken",
+              "en": "disappointed"
+            },
+            {
+              "fi": "ta ansvar",
+              "en": "take responsibility"
+            },
+            {
+              "fi": "mogna",
+              "en": "mature, grow up"
+            },
+            {
+              "fi": "ångra",
+              "en": "regret"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-46-mock-listen-5",
+          "title": "Biblioteket lånar ut mer än böcker",
+          "textType": "Nyhet",
+          "situation": {
+            "fi": "Du hör en lokal nyhet på radion.",
+            "en": "You hear a local news item on the radio."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Allt fler i huvudstadsregionen lånar saker i stället för att köpa dem. På biblioteken kan man i dag låna till exempel borrmaskiner, symaskiner, skidor och brädspel, och utlåningen har ökat varje år.",
+              "en": "More and more people in the capital region borrow things instead of buying them. At the libraries you can today borrow, for example, drills, sewing machines, skis and board games, and lending has increased every year."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "På ett bibliotek i Östra centrum är skidorna favoriten. Bibliotekarien Marja Aalto berättar att alla tjugo par var utlånade redan i början av januari.",
+              "en": "At a library in Itäkeskus the skis are the favourite. The librarian Marja Aalto says that all twenty pairs were on loan already at the beginning of January."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Hon tror att många vill spara pengar, men också att man tänker mer på miljön. En borrmaskin används i genomsnitt bara några minuter under hela sin livstid, säger hon. Varför ska alla ha en egen?",
+              "en": "She thinks many people want to save money, but also that people think more about the environment. A drill is used on average only a few minutes in its whole lifetime, she says. Why should everyone have their own?"
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Lånetiden för saker är oftast två veckor. Lånet kan inte förnyas om någon annan har reserverat saken. Den som lämnar tillbaka något sent får ingen avgift, men kan inte låna nya saker förrän det gamla lånet är tillbaka.",
+              "en": "The loan period for things is usually two weeks. The loan cannot be renewed if someone else has reserved the item. Anyone who returns something late gets no fine, but cannot borrow new things until the old loan is back."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar nyheten om?",
+              "translation": "What is the news item about?",
+              "options": [
+                "Att man kan låna saker på biblioteket",
+                "Att biblioteken säljer begagnade saker",
+                "Att biblioteken har fått nya böcker"
+              ],
+              "answers": [
+                "Att man kan låna saker på biblioteket"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vad är populärast på biblioteket i Östra centrum?",
+              "translation": "What is most popular at the library in Itäkeskus?",
+              "answers": [
+                "skidorna",
+                "skidor",
+                "skidor att låna"
+              ],
+              "hint": "Ett ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur länge får man oftast låna en sak?",
+              "translation": "How long can you usually borrow an item?",
+              "options": [
+                "Två veckor",
+                "Några minuter",
+                "Hela januari"
+              ],
+              "answers": [
+                "Två veckor"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Den som lämnar tillbaka en sak för sent måste betala en avgift.",
+              "translation": "Anyone who returns an item late has to pay a fine.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "utlåningen",
+              "en": "the lending"
+            },
+            {
+              "fi": "en borrmaskin",
+              "en": "a drill"
+            },
+            {
+              "fi": "en favorit",
+              "en": "a favourite"
+            },
+            {
+              "fi": "i genomsnitt",
+              "en": "on average"
+            },
+            {
+              "fi": "förnya ett lån",
+              "en": "renew a loan"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-46-mock-read-1",
+          "title": "Vattnet stängs av",
+          "textType": "Anslag i trappuppgången",
+          "minutes": 5,
+          "text": "BOSTADS AB LÖNNBACKEN\nMEDDELANDE TILL DE BOENDE I TRAPPHUS A OCH B\n\nVattnet stängs av onsdagen den 12 november kl. 8–15 på grund av reparation av vattenledningarna i källaren. Under den tiden kommer det inget vatten alls, varken varmt eller kallt. Ta gärna vatten i flaskor eller kastruller på morgonen före kl. 8.\n\nUndvik att använda tvättmaskin och diskmaskin under onsdagen. När vattnet kommer tillbaka kan det vara brunt en stund. Låt då kranen rinna i några minuter tills vattnet är klart.\n\nBastun i trapphus B är stängd hela veckan, eftersom vi samtidigt byter bastuaggregatet. Bastuturerna fortsätter som vanligt från måndag den 17 november.\n\nVid frågor kan du kontakta fastighetsskötaren på vardagar kl. 8–16, tfn 044 562 1180. Vid akuta vattenskador kvällar och helger: jourtelefon 0800 917 300.\n\nVi tackar för ert tålamod!\nStyrelsen",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför stängs vattnet av?",
+              "translation": "Why is the water being turned off?",
+              "options": [
+                "Vattenledningarna ska repareras",
+                "Bastun ska byggas om",
+                "Tvättstugan ska renoveras"
+              ],
+              "answers": [
+                "Vattenledningarna ska repareras"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Det finns kallt vatten men inte varmt vatten på onsdagen.",
+              "translation": "There is cold water but not hot water on Wednesday.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad ska du göra om vattnet är brunt efteråt?",
+              "translation": "What should you do if the water is brown afterwards?",
+              "answers": [
+                "låta kranen rinna",
+                "låt kranen rinna",
+                "låta vattnet rinna",
+                "låt vattnet rinna",
+                "låta kranen rinna i några minuter",
+                "låt kranen rinna i några minuter",
+                "låta vattnet rinna en stund",
+                "låt vattnet rinna en stund",
+                "låta kranen rinna en stund",
+                "låt kranen rinna en stund"
+              ],
+              "hint": "Tre ord."
+            },
+            {
+              "id": "q4",
+              "prompt": "När kan man basta igen i trapphus B?",
+              "translation": "When can you use the sauna again in stairwell B?",
+              "options": [
+                "Måndag den 17 november",
+                "Onsdag den 12 november kl. 15",
+                "Fredag den 14 november"
+              ],
+              "answers": [
+                "Måndag den 17 november"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Det är lördag kväll och vatten rinner från taket. Vilket nummer ringer du?",
+              "translation": "It is Saturday evening and water is running from the ceiling. Which number do you call?",
+              "answers": [
+                "0800 917 300",
+                "0800917300",
+                "jourtelefonen",
+                "jourtelefon",
+                "jouren",
+                "journumret"
+              ],
+              "hint": "Skriv numret."
+            }
+          ],
+          "words": [
+            {
+              "fi": "trapphus",
+              "en": "stairwell, entrance (of a block of flats)"
+            },
+            {
+              "fi": "en vattenledning",
+              "en": "a water pipe"
+            },
+            {
+              "fi": "en kran",
+              "en": "a tap"
+            },
+            {
+              "fi": "en jourtelefon",
+              "en": "an emergency (out-of-hours) phone line"
+            },
+            {
+              "fi": "tålamod",
+              "en": "patience"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-46-mock-read-2",
+          "title": "Hälsningar från Enare",
+          "textType": "E-post från en vän",
+          "minutes": 6,
+          "text": "Ämne: Hemma igen – och en fråga till dig!\n\nHej!\n\nNu är jag hemma igen efter en vecka i Enare, och jag måste säga att det var min bästa resa någonsin. Vi bodde i en liten stuga vid en sjö, femton kilometer från närmaste by. Det var minus tjugofem grader nästan varje dag, men vi hade rätt kläder, så vi frös inte.\n\nDet bästa var norrskenet. Vi såg det tre kvällar av sju, och en natt var hela himlen grön och lila. Jag stod ute i en timme och glömde helt bort att det var kallt. Vi åkte också hundspann en dag. Hundarna var så glada att springa att de skällde hela tiden innan vi startade!\n\nDet enda som inte var så roligt var resan dit. Flyget till Ivalo var försenat i tre timmar på grund av snöstorm, och vi kom fram först mitt i natten.\n\nNu till min fråga: jag vill åka tillbaka i mars, när dagarna är längre, och jag undrar om du vill följa med. En vecka i stugan kostar 700 euro, men vi kan dela på det, så det blir 350 per person. Flyget kostar ungefär 200 euro tur och retur om man bokar i god tid.\n\nKan du säga till senast på fredag om du är intresserad? Då bokar jag stugan på helgen. Och vet du förresten var man kan hyra varma kläder? Du behöver inte köpa allt nytt!\n\nKram,\nHanna",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skriver Hanna?",
+              "translation": "Why is Hanna writing?",
+              "options": [
+                "Hon berättar om sin resa och frågar om du vill resa med henne",
+                "Hon klagar på flygbolaget",
+                "Hon vill sälja sin stuga i Enare"
+              ],
+              "answers": [
+                "Hon berättar om sin resa och frågar om du vill resa med henne"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hanna frös mycket på resan.",
+              "translation": "Hanna was very cold on the trip.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur många kvällar såg de norrsken?",
+              "translation": "How many evenings did they see the northern lights?",
+              "answers": [
+                "tre",
+                "3",
+                "tre kvällar",
+                "3 kvällar",
+                "tre av sju",
+                "3 av 7"
+              ],
+              "hint": "Ett tal."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad var negativt med resan?",
+              "translation": "What was negative about the trip?",
+              "options": [
+                "Flyget var försenat",
+                "Det var för kallt för att gå ut",
+                "Hundarna var arga"
+              ],
+              "answers": [
+                "Flyget var försenat"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Ungefär hur mycket skulle resan i mars kosta för dig, med flyg och stuga?",
+              "translation": "About how much would the March trip cost you, with flights and the cottage?",
+              "answers": [
+                "550 euro",
+                "550",
+                "femhundrafemtio euro",
+                "femhundrafemtio",
+                "ungefär 550 euro",
+                "cirka 550 euro",
+                "ca 550 euro",
+                "550 €"
+              ],
+              "hint": "Räkna och skriv summan."
+            },
+            {
+              "id": "q6",
+              "prompt": "Vad vill Hanna veta före fredag?",
+              "translation": "What does Hanna want to know before Friday?",
+              "options": [
+                "Om du vill följa med",
+                "Var du har köpt dina kläder",
+                "När dagarna blir längre"
+              ],
+              "answers": [
+                "Om du vill följa med"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "någonsin",
+              "en": "ever"
+            },
+            {
+              "fi": "norrsken",
+              "en": "northern lights"
+            },
+            {
+              "fi": "himlen",
+              "en": "the sky"
+            },
+            {
+              "fi": "åka hundspann",
+              "en": "go dog-sledding"
+            },
+            {
+              "fi": "tur och retur",
+              "en": "return (there and back)"
+            },
+            {
+              "fi": "i god tid",
+              "en": "well in advance"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-46-mock-read-3",
+          "title": "Båten till Stensö",
+          "textType": "Turlista och priser",
+          "minutes": 6,
+          "text": "SKÄRGÅRDSBÅTEN TILL STENSÖ\n\nM/S Solvik trafikerar mellan Salutorget och Stensö från den 15 maj till den 30 september. Resan tar cirka 40 minuter.\n\nAVGÅNGAR\nFörsäsong (15.5–14.6) och eftersäsong (16.8–30.9): från Salutorget kl. 10 och 14, från Stensö kl. 12 och 16. Endast lördagar och söndagar.\nHögsäsong (15.6–15.8): varje dag från Salutorget kl. 9, 11, 13 och 17, från Stensö kl. 10, 12, 16 och 19.\n\nPRISER (tur och retur)\nVuxna 18 euro, barn 7–16 år 9 euro, barn under 7 år gratis. Familjebiljett (2 vuxna och högst 3 barn) 45 euro. Cykel 5 euro.\n\nBiljetter köps i vår app eller ombord. Ombord kan du betala endast med kort. Hundar får följa med gratis, men de ska hållas i koppel.\n\nPÅ STENSÖ\nPå ön finns ett kafé, en badstrand och en naturstig på tre kilometer. Kaféet är öppet under högsäsongen kl. 10–18. Det finns ingen butik på ön, så ta med egen matsäck om du vill äta mer än en bulle.\n\nVid dåligt väder kan avgångar ställas in. Följ vår webbplats för aktuell information.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Båten går varje dag i maj.",
+              "translation": "The boat runs every day in May.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Du åker till Stensö kl. 13 en dag i juli. När går den sista båten tillbaka?",
+              "translation": "You go to Stensö at 13 one day in July. When does the last boat back leave?",
+              "answers": [
+                "19",
+                "kl 19",
+                "klockan 19",
+                "klockan sju",
+                "sju",
+                "kl 19 00",
+                "19 00",
+                "klockan sju på kvällen"
+              ],
+              "hint": "Skriv klockslaget."
+            },
+            {
+              "id": "q3",
+              "prompt": "En familj med två vuxna och två barn (5 och 10 år) åker en dag. Vad är billigast?",
+              "translation": "A family with two adults and two children (5 and 10) goes for a day. What is cheapest?",
+              "options": [
+                "Att köpa vanliga biljetter",
+                "Att köpa en familjebiljett",
+                "Det kostar lika mycket"
+              ],
+              "answers": [
+                "Det kostar lika mycket"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur kan man betala ombord?",
+              "translation": "How can you pay on board?",
+              "answers": [
+                "med kort",
+                "kort",
+                "med betalkort",
+                "med bankkort",
+                "bara med kort",
+                "endast med kort"
+              ],
+              "hint": "Två ord."
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför ska man ta med egen mat?",
+              "translation": "Why should you bring your own food?",
+              "options": [
+                "Det finns ingen butik på ön",
+                "Kaféet är stängt på sommaren",
+                "Det är förbjudet att äta på kaféet"
+              ],
+              "answers": [
+                "Det finns ingen butik på ön"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "trafikera",
+              "en": "run (a route), operate"
+            },
+            {
+              "fi": "en avgång",
+              "en": "a departure"
+            },
+            {
+              "fi": "ombord",
+              "en": "on board"
+            },
+            {
+              "fi": "i koppel",
+              "en": "on a lead"
+            },
+            {
+              "fi": "matsäck",
+              "en": "a packed lunch"
+            },
+            {
+              "fi": "aktuell",
+              "en": "current, up to date"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-46-mock-read-4",
+          "title": "Siffror säger inte allt",
+          "textType": "Debattartikel",
+          "minutes": 10,
+          "text": "SIFFROR SÄGER INTE ALLT\n\nI debatten om skolan hörs allt oftare krav på att alla elever ska få betyg i siffror redan i lågstadiet. Siffror är tydliga, säger man, och föräldrarna vill veta exakt var barnet står. Som lärare med tjugo års erfarenhet förstår jag tanken. Men jag tror att tidiga siffror gör mer skada än nytta.\n\nFör det första är en siffra en mycket grov utvärdering. Om en elev i årskurs tre får en sjua i svenska, vad betyder det? Läser hon långsamt men förstår allt? Skriver hon fantasifulla berättelser men stavar fel? En skriftlig bedömning eller ett samtal med läraren berättar mycket mer om vad barnet kan och vad det behöver öva på.\n\nFör det andra börjar barnen jämföra sig med varandra. Redan efter det första betyget vet alla i klassen vem som fick en tia och vem som fick en sexa. För ett barn som kämpar kan en låg siffra kännas som ett bevis på att det har misslyckats, och då försvinner lusten att lära sig. Forskningen visar att motivationen är viktigare än nästan allt annat för ett barns framgång i skolan.\n\nDet betyder inte att bedömning är onödig. Barn behöver veta hur det går, och föräldrarna har rätt till information. Men den ska vara individuell och framåtriktad: vad har du blivit bättre på, och vad är nästa steg?\n\nSiffror passar bättre senare, när eleverna är äldre och betygen behövs för att söka till gymnasiet. Låt de små barnen lära sig utan att varje prov blir en tävling. Vi vuxna gillar siffror, men det är inte säkert att barnen behöver dem.\n\nLena Forsman, klasslärare i Vanda",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är skribentens huvudtanke?",
+              "translation": "What is the writer's main idea?",
+              "options": [
+                "Små barn behöver annan bedömning än siffror",
+                "Betyg i skolan borde avskaffas helt",
+                "Alla elever borde få siffror från årskurs ett"
+              ],
+              "answers": [
+                "Små barn behöver annan bedömning än siffror"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Skribenten förstår varför en del vill ha siffror tidigt.",
+              "translation": "The writer understands why some people want numbers early.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Varför är en siffra en grov utvärdering, enligt skribenten?",
+              "translation": "Why is a number a rough evaluation, according to the writer?",
+              "options": [
+                "Den visar inte vad eleven kan och behöver öva på",
+                "Lärarna har inte tid att ge siffror",
+                "Föräldrarna förstår inte siffrorna"
+              ],
+              "answers": [
+                "Den visar inte vad eleven kan och behöver öva på"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad kan hända när ett barn som kämpar får en låg siffra?",
+              "translation": "What can happen when a child who is struggling gets a low number?",
+              "answers": [
+                "barnet tappar lusten att lära sig",
+                "lusten att lära sig försvinner",
+                "lusten försvinner",
+                "det tappar lusten",
+                "barnet tappar motivationen",
+                "motivationen försvinner",
+                "det tappar motivationen",
+                "det känner att det har misslyckats",
+                "barnet känner att det har misslyckats",
+                "det slutar vilja lära sig",
+                "barnet slutar vilja lära sig",
+                "barnet vill inte lära sig längre",
+                "det vill inte lära sig längre"
+              ],
+              "hint": "Svara med en kort mening."
+            },
+            {
+              "id": "q5",
+              "prompt": "När passar siffror bättre, enligt skribenten?",
+              "translation": "When do numbers fit better, according to the writer?",
+              "options": [
+                "När eleverna är äldre och ska söka till gymnasiet",
+                "När föräldrarna vill veta exakt var barnet står",
+                "Efter det första provet i årskurs tre"
+              ],
+              "answers": [
+                "När eleverna är äldre och ska söka till gymnasiet"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Skribenten tycker att föräldrarna inte behöver information om hur det går för barnet.",
+              "translation": "The writer thinks parents don't need information about how the child is doing.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "lågstadiet",
+              "en": "the lower grades (years 1–6)"
+            },
+            {
+              "fi": "en utvärdering",
+              "en": "an evaluation"
+            },
+            {
+              "fi": "en bedömning",
+              "en": "an assessment"
+            },
+            {
+              "fi": "kämpa",
+              "en": "struggle, fight"
+            },
+            {
+              "fi": "misslyckas",
+              "en": "fail"
+            },
+            {
+              "fi": "individuell",
+              "en": "individual, personal"
+            },
+            {
+              "fi": "framåtriktad",
+              "en": "forward-looking"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

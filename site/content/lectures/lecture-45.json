@@ -2176,6 +2176,542 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Society and authorities: a message from an insurance company, a call to the tax office about back tax, an advert for volunteers and a news article about fake calls, with questions you can check.",
+      "minutes": 20,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-45-listen-1",
+          "title": "Ett meddelande om en stulen cykel",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Din cykel blev stulen, och du har gjort en skadeanmälan. Nu hör du ett meddelande på din telefonsvarare.",
+            "en": "Your bike was stolen, and you have filed an insurance claim. Now you hear a message on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Handläggaren",
+              "voice": "Elin",
+              "fi": "Hej, det här är Sofia Nyberg från försäkringsbolaget Holmskydd. Jag ringer angående din skadeanmälan om cykeln som stals utanför Kampens köpcentrum förra veckan.",
+              "en": "Hi, this is Sofia Nyberg from the insurance company Holmskydd. I'm calling about your claim for the bike that was stolen outside Kamppi shopping centre last week."
+            },
+            {
+              "speaker": "Handläggaren",
+              "voice": "Elin",
+              "fi": "Vi har fått din anmälan, men vi behöver ytterligare två saker innan vi kan betala ut ersättningen. Det första är numret på din polisanmälan. Om du inte har gjort någon polisanmälan ännu, kan du göra den på nätet.",
+              "en": "We have received your claim, but we need two more things before we can pay out the compensation. The first is the number of your police report. If you haven't made a police report yet, you can do it online."
+            },
+            {
+              "speaker": "Handläggaren",
+              "voice": "Elin",
+              "fi": "Det andra är kvittot på cykeln, eller något annat som visar vad den kostade. Ett foto av kvittot räcker. Du kan skicka båda via vår webbtjänst eller per e-post.",
+              "en": "The second is the receipt for the bike, or something else that shows what it cost. A photo of the receipt is enough. You can send both through our online service or by email."
+            },
+            {
+              "speaker": "Handläggaren",
+              "voice": "Elin",
+              "fi": "Enligt dina uppgifter kostade cykeln sexhundra euro för två år sedan. Om allt är i ordning blir ersättningen ungefär fyrahundra euro. Då har vi dragit av självrisken, som är hundrafemtio euro.",
+              "en": "According to your details, the bike cost six hundred euros two years ago. If everything is in order, the compensation will be about four hundred euros. That is after we have deducted the excess, which is a hundred and fifty euros."
+            },
+            {
+              "speaker": "Handläggaren",
+              "voice": "Elin",
+              "fi": "Skicka gärna papperen senast den tjugonde den här månaden. Om du har frågor kan du ringa mig på vardagar mellan nio och fyra, på nummer 09 4210 7700. Tack och hej!",
+              "en": "Please send the papers by the twentieth of this month. If you have questions, you can call me on weekdays between nine and four, on 09 4210 7700. Thank you, bye!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Sofia?",
+              "translation": "Why is Sofia calling?",
+              "options": [
+                "Försäkringsbolaget behöver mer information",
+                "Hon vill sälja en ny försäkring",
+                "Polisen har hittat cykeln"
+              ],
+              "answers": [
+                "Försäkringsbolaget behöver mer information"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vad ska du skicka till försäkringsbolaget? Nämn en sak.",
+              "translation": "What should you send to the insurance company? Name one thing.",
+              "answers": [
+                "kvittot",
+                "kvitto",
+                "ett kvitto",
+                "kvittot på cykeln",
+                "ett foto av kvittot",
+                "foto av kvittot",
+                "en bild av kvittot",
+                "bild av kvittot",
+                "bild på kvittot",
+                "numret på polisanmälan",
+                "numret på min polisanmälan",
+                "numret på polisanmälningen",
+                "polisanmälan",
+                "polisanmälans nummer",
+                "en polisanmälan",
+                "numret till polisanmälan",
+                "polisanmälningsnumret"
+              ],
+              "hint": "Ett eller några ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur stor är självrisken?",
+              "translation": "How big is the excess?",
+              "options": [
+                "150 euro",
+                "400 euro",
+                "600 euro"
+              ],
+              "answers": [
+                "150 euro"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Du måste skicka originalkvittot per post.",
+              "translation": "You must send the original receipt by post.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Du kan nå Sofia på telefon på lördag förmiddag.",
+              "translation": "You can reach Sofia by phone on Saturday morning.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en skadeanmälan",
+              "en": "an insurance claim (a report of damage or loss)"
+            },
+            {
+              "fi": "ytterligare",
+              "en": "further, more"
+            },
+            {
+              "fi": "ersättningen",
+              "en": "the compensation"
+            },
+            {
+              "fi": "en polisanmälan",
+              "en": "a police report"
+            },
+            {
+              "fi": "självrisken",
+              "en": "the excess, the deductible"
+            },
+            {
+              "fi": "dra av",
+              "en": "deduct, subtract"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-45-listen-2",
+          "title": "Varför har jag restskatt?",
+          "textType": "Telefonsamtal",
+          "situation": {
+            "fi": "Daniel ringer till Skatteförvaltningens telefontjänst.",
+            "en": "Daniel calls the Finnish Tax Administration's phone service."
+          },
+          "lines": [
+            {
+              "speaker": "Rådgivaren",
+              "voice": "Henrik",
+              "fi": "Skatteförvaltningen, det är Peter. Vad gäller det?",
+              "en": "Tax Administration, this is Peter. What is it about?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Hej, jag heter Daniel Sjöberg. Jag ringer angående mitt skattebeslut. Jag fick det i går, och det står att jag har restskatt.",
+              "en": "Hi, my name is Daniel Sjöberg. I'm calling about my tax decision. I got it yesterday, and it says I have back tax to pay."
+            },
+            {
+              "speaker": "Rådgivaren",
+              "voice": "Henrik",
+              "fi": "Okej, jag ska titta på det. Tack, nu har jag ditt beslut framför mig. Vad undrar du?",
+              "en": "Okay, I'll have a look. Thanks, now I have your decision in front of me. What would you like to know?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Det står att jag ska betala trehundraåttio euro. Jag förstår inte varför. Jag har ju betalat skatt på min lön hela året.",
+              "en": "It says I have to pay three hundred and eighty euros. I don't understand why. I've paid tax on my salary all year, after all."
+            },
+            {
+              "speaker": "Rådgivaren",
+              "voice": "Henrik",
+              "fi": "Jag ser att du hade två arbetsgivare förra året. På sommaren jobbade du extra på ett kafé, och där var skatteprocenten för låg. Därför blev det restskatt.",
+              "en": "I can see that you had two employers last year. In the summer you worked extra at a café, and the tax rate there was too low. That's why there is back tax."
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Aha, nu förstår jag. Måste jag betala allt på en gång?",
+              "en": "Ah, now I understand. Do I have to pay it all at once?"
+            },
+            {
+              "speaker": "Rådgivaren",
+              "voice": "Henrik",
+              "fi": "Nej, med ett så stort belopp betalar du i två rater. Datumen står i beslutet. Men du kan också betala hela summan på en gång, om du vill.",
+              "en": "No, with an amount that large you pay in two instalments. The dates are in the decision. But you can also pay the whole sum at once, if you like."
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Okej. Och hur gör jag så att det inte händer igen i år? Jag jobbar på kaféet nu också.",
+              "en": "Okay. And what do I do so it doesn't happen again this year? I'm working at the café now too."
+            },
+            {
+              "speaker": "Rådgivaren",
+              "voice": "Henrik",
+              "fi": "Beställ ett nytt skattekort i MinSkatt. Det tar bara några minuter. Du skriver hur mycket du tror att du tjänar i år, så räknar systemet ut en ny skatteprocent. Kom sedan ihåg att ge skattekortet till båda arbetsgivarna.",
+              "en": "Order a new tax card in MyTax. It only takes a few minutes. You write how much you think you'll earn this year, and the system works out a new tax rate. Then remember to give the tax card to both employers."
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Toppen, tack så mycket för hjälpen!",
+              "en": "Great, thank you very much for your help!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Daniel?",
+              "translation": "Why does Daniel call?",
+              "options": [
+                "Han förstår inte varför han har restskatt",
+                "Han har inte fått sin skatteåterbäring",
+                "Han vill byta arbetsgivare"
+              ],
+              "answers": [
+                "Han förstår inte varför han har restskatt"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket restskatt ska Daniel betala?",
+              "translation": "How much back tax does Daniel have to pay?",
+              "answers": [
+                "380 euro",
+                "trehundraåttio euro",
+                "380",
+                "trehundraåttio",
+                "380 €",
+                "380e"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q3",
+              "prompt": "Varför blev det restskatt?",
+              "translation": "Why was there back tax?",
+              "options": [
+                "Skatteprocenten på extrajobbet var för låg",
+                "Han betalade ingen skatt på sin lön",
+                "Han glömde att skicka in sitt skattekort"
+              ],
+              "answers": [
+                "Skatteprocenten på extrajobbet var för låg"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Daniel måste betala hela beloppet på en gång.",
+              "translation": "Daniel has to pay the whole amount at once.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Var kan Daniel beställa ett nytt skattekort?",
+              "translation": "Where can Daniel order a new tax card?",
+              "answers": [
+                "i minskatt",
+                "minskatt",
+                "på minskatt",
+                "i min skatt",
+                "min skatt",
+                "på min skatt",
+                "på nätet",
+                "på internet",
+                "online"
+              ],
+              "hint": "Namnet på tjänsten."
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett skattebeslut",
+              "en": "a tax decision (the yearly tax assessment)"
+            },
+            {
+              "fi": "restskatt",
+              "en": "back tax, tax still to pay"
+            },
+            {
+              "fi": "en arbetsgivare",
+              "en": "an employer"
+            },
+            {
+              "fi": "ett belopp",
+              "en": "an amount (of money)"
+            },
+            {
+              "fi": "en rat",
+              "en": "an instalment"
+            },
+            {
+              "fi": "ett skattekort",
+              "en": "a tax card (it tells the employer your tax rate)"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-45-read-1",
+          "title": "Bli besöksvän!",
+          "textType": "Annons",
+          "minutes": 7,
+          "text": "BLI BESÖKSVÄN – GE EN TIMME, FÅ ETT LEENDE\n\nMånga äldre i Helsingfors bor ensamma och träffar sällan någon. Föreningen Grannhjälpen söker nu frivilliga som vill besöka en äldre person ungefär en gång i veckan. Ni kan dricka kaffe, gå på promenad, spela kort eller bara prata. Du och din besöksvän bestämmer tillsammans hur ni vill umgås.\n\nVEM KAN BLI BESÖKSVÄN?\nDu ska vara minst 18 år, och du behöver inga särskilda förkunskaper. Det viktigaste är att du är pålitlig och kan vara med i minst ett halvår. Du behöver inte prata perfekt svenska, och många av våra äldre talar också finska. Alla är välkomna, oavsett om du är studerande, arbetar eller är pensionär.\n\nVAD FÅR DU?\nAlla nya frivilliga går en gratis kurs på två kvällar, den 14 och 16 oktober kl. 17–20. Föreningen har en försäkring som gäller under besöken, och en gång i månaden träffas alla frivilliga. Uppdraget är oavlönat, men föreningen betalar dina resor med kollektivtrafiken. Många säger att de får lika mycket som de ger.\n\nINTRESSERAD?\nAnmäl dig till kursen senast den 7 oktober. Kontakta Maria Lindberg, som är ansvarig för verksamheten, per e-post eller på telefon 040 718 2290 vardagar kl. 9–15. Vi svarar gärna på eventuella frågor.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad söker föreningen?",
+              "translation": "What is the association looking for?",
+              "options": [
+                "Personer som vill träffa en äldre person regelbundet",
+                "Sjukskötare till ett äldreboende",
+                "Äldre personer som vill gå en kurs"
+              ],
+              "answers": [
+                "Personer som vill träffa en äldre person regelbundet"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Man måste tala flytande svenska för att bli besöksvän.",
+              "translation": "You must speak fluent Swedish to become a visiting friend.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur länge måste man minst kunna vara med?",
+              "translation": "For how long must you be able to take part, at least?",
+              "answers": [
+                "ett halvår",
+                "minst ett halvår",
+                "ett halvt år",
+                "minst ett halvt år",
+                "sex månader",
+                "minst sex månader",
+                "6 månader",
+                "minst 6 månader"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad betalar föreningen för de frivilliga?",
+              "translation": "What does the association pay for the volunteers?",
+              "options": [
+                "Resorna med kollektivtrafiken",
+                "En lön för varje besök",
+                "Kaffet under besöken"
+              ],
+              "answers": [
+                "Resorna med kollektivtrafiken"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilket datum ska man anmäla sig senast?",
+              "translation": "By what date should you sign up?",
+              "answers": [
+                "7 oktober",
+                "den 7 oktober",
+                "sjunde oktober",
+                "den sjunde oktober",
+                "7.10",
+                "den 7.10",
+                "senast den 7 oktober",
+                "senast 7 oktober"
+              ],
+              "hint": "Skriv datumet."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en frivillig",
+              "en": "a volunteer"
+            },
+            {
+              "fi": "umgås",
+              "en": "spend time together"
+            },
+            {
+              "fi": "pålitlig",
+              "en": "reliable"
+            },
+            {
+              "fi": "oavsett om",
+              "en": "no matter whether"
+            },
+            {
+              "fi": "oavlönad",
+              "en": "unpaid"
+            },
+            {
+              "fi": "ansvarig för",
+              "en": "in charge of, responsible for"
+            },
+            {
+              "fi": "eventuella frågor",
+              "en": "any questions you may have"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-45-read-2",
+          "title": "Bluffsamtal i myndigheternas namn",
+          "textType": "Nyhetsartikel",
+          "minutes": 8,
+          "text": "POLISEN VARNAR FÖR BLUFFSAMTAL\n\nUnder hösten har flera personer i huvudstadsregionen fått samtal från bedragare som säger att de ringer från polisen, Migri eller banken. Ofta talar de engelska, men allt fler talar också finska eller svenska.\n\nEn kvinna i Esbo berättar att hon blev uppringd en fredag eftermiddag. Mannen i telefonen sa att han jobbade på Migri och att hennes uppehållstillstånd snart skulle bli ogiltigt. För att lösa problemet måste hon omedelbart betala en avgift på 250 euro och logga in med sina bankkoder.\n\n– Han lät väldigt trovärdig och visste vad jag heter. Jag blev rädd, eftersom jag faktiskt har ansökt om ett nytt tillstånd. Men när han bad om mina bankkoder lade jag på, säger kvinnan.\n\nPolisen påminner om att ingen myndighet ber om bankkoder eller lösenord i telefon. Myndigheterna kräver inte heller att man betalar en avgift under samtalet. Du är aldrig skyldig att ge dina uppgifter till någon som ringer. Om du är osäker ska du avsluta samtalet och själv ringa myndighetens officiella nummer, som du hittar på dess webbplats.\n\nOm du redan har gett dina koder ska du genast kontakta din bank och spärra dem. Gör sedan en brottsanmälan till polisen. Det går att göra på nätet.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar artikeln om?",
+              "translation": "What is the article about?",
+              "options": [
+                "Personer som låtsas ringa från myndigheter",
+                "Nya avgifter för uppehållstillstånd",
+                "Polisens nya telefonnummer"
+              ],
+              "answers": [
+                "Personer som låtsas ringa från myndigheter"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket pengar ville mannen att kvinnan skulle betala?",
+              "translation": "How much money did the man want the woman to pay?",
+              "answers": [
+                "250 euro",
+                "tvåhundrafemtio euro",
+                "250",
+                "tvåhundrafemtio",
+                "250 €",
+                "250e"
+              ],
+              "hint": "Skriv summan."
+            },
+            {
+              "id": "q3",
+              "prompt": "Kvinnan gav sina bankkoder till mannen.",
+              "translation": "The woman gave her bank codes to the man.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför blev kvinnan rädd?",
+              "translation": "Why did the woman get scared?",
+              "options": [
+                "Hon hade verkligen ansökt om ett nytt tillstånd",
+                "Mannen sa att polisen skulle komma",
+                "Hon hade redan betalat avgiften"
+              ],
+              "answers": [
+                "Hon hade verkligen ansökt om ett nytt tillstånd"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad ska du göra först, om du redan har gett dina koder?",
+              "translation": "What should you do first if you have already given your codes?",
+              "options": [
+                "Kontakta banken och spärra koderna",
+                "Ringa Migri",
+                "Betala avgiften"
+              ],
+              "answers": [
+                "Kontakta banken och spärra koderna"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett bluffsamtal",
+              "en": "a scam call"
+            },
+            {
+              "fi": "en bedragare",
+              "en": "a fraudster"
+            },
+            {
+              "fi": "omedelbart",
+              "en": "immediately"
+            },
+            {
+              "fi": "trovärdig",
+              "en": "believable, credible"
+            },
+            {
+              "fi": "skyldig",
+              "en": "obliged (here); also: guilty, owing"
+            },
+            {
+              "fi": "spärra",
+              "en": "block (a card or codes)"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {
