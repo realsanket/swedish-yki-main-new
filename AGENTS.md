@@ -183,7 +183,7 @@ full rules in `site/docs/lecture-template.md`):
 | `recall`, `guided`, `checkpoint` | Questions for steps 1, 4 and 6 |
 | `sections` | Teaching topics; each shows as beats: Understand, See the pattern, Hear it, activities, Try it |
 | `sections[].activity(ies)` | Hands-on activities: `sound-map`, `sort`, `match`, `question-gap`. A sort that shows deliberate mistakes sets `"audio": false` |
-| `extraSteps` | Lecture-owned route steps. Kind `source-practice` = verified textbook pages in a 5-stage ladder (Lectures 1-22); kind `yki-speaking` = original timed YKI dialogues and react/tell/opinion prompt sets (Lectures 23-52); kind `classroom-homework` = the teacher's Google Forms homework as the last step, only in lectures that have a form |
+| `extraSteps` | Lecture-owned route steps. Kind `source-practice` = verified textbook pages in a 5-stage ladder (Lectures 1-22); kind `yki-speaking` = original timed YKI dialogues and react/tell/opinion prompt sets (Lectures 23-52); kind `classroom-homework` = the teacher's Google Forms homework as the last step, only in lectures that have a form; kind `yki-comprehension` = original listening clips (native voices, up to 24 lines) and reading texts with checkable questions, "Listen and read" after Do the task (Lectures 13-51), or a timed mock test (`examMinutes`, Lectures 46, 50, 52) |
 | `missionPlan` | Fill-in sentence frames for stage 1 of "Do the task" |
 | `unplannedQuestions` | Questions for the "unexpected questions" round (6 per lecture, 3 asked) |
 | `reviewPhrases` | About 8 chunks for spaced review (English prompt, Swedish answer) |
@@ -242,7 +242,10 @@ Viewing any step is always allowed.
 |---|---|
 | Lecture player, route, navigation, sittings | `components/learning/LecturePlayer.tsx`, `app/course.css`, `app/responsive.css` |
 | Textbook page practice | `components/learning/SourcePagePractice.tsx`, `ExtraStep.tsx` |
-| Teacher's homework (Google Forms) | `components/learning/ClassroomHomework.tsx` (step kind `classroom-homework`) |
+| Teacher's homework (Google Forms) | `components/learning/ClassroomHomework.tsx` (step kind `classroom-homework`; its `QuestionList` is shared) |
+| Listen and read, mock tests | `components/learning/YkiComprehension.tsx` (step kind `yki-comprehension`); checked scores go to the progress API as practice attempts |
+| Listening/reading score tracker | `components/learning/CourseViews.tsx` (`CourseProgress`, "Listening and reading scores over time") |
+| Core words deck (Kelly list, 3,640 A1-B1 words) | `content/core-words.json`, `lib/core-words.ts`, `components/learning/WordBank.tsx` |
 | YKI speaking tasks (timed dialogues and prompt sets) | `components/learning/YkiSpeakingPractice.tsx`, `ExtraStep.tsx` |
 | Teaching activities | `components/learning/activities/*` |
 | Grammar side notes | `components/learning/GrammarNotes.tsx`, `content/grammar-terms.json`, `lib/grammar-terms.ts` |
@@ -379,10 +382,22 @@ to `rule`, `scene` and `register`; the validator rejects invented kinds and malf
 renderer fields. Archived YKI mock data lives in `content/yki-mocks.json` and is
 selected only by optional `ykiMockId`; no current lecture selects it.
 
+**B1 additions (October 4, 2026), from a gap analysis against YKI level 3:**
+a "Listen and read" step in Lectures 13-51 (1 clip + 1 text in 13-22, 2 + 2
+from 23; about 11,700 words of new listening (about 90 minutes, doubling the
+course total) and 13,400 of reading, 768 questions, all but one with
+answer keys), three timed mock tests (Lectures 46, 50, 52; 5 recordings and 4
+texts each, 50 minutes), five B1 grammar topics the class did not cover
+(pluperfect L29, ligga/lägga etc. L33, håller på att L38, bli-passive L42,
+-ande participles L43), a 3,640-word core vocabulary deck from the Swedish
+Kelly list (CC BY-SA), and a listening/reading score tracker on My progress.
+Content written by agents and validated by script; not yet reviewed by a
+native speaker. Audio is the same synthetic Sweden-Swedish voices.
+
 **Backlog, in priority order:**
 
-1. Easy listening stories per lecture (new `extraSteps` kind, 90% known words,
-   native voices) and a "listen today" list on the home screen.
+1. Partly done by "Listen and read" (above). Still open: a "listen today" list
+   on the home screen, and real (not synthetic) Finland-Swedish audio.
 2. Real Finland-Swedish audio links from the A1 stage (Yle Nyheter på lätt
    svenska; Klartext is Sveriges Radio's, from Sweden) with gist questions.
    Started in round 3: Lectures 16, 19 and 20 link an Yle easy-Swedish episode.
@@ -403,7 +418,10 @@ selected only by optional `ykiMockId`; no current lecture selects it.
    doubtful lines, pictures (`docs/image-prompts/yki-episodes.md`), and an
    independent review pass like Lectures 1-22 had.
 6. Native-speaker review of the doubtful source and authored Swedish lines
-   recorded under the built lecture design notes in `docs/mapping.md`.
+   recorded under the built lecture design notes in `docs/mapping.md`, now
+   including the listen-and-read texts, mock tests and core-word examples.
+7. Citizenship test (society knowledge, required from 1 March 2027): add a
+   unit once Migri publishes its official learning material.
 
 **Housekeeping for the owner:** revoke the Azure key that was pasted in chat;
 put the new key in `site/.env` and the cloud environment; remove the old

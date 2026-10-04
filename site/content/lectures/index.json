@@ -104172,7 +104172,9 @@
       "verb-second",
       "subordinate-clause",
       "formal-informal",
-      "infinitive"
+      "infinitive",
+      "participle",
+      "adjective"
     ],
     "presentation": {
       "template": "conversation-first",
@@ -105093,6 +105095,162 @@
           ],
           "summary": "Question word + verb: Hur länge har du …? · Vilken utrustning behöver man? · Vem skulle du rekommendera det till? · Hur mycket kostar det?"
         }
+      },
+      {
+        "title": "En spännande bok · the -ande form as a describing word",
+        "kind": "rule",
+        "body": [
+          "B1 extra (not from the class notes): a verb can describe a noun. Take the verb, add -ande, and use it like an adjective: spänna (excite) → en spännande bok (an exciting book). It is like the -ing in English exciting, moving, smiling.",
+          "Verbs that end in -a drop the -a and add -ande: röra (move, touch) → rörande; komma → kommande; leva → levande; störa (disturb) → störande. With a particle verb the small word goes in front: koppla av (relax) → avkopplande.",
+          "Short verbs that end in another vowel take -ende: le (smile) → leende, gå → gående, bo (live) → boende.",
+          "The form never changes. Unlike bifogad, bifogat, bifogade (Lecture 32), it takes no -t and no -e: en spännande bok, ett spännande verk, spännande böcker, den spännande boken.",
+          "To compare, use mer and mest: mer spännande, den mest spännande filmen. Never spännandare.",
+          "The -ande form says what something does to you; the -d form (the past participle) says how a person feels. Boken var rörande, and jag blev rörd (I was moved). Filmen var spännande, and jag var spänd (I was tense, eager).",
+          "Time words: kommande vecka (the coming week, often without an article in news and notices), de kommande dagarna, följande dag (the next day). Some -ande words are also nouns: en studerande (a student), de boende (the residents)."
+        ],
+        "examples": [
+          {
+            "fi": "Det var en spännande bok som jag läste på en natt.",
+            "en": "It was an exciting book that I read in one night.",
+            "note": "spänna → spännande"
+          },
+          {
+            "fi": "Pjäsen är ett rörande verk om en familj.",
+            "en": "The play is a moving work about a family.",
+            "note": "Ett verk: still -ande, no -t."
+          },
+          {
+            "fi": "Målningen visar en leende kvinna vid havet.",
+            "en": "The painting shows a smiling woman by the sea.",
+            "note": "le → leende"
+          },
+          {
+            "fi": "Kommande vecka spelar orkestern i Musikhuset.",
+            "en": "In the coming week the orchestra plays at the Helsinki Music Centre.",
+            "note": "No article before kommande vecka."
+          },
+          {
+            "fi": "Fotografering är en avkopplande hobby.",
+            "en": "Photography is a relaxing hobby.",
+            "note": "koppla av → avkopplande"
+          },
+          {
+            "fi": "Det var den mest spännande filmen i år.",
+            "en": "It was the most exciting film this year.",
+            "note": "Mest, not -are."
+          }
+        ],
+        "table": {
+          "headings": [
+            "Verb",
+            "Formen",
+            "Exempel"
+          ],
+          "rows": [
+            [
+              "spänna",
+              "spännande",
+              "en spännande bok"
+            ],
+            [
+              "röra",
+              "rörande",
+              "ett rörande verk"
+            ],
+            [
+              "komma",
+              "kommande",
+              "kommande vecka"
+            ],
+            [
+              "koppla av",
+              "avkopplande",
+              "en avkopplande kväll"
+            ],
+            [
+              "le",
+              "leende",
+              "en leende kvinna"
+            ],
+            [
+              "bo",
+              "boende",
+              "de boende i huset"
+            ]
+          ]
+        },
+        "memoryTip": "Verb in -a → -ande; short verb in another vowel → -ende. It never changes: en, ett, plural, all spännande.",
+        "tryIt": "Describe a book, a film or your hobby with two -ande words, for example spännande, rörande or avkopplande.",
+        "activity": {
+          "type": "sort",
+          "label": "Right or needs a fix?",
+          "title": "Check the -ande words",
+          "instructions": "Each card describes a work or an evening out. Is it right, or does it need a fix? Say the correct version before you go on.",
+          "audio": false,
+          "buckets": [
+            {
+              "id": "ok",
+              "label": "Right",
+              "hint": "Correct Swedish"
+            },
+            {
+              "id": "fix",
+              "label": "Needs a fix",
+              "hint": "One small change"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Det var en mycket spännande bok.",
+              "en": "It was a very exciting book.",
+              "bucket": "ok",
+              "why": "Spänna → spännande."
+            },
+            {
+              "fi": "Det var ett spännandet verk.",
+              "en": "It was an exciting work.",
+              "bucket": "fix",
+              "why": "The -ande form never takes -t: ett spännande verk."
+            },
+            {
+              "fi": "Pjäsen var mer spännande än filmen.",
+              "en": "The play was more exciting than the film.",
+              "bucket": "ok",
+              "why": "Compare with mer."
+            },
+            {
+              "fi": "Pjäsen var spännandare än filmen.",
+              "en": "The play was more exciting than the film.",
+              "bucket": "fix",
+              "why": "No -are on an -ande word: mer spännande."
+            },
+            {
+              "fi": "På målningen ser man en leande kvinna.",
+              "en": "In the painting you see a smiling woman.",
+              "bucket": "fix",
+              "why": "Le ends in a vowel other than -a, so -ende: en leende kvinna."
+            },
+            {
+              "fi": "Kommande vecka spelar orkestern i Musikhuset.",
+              "en": "In the coming week the orchestra plays at the Music Centre.",
+              "bucket": "ok",
+              "why": "Kommande vecka, without an article, as in the news."
+            },
+            {
+              "fi": "Det var ett rörd verk som fick mig att gråta.",
+              "en": "It was a moving work that made me cry.",
+              "bucket": "fix",
+              "why": "The work moves you: ett rörande verk. Rörd is how you feel: jag blev rörd."
+            },
+            {
+              "fi": "Jag blev rörd när jag läste slutet.",
+              "en": "I was moved when I read the ending.",
+              "bucket": "ok",
+              "why": "A person feels rörd."
+            }
+          ],
+          "summary": "-ande after -a verbs, -ende after other short verbs. No -t, no -e, no -are: ett spännande verk, mer spännande. The work is rörande; you are rörd."
+        }
       }
     ],
     "guided": [
@@ -105253,6 +105411,34 @@
         ],
         "hint": "Subordinate clause: inte first.",
         "explanation": "Lecture 19: in an att clause inte comes before the verb: att hon inte använder. Använder inte is main-clause order, and använda is the base form."
+      },
+      {
+        "id": "sv-43-g12",
+        "prompt": "B1 extra. A play that moved you: Det var en ___ pjäs.",
+        "answers": [
+          "rörande"
+        ],
+        "options": [
+          "rörande",
+          "rörd",
+          "rörda"
+        ],
+        "hint": "What the play does to you.",
+        "explanation": "The -ande form says what the play does to you: en rörande pjäs. Rörd is how a person feels (jag blev rörd), and rörda is its plural."
+      },
+      {
+        "id": "sv-43-g13",
+        "prompt": "B1 extra. The painting shows a smiling woman: Målningen visar en ___ kvinna.",
+        "answers": [
+          "leende"
+        ],
+        "options": [
+          "leende",
+          "leande",
+          "lett"
+        ],
+        "hint": "Le (smile) is a short verb that does not end in -a.",
+        "explanation": "Short verbs that do not end in -a take -ende: le → leende. Leande is a common slip, and lett is the supine (har lett, has smiled)."
       }
     ],
     "checkpoint": [
@@ -105360,6 +105546,15 @@
         ],
         "hint": "Som, and gillar att + verb.",
         "explanation": "Som is the relative pronoun (not vem), and gillar takes att before a verb: gillar att vara ute."
+      },
+      {
+        "id": "sv-43-c8",
+        "prompt": "B1 extra. Write in Swedish: “an exciting film and two exciting books”",
+        "answers": [
+          "en spännande film och två spännande böcker"
+        ],
+        "hint": "The -ande form never changes.",
+        "explanation": "Model: en spännande film och två spännande böcker. The -ande form takes no plural ending: spännande stays spännande."
       }
     ],
     "assignment": {
@@ -106411,7 +106606,7 @@
               {
                 "speaker": "Tobias",
                 "voice": "Alex",
-                "fi": "Hon heter Nala. Hon är jättesnäll, men hon klarar inte att vara ensam mer än tre, fyra timmar. Så jag kan inte vara borta en hel kväll.",
+                "fi": "Hon heter Nala. Hon är jättesnäll, men hon klarar inte av att vara ensam mer än tre, fyra timmar. Så jag kan inte vara borta en hel kväll.",
                 "en": "She's called Nala. She's very sweet, but she can't cope with being alone for more than three or four hours. So I can't be away a whole evening."
               },
               {
@@ -106522,7 +106717,7 @@
                 "en": "look after"
               },
               {
-                "fi": "klara att",
+                "fi": "klara av att",
                 "en": "manage to, cope with"
               },
               {

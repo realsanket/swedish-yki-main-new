@@ -1169,3 +1169,28 @@ textbook lines kept as printed; the teacher's own lines kept as written
 (*Bussen åker Jonas inte*, *hos Mara och Peter*); Lecture 12's Thursday is
 Alex's birthday and nobody mentions it; the Lecture 41 library date; the YKI fee
 (190 €, rechecked October 4) each test season.
+
+## B1 additions — October 4, 2026
+
+A gap analysis against YKI level 3 (OPH, Migri, the Swedish Kelly list) scored
+listening 3/10, reading 5/10, vocabulary 6/10 and exam readiness 5/10. Added:
+
+| Addition | Where | Notes |
+|---|---|---|
+| Listen and read (`yki-comprehension`) | Lectures 13-22: 1 clip + 1 text; 23-51 (not 46, 50): 2 + 2. With the mocks: 155 parts, 11,653 words of listening (about 90 minutes), 13,439 of reading, 768 questions (767 with a key) | Original YKI text types tied to each lecture's theme; every question has a key; 4-17 Kelly core words worked into each lecture |
+| Mock tests (5 recordings + 4 texts, 50 min) | Lectures 46, 50, 52 | Stigen's own practice tests; Lecture 52's replaces the unusable teacher listening form (item 37) |
+| Pluperfect (hade + supine) | Lecture 29 | "B1 extra", with Berätta |
+| ligga/lägga, sitta/sätta, stå/ställa | Lecture 33 | with furniture; checkpoint does not accept Finland-Swedish everyday "sätter" for "put" |
+| hålla på att / hålla på med | Lecture 38 | incl. "höll på att" = nearly |
+| bli-passive | Lecture 42 | next to the s-passive |
+| -ande/-ende participles | Lecture 43 | |
+| Core words deck | Word bank | 3,640 Kelly A1-B1 words the lectures do not teach (1,127 A1, 1,234 A2, 1,275 B1); six vulgar or ambiguous entries dropped |
+| Score tracker | My progress | listening/reading scores from checked parts and mocks |
+
+Facts in the new texts were spot-checked (EU rail compensation, NATO 2023,
+employment services moved to municipalities in 2025); invented firms and
+figures are presented as practice texts. Flagged for a native speaker:
+Finland-Swedish choices such as *hittegodsbyrå*, *Bästa passagerare*,
+*studiehandledare*, *medborgarinstitut*, *veckoslut*, *hygienpass*, and the
+core-word cards (written from the agents' own knowledge, not checked against
+SAOL). Not yet tested with the real Azure voices.
