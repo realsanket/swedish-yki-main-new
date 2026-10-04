@@ -1,0 +1,2122 @@
+{
+  "number": 38,
+  "routeProfile": "standard",
+  "objectives": [
+    "Call in sick: say that you are ill, for how long, and what someone else must take over.",
+    "Use komma ihåg and minnas correctly, and always komma ihåg att for something you must not forget.",
+    "Say and write dates with ordinal numbers (den tjugotredje juli, 23.7.) and move a meeting to a new day.",
+    "Use work and study words without the false friends: semester, examen, kontor, säga upp sig.",
+    "Give a spoken opinion on healthcare in Finland for 1 minute 30 seconds, and write a formal sick-leave e-mail to your manager."
+  ],
+  "focusSkills": [
+    "speaking",
+    "writing"
+  ],
+  "grammarTerms": [
+    "noun",
+    "verb",
+    "particle-verb",
+    "s-verb",
+    "ordinal-number",
+    "participle",
+    "infinitive",
+    "past-tense",
+    "present-perfect",
+    "negation",
+    "main-clause",
+    "subordinate-clause",
+    "indirect-question",
+    "conditional",
+    "formal-informal",
+    "verb-second",
+    "stress"
+  ],
+  "presentation": {
+    "template": "conversation-first",
+    "opening": {
+      "teacherNote": {
+        "title": "Listen for a sick call and a new date",
+        "body": "Friday 17 July. Alex still has a fever. Early in the morning he calls Johanna, his team leader, and later Elin calls from Henrik's class. Listen for how long Alex will be away, who takes over his work, and the new date for the project meeting."
+      },
+      "questionIntro": "Answer from the conversation: why Alex calls his team leader, and when the project meeting will be.",
+      "dialogue": {
+        "part": "recall",
+        "eyebrow": "START WITH THE STORY",
+        "title": "Sjuk på fredag",
+        "instructions": "Predict first: what three things does a boss want to know when you call in sick? Then listen once without the text.",
+        "initiallyOpen": false
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 38",
+        "17 JULY 2026"
+      ],
+      "kicker": "CALLS AT WORK",
+      "title": "Sjuk i dag",
+      "lede": "Alex has a fever, so he calls his team leader: he is ill, he will be away until Sunday, a colleague takes his client meeting, and the project meeting moves to a new date.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "Hej, det är … Jag är tyvärr sjuk i dag.",
+        "en": "Hi, it's … Unfortunately I'm ill today.",
+        "audioText": "Hej Johanna, det är Alex. Jag är tyvärr fortfarande sjuk och kan inte jobba i dag."
+      },
+      "speakers": [
+        {
+          "name": "Alex",
+          "fi": "Jag har fortfarande feber, så jag stannar hemma."
+        },
+        {
+          "name": "Elin",
+          "fi": "Kom ihåg att säga till Henrik också!"
+        }
+      ],
+      "connector": "MEN",
+      "encounterLabel": "Alex calls in sick and moves a meeting",
+      "chunks": [
+        {
+          "label": "I'M ILL",
+          "fi": "Jag är sjuk och kan inte komma i dag.",
+          "en": "I'm ill and can't come today."
+        },
+        {
+          "label": "HOW LONG",
+          "fi": "Jag är sjukskriven till och med söndag.",
+          "en": "I'm on sick leave up to and including Sunday."
+        },
+        {
+          "label": "REMEMBER",
+          "fi": "Jag kom inte ihåg att skriva till honom.",
+          "en": "I didn't remember to write to him."
+        },
+        {
+          "label": "A DATE",
+          "fi": "Vad sägs om torsdag den tjugotredje?",
+          "en": "How about Thursday the twenty-third?"
+        }
+      ],
+      "footerTags": [
+        "Call in sick",
+        "Move a meeting"
+      ]
+    },
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen to Alex's sick call and Elin's call from class."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Call in sick, remember with komma ihåg and minnas, say dates, use work words and give a view on healthcare."
+      }
+    },
+    "teaching": {
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the Lesson 38 word bank"
+      }
+    }
+  },
+  "sittingBreakAfter": "guided",
+  "unplannedQuestions": [
+    {
+      "id": "sv-38-u-sick",
+      "fi": "Vad gör du när du blir sjuk och inte kan gå till jobbet eller skolan?",
+      "en": "What do you do when you get ill and can't go to work or school?",
+      "sample": "Jag ringer min chef tidigt på morgonen och sedan företagshälsovården. / Jag skickar ett meddelande till läraren och stannar hemma."
+    },
+    {
+      "id": "sv-38-u-remember",
+      "fi": "Vad minns du bäst från din första arbetsdag?",
+      "en": "What do you remember best from your first working day?",
+      "sample": "Jag minns att jag var väldigt nervös. Min chef visade mig kafferummet, och kollegerna bjöd på tårta."
+    },
+    {
+      "id": "sv-38-u-forget",
+      "fi": "Hur kommer du ihåg viktiga datum och möten?",
+      "en": "How do you remember important dates and meetings?",
+      "sample": "Jag skriver allt i kalendern i mobilen. Den påminner mig en timme innan. / Jag skriver lappar och sätter dem på kylskåpet."
+    },
+    {
+      "id": "sv-38-u-study",
+      "fi": "Vad har du studerat, och skulle du vilja studera något mer?",
+      "en": "What have you studied, and would you like to study something more?",
+      "sample": "Jag har tagit examen i datateknik i Pune. Nu skulle jag vilja läsa svenska på högskolenivå."
+    },
+    {
+      "id": "sv-38-u-healthcare",
+      "fi": "Hur fick du hjälp senast du var sjuk?",
+      "en": "How did you get help the last time you were ill?",
+      "sample": "Jag ringde företagshälsovården och fick en tid samma dag. / Jag gick till hälsostationen, men jag fick vänta i två veckor."
+    },
+    {
+      "id": "sv-38-u-meeting",
+      "fi": "Din kollega vill flytta ert möte till fredag eftermiddag. Vad svarar du?",
+      "en": "Your colleague wants to move your meeting to Friday afternoon. What do you answer?",
+      "sample": "Tyvärr passar det inte, för jag slutar klockan tre på fredagar. Går det på måndag förmiddag i stället?"
+    }
+  ],
+  "reviewPhrases": [
+    {
+      "id": "sv-38-ill-today",
+      "en": "Unfortunately I'm ill and can't come to work today.",
+      "fi": "Jag är tyvärr sjuk och kan inte komma till jobbet i dag."
+    },
+    {
+      "id": "sv-38-sick-until",
+      "en": "I'm on sick leave up to and including Sunday.",
+      "fi": "Jag är sjukskriven till och med söndag."
+    },
+    {
+      "id": "sv-38-take-over",
+      "en": "Can someone else take over the client meeting?",
+      "fi": "Kan någon annan ta över kundmötet?"
+    },
+    {
+      "id": "sv-38-get-well",
+      "en": "Get well soon, and let me know when you know more.",
+      "fi": "Krya på dig, och säg till när du vet mer."
+    },
+    {
+      "id": "sv-38-dont-remember",
+      "en": "I don't remember her name.",
+      "fi": "Jag kommer inte ihåg hennes namn."
+    },
+    {
+      "id": "sv-38-remember-to",
+      "en": "Remember to call your boss!",
+      "fi": "Kom ihåg att ringa din chef!"
+    },
+    {
+      "id": "sv-38-how-about",
+      "en": "How about Thursday the twenty-third at ten?",
+      "fi": "Vad sägs om torsdag den tjugotredje klockan tio?"
+    },
+    {
+      "id": "sv-38-anyway",
+      "en": "Anyway, it's good that we have a time now.",
+      "fi": "Det är i alla fall bra att vi har en tid nu."
+    }
+  ],
+  "missionPlan": {
+    "title": "Plan your opinion on healthcare in Finland",
+    "intro": "Statement: “Den offentliga vården i Finland fungerar bra.” Make six or seven lines: the statement in your own words, your position, two arguments with an example, a comparison with your home country, and an ending.",
+    "lines": [
+      {
+        "label": "The statement in your words",
+        "before": "Det sägs ofta att",
+        "after": ".",
+        "placeholder": "vården i Finland är bra och billig"
+      },
+      {
+        "label": "Your position",
+        "before": "Jag",
+        "after": ".",
+        "placeholder": "håller delvis med"
+      },
+      {
+        "label": "Argument 1",
+        "before": "Å ena sidan",
+        "after": ".",
+        "placeholder": "är personalen kunnig, och vården kostar inte mycket för patienten"
+      },
+      {
+        "label": "Example",
+        "before": "Till exempel",
+        "after": ".",
+        "placeholder": "fick min granne en ny höft utan att betala mycket"
+      },
+      {
+        "label": "Argument 2",
+        "before": "Å andra sidan",
+        "after": ".",
+        "placeholder": "är köerna långa, och det kan ta veckor att få en tid på hälsostationen"
+      },
+      {
+        "label": "Your home country",
+        "before": "Jämfört med",
+        "after": ".",
+        "placeholder": "Indien får man vänta länge här, men i Pune måste många betala själva"
+      },
+      {
+        "label": "The end",
+        "before": "Sammanfattningsvis",
+        "after": ".",
+        "placeholder": "tycker jag att vården fungerar bra, men hälsostationerna behöver mer personal"
+      }
+    ]
+  },
+  "recall": [
+    {
+      "id": "sv-38-r1",
+      "prompt": "Why does Alex call Johanna early on Friday?",
+      "answers": [
+        "He still has a fever and cannot work today"
+      ],
+      "options": [
+        "He still has a fever and cannot work today",
+        "He wants to resign from his job",
+        "He forgot the time of the client meeting"
+      ],
+      "hint": "Listen for fortfarande sjuk and feber.",
+      "explanation": "Jag är tyvärr fortfarande sjuk. Jag har haft feber sedan i går. The nurse at företagshälsovården has written a sick note up to and including Sunday."
+    },
+    {
+      "id": "sv-38-r2",
+      "prompt": "What happens to Monday's project meeting?",
+      "answers": [
+        "It moves to Thursday 23 July at ten"
+      ],
+      "options": [
+        "It moves to Thursday 23 July at ten",
+        "It moves to Tuesday 21 July at ten",
+        "It is cancelled until August"
+      ],
+      "hint": "Johanna's Tuesday is full. Listen for den tjugotredje.",
+      "explanation": "Alex suggests Tuesday, but Johanna says: Tisdag är fulltecknad. Vad sägs om torsdag den tjugotredje klockan tio? Alex answers: Det passar bra."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sjukanmälan · calling in sick",
+      "kind": "scene",
+      "body": [
+        "Ring eller skriv till din chef så tidigt som möjligt, helst innan arbetsdagen börjar. Säg tre saker: att du är sjuk, hur länge du tror att du blir borta och vad någon annan måste sköta. (Three facts: you are ill, for how long, and what someone must take over.)",
+        "Jag är sjuk och kan inte komma i dag. Jag har feber och ont i halsen. Jag har haft feber sedan i går. (Lecture 17: har haft + sedan for something that is still going on.)",
+        "Företagshälsovården is the health service your employer pays for. Där får man ofta en tid snabbt, och sjukskötaren eller läkaren kan skriva ett sjukintyg (a sick note). Sjukskötare is the Finland-Swedish word; in Sweden people say sjuksköterska.",
+        "På många arbetsplatser i Finland räcker det med en egen sjukanmälan för en till tre dagar. Efter det behöver man ett intyg. (The exact rule depends on your workplace and its collective agreement, kollektivavtalet.)",
+        "Sjukskriven = on sick leave: Jag är sjukskriven till och med söndag. Till och med = up to and including. Sjukskrivningen is the sick leave itself. En ersättare or en vikarie takes over your work; vikariera för någon = stand in for someone.",
+        "Chefen svarar ofta: Krya på dig! (Get well soon.) Säg till när du vet mer. Then you answer: Tack, det ska jag göra."
+      ],
+      "examples": [
+        {
+          "fi": "Hej Johanna, det är Alex. Jag är tyvärr sjuk och kan inte jobba i dag.",
+          "en": "Hi Johanna, it's Alex. Unfortunately I'm ill and can't work today.",
+          "note": "Name, then the news."
+        },
+        {
+          "fi": "Jag har haft hög feber sedan i går kväll.",
+          "en": "I've had a high fever since last night.",
+          "note": "Still ill now: har haft + sedan."
+        },
+        {
+          "fi": "Sjukskötaren skrev ett intyg till och med söndag.",
+          "en": "The nurse wrote a sick note up to and including Sunday.",
+          "note": "Till och med: Sunday is included."
+        },
+        {
+          "fi": "Kundmötet klockan två måste någon annan ta över.",
+          "en": "Someone else has to take over the client meeting at two.",
+          "note": "The object first, so the verb måste comes second."
+        },
+        {
+          "fi": "Tuomas kan vikariera för mig. Han känner till projektet.",
+          "en": "Tuomas can stand in for me. He knows the project.",
+          "note": "Känna till = know about something."
+        },
+        {
+          "fi": "Krya på dig! Säg till om du blir sämre.",
+          "en": "Get well soon! Let me know if you get worse.",
+          "note": "What a boss or a friend says."
+        }
+      ],
+      "table": {
+        "headings": [
+          "The boss wants to know",
+          "You say"
+        ],
+        "rows": [
+          [
+            "What is wrong",
+            "Jag har feber och ont i huvudet."
+          ],
+          [
+            "Since when",
+            "Sedan i går kväll."
+          ],
+          [
+            "How long",
+            "Jag är sjukskriven till och med söndag."
+          ],
+          [
+            "Doctor or nurse?",
+            "Jag har ringt företagshälsovården."
+          ],
+          [
+            "Who takes over",
+            "Tuomas kan ta över kundmötet."
+          ]
+        ]
+      },
+      "memoryTip": "Ill, how long, who takes over: Jag är sjuk … till och med … Kan någon annan ta över …?",
+      "tryIt": "You wake up with a fever on a working day. Say what is wrong, since when, how long you will be away and who can take over one task.",
+      "activity": {
+        "type": "question-gap",
+        "label": "Take the sick call",
+        "title": "You are Alex's team leader",
+        "instructions": "Alex calls in sick. Choose the question that really gets each fact; Alex answers aloud.",
+        "card": {
+          "title": "Sjukfrånvaro",
+          "subtitle": "Team leader's notes · Friday morning"
+        },
+        "answerer": "Alex",
+        "gaps": [
+          {
+            "about": "how he feels",
+            "field": "Symptoms",
+            "options": [
+              "Hur mår du?",
+              "Hur är du?",
+              "Vad mår du?"
+            ],
+            "answer": "Hur mår du?",
+            "reply": {
+              "fi": "Inte så bra. Jag har fortfarande feber.",
+              "en": "Not so good. I still have a fever."
+            },
+            "why": "Health takes må: Hur mår du? Hur är du? is not used about health, and må needs hur, not vad."
+          },
+          {
+            "about": "how long",
+            "field": "Away until",
+            "options": [
+              "Hur länge blir du borta?",
+              "Hur länge är du borta sedan?",
+              "När blir du borta?"
+            ],
+            "answer": "Hur länge blir du borta?",
+            "reply": {
+              "fi": "Till och med söndag. Sjukskötaren skrev ett intyg.",
+              "en": "Up to and including Sunday. The nurse wrote a note."
+            },
+            "why": "Hur länge asks for a length of time. Sedan at the end turns it into “since”, and När blir du borta? asks when the absence starts."
+          },
+          {
+            "about": "health care",
+            "field": "Occupational health",
+            "options": [
+              "Har du kontaktat företagshälsovården?",
+              "Har du kontaktat till företagshälsovården?",
+              "Kontaktade du företagshälsovården än?"
+            ],
+            "answer": "Har du kontaktat företagshälsovården?",
+            "reply": {
+              "fi": "Ja, jag ringde dit i morse.",
+              "en": "Yes, I called them this morning."
+            },
+            "why": "Kontakta takes its object directly, with no till. Än (yet) goes with the present perfect: Har du … än?"
+          },
+          {
+            "about": "who takes over",
+            "field": "Substitute",
+            "options": [
+              "Finns det något som någon annan måste sköta?",
+              "Finns det något som någon annan måste sköta det?",
+              "Finns det något som måste någon annan sköta?"
+            ],
+            "answer": "Finns det något som någon annan måste sköta?",
+            "reply": {
+              "fi": "Ja, kundmötet klockan två. Tuomas kan ta över det.",
+              "en": "Yes, the client meeting at two. Tuomas can take it over."
+            },
+            "why": "Som already stands for något, so no extra det at the end. Inside the som-clause the subject comes before the verb: som någon annan måste sköta."
+          },
+          {
+            "about": "next contact",
+            "field": "Next contact",
+            "options": [
+              "Säg till när du vet mer.",
+              "Säg mig när du vet mer.",
+              "Berätta till mig när du vet mer."
+            ],
+            "answer": "Säg till när du vet mer.",
+            "reply": {
+              "fi": "Tack, det ska jag göra.",
+              "en": "Thanks, I will."
+            },
+            "why": "Säga till = let someone know. Berätta takes för: berätta för mig. Säg mig is a word-for-word copy of English “tell me”."
+          }
+        ],
+        "summary": "A sick call needs five facts: how you feel, how long, health care, who takes over, and when you get in touch again."
+      }
+    },
+    {
+      "title": "Komma ihåg eller minnas · two ways to remember",
+      "kind": "rule",
+      "body": [
+        "Komma ihåg = remember. It is a particle verb, so the small word takes the stress: kom IHÅG. It works for memories and for tasks: Jag kommer ihåg min första dag i Finland. Kom ihåg att ringa chefen!",
+        "Minnas (minns – mindes – har mints) = remember a memory. It is an s-verb: the s is part of the verb and does not make it passive. Jag minns min första dag i Finland. Minns du vad hon hette?",
+        "The trap: remembering TO DO something is always komma ihåg att + infinitive. Kom ihåg att ta med nyckeln. Never: Minns att ta med nyckeln.",
+        "Inte goes between the two parts in a main clause: Jag kommer inte ihåg hennes namn. In a subordinate clause inte comes before the verb: … eftersom jag inte kommer ihåg hennes namn (Lecture 19).",
+        "Glömma = forget: Jag glömde att ringa. Påminna någon om något = remind someone of something: Kan du påminna mig om mötet? Påminna is never “remember”: Jag påminner mötet is wrong.",
+        "Hindi helps: याद रखना (keep in mind, a task) is komma ihåg att. याद आना or याद है (a memory) is minnas or komma ihåg."
+      ],
+      "examples": [
+        {
+          "fi": "Jag kommer inte ihåg vad talaren hette.",
+          "en": "I don't remember what the speaker was called.",
+          "note": "Inte between kommer and ihåg."
+        },
+        {
+          "fi": "Minns du vilken sal föreläsningen var i?",
+          "en": "Do you remember which room the lecture was in?",
+          "note": "A memory: minnas works."
+        },
+        {
+          "fi": "Kom ihåg att skicka sjukintyget till chefen.",
+          "en": "Remember to send the sick note to the boss.",
+          "note": "A task: only komma ihåg att."
+        },
+        {
+          "fi": "Jag mindes plötsligt att mötet var flyttat.",
+          "en": "I suddenly remembered that the meeting had been moved.",
+          "note": "Past form: mindes."
+        },
+        {
+          "fi": "Jag glömde att säga till Henrik.",
+          "en": "I forgot to tell Henrik.",
+          "note": "Glömma att + infinitive."
+        },
+        {
+          "fi": "Kan du påminna mig om läxan i morgon?",
+          "en": "Can you remind me about the homework tomorrow?",
+          "note": "Påminna någon om något."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Meaning",
+          "komma ihåg",
+          "minnas"
+        ],
+        "rows": [
+          [
+            "a memory",
+            "Jag kommer ihåg sommaren 2024.",
+            "Jag minns sommaren 2024."
+          ],
+          [
+            "a task (remember to)",
+            "Kom ihåg att ringa!",
+            "not used"
+          ],
+          [
+            "with inte",
+            "Jag kommer inte ihåg.",
+            "Jag minns inte."
+          ],
+          [
+            "past",
+            "Jag kom ihåg det.",
+            "Jag mindes det."
+          ],
+          [
+            "perfect",
+            "Jag har kommit ihåg det.",
+            "Jag har mints det. (rare)"
+          ]
+        ]
+      },
+      "memoryTip": "A task? Komma ihåg att. A memory? Komma ihåg or minnas. Inte goes inside: kommer inte ihåg.",
+      "tryIt": "Say one thing you remember from your first week in Finland, and one thing you must remember to do tomorrow.",
+      "activity": {
+        "type": "sort",
+        "label": "Ready or fix?",
+        "title": "Check the remembering",
+        "instructions": "Each card is a learner's line. Is it ready, or does it need a fix? Say the correct version before you go on.",
+        "audio": false,
+        "buckets": [
+          {
+            "id": "ok",
+            "label": "Ready",
+            "hint": "Correct Swedish"
+          },
+          {
+            "id": "fix",
+            "label": "Needs a fix",
+            "hint": "Wrong verb or word order"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Minns att ringa chefen i morgon!",
+            "en": "Remember to call the boss tomorrow!",
+            "bucket": "fix",
+            "why": "A task needs komma ihåg att: Kom ihåg att ringa chefen i morgon!"
+          },
+          {
+            "fi": "Jag minns inte hennes namn.",
+            "en": "I don't remember her name.",
+            "bucket": "ok",
+            "why": "A memory, and inte after minns. Also right: Jag kommer inte ihåg hennes namn."
+          },
+          {
+            "fi": "Jag kommer ihåg inte vad han sa.",
+            "en": "I don't remember what he said.",
+            "bucket": "fix",
+            "why": "Inte goes between the two parts: Jag kommer inte ihåg vad han sa."
+          },
+          {
+            "fi": "Kommer du ihåg vilken dag mötet är?",
+            "en": "Do you remember which day the meeting is?",
+            "bucket": "ok",
+            "why": "A question with komma ihåg, and an indirect question after it: vilken dag mötet är."
+          },
+          {
+            "fi": "Jag påminner min första lärare.",
+            "en": "I remember my first teacher.",
+            "bucket": "fix",
+            "why": "Påminna means remind. Say: Jag minns min första lärare."
+          },
+          {
+            "fi": "Jag glömde att skicka intyget.",
+            "en": "I forgot to send the sick note.",
+            "bucket": "ok",
+            "why": "Glömma att + infinitive."
+          },
+          {
+            "fi": "Jag ringer inte, eftersom jag kommer inte ihåg numret.",
+            "en": "I'm not calling, because I don't remember the number.",
+            "bucket": "fix",
+            "why": "After eftersom, inte comes before the verb: eftersom jag inte kommer ihåg numret (Lecture 19)."
+          },
+          {
+            "fi": "Kan du påminna mig om mötet?",
+            "en": "Can you remind me about the meeting?",
+            "bucket": "ok",
+            "why": "Påminna någon om något."
+          }
+        ],
+        "summary": "A task: komma ihåg att. A memory: minnas or komma ihåg. Inte goes between kommer and ihåg, but before the verb after eftersom. Påminna = remind."
+      }
+    },
+    {
+      "title": "Datum och en ny tid · dates and moving a meeting",
+      "kind": "scene",
+      "body": [
+        "Dates use ordinal numbers: den första, den andra, den tredje … den tjugofemte, den trettioförsta. Mötet är den tjugotredje juli. (Lecture 11.)",
+        "I Finland skriver man 23.7.2026 eller bara 23.7. Säg den tjugotredje juli or, in Finland, also den tjugotredje i sjunde. On the phone, add the weekday: torsdag den tjugotredje.",
+        "Hitta en tid: När har du tid? Vad sägs om …? (How about …?) Passar det på …? Det passar mig bra. Jag är upptagen hela dagen. Min kalender är fulltecknad.",
+        "Flytta ett möte: Kan vi flytta mötet till torsdag? Skjuta upp = move later. Tidigarelägga = move earlier. Ställa in = cancel. Flytta fram is unclear: in Finland it usually means later, but many people in Sweden hear earlier. The safe way: say the new day.",
+        "I juli har många semester, so meetings are hard to fit. Semester = holiday from work. A school or university term is en termin.",
+        "I alla fall = anyway, at least. It ends a hard talk on a good note: Det var svårt, men nu har vi i alla fall en tid."
+      ],
+      "examples": [
+        {
+          "fi": "Vad sägs om torsdag den tjugotredje klockan tio?",
+          "en": "How about Thursday the twenty-third at ten?",
+          "note": "Weekday + den + ordinal."
+        },
+        {
+          "fi": "Tisdag är fulltecknad, tyvärr. Jag har möten hela dagen.",
+          "en": "Tuesday is fully booked, unfortunately. I have meetings all day.",
+          "note": "Fulltecknad = no free time."
+        },
+        {
+          "fi": "Vi skjuter upp mötet en vecka, till den trettionde.",
+          "en": "We'll postpone the meeting by a week, to the thirtieth.",
+          "note": "Skjuta upp = later. Say the new date too."
+        },
+        {
+          "fi": "Kan vi tidigarelägga mötet till klockan nio?",
+          "en": "Can we move the meeting earlier, to nine?",
+          "note": "Tidigarelägga = earlier."
+        },
+        {
+          "fi": "Mötet den tjugoåttonde är inställt.",
+          "en": "The meeting on the twenty-eighth is cancelled.",
+          "note": "Ställa in → inställt."
+        },
+        {
+          "fi": "Det var svårt att hitta en tid, men nu har vi i alla fall en.",
+          "en": "It was hard to find a time, but at least we have one now.",
+          "note": "I alla fall ends on a good note."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Written",
+          "Said",
+          "Note"
+        ],
+        "rows": [
+          [
+            "1.8.",
+            "den första augusti",
+            "första, not ett"
+          ],
+          [
+            "2.8.",
+            "den andra augusti",
+            "andra, not två"
+          ],
+          [
+            "23.7.",
+            "den tjugotredje juli",
+            "tjugo + tredje"
+          ],
+          [
+            "25.8.",
+            "den tjugofemte augusti",
+            "tjugo + femte"
+          ],
+          [
+            "30.7.",
+            "den trettionde juli",
+            "trettio + nde"
+          ]
+        ]
+      },
+      "memoryTip": "Den + ordinal + month: den tjugofemte augusti. To move a meeting, say the new day: Vi flyttar mötet till …",
+      "tryIt": "Your colleague suggests Monday the 20th. Say no, explain why, and suggest a new weekday and date.",
+      "activities": [
+        {
+          "type": "match",
+          "label": "Read the date",
+          "title": "From the calendar to the phone",
+          "instructions": "Match each date as it is written in Finland to the way you say it. Say each pair aloud.",
+          "leftLabel": "Written",
+          "rightLabel": "Said",
+          "pairs": [
+            {
+              "left": "23.7.",
+              "right": "den tjugotredje juli"
+            },
+            {
+              "left": "30.7.",
+              "right": "den trettionde juli"
+            },
+            {
+              "left": "1.8.",
+              "right": "den första augusti"
+            },
+            {
+              "left": "25.8.",
+              "right": "den tjugofemte augusti"
+            },
+            {
+              "left": "3.9.",
+              "right": "den tredje september"
+            },
+            {
+              "left": "12.10.",
+              "right": "den tolfte oktober"
+            }
+          ],
+          "pattern": "Day first, then the month. The day is an ordinal: första, tredje, tolfte, tjugofemte, trettionde.",
+          "sentence": "Mötet är {right}."
+        },
+        {
+          "type": "sort",
+          "label": "Earlier, later or off?",
+          "title": "What happens to the meeting?",
+          "instructions": "Read each line and decide what happens to the meeting.",
+          "buckets": [
+            {
+              "id": "later",
+              "label": "Later",
+              "hint": "moved to a later time"
+            },
+            {
+              "id": "earlier",
+              "label": "Earlier",
+              "hint": "moved to an earlier time"
+            },
+            {
+              "id": "off",
+              "label": "Cancelled",
+              "hint": "there will be no meeting"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Vi skjuter upp mötet till nästa vecka.",
+              "bucket": "later",
+              "why": "Skjuta upp = postpone."
+            },
+            {
+              "fi": "Kan vi tidigarelägga mötet en timme?",
+              "bucket": "earlier",
+              "why": "Tidigare = earlier, so tidigarelägga moves it forward in time."
+            },
+            {
+              "fi": "Mötet är inställt, eftersom chefen är sjuk.",
+              "bucket": "off",
+              "why": "Inställt = cancelled."
+            },
+            {
+              "fi": "Mötet på måndag blir i stället på torsdag samma vecka.",
+              "bucket": "later",
+              "why": "Monday to Thursday of the same week: later."
+            },
+            {
+              "fi": "Vi ses redan klockan åtta i stället för tio.",
+              "bucket": "earlier",
+              "why": "Redan klockan åtta, not ten: earlier."
+            },
+            {
+              "fi": "Vi ställer in fredagens möte. Det behövs inte.",
+              "bucket": "off",
+              "why": "Ställa in = cancel."
+            }
+          ],
+          "summary": "Skjuta upp: later. Tidigarelägga: earlier. Ställa in: cancelled. Flytta fram is unclear, so add the new day."
+        }
+      ]
+    },
+    {
+      "title": "Ord för jobb och studier · work and study words",
+      "kind": "register",
+      "body": [
+        "Säga upp sig = resign (you decide). Säga upp någon = dismiss someone (the employer decides). Bli uppsagd = be dismissed. Få sparken = get fired (informal, often because of something you did).",
+        "False friends: semester = holiday (a school term is en termin). Examen = a degree (ta examen = graduate); a test is ett prov or en tentamen. Ett konto = an account; ett kontor = an office.",
+        "Lön och tid: tjäna = earn, Jag tjänar 3 200 euro i månaden. Jobba över = work overtime. Ett arbetskontrakt (or ett arbetsavtal) is your work contract.",
+        "På jobbet: chefen, kollegerna (or kollegorna), den högsta ledningen (top management), en samarbetspartner, ett projekt, en deadline, kafferummet, lunchrasten. Teacher's fixes: den högsta ledningen, not en; samarbetspartner with s; the plural of en regel is regler.",
+        "Studier: en föreläsning (a lecture), en föreläsare or en talare, göra anteckningar (take notes), hålla en presentation, ett betyg (a grade), ett studielån, hoppa av (drop out), ett sabbatsår or ett mellanår (a gap year). Lecture 18: grundskolan, gymnasiet, ta studenten.",
+        "At a seminar break: Vad tyckte du om föreläsningen? Talaren var jättebra, men ämnet var lite tungt. Jag blev i alla fall inspirerad."
+      ],
+      "examples": [
+        {
+          "fi": "Hon sa upp sig, för hon fick ett bättre jobb i Esbo.",
+          "en": "She resigned, because she got a better job in Espoo.",
+          "note": "Säga upp sig: her own decision."
+        },
+        {
+          "fi": "Fabriken sa upp tjugo personer i våras.",
+          "en": "The factory laid off twenty people this spring.",
+          "note": "Säga upp + who: the employer decides."
+        },
+        {
+          "fi": "Jag har semester från den tjugosjunde juli.",
+          "en": "I'm on holiday from the twenty-seventh of July.",
+          "note": "Semester = holiday."
+        },
+        {
+          "fi": "Min bror tog examen i ekonomi förra året.",
+          "en": "My brother graduated in economics last year.",
+          "note": "Examen = a degree, not a test."
+        },
+        {
+          "fi": "Under föreläsningen gjorde jag många anteckningar.",
+          "en": "During the lecture I took a lot of notes.",
+          "note": "Göra anteckningar, not ta."
+        },
+        {
+          "fi": "Talaren var bra, men jag hängde inte med i slutet.",
+          "en": "The speaker was good, but I couldn't follow at the end.",
+          "note": "Hänga med = keep up, follow."
+        }
+      ],
+      "table": {
+        "headings": [
+          "Swedish",
+          "Means",
+          "Not"
+        ],
+        "rows": [
+          [
+            "en semester",
+            "a holiday from work",
+            "a school term (en termin)"
+          ],
+          [
+            "en examen",
+            "a degree, graduation",
+            "a test (ett prov, en tentamen)"
+          ],
+          [
+            "ett kontor",
+            "an office",
+            "an account (ett konto)"
+          ],
+          [
+            "säga upp sig",
+            "resign",
+            "dismiss someone (säga upp någon)"
+          ],
+          [
+            "en föreläsning",
+            "a lecture",
+            "a reading (en läsning)"
+          ]
+        ]
+      },
+      "memoryTip": "Sig = yourself: säga upp sig, you go. Without sig, someone else goes. Semester = holiday, examen = degree.",
+      "tryIt": "Say one sentence about your job or studies with three words from today: for example lön, kollegerna and semester.",
+      "activities": [
+        {
+          "type": "sort",
+          "label": "Who decides?",
+          "title": "Who ends the job?",
+          "instructions": "Read each line. Who decided that the job ends: the worker or the employer?",
+          "buckets": [
+            {
+              "id": "worker",
+              "label": "The worker",
+              "hint": "the person leaves by choice"
+            },
+            {
+              "id": "employer",
+              "label": "The employer",
+              "hint": "the company ends the job"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Mikael sa upp sig i maj.",
+              "bucket": "worker",
+              "why": "Säga upp sig: Mikael decided himself."
+            },
+            {
+              "fi": "Företaget sa upp Mikael i maj.",
+              "bucket": "employer",
+              "why": "Säga upp + a person: the company decided."
+            },
+            {
+              "fi": "Hon blev uppsagd när firman flyttade.",
+              "bucket": "employer",
+              "why": "Bli uppsagd = be dismissed."
+            },
+            {
+              "fi": "Han fick sparken efter två veckor.",
+              "bucket": "employer",
+              "why": "Få sparken = get fired (informal)."
+            },
+            {
+              "fi": "Jag tänker säga upp mig och börja studera.",
+              "bucket": "worker",
+              "why": "Säga upp mig: my own plan."
+            },
+            {
+              "fi": "Hon lämnade jobbet för att hon ville flytta till Åbo.",
+              "bucket": "worker",
+              "why": "Lämna jobbet because she wanted to move: her choice."
+            }
+          ],
+          "summary": "Säga upp sig: the worker goes. Säga upp någon, bli uppsagd, få sparken: the employer decides."
+        },
+        {
+          "type": "match",
+          "label": "False friends",
+          "title": "What does it really mean?",
+          "instructions": "Match each Swedish word to its real meaning. Watch out for words that look like English.",
+          "leftLabel": "Swedish",
+          "rightLabel": "Means",
+          "pairs": [
+            {
+              "left": "en semester",
+              "right": "a holiday from work"
+            },
+            {
+              "left": "en termin",
+              "right": "a school or university term"
+            },
+            {
+              "left": "en examen",
+              "right": "a degree"
+            },
+            {
+              "left": "en tentamen",
+              "right": "an exam at university"
+            },
+            {
+              "left": "ett kontor",
+              "right": "an office"
+            },
+            {
+              "left": "ett konto",
+              "right": "a bank or user account"
+            }
+          ],
+          "pattern": "Semester and examen are false friends. Kontor and konto differ by one letter."
+        }
+      ]
+    },
+    {
+      "title": "Vården i Finland · giving your view on healthcare",
+      "kind": "register",
+      "body": [
+        "Offentlig vård (public care): hälsostationen (the health centre; in Sweden vårdcentral), sjukhuset, jouren. Privat vård: en privat läkarstation. Företagshälsovården: through your job.",
+        "Words for a view: köerna är långa, man får vänta länge på en tid, sjukhusen är underbemannade (understaffed), personalen är kunnig, vården är billig för patienten, det är svårt att få tid hos en läkare.",
+        "Kö is said with a hard k, as in kaffe: no tj-sound, although ö is a front vowel. Plural: köer. Stå i kö, vänta i telefonkö.",
+        "Lecture 30's opinion route: Jag håller delvis med. Å ena sidan … Å andra sidan … Jämfört med mitt hemland … Sammanfattningsvis …",
+        "Health and sport words for Din åsikt: fysisk och psykisk hälsa, ta hand om sig, motionera, en tävling (a competition), ett lopp (a race), en toppidrottare, doping, fusk (cheating), olympiska spelen.",
+        "Your home country: give a fact, not a judgement. I Indien betalar många själva för vården. I Pune finns det många privata sjukhus."
+      ],
+      "examples": [
+        {
+          "fi": "I morse fick jag vänta i telefonkö i tjugo minuter.",
+          "en": "This morning I had to wait in a phone queue for twenty minutes.",
+          "note": "Kö: hard k."
+        },
+        {
+          "fi": "Personalen är kunnig, men många hälsostationer är underbemannade.",
+          "en": "The staff are skilled, but many health centres are understaffed.",
+          "note": "Plus, then minus."
+        },
+        {
+          "fi": "Det kan ta flera veckor att få en tid hos en läkare.",
+          "en": "It can take several weeks to get an appointment with a doctor.",
+          "note": "Det tar + time + att."
+        },
+        {
+          "fi": "Med företagshälsovården går det snabbare.",
+          "en": "With occupational health care it's quicker.",
+          "note": "A comparison."
+        },
+        {
+          "fi": "Jämfört med Indien är vården billig för patienten här.",
+          "en": "Compared with India, care is cheap for the patient here.",
+          "note": "Jämfört med + a country."
+        },
+        {
+          "fi": "En toppidrottare som dopar sig fuskar mot alla andra.",
+          "en": "A top athlete who uses doping cheats against everyone else.",
+          "note": "Dopa sig, fuska."
+        }
+      ],
+      "memoryTip": "One plus, one minus, one comparison: Personalen är kunnig, men köerna är långa. Jämfört med …",
+      "tryIt": "Say one good thing and one bad thing about healthcare in Finland, then compare with your home country in one sentence.",
+      "activity": {
+        "type": "sort",
+        "label": "Plus or minus?",
+        "title": "Sort the views on healthcare",
+        "instructions": "Is each line an advantage (en fördel) or a disadvantage (en nackdel) of the care it describes?",
+        "buckets": [
+          {
+            "id": "plus",
+            "label": "En fördel",
+            "hint": "something good"
+          },
+          {
+            "id": "minus",
+            "label": "En nackdel",
+            "hint": "something bad"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Ett besök på hälsostationen kostar inte mycket.",
+            "en": "A visit to the health centre doesn't cost much.",
+            "bucket": "plus",
+            "why": "Low cost for the patient is an advantage."
+          },
+          {
+            "fi": "Man får ofta vänta flera veckor på en tid.",
+            "en": "You often have to wait several weeks for an appointment.",
+            "bucket": "minus",
+            "why": "Long queues are the most common complaint."
+          },
+          {
+            "fi": "Sjukskötarna är kunniga och vänliga.",
+            "en": "The nurses are skilled and kind.",
+            "bucket": "plus",
+            "why": "Good staff is an advantage."
+          },
+          {
+            "fi": "Många sjukhus har för lite personal.",
+            "en": "Many hospitals have too few staff.",
+            "bucket": "minus",
+            "why": "Underbemannade sjukhus: a disadvantage."
+          },
+          {
+            "fi": "Man kan ofta sköta ärenden i en chatt eller en app.",
+            "en": "You can often deal with things in a chat or an app.",
+            "bucket": "plus",
+            "why": "Digital services save time."
+          },
+          {
+            "fi": "Den som har jobb får ofta hjälp snabbare än den som inte har det.",
+            "en": "People with a job often get help faster than people without one.",
+            "bucket": "minus",
+            "why": "Unequal access is a disadvantage of the system."
+          }
+        ],
+        "summary": "Pluses: cost, staff, digital services. Minuses: queues, too few staff, unequal access. A good opinion uses both."
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-38-g1",
+      "prompt": "Remember to call the boss! ___ att ringa chefen!",
+      "answers": [
+        "Kom ihåg"
+      ],
+      "options": [
+        "Kom ihåg",
+        "Minns",
+        "Påminn"
+      ],
+      "hint": "A task you must not forget.",
+      "explanation": "Remembering to do something is always komma ihåg att. Minns is for memories, and påminn means remind (påminn mig = remind me)."
+    },
+    {
+      "id": "sv-38-g2",
+      "prompt": "I don't remember her name: Jag ___ hennes namn.",
+      "answers": [
+        "kommer inte ihåg"
+      ],
+      "options": [
+        "kommer inte ihåg",
+        "kommer ihåg inte",
+        "inte kommer ihåg"
+      ],
+      "hint": "In a main clause, inte goes between the two parts.",
+      "explanation": "Jag kommer inte ihåg hennes namn. Inte follows the verb kommer in a main clause, and the particle ihåg comes last."
+    },
+    {
+      "id": "sv-38-g3",
+      "prompt": "Mix with Lecture 19: I'm calling, because I don't remember the date: Jag ringer, eftersom jag ___ datumet.",
+      "answers": [
+        "inte kommer ihåg"
+      ],
+      "options": [
+        "inte kommer ihåg",
+        "kommer inte ihåg",
+        "kommer ihåg inte"
+      ],
+      "hint": "Eftersom starts a subordinate clause.",
+      "explanation": "In a subordinate clause, inte comes before the verb, as in Lecture 19 (att han inte kommer): eftersom jag inte kommer ihåg datumet."
+    },
+    {
+      "id": "sv-38-g4",
+      "prompt": "Mix with Lecture 11: the meeting is on 25.8. Mötet är den ___ augusti.",
+      "answers": [
+        "tjugofemte"
+      ],
+      "options": [
+        "tjugofemte",
+        "tjugofem",
+        "femte och tjugo"
+      ],
+      "hint": "Dates use ordinal numbers.",
+      "explanation": "Den + ordinal, as in Lecture 11: den tjugofemte augusti. Den tjugofem is the plain number, a common slip."
+    },
+    {
+      "id": "sv-38-g5",
+      "prompt": "Mix with Lecture 17: I've had a fever since yesterday: Jag har haft feber ___ i går.",
+      "answers": [
+        "sedan"
+      ],
+      "options": [
+        "sedan",
+        "för",
+        "i"
+      ],
+      "hint": "A starting point, not a length.",
+      "explanation": "Sedan + a starting point (Lecture 17): sedan i går. I + a length: i två dagar. För … sedan means ago."
+    },
+    {
+      "id": "sv-38-g6",
+      "prompt": "Your colleague offers Tuesday, but you have a course. Choose the best answer.",
+      "answers": [
+        "Tyvärr passar det inte, för jag är på kurs då. Vad sägs om torsdag den tjugotredje?"
+      ],
+      "options": [
+        "Tyvärr passar det inte, för jag är på kurs då. Vad sägs om torsdag den tjugotredje?",
+        "Tyvärr det passar inte, jag är på kurs. Vad sägs om torsdag den tjugotre?",
+        "Nej, det passar inte."
+      ],
+      "hint": "No + why + a new day with a date.",
+      "explanation": "The YKI recipe: say no, explain, suggest. In the second, tyvärr takes first place so the verb comes next (passar det), and the date needs the ordinal tjugotredje. The third gives no reason or new time."
+    },
+    {
+      "id": "sv-38-g7",
+      "prompt": "Write in Swedish: “I'm on sick leave until Sunday.” (Sunday included)",
+      "answers": [
+        "Jag är sjukskriven till och med söndag.",
+        "Jag är sjukskriven tom söndag.",
+        "Jag är sjukskriven till söndag."
+      ],
+      "hint": "sjukskriven + till och med",
+      "explanation": "Model: Jag är sjukskriven till och med söndag. Till och med (written t.o.m.) includes Sunday; till söndag is also heard."
+    },
+    {
+      "id": "sv-38-g8",
+      "prompt": "She resigned last week. Which sentence says that?",
+      "answers": [
+        "Hon sa upp sig förra veckan."
+      ],
+      "options": [
+        "Hon sa upp sig förra veckan.",
+        "Hon sa upp förra veckan.",
+        "Hon fick sparken förra veckan."
+      ],
+      "hint": "Her own decision needs sig.",
+      "explanation": "Säga upp sig = resign. Without sig the verb needs a person (sa upp någon = dismissed someone), and få sparken means the employer fired her."
+    },
+    {
+      "id": "sv-38-g9",
+      "prompt": "A colleague asks: Minns du vad talaren hette? You don't remember either. Choose the answer.",
+      "answers": [
+        "Nej, jag minns inte heller. Vi kan titta i programmet."
+      ],
+      "options": [
+        "Nej, jag minns inte heller. Vi kan titta i programmet.",
+        "Nej, jag minns inte också. Vi kan titta i programmet.",
+        "Nej, jag påminner inte heller. Vi kan titta i programmet."
+      ],
+      "hint": "“Not … either” is inte heller.",
+      "explanation": "Inte heller = not either; inte också is English word order. Påminna means remind, so it cannot replace minnas."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-38-c1",
+      "prompt": "Write in Swedish: “Unfortunately I'm ill and can't come to work today.”",
+      "answers": [
+        "Jag är tyvärr sjuk och kan inte komma till jobbet i dag.",
+        "Tyvärr är jag sjuk och kan inte komma till jobbet i dag.",
+        "Jag är tyvärr sjuk och kan inte komma till arbetet i dag.",
+        "Tyvärr är jag sjuk och kan inte komma till arbetet i dag.",
+        "Jag är tyvärr sjuk och kan inte komma på jobbet i dag.",
+        "Jag är tyvärr sjuk och kan inte komma till jobbet idag.",
+        "Tyvärr är jag sjuk och kan inte komma till jobbet idag.",
+        "Jag är tyvärr sjuk och kan inte jobba i dag.",
+        "Tyvärr är jag sjuk och kan inte jobba i dag."
+      ],
+      "hint": "If tyvärr comes first, the verb comes next.",
+      "explanation": "Model: Jag är tyvärr sjuk och kan inte komma till jobbet i dag. With tyvärr first: Tyvärr är jag sjuk … (verb second)."
+    },
+    {
+      "id": "sv-38-c2",
+      "prompt": "Write in Swedish: “Remember to send the sick note!” (sick note = sjukintyget)",
+      "answers": [
+        "Kom ihåg att skicka sjukintyget!",
+        "Kom ihåg att skicka sjukintyget.",
+        "Kom ihåg att skicka in sjukintyget!",
+        "Glöm inte att skicka sjukintyget!",
+        "Glöm inte att skicka in sjukintyget!"
+      ],
+      "hint": "A task: komma ihåg att + infinitive.",
+      "explanation": "Model: Kom ihåg att skicka sjukintyget! Glöm inte att … also works. Minns att … is wrong for a task."
+    },
+    {
+      "id": "sv-38-c3",
+      "prompt": "Write the date 23.7. in words, as you say it: den …",
+      "answers": [
+        "den tjugotredje juli",
+        "tjugotredje juli",
+        "den tjugotredje i sjunde",
+        "den tjugotredje sjunde"
+      ],
+      "hint": "Ordinal + month.",
+      "explanation": "Model: den tjugotredje juli. In Finland people also say den tjugotredje i sjunde."
+    },
+    {
+      "id": "sv-38-c4",
+      "prompt": "Which sentence means that the meeting is moved to a later time, without any doubt?",
+      "answers": [
+        "Vi skjuter upp mötet till torsdag."
+      ],
+      "options": [
+        "Vi skjuter upp mötet till torsdag.",
+        "Vi tidigarelägger mötet till torsdag.",
+        "Vi flyttar fram mötet."
+      ],
+      "hint": "One of these can be read two ways.",
+      "explanation": "Skjuta upp = later. Tidigarelägga = earlier. Flytta fram means later to most people in Finland but earlier to many in Sweden, so always add the new day."
+    },
+    {
+      "id": "sv-38-c5",
+      "prompt": "Mix with Lecture 27: the meeting was last Monday. Mötet var ___.",
+      "answers": [
+        "i måndags"
+      ],
+      "options": [
+        "i måndags",
+        "på måndag",
+        "på måndagar"
+      ],
+      "hint": "A Monday that has passed.",
+      "explanation": "I + day + s for the last one, as in Lecture 27: i måndags. På måndag is the coming Monday, på måndagar every Monday."
+    },
+    {
+      "id": "sv-38-c6",
+      "prompt": "Write in Swedish: “I don't remember what she was called.”",
+      "answers": [
+        "Jag kommer inte ihåg vad hon hette.",
+        "Jag minns inte vad hon hette.",
+        "Jag kommer inte ihåg vad hon heter.",
+        "Jag minns inte vad hon heter."
+      ],
+      "hint": "An indirect question keeps the order: vad hon hette.",
+      "explanation": "Model: Jag kommer inte ihåg vad hon hette. Inside the sentence, vad hon hette keeps subject-verb order (an indirect question), not vad hette hon."
+    },
+    {
+      "id": "sv-38-c7",
+      "prompt": "You give your view on healthcare. Which start fits a YKI Din åsikt best?",
+      "answers": [
+        "Det sägs ofta att vården i Finland är bra. Jag håller delvis med."
+      ],
+      "options": [
+        "Det sägs ofta att vården i Finland är bra. Jag håller delvis med.",
+        "Den offentliga vården i Finland fungerar bra. Ja.",
+        "Jag håller med delvis att vården är bra."
+      ],
+      "hint": "The statement in your own words, then your position.",
+      "explanation": "Say the statement in new words, then your position. The second just repeats the card. In the third, delvis goes before med (håller delvis med), and håller med needs om: håller med om att …"
+    }
+  ],
+  "assignment": {
+    "title": "Lecture 38 mission: Min åsikt om vården i Finland",
+    "instructions": "CORE: Din åsikt: “Den offentliga vården i Finland fungerar bra.” Plan for one minute, then speak for 1 minute 30 seconds (about 60–90 words): the statement in your words, your position, two arguments, a comparison with your home country and an ending.\n\nWRITE: A formal e-mail of 50–80 words to your manager: you are ill, since when, how long you will be away, and what someone else must take over.\n\nRETURN: Tomorrow, make the sick call from memory: who you are, what is wrong, till och med which day, and who can take over one task.",
+    "model": "Det sägs ofta att vården i Finland är bra och billig. Jag håller delvis med. Å ena sidan är personalen kunnig, och ett besök kostar inte mycket. Till exempel fick min granne en ny höft utan att betala mycket. Å andra sidan är köerna långa. Det kan ta veckor att få en tid på hälsostationen. Jämfört med Indien är vården billig här, men i Pune går det snabbare om man kan betala. Sammanfattningsvis fungerar vården bra, men hälsostationerna behöver mer personal."
+  },
+  "takeaways": [
+    "Call in sick with three facts: Jag är sjuk … Jag är sjukskriven till och med … Kan någon annan ta över …?",
+    "A task is komma ihåg att (Kom ihåg att ringa!). A memory is minnas or komma ihåg. Inte goes inside: kommer inte ihåg.",
+    "Dates take ordinals: den tjugotredje juli (23.7.). To move a meeting, say the new day; skjuta upp = later, tidigarelägga = earlier."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Teamledare",
+      "fi": "Hej Alex! Du ringer tidigt.",
+      "en": "Hi Alex! You're calling early."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Hej Johanna. Jag är tyvärr fortfarande sjuk. Jag har haft feber sedan i går, så jag kan inte jobba i dag.",
+      "en": "Hi Johanna. Unfortunately I'm still ill. I've had a fever since yesterday, so I can't work today."
+    },
+    {
+      "speaker": "Teamledare",
+      "fi": "Åh nej, det var tråkigt att höra. Har du kontaktat företagshälsovården?",
+      "en": "Oh no, I'm sorry to hear that. Have you contacted occupational health care?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Ja, jag ringde dit i morse. Sjukskötaren skrev ett intyg till och med söndag, så på måndag är jag nog tillbaka.",
+      "en": "Yes, I called them this morning. The nurse wrote a sick note up to and including Sunday, so I'll probably be back on Monday."
+    },
+    {
+      "speaker": "Teamledare",
+      "fi": "Bra. Finns det något i dag som någon annan måste ta över?",
+      "en": "Good. Is there anything today that someone else has to take over?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Kundmötet klockan två. Kan Tuomas hålla presentationen? Bilderna ligger i vår gemensamma mapp.",
+      "en": "The client meeting at two. Can Tuomas give the presentation? The slides are in our shared folder."
+    },
+    {
+      "speaker": "Teamledare",
+      "fi": "Det fixar jag. Och vårt projektmöte på måndag? Det är nog bäst att vi flyttar det.",
+      "en": "I'll sort that out. And our project meeting on Monday? It's probably best that we move it."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Ja, gärna. Passar det på tisdag?",
+      "en": "Yes, please. Does Tuesday suit you?"
+    },
+    {
+      "speaker": "Teamledare",
+      "fi": "Tisdag är fulltecknad. Vad sägs om torsdag den tjugotredje klockan tio?",
+      "en": "Tuesday is fully booked. How about Thursday the twenty-third at ten?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Det passar bra. Då hinner jag bli frisk.",
+      "en": "That suits me well. Then I'll have time to get well."
+    },
+    {
+      "speaker": "Teamledare",
+      "fi": "Toppen. Krya på dig nu, och säg till om du blir sämre.",
+      "en": "Great. Get well soon, and let me know if you get worse."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Tack, det ska jag göra. Hej då!",
+      "en": "Thanks, I will. Bye!"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Hej Alex! Henrik undrar var du är. Lektionen har redan börjat.",
+      "en": "Hi Alex! Henrik is wondering where you are. The lesson has already started."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Oj, förlåt! Jag kom inte ihåg att skriva till honom. Jag har feber och ligger i sängen.",
+      "en": "Oh, sorry! I didn't remember to write to him. I have a fever and I'm lying in bed."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Stackars dig! Jag säger till honom. I dag pratar vi förresten om vården i Finland.",
+      "en": "Poor you! I'll tell him. Today we're talking about healthcare in Finland, by the way."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Passande! I morse fick jag vänta i telefonkö i tjugo minuter.",
+      "en": "How fitting! This morning I had to wait in a phone queue for twenty minutes."
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Men du fick hjälp i alla fall. På hälsostationen hade det kanske tagit flera dagar.",
+      "en": "But you got help anyway. At the health centre it might have taken several days."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Precis, det kan jag säga i min åsikt på måndag. Påminn mig om läxan, är du snäll!",
+      "en": "Exactly, I can say that in my opinion on Monday. Remind me about the homework, please!"
+    },
+    {
+      "speaker": "Elin",
+      "fi": "Det ska jag göra. Vila nu, och krya på dig!",
+      "en": "I will. Rest now, and get well soon!"
+    }
+  ],
+  "resources": [
+    {
+      "label": "YKI practice site: Swedish, intermediate speaking (University of Jyväskylä)",
+      "url": "https://ykitesti.solki.jyu.fi/tutustu-testiin/svenska/mellanniva-talproduktion/",
+      "description": "Try the official practice dialogues. Each turn has 10–25 seconds, the same time as today's three YKI dialogues."
+    },
+    {
+      "label": "Sjukdagpenning (Kela)",
+      "url": "https://www.kela.fi/sjukdagpenning",
+      "description": "Finland-Swedish facts about pay when an illness lasts longer. Find out after how many days Kela can pay sjukdagpenning, and who pays your salary before that."
+    },
+    {
+      "label": "Hälsostationer (Helsingfors stad)",
+      "url": "https://www.hel.fi/sv/social-och-halsovardstjanster/halsovard/halsostationer",
+      "description": "Real Finland-Swedish text about Helsinki's health stations. Find two ways to contact your hälsostation, and use one fact in your opinion on healthcare."
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-38-word-1",
+        "fi": "sjukskriven",
+        "en": "on sick leave",
+        "example": "Jag är sjukskriven till och med söndag.",
+        "translation": "I'm on sick leave up to and including Sunday.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-2",
+        "fi": "ett sjukintyg",
+        "en": "a sick note, a medical certificate",
+        "example": "Sjukskötaren skrev ett sjukintyg för tre dagar.",
+        "translation": "The nurse wrote a sick note for three days.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-3",
+        "fi": "företagshälsovården",
+        "en": "occupational health care",
+        "example": "Jag ringde företagshälsovården klockan åtta.",
+        "translation": "I called occupational health care at eight.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-4",
+        "fi": "en ersättare / en vikarie",
+        "en": "a substitute, a replacement",
+        "example": "Vi behöver en ersättare för kundmötet.",
+        "translation": "We need a substitute for the client meeting.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-5",
+        "fi": "Krya på dig!",
+        "en": "Get well soon!",
+        "example": "Krya på dig, och vila ordentligt!",
+        "translation": "Get well soon, and rest properly!",
+        "level": "A2"
+      },
+      {
+        "id": "sv-38-word-6",
+        "fi": "komma ihåg (kom ihåg, har kommit ihåg)",
+        "en": "remember",
+        "example": "Kommer du ihåg vad talaren hette?",
+        "translation": "Do you remember what the speaker was called?",
+        "level": "A2"
+      },
+      {
+        "id": "sv-38-word-7",
+        "fi": "minnas (minns, mindes, har mints)",
+        "en": "remember (a memory)",
+        "example": "Jag minns min första arbetsdag mycket väl.",
+        "translation": "I remember my first working day very well.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-8",
+        "fi": "påminna någon om något",
+        "en": "remind someone of something",
+        "example": "Kalendern påminner mig om mötet.",
+        "translation": "The calendar reminds me of the meeting.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-9",
+        "fi": "fulltecknad",
+        "en": "fully booked",
+        "example": "Min kalender är fulltecknad hela veckan.",
+        "translation": "My calendar is fully booked all week.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-10",
+        "fi": "skjuta upp (sköt upp, har skjutit upp)",
+        "en": "postpone",
+        "example": "Vi skjuter upp mötet till den tjugotredje.",
+        "translation": "We're postponing the meeting to the twenty-third.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-11",
+        "fi": "i alla fall",
+        "en": "anyway, at least",
+        "example": "Det regnade, men vi hade roligt i alla fall.",
+        "translation": "It rained, but we had fun anyway.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-38-word-12",
+        "fi": "en lön",
+        "en": "a salary",
+        "example": "Lönen kommer den femtonde varje månad.",
+        "translation": "The salary comes on the fifteenth of every month.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-38-word-13",
+        "fi": "säga upp sig",
+        "en": "resign",
+        "example": "Han sa upp sig och började studera.",
+        "translation": "He resigned and started studying.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-14",
+        "fi": "jobba över",
+        "en": "work overtime",
+        "example": "Före en deadline jobbar vi ofta över.",
+        "translation": "Before a deadline we often work overtime.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-15",
+        "fi": "en föreläsning",
+        "en": "a lecture",
+        "example": "Föreläsningen börjar klockan elva i sal B.",
+        "translation": "The lecture starts at eleven in room B.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-16",
+        "fi": "göra anteckningar",
+        "en": "take notes",
+        "example": "Jag gjorde anteckningar under hela föreläsningen.",
+        "translation": "I took notes during the whole lecture.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-17",
+        "fi": "ett studielån",
+        "en": "a student loan",
+        "example": "Många studerande tar studielån för att klara sig.",
+        "translation": "Many students take a student loan to get by.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-38-word-18",
+        "fi": "en kö (köer)",
+        "en": "a queue",
+        "example": "Köerna till hälsostationen är långa på hösten.",
+        "translation": "The queues to the health centre are long in autumn.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-38-word-19",
+        "fi": "underbemannad",
+        "en": "understaffed",
+        "example": "Avdelningen är underbemannad under semestertiden.",
+        "translation": "The ward is understaffed during the holiday season.",
+        "level": "B1"
+      }
+    ],
+    "pronunciation": {
+      "text": "Jag kommer inte ihåg. Kom ihåg att ringa! Vi skjuter upp mötet. Vänta i kö.",
+      "tip": "In a particle verb the small word takes the stress: kommer inte iHÅG, skjuter UPP, jobba ÖVER (Lecture 27: gick SÖNDER). Kö is said with a hard k, as in kaffe: no tj-sound, although ö is a front vowel. In sjukskriven the first sound is the sj-sound."
+    },
+    "reading_passage": {
+      "text": "Insändare: Låt inte köerna växa\n\nI april blev jag sjuk. Jag ringde min hälsostation klockan åtta och väntade i telefonkö i fyrtio minuter. Sedan fick jag en tid hos läkaren, men först tre veckor senare. Då var jag redan nästan frisk.\n\nJag vill säga en sak tydligt: personalen på hälsostationen är fantastisk. Sjukskötaren som till slut ringde tillbaka var både kunnig och vänlig. Problemet är inte människorna. Problemet är att det finns för få av dem. Många hälsostationer är underbemannade, och när en läkare slutar dröjer det länge innan en ny börjar.\n\nMin granne har ett jobb med företagshälsovård. När hon blev förkyld i maj fick hon en tid samma dag. Jag tycker inte att hon ska ha sämre service. Men det är orättvist att en pensionär eller en arbetslös får vänta i veckor, medan den som har jobb får hjälp på några timmar.\n\nVad kan man göra? För det första borde fler ärenden skötas digitalt. Ett recept eller ett enkelt intyg kräver inte alltid ett besök. För det andra måste arbetet på hälsostationerna bli mer lockande, med bättre lön och rimliga arbetsdagar. Sist men inte minst borde vi alla använda jouren bara när det verkligen är bråttom.\n\nVården i Finland är bra när man väl får den. Låt oss se till att alla får den i tid.\n\nMarita, pensionär i Helsingfors",
+      "gist": {
+        "prompt": "What is the writer's main point?",
+        "options": [
+          "The staff are good, but there are too few of them, so the queues are unfair",
+          "The staff at the health centre are unkind and should be replaced",
+          "Occupational health care should be closed so that everyone waits the same"
+        ],
+        "answer": 0,
+        "explanation": "Problemet är inte människorna. Problemet är att det finns för få av dem. She also says she does not want her neighbour to get worse service."
+      },
+      "detail": {
+        "prompt": "What is her first suggestion?",
+        "options": [
+          "More matters should be handled digitally",
+          "Pensioners should use occupational health care",
+          "Patients should pay more for a visit"
+        ],
+        "answer": 0,
+        "explanation": "För det första borde fler ärenden skötas digitalt: a prescription or a simple certificate does not always need a visit."
+      }
+    },
+    "reading": {
+      "text": "INTRANÄTET – Så anmäler du sjukfrånvaro\n\n1. Kontakta din chef före klockan nio samma dag: ring, skicka sms eller mejla.\n2. Säg hur länge du tror att du blir borta och om något arbete måste tas över av en kollega.\n3. Dag 1–3: En egen sjukanmälan räcker. Du behöver inget intyg.\n4. Från dag 4: Du behöver ett sjukintyg från företagshälsovården eller en annan läkare. Skicka det till din chef så snart som möjligt.\n5. Ett sjukt barn under tio år: Du får stanna hemma upp till fyra dagar. Meddela din chef på samma sätt.\n6. Är du sjuk under din semester? Kontakta din chef genast, så kan dagarna flyttas till en senare tidpunkt.\n\nFrågor? Kontakta personalavdelningen, anknytning 245.",
+      "question": "Alex is ill for the fourth day in a row. What does he need now?",
+      "options": [
+        "A sick note from occupational health care or another doctor",
+        "Only a text message to his boss",
+        "An e-mail to the personnel department"
+      ],
+      "answer": 0,
+      "explanation": "Från dag 4: Du behöver ett sjukintyg från företagshälsovården eller en annan läkare. Days 1–3 need only his own report."
+    },
+    "listening": {
+      "text": "Det är fredag den 17 juli på eftermiddagen. Alex har sovit i tre timmar. När han vaknar har han tre nya röstmeddelanden.\n\nMeddelande ett, klockan 12.40: Hej Alex, det här är sjukskötare Maria Lindqvist på företagshälsovården. Vi pratade i morse. Ditt sjukintyg gäller till och med söndag den 19 juli, och du hittar det i appen. Skicka det vidare till din chef. Drick mycket och vila. Om febern stiger över 39 grader, eller om du får svårt att andas, ska du ringa oss genast. På kvällen och i helgen ringer du jouren. Om du fortfarande har feber på måndag morgon, boka en tid hos läkare. Vi svarar i telefon vardagar mellan klockan åtta och fyra. Krya på dig!\n\nMeddelande två, klockan 15.10: Hej, Tuomas här. Johanna sa att du är sjuk. Kundmötet gick bra, så du behöver inte oroa dig. Jag hittade bilderna i den gemensamma mappen, men den senaste versionen saknade siffrorna från juni. Jag använde den gamla versionen i stället, och kunden märkte ingenting. De vill ha ett nytt möte efter semestrarna, kanske den tjugofemte augusti. Kom ihåg att Johanna har semester från och med den tjugosjunde juli, så vi måste bestämma allt på torsdag. Ha en lugn helg!\n\nMeddelande tre, klockan 16.05: Hej Alex, Henrik här. Elin berättade att du har feber, så du är förlåten för i dag. Här kommer läxan till måndag den tjugonde. Förbered en Din åsikt om påståendet ”Den offentliga vården i Finland fungerar bra”. Tala i en och en halv minut, och jämför gärna med ditt hemland. Skriv också ett formellt mejl till en chef om att du är sjuk. Max åttio ord. Och kom ihåg: om du inte kan komma, skicka ett meddelande innan lektionen börjar. Vi ses på måndag!",
+      "question": "What must Alex do if he still has a fever on Monday morning?",
+      "options": [
+        "Book an appointment with a doctor",
+        "Call the jour at once",
+        "Send the sick note to Tuomas"
+      ],
+      "answer": 0,
+      "explanation": "Maria says: Om du fortfarande har feber på måndag morgon, boka en tid hos läkare. The jour is for evenings and weekends, and the sick note goes to his boss, not Tuomas."
+    },
+    "speaking": {
+      "prompt": "Din åsikt: ”Den offentliga vården i Finland fungerar bra.” Förbered dig i en minut och tala sedan i en och en halv minut. Säg påståendet med egna ord, ta ställning, ge två argument med ett exempel, jämför med ditt hemland och avsluta. (Give your opinion for 1 minute 30 seconds, about 60–90 words: your position, two arguments, a comparison and an ending.)",
+      "help": "Det sägs ofta att … · Jag håller med / håller delvis med / håller inte med · Å ena sidan … Å andra sidan … · Till exempel … · köerna är långa · personalen är kunnig · underbemannad · Jämfört med mitt hemland … · Sammanfattningsvis …",
+      "model": "Det sägs ofta att vården i Finland är bra och billig. Jag håller delvis med. Å ena sidan är personalen kunnig, och ett besök på hälsostationen kostar inte mycket. Till exempel fick min granne en ny höft utan att betala mycket. Å andra sidan är köerna långa. Det kan ta veckor att få en tid hos en läkare, eftersom många hälsostationer är underbemannade. Jämfört med Indien är vården billig här, men i Pune går det snabbare om man kan betala. Sammanfattningsvis fungerar vården bra, men hälsostationerna behöver mer personal."
+    },
+    "writing": {
+      "prompt": "Skriv ett formellt e-postmeddelande till din chef om att du är sjuk. (Write a formal e-mail to your manager: you are ill.)",
+      "situation": "Du vaknar med hög feber och kan inte arbeta. Skriv ett e-postmeddelande till din chef. Berätta att du är sjuk och sedan när, hur länge du blir borta och vilket arbete någon annan måste ta hand om. Kom ihåg att inleda och avsluta meddelandet på lämpligt sätt. (You wake up with a high fever and cannot work. Write an e-mail to your manager: you are ill and since when, how long you will be away, and what work someone else must take over. Open and close it in a suitable way. A workplace e-mail in Finland can use your manager's first name and du, but the tone stays formal: facts, dates and your full name.)",
+      "points": [
+        "Skriv ett ärende och inled artigt. (Write a subject line and a polite greeting.)",
+        "Säg att du är sjuk och sedan när, med fakta. (Say that you are ill and since when, with facts.)",
+        "Säg hur länge du blir borta, med datum: till och med … (Say how long you will be away, with a date.)",
+        "Säg vad någon annan måste ta över och var materialet finns, med en bisats: eftersom … (Say what needs a substitute and where the material is; use a subordinate clause, the step to level 3.)",
+        "Avsluta formellt med hela ditt namn. (Close formally with your full name.)"
+      ],
+      "wordRange": [
+        50,
+        80
+      ],
+      "help": "Ärende: Sjukfrånvaro … · Hej …, · Jag är tyvärr sjuk och kan inte arbeta i dag. · Jag har haft feber sedan … · Jag är sjukskriven till och med … · Eftersom … behöver jag en ersättare. · … känner till projektet. · Materialet finns i … · Med vänliga hälsningar · förnamn och efternamn",
+      "model": "Ärende: Sjukfrånvaro 17–19.7.\n\nHej Johanna,\n\nJag är tyvärr fortfarande sjuk och kan inte arbeta i dag. Jag har haft hög feber sedan i går. Företagshälsovården har skrivit ett sjukintyg till och med söndag den 19 juli, så jag är tillbaka på måndag. Eftersom kundmötet i dag klockan 14 inte kan flyttas, behöver jag en ersättare. Tuomas känner till projektet, och bilderna finns i vår gemensamma mapp.\n\nMed vänliga hälsningar\nAlex Khan"
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "A spoken opinion of 1 minute 30 seconds on “Den offentliga vården i Finland fungerar bra”: the statement in your words, your position, two arguments, a comparison with your home country and an ending. Then a formal e-mail (50–80 words) to your manager: you are ill, how long, and who takes over.",
+    "transferPrompt": "Nu ändrar du påståendet: ”Det borde vara gratis att gå till läkaren.” Ge din åsikt igen med samma struktur, men byt ett argument. (Now the statement changes: a doctor's visit should be free. Give your view again with the same structure, but change one argument.)",
+    "returnPrompt": "Without looking, call in sick: who you are, what is wrong, till och med which day, and who can take over one task.",
+    "successChecks": [
+      "Say the statement in your own words, not the card's.",
+      "Give your position early: Jag håller med / håller delvis med / håller inte med.",
+      "Give two arguments, each with a reason or an example (Å ena sidan … Å andra sidan …).",
+      "Compare with your home country in at least one sentence: Jämfört med …",
+      "End with Sammanfattningsvis … and keep talking until the time is nearly up."
+    ],
+    "requiredSkills": [
+      "speaking",
+      "writing"
+    ]
+  },
+  "extraSteps": [
+    {
+      "id": "yki-tasks",
+      "after": "recall",
+      "kind": "yki-speaking",
+      "label": "YKI tasks",
+      "description": "Three YKI work dialogues (call in sick, a seminar break, book a meeting) and three Din åsikt statements on health, sport and care.",
+      "minutes": 25,
+      "action": "Read each card in 15 seconds and answer every turn in time. For Din åsikt, plan for one minute, then speak for 1 minute 30 seconds.",
+      "parts": [
+        {
+          "type": "dialogue",
+          "id": "sv-38-yki-sjuk",
+          "title": "Samtal · Sjuk i dag",
+          "intro": "You make the call, so you speak first after the boss answers. Henrik's rules: answer within the time, do what the cue asks, and use your own words, not the cue's. Inventing details is fine. From this chapter each turn has the test's own time, 10–25 seconds. The models use an example name, Ravi: say your own.",
+          "bookRef": "Förbered dig, Dialog 1, s. 79–80",
+          "situation": {
+            "fi": "Du jobbar i en sportaffär. Din arbetsdag börjar klockan nio, men du vaknade i natt med hög feber. Du ringer till butikschefen.",
+            "en": "You work in a sports shop. Your working day starts at nine, but you woke up in the night with a high fever. You call the shop manager."
+          },
+          "readSeconds": 15,
+          "partner": {
+            "role": "Butikschef",
+            "voice": "Elin"
+          },
+          "turns": [
+            {
+              "who": "partner",
+              "fi": "Stenbergs Sport, Linda här.",
+              "en": "Stenberg's Sport, Linda speaking."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Presentera dig och säg att du inte kan komma till jobbet.)",
+                "en": "(Say who you are and that you cannot come to work.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Hej, det är Ravi. Jag är sjuk och kan inte komma i dag.",
+                "Hej Linda, det är Ravi. Jag är tyvärr sjuk. Jag vaknade med hög feber i natt, så jag kan inte komma till jobbet i dag."
+              ],
+              "tip": "Your name, then the news, then one fact: hög feber, ont i halsen."
+            },
+            {
+              "who": "partner",
+              "fi": "Oj, vad tråkigt. Har du varit i kontakt med företagshälsovården?",
+              "en": "Oh, that's too bad. Have you been in touch with occupational health care?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara nekande och berätta vad du ska göra.)",
+                "en": "(Say no and tell her what you will do.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Nej, inte än. Jag ringer dit när de öppnar.",
+                "Nej, inte ännu, eftersom de öppnar först klockan åtta. Jag ringer dit direkt och försöker få en tid i dag."
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Bra. Hur länge tror du att du blir borta?",
+              "en": "Good. How long do you think you'll be away?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara och förklara.)",
+                "en": "(Answer and explain.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Kanske två eller tre dagar.",
+                "Jag vet inte riktigt än. Kanske till och med onsdag, men jag ringer när jag har pratat med läkaren."
+              ],
+              "tip": "Till och med onsdag = Wednesday included."
+            },
+            {
+              "who": "partner",
+              "fi": "Okej. I eftermiddag kommer en stor leverans. Vem kan ta emot den?",
+              "en": "OK. A big delivery is coming this afternoon. Who can receive it?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Föreslå en lösning.)",
+                "en": "(Suggest a solution.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Kanske Jonas kan göra det?",
+                "Jonas har gjort det förut, så han kan säkert ta emot den. Listan över varorna ligger på mitt skrivbord."
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Det låter bra, jag frågar honom. Krya på dig nu, och hör av dig om något ändras.",
+              "en": "That sounds good, I'll ask him. Get well soon, and get in touch if anything changes."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Tacka och avsluta samtalet artigt.)",
+                "en": "(Thank her and end the call politely.)"
+              },
+              "seconds": 10,
+              "models": [
+                "Tack, det ska jag göra. Hej då!",
+                "Tack så mycket. Jag hör av mig i morgon. Hej då!"
+              ]
+            }
+          ],
+          "phrases": [
+            {
+              "fi": "Jag är tyvärr sjuk och kan inte komma i dag.",
+              "en": "Unfortunately I'm ill and can't come today."
+            },
+            {
+              "fi": "Jag vaknade med hög feber i natt.",
+              "en": "I woke up with a high fever in the night."
+            },
+            {
+              "fi": "Jag ringer företagshälsovården när de öppnar.",
+              "en": "I'll call occupational health care when they open."
+            },
+            {
+              "fi": "Kanske till och med onsdag.",
+              "en": "Maybe up to and including Wednesday."
+            },
+            {
+              "fi": "… kan säkert ta över.",
+              "en": "… can surely take over."
+            },
+            {
+              "fi": "Jag hör av mig i morgon.",
+              "en": "I'll be in touch tomorrow."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "id": "sv-38-yki-seminarium",
+          "title": "Samtal · Pausen på utbildningsdagen",
+          "intro": "Your colleague speaks first. Give your view, one detail more than the cue asks, and keep the talk going with a question or a suggestion.",
+          "bookRef": "Förbered dig, Dialog 2, s. 81–82",
+          "situation": {
+            "fi": "Du är på en utbildningsdag om digital säkerhet tillsammans med en kollega. Det är kaffepaus, och ni pratar om föreläsningarna på förmiddagen.",
+            "en": "You are at a training day about digital security with a colleague. It is the coffee break, and you talk about the morning's lectures."
+          },
+          "readSeconds": 15,
+          "partner": {
+            "role": "Kollega",
+            "voice": "Henrik"
+          },
+          "turns": [
+            {
+              "who": "partner",
+              "fi": "Vad tyckte du om den första föreläsningen? Jag tyckte att den var lite lång.",
+              "en": "What did you think of the first lecture? I thought it was a bit long."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Håll inte med och berätta vad du tyckte.)",
+                "en": "(Disagree and say what you thought.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Jag tyckte att den var bra. Jag lärde mig mycket.",
+                "Jag håller faktiskt inte med. Den var lång, men talaren gav många konkreta exempel som vi kan använda på jobbet."
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Okej, det kan stämma. Men vad hette hon nu igen? Jag kommer inte ihåg.",
+              "en": "OK, that may be true. But what was her name again? I don't remember."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Säg att du inte heller minns och föreslå hur ni kan ta reda på det.)",
+                "en": "(Say you don't remember either and suggest how you can find out.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Jag minns inte heller. Vi kan titta i programmet.",
+                "Jag minns inte heller, tyvärr. Men hennes namn står säkert i programmet, eller så kan vi fråga vid informationsdisken."
+              ],
+              "tip": "Not … either = inte heller, never inte också."
+            },
+            {
+              "who": "partner",
+              "fi": "Just det, här står det: Sara Holm. Gjorde du anteckningar? Jag hann inte skriva så mycket.",
+              "en": "Right, here it says: Sara Holm. Did you take notes? I didn't manage to write much."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara jakande och erbjud hjälp.)",
+                "en": "(Say yes and offer help.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Ja, jag kan skicka dem till dig.",
+                "Ja, ganska många. Jag kan skicka dem till dig i kväll, om du vill."
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Tack, gärna! Den andra talaren var däremot svår att följa. Han pratade så snabbt.",
+              "en": "Thanks, I'd like that! The second speaker, on the other hand, was hard to follow. He spoke so fast."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Kommentera och fråga när och var nästa föreläsning börjar.)",
+                "en": "(Comment, and ask when and where the next lecture starts.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Ja, det var svårt. När börjar nästa föreläsning?",
+                "Ja, och han hade för mycket text på bilderna. Vet du förresten när och var nästa föreläsning börjar?"
+              ],
+              "tip": "After Vet du …, the question keeps subordinate order: när nästa föreläsning börjar."
+            },
+            {
+              "who": "partner",
+              "fi": "Klockan elva, i sal B på andra våningen. Vi har tio minuter på oss.",
+              "en": "At eleven, in room B on the second floor. We have ten minutes."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Föreslå något ni kan göra innan.)",
+                "en": "(Suggest something you can do first.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Ska vi ta en kopp kaffe till?",
+                "Då hinner vi ta en kopp kaffe till. Ska vi gå dit nu, innan kön blir lång?"
+              ]
+            }
+          ],
+          "phrases": [
+            {
+              "fi": "Jag håller faktiskt inte med.",
+              "en": "Actually, I don't agree."
+            },
+            {
+              "fi": "Talaren gav många konkreta exempel.",
+              "en": "The speaker gave many concrete examples."
+            },
+            {
+              "fi": "Jag minns inte heller.",
+              "en": "I don't remember either."
+            },
+            {
+              "fi": "Jag kan skicka mina anteckningar till dig.",
+              "en": "I can send you my notes."
+            },
+            {
+              "fi": "Vet du när och var nästa föreläsning börjar?",
+              "en": "Do you know when and where the next lecture starts?"
+            },
+            {
+              "fi": "Jag blev i alla fall inspirerad.",
+              "en": "Anyway, I was inspired."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "id": "sv-38-yki-mote",
+          "title": "Samtal · Boka ett möte",
+          "intro": "A colleague calls to book a meeting. Say days with dates, and when you say no, give a reason and a new suggestion.",
+          "bookRef": "Förbered dig, Dialog 3, s. 83–84",
+          "situation": {
+            "fi": "Du och en kollega ska planera introduktionen för nya anställda i augusti. Kollegan ringer för att boka ett möte. Det är juli, och många ska snart ha semester.",
+            "en": "You and a colleague are planning the introduction for new employees in August. Your colleague calls to book a meeting. It is July, and many people will soon be on holiday."
+          },
+          "readSeconds": 15,
+          "partner": {
+            "role": "Kollega",
+            "voice": "Maja"
+          },
+          "turns": [
+            {
+              "who": "partner",
+              "fi": "Hej! Jag ringer om introduktionen för de nya. Vi borde ses en gång innan semestrarna. När skulle det passa dig?",
+              "en": "Hi! I'm calling about the introduction for the new people. We should meet once before the holidays. When would suit you?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Föreslå en dag och en tid nästa vecka.)",
+                "en": "(Suggest a day and a time next week.)"
+              },
+              "seconds": 15,
+              "models": [
+                "Passar det på tisdag klockan tio?",
+                "Nästa vecka är jag ganska fri. Vad sägs om tisdag förmiddag, till exempel klockan tio?"
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Tisdag går tyvärr inte, då är jag på kurs hela dagen. Kan du på torsdag klockan åtta?",
+              "en": "Tuesday doesn't work, unfortunately: I'm on a course all day. Can you do Thursday at eight?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara nekande och förklara varför.)",
+                "en": "(Say no and explain why.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Tyvärr inte. Jag lämnar barnen på dagis då.",
+                "Tyvärr passar det inte, för på torsdagar lämnar jag barnen på daghemmet och kommer inte till jobbet förrän halv nio."
+              ],
+              "tip": "Daghem (or dagis) is the Finland-Swedish word; in Sweden people say förskola."
+            },
+            {
+              "who": "partner",
+              "fi": "Då blir det svårt nästa vecka. Jag har semester från och med den tjugonde. Vad sägs om måndag den tionde augusti?",
+              "en": "Then next week will be difficult. I'm on holiday from the twentieth. How about Monday the tenth of August?"
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Svara jakande, upprepa datumet och föreslå en tid.)",
+                "en": "(Say yes, repeat the date and suggest a time.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Ja, den tionde passar. Klockan nio?",
+                "Måndag den tionde augusti passar bra. Ska vi säga klockan nio, så har vi hela förmiddagen på oss?"
+              ],
+              "tip": "Repeating the date shows that you understood: den tionde augusti."
+            },
+            {
+              "who": "partner",
+              "fi": "Klockan nio blir bra. Det är verkligen svårt att hitta en tid på sommaren.",
+              "en": "Nine o'clock is fine. It's really hard to find a time in summer."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Håll med och berätta varför du har mycket att göra just nu.)",
+                "en": "(Agree and say why you are busy right now.)"
+              },
+              "seconds": 20,
+              "models": [
+                "Ja, verkligen. Jag har mycket jobb nu.",
+                "Ja, verkligen. Två kolleger har redan semester, så jag sköter deras kunder också. Jag har fullt upp hela juli."
+              ]
+            },
+            {
+              "who": "partner",
+              "fi": "Precis. Men nu har vi i alla fall en tid. Jag bokar ett mötesrum och skickar en inbjudan.",
+              "en": "Exactly. But at least we have a time now. I'll book a meeting room and send an invitation."
+            },
+            {
+              "who": "learner",
+              "cue": {
+                "fi": "(Tacka och avsluta samtalet.)",
+                "en": "(Thank your colleague and end the call.)"
+              },
+              "seconds": 10,
+              "models": [
+                "Tack! Vi hörs.",
+                "Toppen, tack! Då ses vi den tionde. Ha en skön semester!"
+              ]
+            }
+          ],
+          "phrases": [
+            {
+              "fi": "Vad sägs om tisdag förmiddag?",
+              "en": "How about Tuesday morning?"
+            },
+            {
+              "fi": "Tyvärr passar det inte, för …",
+              "en": "Unfortunately that doesn't suit me, because …"
+            },
+            {
+              "fi": "Måndag den tionde augusti passar bra.",
+              "en": "Monday the tenth of August suits me well."
+            },
+            {
+              "fi": "Jag har fullt upp just nu.",
+              "en": "I'm very busy right now."
+            },
+            {
+              "fi": "Min kalender är fulltecknad.",
+              "en": "My calendar is fully booked."
+            },
+            {
+              "fi": "Ha en skön semester!",
+              "en": "Have a nice holiday!"
+            }
+          ]
+        },
+        {
+          "type": "prompts",
+          "id": "sv-38-din-asikt",
+          "format": "opinion",
+          "title": "Din åsikt · hälsa, idrott och vård",
+          "intro": "Each card is a statement. Plan for one minute, then say what you think and why for 1 minute 30 seconds (about 60–90 words), the test's own time.",
+          "bookRef": "Förbered dig, Din åsikt, s. 74",
+          "prepSeconds": 60,
+          "speakSeconds": 90,
+          "rules": [
+            "Use the minute to plan: one key word for your view, argument 1, argument 2 and the end.",
+            "Say the statement in your own words; do not just read it aloud (Henrik's rule: different words from the prompt).",
+            "Give your position in the first two sentences: Jag håller med, Jag håller delvis med or Jag håller inte med.",
+            "Give two arguments, each with a reason or an example. The guiding questions help, but you need not answer all of them or keep their order.",
+            "Inventing is fine: a friend, a number or a short story makes an argument concrete.",
+            "Keep talking until the time is nearly up, and finish with Sammanfattningsvis … and your view again."
+          ],
+          "frames": [
+            {
+              "fi": "Det sägs ofta att …",
+              "en": "It is often said that …"
+            },
+            {
+              "fi": "Jag håller med / håller delvis med / håller inte med.",
+              "en": "I agree / partly agree / don't agree."
+            },
+            {
+              "fi": "Å ena sidan … Å andra sidan …",
+              "en": "On the one hand … on the other hand …"
+            },
+            {
+              "fi": "Till exempel … · Jämfört med …",
+              "en": "For example … · Compared with …"
+            },
+            {
+              "fi": "Det beror på att …",
+              "en": "That is because …"
+            },
+            {
+              "fi": "Sammanfattningsvis …",
+              "en": "To sum up …"
+            }
+          ],
+          "prompts": [
+            {
+              "id": "sv-38-op-motion",
+              "fi": "Den som tränar regelbundet mår också bättre psykiskt.",
+              "en": "People who exercise regularly also feel better mentally.",
+              "bullets": [
+                "Hur påverkar motion ditt humör?",
+                "Vad gör du själv för att må bra i kroppen och i huvudet?",
+                "Räcker det med motion, eller behövs något mer?"
+              ],
+              "model": "Många säger att träning är bra för både kroppen och själen. Jag håller med. Först och främst sover jag bättre när jag rör på mig. Till exempel cyklar jag till jobbet, och då känner jag mig piggare hela dagen. Dessutom kan man träffa andra människor på ett gym eller i ett lag. Å andra sidan räcker inte motion om någon är riktigt deprimerad. Då behöver man prata med en läkare. Sammanfattningsvis hjälper träning de flesta, men den är ingen medicin mot allt.",
+              "modelEn": "Many people say training is good for both body and soul. I agree. First of all, I sleep better when I move. For example, I cycle to work, and then I feel more alert all day. Also, you can meet other people at a gym or in a team. On the other hand, exercise is not enough if someone is really depressed. Then you need to talk to a doctor. To sum up, training helps most people, but it is not a medicine for everything."
+            },
+            {
+              "id": "sv-38-op-doping",
+              "fi": "Doping borde vara tillåtet inom idrotten.",
+              "en": "Doping should be allowed in sport.",
+              "bullets": [
+                "Varför använder vissa idrottare doping?",
+                "Vad skulle hända med unga idrottare om doping var tillåtet?",
+                "Vem ska bestämma reglerna?"
+              ],
+              "model": "Vissa tycker att doping borde vara tillåtet, eftersom många ändå fuskar. Jag håller inte med. För det första är doping farligt för hälsan. Flera idrottare har blivit allvarligt sjuka. För det andra skulle unga idrottare känna att de också måste dopa sig för att vinna. Det är ett dåligt exempel. Dessutom är det orättvist mot dem som tränar hårt utan medel. Sammanfattningsvis tycker jag att doping ska vara förbjudet, och kontrollerna borde bli ännu bättre.",
+              "modelEn": "Some people think doping should be allowed, because many cheat anyway. I don't agree. Firstly, doping is dangerous for health. Several athletes have become seriously ill. Secondly, young athletes would feel that they also have to dope to win. That is a bad example. Also, it is unfair to those who train hard without drugs. To sum up, I think doping should be forbidden, and the tests should become even better."
+            },
+            {
+              "id": "sv-38-op-gratis",
+              "fi": "Ett läkarbesök borde vara gratis för alla.",
+              "en": "A visit to the doctor should be free for everyone.",
+              "bullets": [
+                "Vad kostar det att träffa en läkare där du bor?",
+                "Vem skulle betala om besöken var gratis?",
+                "Hur är det i ditt hemland?"
+              ],
+              "model": "Det sägs ofta att vården borde vara gratis. Jag håller delvis med. Å ena sidan stannar vissa hemma i dag fast de är sjuka, eftersom de inte har råd. Det kan bli dyrare för samhället senare. Å andra sidan måste någon betala, och då blir skatterna högre. Dessutom kan köerna bli ännu längre om allt är gratis. Jämfört med Indien är vården här ganska billig redan nu. Sammanfattningsvis tycker jag att besöken borde vara gratis för barn, pensionärer och arbetslösa.",
+              "modelEn": "It is often said that care should be free. I partly agree. On the one hand, some people stay at home today even though they are ill, because they cannot afford it. That can be more expensive for society later. On the other hand, someone has to pay, and then taxes go up. Also, the queues could get even longer if everything is free. Compared with India, care here is already fairly cheap. To sum up, I think visits should be free for children, pensioners and the unemployed."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "story": {
+    "object": "a thermometer, a phone with a calendar invitation and tea on a bedside table"
+  }
+}
