@@ -1931,6 +1931,564 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A lost-child announcement, a phone apology between friends, a school letter about bullying and an advice column about too-generous presents: YKI-style texts with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-28-listen-1",
+          "title": "Ett barn har kommit bort",
+          "textType": "Meddelande i högtalare",
+          "situation": {
+            "fi": "Du handlar i ett köpcentrum i Helsingfors och hör ett meddelande i högtalarna. En kvart senare kommer ett nytt meddelande.",
+            "en": "You are shopping in a shopping centre in Helsinki and hear an announcement over the loudspeakers. A quarter of an hour later there is a new announcement."
+          },
+          "lines": [
+            {
+              "speaker": "Informationen",
+              "voice": "Henrik",
+              "fi": "Bästa kunder, vi har ett viktigt meddelande.",
+              "en": "Dear customers, we have an important announcement."
+            },
+            {
+              "speaker": "Informationen",
+              "voice": "Henrik",
+              "fi": "En liten flicka, Ella, fem år, har kommit bort från sin mamma i köpcentret Kampen. Hon sågs senast vid leksaksaffären på andra våningen för ungefär tio minuter sedan.",
+              "en": "A little girl, Ella, five years old, has got lost from her mother in the Kampen shopping centre. She was last seen by the toy shop on the second floor about ten minutes ago."
+            },
+            {
+              "speaker": "Informationen",
+              "voice": "Henrik",
+              "fi": "Ella har långt, mörkt och lockigt hår i två flätor. Hon har en gul regnjacka, blå jeans och röda gummistövlar på sig. Hon har en liten grå kanin av tyg med sig.",
+              "en": "Ella has long, dark, curly hair in two plaits. She is wearing a yellow raincoat, blue jeans and red wellies. She has a little grey cloth rabbit with her."
+            },
+            {
+              "speaker": "Informationen",
+              "voice": "Henrik",
+              "fi": "Om du ser Ella, stanna hos henne och säg till personalen i närmaste butik, eller kom till informationsdisken vid huvudingången på första våningen. Ellas mamma väntar där.",
+              "en": "If you see Ella, stay with her and tell the staff in the nearest shop, or come to the information desk by the main entrance on the first floor. Ella's mother is waiting there."
+            },
+            {
+              "speaker": "Informationen",
+              "voice": "Henrik",
+              "fi": "Tack för hjälpen.",
+              "en": "Thank you for your help."
+            },
+            {
+              "speaker": "Informationen",
+              "voice": "Henrik",
+              "fi": "Bästa kunder, tack till alla som har hjälpt till att leta. Ella har hittats i bokhandeln, och nu är hon hos sin mamma igen. Vi önskar er en trevlig dag.",
+              "en": "Dear customers, thank you to everyone who helped to look. Ella has been found in the bookshop, and now she is with her mother again. We wish you a nice day."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför hör man meddelandet?",
+              "translation": "Why do you hear the announcement?",
+              "options": [
+                "Ett barn har kommit bort",
+                "En butik stänger snart",
+                "Någon har tappat sin plånbok"
+              ],
+              "answers": [
+                "Ett barn har kommit bort"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur gammal är Ella?",
+              "translation": "How old is Ella?",
+              "answers": [
+                "5",
+                "fem",
+                "5 år",
+                "fem år",
+                "hon är fem",
+                "hon är fem år",
+                "hon är 5 år"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad har Ella på fötterna?",
+              "translation": "What does Ella have on her feet?",
+              "options": [
+                "Röda gummistövlar",
+                "Gula stövlar",
+                "Blå gympaskor"
+              ],
+              "answers": [
+                "Röda gummistövlar"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Var väntar Ellas mamma?",
+              "translation": "Where is Ella's mother waiting?",
+              "answers": [
+                "vid informationsdisken",
+                "informationsdisken",
+                "på informationsdisken",
+                "vid infodisken",
+                "infodisken",
+                "vid informationsdisken vid huvudingången",
+                "vid huvudingången",
+                "huvudingången",
+                "i informationen",
+                "informationen",
+                "vid informationen"
+              ],
+              "hint": "Ett ställe i köpcentret."
+            },
+            {
+              "id": "q5",
+              "prompt": "När meddelandet slutar letar man fortfarande efter Ella.",
+              "translation": "When the announcement ends, people are still looking for Ella.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "komma bort (kom bort, har kommit bort)",
+              "en": "get lost (of a person)"
+            },
+            {
+              "fi": "en fläta, flätor",
+              "en": "a plait, a braid"
+            },
+            {
+              "fi": "gummistövlar",
+              "en": "wellies, rubber boots"
+            },
+            {
+              "fi": "ett tyg",
+              "en": "cloth, fabric"
+            },
+            {
+              "fi": "informationsdisken",
+              "en": "the information desk"
+            },
+            {
+              "fi": "en huvudingång",
+              "en": "a main entrance"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-28-listen-2",
+          "title": "Förlåt för i går",
+          "textType": "Telefonsamtal mellan vänner",
+          "situation": {
+            "fi": "Tobias och Jonna är vänner. I går bråkade de. Nu ringer Tobias till Jonna.",
+            "en": "Tobias and Jonna are friends. Yesterday they quarrelled. Now Tobias calls Jonna."
+          },
+          "lines": [
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Hej Jonna, det är Tobias. Har du tid en minut?",
+              "en": "Hi Jonna, it's Tobias. Have you got a minute?"
+            },
+            {
+              "speaker": "Jonna",
+              "voice": "Maja",
+              "fi": "Jo… jag har några minuter innan bussen går.",
+              "en": "Well… I have a few minutes before the bus leaves."
+            },
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Jag vill säga förlåt för i går. Jag skrek åt dig inför alla, och det var dumt av mig. Jag ångrar det verkligen.",
+              "en": "I want to say sorry for yesterday. I shouted at you in front of everyone, and that was stupid of me. I really regret it."
+            },
+            {
+              "speaker": "Jonna",
+              "voice": "Maja",
+              "fi": "Ja, det var det. Jag blev väldigt ledsen. Och alla tittade på oss.",
+              "en": "Yes, it was. I was very upset. And everybody was looking at us."
+            },
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Jag vet. Jag har knappt sovit på två nätter, eftersom jag har en anställningsintervju på torsdag. Men det är ingen ursäkt.",
+              "en": "I know. I've hardly slept for two nights because I have a job interview on Thursday. But that's no excuse."
+            },
+            {
+              "speaker": "Jonna",
+              "voice": "Maja",
+              "fi": "Nej, men det förklarar en del. Varför sa du ingenting om intervjun?",
+              "en": "No, but it explains a few things. Why didn't you say anything about the interview?"
+            },
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Jag ville inte att någon skulle veta, ifall jag inte får jobbet.",
+              "en": "I didn't want anyone to know, in case I don't get the job."
+            },
+            {
+              "speaker": "Jonna",
+              "voice": "Maja",
+              "fi": "Tobias, vi är ju vänner. Du behöver inte gömma sådant för mig.",
+              "en": "Tobias, we're friends, you know. You don't need to hide things like that from me."
+            },
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Du har rätt. Får jag bjuda dig på lunch på lördag? Vi kan gå till kaféet vid torget.",
+              "en": "You're right. Can I treat you to lunch on Saturday? We could go to the café by the square."
+            },
+            {
+              "speaker": "Jonna",
+              "voice": "Maja",
+              "fi": "Gärna, men på lördag jobbar jag hela dagen. Går det på söndag i stället?",
+              "en": "I'd love to, but on Saturday I work all day. Could we do Sunday instead?"
+            },
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Söndag passar perfekt. Klockan ett?",
+              "en": "Sunday suits me perfectly. One o'clock?"
+            },
+            {
+              "speaker": "Jonna",
+              "voice": "Maja",
+              "fi": "Hellre halv två, jag ska till gymmet först. Och lycka till på torsdag! Förhoppningsvis får du jobbet.",
+              "en": "Half past one would be better, I'm going to the gym first. And good luck on Thursday! Hopefully you'll get the job."
+            },
+            {
+              "speaker": "Tobias",
+              "voice": "Alex",
+              "fi": "Tack! Och förresten, din nya frisyr är jättefin. Det borde jag ha sagt i går.",
+              "en": "Thanks! And by the way, your new haircut is really nice. I should have said that yesterday."
+            },
+            {
+              "speaker": "Jonna",
+              "voice": "Maja",
+              "fi": "Haha, tack. Okej, du är förlåten.",
+              "en": "Haha, thanks. Okay, you're forgiven."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Tobias?",
+              "translation": "Why does Tobias call?",
+              "options": [
+                "För att be om förlåtelse",
+                "För att berätta att han har fått ett nytt jobb",
+                "För att låna pengar till bussen"
+              ],
+              "answers": [
+                "För att be om förlåtelse"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Varför har Tobias sovit dåligt?",
+              "translation": "Why has Tobias slept badly?",
+              "options": [
+                "Han är nervös inför en intervju",
+                "Han har varit sjuk",
+                "Grannarna har haft fest"
+              ],
+              "answers": [
+                "Han är nervös inför en intervju"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vilken dag ska de träffas?",
+              "translation": "Which day are they going to meet?",
+              "answers": [
+                "söndag",
+                "på söndag",
+                "söndagen",
+                "på söndagen"
+              ],
+              "hint": "En veckodag."
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur dags ska de träffas?",
+              "translation": "What time are they going to meet?",
+              "answers": [
+                "halv två",
+                "kl halv två",
+                "klockan halv två",
+                "halv 2",
+                "13.30",
+                "kl 13.30",
+                "klockan 13.30",
+                "1.30",
+                "kl 1.30",
+                "tretton och trettio"
+              ],
+              "hint": "Skriv en tid."
+            },
+            {
+              "id": "q5",
+              "prompt": "Jonna är fortfarande arg på Tobias när samtalet slutar.",
+              "translation": "Jonna is still angry with Tobias when the call ends.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "skrika åt någon (skrek)",
+              "en": "shout at someone"
+            },
+            {
+              "fi": "inför alla",
+              "en": "in front of everyone"
+            },
+            {
+              "fi": "ångra",
+              "en": "regret"
+            },
+            {
+              "fi": "en ursäkt",
+              "en": "an excuse; an apology"
+            },
+            {
+              "fi": "gömma",
+              "en": "hide"
+            },
+            {
+              "fi": "förhoppningsvis",
+              "en": "hopefully"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-28-read-1",
+          "title": "KiVa i skolan",
+          "textType": "Brev från skolan",
+          "minutes": 6,
+          "text": "INFORMATION TILL VÅRDNADSHAVARE\n\nHej alla föräldrar och vårdnadshavare i årskurs 3–6!\n\nUnder hösten fortsätter vi med KiVa, vårt program mot mobbning. Varje klass har KiVa-lektioner två gånger i månaden. På lektionerna pratar eleverna om vänskap, om hur man säger ifrån och om hur det känns att bli lämnad utanför.\n\nMobbning är inte alltid slag och sparkar. Det kan också vara att någon retas varje dag, sprider elaka rykten eller inte får vara med i leken. Även meddelanden i mobilen kan vara mobbning, och de tar inte slut när skoldagen är slut.\n\nVad kan du som förälder göra?\n– Fråga ditt barn hur rasterna har varit, inte bara hur lektionerna har gått.\n– Ta det på allvar om ditt barn inte vill gå till skolan eller har ont i magen varje morgon.\n– Kontakta klassläraren via Wilma om du misstänker att ditt barn blir mobbat eller själv mobbar andra.\n\nSkolans KiVa-team träffar de elever som är inblandade och följer upp situationen efter två veckor.\n\nVälkommen på föräldramöte om trygghet i skolan torsdagen den 24 september kl. 18 i skolans matsal.\n\nRektor Annika Holm",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vem är brevet skrivet till?",
+              "translation": "Who is the letter written to?",
+              "options": [
+                "Elevernas föräldrar",
+                "Eleverna i årskurs 3",
+                "Skolans lärare"
+              ],
+              "answers": [
+                "Elevernas föräldrar"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur ofta har klasserna KiVa-lektioner?",
+              "translation": "How often do the classes have KiVa lessons?",
+              "answers": [
+                "två gånger i månaden",
+                "2 gånger i månaden",
+                "två gånger per månad",
+                "2 gånger per månad",
+                "två gånger i månad",
+                "2 ggr i månaden",
+                "två gånger varje månad"
+              ],
+              "hint": "Hur många gånger i månaden?"
+            },
+            {
+              "id": "q3",
+              "prompt": "Enligt brevet kan mobbning fortsätta också efter skoldagen.",
+              "translation": "According to the letter, bullying can also continue after the school day.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska en förälder göra om hen tror att barnet blir mobbat?",
+              "translation": "What should a parent do if they think their child is being bullied?",
+              "options": [
+                "Kontakta klassläraren",
+                "Prata med den andra familjen",
+                "Ringa KiVa-teamet på kvällen"
+              ],
+              "answers": [
+                "Kontakta klassläraren"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Var hålls föräldramötet?",
+              "translation": "Where is the parents' meeting held?",
+              "answers": [
+                "i matsalen",
+                "matsalen",
+                "i skolans matsal",
+                "skolans matsal",
+                "i skolan",
+                "skolan"
+              ],
+              "hint": "Ett rum i skolan."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en vårdnadshavare",
+              "en": "a guardian (parent)"
+            },
+            {
+              "fi": "ett rykte, rykten",
+              "en": "a rumour"
+            },
+            {
+              "fi": "ta något på allvar",
+              "en": "take something seriously"
+            },
+            {
+              "fi": "misstänka",
+              "en": "suspect"
+            },
+            {
+              "fi": "inblandad",
+              "en": "involved"
+            },
+            {
+              "fi": "Wilma",
+              "en": "the online system Finnish schools use to contact parents"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-28-read-2",
+          "title": "För dyra presenter",
+          "textType": "Frågespalt i en tidning",
+          "minutes": 6,
+          "text": "FRÅGA ELSA\n\nMin svärmor ger oss för dyra presenter\n\nHej Elsa! Min man och jag har varit gifta i tre år. Hans mamma är en varm och generös människa, men hennes presenter blir bara större och större. Till jul fick vi en ny tv, och när vår dotter fyllde två år köpte hon en elcykel till oss vuxna, ”så att ni kan hämta lillan från dagis”. Vi har inte råd att ge lika dyra presenter tillbaka, och jag får dåligt samvete varje gång. Min man säger att jag bara ska tacka och njuta. Hur säger jag ifrån utan att såra henne?\n/Generad i Grankulla\n\nHej Generad! Ditt bekymmer är vanligare än du tror. För många människor är presenter ett sätt att visa kärlek, och din svärmor förväntar sig antagligen inte samma sak tillbaka.\n\nMitt råd är att din man pratar med sin mamma, eftersom det är hans förälder. Han kan börja med en komplimang: ”Mamma, du är så generös, och vi uppskattar allt du gör.” Sedan kan han förklara hur ni känner: ”Vi blir lite generade, och vi skulle hellre vilja ha mer av din tid.” Ge henne gärna ett förslag, till exempel att hon tar med barnbarnet till simhallen en gång i månaden.\n\nOch kom ihåg: du är inte skyldig att ge lika dyra presenter tillbaka. En gåva är ingen skuld.\n/Elsa",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är problemet för kvinnan som skriver?",
+              "translation": "What is the problem for the woman who writes?",
+              "options": [
+                "Svärmodern ger för dyra presenter",
+                "Svärmodern hälsar på för ofta",
+                "Svärmodern tycker inte om hennes presenter"
+              ],
+              "answers": [
+                "Svärmodern ger för dyra presenter"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vad köpte svärmodern när barnet fyllde två år?",
+              "translation": "What did the mother-in-law buy when the child turned two?",
+              "answers": [
+                "en elcykel",
+                "elcykel",
+                "en elcykel till de vuxna",
+                "en cykel",
+                "cykel"
+              ],
+              "hint": "Ett ord från texten."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vem tycker Elsa ska prata med svärmodern?",
+              "translation": "Who does Elsa think should talk to the mother-in-law?",
+              "options": [
+                "Kvinnan som skriver",
+                "Kvinnans man",
+                "Personalen på dagis"
+              ],
+              "answers": [
+                "Kvinnans man"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Elsa tror att svärmodern vill ha lika dyra presenter tillbaka.",
+              "translation": "Elsa thinks the mother-in-law wants equally expensive presents back.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilket förslag ger Elsa?",
+              "translation": "What suggestion does Elsa give?",
+              "options": [
+                "Svärmodern kan ge sin tid i stället för saker",
+                "Familjen kan sälja den nya tv:n",
+                "Kvinnan kan ge en ännu dyrare present"
+              ],
+              "answers": [
+                "Svärmodern kan ge sin tid i stället för saker"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en svärmor",
+              "en": "a mother-in-law"
+            },
+            {
+              "fi": "få dåligt samvete",
+              "en": "feel guilty"
+            },
+            {
+              "fi": "ett bekymmer",
+              "en": "a worry, a problem"
+            },
+            {
+              "fi": "antagligen",
+              "en": "probably"
+            },
+            {
+              "fi": "vara skyldig att …",
+              "en": "be obliged to …"
+            },
+            {
+              "fi": "en gåva",
+              "en": "a gift (more formal than en present)"
+            },
+            {
+              "fi": "en skuld",
+              "en": "a debt"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

@@ -2376,6 +2376,308 @@
           }
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A phone call about a flat for rent and a library notice about a swap day, with questions you can check.",
+      "minutes": 10,
+      "action": "Read the questions first, listen twice, then read the text and check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-21-listen-1",
+          "title": "Är tvåan ledig?",
+          "textType": "Telefonsamtal",
+          "situation": {
+            "fi": "Nora ringer till en hyresvärd om en lägenhet i en annons.",
+            "en": "Nora calls a landlord about a flat in an advert."
+          },
+          "lines": [
+            {
+              "speaker": "Hyresvärden",
+              "voice": "Henrik",
+              "fi": "Hej, det är Göran Lindqvist.",
+              "en": "Hi, this is Göran Lindqvist."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Hej! Jag heter Nora Virtanen. Jag ringer om annonsen för tvåan i Vallgård. Är den fortfarande ledig?",
+              "en": "Hi! My name is Nora Virtanen. I'm calling about the advert for the two-room flat in Vallgård. Is it still available?"
+            },
+            {
+              "speaker": "Hyresvärden",
+              "voice": "Henrik",
+              "fi": "Ja, den är ledig från månadsskiftet, alltså den första september.",
+              "en": "Yes, it's available from the turn of the month, that is, the first of September."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Bra. Hur stor är den?",
+              "en": "Good. How big is it?"
+            },
+            {
+              "speaker": "Hyresvärden",
+              "voice": "Henrik",
+              "fi": "Ytan är fyrtiosex kvadratmeter. Det finns ett sovrum, ett vardagsrum och ett ganska stort kök.",
+              "en": "The floor area is forty-six square metres. There is a bedroom, a living room and quite a big kitchen."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Och hur mycket är hyran?",
+              "en": "And how much is the rent?"
+            },
+            {
+              "speaker": "Hyresvärden",
+              "voice": "Henrik",
+              "fi": "Niohundrafemtio euro i månaden. Vatten ingår, men elen betalar du själv.",
+              "en": "Nine hundred and fifty euros a month. Water is included, but you pay the electricity yourself."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Finns det balkong?",
+              "en": "Is there a balcony?"
+            },
+            {
+              "speaker": "Hyresvärden",
+              "voice": "Henrik",
+              "fi": "Nej, tyvärr. Men huset har en gemensam bastu och en tvättstuga i källaren. Och spårvagnshållplatsen ligger relativt nära, bara tre minuter bort.",
+              "en": "No, unfortunately. But the building has a shared sauna and a laundry room in the basement. And the tram stop is relatively close, only three minutes away."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Låter bra. Kan jag komma och titta på lägenheten?",
+              "en": "Sounds good. Can I come and look at the flat?"
+            },
+            {
+              "speaker": "Hyresvärden",
+              "voice": "Henrik",
+              "fi": "Visst. Det är visning på lördag klockan tolv.",
+              "en": "Sure. There is a viewing on Saturday at twelve."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Perfekt, då ses vi på lördag. Tack!",
+              "en": "Perfect, see you on Saturday then. Thanks!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Nora?",
+              "translation": "Why is Nora calling?",
+              "options": [
+                "Hon vill hyra lägenheten",
+                "Hon vill sälja sin lägenhet",
+                "Hon har problem med bastun"
+              ],
+              "answers": [
+                "Hon vill hyra lägenheten"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Från vilket datum är lägenheten ledig?",
+              "translation": "From what date is the flat available?",
+              "answers": [
+                "den första september",
+                "första september",
+                "1 september",
+                "den 1 september",
+                "från den första september",
+                "från första september",
+                "från 1 september",
+                "från den 1 september"
+              ],
+              "hint": "Skriv datumet."
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur mycket är hyran i månaden?",
+              "translation": "How much is the rent per month?",
+              "answers": [
+                "950",
+                "950 euro",
+                "950 €",
+                "niohundrafemtio",
+                "niohundrafemtio euro"
+              ],
+              "hint": "Skriv en siffra."
+            },
+            {
+              "id": "q4",
+              "prompt": "Lägenheten har en egen balkong.",
+              "translation": "The flat has its own balcony.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad måste Nora betala för utöver hyran?",
+              "translation": "What does Nora have to pay for on top of the rent?",
+              "options": [
+                "El",
+                "Vatten",
+                "Bastun"
+              ],
+              "answers": [
+                "El"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ledig",
+              "en": "available, free"
+            },
+            {
+              "fi": "ett månadsskifte",
+              "en": "the turn of the month"
+            },
+            {
+              "fi": "en yta",
+              "en": "an (floor) area"
+            },
+            {
+              "fi": "ingå",
+              "en": "be included"
+            },
+            {
+              "fi": "gemensam",
+              "en": "shared"
+            },
+            {
+              "fi": "relativt",
+              "en": "relatively"
+            },
+            {
+              "fi": "en visning",
+              "en": "a viewing"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-21-read-1",
+          "title": "Byt i stället för att köpa",
+          "textType": "Anslag på biblioteket",
+          "minutes": 5,
+          "text": "BYTESDAG OCH REPARATIONSKAFÉ\n\nLördag 18 oktober kl. 11–15 på Hertonäs bibliotek\n\nHar du kläder, böcker eller leksaker som du inte använder längre? Ta med dem och byt mot något annat! Allt är gratis. Saker ska vara rena och hela. Ta med högst tio saker per person.\n\nFörutom bytesbordet har vi ett reparationskafé. Våra frivilliga hjälper dig att laga till exempel en trasig cykel, en lampa eller en tröja med hål. Du lär dig att göra det själv nästa gång.\n\nVarför? När vi använder saker längre köper vi mindre nytt, och då minskar vår miljöpåverkan.\n\nKl. 13 berättar en expert från HSY hur du sorterar elektronik och farligt avfall.\n\nSaker som ingen tar skänker vi till en loppis. Om du vill ha tillbaka dina egna saker, hämta dem före kl. 15.\n\nVälkommen!",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är huvudidén med evenemanget?",
+              "translation": "What is the main idea of the event?",
+              "options": [
+                "Att använda saker längre i stället för att köpa nytt",
+                "Att sälja gamla saker för pengar",
+                "Att lära sig om nya böcker"
+              ],
+              "answers": [
+                "Att använda saker längre i stället för att köpa nytt"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många saker får en person ta med?",
+              "translation": "How many things may one person bring?",
+              "answers": [
+                "10",
+                "tio",
+                "högst tio",
+                "högst 10",
+                "tio saker",
+                "10 saker",
+                "högst tio saker",
+                "högst 10 saker"
+              ],
+              "hint": "Skriv en siffra eller ett ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "Man måste betala för det man tar från bytesbordet.",
+              "translation": "You have to pay for what you take from the swap table.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilken tid kan du lyssna på experten?",
+              "translation": "At what time can you listen to the expert?",
+              "answers": [
+                "13",
+                "kl 13",
+                "klockan 13",
+                "klockan ett",
+                "ett",
+                "klockan tretton"
+              ],
+              "hint": "Skriv tiden."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad händer med en tröja som ingen har tagit kl. 15?",
+              "translation": "What happens to a jumper that nobody has taken by 3 p.m.?",
+              "options": [
+                "Den går till en loppis",
+                "Den slängs",
+                "Den säljs på biblioteket"
+              ],
+              "answers": [
+                "Den går till en loppis"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "byta",
+              "en": "swap, exchange"
+            },
+            {
+              "fi": "laga",
+              "en": "repair, mend"
+            },
+            {
+              "fi": "trasig",
+              "en": "broken"
+            },
+            {
+              "fi": "en frivillig",
+              "en": "a volunteer"
+            },
+            {
+              "fi": "förutom",
+              "en": "besides, apart from"
+            },
+            {
+              "fi": "skänka",
+              "en": "give away, donate"
+            },
+            {
+              "fi": "en loppis",
+              "en": "a flea market"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

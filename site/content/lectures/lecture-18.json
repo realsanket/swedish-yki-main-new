@@ -418,6 +418,288 @@
           }
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A talk with a school guidance counsellor and an advert for evening courses, with questions you can check.",
+      "minutes": 10,
+      "action": "Read the questions first, listen twice, then read the text and check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-18-listen-1",
+          "title": "Hos studiehandledaren",
+          "textType": "Samtal",
+          "situation": {
+            "fi": "Emilia går i nian. Hon pratar med skolans studiehandledare om gymnasiet.",
+            "en": "Emilia is in year 9. She talks with the school's guidance counsellor about upper secondary school."
+          },
+          "lines": [
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Elin",
+              "fi": "Hej Emilia! Vad vill du göra efter nian?",
+              "en": "Hi Emilia! What do you want to do after year 9?"
+            },
+            {
+              "speaker": "Emilia",
+              "voice": "Maja",
+              "fi": "Ja, lite. Jag vill gå i gymnasiet, men jag vet inte vilket.",
+              "en": "Yes, a bit. I want to go to upper secondary school, but I don't know which one."
+            },
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Elin",
+              "fi": "Vilka ämnen tycker du om?",
+              "en": "Which subjects do you like?"
+            },
+            {
+              "speaker": "Emilia",
+              "voice": "Maja",
+              "fi": "Jag gillar språk och litteratur. Men matte är svårt för mig.",
+              "en": "I like languages and literature. But maths is hard for me."
+            },
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Elin",
+              "fi": "Då kan du titta på gymnasiet i centrum. Det har extra kurser i språk.",
+              "en": "Then you can look at the upper secondary school in the centre. It has extra courses in languages."
+            },
+            {
+              "speaker": "Emilia",
+              "voice": "Maja",
+              "fi": "Okej. Hur kommer man in där?",
+              "en": "OK. How do you get in there?"
+            },
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Elin",
+              "fi": "Det beror på betygen. Du behöver ett medeltal på ungefär åtta. Nu har du sju och en halv, så du måste plugga lite mer i vår.",
+              "en": "It depends on your grades. You need an average of about eight. Now you have seven and a half, so you have to study a bit more this spring."
+            },
+            {
+              "speaker": "Emilia",
+              "voice": "Maja",
+              "fi": "Och om jag inte kommer in?",
+              "en": "And if I don't get in?"
+            },
+            {
+              "speaker": "Studiehandledaren",
+              "voice": "Elin",
+              "fi": "Du kan söka till flera skolor i samma ansökan. Titta på skolornas hemsidor i kväll, och kom tillbaka på torsdag, så pratar vi mer.",
+              "en": "You can apply to several schools in the same application. Look at the schools' websites tonight, and come back on Thursday, and we'll talk more."
+            },
+            {
+              "speaker": "Emilia",
+              "voice": "Maja",
+              "fi": "Tack! Jag kommer på torsdag efter lunch.",
+              "en": "Thanks! I'll come on Thursday after lunch."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad pratar de om?",
+              "translation": "What are they talking about?",
+              "options": [
+                "Emilias val av gymnasium",
+                "Emilias problem med en lärare",
+                "Emilias sommarjobb"
+              ],
+              "answers": [
+                "Emilias val av gymnasium"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Emilia tycker att matte är lätt.",
+              "translation": "Emilia thinks maths is easy.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vilket medeltal behöver Emilia ungefär?",
+              "translation": "Roughly what grade average does Emilia need?",
+              "answers": [
+                "8",
+                "åtta",
+                "ungefär 8",
+                "ungefär åtta",
+                "ett medeltal på åtta",
+                "ett medeltal på 8",
+                "ungefär ett medeltal på åtta"
+              ],
+              "hint": "Skriv en siffra eller ett ord."
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför måste Emilia plugga mer i vår?",
+              "translation": "Why does Emilia have to study more this spring?",
+              "options": [
+                "Hennes medeltal är lite för lågt",
+                "Hon har ett stort prov i engelska",
+                "Hon vill bli lärare"
+              ],
+              "answers": [
+                "Hennes medeltal är lite för lågt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "När träffas de nästa gång?",
+              "translation": "When do they meet next time?",
+              "answers": [
+                "på torsdag",
+                "torsdag",
+                "på torsdag efter lunch",
+                "torsdag efter lunch",
+                "efter lunch på torsdag",
+                "på torsdagen"
+              ],
+              "hint": "Svara kort."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en studiehandledare",
+              "en": "a school guidance counsellor"
+            },
+            {
+              "fi": "ett medeltal",
+              "en": "a grade average (Finland-Swedish)"
+            },
+            {
+              "fi": "det beror på",
+              "en": "it depends on"
+            },
+            {
+              "fi": "söka till en skola",
+              "en": "apply to a school"
+            },
+            {
+              "fi": "en ansökan",
+              "en": "an application"
+            },
+            {
+              "fi": "en hemsida",
+              "en": "a website"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-18-read-1",
+          "title": "Kvällskurser i höst",
+          "textType": "Annons",
+          "minutes": 5,
+          "text": "KVÄLLSKURSER I HÖST – SÖRNÄS MEDBORGARINSTITUT\n\nVill du lära dig något nytt? Våra kurser är för vuxna i alla åldrar, och du behöver inga tidigare kunskaper.\n\nSvenska för dig med utländsk bakgrund, nivå A2\nMåndagar och onsdagar kl. 17.30–19.00. Pris 95 euro. Vi läser korta texter, pratar mycket och övar inför språkexamen.\n\nMatematik för vuxna\nTisdagar kl. 18.00–19.30. Pris 60 euro. Repetera skolmatten i lugn takt, till exempel procent och enkla ekvationer.\n\nLitteratur – en läsecirkel\nTorsdagar kl. 16.00–17.30. Pris 40 euro. Vi läser en roman i månaden och diskuterar den tillsammans.\n\nAnmäl dig på vår hemsida senast den 25 augusti. Om en kurs har färre än åtta deltagare blir den inte av. Studerande och pensionärer får 20 procent rabatt.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vem är kurserna till för?",
+              "translation": "Who are the courses for?",
+              "options": [
+                "Vuxna",
+                "Elever i grundskolan",
+                "Bara pensionärer"
+              ],
+              "answers": [
+                "Vuxna"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken dag träffas läsecirkeln?",
+              "translation": "Which day does the reading circle meet?",
+              "answers": [
+                "torsdag",
+                "torsdagar",
+                "på torsdag",
+                "på torsdagar",
+                "på torsdagarna"
+              ],
+              "hint": "Skriv en veckodag."
+            },
+            {
+              "id": "q3",
+              "prompt": "Man måste vara bra på matte för att gå matematikkursen.",
+              "translation": "You have to be good at maths to take the maths course.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur mycket betalar en pensionär för svenskkursen?",
+              "translation": "How much does a pensioner pay for the Swedish course?",
+              "answers": [
+                "76",
+                "76 euro",
+                "76 €",
+                "sjuttiosex",
+                "sjuttiosex euro"
+              ],
+              "hint": "Räkna med rabatten."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad händer om bara fem personer anmäler sig till en kurs?",
+              "translation": "What happens if only five people sign up for a course?",
+              "options": [
+                "Kursen blir inte av",
+                "Kursen blir billigare",
+                "Kursen flyttas till en annan dag"
+              ],
+              "answers": [
+                "Kursen blir inte av"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett medborgarinstitut",
+              "en": "an adult education centre (Finland-Swedish)"
+            },
+            {
+              "fi": "tidigare kunskaper",
+              "en": "previous knowledge"
+            },
+            {
+              "fi": "anmäla sig",
+              "en": "sign up, register"
+            },
+            {
+              "fi": "senast",
+              "en": "at the latest"
+            },
+            {
+              "fi": "en deltagare",
+              "en": "a participant"
+            },
+            {
+              "fi": "bli av",
+              "en": "take place, happen"
+            },
+            {
+              "fi": "en rabatt",
+              "en": "a discount"
+            }
+          ]
+        }
+      ]
     }
   ],
   "sections": [

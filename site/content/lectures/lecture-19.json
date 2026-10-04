@@ -118,6 +118,266 @@
       }
     }
   },
+  "extraSteps": [
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A teacher's phone message and a school email asking parents for their opinion, with questions you can check.",
+      "minutes": 10,
+      "action": "Read the questions first, listen twice, then read the text and check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-19-listen-1",
+          "title": "Läraren ringer hem",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Du är förälder. Du hör ett meddelande från ditt barns lärare på telefonsvararen.",
+            "en": "You are a parent. You hear a message from your child's teacher on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Läraren",
+              "voice": "Henrik",
+              "fi": "Hej, det här är Peter Ström, klassföreståndare för klass sju B. Jag ringer till Noas föräldrar.",
+              "en": "Hi, this is Peter Ström, class teacher for class 7B. I'm calling Noa's parents."
+            },
+            {
+              "speaker": "Läraren",
+              "voice": "Henrik",
+              "fi": "Noa har varit borta från skolan tre dagar den här veckan, och vi har inte fått något meddelande om varför.",
+              "en": "Noa has been away from school three days this week, and we haven't had any message about why."
+            },
+            {
+              "speaker": "Läraren",
+              "voice": "Henrik",
+              "fi": "Jag ringer eftersom vi har ett viktigt prov i historia på fredag. Om Noa är sjuk kan han skriva provet nästa vecka i stället.",
+              "en": "I'm calling because we have an important history test on Friday. If Noa is ill, he can take the test next week instead."
+            },
+            {
+              "speaker": "Läraren",
+              "voice": "Henrik",
+              "fi": "Men då måste ni skicka ett meddelande till mig före torsdag kväll.",
+              "en": "But then you must send me a message before Thursday evening."
+            },
+            {
+              "speaker": "Läraren",
+              "voice": "Henrik",
+              "fi": "Medan han är hemma kan han läsa kapitel fyra och fem i boken, så att han inte missar för mycket.",
+              "en": "While he is at home, he can read chapters four and five in the book, so that he doesn't miss too much."
+            },
+            {
+              "speaker": "Läraren",
+              "voice": "Henrik",
+              "fi": "Ni når mig på skolan varje dag mellan åtta och fyra, på nummer 044 765 2190. Tack och hej!",
+              "en": "You can reach me at school every day between eight and four, on 044 765 2190. Thanks, bye!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer läraren?",
+              "translation": "Why is the teacher calling?",
+              "options": [
+                "Noa har varit borta och har ett prov snart",
+                "Noa har fått ett dåligt betyg i historia",
+                "Noa har bråkat med en klasskompis"
+              ],
+              "answers": [
+                "Noa har varit borta och har ett prov snart"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många dagar har Noa varit borta den här veckan?",
+              "translation": "How many days has Noa been away this week?",
+              "answers": [
+                "3",
+                "tre",
+                "3 dagar",
+                "tre dagar"
+              ],
+              "hint": "Skriv en siffra eller ett ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "Noa måste skriva provet på fredag, även om han är sjuk.",
+              "translation": "Noa has to take the test on Friday, even if he is ill.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad kan Noa göra medan han är hemma?",
+              "translation": "What can Noa do while he is at home?",
+              "answers": [
+                "läsa kapitel fyra och fem",
+                "läsa kapitel 4 och 5",
+                "kapitel fyra och fem",
+                "kapitel 4 och 5",
+                "läsa kapitel fyra och fem i boken",
+                "läsa kapitel 4 och 5 i boken",
+                "läsa i boken",
+                "läsa boken"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad vet läraren inte?",
+              "translation": "What does the teacher not know?",
+              "options": [
+                "Varför Noa är borta",
+                "Vilken dag provet är",
+                "Vilken klass Noa går i"
+              ],
+              "answers": [
+                "Varför Noa är borta"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en klassföreståndare",
+              "en": "a class teacher (Finland-Swedish)"
+            },
+            {
+              "fi": "vara borta",
+              "en": "be away, be absent"
+            },
+            {
+              "fi": "i stället",
+              "en": "instead"
+            },
+            {
+              "fi": "medan",
+              "en": "while"
+            },
+            {
+              "fi": "missa",
+              "en": "miss"
+            },
+            {
+              "fi": "nå någon",
+              "en": "reach someone"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-19-read-1",
+          "title": "Mobilfria raster?",
+          "textType": "E-post från skolan",
+          "minutes": 5,
+          "text": "Ämne: Förfrågan till alla föräldrar – mobilfria raster?\n\nBästa föräldrar,\n\nVi funderar på att införa mobilfria raster i årskurs 1–6 från och med januari. Eleverna lämnar då sina telefoner i en låda i klassrummet på morgonen och får tillbaka dem när skoldagen slutar.\n\nVi vill göra det här eftersom många lärare ser att barnen inte leker med varandra på rasterna. De sitter i stället ensamma med sina skärmar. Vi tror nämligen att rörelse och lek är viktigt för att barnen ska orka lära sig.\n\nVi vet att många av er vill nå era barn under dagen. Om något viktigt händer kan ni alltid ringa skolans kansli, så hjälper vi till.\n\nVad tycker ni? Svara på den korta enkäten på skolans webbplats senast fredag den 28 november. Om båda föräldrarna vill svara går det bra.\n\nMed vänliga hälsningar\nAnna Wikström, rektor",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad vill skolan veta?",
+              "translation": "What does the school want to know?",
+              "options": [
+                "Vad föräldrarna tycker om mobilfria raster",
+                "Om föräldrarna kan hjälpa till på rasterna",
+                "Vilka barn som har en egen telefon"
+              ],
+              "answers": [
+                "Vad föräldrarna tycker om mobilfria raster"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "När får eleverna tillbaka sina telefoner?",
+              "translation": "When do the pupils get their phones back?",
+              "answers": [
+                "när skoldagen slutar",
+                "när skolan slutar",
+                "efter skolan",
+                "efter skoldagen",
+                "när skoldagen är slut"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad har lärarna sett på rasterna?",
+              "translation": "What have the teachers seen during breaks?",
+              "options": [
+                "Barnen leker inte med varandra",
+                "Barnen bråkar mycket",
+                "Barnen ringer hem hela tiden"
+              ],
+              "answers": [
+                "Barnen leker inte med varandra"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Föräldrar kan inte kontakta sina barn under skoldagen om regeln kommer.",
+              "translation": "Parents cannot contact their children during the school day if the rule comes.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilket datum är sista dagen att svara?",
+              "translation": "What date is the last day to answer?",
+              "answers": [
+                "28 november",
+                "den 28 november",
+                "fredag den 28 november",
+                "tjugoåttonde november",
+                "den tjugoåttonde november",
+                "fredag 28 november"
+              ],
+              "hint": "Skriv datumet."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en förfrågan",
+              "en": "an inquiry, a request for opinions"
+            },
+            {
+              "fi": "införa",
+              "en": "introduce (a rule)"
+            },
+            {
+              "fi": "mobilfri",
+              "en": "phone-free"
+            },
+            {
+              "fi": "varandra",
+              "en": "each other"
+            },
+            {
+              "fi": "nämligen",
+              "en": "you see, namely"
+            },
+            {
+              "fi": "kansliet",
+              "en": "the school office"
+            },
+            {
+              "fi": "en enkät",
+              "en": "a questionnaire"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "sittingBreakAfter": "guided",
   "unplannedQuestions": [
     {

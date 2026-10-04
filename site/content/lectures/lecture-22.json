@@ -114,6 +114,285 @@
       }
     }
   },
+  "extraSteps": [
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A radio interview about moving to the countryside and a reader's letter about building in a forest, with questions you can check.",
+      "minutes": 10,
+      "action": "Read the questions first, listen twice, then read the text and check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-22-listen-1",
+          "title": "Från stan till landet",
+          "textType": "Intervju i radio",
+          "situation": {
+            "fi": "Du hör en kort intervju i ett radioprogram om boende.",
+            "en": "You hear a short interview in a radio programme about housing."
+          },
+          "lines": [
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Stefan Lund, du flyttade från Helsingfors till Raseborg för två år sedan. Varför?",
+              "en": "Stefan Lund, you moved from Helsinki to Raseborg two years ago. Why?"
+            },
+            {
+              "speaker": "Stefan",
+              "voice": "Henrik",
+              "fi": "Framför allt för att vi behövde mer plats. I Helsingfors bodde vi fyra personer i en trea. Nu har vi ett hus med trädgård.",
+              "en": "Above all because we needed more space. In Helsinki there were four of us in a three-room flat. Now we have a house with a garden."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Har du någonsin ångrat dig?",
+              "en": "Have you ever regretted it?"
+            },
+            {
+              "speaker": "Stefan",
+              "voice": "Henrik",
+              "fi": "Nej, aldrig. Barnen leker ute varje dag, och här är det lugnt.",
+              "en": "No, never. The children play outside every day, and it is quiet here."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Men finns det inga nackdelar?",
+              "en": "But aren't there any disadvantages?"
+            },
+            {
+              "speaker": "Stefan",
+              "voice": "Henrik",
+              "fi": "Jo, självklart. Bussarna går inte så ofta, och tåget till Helsingfors tar över en timme. Vi var tvungna att köpa en bil.",
+              "en": "Yes, of course. The buses don't run very often, and the train to Helsinki takes over an hour. We had to buy a car."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Jobbar du kvar i Helsingfors?",
+              "en": "Do you still work in Helsinki?"
+            },
+            {
+              "speaker": "Stefan",
+              "voice": "Henrik",
+              "fi": "Ja, men jag jobbar hemifrån tre dagar i veckan. Bara två dagar pendlar jag.",
+              "en": "Yes, but I work from home three days a week. I only commute two days."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Skulle du vilja återvända till stan en dag?",
+              "en": "Would you like to return to the city one day?"
+            },
+            {
+              "speaker": "Stefan",
+              "voice": "Henrik",
+              "fi": "Kanske när vi blir pensionärer. Då vill vi ha teatrar och restauranger nära.",
+              "en": "Maybe when we retire. Then we'll want theatres and restaurants nearby."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför flyttade Stefans familj till landet?",
+              "translation": "Why did Stefan's family move to the countryside?",
+              "options": [
+                "De behövde mer plats",
+                "Stefan fick ett nytt jobb i Raseborg",
+                "Hyrorna i Helsingfors steg"
+              ],
+              "answers": [
+                "De behövde mer plats"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många dagar i veckan pendlar Stefan?",
+              "translation": "How many days a week does Stefan commute?",
+              "answers": [
+                "2",
+                "två",
+                "2 dagar",
+                "två dagar"
+              ],
+              "hint": "Skriv en siffra eller ett ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "Stefan ångrar att familjen flyttade.",
+              "translation": "Stefan regrets that the family moved.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilken nackdel nämner Stefan?",
+              "translation": "Which disadvantage does Stefan mention?",
+              "options": [
+                "Kollektivtrafiken går sällan",
+                "Det är mycket buller",
+                "Det finns inga skolor"
+              ],
+              "answers": [
+                "Kollektivtrafiken går sällan"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad kan hända när Stefan blir äldre?",
+              "translation": "What may happen when Stefan gets older?",
+              "options": [
+                "Familjen flyttar kanske tillbaka till stan",
+                "Familjen köper ett större hus på landet",
+                "Stefan börjar jobba hemifrån alla dagar"
+              ],
+              "answers": [
+                "Familjen flyttar kanske tillbaka till stan"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "framför allt",
+              "en": "above all"
+            },
+            {
+              "fi": "någonsin",
+              "en": "ever"
+            },
+            {
+              "fi": "ångra sig",
+              "en": "regret"
+            },
+            {
+              "fi": "vara tvungen att",
+              "en": "have to, be forced to"
+            },
+            {
+              "fi": "återvända",
+              "en": "return, go back"
+            },
+            {
+              "fi": "en pensionär",
+              "en": "a pensioner"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-22-read-1",
+          "title": "Bygg inte bort vår skog",
+          "textType": "Insändare",
+          "minutes": 5,
+          "text": "INSÄNDARE: Bygg inte bort vår skog\n\nStaden vill bygga tre höghus i skogen vid Gårdsbacka. Jag förstår att det finns ett stort behov av nya bostäder i Helsingfors, men jag tycker att det här är fel plats.\n\nJag har bott i området i tjugo år. Varje morgon går jag med hunden i skogen. Där möter jag barnfamiljer, löpare och pensionärer. Skogen är vår gemensamma trädgård, och den är viktig för alla generationer.\n\nÅ ena sidan behövs fler lägenheter. Å andra sidan står många kontorshus tomma i stan. Man kunde göra om dem till bostäder. Det vore bättre för naturen och för klimatet.\n\nMitt intryck är att politikerna inte lyssnar på oss som bor här. Därför ber jag alla som håller med mig att komma till mötet på biblioteket den 14 november klockan 18.\n\nKristina Ek, Gårdsbacka",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad vill skribenten?",
+              "translation": "What does the writer want?",
+              "options": [
+                "Att skogen ska få vara kvar",
+                "Att staden ska bygga fler höghus",
+                "Att biblioteket ska få nya lokaler"
+              ],
+              "answers": [
+                "Att skogen ska få vara kvar"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Kristina tycker att Helsingfors inte behöver några nya bostäder.",
+              "translation": "Kristina thinks Helsinki doesn't need any new homes.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur länge har Kristina bott i området?",
+              "translation": "How long has Kristina lived in the area?",
+              "answers": [
+                "20 år",
+                "tjugo år",
+                "i 20 år",
+                "i tjugo år",
+                "20",
+                "tjugo"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad föreslår hon i stället?",
+              "translation": "What does she suggest instead?",
+              "options": [
+                "Att göra om tomma kontor till bostäder",
+                "Att bygga husen ute på landet",
+                "Att bygga lägre hus i skogen"
+              ],
+              "answers": [
+                "Att göra om tomma kontor till bostäder"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Var hålls mötet?",
+              "translation": "Where is the meeting held?",
+              "answers": [
+                "på biblioteket",
+                "biblioteket",
+                "i biblioteket"
+              ],
+              "hint": "Svara kort."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en insändare",
+              "en": "a reader's letter (to a newspaper)"
+            },
+            {
+              "fi": "ett behov",
+              "en": "a need"
+            },
+            {
+              "fi": "ett höghus",
+              "en": "a block of flats, a high-rise"
+            },
+            {
+              "fi": "en generation",
+              "en": "a generation"
+            },
+            {
+              "fi": "göra om till",
+              "en": "convert into"
+            },
+            {
+              "fi": "ett intryck",
+              "en": "an impression"
+            },
+            {
+              "fi": "be någon",
+              "en": "ask someone (politely)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "sittingBreakAfter": "guided",
   "unplannedQuestions": [
     {

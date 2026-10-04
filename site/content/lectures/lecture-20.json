@@ -906,6 +906,273 @@
           }
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A radio news item about stress at work and a café lunch menu, with questions you can check.",
+      "minutes": 10,
+      "action": "Read the questions first, listen twice, then read the text and check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-20-listen-1",
+          "title": "Stressen ökar på jobbet",
+          "textType": "Nyhet i radio",
+          "situation": {
+            "fi": "Du hör nyheterna på radion en morgon.",
+            "en": "You hear the news on the radio one morning."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "God morgon, här är nyheterna klockan sju.",
+              "en": "Good morning, here is the news at seven o'clock."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Allt fler finländare känner sig stressade på jobbet. Det visar en ny undersökning där tretusen anställda svarade på frågor om sin arbetsmiljö.",
+              "en": "More and more Finns feel stressed at work. That is what a new survey shows, in which three thousand employees answered questions about their working environment."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Nästan fyrtio procent säger att de ofta jobbar över. För fem år sedan var siffran tjugofem procent, så ökningen är stor.",
+              "en": "Almost forty per cent say they often work overtime. Five years ago the figure was twenty-five per cent, so the increase is large."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Statistiken visar också skillnader mellan olika branscher. Mest stress finns inom sjukvården och skolan, där det är brist på personal.",
+              "en": "The statistics also show differences between sectors. There is most stress in health care and schools, where there is a shortage of staff."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Många skulle vilja jobba deltid. Men de har inte råd, eftersom lönen då blir lägre.",
+              "en": "Many would like to work part-time. But they can't afford it, because the salary then gets lower."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Forskarna rekommenderar korta pauser under dagen och att man inte läser jobbmejl på kvällen.",
+              "en": "The researchers recommend short breaks during the day and not reading work email in the evening."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Och så vädret: i Helsingfors blir det soligt i dag, upp till arton grader.",
+              "en": "And now the weather: in Helsinki it will be sunny today, up to eighteen degrees."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar nyheten främst om?",
+              "translation": "What is the news item mainly about?",
+              "options": [
+                "Stress på jobbet",
+                "Höga löner i sjukvården",
+                "Nya regler för deltid"
+              ],
+              "answers": [
+                "Stress på jobbet"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många procent jobbar ofta över i dag?",
+              "translation": "What percentage often work overtime today?",
+              "answers": [
+                "40",
+                "fyrtio",
+                "nästan 40",
+                "nästan fyrtio",
+                "40 procent",
+                "fyrtio procent",
+                "nästan 40 procent",
+                "nästan fyrtio procent",
+                "40 %"
+              ],
+              "hint": "Skriv en siffra eller ett ord."
+            },
+            {
+              "id": "q3",
+              "prompt": "Det finns mest stress inom restaurangbranschen.",
+              "translation": "There is most stress in the restaurant sector.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför jobbar inte fler deltid?",
+              "translation": "Why don't more people work part-time?",
+              "options": [
+                "De skulle få för lite pengar",
+                "Chefen säger nej",
+                "Det finns inga deltidsjobb"
+              ],
+              "answers": [
+                "De skulle få för lite pengar"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Problemet med övertid har blivit mindre de senaste åren.",
+              "translation": "The problem of overtime has become smaller in recent years.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en undersökning",
+              "en": "a survey, a study"
+            },
+            {
+              "fi": "allt fler",
+              "en": "more and more (people)"
+            },
+            {
+              "fi": "en ökning",
+              "en": "an increase"
+            },
+            {
+              "fi": "statistik",
+              "en": "statistics"
+            },
+            {
+              "fi": "en bransch",
+              "en": "a sector, a line of business"
+            },
+            {
+              "fi": "brist på personal",
+              "en": "a shortage of staff"
+            },
+            {
+              "fi": "ha råd",
+              "en": "can afford"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-20-read-1",
+          "title": "Veckans lunch",
+          "textType": "Lunchmeny",
+          "minutes": 5,
+          "text": "KAFÉ LÖNNEN, BANGATAN 12 – VECKANS LUNCH\n\nLunch serveras måndag–fredag kl. 10.30–14.00.\n\nMåndag: Laxsoppa med dill (L, G) 11,50 €\nTisdag: Kycklinggryta med ris (L, G) 12,50 €\nOnsdag: Linsbiffar med potatismos (VE) 11,50 €\nTorsdag: Ärtsoppa och pannkakor (L) 10,90 €\nFredag: Pasta med räkor (L) 13,50 €\n\nI priset ingår sallad, bröd, kaffe eller te. Vi bakar vårt eget bröd varje morgon och använder närproducerade råvaror av hög kvalitet. Glutenfritt bröd finns, fråga personalen.\n\nL = laktosfri, G = glutenfri, VE = vegansk\n\nBrunch varje lördag kl. 11–15, 22 € per person. Barn under 12 år äter för halva priset. Boka bord på nummer 040 581 2266.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vilken dag kan en vegan äta lunch på kaféet?",
+              "translation": "Which day can a vegan eat lunch at the café?",
+              "answers": [
+                "onsdag",
+                "på onsdag",
+                "onsdagen",
+                "på onsdagen"
+              ],
+              "hint": "Skriv en veckodag."
+            },
+            {
+              "id": "q2",
+              "prompt": "Kaffe kostar extra till lunchen.",
+              "translation": "Coffee costs extra with lunch.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Alex tål inte gluten. Vilken lunch kan han äta?",
+              "translation": "Alex can't tolerate gluten. Which lunch can he eat?",
+              "options": [
+                "Kycklinggryta med ris",
+                "Ärtsoppa och pannkakor",
+                "Pasta med räkor"
+              ],
+              "answers": [
+                "Kycklinggryta med ris"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Två vuxna och ett barn på åtta år äter brunch. Hur mycket betalar de?",
+              "translation": "Two adults and an eight-year-old child eat brunch. How much do they pay?",
+              "answers": [
+                "55",
+                "55 euro",
+                "55 €",
+                "femtiofem",
+                "femtiofem euro"
+              ],
+              "hint": "Räkna."
+            },
+            {
+              "id": "q5",
+              "prompt": "När serveras det inte lunch?",
+              "translation": "When is lunch not served?",
+              "options": [
+                "På lördag klockan tolv",
+                "På måndag klockan elva",
+                "På fredag klockan ett"
+              ],
+              "answers": [
+                "På lördag klockan tolv"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "serveras",
+              "en": "is served"
+            },
+            {
+              "fi": "ingå",
+              "en": "be included"
+            },
+            {
+              "fi": "en gryta",
+              "en": "a stew, a casserole"
+            },
+            {
+              "fi": "ärtsoppa",
+              "en": "pea soup (a Finnish Thursday lunch)"
+            },
+            {
+              "fi": "närproducerad",
+              "en": "locally produced"
+            },
+            {
+              "fi": "hög kvalitet",
+              "en": "high quality"
+            },
+            {
+              "fi": "halva priset",
+              "en": "half price"
+            }
+          ]
+        }
+      ]
     }
   ],
   "sections": [
