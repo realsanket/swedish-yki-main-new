@@ -1,0 +1,1862 @@
+{
+  "number": 40,
+  "routeProfile": "standard",
+  "objectives": [
+    "Tell about school and work in a YKI Berätta task: one minute to plan, one minute to speak, a story in the past with then and now.",
+    "Compare the school system in your home country with Finland's: läroplikt, gymnasiet, studentexamen, uniforms, exams and private lessons.",
+    "Give a 90-second opinion on work, studies, busy lives and automation with the Lesson 39 phrases (ur min synvinkel, det är ett faktum att).",
+    "Use ha bråttom, ha fullt upp, anstränga sig, orsaken till and uppfostras correctly, and kommer att for predictions.",
+    "Read a news text like the test: decide rätt or fel from small words such as drygt, knappt and var femte."
+  ],
+  "focusSkills": [
+    "speaking",
+    "writing",
+    "reading"
+  ],
+  "grammarTerms": [
+    "verb",
+    "noun",
+    "adjective",
+    "past-tense",
+    "present-perfect",
+    "reflexive",
+    "s-verb",
+    "particle-verb",
+    "future",
+    "subordinate-clause",
+    "main-clause",
+    "word-order",
+    "verb-second",
+    "compound-word",
+    "preposition",
+    "pronoun"
+  ],
+  "presentation": {
+    "template": "conversation-first",
+    "opening": {
+      "teacherNote": {
+        "title": "Listen for two schools and one robot question",
+        "body": "Wednesday 22 July, just before the evening class. Maja's shift at the café is over, and she is choosing her courses for the autumn. Alex sits down with her. They compare school in Pune and Helsinki, talk about first jobs, and Maja asks whether AI will take Alex's job. Listen for what is different in the two schools."
+      },
+      "questionIntro": "Answer from the conversation: what Maja is doing, and Alex's view of AI.",
+      "dialogue": {
+        "part": "recall",
+        "eyebrow": "START WITH THE STORY",
+        "title": "Skolan i Pune och i Helsingfors",
+        "instructions": "Predict first: which school had a uniform, and which lets pupils choose their courses? Then listen once without the text.",
+        "initiallyOpen": false
+      }
+    },
+    "hero": {
+      "variant": "conversation",
+      "meta": [
+        "LEKTION 40",
+        "22 JULY 2026"
+      ],
+      "kicker": "SCHOOL, WORK AND ROBOTS",
+      "title": "Skolan och arbetslivet",
+      "lede": "Maja and Alex compare school in Pune and Helsinki, and Alex explains why AI will not replace him. Tell about your school days, give your view on the future of work, and write an opinion text.",
+      "startLine": {
+        "label": "START WITH ONE LINE",
+        "fi": "När jag gick i skolan …",
+        "en": "When I went to school …",
+        "audioText": "När jag gick i skolan i Pune var lärarna väldigt stränga."
+      },
+      "speakers": [
+        {
+          "name": "Maja",
+          "fi": "I gymnasiet väljer vi själva många av våra kurser."
+        },
+        {
+          "name": "Alex",
+          "fi": "I Pune bestämde skolan allt."
+        }
+      ],
+      "connector": "MEN",
+      "encounterLabel": "Maja and Alex compare their schools at the café",
+      "chunks": [
+        {
+          "label": "BACK THEN",
+          "fi": "När jag gick i skolan var lärarna stränga.",
+          "en": "When I went to school, the teachers were strict."
+        },
+        {
+          "label": "EFFORT",
+          "fi": "Jag fick anstränga mig.",
+          "en": "I had to make an effort."
+        },
+        {
+          "label": "BUSY LIVES",
+          "fi": "Numera har alla bråttom.",
+          "en": "Nowadays everyone is in a hurry."
+        },
+        {
+          "label": "THE FUTURE",
+          "fi": "Robotar kommer att ta över upprepade uppgifter.",
+          "en": "Robots will take over repetitive tasks."
+        }
+      ],
+      "footerTags": [
+        "Berätta in one minute",
+        "Opinion text 100-150 words"
+      ]
+    },
+    "routeSteps": {
+      "recall": {
+        "label": "Hear the conversation",
+        "description": "Listen for the differences between Alex's school in Pune and Maja's in Helsinki."
+      },
+      "teach": {
+        "label": "Build it step by step",
+        "description": "Compare two school systems, tell about school and a first job, use the ha phrases, argue about automation and read for rätt or fel."
+      }
+    },
+    "teaching": {
+      "wordBank": {
+        "mode": "collapsed",
+        "title": "Open the Lesson 40 word bank"
+      }
+    }
+  },
+  "sittingBreakAfter": "guided",
+  "unplannedQuestions": [
+    {
+      "id": "sv-40-u-subject",
+      "fi": "Vilket ämne var svårast för dig i skolan?",
+      "en": "Which subject was hardest for you at school?",
+      "sample": "Historia, eftersom vi måste lära oss så många årtal utantill. / Kemi, men jag tyckte ändå om det."
+    },
+    {
+      "id": "sv-40-u-way",
+      "fi": "Hur tog du dig till skolan när du var liten?",
+      "en": "How did you get to school when you were little?",
+      "sample": "Jag åkte skolbuss. Det tog en halvtimme. / Min pappa skjutsade mig på sin moped."
+    },
+    {
+      "id": "sv-40-u-study",
+      "fi": "Skulle du vilja studera något nytt i Finland?",
+      "en": "Would you like to study something new in Finland?",
+      "sample": "Ja, jag skulle vilja gå en kurs i design. Först måste jag bli bättre på svenska, förstås."
+    },
+    {
+      "id": "sv-40-u-ai",
+      "fi": "Använder du AI i ditt jobb eller i dina studier?",
+      "en": "Do you use AI in your job or your studies?",
+      "sample": "Ja, ibland när jag skriver mejl. Men jag kontrollerar alltid texten själv."
+    },
+    {
+      "id": "sv-40-u-change",
+      "fi": "Skulle du vilja byta yrke någon gång?",
+      "en": "Would you like to change profession at some point?",
+      "sample": "Kanske. Jag drömmer om att bli lärare, eftersom jag gillar att förklara saker."
+    },
+    {
+      "id": "sv-40-u-day",
+      "fi": "Hur lång är en vanlig arbetsdag i ditt hemland?",
+      "en": "How long is an ordinary working day in your home country?",
+      "sample": "Ofta nio eller tio timmar, och många pendlar länge. Här slutar folk tidigare."
+    }
+  ],
+  "reviewPhrases": [
+    {
+      "id": "teachers-strict",
+      "en": "When I went to school, the teachers were very strict.",
+      "fi": "När jag gick i skolan var lärarna väldigt stränga."
+    },
+    {
+      "id": "first-job-software",
+      "en": "My first job was at a small software company.",
+      "fi": "Mitt första jobb var på ett litet mjukvaruföretag."
+    },
+    {
+      "id": "effort-maths",
+      "en": "In maths I really had to make an effort.",
+      "fi": "I matte fick jag verkligen anstränga mig."
+    },
+    {
+      "id": "everyone-hurry",
+      "en": "Nowadays everyone is in a hurry.",
+      "fi": "Numera har alla bråttom."
+    },
+    {
+      "id": "busy-week",
+      "en": "I am very busy this week.",
+      "fi": "Jag har fullt upp den här veckan."
+    },
+    {
+      "id": "robots-take-over",
+      "en": "Robots will take over repetitive tasks.",
+      "fi": "Robotar kommer att ta över upprepade uppgifter."
+    },
+    {
+      "id": "ai-cannot-replace",
+      "en": "From my point of view, AI cannot replace people.",
+      "fi": "Ur min synvinkel kan AI inte ersätta människor."
+    },
+    {
+      "id": "independent-early",
+      "en": "In Finland children learn to be independent early.",
+      "fi": "I Finland lär sig barn tidigt att vara självständiga."
+    }
+  ],
+  "missionPlan": {
+    "title": "Plan your Berätta: school then and now",
+    "intro": "One minute to plan, as in the test. Fill in five or six lines: where you went to school, a detail from then, the teachers, a memory, Finland now and what you would bring.",
+    "lines": [
+      {
+        "label": "Where and how long",
+        "before": "Jag gick i skolan i",
+        "after": ".",
+        "placeholder": "Pune i tolv år"
+      },
+      {
+        "label": "A detail from then",
+        "before": "När jag gick i skolan",
+        "after": ".",
+        "placeholder": "hade vi uniform och stora klasser"
+      },
+      {
+        "label": "The teachers",
+        "before": "Lärarna var",
+        "after": ".",
+        "placeholder": "stränga, men samtidigt hjälpsamma"
+      },
+      {
+        "label": "A memory",
+        "before": "",
+        "placeholder": "En gång vann vår klass en mattetävling."
+      },
+      {
+        "label": "Finland now",
+        "before": "I Finland",
+        "after": ".",
+        "placeholder": "väljer eleverna själva många kurser i gymnasiet"
+      },
+      {
+        "label": "What you would bring",
+        "before": "Från mitt hemland skulle jag vilja ta med",
+        "after": ".",
+        "placeholder": "respekten för lärarna"
+      }
+    ]
+  },
+  "recall": [
+    {
+      "id": "sv-40-r1",
+      "prompt": "What is Maja working on when Alex arrives?",
+      "answers": [
+        "Choosing her courses for the autumn"
+      ],
+      "options": [
+        "Choosing her courses for the autumn",
+        "Studying for a chemistry exam tomorrow",
+        "Writing a job application"
+      ],
+      "hint": "Listen for hösten and väljer.",
+      "explanation": "Mina kurser för hösten. I gymnasiet väljer vi själva många av våra kurser, och jag måste välja senast på fredag."
+    },
+    {
+      "id": "sv-40-r2",
+      "prompt": "What does Alex say about AI and his job?",
+      "answers": [
+        "It helps him write code, but it cannot understand what the customer wants"
+      ],
+      "options": [
+        "It helps him write code, but it cannot understand what the customer wants",
+        "It will soon do his whole job",
+        "His company does not allow it"
+      ],
+      "hint": "Listen for kunden.",
+      "explanation": "AI hjälper mig att skriva kod snabbare … Men den kan inte förstå vad kunden egentligen vill."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Skolan här och där · two school systems compared",
+      "kind": "scene",
+      "body": [
+        "Lecture 18 named the stages: förskola, grundskola (årskurs 1–9), gymnasiet, studentexamen, universitet. A Berätta card now asks for more: describe a whole system, its fördelar och nackdelar, and compare it with Finland.",
+        "Finland: Grundskolan är gratis, och alla elever får skolmat. Läroplikten gäller tills man fyller 18, så efter grundskolan fortsätter nästan alla i gymnasiet eller i en yrkesutbildning. I gymnasiet väljer man själv många kurser och samlar studiepoäng. (Läroplikt = compulsory education; since 2021 it lasts until 18.)",
+        "Indien: många skolor har uniform och stora klasser. Efter tionde och tolfte klass skriver eleverna stora prov, och många går på privatlektioner efter skolan. Man lär sig mycket utantill (by heart).",
+        "Sträng = strict (Lecture 19). Anstränga sig = make an effort. They look alike, so learn them as a pair: Läraren var sträng, så vi fick anstränga oss.",
+        "Samtidigt = at the same time. It lets you say two true things about one school: Lärarna var stränga, men samtidigt brydde de sig om oss.",
+        "Finland-Swedish says Hon blev student for passing studentexamen (Lecture 18). Ta examen = finish a degree at a university or yrkeshögskola."
+      ],
+      "examples": [
+        {
+          "fi": "I Finland gäller läroplikten tills man fyller arton.",
+          "en": "In Finland compulsory education lasts until you turn eighteen.",
+          "note": "Tills = until, before a clause."
+        },
+        {
+          "fi": "I gymnasiet väljer eleverna själva många av sina kurser.",
+          "en": "In upper secondary school the students choose many of their courses themselves.",
+          "note": "Själva: they themselves."
+        },
+        {
+          "fi": "Efter tolfte klass skrev vi ett stort prov för hela delstaten.",
+          "en": "After class twelve we wrote a big exam for the whole state.",
+          "note": "Efter tolfte klass takes first place, so skrev comes next."
+        },
+        {
+          "fi": "Många elever i Pune går på privatlektioner efter skolan.",
+          "en": "Many pupils in Pune go to private lessons after school.",
+          "note": "Gå på lektioner, like gå på kurs."
+        },
+        {
+          "fi": "Lärarna var stränga, men samtidigt brydde de sig om oss.",
+          "en": "The teachers were strict, but at the same time they cared about us.",
+          "note": "Samtidigt: two sides of one thing."
+        },
+        {
+          "fi": "När Maja blir student firar hela familjen.",
+          "en": "When Maja graduates from upper secondary school, the whole family will celebrate.",
+          "note": "Finland-Swedish: bli student."
+        }
+      ],
+      "table": {
+        "headings": [
+          "",
+          "Finland",
+          "Indien (Pune)"
+        ],
+        "rows": [
+          [
+            "Skolstart",
+            "det år man fyller sju",
+            "ofta vid sex års ålder"
+          ],
+          [
+            "Kostnad",
+            "grundskolan och skolmaten är gratis",
+            "privata skolor kostar ofta pengar"
+          ],
+          [
+            "Prov",
+            "få prov i grundskolan, studentexamen i slutet av gymnasiet",
+            "stora prov efter tionde och tolfte klass"
+          ],
+          [
+            "Kläder",
+            "egna kläder",
+            "skoluniform"
+          ],
+          [
+            "Efter skolan",
+            "hobbyer och fritid",
+            "ofta läxor och privatlektioner"
+          ]
+        ]
+      },
+      "memoryTip": "Describe, then compare: I Indien … I Finland däremot … And one thing you would bring with you.",
+      "tryIt": "Say two differences between school in your home country and in Finland. Use samtidigt once.",
+      "activity": {
+        "type": "sort",
+        "label": "Pune or Helsingfors?",
+        "title": "Whose school is it?",
+        "instructions": "Each line is something Alex or Maja said about their school. Is it about Alex's school in Pune or Maja's gymnasium in Helsinki?",
+        "buckets": [
+          {
+            "id": "pune",
+            "label": "Alex i Pune",
+            "hint": "An Indian school some years ago"
+          },
+          {
+            "id": "hki",
+            "label": "Maja i Helsingfors",
+            "hint": "A Finnish gymnasium today"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Vi bar samma blå kläder varje dag.",
+            "en": "We wore the same blue clothes every day.",
+            "bucket": "pune",
+            "why": "A uniform: Alex's school."
+          },
+          {
+            "fi": "Vi väljer själva många av våra kurser.",
+            "en": "We choose many of our courses ourselves.",
+            "bucket": "hki",
+            "why": "Course choice is typical of the Finnish gymnasium."
+          },
+          {
+            "fi": "Efter tionde klass skrev vi ett stort prov för hela delstaten.",
+            "en": "After class ten we wrote a big exam for the whole state.",
+            "bucket": "pune",
+            "why": "A state board exam after class ten."
+          },
+          {
+            "fi": "Lunchen i skolan kostar ingenting.",
+            "en": "School lunch costs nothing.",
+            "bucket": "hki",
+            "why": "Free school meals in Finland."
+          },
+          {
+            "fi": "Efter skolan gick jag på privatlektioner i matte.",
+            "en": "After school I went to private maths lessons.",
+            "bucket": "pune",
+            "why": "Private lessons after school, as Alex says in the story."
+          },
+          {
+            "fi": "Vi lärde oss långa texter utantill.",
+            "en": "We learnt long texts by heart.",
+            "bucket": "pune",
+            "why": "Learning by heart, Alex's memory."
+          },
+          {
+            "fi": "Jag samlar studiepoäng för varje kurs.",
+            "en": "I collect study credits for each course.",
+            "bucket": "hki",
+            "why": "Studiepoäng belong to the Finnish gymnasium."
+          },
+          {
+            "fi": "När jag blir student får jag en vit mössa.",
+            "en": "When I graduate, I will get a white cap.",
+            "bucket": "hki",
+            "why": "Studentmössan: Finland."
+          }
+        ],
+        "summary": "Pune: uniform, big exams, private lessons, by heart. Helsingfors: course choice, free lunch, study credits, studentmössan."
+      }
+    },
+    {
+      "title": "När jag gick i skolan … · telling about school and a first job",
+      "kind": "rule",
+      "body": [
+        "Berätta is a story, so use the past tense for what happened (Henrik's rule since Lecture 29): gick, hade, var, lärde mig, fick. Use the present for today, and compare: Då … Nu …",
+        "När jag gick i skolan … : the whole när clause takes the first place, so the main verb comes next: När jag gick i skolan hade vi uniform (Lecture 19).",
+        "A habit in the past: brukade + verb, without att: Vi brukade spela kricket på rasten.",
+        "A finished time takes the past tense, not har: Jag började skolan 1999 (not har börjat, Lecture 17).",
+        "Anstränga sig is reflexive (Lecture 15): jag anstränger mig, du anstränger dig, vi anstränger oss. Past tense: ansträngde. Jag fick anstränga mig = I had to make an effort.",
+        "A first job: Vilket var ditt första jobb? · Jag var praktikant på … · Jag jobbade som … · Jag fick jobbet genom … · Lönen var låg / bra. Utföra (utförde) = carry out, a formal word: Vilka uppgifter utförde du? In speech, Vad gjorde du? is enough.",
+        "Work words from class: ett mjukvaruföretag (a software company: mjukvara + -u- + företag), hårdvara (hardware), marknadsföring (marketing), en praktikant (an intern), en lön (pay)."
+      ],
+      "examples": [
+        {
+          "fi": "När jag gick i skolan hade vi skoluniform.",
+          "en": "When I went to school, we had a school uniform.",
+          "note": "När clause first, then hade."
+        },
+        {
+          "fi": "Vi brukade spela kricket på rasten.",
+          "en": "We used to play cricket at break time.",
+          "note": "Brukade + spela, no att."
+        },
+        {
+          "fi": "Jag började skolan när jag var sex år.",
+          "en": "I started school when I was six.",
+          "note": "Började: a finished time."
+        },
+        {
+          "fi": "I matte fick jag verkligen anstränga mig.",
+          "en": "In maths I really had to make an effort.",
+          "note": "Anstränga mig: reflexive."
+        },
+        {
+          "fi": "Mitt första jobb var på ett litet mjukvaruföretag.",
+          "en": "My first job was at a small software company.",
+          "note": "Mitt: ett jobb."
+        },
+        {
+          "fi": "Jag fick jobbet genom en lärare på universitetet.",
+          "en": "I got the job through a teacher at the university.",
+          "note": "Genom = through."
+        }
+      ],
+      "memoryTip": "Then: past tense. Clause first, verb next. Brukade without att. Anstränga + mig / dig / sig.",
+      "tryIt": "Tell in three sentences: where you went to school, one thing you used to do, and your first job.",
+      "activity": {
+        "type": "sort",
+        "label": "Right or needs a fix?",
+        "title": "Check the story lines",
+        "instructions": "Each card is a line from a learner's Berätta answer. Is it right, or does it need a fix? Say the correct version before you go on.",
+        "audio": false,
+        "buckets": [
+          {
+            "id": "ok",
+            "label": "Right",
+            "hint": "Correct Swedish"
+          },
+          {
+            "id": "fix",
+            "label": "Needs a fix",
+            "hint": "Word order, tense or a missing word"
+          }
+        ],
+        "items": [
+          {
+            "fi": "När jag gick i skolan, jag hade många vänner.",
+            "en": "When I went to school, I had many friends.",
+            "bucket": "fix",
+            "why": "After the när clause the verb comes next: När jag gick i skolan hade jag många vänner."
+          },
+          {
+            "fi": "Jag har börjat skolan när jag var sex.",
+            "en": "I started school when I was six.",
+            "bucket": "fix",
+            "why": "A finished time needs the past tense: Jag började skolan när jag var sex (Lecture 17)."
+          },
+          {
+            "fi": "Vi brukade spela kricket efter skolan.",
+            "en": "We used to play cricket after school.",
+            "bucket": "ok",
+            "why": "Brukade + verb, without att."
+          },
+          {
+            "fi": "Jag ansträngde mycket i matte.",
+            "en": "I made a big effort in maths.",
+            "bucket": "fix",
+            "why": "Anstränga needs its reflexive pronoun: Jag ansträngde mig mycket i matte."
+          },
+          {
+            "fi": "Mitt första jobb var på ett mjukvaruföretag.",
+            "en": "My first job was at a software company.",
+            "bucket": "ok",
+            "why": "Mitt with ett jobb, and the -u- in mjukvaruföretag."
+          },
+          {
+            "fi": "Min första jobb var i en butik.",
+            "en": "My first job was in a shop.",
+            "bucket": "fix",
+            "why": "Ett jobb takes mitt: Mitt första jobb var i en butik."
+          },
+          {
+            "fi": "Jag fick jobbet genom en vän.",
+            "en": "I got the job through a friend.",
+            "bucket": "ok",
+            "why": "Fick jobbet genom: natural Swedish."
+          },
+          {
+            "fi": "Lönen var inte så bra, men jag lärde mig mycket.",
+            "en": "The pay was not so good, but I learnt a lot.",
+            "bucket": "ok",
+            "why": "Past tense all the way."
+          }
+        ],
+        "summary": "Clause first, verb next. Past tense for a finished time. Anstränga mig. Mitt jobb."
+      }
+    },
+    {
+      "title": "Ha bråttom, ha fullt upp · busy lives and key words",
+      "kind": "rule",
+      "body": [
+        "Swedish often uses ha where English uses be: ha bråttom (be in a hurry), ha fullt upp (be busy), ha rätt (be right), ha tråkigt (be bored). Never är bråttom.",
+        "Numera = nowadays, a little formal; nuförtiden means the same. Nu = now, at this moment.",
+        "En orsak = a cause, a reason. Orsaken till stressen är … takes till, not för. Anledningen till … works the same way.",
+        "Framgång = success; framgångsrik = successful. Självständig = independent: Barn i Finland blir tidigt självständiga.",
+        "Meningslös = meaningless; meningsfull = meaningful. Upprepad, repetitiv and återkommande = repeated, repetitive, recurring.",
+        "Uppfostra = bring up a child (manners and values); uppfostran = upbringing. Utbildning = education (school and studies). Barn uppfostras på olika sätt: uppfostras is an s-verb and means are brought up, like Vi ses from earlier lectures."
+      ],
+      "examples": [
+        {
+          "fi": "Förlåt, jag har bråttom, bussen går om två minuter.",
+          "en": "Sorry, I'm in a hurry, the bus leaves in two minutes.",
+          "note": "Har bråttom, not är."
+        },
+        {
+          "fi": "Elin har fullt upp på jobbet den här veckan.",
+          "en": "Elin is very busy at work this week.",
+          "note": "Ha fullt upp = be busy."
+        },
+        {
+          "fi": "Numera jobbar många hemifrån.",
+          "en": "Nowadays many people work from home.",
+          "note": "Numera first, so the verb comes next."
+        },
+        {
+          "fi": "Orsaken till stressen är ofta mobilen.",
+          "en": "The cause of the stress is often the phone.",
+          "note": "Orsaken till, not för."
+        },
+        {
+          "fi": "Hennes nya företag blev en stor framgång.",
+          "en": "Her new company became a great success.",
+          "note": "En framgång, framgången."
+        },
+        {
+          "fi": "I Finland uppfostras barn att vara självständiga.",
+          "en": "In Finland children are brought up to be independent.",
+          "note": "Uppfostras: an s-verb."
+        }
+      ],
+      "memoryTip": "HAR bråttom, HAR fullt upp. Orsaken TILL. Uppfostran is home, utbildning is school.",
+      "tryIt": "Say what you are busy with this week (Jag har fullt upp med …) and one cause of stress (Orsaken till … är …).",
+      "activities": [
+        {
+          "type": "sort",
+          "label": "Har or är?",
+          "title": "Which verb fills the gap?",
+          "instructions": "Read the meaning, then choose the verb that fills the gap.",
+          "buckets": [
+            {
+              "id": "har",
+              "label": "har",
+              "hint": "the ha phrases"
+            },
+            {
+              "id": "ar",
+              "label": "är",
+              "hint": "be + a describing word"
+            }
+          ],
+          "items": [
+            {
+              "fi": "Vi ___ bråttom till tåget.",
+              "en": "We are in a hurry for the train.",
+              "bucket": "har",
+              "why": "Ha bråttom: Vi har bråttom."
+            },
+            {
+              "fi": "Hon ___ fullt upp med jobbet.",
+              "en": "She is busy with work.",
+              "bucket": "har",
+              "why": "Ha fullt upp: Hon har fullt upp."
+            },
+            {
+              "fi": "Jag ___ stressad i dag.",
+              "en": "I am stressed today.",
+              "bucket": "ar",
+              "why": "Stressad describes you: Jag är stressad."
+            },
+            {
+              "fi": "Du ___ rätt, det är för dyrt.",
+              "en": "You are right, it is too expensive.",
+              "bucket": "har",
+              "why": "Ha rätt: Du har rätt."
+            },
+            {
+              "fi": "Barnen ___ självständiga.",
+              "en": "The children are independent.",
+              "bucket": "ar",
+              "why": "Självständiga describes them: Barnen är självständiga."
+            },
+            {
+              "fi": "Han ___ sträng mot sina elever.",
+              "en": "He is strict with his pupils.",
+              "bucket": "ar",
+              "why": "Sträng describes him: Han är sträng."
+            }
+          ],
+          "summary": "Har: bråttom, fullt upp, rätt, tråkigt. Är: a describing word such as stressad, sträng, självständig."
+        },
+        {
+          "type": "match",
+          "label": "What fits?",
+          "title": "Match the situation to the comment",
+          "instructions": "Match each situation to the comment that sums it up.",
+          "pairs": [
+            {
+              "left": "Jag hinner inte äta lunch i dag.",
+              "right": "Jag har fullt upp."
+            },
+            {
+              "left": "Bussen går om två minuter!",
+              "right": "Vi har bråttom."
+            },
+            {
+              "left": "Hon fick jobbet och en bra lön.",
+              "right": "Det var en stor framgång."
+            },
+            {
+              "left": "Han bor ensam och klarar allt själv.",
+              "right": "Han är självständig."
+            },
+            {
+              "left": "Jag skriver samma rapport varje dag.",
+              "right": "Arbetet är repetitivt."
+            },
+            {
+              "left": "Varför är alla så stressade?",
+              "right": "Orsaken är mobilen."
+            }
+          ],
+          "leftLabel": "Situation",
+          "rightLabel": "Comment",
+          "pattern": "Say both lines as a tiny conversation: one person states the situation, the other comments.",
+          "sentence": "{left} {right}"
+        }
+      ]
+    },
+    {
+      "title": "Robotar, AI och framtidens jobb · arguing about automation",
+      "kind": "scene",
+      "body": [
+        "Automatisering = machines take over work: Robotar plockar varor i lager, och AI skriver enkla texter.",
+        "Talk about the future with kommer att + verb, a prediction nobody controls (Lecture 16): Robotar kommer att ta över många upprepade uppgifter. Ska is for plans you decide.",
+        "Ta över (take over) is a particle verb, so the stress falls on över. Ersätta = replace: AI kan inte ersätta en lärare.",
+        "Fördelar: människor slipper tunga och tråkiga jobb; arbetet blir snabbare och säkrare. Nackdelar: en del förlorar sina jobb; AI kan göra fel; vi blir beroende av tekniken.",
+        "The opinion phrases from Lesson 39 fit well: Ur min synvinkel … · Så vitt jag vet … · Det är ett faktum att … · Jag håller delvis med om att … · Jag är inte helt säker på att …",
+        "Alex's view in the story: AI hjälper mig att skriva kod, men den kan inte förstå vad kunden egentligen vill. Write artificiell intelligens in full once in a text; after that, AI is fine. People say it a-i."
+      ],
+      "examples": [
+        {
+          "fi": "Robotar kommer att ta över många upprepade uppgifter.",
+          "en": "Robots will take over many repetitive tasks.",
+          "note": "Kommer att: a prediction."
+        },
+        {
+          "fi": "AI kan inte ersätta en sjukskötare.",
+          "en": "AI cannot replace a nurse.",
+          "note": "Ersätta = replace."
+        },
+        {
+          "fi": "Tack vare robotarna slipper vi tunga lyft.",
+          "en": "Thanks to the robots we are spared heavy lifting.",
+          "note": "Slippa from Lecture 30."
+        },
+        {
+          "fi": "Ur min synvinkel blir arbetet säkrare.",
+          "en": "From my point of view, the work becomes safer.",
+          "note": "Ur min synvinkel first, so blir comes next."
+        },
+        {
+          "fi": "Det är ett faktum att AI ibland gör fel.",
+          "en": "It is a fact that AI sometimes makes mistakes.",
+          "note": "A fact makes an argument stronger."
+        },
+        {
+          "fi": "Jag är inte helt säker på att alla jobb finns kvar om tjugo år.",
+          "en": "I am not completely sure that all jobs will still exist in twenty years.",
+          "note": "A careful opinion."
+        }
+      ],
+      "memoryTip": "Kommer att for predictions. Ta ÖVER. One fördel, one nackdel, then your view.",
+      "tryIt": "Give one advantage and one disadvantage of AI at work, then your view with Ur min synvinkel …",
+      "activity": {
+        "type": "sort",
+        "label": "For or against?",
+        "title": "Sort the arguments about automation",
+        "instructions": "Read each argument. Does it speak for automation at work, or against it?",
+        "buckets": [
+          {
+            "id": "for",
+            "label": "För",
+            "hint": "Machines make work better"
+          },
+          {
+            "id": "against",
+            "label": "Emot",
+            "hint": "Machines cause problems"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Människor slipper tunga och farliga arbetsuppgifter.",
+            "en": "People are spared heavy and dangerous tasks.",
+            "bucket": "for",
+            "why": "Safer work for people."
+          },
+          {
+            "fi": "Många med kort utbildning kan förlora sina jobb.",
+            "en": "Many people with little education may lose their jobs.",
+            "bucket": "against",
+            "why": "A risk for workers."
+          },
+          {
+            "fi": "Maskiner blir inte trötta och kan jobba dygnet runt.",
+            "en": "Machines don't get tired and can work round the clock.",
+            "bucket": "for",
+            "why": "More work done."
+          },
+          {
+            "fi": "AI kan ge fel svar som ser helt rätt ut.",
+            "en": "AI can give wrong answers that look completely right.",
+            "bucket": "against",
+            "why": "Mistakes that are hard to spot."
+          },
+          {
+            "fi": "Vi blir beroende av tekniken och glömmer hur man gör själv.",
+            "en": "We become dependent on technology and forget how to do it ourselves.",
+            "bucket": "against",
+            "why": "Dependence."
+          },
+          {
+            "fi": "Den som jobbar får mer tid för kreativa uppgifter.",
+            "en": "Those who work get more time for creative tasks.",
+            "bucket": "for",
+            "why": "Machines take the boring parts."
+          }
+        ],
+        "summary": "Choose one argument from each side to partly agree, or two from one side to agree or disagree."
+      }
+    },
+    {
+      "title": "Rätt eller fel? · reading a news text like the test",
+      "kind": "rule",
+      "body": [
+        "Many YKI reading questions are statements: Rätt eller fel? A statement rarely repeats the text word for word. It says the same thing in other words, or it changes one small detail.",
+        "Watch the small words: drygt (a little more than), knappt (a little less than), nästan (almost), de flesta (most), minst / störst, alla / några / ingen, var femte (every fifth, 20 %).",
+        "Read the statements first. Find the sentence in the text, and decide from that sentence only, not from what you think is true in real life.",
+        "Övningstext: Ungas första jobb. En ny undersökning visar att nästan hälften av alla unga i Finland får sitt första jobb i en butik, på ett kafé eller på en restaurang. De flesta är femton eller sexton år när de börjar jobba.",
+        "Lönen är inte det viktigaste för dem. Enligt undersökningen vill de unga framför allt få erfarenhet och lära sig att ta ansvar. Var femte säger att de fick jobbet genom en släkting eller en vän. Det största problemet är att det finns för få sommarjobb på små orter."
+      ],
+      "examples": [
+        {
+          "fi": "drygt 15 procent",
+          "en": "a little more than 15 percent",
+          "note": "Drygt = a bit over."
+        },
+        {
+          "fi": "knappt 30 procent",
+          "en": "a little less than 30 percent",
+          "note": "Knappt = a bit under."
+        },
+        {
+          "fi": "nästan hälften",
+          "en": "almost half",
+          "note": "Less than 50 %."
+        },
+        {
+          "fi": "var femte elev",
+          "en": "every fifth pupil",
+          "note": "20 %."
+        },
+        {
+          "fi": "de flesta unga",
+          "en": "most young people",
+          "note": "More than half."
+        }
+      ],
+      "table": {
+        "headings": [
+          "The text says",
+          "A true paraphrase",
+          "A false trap"
+        ],
+        "rows": [
+          [
+            "nästan hälften",
+            "lite mindre än 50 procent",
+            "mer än hälften"
+          ],
+          [
+            "var femte",
+            "ungefär 20 procent",
+            "fem procent"
+          ],
+          [
+            "på små orter",
+            "utanför de stora städerna",
+            "i de stora städerna"
+          ],
+          [
+            "inte det viktigaste",
+            "något annat är viktigare",
+            "det viktigaste"
+          ]
+        ]
+      },
+      "memoryTip": "One small word can change rätt to fel: drygt, knappt, nästan, alla, ingen.",
+      "tryIt": "Say the practice text's main idea in one Swedish sentence: De flesta unga …",
+      "activity": {
+        "type": "sort",
+        "label": "Rätt eller fel?",
+        "title": "Check each statement against the practice text",
+        "instructions": "Read the practice text above again. Is each statement true (rätt) or false (fel) according to the text?",
+        "buckets": [
+          {
+            "id": "ratt",
+            "label": "Rätt",
+            "hint": "The text says the same thing"
+          },
+          {
+            "id": "fel",
+            "label": "Fel",
+            "hint": "One detail is different"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Mer än hälften av de unga får sitt första jobb inom handel eller restauranger.",
+            "en": "More than half of young people get their first job in retail or restaurants.",
+            "bucket": "fel",
+            "why": "The text says nästan hälften, which is less than half."
+          },
+          {
+            "fi": "För de unga är erfarenhet viktigare än lönen.",
+            "en": "For young people, experience is more important than pay.",
+            "bucket": "ratt",
+            "why": "Lönen är inte det viktigaste … de vill framför allt få erfarenhet."
+          },
+          {
+            "fi": "Ingen av de unga fick jobbet genom en släkting.",
+            "en": "None of the young people got the job through a relative.",
+            "bucket": "fel",
+            "why": "Var femte fick jobbet genom en släkting eller en vän."
+          },
+          {
+            "fi": "Ungefär 20 procent fick jobbet med hjälp av någon de känner.",
+            "en": "About 20 percent got the job with the help of someone they know.",
+            "bucket": "ratt",
+            "why": "Var femte = 20 %, and en släkting eller en vän = someone they know."
+          },
+          {
+            "fi": "Det finns för få sommarjobb i de stora städerna.",
+            "en": "There are too few summer jobs in the big cities.",
+            "bucket": "fel",
+            "why": "The text says på små orter, in small towns."
+          },
+          {
+            "fi": "De flesta börjar jobba innan de fyller sjutton.",
+            "en": "Most start working before they turn seventeen.",
+            "bucket": "ratt",
+            "why": "De flesta är femton eller sexton år."
+          }
+        ],
+        "summary": "Each fel card changed one detail: more than half, none, big cities. Each rätt card used other words for the same fact."
+      }
+    }
+  ],
+  "guided": [
+    {
+      "id": "sv-40-g1",
+      "prompt": "Lecture 19 + today. When I went to school, we had a uniform: När jag gick i skolan ___ uniform.",
+      "answers": [
+        "hade vi"
+      ],
+      "options": [
+        "hade vi",
+        "vi hade",
+        "har vi"
+      ],
+      "hint": "What comes straight after a clause at the start?",
+      "explanation": "The när clause fills the first place, so the verb comes next: hade vi (Lecture 19). Har would be the present tense, but this is a story about then."
+    },
+    {
+      "id": "sv-40-g2",
+      "prompt": "Lecture 17 + today. Choose: “I started school in 2001.”",
+      "answers": [
+        "Jag började skolan 2001."
+      ],
+      "options": [
+        "Jag började skolan 2001.",
+        "Jag har börjat skolan 2001.",
+        "Jag har började skolan 2001."
+      ],
+      "hint": "A year in the past: which tense?",
+      "explanation": "A finished time (2001) takes the past tense: började. Har började mixes two forms, and har börjat cannot go with a finished time (Lecture 17)."
+    },
+    {
+      "id": "sv-40-g3",
+      "prompt": "Lecture 15 + today. I had to make a real effort: Jag fick verkligen anstränga ___.",
+      "answers": [
+        "mig"
+      ],
+      "options": [
+        "mig",
+        "sig",
+        "själv"
+      ],
+      "hint": "Jag → ?",
+      "explanation": "Anstränga sig is reflexive, and the pronoun follows the subject: jag … mig (Lecture 15). Sig is for han, hon, de."
+    },
+    {
+      "id": "sv-40-g4",
+      "prompt": "Sorry, I'm in a hurry: Förlåt, jag ___ bråttom.",
+      "answers": [
+        "har"
+      ],
+      "options": [
+        "har",
+        "är",
+        "gör"
+      ],
+      "hint": "A ha phrase.",
+      "explanation": "Swedish says ha bråttom. English “I am in a hurry” pulls learners towards är."
+    },
+    {
+      "id": "sv-40-g5",
+      "prompt": "What tasks did you carry out? Vilka uppgifter ___ du?",
+      "answers": [
+        "utförde"
+      ],
+      "options": [
+        "utförde",
+        "utförade",
+        "utför"
+      ],
+      "hint": "Past tense of utföra.",
+      "explanation": "Utföra → utför → utförde → har utfört. The ending is -de, like hörde. Utförade does not exist."
+    },
+    {
+      "id": "sv-40-g6",
+      "prompt": "Children are brought up in different ways: Barn ___ på olika sätt.",
+      "answers": [
+        "uppfostras"
+      ],
+      "options": [
+        "uppfostras",
+        "uppfostrar",
+        "utbildas"
+      ],
+      "hint": "Who does the bringing up? Not the children.",
+      "explanation": "Uppfostras is an s-verb: the children are the ones being brought up. Uppfostrar needs someone doing it (Föräldrar uppfostrar barn), and utbildas is about education, not upbringing."
+    },
+    {
+      "id": "sv-40-g7",
+      "prompt": "The cause of the stress is the phone: Orsaken ___ stressen är mobilen.",
+      "answers": [
+        "till"
+      ],
+      "options": [
+        "till",
+        "för",
+        "av"
+      ],
+      "hint": "Not the English preposition.",
+      "explanation": "Orsaken till … like anledningen till. English “the reason for” pulls towards för."
+    },
+    {
+      "id": "sv-40-g8",
+      "prompt": "Lecture 16 + today. Robots will take over many jobs (a prediction): Robotar ___ ta över många jobb.",
+      "answers": [
+        "kommer att"
+      ],
+      "options": [
+        "kommer att",
+        "ska",
+        "vill"
+      ],
+      "hint": "Can anyone decide it? No: then …",
+      "explanation": "A prediction nobody controls takes kommer att (Lecture 16). Ska is for a plan someone decides, and vill means want, not will."
+    },
+    {
+      "id": "sv-40-g9",
+      "prompt": "Lecture 30 + today. Even though AI writes code fast, it cannot replace me: Trots att AI skriver kod snabbt ___ inte ersätta mig.",
+      "answers": [
+        "kan den"
+      ],
+      "options": [
+        "kan den",
+        "den kan",
+        "men den kan"
+      ],
+      "hint": "Clause first, then verb + subject.",
+      "explanation": "The trots att clause fills the first place, so the verb kan comes next, then den (Lecture 30). No men after trots att."
+    },
+    {
+      "id": "sv-40-g10",
+      "prompt": "Write in Swedish: “I am very busy this week.”",
+      "answers": [
+        "Jag har fullt upp den här veckan.",
+        "Den här veckan har jag fullt upp.",
+        "Jag har väldigt fullt upp den här veckan.",
+        "Jag har jättefullt upp den här veckan.",
+        "Jag har mycket att göra den här veckan.",
+        "Den här veckan har jag mycket att göra.",
+        "Jag har fullt upp i veckan.",
+        "I veckan har jag fullt upp."
+      ],
+      "hint": "Jag har … upp …",
+      "explanation": "Model: Jag har fullt upp den här veckan. Ha fullt upp = be busy. If Den här veckan comes first, the verb follows: Den här veckan har jag fullt upp."
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "sv-40-c1",
+      "prompt": "Write in Swedish: “When I went to school, the teachers were strict.”",
+      "answers": [
+        "När jag gick i skolan var lärarna stränga.",
+        "När jag gick i skolan var lärarna väldigt stränga.",
+        "När jag gick i skolan var lärarna mycket stränga.",
+        "När jag gick i skolan var mina lärare stränga.",
+        "Lärarna var stränga när jag gick i skolan.",
+        "Mina lärare var stränga när jag gick i skolan."
+      ],
+      "hint": "När jag gick i skolan + verb …",
+      "explanation": "Model: När jag gick i skolan var lärarna stränga. The när clause first, then var. Sträng → stränga with a plural noun."
+    },
+    {
+      "id": "sv-40-c2",
+      "prompt": "Which word means upbringing, the way parents raise a child at home?",
+      "answers": [
+        "uppfostran"
+      ],
+      "options": [
+        "uppfostran",
+        "utbildning",
+        "undervisning"
+      ],
+      "hint": "Home, not school.",
+      "explanation": "Uppfostran = upbringing (manners and values). Utbildning and undervisning are about school: education and teaching."
+    },
+    {
+      "id": "sv-40-c3",
+      "prompt": "Lecture 39 + today. Write in Swedish: “I partly agree that robots will take over our jobs.”",
+      "answers": [
+        "Jag håller delvis med om att robotar kommer att ta över våra jobb.",
+        "Jag håller delvis med om att robotarna kommer att ta över våra jobb.",
+        "Jag håller delvis med om att robotar kommer ta över våra jobb.",
+        "Jag håller delvis med om att robotarna kommer ta över våra jobb.",
+        "Jag håller delvis med om att robotar kommer att ta över våra arbeten.",
+        "Jag håller delvis med om att robotar kommer att ta över vårt arbete.",
+        "Jag håller delvis med om att robotar kommer att ta över jobben."
+      ],
+      "hint": "Jag håller delvis med om att … kommer att …",
+      "explanation": "Model: Jag håller delvis med om att robotar kommer att ta över våra jobb. The phrase is from the Lesson 39 phrase bank (hålla med om att); today adds kommer att for a prediction. In speech many people drop att after kommer; keep it when you write."
+    },
+    {
+      "id": "sv-40-c4",
+      "prompt": "Alex has a lot to do today. Which sentence is correct?",
+      "answers": [
+        "Alex har fullt upp i dag."
+      ],
+      "options": [
+        "Alex har fullt upp i dag.",
+        "Alex är fullt upp i dag.",
+        "Alex har full upp i dag."
+      ],
+      "hint": "A ha phrase, and check the ending.",
+      "explanation": "Ha fullt upp: har, and fullt with -t. Är fullt upp copies English “is busy”."
+    },
+    {
+      "id": "sv-40-c5",
+      "prompt": "Write in Swedish: “My first job was at a software company.”",
+      "answers": [
+        "Mitt första jobb var på ett mjukvaruföretag.",
+        "Mitt första arbete var på ett mjukvaruföretag.",
+        "Mitt första jobb var vid ett mjukvaruföretag.",
+        "Mitt första jobb var på ett programvaruföretag.",
+        "Mitt första jobb var på ett it-företag.",
+        "Mitt första jobb var på ett IT-företag."
+      ],
+      "hint": "Ett jobb → mitt …",
+      "explanation": "Model: Mitt första jobb var på ett mjukvaruföretag. Ett jobb takes mitt, and the compound needs -u-: mjukvaru-företag."
+    },
+    {
+      "id": "sv-40-c6",
+      "prompt": "The text says: “Knappt 30 procent av eleverna har lämnat in en text som AI har skrivit.” Statement: Mer än 30 procent har gjort det. Rätt eller fel?",
+      "answers": [
+        "Fel"
+      ],
+      "options": [
+        "Fel",
+        "Rätt"
+      ],
+      "hint": "Knappt = a little …?",
+      "explanation": "Knappt 30 procent means a little less than 30 percent, so the statement is false. Drygt 30 procent would mean a little more."
+    },
+    {
+      "id": "sv-40-c7",
+      "prompt": "Lecture 19 + today. Choose the correct sentence.",
+      "answers": [
+        "Jag tror att AI inte kan ersätta lärare."
+      ],
+      "options": [
+        "Jag tror att AI inte kan ersätta lärare.",
+        "Jag tror att AI kan inte ersätta lärare.",
+        "Jag tror att inte AI kan ersätta lärare."
+      ],
+      "hint": "Inside the att clause, where does inte go?",
+      "explanation": "In an att clause, inte stands before the verb (Lecture 19): att AI inte kan ersätta."
+    }
+  ],
+  "assignment": {
+    "title": "Lecture 40 mission: Skolan i mitt hemland och i Finland",
+    "instructions": "CORE: Berätta: school in your home country compared with Finland. Plan for one minute, then speak for one minute: a story in the past, one memory, then and now.\n\nWRITE: An insändare of 100–150 words (aim for 120) on one theme: “Robotar kommer att göra det arbete som människor gör i dag” or “Utbildning lönar sig alltid”.\n\nREAD: The news text about AI in upper secondary schools. Mark each sentence that answers a rätt/fel question, and underline drygt, knappt and nästan.\n\nRETURN: Tomorrow, tell the same story from memory, but add one sentence about your first job.",
+    "model": "När jag gick i skolan i Pune hade vi samma schema varje dag. Vi brukade börja klockan åtta, och efter skolan hade jag privatlektioner. Jag fick verkligen anstränga mig, särskilt inför proven i tionde klass. I Finland däremot har eleverna färre prov och mer frihet. Samtidigt måste de vara mer självständiga. Jag tror att båda systemen har sina fördelar."
+  },
+  "takeaways": [
+    "Berätta about school: past tense, När jag gick i skolan + verb + subject, brukade without att, then vs now.",
+    "Ha bråttom, ha fullt upp (not är). Anstränga mig / dig / sig. Orsaken till. Uppfostran is home, utbildning is school.",
+    "Automation: kommer att for predictions, ta ÖVER, ersätta; one fördel, one nackdel, then your view. Rätt eller fel: watch drygt, knappt, nästan, var femte."
+  ],
+  "dialogue": [
+    {
+      "speaker": "Maja",
+      "fi": "Hej Alex! Mitt pass är just slut, så sätt dig. Mamma hälsar och säger att hon älskar ditt gamla köksbord.",
+      "en": "Hi Alex! My shift has just finished, so sit down. Mum says hello and says she loves your old kitchen table."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Vad roligt! Men vad är det där för papper? Du ser så allvarlig ut.",
+      "en": "How nice! But what are those papers? You look so serious."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Mina kurser för hösten. I gymnasiet väljer vi själva många av våra kurser, och jag måste välja senast på fredag. Jag tar två kurser i kemi och en i fysik.",
+      "en": "My courses for the autumn. In upper secondary school we choose many of our courses ourselves, and I have to choose by Friday. I'm taking two courses in chemistry and one in physics."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Redan nu, mitt i sommarlovet? Och ni väljer själva? I Pune bestämde skolan allt. Vi hade samma schema varje dag och samma blå uniform.",
+      "en": "Already now, in the middle of the summer holidays? And you choose yourselves? In Pune the school decided everything. We had the same timetable every day and the same blue uniform."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Det låter strängt. Hade ni mycket läxor?",
+      "en": "That sounds strict. Did you have a lot of homework?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Massor! Efter skolan gick jag dessutom på privatlektioner i matte. Alla hade bråttom att komma in på en bra högskola.",
+      "en": "Loads! After school I also went to private lessons in maths. Everyone was in a hurry to get into a good college."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Här har vi inte så många prov i grundskolan. Men i gymnasiet måste man verkligen anstränga sig, särskilt inför studentexamen.",
+      "en": "Here we don't have that many exams in comprehensive school. But in upper secondary you really have to make an effort, especially before the matriculation exam."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Och man måste vara självständig. Det lärde jag mig först på universitetet.",
+      "en": "And you have to be independent. I only learnt that at university."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Vilket var ditt första jobb, förresten?",
+      "en": "What was your first job, by the way?"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Jag var praktikant på ett litet mjukvaruföretag. Lönen var låg, men jag lärde mig mer där än på alla föreläsningar.",
+      "en": "I was an intern at a small software company. The pay was low, but I learnt more there than at all the lectures."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Mitt första jobb var på ett kafé på lördagarna. Men säg, kommer AI att ta ditt jobb? Min kompis säger att programmerare snart inte behövs.",
+      "en": "My first job was at a café on Saturdays. But tell me, will AI take your job? My friend says programmers will soon not be needed."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Nej, det tror jag inte. AI hjälper mig att skriva kod snabbare, särskilt de upprepade delarna.",
+      "en": "No, I don't think so. AI helps me write code faster, especially the repetitive parts."
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Men den kan inte förstå vad kunden egentligen vill. Det kräver en människa.",
+      "en": "But it can't understand what the customer really wants. That takes a human."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Och ingen robot kan göra en cappuccino med ett hjärta i skummet!",
+      "en": "And no robot can make a cappuccino with a heart in the foam!"
+    },
+    {
+      "speaker": "Alex",
+      "fi": "Precis! Nu måste jag gå, kursen börjar snart. I kväll ska vi berätta om skolan i vårt hemland.",
+      "en": "Exactly! Now I have to go, the course starts soon. Tonight we're going to talk about school in our home country."
+    },
+    {
+      "speaker": "Maja",
+      "fi": "Då har du ju redan övat. Lycka till!",
+      "en": "Then you've already practised. Good luck!"
+    }
+  ],
+  "resources": [
+    {
+      "label": "Utbildningsstyrelsen: grundläggande utbildning (in Swedish)",
+      "url": "https://www.oph.fi/sv/utbildning-och-examina/grundlaggande-utbildning",
+      "description": "The Finnish National Agency for Education explains the comprehensive school: läroplikt, årskurs 1–9, free education. Find two facts you can use in a Berätta about Finnish schools. (Link checked 4 October 2026.)"
+    },
+    {
+      "label": "Utbildningsstyrelsen: gymnasieutbildning (in Swedish)",
+      "url": "https://www.oph.fi/sv/utbildning-och-examina/gymnasieutbildning",
+      "description": "How the gymnasium works: studiepoäng, usually three years, ending with studentexamen. Read the first paragraph and say it in your own words. (Link checked 4 October 2026.)"
+    },
+    {
+      "label": "YKI practice site: Swedish, intermediate speaking (University of Jyväskylä)",
+      "url": "https://ykitesti.solki.jyu.fi/tutustu-testiin/svenska/mellanniva-talproduktion/",
+      "description": "Look at the Berätta task: one minute to plan, then talk the whole time. Try today's school card with the same rule. (Link checked 4 October 2026.)"
+    },
+    {
+      "label": "YKI practice site: Swedish, intermediate writing (University of Jyväskylä)",
+      "url": "https://ykitesti.solki.jyu.fi/tutustu-testiin/svenska/mellanniva-skriftlig-framstallning/",
+      "description": "Read the insändare task: choose one of two themes and support your view in at least three ways. Compare it with today's writing task. (Link checked 4 October 2026.)"
+    }
+  ],
+  "practice": {
+    "words": [
+      {
+        "id": "sv-40-word-1",
+        "fi": "ett skolsystem",
+        "en": "a school system",
+        "example": "Skolsystemet i Finland är annorlunda än i Indien.",
+        "translation": "The school system in Finland is different from the one in India.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-2",
+        "fi": "läroplikt",
+        "en": "compulsory education",
+        "example": "Läroplikten gäller tills man fyller arton.",
+        "translation": "Compulsory education lasts until you turn eighteen.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-3",
+        "fi": "en yrkesutbildning",
+        "en": "vocational education",
+        "example": "Min kusin går en yrkesutbildning till elektriker.",
+        "translation": "My cousin is training to be an electrician.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-4",
+        "fi": "en studiepoäng",
+        "en": "a study credit",
+        "example": "En kurs i kemi ger två studiepoäng.",
+        "translation": "A chemistry course gives two credits.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-5",
+        "fi": "bli student",
+        "en": "pass the matriculation exam (Finland)",
+        "example": "När Maja blir student firar hela familjen.",
+        "translation": "When Maja graduates, the whole family will celebrate.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-6",
+        "fi": "sträng",
+        "en": "strict",
+        "example": "Min mattelärare var sträng men rättvis.",
+        "translation": "My maths teacher was strict but fair.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-40-word-7",
+        "fi": "anstränga sig",
+        "en": "make an effort",
+        "example": "Jag fick anstränga mig i fysik.",
+        "translation": "I had to make an effort in physics.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-8",
+        "fi": "samtidigt",
+        "en": "at the same time",
+        "example": "Hon jobbar och studerar samtidigt.",
+        "translation": "She works and studies at the same time.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-9",
+        "fi": "utantill",
+        "en": "by heart",
+        "example": "Vi lärde oss dikter utantill.",
+        "translation": "We learnt poems by heart.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-10",
+        "fi": "en privatlektion",
+        "en": "a private lesson",
+        "example": "Han gick på privatlektioner i matte.",
+        "translation": "He went to private lessons in maths.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-11",
+        "fi": "matte (matematik)",
+        "en": "maths",
+        "example": "Matte var mitt favoritämne.",
+        "translation": "Maths was my favourite subject.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-40-word-12",
+        "fi": "utföra (utförde)",
+        "en": "carry out; do",
+        "example": "Vilka uppgifter utförde du?",
+        "translation": "What tasks did you carry out?",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-13",
+        "fi": "ett mjukvaruföretag",
+        "en": "a software company",
+        "example": "Alex var praktikant på ett mjukvaruföretag.",
+        "translation": "Alex was an intern at a software company.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-14",
+        "fi": "hårdvara",
+        "en": "hardware",
+        "example": "Företaget säljer både hårdvara och program.",
+        "translation": "The company sells both hardware and software.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-15",
+        "fi": "marknadsföring",
+        "en": "marketing",
+        "example": "Hon jobbar med marknadsföring.",
+        "translation": "She works in marketing.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-16",
+        "fi": "en praktikant",
+        "en": "an intern; a trainee",
+        "example": "Vi har två nya praktikanter i sommar.",
+        "translation": "We have two new interns this summer.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-17",
+        "fi": "en lön",
+        "en": "pay; a salary",
+        "example": "Lönen var låg men jobbet var roligt.",
+        "translation": "The pay was low but the job was fun.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-40-word-18",
+        "fi": "ha bråttom",
+        "en": "be in a hurry",
+        "example": "Förlåt, jag har bråttom.",
+        "translation": "Sorry, I'm in a hurry.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-40-word-19",
+        "fi": "ha fullt upp",
+        "en": "be busy",
+        "example": "Jag har fullt upp hela veckan.",
+        "translation": "I'm busy all week.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-20",
+        "fi": "numera",
+        "en": "nowadays",
+        "example": "Numera jobbar jag hemifrån.",
+        "translation": "Nowadays I work from home.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-21",
+        "fi": "en orsak (orsaken till)",
+        "en": "a cause (the cause of)",
+        "example": "Orsaken till förseningen var snön.",
+        "translation": "The cause of the delay was the snow.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-22",
+        "fi": "en framgång",
+        "en": "a success",
+        "example": "Konserten blev en stor framgång.",
+        "translation": "The concert was a great success.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-23",
+        "fi": "självständig",
+        "en": "independent",
+        "example": "Hon är självständig och klarar sig själv.",
+        "translation": "She is independent and manages on her own.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-24",
+        "fi": "meningslös",
+        "en": "meaningless; pointless",
+        "example": "Möten utan plan är meningslösa.",
+        "translation": "Meetings without a plan are pointless.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-25",
+        "fi": "uppfostra (uppfostras)",
+        "en": "bring up (be brought up)",
+        "example": "Barn uppfostras olika i olika länder.",
+        "translation": "Children are brought up differently in different countries.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-26",
+        "fi": "en uppfostran",
+        "en": "an upbringing",
+        "example": "Hon fick en sträng uppfostran.",
+        "translation": "She had a strict upbringing.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-27",
+        "fi": "automatisering",
+        "en": "automation",
+        "example": "Automatisering förändrar många jobb.",
+        "translation": "Automation is changing many jobs.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-28",
+        "fi": "upprepad",
+        "en": "repeated; repetitive",
+        "example": "Robotar gör upprepade uppgifter.",
+        "translation": "Robots do repetitive tasks.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-29",
+        "fi": "återkommande",
+        "en": "recurring",
+        "example": "Det är ett återkommande problem.",
+        "translation": "It is a recurring problem.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-30",
+        "fi": "ta över",
+        "en": "take over",
+        "example": "Maskiner tar över de tunga jobben.",
+        "translation": "Machines take over the heavy jobs.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-31",
+        "fi": "ersätta",
+        "en": "replace",
+        "example": "AI kan inte ersätta en bra lärare.",
+        "translation": "AI cannot replace a good teacher.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-32",
+        "fi": "artificiell intelligens (AI)",
+        "en": "artificial intelligence",
+        "example": "Jag använder AI när jag skriver kod.",
+        "translation": "I use AI when I write code.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-33",
+        "fi": "ur min synvinkel",
+        "en": "from my point of view",
+        "example": "Ur min synvinkel är det en bra idé.",
+        "translation": "From my point of view it is a good idea.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-40-word-34",
+        "fi": "drygt / knappt",
+        "en": "a little more than / a little less than",
+        "example": "Drygt hälften svarade ja, knappt hälften nej.",
+        "translation": "A little over half said yes, a little under half no.",
+        "level": "B1"
+      }
+    ],
+    "pronunciation": {
+      "text": "I skolan skriver eleverna mycket. Läraren skickar läxan på kvällen. Maja är självständig och skicklig i kemi.",
+      "tip": "Sk is hard before a, o, u, å and before a consonant: skola, skuld, skriva. Before e, i, y, ä and ö it becomes the sj-sound: skicka, skicklig, skön, and självständig has the same sound. K before e, i, y, ä, ö becomes the tj-sound: kemi, kär. Finland-Swedish speakers say the sj-sound like English sh and the tj-sound close to English ch; the app's Sweden-Swedish voices use softer sounds, and both are right. Stress the end of kemi: keMI."
+    },
+    "reading_passage": {
+      "text": "Gymnasier ändrar sina uppgifter när AI skriver texterna\n\nAllt fler gymnasieelever låter artificiell intelligens skriva sina skoluppgifter. I en ny enkät bland 900 elever i Nyland svarade knappt 30 procent att de har lämnat in en text som en AI-tjänst har skrivit nästan helt. Ännu fler, drygt hälften, säger att de använder AI för att få idéer eller rätta språket.\n\nLärarna är oroliga. – En uppgift ska visa vad eleven själv har lärt sig. Om en maskin skriver texten vet vi ingenting om elevens kunskaper, säger modersmålsläraren Sofia Berg.\n\nDärför har flera gymnasier redan ändrat sina rutiner. I stället för att skriva hemma skriver eleverna nu längre texter i klassrummet, på skolans datorer utan internet. Vissa lärare ber också eleverna förklara sin text muntligt. Den som inte kan berätta hur texten blev till måste skriva en ny.\n\nAlla är inte negativa. Rektorn Mikael Ström tycker att skolan inte ska förbjuda AI. – Våra elever kommer att använda AI i arbetslivet. Skolan måste lära dem att använda den på ett ärligt och kritiskt sätt, säger han. På hans skola får eleverna använda AI i vissa uppgifter, men de måste skriva vad de har frågat och hur de har ändrat svaret.\n\nEleverna själva har blandade åsikter. – Det är ju fusk om AI skriver allt. Men det är bra att få hjälp när man har kört fast, säger Ella, 17.\n\n(Övningstext. Personerna och enkäten är påhittade.)",
+      "gist": {
+        "prompt": "What is the article mainly about?",
+        "options": [
+          "How schools respond when students let AI write their assignments",
+          "A new law that bans AI in all Finnish schools",
+          "Why students prefer to write by hand"
+        ],
+        "answer": 0,
+        "explanation": "The article starts with the survey, then shows what teachers and a principal do about it: texts written in class, oral explanations, or AI allowed with rules. No law is mentioned."
+      },
+      "detail": {
+        "prompt": "Rätt eller fel? “Mer än 30 procent av eleverna har lämnat in en text som AI nästan helt har skrivit.”",
+        "options": [
+          "Fel",
+          "Rätt"
+        ],
+        "answer": 0,
+        "explanation": "The text says knappt 30 procent, a little less than 30 percent. Drygt hälften is a different group: those who use AI for ideas or language."
+      }
+    },
+    "reading": {
+      "text": "KVÄLLSKURS: AI I VARDAGEN – FÖR NYBÖRJARE\n\nVad är artificiell intelligens, och hur kan den hjälpa dig i jobbet och hemma? På kursen provar vi att skriva mejl, planera resor och översätta texter med AI-tjänster. Vi pratar också om riskerna: fel fakta, upphovsrätt och dina personuppgifter.\nTid: tisdagar 1.9–6.10 kl. 17.30–19.00 (sex gånger)\nPlats: Kvartershuset i Vallgård, mötesrummet Ugglan\nPris: 45 euro. Ta med egen bärbar dator eller surfplatta.\nAnmälan senast 25.8 på kvartershusets webbplats. Högst 14 deltagare.\nKursen hålls på svenska. Inga förkunskaper behövs.",
+      "question": "What do participants have to bring to the course?",
+      "options": [
+        "Their own laptop or tablet",
+        "Nothing; the computers are provided",
+        "A printed list of their questions"
+      ],
+      "answer": 0,
+      "explanation": "Ta med egen bärbar dator eller surfplatta: bring your own laptop or tablet. Inga förkunskaper behövs means no previous knowledge is needed."
+    },
+    "listening": {
+      "text": "Programledaren: Hej och välkomna till Arbetslivet, programmet om jobb och studier. I dag pratar vi om robotar och artificiell intelligens. Kommer maskinerna att ta våra jobb? I studion har jag Anna Lind, som forskar i automatisering. Välkommen, Anna.\n\nAnna: Tack. Först vill jag säga att automatisering inte är något nytt. Redan för hundra år sedan ersatte maskiner många jobb i fabrikerna. Det nya är att AI nu också kan göra en del av kontorsarbetet, till exempel skriva enkla texter, översätta och svara på kundernas frågor.\n\nProgramledaren: Vilka jobb försvinner först?\n\nAnna: Jobb där man gör samma sak om och om igen. Om en uppgift är upprepad och följer tydliga regler, kan en maskin ofta göra den. Men jobb där man möter människor, löser oväntade problem eller använder händerna på ett kreativt sätt är svårare att automatisera. Tänk på sjukskötare, elektriker och lärare.\n\nProgramledaren: Vi har också Jonas på linjen. Han är tjugo år och jobbar på ett stort lager i Vanda. Hej Jonas!\n\nJonas: Hej! För två år sedan fick vi robotar som plockar varor från hyllorna. Först var vi rädda att vi skulle förlora våra jobb. Men ingen fick sparken. I stället gick vi en kurs, och nu övervakar jag robotarna och reparerar dem när något går fel. Lönen är faktiskt lite bättre än förut.\n\nProgramledaren: Det låter positivt. Anna, är det alltid så?\n\nAnna: Tyvärr inte. En del förlorar sina jobb, särskilt de som inte har möjlighet att utbilda sig. Därför är det viktigt att man kan studera vidare också som vuxen. I Finland finns det många kurser för vuxna, och en del av dem är gratis för den som är arbetslös.\n\nProgramledaren: Vad ska unga välja att studera, då?\n\nAnna: Jag brukar säga: välj något som du tycker är intressant, och lär dig att samarbeta. Maskiner är snabba, men de kan inte bygga förtroende mellan människor.\n\nProgramledaren: Tack, Anna, och tack, Jonas. Nästa vecka handlar programmet om sommarjobb för unga. Har du en fråga? Skicka ett mejl till oss senast på fredag.",
+      "question": "What happened at Jonas's warehouse after the robots came?",
+      "options": [
+        "Nobody was fired; he took a course and now monitors and repairs the robots",
+        "Half of the staff lost their jobs",
+        "He moved to an office job translating texts"
+      ],
+      "answer": 0,
+      "explanation": "Ingen fick sparken. I stället gick vi en kurs, och nu övervakar jag robotarna och reparerar dem. His pay is even a little better."
+    },
+    "speaking": {
+      "prompt": "Berätta: Skolan i ditt hemland och i Finland. Hur var skolan där du växte upp? Vad var bra och vad var svårt? Vad är annorlunda här? (Tell about school in your home country compared with Finland. As in the YKI test, plan for one minute, then speak for one minute: a story in the past, then and now.)",
+      "help": "Jag gick i skolan i … · När jag gick i skolan hade vi … · Vi brukade … · Lärarna var stränga, men samtidigt … · Jag fick anstränga mig i … · En gång … · I Finland däremot … · Från mitt hemland skulle jag vilja ta med …",
+      "model": "Jag gick i skolan i Pune i tolv år. Vi hade skoluniform, och i min klass fanns nästan femtio elever. Lärarna var stränga, och vi lärde oss mycket utantill. Efter skolan gick jag dessutom på privatlektioner i matte. Nu bor jag i Finland, och här är klasserna mindre. Eleverna får gratis skolmat, och i gymnasiet väljer de själva många kurser. De lär sig tidigt att vara självständiga. Men från Pune skulle jag vilja ta med respekten för lärarna."
+    },
+    "writing": {
+      "prompt": "Skriv en insändare. Välj ett tema: A. Robotar kommer att göra det arbete som människor gör i dag. B. Utbildning lönar sig alltid. (Write an opinion letter to a newspaper on one of the two themes.)",
+      "situation": "En lokaltidning har en temavecka om arbetslivets framtid och vill veta vad läsarna tycker. Välj tema A eller B och skriv till insändarspalten. Berätta vad du tycker och motivera din åsikt på minst tre sätt: två argument och ett exempel eller ett faktum. (A local paper is running a theme week on the future of work. Choose theme A or B and write to the opinion column. This is the YKI intermediate opinion task: give your view and support it in at least three ways. Write 100–150 words, ideally about 120.)",
+      "points": [
+        "Rubrik och inledning: presentera ämnet och säg tydligt vad du tycker. (A title, and an opening that gives your view clearly.)",
+        "Minst två argument, och varje argument har ett skäl, ett exempel eller ett faktum. (At least two arguments, each with a reason, an example or a fact.)",
+        "Visa den andra sidan: Det är klart att … eller Å andra sidan … (Show that you know the other side.)",
+        "Bindeord med verbet direkt efter: För det första är …, Dessutom kan …, Å andra sidan behöver … (Linking words, with the verb right after them.)",
+        "Avslutning med Sammanfattningsvis …, och 100–150 ord, helst cirka 120. (A conclusion, and 100–150 words.)"
+      ],
+      "wordRange": [
+        100,
+        150
+      ],
+      "help": "Det sägs ofta att … · Trots att …, håller jag … · Ur min synvinkel … · Det är ett faktum att … · Så vitt jag vet … · För det första … · Dessutom … · Å ena sidan … Å andra sidan … · upprepade uppgifter · ta över · ersätta · slippa · Sammanfattningsvis …",
+      "model": "Robotarna tar inte alla jobb\n\nDet sägs ofta att robotar och artificiell intelligens snart kommer att göra allt arbete åt oss. Trots att tekniken utvecklas snabbt håller jag bara delvis med.\n\nÅ ena sidan är det ett faktum att maskiner redan utför många upprepade uppgifter. I stora lager plockar robotar varor, och AI kan översätta en text på några sekunder. Det är bra, eftersom människor slipper tunga och tråkiga arbetsuppgifter.\n\nÅ andra sidan behöver samhället fortfarande människor. En robot kan inte trösta en orolig patient eller förstå vad en kund egentligen vill. Dessutom gör AI ibland fel, och någon måste kontrollera resultatet.\n\nSammanfattningsvis tror jag att robotarna kommer att förändra arbetet, men inte ta över det. Därför måste vi alla vara beredda att lära oss nya saker hela livet."
+    }
+  },
+  "route": {
+    "primarySkill": "speaking",
+    "expectedOutput": "A one-minute YKI Berätta about school in your home country compared with Finland: a story in the past, one memory, then and now. Then an insändare of 100–150 words (aim for 120) on robots and work or on education.",
+    "transferPrompt": "Nu frågar Henrik: ”Och hur var det att börja jobba eller studera i Finland?” Lägg till en mening om hur det var i början och en om hur det är nu. (Henrik asks a follow-up. Add one sentence about how it was at first and one about how it is now.)",
+    "returnPrompt": "Without looking, tell for one minute about school in your home country compared with Finland: then, one memory, now, and what you would bring with you.",
+    "successChecks": [
+      "Tell it as a story in the past tense: gick, hade, var, fick, lärde mig.",
+      "Start one sentence with När jag gick i skolan … and put the verb right after the clause.",
+      "Give at least two concrete details from then (uniform, exams, teachers, private lessons) and one memory.",
+      "Compare with Finland now: I Finland däremot … or Nu …",
+      "Use one new word from today: sträng, anstränga mig, självständig or samtidigt."
+    ],
+    "requiredSkills": [
+      "speaking",
+      "writing"
+    ]
+  },
+  "extraSteps": [
+    {
+      "id": "yki-tasks",
+      "after": "recall",
+      "kind": "yki-speaking",
+      "label": "YKI tasks",
+      "description": "Berätta about school and work (four cards) and Din åsikt on work, studies, busy lives, robots and Nordic schools (five statements), at exam timing.",
+      "minutes": 18,
+      "action": "Plan for one minute, then speak until the time runs out. Compare with Alex's models afterwards.",
+      "parts": [
+        {
+          "type": "prompts",
+          "id": "sv-40-yki-beratta",
+          "format": "tell",
+          "title": "Berätta · Skola och arbete",
+          "intro": "Four Berätta cards about school and work. A round picks two, as time allows; run it again for the others. Each card runs like the test: 1 minute to plan, 1 minute to speak. The models are Alex's answers; tell about your own life.",
+          "bookRef": "Förbered dig, Berätta, s. 88",
+          "prepSeconds": 60,
+          "speakSeconds": 60,
+          "roundSize": 2,
+          "rules": [
+            "You get 1 minute to plan and 1 minute to speak. Henrik's target is about 40-60 words; more is fine if it stays clear.",
+            "Berätta is a story: use the past tense for what happened (gick, hade, var, fick) and time words (först, sedan, en gång).",
+            "Compare then and now, or your home country and Finland: När jag gick i skolan … Nu …",
+            "You need not answer every guiding question or keep their order. Pick two or three and add details.",
+            "Use your own words, not the card's, and be more specific than the card.",
+            "Inventing details is fine. The rater listens to your Swedish, not to the truth."
+          ],
+          "frames": [
+            {
+              "fi": "När jag gick i skolan …",
+              "en": "When I went to school …"
+            },
+            {
+              "fi": "Vi brukade …",
+              "en": "We used to …"
+            },
+            {
+              "fi": "Jag fick anstränga mig i …",
+              "en": "I had to work hard in …"
+            },
+            {
+              "fi": "Mitt första jobb var på …",
+              "en": "My first job was at …"
+            },
+            {
+              "fi": "Jag fick jobbet genom …",
+              "en": "I got the job through …"
+            },
+            {
+              "fi": "Då … men nu …",
+              "en": "Back then … but now …"
+            },
+            {
+              "fi": "Jämfört med mitt hemland …",
+              "en": "Compared with my home country …"
+            }
+          ],
+          "prompts": [
+            {
+              "id": "sv-40-tell-system",
+              "fi": "Berätta om skolsystemet i landet där du växte upp. Jämför det med Finland.",
+              "en": "Tell about the school system in the country where you grew up. Compare it with Finland.",
+              "bullets": [
+                "Hur många år gick man i skolan, och fanns det stora prov?",
+                "Vad fungerade bra, och vad var mindre bra?",
+                "Vad är annorlunda i finska skolor?",
+                "Vilken idé från ditt hemland skulle finska skolor kunna använda?"
+              ],
+              "model": "I Indien går de flesta barn i skolan i tolv år, och efter tionde och tolfte klass skriver man stora prov. Fördelen är att eleverna lär sig mycket, särskilt i matte. Nackdelen är stressen. Många går på privatlektioner varje kväll. I Finland har eleverna färre prov och mer fritid, och skolmaten är gratis. Från Indien skulle jag vilja ta med respekten för lärarna.",
+              "modelEn": "In India most children go to school for twelve years, and after class ten and class twelve you write big exams. The advantage is that pupils learn a lot, especially in maths. The disadvantage is the stress. Many go to private lessons every evening. In Finland pupils have fewer exams and more free time, and school lunch is free. From India I would like to bring respect for teachers."
+            },
+            {
+              "id": "sv-40-tell-elev",
+              "fi": "Berätta om dig själv som elev.",
+              "en": "Tell about yourself as a pupil.",
+              "bullets": [
+                "Var du en flitig elev, eller pratade du hellre med kompisarna?",
+                "Berätta om en dag i skolan som du aldrig glömmer.",
+                "Vilket ämne tyckte du mest om, och vilket tyckte du minst om?",
+                "Vilken lärare minns du bäst, och varför?"
+              ],
+              "model": "Jag var ganska flitig, men jag pratade för mycket på lektionerna. Mitt favoritämne var matte, och jag hatade att lära mig historiska årtal utantill. Min mattelärare var sträng, men han trodde på mig. En gång vann vår klass en mattetävling i Pune, och hela skolan applåderade. Den dagen glömmer jag aldrig. Då förstod jag att det är värt att anstränga sig.",
+              "modelEn": "I was quite hard-working, but I talked too much in class. My favourite subject was maths, and I hated learning historical dates by heart. My maths teacher was strict, but he believed in me. Once our class won a maths competition in Pune, and the whole school applauded. I will never forget that day. Then I understood that it is worth making an effort."
+            },
+            {
+              "id": "sv-40-tell-forsta-jobbet",
+              "fi": "Berätta om det första jobbet du hade.",
+              "en": "Tell about the first job you had.",
+              "bullets": [
+                "Hur gammal var du, och vad gick jobbet ut på?",
+                "Hur hittade du jobbet?",
+                "Vad lärde du dig där?",
+                "Var du nöjd med lönen och arbetstiderna?"
+              ],
+              "model": "Mitt första riktiga jobb hade jag när jag var tjugoett. Jag var praktikant på ett litet mjukvaruföretag i Pune. Där testade jag program och rättade enkla fel i koden. Jobbet fick jag genom en lärare på universitetet. Lönen var låg, och vi jobbade ofta sent. Men jag lärde mig mycket, till exempel att arbeta i ett team. Utan det jobbet hade jag inte varit programmerare i dag.",
+              "modelEn": "I had my first real job when I was twenty-one. I was an intern at a small software company in Pune. There I tested programs and fixed simple bugs in the code. I got the job through a teacher at the university. The pay was low, and we often worked late. But I learnt a lot, for example how to work in a team. Without that job I would not be a programmer today."
+            },
+            {
+              "id": "sv-40-tell-arbetsdag",
+              "fi": "Berätta hur en vanlig arbetsdag eller skoldag ser ut för dig.",
+              "en": "Tell what an ordinary working day or school day looks like for you.",
+              "bullets": [
+                "När börjar du, och när slutar du?",
+                "Vilka uppgifter har du varje dag?",
+                "När tar du rast, och vad gör du då?",
+                "Vad tycker du bäst om, och vad är jobbigt?"
+              ],
+              "model": "Jag börjar oftast vid åtta, och klockan nio har mitt team ett kort videomöte. Sedan skriver jag kod och testar den. Numera låter jag AI skriva de enklaste delarna, så jag hinner mer. Vid tolv tar jag lunchrast och går en sväng i parken. På eftermiddagen har jag ofta fullt upp med frågor från kunder. Det bästa är att lösa problem. Det jobbiga är att jag sitter stilla för mycket.",
+              "modelEn": "I usually start around eight, and at nine my team has a short video meeting. Then I write code and test it. Nowadays I let AI write the simplest parts, so I get more done. At twelve I take my lunch break and go for a walk in the park. In the afternoon I am often busy with questions from customers. The best part is solving problems. The hard part is that I sit still too much."
+            }
+          ]
+        },
+        {
+          "type": "prompts",
+          "id": "sv-40-yki-asikt",
+          "format": "opinion",
+          "title": "Din åsikt · Arbete, studier och framtiden",
+          "intro": "Five Din åsikt statements about work, studies and the future. A round picks two. Plan for 1 minute, then speak for 1 minute 30 seconds: position, two arguments, conclusion.",
+          "bookRef": "Förbered dig, Din åsikt, s. 89",
+          "prepSeconds": 60,
+          "speakSeconds": 90,
+          "roundSize": 2,
+          "rules": [
+            "You get 1 minute to plan and 1 minute 30 seconds to speak: about 60-90 words.",
+            "Three parts: your position, two arguments with a reason or an example, and a conclusion.",
+            "Choose a position: you agree, you disagree, or you partly agree (å ena sidan … å andra sidan).",
+            "Say the statement in your own words; do not read it back.",
+            "A fact or a number makes an argument stronger: Det är ett faktum att …",
+            "Keep talking until the time is up, and finish with Sammanfattningsvis …"
+          ],
+          "frames": [
+            {
+              "fi": "Enligt min åsikt … · Ur min synvinkel …",
+              "en": "In my opinion … · From my point of view …"
+            },
+            {
+              "fi": "Jag håller absolut med om att …",
+              "en": "I absolutely agree that …"
+            },
+            {
+              "fi": "Jag håller delvis med om att … / Jag håller inte helt med.",
+              "en": "I partly agree that … / I don't completely agree."
+            },
+            {
+              "fi": "Det är ett faktum att … · Så vitt jag vet …",
+              "en": "It is a fact that … · As far as I know …"
+            },
+            {
+              "fi": "Fördelarna med … är att … Nackdelarna är att …",
+              "en": "The advantages of … are that … The disadvantages are that …"
+            },
+            {
+              "fi": "Det är klart att …, men …",
+              "en": "Of course …, but …"
+            },
+            {
+              "fi": "Sammanfattningsvis tycker jag att …",
+              "en": "To sum up, I think that …"
+            }
+          ],
+          "prompts": [
+            {
+              "id": "sv-40-op-roligt",
+              "fi": "Ett jobb måste vara roligt.",
+              "en": "A job has to be fun.",
+              "bullets": [
+                "Vad är viktigast för dig: lönen eller att trivas?",
+                "Kan ett tråkigt jobb ändå vara ett bra jobb?",
+                "Vilka arbetsuppgifter tycker du om, och vilka undviker du helst?"
+              ],
+              "model": "Många säger att ett jobb måste vara roligt. Jag håller delvis med. Å ena sidan tillbringar vi en stor del av livet på jobbet, så det är viktigt att trivas. Om arbetet känns meningslöst blir man trött och stressad. Å andra sidan kan inget jobb vara roligt hela tiden. Till exempel är det tråkigt att skriva rapporter, men det hör till. Dessutom behöver alla en lön. Sammanfattningsvis tycker jag att jobbet ska kännas meningsfullt, men det behöver inte alltid vara roligt.",
+              "modelEn": "Many people say a job has to be fun. I partly agree. On the one hand, we spend a large part of our lives at work, so it is important to enjoy it. If the work feels meaningless, you get tired and stressed. On the other hand, no job can be fun all the time. For example, writing reports is boring, but it is part of the job. Also, everyone needs a salary. To sum up, I think a job should feel meaningful, but it does not always have to be fun."
+            },
+            {
+              "id": "sv-40-op-utbildning",
+              "fi": "Utbildning lönar sig alltid.",
+              "en": "Education always pays off.",
+              "bullets": [
+                "Vad har du själv fått ut av dina studier?",
+                "Finns det utbildningar som inte leder någonstans?",
+                "Hur kommer skolan att se ut om tjugo år?"
+              ],
+              "model": "Enligt min åsikt lönar sig utbildning nästan alltid. För det första ger en utbildning fler möjligheter på arbetsmarknaden. Så vitt jag vet är arbetslösheten lägre bland dem som har studerat mer. För det andra lär man sig att tänka självständigt, och det har man nytta av hela livet. Det är klart att man inte måste gå på universitetet för att bli framgångsrik. Många hantverkare har både bra jobb och nöjda kunder. Sammanfattningsvis blir man aldrig för gammal för att lära sig något nytt.",
+              "modelEn": "In my opinion education almost always pays off. Firstly, an education gives more opportunities on the job market. As far as I know, unemployment is lower among those who have studied more. Secondly, you learn to think independently, and that is useful all your life. Of course you do not have to go to university to become successful. Many tradespeople have both good jobs and satisfied customers. To sum up, you are never too old to learn something new."
+            },
+            {
+              "id": "sv-40-op-brattom",
+              "fi": "Nuförtiden har alla så bråttom.",
+              "en": "Everyone is in such a hurry nowadays.",
+              "bullets": [
+                "Använder vi tiden på ett annat sätt nu än för trettio år sedan?",
+                "Vad är orsaken till att så många känner sig stressade?",
+                "Kan det vara positivt att ha fullt upp?"
+              ],
+              "model": "Jag håller med om att många har bråttom numera. Den största orsaken är mobilen, tror jag. Vi läser jobbmejl på bussen och kollar nyheterna i sängen, så vi vilar aldrig riktigt. Dessutom har många jobb, studier och hobbyer samtidigt. Å andra sidan är det inte alltid negativt att ha fullt upp. När jag har mycket att göra blir jag effektivare. Sammanfattningsvis behöver vi lära oss att stänga av ibland.",
+              "modelEn": "I agree that many people are in a hurry nowadays. The biggest cause is the mobile phone, I think. We read work emails on the bus and check the news in bed, so we never really rest. Also, many people have a job, studies and hobbies at the same time. On the other hand, being busy is not always negative. When I have a lot to do, I become more efficient. To sum up, we need to learn to switch off sometimes."
+            },
+            {
+              "id": "sv-40-op-robotar",
+              "fi": "Robotar kommer att ta över det arbete som människor gör i dag.",
+              "en": "Robots will take over the work that people do today.",
+              "bullets": [
+                "Vilka jobb kan maskiner göra bättre än människor?",
+                "Vad är bra och vad är dåligt med automatisering?",
+                "Hur använder du själv AI, och vad oroar dig?"
+              ],
+              "model": "Ur min synvinkel kommer robotar och AI att förändra många jobb, men de tar inte över allt. För det första är maskiner bra på upprepade uppgifter, till exempel i fabriker och lager. Det är en fördel, eftersom människor slipper tunga och tråkiga jobb. För det andra behöver vi fortfarande människor som tar hand om andra, till exempel inom vården. Men det finns risker: AI kan göra fel, och en del förlorar sina jobb. Sammanfattningsvis måste vi fortsätta att lära oss hela livet.",
+              "modelEn": "From my point of view, robots and AI will change many jobs, but they will not take over everything. Firstly, machines are good at repetitive tasks, for example in factories and warehouses. That is an advantage, because people are spared heavy and boring jobs. Secondly, we still need people who take care of others, for example in healthcare. But there are risks: AI can make mistakes, and some people lose their jobs. To sum up, we have to keep learning all our lives."
+            },
+            {
+              "id": "sv-40-op-norden",
+              "fi": "Barn i de nordiska länderna får en bra skola och en bra uppfostran.",
+              "en": "Children in the Nordic countries get a good school and a good upbringing.",
+              "bullets": [
+                "Hur uppfostras barn i Finland jämfört med i landet där du växte upp?",
+                "Hur mycket frihet och ansvar får barnen?",
+                "Vad kan länderna lära sig av varandra?"
+              ],
+              "model": "Jag håller delvis med. Å ena sidan får barnen i Finland mycket frihet och ansvar. Redan sjuåringar går ensamma till skolan, och de lär sig tidigt att vara självständiga. Dessutom är skolan gratis, och alla får skolmat. Å andra sidan tycker jag att barn i Indien ofta lär sig mer respekt för äldre människor. Där bor många barn tillsammans med sina far- och morföräldrar. Sammanfattningsvis kan Finland och Indien lära sig mycket av varandra.",
+              "modelEn": "I partly agree. On the one hand, children in Finland get a lot of freedom and responsibility. Even seven-year-olds walk to school alone, and they learn early to be independent. Also, school is free, and everyone gets school lunch. On the other hand, I think children in India often learn more respect for older people. There many children live together with their grandparents. To sum up, Finland and India can learn a lot from each other."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "story": {
+    "object": "Maja's autumn course list on a café table, beside Alex's laptop and a cappuccino"
+  }
+}
