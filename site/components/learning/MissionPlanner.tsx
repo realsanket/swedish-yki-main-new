@@ -14,7 +14,9 @@ export function planScript(plan: MissionPlan, values: string[]) {
     .map((line, index) => {
       const value = line.before ? clean(values[index] ?? "") : (values[index] ?? "").trim();
       if (!value) return "";
-      return line.before ? `${line.before} ${value}${line.after ?? ""}` : value;
+      // Text after the gap that starts with a word ("i veckan.") needs a space; punctuation does not.
+      const after = line.after ? (/^[\p{L}\p{N}]/u.test(line.after) ? ` ${line.after}` : line.after) : "";
+      return line.before ? `${line.before} ${value}${after}` : value;
     })
     .filter(Boolean)
     .join("\n");

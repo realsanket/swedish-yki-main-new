@@ -1473,7 +1473,9 @@
           "Jag kommer från Indien, men jag bor i Helsinki nu.",
           "Jag kommer från Indien, men nu bor jag i Helsinki.",
           "Jag är från Indien, men jag bor i Helsingfors nu.",
-          "Jag är från Indien, men nu bor jag i Helsingfors."
+          "Jag är från Indien, men nu bor jag i Helsingfors.",
+          "Jag kommer från Indien, men jag bor nu i Helsingfors.",
+          "Jag kommer från Indien, men jag bor nu i Helsinki."
         ],
         "hint": "Origin with kommer från, then men, then home with bor i. Use the Swedish name for Helsinki.",
         "explanation": "Jag kommer från Indien, men jag bor i Helsingfors nu. In Swedish, Helsinki is Helsingfors."
@@ -2220,7 +2222,7 @@
           {
             "title": "Textbook page practice: Hej! Jag har en pojkvän!",
             "tabLabel": "Page 5 · Hej! Jag har en pojkvän!",
-            "intro": "A short drama with every pronoun from today. Follow who han, hon and de point to, and the story makes sense.",
+            "intro": "A short drama full of today's pronouns. Follow who han, hon and de point to, and the story makes sense.",
             "image": "/images/source/textbook-lesson-02-page-05.png",
             "imageAlt": "Textbook page Hej! Jag har en pojkvän! where Nora and Maria talk about Nora's new boyfriend, with the personal pronouns marked in red",
             "textRegion": {
@@ -2745,7 +2747,9 @@
                   "de"
                 ],
                 "answers": [
-                  "jag"
+                  "jag",
+                  "du",
+                  "hon"
                 ]
               },
               {
@@ -2953,7 +2957,9 @@
                   "de"
                 ],
                 "answers": [
-                  "jag"
+                  "jag",
+                  "han",
+                  "hon"
                 ]
               },
               {
@@ -3751,8 +3757,8 @@
                 ],
                 "answer": "Hur gammal är hon?",
                 "reply": {
-                  "fi": "Hon är tjugofem.",
-                  "en": "She is twenty-five."
+                  "fi": "Hon är trettio.",
+                  "en": "She is thirty."
                 },
                 "why": "Age uses hur: hur gammal (how old), then the verb är."
               },
@@ -5510,7 +5516,8 @@
                   "måste"
                 ],
                 "answers": [
-                  "kan"
+                  "kan",
+                  "vill"
                 ]
               },
               {
@@ -5551,7 +5558,8 @@
                   "måste"
                 ],
                 "answers": [
-                  "kan"
+                  "kan",
+                  "vill"
                 ],
                 "translation": "____ you buy milk after work? I am going to make us lattes tonight."
               },
@@ -5578,7 +5586,8 @@
                   "måste"
                 ],
                 "answers": [
-                  "måste"
+                  "måste",
+                  "ska"
                 ]
               },
               {
@@ -5591,7 +5600,8 @@
                   "måste"
                 ],
                 "answers": [
-                  "måste"
+                  "måste",
+                  "ska"
                 ]
               },
               {
@@ -5604,7 +5614,8 @@
                   "måste"
                 ],
                 "answers": [
-                  "kan"
+                  "kan",
+                  "ska"
                 ]
               },
               {
@@ -5617,7 +5628,8 @@
                   "måste"
                 ],
                 "answers": [
-                  "ska"
+                  "ska",
+                  "kan"
                 ]
               },
               {
@@ -5630,7 +5642,8 @@
                   "måste"
                 ],
                 "answers": [
-                  "ska"
+                  "ska",
+                  "kan"
                 ]
               },
               {
@@ -5643,7 +5656,8 @@
                   "måste"
                 ],
                 "answers": [
-                  "kan"
+                  "kan",
+                  "vill"
                 ],
                 "translation": "____ you help me? I am lost."
               },
@@ -5657,7 +5671,8 @@
                   "måste"
                 ],
                 "answers": [
-                  "måste"
+                  "måste",
+                  "ska"
                 ]
               },
               {
@@ -6063,7 +6078,8 @@
                 "translation": "Then he will play in a band.",
                 "hint": "Start with: Han",
                 "answers": [
-                  "Han ska spela i band sedan."
+                  "Han ska spela i band sedan.",
+                  "Han ska sedan spela i band."
                 ]
               },
               {
@@ -6072,7 +6088,8 @@
                 "translation": "Then Lina will fall in love with him.",
                 "hint": "Start with: Lina",
                 "answers": [
-                  "Lina blir kär i honom då."
+                  "Lina blir kär i honom då.",
+                  "Lina blir då kär i honom."
                 ]
               }
             ],
@@ -7694,12 +7711,12 @@
               {
                 "prompt": "Which two presents take ett?",
                 "options": [
-                  "The running shoes and the video game",
+                  "The pair of running shoes and the video game",
                   "The car and the computer",
                   "The book and the mobile phone"
                 ],
                 "answer": 0,
-                "explanation": "The list says ett par löparskor and ett datorspel. Everything else takes en."
+                "explanation": "The list says ett par löparskor (a pair of running shoes) and ett datorspel. Ett goes with par (a pair), not with the shoes. Everything else takes en."
               }
             ],
             "naturalNotes": [
@@ -8636,7 +8653,7 @@
         "body": [
           "The teacher’s homework question is Vad gör du på fritiden? (What do you do in your free time?). Answer with a verb in the present tense: Jag läser en bok. Jag lyssnar på musik. Jag tränar på gymmet.",
           "English uses play for everything. Swedish has two verbs. Spelar is for games, sports and instruments: spelar datorspel, spelar fotboll, spelar piano. Leker is free play, the way children and pets play: leker med min katt.",
-          "Some free time is at home: stannar hemma (stay at home), vilar (rest), lagar mat (cook). Some is away: åker till havet (go to the sea), åker skidor (ski), reser utomlands (travel abroad), går på bio (go to the cinema). Går en kurs means takes a course: en språkkurs, en matlagningskurs. In Finland, many people also bastar (take a sauna); you will hear går i bastu too.",
+          "Some free time is at home: stannar hemma (stay at home), vilar (rest), lagar mat (cook). Some is away: åker till havet (go to the sea), solar (sunbathe), badar (swim for fun), åker till fjällen (go to the mountains), åker skidor (ski), reser utomlands (travel abroad), går på bio (go to the cinema). Går en kurs means takes a course: en språkkurs, en matlagningskurs. In Finland, many people also bastar (take a sauna); you will hear går i bastu too.",
           "Semester is a holiday from work (not a school term): Jag har semester or Jag är på semester. Fikar means having coffee and something sweet. Swedes say it all the time; in Finland, Swedish speakers usually say dricker kaffe."
         ],
         "examples": [
@@ -11141,7 +11158,9 @@
         "prompt": "Produce: “I dream about a fun job.”",
         "answers": [
           "Jag drömmer om ett roligt jobb.",
-          "Jag drömmer om ett kul jobb."
+          "Jag drömmer om ett kul jobb.",
+          "Jag drömmer om ett roligt arbete.",
+          "Jag drömmer om ett kul arbete."
         ],
         "hint": "Use drömmer om. Jobb is an ett-word.",
         "explanation": "Jag drömmer om ett roligt jobb: you met ett jobb in Lecture 4, so rolig takes -t. Kul never changes, so ett kul jobb is right too."
@@ -14784,7 +14803,7 @@
             "item": 9,
             "title": "Noun plurals",
             "posted": "29 Apr",
-            "instructions": "Skriv substantivet i plural. Put the nouns in the plural; where it says so, write the full sentence. En-words ending in -a take -or (mamma → mammor); most short en-words take -ar (bil → bilar); foreign words take -er (banan → bananer); ett-words ending in a vowel take -n (möte → möten); ett-words ending in a consonant do not change (liv → liv).",
+            "instructions": "Skriv substantivet i plural. Put the nouns in the plural; where it says so, write the full sentence. En-words ending in -a take -or (blomma → blommor); most short en-words take -ar (buss → bussar); foreign words take -er (tomat → tomater); ett-words ending in a vowel take -n (möte → möten); ett-words ending in a consonant do not change (hus → hus).",
             "questions": [
               {
                 "id": "q1",
@@ -14878,7 +14897,7 @@
                 "id": "q8",
                 "prompt": "Jag går gärna ___ _______ när jag ____ ____ ______.",
                 "translation": "I like to go to museums when I am on holiday.",
-                "hint": "Write the full sentence. Remember which preposition goes with institutions (på).",
+                "hint": "Write the full sentence. Remember which preposition we use with institutions!",
                 "answers": [
                   "Jag går gärna på museer när jag är på semester."
                 ]
@@ -16645,34 +16664,79 @@
             },
             "hunt": {
               "label": "Story-word hunt",
-              "title": "Find the past verbs and the ago word in the diary.",
-              "instructions": "Tap each past form and connect it to an event. Then find the red word that closes för … sedan. Three of the verbs are red on the page; träffade is not marked, but it is a key event verb too.",
-              "missHint": "Look for what started or happened (började, träffade, bokade, väntade) and the word after en månad.",
+              "title": "Find the red words in the diary",
+              "instructions": "The page marks key words in red. Tap each one; for a red phrase such as bokade bord or kom inte i tid, tap its first word. Say what each one does in Andreas's story.",
+              "missHint": "Look for the red words. For a red phrase, tap its first word.",
               "spots": [
+                {
+                  "word": "hemligt",
+                  "mark": "t",
+                  "rule": "hemligt: secret. Ett liv is an ett-word, so hemlig takes -t (Lecture 5). En hemlighet = a secret."
+                },
                 {
                   "word": "började",
                   "mark": "började",
-                  "rule": "började: started; the next verb stays in the infinitive."
+                  "rule": "började: started. The next verb stays in the infinitive: började skriva, började dejta."
                 },
                 {
-                  "word": "träffade",
-                  "mark": "träffade",
-                  "rule": "träffade: met; a regular past form."
+                  "word": "otroligt",
+                  "mark": "otroligt",
+                  "rule": "otroligt: incredibly, unbelievably. Here it makes vacker stronger: otroligt vacker."
                 },
                 {
-                  "word": "bokade",
-                  "mark": "bokade",
-                  "rule": "bokade: booked; a regular past form."
-                },
-                {
-                  "word": "väntade",
-                  "mark": "väntade",
-                  "rule": "väntade på: waited for; keep på with the verb."
+                  "word": "för",
+                  "mark": "för",
+                  "rule": "för … sedan: ago. För comes before the time (för en månad sedan). Later on the page, berätta … för Nora means tell … to Nora."
                 },
                 {
                   "word": "sedan",
                   "mark": "sedan",
                   "rule": "för en månad sedan: a month ago. Ago needs both words: för before the time, sedan after it."
+                },
+                {
+                  "word": "ingenting",
+                  "mark": "ingenting",
+                  "rule": "ingenting: nothing. Hon vet ingenting = she knows nothing."
+                },
+                {
+                  "word": "Borde",
+                  "mark": "Borde",
+                  "rule": "Borde: should. A question that asks for advice; you practise it fully in Lecture 13."
+                },
+                {
+                  "word": "berätta",
+                  "mark": "berätta",
+                  "rule": "berätta något för någon: tell something to someone. Berätta sanningen för Nora = tell Nora the truth."
+                },
+                {
+                  "word": "Dessutom",
+                  "mark": "Dessutom",
+                  "rule": "Dessutom: besides, on top of that. It starts the sentence, so the verb comes next: Dessutom blir Lena …"
+                },
+                {
+                  "word": "besviken",
+                  "mark": "besviken",
+                  "rule": "besviken på: disappointed in. Keep på with it."
+                },
+                {
+                  "word": "bokade",
+                  "mark": "bokade",
+                  "rule": "bokade bord: booked a table. A regular past form: bokar → bokade."
+                },
+                {
+                  "word": "väntade",
+                  "mark": "väntade",
+                  "rule": "väntade på: waited for. Keep på with the verb."
+                },
+                {
+                  "word": "kom",
+                  "mark": "kom",
+                  "rule": "kom inte i tid: did not arrive on time. Kommer → kom; i tid = on time."
+                },
+                {
+                  "word": "sen",
+                  "mark": "sen",
+                  "rule": "sen: late. Hon var 5 minuter sen = she was 5 minutes late."
                 }
               ]
             }
@@ -16858,24 +16922,59 @@
             },
             "hunt": {
               "label": "Letter-phrase hunt",
-              "title": "Find the useful phrases marked or underlined on the page.",
-              "instructions": "These chunks tell the topic, refer to secrecy, and offer support.",
-              "missHint": "Look for the underlined groups.",
+              "title": "Find the red words and the underlined phrases",
+              "instructions": "The page prints useful words in red and underlines three whole phrases. Tap each red word. For an underlined phrase, tap its key word: handlar, bakom or finns.",
+              "missHint": "Look for the red words, or the key word of an underlined phrase (handlar, bakom, finns).",
               "spots": [
+                {
+                  "word": "viktigt",
+                  "mark": "t",
+                  "rule": "viktigt: important. Något viktigt = something important; något takes the -t form."
+                },
                 {
                   "word": "handlar",
                   "mark": "handlar",
-                  "rule": "Use det handlar om + topic: it is about …"
+                  "rule": "Det handlar om + topic: it is about …"
+                },
+                {
+                  "word": "tillsammans",
+                  "mark": "tillsammans",
+                  "rule": "tillsammans: together (also ihop)."
+                },
+                {
+                  "word": "ärlig",
+                  "mark": "ärlig",
+                  "rule": "ärlig: honest. Jag tycker inte att han är ärlig."
                 },
                 {
                   "word": "bakom",
                   "mark": "bakom",
-                  "rule": "A fixed phrase meaning behind your back."
+                  "rule": "bakom din rygg: behind your back, a fixed phrase."
+                },
+                {
+                  "word": "arg",
+                  "mark": "arg",
+                  "rule": "arg på: angry with. Bli inte arg på Nora!"
+                },
+                {
+                  "word": "snäll",
+                  "mark": "snäll",
+                  "rule": "snäll: kind. En snäll tjej."
+                },
+                {
+                  "word": "visa",
+                  "mark": "visa",
+                  "rule": "visa: show. Visa dig sanningen = show you the truth."
                 },
                 {
                   "word": "finns",
                   "mark": "finns",
-                  "rule": "A warm way to offer support."
+                  "rule": "Jag finns här för dig: I am here for you, a warm way to offer support."
+                },
+                {
+                  "word": "behöver",
+                  "mark": "behöver",
+                  "rule": "behöver: need(s). Om du behöver något = if you need anything."
                 }
               ]
             }
@@ -16972,9 +17071,9 @@
             },
             "hunt": {
               "label": "Past-form hunt",
-              "title": "Find the past forms on the page",
-              "instructions": "Tap a past form and say its present–past pair.",
-              "missHint": "Look for a verb that describes a past action.",
+              "title": "Find the 18 past forms",
+              "instructions": "The red column shows the past. Tap each red form and say the whole pair aloud, for example är – var.",
+              "missHint": "The present forms are the dark ones on the left; tap a red past form.",
               "spots": [
                 {
                   "word": "var",
@@ -16982,14 +17081,89 @@
                   "rule": "är → var"
                 },
                 {
+                  "word": "ville",
+                  "mark": "ville",
+                  "rule": "vill → ville"
+                },
+                {
+                  "word": "kunde",
+                  "mark": "kunde",
+                  "rule": "kan → kunde"
+                },
+                {
+                  "word": "sa",
+                  "mark": "sa",
+                  "rule": "säger → sa (or sade)"
+                },
+                {
+                  "word": "kom",
+                  "mark": "kom",
+                  "rule": "kommer → kom"
+                },
+                {
+                  "word": "gjorde",
+                  "mark": "gjorde",
+                  "rule": "gör → gjorde"
+                },
+                {
                   "word": "gick",
                   "mark": "gick",
                   "rule": "går → gick"
                 },
                 {
+                  "word": "fick",
+                  "mark": "fick",
+                  "rule": "får → fick"
+                },
+                {
+                  "word": "gav",
+                  "mark": "gav",
+                  "rule": "ger → gav"
+                },
+                {
+                  "word": "hade",
+                  "mark": "hade",
+                  "rule": "har → hade"
+                },
+                {
+                  "word": "tog",
+                  "mark": "tog",
+                  "rule": "tar → tog"
+                },
+                {
+                  "word": "såg",
+                  "mark": "såg",
+                  "rule": "ser → såg"
+                },
+                {
+                  "word": "visste",
+                  "mark": "visste",
+                  "rule": "vet → visste"
+                },
+                {
+                  "word": "skrev",
+                  "mark": "skrev",
+                  "rule": "skriver → skrev"
+                },
+                {
                   "word": "åt",
                   "mark": "åt",
                   "rule": "äter → åt"
+                },
+                {
+                  "word": "drack",
+                  "mark": "drack",
+                  "rule": "dricker → drack"
+                },
+                {
+                  "word": "sov",
+                  "mark": "sov",
+                  "rule": "sover → sov"
+                },
+                {
+                  "word": "blev",
+                  "mark": "blev",
+                  "rule": "blir → blev"
                 }
               ]
             }
@@ -17995,6 +18169,30 @@
           "en": "vappen, Finland's spring festival (30 April and 1 May)",
           "example": "På vappen åt vi munkar i Brunnsparken.",
           "translation": "At vappen we ate doughnuts in Brunnsparken.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-08-word-33",
+          "fi": "tittade på",
+          "en": "watched, looked at (såg = saw)",
+          "example": "Igår kväll tittade jag på en film.",
+          "translation": "Last night I watched a film.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-08-word-34",
+          "fi": "en smörgås (en macka)",
+          "en": "a sandwich (macka is the everyday word)",
+          "example": "Till frukost åt jag en smörgås och drack mjölk.",
+          "translation": "For breakfast I ate a sandwich and drank milk.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-08-word-35",
+          "fi": "Tyskland, Frankrike, Grekland",
+          "en": "Germany, France, Greece",
+          "example": "Förra året reste jag till Grekland.",
+          "translation": "Last year I travelled to Greece.",
           "level": "A1"
         }
       ],
@@ -19563,6 +19761,12 @@
               "why": "Duk is a short everyday word: halsdukar."
             },
             {
+              "fi": "en fågel",
+              "en": "a bird",
+              "bucket": "g2",
+              "why": "An e near the end drops before -ar: fåglar. Many pet words are group 2: hundar, fiskar, hästar."
+            },
+            {
               "fi": "en kostym",
               "en": "a suit",
               "bucket": "g3",
@@ -19608,7 +19812,7 @@
         "body": [
           "Lecture 5 gave you en ny jacka and ett nytt jobb. The third form, nya, has three uses.",
           "1. Plural: nya kläder, and after är: Skorna är billiga. Learners forget this one most often.",
-          "2. Definite: den, det or de + adjective with -a + definite noun: den svarta jackan, det nya jobbet, de nya skorna. Den här works the same way: den här nya datorn.",
+          "2. Definite: den, det or de + adjective with -a + definite noun: den svarta jackan, det nya jobbet, de nya skorna. Den här (this) and den där (that) work the same way: den här nya datorn, det där dyra huset.",
           "3. After a possessive (min, mitt, mina, Annas): min nya jacka, mitt nya jobb. Only the adjective changes: never min nya jackan, never mitt nytt jobb.",
           "Hindi and Marathi make adjectives agree too: नया फ़ोन, नई किताब, नए कपड़े; Marathi नवा, नवी, नवे. Same idea as ny, nytt, nya. English is the odd one out.",
           "Liten is irregular: litet, små, den lilla. Bra, rosa, orange and spännande never change, like Hindi लाल."
@@ -20438,6 +20642,78 @@
           "en": "a pair",
           "example": "Jag köper ett par läderskor.",
           "translation": "I am buying a pair of leather shoes.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-09-word-47",
+          "fi": "en fågel, fåglar",
+          "en": "a bird, birds",
+          "example": "Jag ser två fåglar i parken.",
+          "translation": "I see two birds in the park.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-09-word-48",
+          "fi": "en häst, hästar",
+          "en": "a horse, horses",
+          "example": "Hästar är stora djur.",
+          "translation": "Horses are big animals.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-09-word-49",
+          "fi": "en papegoja, papegojor",
+          "en": "a parrot, parrots",
+          "example": "En papegoja kan prata.",
+          "translation": "A parrot can talk.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-09-word-50",
+          "fi": "en älg, älgar",
+          "en": "a moose, moose",
+          "example": "Det finns många älgar i Finland.",
+          "translation": "There are many moose in Finland.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-09-word-51",
+          "fi": "välja, väljer, valde",
+          "en": "choose, chooses, chose",
+          "example": "Alex valde den svarta jackan.",
+          "translation": "Alex chose the black jacket.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-09-word-52",
+          "fi": "såklart · självklart · förstås · javisst",
+          "en": "of course",
+          "example": "Ja, såklart! Javisst!",
+          "translation": "Yes, of course! Sure!",
+          "level": "A1"
+        },
+        {
+          "id": "sv-09-word-53",
+          "fi": "den där, det där",
+          "en": "that (one there)",
+          "example": "Den där lilla katten är söt.",
+          "translation": "That little cat is cute.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-09-word-54",
+          "fi": "löparskor",
+          "en": "running shoes",
+          "example": "Mina löparskor är gamla.",
+          "translation": "My running shoes are old.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-09-word-55",
+          "fi": "jeans",
+          "en": "jeans (say it like English yeens)",
+          "example": "Jeansen passar bra till skjortan.",
+          "translation": "The jeans go well with the shirt.",
           "level": "A1"
         }
       ],
@@ -23722,7 +23998,7 @@
             "item": 10,
             "title": "Definite plural of nouns",
             "posted": "13 May",
-            "instructions": "Skriv substantivet i bestämd form plural. Choose or write the plural with “the”: the plural ending gets -na (bilar → bilarna, veckor → veckorna, bananer → bananerna), plurals ending in -n get -a (möten → mötena), and ett-words with no plural ending get -en (hus → husen).",
+            "instructions": "Skriv substantivet i bestämd form plural. Choose or write the plural with “the”: plurals that end in -r get -na (bilar → bilarna, veckor → veckorna, bananer → bananerna), plurals ending in -n get -a (möten → mötena), and ett-words with no plural ending get -en (hus → husen).",
             "questions": [
               {
                 "id": "q1",
@@ -23985,7 +24261,7 @@
         "body": [
           "Swedish puts “the” on the end: bilen (the car), bilarna (the cars). Hindi and Marathi have no “the”, so this ending is easy to forget.",
           "Start from the plural (Lecture 7) and look at its last letter: -r → add -na (bilarna), -n → add -a (mötena), no ending → add -en (barnen).",
-          "Exception: people words in -are drop the e and add -na: lärare → lärarna.",
+          "Exception: words in -are, such as lärare and hamburgare, drop the e and add -na: lärarna, hamburgarna.",
           "Use it for specific ones: Pojkarna som jag känner (the boys I know). For things in general, no ending: Många pojkar gillar bilar. Båda (both) takes it: båda bilarna.",
           "Typical mistake: -arna on every word. It is bananerna, because the plural is bananer."
         ],
@@ -24175,6 +24451,11 @@
             "fi": "Berätta allt för mig! Jag ska laga mat till oss.",
             "en": "Tell me everything! I will cook for us.",
             "note": "berätta för + person; till oss = for us"
+          },
+          {
+            "fi": "Lämna inte utan mig! Jag vill inte vänta på honom.",
+            "en": "Do not leave without me! I do not want to wait for him.",
+            "note": "Object forms after utan and på (teacher’s examples)."
           }
         ],
         "table": {
@@ -24322,6 +24603,11 @@
             "fi": "Jag fyller år den tionde maj.",
             "en": "My birthday is on the tenth of May.",
             "note": "fylla år = have a birthday (teacher’s example)"
+          },
+          {
+            "fi": "Jag föddes den åttonde oktober. Min födelsedag är den åttonde oktober.",
+            "en": "I was born on the eighth of October. My birthday is on the eighth of October.",
+            "note": "föddes = was born; three ways to give your birthday (teacher’s examples)"
           },
           {
             "fi": "Jag ordnar en fest den trettionde september.",
@@ -25023,7 +25309,8 @@
         "id": "sv-11-c1",
         "prompt": "Write in Swedish: “Can you wait for me?”",
         "answers": [
-          "Kan du vänta på mig?"
+          "Kan du vänta på mig?",
+          "Kan ni vänta på mig?"
         ],
         "hint": "vänta på + object form",
         "explanation": "Kan du vänta på mig?"
@@ -25530,6 +25817,11 @@
                   "word": "kortare",
                   "mark": "kortare",
                   "rule": "kort + are compares two films."
+                },
+                {
+                  "word": "snyggare",
+                  "mark": "snyggare",
+                  "rule": "snygg + are: AB in his earlier films compared with now."
                 },
                 {
                   "word": "snyggast",
@@ -26898,6 +27190,30 @@
           "example": "Det var pinsamt.",
           "translation": "It was embarrassing.",
           "level": "A1"
+        },
+        {
+          "id": "sv-12-word-26",
+          "fi": "handla / shoppa",
+          "en": "buy food / go shopping for clothes and things",
+          "example": "De handlade i onsdags. Vi gick och shoppade i söndags.",
+          "translation": "They did the food shopping last Wednesday. We went shopping last Sunday.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-12-word-27",
+          "fi": "ful / full",
+          "en": "ugly / full (also: drunk)",
+          "example": "Jackan är inte ful! Bussen är full.",
+          "translation": "The jacket is not ugly! The bus is full.",
+          "level": "A1"
+        },
+        {
+          "id": "sv-12-word-28",
+          "fi": "reser, reste",
+          "en": "travel(s), travelled",
+          "example": "Jag reser till Åbo på onsdag.",
+          "translation": "I am travelling to Turku on Wednesday.",
+          "level": "A1"
         }
       ],
       "pronunciation": {
@@ -27858,7 +28174,8 @@
                   "vill"
                 ],
                 "answers": [
-                  "vill"
+                  "vill",
+                  "ska"
                 ]
               },
               {
@@ -28524,7 +28841,9 @@
         "prompt": "Write in Swedish: “Last week I wanted to stay at home.” Start with Förra veckan.",
         "answers": [
           "Förra veckan ville jag stanna hemma.",
-          "Jag ville stanna hemma förra veckan."
+          "Jag ville stanna hemma förra veckan.",
+          "Förra veckan ville jag vara hemma.",
+          "Jag ville vara hemma förra veckan."
         ],
         "hint": "Förra veckan + verb + jag. At home = hemma.",
         "explanation": "Förra veckan ville jag stanna hemma. The verb comes second after a time phrase (Lecture 3); förra veckan and hemma are from Lecture 6, stanna hemma from Lecture 4."
@@ -29972,7 +30291,7 @@
         "kind": "rule",
         "body": [
           "A formal complaint (en reklamation) to a company or an office has a fixed order: greeting, who you are and why you write, the facts, the solution you want, evidence and contact details, thanks and closing. The table gives a frame for each part.",
-          "Write ni, er and ert (Lectures 2 and 11), even if one person reads it: that person speaks for the company. Er goes with an en-word (er kundtjänst), ert with an ett-word (ert svar). Marathi tumhī works the same way: it means you all and polite you. In speech, people in Finland say du to almost everyone.",
+          "Write ni, er and ert (Lectures 2 and 11), even if one person reads it: that person speaks for the company. Er goes with an en-word (er kundtjänst), ert with an ett-word (ert svar). This rule is for formal letters to an organisation. It is not the polite ni to one person that Lecture 2 warned against (count heads). In speech, people in Finland say du to almost everyone.",
           "Link the facts with eftersom, men and dessutom, and say when with för … sedan (Lecture 6). After Dessutom the verb comes second: Dessutom fungerar kranen inte.",
           "Finland’s consumer authority (KKV) advises: complain soon after you find the fault, do it in writing (email is best), explain what you want and why, and attach evidence such as photos or the receipt.",
           "The YKI intermediate writing test has this task: a reklamation about a kitchen renovation bill. The instructions are in Swedish and list the points. Cover every point."
@@ -30621,7 +30940,9 @@
           "Sedan svänger du till höger vid apoteket.",
           "Sedan svänger du höger vid apoteket.",
           "Sen svänger du till höger vid apoteket.",
-          "Sen svänger du höger vid apoteket."
+          "Sen svänger du höger vid apoteket.",
+          "Sedan svänger du åt höger vid apoteket.",
+          "Sen svänger du åt höger vid apoteket."
         ],
         "hint": "After Sedan, the verb comes second.",
         "explanation": "Sedan svänger du till höger vid apoteket. After Sedan the verb comes second, as in Lecture 8; in speech sedan is often sen."
@@ -32577,7 +32898,10 @@
         "prompt": "People usually take care of their things.",
         "answers": [
           "Man brukar ta hand om sina saker.",
-          "Man brukar ta hand om sina egna saker."
+          "Man brukar ta hand om sina egna saker.",
+          "Man tar oftast hand om sina saker.",
+          "Man tar vanligtvis hand om sina saker.",
+          "Man tar för det mesta hand om sina saker."
         ],
         "hint": "Start with Man; plural saker.",
         "explanation": "Man brukar ta hand om sina saker. Brukar + infinitive, as in Lecture 4."
@@ -32995,7 +33319,7 @@
         {
           "id": "sv-15-word-25",
           "fi": "en",
-          "en": "oneself; one (object)",
+          "en": "one; you (the object form of man)",
           "example": "Det hjälper en att vila.",
           "translation": "It helps one to rest.",
           "level": "A2"
@@ -33733,6 +34057,7 @@
             "title": "Ska vs kommer att",
             "posted": "25 May",
             "instructions": "Välj ska eller kommer att. Use ska for a plan you decide yourself (Jag ska plugga). Use kommer att for a prediction you cannot control (Det kommer att regna).",
+            "note": "Question 7 accepts both: kommer att is a prediction, and ska is what the news says will happen (Det ska regna = it is supposed to rain), like ska in question 1. Question 10 is the teacher's own sentence with tycker; for your own guess about a test, say tror: Jag tror att provet kommer att bli svårt.",
             "questions": [
               {
                 "id": "q1",
@@ -33808,7 +34133,8 @@
                   "kommer att"
                 ],
                 "answers": [
-                  "kommer att"
+                  "kommer att",
+                  "ska"
                 ]
               },
               {
@@ -33911,6 +34237,7 @@
             "title": "Tycker vs tror",
             "posted": "25 May",
             "instructions": "Välj tycker eller tror (eller tyckte, trodde). Use tycker for an opinion from your own experience; use tror for a guess or a belief when you do not know. Tyckte and trodde are the past forms.",
+            "note": "Question 2 gives no context, so both are accepted: tycker if you have eaten Swedish food, tror if you have not. Tycker is the answer the lesson practises.",
             "questions": [
               {
                 "id": "q1",
@@ -33934,7 +34261,8 @@
                   "tycker"
                 ],
                 "answers": [
-                  "tycker"
+                  "tycker",
+                  "tror"
                 ]
               },
               {
@@ -36737,7 +37065,7 @@
         "body": [
           "Jag har varit i Stockholm. Jag var i Stockholm förra sommaren. Har varit: some time in my life, and it counts now. Var: at a finished time that you can name.",
           "Finished time → past tense: i går, förra året, i maj, 2023, för två år sedan, när jag var liten. Open time → har + supine: någon gång, aldrig, redan, ännu, alltid, den här veckan, i år.",
-          "Indian English allows “I have seen him yesterday”. Swedish does not, as Lecture 6 warned: Jag såg honom i går.",
+          "Indian English allows “I have seen him yesterday”. Swedish does not: a finished time always takes the past form (Lecture 6). Jag såg honom i går.",
           "Har du varit i Sverige? – Ja. – När var du där? – Förra sommaren. Ask with har, then switch to the past for the details. Time word first? The verb comes second: Förra sommaren åkte jag dit.",
           "Word order: the adverbs aldrig, redan, alltid, ofta and inte go right after har: Jag har aldrig sett en älg. Någon gång goes before the supine or at the end. Ännu (yet) goes at the end, or before inte as on page 48: Jag har inte beställt ännu. Vi har ännu inte badat. Än means the same; in Finland you hear ännu very often.",
           "Hindi helps: कभी (kabhī) = någon gång, कभी नहीं (kabhī nahī̃) = aldrig, पहले ही (pahle hī) = redan, अभी तक नहीं (abhī tak nahī̃) = inte … ännu."
@@ -37562,6 +37890,22 @@
           "example": "Jag skriver ett kort till min vän.",
           "translation": "I am writing a card to my friend.",
           "level": "A2"
+        },
+        {
+          "id": "sv-17-word-44",
+          "fi": "en stad – städer",
+          "en": "a city – cities",
+          "example": "Jag har besökt många städer i Finland.",
+          "translation": "I have visited many cities in Finland.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-17-word-45",
+          "fi": "lura",
+          "en": "trick, deceive",
+          "example": "Någon försökte lura henne på nätet.",
+          "translation": "Someone tried to trick her online.",
+          "level": "A2"
         }
       ],
       "pronunciation": {
@@ -37580,8 +37924,8 @@
         "explanation": "Jag har aldrig besökt Lappland. She lives in Espoo, and she was in Vaasa last summer."
       },
       "reading": {
-        "text": "Hej! Jag heter Leo och jag har bott i Åbo i fyra år. Jag flyttade hit när jag började studera. Nu har jag arbetat på ett litet företag i två år. Mina kollegor säger att jag är nyfiken, social och pålitlig, men ibland är jag ganska tystlåten. Jag har lärt känna många människor genom arbetet. Vi har ofta ätit lunch tillsammans och jag har provat flera finländska maträtter. Jag har redan ätit laxsoppa, karelska piroger och många sorters rågbröd. Jag har rest mycket i Finland. Jag har besökt Helsingfors, Tammerfors, Vasa, Borgå och Mariehamn. Förra vintern åkte jag till Rovaniemi, men jag har aldrig sett midnattssolen. Därför vill jag resa till Lappland igen nästa sommar. Jag tycker att resor är viktiga eftersom man lär sig något nytt om både platser och människor. På fritiden har jag börjat studera svenska. Jag har studerat i sex månader och har redan haft flera korta samtal på svenska. Det har inte alltid varit lätt, men jag är tålmodig och beslutsam. Någon gång vill jag arbeta på svenska en hel dag. Har du bott i en annan stad någon gång, och vilken plats vill du besöka nästa gång?",
-        "question": "How long has Leo worked at the company?",
+        "text": "Hej! Jag heter Oskar och jag har bott i Åbo i fyra år. Jag flyttade hit när jag började studera. Nu har jag arbetat på ett litet företag i två år. Mina kollegor säger att jag är nyfiken, social och pålitlig, men ibland är jag ganska tystlåten. Jag har lärt känna många människor genom arbetet. Vi har ofta ätit lunch tillsammans och jag har provat flera finländska maträtter. Jag har redan ätit laxsoppa, karelska piroger och många sorters rågbröd. Jag har rest mycket i Finland. Jag har besökt Helsingfors, Tammerfors, Vasa, Borgå och Mariehamn. Förra vintern åkte jag till Rovaniemi, men jag har aldrig sett midnattssolen. Därför vill jag resa till Lappland igen nästa sommar. Jag tycker att resor är viktiga eftersom man lär sig något nytt om både platser och människor. På fritiden har jag börjat studera svenska. Jag har studerat i sex månader och har redan haft flera korta samtal på svenska. Det har inte alltid varit lätt, men jag är tålmodig och beslutsam. Någon gång vill jag arbeta på svenska en hel dag. Har du bott i en annan stad någon gång, och vilken plats vill du besöka nästa gång?",
+        "question": "How long has Oskar worked at the company?",
         "options": [
           "Two years",
           "Four years",
@@ -37591,19 +37935,19 @@
         "explanation": "Han har arbetat på ett litet företag i två år."
       },
       "reading_passage": {
-        "text": "Hej! Jag heter Leo och jag har bott i Åbo i fyra år. Jag flyttade hit när jag började studera. Nu har jag arbetat på ett litet företag i två år. Mina kollegor säger att jag är nyfiken, social och pålitlig, men ibland är jag ganska tystlåten. Jag har lärt känna många människor genom arbetet. Vi har ofta ätit lunch tillsammans och jag har provat flera finländska maträtter. Jag har redan ätit laxsoppa, karelska piroger och många sorters rågbröd. Jag har rest mycket i Finland. Jag har besökt Helsingfors, Tammerfors, Vasa, Borgå och Mariehamn. Förra vintern åkte jag till Rovaniemi, men jag har aldrig sett midnattssolen. Därför vill jag resa till Lappland igen nästa sommar. Jag tycker att resor är viktiga eftersom man lär sig något nytt om både platser och människor. På fritiden har jag börjat studera svenska. Jag har studerat i sex månader och har redan haft flera korta samtal på svenska. Det har inte alltid varit lätt, men jag är tålmodig och beslutsam. Någon gång vill jag arbeta på svenska en hel dag. Har du bott i en annan stad någon gång, och vilken plats vill du besöka nästa gång?",
+        "text": "Hej! Jag heter Oskar och jag har bott i Åbo i fyra år. Jag flyttade hit när jag började studera. Nu har jag arbetat på ett litet företag i två år. Mina kollegor säger att jag är nyfiken, social och pålitlig, men ibland är jag ganska tystlåten. Jag har lärt känna många människor genom arbetet. Vi har ofta ätit lunch tillsammans och jag har provat flera finländska maträtter. Jag har redan ätit laxsoppa, karelska piroger och många sorters rågbröd. Jag har rest mycket i Finland. Jag har besökt Helsingfors, Tammerfors, Vasa, Borgå och Mariehamn. Förra vintern åkte jag till Rovaniemi, men jag har aldrig sett midnattssolen. Därför vill jag resa till Lappland igen nästa sommar. Jag tycker att resor är viktiga eftersom man lär sig något nytt om både platser och människor. På fritiden har jag börjat studera svenska. Jag har studerat i sex månader och har redan haft flera korta samtal på svenska. Det har inte alltid varit lätt, men jag är tålmodig och beslutsam. Någon gång vill jag arbeta på svenska en hel dag. Har du bott i en annan stad någon gång, och vilken plats vill du besöka nästa gång?",
         "gist": {
           "prompt": "What is this text mainly doing?",
           "options": [
-            "Introducing Leo and his experience",
+            "Introducing Oskar and his experience",
             "Complaining about a job",
             "Giving directions"
           ],
           "answer": 0,
-          "explanation": "Leo introduces himself, his personality, and his experience."
+          "explanation": "Oskar introduces himself, his personality, and his experience."
         },
         "detail": {
-          "prompt": "Which list has only places Leo has visited?",
+          "prompt": "Which list has only places Oskar has visited?",
           "options": [
             "Helsinki, Tampere and Vaasa",
             "Oulu, Porvoo and Kuopio",
@@ -38740,7 +39084,9 @@
         "prompt": "Write in Swedish: “My favourite subject was maths.”",
         "answers": [
           "Mitt favoritämne var matte.",
-          "Mitt favoritämne var matematik."
+          "Mitt favoritämne var matematik.",
+          "Matte var mitt favoritämne.",
+          "Matematik var mitt favoritämne."
         ],
         "hint": "Use mitt with ett favoritämne, and var for the past.",
         "explanation": "Mitt favoritämne var matte. Ämne is an ett-word, so mitt (Lecture 15). Subject names have no capital letter."
@@ -38780,6 +39126,17 @@
         ],
         "hint": "Har + supine for the continuing experience; och links another complete idea.",
         "explanation": "Jag har studerat svenska i två år och jag övar fortfarande. Har + supine with i två år: it is still going on (Lecture 17)."
+      },
+      {
+        "id": "sv-18-g13",
+        "prompt": "Carry-over from Lecture 17 (teacher’s example): “I have never travelled to Peru.”",
+        "answers": [
+          "Jag har aldrig rest till Peru.",
+          "Jag har aldrig varit i Peru.",
+          "Jag har aldrig åkt till Peru."
+        ],
+        "hint": "Resa – reste – rest. Aldrig goes between har and the supine.",
+        "explanation": "Jag har aldrig rest till Peru (or Jag har aldrig varit i Peru). Resa – reste – rest: the supine of resa is rest. Aldrig sits between har and the supine (Lecture 17)."
       }
     ],
     "sittingBreakAfter": "guided",
@@ -39093,8 +39450,32 @@
           "id": "sv-18-word-38",
           "fi": "svenskspråkig",
           "en": "Swedish-language",
-          "example": "Leo går i en svenskspråkig skola.",
-          "translation": "Leo goes to a Swedish-language school.",
+          "example": "Leo ska börja i en svenskspråkig skola.",
+          "translation": "Leo is going to start at a Swedish-language school.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-18-word-39",
+          "fi": "tjäna",
+          "en": "earn",
+          "example": "Filmen har tjänat mycket pengar.",
+          "translation": "The film has earned a lot of money.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-18-word-40",
+          "fi": "i morse",
+          "en": "this morning (earlier today)",
+          "example": "Tre paket har kommit i morse.",
+          "translation": "Three parcels have come this morning.",
+          "level": "A2"
+        },
+        {
+          "id": "sv-18-word-41",
+          "fi": "skaffa",
+          "en": "get, make (friends), get (a pet)",
+          "example": "Hon har skaffat två nya vänner på konserten.",
+          "translation": "She has made two new friends at the concert.",
           "level": "A2"
         }
       ],
@@ -39327,7 +39708,9 @@
           "Mitt favoritämne var historia, för läraren var bra.",
           "Mitt favoritämne var historia, för läraren var duktig.",
           "Mitt favoritämne var historia, för min lärare var bra.",
-          "Mitt favoritämne var historia, för min lärare var duktig."
+          "Mitt favoritämne var historia, för min lärare var duktig.",
+          "Historia var mitt favoritämne, för läraren var bra.",
+          "Historia var mitt favoritämne, för min lärare var bra."
         ],
         "hint": "Use för to introduce a reason as a complete main clause.",
         "explanation": "Mitt favoritämne var historia, för läraren var bra. After för: subject läraren, then the verb var."
@@ -39340,7 +39723,9 @@
           "Min vän talar finska, men jag förstår inte.",
           "Min kompis pratar finska, men jag förstår inte.",
           "Min vän pratar finska, men jag förstår det inte.",
-          "Min vän talar finska, men jag förstår det inte."
+          "Min vän talar finska, men jag förstår det inte.",
+          "Min kompis talar finska, men jag förstår inte.",
+          "Min kompis pratar finska, men jag förstår det inte."
         ],
         "hint": "After men comes a full main clause: subject, verb, then inte.",
         "explanation": "Min vän pratar finska, men jag förstår inte. Inte follows the verb förstår."
@@ -39812,9 +40197,9 @@
               "why": "Att introduces what I think: Jag tror att Maja är trött."
             },
             {
-              "fi": "Vi kan grilla i parken i morgon ___ det inte regnar.",
+              "fi": "Vi kan grilla i parken i morgon ___ det inte regnar, men vi vet inte än.",
               "bucket": "condition",
-              "why": "Om det inte regnar: the plan depends on the weather. Notice inte before regnar."
+              "why": "Om det inte regnar: the plan depends on the weather, and we do not know yet. Notice inte before regnar."
             },
             {
               "fi": "Jag kom för sent ___ bussen var sen.",
@@ -39837,9 +40222,9 @@
               "why": "När jag var i Italien: the time when it happened (the teacher’s example). Om would make it a condition, and eftersom would make Italy the reason for buying a jacket."
             },
             {
-              "fi": "Jag stannade hemma ___ min dotter var sjuk.",
+              "fi": "Du borde gå hem nu ___ din dotter är sjuk.",
               "bucket": "reason",
-              "why": "Eftersom gives the reason. Trots att would mean the opposite."
+              "why": "Eftersom gives the reason (the teacher’s example). Trots att would mean the opposite."
             }
           ],
           "summary": "The linker tells how the two ideas are related. Only för att is followed by an infinitive without a subject."
@@ -40573,7 +40958,7 @@
           110
         ],
         "help": "Hej! · Jag heter … och går … på … kl. … · Här är mina svar på er förfrågan. · Kursen är bra eftersom … · Jag gillar också … eftersom … alltid … · Kursen blir ännu bättre om … · Jag tycker att läraren inte behöver … · På så sätt … · Tack för en bra kurs! · Med vänlig hälsning, …",
-        "model": "Hej!\n\nJag heter Alex Khan och går kvällskursen i svenska på tisdagar kl. 17.30. Här är mina svar på er förfrågan.\n\nKursen är bra eftersom vi pratar mycket i små grupper. Jag gillar också läraren eftersom hon alltid förklarar tydligt när någon inte förstår.\n\nKursen blir ännu bättre om vi lyssnar mer på nyheter, till exempel Yle Nyheter på lätt svenska. Många av oss behöver det eftersom vi ska skriva YKI-testet i höst.\n\nJag tycker att läraren inte behöver vara strängare. Vi lär oss mer när vi trivs.\n\nTack för en bra kurs!\n\nMed vänlig hälsning\nAlex Khan"
+        "model": "Hej!\n\nJag heter Alex Khan och går kvällskursen i svenska på tisdagar kl. 17.30. Här är mina svar på er förfrågan.\n\nKursen är bra eftersom vi pratar mycket i små grupper. Jag gillar också läraren eftersom han alltid förklarar tydligt när någon inte förstår.\n\nKursen blir ännu bättre om vi lyssnar mer på nyheter, till exempel Yle Nyheter på lätt svenska. Många av oss behöver det eftersom vi ska skriva YKI-testet i höst.\n\nJag tycker att läraren inte behöver vara strängare. Vi lär oss mer när vi trivs.\n\nTack för en bra kurs!\n\nMed vänlig hälsning\nAlex Khan"
       }
     },
     "route": {
@@ -41516,7 +41901,7 @@
           "Lön: pay. You tjänar (earn) it. Din arbetsgivare (your employer) has anställda (employees); din chef is your boss. Heltid: full-time. Deltid: part-time. Flextid: you choose when your day starts and ends.",
           "Too much work: jobba över (work overtime), en stor arbetsbörda (a heavy workload), bli utbränd or gå in i väggen (burn out, “walk into the wall”). Prestera: perform, do well at work.",
           "Time off: Jag är ledig på söndagar (I am off on Sundays). Semester is paid holiday; in Finland most people take it in July. Mammaledig, pappaledig, föräldraledig: on parental leave. Gå i pension: retire.",
-          "Sick leave: Jag är sjukskriven. In Finland you also hear and read sjukledig; Kela’s Swedish pages use it.",
+          "Sick leave: Jag är sjukskriven. In Finland you also hear and read sjukledig, the usual Finland-Swedish word.",
           "Säga upp sig (resign) is your choice; få sparken (get fired) is not. Sig changes with the person (Lecture 15): Jag ska säga upp mig. Du borde säga upp dig. Without sig, the employer ends the job: Företaget säger upp 20 anställda (lays off 20 employees)."
         ],
         "examples": [
@@ -41687,14 +42072,14 @@
               "options": [
                 "Vad jobbar du med?",
                 "Vem jobbar du med?",
-                "Vad gör du?"
+                "Vad jobbar du på?"
               ],
               "answer": "Vad jobbar du med?",
               "reply": {
                 "fi": "Jag jobbar som programmerare.",
                 "en": "I work as a programmer."
               },
-              "why": "Vad jobbar du med? asks for the job. Vem jobbar du med? asks who your colleagues are. Vad gör du? usually means What are you doing (right now)? The answer uses som: Jag jobbar som …"
+              "why": "Vad jobbar du med? asks for the job. Vem jobbar du med? asks who your colleagues are. Vad jobbar du på? asks what task or project you are working on right now. The answer uses som: Jag jobbar som …"
             },
             {
               "about": "Alex",
@@ -41870,7 +42255,7 @@
           "Order: Jag tar … (I’ll have …), Kan jag få …? or Jag skulle vilja ha … Swedish has no word for please; the frame plus tack is polite. A bare command form (Ge mig soppan) sounds rude, though Hindi dijiye and Marathi dya are polite. And vill needs ha: Jag vill ha soppan (Lecture 3).",
           "Diet need first: Jag tål inte gluten (my body cannot take it). Jag är allergisk mot nötter (Lecture 19). Jag är vegan or vegetarian, with no article, like Jag är lärare (Lecture 4). Vegan: no animal products; vegetarian: no meat or fish (the Amira video turns on this).",
           "Menu letters, as a City of Helsinki menu explains them: G = glutenfri, L = laktosfri, VL = laktosfattig (low-lactose), M = mjölkfri, VEG = vegan. Ask anyway if you are unsure: Är den här rätten glutenfri?",
-          "Problem: Ursäkta + the problem + Kan ni …? Paying: Kan vi få notan? Notan is the restaurant bill, kvittot the receipt; räkningen is mostly for rent or electricity. Ett glas = a glass; en glass = an ice cream.",
+          "Problem: Ursäkta + the problem + Kan ni …? Paying: Kan vi få notan? Notan is the restaurant bill, kvittot the receipt. Räkningen also works in a restaurant, but it is the usual word for rent or electricity bills. Ett glas = a glass; en glass = an ice cream.",
           "Tipping: in Finland service is included in the price, so dricks (a tip) is not expected. Some people round up for very good service."
         ],
         "examples": [
@@ -42002,7 +42387,9 @@
           "Har ni veganska alternativ?",
           "Har ni något veganskt alternativ?",
           "Finns det några veganska alternativ?",
-          "Finns det något veganskt alternativ?"
+          "Finns det något veganskt alternativ?",
+          "Finns det veganska alternativ?",
+          "Har ni något veganskt?"
         ],
         "hint": "Use ni to address the restaurant.",
         "explanation": "Har ni några veganska alternativ?"
@@ -42039,7 +42426,8 @@
         "answers": [
           "En fördel är att man inte behöver pendla.",
           "En fördel är att du inte behöver pendla.",
-          "En fördel är att man slipper pendla."
+          "En fördel är att man slipper pendla.",
+          "En fördel är att du slipper pendla."
         ],
         "hint": "After att, inte comes before the verb.",
         "explanation": "En fördel är att man inte behöver pendla. After att, inte goes before the verb (Lecture 19). For “do not have to”, say behöver inte, not måste inte (Lecture 13)."
@@ -42740,7 +43128,7 @@
     ],
     "assignment": {
       "title": "Episode 20 mission: Work and dinner",
-      "instructions": "CORE: Perform your restaurant visit: a diet need, an order, one problem with a polite request, two sides of the restaurant and the bill. Then explain two sides of one work choice with å ena sidan and å andra sidan.\n\nVIDEO: Watch the 3-minute UR Play episode Amira är här – med stödord: Vegan (link under resources) and answer the teacher’s four questions in Swedish.\n\nNEWS: Listen to news 1 and 3 in the teacher’s Yle Nyheter på lätt svenska episode (link under resources), first without the text. Answer the questions there in Swedish.\n\nRETURN: Tomorrow, repeat your two-sided opinion from memory.",
+      "instructions": "CORE: Perform your restaurant visit: a diet need, an order, one problem with a polite request, two sides of the restaurant and the bill. Then explain two sides of one work choice with å ena sidan and å andra sidan.\n\nVIDEO: Watch the 3-minute UR Play episode Amira är här – med stödord: Vegan (link under resources) and answer the teacher’s four questions in Swedish.\n\nOPTIONAL NEWS: The teacher set this news listening later, on 12 June (Lecture 24 has it as Teacher’s homework). If you want an early try, listen to news 1 and 3 in the Yle Nyheter på lätt svenska episode (link under resources), first without the text.\n\nRETURN: Tomorrow, repeat your two-sided opinion from memory.",
       "model": "Jag tål inte gluten. Har ni något glutenfritt bröd? Då tar jag grönsakssoppan, tack. Ursäkta, soppan är kall. Kan ni värma den? Å ena sidan är maten god. Å andra sidan är det lite dyrt. Kan vi få notan, tack?"
     },
     "takeaways": [
@@ -42756,9 +43144,9 @@
         "description": "A short sitcom for learners of Swedish, with on-screen support words. Watch once for the story, then answer in Swedish: Varför var Amira sen? Vad hade de för problem på restaurangen? Vad rekommenderade servitören? Hur reagerade de? Listen for vegan and vegetarian."
       },
       {
-        "label": "News homework: Yle Nyheter på lätt svenska, 19 February 2025 (Svenska Yle)",
+        "label": "Optional early news: Yle Nyheter på lätt svenska, 19 February 2025 (Svenska Yle)",
         "url": "https://arenan.yle.fi/poddar/1-73102281",
-        "description": "Your teacher’s news listening: real Finland-Swedish news read slowly. Listen to news 1 (a strike) and news 3 (Åbo Akademi) without the text, then open the text under the episode. Listen for: Vilka strejkar, och hur länge? Är de flesta butiker öppna eller stängda? Varför måste Åbo Akademi säga upp anställda?"
+        "description": "Your teacher’s first news listening, set on 12 June with Lesson 24 (optional here): real Finland-Swedish news read slowly. Listen to news 1 (a strike) and news 3 (Åbo Akademi) without the text, then open the text under the episode. Listen for: Vilka strejkar, och hur länge? Är de flesta butiker öppna eller stängda? Varför måste Åbo Akademi säga upp anställda?"
       },
       {
         "label": "Svenska Akademiens ordböcker (svenska.se)",
@@ -44581,7 +44969,7 @@
           110
         ],
         "help": "Hej, · Jag svarar på er annons om … · Jag heter … och jobbar som/studerar … · Jag vill flytta in den … · Eftersom … behöver jag … · Därför … · Jag har ingen bil / inga husdjur · Ingår vatten i hyran? (In Finland water is often paid separately.) · Kan jag komma och titta på lägenheten? · Tack på förhand! · Vänliga hälsningar",
-        "model": "Hej,\nJag svarar på er annons om den ljusa tvåan i Esbo. Jag heter Alex Khan och jobbar som programmerare, oftast hemifrån. Mitt hyresavtal tar slut i augusti, och därför vill jag gärna flytta in den första augusti. Eftersom jag jobbar hemifrån behöver jag ett tyst område. Lägenheten passar mig, för metron ligger på gångavstånd och huset har ett cykelrum. Jag har ingen bil, så jag behöver ingen parkeringsplats. Jag röker inte och har inga husdjur. Ingår vatten i hyran? Kan jag komma och titta på lägenheten nästa vecka?\nTack på förhand!\nVänliga hälsningar\nAlex Khan"
+        "model": "Hej,\nJag svarar på er annons om den ljusa tvåan i Esbo. Jag heter Alex Khan och jobbar som programmerare, oftast hemifrån. Mitt hyresavtal tar slut i augusti, och därför vill jag gärna flytta in den första augusti. Eftersom jag jobbar hemifrån behöver jag ett tyst område. Lägenheten passar mig, för metron ligger på gångavstånd och huset har ett cykelrum. Jag har ingen bil, så jag behöver ingen parkeringsplats. Jag röker inte och har inga husdjur. Ingår vatten i hyran? Kan jag komma och titta på lägenheten nästa vecka, om det passar er?\nTack på förhand!\nVänliga hälsningar\nAlex Khan"
       }
     },
     "route": {
@@ -45580,7 +45968,7 @@
           "An opinion text has three parts, as on the class handout. Inledning: the issue and your position. Argument: reasons, good and bad points, examples. Avslutning: your view again.",
           "Inledning: Många tycker att … Then your position: Jag håller med, Jag håller delvis med or Jag håller inte med (Lecture 12). Enligt mig … (Lecture 17) adds your own view.",
           "Argument: För det första …, För det andra … and Dessutom … list reasons. Några av fördelarna är … and En nackdel är att … (Lecture 20) name good and bad points. Å ena sidan … å andra sidan … weighs them.",
-          "Avslutning: start with Sammanfattningsvis … or Till sist tycker jag att … and give your final view, for example Personligen föredrar jag X framför Y. Till slut (Lecture 8) is the last step of a story, so it does not close an argument.",
+          "Avslutning: start with Sammanfattningsvis … or Till sist tycker jag att … and give your final view, for example Personligen föredrar jag X framför Y. The class notes write Till slut here, but Till slut (Lecture 8) means in the end, the last step of a story, so in a written argument choose Sammanfattningsvis or Till sist.",
           "Trap 1: a linking word at the start takes first place, so the verb comes next (Lecture 20): Dessutom är hyran lägre, not Dessutom hyran är. Men, och and så are different (Lecture 18).",
           "Trap 2: föredrar stan framför landet, never än. “Prefer tea than coffee”, common in Indian English, and Hindi से (se, than) lead to än. Än only follows a comparative: Stan är bättre än landet (Lecture 12).",
           "YKI: at basic level the opinion task is a short survey answer: what is good, what is bad, and why. At intermediate level it is a longer opinion piece (100–150 words, the teacher's Lesson 23). Both use these three parts."
@@ -46459,7 +46847,7 @@
           "Skriv minst tre saker som är bra, och varför. (Give at least three good points, each with a reason.)",
           "Skriv minst två saker som är dåliga, och varför. (Give at least two bad points, each with a reason.)",
           "Avsluta med din åsikt: Sammanfattningsvis … (End with your view.)",
-          "Efter ett ordningsord kommer verbet: För det första är …, Dessutom finns … (After a linking word, put the verb next.)"
+          "Efter ett sambandsord i början kommer verbet: För det första är …, Dessutom finns … (After a linking word, put the verb next.)"
         ],
         "wordRange": [
           70,
@@ -47380,7 +47768,7 @@
                 "fi": "Förresten jag har börjat på en kurs.",
                 "en": "By the way, I have started a course.",
                 "bucket": "fix",
-                "why": "Förresten takes first place, so the verb comes second: Förresten har jag börjat på en kurs (Lecture 20)."
+                "why": "Förresten takes first place, so the verb comes second: Förresten har jag börjat på en kurs, the same rule as Å andra sidan måste man (Lecture 20)."
               },
               {
                 "fi": "Jag vet att det var svårt för dig.",
@@ -50258,7 +50646,7 @@
           "Jag flyttade hit för två år sen."
         ],
         "hint": "För … sedan + a past verb.",
-        "explanation": "Model: Jag flyttade in för två år sedan. Ago is för … sedan with the past form flyttade (Lecture 17). Sedan två år is the English and Hindi word order, not Swedish."
+        "explanation": "Model: Jag flyttade in för två år sedan. Ago is för … sedan with the past form flyttade (Lecture 17). Sedan två år does not mean ago, and it never goes with a past form like flyttade."
       },
       {
         "id": "sv-24-c2",
@@ -50268,8 +50656,7 @@
           "Jag kan tyvärr inte på lördag.",
           "Tyvärr kan jag inte komma på lördag.",
           "Jag kan tyvärr inte komma på lördag.",
-          "Tyvärr kan jag inte på lördagen.",
-          "Tyvärr kan jag inte i lördags."
+          "Tyvärr kan jag inte på lördagen."
         ],
         "hint": "Tyvärr first, then the verb.",
         "explanation": "Model: Tyvärr kan jag inte på lördag. After tyvärr the verb comes next (Lecture 3). Jag kan tyvärr inte … is also right."
@@ -50810,7 +51197,7 @@
         "explanation": "Vill du veta när produkten finns i lager igen? Skicka en fråga till vår kundtjänst. That is why Alex writes an email: the page gives no date."
       },
       "listening": {
-        "text": "Hej Alex, det här är Sanna Lindqvist från fastighetsbolaget. Jag ringer om din nya lägenhet i Vallgård. Först vill jag tacka för att du skrev på hyresavtalet så snabbt. Avtalet börjar den första augusti, men den förra hyresgästen flyttar redan i mitten av juli. Därför kan du hämta nycklarna tidigare, från och med torsdag den trettionde juli. Vårt kontor är öppet från klockan nio till fyra, och på torsdagar till klockan sex. Ta med ett id-kort, till exempel pass eller körkort.\n\nInnan du får nycklarna behöver vi två saker. För det första måste du ha en hemförsäkring som gäller från den dag du flyttar in. För det andra ska du göra ett eget elavtal. Du kan välja vilket elbolag du vill. Skicka gärna en kopia av försäkringen till mig per e-post.\n\nSedan lite praktisk information. Lägenheten målas i juli, så det kan lukta lite färg de första dagarna. Cykelrummet ligger i källaren, och där finns också ett förråd till varje lägenhet. Ditt förråd har samma nummer som lägenheten, alltså tjugofyra. Bastun bokar du på en lista bredvid hissen. Om du kommer med en flyttbil kan den stå på gården i två timmar. Hissen är tyvärr ganska liten, så stora möbler måste bäras i trappan.\n\nOch kom ihåg att göra en flyttanmälan när du flyttar. Det gör du på nätet, och då får posten också din nya adress.\n\nOm du har frågor kan du ringa mig på nummer 09 123 4567 eller skicka ett mejl. Ha en fin sommar, och välkommen till Vallgård!",
+        "text": "Hej Alex, det här är Sanna Lindqvist från fastighetsbolaget. Jag ringer om din nya lägenhet i Vallgård. Först vill jag tacka för att du skrev på hyresavtalet så snabbt. Avtalet börjar den första augusti, men den förra hyresgästen flyttar redan i mitten av juli. Därför kan du hämta nycklarna tidigare, från och med torsdag den trettionde juli. Vårt kontor är öppet från klockan nio till fyra, och på torsdagar till klockan sex. Ta med ett identitetsbevis, till exempel pass eller körkort.\n\nInnan du får nycklarna behöver vi två saker. För det första måste du ha en hemförsäkring som gäller från den dag du flyttar in. För det andra ska du göra ett eget elavtal. Du kan välja vilket elbolag du vill. Skicka gärna en kopia av försäkringen till mig per e-post.\n\nSedan lite praktisk information. Lägenheten målas i juli, så det kan lukta lite färg de första dagarna. Cykelrummet ligger i källaren, och där finns också ett förråd till varje lägenhet. Ditt förråd har samma nummer som lägenheten, alltså tjugotre. Bastun bokar du på en lista bredvid hissen. Om du kommer med en flyttbil kan den stå på gården i två timmar. Hissen är tyvärr ganska liten, så stora möbler måste bäras i trappan.\n\nOch kom ihåg att göra en flyttanmälan när du flyttar. Det gör du på nätet, och då får posten också din nya adress.\n\nOm du har frågor kan du ringa mig på nummer 09 123 4567 eller skicka ett mejl. Ha en fin sommar, och välkommen till Vallgård!",
         "question": "From when can Alex collect the keys?",
         "options": [
           "From Thursday 30 July",
@@ -51262,7 +51649,7 @@
           "Good news takes three moves. React: Grattis! · Vad roligt! · Vad kul! · Vilka fantastiska nyheter! · Jag är så glad för din skull. · Jag är så stolt över dig. Then ask, then suggest a meeting or a celebration.",
           "Ask about the news itself: När börjar du? · Vad ska du göra där? · Hur kändes det när du fick beskedet? Then suggest: Det måste vi fira! · Ska vi …? · Vad sägs om …?",
           "Grattis till jobbet!, not för: Indian English says “congratulations for”, Swedish says till. Birthdays take på: Grattis på födelsedagen!",
-          "En nyhet is countable, unlike English news: en nyhet, två nyheter. Vilken fantastisk nyhet! (one) and Vilka fantastiska nyheter! (plural, very common) are both natural. Vilken, vilket, vilka follow the noun: Vilken tur! Vilket bra jobb!",
+          "En nyhet is countable, unlike English news: en nyhet, två nyheter. Vilken fantastisk nyhet! (one) and Vilka fantastiska nyheter! (plural, very common) are both natural. Vilken, vilket, vilka match the noun: Vilken tur! Vilket bra jobb!",
           "The preposition is fixed: stolt över (proud of), glad för din skull (happy for you), glad över nyheten (happy about the news).",
           "Vi hörs! and Vi ses! end the call. The -s means each other: we will hear from (or see) each other. These are s-verbs.",
           "Snäll and snälla: Vad snällt av dig att ringa! (kind). Snälla, ring mig! (please). Upptagen (busy) and ledig (free): Jag är upptagen nu, men ledig efter sju."
@@ -51342,7 +51729,7 @@
           "Förlåt and ursäkta = I apologise, or excuse me: it was your fault, or you want attention. Jag är ledsen att höra det = I'm sorry to hear that: you show empathy. English uses sorry for both. Hindi and Marathi split them: माफ़ कीजिए / माफ करा (apology) and सुनकर दुख हुआ / ऐकून वाईट वाटलं (sad to hear it).",
           "Jag är ledsen, men … can also soften a no: Jag är ledsen, men vi har stängt. With att höra det, it is always sympathy.",
           "Tråkig has two meanings: boring (en tråkig film) and sad, a pity (Vad tråkigt att höra!). After bad news it means the second. Vad synd! (what a shame) is for small disappointments.",
-          "Stackars dig! (poor you) takes dig, not du. Say it to friends, not to your boss.",
+          "Stackars dig! (poor you) is the most common form; you also hear stackars du, as in the teacher's notes. Say it to friends, not to your boss.",
           "Jag beklagar sorgen (my condolences) is only for a death. After a break-up, an illness or a lost job, say Jag är så ledsen att höra det.",
           "Offer help: Jag finns här för dig om du behöver något. · Kan jag hjälpa till? · Vill du prata om det? · Jag kan komma förbi i morgon. If you must go: Förlåt, men jag måste sluta nu. Jag ringer dig i morgon. Ta hand om dig! Here förlåt is right: you apologise for leaving.",
           "Det vore = det skulle vara (it would be): Tack, det vore skönt. It is the conditional, a polite and soft way to say yes."
@@ -51394,7 +51781,7 @@
           },
           {
             "fi": "Stackars dig! Har du sovit något i natt?",
-            "en": "Poor you! Have you slept at all tonight?",
+            "en": "Poor you! Did you sleep at all last night?",
             "note": "Stackars + dig."
           },
           {
@@ -51505,7 +51892,7 @@
           "Kavaj, more common in Sweden: men wear a jacket, often with a tie; women wear a dress, a skirt or smart trousers.",
           "Mörk kostym, a very common code in Finland: men wear a dark blue, dark grey or black suit, a white shirt and a tie. Women wear an elegant dress, knee-length or longer, or a smart trouser suit. A long evening dress is not needed.",
           "Ha på sig (wear) is a particle verb with a reflexive: jag har på mig, du har på dig, hon har på sig. Stress på: ha PÅ sig. Klä sig = dress: Hur ska man klä sig?",
-          "Sådan, sådant, sådana (such) follow the noun: en sådan klänning, ett sådant bälte, sådana skor. In speech: en sån, ett sånt, såna. Inte ens = not even: Jag har inte ens en slips.",
+          "Sådan, sådant, sådana (such) match the noun: en sådan klänning, ett sådant bälte, sådana skor. In speech: en sån, ett sånt, såna. Inte ens = not even: Jag har inte ens en slips.",
           "Short and useful: Det stämmer (that's right) · Som tur är (luckily) · slå upp (look up): Jag slog upp det på nätet."
         ],
         "examples": [
@@ -51760,10 +52147,10 @@
         "options": [
           "Vilka",
           "Vilken",
-          "Vad"
+          "Vilket"
         ],
         "hint": "Nyheter is plural.",
-        "explanation": "Vilka goes with a plural: vilka nyheter. For one piece of news: Vilken fantastisk nyhet! Vad is for Vad roligt! (an adjective, no noun)."
+        "explanation": "Vilka goes with a plural: vilka nyheter. For one piece of news: Vilken fantastisk nyhet! Vilket is for an ett-word: Vilket bra jobb! (Vad fantastiska nyheter! is also possible, but vilka is the phrase from class.)"
       },
       {
         "id": "sv-25-g2",
@@ -52665,8 +53052,8 @@
             "turns": [
               {
                 "who": "partner",
-                "fi": "Hej, det är jag. Förlåt att jag ringer så sent. Jag måste bara berätta det för någon: Johanna och jag ska skiljas.",
-                "en": "Hi, it's me. Sorry for calling so late. I just have to tell someone: Johanna and I are getting divorced."
+                "fi": "Hej, det är jag. Förlåt att jag ringer så sent. Jag måste bara berätta det för någon: Emma och jag ska skiljas.",
+                "en": "Hi, it's me. Sorry for calling so late. I just have to tell someone: Emma and I are getting divorced."
               },
               {
                 "who": "learner",
@@ -52730,13 +53117,13 @@
                 "seconds": 30,
                 "models": [
                   "Ja, det förstår jag. Hur har Ella tagit det?",
-                  "Det låter klokt. Hur reagerade Ella när ni berättade det? Ska hon bo hos dig eller hos Johanna?"
+                  "Det låter klokt. Hur reagerade Ella när ni berättade det? Ska hon bo hos dig eller hos Emma?"
                 ]
               },
               {
                 "who": "partner",
-                "fi": "Hon var ledsen men lugn. Hon ska bo varannan vecka hos mig och varannan vecka hos Johanna. Johanna har redan hittat en lägenhet i närheten, så Ella kan gå kvar i sin skola.",
-                "en": "She was sad but calm. She will live every other week with me and every other week with Johanna. Johanna has already found a flat nearby, so Ella can stay at her school."
+                "fi": "Hon var ledsen men lugn. Hon ska bo varannan vecka hos mig och varannan vecka hos Emma. Emma har redan hittat en lägenhet i närheten, så Ella kan gå kvar i sin skola.",
+                "en": "She was sad but calm. She will live every other week with me and every other week with Emma. Emma has already found a flat nearby, so Ella can stay at her school."
               },
               {
                 "who": "learner",
@@ -54155,7 +54542,10 @@
           "Tack för inbjudan, men jag kan tyvärr inte komma.",
           "Tack för inbjudningen, men tyvärr kan jag inte.",
           "Tack för inbjudningen, men jag kan tyvärr inte.",
-          "Tack för inbjudningen, men tyvärr kan jag inte komma."
+          "Tack för inbjudningen, men tyvärr kan jag inte komma.",
+          "Tack för inbjudningen, men jag kan tyvärr inte komma.",
+          "Tack så mycket för inbjudan, men tyvärr kan jag inte.",
+          "Tack så mycket för inbjudan, men jag kan tyvärr inte."
         ],
         "hint": "Tack för inbjudan, men tyvärr + verb + jag …",
         "explanation": "Model: Tack för inbjudan, men tyvärr kan jag inte. After tyvärr the verb kan comes next. In speech, add a reason and a kind wish: … eftersom jag jobbar. Ha det så roligt!"
@@ -55002,7 +55392,7 @@
       "opening": {
         "teacherNote": {
           "title": "Listen for two problems and one plan",
-          "body": "Midsommarafton morning: Elin comes to fetch Alex for the stuga. Something drips in his kitchen, and a courier's note lies in the hall. The offices are closed until Monday, so they plan the calls. Listen for what is wrong and what Alex will say."
+          "body": "Midsommarafton morning: Elin, already in Vasa, calls to check that Alex will catch his train to the stuga. Something drips in his kitchen, and a courier's note lies in the hall. The offices are closed until Monday, so they plan the calls. Listen for what is wrong and what Alex will say."
         },
         "questionIntro": "Answer from the conversation: the two problems, and why Alex calls on Monday.",
         "dialogue": {
@@ -55419,7 +55809,7 @@
         "body": [
           "Fönstret kan inte stängas. Paketet kunde inte levereras. Kranen måste repareras. The thing comes first, and the s-form shows that something is done to it. We do not say who does it.",
           "After a help verb (kan, kunde, måste, ska): basic form + s. stänga → kan stängas, leverera → kunde levereras, byta → ska bytas, nå → kan nås.",
-          "Present: levererar → levereras, stänger → stängs, låser → låses. Past: levererades, stängdes, reparerades. Notices, letters and service calls use these forms a lot.",
+          "Present: levererar → levereras, stänger → stängs, låser → låses. Past: levererades, stängdes, reparerades. Notices, letters and service calls use these forms a lot: så att grannarnas lugn bevaras (so that the neighbours' peace is kept).",
           "The everyday choice: går inte att + basic form, without s. Fönstret går inte att stänga = Fönstret kan inte stängas. Both are right; the s-form sounds more formal.",
           "Får inte plats = does not fit (there is no room). In Finland you also hear ryms inte. Brevinkastet is the mail slot in the door; the box outside is postlådan in Finland (brevlådan in Sweden)."
         ],
@@ -55678,8 +56068,8 @@
               ],
               "answer": "Hur länge har den läckt?",
               "reply": {
-                "fi": "Sedan i söndags, alltså i fem dagar nu.",
-                "en": "Since Sunday, so for five days now."
+                "fi": "Sedan söndagen den 14 juni, alltså i över en vecka nu.",
+                "en": "Since Sunday 14 June, so for over a week now."
               },
               "why": "Hur länge har den läckt? asks for a length (Lecture 17). English “for how long” is not för hur länge, and hur länge sedan means how long ago."
             },
@@ -55981,7 +56371,7 @@
               "why": "It refuses the conversation. In the test, keep the conversation going."
             }
           ],
-          "summary": "Disagree with a fact, show understanding and promise something. That is level-4 politeness in YKI terms: telling formal from informal."
+          "summary": "Disagree with a fact, show understanding and promise something. In YKI, a calm and polite tone is part of a good answer."
         }
       }
     ],
@@ -56237,13 +56627,13 @@
     "dialogue": [
       {
         "speaker": "Elin",
-        "fi": "God morgon! Är du klar? Vi åker om en timme.",
-        "en": "Good morning! Are you ready? We leave in an hour."
+        "fi": "God morgon! Är du klar? Ditt tåg går om en timme.",
+        "en": "Good morning! Are you ready? Your train leaves in an hour."
       },
       {
         "speaker": "Alex",
-        "fi": "Nästan. Men hör du? Kranen i köket droppar hela tiden.",
-        "en": "Almost. But can you hear that? The kitchen tap drips all the time."
+        "fi": "Nästan. Men vet du vad? Kranen i köket droppar hela tiden.",
+        "en": "Almost. But you know what? The kitchen tap drips all the time."
       },
       {
         "speaker": "Elin",
@@ -56262,8 +56652,8 @@
       },
       {
         "speaker": "Alex",
-        "fi": "Jag vet. Och titta, en lapp från budfirman. Paketet med min nya skrivbordsstol kunde inte levereras.",
-        "en": "I know. And look, a note from the courier company. The parcel with my new desk chair could not be delivered."
+        "fi": "Jag vet. Och här ligger en lapp från budfirman. Paketet med min nya skrivbordsstol kunde inte levereras.",
+        "en": "I know. And there's a note from the courier company here. The parcel with my new desk chair could not be delivered."
       },
       {
         "speaker": "Elin",
@@ -56322,8 +56712,8 @@
       },
       {
         "speaker": "Alex",
-        "fi": "Utom när jag handlar midsommarmat! Okej, nu packar jag.",
-        "en": "Except when I'm shopping for midsummer food! OK, now I'll pack."
+        "fi": "Utom när jag är ute och handlar! Okej, nu packar jag, annars missar jag tåget.",
+        "en": "Except when I'm out shopping! OK, now I'll pack, or I'll miss the train."
       }
     ],
     "resources": [
@@ -56664,6 +57054,22 @@
           "example": "Den gamla kranen ersätts med en ny.",
           "translation": "The old tap is replaced with a new one.",
           "level": "B1"
+        },
+        {
+          "id": "sv-27-word-41",
+          "fi": "skadedjur",
+          "en": "pests (mice, insects)",
+          "example": "Vi har skadedjur i källaren.",
+          "translation": "We have pests in the basement.",
+          "level": "B1"
+        },
+        {
+          "id": "sv-27-word-42",
+          "fi": "översvämmad",
+          "en": "flooded",
+          "example": "Mitt kök var översvämmat efter läckan.",
+          "translation": "My kitchen was flooded after the leak.",
+          "level": "B1"
         }
       ],
       "pronunciation": {
@@ -56718,7 +57124,7 @@
       "speaking": {
         "prompt": "Ring fastighetsskötseln. Berätta vad som är fel och sedan när, boka en tid som passar dig, ge din adress och ditt telefonnummer och avsluta artigt. (Call property maintenance: what is wrong and since when, a time that suits you, your address and number, and a polite end. It is like a YKI dialogue, but you lead the call.)",
         "help": "Hej, det här är … · Jag ringer angående … · Den/Det läcker / fungerar inte / är täppt · Det har … sedan … / i … · Skulle en rörmokare kunna …? · Passar det på …? · Tyvärr passar det inte, för … Går det bra … i stället? · Adressen är … · Ni når mig på … · Tack för hjälpen. Då säger vi så.",
-        "model": "Hej, det här är Alex Khan. Jag ringer angående kranen i mitt kök. Den droppar hela tiden, och nu har det blivit värre. Det har läckt sedan i söndags. Skulle en rörmokare kunna komma och titta på den? Jag jobbar hemifrån, så jag är hemma nästan hela veckan. Passar det på tisdag förmiddag? Om inte, går det bra på onsdag efter klockan ett. Adressen är Lingonvägen 4 B 12, och ni når mig på 040 123 4567. Tack för hjälpen. Då säger vi så. Hej då!"
+        "model": "Hej, det här är Alex Khan. Jag ringer angående kranen i mitt kök. Den droppar hela tiden, och nu har det blivit värre. Det har läckt i över en vecka. Skulle en rörmokare kunna komma och titta på den? Jag jobbar hemifrån, så jag är hemma nästan hela veckan. Passar det på tisdag förmiddag? Om inte, går det bra på onsdag efter klockan ett. Adressen är Lingonvägen 4 B 12, och ni når mig på 040 123 4567. Tack för hjälpen. Då säger vi så. Hej då!"
       },
       "writing": {
         "prompt": "Skriv en felanmälan till fastighetsskötseln. (Write a fault report to property maintenance: a formal message.)",
@@ -56848,7 +57254,7 @@
                 "seconds": 38,
                 "models": [
                   "Tyvärr passar det inte. Jag jobbar på torsdag. Kan ni komma på fredag?",
-                  "Tyvärr passar torsdag mig inte, för då har jag ett viktigt möte på jobbet. Skulle ni kunna komma på fredag efter klockan tre i stället?"
+                  "Tyvärr passar det inte på torsdag, för då har jag ett viktigt möte på jobbet. Skulle ni kunna komma på fredag efter klockan tre i stället?"
                 ],
                 "tip": "The teacher's recipe for svara nekande: no + why + a new suggestion."
               },
@@ -60451,7 +60857,8 @@
         "answers": [
           "Jag är allergisk mot nötter.",
           "Jag är allergisk mot nötter tyvärr.",
-          "Tyvärr är jag allergisk mot nötter."
+          "Tyvärr är jag allergisk mot nötter.",
+          "Jag är tyvärr allergisk mot nötter."
         ],
         "hint": "Allergisk + a preposition.",
         "explanation": "Model: Jag är allergisk mot nötter. The preposition is mot; en nöt – nötter."
@@ -60493,7 +60900,11 @@
           "När jag var liten bodde jag med min mormor.",
           "När jag var liten bodde jag med min farmor.",
           "När jag var barn bodde jag hos min mormor.",
-          "När jag var barn bodde jag hos min farmor."
+          "När jag var barn bodde jag hos min farmor.",
+          "När jag var liten bodde jag hos mormor.",
+          "När jag var liten bodde jag hos farmor.",
+          "När jag var liten bodde jag med mormor.",
+          "När jag var liten bodde jag med farmor."
         ],
         "hint": "The verb comes right after the när-clause.",
         "explanation": "Model: När jag var liten bodde jag hos min mormor. The när-clause takes first place, so the verb bodde comes before jag (Lecture 19). Hos = at someone's home."
@@ -60579,8 +60990,8 @@
       },
       {
         "speaker": "Henrik",
-        "fi": "Ha ha. I dag ska vi berätta. Ämnet är ”En person som jag aldrig kommer att glömma”. Maja, vill du börja?",
-        "en": "Ha ha. Today we are going to tell stories. The topic is “A person I will never forget”. Maja, would you like to start?"
+        "fi": "Ha ha. I dag ska vi öva på att berätta. Ämnet är ”En person som jag aldrig kommer att glömma”. Maja, vill du börja?",
+        "en": "Ha ha. Today we are going to practise telling stories. The topic is “A person I will never forget”. Maja, would you like to start?"
       },
       {
         "speaker": "Maja",
@@ -61234,7 +61645,11 @@
                   "En dag per vecka",
                   "Minst en dag per vecka",
                   "1 gång i veckan",
-                  "1 dag i veckan"
+                  "1 dag i veckan",
+                  "En gång varje vecka",
+                  "Minst en gång varje vecka",
+                  "En köttfri dag per vecka",
+                  "Minst en köttfri dag per vecka"
                 ],
                 "model": "Minst en gång i veckan."
               },
@@ -61761,9 +62176,9 @@
             "note": "Inte before har inside the clause."
           },
           {
-            "fi": "Trots att lönerna är höga är maten dyr.",
-            "en": "Even though salaries are high, food is expensive.",
-            "note": "The main verb är comes next."
+            "fi": "Trots att maten är dyr i Finland äter många ute varje vecka.",
+            "en": "Even though food is expensive in Finland, many people eat out every week.",
+            "note": "The main verb äter comes next."
           },
           {
             "fi": "Trots att det regnade gick vi ändå ut.",
@@ -62431,7 +62846,8 @@
           "Maten är billigare i Indien jämfört med Finland.",
           "Mat är billigare i Indien jämfört med Finland.",
           "I Indien är maten billigare jämfört med Finland.",
-          "I Indien är maten billigare än i Finland."
+          "I Indien är maten billigare än i Finland.",
+          "Maten är billigare i Indien än i Finland."
         ],
         "hint": "Jämfört med … + verb …",
         "explanation": "Model: Jämfört med Finland är maten billigare i Indien. Jämfört med Finland takes first place, so är comes next. Billigare is a comparative (Lecture 12)."
@@ -62597,8 +63013,8 @@
       },
       {
         "speaker": "Henrik",
-        "fi": "Vilken bra diskussion! Det här är precis en Din åsikt-uppgift.",
-        "en": "What a good discussion! This is exactly a Din åsikt task."
+        "fi": "Vilken bra diskussion! Det här är precis som en Din åsikt-uppgift.",
+        "en": "What a good discussion! This is just like a Din åsikt task."
       },
       {
         "speaker": "Henrik",
@@ -62622,8 +63038,8 @@
       },
       {
         "speaker": "Elin",
-        "fi": "Gärna, men jag måste gå klockan fem. Båten till festen går halv sex!",
-        "en": "Gladly, but I have to leave at five. The boat to the party leaves at half past five!"
+        "fi": "Gärna, men jag måste gå om en kvart. Båten till festen går halv sex!",
+        "en": "Gladly, but I have to leave in a quarter of an hour. The boat to the party leaves at half past five!"
       },
       {
         "speaker": "Henrik",
@@ -63179,7 +63595,7 @@
       "opening": {
         "teacherNote": {
           "title": "Listen for a return, a cold coffee and an argument",
-          "body": "Monday after class: Alex has just taken his new coffee machine back to the shop, and he meets Elin at a café. Her coffee is cold, and then they disagree about Finnish parties. Listen for what Alex got instead, and for each person's position."
+          "body": "Monday afternoon, before class: Alex has just taken his new coffee machine back to the shop, and he meets Elin at a café. Her coffee is cold, and then they disagree about Finnish parties. Listen for what Alex got instead, and for each person's position."
         },
         "questionIntro": "Answer from the conversation: what happened at the shop, and what Elin thinks about Finnish parties.",
         "dialogue": {
@@ -64420,8 +64836,8 @@
       },
       {
         "speaker": "Alex",
-        "fi": "Ja, på onsdag får jag antingen fester eller födelsedagar av Henrik. Jag förbereder båda.",
-        "en": "Yes, on Wednesday Henrik will give me either parties or birthdays. I'm preparing both."
+        "fi": "Ja, i kväll får jag antingen fester eller födelsedagar av Henrik. Jag förbereder båda.",
+        "en": "Yes, tonight Henrik will give me either parties or birthdays. I'm preparing both."
       }
     ],
     "resources": [
@@ -65004,7 +65420,7 @@
             "type": "dialogue",
             "id": "sv-31-yki-kafe",
             "title": "Samtal · Fel mjölk i latten",
-            "intro": "At a café something is wrong with your drink. The staff member speaks first. The seconds are the ones the book prints for this kind of café dialogue. Henrik's rules: answer within the time, do what the cue asks, and use your own words, not the cue's. Inventing details is fine. From this chapter on, each turn has the test's own time: 10-25 seconds.",
+            "intro": "At a café something is wrong with your drink. The staff member speaks first. Henrik's rules: answer within the time, do what the cue asks, and use your own words, not the cue's. Inventing details is fine. From this chapter on, each turn has the test's own time: 10-25 seconds.",
             "bookRef": "Förbered dig, Dialog 3, s. 45–46",
             "situation": {
               "fi": "Du sitter på ett kafé. Du beställde en latte med havremjölk, men den smakar som vanlig mjölk, och du tål inte laktos. En anställd kommer fram till ditt bord.",
@@ -66237,7 +66653,7 @@
         "body": [
           "Bifogad = attached. It works like an adjective (a participle), so it agrees with the noun: en bild är bifogad, ett kvitto är bifogat, två foton är bifogade. Before a definite noun: det bifogade kvittot. Fixed phrase: Se bifogad fil.",
           "Or say it with the verb: Jag bifogar kvittot. Kvittot bifogas (s-form, Lecture 27).",
-          "Inte bara … utan också = not only … but also. Paketet kom inte bara sent, utan det var också trasigt. Use utan, not men. In a subordinate clause, inte bara comes before the verb: ett paket som inte bara kom sent utan också var trasigt (the teacher's model needs this order).",
+          "Inte bara … utan också = not only … but also. Paketet kom inte bara sent, utan det var också trasigt. Use utan, not men. In a subordinate clause, the safe place for inte bara is before the verb: ett paket som inte bara kom sent utan också var trasigt.",
           "Strong but polite words: Jag är besviken på kvaliteten. Produkten uppfyller inte mina förväntningar. Jag vill kräva ersättning för … (demand compensation). Jag känner mig lurad (tricked) is very strong; use it only when it is true.",
           "Request words: en återbetalning (a refund), byta (exchange), ersätta (replace), avbryta beställningen (cancel the order), häva köpet (cancel the purchase)."
         ],
@@ -66313,17 +66729,17 @@
             "buckets": [
               {
                 "id": "ad",
-                "label": "bifogad",
+                "label": "En-word: bifogad",
                 "hint": "an en-word"
               },
               {
                 "id": "at",
-                "label": "bifogat",
+                "label": "Ett-word: bifogat",
                 "hint": "an ett-word"
               },
               {
                 "id": "ade",
-                "label": "bifogade",
+                "label": "Plural or definite: bifogade",
                 "hint": "plural or definite"
               }
             ],
@@ -66549,11 +66965,11 @@
         ],
         "options": [
           "Jag fick ett paket som inte bara kom sent utan också var trasigt.",
-          "Jag fick ett paket som kom inte bara sent utan också trasigt.",
+          "Jag fick ett paket som inte bara kom sent utan också var trasig.",
           "Jag fick ett paket som inte bara kom sent men också var trasigt."
         ],
         "hint": "A som-clause is a subordinate clause, and the pair is inte bara … utan också.",
-        "explanation": "In a subordinate clause inte (and inte bara) comes before the verb, as in Lecture 19: som inte bara kom. The pair is inte bara … utan också, never men också."
+        "explanation": "In a subordinate clause the safe place for inte bara is before the verb, as with inte in Lecture 19: som inte bara kom. Paket is an ett-word, so trasigt, not trasig. The pair is inte bara … utan också, never men också."
       }
     ],
     "checkpoint": [
@@ -66567,7 +66983,8 @@
           "Vet ni var torget är?",
           "Vet du var salutorget ligger?",
           "Vet du var salutorget är?",
-          "Vet du var marknadstorget ligger?"
+          "Vet du var marknadstorget ligger?",
+          "Vet du var torget finns?"
         ],
         "hint": "Vet du var … + subject + verb",
         "explanation": "Model: Vet du var torget ligger? Inside Vet du …, torget comes before the verb."
@@ -66582,7 +66999,9 @@
           "Sen svänger jag vänster vid hotellet.",
           "Sedan ska jag svänga till vänster vid hotellet.",
           "Sen ska jag svänga till vänster vid hotellet.",
-          "Vid hotellet svänger jag sedan till vänster."
+          "Vid hotellet svänger jag sedan till vänster.",
+          "Sedan svänger jag åt vänster vid hotellet.",
+          "Sen svänger jag åt vänster vid hotellet."
         ],
         "hint": "Sedan first, then the verb.",
         "explanation": "Model: Sedan svänger jag till vänster vid hotellet. Sedan takes first place, so the verb comes second (Lecture 8), not Sedan jag svänger."
@@ -66599,7 +67018,7 @@
           "Gå rakt fram och ta andra gatan till höger."
         ],
         "hint": "Your words, the stranger's facts, and the basic form after ska.",
-        "explanation": "Så jag ska gå … och ta … keeps the facts and turns the commands into your plan. The second needs ta after borde … och. The third reads the commands back, as if you gave him orders."
+        "explanation": "Så jag ska gå … och ta … keeps the facts and turns the commands into your plan. The second needs ta after borde … och. The third reads the commands back, as if you were giving the stranger orders."
       },
       {
         "id": "sv-32-c4",
@@ -67142,7 +67561,7 @@
         "explanation": "Lördag 10–16, so it is open at 15.30. Vid rondellen svänger du till höger, and the building is på din vänstra sida."
       },
       "listening": {
-        "text": "Du hör två texter. Den första är ett utrop på stationen i Vasa på tisdagseftermiddagen, när Alex väntar på tåget hem. Den andra är ett meddelande på Alex röstbrevlåda på torsdagen.\n\nUtrop på stationen i Vasa: Information till resenärer på InterCity-tåget till Helsingfors, avgång klockan 17.32. Tåget avgår i dag från spår två i stället för spår ett. Avgångstiden är densamma. Vagn fem, restaurangvagnen, är tyvärr stängd på grund av ett tekniskt fel. Kaffe och smörgåsar säljs i stället i vagn tre. Vi ber om ursäkt för besväret och önskar alla en trevlig resa.\n\nMeddelande på röstbrevlådan: Hej Alex Khan, det här är Johanna från Möbelhuset Linneas kundtjänst. Tack för ditt mejl och för att du ringde i går. Det var verkligen tråkigt att påsen med skruvar saknades i kartongen. Vi har kontrollerat din beställning, nummer 48213, och du har helt rätt. Vi skickade en ny påse med skruvar och beslag i dag med posten. Den kommer till ditt utlämningsställe på två till tre vardagar, alltså senast på tisdag. Du får ett sms när du kan hämta den. Om du hellre vill hämta skruvarna själv, finns de också i vår butik i Vanda från och med i morgon. Ta med orderbekräftelsen. Som tack för ditt tålamod får du dessutom tio procent rabatt på ditt nästa köp. Rabattkoden står i mejlet som vi skickar i dag. Om något annat saknas när du monterar soffan, ring oss på 09 876 5432, vardagar mellan nio och sjutton. Ha en fin dag!",
+        "text": "Du hör två texter. Den första är ett utrop på stationen i Vasa på tisdagseftermiddagen, när Alex väntar på tåget hem. Den andra är ett meddelande på Alex röstbrevlåda på torsdagen.\n\nUtrop på stationen i Vasa: Information till resenärer på InterCity-tåget till Helsingfors, avgång klockan 17.32. Tåget avgår i dag från spår två i stället för spår ett. Avgångstiden är densamma. Vagn fem, restaurangvagnen, är tyvärr stängd på grund av ett tekniskt fel. Kaffe och smörgåsar säljs i stället i vagn tre. Vi ber om ursäkt för besväret och önskar alla en trevlig resa.\n\nMeddelande på röstbrevlådan: Hej Alex Khan, det här är Linda från Möbelhuset Linneas kundtjänst. Tack för ditt mejl och för att du ringde i går. Det var verkligen tråkigt att påsen med skruvar saknades i kartongen. Vi har kontrollerat din beställning, nummer 48213, och du har helt rätt. Vi skickade en ny påse med skruvar och beslag i dag med posten. Den kommer till ditt utlämningsställe på två till tre vardagar, alltså senast på tisdag. Du får ett sms när du kan hämta den. Om du hellre vill hämta skruvarna själv, finns de också i vår butik i Vanda från och med i morgon. Ta med orderbekräftelsen. Som tack för ditt tålamod får du dessutom tio procent rabatt på ditt nästa köp. Rabattkoden står i mejlet som vi skickar i dag. Om något annat saknas när du monterar soffan, ring oss på 09 876 5432, vardagar mellan nio och sjutton. Ha en fin dag!",
         "question": "When will the screws reach Alex's pickup point at the latest?",
         "options": [
           "On Tuesday",
@@ -67893,7 +68312,7 @@
             },
             {
               "fi": "Hon ___ om bordet fanns kvar.",
-              "en": "She asked whether the desk was still there.",
+              "en": "She asked whether the table was still there.",
               "bucket": "fraga",
               "why": "A yes/no question inside the sentence: hon frågade om …"
             },
@@ -67933,7 +68352,7 @@
           "Give a reason: Jag har sett samma modell billigare i en annan butik. Det finns en repa. Jag är stamkund här (a regular customer). Jag köper två. Jag hämtar den själv. Jag betalar direkt.",
           "Suggest a price: Kan du tänka dig 80 euro? Vad sägs om 80? The seller may answer: Vi möts på halva vägen (let's meet halfway). Mitt lägsta pris är 100. Then close: Då säger vi så.",
           "I Finland prutar man sällan i vanliga butiker med fasta priser. På loppis (kirppis), vid privata köp på nätet och för en vara med fel är det helt normalt att fråga. (Shops with price tags rarely bargain; second-hand and private sales do.)",
-          "Comparison from Lecture 20: billig – billigare – billigast, låg – lägre – lägst. Ett lägre pris = a lower price.",
+          "Comparison from Lecture 12: billig – billigare – billigast, låg – lägre – lägst. Ett lägre pris = a lower price.",
           "Two reasons are stronger than one, and a polite tone works better than a hard one. Say first that you like the thing: Jag är intresserad av …, men …"
         ],
         "examples": [
@@ -69002,7 +69421,7 @@
         },
         {
           "id": "sv-33-word-10",
-          "fi": "en chaufför (föraren)",
+          "fi": "en chaufför, en förare",
           "en": "a driver",
           "example": "Fråga chauffören om vägen.",
           "translation": "Ask the driver the way.",
@@ -69529,6 +69948,7 @@
             "title": "Ulf Unge",
             "posted": "3 Jul",
             "instructions": "Läs insändaren och välj rätt svar. Read the reader's letter (a complaint in a newspaper) and pick the best answer to each question.",
+            "note": "The exported form shows no answer key, so the marked answers were worked out from the text: Pensionärer, tänk lite!, Åk kollektivt och handla på andra tider, and the queue that waits while a pensioner complains at the till.",
             "texts": [
               {
                 "title": "Insändare",
@@ -69922,7 +70342,7 @@
           "rows": [
             [
               "Är du oftast i tid?",
-              "Ja, jag är nästan alltid fem minuter för tidigt."
+              "Ja, jag kommer nästan alltid fem minuter för tidigt."
             ],
             [
               "Gillar du rutiner?",
@@ -70890,8 +71310,8 @@
       },
       {
         "speaker": "Maja",
-        "fi": "Skriv det! Och priset, och när den kan hämtas. Du flyttar ju i slutet av juli.",
-        "en": "Write that! And the price, and when it can be picked up. You're moving at the end of July, after all."
+        "fi": "Skriv det! Och priset, och när den kan hämtas. Du flyttar ju den första augusti.",
+        "en": "Write that! And the price, and when it can be picked up. You're moving on 1 August, after all."
       },
       {
         "speaker": "Alex",
@@ -71404,8 +71824,8 @@
                   "Hur ser en riktigt dålig dag ut för dig?",
                   "Hur var din vardag för fem år sedan?"
                 ],
-                "model": "Jag jobbar hemifrån, så min vardag är ganska lugn. Jag vaknar halv sju, dricker kaffe och tar en kort promenad. Sedan sitter jag vid datorn från åtta till fyra. Två kvällar i veckan går jag på svenskkursen. För fem år sedan var allt annorlunda. Då bodde jag i Pune, och bussen till kontoret tog en timme. En riktigt dålig dag hade jag förra veckan: jag försov mig, och sedan slutade internet fungera mitt under ett möte.",
-                "modelEn": "I work from home, so my everyday life is quite calm. I wake up at half past six, drink coffee and take a short walk. Then I sit at the computer from eight to four. Two evenings a week I go to the Swedish course. Five years ago everything was different. Then I lived in Pune, and the bus to the office took an hour. I had a really bad day last week: I overslept, and then the internet stopped working in the middle of a meeting."
+                "model": "Jag jobbar hemifrån, så min vardag är ganska lugn. Jag vaknar halv sju, dricker kaffe och tar en kort promenad. Sedan sitter jag vid datorn från åtta till fyra. Tre kvällar i veckan går jag på svenskkursen. För fem år sedan var allt annorlunda. Då bodde jag i Pune, och bussen till kontoret tog en timme. En riktigt dålig dag hade jag förra veckan: jag försov mig, och sedan slutade internet fungera mitt under ett möte.",
+                "modelEn": "I work from home, so my everyday life is quite calm. I wake up at half past six, drink coffee and take a short walk. Then I sit at the computer from eight to four. Three evenings a week I go to the Swedish course. Five years ago everything was different. Then I lived in Pune, and the bus to the office took an hour. I had a really bad day last week: I overslept, and then the internet stopped working in the middle of a meeting."
               },
               {
                 "id": "sv-34-tell-restaurang",
@@ -71417,8 +71837,8 @@
                   "Berätta om ett restaurangbesök som du minns.",
                   "Hur skiljer sig restaurangerna i Finland från dem i ditt hemland?"
                 ],
-                "model": "Jag äter ute kanske två gånger i månaden, oftast lunch med vänner. För mig är stämningen viktigast. När min kusin hälsade på åt vi på en indisk restaurang i centrum. Maten var god, men den var inte alls stark, så vi skrattade mycket. I Pune är restaurangerna ofta stora och bullriga, och familjer äter sent på kvällen. Här är det lugnare, och köket stänger tidigt. Men jag gillar att det finns specialkost överallt.",
-                "modelEn": "I eat out maybe twice a month, usually lunch with friends. For me the atmosphere is most important. When my cousin visited, we ate at an Indian restaurant in the centre. The food was good, but it was not spicy at all, so we laughed a lot. In Pune restaurants are often big and noisy, and families eat late in the evening. Here it is calmer, and the kitchen closes early. But I like that there is special diet food everywhere."
+                "model": "Jag äter ute kanske två gånger i månaden, oftast lunch med vänner. För mig är stämningen viktigast. I lördags kom min kusin på besök, och vi åt på en indisk restaurang i centrum. Maten var god, men den var inte alls stark, så vi skrattade mycket. I Pune är restaurangerna ofta stora och bullriga, och familjer äter sent på kvällen. Här är det lugnare, och köket stänger tidigt. Men jag gillar att det finns specialkost överallt.",
+                "modelEn": "I eat out maybe twice a month, usually lunch with friends. For me the atmosphere is most important. Last Saturday my cousin came to visit, and we ate at an Indian restaurant in the centre. The food was good, but it was not spicy at all, so we laughed a lot. In Pune restaurants are often big and noisy, and families eat late in the evening. Here it is calmer, and the kitchen closes early. But I like that there is special diet food everywhere."
               }
             ]
           },
@@ -71544,7 +71964,7 @@
                     "Formal and polite: facts and numbers, link sentences with och, men, eftersom."
                   ]
                 },
-                "model": "Cykel till salu\n\nHej! Jag säljer min gamla cykel eftersom jag har köpt en ny. Cykeln är av märket Crescent och har sju växlar. Den är fem år gammal men i mycket gott skick och fungerar precis som den ska. Priset är 120 euro, men vi kan förhandla om priset. Du kan hämta cykeln själv i Esbo. Om du är intresserad kan du ringa mig, gärna efter klockan 16.\n\nVänliga hälsningar,\nAlex"
+                "model": "Cykel till salu\n\nJag säljer min gamla cykel eftersom jag har köpt en ny. Cykeln är av märket Crescent och har sju växlar. Den är fem år gammal men i mycket gott skick och fungerar precis som den ska. Priset är 120 euro, men vi kan förhandla. Du kan hämta cykeln själv i Esbo. Om du är intresserad kan du ringa mig, gärna efter klockan 16.\n\nVänliga hälsningar,\nAlex"
               },
               {
                 "id": "q2",
@@ -72160,7 +72580,7 @@
           "Ge bort (give away) and sälja begagnat (sell second-hand) are återanvändning. Throwing glass into the glass bin is återvinning.",
           "Pant (deposit): in Finland you pay a few cents extra for most cans and plastic bottles, and you get the money back at the shop's machine. Panta burkar = return cans for the deposit. The machine in the shop is en pantautomat.",
           "Lecture 21's waste words come back: bioavfall (food waste), kartong, glas, metall, plast, blandavfall (mixed waste). Sopor, avfall, skräp: rubbish, waste, litter. Skräp is also what lies on the ground.",
-          "Sopsortera: you sort your rubbish into the right bins (sopkärl, soptunnor). En återvinningsstation is the place outside a shop with large bins for glass, metal and paper.",
+          "Sopsortera: you sort your rubbish into the right bins (sopkärl, soptunnor). En återvinningspunkt (ekopunkt) is the place outside a shop with large bins for glass, metal, paper and cardboard. En återvinningsstation takes big things such as furniture and electronics (in Helsinki: HSY's Sortti stations).",
           "A flea market is en loppis (short for loppmarknad), and many towns have återvinningscentraler where you can give away furniture and buy it cheaply."
         ],
         "examples": [
@@ -72365,12 +72785,12 @@
           "buckets": [
             {
               "id": "trad",
-              "label": "träd / trädet",
+              "label": "Tree: träd / trädet",
               "hint": "A living tree"
             },
             {
               "id": "tra",
-              "label": "trä",
+              "label": "Wood: trä",
               "hint": "Wood, the material"
             }
           ],
@@ -72422,8 +72842,8 @@
           "Today's YKI dialogue is a call about a permit (ett tillstånd). The pattern fits many calls: say what you want to do, answer the official's questions, ask the price, ask where to buy, thank.",
           "The official's key words: Det beror på … (it depends on …), syftet (the purpose), utrustning or redskap (equipment, gear), avgiftsbelagd (you must pay), avgiftsfri or gratis (free), ett kvitto (a receipt).",
           "Ask politely with an indirect question: Kan du säga vad det kostar? · Vet du var jag kan köpa det? Inside the question the subject comes before the verb (Lecture 27): vad det kostar, not vad kostar det.",
-          "The facts in Finland: metning (fishing with a simple rod, a worm and a float) and pilkfiske (ice fishing with a small jig) are free under allemansrätten. Fiske med drag (spinnfiske, with a lure) needs the state fiskevårdsavgift for anyone aged 18-69: 47 € a year, 16 € a week or 6 € a day (2023-2027). You pay it at eraluvat.fi. In rapids (forsar) you need a separate permit.",
-          "Henrik's book says the permit site is fisketillstand.net; that is an older edition. The book's line that winter fishing needs no licence is only true for ice fishing with a jig; fishing with a lure costs the fee in winter too.",
+          "The facts in Finland: metning (fishing with a simple rod, a worm and a float) and pilkfiske (ice fishing with a small jig) are free under allemansrätten. Fiske med drag (spinnfiske, with a lure) needs the state fiskevårdsavgift for anyone aged 18-69: 47 € a year, 16 € a week or 6 € a day (prices checked for 2026). You pay it at eraluvat.fi. In rapids (forsar) you need a separate permit.",
+          "Henrik's copy of the book (an older printing) names fisketillstand.net; the current book and the real service use eraluvat.fi. The book's line that winter fishing needs no licence is only true for ice fishing with a jig; fishing with a lure costs the fee in winter too.",
           "A YKI official may speak fast. You need not understand every word: catch the number and the key word, and ask Förlåt, kan du upprepa priset? if you missed it."
         ],
         "examples": [
@@ -73410,7 +73830,7 @@
         }
       },
       "reading": {
-        "text": "Ges bort – gratis!\n\nJag flyttar i slutet av juli och kan inte ta med allt till min nya lägenhet. Därför ger jag bort:\n• en vit bokhylla, 80 × 200 cm, i bra skick\n• en grå fåtölj (lite sliten, men skön)\n• en golvlampa med ny glödlampa\n\nKöksbordet och stolarna är redan reserverade.\n\nSakerna ska hämtas senast söndag 26.7. Du behöver en bil eller en skåpbil för bokhyllan. Först till kvarn! Skicka ett privat meddelande, så får du adressen och vi kommer överens om en tid.\n\nAlex",
+        "text": "Ges bort – gratis!\n\nJag flyttar den 1 augusti och kan inte ta med allt till min nya lägenhet. Därför ger jag bort:\n• en vit bokhylla, 80 × 200 cm, i bra skick\n• en grå fåtölj (lite sliten, men skön)\n• en golvlampa med ny glödlampa\n\nKöksbordet och stolarna är redan reserverade.\n\nSakerna ska hämtas senast söndag 26.7. Du behöver en bil eller en skåpbil för bokhyllan. Först till kvarn! Skicka ett privat meddelande, så får du adressen och vi kommer överens om en tid.\n\nAlex",
         "question": "Which of these can you no longer get from Alex?",
         "options": [
           "The kitchen table",
@@ -75022,6 +75442,11 @@
           "Om kollektivtrafiken var gratis skulle fler ta bussen.",
           "Om kollektivtrafiken var gratis skulle fler människor ta bussen.",
           "Om kollektivtrafiken vore gratis skulle fler åka buss.",
+          "Om kollektivtrafiken vore gratis skulle fler människor åka buss.",
+          "Om kollektivtrafiken vore gratis skulle fler ta bussen.",
+          "Om kollektivtrafiken vore gratis skulle fler människor ta bussen.",
+          "Fler skulle ta bussen om kollektivtrafiken var gratis.",
+          "Fler människor skulle ta bussen om kollektivtrafiken var gratis.",
           "Fler skulle åka buss om kollektivtrafiken var gratis.",
           "Fler människor skulle åka buss om kollektivtrafiken var gratis."
         ],
@@ -75116,7 +75541,7 @@
       {
         "speaker": "Alex",
         "fi": "Ja, och de blev jättenöjda. Deras gamla bord gick sönder i våras, och mitt får inte plats i det nya köket. Men nu ligger jag här med huvudvärk.",
-        "en": "Really pleased. Their old table broke in the spring, and mine won't fit in the new kitchen. But now I'm lying here with a headache."
+        "en": "Yes, and they were really pleased. Their old table broke in the spring, and mine won't fit in the new kitchen. But now I'm lying here with a headache."
       },
       {
         "speaker": "Elin",
@@ -76259,8 +76684,8 @@
               "why": "Urgent, but not life-threatening, and the health centre is closed: 116 117."
             },
             {
-              "fi": "Du har stukat foten på fredag kväll. Den är svullen.",
-              "en": "You have sprained your ankle on Friday evening. It is swollen.",
+              "fi": "Det är fredag kväll. Du har stukat foten, och den är svullen.",
+              "en": "It is Friday evening. You have sprained your ankle, and it is swollen.",
               "bucket": "jour",
               "why": "Jourhjälpen tells you whether you need jouren tonight."
             },
@@ -76528,9 +76953,9 @@
             "note": "Ta med = bring."
           },
           {
-            "fi": "Krya på dig, och hälsa din mamma!",
+            "fi": "Krya på dig, och hälsa till din mamma!",
             "en": "Get well soon, and say hello to your mum!",
-            "note": "Hälsa någon = send greetings."
+            "note": "Hälsa till någon = send greetings."
           },
           {
             "fi": "Tack, detsamma!",
@@ -76627,7 +77052,7 @@
           "Skratta = laugh; skratta åt något = laugh at something. Gråta – grät – gråtit = cry. Det får mig att skratta = It makes me laugh (få någon att + basic form).",
           "Rädd för, nervös för, spänd inför: Jag är rädd för ormar och för höjder. Jag blir nervös för prov. Jag är spänd inför operationen. Irritera: Det irriterar mig när bussen är sen.",
           "Humor (no dots) = sense of humour: Hon har bra humor. Humör (ö) = mood: Jag är på gott humör i dag. På dåligt humör = in a bad mood.",
-          "Skämt = a joke (ett skämt). Skoja = to joke: Jag skojar bara! In Finland-Swedish skoj also means fun: Det var skoj! (Note: the teacher's 'en skoj' is ett skoj.)",
+          "Skämt = a joke (ett skämt). Skoja = to joke: Jag skojar bara! Skoj also means fun: Det var skoj! (very common in Finland-Swedish). (Note: the teacher's 'en skoj' is ett skoj.)",
           "Lära känna = get to know (not meet): Jag lärde känna Elin på kursen. Träffa = meet."
         ],
         "examples": [
@@ -76803,7 +77228,10 @@
           "Som tur var hade jag på mig hjälm.",
           "Som tur var hade jag på mig en hjälm.",
           "Tur nog hade jag hjälm på mig.",
-          "Som tur var hade jag hjälm."
+          "Som tur var hade jag hjälm.",
+          "Som tur var hade jag hjälmen på mig.",
+          "Tur nog hade jag hjälm.",
+          "Turligt nog hade jag hjälm på mig."
         ],
         "hint": "Som tur var + verb + subject.",
         "explanation": "Model: Som tur var hade jag hjälm på mig. Som tur var takes first place, so the verb hade comes next (verb second)."
@@ -76859,7 +77287,10 @@
           "Hoppas du mår bättre snart!",
           "Jag hoppas att du snart mår bättre!",
           "Krya på er!",
-          "God bättring!"
+          "God bättring!",
+          "Hoppas att du mår bättre snart!",
+          "Jag hoppas att du mår bättre snart!",
+          "Hoppas du snart mår bättre!"
         ],
         "hint": "Two words + på + dig.",
         "explanation": "Model: Krya på dig! To two or more people: Krya på er! God bättring and Jag hoppas att du snart mår bättre are also right."
@@ -76887,7 +77318,9 @@
           "Jag vaknade kl 6.",
           "Jag vaknade vid sex.",
           "Jag vaknade klockan 6.",
-          "Jag vaknade kl. sex."
+          "Jag vaknade kl. sex.",
+          "Jag vaknade kl sex.",
+          "Jag vaknade klockan sex på morgonen."
         ],
         "hint": "By yourself: vakna, past form.",
         "explanation": "Model: Jag vaknade klockan sex. Nobody woke you, so vakna. Väckte needs an object: Larmet väckte mig."
@@ -76929,7 +77362,10 @@
           "Skulle du kunna köpa värktabletter till mig?",
           "Kan du köpa värktabletter till mig?",
           "Skulle du kunna köpa smärtstillande åt mig?",
-          "Kan du köpa smärtstillande åt mig?"
+          "Kan du köpa smärtstillande åt mig?",
+          "Kunde du köpa värktabletter åt mig?",
+          "Skulle du kunna köpa smärtstillande till mig?",
+          "Kan du köpa smärtstillande till mig?"
         ],
         "hint": "Skulle du kunna … åt mig?",
         "explanation": "Model: Skulle du kunna köpa värktabletter åt mig? Åt mig = on my behalf; till mig is also heard. Skulle du kunna is extra polite (the conditional)."
@@ -76956,7 +77392,10 @@
           "Hennes handled är tydligen bruten.",
           "Tydligen har hon brutit handleden.",
           "Hon har tydligen brutit handleden.",
-          "Tydligen är handleden bruten."
+          "Tydligen är handleden bruten.",
+          "Handleden är tydligen bruten.",
+          "Hon har tydligen en bruten handled.",
+          "Tydligen har hon en bruten handled."
         ],
         "hint": "Tydligen first, then the verb.",
         "explanation": "Model: Tydligen är hennes handled bruten. Tydligen = apparently (the teacher's note said clearly: that is tydligt). Tydligen first means verb second: är."
@@ -77359,7 +77798,7 @@
         }
       },
       "reading": {
-        "text": "VART SKA JAG RINGA? – Infoblad från hälsostationen\n\n112 – Nödcentralen. Ring när ett liv är i fara: någon andas inte, svarar inte eller blöder kraftigt, det har hänt en allvarlig olycka, det brinner eller ett brott pågår. Säg vad som har hänt och adressen. Lägg inte på förrän du får lov.\n\n116 117 – Jourhjälpen. Öppet dygnet runt. Ring när du behöver vård snabbt, men det inte är livsfarligt, och hälsostationen är stängd: till exempel hög feber, en svullen fot efter ett fall eller svår öronvärk. Sjukskötaren bedömer om du ska åka till jouren eller om du kan vänta.\n\nHälsostationen. Vardagar klockan 8–16. Boka tider, förnya recept och fråga om vaccinationer. Du kan också skicka ett meddelande via nätet.\n\nHar ett barn eller en vuxen fått i sig något giftigt? Ring Giftinformationscentralen.",
+        "text": "VILKET NUMMER SKA JAG RINGA? – Infoblad från hälsostationen\n\n112 – Nödcentralen. Ring när ett liv är i fara: någon andas inte, svarar inte eller blöder kraftigt, det har hänt en allvarlig olycka, det brinner eller ett brott pågår. Säg vad som har hänt och adressen. Lägg inte på förrän du får lov.\n\n116 117 – Jourhjälpen. Öppet dygnet runt. Ring när du behöver vård snabbt, men det inte är livsfarligt, och hälsostationen är stängd: till exempel hög feber, en svullen fot efter ett fall eller svår öronvärk. Sjukskötaren bedömer om du ska åka till jouren eller om du kan vänta.\n\nHälsostationen. Vardagar klockan 8–16. Boka tider, förnya recept och fråga om vaccinationer. Du kan också skicka ett meddelande via nätet.\n\nHar ett barn eller en vuxen fått i sig något giftigt? Ring Giftinformationscentralen.",
         "question": "On Sunday evening your foot is swollen after a fall. You can walk a little. Where do you call?",
         "options": [
           "116 117, Jourhjälpen",
@@ -77791,7 +78230,7 @@
               },
               {
                 "id": "sv-37-react-memory",
-                "fi": "Sedan några månader glömmer du ofta var du har lagt nycklarna och vad du skulle köpa. Det oroar dig. Ring sjukskötaren på hälsostationen.",
+                "fi": "I några månader har du ofta glömt var du har lagt nycklarna och vad du skulle köpa. Det oroar dig. Ring sjukskötaren på hälsostationen.",
                 "en": "For a few months you have often forgotten where you put your keys and what you were going to buy. It worries you. Call the nurse at the health centre.",
                 "model": "Hej, jag ringer för att jag är lite orolig för mitt minne. Sedan våren glömmer jag ofta nycklar och tider. Jag sover också dåligt. Kan det hänga ihop? Behöver jag träffa en läkare?",
                 "modelEn": "Hello, I'm calling because I'm a bit worried about my memory. Since the spring I often forget keys and appointments. I also sleep badly. Could it be connected? Do I need to see a doctor?"
@@ -78075,7 +78514,7 @@
       "opening": {
         "teacherNote": {
           "title": "Listen for a sick call and a new date",
-          "body": "Friday 17 July. Alex still has a fever. Early in the morning he calls Johanna, his team leader, and later Elin calls from Henrik's class. Listen for how long Alex will be away, who takes over his work, and the new date for the project meeting."
+          "body": "Friday 17 July. Alex still has a fever. Early in the morning he calls Johanna, his team leader, and in the evening Elin calls from Arlanda airport on her way home from Stockholm. Listen for how long Alex will be away, who takes over his work, and the new date for the project meeting."
         },
         "questionIntro": "Answer from the conversation: why Alex calls his team leader, and when the project meeting will be.",
         "dialogue": {
@@ -78104,11 +78543,11 @@
         "speakers": [
           {
             "name": "Alex",
-            "fi": "Jag har fortfarande feber, så jag stannar hemma."
+            "fi": "Jag är tyvärr fortfarande sjuk."
           },
           {
             "name": "Elin",
-            "fi": "Kom ihåg att säga till Henrik också!"
+            "fi": "Men du fick hjälp i alla fall."
           }
         ],
         "connector": "MEN",
@@ -78143,7 +78582,7 @@
       "routeSteps": {
         "recall": {
           "label": "Hear the conversation",
-          "description": "Listen to Alex's sick call and Elin's call from class."
+          "description": "Listen to Alex's sick call and Elin's call from the airport."
         },
         "teach": {
           "label": "Build it step by step",
@@ -78637,7 +79076,7 @@
           "Dates use ordinal numbers: den första, den andra, den tredje … den tjugofemte, den trettioförsta. Mötet är den tjugotredje juli. (Lecture 11.)",
           "I Finland skriver man 23.7.2026 eller bara 23.7. Säg den tjugotredje juli or, in Finland, also den tjugotredje i sjunde. On the phone, add the weekday: torsdag den tjugotredje.",
           "Hitta en tid: När har du tid? Vad sägs om …? (How about …?) Passar det på …? Det passar mig bra. Jag är upptagen hela dagen. Min kalender är fulltecknad.",
-          "Flytta ett möte: Kan vi flytta mötet till torsdag? Skjuta upp = move later. Tidigarelägga = move earlier. Ställa in = cancel. Flytta fram is unclear: in Finland it usually means later, but many people in Sweden hear earlier. The safe way: say the new day.",
+          "Flytta ett möte: Kan vi flytta mötet till torsdag? Skjuta upp = move later. Tidigarelägga = move earlier. Ställa in = cancel. Flytta fram is unclear: people use it both for later and for earlier (in the teacher's dialogue it means later). The safe way: say the new day.",
           "I juli har många semester, so meetings are hard to fit. Semester = holiday from work. A school or university term is en termin.",
           "I alla fall = anyway, at least. It ends a hard talk on a good note: Det var svårt, men nu har vi i alla fall en tid."
         ],
@@ -78777,7 +79216,7 @@
               {
                 "fi": "Kan vi tidigarelägga mötet en timme?",
                 "bucket": "earlier",
-                "why": "Tidigare = earlier, so tidigarelägga moves it forward in time."
+                "why": "Tidigare = earlier, so tidigarelägga moves it to an earlier time."
               },
               {
                 "fi": "Mötet är inställt, eftersom chefen är sjuk.",
@@ -78839,7 +79278,7 @@
           {
             "fi": "Under föreläsningen gjorde jag många anteckningar.",
             "en": "During the lecture I took a lot of notes.",
-            "note": "Göra anteckningar, not ta."
+            "note": "Göra anteckningar = take notes."
           },
           {
             "fi": "Talaren var bra, men jag hängde inte med i slutet.",
@@ -79010,8 +79449,8 @@
             "note": "Jämfört med + a country."
           },
           {
-            "fi": "En toppidrottare som dopar sig fuskar mot alla andra.",
-            "en": "A top athlete who uses doping cheats against everyone else.",
+            "fi": "En toppidrottare som dopar sig fuskar och lurar alla andra.",
+            "en": "A top athlete who uses doping cheats and deceives everyone else.",
             "note": "Dopa sig, fuska."
           }
         ],
@@ -79167,7 +79606,10 @@
         "answers": [
           "Jag är sjukskriven till och med söndag.",
           "Jag är sjukskriven tom söndag.",
-          "Jag är sjukskriven till söndag."
+          "Jag är sjukskriven till söndag.",
+          "Jag är sjukskriven t.o.m. söndag.",
+          "Jag är sjukskriven fram till och med söndag.",
+          "Jag är sjukskriven till och med på söndag."
         ],
         "hint": "sjukskriven + till och med",
         "explanation": "Model: Jag är sjukskriven till och med söndag. Till och med (written t.o.m.) includes Sunday; till söndag is also heard."
@@ -79227,7 +79669,9 @@
           "Kom ihåg att skicka sjukintyget.",
           "Kom ihåg att skicka in sjukintyget!",
           "Glöm inte att skicka sjukintyget!",
-          "Glöm inte att skicka in sjukintyget!"
+          "Glöm inte att skicka in sjukintyget!",
+          "Kom ihåg att skicka in sjukintyget.",
+          "Glöm inte att skicka sjukintyget."
         ],
         "hint": "A task: komma ihåg att + infinitive.",
         "explanation": "Model: Kom ihåg att skicka sjukintyget! Glöm inte att … also works. Minns att … is wrong for a task."
@@ -79239,7 +79683,8 @@
           "den tjugotredje juli",
           "tjugotredje juli",
           "den tjugotredje i sjunde",
-          "den tjugotredje sjunde"
+          "den tjugotredje sjunde",
+          "tjugotredje i sjunde"
         ],
         "hint": "Ordinal + month.",
         "explanation": "Model: den tjugotredje juli. In Finland people also say den tjugotredje i sjunde."
@@ -79256,7 +79701,7 @@
           "Vi flyttar fram mötet."
         ],
         "hint": "One of these can be read two ways.",
-        "explanation": "Skjuta upp = later. Tidigarelägga = earlier. Flytta fram means later to most people in Finland but earlier to many in Sweden, so always add the new day."
+        "explanation": "Skjuta upp = later. Tidigarelägga = earlier. Flytta fram is used both for later and for earlier, so always add the new day."
       },
       {
         "id": "sv-38-c5",
@@ -79372,8 +79817,8 @@
       },
       {
         "speaker": "Elin",
-        "fi": "Hej Alex! Henrik undrar var du är. Lektionen har redan börjat.",
-        "en": "Hi Alex! Henrik is wondering where you are. The lesson has already started."
+        "fi": "Hej Alex! Jag väntar på flyget hem från Stockholm. Henrik messade mig och undrar var du är. Lektionen har redan börjat.",
+        "en": "Hi Alex! I'm waiting for my flight home from Stockholm. Henrik texted me and wonders where you are. The lesson has already started."
       },
       {
         "speaker": "Alex",
@@ -79382,8 +79827,8 @@
       },
       {
         "speaker": "Elin",
-        "fi": "Stackars dig! Jag säger till honom. I dag pratar vi förresten om vården i Finland.",
-        "en": "Poor you! I'll tell him. Today we're talking about healthcare in Finland, by the way."
+        "fi": "Stackars dig! Jag skriver till honom. Han skrev förresten att de pratar om vården i Finland i dag.",
+        "en": "Poor you! I'll write to him. By the way, he wrote that they are talking about healthcare in Finland today."
       },
       {
         "speaker": "Alex",
@@ -79617,15 +80062,15 @@
         "explanation": "Från dag 4: Du behöver ett sjukintyg från företagshälsovården eller en annan läkare. Days 1–3 need only his own report."
       },
       "listening": {
-        "text": "Det är fredag den 17 juli på eftermiddagen. Alex har sovit i tre timmar. När han vaknar har han tre nya röstmeddelanden.\n\nMeddelande ett, klockan 12.40: Hej Alex, det här är sjukskötare Maria Lindqvist på företagshälsovården. Vi pratade i morse. Ditt sjukintyg gäller till och med söndag den 19 juli, och du hittar det i appen. Skicka det vidare till din chef. Drick mycket och vila. Om febern stiger över 39 grader, eller om du får svårt att andas, ska du ringa oss genast. På kvällen och i helgen ringer du jouren. Om du fortfarande har feber på måndag morgon, boka en tid hos läkare. Vi svarar i telefon vardagar mellan klockan åtta och fyra. Krya på dig!\n\nMeddelande två, klockan 15.10: Hej, Tuomas här. Johanna sa att du är sjuk. Kundmötet gick bra, så du behöver inte oroa dig. Jag hittade bilderna i den gemensamma mappen, men den senaste versionen saknade siffrorna från juni. Jag använde den gamla versionen i stället, och kunden märkte ingenting. De vill ha ett nytt möte efter semestrarna, kanske den tjugofemte augusti. Kom ihåg att Johanna har semester från och med den tjugosjunde juli, så vi måste bestämma allt på torsdag. Ha en lugn helg!\n\nMeddelande tre, klockan 16.05: Hej Alex, Henrik här. Elin berättade att du har feber, så du är förlåten för i dag. Här kommer läxan till måndag den tjugonde. Förbered en Din åsikt om påståendet ”Den offentliga vården i Finland fungerar bra”. Tala i en och en halv minut, och jämför gärna med ditt hemland. Skriv också ett formellt mejl till en chef om att du är sjuk. Max åttio ord. Och kom ihåg: om du inte kan komma, skicka ett meddelande innan lektionen börjar. Vi ses på måndag!",
+        "text": "Det är fredag den 17 juli, sent på kvällen. Alex har sovit nästan hela dagen. Nu lyssnar han på tre röstmeddelanden.\n\nMeddelande ett, klockan 12.40: Hej Alex, det här är sjukskötare Maria Lindqvist på företagshälsovården. Vi pratade i morse. Ditt sjukintyg gäller till och med söndag den 19 juli, och du hittar det i appen. Skicka det vidare till din chef. Drick mycket och vila. Om febern stiger över 39 grader, eller om du får svårt att andas, ska du ringa oss genast. På kvällen och i helgen ringer du Jourhjälpen på 116 117. Om du fortfarande har feber på måndag morgon, boka en tid hos läkare. Vi svarar i telefon vardagar mellan klockan åtta och fyra. Krya på dig!\n\nMeddelande två, klockan 15.10: Hej, Tuomas här. Johanna sa att du är sjuk. Kundmötet gick bra, så du behöver inte oroa dig. Jag hittade bilderna i den gemensamma mappen, men den senaste versionen saknade siffrorna från juni. Jag använde den gamla versionen i stället, och kunden märkte ingenting. De vill ha ett nytt möte efter semestrarna, kanske den tjugofemte augusti. Kom ihåg att Johanna har semester från och med den tjugosjunde juli, så vi måste bestämma allt på torsdag. Ha en lugn helg!\n\nMeddelande tre, klockan 18.45: Hej Alex, Henrik här. Elin berättade att du har feber, så du är förlåten för i dag. Här kommer läxan till måndag den tjugonde. Förbered en Din åsikt om påståendet ”Den offentliga vården i Finland fungerar bra”. Tala i en och en halv minut, och jämför gärna med ditt hemland. Skriv också ett formellt mejl till en chef om att du är sjuk. Max åttio ord. Och kom ihåg: om du inte kan komma, skicka ett meddelande innan lektionen börjar. Vi ses på måndag!",
         "question": "What must Alex do if he still has a fever on Monday morning?",
         "options": [
           "Book an appointment with a doctor",
-          "Call the jour at once",
+          "Call Jourhjälpen at once",
           "Send the sick note to Tuomas"
         ],
         "answer": 0,
-        "explanation": "Maria says: Om du fortfarande har feber på måndag morgon, boka en tid hos läkare. The jour is for evenings and weekends, and the sick note goes to his boss, not Tuomas."
+        "explanation": "Maria says: Om du fortfarande har feber på måndag morgon, boka en tid hos läkare. Jourhjälpen (116 117) is for evenings and weekends, and the sick note goes to his boss, not Tuomas."
       },
       "speaking": {
         "prompt": "Din åsikt: ”Den offentliga vården i Finland fungerar bra.” Förbered dig i en minut och tala sedan i en och en halv minut. Säg påståendet med egna ord, ta ställning, ge två argument med ett exempel, jämför med ditt hemland och avsluta. (Give your opinion for 1 minute 30 seconds, about 60–90 words: your position, two arguments, a comparison and an ending.)",
@@ -80135,7 +80580,7 @@
                   "Vad skulle hända med unga idrottare om doping var tillåtet?",
                   "Vem ska bestämma reglerna?"
                 ],
-                "model": "Vissa tycker att doping borde vara tillåtet, eftersom många ändå fuskar. Jag håller inte med. För det första är doping farligt för hälsan. Flera idrottare har blivit allvarligt sjuka. För det andra skulle unga idrottare känna att de också måste dopa sig för att vinna. Det är ett dåligt exempel. Dessutom är det orättvist mot dem som tränar hårt utan medel. Sammanfattningsvis tycker jag att doping ska vara förbjudet, och kontrollerna borde bli ännu bättre.",
+                "model": "Vissa tycker att doping borde vara tillåtet, eftersom många ändå fuskar. Jag håller inte med. För det första är doping farligt för hälsan. Flera idrottare har blivit allvarligt sjuka. För det andra skulle unga idrottare känna att de också måste dopa sig för att vinna. Det är ett dåligt exempel. Dessutom är det orättvist mot dem som tränar hårt utan dopning. Sammanfattningsvis tycker jag att doping ska vara förbjudet, och kontrollerna borde bli ännu bättre.",
                 "modelEn": "Some people think doping should be allowed, because many cheat anyway. I don't agree. Firstly, doping is dangerous for health. Several athletes have become seriously ill. Secondly, young athletes would feel that they also have to dope to win. That is a bad example. Also, it is unfair to those who train hard without drugs. To sum up, I think doping should be forbidden, and the tests should become even better."
               },
               {
@@ -80453,7 +80898,7 @@
           "En affärsresa = a business trip. You go på affärsresa, på en konferens or på en mässa (a trade fair). Back at work, a colleague asks: Var har du varit? Hur var resan? Answer with the perfect: Jag har varit i Stockholm.",
           "Then tell what you did, in the past tense: Jag träffade kunder. Jag höll en presentation. Vi hade många möten. Add one feeling: Det var intensivt men roligt.",
           "Ändå = still, all the same. It often comes last: Det var jobbigt, men roligt ändå. Inte … alls = not at all: Jag var inte hungrig alls, or Jag var inte alls hungrig.",
-          "Bo på hotell = stay at a hotel. English “stay” tempts you to say stanna, and “live” tempts you to say leva; both are wrong here. Hotell och sådant = hotels and that sort of thing.",
+          "Bo på hotell = stay at a hotel. English “stay” tempts you to say stanna, and “live” tempts you to say leva; bo is the natural verb here (leva is wrong). Hotell och sådant = hotels and that sort of thing.",
           "Sorts or slags = kinds of: Det fanns många sorters bröd. Det fanns många slags ost. Both mean the same.",
           "The colleague often ends the chat: Nu måste jag återgå till jobbet. Trevligt att ses igen! Det stämmer = that's right."
         ],
@@ -82748,12 +83193,12 @@
         "title": "Ha bråttom, ha fullt upp · busy lives and key words",
         "kind": "rule",
         "body": [
-          "Swedish often uses ha where English uses be: ha bråttom (be in a hurry), ha fullt upp (be busy), ha rätt (be right), ha tråkigt (be bored). Never är bråttom.",
+          "Swedish often uses ha where English uses be: ha bråttom (be in a hurry), ha fullt upp (be busy), ha rätt (be right), ha tråkigt (be bored). Never: Jag är bråttom. (Det är bråttom = it is urgent: that one is fine.)",
           "Numera = nowadays, a little formal; nuförtiden means the same. Nu = now, at this moment.",
           "En orsak = a cause, a reason. Orsaken till stressen är … takes till, not för. Anledningen till … works the same way.",
           "Framgång = success; framgångsrik = successful. Självständig = independent: Barn i Finland blir tidigt självständiga.",
           "Meningslös = meaningless; meningsfull = meaningful. Upprepad, repetitiv and återkommande = repeated, repetitive, recurring.",
-          "Uppfostra = bring up a child (manners and values); uppfostran = upbringing. Utbildning = education (school and studies). Barn uppfostras på olika sätt: uppfostras is an s-verb and means are brought up, like Vi ses from earlier lectures."
+          "Uppfostra = bring up a child (manners and values); uppfostran = upbringing. Utbildning = education (school and studies). Barn uppfostras på olika sätt: uppfostras is an s-verb and means are brought up: an s-passive, like kan inte monteras in Lecture 32."
         ],
         "examples": [
           {
@@ -83253,7 +83698,9 @@
           "Jag har mycket att göra den här veckan.",
           "Den här veckan har jag mycket att göra.",
           "Jag har fullt upp i veckan.",
-          "I veckan har jag fullt upp."
+          "I veckan har jag fullt upp.",
+          "Jag har mycket att göra i veckan.",
+          "Den här veckan har jag väldigt mycket att göra."
         ],
         "hint": "Jag har … upp …",
         "explanation": "Model: Jag har fullt upp den här veckan. Ha fullt upp = be busy. If Den här veckan comes first, the verb follows: Den här veckan har jag fullt upp."
@@ -83442,8 +83889,8 @@
       },
       {
         "speaker": "Alex",
-        "fi": "Precis! Nu måste jag gå, kursen börjar snart. I kväll ska vi berätta om skolan i vårt hemland.",
-        "en": "Exactly! Now I have to go, the course starts soon. Tonight we're going to talk about school in our home country."
+        "fi": "Precis! Nu måste jag gå, kursen börjar snart. I kväll ska vi berätta om skolan i våra hemländer.",
+        "en": "Exactly! Now I have to go, the course starts soon. Tonight we're going to talk about school in our home countries."
       },
       {
         "speaker": "Maja",
@@ -84149,7 +84596,10 @@
                   "Fel"
                 ],
                 "translation": "The students hand in several versions of their assignment.",
-                "model": "Look at the last sentence: students 'göra flera olika versioner av skolarbetet innan det lämnas in'. They write several versions; the text does not say they hand each one in. The most likely answer is Fel."
+                "answers": [
+                  "Fel"
+                ],
+                "hint": "The text says they make several versions innan det lämnas in: the work is handed in once, at the end."
               }
             ],
             "fixes": [
@@ -84932,7 +85382,7 @@
           "Be artigt: Skulle jag kunna få byta rum? Kan ni skicka någon? (Skulle jag kunna … is Lecture 24's conditional.)",
           "Var tydlig när du inte är nöjd: Tack, men det räcker inte. Jag förstår, men … Rummet motsvarar inte mina förväntningar (does not live up to my expectations).",
           "Ersättning (compensation): en återbetalning (a refund), en delvis återbetalning, en rabatt, en gratis natt. A number helps: Jag betalade 140 euro för natten.",
-          "The teacher's class line at 4567 (\"Jag vill inte på någon\") is garbled. Say instead: Jag vill inte vänta. Kan jag få byta rum?"
+          "One line in the class notes (\"Jag vill inte på någon\") is garbled. Say instead: Jag vill inte vänta. Kan jag få byta rum?"
         ],
         "examples": [
           {
@@ -85296,7 +85746,9 @@
           "Kan jag byta rum?",
           "Går det att byta rum?",
           "Skulle det gå att byta rum?",
-          "Får jag byta rum?"
+          "Får jag byta rum?",
+          "Skulle jag kunna få ett annat rum?",
+          "Kan jag få ett annat rum?"
         ],
         "hint": "Skulle jag kunna … is the politest.",
         "explanation": "Model: Skulle jag kunna få byta rum? The conditional (Lecture 24) softens the request. Note byta rum, without a or ett."
@@ -85419,7 +85871,7 @@
       },
       {
         "id": "sv-41-c7",
-        "prompt": "A friend lends you a book. Which sentence says that correctly?",
+        "prompt": "A friend lends you a book. Which sentence says that in standard Swedish?",
         "answers": [
           "Min vän lånade ut en bok till mig."
         ],
@@ -85429,7 +85881,7 @@
           "Min vän lånade en bok av mig."
         ],
         "hint": "Lend = låna ut … till.",
-        "explanation": "Låna ut något till någon = lend. Låna mig copies English lend me and is not standard Swedish; låna en bok av mig means your friend borrowed the book from you."
+        "explanation": "Låna ut något till någon = lend. Låna mig copies English lend me: you may hear it in casual speech, but it is not the standard form, so use låna ut … till in writing and in the test; låna en bok av mig means your friend borrowed the book from you."
       }
     ],
     "assignment": {
@@ -85904,7 +86356,7 @@
         "explanation": "Receptionen är öppen dygnet runt … ring nummer 9, and Är något fel på rummet? Kontakta receptionen genast. The email address is for comments after your stay."
       },
       "listening": {
-        "text": "Sommarradion i Sjöby, lokala nyheter fredagen den 24 juli. Klockan är tolv.\n\nStadsbiblioteket har längre öppettider resten av sommaren. Från och med måndag är huvudbiblioteket öppet till klockan åtta på kvällen, också på lördagar. Biblioteket lånar dessutom ut något nytt: badmintonracketar, frisbeer och två paddelbrädor. Paddelbrädorna kan lånas i tre dagar åt gången, och man måste vara över arton år. Bibliotekarien Maria Lind berättar att idén kom från en kund. – Många vill prova något nytt utan att köpa dyr utrustning, säger hon. Biblioteket påminner också alla som flyttar i sommar om att ändra sin adress på nätet eller vid disken. Varje vecka kommer påminnelser tillbaka, eftersom de har skickats till en gammal adress.\n\nHotell Hamnen är stängt till slutet av augusti. I tisdags upptäckte personalen en vattenläcka på tredje våningen. Ingen skadades, men ett trettiotal gäster fick flytta till andra hotell i stan. Enligt hotellets chef får alla som hade bokat ett rum pengarna tillbaka, eller ett presentkort som gäller i ett år.\n\nLördagens konsert i Stadsparken flyttas till söndag på grund av risk för åska. Konserten börjar som planerat klockan sju, och på scenen står tre lokala band och en känd artist från Åbo. Biljetterna gäller på söndag, och man behöver inte göra något. Den som inte kan komma på söndag får pengarna tillbaka, men man måste skicka ett mejl till arrangören senast på onsdag. Kom ihåg att ta med regnkläder, för parken har inget tak.\n\nOch till sist: på onsdag kväll är det gratis bastukväll vid Norrstranden. Bastun har damtur från fem till sju och herrtur från sju till nio.  Ta med egen handduk. Badkläder behövs, eftersom bastun ligger mitt på den allmänna stranden. Vattnet i havet är just nu nitton grader.\n\nDet var nyheterna. Nästa sändning kommer klockan tre.",
+        "text": "Sommarradion i Sjöby, lokala nyheter fredagen den 24 juli. Klockan är tolv.\n\nStadsbiblioteket har längre öppettider resten av sommaren. Från och med måndag är huvudbiblioteket öppet till klockan åtta på kvällen, också på lördagar. Biblioteket lånar dessutom ut något nytt: badmintonracketar, kubbspel och två paddelbrädor. Paddelbrädorna kan lånas i tre dagar åt gången, och man måste vara över arton år. Bibliotekarien Maria Lind berättar att idén kom från en kund. – Många vill prova något nytt utan att köpa dyr utrustning, säger hon. Biblioteket påminner också alla som flyttar i sommar om att ändra sin adress på nätet eller vid disken. Varje vecka kommer påminnelser tillbaka, eftersom de har skickats till en gammal adress.\n\nHotell Hamnen är stängt till slutet av augusti. I tisdags upptäckte personalen en vattenläcka på tredje våningen. Ingen skadades, men ett trettiotal gäster fick flytta till andra hotell i stan. Enligt hotellets chef får alla som hade bokat ett rum pengarna tillbaka, eller ett presentkort som gäller i ett år.\n\nLördagens konsert i Stadsparken flyttas till söndag på grund av risk för åska. Konserten börjar som planerat klockan sju, och på scenen står tre lokala band och en känd artist från Åbo. Biljetterna gäller på söndag, och man behöver inte göra något. Den som inte kan komma på söndag får pengarna tillbaka, men man måste skicka ett mejl till arrangören senast på onsdag. Kom ihåg att ta med regnkläder, för parken har inget tak.\n\nOch till sist: på onsdag kväll är det gratis bastukväll vid Norrstranden. Bastun har damtur från fem till sju och herrtur från sju till nio. Ta med egen handduk. Badkläder behövs, eftersom bastun ligger mitt på den allmänna stranden. Vattnet i havet är just nu nitton grader.\n\nDet var nyheterna. Nästa sändning kommer klockan tre.",
         "question": "You have a ticket for Saturday's concert but cannot come on Sunday. What must you do?",
         "options": [
           "Email the organiser by Wednesday to get your money back",
@@ -86856,7 +87308,7 @@
         "id": "sv-42-u-complain",
         "fi": "Har du någon gång klagat skriftligt? Vad gällde det?",
         "en": "Have you ever complained in writing? What was it about?",
-        "sample": "Ja, i somras. En soffa kom utan skruvar, så jag skrev en reklamation till butiken."
+        "sample": "Ja, tidigare i sommar. En soffa kom utan skruvar, så jag skrev en reklamation till butiken."
       },
       {
         "id": "sv-42-u-course",
@@ -87317,7 +87769,7 @@
           "Be careful first if you like: Får jag fråga hur ni har fått mitt nummer? Svaren är anonyma. Numret valdes slumpmässigt (at random).",
           "Hur ofta? varje dag, en gång i veckan, två gånger i månaden, sällan, aldrig. Jämför: Jag rör på mig mer nu än för fem år sedan.",
           "Avsluta artigt när du måste gå: Förlåt, nu kommer min buss. Jag måste lägga på (hang up). Lycka till med undersökningen!",
-          "Byta biljetter: en föreställning (a show), biljettkassan (the box office), rad 3, plats 10, lediga platser, slutsåld, mellanskillnaden (the price difference). Swedish says på rad 16, not i rad 16.",
+          "Byta biljetter: en föreställning (a show), biljettkassan (the box office), rad 3, plats 10, lediga platser, slutsåld, mellanskillnaden (the price difference). Swedish usually says på rad 16 (i rad 16 is also heard).",
           "Säg nej artigt, med ett skäl och en begäran: Det tycker jag inte är rimligt. Platserna var dyrare. Kan ni betala tillbaka mellanskillnaden? Then accept a fair offer: Det är en bra lösning."
         ],
         "examples": [
@@ -87786,11 +88238,11 @@
         ],
         "options": [
           "på",
-          "i",
+          "till",
           "vid"
         ],
         "hint": "Seats are on a row in Swedish.",
-        "explanation": "På rad 16, på första raden. The teacher's note says i rad 12; på is the usual preposition."
+        "explanation": "På rad 16, på första raden: på is the usual preposition (the teacher's note says i rad 12, which is also heard). Till is a direction, and vid means next to the row, not in it."
       },
       {
         "id": "sv-42-g8",
@@ -89889,7 +90341,7 @@
         "body": [
           "En bra semester: vila, koppla av (relax), uppleva något nytt, vara på resande fot (be on the move, travelling), ett äventyr (an adventure). Hemester is a holiday at home.",
           "Tell about your last holiday in the past with time words: Förra sommaren åkte jag … Först … Sedan … Till slut … For an experience use the perfect: Jag har aldrig varit i Lappland.",
-          "Late: Jag kom för sent till flyget (I was late for the plane). Sen is the adjective: Det är sent. Flyget var försenat. Fix from class: Jag var sen för flyget is English.",
+          "Late: Jag kom för sent till flyget (I was late for the plane). Sen is the adjective: Det är sent. Flyget var försenat. Fix from class: Jag var sen för flyget copies English for. Say Jag kom för sent till flyget (in speech also Jag var sen till flyget).",
           "When things go wrong: Flyget ställdes in på grund av ett vulkanutbrott (when the volcano erupted: när vulkanen fick ett utbrott). På grund av + a noun; eftersom + a clause: eftersom det snöade.",
           "Money: lägga pengar på (spend on; not för), spendera, en budget, dela på kostnaderna (split the costs), Det är värt pengarna. Nödvändig (necessary) ↔ onödig.",
           "The teacher's phrase: Det är det bästa sättet att lära känna ett främmande land (a foreign country). Work trips: en arbetsresa or en affärsresa (Elin's Stockholm trip, Lecture 39). Jag reser ofta på grund av jobbet."
@@ -89951,7 +90403,7 @@
               "fi": "Jag var sen för flyget.",
               "en": "I was late for the plane.",
               "bucket": "fix",
-              "why": "Say Jag kom för sent till flyget."
+              "why": "För copies English for. Say Jag kom för sent till flyget (in speech also Jag var sen till flyget)."
             },
             {
               "fi": "Jag kom för sent till flyget.",
@@ -90246,7 +90698,7 @@
       },
       {
         "id": "sv-43-g8",
-        "prompt": "Lecture 8 + today. I have done it for three years: Jag har hållit på med det ___ tre år.",
+        "prompt": "Lecture 17 + today. I have done it for three years: Jag har hållit på med det ___ tre år.",
         "answers": [
           "i"
         ],
@@ -90256,7 +90708,7 @@
           "sedan"
         ],
         "hint": "A length of time.",
-        "explanation": "Lecture 8: for a length of time Swedish uses i, not för. Sedan needs a starting point: sedan 2023, sedan jag var liten."
+        "explanation": "Lecture 17: for a length of time Swedish uses i, not för. Sedan needs a starting point: sedan 2023, sedan jag var liten."
       },
       {
         "id": "sv-43-g9",
@@ -93451,7 +93903,7 @@
           "The insurer sent it to Migri by mistake"
         ],
         "hint": "Listen for gamla adress.",
-        "explanation": "Räkningen skickades till min gamla adress, och jag gjorde flyttanmälan för sent."
+        "explanation": "Räkningen skickades till min gamla adress precis när jag flyttade, och jag gjorde flyttanmälan för sent."
       }
     ],
     "sections": [
@@ -93464,6 +93916,7 @@
           "Permits: ett uppehållstillstånd (a residence permit) can be tillfälligt (temporary) or permanent. It is giltigt (valid) until a date, then it går ut (expires). Ett visum is for a short visit. Medborgarskap = citizenship; en medborgare = a citizen.",
           "Money: en skatt (a tax), en skatteåterbäring (a tax refund: you paid too much), en restskatt (back tax: you paid too little), en avgift (a fee), böter (a fine, always plural form: böterna).",
           "People and rights: en invandrare (an immigrant), en flykting (a refugee), en minderårig (a minor, under 18) and hens målsman (legal guardian). Lagligt / olagligt = legal / illegal. Enligt lagen = according to the law. Jämlikhet = equality; diskriminera = discriminate.",
+          "More words from the class list: invandring (immigration) and emigration; asyl (asylum: a flykting asks for it); en rättighet (a right) and en plikt (a duty): rättigheter och plikter; civilstånd (marital status: gift, ogift, sambo); ett brott and ett straff (a crime and its punishment); motivera (justify: motivera din ansökan); avgå (resign: ministern avgick; also depart: tåget avgår 8.15). Flytta = move house; flytta sig = move aside: Kan du flytta dig lite?",
           "Selvitys (the Finnish word on the class list) is en utredning or en förklaring in Swedish: an official report or explanation."
         ],
         "examples": [
@@ -93827,6 +94280,7 @@
           "Insurance words: anmäla en skada (report a damage, make a claim), en skadeanmälan (a claim form), täcka (cover): Täcker försäkringen det? Självrisk (the excess you pay yourself), ersättning (compensation), ett kvitto (a receipt), en vattenskada (water damage), stulen / stulet / stulna (stolen).",
           "In a rented flat the building's insurance covers the floor and the pipes; your hemförsäkring covers your own things (furniture, a rug, a laptop) and your liability. That is why Alex claims for the rug and the books.",
           "Questions inside a sentence keep the subject before the verb (indirect question, Lecture 32): Jag undrar om försäkringen täcker skadan. Kan du säga när beslutet kommer?",
+          "Words from the class dialogue: få reda på (find out: När fick du reda på det?), opålitlig (unreliable), på sistone (lately): Posten har varit opålitlig på sistone. Anteckna = note down.",
           "Before you hang up: Kan jag få ett ärendenummer? (a case number) · Kan ni skicka det per mejl, för säkerhets skull? · Tack för hjälpen!"
         ],
         "examples": [
@@ -94311,8 +94765,7 @@
           "Jag ringer om min hemförsäkring.",
           "Jag ringer gällande min hemförsäkring.",
           "Jag ringer angående min hemförsäkring",
-          "Hej, jag ringer angående min hemförsäkring.",
-          "Jag ringer för min hemförsäkring."
+          "Hej, jag ringer angående min hemförsäkring."
         ],
         "hint": "Jag ringer angående …",
         "explanation": "Model: Jag ringer angående min hemförsäkring. Angående is the formal word; om is fine in speech. Hemförsäkring: hem + försäkring, no -s-."
@@ -94351,8 +94804,7 @@
           "För säkerhets skull sparar jag kvittot.",
           "För säkerhets skull behåller jag kvittot.",
           "Jag sparar kvittot för säkerhets skull.",
-          "Jag behåller kvittot för säkerhets skull.",
-          "För säkerhets skull sparar jag kvitto."
+          "Jag behåller kvittot för säkerhets skull."
         ],
         "hint": "För säkerhets skull + verb + jag …",
         "explanation": "Model: För säkerhets skull sparar jag kvittot. When the phrase comes first, the verb comes next (V2): sparar jag. At the end it is also fine."
@@ -94377,8 +94829,7 @@
         "answers": [
           "Jag håller delvis med om att skatterna är för höga.",
           "Jag håller delvis med om att skatten är för hög.",
-          "Jag håller delvis med om att skatterna är alldeles för höga.",
-          "Jag håller delvis med att skatterna är för höga."
+          "Jag håller delvis med om att skatterna är alldeles för höga."
         ],
         "hint": "Jag håller delvis med om att …",
         "explanation": "Model: Jag håller delvis med om att skatterna är för höga. Hålla med om att (Lecture 31); höga agrees with the plural skatterna."
@@ -94395,7 +94846,7 @@
           "bifogade till"
         ],
         "hint": "Attach, present tense.",
-        "explanation": "Bifoga = attach (bifogar, bifogade). Bifogad is the participle: en bifogad bild (Lecture 32). Lägger till is for adding, not attaching."
+        "explanation": "Bifoga = attach (bifogar, bifogade). Bifogad is the participle: en bifogad bild (Lecture 32). Bifogade till is not a verb form that fits after jag here."
       }
     ],
     "assignment": {
@@ -94446,8 +94897,8 @@
       },
       {
         "speaker": "Alex",
-        "fi": "Det trodde jag. Men tjänstemannen sa att årets räkning är obetald. Förfallodagen var den sista juli.",
-        "en": "I thought so. But the clerk said that this year's bill is unpaid. The due date was the last of July."
+        "fi": "Det trodde jag. Men tjänstemannen sa att årets räkning är obetald. Förfallodagen var i måndags.",
+        "en": "I thought so. But the clerk said that this year's bill is unpaid. The due date was on Monday."
       },
       {
         "speaker": "Elin",
@@ -94456,8 +94907,8 @@
       },
       {
         "speaker": "Alex",
-        "fi": "Räkningen skickades till min gamla adress, och jag gjorde flyttanmälan för sent. Jag har inte fått ett enda brev sedan i juli.",
-        "en": "The bill was sent to my old address, and I made my change-of-address notice too late. I haven't had a single letter since July."
+        "fi": "Räkningen skickades till min gamla adress precis när jag flyttade, och jag gjorde flyttanmälan för sent. Jag har inte fått ett enda brev sedan flytten.",
+        "en": "The bill was sent to my old address just when I moved, and I made my change-of-address notice too late. I haven't had a single letter since the move."
       },
       {
         "speaker": "Elin",
@@ -94623,8 +95074,8 @@
           "id": "sv-45-word-11",
           "fi": "en avgift",
           "en": "a fee",
-          "example": "Ansökan kostar en avgift.",
-          "translation": "The application costs a fee.",
+          "example": "Man betalar en avgift för ansökan.",
+          "translation": "You pay a fee for the application.",
           "level": "B1"
         },
         {
@@ -94896,7 +95347,7 @@
           80
         ],
         "help": "Ärende: Vattenskada · Jag skriver angående … · Den 5 augusti läckte … · förstördes / blev blöt · Jag bifogar … · kvittot på … · eftersom räkningen skickades till min gamla adress · Jag skulle vara tacksam om ni kunde … · Med vänliga hälsningar",
-        "model": "Ärende: Vattenskada, försäkringsnummer 552 017\n\nHej,\n\njag skriver angående en vattenskada i min lägenhet, Rönngatan 5 B 23. Den 5 augusti läckte röret under diskbänken. Röret är lagat, men min nya matta och tio böcker förstördes. Jag bifogar bilder och kvittot på mattan (180 euro).\n\nDen obetalda räkningen betalade jag i dag, eftersom den hade skickats till min gamla adress. Jag skulle vara tacksam om ni kunde behandla ärendet snart.\n\nMed vänliga hälsningar\nAlex Khan\n040 123 4567"
+        "model": "Ärende: Vattenskada, försäkringsnummer 552 017\n\nHej,\n\njag skriver angående en vattenskada i min lägenhet, Rönngatan 5 B 23. Den 5 augusti läckte röret under diskbänken. Röret är lagat, men min nya matta och tio böcker förstördes. Jag bifogar bilder och kvittot på mattan (180 euro).\n\nRäkningen var obetald, eftersom den hade skickats till min gamla adress. Nu är den betald. Jag skulle vara tacksam om ni kunde behandla ärendet snart.\n\nMed vänliga hälsningar\nAlex Khan\n040 123 4567"
       }
     },
     "route": {
@@ -94991,8 +95442,8 @@
                 },
                 "seconds": 15,
                 "models": [
-                  "Javisst. Jag bor på Hemvägen 7 A 5 i Helsingfors.",
-                  "Javisst. Personnumret är … och jag bor på Hemvägen 7 A 5, 00550 Helsingfors."
+                  "Javisst. Jag bor på Rönngatan 5 B 23 i Helsingfors.",
+                  "Javisst. Personnumret är … och jag bor på Rönngatan 5 B 23, 00550 Helsingfors."
                 ],
                 "tip": "In the test you may invent the details. Say the address slowly: gatan, the house number, the flat."
               },
@@ -95012,7 +95463,7 @@
                   "Va? Det har jag ingen aning om. Jag har inte sett någon räkning.",
                   "Oj, det var en överraskning. Jag har faktiskt inte sett någon räkning alls. Annars hade jag betalat den direkt."
                 ],
-                "tip": "Do not repeat the clerk's words. Fått någon räkning: inte … någon (Lecture 21)."
+                "tip": "Do not repeat the clerk's words. Inte … någon: Jag har inte sett någon räkning (Lecture 21)."
               },
               {
                 "who": "partner",
@@ -95975,12 +96426,12 @@
             },
             {
               "id": "an",
-              "label": "än",
+              "label": "yet: än",
               "hint": "yet"
             },
             {
               "id": "anda",
-              "label": "ändå",
+              "label": "anyway: ändå",
               "hint": "anyway, still"
             }
           ],
@@ -96010,8 +96461,8 @@
               "why": "Anyway: ändå."
             },
             {
-              "fi": "Biblioteket ___ inte böcker till turister.",
-              "en": "The library doesn't lend books to tourists.",
+              "fi": "Biblioteket ___ böcker till alla som har ett lånekort.",
+              "en": "The library lends books to everyone who has a library card.",
               "bucket": "lanaut",
               "why": "The library gives: lånar ut."
             },
@@ -96367,7 +96818,7 @@
       },
       {
         "id": "sv-46-g6",
-        "prompt": "Lecture 32 + today. Can you tell me which breed suits a small flat? Kan du säga vilken ras ___ för en liten lägenhet?",
+        "prompt": "Lecture 32 + today. Can you tell me which breed suits a small flat best? Kan du säga vilken ras ___ för en liten lägenhet?",
         "answers": [
           "som passar bäst"
         ],
@@ -97287,8 +97738,8 @@
                   "Vilket ögonblick minns du bäst?",
                   "Längtar du tillbaka, eller räcker det med en gång?"
                 ],
-                "model": "Min bästa resa var min första vinter i Finland. I februari åkte jag med nattåget till Lappland. Resan var speciell eftersom jag aldrig hade sett så mycket snö. Det var trettio grader kallt, men jag hade lånat varma kläder av Elin. Det bästa jag upplevde var norrskenet. Det dansade grönt över himlen i en halvtimme, och jag glömde kylan. Jag skulle gärna åka dit igen, men nästa gång vill jag prova att åka skidor.",
-                "modelEn": "My best trip was my first winter in Finland. In February I took the night train to Lapland. The trip was special because I had never seen so much snow. It was thirty degrees below zero, but I had borrowed warm clothes from Elin. The best thing I experienced was the northern lights. They danced green across the sky for half an hour, and I forgot the cold. I'd gladly go there again, but next time I want to try skiing."
+                "model": "Min bästa resa var min första vinter i Finland. I februari åkte jag med nattåget till Lappland. Resan var speciell eftersom jag aldrig hade sett så mycket snö. Det var trettio grader kallt, men jag hade lånat varma kläder av en kollega. Det bästa jag upplevde var norrskenet. Det dansade grönt över himlen i en halvtimme, och jag glömde kylan. Jag skulle gärna åka dit igen, men nästa gång vill jag prova att åka skidor.",
+                "modelEn": "My best trip was my first winter in Finland. In February I took the night train to Lapland. The trip was special because I had never seen so much snow. It was thirty degrees below zero, but I had borrowed warm clothes from a colleague. The best thing I experienced was the northern lights. They danced green across the sky for half an hour, and I forgot the cold. I'd gladly go there again, but next time I want to try skiing."
               },
               {
                 "id": "sv-46-tell-traditioner",
@@ -97300,7 +97751,7 @@
                   "Vilka finländska traditioner har du lärt känna?",
                   "Hur påverkar sociala medier ditt sätt att hålla fast vid din kultur?"
                 ],
-                "model": "I Pune firade vi Diwali varje höst. Hela familjen städade huset, vi tände små lampor och åt massor av sötsaker. Här i Helsingfors är det svårare, men förra året bjöd jag mina vänner på indisk mat och tände ljus i fönstret. Jag ringde också min familj på video, så vi firade nästan tillsammans. Samtidigt har jag lärt mig finska traditioner, som midsommar och vappen. Jag tycker att man kan bevara sin egen kultur och ändå ta del av den nya.",
+                "model": "I Pune firade vi Diwali varje höst. Hela familjen städade huset, vi tände små lampor och åt massor av sötsaker. Här i Helsingfors är det svårare, men förra året bjöd jag mina vänner på indisk mat och tände ljus i fönstret. Jag ringde också min familj på video, så vi firade nästan tillsammans. Samtidigt har jag lärt mig finländska traditioner, som midsommar och vappen. Jag tycker att man kan bevara sin egen kultur och ändå ta del av den nya.",
                 "modelEn": "In Pune we celebrated Diwali every autumn. The whole family cleaned the house, we lit small lamps and ate lots of sweets. Here in Helsinki it's harder, but last year I invited my friends for Indian food and lit candles in the window. I also called my family on video, so we almost celebrated together. At the same time I have learnt Finnish traditions, like midsummer and May Day. I think you can preserve your own culture and still take part in the new one."
               }
             ]
@@ -97588,7 +98039,7 @@
           "Henrik's old exam card asks: Har kvinnor och män samma chanser att få jobb i alla yrken i Finland? To answer it you need words for jobs, fields and fairness.",
           "Jämställdhet = equality between women and men. Jämlikhet = equality between all people, for example rich and poor, or Finns and newcomers. The adjective is jämställd: ett jämställt arbetsliv.",
           "Ett yrke = a profession (plural yrken). En bransch or ett område = a field: byggbranschen (construction), vården (health care), utbildning (education), it-branschen.",
-          "Mansdominerad = mostly men; kvinnodominerad = mostly women. Den finska arbetsmarknaden är starkt uppdelad: byggbranschen är mansdominerad, medan vården och daghemmen är kvinnodominerade.",
+          "Mansdominerad = mostly men; kvinnodominerad = mostly women. Den finländska arbetsmarknaden är starkt uppdelad: byggbranschen är mansdominerad, medan vården och daghemmen är kvinnodominerade.",
           "A fact makes the opinion stronger (Lesson 39): Enligt Statistikcentralen tjänade kvinnor år 2023 i genomsnitt ungefär 16 procent mindre än män. The goal: lika lön för lika arbete (equal pay for equal work).",
           "Solutions: öka (increase) and minska (reduce): öka jämställdheten, minska löneskillnaderna. Who should act? Skolan borde …, arbetsgivare kan …, man måste …"
         ],
@@ -97773,17 +98224,17 @@
           "buckets": [
             {
               "id": "man",
-              "label": "man",
+              "label": "subject: man",
               "hint": "the one doing it"
             },
             {
               "id": "en",
-              "label": "en",
+              "label": "object: en",
               "hint": "the one it happens to"
             },
             {
               "id": "ens",
-              "label": "ens",
+              "label": "possessive: ens",
               "hint": "one's"
             }
           ],
@@ -99333,7 +99784,7 @@
         {
           "label": "Your position",
           "before": "Jag håller",
-          "after": "om att sociala medier är en bra nyhetskälla.",
+          "after": " om att sociala medier är en bra nyhetskälla.",
           "placeholder": "delvis med"
         },
         {
@@ -99503,7 +99954,7 @@
             "note": "Thanks first, then the no."
           },
           {
-            "fi": "Jag vill vara ärlig med dig från början.",
+            "fi": "Jag vill vara ärlig mot dig från början.",
             "en": "I want to be honest with you from the start.",
             "note": "A clear reason, kindly put."
           },
@@ -99664,7 +100115,7 @@
             },
             {
               "id": "against",
-              "label": "Emot distansarbete",
+              "label": "Mot distansarbete",
               "hint": "The office is better"
             }
           ],
@@ -100846,7 +101297,7 @@
                 },
                 "seconds": 15,
                 "models": [
-                  "Självklart. Ring mig efter sex i kväll.",
+                  "Självklart. Ring mig i morgon förmiddag.",
                   "Naturligtvis, inga problem. Jag har kurs till nio i kväll, så ring mig hellre i morgon förmiddag."
                 ],
                 "tip": "Självklart, naturligtvis and förstås all mean of course. Then give a clear time."
@@ -101014,7 +101465,7 @@
                 "en": "Thanks for asking, but …"
               },
               {
-                "fi": "Jag vill vara ärlig med dig.",
+                "fi": "Jag vill vara ärlig mot dig.",
                 "en": "I want to be honest with you."
               },
               {
@@ -101726,7 +102177,7 @@
           "Ord hos frisören: boka tid, klippa sig (get a haircut), klippa håret, färga håret, slingor (highlights), lugg (fringe), topparna (the ends), en frisyr (a hairstyle), lockigt eller rakt hår.",
           "Klippa sig is reflexive (Lecture 15): Jag ska klippa mig. Du har klippt dig! Hon klippte sig i går.",
           "Säg vad du vill: Jag skulle vilja ha det kortare på sidorna och lite längre ovanpå. Kan du ta lite mer här? Bara topparna, tack.",
-          "Säga nej artigt i tre steg: något snällt + men + skäl. Den är fin, men den passar inte mig, eftersom jag har lockigt hår. Jag vill hellre ha … (Lesson 31's polite refusal.)",
+          "Säga nej artigt i tre steg: något snällt + men + skäl. Den är fin, men den passar inte mig, eftersom jag har lockigt hår. Jag vill hellre ha … (Lecture 29's polite no.)",
           "Teacher's notes, corrected: Jag villa ha det kortare → Jag vill ha det kortare. Vill is the present of vilja; en villa is a house.",
           "In Finland a tablet is usually en pekplatta; in Sweden en surfplatta. Hairdressers say du, and so do you."
         ],
@@ -102863,6 +103314,14 @@
           "en": "dye your hair",
           "example": "Jag vill färga håret lite mörkare.",
           "translation": "I want to dye my hair a bit darker.",
+          "level": "B1"
+        },
+        {
+          "id": "sv-49-word-45",
+          "fi": "ett redskap",
+          "en": "a tool (the teacher's word from the hairdresser dialogue)",
+          "example": "Frisören hämtar sina redskap: sax, kam och färg.",
+          "translation": "The hairdresser fetches her tools: scissors, comb and colour.",
           "level": "B1"
         },
         {
@@ -105362,7 +105821,7 @@
       "speaking": {
         "prompt": "Din åsikt: Köpa eller hyra sitt hem – vad är klokast? Vad talar för att äga? När passar det bättre att hyra? Vad skulle du själv välja just nu? (Give your opinion: is it better to buy or rent a home? As in the YKI test, plan for one minute, then speak for 90 seconds. Stretch: two minutes.)",
         "help": "Enligt min åsikt … · För det första … · För det andra … · en investering · trygghet · flexibelt · hyresvärden · vederlaget · räntan · Å andra sidan … · Ju längre man …, desto … · Jag hyr hellre / Jag skulle hellre köpa · Sammanfattningsvis …",
-        "model": "Enligt min åsikt är det bättre att hyra, åtminstone när man är ung. För det första kan man flytta lätt om man får ett nytt jobb i en annan stad. För det andra slipper man stora räkningar, till exempel för en rörrenovering, för hyresvärden betalar. Själv hyr jag en tvåa i Vallgård, och när det läckte under diskhon var det inte jag som betalade för det nya golvet. Å andra sidan får man ingenting tillbaka för hyran, och en egen bostad är en investering. Ju längre man bor på samma ställe, desto mer lönar det sig att köpa. Sammanfattningsvis tycker jag att man borde hyra först och köpa när livet är stabilt."
+        "model": "Enligt min åsikt är det bättre att hyra, åtminstone när man är ung. För det första kan man flytta lätt om man får ett nytt jobb i en annan stad. För det andra slipper man stora räkningar, till exempel för en rörrenovering, för hyresvärden betalar. Själv hyr jag en tvåa i Vallgård, och när det läckte under diskbänken var det inte jag som betalade för det nya golvet. Å andra sidan får man ingenting tillbaka för hyran, och en egen bostad är en investering. Ju längre man bor på samma ställe, desto mer lönar det sig att köpa. Sammanfattningsvis tycker jag att man borde hyra först och köpa när livet är stabilt."
       },
       "writing": {
         "prompt": "Skriv en insändare: Det är jättesvårt att lära sig språk i vuxen ålder. (Write an opinion text for a newspaper: it is very hard to learn languages as an adult.)",
@@ -105849,7 +106308,7 @@
                   "I vilken situation lönar det sig att hyra?",
                   "Vad skulle du själv välja just nu, och varför?"
                 ],
-                "model": "Jag håller delvis med. Å ena sidan är det flexibelt att hyra. Man kan flytta snabbt, och hyresvärden betalar när något går sönder. Själv hyr jag, och när det läckte under diskhon betalade jag inte för golvet. Å andra sidan får man ingenting tillbaka för hyran, och en egen bostad ger trygghet. Ju längre man bor på samma ställe, desto mer lönar det sig att köpa. Sammanfattningsvis: hyr när du är ung, köp när livet är stabilt.",
+                "model": "Jag håller delvis med. Å ena sidan är det flexibelt att hyra. Man kan flytta snabbt, och hyresvärden betalar när något går sönder. Själv hyr jag, och när det läckte under diskbänken betalade jag inte för golvet. Å andra sidan får man ingenting tillbaka för hyran, och en egen bostad ger trygghet. Ju längre man bor på samma ställe, desto mer lönar det sig att köpa. Sammanfattningsvis: hyr när du är ung, köp när livet är stabilt.",
                 "modelEn": "I partly agree. On the one hand, renting is flexible. You can move quickly, and the landlord pays when something breaks. I rent myself, and when it leaked under the sink I didn't pay for the floor. On the other hand, you get nothing back for the rent, and your own home gives security. The longer you live in the same place, the more it pays to buy. To sum up: rent when you are young, buy when life is stable."
               },
               {
@@ -106608,7 +107067,7 @@
         "title": "Språkkrav och medborgarskap · giving both sides",
         "kind": "rule",
         "body": [
-          "Ett språkkrav = a language requirement. Medborgarskap (ett) = citizenship; en medborgare = a citizen. Say ansöka om medborgarskap (as ansöka om in Lecture 45) or bli finsk medborgare. The teacher's statement uses skaffa medborgarskap; skaffa is for things you get yourself (skaffa en hund), so få or ansöka om fits better.",
+          "Ett språkkrav = a language requirement. Medborgarskap (ett) = citizenship; en medborgare = a citizen. Say ansöka om medborgarskap (as ansöka om in Lecture 45) or bli finsk medborgare. The teacher's statement uses skaffa medborgarskap (skaffa = get, obtain, as in skaffa en hund). It is understood, but få medborgarskap or ansöka om medborgarskap is the usual way to say it.",
           "The facts (Migri): you need at least satisfactory Finnish or Swedish in speech and writing, for example YKI level 3 (mellannivå). For applications from 1 March 2027, applicants aged 18-64 must also show knowledge of Finnish society, for example by passing a new citizenship test (medborgarskapsprov).",
           "Both sides: Å ena sidan … Å andra sidan … (Lecture 20). Each phrase takes the first place, so the verb comes straight after: Å ena sidan är kravet orättvist.",
           "Name the two groups: De som är emot kravet säger att … · De som är för kravet menar att …",
@@ -106947,7 +107406,7 @@
           "till"
         ],
         "hint": "The same little word as in Lecture 45.",
-        "explanation": "Ansöka om, as Alex applied for a new residence permit in Lecture 45 (ansöka om ett nytt uppehållstillstånd). English for pulls towards för."
+        "explanation": "Ansöka om, as in Lecture 45 (Jag vill ansöka om finskt medborgarskap). English for pulls towards för."
       },
       {
         "id": "sv-51-g7",
@@ -107180,8 +107639,8 @@
       },
       {
         "speaker": "Henrik",
-        "fi": "Nästa vecka lägger jag ut ett övningsprov på nätet: hörförståelse, läsförståelse och skrivande. Och er sista skrivuppgift är ett klagomål.",
-        "en": "Next week I'll put a practice test online: listening, reading and writing. And your last writing task is a complaint."
+        "fi": "Nästa onsdag får ni komma tillbaka en extra dag och göra ett övningsprov: hörförståelse, läsförståelse, skrivande och tal. Och er sista skrivuppgift är ett klagomål.",
+        "en": "Next Wednesday you can come back for an extra day and do a practice test: listening, reading, writing and speaking. And your last writing task is a complaint."
       },
       {
         "speaker": "Alex",
@@ -107582,7 +108041,7 @@
           110
         ],
         "help": "Jag skriver angående … · Sedan den … · Jag anmälde felet till fastighetsskötseln den … · Dessutom … · inte bara … utan också … · Jag skulle vara tacksam om ni kunde … · Jag föreslår att ni … · Med vänliga hälsningar",
-        "model": "Ärende: Problem i tvättstugan, Rönngatan 5\n\nHej,\n\njag bor i lägenhet B 14 och skriver angående tvättstugan i källaren. Sedan den 10 augusti fungerar bara en av de två tvättmaskinerna. Jag anmälde felet till fastighetsskötseln den 11 augusti, men ingenting har hänt. Dessutom lämnar flera boende sin tvätt i torkskåpet i flera timmar. I lördags fick jag vänta i två timmar.\n\nJag skulle vara tacksam om ni kunde beställa en reparation så snart som möjligt. Jag föreslår också att ni sätter upp en skylt med reglerna.\n\nMed vänliga hälsningar\nAlex Khan\nRönngatan 5 B 23\n040 123 4567"
+        "model": "Ärende: Problem i tvättstugan, Rönngatan 5\n\nHej,\n\njag bor i lägenhet B 23 och skriver angående tvättstugan i källaren. Sedan den 10 augusti fungerar bara en av de två tvättmaskinerna. Jag anmälde felet till fastighetsskötseln den 11 augusti, men ingenting har hänt. Dessutom lämnar flera boende sin tvätt i torkskåpet i flera timmar. I lördags fick jag vänta i två timmar.\n\nJag skulle vara tacksam om ni kunde beställa en reparation så snart som möjligt. Jag föreslår också att ni sätter upp en skylt med reglerna.\n\nMed vänliga hälsningar\nAlex Khan\nRönngatan 5 B 23\n040 123 4567"
       }
     },
     "route": {
@@ -108165,7 +108624,7 @@
         "title": "Provdagen · the four parts and their times",
         "kind": "rule",
         "body": [
-          "YKI mellannivå has four parts, and each gets its own level: under 3, 3 or 4. Migri needs level 3 in two parts for citizenship, for example tal och skrivande (Lecture 23).",
+          "YKI mellannivå has four parts, and each gets its own level: under 3, 3 or 4. For citizenship Migri needs level 3 in one of three pairs: tal och skrivande, hörförståelse och skrivande, or läsförståelse och tal (Lecture 23).",
           "Hörförståelse, 40 minutes: you hear each recording twice. First time: what is it about (vem, var, varför)? Second time: the details (numbers, times, names). Read the questions before the recording starts.",
           "Läsförståelse, 60 minutes, six texts: about ten minutes a text. Read the questions first, then look for the answers. Stuck? Skip it, go on and come back.",
           "Skrivande, 55 minutes, three texts: Henrik's plan is 15 + 15 + 25 minutes (the informal text, the formal text, then the opinion text). Read each text through before you move on.",
@@ -108796,8 +109255,8 @@
             "note": "A när clause, then the verb åkte."
           },
           {
-            "fi": "Jag fick nivå tre, vilket räcker för medborgarskap.",
-            "en": "I got level three, which is enough for citizenship.",
+            "fi": "Jag fick nivå tre i tal och skrivande, vilket räcker för medborgarskap.",
+            "en": "I got level three in speaking and writing, which is enough for citizenship.",
             "note": "Vilket refers to the whole sentence before it."
           }
         ],
@@ -109682,7 +110141,7 @@
         "explanation": "Fyll gärna en kanna med vatten i förväg. The sauna is closed all week, and the property manager is only for questions."
       },
       "listening": {
-        "text": "Övningsprov i hörförståelse. Du hör fyra korta texter.\n\nText 1. Ett meddelande på telefonsvararen.\nHej Alex, det här är Mats på Cykelverkstaden på Tavastvägen. Din cykel är nästan klar. Vi har bytt kedjan, som du bad om, men vi märkte att bakbromsen också är sliten. Att byta den kostar trettiofem euro extra. Om du vill att vi byter den, ring oss före klockan fyra i dag, så är cykeln klar i morgon förmiddag. Annars kan du hämta den som den är redan i eftermiddag. Vi har öppet till klockan sex. Numret är noll nio, två tre fyra, fem sex sju åtta. Hej så länge!\n\nText 2. Ett utrop på järnvägsstationen.\nInformation till resenärer till Åbo. Fjärrtåget till Åbo med avgång klockan fjorton noll sex är cirka tjugo minuter försenat på grund av ett tekniskt fel. Tåget avgår från spår nio i stället för spår sju. Restaurangvagnen är öppen under hela resan. Vi ber om ursäkt för förseningen.\n\nText 3. Nyheter.\nDet är onsdag den tjugosjätte augusti, och här är nyheterna.\nBiblioteken i Helsingfors förlänger sina öppettider i höst. Från och med den första september är fem bibliotek öppna till klockan tio på kvällen från måndag till torsdag. Enligt biblioteken vill många studerande och distansarbetare ha en lugn plats att arbeta på efter jobbet.\nSvampsäsongen har börjat tidigt i år, och skogarna är fulla av kantareller. Experterna påminner om att man aldrig ska äta en svamp som man inte känner igen. Den som är osäker kan visa svampen för en svampexpert, till exempel på torget.\nOch så vädret. I morgon blir det mulet och regnigt i hela södra Finland, och temperaturen ligger runt femton grader. På fredag blir det soligare.\n\nText 4. En intervju.\n– Nadia, du klarade nyss YKI-provet i svenska på mellannivå. Grattis!\n– Tack! Jag fick nivå tre i alla delar och nivå fyra i läsförståelse.\n– Hur förberedde du dig?\n– Jag lyssnade på Yle varje morgon i bussen, och varje söndag skrev jag en kort text som en vän läste. Dessutom gick jag på en kvällskurs i ett halvår.\n– Vilken del var svårast?\n– Taldelen, utan tvekan. Man sitter med hörlurar och talar in sina svar, men ingen svarar eller nickar. Det kändes konstigt i början.\n– Har du något råd till andra?\n– Öva med klocka. Och om du inte kommer på ett ord, säg det på ett annat sätt. Det viktigaste är att fortsätta prata.\n\n(Övningstext. Personerna, företaget och nyheterna är påhittade.)",
+        "text": "Övningsprov i hörförståelse. Du hör fyra korta texter.\n\nText 1. Ett meddelande på telefonsvararen.\nHej Alex, det här är Mats på Cykelverkstaden på Tavastvägen. Din cykel är nästan klar. Vi har bytt kedjan, som du bad om, men vi märkte att bakbromsen också är sliten. Att byta den kostar trettiofem euro extra. Om du vill att vi byter den, ring oss före klockan fyra i dag, så är cykeln klar i morgon förmiddag. Annars kan du hämta den som den är redan i eftermiddag. Vi har öppet till klockan sex. Numret är noll nio, två tre fyra, fem sex sju åtta. Hej så länge!\n\nText 2. Ett utrop på järnvägsstationen.\nInformation till resenärer till Åbo. Fjärrtåget till Åbo med avgång klockan fjorton noll sex är cirka tjugo minuter försenat på grund av ett tekniskt fel. Tåget avgår från spår nio i stället för spår sju. Restaurangvagnen är öppen under hela resan. Vi ber om ursäkt för förseningen.\n\nText 3. Nyheter.\nDet är onsdag den tjugosjätte augusti, och här är nyheterna.\nBiblioteken i Helsingfors förlänger sina öppettider i höst. Från och med den första september är fem bibliotek öppna till klockan tio på kvällen från måndag till torsdag. Enligt biblioteken vill många studerande och distansarbetare ha en lugn plats att arbeta på efter jobbet.\nSvampsäsongen har börjat tidigt i år, och skogarna är fulla av kantareller. Experterna påminner om att man aldrig ska äta en svamp som man inte känner igen. Den som är osäker kan visa svampen för en svampexpert, till exempel på torget.\nOch så vädret. I morgon blir det mulet och regnigt i hela södra Finland, och temperaturen ligger runt femton grader. På fredag blir det soligare.\n\nText 4. En intervju.\n– Nadia, du klarade nyss YKI-provet i svenska på mellannivå. Grattis!\n– Tack! Jag fick nivå fyra i läsförståelse och nivå tre i de andra delarna.\n– Hur förberedde du dig?\n– Jag lyssnade på Yle varje morgon i bussen, och varje söndag skrev jag en kort text som en vän läste. Dessutom gick jag på en kvällskurs i ett halvår.\n– Vilken del var svårast?\n– Taldelen, utan tvekan. Man sitter med hörlurar och talar in sina svar, men ingen svarar eller nickar. Det kändes konstigt i början.\n– Har du något råd till andra?\n– Öva med klocka. Och om du inte kommer på ett ord, säg det på ett annat sätt. Det viktigaste är att fortsätta prata.\n\n(Övningstext. Personerna, företaget och nyheterna är påhittade.)",
         "question": "Text 1: What does the bike repair shop want Alex to do if he wants the new brake?",
         "options": [
           "Call before four o'clock today",
@@ -110542,7 +111001,7 @@
                     "A polite ending (Med vänliga hälsningar) with your full name."
                   ]
                 },
-                "model": "Ärende: Problem i tvättstugan\n\nHej!\n\nJag bor i lägenhet B 12 och skriver för att klaga på problemen i tvättstugan. Sedan början av september har en av tvättmaskinerna varit trasig. Dessutom lämnar några grannar smutsiga kläder i torkrummet, och golvet är ofta blött på kvällarna.\n\nJag vill att disponenten ringer en reparatör så snart som möjligt. Jag önskar också att grannarna städar efter sig. Jag föreslår att vi sätter upp tydliga regler på dörren och att alla bokar en tvättid.\n\nMed vänliga hälsningar\n(ditt förnamn och efternamn), B 12"
+                "model": "Ärende: Problem i tvättstugan\n\nHej!\n\nJag bor i lägenhet B 12 och skriver för att klaga på problemen i tvättstugan. Sedan början av augusti har en av tvättmaskinerna varit trasig. Dessutom lämnar några grannar smutsiga kläder i torkrummet, och golvet är ofta blött på kvällarna.\n\nJag vill att disponenten ringer en reparatör så snart som möjligt. Jag önskar också att grannarna städar efter sig. Jag föreslår att vi sätter upp tydliga regler på dörren och att alla bokar en tvättid.\n\nMed vänliga hälsningar\n(ditt förnamn och efternamn), B 12"
               },
               {
                 "id": "q3",

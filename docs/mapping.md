@@ -4,14 +4,14 @@ This file is the curriculum handoff for humans and AI agents. It records what ha
 
 ## Active course scope
 
-- **Live total:** 22 lectures.
-- **Live structure:** Six chapters contain the complete textbook phase, Lectures 1–22.
+- **Live total:** 52 lectures in fourteen chapters.
+- **Live structure:** Chapters 1-6 are the textbook phase (Lectures 1–22); Chapters 7-14 are the YKI-book phase (Lectures 23–52, built October 4, 2026; plan in `docs/yki-phase-plan.md`).
 - **Source spine:** 51 dated teacher lessons in `docs/Group 3.md`, supported first by `docs/text-book-images/text-book.pdf` and later by the YKI preparation book.
-- **Current method:** maintain the complete textbook phase. Do not activate Lecture 23 or the YKI-book phase until the owner approves a separate plan.
+- **Current method:** maintain all 52 lectures; the owner approved the YKI-book phase on October 3, 2026.
 - **Former future course:** the old Lectures 2–60, 12-chapter plan, later story registry and artwork were removed on September 30, 2026 and remain only in git history. The old Lecture 2 (names and spelling) did not match teacher Lesson 2; the live Lecture 2 was built from the teacher's Lesson 2.
 - **Template rule:** Lecture 1 opts into its own content-defined presentation. Future lectures use the neutral default unless their verified material requires a different template; never branch on a lecture number.
 
-Later chapters must not appear in navigation, progress totals, the curriculum page, or the generated runtime index until they are built and activated.
+New chapters must not appear in navigation, progress totals, the curriculum page, or the generated runtime index until they are built and activated.
 
 ## Source-handling rules
 
@@ -953,7 +953,7 @@ adverbs.
 | 17 | Official YKI "Berätta om en god vän" card and holiday "Kort"; "Three traps" sort (har + past form, har with a finished time, sedan with a length); supine vowel length with Hindi पता/पत्ता. | `Bara sedan april …`; bare `bor här sedan två år` marked wrong |
 | 18 | YKI "Berätta kort om din skoltid"; informal e-mail to Leena (Classroom item 18 structure); linker errors (English order after men, verb after för, inte before the verb); Finnish school facts. | `Grattis i efterskott`; `armén` vs `lumpen` |
 | 19 | att han kommer inte, verb after a fronted clause, trots att … men (ändå); formal "Respons" e-mail to Arbis (Classroom item 19); vitsord; Yle lätt svenska. | `går kvällskursen` vs `går på kvällskursen` |
-| 20 | Writing is the basic "Respons" survey answer; errors after Å andra sidan, inte both ways, bare commands when ordering; restaurant problem-request match; VL = laktosfattig confirmed (Helsinki menu, teacher check closed); Classroom item 20 news linked. | `Kan vi få räkningen?` accepted |
+| 20 | Writing is the basic "Respons" survey answer; errors after Å andra sidan, inte both ways, bare commands when ordering; restaurant problem-request match; VL = laktosfattig confirmed (Helsinki menu, teacher check closed); Classroom item 20 news linked as an optional early listen (the homework itself is in Lecture 24). | `Kan vi få räkningen?` accepted |
 | 21 | 2BHK = en trea (1BHK = en tvåa); inte … någon with two verbs; "Därför jag letar"; formal message to a landlord; YKI situation questions; soptunna (kärl question closed), bastutur. | `bastutur`; `mjölkpaket` vs `mjölkburk` |
 | 22 | Writing is the basic "Respons" opinion task (the justified insändare is level 3 / B1, named as the next step, as teacher Lesson 23 does); föredrar … framför, på landet, många/mycket; dialogue links the dream home to Alex's real tvåa search; Kvarnbäcken advert as reading; egnahemshus. | `Det finns mycket bilar` marked as needing a fix in writing |
 
@@ -1073,39 +1073,39 @@ ad, although it was posted on Lesson 35's day.
 
 | Item | Lecture | Shape |
 |---|---|---|
-| 7 Preteritum (regular verbs) (27 Apr) | 6 | 11 questions, 11 with a key |
+| 7 Preteritum (regular verbs) (27 Apr) | 6 | 11 questions, 11 with an answer (worked out, no Google key) |
 | 8 Diary (27 Apr) | 6 | writing |
-| 9 Noun plurals (29 Apr) | 7 | 10 questions, 10 with a key |
-| 10 Definite plural of nouns (13 May) | 11 | 10 questions, 10 with a key |
-| 11 Objektspronomen (13 May) | 11 | 12 questions, 12 with a key |
-| 12 Komparation (15 May) | 12 | 15 questions, 15 with a key |
-| 13 Hjälpverb 2 (18 May) | 13 | 17 questions, 17 with a key |
+| 9 Noun plurals (29 Apr) | 7 | 10 questions, 10 with an answer (worked out, no Google key) |
+| 10 Definite plural of nouns (13 May) | 11 | 10 questions, 10 with an answer (worked out, no Google key) |
+| 11 Objektspronomen (13 May) | 11 | 12 questions, 12 with an answer (worked out, no Google key) |
+| 12 Komparation (15 May) | 12 | 15 questions, 15 with an answer (worked out, no Google key) |
+| 13 Hjälpverb 2 (18 May) | 13 | 17 questions, 17 with an answer (worked out, no Google key) |
 | 14 Formal email: complaint (20 May) | 14 | writing |
-| 15 Possessiva pronomen (22 May) | 15 | 14 questions, 14 with a key |
-| 16 Ska vs kommer att (25 May) | 16 | 15 questions, 15 with a key |
-| 17 Tycker vs tror (25 May) | 16 | 14 questions, 14 with a key |
+| 15 Possessiva pronomen (22 May) | 15 | 14 questions, 14 with an answer (worked out, no Google key) |
+| 16 Ska vs kommer att (25 May) | 16 | 15 questions, 15 with an answer (worked out, no Google key) |
+| 17 Tycker vs tror (25 May) | 16 | 14 questions, 14 with an answer (worked out, no Google key) |
 | 18 Informal email (10 Jun) | 23 | writing |
 | 19 Formal email (10 Jun) | 23 | writing |
-| 20 Nyheter 1: strejk + arbetslöshet (12 Jun) | 24 | 2 questions, 0 with a key |
-| 21 Festivalen Bravo (16 Jun) | 25 | 7 questions, 5 with a key |
-| 22 Nyheter 2: regering (22 Jun) | 28 | 3 questions, 0 with a key |
-| 23 Köttfri dag (24 Jun) | 29 | 5 questions, 5 with a key |
+| 20 Nyheter 1: strejk + arbetslöshet (12 Jun) | 24 | 2 questions, 0 with an answer (worked out, no Google key) |
+| 21 Festivalen Bravo (16 Jun) | 25 | 7 questions, 5 with an answer (worked out, no Google key) |
+| 22 Nyheter 2: regering (22 Jun) | 28 | 3 questions, 0 with an answer (worked out, no Google key) |
+| 23 Köttfri dag (24 Jun) | 29 | 5 questions, 5 with an answer (worked out, no Google key) |
 | 24 Opinion piece (26 Jun) | 30 | writing |
-| 25 Nyheter 3: mobbning + jobb för invandrare (29 Jun) | 31 | 8 questions, 0 with a key |
-| 26 Ulf Unge (3 Jul) | 33 | 3 questions, 3 with a key |
+| 25 Nyheter 3: mobbning + jobb för invandrare (29 Jun) | 31 | 8 questions, 0 with an answer (worked out, no Google key) |
+| 26 Ulf Unge (3 Jul) | 33 | 3 questions, 3 with an answer (worked out, no Google key) |
 | 27 Formal writing: ad (8 Jul) | 34 | writing |
-| 28 Nyheter 4: Shein + djurpark (8 Jul) | 35 | 7 questions, 0 with a key |
-| 29 Nyheter 5: skolan och kyrkan (8 Jul) | 35 | 6 questions, 0 with a key |
-| 30 Barn och mat (14 Jul) | 36 | 6 questions, 6 with a key |
-| 31 Nyheter 6: ojämlikhet, Temu och valet (16 Jul) | 37 | 12 questions, 0 with a key |
-| 32 Fusket (22 Jul) | 40 | 5 questions, 4 with a key |
-| 33 Nyheter 7: Autism och TikTok (25 Jul) | 41 | 4 questions, 0 with a key |
-| 34 Nyheter 8: turister, Island och bokmässan (25 Jul) | 41 | 10 questions, 0 with a key |
+| 28 Nyheter 4: Shein + djurpark (8 Jul) | 35 | 7 questions, 0 with an answer (worked out, no Google key) |
+| 29 Nyheter 5: skolan och kyrkan (8 Jul) | 35 | 6 questions, 0 with an answer (worked out, no Google key) |
+| 30 Barn och mat (14 Jul) | 36 | 6 questions, 6 with an answer (worked out, no Google key) |
+| 31 Nyheter 6: ojämlikhet, Temu och valet (16 Jul) | 37 | 12 questions, 0 with an answer (worked out, no Google key) |
+| 32 Fusket (22 Jul) | 40 | 5 questions, 4 with an answer (worked out, no Google key) |
+| 33 Nyheter 7: Autism och TikTok (25 Jul) | 41 | 4 questions, 0 with an answer (worked out, no Google key) |
+| 34 Nyheter 8: turister, Island och bokmässan (25 Jul) | 41 | 10 questions, 0 with an answer (worked out, no Google key) |
 | 35 Formal email: application (27 Jul) | 42 | writing |
-| 36 Nyheter 9: etanol, barn och Louvre (29 Jul) | 43 | 8 questions, 0 with a key |
-| 37 Talförståelse (Listening mock test) (24 Aug) | 52 | 17 questions, 0 with a key |
+| 36 Nyheter 9: etanol, barn och Louvre (29 Jul) | 43 | 8 questions, 0 with an answer (worked out, no Google key) |
+| 37 Talförståelse (Listening mock test) (24 Aug) | 52 | 17 questions, 0 with an answer (worked out, no Google key) |
 | 38 Writing mock test 2 (26 Aug) | 52 | writing |
-| 39 Läsförståelse (Reading mock test, 60 minutes) (26 Aug) | 52 | 29 questions, 22 with a key |
+| 39 Läsförståelse (Reading mock test, 60 minutes) (26 Aug) | 52 | 29 questions, 22 with an answer (worked out, no Google key) |
 
 Question shapes: pick one, tick all, Rätt/Fel grids (split into one question
 per statement), short typed answers, open answers (self-checked against a model)
@@ -1126,3 +1126,46 @@ and formal messages 50-80, complaint, ad and application 50-110, opinion
 100-150. Teacher typos are fixed and listed under each form. Models and the
 Swedish versions of tasks the teacher gave in English are authored and need a
 native speaker's glance.
+
+## Final review — October 4, 2026
+
+Thirteen reviewers, four lectures each, checked all 52 lectures against the
+teacher's notes, the textbook scans, the YKI-book plan and the Classroom
+exports: mapping, homework placement and keys, Swedish, answers and
+distractors, story facts, structure. About 210 fixes; reports per batch were
+kept in the session scratchpad. Mapping verdict: every lecture maps to its
+lesson; no homework item is misplaced or missing.
+
+**Kinds of fix.** Answer keys widened where more than one answer is really
+right (Lecture 3 Hjälpverb 1 and Word order, Lecture 2 pronouns, Lecture 16
+ska/kommer att, tycker/tror), distractors that were also correct replaced,
+untrue explanations corrected, missing teacher points added (Lectures 8, 9, 11,
+12, 17, 18, 27, 45), textbook word hunts completed (Lectures 8 and 12), sort
+labels that start with another label renamed (Lectures 32, 35, 46, 47), and
+the mission planner now adds a space before text after the gap that starts with
+a word (Lectures 3, 24, 48, 52 showed "medom").
+
+**Story facts fixed or added.** Elin is in Vasa from 18 June (Lecture 27 call
+from Vasa) and in Stockholm 16-17 July (Lecture 38 call from the airport).
+Alex's flat and storage room are Rönngatan 5 B 23 everywhere; lease from 1
+August, keys at the end of July. The course meets Monday, Wednesday and Friday
+evenings. Priya is 30 and the oldest, Alex the middle child, Rohan the
+youngest. Maja's younger sister starts year 4. Elin took a gap year (hotel in
+Vasa, then Spain). Minor roles renamed to avoid clashes with Johanna (Alex's
+team leader): the Lecture 25 wife is Emma, the Lecture 32 agent is Linda, the
+Lecture 17 reader is Oskar. The Lecture 31 café scene is Monday afternoon,
+before class. Henrik invites the class back for the mock day (Lecture 51 to 52).
+The insurance bill in Lecture 45 is due 3 August.
+
+**Homework keys changed in review.** Item 32 q5 Fel (the text is handed in
+once); item 16 q7 and item 13 q11 also accept *ska*; item 17 q2 also *tror*;
+item 1 q1 and q14 accept every pronoun that fits without context; item 9's
+added instruction no longer gives away answers.
+
+**Still for a native speaker or the owner** (details in the batch reports):
+Finland-Swedish usage such as *kontantinsats*/*egen insats*, *bostadsbolag*,
+*garderobslapp*, *postlådan*, *flytta fram*, "bor här sedan två veckor";
+textbook lines kept as printed; the teacher's own lines kept as written
+(*Bussen åker Jonas inte*, *hos Mara och Peter*); Lecture 12's Thursday is
+Alex's birthday and nobody mentions it; the Lecture 41 library date; the YKI fee
+(190 €, rechecked October 4) each test season.
