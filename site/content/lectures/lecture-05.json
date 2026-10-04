@@ -736,6 +736,227 @@
           }
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom form for this lesson: definite nouns.",
+      "minutes": 5,
+      "action": "Do the form, check your answers, and fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-06-definite-nouns",
+          "item": 6,
+          "title": "Definite nouns",
+          "posted": "24 Apr",
+          "instructions": "Välj rätt form av substantivet. Choose the right form of the noun: a/an (en, ett) or the (-en, -et).",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Peter: Andreas, är du gift?\nAndreas: Nej, men jag har _______, Nora.",
+              "options": [
+                "en flickvän",
+                "flickvänen"
+              ],
+              "answers": [
+                "en flickvän"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Jag har två barn, en son och en dotter. _____ heter Anna och _____ heter Jonas.",
+              "options": [
+                "en dotter, en son",
+                "dotter, son",
+                "dottern, sonen"
+              ],
+              "answers": [
+                "dottern, sonen"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Kommer du på ____ på fredag?",
+              "options": [
+                "en kurs",
+                "kurs",
+                "kursen"
+              ],
+              "answers": [
+                "kursen"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Peter: Vart ska ni resa på semester i år?\nAnna: Vi ska resa till ____ nära havet i Spanien.",
+              "options": [
+                "en stad",
+                "staden"
+              ],
+              "answers": [
+                "en stad"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Lärare: Förstår ni lektionen?\nElev: Nej, jag har _____.",
+              "options": [
+                "en fråga",
+                "frågan"
+              ],
+              "answers": [
+                "en fråga"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Peter: Vill du läsa \"Harry Potter\", Sara?\nSara: Nej, _____ som jag vill läsa heter \"Brott och straff\".",
+              "options": [
+                "en bok",
+                "boken"
+              ],
+              "answers": [
+                "boken"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Maria: Har du barn, Nora?\nNora: Nej, men jag har _____. Hon heter Miso.",
+              "options": [
+                "en katt",
+                "katten"
+              ],
+              "answers": [
+                "en katt"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Kan du stänga av (turn off) ______?",
+              "options": [
+                "en teve",
+                "teven",
+                "ett teve",
+                "tevet"
+              ],
+              "answers": [
+                "teven"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Jag pluggar på universitetet och har ______ på helgerna.",
+              "options": [
+                "ett extrajobb",
+                "en extrajobb",
+                "extrajobbet",
+                "extrajobben"
+              ],
+              "answers": [
+                "ett extrajobb"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "Jag är så trött! Vi hade så mycket att göra på ______.",
+              "options": [
+                "ett jobb",
+                "jobbet",
+                "en jobb",
+                "jobben"
+              ],
+              "answers": [
+                "jobbet"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "Vill du gå på \"Lyxlaxen\" och äta efter _____?",
+              "options": [
+                "en kurs",
+                "kursen",
+                "kurs"
+              ],
+              "answers": [
+                "kursen"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "Vi kan fika på mitt ______ på söndag.",
+              "options": [
+                "ett favoritkafé",
+                "favoritkaféet",
+                "favoritkafé"
+              ],
+              "answers": [
+                "favoritkafé"
+              ]
+            },
+            {
+              "id": "q13",
+              "prompt": "Jag kan inte gå ut med Peter, jag ska träffa _____ den dagen.",
+              "options": [
+                "en vän",
+                "vännen"
+              ],
+              "answers": [
+                "en vän"
+              ]
+            },
+            {
+              "id": "q14",
+              "prompt": "Vi kan ta bussen till stan. Men vi måste köpa _______ först!",
+              "options": [
+                "ett busskort",
+                "busskortet"
+              ],
+              "answers": [
+                "ett busskort"
+              ]
+            },
+            {
+              "id": "q15",
+              "prompt": "Hej, jag vill ha _____, tack.",
+              "options": [
+                "en kanelbulle",
+                "kanelbullen"
+              ],
+              "answers": [
+                "en kanelbulle"
+              ]
+            },
+            {
+              "id": "q16",
+              "prompt": "Vi har en fest hos Mara och Peter. Ska vi ta med ____ vin?",
+              "options": [
+                "en flaska",
+                "flaskan"
+              ],
+              "answers": [
+                "en flaska"
+              ]
+            },
+            {
+              "id": "q17",
+              "prompt": "Vi lagar pizza ikväll. Köp ______ tomatsås, snälla!",
+              "options": [
+                "en burk (a can)",
+                "burken (the can)"
+              ],
+              "answers": [
+                "en burk (a can)"
+              ]
+            }
+          ],
+          "fixes": [
+            "“Vill gå på” is written “Vill du gå på”.",
+            "“kafe” is written “kafé”."
+          ]
+        }
+      ]
     }
   ],
   "recall": [

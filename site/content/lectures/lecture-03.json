@@ -662,6 +662,632 @@
           }
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's four Classroom forms for this lesson: helping verbs, infinitive or present, command form and word order.",
+      "minutes": 20,
+      "action": "Do each form, check your answers, and fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-02-hjalpverb-1",
+          "item": 2,
+          "title": "Hjälpverb 1",
+          "posted": "17 Apr",
+          "instructions": "Välj kan, ska, vill eller måste. Choose the helping verb that fits the meaning. The English line under some sentences gives a clue.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Anna och jag ska träffas på kafé \"Monet\" efter jobbet. ____ du följa med?",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "vill"
+              ],
+              "translation": "Anna and I are going to meet at cafe \"Monet\" after work. Do you _____ to come with us?"
+            },
+            {
+              "id": "q2",
+              "prompt": "Tyvärr, jag ____ inte gå på bio med dig. Jag jobbar över.",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "kan"
+              ],
+              "translation": "Unfortunately, I ______ not go to the cinema with you. I work overtime."
+            },
+            {
+              "id": "q3",
+              "prompt": "_____ du prata finska?",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "kan"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Jag talar inte finska men jag _____ börja på en kurs i svenska nästa vecka.",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "ska"
+              ],
+              "translation": "future plan"
+            },
+            {
+              "id": "q5",
+              "prompt": "Jag ____ gå till affären. Vi behöver ingredienser till pizzan.",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "ska"
+              ],
+              "translation": "I am going to the store. We need ingredients for the pizza."
+            },
+            {
+              "id": "q6",
+              "prompt": "____ du köpa mjölk efter jobbet? Jag ska göra oss kaffe latte ikväll.",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "kan"
+              ],
+              "translation": "____ you buy milk after work? I am going to make us lattes tonight."
+            },
+            {
+              "id": "q7",
+              "prompt": "A: Vill du följa med till klubben? De har en salsakväll.\nB: Jag vet inte. Jag ____ inte dansa salsa.",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "kan"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "A: Vill du följa med till klubben? De har en salsakväll.\nB: Jag kan inte. Jag ______ hjälpa min son med läxan.",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "måste"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Grammatik är komplicerad! Jag ____ plugga mer!",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "måste"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "A: Jag förstår inte grammatik.\nB: Jag _____ hjälpa dig med svensk grammatik.",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "kan"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "A: _____ vi gå ut och dricka vin? Jag fyller år idag!",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "ska"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "_____ vi träffas efter jobbet? Jag vet ett bra kafé.",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "ska"
+              ]
+            },
+            {
+              "id": "q13",
+              "prompt": "____ du hjälpa mig? Jag är vilse.",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "kan"
+              ],
+              "translation": "____ you help me? I am lost."
+            },
+            {
+              "id": "q14",
+              "prompt": "Jag kan inte fika nu. Jag _____ ha ett möte med chefen.",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "måste"
+              ]
+            },
+            {
+              "id": "q15",
+              "prompt": "Det är bråttom! Jag _____ hitta en toalett!",
+              "options": [
+                "kan",
+                "ska",
+                "vill",
+                "måste"
+              ],
+              "answers": [
+                "måste"
+              ],
+              "translation": "It is urgent! I _____ find a toilet!"
+            }
+          ],
+          "fixes": [
+            "“kafe” is written “kafé”."
+          ]
+        },
+        {
+          "id": "teacher-03-infinitive-or-present",
+          "item": 3,
+          "title": "Infinitive or present?",
+          "posted": "17 Apr",
+          "instructions": "Välj rätt form. After kan, vill, ska and måste the verb stays in its basic form (infinitive, ends in -a). Alone, the verb takes the present -r.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Kan jag ___ en matcha latte med havremjölk?",
+              "options": [
+                "få",
+                "får"
+              ],
+              "answers": [
+                "få"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Jag kan _____ till jobbet.",
+              "options": [
+                "cykla",
+                "cyklar"
+              ],
+              "answers": [
+                "cykla"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Karen: Jag vill ____ med din chef!",
+              "options": [
+                "prata",
+                "pratar"
+              ],
+              "answers": [
+                "prata"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Jag _____ fotboll med min pappa.",
+              "options": [
+                "spela",
+                "spelar"
+              ],
+              "answers": [
+                "spelar"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Jag ____ i Finland nu.",
+              "options": [
+                "bo",
+                "bor"
+              ],
+              "answers": [
+                "bor"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Hon måste _____. Hon har ett prov imorgon.",
+              "options": [
+                "plugga",
+                "pluggar"
+              ],
+              "answers": [
+                "plugga"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Han ska _____ till Amerika nästa år.",
+              "options": [
+                "flytta",
+                "flyttar"
+              ],
+              "answers": [
+                "flytta"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Andreas ______ till Stockholm.",
+              "options": [
+                "flytta",
+                "flyttar"
+              ],
+              "answers": [
+                "flyttar"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Jag _____ en fråga.",
+              "options": [
+                "ha",
+                "har"
+              ],
+              "answers": [
+                "har"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "Vi vill _____ kanelbullar idag!",
+              "options": [
+                "äta",
+                "äter"
+              ],
+              "answers": [
+                "äta"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "Vad _____ du till lunch?",
+              "options": [
+                "äta",
+                "äter"
+              ],
+              "answers": [
+                "äter"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "Ska vi ____ på en film ikväll?",
+              "options": [
+                "titta",
+                "tittar"
+              ],
+              "answers": [
+                "titta"
+              ]
+            },
+            {
+              "id": "q13",
+              "prompt": "Sara _____ på en film på Netflix. Hon gillar den.",
+              "options": [
+                "titta",
+                "tittar"
+              ],
+              "answers": [
+                "tittar"
+              ]
+            },
+            {
+              "id": "q14",
+              "prompt": "Jag är så trött! Jag kan inte _____ mer!",
+              "options": [
+                "träna",
+                "tränar"
+              ],
+              "answers": [
+                "träna"
+              ]
+            },
+            {
+              "id": "q15",
+              "prompt": "Jag måste ____ pengar. Jag vill köpa en bil.",
+              "options": [
+                "spara",
+                "sparar"
+              ],
+              "answers": [
+                "spara"
+              ]
+            }
+          ],
+          "fixes": [
+            "“Netflx” is written “Netflix”."
+          ]
+        },
+        {
+          "id": "teacher-04-command-form",
+          "item": 4,
+          "title": "Command form",
+          "posted": "17 Apr",
+          "instructions": "Skriv imperativ. Write the command form of the verb: PRATAR → PRATA! Questions 11-15: first pick the verb that fits the meaning. Capital letters and “!” do not matter here. -ER verbs drop the -er, and a double m becomes single: KOMMER → KOM!",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "ARBETAR (work)",
+              "answers": [
+                "ARBETA"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "BERÄTTAR (tell)",
+              "answers": [
+                "BERÄTTA"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "BOR (live)",
+              "answers": [
+                "BO"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "BÖRJAR (start)",
+              "answers": [
+                "BÖRJA"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "FRÅGAR (ask)",
+              "answers": [
+                "FRÅGA"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "LÄSER (read)",
+              "answers": [
+                "LÄS"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "PLUGGAR (study)",
+              "answers": [
+                "PLUGGA"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "KOMMER (come)",
+              "answers": [
+                "KOM"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "ÅKER (go, by transport)",
+              "answers": [
+                "ÅK"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "DRÖMMER (dream)",
+              "answers": [
+                "DRÖM"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "A: Jag är så trött! (I am so tired)\nB: ____ på semester! ( ___ on holiday!)",
+              "hint": "Pick one: ÅKER, DRÖMMER, LYSSNAR. Write its command form.",
+              "answers": [
+                "ÅK"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "A: Jag förstår inte. (I don't understand.)\nB: _____ läraren! (____ the teacher!)",
+              "hint": "Pick one: JOBBAR, KOMMER, FRÅGAR. Write its command form.",
+              "answers": [
+                "FRÅGA"
+              ]
+            },
+            {
+              "id": "q13",
+              "prompt": "A: Vad är läxan till nästa lektion? (What is the homework for next class?)\nB: ____ texten på sidan 45. (____ the text on page 45.)",
+              "hint": "Pick one: SKRIVER, LÄSER, BÖRJAR. Write its command form.",
+              "answers": [
+                "LÄS"
+              ]
+            },
+            {
+              "id": "q14",
+              "prompt": "A: Läxan är komplicerad. (The homework is complicated.)\nB: ______ mer! (____ more!)",
+              "hint": "Pick one: KOMMER, PLUGGAR, BERÄTTAR. Write its command form.",
+              "answers": [
+                "PLUGGA"
+              ]
+            },
+            {
+              "id": "q15",
+              "prompt": "A: Det är så varmt! (It's so warm!)\nB: ____ till Finland! (____ to Finland!)",
+              "hint": "Pick one: KOMMER, DRÖMMER, BOR. Write its command form.",
+              "answers": [
+                "KOM"
+              ]
+            }
+          ],
+          "fixes": [
+            "The form asked for capitals and an exclamation mark; Stigen accepts the answer with or without them."
+          ]
+        },
+        {
+          "id": "teacher-05-word-order",
+          "item": 5,
+          "title": "Word order",
+          "posted": "17 Apr",
+          "instructions": "Skriv om meningen. Rewrite the sentence so it starts with the words shown. Remember the verb stays in second place (V2).",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Jonas äter ägg till frukost varje dag.",
+              "translation": "Jonas eats eggs for breakfast every day.",
+              "hint": "Start with: Varje dag",
+              "answers": [
+                "Varje dag äter Jonas ägg till frukost."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Han diskar sedan.",
+              "translation": "He does the dishes afterwards.",
+              "hint": "Start with: Sedan",
+              "answers": [
+                "Sedan diskar han."
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Efter det spelar han datorspel.",
+              "translation": "After that, he plays video games.",
+              "hint": "Start with: Han",
+              "answers": [
+                "Han spelar datorspel efter det."
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Han jobbar deltid på kvällen.",
+              "translation": "He works part-time in the evening.",
+              "hint": "Start with: På kvällen",
+              "answers": [
+                "På kvällen jobbar han deltid."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Jonas åker inte bussen.",
+              "translation": "Jonas doesn't take the bus.",
+              "hint": "Start with: Bussen",
+              "answers": [
+                "Bussen åker Jonas inte."
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Varje dag cyklar han.",
+              "translation": "Every day, he cycles.",
+              "hint": "Start with: Han",
+              "answers": [
+                "Han cyklar varje dag."
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Han får lönen nästa vecka.",
+              "translation": "He gets the salary next week.",
+              "hint": "Start with: Nästa vecka",
+              "answers": [
+                "Nästa vecka får han lönen."
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Han ska köpa en gitarr då.",
+              "translation": "He is going to buy a guitar then.",
+              "hint": "Start with: Då",
+              "answers": [
+                "Då ska han köpa en gitarr."
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Sedan ska han spela i band.",
+              "translation": "Then he will play in a band.",
+              "hint": "Start with: Han",
+              "answers": [
+                "Han ska spela i band sedan."
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "Då blir Lina kär i honom.",
+              "translation": "Then Lina will fall in love with him.",
+              "hint": "Start with: Lina",
+              "answers": [
+                "Lina blir kär i honom då."
+              ]
+            }
+          ],
+          "fixes": [
+            "The export lost the bold start word, so each question shows it as “Start with”."
+          ]
+        }
+      ]
     }
   ],
   "sections": [

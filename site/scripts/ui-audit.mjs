@@ -149,7 +149,7 @@ try {
       await page.goto(`${base}/#lecture/${id}`);
       await page.locator('.lecture-workspace').waitFor();
       assert.ok(await page.locator('.lecture-template-conversation-first').count());
-      const sequence = ['recall',...(lecture.extraSteps??[]).map(s=>s.id),'teach','guided','practice','check','assignment'];
+      const sequence = ['recall','teach','guided','practice','check','assignment'].flatMap(part => [part,...(lecture.extraSteps??[]).filter(s=>s.after===part).map(s=>s.id)]);
       const expected = plans.find(p => p.number===lecture.number).steps;
       assert.equal(sequence.length, expected, `${id}: content route count`);
       assert.equal(await page.locator('.episode-route-panel nav > button').count(),expected,`${id}: rendered route count`);
@@ -183,6 +183,12 @@ try {
               await inspect(page,`${label}/part-${pi+1}/stage-${stage+1}`,lecture,errors);
               stats.ykiStages++;
             }
+          }
+        } else if(extra?.kind==='classroom-homework') {
+          for(let hi=0;hi<extra.homework.length;hi++) {
+            if(extra.homework.length>1) await page.getByRole('group',{name:"Teacher's homework for this lesson"}).getByRole('button').nth(hi).click();
+            assert.equal(await page.locator('ol[class*="questions"] > li').count(),extra.homework[hi].questions.length,`${label}: homework questions`);
+            await inspect(page,`${label}/homework-${hi+1}`,lecture,errors);
           }
         } else if(extra) {
           for(let pi=0;pi<extra.pages.length;pi++) {

@@ -118,7 +118,36 @@ export type LectureExtraStep = {
       kind: "yki-speaking";
       parts: YkiSpeakingPart[];
     }
+  | {
+      /** The teacher's own Classroom homework (Google Forms) for this lesson, one or several. */
+      kind: "classroom-homework";
+      homework: ClassroomHomework[];
+    }
 );
+
+/**
+ * One Classroom homework form from the teacher, kept as the teacher wrote it
+ * (obvious typos fixed and listed in `fixes`). A question with `options` is
+ * pick-one; without them the learner types the answer. Answers are compared
+ * like every typed answer: lower-case, punctuation removed.
+ */
+export type ClassroomHomework = {
+  id: string;
+  /** The Classroom item number in docs/excercise. */
+  item: number;
+  title: string;
+  posted: string;
+  instructions: string;
+  questions: Array<{
+    id: string;
+    prompt: string;
+    translation?: string;
+    hint?: string;
+    options?: string[];
+    answers: string[];
+  }>;
+  fixes?: string[];
+};
 
 /** The four recurring native voices; a one-scene role borrows one of them. */
 export type YkiVoice = "Alex" | "Elin" | "Henrik" | "Maja";

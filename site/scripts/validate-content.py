@@ -20,6 +20,29 @@ for l in L:
         if tid not in gloss: errs.append(f"{l['number']}: unknown grammar term {tid}")
 VOICES=('Alex','Elin','Henrik','Maja')
 def words(text): return len(re.findall(r"[\wåäöÅÄÖé'-]+",text))
+homework_ids=set()
+def check_homework(n,st):
+    """The teacher's Classroom forms: each needs questions whose answers can be checked."""
+    errs=[]
+    if not st.get('homework'): return [f"{n}: extra step {st['id']} has no homework"]
+    for hw in st['homework']:
+        hid=hw.get('id','')
+        if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,60}',hid) or hid in homework_ids: errs.append(f'{n}: bad or duplicate homework id {hid}')
+        homework_ids.add(hid)
+        for k in ('title','posted','instructions'):
+            if not str(hw.get(k,'')).strip(): errs.append(f'{n}: homework {hid} missing {k}')
+        if not isinstance(hw.get('item'),int): errs.append(f'{n}: homework {hid} needs its Classroom item number')
+        qs=hw.get('questions',[])
+        if not qs: errs.append(f'{n}: homework {hid} has no questions')
+        if len({q['id'] for q in qs})!=len(qs): errs.append(f'{n}: homework {hid} repeats a question id')
+        for q in qs:
+            if not q.get('prompt','').strip() or not q.get('answers') or not all(a.strip() for a in q['answers']): errs.append(f"{n}: homework {hid} question {q.get('id')} needs a prompt and answers")
+            opts=q.get('options')
+            if opts is not None:
+                if len(opts)<2 or len(set(opts))!=len(opts): errs.append(f"{n}: homework {hid} question {q['id']} needs distinct options")
+                if not set(q['answers'])<=set(opts): errs.append(f"{n}: homework {hid} question {q['id']} answer is not an option")
+    return errs
+
 def check_yki_speaking(n,st):
     """Original YKI speaking tasks: timing bounds, voices, and models that fit their time (about 2 words a second)."""
     e=[]; parts=st.get('parts') or []
@@ -167,7 +190,7 @@ for l in L:
     for st in steps:
         if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,60}',st['id']): errs.append(f"{n}: bad extra step id {st['id']}")
         if st['after'] not in parts: errs.append(f"{n}: extra step {st['id']} follows unknown part {st['after']}")
-        if st['kind'] not in ('source-practice','yki-speaking'): errs.append(f"{n}: unknown extra step kind {st['kind']}")
+        if st['kind'] not in ('source-practice','yki-speaking','classroom-homework'): errs.append(f"{n}: unknown extra step kind {st['kind']}")
         if not (isinstance(st['minutes'],int) and 1<=st['minutes']<=60): errs.append(f"{n}: extra step minutes {st['id']}")
         for k in ('label','description','action'):
             if not st.get(k,'').strip(): errs.append(f"{n}: extra step {st['id']} missing {k}")
@@ -176,6 +199,8 @@ for l in L:
             pages+=st.get('pages',[])
         if st['kind']=='yki-speaking':
             errs+=check_yki_speaking(n,st)
+        if st['kind']=='classroom-homework':
+            errs+=check_homework(n,st)
     for sp in pages:
         import os
         if not os.path.exists('public'+sp['image']): errs.append('missing image '+sp['image'])

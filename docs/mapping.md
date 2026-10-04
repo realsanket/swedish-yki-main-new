@@ -1041,3 +1041,26 @@ the session scratchpad, summarised here: Finland-Swedish usage such as
 Lecture 52 (190 €) and other dated facts should be rechecked before each test
 season. Pictures for Lectures 23-52 wait on the owner
 (`docs/image-prompts/yki-episodes.md`).
+
+## Teacher's homework (Google Forms) — October 4, 2026
+
+The numbered `docs/excercise/N_*_Google_Form.md` files are the teacher's own
+Classroom quizzes. They now appear as an optional last step, "Teacher's
+homework" (`classroom-homework`), only in lectures that have one. Several forms
+for one lesson show as tabs.
+
+| Lecture | Forms | Why |
+|---|---|---|
+| 1 | none | no form was set |
+| 2 | 1 Personal pronouns (posted 15 Apr) | set on Lesson 2's day, practises its pronouns |
+| 3 | 2 Hjälpverb 1, 3 Infinitive or present?, 4 Command form, 5 Word order (all posted 17 Apr) | posted between Lessons 2 and 3, due after Lesson 3, and matching Lesson 3's verbs and V2 |
+| 4 | none | no form was set |
+| 5 | 6 Definite nouns (posted 24 Apr) | set on Lesson 5's day |
+
+Questions are the teacher's own, with the correct answer from the form's answer
+key (where the export showed the owner's own wrong choice, the key's answer is
+used: Form 2 item 6 *kan*, Form 5 items 1 and 10, Form 6 *favoritkafé* and
+*en burk*). Typos fixed and listed under each form: *kafé*, *Netflix*, *Vill du
+gå på*. Form 4 accepts answers with or without capitals and "!". Form 5's export
+lost the bold start word, so each question shows "Start with". Forms 7-39 are
+not mapped yet.

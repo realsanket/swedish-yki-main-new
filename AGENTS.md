@@ -183,7 +183,7 @@ full rules in `site/docs/lecture-template.md`):
 | `recall`, `guided`, `checkpoint` | Questions for steps 1, 4 and 6 |
 | `sections` | Teaching topics; each shows as beats: Understand, See the pattern, Hear it, activities, Try it |
 | `sections[].activity(ies)` | Hands-on activities: `sound-map`, `sort`, `match`, `question-gap`. A sort that shows deliberate mistakes sets `"audio": false` |
-| `extraSteps` | Lecture-owned route steps. Kind `source-practice` = verified textbook pages in a 5-stage ladder (Lectures 1-22); kind `yki-speaking` = original timed YKI dialogues and react/tell/opinion prompt sets (Lectures 23-52) |
+| `extraSteps` | Lecture-owned route steps. Kind `source-practice` = verified textbook pages in a 5-stage ladder (Lectures 1-22); kind `yki-speaking` = original timed YKI dialogues and react/tell/opinion prompt sets (Lectures 23-52); kind `classroom-homework` = the teacher's Google Forms homework as the last step, only in lectures that have a form |
 | `missionPlan` | Fill-in sentence frames for stage 1 of "Do the task" |
 | `unplannedQuestions` | Questions for the "unexpected questions" round (6 per lecture, 3 asked) |
 | `reviewPhrases` | About 8 chunks for spaced review (English prompt, Swedish answer) |
@@ -242,6 +242,7 @@ Viewing any step is always allowed.
 |---|---|
 | Lecture player, route, navigation, sittings | `components/learning/LecturePlayer.tsx`, `app/course.css`, `app/responsive.css` |
 | Textbook page practice | `components/learning/SourcePagePractice.tsx`, `ExtraStep.tsx` |
+| Teacher's homework (Google Forms) | `components/learning/ClassroomHomework.tsx` (step kind `classroom-homework`) |
 | YKI speaking tasks (timed dialogues and prompt sets) | `components/learning/YkiSpeakingPractice.tsx`, `ExtraStep.tsx` |
 | Teaching activities | `components/learning/activities/*` |
 | Grammar side notes | `components/learning/GrammarNotes.tsx`, `content/grammar-terms.json`, `lib/grammar-terms.ts` |
@@ -393,6 +394,10 @@ selected only by optional `ykiMockId`; no current lecture selects it.
     voice?
 4. Save the mission plan and the unexpected-questions result to the server (both
    are browser-only now).
+4a. **In progress:** the teacher's Google Forms homework as a "Teacher's
+    homework" last step (`classroom-homework`). Forms 1-6 are in Lectures 2, 3
+    and 5 (Lectures 1 and 4 have none); forms 7-39 are still to map. Answers
+    are kept in the browser only.
 5. **Done (October 4, 2026):** the YKI-book phase, Lectures 23-52 (see the
    last section of `docs/mapping.md`). Next for it: a teacher's glance at the
    doubtful lines, pictures (`docs/image-prompts/yki-episodes.md`), and an

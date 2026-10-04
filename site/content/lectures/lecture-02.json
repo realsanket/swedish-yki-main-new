@@ -706,6 +706,269 @@
           }
         }
       ]
+    },
+    {
+      "id": "teacher-homework",
+      "after": "assignment",
+      "kind": "classroom-homework",
+      "label": "Teacher's homework",
+      "description": "The teacher's Classroom form for this lesson: personal pronouns.",
+      "minutes": 5,
+      "action": "Do the form, check your answers, and fix what you missed.",
+      "homework": [
+        {
+          "id": "teacher-01-personal-pronouns",
+          "item": 1,
+          "title": "Personal pronouns",
+          "posted": "15 Apr",
+          "instructions": "Välj rätt pronomen. Choose the personal pronoun that fits each gap: jag, du, han, hon, vi, ni or de.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "____ heter Anna.",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "jag"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Anna och jag kommer från USA. ____ talar engelska.",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "vi"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Maria och Peter är gifta. ____ har en son, Jonas.",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "de"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hej! Jag heter Sara. Vad heter ____?",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "du"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hej, Sara och Peter! Talar ____ engelska?",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "ni"
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Min mamma heter Annika. ____ är bartender.",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "hon"
+              ]
+            },
+            {
+              "id": "q7",
+              "prompt": "Peter jobbar som programmerare. ____ är intelligent.",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "han"
+              ]
+            },
+            {
+              "id": "q8",
+              "prompt": "Anders är så snygg (handsome)! Har ____ en flickvän?",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "han"
+              ]
+            },
+            {
+              "id": "q9",
+              "prompt": "Maria är chef på Nokia. ___ har ett toppjobb.",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "hon"
+              ]
+            },
+            {
+              "id": "q10",
+              "prompt": "Hej Anna och Maria, shoppar ____ på Marimekko?",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "ni"
+              ]
+            },
+            {
+              "id": "q11",
+              "prompt": "Peter och jag tränar på gymmet. ____ gillar att träna.",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "vi"
+              ]
+            },
+            {
+              "id": "q12",
+              "prompt": "Anders och Peter sitter på ett kafé. ____ dricker kaffe.",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "de"
+              ]
+            },
+            {
+              "id": "q13",
+              "prompt": "Anders har en fru, Lena. ____ är på semester tillsammans (on holiday together).",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "de"
+              ]
+            },
+            {
+              "id": "q14",
+              "prompt": "___ är designer och min man är servitör.",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "jag"
+              ]
+            },
+            {
+              "id": "q15",
+              "prompt": "Hej Peter! Vill ___ gå på gymmet?",
+              "options": [
+                "jag",
+                "du",
+                "han",
+                "hon",
+                "vi",
+                "ni",
+                "de"
+              ],
+              "answers": [
+                "du"
+              ]
+            }
+          ],
+          "fixes": [
+            "“kafe” is written “kafé”."
+          ]
+        }
+      ]
     }
   ],
   "recall": [
