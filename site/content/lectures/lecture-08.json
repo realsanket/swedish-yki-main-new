@@ -421,34 +421,79 @@
           },
           "hunt": {
             "label": "Story-word hunt",
-            "title": "Find the past verbs and the ago word in the diary.",
-            "instructions": "Tap each past form and connect it to an event. Then find the red word that closes för … sedan. Three of the verbs are red on the page; träffade is not marked, but it is a key event verb too.",
-            "missHint": "Look for what started or happened (började, träffade, bokade, väntade) and the word after en månad.",
+            "title": "Find the red words in the diary",
+            "instructions": "The page marks key words in red. Tap each one; for a red phrase such as bokade bord or kom inte i tid, tap its first word. Say what each one does in Andreas's story.",
+            "missHint": "Look for the red words. For a red phrase, tap its first word.",
             "spots": [
+              {
+                "word": "hemligt",
+                "mark": "t",
+                "rule": "hemligt: secret. Ett liv is an ett-word, so hemlig takes -t (Lecture 5). En hemlighet = a secret."
+              },
               {
                 "word": "började",
                 "mark": "började",
-                "rule": "började: started; the next verb stays in the infinitive."
+                "rule": "började: started. The next verb stays in the infinitive: började skriva, började dejta."
               },
               {
-                "word": "träffade",
-                "mark": "träffade",
-                "rule": "träffade: met; a regular past form."
+                "word": "otroligt",
+                "mark": "otroligt",
+                "rule": "otroligt: incredibly, unbelievably. Here it makes vacker stronger: otroligt vacker."
               },
               {
-                "word": "bokade",
-                "mark": "bokade",
-                "rule": "bokade: booked; a regular past form."
-              },
-              {
-                "word": "väntade",
-                "mark": "väntade",
-                "rule": "väntade på: waited for; keep på with the verb."
+                "word": "för",
+                "mark": "för",
+                "rule": "för … sedan: ago. För comes before the time (för en månad sedan). Later on the page, berätta … för Nora means tell … to Nora."
               },
               {
                 "word": "sedan",
                 "mark": "sedan",
                 "rule": "för en månad sedan: a month ago. Ago needs both words: för before the time, sedan after it."
+              },
+              {
+                "word": "ingenting",
+                "mark": "ingenting",
+                "rule": "ingenting: nothing. Hon vet ingenting = she knows nothing."
+              },
+              {
+                "word": "Borde",
+                "mark": "Borde",
+                "rule": "Borde: should. A question that asks for advice; you practise it fully in Lecture 13."
+              },
+              {
+                "word": "berätta",
+                "mark": "berätta",
+                "rule": "berätta något för någon: tell something to someone. Berätta sanningen för Nora = tell Nora the truth."
+              },
+              {
+                "word": "Dessutom",
+                "mark": "Dessutom",
+                "rule": "Dessutom: besides, on top of that. It starts the sentence, so the verb comes next: Dessutom blir Lena …"
+              },
+              {
+                "word": "besviken",
+                "mark": "besviken",
+                "rule": "besviken på: disappointed in. Keep på with it."
+              },
+              {
+                "word": "bokade",
+                "mark": "bokade",
+                "rule": "bokade bord: booked a table. A regular past form: bokar → bokade."
+              },
+              {
+                "word": "väntade",
+                "mark": "väntade",
+                "rule": "väntade på: waited for. Keep på with the verb."
+              },
+              {
+                "word": "kom",
+                "mark": "kom",
+                "rule": "kom inte i tid: did not arrive on time. Kommer → kom; i tid = on time."
+              },
+              {
+                "word": "sen",
+                "mark": "sen",
+                "rule": "sen: late. Hon var 5 minuter sen = she was 5 minutes late."
               }
             ]
           }
@@ -634,24 +679,59 @@
           },
           "hunt": {
             "label": "Letter-phrase hunt",
-            "title": "Find the useful phrases marked or underlined on the page.",
-            "instructions": "These chunks tell the topic, refer to secrecy, and offer support.",
-            "missHint": "Look for the underlined groups.",
+            "title": "Find the red words and the underlined phrases",
+            "instructions": "The page prints useful words in red and underlines three whole phrases. Tap each red word. For an underlined phrase, tap its key word: handlar, bakom or finns.",
+            "missHint": "Look for the red words, or the key word of an underlined phrase (handlar, bakom, finns).",
             "spots": [
+              {
+                "word": "viktigt",
+                "mark": "t",
+                "rule": "viktigt: important. Något viktigt = something important; något takes the -t form."
+              },
               {
                 "word": "handlar",
                 "mark": "handlar",
-                "rule": "Use det handlar om + topic: it is about …"
+                "rule": "Det handlar om + topic: it is about …"
+              },
+              {
+                "word": "tillsammans",
+                "mark": "tillsammans",
+                "rule": "tillsammans: together (also ihop)."
+              },
+              {
+                "word": "ärlig",
+                "mark": "ärlig",
+                "rule": "ärlig: honest. Jag tycker inte att han är ärlig."
               },
               {
                 "word": "bakom",
                 "mark": "bakom",
-                "rule": "A fixed phrase meaning behind your back."
+                "rule": "bakom din rygg: behind your back, a fixed phrase."
+              },
+              {
+                "word": "arg",
+                "mark": "arg",
+                "rule": "arg på: angry with. Bli inte arg på Nora!"
+              },
+              {
+                "word": "snäll",
+                "mark": "snäll",
+                "rule": "snäll: kind. En snäll tjej."
+              },
+              {
+                "word": "visa",
+                "mark": "visa",
+                "rule": "visa: show. Visa dig sanningen = show you the truth."
               },
               {
                 "word": "finns",
                 "mark": "finns",
-                "rule": "A warm way to offer support."
+                "rule": "Jag finns här för dig: I am here for you, a warm way to offer support."
+              },
+              {
+                "word": "behöver",
+                "mark": "behöver",
+                "rule": "behöver: need(s). Om du behöver något = if you need anything."
               }
             ]
           }
@@ -748,9 +828,9 @@
           },
           "hunt": {
             "label": "Past-form hunt",
-            "title": "Find the past forms on the page",
-            "instructions": "Tap a past form and say its present–past pair.",
-            "missHint": "Look for a verb that describes a past action.",
+            "title": "Find the 18 past forms",
+            "instructions": "The red column shows the past. Tap each red form and say the whole pair aloud, for example är – var.",
+            "missHint": "The present forms are the dark ones on the left; tap a red past form.",
             "spots": [
               {
                 "word": "var",
@@ -758,14 +838,89 @@
                 "rule": "är → var"
               },
               {
+                "word": "ville",
+                "mark": "ville",
+                "rule": "vill → ville"
+              },
+              {
+                "word": "kunde",
+                "mark": "kunde",
+                "rule": "kan → kunde"
+              },
+              {
+                "word": "sa",
+                "mark": "sa",
+                "rule": "säger → sa (or sade)"
+              },
+              {
+                "word": "kom",
+                "mark": "kom",
+                "rule": "kommer → kom"
+              },
+              {
+                "word": "gjorde",
+                "mark": "gjorde",
+                "rule": "gör → gjorde"
+              },
+              {
                 "word": "gick",
                 "mark": "gick",
                 "rule": "går → gick"
               },
               {
+                "word": "fick",
+                "mark": "fick",
+                "rule": "får → fick"
+              },
+              {
+                "word": "gav",
+                "mark": "gav",
+                "rule": "ger → gav"
+              },
+              {
+                "word": "hade",
+                "mark": "hade",
+                "rule": "har → hade"
+              },
+              {
+                "word": "tog",
+                "mark": "tog",
+                "rule": "tar → tog"
+              },
+              {
+                "word": "såg",
+                "mark": "såg",
+                "rule": "ser → såg"
+              },
+              {
+                "word": "visste",
+                "mark": "visste",
+                "rule": "vet → visste"
+              },
+              {
+                "word": "skrev",
+                "mark": "skrev",
+                "rule": "skriver → skrev"
+              },
+              {
                 "word": "åt",
                 "mark": "åt",
                 "rule": "äter → åt"
+              },
+              {
+                "word": "drack",
+                "mark": "drack",
+                "rule": "dricker → drack"
+              },
+              {
+                "word": "sov",
+                "mark": "sov",
+                "rule": "sover → sov"
+              },
+              {
+                "word": "blev",
+                "mark": "blev",
+                "rule": "blir → blev"
               }
             ]
           }
@@ -1771,6 +1926,30 @@
         "en": "vappen, Finland's spring festival (30 April and 1 May)",
         "example": "På vappen åt vi munkar i Brunnsparken.",
         "translation": "At vappen we ate doughnuts in Brunnsparken.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-33",
+        "fi": "tittade på",
+        "en": "watched, looked at (såg = saw)",
+        "example": "Igår kväll tittade jag på en film.",
+        "translation": "Last night I watched a film.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-34",
+        "fi": "en smörgås (en macka)",
+        "en": "a sandwich (macka is the everyday word)",
+        "example": "Till frukost åt jag en smörgås och drack mjölk.",
+        "translation": "For breakfast I ate a sandwich and drank milk.",
+        "level": "A1"
+      },
+      {
+        "id": "sv-08-word-35",
+        "fi": "Tyskland, Frankrike, Grekland",
+        "en": "Germany, France, Greece",
+        "example": "Förra året reste jag till Grekland.",
+        "translation": "Last year I travelled to Greece.",
         "level": "A1"
       }
     ],
