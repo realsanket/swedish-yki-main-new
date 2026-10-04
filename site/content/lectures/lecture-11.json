@@ -798,7 +798,7 @@
           "item": 10,
           "title": "Definite plural of nouns",
           "posted": "13 May",
-          "instructions": "Skriv substantivet i bestämd form plural. Choose or write the plural with “the”: the plural ending gets -na (bilar → bilarna, veckor → veckorna, bananer → bananerna), plurals ending in -n get -a (möten → mötena), and ett-words with no plural ending get -en (hus → husen).",
+          "instructions": "Skriv substantivet i bestämd form plural. Choose or write the plural with “the”: plurals that end in -r get -na (bilar → bilarna, veckor → veckorna, bananer → bananerna), plurals ending in -n get -a (möten → mötena), and ett-words with no plural ending get -en (hus → husen).",
           "questions": [
             {
               "id": "q1",
@@ -1061,7 +1061,7 @@
       "body": [
         "Swedish puts “the” on the end: bilen (the car), bilarna (the cars). Hindi and Marathi have no “the”, so this ending is easy to forget.",
         "Start from the plural (Lecture 7) and look at its last letter: -r → add -na (bilarna), -n → add -a (mötena), no ending → add -en (barnen).",
-        "Exception: people words in -are drop the e and add -na: lärare → lärarna.",
+        "Exception: words in -are, such as lärare and hamburgare, drop the e and add -na: lärarna, hamburgarna.",
         "Use it for specific ones: Pojkarna som jag känner (the boys I know). For things in general, no ending: Många pojkar gillar bilar. Båda (both) takes it: båda bilarna.",
         "Typical mistake: -arna on every word. It is bananerna, because the plural is bananer."
       ],
@@ -1251,6 +1251,11 @@
           "fi": "Berätta allt för mig! Jag ska laga mat till oss.",
           "en": "Tell me everything! I will cook for us.",
           "note": "berätta för + person; till oss = for us"
+        },
+        {
+          "fi": "Lämna inte utan mig! Jag vill inte vänta på honom.",
+          "en": "Do not leave without me! I do not want to wait for him.",
+          "note": "Object forms after utan and på (teacher’s examples)."
         }
       ],
       "table": {
@@ -1398,6 +1403,11 @@
           "fi": "Jag fyller år den tionde maj.",
           "en": "My birthday is on the tenth of May.",
           "note": "fylla år = have a birthday (teacher’s example)"
+        },
+        {
+          "fi": "Jag föddes den åttonde oktober. Min födelsedag är den åttonde oktober.",
+          "en": "I was born on the eighth of October. My birthday is on the eighth of October.",
+          "note": "föddes = was born; three ways to give your birthday (teacher’s examples)"
         },
         {
           "fi": "Jag ordnar en fest den trettionde september.",
@@ -2099,7 +2109,8 @@
       "id": "sv-11-c1",
       "prompt": "Write in Swedish: “Can you wait for me?”",
       "answers": [
-        "Kan du vänta på mig?"
+        "Kan du vänta på mig?",
+        "Kan ni vänta på mig?"
       ],
       "hint": "vänta på + object form",
       "explanation": "Kan du vänta på mig?"

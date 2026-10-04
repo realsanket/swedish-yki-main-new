@@ -766,7 +766,7 @@
         "Be artigt: Skulle jag kunna få byta rum? Kan ni skicka någon? (Skulle jag kunna … is Lecture 24's conditional.)",
         "Var tydlig när du inte är nöjd: Tack, men det räcker inte. Jag förstår, men … Rummet motsvarar inte mina förväntningar (does not live up to my expectations).",
         "Ersättning (compensation): en återbetalning (a refund), en delvis återbetalning, en rabatt, en gratis natt. A number helps: Jag betalade 140 euro för natten.",
-        "The teacher's class line at 4567 (\"Jag vill inte på någon\") is garbled. Say instead: Jag vill inte vänta. Kan jag få byta rum?"
+        "One line in the class notes (\"Jag vill inte på någon\") is garbled. Say instead: Jag vill inte vänta. Kan jag få byta rum?"
       ],
       "examples": [
         {
@@ -1130,7 +1130,9 @@
         "Kan jag byta rum?",
         "Går det att byta rum?",
         "Skulle det gå att byta rum?",
-        "Får jag byta rum?"
+        "Får jag byta rum?",
+        "Skulle jag kunna få ett annat rum?",
+        "Kan jag få ett annat rum?"
       ],
       "hint": "Skulle jag kunna … is the politest.",
       "explanation": "Model: Skulle jag kunna få byta rum? The conditional (Lecture 24) softens the request. Note byta rum, without a or ett."
@@ -1253,7 +1255,7 @@
     },
     {
       "id": "sv-41-c7",
-      "prompt": "A friend lends you a book. Which sentence says that correctly?",
+      "prompt": "A friend lends you a book. Which sentence says that in standard Swedish?",
       "answers": [
         "Min vän lånade ut en bok till mig."
       ],
@@ -1263,7 +1265,7 @@
         "Min vän lånade en bok av mig."
       ],
       "hint": "Lend = låna ut … till.",
-      "explanation": "Låna ut något till någon = lend. Låna mig copies English lend me and is not standard Swedish; låna en bok av mig means your friend borrowed the book from you."
+      "explanation": "Låna ut något till någon = lend. Låna mig copies English lend me: you may hear it in casual speech, but it is not the standard form, so use låna ut … till in writing and in the test; låna en bok av mig means your friend borrowed the book from you."
     }
   ],
   "assignment": {
@@ -1738,7 +1740,7 @@
       "explanation": "Receptionen är öppen dygnet runt … ring nummer 9, and Är något fel på rummet? Kontakta receptionen genast. The email address is for comments after your stay."
     },
     "listening": {
-      "text": "Sommarradion i Sjöby, lokala nyheter fredagen den 24 juli. Klockan är tolv.\n\nStadsbiblioteket har längre öppettider resten av sommaren. Från och med måndag är huvudbiblioteket öppet till klockan åtta på kvällen, också på lördagar. Biblioteket lånar dessutom ut något nytt: badmintonracketar, frisbeer och två paddelbrädor. Paddelbrädorna kan lånas i tre dagar åt gången, och man måste vara över arton år. Bibliotekarien Maria Lind berättar att idén kom från en kund. – Många vill prova något nytt utan att köpa dyr utrustning, säger hon. Biblioteket påminner också alla som flyttar i sommar om att ändra sin adress på nätet eller vid disken. Varje vecka kommer påminnelser tillbaka, eftersom de har skickats till en gammal adress.\n\nHotell Hamnen är stängt till slutet av augusti. I tisdags upptäckte personalen en vattenläcka på tredje våningen. Ingen skadades, men ett trettiotal gäster fick flytta till andra hotell i stan. Enligt hotellets chef får alla som hade bokat ett rum pengarna tillbaka, eller ett presentkort som gäller i ett år.\n\nLördagens konsert i Stadsparken flyttas till söndag på grund av risk för åska. Konserten börjar som planerat klockan sju, och på scenen står tre lokala band och en känd artist från Åbo. Biljetterna gäller på söndag, och man behöver inte göra något. Den som inte kan komma på söndag får pengarna tillbaka, men man måste skicka ett mejl till arrangören senast på onsdag. Kom ihåg att ta med regnkläder, för parken har inget tak.\n\nOch till sist: på onsdag kväll är det gratis bastukväll vid Norrstranden. Bastun har damtur från fem till sju och herrtur från sju till nio.  Ta med egen handduk. Badkläder behövs, eftersom bastun ligger mitt på den allmänna stranden. Vattnet i havet är just nu nitton grader.\n\nDet var nyheterna. Nästa sändning kommer klockan tre.",
+      "text": "Sommarradion i Sjöby, lokala nyheter fredagen den 24 juli. Klockan är tolv.\n\nStadsbiblioteket har längre öppettider resten av sommaren. Från och med måndag är huvudbiblioteket öppet till klockan åtta på kvällen, också på lördagar. Biblioteket lånar dessutom ut något nytt: badmintonracketar, kubbspel och två paddelbrädor. Paddelbrädorna kan lånas i tre dagar åt gången, och man måste vara över arton år. Bibliotekarien Maria Lind berättar att idén kom från en kund. – Många vill prova något nytt utan att köpa dyr utrustning, säger hon. Biblioteket påminner också alla som flyttar i sommar om att ändra sin adress på nätet eller vid disken. Varje vecka kommer påminnelser tillbaka, eftersom de har skickats till en gammal adress.\n\nHotell Hamnen är stängt till slutet av augusti. I tisdags upptäckte personalen en vattenläcka på tredje våningen. Ingen skadades, men ett trettiotal gäster fick flytta till andra hotell i stan. Enligt hotellets chef får alla som hade bokat ett rum pengarna tillbaka, eller ett presentkort som gäller i ett år.\n\nLördagens konsert i Stadsparken flyttas till söndag på grund av risk för åska. Konserten börjar som planerat klockan sju, och på scenen står tre lokala band och en känd artist från Åbo. Biljetterna gäller på söndag, och man behöver inte göra något. Den som inte kan komma på söndag får pengarna tillbaka, men man måste skicka ett mejl till arrangören senast på onsdag. Kom ihåg att ta med regnkläder, för parken har inget tak.\n\nOch till sist: på onsdag kväll är det gratis bastukväll vid Norrstranden. Bastun har damtur från fem till sju och herrtur från sju till nio. Ta med egen handduk. Badkläder behövs, eftersom bastun ligger mitt på den allmänna stranden. Vattnet i havet är just nu nitton grader.\n\nDet var nyheterna. Nästa sändning kommer klockan tre.",
       "question": "You have a ticket for Saturday's concert but cannot come on Sunday. What must you do?",
       "options": [
         "Email the organiser by Wednesday to get your money back",

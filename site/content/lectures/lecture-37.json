@@ -395,8 +395,8 @@
             "why": "Urgent, but not life-threatening, and the health centre is closed: 116 117."
           },
           {
-            "fi": "Du har stukat foten på fredag kväll. Den är svullen.",
-            "en": "You have sprained your ankle on Friday evening. It is swollen.",
+            "fi": "Det är fredag kväll. Du har stukat foten, och den är svullen.",
+            "en": "It is Friday evening. You have sprained your ankle, and it is swollen.",
             "bucket": "jour",
             "why": "Jourhjälpen tells you whether you need jouren tonight."
           },
@@ -664,9 +664,9 @@
           "note": "Ta med = bring."
         },
         {
-          "fi": "Krya på dig, och hälsa din mamma!",
+          "fi": "Krya på dig, och hälsa till din mamma!",
           "en": "Get well soon, and say hello to your mum!",
-          "note": "Hälsa någon = send greetings."
+          "note": "Hälsa till någon = send greetings."
         },
         {
           "fi": "Tack, detsamma!",
@@ -763,7 +763,7 @@
         "Skratta = laugh; skratta åt något = laugh at something. Gråta – grät – gråtit = cry. Det får mig att skratta = It makes me laugh (få någon att + basic form).",
         "Rädd för, nervös för, spänd inför: Jag är rädd för ormar och för höjder. Jag blir nervös för prov. Jag är spänd inför operationen. Irritera: Det irriterar mig när bussen är sen.",
         "Humor (no dots) = sense of humour: Hon har bra humor. Humör (ö) = mood: Jag är på gott humör i dag. På dåligt humör = in a bad mood.",
-        "Skämt = a joke (ett skämt). Skoja = to joke: Jag skojar bara! In Finland-Swedish skoj also means fun: Det var skoj! (Note: the teacher's 'en skoj' is ett skoj.)",
+        "Skämt = a joke (ett skämt). Skoja = to joke: Jag skojar bara! Skoj also means fun: Det var skoj! (very common in Finland-Swedish). (Note: the teacher's 'en skoj' is ett skoj.)",
         "Lära känna = get to know (not meet): Jag lärde känna Elin på kursen. Träffa = meet."
       ],
       "examples": [
@@ -939,7 +939,10 @@
         "Som tur var hade jag på mig hjälm.",
         "Som tur var hade jag på mig en hjälm.",
         "Tur nog hade jag hjälm på mig.",
-        "Som tur var hade jag hjälm."
+        "Som tur var hade jag hjälm.",
+        "Som tur var hade jag hjälmen på mig.",
+        "Tur nog hade jag hjälm.",
+        "Turligt nog hade jag hjälm på mig."
       ],
       "hint": "Som tur var + verb + subject.",
       "explanation": "Model: Som tur var hade jag hjälm på mig. Som tur var takes first place, so the verb hade comes next (verb second)."
@@ -995,7 +998,10 @@
         "Hoppas du mår bättre snart!",
         "Jag hoppas att du snart mår bättre!",
         "Krya på er!",
-        "God bättring!"
+        "God bättring!",
+        "Hoppas att du mår bättre snart!",
+        "Jag hoppas att du mår bättre snart!",
+        "Hoppas du snart mår bättre!"
       ],
       "hint": "Two words + på + dig.",
       "explanation": "Model: Krya på dig! To two or more people: Krya på er! God bättring and Jag hoppas att du snart mår bättre are also right."
@@ -1023,7 +1029,9 @@
         "Jag vaknade kl 6.",
         "Jag vaknade vid sex.",
         "Jag vaknade klockan 6.",
-        "Jag vaknade kl. sex."
+        "Jag vaknade kl. sex.",
+        "Jag vaknade kl sex.",
+        "Jag vaknade klockan sex på morgonen."
       ],
       "hint": "By yourself: vakna, past form.",
       "explanation": "Model: Jag vaknade klockan sex. Nobody woke you, so vakna. Väckte needs an object: Larmet väckte mig."
@@ -1065,7 +1073,10 @@
         "Skulle du kunna köpa värktabletter till mig?",
         "Kan du köpa värktabletter till mig?",
         "Skulle du kunna köpa smärtstillande åt mig?",
-        "Kan du köpa smärtstillande åt mig?"
+        "Kan du köpa smärtstillande åt mig?",
+        "Kunde du köpa värktabletter åt mig?",
+        "Skulle du kunna köpa smärtstillande till mig?",
+        "Kan du köpa smärtstillande till mig?"
       ],
       "hint": "Skulle du kunna … åt mig?",
       "explanation": "Model: Skulle du kunna köpa värktabletter åt mig? Åt mig = on my behalf; till mig is also heard. Skulle du kunna is extra polite (the conditional)."
@@ -1092,7 +1103,10 @@
         "Hennes handled är tydligen bruten.",
         "Tydligen har hon brutit handleden.",
         "Hon har tydligen brutit handleden.",
-        "Tydligen är handleden bruten."
+        "Tydligen är handleden bruten.",
+        "Handleden är tydligen bruten.",
+        "Hon har tydligen en bruten handled.",
+        "Tydligen har hon en bruten handled."
       ],
       "hint": "Tydligen first, then the verb.",
       "explanation": "Model: Tydligen är hennes handled bruten. Tydligen = apparently (the teacher's note said clearly: that is tydligt). Tydligen first means verb second: är."
@@ -1495,7 +1509,7 @@
       }
     },
     "reading": {
-      "text": "VART SKA JAG RINGA? – Infoblad från hälsostationen\n\n112 – Nödcentralen. Ring när ett liv är i fara: någon andas inte, svarar inte eller blöder kraftigt, det har hänt en allvarlig olycka, det brinner eller ett brott pågår. Säg vad som har hänt och adressen. Lägg inte på förrän du får lov.\n\n116 117 – Jourhjälpen. Öppet dygnet runt. Ring när du behöver vård snabbt, men det inte är livsfarligt, och hälsostationen är stängd: till exempel hög feber, en svullen fot efter ett fall eller svår öronvärk. Sjukskötaren bedömer om du ska åka till jouren eller om du kan vänta.\n\nHälsostationen. Vardagar klockan 8–16. Boka tider, förnya recept och fråga om vaccinationer. Du kan också skicka ett meddelande via nätet.\n\nHar ett barn eller en vuxen fått i sig något giftigt? Ring Giftinformationscentralen.",
+      "text": "VILKET NUMMER SKA JAG RINGA? – Infoblad från hälsostationen\n\n112 – Nödcentralen. Ring när ett liv är i fara: någon andas inte, svarar inte eller blöder kraftigt, det har hänt en allvarlig olycka, det brinner eller ett brott pågår. Säg vad som har hänt och adressen. Lägg inte på förrän du får lov.\n\n116 117 – Jourhjälpen. Öppet dygnet runt. Ring när du behöver vård snabbt, men det inte är livsfarligt, och hälsostationen är stängd: till exempel hög feber, en svullen fot efter ett fall eller svår öronvärk. Sjukskötaren bedömer om du ska åka till jouren eller om du kan vänta.\n\nHälsostationen. Vardagar klockan 8–16. Boka tider, förnya recept och fråga om vaccinationer. Du kan också skicka ett meddelande via nätet.\n\nHar ett barn eller en vuxen fått i sig något giftigt? Ring Giftinformationscentralen.",
       "question": "On Sunday evening your foot is swollen after a fall. You can walk a little. Where do you call?",
       "options": [
         "116 117, Jourhjälpen",
@@ -1927,7 +1941,7 @@
             },
             {
               "id": "sv-37-react-memory",
-              "fi": "Sedan några månader glömmer du ofta var du har lagt nycklarna och vad du skulle köpa. Det oroar dig. Ring sjukskötaren på hälsostationen.",
+              "fi": "I några månader har du ofta glömt var du har lagt nycklarna och vad du skulle köpa. Det oroar dig. Ring sjukskötaren på hälsostationen.",
               "en": "For a few months you have often forgotten where you put your keys and what you were going to buy. It worries you. Call the nurse at the health centre.",
               "model": "Hej, jag ringer för att jag är lite orolig för mitt minne. Sedan våren glömmer jag ofta nycklar och tider. Jag sover också dåligt. Kan det hänga ihop? Behöver jag träffa en läkare?",
               "modelEn": "Hello, I'm calling because I'm a bit worried about my memory. Since the spring I often forget keys and appointments. I also sleep badly. Could it be connected? Do I need to see a doctor?"

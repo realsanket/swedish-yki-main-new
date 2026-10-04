@@ -36,7 +36,7 @@
     "opening": {
       "teacherNote": {
         "title": "Listen for a sick call and a new date",
-        "body": "Friday 17 July. Alex still has a fever. Early in the morning he calls Johanna, his team leader, and later Elin calls from Henrik's class. Listen for how long Alex will be away, who takes over his work, and the new date for the project meeting."
+        "body": "Friday 17 July. Alex still has a fever. Early in the morning he calls Johanna, his team leader, and in the evening Elin calls from Arlanda airport on her way home from Stockholm. Listen for how long Alex will be away, who takes over his work, and the new date for the project meeting."
       },
       "questionIntro": "Answer from the conversation: why Alex calls his team leader, and when the project meeting will be.",
       "dialogue": {
@@ -65,11 +65,11 @@
       "speakers": [
         {
           "name": "Alex",
-          "fi": "Jag har fortfarande feber, så jag stannar hemma."
+          "fi": "Jag är tyvärr fortfarande sjuk."
         },
         {
           "name": "Elin",
-          "fi": "Kom ihåg att säga till Henrik också!"
+          "fi": "Men du fick hjälp i alla fall."
         }
       ],
       "connector": "MEN",
@@ -104,7 +104,7 @@
     "routeSteps": {
       "recall": {
         "label": "Hear the conversation",
-        "description": "Listen to Alex's sick call and Elin's call from class."
+        "description": "Listen to Alex's sick call and Elin's call from the airport."
       },
       "teach": {
         "label": "Build it step by step",
@@ -598,7 +598,7 @@
         "Dates use ordinal numbers: den första, den andra, den tredje … den tjugofemte, den trettioförsta. Mötet är den tjugotredje juli. (Lecture 11.)",
         "I Finland skriver man 23.7.2026 eller bara 23.7. Säg den tjugotredje juli or, in Finland, also den tjugotredje i sjunde. On the phone, add the weekday: torsdag den tjugotredje.",
         "Hitta en tid: När har du tid? Vad sägs om …? (How about …?) Passar det på …? Det passar mig bra. Jag är upptagen hela dagen. Min kalender är fulltecknad.",
-        "Flytta ett möte: Kan vi flytta mötet till torsdag? Skjuta upp = move later. Tidigarelägga = move earlier. Ställa in = cancel. Flytta fram is unclear: in Finland it usually means later, but many people in Sweden hear earlier. The safe way: say the new day.",
+        "Flytta ett möte: Kan vi flytta mötet till torsdag? Skjuta upp = move later. Tidigarelägga = move earlier. Ställa in = cancel. Flytta fram is unclear: people use it both for later and for earlier (in the teacher's dialogue it means later). The safe way: say the new day.",
         "I juli har många semester, so meetings are hard to fit. Semester = holiday from work. A school or university term is en termin.",
         "I alla fall = anyway, at least. It ends a hard talk on a good note: Det var svårt, men nu har vi i alla fall en tid."
       ],
@@ -738,7 +738,7 @@
             {
               "fi": "Kan vi tidigarelägga mötet en timme?",
               "bucket": "earlier",
-              "why": "Tidigare = earlier, so tidigarelägga moves it forward in time."
+              "why": "Tidigare = earlier, so tidigarelägga moves it to an earlier time."
             },
             {
               "fi": "Mötet är inställt, eftersom chefen är sjuk.",
@@ -800,7 +800,7 @@
         {
           "fi": "Under föreläsningen gjorde jag många anteckningar.",
           "en": "During the lecture I took a lot of notes.",
-          "note": "Göra anteckningar, not ta."
+          "note": "Göra anteckningar = take notes."
         },
         {
           "fi": "Talaren var bra, men jag hängde inte med i slutet.",
@@ -971,8 +971,8 @@
           "note": "Jämfört med + a country."
         },
         {
-          "fi": "En toppidrottare som dopar sig fuskar mot alla andra.",
-          "en": "A top athlete who uses doping cheats against everyone else.",
+          "fi": "En toppidrottare som dopar sig fuskar och lurar alla andra.",
+          "en": "A top athlete who uses doping cheats and deceives everyone else.",
           "note": "Dopa sig, fuska."
         }
       ],
@@ -1128,7 +1128,10 @@
       "answers": [
         "Jag är sjukskriven till och med söndag.",
         "Jag är sjukskriven tom söndag.",
-        "Jag är sjukskriven till söndag."
+        "Jag är sjukskriven till söndag.",
+        "Jag är sjukskriven t.o.m. söndag.",
+        "Jag är sjukskriven fram till och med söndag.",
+        "Jag är sjukskriven till och med på söndag."
       ],
       "hint": "sjukskriven + till och med",
       "explanation": "Model: Jag är sjukskriven till och med söndag. Till och med (written t.o.m.) includes Sunday; till söndag is also heard."
@@ -1188,7 +1191,9 @@
         "Kom ihåg att skicka sjukintyget.",
         "Kom ihåg att skicka in sjukintyget!",
         "Glöm inte att skicka sjukintyget!",
-        "Glöm inte att skicka in sjukintyget!"
+        "Glöm inte att skicka in sjukintyget!",
+        "Kom ihåg att skicka in sjukintyget.",
+        "Glöm inte att skicka sjukintyget."
       ],
       "hint": "A task: komma ihåg att + infinitive.",
       "explanation": "Model: Kom ihåg att skicka sjukintyget! Glöm inte att … also works. Minns att … is wrong for a task."
@@ -1200,7 +1205,8 @@
         "den tjugotredje juli",
         "tjugotredje juli",
         "den tjugotredje i sjunde",
-        "den tjugotredje sjunde"
+        "den tjugotredje sjunde",
+        "tjugotredje i sjunde"
       ],
       "hint": "Ordinal + month.",
       "explanation": "Model: den tjugotredje juli. In Finland people also say den tjugotredje i sjunde."
@@ -1217,7 +1223,7 @@
         "Vi flyttar fram mötet."
       ],
       "hint": "One of these can be read two ways.",
-      "explanation": "Skjuta upp = later. Tidigarelägga = earlier. Flytta fram means later to most people in Finland but earlier to many in Sweden, so always add the new day."
+      "explanation": "Skjuta upp = later. Tidigarelägga = earlier. Flytta fram is used both for later and for earlier, so always add the new day."
     },
     {
       "id": "sv-38-c5",
@@ -1333,8 +1339,8 @@
     },
     {
       "speaker": "Elin",
-      "fi": "Hej Alex! Henrik undrar var du är. Lektionen har redan börjat.",
-      "en": "Hi Alex! Henrik is wondering where you are. The lesson has already started."
+      "fi": "Hej Alex! Jag väntar på flyget hem från Stockholm. Henrik messade mig och undrar var du är. Lektionen har redan börjat.",
+      "en": "Hi Alex! I'm waiting for my flight home from Stockholm. Henrik texted me and wonders where you are. The lesson has already started."
     },
     {
       "speaker": "Alex",
@@ -1343,8 +1349,8 @@
     },
     {
       "speaker": "Elin",
-      "fi": "Stackars dig! Jag säger till honom. I dag pratar vi förresten om vården i Finland.",
-      "en": "Poor you! I'll tell him. Today we're talking about healthcare in Finland, by the way."
+      "fi": "Stackars dig! Jag skriver till honom. Han skrev förresten att de pratar om vården i Finland i dag.",
+      "en": "Poor you! I'll write to him. By the way, he wrote that they are talking about healthcare in Finland today."
     },
     {
       "speaker": "Alex",
@@ -1578,15 +1584,15 @@
       "explanation": "Från dag 4: Du behöver ett sjukintyg från företagshälsovården eller en annan läkare. Days 1–3 need only his own report."
     },
     "listening": {
-      "text": "Det är fredag den 17 juli på eftermiddagen. Alex har sovit i tre timmar. När han vaknar har han tre nya röstmeddelanden.\n\nMeddelande ett, klockan 12.40: Hej Alex, det här är sjukskötare Maria Lindqvist på företagshälsovården. Vi pratade i morse. Ditt sjukintyg gäller till och med söndag den 19 juli, och du hittar det i appen. Skicka det vidare till din chef. Drick mycket och vila. Om febern stiger över 39 grader, eller om du får svårt att andas, ska du ringa oss genast. På kvällen och i helgen ringer du jouren. Om du fortfarande har feber på måndag morgon, boka en tid hos läkare. Vi svarar i telefon vardagar mellan klockan åtta och fyra. Krya på dig!\n\nMeddelande två, klockan 15.10: Hej, Tuomas här. Johanna sa att du är sjuk. Kundmötet gick bra, så du behöver inte oroa dig. Jag hittade bilderna i den gemensamma mappen, men den senaste versionen saknade siffrorna från juni. Jag använde den gamla versionen i stället, och kunden märkte ingenting. De vill ha ett nytt möte efter semestrarna, kanske den tjugofemte augusti. Kom ihåg att Johanna har semester från och med den tjugosjunde juli, så vi måste bestämma allt på torsdag. Ha en lugn helg!\n\nMeddelande tre, klockan 16.05: Hej Alex, Henrik här. Elin berättade att du har feber, så du är förlåten för i dag. Här kommer läxan till måndag den tjugonde. Förbered en Din åsikt om påståendet ”Den offentliga vården i Finland fungerar bra”. Tala i en och en halv minut, och jämför gärna med ditt hemland. Skriv också ett formellt mejl till en chef om att du är sjuk. Max åttio ord. Och kom ihåg: om du inte kan komma, skicka ett meddelande innan lektionen börjar. Vi ses på måndag!",
+      "text": "Det är fredag den 17 juli, sent på kvällen. Alex har sovit nästan hela dagen. Nu lyssnar han på tre röstmeddelanden.\n\nMeddelande ett, klockan 12.40: Hej Alex, det här är sjukskötare Maria Lindqvist på företagshälsovården. Vi pratade i morse. Ditt sjukintyg gäller till och med söndag den 19 juli, och du hittar det i appen. Skicka det vidare till din chef. Drick mycket och vila. Om febern stiger över 39 grader, eller om du får svårt att andas, ska du ringa oss genast. På kvällen och i helgen ringer du Jourhjälpen på 116 117. Om du fortfarande har feber på måndag morgon, boka en tid hos läkare. Vi svarar i telefon vardagar mellan klockan åtta och fyra. Krya på dig!\n\nMeddelande två, klockan 15.10: Hej, Tuomas här. Johanna sa att du är sjuk. Kundmötet gick bra, så du behöver inte oroa dig. Jag hittade bilderna i den gemensamma mappen, men den senaste versionen saknade siffrorna från juni. Jag använde den gamla versionen i stället, och kunden märkte ingenting. De vill ha ett nytt möte efter semestrarna, kanske den tjugofemte augusti. Kom ihåg att Johanna har semester från och med den tjugosjunde juli, så vi måste bestämma allt på torsdag. Ha en lugn helg!\n\nMeddelande tre, klockan 18.45: Hej Alex, Henrik här. Elin berättade att du har feber, så du är förlåten för i dag. Här kommer läxan till måndag den tjugonde. Förbered en Din åsikt om påståendet ”Den offentliga vården i Finland fungerar bra”. Tala i en och en halv minut, och jämför gärna med ditt hemland. Skriv också ett formellt mejl till en chef om att du är sjuk. Max åttio ord. Och kom ihåg: om du inte kan komma, skicka ett meddelande innan lektionen börjar. Vi ses på måndag!",
       "question": "What must Alex do if he still has a fever on Monday morning?",
       "options": [
         "Book an appointment with a doctor",
-        "Call the jour at once",
+        "Call Jourhjälpen at once",
         "Send the sick note to Tuomas"
       ],
       "answer": 0,
-      "explanation": "Maria says: Om du fortfarande har feber på måndag morgon, boka en tid hos läkare. The jour is for evenings and weekends, and the sick note goes to his boss, not Tuomas."
+      "explanation": "Maria says: Om du fortfarande har feber på måndag morgon, boka en tid hos läkare. Jourhjälpen (116 117) is for evenings and weekends, and the sick note goes to his boss, not Tuomas."
     },
     "speaking": {
       "prompt": "Din åsikt: ”Den offentliga vården i Finland fungerar bra.” Förbered dig i en minut och tala sedan i en och en halv minut. Säg påståendet med egna ord, ta ställning, ge två argument med ett exempel, jämför med ditt hemland och avsluta. (Give your opinion for 1 minute 30 seconds, about 60–90 words: your position, two arguments, a comparison and an ending.)",
@@ -2096,7 +2102,7 @@
                 "Vad skulle hända med unga idrottare om doping var tillåtet?",
                 "Vem ska bestämma reglerna?"
               ],
-              "model": "Vissa tycker att doping borde vara tillåtet, eftersom många ändå fuskar. Jag håller inte med. För det första är doping farligt för hälsan. Flera idrottare har blivit allvarligt sjuka. För det andra skulle unga idrottare känna att de också måste dopa sig för att vinna. Det är ett dåligt exempel. Dessutom är det orättvist mot dem som tränar hårt utan medel. Sammanfattningsvis tycker jag att doping ska vara förbjudet, och kontrollerna borde bli ännu bättre.",
+              "model": "Vissa tycker att doping borde vara tillåtet, eftersom många ändå fuskar. Jag håller inte med. För det första är doping farligt för hälsan. Flera idrottare har blivit allvarligt sjuka. För det andra skulle unga idrottare känna att de också måste dopa sig för att vinna. Det är ett dåligt exempel. Dessutom är det orättvist mot dem som tränar hårt utan dopning. Sammanfattningsvis tycker jag att doping ska vara förbjudet, och kontrollerna borde bli ännu bättre.",
               "modelEn": "Some people think doping should be allowed, because many cheat anyway. I don't agree. Firstly, doping is dangerous for health. Several athletes have become seriously ill. Secondly, young athletes would feel that they also have to dope to win. That is a bad example. Also, it is unfair to those who train hard without drugs. To sum up, I think doping should be forbidden, and the tests should become even better."
             },
             {
