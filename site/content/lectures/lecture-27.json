@@ -2305,6 +2305,562 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A recorded fault-line message, a call about a parcel, a fault-report guide and a forum thread about a noisy flat: the kinds of texts the YKI test uses, with questions you can check.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-27-listen-1",
+          "title": "Fastighetsservice är stängd",
+          "textType": "Inspelat telefonmeddelande",
+          "situation": {
+            "fi": "Kranen i ditt kök läcker. Du ringer till fastighetsservice på kvällen och hör ett inspelat meddelande.",
+            "en": "Your kitchen tap is leaking. You call property services in the evening and hear a recorded message."
+          },
+          "lines": [
+            {
+              "speaker": "Inspelad röst",
+              "voice": "Elin",
+              "fi": "Hej och välkommen till Fastighetsservice Kustbo. Vår kundtjänst är tyvärr stängd just nu.",
+              "en": "Hello and welcome to Kustbo Property Services. Unfortunately our customer service is closed right now."
+            },
+            {
+              "speaker": "Inspelad röst",
+              "voice": "Elin",
+              "fi": "Vi svarar i telefon från måndag till fredag mellan klockan åtta och sexton. På fredagar stänger vi redan klockan fjorton.",
+              "en": "We answer the phone Monday to Friday between eight and four. On Fridays we already close at two."
+            },
+            {
+              "speaker": "Inspelad röst",
+              "voice": "Elin",
+              "fi": "Vill du göra en vanlig felanmälan, till exempel om en kran som droppar eller en lampa i trappan som inte fungerar? Då kan du fylla i formuläret på vår hemsida. Det går dygnet runt.",
+              "en": "Do you want to make an ordinary fault report, for example about a dripping tap or a light in the stairwell that doesn't work? Then you can fill in the form on our website. That works around the clock."
+            },
+            {
+              "speaker": "Inspelad röst",
+              "voice": "Elin",
+              "fi": "Om felet är akut, alltså om du har en vattenskada, om ytterdörren inte går att låsa eller om värmen har slutat fungera helt, ska du omedelbart ringa jouren på nummer 09 876 5400.",
+              "en": "If the fault is urgent, that is, if you have water damage, if the front door can't be locked or if the heating has stopped working completely, call the emergency service at once on 09 876 5400."
+            },
+            {
+              "speaker": "Inspelad röst",
+              "voice": "Elin",
+              "fi": "Observera att jouren kostar. Om felet inte är akut får du själv betala besöket.",
+              "en": "Please note that the emergency service costs money. If the fault is not urgent, you pay for the visit yourself."
+            },
+            {
+              "speaker": "Inspelad röst",
+              "voice": "Elin",
+              "fi": "Vid strömavbrott ska du först kontrollera elcentralen i din lägenhet. Om grannarna inte heller har ström, kontakta elbolaget. Tack för att du ringde!",
+              "en": "If the power goes off, first check the fuse box in your flat. If the neighbours have no power either, contact the electricity company. Thank you for calling!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför kan du inte tala med någon just nu?",
+              "translation": "Why can't you talk to anyone right now?",
+              "options": [
+                "Kundtjänsten är stängd",
+                "Alla linjer är upptagna",
+                "Numret har ändrats"
+              ],
+              "answers": [
+                "Kundtjänsten är stängd"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur dags stänger kundtjänsten på fredagar?",
+              "translation": "What time does customer service close on Fridays?",
+              "answers": [
+                "14",
+                "kl 14",
+                "klockan 14",
+                "14.00",
+                "kl 14.00",
+                "klockan 14.00",
+                "fjorton",
+                "klockan fjorton",
+                "kl fjorton",
+                "två",
+                "klockan två",
+                "kl två"
+              ],
+              "hint": "Skriv en tid."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vilket problem ska man anmäla till jouren?",
+              "translation": "Which problem should you report to the emergency service?",
+              "options": [
+                "En kran som droppar lite",
+                "Vatten som rinner ner från taket",
+                "En trasig lampa i trappan"
+              ],
+              "answers": [
+                "Vatten som rinner ner från taket"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Det kan kosta pengar att ringa jouren om en lampa som inte lyser.",
+              "translation": "It can cost money to call the emergency service about a light that doesn't work.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad ska du kontrollera först om strömmen går?",
+              "translation": "What should you check first if the power goes off?",
+              "answers": [
+                "elcentralen",
+                "elcentralen i lägenheten",
+                "elcentralen i din lägenhet",
+                "elcentralen i min lägenhet",
+                "elcentralen i lägenheten först",
+                "lägenhetens elcentral",
+                "elcentral",
+                "en elcentral"
+              ],
+              "hint": "Ett ord räcker."
+            }
+          ],
+          "words": [
+            {
+              "fi": "kundtjänst",
+              "en": "customer service"
+            },
+            {
+              "fi": "dygnet runt",
+              "en": "around the clock, 24 hours a day"
+            },
+            {
+              "fi": "akut",
+              "en": "urgent"
+            },
+            {
+              "fi": "omedelbart",
+              "en": "immediately, at once"
+            },
+            {
+              "fi": "en elcentral",
+              "en": "a fuse box"
+            },
+            {
+              "fi": "en hemsida",
+              "en": "a website"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-27-listen-2",
+          "title": "Paketet kom inte fram",
+          "textType": "Telefonsamtal",
+          "situation": {
+            "fi": "En man ringer till en budfirma, eftersom hans paket inte har kommit.",
+            "en": "A man calls a delivery company because his parcel has not arrived."
+          },
+          "lines": [
+            {
+              "speaker": "Kundtjänsten",
+              "voice": "Maja",
+              "fi": "Snabbud, du talar med Sanna. Hur kan jag hjälpa dig?",
+              "en": "Snabbud, you're speaking to Sanna. How can I help you?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Hej, jag heter Ravi Menon. Jag väntar på ett paket, en ny dammsugare, men i dag fick jag ett sms om att paketet inte kunde levereras.",
+              "en": "Hi, my name is Ravi Menon. I'm waiting for a parcel, a new vacuum cleaner, but today I got a text saying the parcel could not be delivered."
+            },
+            {
+              "speaker": "Kundtjänsten",
+              "voice": "Maja",
+              "fi": "Okej, jag ska kolla. Har du spårningsnumret?",
+              "en": "Okay, I'll check. Do you have the tracking number?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Ja, det är JX 4471 0928.",
+              "en": "Yes, it's JX 4471 0928."
+            },
+            {
+              "speaker": "Kundtjänsten",
+              "voice": "Maja",
+              "fi": "Tack. Jo, här ser jag det. Chauffören var hos dig klockan tio i morse, men ingen öppnade.",
+              "en": "Thanks. Yes, here it is. The driver was at your place at ten this morning, but nobody opened the door."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Konstigt, jag var hemma hela förmiddagen. Men porttelefonen är trasig, den har inte fungerat sedan i måndags.",
+              "en": "Strange, I was at home all morning. But the door phone is broken; it hasn't worked since Monday."
+            },
+            {
+              "speaker": "Kundtjänsten",
+              "voice": "Maja",
+              "fi": "Aha, då förstår jag. Paketet får inte plats i brevinkastet, så det har skickats till ett utlämningsställe, K-Market på Tavastvägen.",
+              "en": "Ah, then I understand. The parcel doesn't fit through the letterbox, so it has been sent to a pick-up point, the K-Market on Tavastvägen."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Hur länge kan jag hämta det där?",
+              "en": "How long can I collect it there?"
+            },
+            {
+              "speaker": "Kundtjänsten",
+              "voice": "Maja",
+              "fi": "I fjorton dagar. Sedan skickas det tillbaka till avsändaren.",
+              "en": "For fourteen days. After that it is sent back to the sender."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Går det att få det hem i stället? Jag har ingen bil, och dammsugaren är ganska tung.",
+              "en": "Is it possible to have it delivered home instead? I don't have a car, and the vacuum cleaner is quite heavy."
+            },
+            {
+              "speaker": "Kundtjänsten",
+              "voice": "Maja",
+              "fi": "Det går, men en ny hemleverans kostar sju euro och nittio cent. Tidigast på torsdag, mellan åtta och tolv.",
+              "en": "That's possible, but a new home delivery costs seven euros ninety. Thursday at the earliest, between eight and twelve."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Torsdag passar tyvärr inte, då jobbar jag. Går det på fredag?",
+              "en": "Thursday doesn't suit me, unfortunately; I'm working then. Is Friday possible?"
+            },
+            {
+              "speaker": "Kundtjänsten",
+              "voice": "Maja",
+              "fi": "Fredag går bra, samma tid. Sätt gärna en lapp på porten med ditt telefonnummer, så att chauffören kan ringa dig.",
+              "en": "Friday is fine, same time. Please put a note on the front door with your phone number, so that the driver can call you."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Alex",
+              "fi": "Bra idé. Då tar vi fredag. Tack för hjälpen!",
+              "en": "Good idea. Friday it is, then. Thanks for your help!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer mannen?",
+              "translation": "Why is the man calling?",
+              "options": [
+                "Paketet kom inte fram",
+                "Dammsugaren är trasig",
+                "Han vill byta adress"
+              ],
+              "answers": [
+                "Paketet kom inte fram"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Varför öppnade ingen när chauffören kom?",
+              "translation": "Why did nobody open the door when the driver came?",
+              "options": [
+                "Mannen var på jobbet",
+                "Porttelefonen fungerar inte",
+                "Mannen sov länge"
+              ],
+              "answers": [
+                "Porttelefonen fungerar inte"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur många dagar kan paketet ligga på utlämningsstället?",
+              "translation": "How many days can the parcel stay at the pick-up point?",
+              "answers": [
+                "14",
+                "fjorton",
+                "14 dagar",
+                "fjorton dagar",
+                "i 14 dagar",
+                "i fjorton dagar",
+                "två veckor",
+                "2 veckor"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q4",
+              "prompt": "Mannen måste betala för den nya leveransen.",
+              "translation": "The man has to pay for the new delivery.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilken dag kommer paketet hem till mannen?",
+              "translation": "Which day will the parcel come to the man's home?",
+              "answers": [
+                "fredag",
+                "på fredag",
+                "fredagen",
+                "på fredagen",
+                "fredag morgon",
+                "på fredag morgon",
+                "fredag förmiddag",
+                "på fredag förmiddag"
+              ],
+              "hint": "En veckodag."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en dammsugare",
+              "en": "a vacuum cleaner"
+            },
+            {
+              "fi": "en porttelefon",
+              "en": "a door phone, an intercom"
+            },
+            {
+              "fi": "en avsändare",
+              "en": "a sender"
+            },
+            {
+              "fi": "tidigast",
+              "en": "at the earliest"
+            },
+            {
+              "fi": "en chaufför",
+              "en": "a driver"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-27-read-1",
+          "title": "Så gör du en felanmälan",
+          "textType": "Instruktioner på en hemsida",
+          "minutes": 6,
+          "text": "SÅ GÖR DU EN FELANMÄLAN\n\nHar något gått sönder i din lägenhet eller i husets gemensamma utrymmen? Gör en felanmälan så snart som möjligt. Ett litet fel kan bli ett stort och dyrt problem om det inte repareras i tid.\n\nVANLIGA FEL\nFyll i formuläret på vår hemsida eller ring kundtjänsten vardagar kl. 8–16. Beskriv felet så noggrant som möjligt: vad är fel, var finns det och sedan när? Vid behov kan du också skicka en bild. Skriv dessutom om fastighetsskötaren får gå in i lägenheten med huvudnyckel när du inte är hemma. Vi försöker åtgärda vanliga fel inom tre arbetsdagar.\n\nAKUTA FEL\nEn vattenläcka, ett stopp i avloppet eller en ytterdörr som inte går att låsa ska anmälas omedelbart. Ring jouren, som svarar dygnet runt: 09 876 5400.\n\nDET HÄR ANSVARAR DU SJÄLV FÖR\nSom hyresgäst byter du själv glödlampor och rengör golvbrunnen i badrummet. Hushållsmaskiner som du har köpt själv, till exempel en diskmaskin, reparerar vi inte.\n\nSKADEDJUR\nHar du sett möss eller kackerlackor? Kontakta kundtjänsten. Försök inte bli av med dem på egen hand med starka medel.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är det för text?",
+              "translation": "What kind of text is this?",
+              "options": [
+                "Instruktioner för hur man anmäler fel",
+                "En annons för en ledig lägenhet",
+                "Ett brev från en arg granne"
+              ],
+              "answers": [
+                "Instruktioner för hur man anmäler fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Fastighetsskötaren går alltid in i lägenheten utan att fråga.",
+              "translation": "The caretaker always goes into the flat without asking.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Inom hur många arbetsdagar försöker de åtgärda ett vanligt fel?",
+              "translation": "Within how many working days do they try to fix an ordinary fault?",
+              "answers": [
+                "3",
+                "tre",
+                "3 arbetsdagar",
+                "tre arbetsdagar",
+                "inom 3 arbetsdagar",
+                "inom tre arbetsdagar",
+                "3 dagar",
+                "tre dagar"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q4",
+              "prompt": "Diskmaskinen som du själv har köpt går sönder. Vad gäller?",
+              "translation": "The dishwasher you bought yourself breaks down. What applies?",
+              "options": [
+                "Husbolaget reparerar den inom tre dagar",
+                "Du ordnar själv reparationen",
+                "Du ringer jouren omedelbart"
+              ],
+              "answers": [
+                "Du ordnar själv reparationen"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad ska hyresgästen själv rengöra i badrummet?",
+              "translation": "What should the tenant clean in the bathroom themselves?",
+              "answers": [
+                "golvbrunnen",
+                "golvbrunnen i badrummet",
+                "rengöra golvbrunnen",
+                "en golvbrunn",
+                "golvbrunn",
+                "brunnen"
+              ],
+              "hint": "Ett ord från texten."
+            }
+          ],
+          "words": [
+            {
+              "fi": "gemensamma utrymmen",
+              "en": "shared spaces (stairwell, laundry room…)"
+            },
+            {
+              "fi": "noggrant",
+              "en": "carefully, in detail"
+            },
+            {
+              "fi": "vid behov",
+              "en": "if needed"
+            },
+            {
+              "fi": "åtgärda",
+              "en": "fix, deal with"
+            },
+            {
+              "fi": "en golvbrunn",
+              "en": "a floor drain"
+            },
+            {
+              "fi": "en huvudnyckel",
+              "en": "a master key"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-27-read-2",
+          "title": "Grannen klagar på oljud",
+          "textType": "Diskussionsforum",
+          "minutes": 6,
+          "text": "FORUM: BOENDE I HELSINGFORS\nTråd: Grannen klagar på oljud – vad ska jag göra?\n\nAnu_K skrev 12.6 kl. 21.40:\nHej! Jag flyttade in i en liten etta i Berghäll för två månader sedan. I går hittade jag en lapp på dörren från grannen under mig: ”Det låter som om någon flyttar möbler varje kväll efter kl. 22. Var snäll och ta hänsyn!” Jag blev ledsen, för jag har inte flyttat några möbler. Jag går bara omkring hemma, och golvet knarrar mycket. Ska jag svara på lappen eller strunta i den?\n\nMikael62 skrev 12.6 kl. 22.05:\nStrunta inte i den. Knacka på och prata med grannen i stället för att skriva en lapp. Säg att du förstår och berätta om golvet. De flesta blir lugnare när de ser vem man är.\n\nGrannfrid skrev 13.6 kl. 07.15:\nJag håller med Mikael. Köp också en stor matta och mjuka tofflor. I vårt hus säger ordningsreglerna att det ska vara tyst mellan kl. 22 och 7, men ingen kan förbjuda dig att gå i din egen lägenhet.\n\nAnu_K skrev 13.6 kl. 18.30:\nTack för tipsen! Jag knackade på i dag. Grannen är en äldre tant som visste att golvet är gammalt. Vi drack kaffe tillsammans, och nu har jag beställt en matta på nätet.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skriver Anu i forumet?",
+              "translation": "Why does Anu write in the forum?",
+              "options": [
+                "Grannen har klagat på ljud från hennes lägenhet",
+                "Hon vill klaga på en granne som spelar musik",
+                "Hon letar efter en ny lägenhet"
+              ],
+              "answers": [
+                "Grannen har klagat på ljud från hennes lägenhet"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Anu har flyttat möbler varje kväll.",
+              "translation": "Anu has moved furniture every evening.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad tycker Mikael62 att Anu ska göra?",
+              "translation": "What does Mikael62 think Anu should do?",
+              "options": [
+                "Svara med en egen lapp",
+                "Prata med grannen",
+                "Kontakta disponenten"
+              ],
+              "answers": [
+                "Prata med grannen"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Grannfrid ger råd om vad Anu kan köpa. Skriv en sak.",
+              "translation": "Grannfrid gives advice on what Anu can buy. Write one thing.",
+              "answers": [
+                "en matta",
+                "matta",
+                "en stor matta",
+                "stor matta",
+                "tofflor",
+                "mjuka tofflor",
+                "tofflorna",
+                "matta och tofflor",
+                "en matta och tofflor",
+                "en stor matta och mjuka tofflor"
+              ],
+              "hint": "Ett eller två ord."
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur slutar det?",
+              "translation": "How does it end?",
+              "options": [
+                "Anu och grannen får bra kontakt",
+                "Anu bestämmer sig för att flytta",
+                "Grannen skriver en ny lapp"
+              ],
+              "answers": [
+                "Anu och grannen får bra kontakt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en tråd",
+              "en": "a thread (in a forum)"
+            },
+            {
+              "fi": "ta hänsyn",
+              "en": "be considerate"
+            },
+            {
+              "fi": "strunta i",
+              "en": "ignore, not care about"
+            },
+            {
+              "fi": "en tant",
+              "en": "an older lady (everyday word)"
+            },
+            {
+              "fi": "förbjuda",
+              "en": "forbid, ban"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

@@ -870,6 +870,298 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A lost bag at a gym reception, and a forum post about a wallet lost on the tram: YKI-style listening and reading with min, sin, hans and hennes.",
+      "minutes": 10,
+      "action": "Read the questions first, listen twice, then read the text and check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-15-listen-1",
+          "title": "Väskan på gymmet",
+          "textType": "Samtal",
+          "situation": {
+            "fi": "En kvinna kommer till receptionen på ett gym.",
+            "en": "A woman comes to the reception desk at a gym."
+          },
+          "lines": [
+            {
+              "speaker": "Kunden",
+              "voice": "Maja",
+              "fi": "Hej! Jag tror att jag glömde min väska här i går kväll.",
+              "en": "Hi! I think I forgot my bag here last night."
+            },
+            {
+              "speaker": "Receptionisten",
+              "voice": "Henrik",
+              "fi": "Okej. Hur ser den ut?",
+              "en": "Okay. What does it look like?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Maja",
+              "fi": "Den är svart. Mitt gymkort och mina hörlurar ligger i den.",
+              "en": "It is black. My gym card and my headphones are in it."
+            },
+            {
+              "speaker": "Receptionisten",
+              "voice": "Henrik",
+              "fi": "Vi har två svarta väskor. En kille lämnade den här i morse. Han hittade den i omklädningsrummet.",
+              "en": "We have two black bags. A young man handed in this one this morning. He found it in the changing room."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Maja",
+              "fi": "Ja, jag bytte om där efter träningen.",
+              "en": "Yes, I got changed there after my workout."
+            },
+            {
+              "speaker": "Receptionisten",
+              "voice": "Henrik",
+              "fi": "Vad heter du? Det står nämligen ett namn på gymkortet.",
+              "en": "What is your name? You see, there is a name on the gym card."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Maja",
+              "fi": "Sanna Lindqvist.",
+              "en": "Sanna Lindqvist."
+            },
+            {
+              "speaker": "Receptionisten",
+              "voice": "Henrik",
+              "fi": "Hmm, det här kortet är inte ditt. Det står Peter Ek på det. Den här väskan är alltså hans.",
+              "en": "Hmm, this card is not yours. It says Peter Ek on it. So this bag is his."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Maja",
+              "fi": "Och den andra väskan?",
+              "en": "And the other bag?"
+            },
+            {
+              "speaker": "Receptionisten",
+              "voice": "Henrik",
+              "fi": "En tant hittade den vid kaffeautomaten. Titta i den. Är det dina saker?",
+              "en": "An older lady found it by the coffee machine. Look inside. Are these your things?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Maja",
+              "fi": "Ja! Där är mitt kort och mina hörlurar. Tack så mycket!",
+              "en": "Yes! There are my card and my headphones. Thank you so much!"
+            },
+            {
+              "speaker": "Receptionisten",
+              "voice": "Henrik",
+              "fi": "Varsågod. Får jag se ditt id-kort först?",
+              "en": "You're welcome. May I see your ID card first?"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför kommer kvinnan till receptionen?",
+              "translation": "Why does the woman come to the reception?",
+              "options": [
+                "Hon letar efter sin väska",
+                "Hon vill köpa ett gymkort",
+                "Hon har hittat en väska"
+              ],
+              "answers": [
+                "Hon letar efter sin väska"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "När glömde hon väskan?",
+              "translation": "When did she forget the bag?",
+              "answers": [
+                "i går kväll",
+                "igår kväll",
+                "i går",
+                "igår",
+                "i går på kvällen",
+                "igår på kvällen"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q3",
+              "prompt": "Väskan från omklädningsrummet är hennes.",
+              "translation": "The bag from the changing room is hers.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Var hittade tanten väskan?",
+              "translation": "Where did the older lady find the bag?",
+              "options": [
+                "Vid kaffeautomaten",
+                "I omklädningsrummet",
+                "Vid receptionen"
+              ],
+              "answers": [
+                "Vid kaffeautomaten"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur vet receptionisten att den första väskan inte är kvinnans?",
+              "translation": "How does the receptionist know the first bag is not the woman's?",
+              "options": [
+                "Det står ett annat namn på kortet",
+                "Väskan har en annan färg",
+                "Killen säger att väskan är hans"
+              ],
+              "answers": [
+                "Det står ett annat namn på kortet"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en kille",
+              "en": "a guy, a young man (everyday word)"
+            },
+            {
+              "fi": "en tant",
+              "en": "an older lady (everyday word)"
+            },
+            {
+              "fi": "omklädningsrummet",
+              "en": "the changing room"
+            },
+            {
+              "fi": "byta om",
+              "en": "to get changed"
+            },
+            {
+              "fi": "nämligen",
+              "en": "you see, namely (gives the reason)"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-15-read-1",
+          "title": "Tappade min plånbok på spårvagnen",
+          "textType": "Inlägg på ett forum",
+          "minutes": 5,
+          "text": "FORUM: VARDAG I HELSINGFORS\n\nÄmne: Tappade min plånbok på spårvagnen – vad gör man nu?\n\nHej alla! I går tappade jag min plånbok på spårvagn 4. Mitt bankkort, mitt utländska körkort och mitt HSL-kort låg i den. Jag spärrade bankkortet direkt, men vad ska jag göra nu? Min sambo säger att man knappast får tillbaka en plånbok i en stor stad. Stämmer det?\n/Ravi_85\n\nSvar från Lotta_H:\nGe inte upp! Folk lämnar ofta in saker som de hittar. Saker som man glömmer på spårvagnen eller i metron hamnar ofta på en hittegodsbyrå. Ring och fråga, eller fyll i en blankett på nätet. Beskriv din plånbok så noga som möjligt: färg, märke och vad som ligger i den. Min bror tappade sin telefon på bussen förra året, och han fick tillbaka den efter två dagar!",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad vill Ravi veta?",
+              "translation": "What does Ravi want to know?",
+              "options": [
+                "Hur han kan få tillbaka sin plånbok",
+                "Hur man spärrar ett bankkort",
+                "Var man kan köpa ett HSL-kort"
+              ],
+              "answers": [
+                "Hur han kan få tillbaka sin plånbok"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Ravis sambo tror att det är lätt att få tillbaka plånboken.",
+              "translation": "Ravi's partner thinks it is easy to get the wallet back.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Med vilken spårvagn åkte Ravi?",
+              "translation": "Which tram did Ravi take?",
+              "answers": [
+                "4",
+                "fyra",
+                "spårvagn 4",
+                "spårvagn fyra",
+                "nummer 4",
+                "nummer fyra",
+                "fyran",
+                "fyrans spårvagn",
+                "4an"
+              ],
+              "hint": "Skriv ett nummer."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska Ravi beskriva? Skriv en sak.",
+              "translation": "What should Ravi describe? Write one thing.",
+              "answers": [
+                "färg",
+                "färgen",
+                "märke",
+                "märket",
+                "vad som ligger i den",
+                "plånbokens färg",
+                "plånbokens märke",
+                "färg och märke",
+                "färgen och märket"
+              ],
+              "hint": "Ett ord räcker."
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför berättar Lotta om sin bror?",
+              "translation": "Why does Lotta tell about her brother?",
+              "options": [
+                "För att visa att man kan få tillbaka saker",
+                "För att hennes bror arbetar på bussen",
+                "För att hennes bror också tappade en plånbok"
+              ],
+              "answers": [
+                "För att visa att man kan få tillbaka saker"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "tappa",
+              "en": "to lose, to drop"
+            },
+            {
+              "fi": "utländsk",
+              "en": "foreign"
+            },
+            {
+              "fi": "spärra",
+              "en": "to block (a card)"
+            },
+            {
+              "fi": "knappast",
+              "en": "hardly"
+            },
+            {
+              "fi": "en hittegodsbyrå",
+              "en": "a lost property office (Finland-Swedish)"
+            },
+            {
+              "fi": "noga",
+              "en": "carefully, exactly"
+            }
+          ]
+        }
+      ]
     }
   ],
   "recall": [

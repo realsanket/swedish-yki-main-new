@@ -1024,6 +1024,286 @@
           }
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A short radio interview with a man who moved to Finland, and an advert looking for volunteer homework helpers: YKI-style listening and reading with har + supine and time words.",
+      "minutes": 10,
+      "action": "Read the questions first, listen twice, then read the text and check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-17-listen-1",
+          "title": "Ny i Finland",
+          "textType": "Intervju (radio)",
+          "situation": {
+            "fi": "Du hör en kort intervju i ett radioprogram om människor som har flyttat till Finland.",
+            "en": "You hear a short interview in a radio programme about people who have moved to Finland."
+          },
+          "lines": [
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Du heter Diego och kommer från Chile. Hur länge har du bott i Finland?",
+              "en": "Your name is Diego and you come from Chile. How long have you lived in Finland?"
+            },
+            {
+              "speaker": "Diego",
+              "voice": "Alex",
+              "fi": "Jag har bott här i sju år. Jag kom hit som utbytesstudent i Vasa.",
+              "en": "I have lived here for seven years. I came here as an exchange student in Vaasa."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Vilket var ditt första intryck?",
+              "en": "What was your first impression?"
+            },
+            {
+              "speaker": "Diego",
+              "voice": "Alex",
+              "fi": "Det var mörkt och tyst! Jag kom i november. Men folk var hjälpsamma.",
+              "en": "It was dark and quiet! I came in November. But people were helpful."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Vad jobbar du med nu?",
+              "en": "What do you do for work now?"
+            },
+            {
+              "speaker": "Diego",
+              "voice": "Alex",
+              "fi": "Jag är ledare på en ungdomsgård i Esbo. Jag har jobbat där sedan 2023.",
+              "en": "I am a leader at a youth club in Espoo. I have worked there since 2023."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Har du prövat vinterbad någon gång?",
+              "en": "Have you ever tried winter swimming?"
+            },
+            {
+              "speaker": "Diego",
+              "voice": "Alex",
+              "fi": "Ja, många gånger! Första gången var för fem år sedan. Kallt, men fantastiskt.",
+              "en": "Yes, many times! The first time was five years ago. Cold, but fantastic."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Tänker du flytta tillbaka till Chile?",
+              "en": "Are you planning to move back to Chile?"
+            },
+            {
+              "speaker": "Diego",
+              "voice": "Alex",
+              "fi": "Kanske en dag. Jag saknar min familj, men just nu trivs jag här.",
+              "en": "Maybe one day. I miss my family, but right now I like it here."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Hur länge har Diego bott i Finland?",
+              "translation": "How long has Diego lived in Finland?",
+              "answers": [
+                "7 år",
+                "sju år",
+                "i sju år",
+                "i 7 år",
+                "sju",
+                "7"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q2",
+              "prompt": "Varför kom Diego till Finland?",
+              "translation": "Why did Diego come to Finland?",
+              "options": [
+                "Han skulle studera",
+                "Han fick jobb i Esbo",
+                "Han ville prova vinterbad"
+              ],
+              "answers": [
+                "Han skulle studera"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Diego har aldrig prövat vinterbad.",
+              "translation": "Diego has never tried winter swimming.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Sedan vilket år har han jobbat på ungdomsgården?",
+              "translation": "Since which year has he worked at the youth club?",
+              "answers": [
+                "2023",
+                "sedan 2023",
+                "år 2023",
+                "tjugohundratjugotre",
+                "tvåtusentjugotre"
+              ],
+              "hint": "Skriv ett årtal."
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur känner sig Diego i Finland nu?",
+              "translation": "How does Diego feel in Finland now?",
+              "options": [
+                "Han trivs men saknar sin familj",
+                "Han vill flytta hem nästa månad",
+                "Han tycker att folk är ohjälpsamma"
+              ],
+              "answers": [
+                "Han trivs men saknar sin familj"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en utbytesstudent",
+              "en": "an exchange student"
+            },
+            {
+              "fi": "ett intryck",
+              "en": "an impression"
+            },
+            {
+              "fi": "en ledare",
+              "en": "a leader"
+            },
+            {
+              "fi": "en ungdomsgård",
+              "en": "a youth club, youth centre"
+            },
+            {
+              "fi": "pröva",
+              "en": "to try"
+            },
+            {
+              "fi": "sakna",
+              "en": "to miss"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-17-read-1",
+          "title": "Vi söker läxhjälpare",
+          "textType": "Annons",
+          "minutes": 5,
+          "text": "SÖKES: FRIVILLIGA LÄXHJÄLPARE\n\nBiblioteket i Hagnäs ordnar läxhjälp för elever i årskurs 5–9. Många av eleverna har bott i Finland bara ett par år, och de behöver stöd i svenska och matematik.\n\nVi söker dig som är tålmodig, pålitlig och tycker om att arbeta med unga. Du behöver inte vara lärare. Har du hjälpt någon med läxor förut? Det är ett plus, men inget krav.\n\nLäxhjälpen är på tisdagar och torsdagar kl. 15–17. Vi hoppas att du kan komma minst en gång i veckan under hela höstterminen.\n\nVi har ordnat läxhjälp sedan 2021, och totalt har över 300 elever varit med. Många av våra frivilliga säger att det är det bästa de har gjort på länge.\n\nÄr du intresserad? Skicka ett kort mejl till laxhjalp@exempel.fi senast den 15 augusti och berätta lite om dig själv.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är det här för text?",
+              "translation": "What kind of text is this?",
+              "options": [
+                "En annons som söker frivilliga",
+                "En annons för en svenskkurs",
+                "Ett mejl från en lärare"
+              ],
+              "answers": [
+                "En annons som söker frivilliga"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Man måste vara lärare för att bli läxhjälpare.",
+              "translation": "You must be a teacher to become a homework helper.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vilka dagar är läxhjälpen?",
+              "translation": "On which days is the homework help?",
+              "answers": [
+                "tisdagar och torsdagar",
+                "tisdag och torsdag",
+                "torsdagar och tisdagar",
+                "torsdag och tisdag",
+                "på tisdagar och torsdagar",
+                "tisdagar torsdagar"
+              ],
+              "hint": "Skriv två dagar."
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur många elever har varit med totalt?",
+              "translation": "How many pupils have taken part in total?",
+              "answers": [
+                "över 300",
+                "mer än 300",
+                "fler än 300",
+                "300",
+                "över trehundra",
+                "mer än trehundra",
+                "fler än trehundra",
+                "trehundra"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q5",
+              "prompt": "Vem passar bäst som läxhjälpare?",
+              "translation": "Who is the best fit as a homework helper?",
+              "options": [
+                "En lugn person som kan komma varje tisdag i höst",
+                "En lärare som kan komma två gånger i juni",
+                "En student som bara har tid på lördagar"
+              ],
+              "answers": [
+                "En lugn person som kan komma varje tisdag i höst"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "frivillig",
+              "en": "volunteer, voluntary"
+            },
+            {
+              "fi": "läxhjälp",
+              "en": "homework help"
+            },
+            {
+              "fi": "stöd",
+              "en": "support"
+            },
+            {
+              "fi": "ett krav",
+              "en": "a requirement"
+            },
+            {
+              "fi": "totalt",
+              "en": "in total"
+            },
+            {
+              "fi": "senast",
+              "en": "at the latest"
+            }
+          ]
+        }
+      ]
     }
   ],
   "sections": [

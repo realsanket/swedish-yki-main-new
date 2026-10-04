@@ -794,6 +794,285 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A phone call to a health station about sleep, and the rules of a swimming hall: YKI-style listening and reading with must, may and should.",
+      "minutes": 10,
+      "action": "Read the questions first, listen twice, then read the text and check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-13-listen-1",
+          "title": "Ett samtal till hälsostationen",
+          "textType": "Samtal i telefon",
+          "situation": {
+            "fi": "En man ringer till hälsostationen. Han har problem med sömnen.",
+            "en": "A man calls the health station. He has problems with his sleep."
+          },
+          "lines": [
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "Hälsostationen i Malm, sjukskötaren Anna. Hur kan jag hjälpa dig?",
+              "en": "Malm health station, nurse Anna speaking. How can I help you?"
+            },
+            {
+              "speaker": "Patienten",
+              "voice": "Alex",
+              "fi": "Hej. Jag sover ständigt dåligt. Jag somnar sent och vaknar mitt i natten.",
+              "en": "Hi. I keep sleeping badly. I fall asleep late and wake up in the middle of the night."
+            },
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "När började det?",
+              "en": "When did it start?"
+            },
+            {
+              "speaker": "Patienten",
+              "voice": "Alex",
+              "fi": "I mars, när jag fick ett nytt jobb. Jag är ganska stressad.",
+              "en": "In March, when I got a new job. I am quite stressed."
+            },
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "Dricker du kaffe på kvällen?",
+              "en": "Do you drink coffee in the evening?"
+            },
+            {
+              "speaker": "Patienten",
+              "voice": "Alex",
+              "fi": "Ja, ibland efter klockan sju. Och jag brukar titta på telefonen i sängen.",
+              "en": "Yes, sometimes after seven o'clock. And I usually look at my phone in bed."
+            },
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "Det är antagligen stressen och kaffet. Du borde inte dricka kaffe efter lunch, och du borde lägga bort telefonen en timme innan du lägger dig.",
+              "en": "It is probably the stress and the coffee. You should not drink coffee after lunch, and you should put your phone away an hour before you go to bed."
+            },
+            {
+              "speaker": "Patienten",
+              "voice": "Alex",
+              "fi": "Behöver jag träffa en läkare?",
+              "en": "Do I need to see a doctor?"
+            },
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "Nej, inte nu. Pröva de här råden i två veckor. Om det inte blir bättre, ring igen. Då bokar vi en tid.",
+              "en": "No, not now. Try this advice for two weeks. If it does not get better, call again. Then we will book an appointment."
+            },
+            {
+              "speaker": "Sjukskötaren",
+              "voice": "Elin",
+              "fi": "Förutom det kan du läsa om sömn på vår hemsida.",
+              "en": "Apart from that, you can read about sleep on our website."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer mannen?",
+              "translation": "Why is the man calling?",
+              "options": [
+                "Han sover dåligt",
+                "Han har ont i huvudet",
+                "Han vill byta jobb"
+              ],
+              "answers": [
+                "Han sover dåligt"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "När började problemet?",
+              "translation": "When did the problem start?",
+              "answers": [
+                "i mars",
+                "mars",
+                "i mars när han fick ett nytt jobb",
+                "när han fick ett nytt jobb",
+                "när han fick nytt jobb",
+                "när han fick ett jobb"
+              ],
+              "hint": "Skriv en månad eller en kort mening."
+            },
+            {
+              "id": "q3",
+              "prompt": "Mannen dricker ibland kaffe på kvällen.",
+              "translation": "The man sometimes drinks coffee in the evening.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska mannen göra om råden inte hjälper?",
+              "translation": "What should the man do if the advice does not help?",
+              "options": [
+                "Ringa hälsostationen igen",
+                "Gå direkt till en läkare",
+                "Dricka mer vatten"
+              ],
+              "answers": [
+                "Ringa hälsostationen igen"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Sjukskötaren tror att mannen är allvarligt sjuk.",
+              "translation": "The nurse thinks the man is seriously ill.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ständigt",
+              "en": "all the time, constantly"
+            },
+            {
+              "fi": "antagligen",
+              "en": "probably"
+            },
+            {
+              "fi": "pröva",
+              "en": "to try"
+            },
+            {
+              "fi": "förutom",
+              "en": "apart from, besides"
+            },
+            {
+              "fi": "en hemsida",
+              "en": "a website"
+            },
+            {
+              "fi": "en sjukskötare",
+              "en": "a nurse (Finland-Swedish)"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-13-read-1",
+          "title": "Regler i simhallen",
+          "textType": "Anslag",
+          "minutes": 4,
+          "text": "SIMHALLEN I ÖSTRA CENTRUM – REGLER FÖR BESÖKARE\n\nAlla måste duscha utan baddräkt innan de går in i bassängen.\n\nDu får inte ta med glasflaskor till bassängen. Du får inte heller fotografera eller filma i duschrummen.\n\nBarn under tio år får inte simma utan en vuxen. Den vuxna måste vara i vattnet eller vid bassängen hela tiden.\n\nDu behöver inte ta med en egen handduk. Du kan hyra en i kassan för 3 euro.\n\nBastun är öppen till klockan 20.30. Du borde dricka vatten efter bastun.\n\nHar du frågor? Fråga personalen. Vi hjälper gärna till!",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar texten om?",
+              "translation": "What is the text about?",
+              "options": [
+                "Regler i en simhall",
+                "Öppettider för bastun",
+                "Priser för simkurser"
+              ],
+              "answers": [
+                "Regler i en simhall"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Ett barn på åtta år får simma ensamt.",
+              "translation": "An eight-year-old child may swim alone.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad kostar det att hyra en handduk?",
+              "translation": "How much does it cost to hire a towel?",
+              "answers": [
+                "3 euro",
+                "tre euro",
+                "3",
+                "tre",
+                "3 €",
+                "3€",
+                "3e"
+              ],
+              "hint": "Skriv ett pris."
+            },
+            {
+              "id": "q4",
+              "prompt": "Var får man inte filma?",
+              "translation": "Where are you not allowed to film?",
+              "answers": [
+                "i duschrummen",
+                "duschrummen",
+                "i duschrummet",
+                "duschrummet",
+                "i duschrum",
+                "duschrum",
+                "i duschen",
+                "duschen"
+              ],
+              "hint": "Skriv ett ställe."
+            },
+            {
+              "id": "q5",
+              "prompt": "Klockan 21 kan du fortfarande gå i bastun.",
+              "translation": "At 9 pm you can still go to the sauna.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en simhall",
+              "en": "a swimming hall"
+            },
+            {
+              "fi": "en bassäng",
+              "en": "a pool"
+            },
+            {
+              "fi": "en baddräkt",
+              "en": "a swimsuit"
+            },
+            {
+              "fi": "en vuxen",
+              "en": "an adult"
+            },
+            {
+              "fi": "hyra",
+              "en": "to hire, to rent"
+            },
+            {
+              "fi": "personalen",
+              "en": "the staff"
+            }
+          ]
+        }
+      ]
     }
   ],
   "recall": [

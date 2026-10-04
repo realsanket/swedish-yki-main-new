@@ -931,6 +931,270 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A radio weather forecast for the weekend and a reader's letter about school start times: YKI-style listening and reading with kommer att, ska, tycker and tror.",
+      "minutes": 10,
+      "action": "Read the questions first, listen twice, then read the text and check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-16-listen-1",
+          "title": "Vädret i helgen",
+          "textType": "Väderprognos (radio)",
+          "situation": {
+            "fi": "Det är fredag morgon. Du lyssnar på väderprognosen på radion.",
+            "en": "It is Friday morning. You are listening to the weather forecast on the radio."
+          },
+          "lines": [
+            {
+              "speaker": "Meteorologen",
+              "voice": "Henrik",
+              "fi": "God morgon! Här kommer vädret för helgen.",
+              "en": "Good morning! Here is the weather for the weekend."
+            },
+            {
+              "speaker": "Meteorologen",
+              "voice": "Henrik",
+              "fi": "I dag, fredag, kommer det att vara soligt och relativt varmt i södra Finland. I Helsingfors blir det upp till tjugotvå grader.",
+              "en": "Today, Friday, it will be sunny and fairly warm in southern Finland. In Helsinki it will be up to twenty-two degrees."
+            },
+            {
+              "speaker": "Meteorologen",
+              "voice": "Henrik",
+              "fi": "I kväll kommer det att blåsa mycket vid kusten, och natten blir kall.",
+              "en": "This evening it will be very windy on the coast, and the night will be cold."
+            },
+            {
+              "speaker": "Meteorologen",
+              "voice": "Henrik",
+              "fi": "I morgon, lördag, kommer det att regna i nästan hela landet. Regnet börjar i Åbo på morgonen och kommer till Helsingfors vid lunchtid.",
+              "en": "Tomorrow, Saturday, it will rain in almost the whole country. The rain starts in Turku in the morning and reaches Helsinki around lunchtime."
+            },
+            {
+              "speaker": "Meteorologen",
+              "voice": "Henrik",
+              "fi": "Ska du ut med båten på lördag? Då borde du vänta till söndag.",
+              "en": "Are you going out in your boat on Saturday? Then you should wait until Sunday."
+            },
+            {
+              "speaker": "Meteorologen",
+              "voice": "Henrik",
+              "fi": "På söndag blir det torrt och lugnt igen, men molnigt. Temperaturen stannar runt femton grader.",
+              "en": "On Sunday it will be dry and calm again, but cloudy. The temperature will stay around fifteen degrees."
+            },
+            {
+              "speaker": "Meteorologen",
+              "voice": "Henrik",
+              "fi": "I norra Finland blir det kallare hela helgen, bara åtta grader.",
+              "en": "In northern Finland it will be colder all weekend, only eight degrees."
+            },
+            {
+              "speaker": "Meteorologen",
+              "voice": "Henrik",
+              "fi": "Nästa väderprognos kommer klockan tolv. Ha en trevlig helg!",
+              "en": "The next forecast is at twelve. Have a nice weekend!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Det kommer att regna i Helsingfors på fredag.",
+              "translation": "It will rain in Helsinki on Friday.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur varmt blir det i Helsingfors i dag?",
+              "translation": "How warm will it be in Helsinki today?",
+              "answers": [
+                "22 grader",
+                "tjugotvå grader",
+                "22",
+                "tjugotvå",
+                "upp till 22 grader",
+                "upp till tjugotvå grader",
+                "22°",
+                "22 °"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q3",
+              "prompt": "När kommer regnet till Helsingfors?",
+              "translation": "When does the rain reach Helsinki?",
+              "options": [
+                "På lördag vid lunchtid",
+                "På lördag morgon",
+                "På söndag"
+              ],
+              "answers": [
+                "På lördag vid lunchtid"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilken dag passar bäst för en båttur?",
+              "translation": "Which day is best for a boat trip?",
+              "options": [
+                "Söndag",
+                "Lördag",
+                "Fredag kväll"
+              ],
+              "answers": [
+                "Söndag"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur varmt blir det i norra Finland?",
+              "translation": "How warm will it be in northern Finland?",
+              "answers": [
+                "8 grader",
+                "åtta grader",
+                "8",
+                "åtta",
+                "bara åtta grader",
+                "bara 8 grader",
+                "8°"
+              ],
+              "hint": "Skriv ett tal."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en väderprognos",
+              "en": "a weather forecast"
+            },
+            {
+              "fi": "relativt",
+              "en": "fairly, relatively"
+            },
+            {
+              "fi": "blåsa",
+              "en": "to be windy, to blow"
+            },
+            {
+              "fi": "kusten",
+              "en": "the coast"
+            },
+            {
+              "fi": "torr",
+              "en": "dry"
+            },
+            {
+              "fi": "molnig",
+              "en": "cloudy"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-16-read-1",
+          "title": "Låt skoldagen börja senare!",
+          "textType": "Insändare",
+          "minutes": 5,
+          "text": "INSÄNDARE: LÅT SKOLDAGEN BÖRJA SENARE!\n\nJag är mamma till två tonåringar i Helsingfors. Varje morgon är samma utmaning: barnen är trötta och vill inte stiga upp. Skolan börjar klockan åtta, men de somnar sällan före midnatt.\n\nJag tror inte att de är lata. Forskare säger att tonåringar har en annan biologisk klocka än vuxna. Brist på sömn gör det svårt att koncentrera sig och lära sig nya saker.\n\nFrågan är aktuell nu, eftersom staden ska diskutera skolornas tider i maj. Jag tycker att skolorna borde börja klockan nio. Givetvis kommer det att bli svårare för en del familjer där föräldrarna börjar jobba tidigt. Men jag tror att eleverna kommer att må bättre och få bättre betyg.\n\nVad tycker ni andra föräldrar?\n\nKarin Mäkelä, Vallgård",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad vill skribenten?",
+              "translation": "What does the writer want?",
+              "options": [
+                "Att skolan ska börja klockan nio",
+                "Att tonåringar ska lägga sig klockan åtta",
+                "Att barnen ska byta skola"
+              ],
+              "answers": [
+                "Att skolan ska börja klockan nio"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Karin tycker att hennes barn är lata.",
+              "translation": "Karin thinks her children are lazy.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "När ska staden diskutera frågan?",
+              "translation": "When will the city discuss the question?",
+              "answers": [
+                "i maj",
+                "maj"
+              ],
+              "hint": "Skriv en månad."
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilket problem med en senare start nämner Karin?",
+              "translation": "Which problem with a later start does Karin mention?",
+              "options": [
+                "Vissa föräldrar börjar jobba tidigt",
+                "Eleverna kommer att få sämre betyg",
+                "Bussarna går inte klockan nio"
+              ],
+              "answers": [
+                "Vissa föräldrar börjar jobba tidigt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Karin är säker på att alla föräldrar håller med henne.",
+              "translation": "Karin is sure that all parents agree with her.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en insändare",
+              "en": "a reader's letter (in a newspaper)"
+            },
+            {
+              "fi": "en utmaning",
+              "en": "a challenge"
+            },
+            {
+              "fi": "brist på",
+              "en": "lack of"
+            },
+            {
+              "fi": "aktuell",
+              "en": "topical, current"
+            },
+            {
+              "fi": "givetvis",
+              "en": "of course"
+            },
+            {
+              "fi": "en forskare",
+              "en": "a researcher"
+            }
+          ]
+        }
+      ]
     }
   ],
   "recall": [

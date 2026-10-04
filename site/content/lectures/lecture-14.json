@@ -677,6 +677,286 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A metro announcement about replacement buses, and a customer-service reply to a complaint: YKI-style listening and reading.",
+      "minutes": 10,
+      "action": "Read the questions first, listen twice, then read the text and check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-14-listen-1",
+          "title": "Meddelande i metron",
+          "textType": "Meddelande (högtalare)",
+          "situation": {
+            "fi": "Du står på en metrostation i Helsingfors och hör ett meddelande.",
+            "en": "You are at a metro station in Helsinki and hear an announcement."
+          },
+          "lines": [
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Bästa passagerare, ett meddelande från HSL.",
+              "en": "Dear passengers, an announcement from HSL."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "På grund av ett tekniskt fel går metron just nu inte mellan Sörnäs och Hertonäs.",
+              "en": "Because of a technical fault, the metro is not running between Sörnäinen and Herttoniemi right now."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Tågen i riktning mot Östra centrum vänder i Sörnäs.",
+              "en": "Trains in the direction of Itäkeskus turn back at Sörnäinen."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Ersättningsbussar går från Sörnäs till Hertonäs var tionde minut.",
+              "en": "Replacement buses run from Sörnäinen to Herttoniemi every ten minutes."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Bussarna passerar Brändö, men de stannar inte där.",
+              "en": "The buses pass Kulosaari, but they do not stop there."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Bussarna går från hållplatsen framför stationens västra ingång.",
+              "en": "The buses leave from the stop in front of the station's west entrance."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Resan tar ungefär femton minuter längre än vanligt.",
+              "en": "The journey takes about fifteen minutes longer than usual."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Vi tror att metron går normalt igen omkring klockan arton.",
+              "en": "We think the metro will run normally again around six p.m."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Ytterligare information finns på skärmarna och på HSL:s webbplats. Vi ber om ursäkt för besväret.",
+              "en": "Further information is on the screens and on HSL's website. We apologise for the inconvenience."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar meddelandet om?",
+              "translation": "What is the announcement about?",
+              "options": [
+                "Ett avbrott i metrotrafiken",
+                "En ny metrostation",
+                "Nya biljettpriser"
+              ],
+              "answers": [
+                "Ett avbrott i metrotrafiken"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur ofta går ersättningsbussarna?",
+              "translation": "How often do the replacement buses run?",
+              "answers": [
+                "var tionde minut",
+                "var 10:e minut",
+                "var 10 minut",
+                "var tionde",
+                "varje tionde minut",
+                "var tio minuter",
+                "varje tio minuter",
+                "tio minuter",
+                "10 minuter"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q3",
+              "prompt": "Ersättningsbussarna stannar i Brändö.",
+              "translation": "The replacement buses stop at Kulosaari.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "När går metron normalt igen, tror man?",
+              "translation": "When will the metro run normally again, they think?",
+              "options": [
+                "Omkring klockan 18",
+                "Omkring klockan 8",
+                "Om femton minuter"
+              ],
+              "answers": [
+                "Omkring klockan 18"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Du ska åka metro från Kampen till Östra centrum. Vad måste du göra?",
+              "translation": "You are taking the metro from Kamppi to Itäkeskus. What must you do?",
+              "options": [
+                "Byta till buss i Sörnäs",
+                "Byta till buss i Hertonäs",
+                "Åka metro hela vägen"
+              ],
+              "answers": [
+                "Byta till buss i Sörnäs"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en riktning",
+              "en": "a direction"
+            },
+            {
+              "fi": "en ersättningsbuss",
+              "en": "a replacement bus"
+            },
+            {
+              "fi": "passera",
+              "en": "to pass"
+            },
+            {
+              "fi": "en ingång",
+              "en": "an entrance"
+            },
+            {
+              "fi": "ytterligare",
+              "en": "further, more"
+            },
+            {
+              "fi": "besväret",
+              "en": "the inconvenience"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-14-read-1",
+          "title": "Svar från kundtjänsten",
+          "textType": "E-post",
+          "minutes": 5,
+          "text": "Ämne: Svar på din reklamation (ärende 4471)\n\nHej Sara,\n\nTack för ditt meddelande av den 12 mars. Vi beklagar att dina nya hörlurar inte fungerar som de ska.\n\nHörlurarna har två års garanti, så du får nya hörlurar utan kostnad. Du behöver inte skicka dem till oss med posten. Ta med kvittot och de trasiga hörlurarna till vår butik i Kampen, så byter vi dem omedelbart. Butiken är öppen måndag–fredag kl. 10–20 och lördag kl. 10–18.\n\nOm du hellre vill ha pengarna tillbaka går det också bra. Svara då på det här mejlet och skicka ditt kontonummer.\n\nJag är ansvarig för ditt ärende. Om du har ytterligare frågor kan du ringa mig på 09 123 4567.\n\nVänliga hälsningar\nMikael Holm\nKundtjänst, Elektronikhuset",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skriver Mikael?",
+              "translation": "Why is Mikael writing?",
+              "options": [
+                "Han svarar på en reklamation",
+                "Han säljer nya hörlurar",
+                "Han ber Sara betala en räkning"
+              ],
+              "answers": [
+                "Han svarar på en reklamation"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Sara måste skicka hörlurarna med posten.",
+              "translation": "Sara must send the headphones by post.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad ska Sara ta med till butiken? Skriv en sak.",
+              "translation": "What should Sara take to the shop? Write one thing.",
+              "answers": [
+                "kvittot",
+                "kvitto",
+                "ett kvitto",
+                "hörlurarna",
+                "de trasiga hörlurarna",
+                "trasiga hörlurar",
+                "hörlurar",
+                "kvittot och hörlurarna",
+                "kvittot och de trasiga hörlurarna"
+              ],
+              "hint": "Ett eller två ord."
+            },
+            {
+              "id": "q4",
+              "prompt": "Sara kan byta hörlurarna på lördag klockan 19.",
+              "translation": "Sara can exchange the headphones on Saturday at 7 pm.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad ska Sara göra om hon vill ha pengarna tillbaka?",
+              "translation": "What should Sara do if she wants her money back?",
+              "options": [
+                "Svara på mejlet och skicka sitt kontonummer",
+                "Ringa butiken i Kampen",
+                "Skriva en ny reklamation"
+              ],
+              "answers": [
+                "Svara på mejlet och skicka sitt kontonummer"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett ärende",
+              "en": "a case, a matter"
+            },
+            {
+              "fi": "beklaga",
+              "en": "to be sorry about"
+            },
+            {
+              "fi": "utan kostnad",
+              "en": "free of charge"
+            },
+            {
+              "fi": "trasig",
+              "en": "broken"
+            },
+            {
+              "fi": "omedelbart",
+              "en": "immediately"
+            },
+            {
+              "fi": "ansvarig för",
+              "en": "responsible for"
+            },
+            {
+              "fi": "ett kontonummer",
+              "en": "an account number"
+            }
+          ]
+        }
+      ]
     }
   ],
   "recall": [
