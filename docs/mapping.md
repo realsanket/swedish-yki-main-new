@@ -966,3 +966,78 @@ June, Lecture 16); Helsinki's Swedish-language schools ended the spring term on
 name, Ravi Kumar. Swedish input stays inside each stage's target (Lectures 1-4
 connected text inside 250-600; Lectures 3-4 counted broadly are above it
 because of the required textbook pages, as noted before).
+
+
+## YKI-book phase built: Lectures 23-52 — October 4, 2026
+
+Built from `docs/yki-phase-plan.md` (approved October 3), one builder per lecture
+with a shared brief, then checked here: content validator, book-overlap check
+(no 8-word run shared with the book in any lecture), UI audit of every lecture
+at 1440 and 390, and the Azure audit. Every lecture keeps the standard
+seven-step route; the textbook step is replaced by the new `yki-speaking` step
+(timed YKI dialogues and react/tell/opinion prompt sets, one recording per
+answer, compare with cue and models). No book page images are in the app; each
+part names its book page as a pointer. Lecture 52 uses the standard route with
+a full speaking mock (plan 5.4 decision), not the legacy mock route.
+
+| Lecture | Date | Title | YKI step parts | Writing |
+|---:|---|---|---|---|
+| 23 | 10 June 2026 | Så går YKI-provet till · How the YKI test works | dialogue | 50-80 words |
+| 24 | 12 June 2026 | Välkommen på besök · A visit and a goodbye | dialogue, dialogue | 50-80 words |
+| 25 | 15 June 2026 | Goda och dåliga nyheter · Good news and bad news | dialogue, dialogue, dialogue | 50-80 words |
+| 26 | 17 June 2026 | Du ser trött ut · Advice and a party invitation | dialogue, dialogue | 50-80 words |
+| 27 | 19 June 2026 | Problem hemma · Calls about the home | dialogue, dialogue, dialogue | 50-90 words |
+| 28 | 22 June 2026 | Reagera snabbt · React in 25 seconds | react ×7 | 50-80 words |
+| 29 | 24 June 2026 | Nej tack, och en berättelse · A polite no, and telling a story | react ×7, tell ×2 | 60-100 words |
+| 30 | 26 June 2026 | Min åsikt i 120 ord · The opinion text | opinion ×3 | 100-150 words |
+| 31 | 29 June 2026 | Fester, kvitton och kaffe · Opinions, returns and the café | dialogue, dialogue, opinion ×2 | 100-150 words |
+| 32 | 1 July 2026 | Vilse i stan och ett klagomål · Lost in town, and a complaint | dialogue, dialogue | 60-90 words |
+| 33 | 3 July 2026 | Reagera i affären · React in shops and on the street | react ×11 | 50-90 words |
+| 34 | 6 July 2026 | Min vardag och en annons · My everyday life and an ad | tell ×3, opinion ×2 | 60-100 words |
+| 35 | 8 July 2026 | Naturen nära · Nature and a permit call | dialogue, tell ×2 | 50-80 words |
+| 36 | 13 July 2026 | Miljö och förkylning · Green choices and a summer cold | react ×10, opinion ×2 | 100-150 words |
+| 37 | 15 July 2026 | Ring 112 · Emergencies and accidents | dialogue, dialogue, react ×6, tell ×2 | 50-80 words |
+| 38 | 17 July 2026 | Sjuk i dag · Healthcare views and calls at work | dialogue, dialogue, dialogue, opinion ×3 | 50-80 words |
+| 39 | 20 July 2026 | Affärsresa och lönesamtal · A business trip and a pay talk | dialogue, react ×11 | 50-80 words |
+| 40 | 22 July 2026 | Skolan och arbetslivet · School, first jobs and the future of work | tell ×4, opinion ×5 | 100-150 words |
+| 41 | 24 July 2026 | Biblioteket och baren · Library, bar and hotel | dialogue, dialogue, dialogue, dialogue | 50-80 words |
+| 42 | 27 July 2026 | Inställt tåg och en ansökan · A cancelled train and an application | dialogue, dialogue, dialogue, react ×8 | 70-110 words |
+| 43 | 29 July 2026 | Fritid som betyder något · Point it out politely, and free time | react ×5, tell ×7 | 50-80 words |
+| 44 | 31 July 2026 | Motion – ett måste? · Opinions on free time, and old exam tasks | opinion ×8 | 100-150 words |
+| 45 | 7 August 2026 | Samhället och försäkringen · Society, authorities and insurance | dialogue, react ×8, tell ×2, opinion ×2 | 50-80 words |
+| 46 | 10 August 2026 | Mellanår, betyg och snabba svar · Gap year, grades and quick reactions | react ×9, opinion ×2, tell ×2 | 100-150 words |
+| 47 | 12 August 2026 | Gamla YKI-uppgifter 2 · Equality, siblings and a housewarming | opinion ×4, react ×6 | 50-80 words |
+| 48 | 14 August 2026 | Gamla YKI-uppgifter 3 · Remote work, news and a dialogue review | dialogue, dialogue, opinion ×5, tell ×1 | 100-150 words |
+| 49 | 17 August 2026 | Dialoger igen · Dialogue review: gym and hairdresser | dialogue, dialogue, dialogue, tell ×3, tell ×1, opinion ×1 | 50-80 words |
+| 50 | 19 August 2026 | Lyssna och tyck till · Listen to the dialogues, then argue | dialogue, dialogue, dialogue, opinion ×4, opinion ×2 | 100-150 words |
+| 51 | 21 August 2026 | Sista åsiktsrundan · The last opinion round | opinion ×6, opinion ×1, react ×6 | 50-110 words |
+| 52 | 26 August 2026 | Provdag · Mock exam day | tell ×3, dialogue, dialogue, react ×8, opinion ×4 | 100-150 words |
+
+**Fixes made while merging:** Alex's old flat is Lingonvägen 4 B 12 (Lectures
+23, 27) and his new flat Rönngatan 5 B 23 in Vallgård (Lectures 45, 47, 51);
+Henrik's course meets in the evening (Lecture 28 greets with God kväll); Maja's
+bike accident on 15 July is a sprained wrist and a week off work (Lecture 37),
+so she is back at the café by Lecture 40; Lecture 47 no longer credits
+Lecture 45 with jämlikhet; distinct sort labels in Lectures 27 and 46.
+
+**Story facts now relied on:** Henrik's summer YKI course meets Mon/Wed/Fri
+evenings until 21 August, with an extra mock day on 26 August (Lecture 52);
+Alex signed for the Vallgård tvåa in Lecture 24, got the keys on 30 July, moved
+on Saturday 1 August with Mikko's rented van and Elin's help, and held his
+housewarming on Saturday 15 August at 18.00; his cousin Neha visited 4-11 July;
+his team leader is Johanna and his colleague Tuomas; midsommar was at Mikko's
+parents' stuga on Replot near Vasa; Elin's company summer party was Friday 26
+June, her Stockholm trip 16-17 July, and her pay talk with Karin brought a 4 %
+raise from September; Mikko works as a nature guide in Nuuksio from August;
+Maja works at a café in July and volunteers at a library homework club;
+Elin's kräftskiva is at the end of August; after the mock Alex signs up for
+the next Swedish YKI test (no date).
+
+**Known open points:** most lectures are above the 2,300-3,000-word Swedish
+input target when counted broadly (the speaking step's two models per turn);
+each builder's report lists Swedish lines for a teacher to glance at (kept in
+the session scratchpad, summarised here: Finland-Swedish usage such as
+*garderobslapp*, *mil*, *hekto*, *jouren*, *flytta fram*); the YKI fee quoted in
+Lecture 52 (190 €) and other dated facts should be rechecked before each test
+season. Pictures for Lectures 23-52 wait on the owner
+(`docs/image-prompts/yki-episodes.md`).

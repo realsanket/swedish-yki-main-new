@@ -33,7 +33,8 @@ cloud (unreliable), repaired on October 2, 2026 against
 under "Repair audit" in `docs/mapping.md`. **The YKI-book phase (Lectures
 23-52)** follows teacher Lessons 23-51 and *Förbered dig för allmän språkexamen*
 (Gimara); its source map and build plan are in `docs/yki-phase-plan.md`. The
-owner approved building all of it on October 3, 2026.
+owner approved it on October 3, 2026 and it was built on October 4: **the active
+course is now Lectures 1-52 in fourteen chapters.**
 
 ---
 
@@ -126,7 +127,7 @@ image-generation hook. Use the canonical scans in `docs/text-book-images/` when
 adding a page; verify the physical page and commit the corresponding public asset.
 
 `npm run audit:ui` runs Chromium against a production server (default port 3102).
-It checks all 22 lectures at 1440×900 and 390×844, including textbook stages,
+It checks every active lecture (52) at 1440×900 and 390×844, including textbook stages,
 teaching beats and activities, and both mission strips. It uses an empty learner
 fixture and blocks progress writes, so it does not alter the owner's database.
 Use `AUDIT_BASE_URL` to select the server, `AUDIT_LECTURES=3,4` and
@@ -182,7 +183,7 @@ full rules in `site/docs/lecture-template.md`):
 | `recall`, `guided`, `checkpoint` | Questions for steps 1, 4 and 6 |
 | `sections` | Teaching topics; each shows as beats: Understand, See the pattern, Hear it, activities, Try it |
 | `sections[].activity(ies)` | Hands-on activities: `sound-map`, `sort`, `match`, `question-gap`. A sort that shows deliberate mistakes sets `"audio": false` |
-| `extraSteps` | Lecture-owned route steps. Kind `source-practice` = verified textbook pages in a 5-stage ladder |
+| `extraSteps` | Lecture-owned route steps. Kind `source-practice` = verified textbook pages in a 5-stage ladder (Lectures 1-22); kind `yki-speaking` = original timed YKI dialogues and react/tell/opinion prompt sets (Lectures 23-52) |
 | `missionPlan` | Fill-in sentence frames for stage 1 of "Do the task" |
 | `unplannedQuestions` | Questions for the "unexpected questions" round (6 per lecture, 3 asked) |
 | `reviewPhrases` | About 8 chunks for spaced review (English prompt, Swedish answer) |
@@ -207,9 +208,11 @@ lecture extra steps, shown as one numbered route ("Step 2 of 7"):
 
 1. **Hear the conversation** (recall): warm-up recall of 3 phrases from
    earlier lectures, the Elin-Alex story, two meaning checks.
-2. **Textbook page(s)** (extra step): the real textbook page in 5 stages:
-   listen for gist, understand, hunt (sounds/pronouns/questions), vanishing
-   text, role-play.
+2. **Textbook page(s)** (extra step, Lectures 1-22): the real textbook page in
+   5 stages: listen for gist, understand, hunt (sounds/pronouns/questions),
+   vanishing text, role-play. **YKI tasks** (extra step, Lectures 23-52):
+   timed dialogues (read the card, get ready, speak in time, compare) and timed
+   react/tell/opinion rounds, one browser recording per answer.
 3. **Build it step by step** (teach): topics as beats, with a topic picker,
    activities, and grammar side notes.
 4. **Try the phrases** (guided): build and check lines. **End of Part 1**: a
@@ -239,6 +242,7 @@ Viewing any step is always allowed.
 |---|---|
 | Lecture player, route, navigation, sittings | `components/learning/LecturePlayer.tsx`, `app/course.css`, `app/responsive.css` |
 | Textbook page practice | `components/learning/SourcePagePractice.tsx`, `ExtraStep.tsx` |
+| YKI speaking tasks (timed dialogues and prompt sets) | `components/learning/YkiSpeakingPractice.tsx`, `ExtraStep.tsx` |
 | Teaching activities | `components/learning/activities/*` |
 | Grammar side notes | `components/learning/GrammarNotes.tsx`, `content/grammar-terms.json`, `lib/grammar-terms.ts` |
 | Do the task mission | `components/learning/PracticeStudio.tsx` (`Exercise`, guided layout), `MissionPlanner.tsx`, `QuickQuestions.tsx` |
@@ -355,6 +359,10 @@ go into spaced review).
 and coloured words came back). **Not yet waited for:** the day-later return
 card (logic tested).
 
+**YKI-book phase (October 4):** Lectures 23-52 built in Chapters 7-14 with the
+new `yki-speaking` step; all pass the validator, the book-overlap check, the UI
+audit at both widths and the Azure audit. Not yet independently reviewed.
+
 **Independently reviewed:** Lectures 3-7 twice (October 2 and 3) and Lectures
 1-2 and 8-22 once (October 3), one reviewer per lecture, against sources and online
 references. **Round 3 (October 3)** then improved all 22 for learning effect:
@@ -385,8 +393,10 @@ selected only by optional `ykiMockId`; no current lecture selects it.
     voice?
 4. Save the mission plan and the unexpected-questions result to the server (both
    are browser-only now).
-5. **In progress:** build the YKI-book phase (Lectures 23-52) from
-   `docs/yki-phase-plan.md` (mapped and approved October 3, 2026).
+5. **Done (October 4, 2026):** the YKI-book phase, Lectures 23-52 (see the
+   last section of `docs/mapping.md`). Next for it: a teacher's glance at the
+   doubtful lines, pictures (`docs/image-prompts/yki-episodes.md`), and an
+   independent review pass like Lectures 1-22 had.
 6. Native-speaker review of the doubtful source and authored Swedish lines
    recorded under the built lecture design notes in `docs/mapping.md`.
 

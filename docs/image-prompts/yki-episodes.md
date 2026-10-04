@@ -86,6 +86,12 @@ Save each picture in `site/public/images/story/episodes/` with the file name sho
 
 > Warm painterly gouache and watercolour illustration in soft Nordic summer morning daylight, a small Helsinki flat in mid-July, half packed for a move: Alex: a young man in his twenties with warm brown skin and short dark curly hair, in a dark green crew-neck sweater and dark trousers. He is wrapped in a blanket on a sofa, with tissues and a steaming mug of tea with honey on a cardboard moving box in front of him. He holds a phone to his ear and smiles weakly through his cold. His spiral notebook lies closed beside him. Elin appears in the same picture as a small inset or through the window: a young woman in her twenties with a blonde loose messy bun and freckles, in a rust-red knit sweater and black trousers. She sits on a green Helsinki tram with her phone, looking concerned and kind. Near the flat's door, a white paper pharmacy bag hangs on the handle. An empty spot on the floor shows the marks where a kitchen table used to stand. Rain-washed green trees fill the window. Calm, cosy, slightly comic mood. No text, letters, logos or numbers anywhere in the image, and no screens are legible.
 
+## Lecture 37: Ring 112 (Emergencies and accidents)
+
+**File:** `episode-37-emergencies-and-accidents.webp` · **Object:** a cracked bike helmet and a phone on a hospital bed
+
+> Warm painterly gouache and watercolour illustration in soft Nordic summer daylight from a tall hospital window. Maja, a teenage student with auburn wavy hair in a bun and freckles, sits on a hospital bed in a white T-shirt with her teal corduroy overshirt over her shoulders. Her right forearm is in a fresh white plaster cast and one knee has a small bandage. She is smiling into a phone held in her left hand, with headphones round her neck. On the bed beside her lies a bike helmet with a clear crack across the top, and her mustard backpack leans against the bed. In a small inset bubble or split frame, Alex, a young man with warm brown skin and short dark curly hair in a dark green crew-neck sweater, sits wrapped in a blanket on his sofa with a mug of tea and tissues, phone to his ear. The colours are calm blues, white and soft green, with a single warm accent. The mood is reassuring and gently funny, not dramatic. There is no text in the image.
+
 ## Lecture 38: Sjuk i dag (Healthcare views and calls at work)
 
 **File:** `episode-38-healthcare-views-and-calls-at-work.webp` · **Object:** a thermometer, a phone with a calendar invitation and tea on a bedside table

@@ -8,6 +8,7 @@ them.
 |---|---|---|
 | [`chapters.md`](chapters.md) | One picture per chapter, Chapters 2-6 | Home screen "next scene" card and the chapter cards on the Story path |
 | [`episodes.md`](episodes.md) | One picture per lecture, Lectures 3-22 | Story notebook cards |
+| [`yki-episodes.md`](yki-episodes.md) | One picture per lecture, Lectures 23-52 (the YKI-book phase) | Story notebook cards |
 
 ## How to make one
 
