@@ -35,7 +35,7 @@
     "opening": {
       "teacherNote": {
         "title": "Listen for two problems and one plan",
-        "body": "Midsommarafton morning: Elin comes to fetch Alex for the stuga. Something drips in his kitchen, and a courier's note lies in the hall. The offices are closed until Monday, so they plan the calls. Listen for what is wrong and what Alex will say."
+        "body": "Midsommarafton morning: Elin, already in Vasa, calls to check that Alex will catch his train to the stuga. Something drips in his kitchen, and a courier's note lies in the hall. The offices are closed until Monday, so they plan the calls. Listen for what is wrong and what Alex will say."
       },
       "questionIntro": "Answer from the conversation: the two problems, and why Alex calls on Monday.",
       "dialogue": {
@@ -452,7 +452,7 @@
       "body": [
         "Fönstret kan inte stängas. Paketet kunde inte levereras. Kranen måste repareras. The thing comes first, and the s-form shows that something is done to it. We do not say who does it.",
         "After a help verb (kan, kunde, måste, ska): basic form + s. stänga → kan stängas, leverera → kunde levereras, byta → ska bytas, nå → kan nås.",
-        "Present: levererar → levereras, stänger → stängs, låser → låses. Past: levererades, stängdes, reparerades. Notices, letters and service calls use these forms a lot.",
+        "Present: levererar → levereras, stänger → stängs, låser → låses. Past: levererades, stängdes, reparerades. Notices, letters and service calls use these forms a lot: så att grannarnas lugn bevaras (so that the neighbours' peace is kept).",
         "The everyday choice: går inte att + basic form, without s. Fönstret går inte att stänga = Fönstret kan inte stängas. Both are right; the s-form sounds more formal.",
         "Får inte plats = does not fit (there is no room). In Finland you also hear ryms inte. Brevinkastet is the mail slot in the door; the box outside is postlådan in Finland (brevlådan in Sweden)."
       ],
@@ -711,8 +711,8 @@
             ],
             "answer": "Hur länge har den läckt?",
             "reply": {
-              "fi": "Sedan i söndags, alltså i fem dagar nu.",
-              "en": "Since Sunday, so for five days now."
+              "fi": "Sedan söndagen den 14 juni, alltså i över en vecka nu.",
+              "en": "Since Sunday 14 June, so for over a week now."
             },
             "why": "Hur länge har den läckt? asks for a length (Lecture 17). English “for how long” is not för hur länge, and hur länge sedan means how long ago."
           },
@@ -1014,7 +1014,7 @@
             "why": "It refuses the conversation. In the test, keep the conversation going."
           }
         ],
-        "summary": "Disagree with a fact, show understanding and promise something. That is level-4 politeness in YKI terms: telling formal from informal."
+        "summary": "Disagree with a fact, show understanding and promise something. In YKI, a calm and polite tone is part of a good answer."
       }
     }
   ],
@@ -1270,13 +1270,13 @@
   "dialogue": [
     {
       "speaker": "Elin",
-      "fi": "God morgon! Är du klar? Vi åker om en timme.",
-      "en": "Good morning! Are you ready? We leave in an hour."
+      "fi": "God morgon! Är du klar? Ditt tåg går om en timme.",
+      "en": "Good morning! Are you ready? Your train leaves in an hour."
     },
     {
       "speaker": "Alex",
-      "fi": "Nästan. Men hör du? Kranen i köket droppar hela tiden.",
-      "en": "Almost. But can you hear that? The kitchen tap drips all the time."
+      "fi": "Nästan. Men vet du vad? Kranen i köket droppar hela tiden.",
+      "en": "Almost. But you know what? The kitchen tap drips all the time."
     },
     {
       "speaker": "Elin",
@@ -1295,8 +1295,8 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Jag vet. Och titta, en lapp från budfirman. Paketet med min nya skrivbordsstol kunde inte levereras.",
-      "en": "I know. And look, a note from the courier company. The parcel with my new desk chair could not be delivered."
+      "fi": "Jag vet. Och här ligger en lapp från budfirman. Paketet med min nya skrivbordsstol kunde inte levereras.",
+      "en": "I know. And there's a note from the courier company here. The parcel with my new desk chair could not be delivered."
     },
     {
       "speaker": "Elin",
@@ -1355,8 +1355,8 @@
     },
     {
       "speaker": "Alex",
-      "fi": "Utom när jag handlar midsommarmat! Okej, nu packar jag.",
-      "en": "Except when I'm shopping for midsummer food! OK, now I'll pack."
+      "fi": "Utom när jag är ute och handlar! Okej, nu packar jag, annars missar jag tåget.",
+      "en": "Except when I'm out shopping! OK, now I'll pack, or I'll miss the train."
     }
   ],
   "resources": [
@@ -1697,6 +1697,22 @@
         "example": "Den gamla kranen ersätts med en ny.",
         "translation": "The old tap is replaced with a new one.",
         "level": "B1"
+      },
+      {
+        "id": "sv-27-word-41",
+        "fi": "skadedjur",
+        "en": "pests (mice, insects)",
+        "example": "Vi har skadedjur i källaren.",
+        "translation": "We have pests in the basement.",
+        "level": "B1"
+      },
+      {
+        "id": "sv-27-word-42",
+        "fi": "översvämmad",
+        "en": "flooded",
+        "example": "Mitt kök var översvämmat efter läckan.",
+        "translation": "My kitchen was flooded after the leak.",
+        "level": "B1"
       }
     ],
     "pronunciation": {
@@ -1751,7 +1767,7 @@
     "speaking": {
       "prompt": "Ring fastighetsskötseln. Berätta vad som är fel och sedan när, boka en tid som passar dig, ge din adress och ditt telefonnummer och avsluta artigt. (Call property maintenance: what is wrong and since when, a time that suits you, your address and number, and a polite end. It is like a YKI dialogue, but you lead the call.)",
       "help": "Hej, det här är … · Jag ringer angående … · Den/Det läcker / fungerar inte / är täppt · Det har … sedan … / i … · Skulle en rörmokare kunna …? · Passar det på …? · Tyvärr passar det inte, för … Går det bra … i stället? · Adressen är … · Ni når mig på … · Tack för hjälpen. Då säger vi så.",
-      "model": "Hej, det här är Alex Khan. Jag ringer angående kranen i mitt kök. Den droppar hela tiden, och nu har det blivit värre. Det har läckt sedan i söndags. Skulle en rörmokare kunna komma och titta på den? Jag jobbar hemifrån, så jag är hemma nästan hela veckan. Passar det på tisdag förmiddag? Om inte, går det bra på onsdag efter klockan ett. Adressen är Lingonvägen 4 B 12, och ni når mig på 040 123 4567. Tack för hjälpen. Då säger vi så. Hej då!"
+      "model": "Hej, det här är Alex Khan. Jag ringer angående kranen i mitt kök. Den droppar hela tiden, och nu har det blivit värre. Det har läckt i över en vecka. Skulle en rörmokare kunna komma och titta på den? Jag jobbar hemifrån, så jag är hemma nästan hela veckan. Passar det på tisdag förmiddag? Om inte, går det bra på onsdag efter klockan ett. Adressen är Lingonvägen 4 B 12, och ni når mig på 040 123 4567. Tack för hjälpen. Då säger vi så. Hej då!"
     },
     "writing": {
       "prompt": "Skriv en felanmälan till fastighetsskötseln. (Write a fault report to property maintenance: a formal message.)",
@@ -1881,7 +1897,7 @@
               "seconds": 38,
               "models": [
                 "Tyvärr passar det inte. Jag jobbar på torsdag. Kan ni komma på fredag?",
-                "Tyvärr passar torsdag mig inte, för då har jag ett viktigt möte på jobbet. Skulle ni kunna komma på fredag efter klockan tre i stället?"
+                "Tyvärr passar det inte på torsdag, för då har jag ett viktigt möte på jobbet. Skulle ni kunna komma på fredag efter klockan tre i stället?"
               ],
               "tip": "The teacher's recipe for svara nekande: no + why + a new suggestion."
             },
