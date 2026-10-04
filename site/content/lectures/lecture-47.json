@@ -1803,6 +1803,547 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A radio interview with a woman in a male-dominated job, a voicemail from a hair salon, a parents' forum thread about middle children and a workplace guide to calling in sick. All texts are invented for practice.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-47-listen-1",
+          "title": "Elektriker i ett mansdominerat yrke",
+          "textType": "Radiointervju",
+          "situation": {
+            "fi": "Du hör en intervju i ett radioprogram om arbetsliv.",
+            "en": "You hear an interview in a radio programme about working life."
+          },
+          "lines": [
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Hej och välkommen till Jobbet och vi. I dag träffar jag Sanna Virtanen, som är elektriker här i Helsingfors. Hej, Sanna!",
+              "en": "Hi and welcome to Jobbet och vi. Today I'm meeting Sanna Virtanen, who is an electrician here in Helsinki. Hi, Sanna!"
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Hej!",
+              "en": "Hi!"
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Du har jobbat som elektriker i tolv år. Hur många kvinnor finns det på din arbetsplats?",
+              "en": "You have worked as an electrician for twelve years. How many women are there at your workplace?"
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Vi är fyrtio elektriker, och bara tre av oss är kvinnor. Så branschen är fortfarande väldigt mansdominerad.",
+              "en": "There are forty electricians, and only three of us are women. So the sector is still very male-dominated."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Varför valde du just det här yrket?",
+              "en": "Why did you choose this particular job?"
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Min pappa var elektriker, och jag följde ofta med honom på jobb när jag var liten. Han var min förebild. I skolan sa studiehandledaren att det var ett yrke för killar, men jag vägrade lyssna.",
+              "en": "My dad was an electrician, and I often went along with him to work when I was little. He was my role model. At school the study counsellor said it was a job for boys, but I refused to listen."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Har det varit svårt?",
+              "en": "Has it been hard?"
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "I början, ja. Vissa kunder ville hellre prata med min manliga kollega än med mig. Numera händer det knappast någonsin. Kunderna bryr sig om kvaliteten på arbetet, inte om vem som gör det.",
+              "en": "At the start, yes. Some customers preferred to talk to my male colleague rather than to me. Nowadays it hardly ever happens. Customers care about the quality of the work, not about who does it."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Och lönen?",
+              "en": "And the pay?"
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Hos oss får alla lika lön för lika arbete. Lönen följer kollektivavtalet, så där finns ingen skillnad.",
+              "en": "With us everyone gets equal pay for equal work. The pay follows the collective agreement, so there is no difference there."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Vad vill du säga till unga tjejer som funderar på yrket?",
+              "en": "What do you want to say to young girls who are thinking about the job?"
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Pröva på! Sök en praktikplats och se om du trivs. Det finns ett stort behov av elektriker, så det är lätt att få jobb.",
+              "en": "Give it a try! Look for a work placement and see if you like it. There is a big need for electricians, so it's easy to get a job."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Henrik",
+              "fi": "Tack, Sanna, och lycka till!",
+              "en": "Thank you, Sanna, and good luck!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Hur många kvinnor jobbar som elektriker på Sannas arbetsplats?",
+              "translation": "How many women work as electricians at Sanna's workplace?",
+              "options": [
+                "Tre",
+                "Tolv",
+                "Fyrtio"
+              ],
+              "answers": [
+                "Tre"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vem var Sannas förebild?",
+              "translation": "Who was Sanna's role model?",
+              "hint": "Skriv ett eller två ord.",
+              "answers": [
+                "hennes pappa",
+                "pappa",
+                "pappan",
+                "hennes far",
+                "far",
+                "fadern",
+                "sin pappa",
+                "min pappa",
+                "hennes pappa som var elektriker"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Studiehandledaren tyckte att Sanna skulle bli elektriker.",
+              "translation": "The study counsellor thought Sanna should become an electrician.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur ser Sanna på sitt yrke i dag?",
+              "translation": "How does Sanna see her job today?",
+              "options": [
+                "Kunderna tänker mest på hur bra arbetet är.",
+                "Kunderna vill fortfarande hellre ha en manlig elektriker.",
+                "Kvinnor får lägre lön än män i hennes bransch."
+              ],
+              "answers": [
+                "Kunderna tänker mest på hur bra arbetet är."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför är det lätt att få jobb som elektriker, enligt Sanna?",
+              "translation": "Why is it easy to get a job as an electrician, according to Sanna?",
+              "options": [
+                "Det behövs många elektriker.",
+                "Praktikplatserna är betalda.",
+                "Lönen följer kollektivavtalet."
+              ],
+              "answers": [
+                "Det behövs många elektriker."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en elektriker",
+              "en": "an electrician"
+            },
+            {
+              "fi": "en studiehandledare",
+              "en": "a study counsellor (Finland-Swedish)"
+            },
+            {
+              "fi": "vägra",
+              "en": "refuse"
+            },
+            {
+              "fi": "knappast någonsin",
+              "en": "hardly ever"
+            },
+            {
+              "fi": "ett kollektivavtal",
+              "en": "a collective agreement (pay and rules for a whole sector)"
+            },
+            {
+              "fi": "en praktikplats",
+              "en": "a work placement"
+            },
+            {
+              "fi": "ett behov",
+              "en": "a need"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-47-listen-2",
+          "title": "Frisören är sjuk",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Du har bokat tid hos en frisör. Du hör ett meddelande på din telefonsvarare.",
+            "en": "You have booked a hairdresser's appointment. You hear a message on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Petra från salongen",
+              "voice": "Maja",
+              "fi": "Hej, det här är Petra från Salong Lugg i Berghäll. Jag ringer om din tid på fredag klockan två.",
+              "en": "Hi, this is Petra from Salong Lugg in Kallio. I'm calling about your appointment on Friday at two."
+            },
+            {
+              "speaker": "Petra från salongen",
+              "voice": "Maja",
+              "fi": "Tyvärr är din frisör, Anu, sjuk hela veckan. Vi kan erbjuda dig en ny tid hos Anu måndagen den sjuttonde augusti, antingen klockan tio eller klockan halv fyra.",
+              "en": "Unfortunately your hairdresser, Anu, is ill all week. We can offer you a new appointment with Anu on Monday 17 August, either at ten or at half past three."
+            },
+            {
+              "speaker": "Petra från salongen",
+              "voice": "Maja",
+              "fi": "Om du hellre vill behålla fredagen, kan vår andra frisör Jonas klippa dig klockan två som planerat. Notera bara att Jonas inte färgar hår. Färgningen måste vi i så fall flytta till en annan dag.",
+              "en": "If you would rather keep Friday, our other hairdresser Jonas can cut your hair at two as planned. Just note that Jonas doesn't dye hair. In that case we have to move the colouring to another day."
+            },
+            {
+              "speaker": "Petra från salongen",
+              "voice": "Maja",
+              "fi": "Ring eller skicka ett sms till 050 321 7788 och berätta vad du väljer. Svara senast i morgon klockan tolv, annars ger vi tiden till någon annan.",
+              "en": "Call or send a text to 050 321 7788 and tell us what you choose. Answer by twelve o'clock tomorrow at the latest, otherwise we'll give the appointment to someone else."
+            },
+            {
+              "speaker": "Petra från salongen",
+              "voice": "Maja",
+              "fi": "Förlåt besväret, och ha en fin dag!",
+              "en": "Sorry for the trouble, and have a nice day!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Petra?",
+              "translation": "Why is Petra calling?",
+              "options": [
+                "Frisören är sjuk.",
+                "Salongen stänger för renovering.",
+                "Kunden glömde sin tid."
+              ],
+              "answers": [
+                "Frisören är sjuk."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilka nya tider kan du få hos Anu?",
+              "translation": "Which new times can you get with Anu?",
+              "options": [
+                "Måndag 17.8 kl. 10 eller 15.30",
+                "Fredag kl. 14 eller 15.30",
+                "Måndag 17.8 kl. 12 eller 14"
+              ],
+              "answers": [
+                "Måndag 17.8 kl. 10 eller 15.30"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Jonas kan både klippa och färga ditt hår på fredag.",
+              "translation": "Jonas can both cut and dye your hair on Friday.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Senast när måste du svara?",
+              "translation": "By when at the latest must you answer?",
+              "hint": "Dag och klockslag.",
+              "answers": [
+                "i morgon klockan tolv",
+                "i morgon kl 12",
+                "i morgon klockan 12",
+                "i morgon kl 12.00",
+                "i morgon kl tolv",
+                "senast i morgon klockan tolv",
+                "senast i morgon kl 12",
+                "senast i morgon klockan 12",
+                "imorgon klockan tolv",
+                "imorgon kl 12",
+                "imorgon klockan 12",
+                "i morgon 12",
+                "i morgon före tolv",
+                "i morgon före 12"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "erbjuda",
+              "en": "offer"
+            },
+            {
+              "fi": "behålla",
+              "en": "keep"
+            },
+            {
+              "fi": "notera",
+              "en": "note, take note of"
+            },
+            {
+              "fi": "i så fall",
+              "en": "in that case"
+            },
+            {
+              "fi": "förlåt besväret",
+              "en": "sorry for the trouble"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-47-read-1",
+          "title": "Är mellanbarnet alltid bortglömt?",
+          "textType": "Diskussionsforum",
+          "minutes": 6,
+          "text": "FORUM: FAMILJ OCH RELATIONER\nÄmne: Är mellanbarnet alltid bortglömt?\n\nTre_syskon_mamma skriver:\nHej alla! Vi har tre barn: Ella är tolv, Leo är nio och lilla Mira är fyra. Häromdagen sa Leo att vi aldrig har tid för honom. Ella får göra allt först, och Mira får all uppmärksamhet för att hon är minst. Jag blev ledsen, för jag försöker verkligen behandla dem lika. Har ni samma erfarenhet? Hur kan man ge mellanbarnet mer tid utan att de andra blir avundsjuka?\n\nJonte_77 svarar:\nJag är själv mellanbarn, så jag känner igen mig. Som barn tyckte jag att ingen lyssnade på mig. Men som vuxen har jag märkt att det också har gett mig en förmåga att kompromissa och lösa konflikter. Mitt tips: ge Leo ett eget uppdrag som bara är hans, till exempel att laga middag med pappa på fredagar.\n\nSaga_ensambarn svarar:\nIntressant tråd! Jag är ensambarn och fick alltid all uppmärksamhet, och det var inte heller alltid lätt. Ibland önskade jag att jag hade syskon att bråka med! Jag tror att alla barn behöver känna att de blir sedda, oavsett om de är äldst, yngst eller i mitten.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skriver mamman i forumet?",
+              "translation": "Why does the mother write in the forum?",
+              "options": [
+                "Hon vill ha råd om sitt mellanbarn.",
+                "Hon vill veta hur man får tre barn att sova.",
+                "Hon letar efter en barnvakt."
+              ],
+              "answers": [
+                "Hon vill ha råd om sitt mellanbarn."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur gammal är Leo?",
+              "translation": "How old is Leo?",
+              "answers": [
+                "nio",
+                "9",
+                "nio år",
+                "9 år",
+                "nio år gammal",
+                "9 år gammal"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Jonte tycker att det bara var negativt att vara mellanbarn.",
+              "translation": "Jonte thinks being a middle child was only negative.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad föreslår Jonte att Leo kan göra på fredagar?",
+              "translation": "What does Jonte suggest Leo could do on Fridays?",
+              "hint": "Svara kort.",
+              "answers": [
+                "laga middag med pappa",
+                "laga middag med sin pappa",
+                "laga middag med pappan",
+                "laga middag med sin far",
+                "laga middag",
+                "laga mat med pappa",
+                "laga mat med sin pappa",
+                "laga mat",
+                "han kan laga middag med pappa"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad menar Saga?",
+              "translation": "What does Saga mean?",
+              "options": [
+                "Det har också nackdelar att vara ensambarn.",
+                "Ensambarn blir alltid bortskämda.",
+                "Det är bäst att vara äldst i familjen."
+              ],
+              "answers": [
+                "Det har också nackdelar att vara ensambarn."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "bortglömd",
+              "en": "forgotten"
+            },
+            {
+              "fi": "uppmärksamhet",
+              "en": "attention"
+            },
+            {
+              "fi": "avundsjuk",
+              "en": "jealous"
+            },
+            {
+              "fi": "en förmåga",
+              "en": "an ability"
+            },
+            {
+              "fi": "ett uppdrag",
+              "en": "a task, a job to do"
+            },
+            {
+              "fi": "en tråd",
+              "en": "a thread (in a forum)"
+            },
+            {
+              "fi": "oavsett om",
+              "en": "no matter whether"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-47-read-2",
+          "title": "Sjukanmälan – så här gör du",
+          "textType": "Instruktioner på arbetsplatsen",
+          "minutes": 6,
+          "text": "SJUKANMÄLAN – SÅ HÄR GÖR DU\n\nGäller alla anställda på Nordbygg Ab från den 1 september.\n\n1. Meddela din chef omedelbart när du vet att du inte kan komma till jobbet, senast innan ditt arbetspass börjar. Ring eller skicka sms. E-post räcker inte, eftersom chefen inte alltid läser sin e-post på morgonen.\n\n2. Berätta hur länge du tror att du är borta. Du behöver inte berätta vad du är sjuk i.\n\n3. Vid kortare sjukfrånvaro, högst tre dagar, räcker din egen anmälan. Om du är sjuk längre än så, behöver du ett läkarintyg. Boka tid hos företagshälsovården på telefon 09 555 2040 eller via vår hemsida.\n\n4. Om ditt barn under tio år blir sjukt, kan du stanna hemma och ta hand om barnet i högst fyra dagar. Meddela chefen på samma sätt.\n\n5. När du kommer tillbaka, registrera dina sjukdagar i personalsystemet samma dag.\n\nKom ihåg: det är bättre att stanna hemma och bli frisk än att smitta dina kolleger.\n\nFrågor? Kontakta personalavdelningen, personal@nordbygg.fi.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Det räcker att skicka e-post till chefen när du är sjuk.",
+              "translation": "It is enough to send your boss an email when you are ill.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vad måste du berätta för chefen?",
+              "translation": "What must you tell your boss?",
+              "options": [
+                "Hur länge du tror att du är borta.",
+                "Vad du är sjuk i.",
+                "Vilken läkare du har träffat."
+              ],
+              "answers": [
+                "Hur länge du tror att du är borta."
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur många dagar kan du vara sjuk utan läkarintyg?",
+              "translation": "How many days can you be ill without a doctor's certificate?",
+              "answers": [
+                "tre",
+                "3",
+                "tre dagar",
+                "3 dagar",
+                "högst tre",
+                "högst 3",
+                "högst tre dagar",
+                "högst 3 dagar"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska du göra samma dag som du kommer tillbaka till jobbet?",
+              "translation": "What should you do on the same day you come back to work?",
+              "options": [
+                "Registrera dina sjukdagar.",
+                "Boka tid hos företagshälsovården.",
+                "Ringa personalavdelningen."
+              ],
+              "answers": [
+                "Registrera dina sjukdagar."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför vill företaget att sjuka anställda stannar hemma?",
+              "translation": "Why does the company want ill employees to stay at home?",
+              "options": [
+                "Så att de inte smittar andra.",
+                "Så att de kan jobba hemifrån.",
+                "Så att chefen får mer tid."
+              ],
+              "answers": [
+                "Så att de inte smittar andra."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en sjukanmälan",
+              "en": "a sick report, calling in sick"
+            },
+            {
+              "fi": "omedelbart",
+              "en": "immediately"
+            },
+            {
+              "fi": "ett arbetspass",
+              "en": "a work shift"
+            },
+            {
+              "fi": "ett läkarintyg",
+              "en": "a doctor's certificate"
+            },
+            {
+              "fi": "företagshälsovården",
+              "en": "occupational health care"
+            },
+            {
+              "fi": "registrera",
+              "en": "register, record"
+            },
+            {
+              "fi": "smitta",
+              "en": "infect"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

@@ -1076,6 +1076,113 @@
           "summary": "Now answer the same five questions about a person in your own family."
         }
       ]
+    },
+    {
+      "title": "Hade gjort · what had happened before",
+      "kind": "rule",
+      "body": [
+        "B1 extra (not from the class notes): the pluperfect, hade + supine. It says that something happened before another moment in the past.",
+        "You know har + supine: Jag har ätit (I have eaten). Change har to hade and you get the pluperfect: Jag hade ätit (I had eaten). The supine is the same form as after har: gjort, ätit, gått, sett, varit.",
+        "Use it when two things happened in the past and one came first: När jag kom hem hade hon redan gått. First she left, then I came home.",
+        "Hade is the same for jag, du, han, hon, vi, ni and de. Redan (already) and aldrig (never) often go with it: Jag hade aldrig smakat kräftor.",
+        "In a main clause, redan, aldrig and inte come after hade: Hon hade redan gått. In a subordinate clause they come before it: … eftersom jag inte hade ätit.",
+        "In a Berätta story it gives background and lifts the story towards level 3 (B1): Innan jag flyttade till Helsingfors hade jag aldrig sett snö.",
+        "When you read, you may see hade left out after att, eftersom or som: … eftersom hon redan ätit. That is written style. When you speak, always say hade."
+      ],
+      "table": {
+        "headings": [
+          "Har + supine (up to now)",
+          "Hade + supine (before a past moment)"
+        ],
+        "rows": [
+          [
+            "Jag har ätit.",
+            "Jag hade ätit."
+          ],
+          [
+            "Hon har gått.",
+            "Hon hade gått."
+          ],
+          [
+            "Vi har gjort det.",
+            "Vi hade gjort det."
+          ],
+          [
+            "De har sett filmen.",
+            "De hade sett filmen."
+          ],
+          [
+            "Han har varit sjuk.",
+            "Han hade varit sjuk."
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "fi": "När jag kom hem hade hon redan gått.",
+          "en": "When I came home, she had already left.",
+          "note": "First she left, then I came home."
+        },
+        {
+          "fi": "Jag var mätt, eftersom jag hade ätit lunch sent.",
+          "en": "I was full, because I had eaten lunch late.",
+          "note": "The lunch came before the moment I was full."
+        },
+        {
+          "fi": "Kakan var slut när vi kom, för gästerna hade ätit upp den.",
+          "en": "The cake was gone when we arrived, because the guests had eaten it up.",
+          "note": "Äta upp – hade ätit upp."
+        },
+        {
+          "fi": "Han tackade nej, eftersom han redan hade lovat att hjälpa sin syster.",
+          "en": "He said no, because he had already promised to help his sister.",
+          "note": "In the eftersom-clause redan comes before hade."
+        },
+        {
+          "fi": "Innan jag flyttade till Finland hade jag aldrig sett snö.",
+          "en": "Before I moved to Finland, I had never seen snow.",
+          "note": "The innan-clause comes first, so hade comes before jag."
+        },
+        {
+          "fi": "Vi fick veta att hans morfar hade gått bort.",
+          "en": "We found out that his grandfather had passed away.",
+          "note": "Bad news is often told this way."
+        }
+      ],
+      "memoryTip": "Two things in the past? The one that came first gets hade: När jag kom hem hade hon gått.",
+      "tryIt": "Say one sentence about your first weeks in Finland: Innan jag kom till Finland hade jag aldrig …",
+      "activity": {
+        "type": "match",
+        "label": "What came first?",
+        "title": "Finish each sentence with what had happened before",
+        "instructions": "Each start has only one ending that is correct Swedish and makes sense. The ending tells what had already happened.",
+        "leftLabel": "Start",
+        "rightLabel": "Ending",
+        "pairs": [
+          {
+            "left": "När jag kom till festen",
+            "right": "hade alla redan ätit."
+          },
+          {
+            "left": "Kakan var slut, eftersom gästerna",
+            "right": "hade ätit upp den."
+          },
+          {
+            "left": "Hon ringde och berättade att hennes morfar",
+            "right": "hade gått bort på natten."
+          },
+          {
+            "left": "Jag tackade nej, för jag",
+            "right": "hade redan lovat att jobba."
+          },
+          {
+            "left": "Innan jag flyttade till Finland",
+            "right": "hade jag aldrig sett snö."
+          }
+        ],
+        "pattern": "The thing that happened first gets hade + supine.",
+        "sentence": "{left} {right}"
+      }
     }
   ],
   "guided": [
@@ -1225,6 +1332,34 @@
       ],
       "hint": "Look for procent.",
       "explanation": "I en enkät … svarade 46 procent av de anställda att de äter vid datorn minst tre dagar i veckan. Opinion texts often use a number as evidence: look for procent."
+    },
+    {
+      "id": "sv-29-g12",
+      "prompt": "When I came home, she had already left: När jag kom hem ___ hon redan gått.",
+      "answers": [
+        "hade"
+      ],
+      "options": [
+        "hade",
+        "har",
+        "var"
+      ],
+      "hint": "Before another moment in the past.",
+      "explanation": "Hade + supine = the pluperfect: she left first, then I came home. Har gått would be about now, and var gått is not Swedish."
+    },
+    {
+      "id": "sv-29-g13",
+      "prompt": "We were full, because we had eaten at home: Vi var mätta, eftersom vi hade ___ hemma.",
+      "answers": [
+        "ätit"
+      ],
+      "options": [
+        "ätit",
+        "åt",
+        "äta"
+      ],
+      "hint": "The form that comes after har.",
+      "explanation": "After hade comes the supine, the same form as after har: ätit. Åt is the past tense and äta the infinitive."
     }
   ],
   "checkpoint": [
@@ -1326,6 +1461,20 @@
       ],
       "hint": "Betyda … för …",
       "explanation": "Model: Du betyder mycket för mig. Betyda för (mean to), not till. Add one memory to make it real."
+    },
+    {
+      "id": "sv-29-c8",
+      "prompt": "Write in Swedish: “Before I moved to Finland, I had never seen snow.”",
+      "answers": [
+        "Innan jag flyttade till Finland hade jag aldrig sett snö.",
+        "Jag hade aldrig sett snö innan jag flyttade till Finland.",
+        "Innan jag flyttade till Finland hade jag aldrig sett någon snö.",
+        "Jag hade aldrig sett någon snö innan jag flyttade till Finland.",
+        "Innan jag flyttade hit till Finland hade jag aldrig sett snö.",
+        "Innan jag flyttade till Finland, hade jag aldrig sett snö."
+      ],
+      "hint": "Innan jag …, hade jag aldrig …",
+      "explanation": "Model: Innan jag flyttade till Finland hade jag aldrig sett snö. The innan-clause takes first place, so hade comes before jag, and aldrig comes after jag. Hade + sett: you saw snow only after the move."
     }
   ],
   "assignment": {

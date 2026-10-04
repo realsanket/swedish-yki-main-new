@@ -2070,6 +2070,548 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Local radio news about unemployment and a new centre for jobseekers, two colleagues arguing about office days, a column about checking news before you share it, and two flat adverts to compare. All texts are invented for practice.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-48-listen-1",
+          "title": "Lokalnyheter: nytt center för arbetssökande",
+          "textType": "Radionyheter",
+          "situation": {
+            "fi": "Du hör lokalnyheterna på radion en morgon i augusti.",
+            "en": "You hear the local news on the radio one morning in August."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "God morgon, klockan är åtta och här är lokalnyheterna.",
+              "en": "Good morning, it's eight o'clock and here is the local news."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Arbetslösheten i Helsingfors har ökat för tredje månaden i rad. Enligt ny statistik var drygt elva procent av invånarna i arbetsför ålder utan jobb i juli. Det är en procentenhet mer än för ett år sedan.",
+              "en": "Unemployment in Helsinki has risen for the third month in a row. According to new statistics, just over eleven per cent of residents of working age were without a job in July. That is one percentage point more than a year ago."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Byggbranschen och restaurangerna har drabbats hårdast.",
+              "en": "Construction and restaurants have been hit hardest."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Nu satsar staden på ett nytt servicecenter för arbetssökande. Centret öppnar den första september vid Järnvägstorget, nära centralstationen. Där kan man få hjälp att skriva sitt cv, öva inför anställningsintervjuer och hitta kurser. Rådgivningen sker på finska, svenska och engelska.",
+              "en": "Now the city is investing in a new service centre for jobseekers. The centre opens on the first of September at Railway Square, near the central station. There you can get help writing your CV, practise for job interviews and find courses. Advice is given in Finnish, Swedish and English."
+            },
+            {
+              "speaker": "Projektledaren",
+              "voice": "Elin",
+              "fi": "Många arbetssökande, framför allt de med utländsk bakgrund, har en bra utbildning men saknar kontakter i Finland. Det vill vi ändra på.",
+              "en": "Many jobseekers, especially those with a foreign background, have a good education but lack contacts in Finland. We want to change that."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Det säger projektledaren Lotta Nieminen. Centret har öppet vardagar mellan nio och fyra, och man behöver inte boka tid i förväg.",
+              "en": "So says project manager Lotta Nieminen. The centre is open on weekdays between nine and four, and you don't need to book an appointment in advance."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Och så vädret: i dag blir det soligt i hela Nyland, upp till tjugotre grader. I kväll kan det komma regnskurar.",
+              "en": "And now the weather: today it will be sunny across Uusimaa, up to twenty-three degrees. This evening there may be showers."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar den första nyheten om?",
+              "translation": "What is the first news item about?",
+              "options": [
+                "Arbetslösheten har ökat.",
+                "Ett nytt köpcentrum öppnar.",
+                "Byggföretag söker arbetare."
+              ],
+              "answers": [
+                "Arbetslösheten har ökat."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "När öppnar servicecentret?",
+              "translation": "When does the service centre open?",
+              "answers": [
+                "den första september",
+                "första september",
+                "den 1 september",
+                "1 september",
+                "1.9",
+                "den 1.9",
+                "1 9",
+                "den förste september",
+                "förste september"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Man måste boka tid för att besöka centret.",
+              "translation": "You have to book an appointment to visit the centre.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilket problem vill centret lösa, enligt projektledaren?",
+              "translation": "Which problem does the centre want to solve, according to the project manager?",
+              "options": [
+                "Många arbetssökande saknar kontakter i Finland.",
+                "Många arbetssökande har för dålig utbildning.",
+                "Många arbetssökande vill inte gå på kurser."
+              ],
+              "answers": [
+                "Många arbetssökande saknar kontakter i Finland."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur blir vädret i kväll?",
+              "translation": "What will the weather be like this evening?",
+              "options": [
+                "Det kan regna.",
+                "Det blir soligt och 23 grader.",
+                "Det blåser kraftigt."
+              ],
+              "answers": [
+                "Det kan regna."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "i rad",
+              "en": "in a row"
+            },
+            {
+              "fi": "statistik",
+              "en": "statistics"
+            },
+            {
+              "fi": "i arbetsför ålder",
+              "en": "of working age"
+            },
+            {
+              "fi": "en procentenhet",
+              "en": "a percentage point"
+            },
+            {
+              "fi": "drabbas",
+              "en": "be hit, be affected"
+            },
+            {
+              "fi": "satsa på",
+              "en": "invest in, put effort into"
+            },
+            {
+              "fi": "utländsk bakgrund",
+              "en": "a foreign background"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-48-listen-2",
+          "title": "Tre dagar på kontoret?",
+          "textType": "Samtal mellan kolleger",
+          "situation": {
+            "fi": "Två kolleger, Kim och Nora, pratar i ett videomöte.",
+            "en": "Two colleagues, Kim and Nora, talk in a video meeting."
+          },
+          "lines": [
+            {
+              "speaker": "Kim",
+              "voice": "Alex",
+              "fi": "Har du läst mejlet från ledningen? Från och med oktober ska alla vara på kontoret tre dagar i veckan.",
+              "en": "Have you read the email from management? From October everyone has to be at the office three days a week."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Ja, jag läste det i morse. Ärligt talat blev jag lite irriterad. Jag har ju jobbat hemifrån i två år, och det har fungerat jättebra.",
+              "en": "Yes, I read it this morning. To be honest, I got a bit annoyed. I've been working from home for two years, after all, and it has worked really well."
+            },
+            {
+              "speaker": "Kim",
+              "voice": "Alex",
+              "fi": "Jag förstår. Men jag tycker faktiskt att det är bra. Jag saknar framför allt gänget. När alla sitter hemma vet man knappt vad de andra håller på med.",
+              "en": "I understand. But I actually think it's good. Above all I miss the gang. When everyone sits at home, you hardly know what the others are doing."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Det är sant att vi pratar mindre med varandra. Men jag pendlar en timme åt varje håll från Esbo. Det blir sammanlagt sex timmar i veckan i bussen.",
+              "en": "It's true that we talk to each other less. But I commute an hour each way from Espoo. That makes six hours a week on the bus in total."
+            },
+            {
+              "speaker": "Kim",
+              "voice": "Alex",
+              "fi": "Oj, det är mycket. Kan du inte jobba i bussen?",
+              "en": "Oh, that's a lot. Can't you work on the bus?"
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Ibland, men det är svårt när bussen är full. Och när jag jobbar hemma hinner jag hämta barnen på dagis klockan fyra.",
+              "en": "Sometimes, but it's hard when the bus is full. And when I work at home, I have time to pick the children up from nursery at four."
+            },
+            {
+              "speaker": "Kim",
+              "voice": "Alex",
+              "fi": "Det står i mejlet att man kan söka undantag om man har särskilda skäl.",
+              "en": "It says in the email that you can apply for an exception if you have special reasons."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Nej, det missade jag helt! Vem ska man kontakta?",
+              "en": "No, I completely missed that! Who should you contact?"
+            },
+            {
+              "speaker": "Kim",
+              "voice": "Alex",
+              "fi": "Sin närmaste chef, tror jag. Och man ska göra det före slutet av september.",
+              "en": "Your immediate boss, I think. And you have to do it before the end of September."
+            },
+            {
+              "speaker": "Nora",
+              "voice": "Elin",
+              "fi": "Bra, då skriver jag till Petra i dag. Kanske får jag komma in två dagar i stället för tre.",
+              "en": "Good, then I'll write to Petra today. Maybe I can come in two days instead of three."
+            },
+            {
+              "speaker": "Kim",
+              "voice": "Alex",
+              "fi": "Det låter som en rimlig kompromiss. Och de dagar du är här bjuder jag på kaffe!",
+              "en": "That sounds like a reasonable compromise. And on the days you're here, the coffee's on me!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad pratar kollegerna om?",
+              "translation": "What are the colleagues talking about?",
+              "options": [
+                "En ny regel om arbete på kontoret.",
+                "En ny chef på avdelningen.",
+                "En kurs om distansarbete."
+              ],
+              "answers": [
+                "En ny regel om arbete på kontoret."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många timmar i veckan skulle Nora sitta i bussen med den nya regeln?",
+              "translation": "How many hours a week would Nora spend on the bus under the new rule?",
+              "answers": [
+                "sex",
+                "6",
+                "sex timmar",
+                "6 timmar",
+                "sex timmar i veckan",
+                "6 timmar i veckan"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Kim är negativ till den nya regeln.",
+              "translation": "Kim is negative about the new rule.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad kan man göra om man har särskilda skäl?",
+              "translation": "What can you do if you have special reasons?",
+              "options": [
+                "Söka undantag hos sin chef.",
+                "Jobba i bussen i stället.",
+                "Börja jobba klockan fyra."
+              ],
+              "answers": [
+                "Söka undantag hos sin chef."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad hoppas Nora på i slutet av samtalet?",
+              "translation": "What does Nora hope for at the end of the conversation?",
+              "options": [
+                "Att vara på kontoret två dagar i veckan.",
+                "Att få jobba hemma varje dag.",
+                "Att få ett nytt jobb närmare hemmet."
+              ],
+              "answers": [
+                "Att vara på kontoret två dagar i veckan."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ledningen",
+              "en": "(the) management"
+            },
+            {
+              "fi": "ärligt talat",
+              "en": "to be honest"
+            },
+            {
+              "fi": "ett gäng",
+              "en": "a gang, a group of friends or colleagues"
+            },
+            {
+              "fi": "sammanlagt",
+              "en": "in total"
+            },
+            {
+              "fi": "ett undantag",
+              "en": "an exception"
+            },
+            {
+              "fi": "särskilda skäl",
+              "en": "special reasons"
+            },
+            {
+              "fi": "rimlig",
+              "en": "reasonable"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-48-read-1",
+          "title": "Stanna upp innan du delar",
+          "textType": "Kolumn",
+          "minutes": 7,
+          "text": "KOLUMN | Stanna upp innan du delar\n\nFörra veckan fick jag en video i en gruppchatt. Den visade en björn som gick omkring på en gata i Vasa, och snart hade tusentals människor delat den. Problemet var bara att videon var tre år gammal och filmad i Ryssland. Det var en pensionerad lärare som till slut avslöjade sanningen. Ingen annan hade kontrollerat källan.\n\nPersonligen tycker jag att sociala medier är fantastiska. Jag följer forskare, journalister och vänner över hela världen. Men flödet har också en baksida: falska nyheter sprids snabbare än sanna, eftersom de ofta väcker starka känslor. Vi blir arga, rädda eller förvånade – och trycker på dela innan vi har tänkt efter.\n\nDärför har jag tre enkla regler. För det första frågar jag mig vem som har skrivit texten. Är det en känd nyhetsredaktion, som Hufvudstadsbladet eller Svenska Yle, eller ett konto som jag aldrig har hört talas om? För det andra kollar jag datumet. Gamla nyheter dyker ofta upp på nytt. För det tredje söker jag efter samma uppgift på en annan pålitlig sajt. Om ingen annan skriver om saken, är den kanske inte sann.\n\nDet tar högst en minut. Det är bättre att vara lite långsam än att sprida felaktiga uppgifter till alla man känner. Vi är alla ansvariga för vad som finns i våra flöden.\n\nMaria Lindholm, journalist",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är skribentens viktigaste budskap?",
+              "translation": "What is the writer's most important message?",
+              "options": [
+                "Kontrollera uppgifter innan du delar dem.",
+                "Sluta använda sociala medier.",
+                "Läs bara tidningar på papper."
+              ],
+              "answers": [
+                "Kontrollera uppgifter innan du delar dem."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Videon med björnen var filmad i Vasa.",
+              "translation": "The video of the bear was filmed in Vaasa.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Varför sprids falska nyheter snabbt, enligt skribenten?",
+              "translation": "Why does fake news spread fast, according to the writer?",
+              "options": [
+                "De väcker starka känslor.",
+                "De är kortare än sanna nyheter.",
+                "Journalister delar dem."
+              ],
+              "answers": [
+                "De väcker starka känslor."
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad kontrollerar skribenten som nummer två?",
+              "translation": "What does the writer check second?",
+              "hint": "Ett ord.",
+              "answers": [
+                "datumet",
+                "datum",
+                "ett datum",
+                "textens datum",
+                "nyhetens datum"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur lång tid tar kontrollen högst?",
+              "translation": "How long does the check take at most?",
+              "answers": [
+                "en minut",
+                "1 minut",
+                "högst en minut",
+                "högst 1 minut",
+                "1 min",
+                "en"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "avslöja",
+              "en": "reveal, expose"
+            },
+            {
+              "fi": "en baksida",
+              "en": "a downside (literally: a back side)"
+            },
+            {
+              "fi": "väcka känslor",
+              "en": "stir up feelings"
+            },
+            {
+              "fi": "en sajt",
+              "en": "a website"
+            },
+            {
+              "fi": "ansvarig för",
+              "en": "responsible for"
+            },
+            {
+              "fi": "dyka upp",
+              "en": "turn up, appear"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-48-read-2",
+          "title": "Hyra eller köpa?",
+          "textType": "Bostadsannonser",
+          "minutes": 6,
+          "text": "BOSTADSANNONSER\n\nHYRS UT: LJUS TVÅA I VALLGÅRD\n48 m², fjärde våningen, hiss. Renoverat kök och badrum, inglasad balkong mot gården. Hyra 1 050 € i månaden, vatten ingår. Elen betalar du själv. Hyresgaranti: två månaders hyra. Ledig från den 1 oktober. Husdjur tillåtna, rökfritt hus. Visning lördag 19.9 kl. 12–12.30. Kontakt: Kristina, tfn 040 765 4321.\n\nTILL SALU: TREA MED BASTU I HERTONÄS\n72 m², andra våningen av tre, ingen hiss. Begärt pris 289 000 €. Vederlag 410 € i månaden. Egen bastu och stor balkong i söderläge. Rörrenoveringen gjordes år 2021, så inga stora reparationer väntar. Skola, daghem och metrostation inom 500 meter. Tillträde enligt överenskommelse. Visning söndag 20.9 kl. 13–14. Fastighetsförmedlingen Kotikulma, tfn 09 444 3210.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vilken bostad har egen bastu?",
+              "translation": "Which home has its own sauna?",
+              "options": [
+                "Trean i Hertonäs",
+                "Tvåan i Vallgård",
+                "Båda bostäderna"
+              ],
+              "answers": [
+                "Trean i Hertonäs"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "I tvåan ingår elen i hyran.",
+              "translation": "In the two-room flat, electricity is included in the rent.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur mycket är vederlaget i månaden?",
+              "translation": "How much is the monthly maintenance charge?",
+              "answers": [
+                "410 euro",
+                "410 €",
+                "410",
+                "410 euro i månaden",
+                "fyrahundratio euro",
+                "fyrahundratio"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilket påstående stämmer om tvåan?",
+              "translation": "Which statement is true about the two-room flat?",
+              "options": [
+                "Man får ha katt där.",
+                "Den har egen bastu.",
+                "Den har ingen hiss."
+              ],
+              "answers": [
+                "Man får ha katt där."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "För vem passar trean i Hertonäs sämst?",
+              "translation": "Who is the three-room flat in Herttoniemi least suitable for?",
+              "options": [
+                "En person som har svårt att gå i trappor.",
+                "En familj med barn i skolåldern.",
+                "En person som tycker om att basta."
+              ],
+              "answers": [
+                "En person som har svårt att gå i trappor."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "hyrs ut / till salu",
+              "en": "for rent / for sale"
+            },
+            {
+              "fi": "inglasad balkong",
+              "en": "a glazed balcony"
+            },
+            {
+              "fi": "en hyresgaranti",
+              "en": "a rent deposit"
+            },
+            {
+              "fi": "begärt pris",
+              "en": "asking price"
+            },
+            {
+              "fi": "i söderläge",
+              "en": "facing south"
+            },
+            {
+              "fi": "en rörrenovering",
+              "en": "a pipe renovation (also called linjesanering in Finland)"
+            },
+            {
+              "fi": "enligt överenskommelse",
+              "en": "by agreement"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

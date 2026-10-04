@@ -934,6 +934,156 @@
       ]
     },
     {
+      "title": "Håller på att · something in progress",
+      "kind": "rule",
+      "body": [
+        "B1 extra (not from the class notes): Swedish has no -ing form. Jag skriver means both “I write” and “I am writing”. Most of the time the simple present is all you need.",
+        "To stress that something is going on right now and is not finished, use hålla på att + infinitive (the basic form of the verb): Jag håller på att skriva rapporten = I'm in the middle of writing the report.",
+        "Only hålla changes: håller (now), höll (past), har hållit (perfect). Att + the basic form stays the same: Jag höll på att laga mat när du ringde. Inte goes after håller: Jag håller inte på med det längre.",
+        "With a noun (a thing, not a verb), use hålla på med: Jag håller på med rapporten. The everyday question is Vad håller du på med? = What are you doing? What are you up to?",
+        "Use the simple present for habits, jobs and states: Jag jobbar som sjukskötare. Jag är sjuk. Not: Jag håller på att jobba som sjukskötare, which sounds like a short task you are in the middle of.",
+        "Watch out: höll på att can also mean “nearly”, for something that did not happen: Jag höll på att ramla = I nearly fell. The situation tells you which meaning it is."
+      ],
+      "examples": [
+        {
+          "fi": "Jag håller på att skriva sjukintyget, vänta lite.",
+          "en": "I'm writing the sick note, wait a moment.",
+          "note": "Going on right now: håller på att + basic form."
+        },
+        {
+          "fi": "Tuomas håller på med bilderna till kundmötet.",
+          "en": "Tuomas is working on the slides for the client meeting.",
+          "note": "A noun after it: håller på med."
+        },
+        {
+          "fi": "Vad håller du på med i dag?",
+          "en": "What are you doing today?",
+          "note": "The everyday question."
+        },
+        {
+          "fi": "Jag höll på att svara på mejl när chefen ringde.",
+          "en": "I was answering e-mails when the boss called.",
+          "note": "Past: höll på att. The call came in the middle."
+        },
+        {
+          "fi": "Jag jobbar hemifrån på fredagar.",
+          "en": "I work from home on Fridays.",
+          "note": "A habit: simple present."
+        },
+        {
+          "fi": "Jag höll på att somna på föreläsningen.",
+          "en": "I nearly fell asleep in the lecture.",
+          "note": "Höll på att = nearly. You did not fall asleep."
+        }
+      ],
+      "table": {
+        "headings": [
+          "You want to say",
+          "Swedish",
+          "Pattern"
+        ],
+        "rows": [
+          [
+            "I'm writing the report (right now)",
+            "Jag håller på att skriva rapporten.",
+            "håller på att + basic form"
+          ],
+          [
+            "I'm working on the report",
+            "Jag håller på med rapporten.",
+            "håller på med + noun"
+          ],
+          [
+            "I write reports every Friday",
+            "Jag skriver rapporter varje fredag.",
+            "simple present (habit)"
+          ],
+          [
+            "I was writing when you called",
+            "Jag höll på att skriva när du ringde.",
+            "past: höll på att"
+          ],
+          [
+            "I nearly fell",
+            "Jag höll på att ramla.",
+            "höll på att = nearly"
+          ]
+        ]
+      },
+      "memoryTip": "A verb? Håller på ATT skriva. A noun? Håller på MED rapporten. A habit or a job? Just the present: jag skriver.",
+      "tryIt": "Say one thing you are in the middle of this week, at work or in your studies: Jag håller på att … or Jag håller på med …",
+      "activity": {
+        "type": "sort",
+        "label": "Ready or fix?",
+        "title": "Check the work in progress",
+        "instructions": "Each card is a learner's line. Is it ready, or does it need a fix? Say the correct version before you go on.",
+        "audio": false,
+        "buckets": [
+          {
+            "id": "ok",
+            "label": "Ready",
+            "hint": "Correct Swedish"
+          },
+          {
+            "id": "fix",
+            "label": "Needs a fix",
+            "hint": "Missing word or wrong form"
+          }
+        ],
+        "items": [
+          {
+            "fi": "Jag håller på att skriva rapporten, så jag kan inte prata nu.",
+            "en": "I'm writing the report, so I can't talk now.",
+            "bucket": "ok",
+            "why": "Hålla på att + the basic form skriva."
+          },
+          {
+            "fi": "Jag håller på skriva rapporten.",
+            "en": "I'm writing the report.",
+            "bucket": "fix",
+            "why": "Att is missing before the verb: Jag håller på att skriva rapporten."
+          },
+          {
+            "fi": "Vad håller du på med?",
+            "en": "What are you doing?",
+            "bucket": "ok",
+            "why": "The everyday question, with med at the end."
+          },
+          {
+            "fi": "Jag håller på att med presentationen.",
+            "en": "I'm working on the presentation.",
+            "bucket": "fix",
+            "why": "A noun needs med, not att: Jag håller på med presentationen."
+          },
+          {
+            "fi": "Jag håller på att jobba som sjukskötare.",
+            "en": "I work as a nurse.",
+            "bucket": "fix",
+            "why": "A job is not a short task in progress. Use the simple present: Jag jobbar som sjukskötare."
+          },
+          {
+            "fi": "Hon höll på att skicka mejlet när chefen ringde.",
+            "en": "She was sending the e-mail when the boss called.",
+            "bucket": "ok",
+            "why": "Past: höll på att + skicka."
+          },
+          {
+            "fi": "Vi håller på med flytten till nya lokaler.",
+            "en": "We're busy with the move to new premises.",
+            "bucket": "ok",
+            "why": "Flytten is a noun, so med is right."
+          },
+          {
+            "fi": "Han håller på att är sjuk.",
+            "en": "He is ill.",
+            "bucket": "fix",
+            "why": "Being ill is a state, not an activity, and the verb after att must be the basic form. Say: Han är sjuk."
+          }
+        ],
+        "summary": "Hålla på att + basic form for something going on now; hålla på med + noun; the simple present for habits, jobs and states. Höll på att can also mean nearly."
+      }
+    },
+    {
       "title": "Vården i Finland · giving your view on healthcare",
       "kind": "register",
       "body": [
@@ -1163,6 +1313,34 @@
       ],
       "hint": "“Not … either” is inte heller.",
       "explanation": "Inte heller = not either; inte också is English word order. Påminna means remind, so it cannot replace minnas."
+    },
+    {
+      "id": "sv-38-g10",
+      "prompt": "I'm in the middle of writing the e-mail to my boss: Jag ___ skriva mejlet till chefen.",
+      "answers": [
+        "håller på att"
+      ],
+      "options": [
+        "håller på att",
+        "håller på med",
+        "håller på"
+      ],
+      "hint": "A verb (skriva) comes after the gap.",
+      "explanation": "Before a verb: hålla på att + the basic form. Håller på med goes before a noun (med mejlet), and att cannot be left out."
+    },
+    {
+      "id": "sv-38-g11",
+      "prompt": "She works as a nurse at the health centre: Hon ___ som sjukskötare på hälsostationen.",
+      "answers": [
+        "jobbar"
+      ],
+      "options": [
+        "jobbar",
+        "håller på att jobba",
+        "håller på med att jobba"
+      ],
+      "hint": "A job is a fact, not a task you are in the middle of.",
+      "explanation": "Jobs, habits and states take the simple present: Hon jobbar som sjukskötare. Håller på att is for something going on right now that will be finished."
     }
   ],
   "checkpoint": [
@@ -1264,6 +1442,27 @@
       ],
       "hint": "The statement in your own words, then your position.",
       "explanation": "Say the statement in new words, then your position. The second just repeats the card. In the third, delvis goes before med (håller delvis med), and håller med needs om: håller med om att …"
+    },
+    {
+      "id": "sv-38-c8",
+      "prompt": "Write in Swedish with hålla på: “I'm (in the middle of) writing the report, so I can't talk now.”",
+      "answers": [
+        "Jag håller på att skriva rapporten, så jag kan inte prata nu.",
+        "Jag håller på att skriva rapporten, så jag kan inte prata just nu.",
+        "Jag håller på att skriva rapporten, så nu kan jag inte prata.",
+        "Jag håller på att skriva rapporten, därför kan jag inte prata nu.",
+        "Jag håller på att skriva rapporten och kan inte prata nu.",
+        "Jag håller just nu på att skriva rapporten, så jag kan inte prata.",
+        "Jag håller på att skriva rapporten nu, så jag kan inte prata.",
+        "Jag håller på med rapporten, så jag kan inte prata nu.",
+        "Jag håller på med rapporten, så jag kan inte prata just nu.",
+        "Jag håller på att skriva rapporten så jag kan inte prata nu.",
+        "Jag håller på att skriva rapporten, så jag kan inte tala nu.",
+        "Jag håller på att skriva rapporten, så kan jag inte prata nu.",
+        "Jag håller på med rapporten, så kan jag inte prata nu."
+      ],
+      "hint": "Hålla på att + the basic form of skriva.",
+      "explanation": "Model: Jag håller på att skriva rapporten, så jag kan inte prata nu. With the noun only: Jag håller på med rapporten. After så (= so) the usual order is så jag kan inte …; så kan jag inte … is also heard."
     }
   ],
   "assignment": {

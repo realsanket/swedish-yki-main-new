@@ -2148,6 +2148,1216 @@
           ]
         }
       ]
+    },
+    {
+      "id": "mock-test",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Mock test: listening and reading",
+      "description": "Stigen's own practice test in the format of the YKI intermediate level (B1), not an official YKI test: five recordings and four texts, all invented, with one 50-minute timer.",
+      "minutes": 50,
+      "examMinutes": 50,
+      "action": "Work like in the test: read the questions before each recording, listen twice at most, and keep an eye on the timer. Check your answers at the end.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-50-mock-listen-1",
+          "title": "Din tid hos tandläkaren",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Du hör ett meddelande från en tandklinik på din telefonsvarare.",
+            "en": "You hear a message from a dental clinic on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Sofia på tandkliniken",
+              "voice": "Elin",
+              "fi": "Hej, det här är Sofia från Tandkliniken Leende i Hagnäs. Jag ringer om din tid för tandkontroll på onsdag den sextonde september klockan halv nio.",
+              "en": "Hi, this is Sofia from Tandkliniken Leende in Hakaniemi. I'm calling about your dental check-up on Wednesday 16 September at half past eight."
+            },
+            {
+              "speaker": "Sofia på tandkliniken",
+              "voice": "Elin",
+              "fi": "Tyvärr måste vi flytta den, eftersom tandläkaren ska gå på en utbildning den dagen.",
+              "en": "Unfortunately we have to move it, because the dentist is going on a training course that day."
+            },
+            {
+              "speaker": "Sofia på tandkliniken",
+              "voice": "Elin",
+              "fi": "Vi kan erbjuda dig en ny tid fredagen den artonde september klockan kvart över tre, eller måndagen den tjugoförsta klockan åtta.",
+              "en": "We can offer you a new appointment on Friday 18 September at a quarter past three, or on Monday the 21st at eight."
+            },
+            {
+              "speaker": "Sofia på tandkliniken",
+              "voice": "Elin",
+              "fi": "Du kan svara med ett sms till det här numret, eller logga in på vår hemsida och välja en tid själv. Om du inte hör av dig före torsdag, bokar vi fredagstiden åt dig.",
+              "en": "You can answer with a text to this number, or log in on our website and choose a time yourself. If you don't get in touch before Thursday, we'll book the Friday time for you."
+            },
+            {
+              "speaker": "Sofia på tandkliniken",
+              "voice": "Elin",
+              "fi": "Och kom ihåg att ta med ditt FPA-kort. Förlåt besväret, och hör av dig om du har frågor. Hej då!",
+              "en": "And remember to bring your Kela card. Sorry for the trouble, and get in touch if you have questions. Bye!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför flyttas tiden?",
+              "translation": "Why is the appointment being moved?",
+              "options": [
+                "Tandläkaren ska gå på en utbildning.",
+                "Kliniken ska renoveras.",
+                "Tandläkaren är sjuk."
+              ],
+              "answers": [
+                "Tandläkaren ska gå på en utbildning."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilka nya tider kan du få?",
+              "translation": "Which new times can you get?",
+              "options": [
+                "Fredag 18.9 kl. 15.15 eller måndag 21.9 kl. 8",
+                "Fredag 18.9 kl. 8.30 eller måndag 21.9 kl. 15.15",
+                "Onsdag 16.9 kl. 15.15 eller fredag 18.9 kl. 8"
+              ],
+              "answers": [
+                "Fredag 18.9 kl. 15.15 eller måndag 21.9 kl. 8"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Om du inte svarar, får du tiden på fredag.",
+              "translation": "If you don't answer, you get the Friday appointment.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad ska du ta med dig till kliniken?",
+              "translation": "What should you bring to the clinic?",
+              "hint": "Ett eller två ord.",
+              "answers": [
+                "fpa-kortet",
+                "fpa-kort",
+                "ditt fpa-kort",
+                "mitt fpa-kort",
+                "ett fpa-kort",
+                "fpakortet",
+                "fpakort",
+                "kela-kortet",
+                "kela-kort",
+                "kelakortet",
+                "kelakort",
+                "fpa"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en tandkontroll",
+              "en": "a dental check-up"
+            },
+            {
+              "fi": "Hagnäs",
+              "en": "Hakaniemi (district of Helsinki)"
+            },
+            {
+              "fi": "höra av sig",
+              "en": "get in touch"
+            },
+            {
+              "fi": "FPA-kortet",
+              "en": "the Kela card (FPA is Kela's Swedish name)"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-50-mock-listen-2",
+          "title": "Tåget till Åbo är försenat",
+          "textType": "Meddelande på stationen",
+          "situation": {
+            "fi": "Du är på järnvägsstationen i Helsingfors. Du hör ett meddelande i högtalarna.",
+            "en": "You are at Helsinki railway station. You hear an announcement over the loudspeakers."
+          },
+          "lines": [
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Bästa resenärer. InterCity-tåget till Åbo, med planerad avgång klockan fjorton noll sex, är cirka tjugo minuter försenat på grund av ett signalfel vid Böle.",
+              "en": "Dear passengers. The InterCity train to Turku, scheduled to leave at 14.06, is about twenty minutes late because of a signal fault at Pasila."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Observera att tåget avgår från spår åtta, inte från spår fem som det står på biljetten.",
+              "en": "Please note that the train leaves from track eight, not from track five as it says on the ticket."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Resenärer som ska vidare med Sverigebåten från Åbo hamn hinner ändå till båten. Tåget fortsätter som vanligt från Åbo central ända fram till hamnen.",
+              "en": "Passengers continuing on the ferry to Sweden from Turku harbour will still make it to the boat. As usual, the train continues from Turku central station all the way to the harbour."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Restaurangvagnen är tyvärr stängd på den här resan. I stället bjuder personalen på kaffe och vatten i vagn tre.",
+              "en": "Unfortunately the restaurant car is closed on this journey. Instead the staff offer free coffee and water in carriage three."
+            },
+            {
+              "speaker": "Utroparen",
+              "voice": "Henrik",
+              "fi": "Vi ber om ursäkt för förseningen.",
+              "en": "We apologise for the delay."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Hur mycket är tåget försenat?",
+              "translation": "How late is the train?",
+              "answers": [
+                "cirka tjugo minuter",
+                "cirka 20 minuter",
+                "tjugo minuter",
+                "20 minuter",
+                "20 min",
+                "ungefär tjugo minuter",
+                "ungefär 20 minuter",
+                "20",
+                "tjugo",
+                "ca 20 minuter",
+                "ca 20 min"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Från vilket spår avgår tåget?",
+              "translation": "Which track does the train leave from?",
+              "options": [
+                "Spår 8",
+                "Spår 5",
+                "Spår 3"
+              ],
+              "answers": [
+                "Spår 8"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Man kan köpa mat i restaurangvagnen.",
+              "translation": "You can buy food in the restaurant car.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad betyder meddelandet för dem som ska åka till Sverige?",
+              "translation": "What does the announcement mean for people travelling on to Sweden?",
+              "options": [
+                "De når båten trots förseningen.",
+                "De måste ta en senare båt.",
+                "De ska byta tåg i Böle."
+              ],
+              "answers": [
+                "De når båten trots förseningen."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en avgång",
+              "en": "a departure"
+            },
+            {
+              "fi": "försenad / en försening",
+              "en": "late, delayed / a delay"
+            },
+            {
+              "fi": "ett signalfel",
+              "en": "a signal fault"
+            },
+            {
+              "fi": "Böle",
+              "en": "Pasila (district of Helsinki)"
+            },
+            {
+              "fi": "observera",
+              "en": "please note"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-50-mock-listen-3",
+          "title": "Läxhjälpare på biblioteket",
+          "textType": "Samtal",
+          "situation": {
+            "fi": "En ung kvinna pratar med en bibliotekarie i bibliotekets informationsdisk.",
+            "en": "A young woman talks to a librarian at the library's information desk."
+          },
+          "lines": [
+            {
+              "speaker": "Besökaren",
+              "voice": "Maja",
+              "fi": "Hej, ursäkta. Jag såg en affisch om läxhjälp här på biblioteket. Söker ni fortfarande volontärer?",
+              "en": "Hi, excuse me. I saw a poster about homework help here at the library. Are you still looking for volunteers?"
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Henrik",
+              "fi": "Hej! Ja, absolut. Vi behöver fler, framför allt i matte och svenska. Har du gjort något liknande förut?",
+              "en": "Hi! Yes, absolutely. We need more, especially in maths and Swedish. Have you done anything similar before?"
+            },
+            {
+              "speaker": "Besökaren",
+              "voice": "Maja",
+              "fi": "Inte på ett bibliotek, men jag hjälpte min lillebror med läxorna i flera år. Och jag studerar till lärare.",
+              "en": "Not at a library, but I helped my little brother with his homework for several years. And I'm studying to be a teacher."
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Henrik",
+              "fi": "Perfekt. Läxhjälpen är på tisdagar och torsdagar mellan klockan tre och fem. Det räcker om du kommer en gång i veckan.",
+              "en": "Perfect. Homework help is on Tuesdays and Thursdays between three and five. It's enough if you come once a week."
+            },
+            {
+              "speaker": "Besökaren",
+              "voice": "Maja",
+              "fi": "Torsdagar passar mig bäst. På tisdagar har jag föreläsningar hela eftermiddagen.",
+              "en": "Thursdays suit me best. On Tuesdays I have lectures all afternoon."
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Henrik",
+              "fi": "Bra. Barnen är mellan sju och fjorton år. De flesta har ett annat modersmål än svenska, så det behövs tålamod.",
+              "en": "Good. The children are between seven and fourteen. Most of them have a mother tongue other than Swedish, so patience is needed."
+            },
+            {
+              "speaker": "Besökaren",
+              "voice": "Maja",
+              "fi": "Det har jag. Får man någon lön?",
+              "en": "I have that. Do you get any pay?"
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Henrik",
+              "fi": "Nej, det är frivilligt arbete. Men vi bjuder på kaffe och bulle, och du får ett intyg som du kan visa när du söker jobb.",
+              "en": "No, it's voluntary work. But we offer coffee and a bun, and you get a certificate that you can show when you apply for jobs."
+            },
+            {
+              "speaker": "Besökaren",
+              "voice": "Maja",
+              "fi": "Ett intyg låter bra. Hur anmäler jag mig?",
+              "en": "A certificate sounds good. How do I sign up?"
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Henrik",
+              "fi": "Fyll i den här blanketten och ta med den på torsdag. Då träffar du också Sara, som ansvarar för läxhjälpen. Hon går igenom allt med dig.",
+              "en": "Fill in this form and bring it on Thursday. Then you'll also meet Sara, who is in charge of homework help. She'll go through everything with you."
+            },
+            {
+              "speaker": "Besökaren",
+              "voice": "Maja",
+              "fi": "Toppen. Då kommer jag redan halv tre på torsdag, så hinner vi prata innan barnen kommer.",
+              "en": "Great. Then I'll come as early as half past two on Thursday, so we have time to talk before the children arrive."
+            },
+            {
+              "speaker": "Bibliotekarien",
+              "voice": "Henrik",
+              "fi": "Utmärkt. Välkommen!",
+              "en": "Excellent. Welcome!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför kommer kvinnan till informationsdisken?",
+              "translation": "Why does the woman come to the information desk?",
+              "options": [
+                "Hon vill bli läxhjälpare.",
+                "Hon vill låna böcker om matematik.",
+                "Hon söker läxhjälp till sin bror."
+              ],
+              "answers": [
+                "Hon vill bli läxhjälpare."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken dag ska hon hjälpa till?",
+              "translation": "Which day will she help?",
+              "options": [
+                "Torsdag",
+                "Tisdag",
+                "Både tisdag och torsdag"
+              ],
+              "answers": [
+                "Torsdag"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Volontärerna får lön för arbetet.",
+              "translation": "The volunteers are paid for the work.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad får volontärerna som de kan visa när de söker jobb?",
+              "translation": "What do the volunteers get that they can show when they apply for jobs?",
+              "answers": [
+                "ett intyg",
+                "intyg",
+                "intyget",
+                "ett intyg om arbetet"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför kommer hon redan halv tre?",
+              "translation": "Why will she come as early as half past two?",
+              "options": [
+                "För att prata med Sara innan barnen kommer.",
+                "För att hennes föreläsning slutar då.",
+                "För att läxhjälpen börjar då."
+              ],
+              "answers": [
+                "För att prata med Sara innan barnen kommer."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en läxhjälpare",
+              "en": "a homework helper"
+            },
+            {
+              "fi": "en föreläsning",
+              "en": "a lecture"
+            },
+            {
+              "fi": "ett modersmål",
+              "en": "a mother tongue"
+            },
+            {
+              "fi": "tålamod",
+              "en": "patience"
+            },
+            {
+              "fi": "ett intyg",
+              "en": "a certificate"
+            },
+            {
+              "fi": "ansvara för",
+              "en": "be in charge of"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-50-mock-listen-4",
+          "title": "Svenska efter sextio",
+          "textType": "Radiointervju",
+          "situation": {
+            "fi": "Du hör en intervju i ett radioprogram om att lära sig språk som vuxen.",
+            "en": "You hear an interview in a radio programme about learning languages as an adult."
+          },
+          "lines": [
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "I dag pratar vi om att lära sig språk i vuxen ålder. Min gäst är Pekka Laine, sextioett år, som flyttade från Tammerfors till Ekenäs för fem år sedan. Välkommen, Pekka.",
+              "en": "Today we're talking about learning languages as an adult. My guest is Pekka Laine, sixty-one, who moved from Tampere to Tammisaari five years ago. Welcome, Pekka."
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Tack så mycket.",
+              "en": "Thank you very much."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Du har finska som modersmål. Kunde du någon svenska när du flyttade?",
+              "en": "Your mother tongue is Finnish. Did you know any Swedish when you moved?"
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Lite skolsvenska, men jag hade glömt det mesta. Jag kunde beställa kaffe, men sedan tog det stopp.",
+              "en": "A little school Swedish, but I had forgotten most of it. I could order coffee, but that's where it ended."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Varför bestämde du dig för att lära dig ordentligt?",
+              "en": "Why did you decide to learn properly?"
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "I Ekenäs pratar de flesta svenska. Jag ville inte bara bo här, jag ville höra till. Så jag gick med i en kör, fast jag inte förstod texterna i början.",
+              "en": "In Tammisaari most people speak Swedish. I didn't just want to live here, I wanted to belong. So I joined a choir, even though I didn't understand the lyrics at first."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "En kör! Hjälpte det?",
+              "en": "A choir! Did it help?"
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Mycket. Man härmar uttalet när man sjunger, och efter övningarna drack vi kaffe och pratade. Det var där jag lärde mig mest.",
+              "en": "A lot. You imitate the pronunciation when you sing, and after rehearsals we had coffee and talked. That's where I learnt the most."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Många säger att det är svårare för vuxna att lära sig språk. Håller du med?",
+              "en": "Many people say it's harder for adults to learn languages. Do you agree?"
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Både ja och nej. Barn härmar lättare, det är sant. Men vi vuxna vet hur vi lär oss bäst, och vi har ofta en tydlig orsak. Det svåraste för mig var att våga göra fel.",
+              "en": "Both yes and no. Children imitate more easily, that's true. But we adults know how we learn best, and we often have a clear reason. The hardest thing for me was daring to make mistakes."
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Hur kom du över det?",
+              "en": "How did you get over that?"
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Jag bestämde mig för att prata svenska i butiken varje dag, även om det gick långsamt. Nu tror folk ibland att jag är född här. Nästan i alla fall!",
+              "en": "I decided to speak Swedish in the shop every day, even if it went slowly. Now people sometimes think I was born here. Almost, anyway!"
+            },
+            {
+              "speaker": "Reportern",
+              "voice": "Elin",
+              "fi": "Vad vill du säga till andra vuxna som lär sig ett nytt språk?",
+              "en": "What do you want to say to other adults who are learning a new language?"
+            },
+            {
+              "speaker": "Pekka",
+              "voice": "Henrik",
+              "fi": "Ju mer du pratar, desto snabbare lär du dig. Och skratta åt dina misstag.",
+              "en": "The more you speak, the faster you learn. And laugh at your mistakes."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar intervjun om?",
+              "translation": "What is the interview about?",
+              "options": [
+                "Hur en vuxen man lärde sig svenska.",
+                "Hur man startar en kör.",
+                "Varför barn lär sig språk snabbare."
+              ],
+              "answers": [
+                "Hur en vuxen man lärde sig svenska."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vad gick Pekka med i?",
+              "translation": "What did Pekka join?",
+              "answers": [
+                "en kör",
+                "kör",
+                "i en kör",
+                "kören",
+                "en sångkör"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Pekka tycker att vuxna inte har några fördelar när de lär sig språk.",
+              "translation": "Pekka thinks adults have no advantages when they learn languages.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad var svårast för Pekka?",
+              "translation": "What was hardest for Pekka?",
+              "options": [
+                "Att våga göra fel.",
+                "Att förstå körens texter.",
+                "Att beställa kaffe."
+              ],
+              "answers": [
+                "Att våga göra fel."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilken beskrivning passar Pekka bäst?",
+              "translation": "Which description fits Pekka best?",
+              "options": [
+                "Han är envis och vill vara en del av orten.",
+                "Han är blyg och pratar sällan med andra.",
+                "Han tycker att språk är ointressanta."
+              ],
+              "answers": [
+                "Han är envis och vill vara en del av orten."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "Tammerfors / Ekenäs",
+              "en": "Tampere / Tammisaari"
+            },
+            {
+              "fi": "skolsvenska",
+              "en": "school Swedish (what Finns learn at school)"
+            },
+            {
+              "fi": "höra till",
+              "en": "belong"
+            },
+            {
+              "fi": "en kör",
+              "en": "a choir"
+            },
+            {
+              "fi": "härma",
+              "en": "imitate"
+            },
+            {
+              "fi": "i alla fall",
+              "en": "anyway, at least"
+            },
+            {
+              "fi": "envis",
+              "en": "stubborn, determined"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-50-mock-listen-5",
+          "title": "Nyheterna klockan tolv",
+          "textType": "Radionyheter",
+          "situation": {
+            "fi": "Du hör nyheterna på radion mitt på dagen.",
+            "en": "You hear the news on the radio at midday."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Klockan är tolv, här är nyheterna.",
+              "en": "It's twelve o'clock, here is the news."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Högholmens djurpark har fått två snöleopardungar. Ungarna föddes redan i juni, men de har hittills hållit sig inne med sin mamma. Från och med i dag kan besökarna se dem i hägnet. Snöleoparden är en utrotningshotad art, och ungarna är en del av ett europeiskt avelsprogram.",
+              "en": "Korkeasaari Zoo has two new snow leopard cubs. The cubs were born back in June, but so far they have stayed indoors with their mother. From today visitors can see them in the enclosure. The snow leopard is an endangered species, and the cubs are part of a European breeding programme."
+            },
+            {
+              "speaker": "Veterinären",
+              "voice": "Elin",
+              "fi": "Vi hoppas att ungarna väcker intresse för bergen i Centralasien, där snöleoparden lever och där den hotas av tjuvjakt.",
+              "en": "We hope the cubs will raise interest in the mountains of Central Asia, where the snow leopard lives and where it is threatened by poaching."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Det säger djurparkens veterinär Hanna Lindqvist.",
+              "en": "So says the zoo's vet Hanna Lindqvist."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Helsingfors stad höjer hyrorna i sina hyresbostäder med i genomsnitt tre procent från början av nästa år. Orsaken är högre kostnader för el och reparationer. För en tvåa på femtio kvadratmeter betyder det ungefär tjugofem euro mer i månaden.",
+              "en": "The City of Helsinki is raising the rents in its rental flats by an average of three per cent from the start of next year. The reason is higher costs for electricity and repairs. For a two-room flat of fifty square metres, that means about twenty-five euros more a month."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Henrik",
+              "fi": "Och så vädret. Efter en solig förmiddag drar ett regnområde in över Nyland i eftermiddag. Temperaturen ligger kring femton grader. I morgon blir det klart och kallare, och i natt kan det bli frost i inlandet.",
+              "en": "And now the weather. After a sunny morning a band of rain moves in over Uusimaa this afternoon. The temperature is around fifteen degrees. Tomorrow it will be clear and colder, and tonight there may be frost inland."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför har besökarna inte sett ungarna förrän nu?",
+              "translation": "Why haven't visitors seen the cubs until now?",
+              "options": [
+                "De har varit inne med sin mamma.",
+                "De föddes först i går.",
+                "De har varit hos veterinären."
+              ],
+              "answers": [
+                "De har varit inne med sin mamma."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Snöleoparden är en art som är hotad.",
+              "translation": "The snow leopard is a threatened species.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Med hur många procent höjs hyrorna i genomsnitt?",
+              "translation": "By how many per cent are the rents raised on average?",
+              "answers": [
+                "tre",
+                "3",
+                "tre procent",
+                "3 procent",
+                "3 %",
+                "3%",
+                "med tre procent",
+                "med 3 procent"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför höjs hyrorna?",
+              "translation": "Why are the rents being raised?",
+              "options": [
+                "El och reparationer kostar mer.",
+                "Staden bygger nya bostäder.",
+                "Fler vill bo i Helsingfors."
+              ],
+              "answers": [
+                "El och reparationer kostar mer."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur blir vädret i morgon?",
+              "translation": "What will the weather be like tomorrow?",
+              "options": [
+                "Klart och kallare",
+                "Regnigt och varmare",
+                "Soligt på förmiddagen och regn på eftermiddagen"
+              ],
+              "answers": [
+                "Klart och kallare"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "Högholmen",
+              "en": "Korkeasaari (Helsinki's zoo island)"
+            },
+            {
+              "fi": "en unge (ungar)",
+              "en": "a young animal, a cub (cubs)"
+            },
+            {
+              "fi": "ett hägn",
+              "en": "an enclosure"
+            },
+            {
+              "fi": "ett avelsprogram",
+              "en": "a breeding programme"
+            },
+            {
+              "fi": "tjuvjakt",
+              "en": "poaching"
+            },
+            {
+              "fi": "i genomsnitt",
+              "en": "on average"
+            },
+            {
+              "fi": "ett regnområde",
+              "en": "a band of rain"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-50-mock-read-1",
+          "title": "Balkongrenoveringen börjar",
+          "textType": "Anslag i trappuppgången",
+          "minutes": 6,
+          "text": "BOSTADS AB TALLBACKEN\nMEDDELANDE TILL ALLA BOENDE\n\nBALKONGRENOVERINGEN BÖRJAR\nBalkongerna i trapphus A och B renoveras mellan den 5 oktober och den 13 november. Trapphus C renoveras först i vår.\n\nVad betyder det för dig?\n\nUnder renoveringen får du inte använda din balkong. Töm balkongen på möbler, blommor och andra saker senast söndagen den 4 oktober. Saker som finns kvar på balkongen flyttas bort på din egen bekostnad.\n\nArbetet pågår vardagar klockan 8–17. Det blir en hel del buller, särskilt under de två första veckorna.\n\nByggnadsställningar sätts upp på gården, så parkeringsplatserna närmast huset kan inte användas. Flytta din bil till gästparkeringen på andra sidan Tallvägen.\n\nHåll fönstren mot balkongen stängda och gardinerna fördragna under arbetstid. Arbetarna rör sig på ställningarna utanför dina fönster.\n\nBastuturerna fortsätter som vanligt.\n\nHar du frågor? Disponenten Karl Holmström svarar på telefon 040 123 9876 vardagar kl. 9–11 eller per e-post disponent@tallbacken.fi.\n\nStyrelsen",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vilka trapphus renoveras i höst?",
+              "translation": "Which stairwells are renovated this autumn?",
+              "options": [
+                "A och B",
+                "Bara C",
+                "A, B och C"
+              ],
+              "answers": [
+                "A och B"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Senast vilken dag måste balkongen vara tom?",
+              "translation": "By which day at the latest must the balcony be empty?",
+              "answers": [
+                "söndagen den 4 oktober",
+                "söndag den 4 oktober",
+                "söndag 4 oktober",
+                "den 4 oktober",
+                "4 oktober",
+                "4.10",
+                "den 4.10",
+                "söndag 4.10",
+                "söndagen 4.10",
+                "den fjärde oktober",
+                "fjärde oktober",
+                "söndagen den fjärde oktober",
+                "söndag",
+                "söndagen",
+                "på söndag"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Arbetarna jobbar också på lördagar.",
+              "translation": "The workers also work on Saturdays.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Var ska de boende parkera sina bilar?",
+              "translation": "Where should the residents park their cars?",
+              "options": [
+                "På gästparkeringen",
+                "På gården närmast huset",
+                "På gatan framför trapphus C"
+              ],
+              "answers": [
+                "På gästparkeringen"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför ska man ha gardinerna fördragna?",
+              "translation": "Why should you keep the curtains drawn?",
+              "options": [
+                "Arbetarna rör sig utanför fönstren.",
+                "Det blir kallt i lägenheten.",
+                "Bullret blir mindre."
+              ],
+              "answers": [
+                "Arbetarna rör sig utanför fönstren."
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "När kan man ringa disponenten?",
+              "translation": "When can you phone the property manager?",
+              "options": [
+                "Vardagar kl. 9–11",
+                "Vardagar kl. 8–17",
+                "Varje dag kl. 9–11"
+              ],
+              "answers": [
+                "Vardagar kl. 9–11"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "ett trapphus",
+              "en": "a stairwell, an entrance (A, B, C)"
+            },
+            {
+              "fi": "på egen bekostnad",
+              "en": "at your own expense"
+            },
+            {
+              "fi": "buller",
+              "en": "noise"
+            },
+            {
+              "fi": "en byggnadsställning",
+              "en": "scaffolding"
+            },
+            {
+              "fi": "fördragna gardiner",
+              "en": "drawn curtains"
+            },
+            {
+              "fi": "en disponent",
+              "en": "a property manager (Finland)"
+            },
+            {
+              "fi": "styrelsen",
+              "en": "the (housing company's) board"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-50-mock-read-2",
+          "title": "Din plats på kursen",
+          "textType": "E-postmeddelande",
+          "minutes": 6,
+          "text": "Från: Kursbyrån, Medborgarinstitutet\nTill: Rahul Mehta\nÄmne: Din kurs Svenska B1 – samtal och skrivande\n\nHej Rahul,\n\nTack för din anmälan till kursen Svenska B1 – samtal och skrivande. Du har fått en plats i gruppen som träffas på tisdagar klockan 17.30–19.00. Kursen börjar den 22 september och slutar den 8 december. Under höstlovet i vecka 42 har vi ingen lektion, så gruppen träffas sammanlagt elva gånger.\n\nKursavgiften är 90 euro. Du får en faktura per e-post i början av oktober. Om du är arbetssökande får du 50 procents rabatt. Skicka i så fall ett intyg från kommunens sysselsättningstjänster till oss före den 30 september.\n\nKursen hålls i sal 204 på andra våningen. Kursboken ingår i avgiften, och du får den första gången. Ta gärna med en anteckningsbok.\n\nOm du inte kan delta, ska du avboka senast en vecka innan kursen börjar. Om du avbokar senare, måste vi fakturera hela avgiften.\n\nVi ser fram emot att träffa dig!\n\nMed vänliga hälsningar\nKursbyrån",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför har Rahul fått e-postmeddelandet?",
+              "translation": "Why has Rahul received the email?",
+              "options": [
+                "Han har fått en plats på kursen.",
+                "Han står i kö till kursen.",
+                "Kursen har ställts in."
+              ],
+              "answers": [
+                "Han har fått en plats på kursen."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många gånger träffas gruppen?",
+              "translation": "How many times does the group meet?",
+              "answers": [
+                "elva",
+                "11",
+                "elva gånger",
+                "11 gånger",
+                "sammanlagt elva gånger",
+                "sammanlagt 11 gånger"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Rahul måste köpa kursboken själv.",
+              "translation": "Rahul must buy the course book himself.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Hur mycket betalar en arbetssökande som skickar ett intyg i tid?",
+              "translation": "How much does a jobseeker who sends a certificate in time pay?",
+              "answers": [
+                "45 euro",
+                "45 €",
+                "45",
+                "fyrtiofem euro",
+                "fyrtiofem"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Rahul avbokar tre dagar innan kursen börjar. Vad händer?",
+              "translation": "Rahul cancels three days before the course starts. What happens?",
+              "options": [
+                "Han måste betala hela avgiften.",
+                "Han får tillbaka hela avgiften.",
+                "Han betalar halva avgiften."
+              ],
+              "answers": [
+                "Han måste betala hela avgiften."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en anmälan",
+              "en": "a registration, signing up"
+            },
+            {
+              "fi": "höstlovet",
+              "en": "the autumn school holiday"
+            },
+            {
+              "fi": "en kursavgift",
+              "en": "a course fee"
+            },
+            {
+              "fi": "en faktura / fakturera",
+              "en": "an invoice / invoice, bill"
+            },
+            {
+              "fi": "sysselsättningstjänster",
+              "en": "employment services"
+            },
+            {
+              "fi": "ingå i",
+              "en": "be included in"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-50-mock-read-3",
+          "title": "Bli volontär i Grannskapshjälpen",
+          "textType": "Annons",
+          "minutes": 6,
+          "text": "BLI VOLONTÄR I GRANNSKAPSHJÄLPEN!\n\nHar du några timmar över i månaden? Föreningen Grannskapshjälpen r.f. söker nya volontärer i östra Helsingfors.\n\nVAD GÖR EN VOLONTÄR?\n– Går på promenad eller handlar mat tillsammans med äldre som inte klarar allt själva.\n– Hjälper till med datorer och mobiler på vårt digikafé varje onsdag.\n– Läser tidningen högt för personer som ser dåligt.\n\nVEM SÖKER VI?\nDu är minst 18 år, pålitlig och tycker om att träffa människor. Du behöver inte tala perfekt svenska eller finska. Många av våra äldre talar också ryska, estniska eller engelska.\n\nVAD FÅR DU?\nMeningsfullt arbete, nya vänner och en gratis kurs för nya volontärer. Vi betalar dina resor med kollektivtrafiken. Du får ingen lön för volontärarbetet.\n\nINFORMATIONSKVÄLL\nTorsdag 1 oktober kl. 18 i föreningens lokal, Kastanjevägen 7, Hertonäs. Det tar fem minuter att gå från metron. Anmäl dig senast måndag 28 september på vår hemsida.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är syftet med annonsen?",
+              "translation": "What is the purpose of the advert?",
+              "options": [
+                "Att hitta nya volontärer.",
+                "Att sälja datorer till äldre.",
+                "Att bjuda in till en fest."
+              ],
+              "answers": [
+                "Att hitta nya volontärer."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Man måste tala flytande finska för att bli volontär.",
+              "translation": "You must speak fluent Finnish to become a volunteer.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur gammal måste man minst vara?",
+              "translation": "How old must you be at least?",
+              "answers": [
+                "18",
+                "18 år",
+                "arton",
+                "arton år",
+                "minst 18",
+                "minst 18 år",
+                "minst arton år"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad betalar föreningen för volontärerna?",
+              "translation": "What does the association pay for the volunteers?",
+              "options": [
+                "Resorna med kollektivtrafiken",
+                "En lön per timme",
+                "Maten på digikaféet"
+              ],
+              "answers": [
+                "Resorna med kollektivtrafiken"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilken uppgift passar bäst för någon som kan mycket om mobiltelefoner?",
+              "translation": "Which task suits someone who knows a lot about mobile phones best?",
+              "options": [
+                "Digikaféet på onsdagar",
+                "Högläsning av tidningen",
+                "Promenader med äldre"
+              ],
+              "answers": [
+                "Digikaféet på onsdagar"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "r.f. (registrerad förening)",
+              "en": "registered association (Finland)"
+            },
+            {
+              "fi": "klara sig själv",
+              "en": "manage on your own"
+            },
+            {
+              "fi": "pålitlig",
+              "en": "reliable"
+            },
+            {
+              "fi": "meningsfull",
+              "en": "meaningful"
+            },
+            {
+              "fi": "en lokal",
+              "en": "premises, a room for an association"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-50-mock-read-4",
+          "title": "Djurparkerna behövs – men de måste förändras",
+          "textType": "Debattartikel",
+          "minutes": 10,
+          "text": "DEBATT | Djurparkerna behövs – men de måste förändras\n\nVarje sommar tar tusentals familjer färjan till Högholmen för att titta på djur. Själv har jag gått dit sedan jag var liten, och jag minns fortfarande hur jag stod med näsan mot glaset och tittade på en snöleopard. Ändå frågar allt fler i dag om det är etiskt att hålla vilda djur i fångenskap. Jag förstår frågan, men mitt svar är ja – på vissa villkor.\n\nDet starkaste argumentet för djurparkerna är att de räddar arter. Många utrotningshotade djur finns nästan bara kvar i fångenskap, och moderna djurparker samarbetar över hela Europa för att föda upp nya generationer. Vissa djur har till och med kunnat släppas ut i naturen igen. Djurparkerna samlar dessutom in pengar till naturskydd i djurens hemländer.\n\nDet andra argumentet handlar om kunskap. Ett barn som har sett en riktig björn bryr sig mer om skogen än ett barn som bara har sett björnar på en skärm. Det går knappast att skydda något som man aldrig har upplevt.\n\nMen kritikerna har också rätt i mycket. En isbjörn som går fram och tillbaka i en liten inhägnad mår inte bra. Stora djur som behöver vandra långa sträckor, till exempel elefanter och isbjörnar, borde inte finnas i djurparker alls. Djurparkerna borde i stället satsa på arter som de verkligen kan ge ett bra liv.\n\nDärför föreslår jag två saker. För det första borde djurparkerna bara hålla djur som de har plats för. För det andra borde en oberoende myndighet granska hur djuren mår varje år och publicera resultaten.\n\nOm djurparkerna klarar de kraven, har de en plats i framtiden. Annars kan de lika gärna stänga.\n\nJonas Ek, biolog",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är skribentens åsikt?",
+              "translation": "What is the writer's opinion?",
+              "options": [
+                "Djurparker behövs om de förändras.",
+                "Alla djurparker borde stängas.",
+                "Djurparkerna fungerar bra som de är."
+              ],
+              "answers": [
+                "Djurparker behövs om de förändras."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Skribenten besökte Högholmen första gången som vuxen.",
+              "translation": "The writer visited Korkeasaari for the first time as an adult.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vilket är det starkaste argumentet för djurparker, enligt skribenten?",
+              "translation": "What is the strongest argument for zoos, according to the writer?",
+              "options": [
+                "De räddar utrotningshotade arter.",
+                "De ger familjer en trevlig utflykt.",
+                "De samlar in pengar till staden."
+              ],
+              "answers": [
+                "De räddar utrotningshotade arter."
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilka två djur borde inte finnas i djurparker, enligt texten?",
+              "translation": "Which two animals should not be in zoos, according to the text?",
+              "answers": [
+                "elefanter och isbjörnar",
+                "isbjörnar och elefanter",
+                "elefanter isbjörnar",
+                "isbjörnar elefanter",
+                "elefant och isbjörn",
+                "isbjörn och elefant",
+                "elefanterna och isbjörnarna",
+                "isbjörnarna och elefanterna"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad ska en oberoende myndighet göra, enligt skribenten?",
+              "translation": "What should an independent authority do, according to the writer?",
+              "options": [
+                "Granska varje år hur djuren mår.",
+                "Bestämma priset på biljetterna.",
+                "Föda upp nya arter."
+              ],
+              "answers": [
+                "Granska varje år hur djuren mår."
+              ]
+            },
+            {
+              "id": "q6",
+              "prompt": "Varför skriver skribenten om barnet och björnen?",
+              "translation": "Why does the writer mention the child and the bear?",
+              "options": [
+                "För att visa att upplevelser får människor att bry sig om naturen.",
+                "För att varna för att björnar är farliga.",
+                "För att visa att barn tycker mer om skärmar än om djur."
+              ],
+              "answers": [
+                "För att visa att upplevelser får människor att bry sig om naturen."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "i fångenskap",
+              "en": "in captivity"
+            },
+            {
+              "fi": "på vissa villkor",
+              "en": "on certain conditions"
+            },
+            {
+              "fi": "en generation",
+              "en": "a generation"
+            },
+            {
+              "fi": "en kritiker",
+              "en": "a critic"
+            },
+            {
+              "fi": "en inhägnad",
+              "en": "an enclosure"
+            },
+            {
+              "fi": "oberoende",
+              "en": "independent"
+            },
+            {
+              "fi": "granska",
+              "en": "examine, inspect"
+            },
+            {
+              "fi": "en myndighet",
+              "en": "an authority (government agency)"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

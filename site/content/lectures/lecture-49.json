@@ -2611,6 +2611,535 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "A loudspeaker announcement at a swimming hall, a radio interview about stress, a travel blog post about a day in Porvoo and a hair salon's price list and rules. All texts are invented for practice.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice, read the texts, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-49-listen-1",
+          "title": "Meddelande i simhallen",
+          "textType": "Meddelande i högtalaren",
+          "situation": {
+            "fi": "Du är i en simhall i Helsingfors. Du hör ett meddelande i högtalarna.",
+            "en": "You are at a swimming hall in Helsinki. You hear an announcement over the loudspeakers."
+          },
+          "lines": [
+            {
+              "speaker": "Receptionen",
+              "voice": "Henrik",
+              "fi": "Bästa besökare, här kommer ett meddelande från receptionen.",
+              "en": "Dear visitors, here is an announcement from reception."
+            },
+            {
+              "speaker": "Receptionen",
+              "voice": "Henrik",
+              "fi": "Simhallen stänger i dag redan klockan sjutton, alltså två timmar tidigare än vanligt, eftersom vi har en simtävling i kväll. Bassängerna töms klockan sexton och fyrtiofem.",
+              "en": "The swimming hall closes at five p.m. today, that is two hours earlier than usual, because we have a swimming competition this evening. The pools are cleared at four forty-five."
+            },
+            {
+              "speaker": "Receptionen",
+              "voice": "Henrik",
+              "fi": "Damernas bastu är stängd hela dagen på grund av ett tekniskt fel. Damerna kan i stället använda den lilla bastun bredvid gymmet.",
+              "en": "The women's sauna is closed all day because of a technical fault. Women can use the small sauna next to the gym instead."
+            },
+            {
+              "speaker": "Receptionen",
+              "voice": "Henrik",
+              "fi": "Vi har också hittat några föremål i omklädningsrummen: ett par blå glasögon i ett svart fodral och en mobiltelefon med ett rött skal. Ägarna kan hämta dem i receptionen. Saker som ingen hämtar sparar vi i två veckor.",
+              "en": "We have also found some items in the changing rooms: a pair of blue glasses in a black case and a mobile phone with a red cover. The owners can collect them at reception. We keep things that nobody collects for two weeks."
+            },
+            {
+              "speaker": "Receptionen",
+              "voice": "Henrik",
+              "fi": "Kom ihåg att skåpen töms varje kväll när vi stänger. Glöm inte dina saker! Tack, och ha en skön simtur.",
+              "en": "Remember that the lockers are emptied every evening when we close. Don't forget your things! Thank you, and enjoy your swim."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför stänger simhallen tidigare i dag?",
+              "translation": "Why does the swimming hall close earlier today?",
+              "options": [
+                "Det är en tävling i kväll.",
+                "Bastun är trasig.",
+                "Personalen har möte."
+              ],
+              "answers": [
+                "Det är en tävling i kväll."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur dags stänger simhallen i dag?",
+              "translation": "What time does the swimming hall close today?",
+              "answers": [
+                "17",
+                "17.00",
+                "kl 17",
+                "kl 17.00",
+                "klockan 17",
+                "klockan 17.00",
+                "klockan sjutton",
+                "sjutton",
+                "klockan fem",
+                "fem",
+                "klockan fem på eftermiddagen"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Damerna kan inte basta alls i dag.",
+              "translation": "Women can't use a sauna at all today.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilken mobiltelefon har någon glömt?",
+              "translation": "Which mobile phone has someone left behind?",
+              "options": [
+                "En med rött skal",
+                "En med blått skal",
+                "En i ett svart fodral"
+              ],
+              "answers": [
+                "En med rött skal"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Hur länge sparar simhallen glömda saker?",
+              "translation": "How long does the swimming hall keep forgotten things?",
+              "answers": [
+                "två veckor",
+                "2 veckor",
+                "i två veckor",
+                "i 2 veckor",
+                "fjorton dagar",
+                "14 dagar"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en simtävling",
+              "en": "a swimming competition"
+            },
+            {
+              "fi": "en bassäng",
+              "en": "a pool"
+            },
+            {
+              "fi": "tömma (töms)",
+              "en": "empty (is emptied)"
+            },
+            {
+              "fi": "ett skal",
+              "en": "a (phone) cover; a shell"
+            },
+            {
+              "fi": "en simtur",
+              "en": "a swim"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-49-listen-2",
+          "title": "När stressen tar över",
+          "textType": "Radiointervju",
+          "situation": {
+            "fi": "Du hör en intervju med en psykolog i ett radioprogram om hälsa.",
+            "en": "You hear an interview with a psychologist in a radio programme about health."
+          },
+          "lines": [
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Hösten är här, och för många betyder det mer stress. I studion har jag psykologen Annika Holm. Välkommen, Annika.",
+              "en": "Autumn is here, and for many people that means more stress. In the studio I have psychologist Annika Holm. Welcome, Annika."
+            },
+            {
+              "speaker": "Annika",
+              "voice": "Elin",
+              "fi": "Tack!",
+              "en": "Thank you!"
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Hur märker man att man är stressad?",
+              "en": "How do you notice that you are stressed?"
+            },
+            {
+              "speaker": "Annika",
+              "voice": "Elin",
+              "fi": "Kroppen säger ofta ifrån först. Många får huvudvärk, ont i magen eller spända muskler i nacken. Psykiskt blir man lättirriterad, och det blir svårt att koncentrera sig och sova.",
+              "en": "The body often protests first. Many people get headaches, stomach aches or tense muscles in the neck. Mentally you get easily irritated, and it becomes hard to concentrate and sleep."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Är stress alltid farligt?",
+              "en": "Is stress always dangerous?"
+            },
+            {
+              "speaker": "Annika",
+              "voice": "Elin",
+              "fi": "Nej, inte alls. Lite stress kan ge energi, till exempel före en tentamen eller en tävling. Problemet uppstår när man ständigt är stressad och aldrig får vila.",
+              "en": "No, not at all. A little stress can give you energy, for example before an exam or a competition. The problem arises when you are constantly stressed and never get to rest."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Vad kan man göra själv?",
+              "en": "What can you do yourself?"
+            },
+            {
+              "speaker": "Annika",
+              "voice": "Elin",
+              "fi": "Tre saker. Rör på dig varje dag, gärna ute i naturen. En promenad på trettio minuter räcker. Sov regelbundet, alltså gå och lägg dig ungefär samma tid varje kväll. Och var ärlig mot dig själv: du behöver inte säga ja till allt.",
+              "en": "Three things. Move every day, preferably outdoors in nature. A thirty-minute walk is enough. Sleep regularly, that is, go to bed at about the same time every evening. And be honest with yourself: you don't have to say yes to everything."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Och när ska man söka hjälp?",
+              "en": "And when should you seek help?"
+            },
+            {
+              "speaker": "Annika",
+              "voice": "Elin",
+              "fi": "Om du har sovit dåligt i flera veckor, eller om du känner ångest varje morgon, ska du kontakta hälsostationen eller företagshälsovården. Det är inget att skämmas för.",
+              "en": "If you have slept badly for several weeks, or if you feel anxiety every morning, you should contact the health centre or occupational health care. It's nothing to be ashamed of."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Tack, Annika Holm.",
+              "en": "Thank you, Annika Holm."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar intervjun om?",
+              "translation": "What is the interview about?",
+              "options": [
+                "Hur stress påverkar oss och vad man kan göra.",
+                "Hur man tränar inför en tävling.",
+                "Hur man bokar tid hos en psykolog."
+              ],
+              "answers": [
+                "Hur stress påverkar oss och vad man kan göra."
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Enligt Annika är all stress farlig.",
+              "translation": "According to Annika, all stress is dangerous.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur lång promenad räcker, enligt Annika?",
+              "translation": "How long a walk is enough, according to Annika?",
+              "answers": [
+                "trettio minuter",
+                "30 minuter",
+                "30 min",
+                "en halvtimme",
+                "en halv timme",
+                "30",
+                "trettio",
+                "en promenad på trettio minuter",
+                "en promenad på 30 minuter"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "När ska man kontakta hälsostationen?",
+              "translation": "When should you contact the health centre?",
+              "options": [
+                "När man har sovit dåligt i flera veckor.",
+                "När man är nervös före en tentamen.",
+                "När man har ont i nacken en dag."
+              ],
+              "answers": [
+                "När man har sovit dåligt i flera veckor."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad menar Annika med ”du behöver inte säga ja till allt”?",
+              "translation": "What does Annika mean by \"you don't have to say yes to everything\"?",
+              "options": [
+                "Man kan minska stressen genom att göra färre saker.",
+                "Man ska sluta arbeta helt.",
+                "Man ska aldrig hjälpa andra."
+              ],
+              "answers": [
+                "Man kan minska stressen genom att göra färre saker."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "säga ifrån",
+              "en": "protest, say no (here: the body warns you)"
+            },
+            {
+              "fi": "en muskel (muskler)",
+              "en": "a muscle (muscles)"
+            },
+            {
+              "fi": "uppstå",
+              "en": "arise, come up"
+            },
+            {
+              "fi": "ständigt",
+              "en": "constantly"
+            },
+            {
+              "fi": "regelbundet",
+              "en": "regularly"
+            },
+            {
+              "fi": "ångest",
+              "en": "anxiety"
+            },
+            {
+              "fi": "skämmas",
+              "en": "be ashamed"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-49-read-1",
+          "title": "En lördag i Borgå",
+          "textType": "Blogginlägg",
+          "minutes": 6,
+          "text": "RESEBLOGGEN – ANNAS SMÅ ÄVENTYR\nEn lördag i Borgå\n\nI lördags tog jag och min syster bussen från Kampen till Borgå. Resan tog bara en timme, och biljetten kostade tolv euro. Vi hade tänkt åka båt längs kusten, men båten går bara på sommaren, och nu är det redan september.\n\nFörst promenerade vi i Gamla stan. De små trähusen i olika färger är så vackra, och de röda strandbodarna vid ån ser ut precis som på vykorten. Vi kikade in i nästan varje liten butik och köpte choklad och en handgjord kopp till mamma.\n\nTill lunch åt vi laxsoppa på ett kafé nära domkyrkan. Portionen var enorm, så vi orkade inte äta någon efterrätt. Men vi köpte varsin runebergstårta att ta med hem. Det är ju Borgås egen specialitet, eftersom nationalskalden Runeberg bodde i staden.\n\nPå eftermiddagen började det regna. Vi satt länge på ett mysigt kafé och läste, och det blev faktiskt dagens bästa stund.\n\nJämfört med Helsingfors är Borgå lugnt och litet, men det finns mycket att se. Nästa gång vill jag åka dit i juni, när båten går och man kan sitta ute.\n\nMitt betyg: fyra stjärnor av fem. Minus för vädret!",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Hur reste Anna till Borgå?",
+              "translation": "How did Anna travel to Porvoo?",
+              "options": [
+                "Med buss",
+                "Med båt",
+                "Med tåg"
+              ],
+              "answers": [
+                "Med buss"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket kostade biljetten?",
+              "translation": "How much did the ticket cost?",
+              "answers": [
+                "tolv euro",
+                "12 euro",
+                "12 €",
+                "12",
+                "tolv"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Anna och hennes syster åt efterrätt på kaféet.",
+              "translation": "Anna and her sister ate dessert at the café.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad var dagens bästa stund, enligt Anna?",
+              "translation": "What was the best moment of the day, according to Anna?",
+              "options": [
+                "När de satt och läste på ett kafé.",
+                "När de åt laxsoppa.",
+                "När de gick runt i butikerna."
+              ],
+              "answers": [
+                "När de satt och läste på ett kafé."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför ger Anna inte fem stjärnor?",
+              "translation": "Why doesn't Anna give five stars?",
+              "options": [
+                "Det regnade.",
+                "Bussen var dyr.",
+                "Gamla stan var för liten."
+              ],
+              "answers": [
+                "Det regnade."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "Kampen / Borgå",
+              "en": "Kamppi / Porvoo"
+            },
+            {
+              "fi": "en strandbod",
+              "en": "a shore storehouse (the red riverside buildings)"
+            },
+            {
+              "fi": "kika in",
+              "en": "peek in"
+            },
+            {
+              "fi": "en portion",
+              "en": "a portion, a helping"
+            },
+            {
+              "fi": "varsin",
+              "en": "one each"
+            },
+            {
+              "fi": "en nationalskald",
+              "en": "a national poet"
+            },
+            {
+              "fi": "jämfört med",
+              "en": "compared with"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-49-read-2",
+          "title": "Frisörsalong Sax & Kam",
+          "textType": "Prislista och regler",
+          "minutes": 5,
+          "text": "FRISÖRSALONG SAX & KAM\nAndra linjen 14, Helsingfors\nÖppet: mån–fre 9–19, lör 9–15. Söndagar stängt.\n\nPRISLISTA\nHerrklippning 35 €\nDamklippning, kort hår 45 €\nDamklippning, långt hår 55 €\nBarnklippning (under 12 år) 25 €\nFärgning från 75 €\nStuderande och pensionärer får 10 % rabatt måndag–onsdag. Visa ditt kort.\n\nBOKA TID\nBoka på vår hemsida eller ring 09 222 1100. Du kan också komma in utan tidsbokning om det finns lediga tider, men räkna med att vänta. Berätta om eventuella allergier när du bokar färgning.\n\nAVBOKNING\nAvboka senast 24 timmar före din tid. Om du avbokar senare eller inte kommer alls, tar vi betalt för halva priset. Vid sjukdom gör vi ett undantag – ring oss så snart som möjligt.\n\nÄr du inte nöjd? Säg till direkt eller kom tillbaka inom en vecka, så rättar vi till klippningen utan kostnad.\n\nPresentkort finns att köpa i salongen. Välkommen!",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad kostar en klippning för ett barn som är åtta år?",
+              "translation": "How much is a haircut for an eight-year-old child?",
+              "answers": [
+                "25 euro",
+                "25 €",
+                "25",
+                "tjugofem euro",
+                "tjugofem"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Salongen har öppet på söndagar.",
+              "translation": "The salon is open on Sundays.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "En pensionär vill ha rabatt. Vilken dag ska hon komma?",
+              "translation": "A pensioner wants a discount. Which day should she come?",
+              "options": [
+                "Tisdag",
+                "Torsdag",
+                "Lördag"
+              ],
+              "answers": [
+                "Tisdag"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Du avbokar din tid två timmar innan, för att du hellre vill gå på bio. Vad händer?",
+              "translation": "You cancel your appointment two hours before, because you would rather go to the cinema. What happens?",
+              "options": [
+                "Du betalar halva priset.",
+                "Du betalar ingenting.",
+                "Du betalar hela priset."
+              ],
+              "answers": [
+                "Du betalar halva priset."
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad gör salongen om du inte är nöjd med klippningen?",
+              "translation": "What does the salon do if you are not happy with the haircut?",
+              "options": [
+                "Den rättar till klippningen gratis.",
+                "Den ger dig ett presentkort.",
+                "Den betalar tillbaka hela priset."
+              ],
+              "answers": [
+                "Den rättar till klippningen gratis."
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en prislista",
+              "en": "a price list"
+            },
+            {
+              "fi": "studerande",
+              "en": "students (Finland-Swedish)"
+            },
+            {
+              "fi": "eventuella",
+              "en": "any (possible)"
+            },
+            {
+              "fi": "avboka",
+              "en": "cancel (a booking)"
+            },
+            {
+              "fi": "ta betalt för",
+              "en": "charge for"
+            },
+            {
+              "fi": "rätta till",
+              "en": "put right, fix"
+            },
+            {
+              "fi": "ett presentkort",
+              "en": "a gift card"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {
