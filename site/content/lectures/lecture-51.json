@@ -1910,6 +1910,525 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen-read",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Listen and read",
+      "description": "Two recordings and two texts of the kinds the YKI test uses, on this lecture's topics: a talk at the pharmacy, a radio advert that promises a bit too much, a forum about pets in a rented flat and a property manager's reply to a complaint.",
+      "minutes": 18,
+      "action": "Read the questions first, listen twice (once for the gist, once for the details), read each text in its suggested time, then check your answers.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-51-listen-1",
+          "title": "Ont i ryggen",
+          "textType": "Samtal på apoteket",
+          "situation": {
+            "fi": "En kvinna frågar om råd på ett apotek i Helsingfors.",
+            "en": "A woman asks for advice at a pharmacy in Helsinki."
+          },
+          "lines": [
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Henrik",
+              "fi": "Hej, hur kan jag hjälpa dig?",
+              "en": "Hi, how can I help you?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "Hej. Jag har haft ont i ryggen sedan i söndags. Jag bar flyttlådor åt en vän, och nu gör det ont när jag böjer mig.",
+              "en": "Hi. I've had back pain since Sunday. I carried moving boxes for a friend, and now it hurts when I bend down."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Henrik",
+              "fi": "Okej. Har du ont i benen också, eller bara i ryggen?",
+              "en": "Okay. Do your legs hurt too, or only your back?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "Bara i ryggen, längst ner.",
+              "en": "Only my back, at the very bottom."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Henrik",
+              "fi": "Då kan du pröva en receptfri värktablett. Den lindrar smärtan, men den botar ju inte orsaken. Tar du några andra läkemedel?",
+              "en": "Then you can try an over-the-counter painkiller. It relieves the pain, but of course it doesn't cure the cause. Do you take any other medicines?"
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "Ja, jag har medicin mot högt blodtryck.",
+              "en": "Yes, I have medicine for high blood pressure."
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Henrik",
+              "fi": "Jaha, då ska du inte ta de här tabletterna. Min rekommendation är paracetamol i stället. Ta högst två tabletter tre gånger om dagen, alltså högst sex tabletter per dygn.",
+              "en": "I see, then you shouldn't take these tablets. My recommendation is paracetamol instead. Take at most two tablets three times a day, so at most six tablets in 24 hours."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "Okej. Vad kostar de?",
+              "en": "Okay. What do they cost?"
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Henrik",
+              "fi": "Ett paket med trettio tabletter kostar 4,90. Och försök röra på dig lite varje dag, till exempel ta en kort promenad. Att ligga still hela dagen är knappast bra för ryggen.",
+              "en": "A pack of thirty tablets costs 4.90. And try to move a little every day, for example take a short walk. Lying still all day is hardly good for your back."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "Hur länge ska jag vänta innan jag kontaktar hälsostationen?",
+              "en": "How long should I wait before I contact the health centre?"
+            },
+            {
+              "speaker": "Farmaceuten",
+              "voice": "Henrik",
+              "fi": "Om det inte känns bättre om en vecka, eller om du får feber, så ringer du din hälsostation.",
+              "en": "If it doesn't feel better in a week, or if you get a fever, you call your health centre."
+            },
+            {
+              "speaker": "Kunden",
+              "voice": "Elin",
+              "fi": "Tack så mycket för hjälpen!",
+              "en": "Thank you very much for your help!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför har kvinnan ont i ryggen?",
+              "translation": "Why does the woman have back pain?",
+              "options": [
+                "Hon bar flyttlådor åt en vän",
+                "Hon har tränat på gym",
+                "Hon har suttit för länge vid datorn"
+              ],
+              "answers": [
+                "Hon bar flyttlådor åt en vän"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Varför ska kvinnan inte ta den första tabletten som farmaceuten nämner?",
+              "translation": "Why shouldn't the woman take the first tablet the pharmacist mentions?",
+              "options": [
+                "Hon tar medicin mot högt blodtryck",
+                "Hon har feber",
+                "Tabletten är för dyr"
+              ],
+              "answers": [
+                "Hon tar medicin mot högt blodtryck"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Hur många paracetamoltabletter får hon ta högst per dygn?",
+              "translation": "At most how many paracetamol tablets may she take in 24 hours?",
+              "answers": [
+                "6",
+                "sex",
+                "6 tabletter",
+                "sex tabletter",
+                "högst 6",
+                "högst sex",
+                "högst 6 tabletter",
+                "högst sex tabletter"
+              ],
+              "hint": "Skriv en siffra eller ett ord."
+            },
+            {
+              "id": "q4",
+              "prompt": "Farmaceuten tycker att hon ska vila i sängen hela dagen.",
+              "translation": "The pharmacist thinks she should rest in bed all day.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "När ska hon kontakta hälsostationen?",
+              "translation": "When should she contact the health centre?",
+              "options": [
+                "Om ryggen inte är bättre om en vecka",
+                "När tabletterna tar slut",
+                "Om hon inte kan sova på natten"
+              ],
+              "answers": [
+                "Om ryggen inte är bättre om en vecka"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "receptfri",
+              "en": "over-the-counter, without a prescription"
+            },
+            {
+              "fi": "en värktablett",
+              "en": "a painkiller"
+            },
+            {
+              "fi": "böja sig",
+              "en": "bend down"
+            },
+            {
+              "fi": "ett dygn",
+              "en": "24 hours, a day and a night"
+            },
+            {
+              "fi": "en rekommendation",
+              "en": "a recommendation"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-51-listen-2",
+          "title": "Stor rea på Friluftshuset",
+          "textType": "Radioreklam",
+          "situation": {
+            "fi": "Du hör en reklam på radion.",
+            "en": "You hear an advert on the radio."
+          },
+          "lines": [
+            {
+              "speaker": "Reklamrösten",
+              "voice": "Alex",
+              "fi": "Är du redo för hösten? Nu är det stor slutförsäljning på Friluftshuset i Kampen!",
+              "en": "Are you ready for autumn? There's a big clearance sale at Friluftshuset in Kamppi now!"
+            },
+            {
+              "speaker": "Reklamrösten",
+              "voice": "Alex",
+              "fi": "Vi har sänkt priserna på tält, sovsäckar och vandringskängor med upp till femtio procent. Ja, du hörde rätt: upp till femtio procent!",
+              "en": "We have cut the prices of tents, sleeping bags and hiking boots by up to fifty percent. Yes, you heard right: up to fifty percent!"
+            },
+            {
+              "speaker": "Reklamrösten",
+              "voice": "Alex",
+              "fi": "Våra populära regnjackor av hög kvalitet kostar nu bara 79 euro. Förut kostade de 120.",
+              "en": "Our popular high-quality rain jackets now cost only 79 euros. Before, they cost 120."
+            },
+            {
+              "speaker": "Reklamrösten",
+              "voice": "Alex",
+              "fi": "Och handlar du för över hundra euro får du en termos på köpet.",
+              "en": "And if you shop for over a hundred euros, you get a thermos flask thrown in."
+            },
+            {
+              "speaker": "Reklamrösten",
+              "voice": "Alex",
+              "fi": "Erbjudandet gäller till och med söndagen den 30 augusti, eller så länge lagret räcker.",
+              "en": "The offer is valid up to and including Sunday 30 August, or while stocks last."
+            },
+            {
+              "speaker": "Reklamrösten",
+              "voice": "Alex",
+              "fi": "Är du medlem i vår kundklubb får du dessutom tio procent extra rabatt på alla varor som inte redan är nedsatta. Bli medlem gratis i butiken eller på vår hemsida.",
+              "en": "If you are a member of our customer club, you also get ten percent extra discount on all goods that aren't already reduced. Become a member for free in the shop or on our website."
+            },
+            {
+              "speaker": "Reklamrösten",
+              "voice": "Alex",
+              "fi": "Friluftshuset i Kampen, öppet varje dag från tio till tjugo. Välkommen ut i naturen!",
+              "en": "Friluftshuset in Kamppi, open every day from ten to eight p.m. Welcome out into nature!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Alla varor i butiken kostar nu hälften.",
+              "translation": "All goods in the shop now cost half.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vad kostar regnjackorna nu?",
+              "translation": "What do the rain jackets cost now?",
+              "answers": [
+                "79",
+                "79 euro",
+                "sjuttionio",
+                "sjuttionio euro",
+                "bara 79 euro",
+                "bara sjuttionio euro"
+              ],
+              "hint": "Skriv priset."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad får du om du handlar för över hundra euro?",
+              "translation": "What do you get if you shop for over a hundred euros?",
+              "options": [
+                "En termos",
+                "En sovsäck",
+                "Tio procent rabatt"
+              ],
+              "answers": [
+                "En termos"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför kan det löna sig att gå till butiken snart?",
+              "translation": "Why might it pay to go to the shop soon?",
+              "options": [
+                "Varorna kan ta slut före den 30 augusti",
+                "Butiken stänger för gott i september",
+                "Kundklubben kostar pengar efter augusti"
+              ],
+              "answers": [
+                "Varorna kan ta slut före den 30 augusti"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en slutförsäljning",
+              "en": "a clearance sale"
+            },
+            {
+              "fi": "så länge lagret räcker",
+              "en": "while stocks last"
+            },
+            {
+              "fi": "på köpet",
+              "en": "thrown in, for free with a purchase"
+            },
+            {
+              "fi": "nedsatt",
+              "en": "reduced (in price)"
+            },
+            {
+              "fi": "en hemsida",
+              "en": "a website"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-51-read-1",
+          "title": "Hund i hyreslägenhet?",
+          "textType": "Diskussionsforum",
+          "minutes": 6,
+          "text": "DISKUSSIONSFORUM > BOENDE > HUSDJUR\n\nHund i hyreslägenhet?\n\nSanna_83 skriver:\nVi bor i en hyrestvåa på fjärde våningen i Vallgård och funderar på att skaffa en hund. Barnen tjatar om det varje dag. I hyresavtalet står det ingenting om husdjur. Får hyresvärden förbjuda djur i efterhand? Och är en tvåa ens ett bra hem för en hund?\n\nLotta_L svarar:\nOm det inte står något i avtalet får du i regel ha husdjur. Men du är skyldig att betala om djuret förstör något i lägenheten, till exempel golvet eller dörrarna. Ta också reda på om någon i huset är allergisk.\n\nKattmamma svarar:\nJag har haft katt i tolv år i ett höghus. En katt behöver inga promenader, och grannarna märker knappast att den finns. Barn älskar katter också. Bara en tanke!\n\nJukka_H svarar:\nTänk på grannarna. I vårt hus skällde en hund hela dagarna medan ägarna var på jobbet. Till slut klagade vi hos disponenten. Om ni båda jobbar heltid är det inte rättvist mot hunden heller. En hund behöver sällskap och minst två långa promenader om dagen, även i januari.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad vill Sanna veta?",
+              "translation": "What does Sanna want to know?",
+              "options": [
+                "Om hon får ha hund och om lägenheten passar för en hund",
+                "Var hon kan köpa en hund i Helsingfors",
+                "Hur man klagar på en granne med hund"
+              ],
+              "answers": [
+                "Om hon får ha hund och om lägenheten passar för en hund"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Enligt Lotta får man aldrig ha djur om hyresavtalet inte nämner dem.",
+              "translation": "According to Lotta, you may never have animals if the lease doesn't mention them.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad måste man göra om djuret förstör något i lägenheten?",
+              "translation": "What must you do if the animal damages something in the flat?",
+              "answers": [
+                "betala",
+                "man måste betala",
+                "betala för det",
+                "betala för skadan",
+                "betala skadan",
+                "ersätta skadan",
+                "man måste betala för det",
+                "man måste betala för skadan"
+              ],
+              "hint": "Svara med ett eller några ord."
+            },
+            {
+              "id": "q4",
+              "prompt": "Varför klagade Jukka och hans grannar hos disponenten?",
+              "translation": "Why did Jukka and his neighbours complain to the property manager?",
+              "options": [
+                "En hund skällde när ägarna var på jobbet",
+                "En granne hade för många katter",
+                "En hund var farlig för barnen"
+              ],
+              "answers": [
+                "En hund skällde när ägarna var på jobbet"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad menar Kattmamma?",
+              "translation": "What does Kattmamma mean?",
+              "options": [
+                "Familjen kunde skaffa en katt i stället",
+                "Katter passar inte för barn",
+                "Ingen borde ha djur i ett höghus"
+              ],
+              "answers": [
+                "Familjen kunde skaffa en katt i stället"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "tjata",
+              "en": "nag, keep asking"
+            },
+            {
+              "fi": "i efterhand",
+              "en": "afterwards, after the fact"
+            },
+            {
+              "fi": "i regel",
+              "en": "as a rule"
+            },
+            {
+              "fi": "vara skyldig att",
+              "en": "be obliged to"
+            },
+            {
+              "fi": "skälla",
+              "en": "bark"
+            },
+            {
+              "fi": "medan",
+              "en": "while"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-51-read-2",
+          "title": "Svar på ett klagomål",
+          "textType": "E-postmeddelande",
+          "minutes": 6,
+          "text": "Från: Pekka Virtanen, disponent\nTill: Sara Lindqvist\nÄmne: Svar: Klagomål om gården\n\nHej Sara,\n\nTack för ditt meddelande av den 17 augusti. Du har helt rätt i att gården har varit i dåligt skick i sommar. Gungorna har varit trasiga sedan juni, och soptunnorna har ofta varit överfulla, eftersom soporna bara hämtades varannan vecka under semestertiden.\n\nVi har nu vidtagit följande åtgärder. Från och med den 25 augusti hämtas soporna igen en gång i veckan, varje tisdag. En firma kommer att reparera gungorna i början av september. Hyresvärden står för kostnaden, så hyran höjs inte på grund av reparationen.\n\nDu skrev också om grannar som grillar på balkongen. Enligt husets ordningsregler är det tillåtet att grilla med elgrill på balkongen, men inte med kolgrill. Vi skickar en påminnelse till alla boende den här veckan.\n\nOm du har fler frågor är du välkommen till vårt kontor. Det har öppet måndag till torsdag kl. 9–15.\n\nMed vänliga hälsningar\nPekka Virtanen\nDisponent",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför skriver Pekka Virtanen till Sara?",
+              "translation": "Why does Pekka Virtanen write to Sara?",
+              "options": [
+                "Han svarar på hennes klagomål",
+                "Han berättar att hyran höjs",
+                "Han bjuder in till en städdag på gården"
+              ],
+              "answers": [
+                "Han svarar på hennes klagomål"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilken veckodag hämtas soporna från och med den 25 augusti?",
+              "translation": "Which day of the week is the rubbish collected from 25 August?",
+              "answers": [
+                "tisdag",
+                "tisdagar",
+                "på tisdag",
+                "på tisdagar",
+                "varje tisdag",
+                "en gång i veckan på tisdag"
+              ],
+              "hint": "Skriv en veckodag."
+            },
+            {
+              "id": "q3",
+              "prompt": "De boende måste betala för att gungorna repareras.",
+              "translation": "The residents have to pay for the swings to be repaired.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Man får grilla med elgrill på balkongen.",
+              "translation": "You may grill with an electric grill on the balcony.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför var soptunnorna ofta överfulla i sommar?",
+              "translation": "Why were the bins often overfull this summer?",
+              "options": [
+                "Soporna hämtades mer sällan än vanligt",
+                "Grannarna grillade så mycket",
+                "Soptunnorna var trasiga"
+              ],
+              "answers": [
+                "Soporna hämtades mer sällan än vanligt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "gungor",
+              "en": "swings"
+            },
+            {
+              "fi": "en soptunna",
+              "en": "a rubbish bin"
+            },
+            {
+              "fi": "vidta åtgärder",
+              "en": "take measures"
+            },
+            {
+              "fi": "stå för kostnaden",
+              "en": "pay the cost"
+            },
+            {
+              "fi": "ordningsregler",
+              "en": "house rules"
+            },
+            {
+              "fi": "en påminnelse",
+              "en": "a reminder"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {

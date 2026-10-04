@@ -3059,6 +3059,1130 @@
           ]
         }
       ]
+    },
+    {
+      "id": "mock-test",
+      "after": "practice",
+      "kind": "yki-comprehension",
+      "label": "Mock test: listening and reading",
+      "description": "Stigen's own practice test, not an official YKI test: the third Stigen mock, after Lectures 46 and 50. Five recordings (a phone message, a station announcement, a talk at work, a radio interview and a news item) and four texts (a notice, an email, a job advert and an opinion column) at YKI intermediate level (B1), with one 50-minute timer. It gives you a listening test you can really do and check, because the recordings for the teacher's listening form (item 37) are missing.",
+      "minutes": 50,
+      "examMinutes": 50,
+      "action": "Start the timer. Read the questions before each recording, listen twice (once for the gist, once for the details), read each text in its suggested time, then check your answers at the end.",
+      "parts": [
+        {
+          "type": "listening",
+          "id": "sv-52-mock-listen-1",
+          "title": "Bilen på verkstaden",
+          "textType": "Telefonmeddelande",
+          "situation": {
+            "fi": "Du har lämnat din bil på en verkstad. Du hör ett meddelande på din telefonsvarare.",
+            "en": "You have left your car at a garage. You hear a message on your voicemail."
+          },
+          "lines": [
+            {
+              "speaker": "Jonas på verkstaden",
+              "voice": "Alex",
+              "fi": "Hej, det här är Jonas från Bilservice Hagberg i Sockenbacka. Jag ringer om din bil, den grå Toyotan.",
+              "en": "Hi, this is Jonas from Bilservice Hagberg in Pitäjänmäki. I'm calling about your car, the grey Toyota."
+            },
+            {
+              "speaker": "Jonas på verkstaden",
+              "voice": "Alex",
+              "fi": "Vi har bytt bromsarna som vi kom överens om, men vi upptäckte också att ett av däcken är skadat. Vi har inte bytt det än, för jag ville fråga dig först.",
+              "en": "We've changed the brakes as we agreed, but we also discovered that one of the tyres is damaged. We haven't changed it yet, because I wanted to ask you first."
+            },
+            {
+              "speaker": "Jonas på verkstaden",
+              "voice": "Alex",
+              "fi": "Ett nytt däck kostar 95 euro, och då blir det totala beloppet ungefär 410 euro i stället för 315.",
+              "en": "A new tyre costs 95 euros, and then the total amount will be about 410 euros instead of 315."
+            },
+            {
+              "speaker": "Jonas på verkstaden",
+              "voice": "Alex",
+              "fi": "Ring mig så snart som möjligt, så hinner vi byta det i dag. Bilen kan hämtas tidigast i morgon, torsdag, efter klockan tolv. Vi har öppet till fem.",
+              "en": "Call me as soon as possible, so we have time to change it today. The car can be picked up tomorrow, Thursday, after twelve at the earliest. We're open until five."
+            },
+            {
+              "speaker": "Jonas på verkstaden",
+              "voice": "Alex",
+              "fi": "Mitt nummer är 044 523 1870. Jag upprepar: 044 523 1870. Tack, hej!",
+              "en": "My number is 044 523 1870. I repeat: 044 523 1870. Thanks, bye!"
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför ringer Jonas?",
+              "translation": "Why is Jonas calling?",
+              "options": [
+                "Han vill veta om han får byta ett däck",
+                "Han vill säga att bilen redan är klar",
+                "Han kan inte reparera bromsarna"
+              ],
+              "answers": [
+                "Han vill veta om han får byta ett däck"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur mycket kostar allt tillsammans om däcket byts?",
+              "translation": "How much does everything cost together if the tyre is changed?",
+              "answers": [
+                "410",
+                "410 euro",
+                "ungefär 410 euro",
+                "cirka 410 euro",
+                "ca 410 euro",
+                "fyrahundratio",
+                "fyrahundratio euro",
+                "ungefär fyrahundratio euro"
+              ],
+              "hint": "Skriv beloppet."
+            },
+            {
+              "id": "q3",
+              "prompt": "När kan bilen hämtas tidigast?",
+              "translation": "When can the car be picked up at the earliest?",
+              "options": [
+                "På torsdag efter klockan tolv",
+                "I dag före klockan fem",
+                "På torsdag före klockan tolv"
+              ],
+              "answers": [
+                "På torsdag efter klockan tolv"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Jonas har redan bytt det skadade däcket.",
+              "translation": "Jonas has already changed the damaged tyre.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en verkstad",
+              "en": "a (car repair) garage"
+            },
+            {
+              "fi": "ett däck",
+              "en": "a tyre"
+            },
+            {
+              "fi": "ett belopp",
+              "en": "an amount (of money)"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-52-mock-listen-2",
+          "title": "Tåget till Tammerfors",
+          "textType": "Meddelande på järnvägsstationen",
+          "situation": {
+            "fi": "Du är på Helsingfors järnvägsstation och hör ett meddelande i högtalarna.",
+            "en": "You are at Helsinki railway station and hear an announcement over the loudspeakers."
+          },
+          "lines": [
+            {
+              "speaker": "Högtalaren",
+              "voice": "Henrik",
+              "fi": "Meddelande till resenärerna. InterCity-tåget till Tammerfors med planerad avgång klockan 16.12 är tyvärr cirka tjugofem minuter försenat på grund av ett tekniskt fel.",
+              "en": "An announcement to passengers. The Intercity train to Tampere, scheduled to depart at 16.12, is unfortunately about twenty-five minutes late because of a technical fault."
+            },
+            {
+              "speaker": "Högtalaren",
+              "voice": "Henrik",
+              "fi": "Tåget avgår från spår 8 i stället för spår 5. Jag upprepar: tåget till Tammerfors avgår från spår 8.",
+              "en": "The train departs from track 8 instead of track 5. I repeat: the train to Tampere departs from track 8."
+            },
+            {
+              "speaker": "Högtalaren",
+              "voice": "Henrik",
+              "fi": "Resenärer som ska vidare till Uleåborg hinner dessvärre inte med sin anslutning i Tammerfors. Vänligen kontakta personalen vid informationsdisken i stationshallen, så hjälper vi er att boka en ny resa.",
+              "en": "Passengers travelling on to Oulu will unfortunately miss their connection in Tampere. Please contact the staff at the information desk in the station hall, and we will help you book a new journey."
+            },
+            {
+              "speaker": "Högtalaren",
+              "voice": "Henrik",
+              "fi": "Restaurangvagnen är stängd under den här resan, men personalen säljer kaffe och smörgåsar ombord. Vi ber om ursäkt för förseningen.",
+              "en": "The restaurant car is closed on this journey, but the staff sell coffee and sandwiches on board. We apologise for the delay."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Hur mycket är tåget försenat?",
+              "translation": "How late is the train?",
+              "answers": [
+                "25 minuter",
+                "tjugofem minuter",
+                "cirka 25 minuter",
+                "cirka tjugofem minuter",
+                "ungefär 25 minuter",
+                "ungefär tjugofem minuter",
+                "ca 25 minuter",
+                "25 min",
+                "25",
+                "tjugofem"
+              ],
+              "hint": "Skriv tiden."
+            },
+            {
+              "id": "q2",
+              "prompt": "Från vilket spår avgår tåget?",
+              "translation": "From which track does the train depart?",
+              "options": [
+                "Spår 8",
+                "Spår 5",
+                "Spår 18"
+              ],
+              "answers": [
+                "Spår 8"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad ska resenärer som ska till Uleåborg göra?",
+              "translation": "What should passengers going to Oulu do?",
+              "options": [
+                "Gå till informationsdisken",
+                "Byta tåg i Tammerfors som vanligt",
+                "Fråga personalen ombord"
+              ],
+              "answers": [
+                "Gå till informationsdisken"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Man kan köpa kaffe på tåget.",
+              "translation": "You can buy coffee on the train.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "försenad",
+              "en": "late, delayed"
+            },
+            {
+              "fi": "ett spår",
+              "en": "a track, platform"
+            },
+            {
+              "fi": "en anslutning",
+              "en": "a connection"
+            },
+            {
+              "fi": "dessvärre",
+              "en": "unfortunately"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-52-mock-listen-3",
+          "title": "En present till Ritva",
+          "textType": "Samtal på arbetsplatsen",
+          "situation": {
+            "fi": "Två kolleger pratar i kafferummet på jobbet.",
+            "en": "Two colleagues talk in the coffee room at work."
+          },
+          "lines": [
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Du, har du hört att Ritva går i pension i slutet av september?",
+              "en": "Hey, have you heard that Ritva is retiring at the end of September?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Ja, hon har ju jobbat här i över trettio år. Ska vi köpa något till henne?",
+              "en": "Yes, she has worked here for over thirty years, after all. Shall we buy her something?"
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Det tänkte jag. Jag kan samla in pengar. Vad tycker du, tio euro per person?",
+              "en": "That's what I was thinking. I can collect money. What do you think, ten euros per person?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Det är lite mycket för praktikanterna. Kan inte var och en ge vad man vill?",
+              "en": "That's a bit much for the interns. Can't everyone give what they want?"
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Okej, frivilligt alltså. Vi är femton på avdelningen, så det blir säkert minst hundra euro i alla fall.",
+              "en": "Okay, voluntary then. There are fifteen of us in the department, so it'll surely be at least a hundred euros anyway."
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Vad ska vi köpa då? Blommor vissnar på en vecka.",
+              "en": "What shall we buy, then? Flowers wilt in a week."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Hon har pratat om att hon vill börja skåda fåglar. En bra kikare kanske?",
+              "en": "She has talked about wanting to start birdwatching. A good pair of binoculars, maybe?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "En bra kikare kostar nog betydligt mer än hundra euro. Men vi kan ge henne ett presentkort till en friluftsbutik. Då får hon välja själv.",
+              "en": "A good pair of binoculars probably costs considerably more than a hundred euros. But we can give her a gift card for an outdoor shop. Then she can choose herself."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Bra idé! Och kaffe och tårta på hennes sista dag, fredagen den tjugofemte?",
+              "en": "Good idea! And coffee and cake on her last day, Friday the twenty-fifth?"
+            },
+            {
+              "speaker": "Daniel",
+              "voice": "Alex",
+              "fi": "Absolut. Jag beställer tårtan från bageriet nere på gatan. Men vi måste hålla det hemligt.",
+              "en": "Absolutely. I'll order the cake from the bakery down the street. But we have to keep it secret."
+            },
+            {
+              "speaker": "Sanna",
+              "voice": "Elin",
+              "fi": "Självklart. Jag skickar ett mejl till alla utom Ritva.",
+              "en": "Of course. I'll send an email to everyone except Ritva."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad planerar Sanna och Daniel?",
+              "translation": "What are Sanna and Daniel planning?",
+              "options": [
+                "En överraskning för en kollega som slutar",
+                "En fest för de nya praktikanterna",
+                "En utflykt för att skåda fåglar"
+              ],
+              "answers": [
+                "En överraskning för en kollega som slutar"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Alla på avdelningen ska ge tio euro var.",
+              "translation": "Everyone in the department will give ten euros each.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad bestämmer de att köpa?",
+              "translation": "What do they decide to buy?",
+              "options": [
+                "Ett presentkort",
+                "En kikare",
+                "Blommor"
+              ],
+              "answers": [
+                "Ett presentkort"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilken dag är Ritvas sista arbetsdag?",
+              "translation": "Which day is Ritva's last working day?",
+              "answers": [
+                "fredag",
+                "fredagen",
+                "på fredag",
+                "fredagen den 25",
+                "fredag den 25",
+                "fredag 25",
+                "fredagen den tjugofemte",
+                "fredag den tjugofemte",
+                "den 25",
+                "den tjugofemte",
+                "den 25 september",
+                "25 september",
+                "den tjugofemte september",
+                "fredagen den 25 september",
+                "fredag den 25 september",
+                "fredag 25 september",
+                "25.9"
+              ],
+              "hint": "Skriv veckodag eller datum."
+            },
+            {
+              "id": "q5",
+              "prompt": "Varför vill de inte köpa en kikare?",
+              "translation": "Why don't they want to buy binoculars?",
+              "options": [
+                "Den blir antagligen för dyr",
+                "Ritva har redan en kikare",
+                "Den vissnar på en vecka"
+              ],
+              "answers": [
+                "Den blir antagligen för dyr"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "gå i pension",
+              "en": "retire"
+            },
+            {
+              "fi": "en praktikant",
+              "en": "an intern, a trainee"
+            },
+            {
+              "fi": "frivilligt",
+              "en": "voluntary, optional"
+            },
+            {
+              "fi": "en kikare",
+              "en": "binoculars"
+            },
+            {
+              "fi": "betydligt",
+              "en": "considerably"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-52-mock-listen-4",
+          "title": "Språkcaféet i Malm",
+          "textType": "Intervju i radio",
+          "situation": {
+            "fi": "Du hör en intervju i ett radioprogram om vardagen i Helsingfors.",
+            "en": "You hear an interview in a radio programme about everyday life in Helsinki."
+          },
+          "lines": [
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Välkommen till Vardag i stan. Min gäst i dag är Nadia Karimi, som leder ett språkcafé på biblioteket i Malm. Välkommen, Nadia.",
+              "en": "Welcome to Everyday Life in Town. My guest today is Nadia Karimi, who runs a language café at the library in Malmi. Welcome, Nadia."
+            },
+            {
+              "speaker": "Nadia Karimi",
+              "voice": "Elin",
+              "fi": "Tack, kul att vara här.",
+              "en": "Thanks, nice to be here."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Vad är ett språkcafé egentligen?",
+              "en": "What actually is a language café?"
+            },
+            {
+              "speaker": "Nadia Karimi",
+              "voice": "Elin",
+              "fi": "Det är ett ställe där man övar på att prata svenska i en avslappnad miljö. Vi träffas varje tisdag klockan fem, dricker kaffe och pratar om allt möjligt: vädret, mat, nyheter. Ingen undervisning och inga läxor.",
+              "en": "It's a place where you practise speaking Swedish in a relaxed setting. We meet every Tuesday at five, drink coffee and talk about all sorts of things: the weather, food, the news. No teaching and no homework."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Hur kom du på idén?",
+              "en": "How did you come up with the idea?"
+            },
+            {
+              "speaker": "Nadia Karimi",
+              "voice": "Elin",
+              "fi": "Jag flyttade hit från Afghanistan för åtta år sedan. Jag gick på många kurser, men jag hade ingen att prata svenska med, eftersom mina grannar och kolleger talade finska. Det var nämligen mitt största problem: jag kunde grammatiken, men jag vågade inte prata.",
+              "en": "I moved here from Afghanistan eight years ago. I went to lots of courses, but I had nobody to speak Swedish with, because my neighbours and colleagues spoke Finnish. That was in fact my biggest problem: I knew the grammar, but I didn't dare to speak."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Vilka kommer till caféet?",
+              "en": "Who comes to the café?"
+            },
+            {
+              "speaker": "Nadia Karimi",
+              "voice": "Elin",
+              "fi": "Alla möjliga. Studerande, pensionärer och framför allt folk som ska skriva YKI-testet. Och några finskspråkiga som vill fräscha upp sin skolsvenska. Förra veckan var vi tjugotvå, så nu behöver vi fler frivilliga som har svenska som modersmål.",
+              "en": "All kinds of people. Students, pensioners and above all people who are going to take the YKI test. And some Finnish speakers who want to brush up their school Swedish. Last week there were twenty-two of us, so now we need more volunteers who have Swedish as their mother tongue."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Vad gör en frivillig?",
+              "en": "What does a volunteer do?"
+            },
+            {
+              "speaker": "Nadia Karimi",
+              "voice": "Elin",
+              "fi": "Man sitter vid ett bord med tre, fyra deltagare och håller igång samtalet. Man behöver inte vara lärare, bara tålmodig och nyfiken på andra människor.",
+              "en": "You sit at a table with three or four participants and keep the conversation going. You don't need to be a teacher, just patient and curious about other people."
+            },
+            {
+              "speaker": "Programledaren",
+              "voice": "Henrik",
+              "fi": "Kostar det något?",
+              "en": "Does it cost anything?"
+            },
+            {
+              "speaker": "Nadia Karimi",
+              "voice": "Elin",
+              "fi": "Nej, det är helt gratis. Biblioteket ger oss lokalen, och vi turas om att ta med kaffebröd.",
+              "en": "No, it's completely free. The library gives us the room, and we take turns bringing buns and cakes."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad gör man på språkcaféet?",
+              "translation": "What do people do at the language café?",
+              "options": [
+                "Man pratar svenska om vardagliga saker",
+                "Man gör grammatikövningar",
+                "Man förbereder sig för YKI-testet med en lärare"
+              ],
+              "answers": [
+                "Man pratar svenska om vardagliga saker"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur länge har Nadia bott i Finland?",
+              "translation": "How long has Nadia lived in Finland?",
+              "answers": [
+                "8 år",
+                "åtta år",
+                "i 8 år",
+                "i åtta år",
+                "8",
+                "åtta",
+                "sedan 8 år",
+                "sedan åtta år"
+              ],
+              "hint": "Skriv antalet år."
+            },
+            {
+              "id": "q3",
+              "prompt": "Vad var Nadias största problem när hon lärde sig svenska?",
+              "translation": "What was Nadia's biggest problem when she was learning Swedish?",
+              "options": [
+                "Hon vågade inte prata",
+                "Hon förstod inte grammatiken",
+                "Hon hittade inga kurser"
+              ],
+              "answers": [
+                "Hon vågade inte prata"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Språkcaféet behöver fler frivilliga.",
+              "translation": "The language café needs more volunteers.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vem skulle Nadia helst vilja ha som ny frivillig?",
+              "translation": "Whom would Nadia most like to have as a new volunteer?",
+              "options": [
+                "En tålmodig person som har svenska som modersmål",
+                "En utbildad lärare i svenska",
+                "En person som nyss har klarat YKI-testet"
+              ],
+              "answers": [
+                "En tålmodig person som har svenska som modersmål"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "avslappnad",
+              "en": "relaxed"
+            },
+            {
+              "fi": "våga",
+              "en": "dare"
+            },
+            {
+              "fi": "en frivillig",
+              "en": "a volunteer"
+            },
+            {
+              "fi": "tålmodig",
+              "en": "patient"
+            },
+            {
+              "fi": "turas om",
+              "en": "take turns"
+            }
+          ]
+        },
+        {
+          "type": "listening",
+          "id": "sv-52-mock-listen-5",
+          "title": "Städdag på stränderna",
+          "textType": "Nyhet i radio",
+          "situation": {
+            "fi": "Du hör en lokal nyhet i radion.",
+            "en": "You hear a local news item on the radio."
+          },
+          "lines": [
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Elin",
+              "fi": "Över femhundra frivilliga deltog i lördags i en stor städdag längs stränderna i Esbo och Helsingfors. Under fyra timmar samlade de in totalt två ton skräp.",
+              "en": "Over five hundred volunteers took part last Saturday in a big clean-up day along the beaches of Espoo and Helsinki. In four hours they collected a total of two tonnes of rubbish."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Elin",
+              "fi": "Enligt arrangören, föreningen Rena stränder, var cigarettfimpar och plastförpackningar det vanligaste skräpet. Föreningens ordförande Kim Lindholm:",
+              "en": "According to the organiser, the association Rena stränder, cigarette butts and plastic packaging were the most common rubbish. The association's chair, Kim Lindholm:"
+            },
+            {
+              "speaker": "Kim Lindholm",
+              "voice": "Henrik",
+              "fi": "Folk tror att en fimp är så liten att den inte spelar någon roll. Men den innehåller gifter som skadar fiskar och fåglar.",
+              "en": "People think a cigarette butt is so small that it doesn't matter. But it contains poisons that harm fish and birds."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Elin",
+              "fi": "Särskilt många av deltagarna var ungdomar. En skolklass från Esbo hittade bland annat en gammal cykel och ett par skidor i vattnet vid Mattby.",
+              "en": "An especially large number of the participants were young people. A school class from Espoo found, among other things, an old bike and a pair of skis in the water at Matinkylä."
+            },
+            {
+              "speaker": "Nyhetsuppläsaren",
+              "voice": "Elin",
+              "fi": "Föreningen vill nu att städerna sätter upp fler soptunnor vid stränderna. Nästa städdag ordnas i maj.",
+              "en": "The association now wants the cities to put up more bins by the beaches. The next clean-up day will be held in May."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Hur mycket skräp samlade de frivilliga in?",
+              "translation": "How much rubbish did the volunteers collect?",
+              "answers": [
+                "2 ton",
+                "två ton",
+                "totalt 2 ton",
+                "totalt två ton",
+                "2000 kilo",
+                "tvåtusen kilo"
+              ],
+              "hint": "Skriv mängden."
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilket skräp var vanligast?",
+              "translation": "Which rubbish was most common?",
+              "options": [
+                "Cigarettfimpar och plastförpackningar",
+                "Cyklar och skidor",
+                "Glasflaskor och burkar"
+              ],
+              "answers": [
+                "Cigarettfimpar och plastförpackningar"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Många av deltagarna var unga.",
+              "translation": "Many of the participants were young.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vad vill föreningen att städerna ska göra?",
+              "translation": "What does the association want the cities to do?",
+              "options": [
+                "Sätta upp fler soptunnor vid stränderna",
+                "Förbjuda rökning på stränderna",
+                "Ordna en städdag varje månad"
+              ],
+              "answers": [
+                "Sätta upp fler soptunnor vid stränderna"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "skräp",
+              "en": "rubbish, litter"
+            },
+            {
+              "fi": "en fimp",
+              "en": "a cigarette butt"
+            },
+            {
+              "fi": "ett gift",
+              "en": "a poison"
+            },
+            {
+              "fi": "ungdomar",
+              "en": "young people"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-52-mock-read-1",
+          "title": "Hälsostationen flyttar",
+          "textType": "Anslag",
+          "minutes": 6,
+          "text": "BJÖRKBACKA HÄLSOSTATION FLYTTAR\n\nBjörkbacka hälsostation flyttar till nya lokaler i köpcentret Björkbacka torg, Torgvägen 4, andra våningen.\n\nDen gamla hälsostationen på Skolgatan har öppet sista gången fredagen den 9 oktober. Den nya hälsostationen öppnar måndagen den 19 oktober.\n\nUnder flyttveckan 12–16 oktober är hälsostationen stängd. Om du behöver vård den veckan kan du vända dig till Ekdals hälsostation, som då har öppet längre, kl. 8–20. I akuta nödsituationer ska du alltid ringa 112.\n\nI samma hus finns också apoteket och laboratoriet. Från parkeringsgaraget kommer du direkt upp till hälsostationen med hiss, och buss 78 stannar precis utanför.\n\nTelefontiderna är desamma som förut: vardagar kl. 8–16. Du kan också boka tid i appen eller på webben. Tider som du redan har bokat gäller som vanligt, men på den nya adressen.\n\nVälkommen till nya Björkbacka hälsostation!",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad handlar anslaget om?",
+              "translation": "What is the notice about?",
+              "options": [
+                "Hälsostationen byter adress",
+                "Hälsostationen stängs för alltid",
+                "Hälsostationen får nya telefontider"
+              ],
+              "answers": [
+                "Hälsostationen byter adress"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Vilket datum öppnar den nya hälsostationen?",
+              "translation": "On what date does the new health centre open?",
+              "answers": [
+                "19 oktober",
+                "den 19 oktober",
+                "måndagen den 19 oktober",
+                "måndag den 19 oktober",
+                "måndag 19 oktober",
+                "nittonde oktober",
+                "den nittonde oktober",
+                "måndagen den nittonde oktober",
+                "19.10"
+              ],
+              "hint": "Skriv datumet."
+            },
+            {
+              "id": "q3",
+              "prompt": "Du blir sjuk den 14 oktober, men det är inte akut. Vart ska du vända dig?",
+              "translation": "You get ill on 14 October, but it isn't an emergency. Where should you go?",
+              "options": [
+                "Till Ekdals hälsostation",
+                "Till den gamla hälsostationen på Skolgatan",
+                "Till apoteket i köpcentret"
+              ],
+              "answers": [
+                "Till Ekdals hälsostation"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Om du redan har en bokad tid måste du boka en ny.",
+              "translation": "If you already have a booked appointment, you must book a new one.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Det är lätt att komma till den nya hälsostationen med bil.",
+              "translation": "It is easy to get to the new health centre by car.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "lokaler",
+              "en": "premises"
+            },
+            {
+              "fi": "vända sig till",
+              "en": "turn to, contact"
+            },
+            {
+              "fi": "akut",
+              "en": "urgent, acute"
+            },
+            {
+              "fi": "en nödsituation",
+              "en": "an emergency"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-52-mock-read-2",
+          "title": "Bekräftelse på en kurs",
+          "textType": "E-postmeddelande",
+          "minutes": 7,
+          "text": "Från: Medborgarinstitutet Södra, kursbyrån\nÄmne: Bekräftelse: Svenska B1 – tala och skriva\n\nHej Ravi,\n\nTack för din anmälan till kursen Svenska B1 – tala och skriva. Din plats är nu bekräftad.\n\nKursen börjar tisdagen den 8 september och pågår till den 1 december. Vi träffas på tisdagar kl. 17.30–19.00 i sal 204 på andra våningen. Observera att lektionen den 20 oktober är inställd, så kursen har totalt tolv träffar.\n\nKursavgiften är 85 euro. Du får fakturan per e-post i början av september, och den ska vara betald senast den 30 september. Om du är arbetslös får du 50 procent rabatt. Skicka i så fall ett intyg om det till oss före kursstarten.\n\nOm du vill avboka din plats måste du göra det senast en vecka före kursstarten. Efter det betalar du hela avgiften, förutom om du blir sjuk och kan visa ett läkarintyg.\n\nKursen passar framför allt dig som ska skriva YKI-testet på mellannivån. Ta med en anteckningsbok till första lektionen. Kursboken får du av läraren.\n\nVälkommen!\nKursbyrån",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Varför har Ravi fått det här mejlet?",
+              "translation": "Why has Ravi received this email?",
+              "options": [
+                "Han har anmält sig till en kurs",
+                "Han har glömt att betala kursavgiften",
+                "Kursen har blivit inställd"
+              ],
+              "answers": [
+                "Han har anmält sig till en kurs"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Hur många gånger träffas kursen?",
+              "translation": "How many times does the course meet?",
+              "answers": [
+                "12",
+                "tolv",
+                "12 gånger",
+                "tolv gånger",
+                "totalt 12 gånger",
+                "totalt tolv gånger",
+                "12 träffar",
+                "tolv träffar",
+                "totalt 12",
+                "totalt tolv"
+              ],
+              "hint": "Skriv ett tal."
+            },
+            {
+              "id": "q3",
+              "prompt": "Fakturan ska vara betald före kursstarten.",
+              "translation": "The invoice must be paid before the course starts.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Ravi avbokar sin plats tre dagar före kursstarten. Han är frisk. Vad händer?",
+              "translation": "Ravi cancels his place three days before the course starts. He is healthy. What happens?",
+              "options": [
+                "Han betalar hela avgiften",
+                "Han betalar halva avgiften",
+                "Han betalar ingenting"
+              ],
+              "answers": [
+                "Han betalar hela avgiften"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vad ska Ravi ta med till första lektionen?",
+              "translation": "What should Ravi bring to the first lesson?",
+              "answers": [
+                "en anteckningsbok",
+                "anteckningsbok",
+                "anteckningsboken",
+                "ett anteckningshäfte",
+                "ett häfte"
+              ],
+              "hint": "Skriv ett eller två ord."
+            },
+            {
+              "id": "q6",
+              "prompt": "Vem får rabatt på kursavgiften?",
+              "translation": "Who gets a discount on the course fee?",
+              "options": [
+                "Den som är arbetslös",
+                "Den som ska skriva YKI-testet",
+                "Den som betalar före den 30 september"
+              ],
+              "answers": [
+                "Den som är arbetslös"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "en bekräftelse",
+              "en": "a confirmation"
+            },
+            {
+              "fi": "inställd",
+              "en": "cancelled"
+            },
+            {
+              "fi": "ett intyg",
+              "en": "a certificate"
+            },
+            {
+              "fi": "avboka",
+              "en": "cancel (a booking)"
+            },
+            {
+              "fi": "förutom",
+              "en": "except, apart from"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-52-mock-read-3",
+          "title": "Kaféet söker personal",
+          "textType": "Platsannons",
+          "minutes": 6,
+          "text": "KAFÉ LINDEN I TÖLÖ SÖKER EN NY MEDARBETARE\n\nVi är ett litet familjeföretag som har bakat bröd och bullar i Tölö sedan 1998. Nu söker vi en glad medarbetare till kassan och kaféet. Jobbet är på deltid, 20–25 timmar i veckan, från och med den 1 oktober.\n\nArbetstiderna är främst morgnar och veckoslut: vardagar kl. 7–12 och varannan lördag kl. 8–15. På söndagar är kaféet stängt.\n\nVi önskar att du\n– talar svenska och finska (engelska är ett plus)\n– har hygienpass eller är beredd att skaffa ett\n– tycker om att arbeta med människor och klarar av att ha bråttom.\n\nErfarenhet från kafé eller butik är bra, men inget krav. Vi lär dig allt du behöver kunna.\n\nVi erbjuder en trevlig arbetsplats, lön enligt kollektivavtalet samt gratis kaffe och lunch under arbetspasset.\n\nSkicka en kort ansökan och ditt CV per e-post senast den 15 september. Vi ringer till de sökande som vi vill träffa och håller intervjuerna veckan därpå. Har du frågor? Ring Anna Linden efter kl. 14.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vilket slags jobb erbjuder kaféet?",
+              "translation": "What kind of job does the café offer?",
+              "options": [
+                "Ett deltidsjobb",
+                "Ett heltidsjobb",
+                "Ett sommarjobb"
+              ],
+              "answers": [
+                "Ett deltidsjobb"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Man måste ha arbetat på ett kafé tidigare.",
+              "translation": "You must have worked in a café before.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Vilken veckodag är kaféet stängt?",
+              "translation": "On which day of the week is the café closed?",
+              "answers": [
+                "söndag",
+                "söndagar",
+                "på söndag",
+                "på söndagar"
+              ],
+              "hint": "Skriv en veckodag."
+            },
+            {
+              "id": "q4",
+              "prompt": "Du har inget hygienpass. Vad gäller då?",
+              "translation": "You have no hygiene passport. What applies then?",
+              "options": [
+                "Du kan söka om du är beredd att skaffa ett",
+                "Du kan inte söka jobbet",
+                "Du får bara arbeta i kassan"
+              ],
+              "answers": [
+                "Du kan söka om du är beredd att skaffa ett"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Senast vilket datum ska ansökan skickas?",
+              "translation": "By what date must the application be sent?",
+              "answers": [
+                "15 september",
+                "den 15 september",
+                "senast den 15 september",
+                "senast 15 september",
+                "femtonde september",
+                "den femtonde september",
+                "15.9"
+              ],
+              "hint": "Skriv datumet."
+            }
+          ],
+          "words": [
+            {
+              "fi": "en medarbetare",
+              "en": "an employee, a co-worker"
+            },
+            {
+              "fi": "på deltid",
+              "en": "part-time"
+            },
+            {
+              "fi": "ett hygienpass",
+              "en": "a food hygiene certificate (Finland)"
+            },
+            {
+              "fi": "kollektivavtalet",
+              "en": "the collective agreement (pay rules)"
+            },
+            {
+              "fi": "ett arbetspass",
+              "en": "a work shift"
+            }
+          ]
+        },
+        {
+          "type": "reading",
+          "id": "sv-52-mock-read-4",
+          "title": "Låt kontanterna leva",
+          "textType": "Krönika",
+          "minutes": 10,
+          "text": "KRÖNIKA\n\nLåt kontanterna leva\n\nFörra veckan stod jag i kö på ett kafé i centrum. Framför mig stod en äldre man med en sedel på tjugo euro i handen. ”Vi tar tyvärr bara kort”, sa kassören. Mannen stoppade sedeln i fickan och gick därifrån utan sitt kaffe. Jag har tänkt på honom många gånger sedan dess.\n\nI Finland betalar de flesta i dag med kort eller mobil. Det är snabbt och praktiskt, och jag gör det själv nästan varje dag. Men allt fler butiker och kaféer slutar ta emot kontanter, och det oroar mig.\n\nFör det första finns det människor som inte klarar sig utan kontanter. Många äldre har aldrig använt en betalningsapp, och en del personer kan av olika skäl inte få ett bankkort. För dem betyder en kontantfri butik en stängd dörr.\n\nFör det andra är kontanter ett skydd när tekniken inte fungerar. Alla har vi varit med om att kortterminalen plötsligt slutar fungera eller att nätet ligger nere. Vid ett längre elavbrott vore ett samhälle helt utan kontanter ganska hjälplöst.\n\nDessutom hjälper kontanter många att hålla koll på sin ekonomi. När plånboken är tom, är den tom. Med kort märker man knappast hur pengarna försvinner.\n\nJag vet vad motståndarna säger: kontanter är dyra att hantera, och de används ibland av brottslingar. Det stämmer, men det är inget skäl att stänga ute en del av befolkningen.\n\nJag vill inte tillbaka till en tid utan kort. Jag vill bara att alla ska kunna välja. Därför borde butiker som säljer mat och mediciner vara skyldiga att ta emot kontanter. Ett modernt samhälle är ett samhälle där alla får vara med, också mannen som ville köpa en kopp kaffe.\n\nEva Grönlund\nSkribenten är frilansjournalist i Helsingfors.",
+          "questions": [
+            {
+              "id": "q1",
+              "prompt": "Vad är skribentens viktigaste åsikt?",
+              "translation": "What is the writer's main opinion?",
+              "options": [
+                "Man ska kunna betala kontant också i framtiden",
+                "Kortbetalningar borde förbjudas",
+                "Kontanter är för dyra att hantera"
+              ],
+              "answers": [
+                "Man ska kunna betala kontant också i framtiden"
+              ]
+            },
+            {
+              "id": "q2",
+              "prompt": "Skribenten betalar själv oftast med kort eller mobil.",
+              "translation": "The writer herself usually pays by card or phone.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Rätt"
+              ]
+            },
+            {
+              "id": "q3",
+              "prompt": "Varför gick mannen på kaféet utan sitt kaffe?",
+              "translation": "Why did the man at the café leave without his coffee?",
+              "options": [
+                "Kaféet tog inte emot kontanter",
+                "Han hade inga pengar med sig",
+                "Kortterminalen fungerade inte"
+              ],
+              "answers": [
+                "Kaféet tog inte emot kontanter"
+              ]
+            },
+            {
+              "id": "q4",
+              "prompt": "Vilket argument för kontanter nämner skribenten INTE?",
+              "translation": "Which argument for cash does the writer NOT mention?",
+              "options": [
+                "Kontanter är bättre för miljön",
+                "Kontanter fungerar vid ett elavbrott",
+                "Med kontanter är det lättare att hålla koll på pengarna"
+              ],
+              "answers": [
+                "Kontanter är bättre för miljön"
+              ]
+            },
+            {
+              "id": "q5",
+              "prompt": "Vilka butiker borde enligt skribenten vara skyldiga att ta emot kontanter?",
+              "translation": "According to the writer, which shops should be obliged to accept cash?",
+              "answers": [
+                "butiker som säljer mat och mediciner",
+                "de som säljer mat och mediciner",
+                "mat och mediciner",
+                "butiker som säljer mat och medicin",
+                "mat och medicin",
+                "matbutiker och apotek",
+                "mataffärer och apotek",
+                "butiker med mat och mediciner"
+              ],
+              "hint": "Svara kort."
+            },
+            {
+              "id": "q6",
+              "prompt": "Skribenten tycker att motståndarnas argument är helt fel.",
+              "translation": "The writer thinks the opponents' arguments are completely wrong.",
+              "options": [
+                "Rätt",
+                "Fel"
+              ],
+              "answers": [
+                "Fel"
+              ]
+            }
+          ],
+          "words": [
+            {
+              "fi": "kontanter",
+              "en": "cash"
+            },
+            {
+              "fi": "en sedel",
+              "en": "a banknote"
+            },
+            {
+              "fi": "ett elavbrott",
+              "en": "a power cut"
+            },
+            {
+              "fi": "hålla koll på",
+              "en": "keep track of"
+            },
+            {
+              "fi": "en motståndare",
+              "en": "an opponent"
+            },
+            {
+              "fi": "vara skyldig att",
+              "en": "be obliged to"
+            }
+          ]
+        }
+      ]
     }
   ],
   "story": {
