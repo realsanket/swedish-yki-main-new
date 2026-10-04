@@ -878,7 +878,9 @@
       "prompt": "Write in Swedish: “My favourite subject was maths.”",
       "answers": [
         "Mitt favoritämne var matte.",
-        "Mitt favoritämne var matematik."
+        "Mitt favoritämne var matematik.",
+        "Matte var mitt favoritämne.",
+        "Matematik var mitt favoritämne."
       ],
       "hint": "Use mitt with ett favoritämne, and var for the past.",
       "explanation": "Mitt favoritämne var matte. Ämne is an ett-word, so mitt (Lecture 15). Subject names have no capital letter."
@@ -918,6 +920,17 @@
       ],
       "hint": "Har + supine for the continuing experience; och links another complete idea.",
       "explanation": "Jag har studerat svenska i två år och jag övar fortfarande. Har + supine with i två år: it is still going on (Lecture 17)."
+    },
+    {
+      "id": "sv-18-g13",
+      "prompt": "Carry-over from Lecture 17 (teacher’s example): “I have never travelled to Peru.”",
+      "answers": [
+        "Jag har aldrig rest till Peru.",
+        "Jag har aldrig varit i Peru.",
+        "Jag har aldrig åkt till Peru."
+      ],
+      "hint": "Resa – reste – rest. Aldrig goes between har and the supine.",
+      "explanation": "Jag har aldrig rest till Peru (or Jag har aldrig varit i Peru). Resa – reste – rest: the supine of resa is rest. Aldrig sits between har and the supine (Lecture 17)."
     }
   ],
   "sittingBreakAfter": "guided",
@@ -1231,8 +1244,32 @@
         "id": "sv-18-word-38",
         "fi": "svenskspråkig",
         "en": "Swedish-language",
-        "example": "Leo går i en svenskspråkig skola.",
-        "translation": "Leo goes to a Swedish-language school.",
+        "example": "Leo ska börja i en svenskspråkig skola.",
+        "translation": "Leo is going to start at a Swedish-language school.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-18-word-39",
+        "fi": "tjäna",
+        "en": "earn",
+        "example": "Filmen har tjänat mycket pengar.",
+        "translation": "The film has earned a lot of money.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-18-word-40",
+        "fi": "i morse",
+        "en": "this morning (earlier today)",
+        "example": "Tre paket har kommit i morse.",
+        "translation": "Three parcels have come this morning.",
+        "level": "A2"
+      },
+      {
+        "id": "sv-18-word-41",
+        "fi": "skaffa",
+        "en": "get, make (friends), get (a pet)",
+        "example": "Hon har skaffat två nya vänner på konserten.",
+        "translation": "She has made two new friends at the concert.",
         "level": "A2"
       }
     ],
@@ -1465,7 +1502,9 @@
         "Mitt favoritämne var historia, för läraren var bra.",
         "Mitt favoritämne var historia, för läraren var duktig.",
         "Mitt favoritämne var historia, för min lärare var bra.",
-        "Mitt favoritämne var historia, för min lärare var duktig."
+        "Mitt favoritämne var historia, för min lärare var duktig.",
+        "Historia var mitt favoritämne, för läraren var bra.",
+        "Historia var mitt favoritämne, för min lärare var bra."
       ],
       "hint": "Use för to introduce a reason as a complete main clause.",
       "explanation": "Mitt favoritämne var historia, för läraren var bra. After för: subject läraren, then the verb var."
@@ -1478,7 +1517,9 @@
         "Min vän talar finska, men jag förstår inte.",
         "Min kompis pratar finska, men jag förstår inte.",
         "Min vän pratar finska, men jag förstår det inte.",
-        "Min vän talar finska, men jag förstår det inte."
+        "Min vän talar finska, men jag förstår det inte.",
+        "Min kompis talar finska, men jag förstår inte.",
+        "Min kompis pratar finska, men jag förstår det inte."
       ],
       "hint": "After men comes a full main clause: subject, verb, then inte.",
       "explanation": "Min vän pratar finska, men jag förstår inte. Inte follows the verb förstår."
