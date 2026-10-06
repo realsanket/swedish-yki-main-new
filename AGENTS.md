@@ -208,14 +208,20 @@ Six stored steps (`recall, teach, guided, practice, check, assignment`), plus
 lecture extra steps, shown as one numbered route ("Step 2 of 7"):
 
 1. **Hear the conversation** (recall): warm-up recall of 3 phrases from
-   earlier lectures, the Elin-Alex story, two meaning checks.
-2. **Textbook page(s)** (extra step, Lectures 1-22): the real textbook page in
-   5 stages: listen for gist, understand, hunt (sounds/pronouns/questions),
-   vanishing text, role-play. **YKI tasks** (extra step, Lectures 23-52):
-   timed dialogues (read the card, get ready, speak in time, compare) and timed
-   react/tell/opinion rounds, one browser recording per answer.
-3. **Build it step by step** (teach): topics as beats, with a topic picker,
+   earlier lectures, then read the four key phrases at the top (with English),
+   listen once for the big idea (text and English open whenever needed), and
+   two meaning checks. A gentle start for a beginner, not a test.
+2. **Build it step by step** (teach): topics as beats, with a topic picker,
    activities, and grammar side notes.
+3. **Textbook page(s)** (extra step, Lectures 1-22, `after: "teach"`): the real
+   textbook page in 5 stages: listen for gist, understand, hunt
+   (sounds/pronouns/questions), vanishing text, role-play. **YKI tasks** (extra
+   step, Lectures 23-52, `after: "teach"`): timed dialogues (read the card, get
+   ready, speak in time, compare) and timed react/tell/opinion rounds, one
+   browser recording per answer. **Decided October 6, 2026 (owner):** these
+   come after the teaching, so a beginner meets the page or the timed task
+   with the language already taught; the short conversation stays first as
+   the hook.
 4. **Try the phrases** (guided): build and check lines. **End of Part 1**: a
    "good place to stop for today" card.
 5. **Do the task** (practice), **Part 2** starts with recall of this lecture's

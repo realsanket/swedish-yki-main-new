@@ -77,7 +77,7 @@ async function inspect(page, label, lecture, errors) {
     // spills out of its box.
     squeezed:[...document.querySelectorAll('.lecture-workspace *')].filter(el => {
       const own=[...el.childNodes].filter(n => n.nodeType===3).map(n => n.textContent.trim()).join(' ');
-      if (own.length < 30) return false;
+      if (own.length < 30 || el.closest('td, th')) return false; // table cells wrap by design
       const r=el.getBoundingClientRect();
       const line=parseFloat(getComputedStyle(el).lineHeight) || 20;
       return r.width > 0 && r.width < 120 && (r.height > line * 4 || el.scrollHeight > r.height + line);

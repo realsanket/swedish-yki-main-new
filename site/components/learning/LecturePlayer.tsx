@@ -95,7 +95,7 @@ function outputLabel(skill: Skill) {
 
 function stepAction(part: CoursePart, expectedOutput: string) {
   if (part === "recall")
-    return "Listen once before opening English. Then answer the two meaning checks.";
+    return "Read the four key phrases at the top first. Then listen once for the big idea, opening the text or English whenever you need it, and answer the two meaning checks.";
   if (part === "teach")
     return "Take one teaching card at a time. Say its example aloud before continuing.";
   if (part === "guided")

@@ -62,7 +62,7 @@ lecture needs something the six do not cover, it adds its own step in
 `extraSteps`, a top-level array of the lecture JSON. Each entry has:
 
 - `id`: the stable save key, such as `textbook-page`. Renaming it resets this step's saved completion.
-- `after`: the stored step it follows, such as `recall`. Several extra steps may follow the same step; they keep their array order.
+- `after`: the stored step it follows. Textbook pages (`source-practice`) and YKI tasks (`yki-speaking`) use `teach`, so a beginner meets them after the language is taught; listen-and-read uses `practice` and the teacher's homework `assignment`. Several extra steps may follow the same step; they keep their array order.
 - `label`, `description`, `minutes`, `action`: what the route tab, the step heading, and the "Your action" line show. Keep `label` short (two or three words); the route shows every step's label side by side.
 - `kind`: which renderer draws the step, plus that kind's own data.
 
