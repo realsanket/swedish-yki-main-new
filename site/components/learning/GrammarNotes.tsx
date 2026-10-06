@@ -36,7 +36,8 @@ function TermCard({ term, compact = false }: { term: GrammarTerm; compact?: bool
   return (
     <>
       <b>{term.term}</b>
-      <p>{term.plain}</p>
+      {/* The compact card sits inside a sentence's <p>, where a nested <p> is invalid HTML. */}
+      {compact ? <span className={styles.plain}>{term.plain}</span> : <p>{term.plain}</p>}
       {!compact && (
         <dl>
           <dt>English</dt>

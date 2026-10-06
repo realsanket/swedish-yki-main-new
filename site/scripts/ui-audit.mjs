@@ -72,6 +72,8 @@ async function inspect(page, label, lecture, errors) {
     width:innerWidth, scroll:document.documentElement.scrollWidth,
     bad:[...document.images].filter(i => !i.naturalWidth).map(i => i.currentSrc || i.src),
     text:document.body.innerText,
+    // Block elements inside a paragraph are invalid HTML and break hydration.
+    nested:[...document.querySelectorAll('p p, p div, p ul, p ol, p dl, p section, p table, p h1, p h2, p h3, p h4')].slice(0,3).map(el => (el.closest('p')?.textContent ?? '').trim().slice(0,60)),
     // Text squeezed into a narrow box (e.g. a badge style hitting a text span):
     // a long own-text run rendered under 120px wide that is many lines tall or
     // spills out of its box.
@@ -86,6 +88,7 @@ async function inspect(page, label, lecture, errors) {
   stats.checks++;
   assert.equal(state.bad.length,0,`${label}: broken images ${state.bad.join(', ')}`);
   assert.ok(state.scroll <= state.width + 1,`${label}: sideways scrolling (${state.scroll} > ${state.width})`);
+  assert.equal(state.nested.length,0,`${label}: block element inside a <p>: ${state.nested.join(' | ')}`);
   if (state.squeezed.length) {
     // Keep evidence: the first squeezed element, scrolled into view.
     await page.getByText(state.squeezed[0], {exact:false}).first().scrollIntoViewIfNeeded().catch(() => {});
@@ -243,6 +246,12 @@ try {
               await beats.nth(beat).click();
               await inspect(page,`${label}/topic-${topic+1}/beat-${beat+1}`,lecture,errors);
               stats.teachingBeats++;
+              const term=page.locator('.teaching-section [class*="termButton"]').first();
+              if(await term.count() && await term.isVisible()) {
+                await term.click();
+                await inspect(page,`${label}/topic-${topic+1}/beat-${beat+1}/grammar-note`,lecture,errors);
+                await page.keyboard.press('Escape');
+              }
               if(await page.locator('.teaching-section [class*="sortCard"], .teaching-section [class*="matchColumns"], .teaching-section [class*="gapCard"]').count()) {
                 await completeActivity(page,activities[activityIndex++]);
                 await inspect(page,`${label}/topic-${topic+1}/activity-complete`,lecture,errors);

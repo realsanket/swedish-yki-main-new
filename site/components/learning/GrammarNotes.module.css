@@ -43,7 +43,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.popover p {
+.popover p,
+.popover .plain {
+  display: block;
   margin: 0;
 }
 .side {
