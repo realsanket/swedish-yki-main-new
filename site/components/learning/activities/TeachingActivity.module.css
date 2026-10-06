@@ -429,13 +429,22 @@
   list-style: none;
 }
 .gapCard li {
+  /* Name and question on one line, the answer (or "ask") on its own full line
+     below: the card can be narrow beside the grammar notes, and a fixed third
+     column once squeezed answers to one letter per line. */
   display: grid;
-  grid-template-columns: 110px 120px minmax(0, 1fr);
+  grid-template-columns: minmax(0, auto) minmax(0, 1fr);
   align-items: center;
-  gap: 8px;
+  gap: 4px 10px;
   min-height: 48px;
-  padding: 6px 16px;
+  padding: 8px 16px;
   border-top: 1px solid #eef1f4;
+}
+.gapCard li > :last-child {
+  grid-column: 1 / -1;
+}
+.gapReply > span {
+  min-width: 0;
 }
 .gapActive {
   background: #f3f6fb;

@@ -86,6 +86,12 @@ async function inspect(page, label, lecture, errors) {
   stats.checks++;
   assert.equal(state.bad.length,0,`${label}: broken images ${state.bad.join(', ')}`);
   assert.ok(state.scroll <= state.width + 1,`${label}: sideways scrolling (${state.scroll} > ${state.width})`);
+  if (state.squeezed.length) {
+    // Keep evidence: the first squeezed element, scrolled into view.
+    await page.getByText(state.squeezed[0], {exact:false}).first().scrollIntoViewIfNeeded().catch(() => {});
+    await fs.mkdir(out,{recursive:true});
+    await page.screenshot({path:path.join(out,`squeezed-${label.replace(/[^a-z0-9]+/gi,'-')}.png`)}).catch(() => {});
+  }
   assert.equal(state.squeezed.length,0,`${label}: text squeezed into a narrow box: ${state.squeezed.join(' | ')}`);
   assert.ok(!state.text.includes('a useful clue'),`${label}: stale object fallback`);
   const courseModule = modules.find(m => lecture.number >= m.first && lecture.number <= m.last);
