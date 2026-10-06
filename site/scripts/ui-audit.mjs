@@ -72,10 +72,21 @@ async function inspect(page, label, lecture, errors) {
     width:innerWidth, scroll:document.documentElement.scrollWidth,
     bad:[...document.images].filter(i => !i.naturalWidth).map(i => i.currentSrc || i.src),
     text:document.body.innerText,
+    // Text squeezed into a narrow box (e.g. a badge style hitting a text span):
+    // a long own-text run rendered under 120px wide that is many lines tall or
+    // spills out of its box.
+    squeezed:[...document.querySelectorAll('.lecture-workspace *')].filter(el => {
+      const own=[...el.childNodes].filter(n => n.nodeType===3).map(n => n.textContent.trim()).join(' ');
+      if (own.length < 30) return false;
+      const r=el.getBoundingClientRect();
+      const line=parseFloat(getComputedStyle(el).lineHeight) || 20;
+      return r.width > 0 && r.width < 120 && (r.height > line * 4 || el.scrollHeight > r.height + line);
+    }).slice(0,3).map(el => el.textContent.trim().slice(0,60)),
   }));
   stats.checks++;
   assert.equal(state.bad.length,0,`${label}: broken images ${state.bad.join(', ')}`);
   assert.ok(state.scroll <= state.width + 1,`${label}: sideways scrolling (${state.scroll} > ${state.width})`);
+  assert.equal(state.squeezed.length,0,`${label}: text squeezed into a narrow box: ${state.squeezed.join(' | ')}`);
   assert.ok(!state.text.includes('a useful clue'),`${label}: stale object fallback`);
   const courseModule = modules.find(m => lecture.number >= m.first && lecture.number <= m.last);
   if (courseModule.number !== modules[0].number) {
