@@ -644,6 +644,17 @@ Examples:
 
 ---
 
+### 2.10 The practice book: where it fits (added after cataloguing all 126 pages)
+
+The learner owns *Förbered dig för allmän språkexamen* (Gimara Oy, 126 pages, 7 themes). It is the plan's main bank of real-looking tasks for speaking and writing. Every task was catalogued by page and type: 225 tasks (34 dialogues, 99 short reactions, 33 tell-a-story topics, 38 opinion statements, 21 writing tasks) plus 7 warm-up sections.
+
+- **What it is not.** It has no listening or reading, no answer key, no timing and no marking criteria. Listening and reading stay in section 7.
+- **Where each task is used.** `YKI-BOOK-MAP.md` lists every task, its page, its template and the day it is used. Each day entry in `YKI-EXAM-FIRST-CURRICULUM.md` ends with a "Book practice" list (1 to 5 items). Days 1-14 use only warm-up vocabulary and a few easy items. Days 15-42 follow the templates. Days 43-55 match book themes to the nine topic areas. Days 64-82 use the leftovers as unseen prompts. Rest, mock and exit-test days carry none.
+- **Gaps the book exposed.** About 49 tasks fit none of T1-T16: polite objection to a stranger or friend (T17), describing a habit, place, thing or hobby (T18), comparing your home country with Finland (T19) and five one-offs such as resigning or appealing a decision (T20). They are in `YKI-NEW-TEMPLATES-T17-T20.md` and taught in six extra 15-minute blocks on Days 22, 24, 30, 31, 34 and 38.
+- **Time cost.** Book items add 2 to 15 minutes a day when they replace the day's own writing prompt, more if they are extra. The 15-minute extra blocks make Days 22, 24, 30, 31, 34 and 38 about 75 minutes.
+- **Copyright.** The book is not copied anywhere in these files; only page pointers and our own short descriptions are used.
+- **Print slips.** The contents page swaps the names of themes 5 and 6, and a few tasks have wording slips (see the book map). Ask the teacher if a task looks contradictory.
+
 ## 3. How we will learn it
 
 ### 3.1 The daily lesson format

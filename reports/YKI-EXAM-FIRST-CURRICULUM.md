@@ -2,6 +2,8 @@
 
 *Companion to `YKI-EXAM-FIRST-PLAN.md`. The plan says why and how; this file says what is learned each day. Template IDs (T1-T16), grammar IDs (G1-G10), reason and reaction numbers, and appendix prompts (A-L) refer to the plan. Days 1, 8, 15, 29, 43, 57, 71 and 84 are written in full in section 5.1 of the plan; here they appear as short pointers.*
 
+**Book and extra templates.** Each day ends with a "Book practice" list pointing to the learner's practice book (page numbers only; see `YKI-BOOK-MAP.md`). Days 22, 24, 30, 31, 34 and 38 also carry an extra 15-minute block teaching new templates T17-T20 (`YKI-NEW-TEMPLATES-T17-T20.md`).
+
 **All Swedish in this file is AI-written and has not been checked by a teacher or native speaker.** Timings and word counts are this plan's own practice targets, not official. Nothing here has been tested on a learner.
 
 **Contents:** Part 1 = Days 1-28 (Foundations, start of Task moves). Part 2 = Days 29-56 (Opinion, topics, Mock 2). Part 3 = Days 57-84 and the cycle after Day 84.
@@ -27,6 +29,9 @@ Days 1, 8 and 15 are written in full in section 5.1 of the plan. Every timing an
 Day 1: see section 5.1 of the plan.
 Summary: G1 (verb second), the 12 introduction chunks and numbers 0–20; a recorded 60-second self-introduction with 8 required points, then the same 8 sentences typed from memory.
 Notice routine (read out every number on one notice); the first cards and the error log start today.
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 1 item(s) today.
+- `p8-U`: p. 8-11, Uppvärmning, none: Word maps: family and relationships, life-story verbs, party words quiz, home faults
 
 ### Day 2: Questions (Phase 1 Foundations, week 1)
 
@@ -142,6 +147,9 @@ Today's 10 questions:
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 1 item(s) today.
+- `p34-R8`: p. 34, Reagera 8, T2: Car broke down: ask a friend for a lift, stating place and time
+
 ### Day 5: *att*-clauses (Phase 1 Foundations, week 1)
 
 **What we learn today:** G5: after *tycker, tror, vet, hoppas, säger* comes *att* + subject + (*inte*) + verb, with no inversion inside the clause. *Jag tycker att* gives an opinion; *Jag tror att* gives a guess. The 13 instruction words from 2.6: *läs* (read), *lyssna* (listen), *välj* (choose), *skriv* (write), *svara* (answer), *berätta* (tell), *förklara* (explain), *beskriv* (describe), *jämför* (compare), *föreslå* (suggest), *motivera* (give reasons for), *rätt / fel* (true / false), *åtminstone* (at least).
@@ -251,6 +259,10 @@ Day 8: see section 5.1 of the plan.
 Summary: G10 connectors and T8 polite refusal, with 8 reason and refusal chunks; three timed reactions (20 s + 25 s) that refuse an invitation with a reason and suggest another day.
 Writing: a 15-minute reply declining a colleague's dinner invitation (6 points); easy-news routine; review the Day 1, 5 and 7 cards.
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 2 item(s) today.
+- `p34-R10`: p. 34, Reagera 10, T8: Decline a colleague's invitation to visit, with a reason
+- `p34-R5`: p. 34, Reagera 5, T8: Politely refuse food or drink a host offers that you cannot have
+
 ### Day 9: Past and perfect 2 (Phase 1 Foundations, week 2)
 
 **What we learn today:** G6 verbs 16–30 (*betala* to *bli*) in four forms. G9 time chunks, learned whole: *på måndag* (this coming Monday), *i måndags* (last Monday), *på måndagar* (on Mondays), *i maj* (in May), *i somras* (last summer), *på kvällen* (in the evening), *i kväll* (tonight), *om tio minuter* (in ten minutes), *för två veckor sedan* (two weeks ago), *i två år* (for two years), *sedan i maj* (since May).
@@ -355,6 +367,9 @@ Chunks: *Min väska är borta.* (My bag is gone.) *Den är svart och ganska stor
 - *e-post adress* → *e-postadress* (compound words are written as one word)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 1 item(s) today.
+- `p40-U`: p. 40-41, Uppvärmning, none: Shopping-habit questions, word map for directions, draw and describe yourself as consumer
 
 ### Day 12: Phone frame (Phase 1 Foundations, week 2)
 
@@ -461,6 +476,11 @@ Day 15: see section 5.1 of the plan.
 Summary: T2 (request, booking, asking for information) and G3 indirect questions; a 6-turn dentist booking call, 20 s per turn, with 8 required points.
 Writing: a 15-minute e-mail to a language school (7 points, including contact details); easy-news routine; review the Day 1, 8, 12 and 14 cards.
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 3 item(s) today.
+- `p77-U`: p. 77-78, Uppvärmning, none: Jobs and workplace language questions; three linking phrases; work, study, presentation vocabulary
+- `p87-R1`: p. 87, Reagera 1 (phone), T1: Leave a voice message for an absent colleague saying what you need to discuss
+- `p87-R8`: p. 87, Reagera 8, T2: Book a meeting room: say when and what size you need
+
 ### Day 16: Selling, the seller role (Phase 2 Task moves, week 3)
 
 **What we learn today:** T3 seller lines: *Ja, den finns kvar.* (Yes, it's still available.) / *Den är [tre] år gammal.* (It's three years old.) / *Den är i [mycket] bra skick.* (It's in very good condition.) / *Den kostar [150] euro.* / *Tyvärr kan jag inte gå ner så mycket i pris, men du kan få den för [130] euro.* (Unfortunately I can't lower the price that much, but you can have it for 130.) / *Du kan komma och titta på den [i morgon efter klockan sex].* (You can come and look at it tomorrow after six.) / *Jag bor på [Solvägen 5] i [Esbo].* (I live at … in Espoo.)
@@ -490,6 +510,10 @@ G7 link: *den* and *gammal* for an *en*-word (*en cykel*); *det* and *gammalt* f
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 2 item(s) today.
+- `p56-U`: p. 56-58, Uppvärmning, none: Nature quiz (forests, lakes, wildlife, seasons, light); waste sorting, recycling, natural-disaster vocabulary
+- `p60-D2`: p. 60-61, Dialog 2 (phone), T2: Call an official to ask how to get a fishing permit, price, website
+
 ### Day 17: Buying, the buyer role, and price (Phase 2 Task moves, week 3)
 
 **What we learn today:** T3 buyer lines: *Jag ringer angående [cykeln] i din annons. Finns den kvar?* (I'm calling about the bike in your ad. Is it still available?) / *Hur gammal är den?* (How old is it?) / *Är den i bra skick?* (Is it in good condition?) / *Kan du tänka dig att sälja den för [100] euro?* (Would you consider selling it for 100 euros?) / *När kan jag komma och titta på den?* (When can I come and look at it?)
@@ -517,6 +541,11 @@ Bargaining chunks: *Det är lite för dyrt för mig.* (It's a bit too expensive 
 - *Kan du gå ner pris?* → *Kan du gå ner i pris?*
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 3 item(s) today.
+- `p51-R8`: p. 51, Reagera 8, T3: Haggle over the price of an expensive item and justify it
+- `p66-U`: p. 66-68, Uppvärmning, none: Medicine, injuries, accidents, crime, illness, feelings words; how-are-you replies; reacting; giving advice
+- `p72-R11`: p. 72, Reagera 11, T2: Feverish: ask a friend to collect your child from daycare
 
 ### Day 18: Complaint by phone (Phase 2 Task moves, week 3)
 
@@ -546,6 +575,11 @@ Words: *en tvättmaskin* (a washing machine), *en reparatör* (a repair person),
 - *i onsdag* for last Wednesday → *i onsdags* (G9)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 3 item(s) today.
+- `p51-R1`: p. 51, Reagera 1, T4: Complain to a waiter that every café table is dirty
+- `p118-U`: p. 118, Uppvärmning, no template: Word map on permits, citizenship, law, taxes, authorities; your last agency visit.
+- `p123-R3`: p. 123, Reagera 3 (phone), T2: Your new passport has taken over a year; call immigration with questions.
 
 ### Day 19: Written complaint (Phase 2 Task moves, week 3)
 
@@ -583,6 +617,12 @@ Words: *en faktura* (an invoice), *ett belopp* (an amount), *ett skäl* (a reaso
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p49-D5`: p. 49-50, Dialog 5, T4: Return a faulty appliance to the shop with receipt; ask for a different product
+- `p51-R13`: p. 51, Reagera 13 (phone), T4: Phone the shop about a faulty laptop still under warranty
+- `p51-R4`: p. 51, Reagera 4, T4: Complain to a furniture store that a ceiling lamp fell; claim compensation
+- `p51-R5`: p. 51, Reagera 5, T4: Flat-pack furniture is missing parts; raise it with the seller
+
 ### Day 20: Reactions 1 (Phase 2 Task moves, week 3)
 
 **What we learn today:** Reaction bank 1–15 and the T10 formula: **react → one relevant detail → ask, offer or close** (*Grattis! Vad roligt att du har fått jobbet! När börjar du?*).
@@ -614,6 +654,11 @@ Fit rule: *Krya på dig* only for illness; *Jag beklagar sorgen* only for a deat
 - Reaction only, with no follow-up → add a question or an offer (*När börjar du?* / *Kan jag hjälpa dig med något?*): a missing point
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 3 item(s) today.
+- `p35-R15`: p. 35, Reagera 15, T10: React to a friend's news that she is expecting a baby
+- `p92-U`: p. 92-95, Uppvärmning, no template: Discussion and word maps: library, reading, fitness, holiday activities, media, arts, events.
+- `p112-R12`: p. 112, Reagera 12, T10: Hand an artistic gift to a friend turning fifty; say what fits.
 
 ### Day 21: Light day (Phase 2 Task moves, week 3)
 
@@ -678,6 +723,35 @@ Fit rule: *Krya på dig* only for illness; *Jag beklagar sorgen* only for a deat
 
 [Unreviewed Swedish: have a teacher check it]
 
+#### Day 22, extra 15-minute block: T17 part 1, asking a stranger to stop
+
+**What we learn in this block:**
+- T17 for a stranger, in four steps: notice → ask → reason → thank.
+- Lines: *Ursäkta, …* (Excuse me, …) / *Förlåt att jag stör, men …* (Sorry to disturb you, but …) / *Jag ser att [du pratar i telefon].* (I can see that you are talking on the phone.) / *Skulle du kunna [prata lite tystare]?* (Could you talk a bit more quietly?) / *Kan du vara snäll och [sänka musiken]?* (Could you please turn the music down?) / *…, eftersom [jag försöker läsa].* (…, because I'm trying to read.) / *Tack, det var snällt av dig.* (Thanks, that's kind of you.)
+- When it is serious: *Det är inte okej att [___].* (It is not OK to ___.) / *Ska jag ringa efter hjälp?* (Shall I call for help?)
+- Grammar: *skulle kunna* + infinitive, with no *att* (G4); after *eftersom*, *inte* goes before the verb (G2).
+
+**Why it matters for the exam:** in the practice book, 18 Reagera and dialogue tasks ask you to tell someone to stop, or to stand up for yourself. No template T1–T16 covers them, so this is the largest gap the catalogue found [Book count].
+
+**How we learn it (15 min):**
+- 0–5: Say the laundry-room example in T17 twice. Ladder: change the problem (washing → music → a phone call), keep the *eftersom* reason, end with *Tack, det var snällt av dig*.
+- 5–15: Book tasks p34-R3, p51-R10, p51-R12, p62-R4, p62-R8 (pages 34, 51, 62). Do each with 20 s prep + 25 s [Teacher, unofficial], in one take, and tick the four steps. No redo today.
+
+**Next study days:** Day 23: p72-R4, p112-R2, p112-R11. Day 24: p112-R13, p113-R15.
+
+**Done when:** at least 4 of the 5 answers have all four steps inside 25 seconds, and none is a bare *Sluta!*.
+
+**Typical errors to watch:**
+- *Kan du att sänka musiken?* → *Kan du sänka musiken?* (G4)
+- *…, eftersom jag mår inte bra.* → *…, eftersom jag inte mår bra.* (G2)
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p34-R3`: p. 34, Reagera 3, T10: Step in when boys tease a classmate; explain why bullying is wrong
+- `p51-R10`: p. 51, Reagera 10, T10: Ask parents at the next restaurant table to control their noisy children
+- `p51-R12`: p. 51, Reagera 12, T10: Tell a dog owner what you think about leaving the dog in a hot car
+- `p62-R4`: p. 62, Reagera 4, T10: Confront a stranger dumping an old appliance in nature
+- `p62-R8`: p. 62, Reagera 8, T10: React to someone mistreating an animal in the street
+
 ### Day 23: Late and cancel (Phase 2 Task moves, week 4)
 
 **What we learn today:** T9. Late: *Hej [namn], det är [namn].* / *Förlåt, jag blir [en kvart] försenad, eftersom [bussen inte har kommit].* (Sorry, I'll be a quarter of an hour late, because the bus hasn't come.) / *Jag är där [kvart över sex].* (I'll be there at quarter past six.) Cancel: *Tyvärr måste jag avboka min tid [på tisdag], eftersom [jag är sjuk]. Kan jag få en ny tid?* (Unfortunately I have to cancel my appointment on Tuesday, because I'm ill. Can I have a new time?)
@@ -710,6 +784,13 @@ Required points: messages 1–2: who you are; the apology; a short reason with *
 - *Tåget är försenad.* → *Tåget är försenat.* (G7: an *ett*-word)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p34-R7`: p. 34, Reagera 7 (phone), T9: Voicemail to a friend after yesterday's small quarrel, asking to make up
+- `p72-R10`: p. 72, Reagera 10, T9: Cancel a planned meeting with a friend because you are ill
+- `p72-R4`: p. 72, Reagera 4, T10: Speak to a driver who nearly hit you at a pedestrian crossing
+- `p112-R11`: p. 112, Reagera 11, T10: Ask a young bus seatmate to turn loud music down; you feel unwell.
+- `p112-R2`: p. 112, Reagera 2, T10: Politely ask someone making a loud phone call in the library to stop.
 
 ### Day 24: Polite refusal (Phase 2 Task moves, week 4)
 
@@ -748,6 +829,36 @@ Reason and refusal chunks (G10: *inte* and *redan* go before the verb after *eft
 
 [Unreviewed Swedish: have a teacher check it]
 
+#### Day 24, extra 15-minute block: T17 part 2, standing up for yourself
+
+**What we learn in this block:**
+- T17 when the problem is about **you**: your turn, your seat, your age, or what you did.
+- Lines: *Ursäkta, men jag var här före [honom].* (Excuse me, but I was here before him.) / *Jag har en platsbiljett: vagn [fyra], plats [tolv].* (I have a seat reservation: car 4, seat 12.) / *Jag förstår att du måste kontrollera, men jag är [tjugofem] år. Här är mitt id-kort.* (I understand that you have to check, but I am 25. Here is my ID card.) / *Jag förstår att [ni är irriterade], men det stämmer inte riktigt.* (I understand that you are annoyed, but that's not quite right.)
+- With a friend or colleague: *Jag blev ledsen när [___].* (I was hurt when ___.) / *Nästa gång vill jag att du [säger till först].* (Next time I want you to tell me first.) / *Kan vi prata om det?* (Can we talk about it?)
+- Grammar: *Jag förstår att du måste …*: after *att*, the normal order is subject, then verb (G5). *Nästa gång vill jag …*: the time comes first, so the verb comes next (G1).
+
+**Why it matters for the exam:** 8 of the 18 T17 tasks in the practice book put you on the defensive: you were first, it is your seat, a friend let you down, or someone complains about you [Book count]. Today's T8 gives the polite "no". This block gives the polite "that's not right".
+
+**How we learn it (15 min):**
+- 0–5: Say the part 2 lines from the English cue twice. Ladder on *Ursäkta, men jag var här före honom*: change the person (*henne, dem*), add a request (*Kan jag beställa nu?*), end with *Tack*.
+- 5–9: Finish part 1 with p112-R13 and p113-R15 (page 112–113). Use gentle lines only for the child.
+- 9–15: Part 2 book tasks p112-R3, p112-R4, p112-R9 (page 112), 20 s prep + 25 s each, one take.
+
+**Next study days:** Day 25: p32-D11 (a 7-turn call on pages 32–33 in which you are the one complained about: open with T1), p34-R14, p51-R2. Day 26: p87-R9, p112-R10.
+
+**Done when:** each answer says the fact, gives proof or a reason, makes a calm request and closes, inside 25 seconds.
+
+**Typical errors to watch:**
+- *Jag förstår att du måste att kontrollera.* → *Jag förstår att du måste kontrollera.* (G4)
+- *Nästa gång jag vill att du säger till.* → *Nästa gång vill jag att du säger till.* (G1)
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p112-R13`: p. 112, Reagera 13, T10: Noisy popcorn eater beside you at the cinema; react.
+- `p112-R3`: p. 112, Reagera 3, T10: At a bar someone who came later is served first; speak to the bartender.
+- `p112-R4`: p. 112, Reagera 4, T10: A doorman refuses entry, thinking you are underage; respond.
+- `p112-R9`: p. 112, Reagera 9, T10: On a train, someone is sitting in your reserved seat; deal with it.
+- `p113-R15`: p. 113, Reagera 15, T11: Explain to a young child in a café why a programme is unsuitable.
+
 ### Day 25: Event message (Phase 2 Task moves, week 4)
 
 **What we learn today:** T6 with the official sample's points: what, when, where, plus two more details, and a proper opening and closing. The T6 lines: *Hej [namn]!* / *Har du hört om [___]?* / *Det är [på lördag] klockan [___] [på/i ___].* / *[Detalj 1.] [Detalj 2.]* / *Vill du följa med?* / *Skriv till mig före [___]!* / *Kram, [namn]* (or *Hälsningar, [namn]*).
@@ -782,6 +893,13 @@ Places: *på torget* (in the market square), *i parken* (in the park), *på bibl
 - No "where" → add the place (a missing point)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p32-D11`: p. 32-33, Dialog 11 (phone), T1: Property manager calls about party noise: explain the party, disagree, answer questions
+- `p34-R14`: p. 34, Reagera 14, T10: Confront a friend who spoke badly about you behind your back
+- `p35-R17`: p. 35, Reagera 17, T9: Tell a wedding couple you forgot to buy their gift
+- `p51-R2`: p. 51, Reagera 2, T10: Tell a friend off for returning your car with an empty tank
+- `p112-R1`: p. 112, Reagera 1, T9: Return a damaged library book and explain how it got damaged.
 
 ### Day 26: Invitation (Phase 2 Task moves, week 4)
 
@@ -818,6 +936,12 @@ Extra chunks:
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p26-D8`: p. 26-27, Dialog 8 (phone), T7: Call a friend to invite them to your party: when, where, reply deadline, gift
+- `p87-R9`: p. 87, Reagera 9, T4: Tell a colleague you are angry they broke an agreement you invent
+- `p112-R10`: p. 112, Reagera 10, T10: A friend keeps looking at their phone instead of talking; say something.
+- `p123-R4`: p. 123, Reagera 4 (phone), T7: The President's office invites you to Independence Day celebrations; respond.
+
 ### Day 27: Mock 1 preparation (Phase 2 Task moves, week 4)
 
 **What we learn today:** Nothing new. "All templates aloud" (3.3) means, at this point, only the frames already learned: T1, T2, T3 (both roles), T4, T5, T6, T7, T8, T9, T10 with reactions 1–30, and the T12 lost-item lines. T11, T13–T16, the 40 reasons and the five-step opinion start on Day 29, so they are not part of today or of Mock 1. Speaking practice covers the three Mock 1 speaking types only (S2 phone call, S4 voicemail, S5 reactions; section 6.2); the person talk (S1) and the opinion (S6) wait until Days 29–33.
@@ -847,6 +971,12 @@ Extra chunks:
 - *Krya på dig!* for the stolen bike → reaction 6 or 7: *Vad tråkigt att höra.* / *Åh nej, vad synd!* (fit the news)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p14-D2`: p. 14-15, Dialog 2, T8: Guest is leaving: ask their plans, decline their return-visit day, offer a lift
+- `p34-R4`: p. 34, Reagera 4, T10: Comfort a friend whose father has died
+- `p34-R9`: p. 34, Reagera 9, T10: Greet an old friend you meet by chance after many years
+- `p35-R16`: p. 35, Reagera 16, T10: React to a friend's news of a serious illness
 
 ### Day 28: MOCK 1, the short mock (Phase 2 Task moves, week 4)
 
@@ -908,6 +1038,13 @@ Outputs: a spoken opinion on *Det är bättre att bo i en stad än på landet* (
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p36-OA`: p. 36, Din åsikt A, T13: Opinion: are Swedish or Finnish parties boring?
+- `p36-OB`: p. 36, Din åsikt B, T13: Opinion: how important is remembering birthdays?
+- `p36-OE`: p. 36, Din åsikt E, T13: Opinion: does a good relationship need effort?
+- `p36-OF`: p. 36, Din åsikt F, T13: Opinion: how far is happiness one's own choice?
+- `p51-R3`: p. 51, Reagera 3, T13: Explain to a friend why you want to hire a home cleaner
+
 ---
 
 ### Day 30: reasons bank A, reasons 1–20 with examples (Phase 2, week 5)
@@ -946,6 +1083,39 @@ Model: *Jag tycker att det är bättre att bo nära jobbet. För det första spa
 
 [Unreviewed Swedish: have a teacher check it]
 
+#### Day 30, extra 15-minute block: T20, five small moves
+
+**What we learn in this block:**
+- The five T20 moves, one line each to start:
+  - Resign: *Jag har fått ett nytt jobb, så jag vill säga upp mig.* (I have got a new job, so I want to resign.)
+  - Give away: *Vill du ha [min soffa]? Du får den gratis.* (Do you want my sofa? You can have it for free.)
+  - Say you are afraid: *Förlåt, jag är lite nervös. Jag är rädd för [sprutor].* (Sorry, I'm a bit nervous. I'm afraid of needles.)
+  - Appeal: *Jag skriver angående ert beslut [den 3 mars] om [___].* (I am writing about your decision of 3 March about ___.)
+  - Persuade: *Skulle du kunna tänka dig att [ta en annan]?* (Would you consider taking another one?)
+- Then the rest of each move from T20.
+- Grammar: *så* does not move the verb (G10): *…, så jag vill säga upp mig*. After *eftersom*, *redan* and *inte* go before the verb (G2).
+
+**Why it matters for the exam:** each of these situations appears only once or twice in the practice book [Book count]. One short move per situation keeps you from freezing on a rare card. Persuading and appealing both need today's reasons bank.
+
+**How we learn it (15 min):**
+- 0–5: Say the first line of each move from the English cue. Then pick today's reason for the persuade move from reasons 1–20.
+- 5–15: Book tasks p87-R6, p62-R5, p72-R5, p51-R7, p72-R12 (pages 87, 62, 72, 51), 20 s prep + 25 s each, one take. p72-R12 has no listener: react, give the fact, say what you will do now.
+
+**Next study days:** Day 32: p125-S2 (page 125), the written appeal with the T20d frame, about 20 minutes [Plan's own]. Write it after the Day 32 letter: both texts give at least three reasons.
+
+**Done when:** each spoken move covers its T20 required points inside 25 seconds. The Day 32 appeal has all seven T20d points.
+
+**Typical errors to watch:**
+- *Jag är rädd av sprutor.* → *Jag är rädd för sprutor.*
+- *…, eftersom jag har redan tre.* → *…, eftersom jag redan har tre.* (G2)
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p51-R7`: p. 51, Reagera 7, T2: Persuade another customer to let you have the last matching chair
+- `p62-R5`: p. 62, Reagera 5, T3: Moving house: offer some of your old belongings to a friend
+- `p72-R12`: p. 72, Reagera 12, T10: React to seeing a big weight gain on the bathroom scales
+- `p72-R5`: p. 72, Reagera 5, T10: At a blood test, tell staff you are scared of needles
+- `p87-R6`: p. 87, Reagera 6, T9: Tell your boss you are resigning because you have a new job
+
 ---
 
 ### Day 31: reasons bank B and the other view (Phase 2, week 5)
@@ -980,6 +1150,32 @@ Model: *Jag tycker inte att man behöver en egen bil i Helsingfors. För det fö
 - Opening with *Jag håller med* and closing with *Därför tycker jag inte att …*. Step 5 must agree with step 1.
 
 [Unreviewed Swedish: have a teacher check it]
+
+#### Day 31, extra 15-minute block: T19, home country and Finland
+
+**What we learn in this block:**
+- The T19 frame: *Jag kommer från [___], men jag har bott i Finland i [___] år.* (I come from ___, but I have lived in Finland for ___ years.) / *I mitt hemland [___], men i Finland [___].* (In my home country ___, but in Finland ___.) / *I båda länderna [___].* (In both countries ___.) / *Den största skillnaden är att [___].* (The biggest difference is that ___.) / *Jag saknar [___] från mitt hemland.* (I miss ___ from my home country.)
+- Comparing: *[Maten] är [billigare] i [Indien] än i Finland.* (Food is cheaper in India than in Finland.)
+- Grammar: both halves start with a place, so the verb comes next both times (G1). *men* does not count (G10).
+
+**Why it matters for the exam:** in the practice book, 4 tasks ask for this comparison directly, and 6 more opinion statements are easier with it (for example healthcare, taxes and daily life here) [Book count]. It also fits the Berätta topic "why you live in Finland" on Day 51.
+
+**How we learn it (15 min):**
+- 0–5: Say the public-transport example in T19 once. Make 3 new pairs of sentences (food, weather, work) with *I mitt hemland … men i Finland …*, verb second in both halves.
+- 5–15: Din åsikt, 1 min prep + 1.5 min each [Teacher, unofficial]: p115-OD (page 115) with T19; p53-O3 (page 53), a T13 statement that also compares; p36-OG (page 36), a normal T13 statement for contrast. Answer the statement in your first sentence.
+
+**Next study days:** Day 33: p88-BA, p52-B4, p123-BA (pages 88, 52, 123), as Berätta talks with the Day 33 talk plan.
+
+**Done when:** each talk names both countries, gives 2 differences and 1 thing that is the same, and ends with your view and a reason.
+
+**Typical errors to watch:**
+- *…, men i Finland man åker tåg.* → *…, men i Finland åker man tåg.* (G1)
+- *mer billig* → *billigare* (comparative with *-are*)
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 3 item(s) today.
+- `p36-OG`: p. 36, Din åsikt G, T13: Opinion: effect of social media on friendships and relationships
+- `p53-O3`: p. 53, Din åsikt 3, T13: Opinion: is daily life in Finland easy, compared with your home country?
+- `p115-OD`: p. 115, Din åsikt D, T13: Compare Finnish art with art from where you grew up; your tastes.
 
 ---
 
@@ -1017,6 +1213,9 @@ Model (about 90 words; add one detail of your own to reach 100): *Jag vill skriv
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 1 item(s) today.
+- `p125-S2`: p. 125, Skriva 2, T5: Formal complaint: refused a Swedish course for being too advanced; argue to continue.
+
 ---
 
 ### Day 33: describing a person (Phase 2, week 5)
@@ -1052,6 +1251,13 @@ Model: *Hej Mikko! Tack för att du hämtar min vän Priya på fredag. Planet la
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p34-R13`: p. 34, Reagera 13, T14: Tell someone directly how important they are to you and why
+- `p35-BA`: p. 35, Berätta A, T14: A person you will never forget: how you met and what happened
+- `p52-B4`: p. 52, Berätta 4, T13: Restaurants: how often you go, what makes one good, home versus Finland
+- `p88-BA`: p. 88, Berätta A, T13: Your home country's school system: pros, cons, differences from Finland
+- `p123-BA`: p. 123, Berätta A, T13: Your origins: what citizenship means to you, which country feels like yours.
+
 ---
 
 ### Day 34: telling what happened (Phase 2, week 5)
@@ -1086,6 +1292,34 @@ Model: *Hej Sara! Förlåt att jag kom så sent i går. Först kom bussen för s
 - *Jag vet inte vad hände.* → *Jag vet inte vad som hände.*
 
 [Unreviewed Swedish: have a teacher check it]
+
+#### Day 34, extra 15-minute block: T18 part 1, habits and routines
+
+**What we learn in this block:**
+- How often: *Jag brukar [___].* (I usually ___.) / *Varje dag [cyklar jag till jobbet].* (Every day I cycle to work.) / *Ibland [___].* (Sometimes ___.) / *En gång i veckan [___].* (Once a week ___.) / *Jag [tränar] nästan aldrig.* (I almost never exercise.)
+- Order: *Först [___]. Sedan [___]. Efter jobbet [___].* (First ___. Then ___. After work ___.)
+- Then and now: *Förr [___], men nu [___].* (I used to ___, but now ___.)
+- Feeling: *Det bästa är att [___].* (The best thing is that ___.)
+- Grammar: after *varje dag, ibland, först, sedan, förr* and *nu*, the verb comes next (G1). *brukar* + infinitive, with no *att* (G4). *på lördagar* means every Saturday; *på lördag* means this Saturday (G9).
+
+**Why it matters for the exam:** in the practice book, 12 Berätta and dialogue tasks ask how you live: your day, your habits, your hobby. T14 (a person) and T15 (one past event) do not fit them [Book count].
+
+**How we learn it (15 min):**
+- 0–5: Today's T15 lines tell one past day. Say the same day as a habit: *I går gick jag upp klockan sju* → *Jag brukar gå upp klockan sju*. Do 5 sentences.
+- 5–15: Berätta, 1 min prep + 1.5 min each [Official sample timing], in one take: p52-B3, p35-BB, p52-B1 (pages 52, 35). Tick the six T18 part 1 points.
+
+**Next study days:** Day 36: p52-B2, p53-B5, p73-BB and p106-D6 (a phone survey about your habits, pages 106–107: answer with the "how often" lines). Day 37: p73-BD, p73-BE, p88-BD, p114-BF, p114-BI.
+
+**Done when:** each talk fills 1.5 minutes with at least two "how often" words, one *först / sedan* sequence and one feeling.
+
+**Typical errors to watch:**
+- *Varje dag jag cyklar.* → *Varje dag cyklar jag.* (G1)
+- *Jag brukar att simma.* → *Jag brukar simma.* (G4)
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 3 item(s) today.
+- `p35-BB`: p. 35, Berätta B, T14: Your own arguing habits: with whom, about what, whether arguing helps
+- `p52-B1`: p. 52, Berätta 1, T14: Your relationship with time: punctual or late, schedules, wasted time
+- `p52-B3`: p. 52, Berätta 3, T15: Your normal weekday, your routines, and what makes a bad day
 
 ---
 
@@ -1148,6 +1382,12 @@ Model: *Hej Sara! Grattis till det nya jobbet! Jag tycker att du ska börja leta
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p52-B2`: p. 52, Berätta 2, T14: What kind of arguer you are: triggers, behaviour, what you cannot forgive
+- `p53-B5`: p. 53, Berätta 5, T13: How you get around, use of public transport, fears in traffic
+- `p73-BB`: p. 73, Berätta B, T14: How you look after your body and how it has changed over time
+- `p106-D6`: p. 106-107, Dialog 6 (phone), T1: A researcher phones while you wait for the bus; answer survey questions, then end.
+
 ---
 
 ### Day 37: reporting to an authority or a landlord (Phase 2, week 6)
@@ -1182,6 +1422,13 @@ Model: *Hej! Jag heter Alex Kumar och bor i lägenhet B 12 på Solvägen 5. Det 
 - *Det läcker vatten sedan i lördags.* → *Det har läckt vatten sedan i lördags.* (G6: *sedan* takes the perfect)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p73-BD`: p. 73, Berätta D, T11: Looking after your brain: habits, good and bad days, what helps
+- `p73-BE`: p. 73, Berätta E, T14: Staying healthy: your habits, a healthy life, your last illness
+- `p88-BD`: p. 88, Berätta D, T15: A normal working day: tasks, breaks, what you like and dislike
+- `p114-BF`: p. 114, Berätta F, T13: Your travel spending: what on, who decides, shopping or adventure.
+- `p114-BI`: p. 114, Berätta I, T16: Your hobby: duration, pros and cons, equipment, cost, who should try it.
 
 ---
 
@@ -1219,6 +1466,37 @@ Model: *Hej! Det är Alex, som ska köpa cykeln. Jag är där klockan sex, vid i
 
 [Unreviewed Swedish: have a teacher check it]
 
+#### Day 38, extra 15-minute block: T18 part 2, a place or a thing
+
+**What we learn in this block:**
+- Where: *Den ligger [i Sibbo], ungefär [en timme] från [Helsingfors].* (It is in Sibbo, about an hour from Helsinki.) / *Det ligger nära [havet], bredvid [en liten skog].* (It is near the sea, next to a small forest.)
+- What it is like: *Den är [liten och gammal], men [mysig].* (It is small and old, but cosy.) / *Det finns [en bastu och en brygga].* (There is a sauna and a jetty.)
+- What you do there: *Där brukar vi [bada och grilla].* (There we usually swim and have a barbecue.)
+- Why it matters: *Den är viktig för mig eftersom [___].* (It is important to me because ___.)
+- Advantages and disadvantages: *En fördel är att [___]. En nackdel är att [___].* (One advantage is that ___. One disadvantage is that ___.)
+- Grammar: *där* and *på vintern* first, so the verb comes next (G1). *en stuga – den*, *ett hus – det*, *ett kvarter – det*: the pronoun follows en or ett (G7).
+
+**Why it matters for the exam:** in the practice book, 9 tasks ask you to describe your home, your area, nature, a cottage, a book or your own style [Book count]. The plan's own writing count (section 2.1) already lists "describe a place" among the tasks outside the top five functions.
+
+**How we learn it (15 min):**
+- 0–5: Use today's place words. Say where your home is, in 3 sentences: *Mitt hus ligger …, bredvid …, mittemot …*. Then add *Där brukar jag …* and *Det är viktigt för mig eftersom …*.
+- 5–15:
+  - p12-D1 (pages 12–13): a friend visits your flat. Welcome them, describe the home, give one advantage and one disadvantage. One take, about 20 s per turn [Plan's practice limit].
+  - p62-R6 and p62-R7 (page 62): Reagera, 20 s prep + 25 s each.
+
+**Next study days:** Day 39: p64-S2 (page 64), the written message about your area, 15 minutes, with the T18 message points. Day 40: p35-BC, p62-BA, p63-BC, p113-BA, p114-BE, as Berätta talks.
+
+**Done when:** the dialogue covers welcome, two details of the home, one advantage and one disadvantage. Each Reagera says where it is, what it is like and why it matters, inside 25 seconds.
+
+**Typical errors to watch:**
+- *Där vi brukar bada.* (said as a sentence on its own) → *Där brukar vi bada.* (G1)
+- *Huset är liten.* → *Huset är litet.* (G7)
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 3 item(s) today.
+- `p12-D1`: p. 12-13, Dialog 1, T16: Friend visits your flat: welcome, offer a drink, describe the home, pros and cons
+- `p62-R6`: p. 62, Reagera 6, T13: Tell a housing agent what matters to you in a neighbourhood
+- `p62-R7`: p. 62, Reagera 7, T14: Describe Finnish nature to a friend who lives abroad
+
 ---
 
 ### Day 39: outside moves 2, thanks, recommendations and notices (Phase 2, week 6)
@@ -1253,6 +1531,9 @@ Model: *Hej grannar! Jag har födelsedagsfest i min lägenhet på lördag från 
 - *Restaurangen ligger nära till stationen.* → *Restaurangen ligger nära stationen.*
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 1 item(s) today.
+- `p64-S2`: p. 64, Skriva 2, T13: Message to a friend planning to move: describe your area, pros and cons
 
 ---
 
@@ -1296,6 +1577,13 @@ Model a: *Grattis! Vad roligt att du har fått jobbet! Det har du verkligen för
 - *Förlåt, jag blir sen* when you have already arrived late → *Förlåt att jag är sen.*
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p35-BC`: p. 35, Berätta C, T16: Your clothes and looks: personal style, fashion, attitude to cosmetic surgery
+- `p62-BA`: p. 62, Berätta A, T14: What nature and your home surroundings mean to you; your favourite kind of nature
+- `p63-BC`: p. 63, Berätta C, T14: Describe a landscape that is important to you and why
+- `p113-BA`: p. 113, Berätta A, T16: Talk about a book, play, film or poem that matters to you.
+- `p114-BE`: p. 114, Berätta E, T14: Summer cottages: whether you have access to one, visits, pleasures and chores.
 
 ---
 
@@ -1379,6 +1667,13 @@ Outputs: a 6-turn repair call (the washing machine is still broken after a visit
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p28-D9`: p. 28-29, Dialog 9 (phone), T2: Call a firm for a kitchen renovation quote: describe the job, reschedule visit, ask price
+- `p34-R1`: p. 34, Reagera 1, T16: Tell a neighbour which local sights you will show a first-time visitor
+- `p34-R2`: p. 34, Reagera 2, T16: Describe to a neighbour what a stranger at their door looked like
+- `p34-R6`: p. 34, Reagera 6, T10: React when a visiting friend brings you a very large, costly gift
+- `p36-OD`: p. 36, Din åsikt D, T13: Opinion: best type of home, and owning versus renting
+
 ---
 
 ### Day 44: shops and services (Phase 3, week 7)
@@ -1418,6 +1713,13 @@ Model: *Hej! Jag köpte en vattenkokare i er butik i Esbo den 3 november. Kvitto
 - *Om ni har inte en ny …* → *Om ni inte har en ny …* (G2)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p45-D3`: p. 45-46, Dialog 3, T4: Café: say what is wrong with your coffee, refuse a refill, choose another drink
+- `p51-R11`: p. 51, Reagera 11, T4: Complain to a waiter about very slow service
+- `p51-R6`: p. 51, Reagera 6, T2: In a furniture store: a stranger occupies the bed you want to try; price missing
+- `p51-R9`: p. 51, Reagera 9, T2: Buy flowers: tell the florist who they are for and the occasion
+- `p53-O1`: p. 53, Din åsikt 1, T13: Opinion: pros and cons of chain stores versus independent businesses
 
 ---
 
@@ -1461,6 +1763,13 @@ Model: *Hej! Jag heter Alex Kumar och jag har en tid hos tandläkaren på fredag
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p68-D1`: p. 68-69, Dialog 1 (phone), T12: Call the emergency number about an unconscious woman lying in the street
+- `p72-R1`: p. 72, Reagera 1, T2: Ask a friend to fetch something from the pharmacy for you
+- `p72-R9`: p. 72, Reagera 9, T2: Ask a nurse for information about your memory worries
+- `p73-BF`: p. 73, Berätta F, T13: What healthy food is, and whether you would change your diet
+- `p74-OA`: p. 74, Din åsikt A, T13: Physical health affects mental health; depression in Finland
+
 ---
 
 ### Day 46: work (Phase 3, week 7)
@@ -1502,6 +1811,13 @@ Model: *Hej Anna! Jag går på en kurs på torsdag och fredag nästa vecka, så 
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p79-D1`: p. 79-80, Dialog 1 (phone), T9: Tell your boss you are ill and cannot work; handover questions
+- `p87-R10`: p. 87, Reagera 10, T2: Overworked: propose to your boss ways to reduce your workload
+- `p87-R2`: p. 87, Reagera 2, T11: Help a confused new colleague get started at work
+- `p87-R5`: p. 87, Reagera 5, T11: Suggest to a colleague how to celebrate another colleague's 50th birthday
+- `p89-OA`: p. 89, Din åsikt A, T13: Work should be enjoyable, not only a way to earn money
+
 ---
 
 ### Day 47: travel and transport (Phase 3, week 7)
@@ -1541,6 +1857,12 @@ Model: *Hej! Jag reste med tåget från Helsingfors till Åbo den 12 mars klocka
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p104-D5`: p. 104-105, Dialog 5, T4: At the station your train is missing; ask why, complain, ask for compensation.
+- `p112-R8`: p. 112, Reagera 8, T2: Ask reception to book an airport taxi; give your flight details.
+- `p113-BD`: p. 113, Berätta D, T15: A good holiday: what it means, your last one, home versus travelling.
+- `p115-OB`: p. 115, Din åsikt B, T13: Finland as a holiday destination: attractions, who should visit, enough tourists?
+
 ---
 
 ### Day 48: mixed unseen prompts 1 (Phase 3, week 7)
@@ -1575,6 +1897,13 @@ Model: *Hej! Jag reste med tåget från Helsingfors till Åbo den 12 mars klocka
 - In the buyer call, no offer. Use T3: *Kan du tänka dig att sälja den för [80] euro?* (Would you consider selling it for 80 euro?)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p43-D2`: p. 43-44, Dialog 2, T2: At a hair salon: describe the cut and colour you want, reject their suggestion
+- `p52-R16`: p. 52, Reagera 16, T2: Ask a bus driver to tell you when to get off at your stop
+- `p75-S1`: p. 75, Skriva 1, T2: Forum post asking for advice: your health problem, symptoms, daily impact
+- `p75-S2`: p. 75, Skriva 2, T10: Message to a colleague on long sick leave: ask, support, offer help
+- `p90-S1`: p. 90, Skriva 1, T2: Desk note asking an absent colleague to swap a shift with you
 
 ---
 
@@ -1644,6 +1973,13 @@ Model: *Hej Sara! Jag har hittat en kurs i thailändsk matlagning på medborgari
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p98-D2`: p. 98-99, Dialog 2, T12: Leaving a bar without your cloakroom ticket; explain to the doorman, describe your jacket.
+- `p112-R14`: p. 112, Reagera 14, T2: Ask a neighbour for a ride because your car is out of action.
+- `p112-R5`: p. 112, Reagera 5, T11: Suggest a suitable new sport to a friend who wants to start one.
+- `p113-R17`: p. 113, Reagera 17, T13: A street reporter asks what you think of your home town.
+- `p115-OA`: p. 115, Din åsikt A, T13: Should exercise be compulsory? Benefits, harms, how to motivate people.
+
 ---
 
 ### Day 51: me and my background (Phase 3, week 8)
@@ -1682,6 +2018,12 @@ Model: *Hej allihopa! Jag heter Alex och jag kommer från Indien. Jag har bott i
 - *När jag var liten jag bodde i Pune.* → *När jag var liten bodde jag i Pune.* (G1)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p22-D6`: p. 22-23, Dialog 6, T8: New acquaintance wants a second date: thank, decline, give reason, soften the blow
+- `p34-R12`: p. 34, Reagera 12, T10: Compliment a friend who looks especially good today
+- `p35-BD`: p. 35, Berätta D, T14: Life story of a friend or relative: birth, childhood, adult life, now
+- `p37-OK`: p. 37, Din åsikt K, T13: Opinion: are relatives more important than friends?
 
 ---
 
@@ -1723,6 +2065,13 @@ Model: *Jag vill skriva om bilar i centrum. Jag tycker att stadens centrum borde
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p62-R2`: p. 62, Reagera 2, T11: Tell a grandparent kindly to stop feeding ducks unsuitable food
+- `p62-BB`: p. 62, Berätta B, T13: Protecting nature: your view, ways to protect it, your own green habits
+- `p63-OA`: p. 63, Din åsikt A, T13: Bike versus car: which you prefer, pros and cons
+- `p63-OB`: p. 63, Din åsikt B, T13: People buy too many things they do not need
+- `p63-OC`: p. 63, Din åsikt C, T13: Public transport should cost nothing
+
 ---
 
 ### Day 53: society (Phase 3, week 8)
@@ -1763,6 +2112,13 @@ Outline to complete: *Jag vill skriva om mobiltelefoner i skolan. Jag håller me
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p123-R5`: p. 123, Reagera 5, T2: Ask whether your home insurance covers your broken mobile phone.
+- `p124-OA`: p. 124, Din åsikt A, T13: How equal your current country is; where equality is lacking.
+- `p124-OB`: p. 124, Din åsikt B, T13: Declining mutual care between people in modern society.
+- `p124-OC`: p. 124, Din åsikt C, T13: Immigrants in Nordic politics: is representation too low, what could they add.
+- `p124-OD`: p. 124, Din åsikt D, T13: Tax levels: your home country compared with your current country.
+
 ---
 
 ### Day 54: phone mix, both roles (Phase 3, week 8)
@@ -1801,6 +2157,13 @@ Outline to complete: *Jag vill skriva om mobiltelefoner i skolan. Jag håller me
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p30-D10`: p. 30-31, Dialog 10 (phone), T2: Return a courier's missed-delivery call: identify yourself, agree a new delivery time
+- `p51-R14`: p. 51, Reagera 14 (phone), T3: Phone a seller about a used washing machine ad for more details
+- `p87-R3`: p. 87, Reagera 3 (phone), T2: Call a job interviewer to ask follow-up questions you invent
+- `p123-R1`: p. 123, Reagera 1 (phone), T2: Call the immigration service about a problem with your residence permit.
+- `p123-R2`: p. 123, Reagera 2 (phone), T2: Call the immigration service with questions about applying for citizenship after YKI.
+
 ---
 
 ### Day 55: Mock 2 preparation (Phase 3, week 8)
@@ -1835,6 +2198,13 @@ Outline to complete: *Jag vill skriva om mobiltelefoner i skolan. Jag håller me
 - Answering thanks with another *Tack!* → *Ingen orsak!* (reaction 18)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p37-OH`: p. 37, Din åsikt H, T13: Opinion: comfort and function versus fashion in clothes
+- `p72-R2`: p. 72, Reagera 2, T15: Tell the police what you saw at a car accident
+- `p72-R3`: p. 72, Reagera 3, T10: While jogging, speak to a young woman lying on the ground
+- `p113-BB`: p. 113, Berätta B, T13: Your view of bar culture: going to bars, suitable ages, pros and cons.
+- `p121-D2`: p. 121-122, Dialog 2 (phone), T12: Tell the insurer about damage at home; explain a missed bill, arrange a visit.
 
 ---
 
@@ -1897,6 +2267,12 @@ Any error type seen 3 or more times this week is marked red (3.6). This is the f
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p87-R4`: p. 87, Reagera 4 (phone), T4: Call payroll about a mistake in your pay
+- `p96-D1`: p. 96-97, Dialog 1 (phone), T4: Call the library: overdue notice for a book you never borrowed; deny it.
+- `p112-R6`: p. 112, Reagera 6, T4: Your gym card failed early one morning; report the fault to the gym.
+- `p113-R16`: p. 113, Reagera 16, T5: Return a faulty sports-shop product and explain why you want to return it.
+
 ---
 
 ### Day 58: weakest function A (Phase 3, week 9)
@@ -1944,6 +2320,11 @@ Any error type seen 3 or more times this week is marked red (3.6). This is the f
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 3 item(s) today.
+- `p53-O2`: p. 53, Din åsikt 2, T13: Opinion: right age for a child's first phone, and limits
+- `p83-D3`: p. 83-84, Dialog 3, T2: Agree a meeting time with a colleague: propose, decline, accept, explain busyness
+- `p88-R15`: p. 88, Reagera 15, T2: Ask your boss for a pay rise and justify it
+
 ---
 
 ### Day 59: weakest function B (Phase 3, week 9)
@@ -1975,6 +2356,12 @@ Any error type seen 3 or more times this week is marked red (3.6). This is the f
 - In a seller call, agreeing to the first low offer. T3 gives a counter-offer: *Tyvärr kan jag inte gå ner så mycket, men du kan få den för [130] euro.*
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p74-OB`: p. 74, Din åsikt B, T13: Doping in sport; can top athletes win clean
+- `p74-OC`: p. 74, Din åsikt C, T13: Healthcare here: pros, cons, staffing, comparison with your home country
+- `p88-R16`: p. 88, Reagera 16, T2: Ask your boss to let you attend a course; explain the benefit
+- `p119-D1`: p. 119-120, Dialog 1, T2: At the population-register office, start registering your marriage; answer questions, ask cost.
 
 ---
 
@@ -2013,6 +2400,12 @@ Model (J6): *Hej! Jag bor i lägenhet B 12 på Solvägen 5. Det har legat sopsä
 - A bill complaint with no amount. The official sample requires one.
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p38-S2`: p. 38, Skriva 2, T2: Email an estate agent: home type, location, budget, move date and reason
+- `p38-S3`: p. 38, Skriva 3, T5: Complaint to the housing company board about building faults, with deadline and consequence
+- `p110-D8`: p. 110-111, Dialog 8 (phone), T2: Call an adult-education institute to enrol on a course; ask price and payment.
+- `p123-R6`: p. 123, Reagera 6 (phone), T2: Your work has changed; call the tax office to change your tax rate.
 
 ---
 
@@ -2054,6 +2447,12 @@ Model (d): *Hej Jonna, det är Alex. Förlåt, jag har försovit mig! Jag kan va
 - *Om du kan inte vänta …* → *Om du inte kan vänta …* (G2)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p62-R3`: p. 62, Reagera 3, T2: In a shop, ask staff to help you choose walking shoes for the forest
+- `p88-R17`: p. 88, Reagera 17, T15: Tell your child's teacher about an upsetting school incident you invent
+- `p102-D4`: p. 102-103, Dialog 4 (phone), T4: Call hotel reception about a fault in your room; ask to move, want more.
+- `p114-BH`: p. 114, Berätta H, T14: Pets: your own pet, why people keep them, what children learn.
 
 ---
 
@@ -2167,6 +2566,13 @@ Model (d): *Hej Jonna, det är Alex. Förlåt, jag har försovit mig! Jag kan va
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p58-D1`: p. 58-59, Dialog 1 (phone), T15: Lost in the woods; phone a friend, explain where and how, describe clothing
+- `p72-R8`: p. 72, Reagera 8, T10: Comfort a friend who has just learned she has cancer
+- `p73-BA`: p. 73, Berätta A, T15: An accident or illness in your life or family, and how it changes things
+- `p87-R12`: p. 87, Reagera 12, T10: Comfort a friend who has lost their job
+- `p88-BB`: p. 88, Berätta B, T15: You as a pupil: best memory, likes, dislikes, favourite teacher
+
 ---
 
 ### Day 65: full writing set A (Phase 4, week 10)
@@ -2203,6 +2609,13 @@ Model (W3): *Hej! Jag skriver om faktura nummer 55120 från den 4 februari. Fakt
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p34-R11`: p. 34, Reagera 11, T10: Speak to a small child crying alone in a shop car park
+- `p53-O4`: p. 53, Din åsikt 4, T13: Opinion: do you enjoy haggling, and what can be negotiated?
+- `p54-S1`: p. 54, Skriva 1, T3: Reply to a sale ad: where you saw it, two questions, how to reach you
+- `p54-S3`: p. 54, Skriva 3, T13: Opinion text, choose one: helping immigrants, or restaurants open on Sundays and holidays
+- `p116-S1`: p. 116, Skriva 1, T6: Message inviting a friend to a film, play, concert or exhibition.
+
 ---
 
 ### Day 66: listening and reading set (Phase 4, week 10)
@@ -2237,6 +2650,12 @@ Model (W3): *Hej! Jag skriver om faktura nummer 55120 från den 4 februari. Fakt
 - An open answer as a long sentence. Write 1–4 words you heard (7.5).
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p18-D4`: p. 18-19, Dialog 4 (phone), T11: Colleague calls about a formal party dress code: give your view, suggest where to shop
+- `p72-R7`: p. 72, Reagera 7 (phone), T12: Call the police about a drunk driver you recognise arriving in your car park
+- `p123-R7`: p. 123, Reagera 7 (phone), T2: Call Kela about a social-security problem you choose.
+- `p125-S1`: p. 125, Skriva 1, T11: Message to a friend abroad who plans to move: steps and things to know.
 
 ---
 
@@ -2283,6 +2702,10 @@ Then 5 more of your own; the teacher checks them in the next pack.
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 2 item(s) today.
+- `p62-R1`: p. 62, Reagera 1 (phone), T12: Phone the waste site to report furniture and rubbish dumped in a forest
+- `p87-R14`: p. 87-88, Reagera 14, T13: Give a colleague your view on announced large-scale layoffs
+
 ---
 
 ### Day 68: mixed unseen prompts 2 (Phase 4, week 10)
@@ -2317,6 +2740,11 @@ Then 5 more of your own; the teacher checks them in the next pack.
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 3 item(s) today.
+- `p16-D3`: p. 16-17, Dialog 3 (phone), T10: Call a friend to congratulate on a new job, ask about it, agree call-back time
+- `p87-R13`: p. 87, Reagera 13, T10: Congratulate a friend on a great new job
+- `p88-R18`: p. 88, Reagera 18 (phone), T12: Call the head teacher to report bullying you saw in the school yard
+
 ---
 
 ### Day 69: opinion and person (Phase 4, week 10)
@@ -2349,6 +2777,12 @@ Then 5 more of your own; the teacher checks them in the next pack.
 - Using reason 18 *Man behöver ingen bil* in a talk about phones. Use only reasons the topic supports.
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p81-D2`: p. 81-82, Dialog 2, T13: Seminar break: discuss the talks with a colleague, ask about the next session
+- `p89-OB`: p. 89, Din åsikt B, T13: Studying is always worth it
+- `p89-OC`: p. 89, Din åsikt C, T13: Everyone seems rushed these days
+- `p89-OD`: p. 89, Din åsikt D, T13: Robots and AI will take over human jobs
 
 ---
 
@@ -2386,6 +2820,12 @@ It runs speaking set B timed with no pauses: a) *Berätta om en vän som du har 
 The whole set goes in the teacher pack. Week 11's top-3 error drill (6.1) is folded into Day 72, the fix day.
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p85-D4`: p. 85-86, Dialog 4, T15: Coffee-room chat after a business trip: where, what you did, hotel, how you feel
+- `p88-BC`: p. 88, Berätta C, T15: Your first job: what, how you got it, did you like it, pay
+- `p113-R18`: p. 113, Reagera 18, T11: Teenagers litter and make noise in a park daily; suggest other activities.
+- `p123-BB`: p. 123, Berätta B, T14: Your Finnish or Nordic friends, how you met, the shy-Nordics stereotype.
 
 ---
 
@@ -2427,6 +2867,12 @@ The other two drills follow the Day 67 recipe for their type.
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p20-D5`: p. 20-21, Dialog 5, T11: Tired-looking friend: say how they look, give sleep tips, offer practical help
+- `p64-S3`: p. 64, Skriva 3, T13: Opinion text, choose one: recycling is hard / we must cut plastic use
+- `p72-R6`: p. 72, Reagera 6, T11: Speak to a young child you see smoking in the yard
+- `p73-BC`: p. 73, Berätta C, T13: Which of the five senses matters most to you, and why
+
 ---
 
 ### Day 73: full writing set B (Phase 4, week 11)
@@ -2461,6 +2907,13 @@ Model (W1): *Hej Sara! Vill du följa med på en utflykt till en nationalpark p�
 - In b), *Grattis!* by reflex. Bad news needs reaction 6 or 7: *Åh nej, vad synd!*
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p37-OI`: p. 37, Din åsikt I, T13: Opinion: how well do Finns dress, compared with other countries?
+- `p38-S1`: p. 38, Skriva 1, T10: Message congratulating a friend on big news; propose how to celebrate together
+- `p87-R11`: p. 87, Reagera 11, T10: Say something to a colleague leaving on maternity leave
+- `p90-S3`: p. 90, Skriva 3, T13: Opinion text, choose one: Finnish schools best in world / official-language duty
+- `p116-S2`: p. 116, Skriva 2, T9: Message to a course teacher: enrol, explain missing lesson one, offer catch-up.
 
 ---
 
@@ -2498,6 +2951,13 @@ Model (W1): *Hej Sara! Vill du följa med på en utflykt till en nationalpark p�
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 5 item(s) today.
+- `p47-D4`: p. 47-48, Dialog 4, T16: Lost in a strange city: ask a passer-by the way, repeat directions back
+- `p52-R15`: p. 52, Reagera 15, T16: Tell a friend how to reach your home by bus
+- `p87-R7`: p. 87, Reagera 7, T16: Recommend a strong colleague to your boss for a project
+- `p90-S2`: p. 90, Skriva 2, T16: Thank-you letter to your own or your child's teacher
+- `p123-R8`: p. 123, Reagera 8, T12: Report a crime you were a victim of to the police.
+
 ---
 
 ### Day 75: listening and reading set (Phase 4, week 11)
@@ -2530,6 +2990,11 @@ Model (W1): *Hej Sara! Vill du följa med på en utflykt till en nationalpark p�
 - Changing an answer because one word was unknown. Answer from the whole sentence and move on (7.5).
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 3 item(s) today.
+- `p35-R18`: p. 35, Reagera 18, T2: Ask a colleague what to pack for a midsummer weekend at a cottage
+- `p41-D1`: p. 41-42, Dialog 1 (phone), T12: Call a gym about an item you left there: describe it, leave contact details
+- `p72-R13`: p. 72, Reagera 13, T2: At the gym, ask for a diet and exercise plan
 
 ---
 
@@ -2565,6 +3030,12 @@ Model (W1): *Hej Sara! Vill du följa med på en utflykt till en nationalpark p�
 - *Förlåt att jag är sen* in a voicemail left before the meeting → *Förlåt, jag blir lite sen.* (reaction 22 is for when you are already late; 23 is for before)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p54-S2`: p. 54, Skriva 2, T8: Thank a half-acquaintance for flowers but ask them to stop sending gifts
+- `p89-OE`: p. 89, Din åsikt E, T13: School uniforms are a good idea
+- `p100-D3`: p. 100-101, Dialog 3 (phone), T11: A friend phones asking how to lose weight; advise, offer help, arrange meeting.
+- `p113-BC`: p. 113, Berätta C, T13: Appearance: how much looks matter, your self-care, too much focus?
 
 ---
 
@@ -2631,6 +3102,12 @@ Model (W1): *Hej Sara! Vill du följa med på en utflykt till en nationalpark p�
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p89-OF`: p. 89, Din åsikt F, T13: Raising and educating children in the Nordic countries: good or bad
+- `p108-D7`: p. 108-109, Dialog 7 (phone), T2: Call the theatre to move your tickets to another date; dispute worse seats.
+- `p114-BG`: p. 114, Berätta G, T13: Your social media use, its pros and cons, and why you like it.
+- `p115-OC`: p. 115, Din åsikt C, T13: How far parents should supervise children's internet use; risks and benefits.
+
 ---
 
 ### Day 79: full writing set C (Phase 4, week 12)
@@ -2663,6 +3140,12 @@ Model (W3): *Bästa mottagare, Jag hyrde en bil av er från den 10 till den 12 m
 - *Efteråt vi dricker kaffe.* → *Efteråt dricker vi kaffe.* (G1)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p64-S1`: p. 64, Skriva 1, T6: Invite neighbours to a volunteer clean-up of a run-down local playground
+- `p74-OD`: p. 74, Din åsikt D, T13: Alcohol, tobacco and drug misuse, including by under-18s
+- `p75-S3`: p. 75, Skriva 3, T5: Formal complaint to the patient ombudsman about a relative's hospital care
+- `p116-S3`: p. 116, Skriva 3, T13: Parents' group chat: argue whether an art or sports after-school club matters more.
 
 ---
 
@@ -2697,6 +3180,12 @@ Model (W3): *Bästa mottagare, Jag hyrde en bil av er från den 10 till den 12 m
 - *Jag undrar hur mycket kostar det.* → *Jag undrar hur mycket det kostar.* (G3)
 
 [Unreviewed Swedish: have a teacher check it]
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 4 item(s) today.
+- `p37-OJ`: p. 37, Din åsikt J, T13: Opinion: do people worry too much about appearance?
+- `p70-D2`: p. 70-71, Dialog 2 (phone), T10: Phone a friend in hospital after an accident; sympathise, offer help, ask where
+- `p89-OG`: p. 89, Din åsikt G, T13: Finland needs more workers from abroad
+- `p115-OE`: p. 115, Din åsikt E, T13: Should children choose their own activities and hobbies? Limits and risks.
 
 ---
 
@@ -2738,6 +3227,10 @@ Then 5 more of your own, with this week's topics.
 
 [Unreviewed Swedish: have a teacher check it]
 
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 2 item(s) today.
+- `p24-D7`: p. 24-25, Dialog 7, T10: Friend just divorced: sympathise, ask how they feel, offer help, ask about children
+- `p125-S3`: p. 125, Skriva 3, T13: Opinion text, choose one: immigrants leaving for lack of jobs, or car ownership costs.
+
 ---
 
 ### Day 82: Mock 3 preparation, light (Phase 4, week 12)
@@ -2769,6 +3262,10 @@ Then 5 more of your own, with this week's topics.
 **Typical errors to watch:**
 - Learning anything new today. Recall only.
 - Doing a full set today. Save the stamina for Day 84.
+
+**Book practice (*Förbered dig för allmän språkexamen*, pointers only; descriptions are our own words):** 2 item(s) today.
+- `p37-OL`: p. 37, Din åsikt L, T13: Opinion: blended families and divorce, good or bad for children?
+- `p112-R7`: p. 112, Reagera 7, T12: Tell the gym what you left behind there and when.
 
 ---
 
