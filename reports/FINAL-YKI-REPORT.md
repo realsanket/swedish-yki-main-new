@@ -21,17 +21,17 @@
 | Listening + writing | Fits if you hear Swedish better than you speak it |
 | Reading + speaking | Fits if writing is your weak spot |
 
-Migri says two separate certificates can together make a pair. Both reports that checked this agree. One official page seems to say otherwise, so **ask Migri before you book a "partial day"** (section 8).
+Migri says two separate certificates can together make a pair. Both `claude.md` and `chatgpt.md` say this. One official page seems to say otherwise, so **ask Migri before you book a "partial day"** (section 8).
 
 **The honest timeline.**
 - Going from nothing to B1 takes roughly **350 to 960 hours** in total. That range is the report's own estimate from two sources, not a measured Swedish-YKI figure.
 - 120 minutes every day for 24 weeks gives only about 336 hours.
 - So the exam is a **decision to make at each deadline**, not a date to aim at blindly.
-- If your class has already given you many hours, count them. I don't know your current level.
+- Every verdict in the reports says "from A0". Your class notes (`docs/Group 3.md`) run from 13 April to 21 August 2026, 51 lessons, so you have been studying for months. Count those hours. I don't know your current level, so the "not realistic" verdicts may be too gloomy for you.
 
 **Do these three things now.**
 1. E-mail Migri and ask: "Can I use a partial-day certificate (writing + listening, or speaking + reading) for citizenship?"
-2. Start timing yourself on the exam tasks in section 4, **on top of** your class and the app. Don't just add more class.
+2. Start timing yourself on the exam tasks in section 4, **on top of** your evening class and the app. Don't just add more class.
 3. Count your study hours so far and compare them with the 350 to 960 range.
 
 **Decision dates (all spring 2027, all digital).** Registration is binding and almost never refunded.
@@ -44,6 +44,15 @@ Migri says two separate certificates can together make a pair. Both reports that
 | **19 May 2027** | **Speaking + reading only** | 19 Apr–3 May | 127 EUR |
 
 The 113 and 127 EUR figures are sums of the official subtest prices (writing 70 + listening 43, speaking 84 + reading 43). The 22 May 2027 sitting is for the highest level only, so skip it.
+
+**Confirm every date and window on yki.opintopolku.fi before you pay, because registration is binding.** The OPH Swedish and Finnish pages show the 19 May window differently, and the English page conflicts on 22 May. Registration opens at 10:00 on the first day of each window.
+
+**Which pair do these sittings give you?**
+- **3 Mar** gives listening + writing.
+- **19 May** gives speaking + reading.
+- **Speaking + writing** needs a full sitting (23 Jan or 17 Apr), or both partial days combined (if Migri allows it).
+
+**My default (judgement, not a finding): speaking + reading on 19 May.** It has the longest runway, costs 127 EUR, and avoids writing, the weakest subtest in the one old study (2015). Switch to listening + writing (3 Mar) only if you hear Swedish much better than you speak it. Switch to speaking + writing on a full sitting if your teacher says writing is your strongest skill. `chatgpt.md` and `qween.md` push speaking + writing instead, because it is the most trainable by practice.
 
 **Today is 14 Nov 2026, the last Swedish sitting of 2026. Registration for it is closed.** Autumn 2027 dates were not found. Check the OPH test-days page.
 
@@ -131,7 +140,7 @@ The other voice is a recording. You can't ask it to repeat.
 - Stop when every point is covered. Padding costs time.
 - Never switch to English, Hindi or Marathi.
 - Practise with a timer and **record yourself every day**. Listen once for "did I answer every point?" and once for "was I understandable?"
-- When you know the English but not the Swedish, say a simpler true thing, or describe the word: *Det är en sak som man använder för att...*
+- When you know the English but not the Swedish, say a simpler true thing, or describe the word: *Jag kommer inte på ordet, men det är något man använder för att...* (from `claude.md`)
 - Practise with some background noise. A 2022 test-taker said the room was noisy. If noise worries you, special arrangements must be requested **at registration**.
 
 ### Writing (handwritten in the paper era; typing in 2027 not confirmed)
@@ -160,9 +169,9 @@ The other voice is a recording. You can't ask it to repeat.
 - Numbers, dates, times, prices and places are the cheapest points. Drill them.
 - Listen hard for words that flip the meaning: *inte, aldrig, ingen, men, i stället, tyvärr, inställt*.
 - Don't freeze on one word. Guess from what comes before and after. Never leave an item blank.
-- Open answers: one to four words you heard. Rough spelling is fine if the meaning is clear.
+- Open answers: one to four words you heard. Official tolerance for spelling is not stated; keep the meaning clear.
 - **Real audio to use:** Yle "Nyheter på lätt svenska" (Finland-Swedish, with text). Listen once and write three facts. Listen again and write the numbers. Read the transcript. Try a new clip the next day. Memorising one clip trains nothing.
-- Reports disagree on whether the exam audio is Finland-Swedish. Practise with Finland-Swedish and don't assume it is easy.
+- Which accent the exam uses is not published. One 2022 forum post says Finland-Swedish. Nothing else was found. Practise with Finland-Swedish and don't assume it is easy.
 
 ### Reading
 
@@ -287,7 +296,7 @@ It covers the bill, two reasons, an amount and contact details. That is the chec
 
 **No cell reaches 350.** You need about 25 weeks at 120 minutes a day, 33 weeks at 90, or 50 weeks at 60.
 
-**Test-takers:** one blogger took 9 to 12 months to pass all four at level 3. Others took 6 to 10 months. All are anecdotes, and none says what the starting level was.
+**Test-takers:** the passing accounts run from about nine months to over a year. One blogger took 9 to 12 months, another about 430 days, and one needed several years with failed attempts. Ten months and nine months are the fastest. All are anecdotes, and none says what the starting level was.
 
 **Verdict (follows `claude.md`):**
 - **23 Jan and 3 Mar 2027:** not realistic from A0 on the evidence. 3 Mar is at best a trial run.
@@ -295,7 +304,7 @@ It covers the bill, two reasons, an amount and contact details. That is the chec
 - **Most realistic:** a first sitting after spring 2027. Reach about A2 through your class, then do 150+ hours of exam-style practice on one pair.
 - Level 3 is communicate-and-be-understood, not perfect Swedish. That is why the trade is worth making.
 
-**You are not starting cold.** You have a weekly class, the app, and the Gimara book. The book is the one `chatgpt.md` says candidates keep mentioning (anecdotal). **Use this time as a stack, not a replacement.** Class and app build the base. Daily timed exam tasks (section 4) are the new part.
+**You are not starting cold.** You have an evening class, the app, and the Gimara book. The book is the one `chatgpt.md` says candidates keep mentioning (anecdotal). **Use this time as a stack, not a replacement.** Class and app build the base. Daily timed exam tasks (section 4) are the new part.
 
 The app's own YKI content (Lectures 23–52) was written by AI and, per the project handbook, has not been reviewed by a native speaker. Treat its Swedish like the phrase sheet above and show it to your teacher.
 
@@ -350,7 +359,7 @@ Only a handful of Swedish-YKI accounts exist, and **none shows what is typical**
 | Chum Van (blog) | Mar 2026 | All four subtests at level 3 after about 9 to 12 months. Starting level not stated. |
 | Kielibuusti author | 2024 | About 430 days of Duolingo, then level 3 in all areas. Not evidence that Duolingo alone is enough. |
 | Fragriver | 2023 | Failed early attempts. Later courses, a speaking group and exam prep led to 3 in listening and speaking, 4 in reading and writing. |
-| A Reddit candidate | 2023 | After 6+ months, found reading and listening harder than expected. |
+| A Reddit candidate | 2023 | After 6+ months, found reading and listening harder than expected. Result not given. |
 | Carole Kurowski | 2025 | Nine months from zero. First sitting gave 3 in reading and writing. A second sitting after extra speaking and listening gave 3 in all four. |
 | Anh Phan (LinkedIn) | 2025 | A passing account that stresses strategic speaking and writing prep. |
 | Natalia Tolmacheva (Yle profile) | — | Ten months of study, passed the B1 for citizenship first time. |
@@ -402,6 +411,7 @@ Only a handful of Swedish-YKI accounts exist, and **none shows what is typical**
 | Writing length | None published | None published | "Better to write more", 4–5 sentences | None published; cover every point |
 | Yle YKI-treenit | Skip; basic level | Useful | not mentioned | Unresolved, low priority |
 | Candidate accounts | 5 found | 5–6 found | Mostly vendor or study-site claims | Union above, all anecdotal |
+| Best pair to target | Default speaking + reading (19 May), since it has the longest runway | Speaking + writing, as most trainable | Speaking + writing, because tasks are predictable | Speaking + reading on 19 May as the default (my judgement, section 1) |
 
 **`qween.md` warning.** Its Swedish templates contain Finnish (*Hyvä vastaanottaja*, *Toisaalta*, *ensinnäkin*), nonsense words and grammar errors. It also leans on Finnish-exam sites, which you ruled out. **Don't study Swedish from `qween.md`.** No Swedish or format fact in this report comes from it alone.
 
