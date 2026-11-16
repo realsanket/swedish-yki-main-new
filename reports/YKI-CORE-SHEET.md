@@ -1,15 +1,15 @@
 # YKI core sheet: everything you memorise
 
-*16 November 2026. Swedish YKI intermediate test, target level 3. This sheet holds the whole core; the rest of the study plan is a library to look things up in.*
+*16 November 2026, updated after the second review. Swedish YKI intermediate test, target level 3. This sheet is the whole core; the rest of the plan is a library.*
 
-**[Unreviewed Swedish: have a teacher check it]** This applies to every Swedish line on this sheet. No teacher or native speaker has checked them yet.
+**[Unreviewed Swedish: have a teacher check it]** This applies to every Swedish line on this sheet.
 
 ## How to use this sheet
 
 - **Learn frames, not whole answers.** A frame is a sentence with a gap [ ] that you fill with the card's details.
-- **Hear every line before you say it:** from your teacher, a Swedish voice, or your practice book's audio.
-- **Small doses:** at most 6 new frames and 8 new cards a day. Review stops after 8 minutes.
-- **On a task card:** underline what it asks for, pick the answer shape (the "engine"), open with the phone or letter frame, fill the shape, and stop when every point is covered.
+- **Audio:** hear every line before you say it: from your teacher, a Swedish voice, or the book's QR tracks.
+- **On a task card:** underline what it asks for, pick the answer shape (the "engine"), open and close the way the situation needs (section 3), fill the shape, and stop when every point is covered.
+- **Move on by Green, Amber or Red** (section 11), not by counts.
 - **With an AI chat:** paste this sheet in and ask it to quiz you from the English. It is not an official rater, and its Swedish can be wrong.
 
 ## 1. Five grammar rules these frames use
@@ -22,7 +22,7 @@
 
 ## 2. The six answer shapes ("engines")
 
-Pick one engine per task: it tells you what to say, in what order.
+Pick one engine per task: it tells you what to say, in what order. The situation, not the engine, decides how you open and close (section 3).
 
 ### Engine 1: Ask (request, booking, information)
 
@@ -74,22 +74,25 @@ In speaking, two reasons are enough. A letter to the editor (an official sample 
 *Hej Sara! Förlåt att jag kom så sent i går. Först kom bussen för sent, och sedan missade jag tåget. Till slut tog jag en taxi, men det var mycket trafik. Det var jobbigt, eftersom jag ville vara med från början. Kram, Alex*
 (Hi Sara! Sorry I came so late yesterday. First the bus came too late, and then I missed the train. In the end I took a taxi, but there was a lot of traffic. It was hard, because I wanted to be there from the start. Hugs, Alex)
 
-## 3. The two frames: how to open and close
+## 3. Openings and closings: they depend on the situation
 
-**Phone frame (every call).**
-- You call: *Hej, det här är [namn].* (Hi, this is …) *Jag ringer angående [___].* (I'm calling about …)
-- Confirm a time: *Okej, då säger vi [torsdag klockan tio].* (OK, then we'll say Thursday at ten.)
-- Close: *Tack för hjälpen. Hej då!* (Thanks for the help. Bye!)
+| Situation | Open | Close |
+|---|---|---|
+| Phone call | *Hej, det här är [namn]. Jag ringer angående [___].* (Hi, this is … I'm calling about …) | *Okej, då säger vi [torsdag klockan tio].* (OK, then we'll say Thursday at ten.) *Tack för hjälpen. Hej då!* (Thanks for the help. Bye!) |
+| Informal e-mail or message | *Hej [namn]!* (Hi …!) | *Hälsningar, [namn]* (Regards, …) |
+| Formal e-mail or letter | *Hej!* (or *Bästa mottagare,* Dear recipient) *Jag skriver angående [___].* (I am writing about …; *om* works too) | *Ni når mig på [telefonnummer] eller [e-postadress]. Med vänliga hälsningar, [för- och efternamn]* (You can reach me on … or … Kind regards, …) |
+| Opinion (talk or text) | *Jag tycker att [___].* (I think that …) | *Därför tycker jag att [___].* (That is why I think that …) |
+| Story or describe (talk) | *Jag vill berätta om [___].* (I want to tell you about …) | *Det var allt jag ville säga.* (That was all I wanted to say.) |
+| Face-to-face request | *Ursäkta, kan du [___]?* (Excuse me, can you …?) More polite: *skulle du kunna* | *Tack!* (Thanks!) |
+| Reacting to news | *Vad roligt!* (How nice!) / *Vad tråkigt att höra!* (I'm sorry to hear that!) | A question or an offer (section 7) |
 
-**Letter frame.**
-- To a friend: *Hej [namn]!* (Hi …!) … *Hälsningar, [namn]* (Regards, …)
-- To a firm or an office: *Hej,* (or *Bästa mottagare,* Dear recipient) … *Jag skriver om [___].* (I am writing about …) … *Ni når mig på [telefonnummer] eller [e-postadress].* (You can reach me on … or …) … *Med vänliga hälsningar, [för- och efternamn]* (Kind regards, …)
+Never open a hobby talk with a phone greeting, and never close it with a formal letter closing.
 
 ## 4. The seven official sample tasks: what each must contain
 
-The public practice tasks for this test. A missing point counts as an error, so tick each one.
+A missing point counts as an error, so tick each one.
 
-1. **Talk about a person important to you** (speaking: 1 minute to prepare, 1.5 minutes to talk). The sample names only the topic. The plan's six points: who; how long you have known them; looks and personality; what you do together; why they matter; a memory or a wish.
+1. **Talk about a person important to you** (speaking: 1 minute to prepare, 1.5 minutes to talk). The plan's six points: who; how long you have known them; looks and personality; what you do together; why they matter; a memory or a wish.
 2. **A buyer phones about your "for sale" ad** (speaking: turns of about 10–25 seconds). Answer the questions (still for sale? age? condition? price? a lower offer?), suggest a time and say where you live.
 3. **You phone a repair firm about something still broken** (speaking: 6 turns). Who you are; what is broken; that it is still broken after a repair visit, and when; a protest with a reason; what you want (a new time, your address).
 4. **A voicemail saying you will be late** (speaking: 20 seconds). Who you are; that you will be late; a short reason; when you will be there.
@@ -107,7 +110,7 @@ The public practice tasks for this test. A missing point counts as an error, so 
 - *Jag lär mig svenska.* (I am learning Swedish.)
 - *Jag jobbar som [___].* (I work as …)
 
-**Phone frame (4) and letter frame (5):** the lines in section 3.
+**Phone frame (4) and letter frame (5):** in section 3.
 
 **Ask (6)**
 - *Jag skulle vilja [boka en tid].* (I would like to book an appointment.)
@@ -191,9 +194,15 @@ Each pair has a "for" and an "against" side, so you can argue either way. Follow
 
 *man* means "you" or "people in general". After *En nackdel är att* (a disadvantage is that), *inte* moves before the verb: *En nackdel är att det inte passar alla.*
 
+**Concept words: a way to find a reason fast** (a technique, not new lines). Ask what the statement touches: *tid* (time), *pengar* (money), *hälsa* (health), *miljö* (environment), *trygghet* (safety), *människor* (people), *barn* (children), *arbete* (work), *frihet* (freedom), *stress*, *kvalitet* (quality), *problem*. Then take the matching pair above. Working from home? *tid* and *stress*: *Det sparar tid. Man blir mindre stressad.*
+
+**Sentence families.** Learn a sentence with 2–3 variants, never a verb as a four-form table.
+- Time, money, work: *Det tar mycket tid.* (It takes a lot of time.) / *Det kostar mycket pengar.* (It costs a lot of money.) / *Det är mycket arbete.* (It is a lot of work.)
+- Yesterday, today, tomorrow: *I går jobbade jag hemma.* (Yesterday I worked at home.) / *I dag jobbar jag hemma.* (Today I'm working at home.) / *I morgon ska jag jobba hemma.* (Tomorrow I'm going to work at home.) Up to now: *Jag har jobbat hemma i två år.* (I have worked at home for two years.)
+
 ## 7. Ten reactions
 
-Shape: react → one detail → a question, an offer or a close. [bank N] is the number in the plan's list of 30. Example: *Grattis! Vad roligt att du har fått jobbet! När börjar du?* (Congratulations! How nice that you got the job! When do you start?)
+Shape: react → one detail → a question, an offer or a close. [bank N] is the plan's number. Example: *Grattis! Vad roligt att du har fått jobbet! När börjar du?* (Congratulations! How nice that you got the job! When do you start?)
 
 1. *Grattis! Vad roligt!* (Congratulations! How nice!) [bank 1]
 2. *Vad tråkigt att höra.* (I'm sorry to hear that.) [bank 6]
@@ -208,7 +217,7 @@ Shape: react → one detail → a question, an offer or a close. [bank N] is the
 
 ## 8. Eight rescue phrases
 
-Use them instead of going silent. Never switch to English.
+Never go silent, and never switch to English.
 
 1. *Förlåt, jag menar …* (Sorry, I mean … Correct yourself once, then carry on.)
 2. *Jag säger det på ett annat sätt.* (I'll say it another way.)
@@ -219,43 +228,40 @@ Use them instead of going silent. Never switch to English.
 7. *Till exempel …* (For example …)
 8. *Det var allt jag ville säga.* (That was all I wanted to say.)
 
+**Word recovery** (the long form of phrases 3 and 4): *Det är en sak som [___].* (It's a thing that …) / *Det är en plats där [___].* (It's a place where …) / *Det är en person som [___].* (It's a person who …) / *Man använder den för att [___].* (You use it to …) / *Det är ungefär som [___].* (It's roughly like …)
+
 If you miss what the recorded voice said, you cannot ask it to repeat. Say *Okej.* and give the next point from your card.
 
 ## 9. Words to recognise on the task card
-
-You need to understand these, not to say them.
 
 **Instruction words (13):** *läs* (read), *lyssna* (listen), *välj* (choose), *skriv* (write), *svara* (answer), *berätta* (tell), *förklara* (explain), *beskriv* (describe), *jämför* (compare), *föreslå* (suggest), *motivera* (give reasons for), *rätt / fel* (true / false), *åtminstone* (at least).
 
 **Question words (11):** *vem* (who), *vad* (what), *var* (where), *när* (when), *hur* (how), *hur mycket* (how much), *hur många* (how many), *hur länge* (how long), *hur ofta* (how often), *varför* (why), *vilken / vilket / vilka* (which).
 
+**The question-to-answer reflex.** Hear the question word, know what the answer must hold:
+
+| Question | Your answer gives, and how it starts |
+|---|---|
+| *Var?* | a place: *I [Esbo]. / På [jobbet].* |
+| *När?* | a time: *På [fredag]. / Klockan [tio].* |
+| *Varför?* | a reason: *Eftersom [jag jobbar].* |
+| *Hur mycket?* | a price or amount: *[Sextio] euro.* |
+| *Hur länge?* | a duration: *I [två år]. / Sedan [maj].* |
+| *Vad tycker du?* | an opinion: *Jag tycker att [___].* |
+| *Vad hände?* | a past event: *[I går] [hände något].* |
+| *Vad vill du?* | a request: *Jag skulle vilja [___].* |
+
 ## 10. Thirty verbs, in three layers
 
 **Layer 1: the present of all 30** (base form → present).
 
-| Base → present | English | Base → present | English |
-|---|---|---|---|
-| *vara → är* | be | *köpa → köper* | buy |
-| *ha → har* | have | *betala → betalar* | pay |
-| *göra → gör* | do, make | *ringa → ringer* | phone |
-| *gå → går* | go, walk | *skicka → skickar* | send |
-| *komma → kommer* | come | *boka → bokar* | book |
-| *åka → åker* | go, travel | *jobba → jobbar* | work |
-| *få → får* | get, may | *bo → bor* | live |
-| *ta → tar* | take | *träffa → träffar* | meet |
-| *ge → ger* | give | *fungera → fungerar* | work (of a thing) |
-| *se → ser* | see | *hjälpa → hjälper* | help |
-| *säga → säger* | say | *skriva → skriver* | write |
-| *veta → vet* | know | *äta → äter* | eat |
-| *kunna → kan* | can | *sova → sover* | sleep |
-| *vilja → vill* | want | *glömma → glömmer* | forget |
-| *bli → blir* | become, get | *tycka → tycker* | think (an opinion) |
+*vara → är* (be), *ha → har* (have), *göra → gör* (do, make), *gå → går* (go, walk), *komma → kommer* (come), *åka → åker* (go, travel), *få → får* (get, may), *ta → tar* (take), *ge → ger* (give), *se → ser* (see), *säga → säger* (say), *veta → vet* (know), *kunna → kan* (can), *vilja → vill* (want), *bli → blir* (become, get), *köpa → köper* (buy), *betala → betalar* (pay), *ringa → ringer* (phone), *skicka → skickar* (send), *boka → bokar* (book), *jobba → jobbar* (work), *bo → bor* (live), *träffa → träffar* (meet), *fungera → fungerar* (work, of a thing), *hjälpa → hjälper* (help), *skriva → skriver* (write), *äta → äter* (eat), *sova → sover* (sleep), *glömma → glömmer* (forget), *tycka → tycker* (think, an opinion).
 
-**Layer 2: the past of 12.** *var* (was), *köpte* (bought), *ringde* (phoned), *kom* (came), *glömde* (forgot), *gick* (went), *hjälpte* (helped), *tog* (took), *blev* (became, got), *fick* (got), *sa* (said), *bodde* (lived). These are the past forms the plan's own Swedish uses most. Use the past with a finished time: *Jag köpte den i måndags.* (I bought it last Monday.)
+**Layer 2: the past of 12.** *var* (was), *köpte* (bought), *ringde* (phoned), *kom* (came), *glömde* (forgot), *gick* (went), *hjälpte* (helped), *tog* (took), *blev* (became, got), *fick* (got), *sa* (said), *bodde* (lived). Use the past with a finished time: *Jag köpte den i måndags.* (I bought it last Monday.)
 
 **Layer 3: the perfect, only inside chunks.** Learn these whole: *Jag har bott i Finland i fem år.* (I have lived in Finland for five years.) / *Jag har redan betalat.* (I have already paid.) / *Har ni fått mitt mejl?* (Have you got my e-mail?)
 
-## 11. The nine daily load rules
+## 11. The nine daily load rules, and when to move on
 
 1. At most 6 new frames and 8 new cards a day.
 2. One grammar point a day, stated in one sentence.
@@ -264,8 +270,22 @@ You need to understand these, not to say them.
 5. One speaking task and one typed task. A book task replaces the day's own prompt.
 6. A day is 60 minutes. If a block is added, another is removed.
 7. A day is done when a changed version of the task works, not when a list is recited fast.
-8. If the "done when" fails, repeat the day tomorrow with new details.
-9. If a day holds more than rule 1 allows, split it into day a and day b. Day b uses the same tasks with new details. The calendar slips, and that is intended.
+8. Mark the day Green, Amber or Red (below). Only Red repeats the skill tomorrow, with new details.
+9. If a day holds more than rule 1 allows, split it into day a and day b. Day b uses the same tasks with new details.
+
+**Green, Amber, Red.**
+- **Green, move on:** you understood the task and gave every required point on your own (the model only to check afterwards).
+- **Amber, move on with revision:** understandable, but you hesitated or repeated a mistake. Put the top 1–2 mistakes on the error list and revisit them later. Do not repeat the day.
+- **Red, repeat the skill tomorrow with new details:** you misunderstood the question, could not answer, or needed the model to answer.
+- Counts (errors, words, seconds, "4 of 5") are targets, never gates. Spelling and capitals never make a task Amber or Red if the message is clear. Only the plan's booking gate (4.7) is a fixed test.
+
+**Time pressure grows step by step.** First hearing and repeating: no timer. Saying it from the English: gentle (double the target time). Changing the sentence: moderate. A question you have not practised: exam-like. Mocks: full exam conditions.
+
+**The transfer test for any new sentence** (*Jag bor i Esbo.*): 1 recall it from the English; 2 swap a detail (*i Vanda*); 3 change the person (*Hon bor i Vanda.*); 4 understand the question it answers (*Var bor du?*); 5 ask the reverse question yourself (*Och du?*); 6 understand it spoken; 7 type it.
+
+**Active recall.**
+- **Cover and say:** cover the Swedish, read the English, say the Swedish aloud, then uncover and check. A miss comes back tomorrow.
+- **Swap drill:** say one frame three times with a new detail each time: *Kan vi ses [på lördag] i stället?* → *på söndag*, *i morgon*, *efter jobbet*.
 
 ## 12. The first two days
 
@@ -279,19 +299,11 @@ You need to understand these, not to say them.
 
 **The one grammar fact:** the verb has the same form for every person: *jag bor, du bor*.
 
-| Minutes | What you do |
-|---|---|
-| 0–10 | **Listen.** Hear each frame three times, English in view. Repeat it. |
-| 10–20 | **Recall and swap.** Say each frame from the English, then with three new details. |
-| 20–30 | **Questions.** Hear the four questions, mixed. Answer each in a full sentence within 10 seconds. |
-| 30–40 | **Speaking.** Card: *Berätta om dig själv.* (Tell about yourself.) Record five sentences, listen once, redo once. |
-| 40–50 | **Typing.** Set up å, ä and ö. Type the five sentences from memory, compare with the model, fix, type again. |
-| 50–55 | **Change check.** Answer the questions as Sara: from Sweden, lives in Åbo, speaks Swedish and Finnish. |
-| 55–60 | **Cards:** 5 frames and 3 questions (8 cards). Start an error log. |
+**Steps (60 minutes):** hear each frame three times and repeat it (no timer) → cover and say each frame from the English, then swap the detail three times → answer the four questions, mixed, in full sentences → speaking card *Berätta om dig själv.* (Tell about yourself.): record five sentences, listen once, redo once → set up å, ä and ö, and type the five sentences from memory → change check: answer as Sara (from Sweden, lives in Åbo, speaks Swedish and Finnish) → 8 cards; start an error log.
 
 **Model:** *Hej! Jag heter Alex. Jag kommer från Indien. Jag bor i Esbo. Jag talar engelska, hindi och marathi. Jag lär mig svenska.*
 
-**Done when:** you answer 4 of 4 questions without reading, and the typed text has no more than 2 spelling slips. If not, repeat Day 1 tomorrow with new details.
+**Done when (section 11):** Green if you understand all four questions and answer each in a full sentence without reading. Spelling slips do not count.
 
 ### Day 2: say more, and ask back
 
@@ -305,18 +317,10 @@ You need to understand these, not to say them.
 
 **The one grammar fact:** in a question, the verb comes straight after the question word: *Var bor du?*, not *Var du bor?*
 
-| Minutes | What you do |
-|---|---|
-| 0–8 | **Review** the 8 cards from Day 1, aloud. |
-| 8–18 | **Listen and repeat** the frames and numbers 0–12. |
-| 18–28 | **Answers into questions:** *Jag bor i Esbo.* → *Var bor du?* Then answer all six questions, mixed. |
-| 28–40 | **Speaking.** A helper asks the four Day 1–2 questions about name, home, work and years in Finland. Answer each in one sentence; twice, add *Och du?* Record, listen once, redo once. |
-| 40–50 | **Typing.** Card: *Skriv till en ny kurskamrat. Berätta om dig själv och ställ två frågor.* (Write to a new course-mate. Tell about yourself and ask two questions.) |
-| 50–55 | **Numbers.** Hear 8 numbers from 0 to 12; write the digits. |
-| 55–60 | **Cards (8 at most):** 2 frames, 3 question cards, and the numbers you missed. |
+**Steps (60 minutes):** say the Day 1 cards aloud → hear and repeat the frames and numbers 0–12 → turn answers into questions (*Jag bor i Esbo.* → *Var bor du?*), then answer all six questions → speaking: a helper asks about your name, home, work and years in Finland; answer each in one sentence, and twice add *Och du?*; record, listen once, redo once → typing card: *Skriv till en ny kurskamrat. Berätta om dig själv och ställ två frågor.* (Write to a new course-mate. Tell about yourself and ask two questions.) → hear 8 numbers from 0 to 12 and write the digits → at most 8 cards.
 
 **Model:** *Hej! Jag heter Alex och jag kommer från Indien. Jag bor i Esbo. Jag har bott i Finland i fem år. Jag jobbar som ingenjör. Jag lär mig svenska. Vad heter du? Var bor du? Hälsningar, Alex*
 
-**Done when:** you answer 6 of 6 questions in full sentences, both of your own questions have the verb before *du*, and the message has a greeting, five facts, two questions and a closing.
+**Done when (section 11):** Green if you answer the six questions in full sentences, your own two questions have the verb before *du*, and the message has a greeting, five facts, two questions and a closing.
 
-What Days 1 and 2 leave out comes back on the next days of the plan, a few items at a time.
+The minute plans are in the study plan (5.1) and the curriculum.

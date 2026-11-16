@@ -9,7 +9,7 @@
 ## 1. Bottom line
 
 1. **There is no shortcut that replaces Swedish, and nobody official endorses one.** OPH's only prep advice found is: "Prepare for the test and also get to know the types of questions used in the test." (official, undated)
-2. **Tricks work only on production (speaking and writing).** Listening and reading cannot be templated. They need Swedish comprehension. For a pair that includes listening or reading, tricks cover only the cheap points (numbers, dates, reversal words, answer every item).
+2. **Templates work only on production (speaking and writing); strategy helps all four subtests.** *(Corrected 16 November 2026, second review: an earlier version said tricks work only on production.)* Listening and reading cannot be templated, and no strategy replaces Swedish comprehension. But they do have strategy: read the question first and search for the information it asks for; expect synonyms rather than the question's own words; listen and look for negatives and changes (*inte, aldrig, men, i stället, inställt*); catch numbers, dates and prices; and notice whether someone accepts, refuses, cancels or changes a plan. Answering every item is official advice (reading sample: no penalty for wrong answers). The rest is **inference** from general test-taking practice, not YKI-specific evidence. Strategy helps you use the Swedish you have; it does not add Swedish you lack.
 3. **Task types are predictable inside the material we have.** In the Gimara book, 86% of Dialoger/Reagera speaking tasks fall into five functions. This is one author's selection, not an official task bank, so it shows predictability of the practice material, not of the real exam.
 4. **About 14% of speaking tasks and 8 of 21 writing tasks fall outside the top-5 templates.** "A few templates" misses them (section 4).
 5. **Whole-answer memorisation has no evidence either way for YKI.** One self-reported test-taker memorised about 25 texts and passed. Other exams (OPIc/ACTFL) train raters to flag rehearsed speech. Use slot templates, not whole answers.
@@ -102,6 +102,7 @@ The top 5 functions cover 115 of 133 (about 86%). The top 2 cover 53%. 18 of 34 
 | 8 | **Cheap-point drilling**: numbers, dates, times, prices, reversal words (*inte, aldrig, men, i stället, tyvärr, inställt*) | Listening, reading | Give you the hard points | Phone numbers drilled in L23; rest unverified |
 | 9 | **Reaction-phrase bank** (congratulate, sympathise, apologise, refuse politely) | Speaking (Reagera) | Handle long tasks | Phrases appear in L23 and L29; no bank |
 | 10 | **Weakest-subtest diagnostic** | All four | | Mock flow has a diagnosis stage; no weakest-subtest logic found |
+| 11 | **Search strategy for listening and reading** (inference; added 16 Nov 2026): question first, search for the asked information, expect synonyms, watch negatives and changes, catch numbers, dates and prices, notice accept / refuse / cancel / change | Listening, reading | Replace comprehension | Not checked in the app; the study plan teaches it (sections 7.3–7.5) |
 
 ---
 
