@@ -6,17 +6,17 @@
 
 **Since 16 November 2026, T17–T20 belong to the reference library.** The learner memorises only the core (plan section 1); the lines in this file are looked up when a task needs them. The T-numbers stay as aliases, so the book map still works.
 
-**Second review (16 November 2026).** Each full example now has a **short version** next to it: learn the short one first, and add the expanded one later. A short model for a 20–25 second turn has about 40–60 words at most. **T20 is optional library material**, not a compulsory early block (T17 stays, because 18 book tasks need it). Success is marked **Green, Amber or Red** (plan section 1): Green, move on; Amber, move on and put the top 1–2 mistakes on the error list; Red, repeat the skill tomorrow with new details. Times and counts below are targets, never gates.
+**Second review (16 November 2026).** Each full example now has a **short version** next to it: learn the short one first, and add the expanded one later. **Answer length** (third review): practise at about 80 words a minute, so a 20-second turn holds about 25–33 words, a 25-second turn about 33–40, 1 minute about 80 and 1.5 minutes about 120. Short models fit these numbers; they are practice aims, not exam rules. **T20 is optional library material**, not a compulsory early block (T17 stays, because 18 book tasks need it). Success is marked **Green, Amber or Red** (plan section 1): Green, move on; Amber, move on and put the top 1–2 mistakes on the error list; Red, repeat the skill tomorrow with new details. Times and counts below are targets, never gates.
 
 **All Swedish in this file is AI-written and has not been checked by a teacher or a native speaker.** The "required points" are this plan's own reading of each task type. No official checklist exists for these tasks [Plan's own].
 
 Square brackets [ ] are slots, as in section 2.3. G1–G10 are the grammar points in section 2.9 of the plan.
 
-| Template | Gap it closes | Weak-fit book tasks covered | Taught on (extra 15-minute block) |
+| Template | Gap it closes | Weak-fit book tasks covered | Taught on |
 |---|---|---|---|
-| T17 | Polite objection: ask someone to stop, or stand up for yourself | 18 | Day 22 (part 1) and Day 24 (part 2) |
-| T18 | Describe a habit, routine, hobby, place or thing | 21 | Day 34 (part 1) and Day 38 (part 2) |
-| T19 | Compare your home country with Finland | 4 (and helps 6 more) | Day 31 |
+| T17 | Polite objection: ask someone to stop, or stand up for yourself | 18 | Day 22 (part 1) and Day 24 (part 2): extra 15-minute blocks |
+| T18 | Describe a habit, routine, hobby, place or thing | 21 | Day 34b (part 1) and Day 38b (part 2): full study days since the third review |
+| T19 | Compare your home country with Finland | 4 (and helps 6 more) | Day 31: an extra 15-minute block, cut to 2 core frames in the third review |
 | T20 | One-offs: resign, give things away, say you are afraid, appeal a decision, persuade a stranger | 6 | **Optional** library block, not part of Day 30 |
 
 The covered lists add up to exactly the 49 weak-fit tasks, each once. The day each task is used (a day number, the question bank, optional for the six T20 tasks, or held back) is in `data/assignments.json` and in the book map. Since 16 November 2026 the book map's Template column carries these tags (T17a, T17b, T18a, T18b, T19, T20a–e); three rows put another tag first (`p52-B4`: T18a, then T19; `p123-BA`: T13, then T19; `p62-R6`: T2, then T18b).
@@ -54,7 +54,8 @@ The covered lists add up to exactly the 49 weak-fit tasks, each once. The day ea
 - *Det kan vara farligt för [barnen].* (It can be dangerous for the children.)
 
 **Step 4: thank, or say the next step.**
-- *Tack för att du förstår.* (Thanks for understanding. Use it when you end your request, before the person has agreed.)
+- *Tack!* (Thanks!) The short, safe close: it fits every T17 situation, and it is the one to use when you are unsure.
+- *Tack för att du förstår.* (Thanks for understanding.) Polite but firm: it assumes the person will agree, so use it to end a firm request (a repeated or serious problem), before the person has answered. With a friend, or after a soft request, *Tack!* sounds warmer.
 - *Tack, det var snällt av dig.* (Thanks, that's kind of you. Only after the person has agreed or helped.)
 - If the person says no: *Då måste jag tyvärr prata med [personalen].* (Then I'm afraid I have to talk to the staff.)
 
@@ -75,7 +76,7 @@ The covered lists add up to exactly the 49 weak-fit tasks, each once. The day ea
 
 (Excuse me! I can see that you've taken my washing out of the machine. I've booked the laundry room until nine tonight. Could you wait until my time is over? I have to do my washing today, because I'm travelling tomorrow. Thanks for understanding!)
 
-The expanded version has about 45 words, which is about 25 seconds at a calm pace; the short one leaves you time to breathe.
+The expanded version has 45 words: at the practice pace of about 80 words a minute that is about 34 seconds, too long for a 25-second turn. In a 25-second Reagera, say the short version plus one sentence (about 30 words); keep the expanded version for a longer turn or a written note. It ends with the firm close (*Tack för att du förstår!*); the short one ends with the safe *Tack!*.
 
 **Common errors:**
 - *Ursäkta, kan du att prata tystare?* → *Ursäkta, kan du prata lite tystare?* (G4: no *att* after a modal verb)
@@ -107,7 +108,7 @@ The expanded version has about 45 words, which is about 25 seconds at a calm pac
 - A topic about **what something is like**: your home, your area, nature, a summer cottage, a book or film, your own style. This is part 2.
 - T14 is for a person and T15 is for one past event. T18 is for what you **usually** do, and for what a place or thing **is like**.
 
-**Part 1: habits, routines and hobbies** (Day 34)
+**Part 1: habits, routines and hobbies** (Day 34b)
 - Open: *Jag vill berätta om [min vardag / mina vanor / min hobby].* (I want to tell you about my everyday life / my habits / my hobby.)
 - How often:
   - *Jag brukar [gå upp klockan sju].* (I usually get up at seven.)
@@ -125,7 +126,7 @@ The expanded version has about 45 words, which is about 25 seconds at a calm pac
   - *Jag tycker inte om [att stressa på morgonen].* (I don't like rushing in the morning.)
 - Then and now: *Förr [åt jag mycket godis], men nu [äter jag mer frukt].* (I used to eat a lot of sweets, but now I eat more fruit.)
 
-**Part 2: a place or a thing** (Day 38)
+**Part 2: a place or a thing** (Day 38b)
 - Open: *Jag vill berätta om [vår stuga / mitt kvarter / en bok som är viktig för mig].* (I want to tell you about our cottage / my neighbourhood / a book that matters to me.)
 - Where:
   - *Den ligger [i Sibbo], ungefär [en timme] från [Helsingfors].* (It is in Sibbo, about an hour from Helsinki.)
@@ -163,8 +164,8 @@ The expanded version has about 120 words. That fills 1.5 minutes at a beginner's
 - **Timing (a target, not a gate):** aim to keep the Berätta talk going for the full 1.5 minutes without repeating yourself. Plan one point for each 15 seconds.
 
 **Book tasks it covers (21):**
-- Part 1, habits, routines and hobbies (Day 34 block): p35-BB (your arguing habits), p52-B1 (you and time), p52-B2 (what kind of arguer you are), p52-B3 (your normal weekday), p53-B5 (how you get around), p73-BB (looking after your body), p73-BD (looking after your brain), p73-BE (staying healthy), p88-BD (a normal working day), p114-BF (how you spend money when you travel), p114-BI (your hobby), p106-D6 (a phone survey about your internet habits).
-- Part 2, a place or a thing (Day 38 block): p12-D1 (a friend visits your flat: describe the home), p35-BC (your clothes and style), p62-R6 (what matters to you in a neighbourhood), p62-R7 (describe Finnish nature to a friend abroad), p62-BA (nature and your home surroundings), p63-BC (a landscape that matters to you), p64-S2 (a written message: describe your area to a friend who may move), p113-BA (a book or film that matters to you), p114-BE (summer cottages).
+- Part 1, habits, routines and hobbies (Day 34b, a full study day): p35-BB (your arguing habits), p52-B1 (you and time), p52-B2 (what kind of arguer you are), p52-B3 (your normal weekday), p53-B5 (how you get around), p73-BB (looking after your body), p73-BD (looking after your brain), p73-BE (staying healthy), p88-BD (a normal working day), p114-BF (how you spend money when you travel), p114-BI (your hobby), p106-D6 (a phone survey about your internet habits).
+- Part 2, a place or a thing (Day 38b, a full study day): p12-D1 (a friend visits your flat: describe the home), p35-BC (your clothes and style), p62-R6 (what matters to you in a neighbourhood), p62-R7 (describe Finnish nature to a friend abroad), p62-BA (nature and your home surroundings), p63-BC (a landscape that matters to you), p64-S2 (a written message: describe your area to a friend who may move), p113-BA (a book or film that matters to you), p114-BE (summer cottages).
 - **Forced fits, said honestly:**
   - p106-D6 is a phone survey. Use T1 to open and close, and the "how often" lines to answer.
   - p35-BC mixes T16 appearance lines with T18 habits, and its last question is an opinion (T13).
@@ -322,8 +323,9 @@ The expanded version has about 120 words. The name, the e-mail address and the p
 - If all four blocks sat on Days 36–40, those windows could reach only Day 40, because Days 41–42 are the Phase 2 exit test. That is 5 study days, or about 75 minutes of book time at 15 minutes a day.
 - The 49 weak-fit tasks need about 150 minutes, because 20 of them are 2.5-minute talks (19 Berätta and one Din åsikt). The estimate is this plan's own: 2 minutes per Reagera, 3 per talk, 5 per dialogue and 15 per written text, done once and ticked against the points.
 - So the blocks are spread over Phase 2, each on a day whose new content is light or whose skill the template builds on. Since 16 November 2026 each block replaces the day's own speaking block (minutes 18–33), so the day stays at 60 minutes (load rule 6 in plan section 1); on a 90-minute day, do both.
-- **Since 16 November 2026 a day holds at most 2 book tasks** (the six block days are a documented exception). So 16 of the 49 weak-fit tasks moved to the question bank in the book map. Since the second review the six T20 tasks (with p125-S2) are optional and on no fixed day. The table shows the new placement.
-- A "study day" here skips light, rest, mock and exit-test days. For example, the window of Day 34 is Days 34, 36 and 37, because Day 35 is a light day.
+- **Third review (16 November 2026): only three blocks are left.** Days 22, 24 and 31 keep their extra 15-minute blocks (T17 part 1, T17 part 2, and T19 cut to 2 core frames). T18 is no longer a block: Day 34 was split into 34a (what happened) and 34b (habits, T18 part 1), and Day 38 into 38a (directions and appearance) and 38b (a place or a thing, T18 part 2). Days 34b and 38b are full study days whose speaking task is the block's book tasks. In `data/assignments.json` and the book map their tasks keep the day numbers 34 and 38.
+- **Since 16 November 2026 a day holds at most 2 book tasks** (the block days and Days 34b and 38b are a documented exception). So 16 of the 49 weak-fit tasks moved to the question bank in the book map. Since the second review the six T20 tasks (with p125-S2) are optional and on no fixed day. The table shows the new placement.
+- A "study day" here skips light, rest, mock and exit-test days. For example, the window of Day 34b is Days 34b, 36 and 37, because Day 35 is a light day.
 
 | Block | Day | Why this day | Book tasks in the window (day: ids) |
 |---|---|---|---|
@@ -331,8 +333,8 @@ The expanded version has about 120 words. The name, the e-mail address and the p
 | T17 part 2: stand up for yourself | 24 | Day 24 revisits T8 (first taught on Day 8), so its new content is light. A polite "no" and a polite "please stop" sit well together. | 24: p112-R3, p112-R4, p112-R9 · 25: p32-D11, p34-R14 · bank: p51-R2, p87-R9, p112-R10 |
 | T20 one-offs (**optional**, not part of Day 30) | after 30 | Day 30 drills the core reason pairs. Persuading and appealing both run on reasons. T9 (Day 23), T3 (Day 16) and T5 (Day 19) are known. | optional slots only: p87-R6, p62-R5, p72-R5, p51-R7, p72-R12, and the written p125-S2 |
 | T19 compare | 31 | Day 31 teaches the other view (*Å andra sidan*). A comparison is two sides by nature. | 31: p115-OD, p53-O3, p36-OG · 33: p88-BA · bank: p52-B4, p123-BA |
-| T18 part 1: habits | 34 | Day 34 teaches *först / sedan / till slut* for the past. T18 uses the same words in the present tense. | 34: p52-B3, p35-BB, p52-B1 · 36: p53-B5, p106-D6 · 37: p88-BD, p114-BI · bank: p52-B2, p73-BB, p73-BD, p73-BE, p114-BF |
-| T18 part 2: a place or a thing | 38 | Day 38 teaches place words (*bredvid, mittemot*) and appearance, the base of "where it is and what it is like". | 38: p12-D1, p62-R6, p62-R7 · 39: p64-S2 · 40: p62-BA, p113-BA · bank: p35-BC, p63-BC, p114-BE |
+| T18 part 1: habits | 34b | Day 34a teaches *först / sedan / till slut* for the past. T18 uses the same words in the present tense, on its own study day. | 34b: p52-B3, p35-BB, p52-B1 · 36: p53-B5, p106-D6 · 37: p88-BD, p114-BI · bank: p52-B2, p73-BB, p73-BD, p73-BE, p114-BF |
+| T18 part 2: a place or a thing | 38b | Day 38a teaches place words (*bredvid, mittemot*) and appearance, the base of "where it is and what it is like"; Day 38b uses them on its own study day. | 38b: p12-D1, p62-R6, p62-R7 · 39: p64-S2 · 40: p62-BA, p113-BA · bank: p35-BC, p63-BC, p114-BE |
 
 **What this changes elsewhere** (first written as suggestions; updated on 16 November 2026, when the plan and curriculum were edited):
 - **Day 27, Mock 1 preparation:** T17 is taught by then but is not tested in Mock 1. Leave it out of the Day 27 warm-up, as the curriculum already does for T11 and T13–T16.
@@ -340,13 +342,13 @@ The expanded version has about 120 words. The name, the e-mail address and the p
 - **Days 34–40:** these days now hold only T18 book tasks. So the first book tasks for T15, T11, T12 and T16 come later, on Phase 3 topic days and in the Phase 4 sets.
 - **Phase 3 exit test (4.4):** it asks for 2 prompts from "the less common functions (T11, T12 or T16)". T17–T19 could join that list; T20 is optional and stays out.
 - **T20 optional (second review, 16 November 2026):** the T20 block is not part of Day 30. Day 30 keeps its own speaking block. The block, its five book tasks and `p125-S2` are used only in an optional slot: a 90-minute day after Day 42, a rotation or fix day in the cycle after Day 84, or a day when one of its book tasks comes up.
-- **Section 5 calendar, "Chunks / banks" column:** add "+ T17 part 1" (Day 22), "+ T17 part 2" (Day 24), "+ T20" (Day 30; since the second review "optional T20 block", not part of the day), "+ T19" (Day 31), "+ T18 part 1" (Day 34) and "+ T18 part 2" (Day 38). Done on 16 November 2026.
+- **Section 5 calendar, "Chunks / banks" column:** add "+ T17 part 1" (Day 22), "+ T17 part 2" (Day 24), "+ T20" (Day 30; since the second review "optional T20 block", not part of the day), "+ T19" (Day 31), "+ T18 part 1" (Day 34) and "+ T18 part 2" (Day 38). Done on 16 November 2026. Since the third review the two T18 parts sit on Days 34b and 38b as full study days.
 
 ---
 
 ## Proposed extra blocks
 
-*These blocks also appear under each day's entry in `YKI-EXAM-FIRST-CURRICULUM.md`. Since 16 November 2026 (load rule 6: a day is 60 minutes; if a block is added, another is removed), each block replaces the day's own speaking block (minutes 18–33), so a 60-minute day stays 60 minutes; on a 90-minute day, do both. The block's practice part is that day's book tasks. Other days' book tasks are listed in `data/assignments.json` and in the book map.*
+*These blocks also appear under each day's entry in `YKI-EXAM-FIRST-CURRICULUM.md`, which has the full minute plans. Since the third review, Days 22, 24 and 31 hold extra 15-minute blocks, and the two T18 parts are full study days (34b and 38b); their sections below keep the T18 lines and book tasks. For the three blocks: since 16 November 2026 (load rule 6: a day is 60 minutes; if a block is added, another is removed), each block replaces the day's own speaking block (minutes 18–33), so a 60-minute day stays 60 minutes; on a 90-minute day, do both. The block's practice part is that day's book tasks. Other days' book tasks are listed in `data/assignments.json` and in the book map.*
 
 **How each block is judged (second review, 16 November 2026).** Mark each block Green, Amber or Red (plan section 1). Green: you understood each task and gave all its points on your own. Amber: understandable, but you hesitated or repeated a mistake; note the top 1–2 mistakes and move on. Red: you misunderstood a task, could not form an answer, or needed to read the model; repeat the skill tomorrow with new details. Seconds and counts are targets. **Time pressure grows step by step** (plan 3.2): no timer while you hear and repeat the example; the book tasks are unfamiliar questions, so their 20 s + 25 s is an exam-like target.
 
@@ -358,14 +360,14 @@ The expanded version has about 120 words. The name, the e-mail address and the p
 
 **What we learn in this block:**
 - T17 for a stranger, in four steps: notice → ask → reason → thank.
-- Lines: *Ursäkta, …* (Excuse me, …) / *Förlåt att jag stör, men …* (Sorry to disturb you, but …) / *Jag ser att [du pratar i telefon].* (I can see that you are talking on the phone.) / *Skulle du kunna [prata lite tystare]?* (Could you talk a bit more quietly?) / *Kan du vara snäll och [sänka musiken]?* (Could you please turn the music down?) / *…, eftersom [jag försöker läsa].* (…, because I'm trying to read.) / *Tack för att du förstår.* (Thanks for understanding.)
+- Lines: *Ursäkta, …* (Excuse me, …) / *Förlåt att jag stör, men …* (Sorry to disturb you, but …) / *Jag ser att [du pratar i telefon].* (I can see that you are talking on the phone.) / *Skulle du kunna [prata lite tystare]?* (Could you talk a bit more quietly?) / *Kan du vara snäll och [sänka musiken]?* (Could you please turn the music down?) / *…, eftersom [jag försöker läsa].* (…, because I'm trying to read.) / *Tack!* (Thanks!; the safe close) or *Tack för att du förstår.* (Thanks for understanding; firm, for a serious or repeated problem)
 - When it is serious: *Det är inte okej att [___].* (It is not OK to ___.) / *Ska jag ringa efter hjälp?* (Shall I call for help?)
 - Grammar: *skulle kunna* + infinitive, with no *att* (G4); after *eftersom*, *inte* goes before the verb (G2).
 
 **Why it matters for the exam:** in the practice book, 18 Reagera and dialogue tasks ask you to tell someone to stop, or to stand up for yourself. No template T1–T16 covers them, so this is the largest gap the catalogue found [Book count].
 
 **How we learn it (15 min):**
-- 0–5: Say the short laundry-room example in T17 twice (no timer). Ladder: change the problem (washing → music → a phone call), keep the *eftersom* reason, end with *Tack för att du förstår*.
+- 0–5: Say the short laundry-room example in T17 twice (no timer). Ladder: change the problem (washing → music → a phone call), keep the *eftersom* reason, end with *Tack!* (or *Tack för att du förstår* when the problem is serious).
 - 5–15: Book tasks p34-R3, p51-R10, p51-R12, p62-R4, p62-R8 (pages 34, 51, 62). Do each with 20 s prep + 25 s [Teacher, unofficial], in one take, and tick the four steps. No redo today.
 
 **Next study days:** Day 24: p112-R13, p113-R15 (inside the Day 24 block). The other part 1 tasks (p72-R4, p112-R2, p112-R11) are in the question bank of the book map; Day 23 keeps its own T9 book tasks.
@@ -431,11 +433,11 @@ The expanded version has about 120 words. The name, the e-mail address and the p
 
 #### Day 31, extra 15-minute block: T19, home country and Finland
 
-**60-minute rule (load rule 6):** this block replaces the day's own speaking block (minutes 18–33). Its book tasks are today's speaking task, and its "Done when" replaces the speaking part of the day's "Done when". The day's own speaking prompt moves to a 90-minute day; on a 90-minute day, do both. Today the block's three Din åsikt talks are the day's opinion practice.
+**60-minute rule (load rule 6):** this block replaces the day's own speaking block (minutes 18–33). Its book tasks are today's speaking task, and its "Done when" replaces the speaking part of the day's "Done when". The day's own speaking prompt moved to Day 31b (third review). Today the block's three Din åsikt talks are the day's opinion practice.
 
-**What we learn in this block:**
-- The T19 frame: *Jag kommer från [___], men jag har bott i Finland i [___] år.* (I come from ___, but I have lived in Finland for ___ years.) / *I mitt hemland [___], men i Finland [___].* (In my home country ___, but in Finland ___.) / *I båda länderna [___].* (In both countries ___.) / *Den största skillnaden är att [___].* (The biggest difference is that ___.) / *Jag saknar [___] från mitt hemland.* (I miss ___ from my home country.)
-- Comparing: *[Maten] är [billigare] i [Indien] än i Finland.* (Food is cheaper in India than in Finland.)
+**What we learn in this block** (cut to two core frames in the third review; they are learned in the day's New block):
+- The two T19 core frames: *I mitt hemland [___], men i Finland [___].* (In my home country ___, but in Finland ___.) / *[Maten] är [billigare] i [Indien] än i Finland.* (Food is cheaper in India than in Finland.)
+- Library (read from T19 during the 1-minute preparation, no card): *Jag kommer från [___], men jag har bott i Finland i [___] år.* (I come from ___, but I have lived in Finland for ___ years.) / *I båda länderna [___].* (In both countries ___.) / *Den största skillnaden är att [___].* (The biggest difference is that ___.) / *Jag saknar [___] från mitt hemland.* (I miss ___ from my home country.)
 - Grammar: both halves start with a place, so the verb comes next both times (G1). *men* does not count (G10).
 
 **Why it matters for the exam:** in the practice book, 4 tasks ask for this comparison directly, and 6 more opinion statements are easier with it (for example healthcare, taxes and daily life here) [Book count]. It also fits the Berätta topic "why you live in Finland" on Day 51.
@@ -452,11 +454,11 @@ The expanded version has about 120 words. The name, the e-mail address and the p
 - *…, men i Finland man åker tåg.* → *…, men i Finland åker man tåg.* (G1)
 - *mer billig* → *billigare* (comparative with *-are*)
 
-#### Day 34, extra 15-minute block: T18 part 1, habits and routines
+#### Day 34b (a full study day): T18 part 1, habits and routines
 
-**60-minute rule (load rule 6):** this block replaces the day's own speaking block (minutes 18–33). Its book tasks are today's speaking task, and its "Done when" replaces the speaking part of the day's "Done when". The day's own speaking prompt moves to a 90-minute day; on a 90-minute day, do both. Today that is the past-tense talk; the message still practises the past.
+**A whole study day since the third review.** Day 34 was split: Day 34a keeps the past-tense talk (T15), and Day 34b teaches T18 part 1, with the three book Berätta talks below as its speaking task and its own message. The 60-minute minute plan is in the curriculum (Day 34b); this section keeps the T18 lines and the book tasks. Use only verbs you already know: today adds frequency lines, not verbs.
 
-**What we learn in this block:**
+**What we learn today:**
 - How often: *Jag brukar [___].* (I usually ___.) / *Varje dag [cyklar jag till jobbet].* (Every day I cycle to work.) / *Ibland [___].* (Sometimes ___.) / *En gång i veckan [___].* (Once a week ___.) / *Jag [tränar] nästan aldrig.* (I almost never exercise.)
 - Order: *Först [___]. Sedan [___]. Efter jobbet [___].* (First ___. Then ___. After work ___.)
 - Then and now: *Förr [___], men nu [___].* (I used to ___, but now ___.)
@@ -465,8 +467,8 @@ The expanded version has about 120 words. The name, the e-mail address and the p
 
 **Why it matters for the exam:** in the practice book, 12 Berätta and dialogue tasks ask how you live: your day, your habits, your hobby. T14 (a person) and T15 (one past event) do not fit them [Book count].
 
-**How we learn it (15 min):**
-- 0–5: Today's T15 lines tell one past day. Say the same day as a habit: *I går gick jag upp klockan sju* → *Jag brukar gå upp klockan sju*. Do 5 sentences.
+**The T18 part of the day (about 15 minutes; the full day is in the curriculum):**
+- 0–5: Day 34a's T15 lines tell one past day. Say the same day as a habit: *I går gick jag upp klockan sju* → *Jag brukar gå upp klockan sju*. Do 5 sentences.
 - 5–15: Berätta, 1 min prep + 1.5 min each [Official sample timing] as the target, in one take: p52-B3, p35-BB, p52-B1 (pages 52, 35). Tick the T18 part 1 points.
 
 **Next study days:** Day 36: p53-B5 and p106-D6 (a phone survey about your habits, pages 106–107: answer with the "how often" lines). Day 37: p88-BD, p114-BI. The others (p52-B2, p73-BB, p73-BD, p73-BE, p114-BF) are in the question bank of the book map.
@@ -477,11 +479,11 @@ The expanded version has about 120 words. The name, the e-mail address and the p
 - *Varje dag jag cyklar.* → *Varje dag cyklar jag.* (G1)
 - *Jag brukar att simma.* → *Jag brukar simma.* (G4)
 
-#### Day 38, extra 15-minute block: T18 part 2, a place or a thing
+#### Day 38b (a full study day): T18 part 2, a place or a thing
 
-**60-minute rule (load rule 6):** this block replaces the day's own speaking block (minutes 18–33). Its book tasks are today's speaking task, and its "Done when" replaces the speaking part of the day's "Done when". The day's own speaking prompt moves to a 90-minute day; on a 90-minute day, do both. Today that is the directions talk and the voicemail.
+**A whole study day since the third review.** Day 38 was split: Day 38a keeps the directions and appearance tasks, and Day 38b teaches T18 part 2, with the three book tasks below as its speaking task and its own message. The 60-minute minute plan is in the curriculum (Day 38b); this section keeps the T18 lines and the book tasks.
 
-**What we learn in this block:**
+**What we learn today:**
 - Where: *Den ligger [i Sibbo], ungefär [en timme] från [Helsingfors].* (It is in Sibbo, about an hour from Helsinki.) / *Det ligger nära [havet], bredvid [en liten skog].* (It is near the sea, next to a small forest.)
 - What it is like: *Den är [liten och gammal], men [mysig].* (It is small and old, but cosy.) / *Det finns [en bastu och en brygga].* (There is a sauna and a jetty.)
 - What you do there: *Där brukar vi [bada och grilla].* (There we usually swim and have a barbecue.)
@@ -491,8 +493,8 @@ The expanded version has about 120 words. The name, the e-mail address and the p
 
 **Why it matters for the exam:** in the practice book, 9 tasks ask you to describe your home, your area, nature, a cottage, a book or your own style [Book count]. The plan's own writing count (section 2.1) already lists "describe a place" among the tasks outside the top five functions.
 
-**How we learn it (15 min):**
-- 0–5: Use today's place words. Say where your home is, in 3 sentences: *Mitt hus ligger …, bredvid …, mittemot …*. Then add *Där brukar jag …* and *Det är viktigt för mig eftersom …*.
+**The T18 part of the day (about 15 minutes; the full day is in the curriculum):**
+- 0–5: Use Day 38a's place words. Say where your home is, in 3 sentences: *Mitt hus ligger …, bredvid …, mittemot …*. Then add *Där brukar jag …* and *Det är viktigt för mig eftersom …*.
 - 5–15:
   - p12-D1 (pages 12–13): a friend visits your flat. Welcome them, describe the home, give one advantage and one disadvantage. One take, about 20 s per turn [Plan's practice limit].
   - p62-R6 and p62-R7 (page 62): Reagera, 20 s prep + 25 s each.

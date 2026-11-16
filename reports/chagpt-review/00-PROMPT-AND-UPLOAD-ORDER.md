@@ -1,28 +1,30 @@
-# What to upload to ChatGPT, and what to say
+# What to upload to ChatGPT, and what to say (fourth review)
 
-Upload files 01 to 07 in the same chat as your last review, so ChatGPT keeps its earlier audits in view. If it cannot take all seven at once, upload 01 to 03 first, then 04, then 05 to 07.
+Upload files 01 to 09 in the same chat as your last review. If ChatGPT cannot take all nine at once, send 01 to 04 first, then 05, then 06 to 09.
 
 | File | What it is |
 |---|---|
-| 01 | The core sheet: everything the learner memorises |
-| 02 | Learner pages for Days 1-14, one page a day |
-| 03 | The plan: strategy, rules, gates, calendar |
-| 04 | The 84-day curriculum (reference layer) |
-| 05 | Templates T17-T20 for the gaps the practice book exposed |
-| 06 | The practice book map (page pointers only) |
-| 07 | The adjudication of ChatGPT's first audit |
+| 01 | Core sheet, now in three layers: active core, recognition core, reference |
+| 02 | Learner pages for Days 1-14 (breakdowns, swap words, ready-made cards, keys) |
+| 03 | Audio list for Days 1-14: every Swedish line, ready for a teacher or a voice tool to record |
+| 04 | The plan: strategy, rules, gates, calendar |
+| 05 | The 84-day curriculum, with lettered days 3a/3b, 31b, 34a/34b, 38a/38b |
+| 06 | Templates T17-T20 |
+| 07 | The practice book map (page pointers only) |
+| 08 | Pilot log for Days 1-7 |
+| 09 | Historical audit of ChatGPT's first review (superseded where documents differ) |
 
-Not included on purpose: the practice book itself (copyrighted) and the teacher-only file of held-back mock tasks, so those prompts stay unseen.
+Not included on purpose: the practice book itself (copyrighted) and the teacher-only mock reserve, so those prompts stay unseen.
 
 ## Prompt to paste
 
-> This is the third version of the Swedish YKI exam-first course. It applies your second review. Please do the following, and challenge it rather than approve it.
+> This is version 4 of the Swedish YKI exam-first course. It applies your third review: patterns are counted instead of cards, Days 1-14 were rewritten with word-by-word breakdowns, swap words, ready-made cards and an audio list, the heavy days 16-40 were trimmed or split, and the Green/Amber/Red rule was tightened. Please:
 >
-> 1. Check each point from your second review: Days 4-14 rewritten to fit the load rules; Green/Amber/Red replacing counted gates; the staged Day 0; situation-specific openings; the reserve mock prompts moved out of the learner files; T20 made optional; short models next to the long ones; the question-to-answer reflex, word recovery, sentence families and transfer test; listening and reading strategy. Say for each: fixed, partly fixed, or still wrong, with the file and day.
-> 2. Tell me which days still break the load rules (6 new frames, 8 new cards, one grammar point, one speaking and one typing task, 60 minutes). I already know Days 16-19, 23-26 and 33-39 teach more than 6 new frames, so check those and tell me the real minutes.
-> 3. Find inconsistencies between files 01 to 07.
-> 4. List every Swedish sentence you think is wrong or unnatural, with a correction and the file and day. Say clearly that this is not a native-speaker check.
-> 5. Look at file 02 (the learner pages) as a true beginner would. Can a person who knows no Swedish follow Day 1 to Day 5 without help? What is missing?
-> 6. Say what you would change before the learner starts, in priority order, at most 10 items.
+> 1. For each point in your third review, say fixed, partly fixed or still wrong, with file and day. Include the ten-item checklist you gave me.
+> 2. Recount new patterns, cards and minutes for Days 1-14 and for the lettered days (31b, 34a, 34b, 38a, 38b). Tell me which ordinary days still break 6 patterns, 8 cards or 60 minutes. Do not count declared exceptions (mocks, exit tests, full sets).
+> 3. Check file 02 as a true beginner with no teacher. What still cannot be done without help? I know audio has to be recorded from file 03; do not count that as missing.
+> 4. Find inconsistencies between files 01 to 08, for example day numbers, word lists (the 23 instruction words and the 41-word Day 14 test), listening minutes (8 on a 60-minute day, 10 on a 90-minute day) and the rule on counted mocks.
+> 5. List every Swedish sentence you think is wrong or unnatural, with a correction, file and day. Say clearly that this is not a native-speaker check.
+> 6. Give at most 10 changes to make before the learner starts, in priority order.
 >
-> Two decisions are not open: the subtest pair and exam date are chosen only at booking time, and the app is not being changed yet. Please do not re-litigate those.
+> Not open: the subtest pair and exam date (chosen at booking time) and the app (not being changed). Please do not re-litigate those. Your earlier advice was to freeze the architecture and run a seven-lesson pilot; if you still think so, say what the pilot should measure.

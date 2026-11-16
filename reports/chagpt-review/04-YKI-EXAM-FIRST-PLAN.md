@@ -18,14 +18,17 @@
 | **[Plan's own]** | A benchmark or limit invented for this plan. |
 | **[Unknown]** | Not published, or not found. |
 
-> **Decisions (16 November 2026)**, made after the audit adjudication (`YKI-AUDIT-ADJUDICATION.md`):
+> **Freeze and pilot (third review, 16 November 2026).** The architecture is frozen: the six engines, the three-layer core, the load rules, Green/Amber/Red, the phase map and the booking gate stay as they are. Start Days 1–7 now and fill in `YKI-PILOT-LOG.md` every day. Revise the plan from what the log shows (real minutes, next-day recall, what was too much), one change at a time, not from more reviews.
+
+> **Decisions (16 November 2026)**, made after the audit adjudication (`YKI-AUDIT-ADJUDICATION.md`, now a historical record):
 >
-> 1. **Core and library.** You memorise only the core (section 1): 6 engines (answer shapes), about 60 sentence frames, the openings and closings for each situation (section 1; the phone and letter frames are two of them), the 7 official-sample checklists, 12 reason pairs, 10 reactions, 8 rescue phrases, 30 verbs in layers, and 13 instruction words and 11 question words to recognise. Templates T1–T20, the banks and the 84 day entries are a **reference library**; the T-numbers stay as aliases. The 84-day calendar is a default order: you move on by the load rules in section 1, not by date, so Phase 1 may take about 15 study days (14, plus the Day 3 split) and more if Reds need repeating.
-> 2. **Fresh mock prompts.** 40 book tasks are held back as the source of unseen prompts (since the second review the list, a balanced mock recipe and a gap table sit in `teacher-only/YKI-MOCK-RESERVE.md`, for the teacher or the helper; the learner does not open it) for the mocks that count towards booking, and for Mocks 1 and 2 while enough remain. Teacher-written prompts come first; prompts an AI writes on the day are the fallback. Everything printed in this plan, the curriculum and the appendix is **seen practice** (6.2).
+> 1. **Core and library.** The core has three layers (since the third review; `YKI-CORE-SHEET.md`). The **active core** is what you recall and use without notes: 6 engines (answer shapes), about 60 sentence frames, the openings and closings for each situation (section 1; the phone and letter frames are two of them), the 7 official-sample checklists, 12 reason pairs, 10 reactions, 8 rescue phrases and 30 verbs in three steps. The **recognition core** is what you only need to understand: 23 instruction words, 11 question words and common ways of asking the same question. The **reference** layer (a substitution bank and a few techniques) is looked up, never memorised. Templates T1–T20, the banks and the 84 day entries are a **reference library**; the T-numbers stay as aliases. The 84-day calendar is a default order: you move on by the load rules in section 1, not by date, so Phase 1 may take about 15 study days (14, plus the Day 3 split) and more if Reds need repeating.
+> 2. **Fresh mock prompts.** The mocks that count towards booking use prompts the teacher writes, or, as the fallback, prompts an AI writes on the day (6.2). Everything printed in this plan, the curriculum and the appendix is **seen practice**, and since the third review so are the 40 held-back book tasks: their descriptions were printed in the learner's book map until the second review, and the book is the learner's own. They stay in `teacher-only/YKI-MOCK-RESERVE.md` (with the mock recipe and the gap table, for the teacher or the helper; the learner does not open it) and serve Mocks 1 and 2 and spare practice.
 > 3. **Where the core lives.** In these documents for now. Audio comes from the teacher and the book's QR tracks. Building the core into an app is for later and not yet decided.
 > 4. **Second review (16 November 2026).** You move on by **Green, Amber or Red** (section 1); counts are targets, and only the booking gate (4.7) stays a fixed test. Time pressure grows step by step (3.2). Openings and closings follow the situation, not the engine (section 1). Five techniques make the core flexible without new lines to learn: the question-to-answer reflex (2.6), opinion concept words (2.4), word recovery (2.8), sentence families (2.9) and the transfer test (3.2). T20 is optional library material. Listening and reading get search strategy too (section 7), but strategy does not replace comprehension.
+> 5. **Third review (16 November 2026).** Load rule 1 counts patterns, not cards. Green, Amber and Red have borderline rules (a forgotten point is Amber unless the message is unusable). Each task has one main engine that borrows moves from the others. A missed recorded line has three recovery moves, and no automatic *Okej*. Answers are paced at about 80 words a minute (2.1). Opinion and story answers are developed, not stopped at the first tick (2.8). The recognition list holds 23 instruction words (2.6). The listening and reading minimum is 8 minutes on a 60-minute day and 10 minutes on a 90-minute day (section 7). Counted mocks use teacher-written or AI-on-the-day prompts only (6.2).
 >
-> `YKI-CORE-SHEET.md` holds the whole core on one sheet, with English.
+> `YKI-CORE-SHEET.md` holds the whole core on one sheet, with English, in its three layers.
 
 ---
 
@@ -43,12 +46,12 @@ The goal is level 3 (CEFR B1) on the **Swedish YKI intermediate test**, in a sub
 4. **Learn a small grammar "engine"** that prevents level-2 errors: verb in second place, the place of *inte*, *att*-clauses, questions, modal verbs and past forms.
 5. **Practise with the substitution ladder:** hear it first, then say a sentence, swap a detail, add a reason, add a solution, change it, then produce it from memory for a new prompt.
 6. **Every day, do one timed speaking task** (recorded) and **one typed writing task**, each checked against a list of required points.
-7. **Every day, spend 10 minutes** on Finland-Swedish listening or reading, so the other subtest pairs stay open.
+7. **Every study day, spend 8 minutes (on a 60-minute day) or 10 minutes (on a 90-minute day)** on Finland-Swedish listening or reading, so the other subtest pairs stay open. Light, mock and test days set their own amount (section 7).
 8. **A teacher rates your work every week.** Day to day you move on by Green, Amber or Red (below); counts are targets. The booking gate uses the teacher's rating plus things you can check. You book an exam only on evidence, never on hope.
 
 ### The core and the reference library (decided 16 November 2026)
 
-**The rule.** You memorise the core. Everything else is a reference library: you look it up when a task needs it.
+**The rule.** The core has three layers (`YKI-CORE-SHEET.md`): the **active core** you recall and use without notes, the **recognition core** you only need to understand when you hear or read it, and a small **reference** layer you look up. Your memorising time goes to the active core. Everything else in this plan is the reference library: you look it up when a task needs it.
 
 | Item | Count | Where it is |
 |---|---|---|
@@ -57,12 +60,14 @@ The goal is level 3 (CEFR B1) on the **Swedish YKI intermediate test**, in a sub
 | Official-sample checklists | 7 | The speaking and writing samples under "What is known about the exam"; the required points in T5 and T6 (2.3) |
 | Sentence frames | about 60 | 2.0 |
 | Reason pairs | 12 pairs (24 lines) | 2.4, by number: 1/22 time, 3/21 cost, 4/28 health, 5/24 environment, 16/26 stress, 10/33 people, 13/25 safety, 8/36 choice, 7/23 ease, 14/34 children, 19/40 quality, 17/37 flexibility |
-| Reactions | 10 | 2.5, numbers 1, 6, 8, 12, 14, 19, 22, 23, 25, 28 (19 is the reply to an apology, 25 a plain yes) |
+| Reactions | 10 | 2.5, numbers 1, 6, 8, 12, 14, 19, 22, 23, 25, 28 (19 is the reply to an apology, 25 a warm yes to an offer or an invitation) |
 | Rescue phrases | 8 | 2.8, unchanged |
-| Verbs | 30, in layers | G6 in 2.9: the present of all 30 first, then the past of 12, and the perfect only inside chunks |
-| Instruction and question words | 13 + 11, to recognise | 2.6 |
+| Verbs | 30, in three steps | G6 in 2.9: the present of all 30 first; then the past of 12, of which Phase 1 teaches 5 (*var, kom, gick* on Day 6; *ringde, köpte* on Day 9) and Phase 2 the other 7 (*tog, glömde, blev, hjälpte* on Day 34a; *fick, sa, bodde* from the library); the perfect only inside chunks |
+| Instruction and question words | 23 + 11, recognition core (understand, not produce) | 2.6 |
 
-**The six engines.** An engine is the shape of an answer. Pick the engine from the task card, then fill it with the card's details. The engine does not decide how you open and close: the situation does (the openings table below).
+The counts overlap: some lines sit in two groups (*Jag tycker att …* is a frame and the opinion opening; *Till exempel …* is a frame and a rescue phrase), so the numbers are not a count of unique sentences to add up.
+
+**The six engines.** An engine is the shape of an answer. Pick one **main** engine from the task card and fill it with the card's details; then borrow single moves from the other engines when the card asks for them (third review). A complaint about a repair, for example, runs on Fix, borrows the Story sequence for what happened (*Först … Sedan …*) and an Ask line for the new time (*Har ni en ledig tid på torsdag?*). The engine does not decide how you open and close: the situation does (the openings table below). **[Unreviewed Swedish: have a teacher check it]**
 
 | Engine | Shape | Old IDs (now aliases) | Book tasks (of 225) [Book count] |
 |---|---|---|---|
@@ -93,7 +98,7 @@ Never open a hobby talk with a phone greeting, and never close it with a formal 
 
 ### Daily load rules (these override any day entry)
 
-1. At most 6 new frames and 8 new cards a day.
+1. At most 6 new patterns and 8 new cards a day. **Count patterns, not bullets or cards** (third review): a pattern is one sentence shape you can recall on its own, so a card that holds 2–3 sentences counts as 2–3 patterns. A pattern you have already mastered, or a simple swap of a detail in it, does not count as new. A day entry that hides more patterns than this inside one frame or card is trimmed or split (rule 9).
 2. One grammar point a day, stated in one sentence.
 3. Review stops at 8 minutes, finished or not.
 4. Hear each new line before saying it.
@@ -113,6 +118,11 @@ Never open a hobby talk with a phone greeting, and never close it with a formal 
 
 - **Counts are targets, never gates.** Numbers of errors, word counts, speaking seconds, "N of M correct" and recitation speed are things to aim at and to record (6.1). They do not decide whether you move on.
 - **Spelling and capital letters** never make a task Amber or Red if the message is clear.
+- **Borderline cases** (third review):
+  - A **forgotten required point** (contact details, an amount) in ordinary practice is **Amber**, unless the message cannot be used without it; then it is Red.
+  - **Small grammar slips, or a wrong tense the listener still understands** (*I går ringer jag till banken.*, the present after *i går* or *förra helgen*), are Amber or Green, never Red on their own.
+  - **Red** is kept for a misunderstood question, no answer, or needing the model.
+  - The booking gate (4.7) keeps its stricter rule: every required point in every task. **[Unreviewed Swedish: have a teacher check it]**
 - **Who marks it.** Day to day, you mark it yourself, honestly. The teacher's weekly rating (3.5) can change your mark.
 - **Phase exit tests** pass when at most 1 task is Red and none of the Reds is a misunderstood question on a required point. Reds are repeated with new details within the next days, then the phase moves on.
 - **Mocks** record Green, Amber or Red per subtest, plus the booking-gate checks (6.3, 6.4).
@@ -186,7 +196,7 @@ The order follows one question: what is most likely to cost you level 3 if it is
 - **Ask (6):** *Jag skulle vilja [boka en tid].* / *Har ni en ledig tid [på tisdag]?* / *Passar det [på torsdag klockan tio]?* / *Hur mycket kostar [besöket]?* / *Jag undrar om [det finns lediga platser].* / *När kan jag [komma]?*
 - **Fix (8):** *[Den] är fortfarande trasig.* / *Problemet är att [den inte startar].* / *En reparatör var här [i tisdags], men det hjälpte inte.* / *Kan ni [komma i morgon eller på torsdag]?* / *Jag vill [få pengarna tillbaka].* / *Fakturan är för hög av två skäl.* / *Jag tycker att [___] euro är ett rimligt belopp.* / *Ursäkta, skulle du kunna [prata lite tystare]?*
 - **Social (7):** *Tack för [inbjudan].* / *Tyvärr kan jag inte [komma], eftersom [jag jobbar].* / *Kan vi ses [på lördag] i stället?* / *Förlåt, jag blir [en kvart] försenad, eftersom [___].* / *Jag är där [kvart över sex].* / *Det är [på lördag] klockan [___] [i/på ___].* / *Vill du [följa med]?*
-- **Opinion (7):** *Jag tycker att [___].* / *Jag håller med.* and *Jag håller inte med.* / *För det första [___]. För det andra [___]. För det tredje [___].* / *Till exempel [___].* / *Å andra sidan [___].* / *Därför tycker jag att [___].* / *Jag tycker att du ska [___]. Du kan till exempel [___].*
+- **Opinion (8):** *Jag tycker att [___].* / *Jag håller med.* and *Jag håller inte med.* / *För det första [___]. För det andra [___]. För det tredje [___].* / *Till exempel [___].* / *Å andra sidan [___].* / *Men för mig är fördelarna större än nackdelarna.* (third review: weigh the two sides before the conclusion, 2.2 step 5) / *Därför tycker jag att [___].* / *Jag tycker att du ska [___]. Du kan till exempel [___].*
 - **Describe (11):**
   - A person: *Jag vill berätta om [___].* / *Hon är [snäll och glad].* / *Jag har känt henne [i tio år].* / *Vi brukar [laga mat tillsammans].* / *Hon är viktig för mig eftersom [___].*
   - A habit, place or thing: *Jag brukar [simma två gånger i veckan].* / *Det finns [en bastu och en brygga].* / *Den ligger [nära centrum].* (with an *ett*-word: *Det ligger …*)
@@ -212,6 +222,8 @@ The order follows one question: what is most likely to cost you level 3 if it is
 | **Reagera** (react) | A short spoken reaction to one situation. | 20 s prep + 25 s speaking [Teacher, unofficial]. |
 | **Voicemail** | A short message, for example "I'll be late". | 20 s [Official sample]. |
 | **Din åsikt** (your opinion) | Agree or disagree with a statement, with reasons. | 1 min prep + 1.5 min [Teacher, unofficial]. |
+
+**Answer length** (third review) [Plan's own]: practise at a pace of about 80 words a minute. A 20-second turn then holds about 25–33 words, a 25-second turn about 33–40, 1 minute about 80 and 1.5 minutes about 120. These are practice aims, not exam rules (no official length exists), and the short models in this plan fit them.
 
 **Writing task types:** an informal message, a formal message (request or complaint), and an opinion text [Official sample]. A class teacher gives 50–80 words for the informal and formal texts and 100–150 words for the opinion text [Teacher, unofficial]. **No official word count exists.**
 
@@ -268,6 +280,7 @@ The order follows one question: what is most likely to cost you level 3 if it is
 - Never write *För det första man sparar tid.*
 - Step 5 must agree with step 1. If you weighed both sides, say so in step 1 (*Jag tycker att det är bäst att göra båda*).
 - **Speaking:** use at least 2 reasons. **Writing:** use at least 3.
+- **Develop each reason** with an example and a link word; a ticked step is the minimum, not the finish (2.8, third review).
 
 ### 2.3 Templates per function: T1–T16, frames with slots (priority 3; reference library)
 
@@ -351,7 +364,7 @@ Required points in the official sample: **what, when, where, plus two more detai
 
 **T14. Describe a person (Berätta)**
 - *Jag vill berätta om [min mormor].* *Hon heter [___] och hon är [___] år.*
-- *Hon är [snäll och glad].* *Hon har [mörkt hår och bruna ögon].*
+- *Hon är [snäll och glad].* *Hon har [mörkt hår och bruna ögon].* (Learn *mörkt hår*, dark hair, as one phrase: *hår* is an *ett*-word, so the adjective takes *-t*.)
 - *Jag har känt henne [i tio år].* *Vi brukar [laga mat tillsammans].*
 - *Hon är viktig för mig eftersom [___].*
 
@@ -477,7 +490,7 @@ The six-point talk plan in section 5 is this plan's own coaching. The official s
 24. *Jag ber om ursäkt.* (I apologise. This one is formal.)
 
 **Accept:**
-25. *Ja, gärna!* (Yes, I'd love to!)
+25. *Ja, gärna!* (Yes, please! / Yes, I'd like to! A warm yes to an offer or an invitation.)
 26. *Det låter bra.* (That sounds good.)
 27. *Det passar bra.* (That suits me.)
 
@@ -496,46 +509,54 @@ The six-point talk plan in section 5 is this plan's own coaching. The official s
 - Every instruction is in Swedish [Official].
 - If you cannot read *motivera* or *åtminstone*, you lose points before your Swedish is even tested.
 
-> **Technique: the question-to-answer reflex, from Day 1** (second review, 16 November 2026). Hear the question word and know what the answer must hold. *Var?* a place. *När?* a time. *Varför?* a reason (*eftersom …*). *Hur mycket?* a price or an amount. *Hur länge?* a duration (*i två år, sedan maj*). *Vad tycker du?* an opinion (*Jag tycker att …*). *Vad hände?* a past event. *Vad vill du?* a request (*Jag skulle vilja …*). It works in speaking and in listening and reading questions, and it adds no new lines. **[Unreviewed Swedish: have a teacher check it]**
+> **Technique: the question-to-answer reflex, built up from Day 2** (second review, 16 November 2026; third review: it grows one row at a time). Hear the question word and know what the answer must hold. The table starts on Day 2 with three rows (*Var? Vad? Hur länge?*), and each later day adds the row for the question word it teaches; the curriculum's Day 2 entry gives the schedule, and *Vad hände?* comes in Phase 2 (Day 34a). The full set, for reference: *Var?* a place. *När?* a time. *Varför?* a reason (*eftersom …*). *Hur mycket?* a price or an amount. *Hur länge?* a duration (*i två år, sedan maj*). *Vad tycker du?* an opinion (*Jag tycker att …*). *Vad hände?* a past event. *Vad vill du?* a request (*Jag skulle vilja …*). It works in speaking and in listening and reading questions, and it adds no new lines. **[Unreviewed Swedish: have a teacher check it]**
 
-**Words named in the research** (from the research summary; not confirmed as the exact exam wording):
+**Instruction words: the recognition core, 23 in all** (third review, 16 November 2026). You must understand these on a task card; you do not have to produce them. 13 come from the research; *fråga* (which Day 2 teaches; the old total of 13 left it out) and 9 more were added in the third review. None is confirmed as the exact exam wording.
+
+**Two lists, not one:**
+- **The full recognition list: these 23 instruction words.** Days 1–13 teach 20 of them, one to three a day (the curriculum's day entries name them). The other 3 (*ge exempel, ta ställning, för- och nackdelar*) are proposed for the opinion days (Days 29–31b).
+- **The Day 14 word test (E1, section 4.2): exactly 41 words.** They are the 20 instruction words met by Day 13, the 11 question words below, and 10 meaning-flip words (*inte, tyvärr, i stället, stängt, men, inställd, försenad, redan, flyttad, ändrad*). The curriculum's Day 14 entry gives the list, with the day each word is first met.
+
+| # | Swedish | English | Source |
+|---|---|---|---|
+| 1 | *läs* | read | research summary |
+| 2 | *lyssna* | listen | research summary |
+| 3 | *välj* | choose | research summary |
+| 4 | *skriv* | write | research summary |
+| 5 | *svara* | answer | research summary |
+| 6 | *fråga* | ask | [Plan's own guess] |
+| 7 | *berätta* | tell | research summary |
+| 8 | *förklara* | explain | research summary |
+| 9 | *beskriv* | describe | research summary |
+| 10 | *jämför* | compare | research summary |
+| 11 | *föreslå* | suggest | research summary |
+| 12 | *motivera* | give reasons for | research summary |
+| 13 | *rätt / fel* | true / false (right / wrong) | research summary |
+| 14 | *åtminstone* | at least | research summary |
+| 15 | *minst* | at least (*minst tre skäl*, at least three reasons) | [Plan's own guess] |
+| 16 | *ange* | state, give (*Ange ditt telefonnummer.*) | [Plan's own guess] |
+| 17 | *be om* | ask for (*Be om en ny tid.*) | [Plan's own guess] |
+| 18 | *ställ två frågor* | ask two questions | [Plan's own guess, third review] |
+| 19 | *ge exempel* | give examples | [Plan's own guess, third review] |
+| 20 | *nämn* | name, mention | [Plan's own guess, third review] |
+| 21 | *ta ställning* | take a position (say whether you agree) | [Plan's own guess, third review] |
+| 22 | *för- och nackdelar* | advantages and disadvantages (one: *en fördel*, *en nackdel*) | [Plan's own guess, third review] |
+| 23 | *lämna ett meddelande* | leave a message | [Plan's own guess] |
+
+**Other likely task words** (reference, not part of the 23) [Plan's own guess, not from exam sources]:
 
 | Swedish | English |
 |---|---|
-| *läs* | read |
-| *lyssna* | listen |
-| *välj* | choose |
-| *skriv* | write |
-| *svara* | answer |
-| *berätta* | tell |
-| *förklara* | explain |
-| *beskriv* | describe |
-| *jämför* | compare |
-| *föreslå* | suggest |
-| *motivera* | give reasons for |
-| *rätt / fel* | true / false (right / wrong) |
-| *åtminstone* | at least |
-
-**Likely task words** [Plan's own guess, not from exam sources]:
-
-| Swedish | English |
-|---|---|
-| *minst* | at least |
-| *fråga* | ask |
-| *be om* | ask for |
 | *tacka* | thank |
-| *ange* | state |
 | *boka* | book |
 | *kontakta* | contact |
 | *ring* | call |
-| *lämna ett meddelande* | leave a message |
 | *uppgift* | task |
 | *alternativ* | option |
 | *påstående* | statement |
 | *Håller du med?* | Do you agree? |
 | *din åsikt* | your opinion |
 | *skäl* | reason |
-| *fördel / nackdel* | advantage / disadvantage |
 | *belopp* | amount |
 | *rimlig* | reasonable |
 | *kontaktuppgifter* | contact details |
@@ -557,6 +578,8 @@ The six-point talk plan in section 5 is this plan's own coaching. The official s
 | *hur ofta* | how often |
 | *varför* | why |
 | *vilken / vilket / vilka* | which |
+
+**One answer, several questions** (recognition core, third review). Learn one productive answer and recognise the different ways the question can be asked; the curriculum adds them a few at a time in Phase 1. *Jag bor i Esbo.* answers *Var bor du?* / *Var bor du nu?* / *I vilken stad bor du?* / *Var någonstans bor du?* The core sheet (section 11) has two more sets.
 
 **Meaning-flip words** (they change the meaning in listening and reading):
 
@@ -634,8 +657,14 @@ The six-point talk plan in section 5 is this plan's own coaching. The official s
 - **Start with a fixed first sentence** (T1, T9, T14; the opening that fits the situation, section 1), so you never freeze.
 - **If you lack a word, say a simpler true thing:** *Jag är arg* instead of "I am deeply disappointed".
 - **Never switch to English, Hindi or Marathi.**
-- **If you missed the recorded line,** you cannot ask for a repeat. Say *Okej.* and then give the next point from the task card.
-- **Stop when every point is covered.** Padding costs time and earns nothing.
+- **If you missed the recorded line,** you cannot ask for a repeat. Choose one of three moves (third review):
+  1. You understood all of it: answer it.
+  2. You understood part of it: answer that part.
+  3. You missed it: give a relevant point from the task card, without agreeing to anything: *Jag kan komma på fredag efter klockan fyra.* (I can come on Friday after four.)
+  Do not say *okej* or *ja* by reflex: it can agree to something you did not hear.
+- **When to stop** (third review). In a call or a message, stop when every point is covered: padding costs time and earns nothing. In an opinion or a story task, a ticked checklist is the minimum, not the finish: develop each point with a reason, an example and a link word, and use the time.
+  - Bare: *Jag tycker att det är bättre att bo i en stad. Det är lättare utan bil.* (I think it is better to live in a city. It is easier without a car.)
+  - Developed: *Jag tycker att det är bättre att bo i en stad, eftersom det är lättare att leva utan bil. Till exempel går bussarna ofta, så jag kan ta bussen till jobbet varje dag.* (… because it is easier to live without a car. For example, the buses run often, so I can take the bus to work every day.)
 
 ### 2.9 The minimum grammar that prevents level-2 errors (priority 9, but learned in the first two weeks)
 
@@ -654,12 +683,12 @@ The six-point talk plan in section 5 is this plan's own coaching. The official s
 **G2. Where *inte* goes.** The same rule applies to *alltid, aldrig, också, gärna, redan, fortfarande*.
 - **Main clause, subject first:** *inte* goes after the verb. *Jag kan inte komma.* / *Jag har inte tid.*
 - **Main clause, something else first:** verb, then the pronoun subject, then *inte*. *I dag kan jag inte komma.* / *Tyvärr har vi inte tid.* / *Därför fungerar den inte.* (Avoid *I dag kan inte jag komma*: that order stresses *jag*, like "not me". Ask the teacher.)
-- **Subordinate clause** (after *att, eftersom, om, när, fast, som*): *inte* goes **before** the verb. *… eftersom jag inte har tid.* / *Problemet är att den inte fungerar.* / *Jag hoppas att du inte är sjuk.*
+- **Subordinate clause** (after *att, eftersom, om, när, fast, som*): the subject comes first, then *inte*, then the finite verb, so *inte* goes **before** the verb. *… eftersom jag inte har tid.* / *Problemet är att den inte fungerar.* / *Jag hoppas att du inte är sjuk.*
 
 **G3. Questions.**
 - **Yes/no questions start with the verb:** *Har du tid i morgon?* / *Kan jag betala med kort?*
-- **Question-word questions:** question word, then verb. *När öppnar ni?* / *Hur mycket kostar den?*
-- **Inside a sentence (an indirect question), use normal order:** *Jag undrar när kursen börjar.* (Not *när börjar kursen*.) / *Jag undrar om ni har öppet på lördag.*
+- **Question-word questions:** question word, then verb. *När öppnar ni?* / *Hur mycket kostar den?* When the question word is the subject, the verb follows at once: *Vem kommer?* / *Vad hände?*
+- **Inside a sentence (an indirect question), use normal order** (subject, then verb): *Jag undrar när kursen börjar.* (Not *när börjar kursen*.) / *Jag undrar om ni har öppet på lördag.* When the question word is the subject, add *som*: *Vet du vem som kommer?* / *Kan du berätta vad som hände?* (Only indirect questions take this *som*; a direct question is *Vem kommer?*)
 
 **G4. Modal verb + infinitive, with no *att*.** After *kan, vill, måste, ska, får, skulle, brukar*:
 - *Jag vill boka en tid.*
@@ -677,7 +706,7 @@ The six-point talk plan in section 5 is this plan's own coaching. The official s
 
 > **Technique: sentence families** (second review, 16 November 2026). Learn a verb inside one real sentence with 2–3 variants, never as a four-form table. Yesterday, today, tomorrow: *I går jobbade jag hemma. / I dag jobbar jag hemma. / I morgon ska jag jobba hemma.* Up to now: *Jag har jobbat hemma i två år.* Time, money, work: *Det tar mycket tid. / Det kostar mycket pengar. / Det är mycket arbete.* The table below is for looking up, not for reciting. **[Unreviewed Swedish: have a teacher check it]**
 
-**Learn them in layers (the core, section 1):** first the present of all 30; then the past of 12 (*var, köpte, ringde, kom, glömde, gick, hjälpte, tog, blev, fick, sa, bodde*: the past forms this plan's own Swedish uses most); the perfect only inside chunks such as *Jag har bott i Finland i fem år*, *Jag har redan betalat* and *Har ni fått mitt mejl?*. The full table is reference.
+**Learn them in three steps (the active core, section 1):** first the present of all 30; then the past of 12 (*var, köpte, ringde, kom, glömde, gick, hjälpte, tog, blev, fick, sa, bodde*: the past forms this plan's own Swedish uses most). Phase 1 teaches only 5 of them, in sentences: *var, kom, gick* (Day 6) and *ringde, köpte* (Day 9). The other 7 come in Phase 2: *tog, glömde, blev, hjälpte* on Day 34a, and *fick, sa, bodde* from this table when a task needs them. Last, the perfect only inside chunks such as *Jag har bott i Finland i fem år*, *Jag har redan betalat* and *Har ni fått mitt mejl?*. The full table is reference.
 
 | Infinitive | Present | Past | Perfect |
 |---|---|---|---|
@@ -721,10 +750,11 @@ Which form to use:
 - *en ny dator; ett nytt kylskåp; nya möbler*
 - *min dator, mitt kylskåp, mina barn*
 - *Datorn är trasig.* / *Kylskåpet är trasigt.*
+- With an *ett*-word the adjective usually adds *-t*. This is a common pattern, not a law: *bra* never changes (*Huset är bra*), and *liten* becomes *litet*. Learn frequent pairs as phrases: *mörkt hår* (dark hair), *ett nytt jobb* (a new job).
 
 If unsure, pick one and move on. A gender slip rarely blocks meaning [Plan's own view, consistent with the official tolerance for errors that do not block the message].
 
-**G8. Future and plans.**
+**G8. Future and plans.** Library material in Phase 1, with one exception (third review): Day 9 learns *ska* + base form as a chunk, *I morgon ska jag ringa till banken.*, as the "tomorrow" member of its yesterday-today-tomorrow family. The rest of G8 waits until a task needs it.
 - *Jag ska jobba på lördag.*
 - *Vi ska träffas klockan sex.*
 - *Det kommer att bli dyrt.*
@@ -748,6 +778,7 @@ If unsure, pick one and move on. A gender slip rarely blocks meaning [Plan's own
 
 Examples:
 - *Jag köpte den i måndags.*
+- *På måndag jobbar jag hemma.* or *På måndag ska jag jobba hemma.* (Both mean the coming Monday: with *på måndag* the present or *ska* + infinitive both work.)
 - *Vi ses om tio minuter.*
 - *Jag har bott i Finland i två år.*
 - *Jag flyttade hit för två år sedan.*
@@ -771,9 +802,9 @@ Examples:
 The learner owns *Förbered dig för allmän språkexamen* (Gimara Oy, 126 pages, 7 themes). It is the plan's main bank of real-looking tasks for speaking and writing. Every task was catalogued by page and type: 225 tasks (34 dialogues, 99 short reactions, 33 tell-a-story topics, 38 opinion statements, 21 writing tasks) plus 7 warm-up sections.
 
 - **What it is not.** It has no listening or reading, no answer key, no timing and no marking criteria. Listening and reading stay in section 7.
-- **Where each task is used.** `YKI-BOOK-MAP.md` lists every task, its page, its template and the day it is used. Many day entries in `YKI-EXAM-FIRST-CURRICULUM.md` end with a "Book practice" list. Since 16 November 2026 a list holds at most 2 tasks, and each book task replaces one of the day's own prompts; it is never added on top (load rules 5 and 6). Days 1-14 use only warm-up vocabulary and a few easy items. Days 15-42 follow the templates. Days 43-55 match book themes to the nine topic areas. Days 64-82 hold few, because 40 tasks are held back as fresh prompts for the mocks (6.2); 71 more sit in a question bank for 90-minute days, repeat days and the cycle after Day 84. Rest, light, mock and exit-test days carry none.
-- **Gaps the book exposed.** About 49 tasks fit none of T1-T16: polite objection to a stranger or friend (T17), describing a habit, place, thing or hobby (T18), comparing your home country with Finland (T19) and five one-offs such as resigning or appealing a decision (T20). They are in `YKI-NEW-TEMPLATES-T17-T20.md` and taught in 15-minute blocks on Days 22, 24, 31, 34 and 38, plus an **optional** T20 library block that is not part of Day 30 (second review: T20 covers rare situations; use the block only on a 90-minute day after Day 42, a rotation or fix day after Day 84, or a day when one of its book tasks comes up). The book map now tags these 49 tasks T17–T20.
-- **Time cost.** Book tasks add no time, because each one replaces a prompt. Each 15-minute block replaces the day's own speaking block, so Days 22, 24, 31, 34 and 38 stay at 60 minutes (load rule 6); on a 90-minute day, do both. The optional T20 block also replaces the speaking block of whatever day it is used on.
+- **Where each task is used.** `YKI-BOOK-MAP.md` lists every task, its page, its template and the day it is used. Many day entries in `YKI-EXAM-FIRST-CURRICULUM.md` end with a "Book practice" list. Since 16 November 2026 a list holds at most 2 tasks, and each book task replaces one of the day's own prompts; it is never added on top (load rules 5 and 6). Days 1-14 use only warm-up vocabulary and a few easy items. Days 15-42 follow the templates. Days 43-55 match book themes to the nine topic areas. Days 64-82 hold few, because 40 tasks are held back in a teacher-only reserve (since the third review they serve Mocks 1 and 2 and spare practice, not the counted mocks; 6.2); 71 more sit in a question bank for 90-minute days, repeat days and the cycle after Day 84. Rest, light, mock and exit-test days carry none.
+- **Gaps the book exposed.** About 49 tasks fit none of T1-T16: polite objection to a stranger or friend (T17), describing a habit, place, thing or hobby (T18), comparing your home country with Finland (T19) and five one-offs such as resigning or appealing a decision (T20). They are in `YKI-NEW-TEMPLATES-T17-T20.md` and taught in 15-minute blocks on Days 22, 24 and 31 (T17 and T19) and on two full study days, 34b and 38b (T18, split off by the third review), plus an **optional** T20 library block that is not part of Day 30 (second review: T20 covers rare situations; use the block only on a 90-minute day after Day 42, a rotation or fix day after Day 84, or a day when one of its book tasks comes up). The book map now tags these 49 tasks T17–T20.
+- **Time cost.** Book tasks add no time, because each one replaces a prompt. Each 15-minute block replaces the day's own speaking block, so Days 22, 24 and 31 stay at 60 minutes (load rule 6); on a 90-minute day, do both. Days 34b and 38b are ordinary 60-minute study days whose speaking task is their book tasks. The optional T20 block also replaces the speaking block of whatever day it is used on.
 - **Copyright.** The book is not copied anywhere in these files; only page pointers and our own short descriptions are used.
 - **Print slips.** The contents page swaps the names of themes 5 and 6, and a few tasks have wording slips (see the book map). Ask the teacher if a task looks contradictory.
 
@@ -787,10 +818,10 @@ The **60-minute and 90-minute days** use the same blocks in the same order.
 |---|---|---|---|
 | 1. Review | 0–8 | 0–12 | Cards that are due (3.3). Read the English cue, then **say** the Swedish aloud before you turn the card. |
 | 2. New | 8–18 | 12–27 | Today's chunks or template plus one grammar point. Hear each new line first (3.2, rung 0), then run the substitution ladder (3.2) on 2–3 lines. |
-| 3. Speaking | 18–33 | 27–52 | One task (two on a 90-minute day), timed by the time-pressure steps in 3.2: prepare, speak, record, listen twice, then redo once (3.4). |
+| 3. Speaking | 18–33 | 27–52 | One task (two on a 90-minute day), timed by the time-pressure steps in 3.2: prepare, speak, record, listen twice, then redo once (3.4). When a block holds several answers and the minutes do not fit, listen back to the two weakest answers only. |
 | 4. Writing | 33–48 | 52–72 | One typed task. Copy the required points as tick boxes first. Write within the practice time (3.2 time pressure). Check in the fixed order (3.4), then rewrite 1–2 sentences. |
-| 5. Listening or reading | 48–56 | 72–84 | The daily minimum (section 7). |
-| 6. Log | 56–60 | 84–90 | Error log (3.6), and make error cards for at most 3 of today's errors (3.3). |
+| 5. Listening or reading | 48–56 | 72–82 | The daily minimum (section 7): 8 minutes on a 60-minute day (the 7.3 or 7.4 routine, shortened), 10 minutes on a 90-minute day (the full routine). |
+| 6. Log | 56–60 | 82–90 | Error log (3.6), and make error cards for at most 3 of today's errors (3.3). |
 
 **Scaling:**
 
@@ -839,7 +870,7 @@ The ladder turns one sentence into a reusable tool. **Rule: never use a memorise
 
 The timings printed in day entries are the exam-like targets. A task you meet for the first time is never timed at exam speed.
 
-> **Technique: the transfer test for any new sentence** (second review, 16 November 2026). A sentence is yours when it passes seven small checks: (1) recall it from the English; (2) swap a detail; (3) change the person (*jag* → *hon*, *vi*); (4) understand the question that matches it; (5) ask the reverse question yourself; (6) understand it spoken; (7) type it. Example: *Jag bor i Esbo.* → *Jag bor i Vanda.* → *Hon bor i Vanda.* → you hear *Var bor du?* and answer → you ask *Och du? Var bor du?* → you catch it in a recording → you type it. **[Unreviewed Swedish: have a teacher check it]**
+> **Technique: the transfer test for any new sentence** (second review, 16 November 2026). A sentence is yours when it passes seven small checks: (1) recall it from the English; (2) swap a detail; (3) change the person (*jag* → *hon*, *vi*); (4) understand the question that matches it; (5) build that question yourself from the statement (third review: the "reverse question" means constructing it); (6) understand it spoken; (7) type it. Example: *Jag bor i Esbo.* → *Jag bor i Vanda.* → *Hon bor i Vanda.* → you hear *Var bor du?* and answer → from *Jag bor i Esbo.* you build *Var bor du?* (*Och du?* is a separate useful move, not this test) → you catch it in a recording → you type it. **[Unreviewed Swedish: have a teacher check it]**
 
 ### 3.3 The spaced review schedule
 
@@ -881,6 +912,7 @@ If you get a card wrong, it restarts at N+1.
 2. **Listen twice.**
    - **Pass 1, points:** tick each required point you covered.
    - **Pass 2, clarity:** mark every place where a stranger would not understand you.
+   - **When the minutes do not fit** (a block with several answers, such as reaction rounds or a full set): listen back to the two weakest answers only, and redo only those (third review).
 3. **Redo once at once,** fixing the weakest part. **Never redo more than twice.** After that, move on: repeating one answer many times only memorises that answer.
 4. **Type every writing task** in a plain text editor with spelling help turned off. The digital test may be typed [Unknown].
 5. **No dictionary or translation during a timed task.** Look words up afterwards.
@@ -964,7 +996,7 @@ Missing points and going over time count as errors.
 - **Don't study what you can defer:** the passive, the subjunctive, the pluperfect, long relative clauses, idioms, rare words, a native-like accent, literary Swedish. These are low value for a pass.
 - **Don't use fancy formal phrases.** They risk mistakes and earn nothing at level 3.
 - **Don't restart an answer,** and don't switch to English, Hindi or Marathi.
-- **Don't pad.** Stop when every point is covered.
+- **Don't pad.** In a call or a message, stop when every point is covered. In an opinion or a story task, don't stop merely because the checklist is ticked: develop the points (2.8).
 - **Don't translate whole texts.** Don't freeze on one word.
 - **Don't re-listen to one clip to memorise it.** Memorising one clip trains nothing. Use a new clip each day.
 - **Don't use Finnish-language YKI preparation material.** It is a different language, and its formats are not confirmed to match.
@@ -983,8 +1015,8 @@ The phases are **not tied to dates**. You move on when you pass an exit test, no
 | Phase | Calendar days | Purpose |
 |---|---|---|
 | Day 0 | before Day 1 | Placement: where to start. |
-| 1. Foundations | 1–14 | The grammar engine, numbers, instruction words, openings and closings (the phone and letter frames first). |
-| 2. Task moves | 15–42 | One function at a time: T1–T16, reactions, reasons, the five-step opinion. |
+| 1. Foundations | 1–14 (15 study days, with 3b) | The grammar engine, numbers, instruction words, openings and closings (the phone and letter frames first). |
+| 2. Task moves | 15–42 (31 study days, with 31b, 34b and 38b) | One function at a time: T1–T16, reactions, reasons, the five-step opinion. |
 | 3. Topic transfer | 43–63 | Apply the functions to the nine topic areas, with prompts you have not practised. |
 | 4. Timed full tasks and mocks | 64–84, then repeat | Full timed sets, the booking gate. |
 | 5. Taper | the 7 days before a booked sitting | Rest, keep the cards warm, no new content. |
@@ -1049,7 +1081,7 @@ About 100 minutes, in one or two sittings. Prompts are in Swedish, as in the rea
 - **R1 (7 min):** one real short Swedish notice (a shop, a housing company, a health centre, transport).
   - Answer: what, when, where, for whom, cost or condition.
   - Score out of 5.
-- **B1 (3 min):** the 13 instruction words in 2.6 → English. Score out of 13.
+- **B1 (3 min):** the 23 instruction words in 2.6 → English. Score out of 23.
 - **B2 (5 min):** a helper says these 20 items in Swedish and you write them in digits. Score out of 20.
   1. 15
   2. 50
@@ -1073,7 +1105,7 @@ About 100 minutes, in one or two sittings. Prompts are in Swedish, as in the rea
   20. 2027
 - **B3 (10 min):** the sentence-engine test in 4.2. Score out of 20.
 
-**Reading the result** (Green, Amber or Red, since 16 November 2026). Mark each long-placement task yourself, against its key or its required points. The old scores are kept as targets that help you judge, not as gates: B1 about 11 of the 13 words, B2 about 16 of the 20 items, B3 about 17 of the 20 sentences, W1 and W2 at least half their points. Send S1–S4 and W1–W3 to the teacher for an A–D rating each.
+**Reading the result** (Green, Amber or Red, since 16 November 2026). Mark each long-placement task yourself, against its key or its required points. The old scores are kept as targets that help you judge, not as gates: B1 about 19 of the 23 words, B2 about 16 of the 20 items, B3 about 17 of the 20 sentences, W1 and W2 at least half their points. Send S1–S4 and W1–W3 to the teacher for an A–D rating each.
 
 - **B1, B2, B3** (words, dictation, sentence engine): Green: you did it on your own, with only scattered slips. Amber: one kind of item keeps going wrong. Red: a whole kind fails, or you misread instruction words.
 - **S1–S4** (speaking): Green: every required point, on your own. Amber: understandable, with long pauses or a recurring mistake. Red: you misunderstood the card, or could not answer.
@@ -1092,22 +1124,22 @@ About 100 minutes, in one or two sittings. Prompts are in Swedish, as in the rea
 
 **Entry:** none. Anyone can start here.
 
-**Content** (rewritten on 16 November 2026 so that each of Days 1–14 keeps the load rules by itself; the day entries are in the curriculum, and the short learner pages in `YKI-LEARNER-DAYS-1-14.md`):
-- Grammar, one point a day: G1 (Day 3a), G2 (Day 3b), G3 (Day 2, and *Jag undrar om / när* on Day 13), G4 (Day 4), G5 (Day 5), G6 (Days 6 and 9: the past for a finished time, with the 12 core past forms in sentence families; the perfect only in fixed chunks), G7 (Days 10 and 11), G9 (Day 9: *i måndags* and *på måndag*) and G10 (Day 8: *eftersom … inte*; Day 12: *för att*). G8 (the future) is library only (2.9).
-- About 65 lines in all, at most 6 new a day: the "Me", phone and letter frames of the core (2.0), some Ask, Fix, Social and Story frames, rescue moves 1–3 and 5, and the practice sentences for the grammar.
-- Numbers, dates and times (2.7), one small set a day.
-- The 13 instruction words and the 11 question words (2.6), one or two a day, and the meaning-flip words met in the notices.
+**Content** (rewritten on 16 November 2026 so that each of Days 1–14 keeps the load rules by itself; recounted by patterns in the third review the same day; the day entries are in the curriculum, the short learner pages in `YKI-LEARNER-DAYS-1-14.md`, and every Swedish line of those pages in `YKI-AUDIO-LIST-DAYS-1-14.md`):
+- Grammar, one point a day: G1 (Day 3a), G2 (Day 3b), G3 (Day 2, and *Jag undrar om / när* on Day 13), G4 (Day 4), G5 (Day 5), G6 (Day 6: the past for a finished time, with *var, kom, gick* in a short story), G9 with G6 (Day 9: *i går* takes the past, *i dag* the present, *i morgon* and *på måndag* take *ska* + base form or the present; with *ringde* and *köpte*), G7 (Days 10 and 11) and G10 (Day 8: *eftersom … inte*; Day 12: *för att*). The perfect only in fixed chunks. Phase 1 uses five of the 12 core past forms; the other seven come in Phase 2. G8 (the future) is library only (2.9), apart from *ska* + base form on Day 9.
+- 66 new patterns in all, at most 6 new a day (counted as patterns, not cards: load rule 1): the "Me", phone and letter frames of the core (2.0), some Ask, Fix, Social and Story frames, rescue moves 1–3 and 5, and the practice sentences for the grammar.
+- Numbers, dates and times (2.7), one small set a day; the alphabet with letter names on Day 11.
+- 20 of the 23 instruction words and all 11 question words (2.6), one to three a day, and the meaning-flip words met in the notices; receptive question variants on Days 3a, 4 and 5.
 - The openings and closings by situation: phone call, voicemail to a friend, message to a friend, formal message.
 
-**Exit test (Day 14).** It needs no outside rater: you mark each task Green, Amber or Red against its key and the descriptions below. The recordings go in the weekly pack. Each task tests the kinds of item Days 1–13 teach (item 4 of the sentence-engine test checks that the verb-second rule carries over to a new first word, *För det första*). E2 uses only the number sets taught: the confusable pairs, the tens, *halv* and *kvart*, dates, prices such as 49,90, phone numbers and years; no *fem i halv* times and no amounts in the thousands. The E1 word pool is the 13 instruction words, the 11 question words and the meaning-flip words met in Days 1–13 (*inte, tyvärr, i stället, men, redan, stängt, inställd, försenad, flyttad, ändrad*). E4 and E5 are cards with new details, so they use the target times; times are targets, never gates. A test day has two speaking tasks (E4, E5), the one exception to load rule 5.
+**Exit test (Day 14).** It needs no outside rater: you mark each task Green, Amber or Red against its key and the descriptions below. The recordings go in the weekly pack. Each task tests the kinds of item Days 1–13 teach (item 4 of the sentence-engine test checks that the verb-second rule carries over to a new first word, *För det första*). E2 uses only the number sets taught: the confusable pairs, the tens, *halv* and *kvart*, dates, prices such as 49,90, phone numbers and years; no *fem i halv* times and no amounts in the thousands. E1 is an exact list of **41 words** (third review): the 20 instruction words met on Days 1–13 (*berätta, skriv, fråga, svara, ställ två frågor, läs, lyssna, lämna ett meddelande, välj, be om, rätt / fel, förklara, beskriv, nämn, åtminstone, minst, ange, föreslå, motivera, jämför*; the other three of the 23, *ge exempel, ta ställning, för- och nackdelar*, come in Phase 2), the 11 question words, and the 10 meaning-flip words met in Days 1–13 (*inte, tyvärr, i stället, stängt, men, inställd, försenad, redan, flyttad, ändrad*); the curriculum's Day 14 entry names the day each word comes from. E4 and E5 are cards with new details, so they use the target times; times are targets, never gates. A test day has two speaking tasks (E4, E5), the one exception to load rule 5.
 
 | # | Test | Green | Amber | Red |
 |---|---|---|---|---|
-| E1 | The 13 instruction words, plus 20 question and meaning-flip words | You know what each word asks you to do, on your own. | You hesitated, or mixed up a pair (*beskriv / berätta*). | You misread a word that sets a required point (*motivera, åtminstone, föreslå*). |
+| E1 | The exact list of 41 words (above): 20 instruction words, 11 question words, 10 meaning-flip words | You know what each word asks you to do, on your own. | You hesitated, or mixed up a pair (*beskriv / berätta*). | You misread a word that sets a required point (*motivera, åtminstone, föreslå*). |
 | E2 | A dictation of 20 new items from the sets taught (above), written by the teacher or a helper | You write the items on your own; any slips are scattered. | One kind keeps going wrong (*halv*, or the *-ton / -tio* pairs). | A whole kind fails (clock times, prices or phone numbers). |
 | E3 | The sentence-engine test (below) | Every kind of sentence works on your own. | One kind keeps going wrong. | You cannot do one kind without the key. |
-| E4 | A 20-second voicemail with new details that says who, why you cannot come, and a new time | All three, on your own, at about the target length. | All three, but with long pauses, or it runs long. | A point is missing because the card was misunderstood, or you needed a model. |
-| E5 | A 60-second self-introduction without notes | About a minute on your own: the Day 1–3a facts and a time-first sentence, with no switch to another language. | The facts are there, but you hesitated or stopped early. | You switched to English, or stopped and could not go on without notes. |
+| E4 | A voicemail with new details that says who, why you cannot come, and a new time (target about 20 seconds, recorded, not a gate) | All three, on your own. | All three, but with long pauses, or it runs long; or a point forgotten (not misunderstood) while the message still works. | A point is missing because the card was misunderstood, or you needed a model. |
+| E5 | A self-introduction without notes (target about 60 seconds, recorded, not a gate) | On your own: the Day 1–3a facts and a time-first sentence, with no switch to another language. | The facts are there, but you hesitated or stopped early. | You switched to English, or stopped and could not go on without notes. |
 
 **Sentence-engine test** (answers in brackets).
 
@@ -1155,6 +1187,8 @@ Fill in the right form:
 ### 4.3 Phase 2: Task moves (Days 15–42)
 
 **Entry:** Phase 1 exit passed (or a Day 0 Phase 2 result).
+
+**Length:** 31 study days, not 28. The third review split three days by load rule 9 and kept their numbers: Day 31 and 31b, Day 34a and 34b, Day 38a and 38b. (Phase 1 likewise has 15 study days, with Day 3a and 3b.) With no Red repeats, Days 1–42 take 46 study days.
 
 **Content:**
 - Templates T1–T16, the reaction bank, the reasons bank and the five-step opinion answer.
@@ -1221,7 +1255,7 @@ Mocks 1 and 2 (Days 28 and 56) are progress checks inside Phases 2 and 3.
 
 **If the booking gate is not met after Day 84:**
 - Repeat Days 64–84 with prompts you have not practised: question-bank book tasks (book map), or new prompts the teacher writes. The appendix is seen practice.
-- Do one full mock every week in place of the Day 84-style mock every 4 weeks.
+- Do one full mock every week in place of the Day 84-style mock every 4 weeks. These mocks count towards booking, so their prompts follow the fresh-prompt rule (6.2): the teacher writes them, or an AI writes them on the day.
 - After each mock, spend 3 "fix days" on that mock's top errors, using the Day 57 format.
 - Keep cycling until the gate is met at a registration window.
 
@@ -1293,46 +1327,47 @@ These four conditions are the booking gate. They stay fixed; the Green, Amber, R
 
 | Day | Ph | Focus | Chunks / banks | Speaking task | Writing task | Listening / reading | Review (cards made on these days) |
 |---|---|---|---|---|---|---|---|
-| 1 | 1 | Say who you are | 5 frames (name, country, town, languages, learning Swedish); 4 questions; *berätta, skriv*; one grammar fact (one verb form for every person) | *Berätta om dig själv*: 5 sentences, recorded, no timer | The 5 sentences, typed from memory (set up å, ä, ö) | Hear each frame first; no notice today | None (first day) |
-| 2 | 1 | Say more, and ask back | Work, years in Finland, *Vad heter du? Var bor du? Och du?*; G3 (the verb straight after the question word); the question-to-answer table (2 min); numbers 0–12; *fråga, svara* | Answer 4 questions; ask back with *Och du?* | Message to a new course-mate: 5 facts + 2 questions | Number check: 8 numbers from 0 to 12 | Days 1 |
-| 3 | 1 | Two study days (rule 2: one grammar point each): 3a verb second; 3b inte in main clauses | 3a: G1; 4 frames (*I dag jobbar jag …, Nu bor jag …, På fritiden går jag …, På morgonen tar jag …*); numbers 13–20; *när, läs*. 3b: G2 (main clause); 5 frames (*kan inte, har inte tid, Tyvärr, Kan vi ses … i stället?*, the voicemail opening to a friend); weekdays; *vem, lyssna* | 3a: self-introduction with 2 time-first sentences. 3b: voicemail, 20 s target: cannot come today | 3a: message to your teacher. 3b: text message: cannot come, suggest a day | 3a: read every number on a notice. 3b: notice routine: opening hours, *stängt* | Days 2 (3b: also 3a) |
-| 4 | 1 | Modal verbs; booking | G4 (base form, no *att*; the modal first in a question); 6 frames incl. the phone opening and close and *Hur mycket kostar …?*; the tens 20–100; *hur mycket, välj* | Booking call to the health centre, 4 turns | Message to a neighbour: borrow a ladder | Dictation of 8 numbers with tens | Days 1, 3 |
-| 5 | 1 | att-clauses | G5; 5 frames (*tycker / tror / hoppas att, Problemet är att … inte …*, rescue move 5); built numbers and the confusable pairs; *vilken, rätt / fel* | One opinion answer with 3 points, then a changed question | Message to a friend about your Swedish course | Dictation of the confusable pairs | Days 2, 4 |
-| 6 | 1 | Past and perfect 1 | G6: past for a finished time; 6 sentence families with *var, kom, gick, tog, fick, köpte*; months; *hur* | Last weekend, 30 s target | Message to a friend about last weekend | Easy-news routine: months | Days 3, 5 |
-| 7 | 1 | Light | — (no new frames or grammar) | Re-record the self-introduction from memory with one new detail | 3 changed sentences, typed (5 min) | One clip | Due cards (8 minutes) |
-| 8 | 1 | Reasons and refusals | G10 with G2: *eftersom … inte* + verb; 4 frames (*Tack för inbjudan, Tyvärr … eftersom …, Därför …, Passar det …?*); dates; *varför, förklara* | One reaction: refuse an invitation with a reason, then a changed card | Reply declining a dinner invitation | Easy-news routine: dates | Days 1, 5, 7 |
-| 9 | 1 | Past and perfect 2 | G9: *i måndags* + past, *på måndag* + present; 6 sentence families with *ringde, glömde, hjälpte, blev, sa, bodde* (all 12 core past forms now in use); *hur många* | A day when something went wrong, 30 s target | Message to a friend: what happened last Monday | Notice routine: *inställd, försenad* | Days 2, 6, 8 |
-| 10 | 1 | Things and descriptions | G7: *det* and *-t* with an *ett*-word; 6 frames (lost-item lines, *Den är … / Det är …*, word recovery *Det är en sak som …*); prices; *beskriv* | Call to lost property, 4 turns | Message to a friend about a lost umbrella | Prices on a shop advert | Days 3, 7, 9 |
-| 11 | 1 | Contact details | G7: *min* / *mitt*; 6 frames (phone number, address, spelling, *Ni når mig på …*, *Jag har redan betalat*, *Med vänliga hälsningar*); phone numbers, postcodes, e-mail signs; *åtminstone* | The shop calls you: name, spelling, address, number, 5 turns | Short formal message: address and contact details | Easy-news routine: write every number | Days 4, 8, 10 |
-| 12 | 1 | Phone frame | G10: *angående* + a thing, *för att* + a verb; 5 frames (*Jag ringer angående …, då säger vi …*, rescue moves 1–3); clock times *halv, kvart*; *föreslå, hur ofta* | 6-turn bike-workshop call, one line mumbled | Typing drill: 10 engine sentences | Dictation of clock times | Days 5, 9, 11 |
-| 13 | 1 | Letter frames | G3: *Jag undrar om / när* + normal order; 4 frames (formal opening, *Jag undrar om …, Tack på förhand, Har du tid …?*); years; *motivera, jämför* | Voicemail: cannot come to a meeting, 20 s target | Two short messages (friend, swimming hall) | Notice routine: *flyttad, ändrad* | Days 6, 10, 12 |
-| 14 | 1 | Phase 1 exit test | E1–E5 (section 4.2), each marked Green, Amber or Red | E4 voicemail, E5 self-introduction (the test-day exception: two speaking tasks) | E3 sentence-engine test, typed | — | Days 7, 11, 13; Light day otherwise |
+| 1 | 1 | Say who you are | 5 new patterns (name, country, town, languages, learning Swedish); 4 questions to understand; *berätta, skriv*; one grammar fact (one verb form for every person); 8 cards | *Berätta om dig själv*: 5 sentences, recorded, no timer | The 5 sentences, typed from memory (set up å, ä, ö) | Hear each pattern first (audio list); no notice today | None (first day) |
+| 2 | 1 | Say more, and ask back | 5 new patterns: work, years in Finland, *Vad heter du?* (and *Var bor du?*), *Och du?*, *Hälsningar*; G3 (the verb straight after the question word); the question-to-answer table, first 3 rows (2 min); numbers 0–12; *fråga, svara, ställ två frågor* | Answer 4 questions; ask back with *Och du?* | Message to a new course-mate: 5 facts + 2 questions | Number check: 8 numbers from 0 to 12 | Days 1 |
+| 3 | 1 | Two study days (rule 2: one grammar point each): 3a verb second; 3b inte in main clauses | 3a: G1; 4 new patterns (*I dag jobbar jag …, Nu bor jag …, På fritiden går jag …, På morgonen tar jag …*); question variants *Var bor du nu? / I vilken stad bor du?*; numbers 13–20; *när, läs*. 3b: G2 (main clause); 6 new patterns (*kan inte* in both orders, *har inte tid, Kan vi ses … i stället?*, the voicemail opening to a friend, *Hej då!*; *Tyvärr* as a swap); weekdays; *vem, lyssna, lämna ett meddelande* | 3a: self-introduction with 2 time-first sentences. 3b: voicemail, 20 s target: cannot come today | 3a: message to your teacher. 3b: text message: cannot come, suggest a day | 3a: read every number on a notice. 3b: notice routine: opening hours, *stängt* | Days 2 (3b: also 3a) |
+| 4 | 1 | Modal verbs; booking | G4 (base form, no *att*; the modal first in a question); 4 new patterns (the phone opening, *Jag skulle vilja boka en tid*, *Kan jag komma efter klockan fyra?*, *Tack för hjälpen*), plus known shapes *kan inte / måste* with new words; question variants *Var någonstans bor du? / Varifrån kommer du?*; the tens 20–100; *välj, be om* | Booking call to the health centre, 4 turns | Text to the hairdresser: book a time after four | Dictation of 8 numbers with tens | Days 1, 3 |
+| 5 | 1 | att-clauses | G5; 5 new patterns (*tycker / tror / hoppas att, Problemet är att … inte …*, rescue move 5); question variants *Vad arbetar du med? / Vad har du för jobb?*; built numbers and the confusable pairs; *vilken, rätt / fel* | One opinion answer with 3 points, then a changed question | Message to a friend about your Swedish course | Dictation of the confusable pairs | Days 2, 4 |
+| 6 | 1 | Past 1: last weekend | G6: past for a finished time; 5 new patterns: *var, kom, gick* in a short story, *Det var …*, the story opening *Jag vill berätta om …*; change the person, place and activity; *hur* (no set: the months moved to Day 8) | Last weekend, 30 s target | Message to a friend about last weekend | One easy clip: three words | Days 3, 5 |
+| 7 | 1 | Light | — (no new patterns or grammar) | Re-record the self-introduction from memory with one new detail | 3 changed sentences, typed (5 min) | One clip (8 min) | Due cards (8 minutes) |
+| 8 | 1 | Reasons and refusals | G10 with G2: *eftersom … inte* + verb; 5 new patterns (*Tack för inbjudan, Tyvärr … eftersom …, … eftersom jag inte har tid, Därför …, Passar det …?*); months and dates; *varför, förklara* | One reaction: refuse an invitation with a reason, then a changed card | Reply declining a dinner invitation | Dictation of dates (or easy-news routine: dates) | Days 1, 5, 7 |
+| 9 | 1 | Past 2: yesterday, today, tomorrow | G9 with G6: the time word chooses the form (*i går* past, *i dag* present, *i morgon* and *på måndag* *ska* + base form or present); 5 new patterns with *ringde / ringer / ska ringa*, *köpte* and *i måndags*; *hur många, inställd, försenad* | Yesterday, today and tomorrow, 30 s target | Message to a friend: yesterday, today, tomorrow | Notice routine: *inställd, försenad* | Days 2, 6, 8 |
+| 10 | 1 | Things and descriptions | G7: *det* and usually *-t* with an *ett*-word; 6 new patterns (lost-item lines, *Den är … / Det är …*, *ett nytt paraply*, *Kan ni kontakta mig om …?*); prices; *beskriv, nämn* | Call to lost property, 4 turns | Message to a friend about a lost umbrella | Prices on a shop advert | Days 3, 7, 9 |
+| 11 | 1 | Contact details | G7: *min* / *mitt*; 6 new patterns (phone number, address, spelling, *Ni når mig på telefon eller e-post*, *Jag har redan betalat*, *Med vänliga hälsningar*); the alphabet with letter names (own name first), postcodes, e-mail signs; *åtminstone, minst, ange* | The shop calls you: name, spelling, address, number, 5 turns | Short formal message: address and two ways to reach you | Dictation: 3 phone numbers, 2 postcodes | Days 4, 8, 10 |
+| 12 | 1 | A short phone call | G10: *angående* + a thing, *för att* + a verb; 5 new patterns (*Jag ringer angående …, Hur mycket kostar det?, då säger vi …*, rescue moves 1 and 3); clock times *halv, kvart*; *föreslå, hur ofta, hur mycket*; the three moves for a missed line (no mumbled line before Day 14) | 4-turn bike-workshop call, every line clear | Typing drill: 6 engine sentences | Dictation of clock times | Days 5, 9, 11 |
+| 13 | 1 | Letter frames | G3: *Jag undrar om / när* + normal order; 5 new patterns (formal opening, *Jag undrar om …, Jag undrar när …, Tack på förhand*, rescue move 2); years; *motivera, jämför, flyttad, ändrad* | Voicemail: cannot come to a meeting, 20 s target | One formal message (swimming hall); the friend's message only on a 90-minute day | Notice routine: *flyttad, ändrad* | Days 6, 10, 12 |
+| 14 | 1 | Phase 1 exit test | E1–E5 (section 4.2), each marked Green, Amber or Red; E1 is the exact 41-word list | E4 voicemail, E5 self-introduction (the test-day exception: two speaking tasks) | E3 sentence-engine test, typed | — | Days 7, 11, 13; Light day otherwise |
 | 15 | 2 | Request and booking | T2; G3 indirect questions | Dentist booking call, 6 turns | E-mail to a language school | Easy-news routine | Days 1, 8, 12, 14 |
-| 16 | 2 | Selling (seller role) | T3 seller lines | A buyer calls about your bike ad, 6 turns | A short for-sale ad | Notice routine: an ad | Days 2, 9, 13, 15 |
+| 16 | 2 | Selling (seller role) | T3 seller lines (6 new patterns; 3 extra chunks are library) | A buyer calls about your bike ad, 6 turns | A short for-sale ad | Notice routine: an ad | Days 2, 9, 13, 15 |
 | 17 | 2 | Buying (buyer role) and price | T3 buyer lines; bargaining | Call about a sofa ad: ask and bargain | Message to a seller: 2 questions + an offer | Easy-news routine | Days 3, 10, 14, 16 |
 | 18 | 2 | Complaint by phone | T4 | Washing machine still broken, 6 turns | Notes for the call: problem, dates, what you want | Easy-news routine | Days 4, 11, 15, 17 |
-| 19 | 2 | Written complaint | T5 (bill and product) | Call about a wrong bill | Bill complaint with all 4 required points | Notice routine: a bill or letter | Days 5, 12, 16, 18 |
+| 19 | 2 | Written complaint | T5, bill version (the product version moved to Day 44, third review) | Call about a wrong bill | Bill complaint with all 4 required points | Notice routine: a bill or letter | Days 5, 12, 16, 18 |
 | 20 | 2 | Reactions 1 | Reaction bank 1–15 | 5 reaction rounds (congratulate, comfort) | 3 short messages (congratulate, get well) | Easy-news routine | Days 6, 13, 17, 19 |
-| 21 | 2 | Light | — | Re-record the Day 15 call | — | One clip | All overdue cards |
-| 22 | 2 | Reactions 2 | Core reactions 19, 22, 23, 25, 28; reaction timing; + T17 part 1 block | 5 reaction rounds (thanks, apology, accept, refuse) | Thank-you message | Easy-news routine | Days 8, 15, 19, 21 |
+| 21 | 2 | Light | — | Re-record the Day 15 call, one line mumbled (the mumbled-line drill, moved here from Day 12) | — | One clip | All overdue cards |
+| 22 | 2 | Reactions 2 | Core reactions 19, 22, 23, 25 (28 is Day 3b's *Tyvärr kan jag inte*); reaction timing; + T17 part 1 block (2 frames) | T17 block: 5 book Reagera (the 5 reaction rounds on a 90-minute day) | Thank-you message | Easy-news routine | Days 8, 15, 19, 21 |
 | 23 | 2 | Late and cancel | T9 | Late voicemail, 20 s, twice; cancel an appointment | Cancel a course place by message | Notice routine: cancelled or moved | Days 9, 16, 20, 22 |
-| 24 | 2 | Polite refusal | T8 + reasons; + T17 part 2 block | Refuse an offer by phone | Refuse a colleague's request | Easy-news routine | Days 10, 17, 21, 23 |
+| 24 | 2 | Polite refusal | T8 + reasons (4 new patterns, 3 chunks library); + T17 part 2 block (2 frames) | T17 block: 5 book Reagera (the refusal call on a 90-minute day) | Refuse a colleague's request | Easy-news routine | Days 10, 17, 21, 23 |
 | 25 | 2 | Event message | T6 (official sample points) | Tell a friend about an event, 25 s | Event message: what, when, where + 2 details | Notice routine: an event | Days 11, 18, 22, 24 |
 | 26 | 2 | Invitation | T7 | Invite by phone, then answer an invitation | Invitation + reply | Easy-news routine | Days 12, 19, 23, 25 |
 | 27 | 2 | Mock 1 preparation | Five random prompts, each from a different engine | One task of each speaking type | One informal task | Easy-news routine | Days 13, 20, 24, 26 |
 | 28 | 2 | MOCK 1 | Section 6, short mock | Speaking set | Writing set | 1 clip + 1 notice | No new cards; log the mock's errors |
 | 29 | 2 | Opinion in five steps | Section 2.2; reasons 1–10 | Your opinion: city or countryside (1 + 1.5 min) | The same as a letter to the editor | Easy-news routine | Days 15, 22, 26, 28; Mock 1 error cards |
-| 30 | 2 | Core reason pairs A | Pairs 1–6 with examples (the T20 block is optional library material, not part of Day 30) | 3 short opinions, 2 reasons each | Paragraph: 2 reasons + examples | Notice routine | Days 16, 23, 27, 29 |
-| 31 | 2 | Core reason pairs B; other view | Pairs 7–12; other-view lines; + T19 block | Opinion with the other view, 1.5 min | Paragraph with the other view + conclusion | Easy-news routine | Days 1, 17, 24, 28, 30 |
-| 32 | 2 | Letter to the editor | T13; at least 3 reasons | Your opinion: working from home | Letter with at least 3 reasons | Notice routine: a short article | Days 2, 18, 25, 29, 31 |
+| 30 | 2 | Core reason pairs A | Pairs 1–5 with examples (pair 6 moved to Day 31 by the third review; the T20 block is optional library material, not part of Day 30) | 3 short opinions, 2 reasons each | Paragraph: 2 reasons + examples | Notice routine | Days 16, 23, 27, 29 |
+| 31 | 2 | Pair 6; other view; home country and Finland | Pair 6 (people); *Å andra sidan* and the bridge *Men för mig är fördelarna större än nackdelarna*; + T19 block (cut to 2 frames) | T19 block: 3 book Din åsikt talks | Paragraph with the other view + conclusion | Easy-news routine | Days 1, 17, 24, 28, 30 |
+| 31b | 2 | Core reason pairs B (a study day added by the third review, load rule 9) | Pairs 7–10; *En nackdel är att* (subordinate order) | Opinion: families eating together, 1.5 min (moved from Day 31) | Paragraph: training in a group, with *En nackdel är att* | Notice routine | Day 31's cards; cards made on 31b come back with Day 31's |
+| 32 | 2 | Letter to the editor | T13; pairs 11–12 (moved from Day 31); at least 3 reasons | Your opinion: working from home | Letter with at least 3 reasons | Notice routine: a short article | Days 2, 18, 25, 29, 31 |
 | 33 | 2 | Describe a person | T14; six-point talk plan | Tell about an important person (1 + 1.5 min) | E-mail describing a friend who will visit | Easy-news routine | Days 3, 19, 26, 30, 32 |
-| 34 | 2 | What happened | T15; G6; + T18 part 1 block | Tell about an unexpected event | Message: what happened and why you were late | Notice routine | Days 4, 20, 27, 31, 33 |
+| 34 | 2 | Two study days (third review, load rule 9): 34a what happened; 34b habits | 34a: T15; G1 after sequence words. 34b: T18 part 1 (how often, then and now), familiar verbs only | 34a: tell about an unexpected event. 34b: 3 book Berätta talks on habits | 34a: message: what happened and why you were late. 34b: message: an ordinary week | 34a: notice routine. 34b: easy-news routine | Days 4, 20, 27, 31, 33 (34b: also 34a) |
 | 35 | 2 | Light | — | Re-record the Day 29 opinion with a new topic | — | One clip | All overdue cards |
 | 36 | 2 | Advice | T11 | A friend asks for advice, 1 min | Advice e-mail to a friend | Easy-news routine | Days 6, 22, 29, 33, 35 |
 | 37 | 2 | Report to an authority | T12 | Report a lost wallet by phone | Report water damage to the landlord | Notice routine: an official letter | Days 7, 23, 30, 34, 36 |
-| 38 | 2 | Outside moves 1 | T16: directions, appearance; + T18 part 2 block | Give directions; describe someone you will meet | Describe yourself to someone who will meet you | Easy-news routine | Days 8, 24, 31, 35, 37 |
+| 38 | 2 | Two study days (third review, load rule 9): 38a directions and appearance; 38b a place | 38a: T16 directions and clothes; command forms. 38b: T18 part 2 (a place or a thing) | 38a: give directions; a voicemail describing someone. 38b: 3 book tasks about your home and nature | 38a: describe yourself to someone who will meet you. 38b: message about a place you like | Easy-news routine (both) | Days 8, 24, 31, 35, 37 (38b: also 38a) |
 | 39 | 2 | Outside moves 2 | T16: thanks, recommendation, notice | Recommend a restaurant | A notice to neighbours | Notice routine | Days 9, 25, 32, 36, 38 |
-| 40 | 2 | Mixed reactions | All 30 reactions | 10 random reaction rounds | 3 short mixed messages | Easy-news routine | Days 10, 26, 33, 37, 39 |
+| 40 | 2 | Mixed reactions | The 10 core reactions (the other 20 recognise only) | 10 reaction rounds; listen back to the 2 weakest (third review: all 10 would take about 21 minutes) | 3 short mixed messages | Easy-news routine | Days 10, 26, 33, 37, 39 |
 | 41 | 2 | Phase 2 exit test, part 1 | Exit tasks 1–3 and 6–8 (section 4.3) | The 6 speaking exit tasks | — | — | Days 11, 27, 34, 38, 40; Light otherwise |
 | 42 | 2 | Phase 2 exit test, part 2 | Exit tasks 4–5 | — | The 2 writing exit tasks | One clip | All overdue cards |
 | 43 | 3 | Home and housing | Topic words; T4, T12 | Repair call: washing machine still broken | Message to the landlord: cold radiators | Easy-news routine | Days 13, 29, 36, 40, 42 |
@@ -1350,10 +1385,10 @@ These four conditions are the booking gate. They stay fixed; the Green, Amber, R
 | 55 | 3 | Mock 2 preparation | Five random prompts, each from a different engine; core reactions and reason pairs | One task of each type | One formal task | Notice routine | Days 25, 41, 48, 52, 54 |
 | 56 | 3 | MOCK 2 | Section 6, full mock | Speaking set | Writing set | 2 clips + 2 notices | No new cards; log the mock's errors |
 | 57 | 3 | Error clinic | 12 engine errors; T5 redo | Repair call redo | New bill complaint (painting firm) | Easy-news routine | Days 27, 43, 50, 54, 56; Mock 2 error cards |
-| 58 | 3 | Weakest function A | Your mock's weakest function | 3 prompts of it you have not practised | 1 prompt of it | Notice routine | Days 28, 44, 51, 55, 57 |
+| 58 | 3 | Weakest function A | Your mock's weakest function | 3 prompts of it you have not practised (core: the first; 2 and 3 optional) | 1 prompt of it | Notice routine | Days 28, 44, 51, 55, 57 |
 | 59 | 3 | Weakest function B | The next weakest function | 3 prompts you have not practised | 1 prompt | Easy-news routine | Days 29, 45, 52, 56, 58 |
-| 60 | 3 | Formal writing set | T2, T5, T12 | One call | 3 formal tasks, timed | Notice routine | Days 30, 46, 53, 57, 59 |
-| 61 | 3 | Speaking set | T14, T3, T4, T9 | Full speaking set | One informal task | Easy-news routine | Days 31, 47, 54, 58, 60 |
+| 60 | 3 | Formal writing set (declared set day) | T2, T5, T12 | One call | 3 formal tasks, timed (core: the T5 bill complaint) | Notice routine | Days 30, 46, 53, 57, 59 |
+| 61 | 3 | Speaking set (declared set day) | T14, T3, T4, T9 | Full speaking set | One informal task | Easy-news routine | Days 31, 47, 54, 58, 60 |
 | 62 | 3 | Phase 3 exit test, part 1 | 5 appendix prompts, details changed (section 4.4) | Exit tasks | Exit tasks | — | Days 32, 48, 55, 59, 61; Light otherwise |
 | 63 | 3 | Phase 3 exit test, part 2 | 5 appendix prompts, details changed | Exit tasks | Exit tasks | One clip | All overdue cards |
 | 64 | 4 | Full speaking set A | 4 official-sample formats + 3 reactions | Full set A | — (review the recordings) | Easy-news routine | Days 34, 50, 57, 61, 63 |
@@ -1361,18 +1396,18 @@ These four conditions are the booking gate. They stay fixed; the Green, Amber, R
 | 66 | 4 | Listening and reading set | Numbers; meaning-flip words | 1 call | 1 informal task | 2 clips + 2 notices, timed | Days 36, 52, 59, 63, 65 |
 | 67 | 4 | Teacher feedback day | Fix the top 3 errors | Redo the weakest speaking task of set A | Redo the weakest writing task of set A | Easy-news routine | Days 37, 53, 60, 64, 66 |
 | 68 | 4 | Mixed prompts 2 | Appendix | 3 reactions + 1 call | 1 formal task | Notice routine | Days 38, 54, 61, 65, 67 |
-| 69 | 4 | Opinion and person | T13, T14 | Your opinion + tell about a person | Letter to the editor | Easy-news routine | Days 39, 55, 62, 66, 68 |
+| 69 | 4 | Opinion and person | T13, T14 | Your opinion (core) + tell about a person | Letter to the editor (20 min; the day fits 60) | Easy-news routine | Days 39, 55, 62, 66, 68 |
 | 70 | 4 | Light | — | Re-record your weakest task | — | One clip | All overdue cards |
 | 71 | 4 | Full speaking set B | Official-sample formats | Full set B (person, seller call, repair call, voicemail) | Event message | Easy-news routine | Days 41, 57, 64, 68, 70 |
 | 72 | 4 | Fix day | Top 3 errors | Redo 2 tasks | Redo 1 task | Notice routine | Days 42, 58, 65, 69, 71 |
 | 73 | 4 | Full writing set B | Informal, opinion, formal | 3 reactions | Full set B | Easy-news routine | Days 43, 59, 66, 70, 72 |
-| 74 | 4 | Outside functions | T11, T12, T16 | 2 prompts you have not practised | 1 prompt | Notice routine | Days 44, 60, 67, 71, 73 |
-| 75 | 4 | Listening and reading set | Instruction, question and flip-word test | 1 call | — | 2 clips + 2 notices, timed | Days 45, 61, 68, 72, 74 |
-| 76 | 4 | Weakest tasks | From the error log | 2 tasks | 1 task | Easy-news routine | Days 46, 62, 69, 73, 75 |
+| 74 | 4 | Outside functions | T11, T12, T16 | 2 prompts you have not practised (core: the directions; the report call optional) | 1 prompt | Notice routine | Days 44, 60, 67, 71, 73 |
+| 75 | 4 | Listening and reading set (declared: no typed task) | Instruction, question and flip-word test | 1 call | — (the open answers are the typed Swedish; writing returns on Day 76) | 2 clips + 2 notices, timed | Days 45, 61, 68, 72, 74 |
+| 76 | 4 | Weakest tasks | From the error log | 2 tasks (core: the weakest; the second optional) | 1 task | Easy-news routine | Days 46, 62, 69, 73, 75 |
 | 77 | 4 | Light | — | Re-record one task | — | One clip | All overdue cards |
 | 78 | 4 | Full speaking set C | New prompts | Full set C | — | Easy-news routine | Days 48, 64, 71, 75, 77 |
 | 79 | 4 | Full writing set C | New prompts | — | Full set C | Notice routine | Days 49, 65, 72, 76, 78 |
-| 80 | 4 | Mixed prompts 3 | Appendix | 3 reactions + 2 calls | 1 opinion text | Easy-news routine | Days 50, 66, 73, 77, 79 |
+| 80 | 4 | Mixed prompts 3 | Appendix | 3 reactions + 2 calls (core: the 6-turn call) | 1 opinion text (20 min; the day fits 60) | Easy-news routine | Days 50, 66, 73, 77, 79 |
 | 81 | 4 | Fix day | Top 3 errors | Redo 2 tasks | Redo 1 task | Notice routine | Days 51, 67, 74, 78, 80 |
 | 82 | 4 | Mock 3 preparation (light) | Five random prompts, each from a different engine; first sentences | One short task of each type | — | One clip | Days 52, 68, 75, 79, 81 |
 | 83 | 4 | Rest | 20 minutes of cards only | — | — | — | Due cards only |
@@ -1386,48 +1421,48 @@ The minute plans are for a 60-minute day. On a 90-minute day, add the extras lis
 
 #### Day 1: say who you are
 
-*Simplified on 16 November 2026 to fit the load rules (section 1).*
+*Simplified on 16 November 2026 to fit the load rules (section 1); third review the same day: counted as patterns, with word-by-word breakdowns, swap words, the 8 cards named, keyboard steps and an audio list (the learner page is `YKI-LEARNER-DAYS-1-14.md`, Day 1).*
 
 **Goal:** understand four questions and answer each in one full sentence.
 
-**New frames (5):**
-1. *Jag heter [Alex].* (My name is …)
-2. *Jag kommer från [Indien].* (I come from …)
-3. *Jag bor i [Esbo].* (I live in …)
-4. *Jag talar [engelska, hindi och marathi].* (I speak …)
-5. *Jag lär mig svenska.* (I am learning Swedish.)
+**New patterns (5)** (one fixed shape, one changeable slot; the breakdown names each word):
+1. *Jag heter [Alex].* (My name is … *jag* I, *heter* am called.)
+2. *Jag kommer från [Indien].* (I come from … *kommer* come, *från* from. Swap: *Sverige, Nepal*.)
+3. *Jag bor i [Esbo].* (I live in … *bor* live, *i* in. Swap: *Helsingfors, Vanda, Åbo*.)
+4. *Jag talar [engelska, hindi och marathi].* (I speak … *talar* speak, *och* and. Swap: *svenska, finska*.)
+5. *Jag lär mig svenska.* (I am learning Swedish. *lär mig* learn, kept as one piece.)
 
-**Questions to understand (4):** *Vad heter du?* (What is your name?) *Var kommer du ifrån?* (Where are you from?) *Var bor du?* (Where do you live?) *Vilka språk talar du?* (Which languages do you speak?)
+**Questions to understand (4, listening only, so not patterns):** *Vad heter du?* (What is your name?) *Var kommer du ifrån?* (Where are you from?) *Var bor du?* (Where do you live?) *Vilka språk talar du?* (Which languages do you speak?)
 
 **Instruction words to recognise (2):** *berätta* (tell), *skriv* (write).
 
-**The one grammar fact:** the verb has the same form for every person: *jag bor, du bor*.
+**The one grammar fact:** the verb has the same form for every person: *jag bor, du bor*. Don't use *är* before another verb to make the present tense: *Jag bor*, not *Jag är bor*.
 
 | Minutes | What you do |
 |---|---|
-| 0–10 | **Listen.** Hear each frame three times (from your teacher, a Swedish voice or the book's QR audio), with the English in view. Repeat after the voice. |
-| 10–20 | **Recall and swap.** Cover the Swedish. Say each frame from the English. Then swap the detail three times (another name, country, town, language). |
+| 0–10 | **Listen.** Hear each pattern three times from the audio list (`YKI-AUDIO-LIST-DAYS-1-14.md`, Day 1; recorded by your teacher or a Swedish text-to-speech voice), with the English in view. Repeat after the voice. |
+| 10–20 | **Recall and swap.** Cover the Swedish. Say each pattern from the English. Then swap the detail three times, using the swap words above (another name, country, town, language). |
 | 20–30 | **Questions.** Hear the four questions in mixed order. Answer each in a full sentence. No timer today: Day 1 is first exposure. |
 | 30–40 | **Speaking task.** Card: *Berätta om dig själv.* (Tell about yourself.) Underline the instruction word. Record five sentences, listen once, redo once. |
-| 40–50 | **Typing.** Set up å, ä and ö. Type the five sentences from memory, compare with the model, fix, and type them once more. |
-| 50–55 | **Change check.** Answer the four questions again as another person: Sara, from Sweden, lives in Åbo, speaks Swedish and Finnish. |
-| 55–60 | **Cards:** 5 frames and 3 questions (8 cards). Start the error log. |
+| 40–50 | **Typing.** Set up å, ä and ö (on a Finnish or Swedish keyboard they have their own keys; on a phone, hold a or o; on a Mac, Option + a gives å, Option + u then a or o gives ä or ö; on Windows, add the Swedish or Finnish keyboard). Type the five sentences from memory, compare with the model, fix, and type them once more. |
+| 50–55 | **Change check.** Answer the four questions again as another person, with the swap words given: Sara, from *Sverige*, lives in *Åbo*, speaks *svenska och finska*. |
+| 55–60 | **Cards (8):** the 5 patterns (English on the front), and 3 listening cards (Swedish on the front): *Vad heter du?*, *Var kommer du ifrån?*, *Vilka språk talar du?* Start the error log. |
 
 **Model:**
 > *Hej! Jag heter Alex. Jag kommer från Indien. Jag bor i Esbo. Jag talar engelska, hindi och marathi. Jag lär mig svenska.*
 
-**Done when** (Green, Amber or Red; second review, 16 November 2026):
+**Done when** (Green, Amber or Red; second review, 16 November 2026, made precise in the third review):
 - **Green (move on):** you understand the four questions and answer each in a full sentence without reading; your recording and your typed text give the five facts on your own; answering as Sara (another person) also works. Spelling slips do not count.
-- **Amber (move on, with revision):** the same, but you hesitated, or one mistake kept coming back (for example *Jag är bor*). Put it on the error list; it comes back in the Day 2 review.
+- **Amber (move on, with revision):** the same, but you hesitated, one mistake kept coming back (for example *Jag är bor*), or one fact was missing but the answer still works. Put the mistake on the error list; it comes back in the Day 2 review.
 - **Red (repeat Day 1 tomorrow with new details):** you misunderstood a question, or you could not answer without reading the model.
 
-The question-to-answer table (what kind of answer *Var? När? Varför? Hur mycket? Hur länge? Vad tycker du? Vad hände? Vad vill du?* each want) comes on Day 2, as a 2-minute step (curriculum, Day 2).
+The question-to-answer table starts on Day 2 with three rows (*Var? Vad? Hur länge?*); each later day adds the row for its own question word (curriculum, Day 2).
 
 **Common errors:**
 
 | Wrong | Right | Why |
 |---|---|---|
-| *Jag är bor i Esbo.* | *Jag bor i Esbo.* | No *är* in front of another verb |
+| *Jag är bor i Esbo.* | *Jag bor i Esbo.* | Don't use *är* before another verb to make the present tense |
 
 **Moved out of Day 1, and where each item lands:**
 - *Jag jobbar som …* and *Jag har bott …*: Day 2.
@@ -1813,7 +1848,7 @@ The other voice says, one line per turn:
 
 #### Day 84: Mock 3 (a full mock day)
 
-**Allow 2 to 2.5 hours.** Split it into two sittings if needed, with the speaking set first. **Mock 3 counts towards booking, so it needs fresh prompts** (6.2, fresh-prompt rule): the teacher's first; otherwise one held-back book task per slot (the helper has the list and the mock recipe in `teacher-only/YKI-MOCK-RESERVE.md`); only as a last resort, prompts an AI writes on the day. **The prompts and models printed below are seen practice:** use them for practice or as a spare set, never as the Mock 3 that counts.
+**Allow 2 to 2.5 hours.** Split it into two sittings if needed, with the speaking set first. **Mock 3 counts towards booking, so it needs fresh prompts** (6.2, fresh-prompt rule, third review): the teacher writes them, one per slot of the mock recipe in `teacher-only/YKI-MOCK-RESERVE.md`; only as a fallback, an AI writes them on the day and the helper reads them out. The held-back book tasks are seen practice now, so they serve Mocks 1 and 2 and spare practice, never a counted mock. **The prompts and models printed below are seen practice:** use them for practice or as a spare set, never as the Mock 3 that counts.
 
 | Minutes | What you do |
 |---|---|
@@ -1862,7 +1897,7 @@ S4:
 | *För det tredje det blir …* | *För det tredje blir det …* |
 | *Jag vet inte vad är fel.* | *Jag vet inte vad som är fel.* (In an indirect question, *vad* as the subject needs *som*.) |
 | A voicemail over 20 seconds | Cut the reason to one short clause. |
-| Stopping a call turn early because you missed the voice | Say *Okej.* and give the card's next point. |
+| Stopping a call turn early because you missed the voice | Use one of the three recovery options: answer it if you understood it; answer the part you understood; or give the card's next piece of information without agreeing to anything (*Jag kan komma på fredag efter klockan fyra.*). Never say *Okej* by reflex. [Unreviewed Swedish: have a teacher check it] |
 
 **Pass rules:** section 6.
 
@@ -1920,9 +1955,11 @@ This is your progress record. The Green, Amber, Red marks decide whether you mov
 
 **The fresh-prompt rule** (decided 16 November 2026):
 - **Every prompt printed in this plan, the curriculum and the appendix is seen practice.** You have read it, and these files have been pasted into an AI chat, so moving text cannot make it unseen.
-- **Mocks that count towards booking** (Mock 3 and every later mock) use prompts you have never seen, from one of three sources, in this order: (1) the teacher writes them; (2) a helper draws one of the 40 held-back book tasks per slot (the list, a balanced mock recipe and a gap table are in `teacher-only/YKI-MOCK-RESERVE.md`, for the teacher or the helper; the learner does not open it); (3) only as a fallback, an AI writes them on the day and the helper reads them out. The held-back tasks hold no voicemail, no seller, buyer or repair call, and only one formal complaint, so those slots need source (1) or (3); a printed prompt is never reused.
+- **The previously printed mock prompts are seen practice too** (third review). Until the second review the learner's book map printed a short description of each of the 40 held-back book tasks, and the book itself is the learner's. So the held-back tasks can no longer be treated as unseen.
+- **Mocks that count towards booking** (Mock 3 and every later mock) use prompts you have never seen, from one of two sources, in this order: (1) the teacher writes them; (2) only as a fallback, an AI writes them on the day and the helper reads them out (the helper, not the learner, sees the chat). A printed prompt and a held-back book task are never used in a counted mock.
+- **The reserve stays teacher-only.** The 40 held-back tasks, the balanced mock recipe and the gap table are in `teacher-only/YKI-MOCK-RESERVE.md`, for the teacher or the helper; the learner does not open it. The recipe still defines every counted mock; the held-back tasks now serve Mocks 1 and 2 and spare practice.
 - **Every counted mock is balanced** (the recipe): one talk, one seller or buyer call, one repair or complaint call, one voicemail, three reactions, one opinion talk, one informal message, one letter with at least three reasons, and one formal complaint.
-- **Mocks 1 and 2 and the phase exit tests** may reuse printed prompts if a helper changes the details (names, places, times, the problem). Mocks 1 and 2 may also use held-back tasks, but only the surplus: enough must stay for two counted mocks (the reserve file says how many per slot).
+- **Mocks 1 and 2 and the phase exit tests** may reuse printed prompts if a helper changes the details (names, places, times, the problem). Mocks 1 and 2 may also use any held-back task (since the third review nothing needs to be kept back for the counted mocks).
 - New easy-news clips and notices are unseen by nature; the listening and reading questions for a counting mock are written by the teacher or a helper.
 
 ### 6.3 How a mock is checked: the teacher first, then you
@@ -1961,6 +1998,8 @@ This is your progress record. The Green, Amber, Red marks decide whether you mov
 ---
 
 ## 7. The listening and reading minimum
+
+**How much** (third review, 16 November 2026): block 5 of the daily format (3.1). **A 60-minute day has 8 minutes** (minutes 48–56): the routine in 7.3 or 7.4, shortened to 8 minutes. **A 90-minute day has 10 minutes** (minutes 72–82): the full routine. Light days do one item; mock and exit-test days set their own amount, and their entry says how much.
 
 ### 7.1 Why it matters
 
@@ -2064,7 +2103,7 @@ This is your progress record. The Green, Amber, Red marks decide whether you mov
     - *FPA* for the social insurance office.
 13. Are the timings and word counts in this plan still what current practice uses? These are the 20 + 25 s reactions, the 1 + 1.5 min opinion, and the 50–80 and 100–150 words.
 14. Is my speaking and writing "understandable with some errors"?
-15. **Teacher to confirm: *uppge* or *ange* versus *ge dina kontaktuppgifter*.** About 14 practice prompts say *ge dina kontaktuppgifter*. A real task card may say *uppge* or *ange* (2.6 lists *ange* as a likely task word). The prompts stay as they are until you answer.
+15. **Teacher to confirm: *uppge* or *ange* versus *ge dina kontaktuppgifter*.** About 14 practice prompts say *ge dina kontaktuppgifter*. A real task card may say *uppge* or *ange* (since the third review *ange* is one of the 23 instruction words in 2.6). The prompts stay as they are until you answer.
 16. Other lines to confirm: is the present with *sedan* also right (*Det läcker vatten sedan i lördags*), or only the perfect? Is *avskedsfika* natural in Finland? *Säg till senast onsdag* or *senast på onsdag*? *i bussen* or *på bussen*? *ska ha en viktig intervju* or *ska på en viktig intervju*?
 
 ### 8.3 Checklist before you register
