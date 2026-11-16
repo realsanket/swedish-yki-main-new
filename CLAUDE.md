@@ -16,3 +16,9 @@
 - Kill the dev server with `pgrep -f '^node server' | xargs -r kill`. A broader
   pattern such as `pkill -f server.mjs` also matches your own shell command
   and ends it.
+
+## Model team
+
+Sonnet 5.5 is the main model, Fable 5.2 is the advisor, Opus 5.5 is the checker and Haiku 5.5 does search (settings in `.claude/settings.json`, agents in `.claude/agents/`; the same team is set up in `~/.claude`, and this copy is for sessions that do not have it, such as cloud sessions).
+
+Consult the advisor before you commit to an approach, when the same error comes back twice, and before you say a task is done. Run the checker before you call any task done. Send search and docs lookup to Explore. If a subagent must write code, give it model sonnet, never haiku. For a small task that fits in this session, skip subagents and do it yourself.
