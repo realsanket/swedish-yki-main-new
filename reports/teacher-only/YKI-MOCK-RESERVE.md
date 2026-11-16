@@ -1,17 +1,19 @@
 # Mock reserve: 40 held-back book tasks and the mock recipe
 
-> **For the teacher or the helper, not the learner.** If you are the learner, close this file now. These tasks stay fresh only while you have not read them. The learner-facing files (the plan, the curriculum and the book map) point here but do not list these tasks.
+> **For the teacher or the helper, not the learner.** If you are the learner, close this file now. Keep them out of the learner's daily practice. The learner-facing files (the plan, the curriculum and the book map) point here but do not list these tasks.
 
 *Written 16 November 2026 (second review). Moved here from the learner's book map (`YKI-BOOK-MAP.md`, the old section "Held back for mocks"). The book is *Förbered dig för allmän språkexamen* (© Gimara Oy); this file holds only page pointers and our own short descriptions, never the book's text. `data/assignments.json` still marks these 40 ids as `"reserve"`.*
 
+*Updated 16 November 2026 (third review): **the reserve is no longer a source for the mocks that count towards booking.** Until the second review the learner's book map printed a short description of every task below, and the book itself is the learner's, so these tasks count as seen practice. Counted mocks (Mock 3 and every later mock) use only prompts the teacher writes, or, as the fallback, prompts an AI writes on the day (plan 6.2). The reserve now serves Mocks 1 and 2 and spare practice only. The mock recipe below still defines every counted mock.*
+
 ## How to use the reserve
 
-- **Which mocks use it.** The mocks that count towards booking (Mock 3 and every later mock; plan 4.7 and 6.2) need prompts the learner has never seen. Take them in this order: (1) the teacher writes a fresh prompt; (2) the helper draws a reserve task for that slot; (3) only as a fallback, an AI writes a prompt on the day and the helper reads it out.
-- **Never reuse a printed prompt** for a counted mock. Everything printed in the plan, the curriculum and the appendix is seen practice.
+- **Which mocks use it.** Only Mocks 1 and 2 (progress checks, not counted) and spare practice. The mocks that count towards booking (Mock 3 and every later mock; plan 4.7 and 6.2) need prompts the learner has never seen, from two sources in this order: (1) the teacher writes a fresh prompt; (2) only as a fallback, an AI writes a prompt on the day and the helper reads it out. Never put a reserve task in a counted mock.
+- **Never reuse a printed prompt or a reserve task** for a counted mock. Everything printed in the plan, the curriculum and the appendix is seen practice, and so is every task in this file.
 - **Keep it face down.** The helper picks one task per slot just before the mock, and the learner sees it only when the timer starts.
 - **Mark each task as used** in the last column of the table once it has been in a mock. A used task is seen practice from then on.
 - **Near-twins:** `p41-D1` and `p112-R7` are both about an item left at a gym. Never use both in the same mock.
-- **Mocks 1 and 2** (progress checks, not counted) may use the reserve, but only the surplus: always keep enough for two counted mocks in a row, that is **2 talks, 6 reactions, 2 opinion talks, 2 informal messages, 2 letters and the one formal complaint** (15 tasks). The spare calls and spare formal messages in the table may always be used in Mocks 1 and 2.
+- **Mocks 1 and 2** (progress checks, not counted) may use any reserve task; nothing needs to be kept back for the counted mocks any more. Left-over tasks are spare practice (a 90-minute day, a repeat day, or the cycle after Day 84).
 - **After use:** record Green, Amber or Red for each subtest (plan, section 1), plus the booking-gate checks (plan 6.4).
 
 ## The mock recipe: what every counted mock must contain
@@ -32,11 +34,11 @@ Each counted mock is balanced: it holds every official sample task type once, pl
 
 For a listening or reading day, the teacher or helper also writes about 8 unseen questions per clip or text (plan 6.2).
 
-## The gap table: where the reserve runs out
+## The gap table: which slots the reserve can fill in Mocks 1 and 2
 
-The reserve was chosen from the book's later tasks, not built for this recipe. Five slots have few or no reserve tasks.
+The reserve was chosen from the book's later tasks, not built for this recipe. Five slots have few or no reserve tasks. This table is for Mocks 1 and 2 only; counted mocks never use the reserve.
 
-| Slot | Reserve tasks that fit | Counted mocks it can fill | When it is empty or used up |
+| Slot | Reserve tasks that fit | Mocks it can fill | When it is empty or used up |
 |---|---|---|---|
 | S1 talk | 4: `p73-BA`, `p88-BB`, `p88-BC`, `p123-BB` | 4 | The teacher writes a fresh prompt, or an AI writes one on the day; never reuse a printed prompt. |
 | **S2 seller call** | **0** | **0** | The teacher writes a fresh prompt, or an AI writes one on the day; never reuse a printed prompt. |
@@ -49,9 +51,9 @@ The reserve was chosen from the book's later tasks, not built for this recipe. F
 | W2 letter, three reasons | 5: `p54-S3`, `p64-S3`, `p90-S3`, `p116-S3`, `p125-S3` | 5 | The teacher writes a fresh prompt, or an AI writes one on the day; never reuse a printed prompt. |
 | **W3 formal complaint** | **1**: `p75-S3` (a complaint about hospital care) | **1** | The teacher writes a fresh prompt, or an AI writes one on the day; never reuse a printed prompt. |
 
-**Spare reserve tasks (fit no recipe slot):** six phone calls (`p16-D3`, `p18-D4`, `p41-D1`, `p58-D1`, `p70-D2`, `p100-D3`: social, advice and lost-item calls) and two formal messages that are requests, not complaints (`p54-S1`, `p116-S2`). Use them in Mocks 1 and 2, in the weekly mocks after Day 84 as an extra task, or as a 90-minute-day task once the reserve is no longer needed.
+**Spare reserve tasks (fit no recipe slot):** six phone calls (`p16-D3`, `p18-D4`, `p41-D1`, `p58-D1`, `p70-D2`, `p100-D3`: social, advice and lost-item calls) and two formal messages that are requests, not complaints (`p54-S1`, `p116-S2`). Use them in Mocks 1 and 2 or as spare practice (for example a 90-minute-day task).
 
-**What this means in practice:** every counted mock needs at least three fresh prompts from the teacher or the AI fallback (the seller or buyer call, the repair or complaint call and the voicemail), and four from the second counted mock on (add the formal complaint). The reserve covers the other slots for about three counted mocks; the reactions run out first.
+**What this means in practice:** every counted mock takes every one of its prompts from the teacher, or from an AI on the day. In Mocks 1 and 2 the reserve covers most slots; the seller or buyer call, the repair or complaint call and the voicemail still need a teacher-written or AI prompt.
 
 **For an AI prompt on the day:** ask for one new situation of the slot's type, in simple Swedish, with the required points listed, and with no prompt copied from the plan, the curriculum, the appendix or the book. The helper reads it; the learner does not see the chat.
 

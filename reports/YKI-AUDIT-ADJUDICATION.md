@@ -1,3 +1,7 @@
+Historical audit, superseded by Version 3 where documents differ; not a learning instruction.
+
+*Version 3 means the plan, the curriculum, the core sheet, the learner pages, the templates and the book map as revised in the third review (16 November 2026). Where this file and those documents differ, those documents win. Line numbers below refer to the files as they were on the morning of 16 November 2026.*
+
 # Adjudication of the ChatGPT audit of the exam-first course
 
 *16 November 2026. Tests the audit's 13 claims against our four files. No existing file was edited.*
