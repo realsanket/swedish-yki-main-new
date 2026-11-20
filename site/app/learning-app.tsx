@@ -21,6 +21,9 @@ import {
   ChevronRight,
   RefreshCw,
   AlertCircle,
+  GraduationCap,
+  ListChecks,
+  BookOpen,
 } from "lucide-react";
 import {
   SidebarProvider,
@@ -63,8 +66,54 @@ const PracticeStudio = lazy(
 const WordBank = lazy(() => import("@/components/learning/WordBank"));
 const Resources = lazy(() => import("@/components/learning/Resources"));
 const SettingsView = lazy(() => import("@/components/learning/SettingsView"));
+const ExamViews = lazy(() => import("@/components/exam/ExamViews"));
+const EXAM_VIEW_NAMES = ["Exam today", "Exam days", "Core sheet", "Exam cards", "Error list", "Method & guide"] as const;
+type ExamViewName = (typeof EXAM_VIEW_NAMES)[number];
+const isExamView = (name: string): name is ExamViewName => (EXAM_VIEW_NAMES as readonly string[]).includes(name);
 
 const nav = [
+  {
+    name: "Exam today",
+    label: "Today's exam day",
+    slug: "exam",
+    icon: GraduationCap,
+    group: "exam",
+  },
+  {
+    name: "Exam days",
+    label: "All 84 days",
+    slug: "exam-days",
+    icon: ListChecks,
+    group: "exam",
+  },
+  {
+    name: "Core sheet",
+    label: "Core sheet",
+    slug: "exam-core",
+    icon: BookOpen,
+    group: "exam",
+  },
+  {
+    name: "Exam cards",
+    label: "Exam cards",
+    slug: "exam-cards",
+    icon: Layers,
+    group: "exam",
+  },
+  {
+    name: "Error list",
+    label: "Error list",
+    slug: "exam-errors",
+    icon: AlertCircle,
+    group: "exam",
+  },
+  {
+    name: "Method & guide",
+    label: "Method and guide",
+    slug: "exam-method",
+    icon: CircleHelp,
+    group: "exam",
+  },
   {
     name: "Classroom",
     label: "Continue story",
@@ -132,6 +181,11 @@ const nav = [
 
 const sidebarGroups = [
   {
+    group: "exam",
+    label: "EXAM COURSE",
+    ariaLabel: "Exam course navigation",
+  },
+  {
     group: "story",
     label: "YOUR STORY",
     ariaLabel: "Story navigation",
@@ -169,7 +223,8 @@ function AppContent({ userId }: { userId: string }) {
     [data, setData] = useState<ProgressData>(defaultProgress),
     [loading, setLoading] = useState(true),
     [error, setError] = useState(""),
-    [signedOut, setSignedOut] = useState(false);
+    [signedOut, setSignedOut] = useState(false),
+    [examDay, setExamDay] = useState<string | null>(null);
   const course = useCourse();
   const { setOpenMobile } = useSidebar();
   const mutation = useRef(Promise.resolve());
@@ -215,6 +270,12 @@ function AppContent({ userId }: { userId: string }) {
       setLesson(null);
       setLecture(null);
       setChapterReview(null);
+      setExamDay(null);
+      if (key === "exam-day" && id) {
+        setExamDay(decodeURIComponent(id));
+        setView("Exam days");
+        return;
+      }
       if (key === "lecture") {
         const found = lectures.find((l) => l.id === id);
         if (found) {
@@ -626,6 +687,15 @@ function AppContent({ userId }: { userId: string }) {
                 data={course.data}
                 progress={data}
                 start={start}
+              />
+            ) : isExamView(view) ? (
+              <ExamViews
+                view={view}
+                unitKey={examDay}
+                openDay={(key) => {
+                  window.location.hash = "exam-day/" + encodeURIComponent(key);
+                }}
+                navigate={navigate}
               />
             ) : view === "Settings" ? (
               <SettingsView

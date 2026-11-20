@@ -16,8 +16,12 @@
     "content:index": "python3 scripts/build-lecture-index.py",
     "content:check": "python3 scripts/validate-content.py",
     "test:progress": "tsx scripts/course-progress.test.ts",
-    "check": "npm run content:check && npm run typecheck && npm run lint && npm run test:progress",
-    "audit:ui": "node scripts/ui-audit.mjs"
+    "check": "npm run content:check && npm run exam:check && npm run typecheck && npm run lint && npm run test:progress && npm run test:exam",
+    "audit:ui": "node scripts/ui-audit.mjs",
+    "content:exam": "python3 scripts/build-exam-content.py",
+    "exam:check": "python3 scripts/validate-exam-content.py",
+    "test:exam": "node scripts/run-exam-tests.mjs",
+    "audit:exam": "node scripts/audit-exam.mjs"
   },
   "dependencies": {
     "@azure/ai-voicelive": "^1.1.0",

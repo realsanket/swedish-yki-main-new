@@ -60,6 +60,11 @@ CREATE TABLE IF NOT EXISTS lecture_state (
   updated_at integer NOT NULL,
   PRIMARY KEY(user_id, lecture_id)
 );
+CREATE TABLE IF NOT EXISTS exam_state (
+  user_id text PRIMARY KEY NOT NULL,
+  state text NOT NULL,
+  updated_at integer NOT NULL
+);
 `;
 
 let _db: Database.Database | null = null;
